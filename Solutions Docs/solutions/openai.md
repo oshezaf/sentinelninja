@@ -37,11 +37,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ASimAgentEventLogs`](../tables/asimagenteventlogs.md) | [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) | - |
+| [`OpenAIAuditLogs`](../tables/openaiauditlogs.md) | [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) | - |
 | [`OpenAIAuditLogs_CL`](../tables/openaiauditlogs-cl.md) | [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) | - |
 
 ## Release Notes

@@ -31,11 +31,13 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`AlibabaCloudAPIGatewayLogs`](../tables/alibabacloudapigatewaylogs.md) | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | - |
 | [`AlibabaCloudVPCFlowLogs`](../tables/alibabacloudvpcflowlogs.md) | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | - |
+| [`AlibabaCloudWAFLogs`](../tables/alibabacloudwaflogs.md) | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | - |
 
 ## Release Notes
 

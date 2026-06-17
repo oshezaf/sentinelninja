@@ -59,7 +59,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Count |
 |:-------|------:|
 | Unique Connectors | 508 |
-| Tables Used | 981 |
+| Tables Used | 994 |
 
 ## Connectors
 
@@ -193,8 +193,8 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 | Metric | Count |
 |:-------|------:|
-| CLv1 Connectors | **147** |
-| Active | 91 |
+| CLv1 Connectors | **146** |
+| Active | 90 |
 | Deprecated 🚫 | 29 |
 | Unpublished ⚠️ | 27 |
 
@@ -205,11 +205,11 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 | [Azure Function](methods/azure-function.md) | 66 |
 | [REST Pull API](methods/rest-pull-api.md) | 43 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 14 |
-| [CCF](methods/ccf.md) | 14 |
+| [CCF](methods/ccf.md) | 13 |
 | [AMA](methods/ama.md) | 7 |
 | [CCF Push](methods/ccf-push.md) | 2 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 |
-| **Total** | **147** |
+| **Total** | **146** |
 
 **By Ingestion API:**
 
@@ -217,14 +217,14 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 |:-------------|----------------:|
 | [Log Ingestion API](methods/log-ingestion-api.md) | 3 |
 | [HTTP Data Collector API](methods/http-data-collector-api.md) | 108 |
-| *(no API)* | 34 |
-| **Total** | **147** |
+| *(no API)* | 33 |
+| **Total** | **146** |
 
 ## Tables
 
 ### Overview
 
-**2071 tables** documented across all discovery sources. **1755 tables** have schema information.
+**2085 tables** documented across all discovery sources. **1755 tables** have schema information.
 
 ### Discovery Sources
 
@@ -232,15 +232,15 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
-| Connector | 981 | 981 |
-| Content | 231 | 823 |
+| Connector | 994 | 994 |
+| Content | 234 | 824 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 675 | 848 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 21 | 64 |
-| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 16 | 542 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 14 | 542 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 89 | 761 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 0 | 117 |
 | Schema | 58 | 1755 |
-| **Total** | **2071** | |
+| **Total** | **2085** | |
 
 *23 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
@@ -258,7 +258,7 @@ Tables with schema information, by schema source. A single table may have schema
 
 ### Custom Log V1 (CLv1) 🔶
 
-**467** of 2071 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**467** of 2085 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 

@@ -54,14 +54,13 @@ This table is used by the following solutions:
 
 - [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) |  |
-| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) |  |
 
 ---
 

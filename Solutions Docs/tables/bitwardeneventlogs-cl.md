@@ -14,7 +14,6 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
@@ -41,14 +40,6 @@
 This table is used by the following solutions:
 
 - [Bitwarden](../solutions/bitwarden.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) |  |
 
 ---
 

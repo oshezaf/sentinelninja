@@ -12,6 +12,20 @@
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [OpenAI](../solutions/openai.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) |  |
+
 ---
 
 ---

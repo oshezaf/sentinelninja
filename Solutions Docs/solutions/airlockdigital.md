@@ -39,12 +39,15 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`AirlockDigitalExecutionHistories`](../tables/airlockdigitalexecutionhistories.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
 | [`AirlockDigitalExecutionHistories_CL`](../tables/airlockdigitalexecutionhistories-cl.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
+| [`AirlockDigitalFileActivitySummary`](../tables/airlockdigitalfileactivitysummary.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
 | [`AirlockDigitalFileActivitySummary_CL`](../tables/airlockdigitalfileactivitysummary-cl.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
+| [`AirlockDigitalServerActivities`](../tables/airlockdigitalserveractivities.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
 | [`AirlockDigitalServerActivities_CL`](../tables/airlockdigitalserveractivities-cl.md) | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | - |
 
 ## Release Notes

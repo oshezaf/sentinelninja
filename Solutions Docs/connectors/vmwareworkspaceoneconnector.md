@@ -27,7 +27,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`VMwareWorkspaceOneDeviceApps`](../tables/vmwareworkspaceonedeviceapps.md) | ? | ? | ? |
 | [`VMwareWorkspaceOneDeviceApps_CL`](../tables/vmwareworkspaceonedeviceapps-cl.md) | ? | ✓ | ? |
+| [`VMwareWorkspaceOneDevices`](../tables/vmwareworkspaceonedevices.md) | ? | ? | ? |
 | [`VMwareWorkspaceOneDevices_CL`](../tables/vmwareworkspaceonedevices-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

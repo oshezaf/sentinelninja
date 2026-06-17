@@ -27,11 +27,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | ? | ✓ | ? |
-| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | ? | ✓ | ? |
-| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | ? | ✓ | ? |
-
-> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
+| [`EventLogs`](../tables/eventlogs.md) | ? | ? | ? |
+| [`Groups`](../tables/groups.md) | ? | ? | ? |
+| [`Members`](../tables/members.md) | ? | ? | ? |
 
 ## Permissions
 

@@ -42,11 +42,13 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`VMwareWorkspaceOneDeviceApps`](../tables/vmwareworkspaceonedeviceapps.md) | [VMware Workspace ONE (via Codeless Connector Framework)](../connectors/vmwareworkspaceoneconnector.md) | - |
 | [`VMwareWorkspaceOneDeviceApps_CL`](../tables/vmwareworkspaceonedeviceapps-cl.md) | [VMware Workspace ONE (via Codeless Connector Framework)](../connectors/vmwareworkspaceoneconnector.md) | - |
+| [`VMwareWorkspaceOneDevices`](../tables/vmwareworkspaceonedevices.md) | [VMware Workspace ONE (via Codeless Connector Framework)](../connectors/vmwareworkspaceoneconnector.md) | - |
 | [`VMwareWorkspaceOneDevices_CL`](../tables/vmwareworkspaceonedevices-cl.md) | [VMware Workspace ONE (via Codeless Connector Framework)](../connectors/vmwareworkspaceoneconnector.md) | - |
 
 ## Release Notes

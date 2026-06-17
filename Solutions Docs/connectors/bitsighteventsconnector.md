@@ -29,7 +29,9 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`BitSightAlerts_CL`](../tables/bitsightalerts-cl.md) | ? | ✓ | ? |
 | [`BitSightBreaches_CL`](../tables/bitsightbreaches-cl.md) | ? | ✓ | ? |
+| [`BitSightFindings`](../tables/bitsightfindings.md) | ? | ? | ? |
 | [`BitSightFindings_CL`](../tables/bitsightfindings-cl.md) | ? | ✓ | ? |
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
