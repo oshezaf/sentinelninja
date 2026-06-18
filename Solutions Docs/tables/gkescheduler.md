@@ -20,6 +20,7 @@ Reference for GKEScheduler table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -58,6 +59,12 @@ Reference for GKEScheduler table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | URI | string | The requested URI path extracted from the log message. |
 | UserAgent | string | The user agent string from the client that made the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

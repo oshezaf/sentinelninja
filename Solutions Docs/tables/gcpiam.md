@@ -21,6 +21,7 @@ Reference for GCPIAM table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -129,6 +130,12 @@ Reference for GCPIAM table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp representing the time at which the log entry was generated. |
 | Timestamp | datetime | The timestamp when the log entry or event occurred. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

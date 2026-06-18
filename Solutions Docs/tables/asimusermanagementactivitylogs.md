@@ -20,6 +20,7 @@ Reference for ASimUserManagementActivityLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -145,6 +146,12 @@ Reference for ASimUserManagementActivityLogs table in Azure Monitor Logs.
 | ThreatRiskLevel | int | The risk level associated with the identified threat. The level should be a number between 0 and 100. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (2)
 

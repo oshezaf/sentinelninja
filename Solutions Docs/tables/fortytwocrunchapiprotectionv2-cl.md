@@ -13,6 +13,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -20,7 +21,7 @@
 
 ## Schema (18 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection%5CData%20Connectors%5C42Crunch_CCF/table_FortyTwoCrunchAPIProtectionV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/table_FortyTwoCrunchAPIProtectionV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -42,6 +43,12 @@
 | Timestamp | datetime | Timestamp of the API request recorded by the 42Crunch firewall |
 | UriPath | string | URI path of the API request |
 | Uuid | string | Unique identifier (UUID) for the log event |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

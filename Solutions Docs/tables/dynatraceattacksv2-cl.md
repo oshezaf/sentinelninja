@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace%5CData%20Connectors%5CDynatraceAttacksV2/Connector_Dynatrace_Attacks_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceAttacksV2/Connector_Dynatrace_Attacks_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -39,6 +40,12 @@
 | technology | string |
 | TimeGenerated | datetime |
 | vulnerability | dynamic |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

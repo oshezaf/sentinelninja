@@ -39,10 +39,9 @@ By connecting with [Microsoft Defender for Cloud Apps](https://aka.ms/asi-mcas-c
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Cloud App Security"` | ✓ | ✗ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

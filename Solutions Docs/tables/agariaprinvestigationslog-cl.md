@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (9 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari%5CData%20Connectors%5CAgari_CCF/table_AgariAPRInvestigationsLog.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/table_AgariAPRInvestigationsLog.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -31,6 +32,12 @@
 | Size | long | File size of the attachment in bytes |
 | TimeGenerated | datetime |  |
 | Url | string | URL to download the attachment from the Agari console |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

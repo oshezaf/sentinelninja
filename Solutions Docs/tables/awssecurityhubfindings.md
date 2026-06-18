@@ -21,6 +21,7 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -65,6 +66,12 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp when the event was generated. |
 | Type | string | The name of the table |
 | WorkflowState | string | The workflow state of the finding (e.g., NEW, RESOLVED). |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

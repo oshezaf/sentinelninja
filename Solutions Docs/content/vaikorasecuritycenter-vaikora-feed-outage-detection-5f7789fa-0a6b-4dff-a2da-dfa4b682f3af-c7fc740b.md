@@ -6,7 +6,7 @@
 
 ---
 
-Identifies when no Vaikora data has arrived in the Vaikora_SecurityAlerts_CL table for 12 or more hours, which may indicate a failed playbook, expired API key, or connectivity issue.
+Identifies when no Vaikora data has arrived in the Vaikora_AgentSignals_CL table for 12 or more hours, which may indicate a failed playbook, expired API key, or connectivity issue.
 
 | Attribute | Value |
 |:----------|:------|
@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Vaikora_SecurityAlerts_CL`](../tables/vaikora-securityalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

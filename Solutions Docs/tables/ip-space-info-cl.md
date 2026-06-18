@@ -14,6 +14,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
@@ -99,6 +100,12 @@
 | utilization_v6_static_s | string |
 | utilization_v6_total_s | string |
 | utilization_v6_used_s | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

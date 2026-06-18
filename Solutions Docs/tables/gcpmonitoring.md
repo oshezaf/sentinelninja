@@ -21,6 +21,7 @@ Reference for GCPMonitoring table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -42,6 +43,12 @@ Reference for GCPMonitoring table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp when the metric or log entry was generated at the source, representing the actual occurrence time of the data point. |
 | Type | string | The name of the table |
 | ValueType | string | The type of value recorded: INT64, DOUBLE, BOOL, STRING, or DISTRIBUTION |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

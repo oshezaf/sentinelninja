@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security%5CData%20Connectors%5CProofPointEmailSecurity_CCP/ProofpointPOD_Table_Message.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_Table_Message.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -36,6 +37,12 @@
 | msgParts | dynamic |
 | pps | dynamic |
 | TimeGenerated | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 
@@ -54,7 +61,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (10)
 
@@ -90,20 +97,13 @@ This table is ingested by the following connectors:
 | [ProofpointPOD - Senders with large number of corrupted messages](../content/proofpoint-on-demand-pod-email-security-proofpointpod-senders-with-large-number-of-corrupted-messages-af7f133a-5fed-4ebf-8272-4330c884c7ca-4e6469ff.md) |  |
 | [ProofpointPOD - Suspicious file types in attachments](../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-file-types-in-attachments-7b281f4a-6a9a-439f-8b4f-f08eb24f2fb7-e9c4582c.md) |  |
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
-| [ProofpointPOD](../content/github-only-proofpointpod-64db84d0.md) |  |
 
 ## Parsers Using This Table (1)
 

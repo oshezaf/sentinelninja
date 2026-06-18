@@ -38,17 +38,13 @@ Reference for UserPeerAnalytics table in Azure Monitor Logs.
 | UserName | string | User name of the primary user |
 | UserPrincipalName | string | User principal name of the primary user |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
 ---
 

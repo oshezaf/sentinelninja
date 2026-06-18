@@ -16,6 +16,12 @@ Reference for AmlComputeClusterEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusterevent) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (46 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputeclusterevent)
@@ -68,6 +74,12 @@ Reference for AmlComputeClusterEvent table in Azure Monitor Logs.
 | VmFamilyName | string | Name of the VM family of the nodes that can be created inside cluster |
 | VmPriority | string | Priority of the nodes created inside a cluster Dedicated/LowPriority |
 | VmSize | string | Vm size of the cluster |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

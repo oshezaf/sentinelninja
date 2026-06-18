@@ -21,6 +21,7 @@ Reference for GCPIDS table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -104,6 +105,12 @@ Reference for GCPIDS table in Azure Monitor Logs.
 | TotalPackets | string | The total number of packets transferred in the session. |
 | Type | string | The name of the table |
 | URIOrFilename | string | URI or filename of the relevant threat, if applicable. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

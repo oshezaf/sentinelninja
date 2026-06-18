@@ -16,6 +16,12 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (51 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs)
@@ -73,6 +79,12 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | TrustedService | string | Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service |
 | Type | string | The name of the table |
 | VaultProperties | dynamic | Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -19,8 +19,7 @@ Reference for AppServiceAntivirusScanAuditLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
+- [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
 ## Schema (15 columns)
@@ -45,45 +44,19 @@ Reference for AppServiceAntivirusScanAuditLogs table in Azure Monitor Logs.
 | TotalFilesScanned | int | Total number of scanned files |
 | Type | string | The name of the table |
 
-## Solutions (1)
+## Schema References
 
-This table is used by the following solutions:
+Official Microsoft Learn documentation for field/column information:
 
-- [Standalone Content](../solutions/standalone-content.md)
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
-
-## Content Items Using This Table (2)
-
-### Analytic Rules (2)
-
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [AppServices AV Scan Failure](../content/standalone-content-appservices-av-scan-failure-c2da1106-bfe4-4a63-bf14-5ab73130ccd5-d6a02a6e.md) | `ScanStatus == "Failed"` |
-| [AppServices AV Scan with Infected Files](../content/standalone-content-appservices-av-scan-with-infected-files-9d0295ee-cb75-4f2c-9952-e5acfbb67036-8bc4532c.md) |  |
 
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
 - `microsoft.web/sites`
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ScanStatus == "Failed"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **1** | **0** | **0** | **1** |
-
-### ScanStatus
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Failed` | - | 1 | - | - | **1** |
 
 ---
 

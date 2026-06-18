@@ -23,14 +23,6 @@ You can get out-of-the-box alert metrics and data, including alert trends, top a
 
 You can also get information about the recommendations provided for your IoT hubs including top recommendations and recommendations by severity. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2224002&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Security Center for IoT"` | ✓ | ✗ | ✓ |
-
 ## Permissions
 
 **Resource Provider Permissions:**

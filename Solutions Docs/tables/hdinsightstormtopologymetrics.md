@@ -16,6 +16,12 @@ Reference for HDInsightStormTopologyMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightstormtopologymetrics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (60 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightstormtopologymetrics)
@@ -82,6 +88,12 @@ Reference for HDInsightStormTopologyMetrics table in Azure Monitor Logs.
 | WindowPretty | string | String description of the time window for the metrics in the record. |
 | Workers | string | JSON with worker specific metrics. |
 | WorkersTotal | int | The total amount of workers. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -50,14 +50,6 @@ This solution uses **3 table(s)**:
 | [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | - | Workbooks |
 
-### Internal Tables
-
-The following **1 table(s)** are used internally by this solution's content items:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | - |
-
 ## Content Items
 
 This solution includes **6 content item(s)**:

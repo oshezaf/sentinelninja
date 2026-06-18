@@ -15,6 +15,12 @@ Reference for ADGSyslogEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adgsyslogevent) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (12 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adgsyslogevent)
@@ -33,6 +39,12 @@ Reference for ADGSyslogEvent table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the syslog event was generated. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

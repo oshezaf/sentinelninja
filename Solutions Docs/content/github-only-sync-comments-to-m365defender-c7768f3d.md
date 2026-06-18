@@ -14,16 +14,6 @@ author: Prateek Taneja, Benjamin Kovacevic
 | **Solution** | GitHub Only |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Sync-Sentinel-Incident-Comments-To-M365Defender/azuredeploy.json) |
 
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [DerdackSIGNL4](../connectors/derdacksignl4.md) | [SIGNL4](../solutions/signl4.md) |
-
-**Solutions:** [SIGNL4](../solutions/signl4.md)
-
 ## Logic App Connectors
 
 This playbook uses **3** Logic App connectors / built-in actions:

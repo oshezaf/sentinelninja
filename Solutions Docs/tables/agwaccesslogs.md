@@ -19,6 +19,7 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -77,6 +78,12 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 | WafEvaluationTime | real | Length of time (in seconds) that it takes for the request to be processed by the WAF. |
 | WafMode | string | Value can be either Detection or Prevention. |
 | WafPolicyId | string | The resource ID of the WAF policy associated with the Application Gateway. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

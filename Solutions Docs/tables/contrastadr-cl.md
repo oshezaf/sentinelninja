@@ -14,6 +14,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -91,6 +92,12 @@
 | vectorAnalysis_vectorFields_xml_s | string |
 | virtualPatchUuid_g | guid |
 | virtualPatchUuid_string_g | guid |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -15,6 +15,12 @@ Reference for EdgeActionConsoleLog table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/edgeactionconsolelog) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (11 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/edgeactionconsolelog)
@@ -32,6 +38,12 @@ Reference for EdgeActionConsoleLog table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (UTC) when the log entry was created. |
 | TrackingReference | string | The unique reference string that identifies a request served by Front Door, also sent as X-Azure-Ref header to the client. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

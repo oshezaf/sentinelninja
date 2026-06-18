@@ -21,6 +21,7 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -68,6 +69,12 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 | TotalVulnerabilities | real | The total count of vulnerability findings |
 | Type | string | The name of the table |
 | UniqueIdentifiers | string | Unique identifiers found on the asset, such as hardware or operating system identifiers |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

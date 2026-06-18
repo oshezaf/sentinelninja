@@ -16,6 +16,12 @@ Insights about potentially suspicious user behaviors that violate user-defined o
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-datasecuritybehaviors-table) |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

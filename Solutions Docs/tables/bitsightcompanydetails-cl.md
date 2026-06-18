@@ -13,6 +13,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -20,7 +21,7 @@
 
 ## Schema (43 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitSightCompanyDetails.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitSightCompanyDetails.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -67,6 +68,12 @@
 | SubscriptionType | string | Type of BitSight subscription (e.g., Continuous Monitoring). |
 | SubscriptionTypeKey | string | Machine-readable subscription type key. |
 | TimeGenerated | datetime |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

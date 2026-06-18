@@ -15,9 +15,9 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (26 columns)
 
@@ -52,6 +52,12 @@
 | Type | string |
 | Username | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -67,16 +73,6 @@ This table is ingested by the following connectors:
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
 
 ---
 

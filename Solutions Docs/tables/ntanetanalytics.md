@@ -19,6 +19,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Parsers](#parsers-using-this-table)
 
@@ -121,6 +122,12 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | TimeProcessed | datetime | Time(in UTC) at which the traffic analytics processed the raw flow logs from the storage account. |
 | TrafficAnalyticsResourceId | string | Resource ID of the Traffic Analytics resource that is responsible for Traffic Analytics processing for this log source. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Additional Information
 

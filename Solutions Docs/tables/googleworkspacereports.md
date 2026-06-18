@@ -21,6 +21,7 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -165,6 +166,12 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 | VirtualDeviceId | string | Deprecated. Use EventParameters column to find the value of this column instead. |
 | Visibility | string | Deprecated. Use EventParameters column to find the value of this column instead. |
 | VisibilityChange | string | Deprecated. Use EventParameters column to find the value of this column instead. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

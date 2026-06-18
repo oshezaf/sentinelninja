@@ -21,6 +21,7 @@ Reference for GCPApigee table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -44,6 +45,12 @@ Reference for GCPApigee table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp indicating when the log entry was created or received. |
 | Timestamp | datetime | The original timestamp of the event as recorded by the source system. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

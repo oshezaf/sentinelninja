@@ -14,6 +14,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
@@ -190,6 +191,12 @@
 | userkey_s | string |
 | vendor_id_s | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (2)
 
 This table is used by the following solutions:
@@ -199,9 +206,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
-### Workbooks (3)
+### Workbooks (2)
 
 **In solution [Netskope](../solutions/netskope.md):**
 
@@ -214,12 +221,6 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NetskopeEvents](../content/github-only-netskopeevents-9ea84d68.md) |  |
 
 ## Parsers Using This Table (1)
 

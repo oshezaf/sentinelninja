@@ -16,6 +16,12 @@ Reference for OEPElasticsearch table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oepelasticsearch) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oepelasticsearch)
@@ -39,6 +45,12 @@ Reference for OEPElasticsearch table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (in UTC) when the log was created. |
 | TotalHits | string | Total number of hits for a search operation. For example, value can be '3 hits' for 3 hits, '-1' for no hits, or 'null' if it is not a search slow log. |
 | Type | string | Type of log. Can be index_search_slowlog, index_indexing_slowlog, server, deprecation etc. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

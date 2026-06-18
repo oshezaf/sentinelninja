@@ -19,6 +19,7 @@ Reference for ContainerInventory table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -53,6 +54,12 @@ Reference for ContainerInventory table in Azure Monitor Logs.
 | StartedTime | datetime | Container start time |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

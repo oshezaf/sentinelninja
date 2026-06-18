@@ -15,6 +15,12 @@ Reference for SynapseDXTableDetails table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxtabledetails) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxtabledetails)
@@ -46,6 +52,12 @@ Reference for SynapseDXTableDetails table in Azure Monitor Logs.
 | TotalOriginalSize | real | The total original data size in the table (in bytes) |
 | TotalRowCount | long | Total number of rows in the table |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

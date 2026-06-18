@@ -50,18 +50,13 @@ Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs.
 | UserId | string | The Id of the user. |
 | UserName | string | The user name. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (2)
-
-### Workbooks (2)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

@@ -53,6 +53,12 @@ Reference for ConfidentialWatchlist table in Azure Monitor Logs.
 | WatchlistItemId | string | The Watchlist item unique ID. |
 | WatchlistName | string | The display name of Watchlist. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

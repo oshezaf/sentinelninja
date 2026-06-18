@@ -15,11 +15,17 @@
 
 ## Contents
 
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Solutions (35)
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
+## Solutions (34)
 
 This table is used by the following solutions:
 
@@ -45,7 +51,6 @@ This table is used by the following solutions:
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [ReversingLabs](../solutions/reversinglabs.md)
-- [SIGNL4](../solutions/signl4.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOC-Process-Framework](../solutions/soc-process-framework.md)
 - [SOCRadar](../solutions/socradar.md)
@@ -59,18 +64,9 @@ This table is used by the following solutions:
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
-## Connectors (2)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Derdack SIGNL4](../connectors/derdacksignl4.md) |  |
-| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |  |
-
 ---
 
-## Content Items Using This Table (70)
+## Content Items Using This Table (51)
 
 ### Analytic Rules (3)
 
@@ -95,7 +91,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |  |
 
-### Workbooks (58)
+### Workbooks (39)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -290,30 +286,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [AnalyticsEfficiency](../content/github-only-analyticsefficiency-b881d5ae.md) |  |
-| [AnalyticsHealthAudit](../content/github-only-analyticshealthaudit-cb1c8682.md) |  |
-| [AnomaliesVisualization](../content/github-only-anomaliesvisualization-9d418617.md) |  |
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [IncidentTasksWorkbook](../content/github-only-incidenttasksworkbook-b100c180.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [SecurityOperationsEfficiency](../content/github-only-securityoperationsefficiency-84293023.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
-| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
-| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

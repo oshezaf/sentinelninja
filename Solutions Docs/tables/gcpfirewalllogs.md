@@ -20,6 +20,7 @@ Reference for GCPFirewallLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -66,6 +67,12 @@ Reference for GCPFirewallLogs table in Azure Monitor Logs.
 | VpcName | string | The name of the Virtual Private Network(VPC) where the firewall rule applied. |
 | VpcProjectId | string | The project id of the Virtual Private Network(VPC) where the firewall rule applied. |
 | VpcSubnetworkName | string | The Subnetnetwork name of the Virtual Private Network(VPC) where the firewall rule applied. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -16,6 +16,12 @@ Reference for AADGraphActivityLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadgraphactivitylogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (37 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadgraphactivitylogs)
@@ -59,6 +65,12 @@ Reference for AADGraphActivityLogs table in Azure Monitor Logs.
 | UserAgent | string | The user agent string provided by the client. |
 | UserId | string | The identifier of the user making the request. |
 | Wids | string | The WIDs from the token claims. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

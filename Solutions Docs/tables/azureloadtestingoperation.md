@@ -16,6 +16,12 @@ Reference for AzureLoadTestingOperation table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureloadtestingoperation) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureloadtestingoperation)
@@ -47,6 +53,12 @@ Reference for AzureLoadTestingOperation table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 | UserAgent | string | HTTP header passed by the client, if applicable. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

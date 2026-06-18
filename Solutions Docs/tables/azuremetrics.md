@@ -20,6 +20,7 @@ Reference for AzureMetrics table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -71,6 +72,12 @@ Reference for AzureMetrics table in Azure Monitor Logs.
 | Total | real | Sum of all of the values in the time range. |
 | Type | string | The name of the table |
 | UnitName | string | Unit of the metric. Examples include Seconds Percent Bytes. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

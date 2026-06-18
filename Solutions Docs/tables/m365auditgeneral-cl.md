@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (321 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP%5CData%20Connectors%5CM365AuditDLP_CCF/M365Audit_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditDLP_CCF/M365Audit_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -343,6 +344,12 @@
 | WorkSpaceName | string | The name of the workspace where the event occurred |
 | WpaUserRole | string | The Viva Insights role of the user who performed the action |
 | YammerNetworkId | long | Network ID of the user that performed the operation |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

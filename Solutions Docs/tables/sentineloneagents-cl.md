@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (69 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Agents.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_ccp/table%20-%20Agents.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -95,6 +96,12 @@
 | UpdatedAt | datetime | The timestamp (UTC) when the object was last updated. |
 | UserActionsNeeded | string | Details of the user actions needed. |
 | Uuid | string | The unique identifier for the object. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

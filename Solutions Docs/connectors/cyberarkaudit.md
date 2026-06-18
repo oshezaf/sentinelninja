@@ -97,7 +97,7 @@ If you're already signed in, go to the next step.
 
 	d. **Enter a globally unique name for the function app:** Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions. (e.g. CyberArkXXXXX).
 
-	e. **Select a runtime:** Choose Python 3.10.
+	e. **Select a runtime:** Choose Python 3.12.
 
 	f. Select a location for new resources. For better performance and lower costs choose the same [region](https://azure.microsoft.com/regions/) where Microsoft Sentinel is located.
 

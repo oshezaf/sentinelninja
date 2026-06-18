@@ -16,6 +16,12 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests)
@@ -47,6 +53,12 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |
 | UserId | string | The user id associated with the client issuing the request. |
 | WriteResponse | string | The server-side write request latency for this request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

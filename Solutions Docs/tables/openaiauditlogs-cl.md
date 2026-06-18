@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI%5CData%20Connectors%5COpenAI_CCP/OpenAIAuditLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAIAuditLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -32,6 +33,12 @@
 | Id | string | The ID of this log |
 | Project | dynamic | The project that the action was scoped to |
 | TimeGenerated | datetime |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

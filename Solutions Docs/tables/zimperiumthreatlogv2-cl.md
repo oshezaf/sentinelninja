@@ -13,13 +13,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (104 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense%5CData%20Connectors%5CZimperiumMTD_CCF/ZimperiumThreatLogV2_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense/Data%20Connectors/ZimperiumMTD_CCF/ZimperiumThreatLogV2_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -128,6 +129,12 @@
 | vulnerable_security_patch | string |
 | zdevice_id | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -144,21 +151,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZimperiumMTDCCFWorkbooks](../content/zimperium-mobile-threat-defense-zimperiummtdccfworkbooks-2bb0d331.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZimperiumMTDCCFWorkbooks](../content/github-only-zimperiummtdccfworkbooks-92ace659.md) |  |
 
 ---
 

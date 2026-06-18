@@ -16,6 +16,12 @@ Reference for MCVPOperationLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpoperationlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpoperationlogs)
@@ -37,6 +43,12 @@ Reference for MCVPOperationLogs table in Azure Monitor Logs.
 | TraceId | string | An identifier for distributed tracing through a system (W3C TraceContext). |
 | Type | string | The name of the table |
 | VehicleId | string | Unique vehicle identifier. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

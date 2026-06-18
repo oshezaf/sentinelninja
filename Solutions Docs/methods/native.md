@@ -20,8 +20,8 @@ Native connectors provide built-in integration with Microsoft services and are t
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **18** |
-| Active | 16 |
+| Total Connectors | **17** |
+| Active | 15 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 1 |
 
@@ -36,15 +36,14 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Dynamics 365](../connectors/dynamics365.md) | Microsoft | 1 | [Dynamics 365](../solutions/dynamics-365.md) |
 | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) ➕ | Microsoft | 1 | [Microsoft 365](../solutions/microsoft-365.md) |
 | [Microsoft 365 Assets (formerly, Office 365)](../connectors/m365assets.md) ⚠️ | Microsoft | ? | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
-| [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Microsoft | 1 | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
-| [Microsoft Defender for IoT](../connectors/iot.md) | Microsoft | 1 | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | Microsoft | 1 | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
+| [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Microsoft | ? | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
+| [Microsoft Defender for IoT](../connectors/iot.md) | Microsoft | ? | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
+| [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | Microsoft | ? | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
-| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) ➕ | Microsoft | 22 | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Microsoft PowerBI](../connectors/officepowerbi.md) | Microsoft | 1 | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [Microsoft Project](../connectors/office365project.md) | Microsoft | 1 | [Microsoft Project](../solutions/microsoft-project.md) |
 | [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md) ➕ | Microsoft | 1 | [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md) |
-| [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
+| [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | Microsoft | ? | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | Microsoft | 1 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 3 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |

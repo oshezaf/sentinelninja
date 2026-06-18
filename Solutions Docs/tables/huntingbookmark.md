@@ -19,6 +19,7 @@ Reference for HuntingBookmark table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
@@ -53,6 +54,12 @@ Reference for HuntingBookmark table in Azure Monitor Logs.
 | Type | string |  |
 | UpdatedBy | string | JSON object with the user who last updated the bookmark, including: ObjectID, email and name |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -61,9 +68,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (2)
 
-### Workbooks (4)
+### Workbooks (2)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
@@ -71,13 +78,6 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ---
 

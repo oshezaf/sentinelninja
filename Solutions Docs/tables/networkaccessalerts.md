@@ -47,6 +47,12 @@ Reference for NetworkAccessAlerts table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | VendorName | string | The name of the vendor that raised the alert, this value is displayed to users as is. For most internal security products alerts it should be set as 'Microsoft'. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

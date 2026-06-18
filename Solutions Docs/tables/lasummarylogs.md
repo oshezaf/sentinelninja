@@ -19,7 +19,7 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
-- [Content Items](#content-items-using-this-table)
+- [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
 ## Schema (16 columns)
@@ -45,17 +45,13 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The bin execution start time (UTC). It represents the time bin processing started, and decoupled from bin time range. For example, TimeGenerated can be 2023-01-01T3:05:10.123Z when processing hourly bin between 2:00 - 3:00. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [SummaryRulesWorkbook](../content/github-only-summaryrulesworkbook-d89cc3ca.md) |  |
 
 ## Resource Types
 

@@ -56,6 +56,12 @@ Reference for WindowsServerAssessmentRecommendation table in Azure Monitor Logs.
 | WebServer | string |  |
 | WebSite | string |  |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

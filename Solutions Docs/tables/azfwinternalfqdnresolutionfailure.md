@@ -20,6 +20,7 @@ Reference for AZFWInternalFqdnResolutionFailure table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -46,6 +47,12 @@ Reference for AZFWInternalFqdnResolutionFailure table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

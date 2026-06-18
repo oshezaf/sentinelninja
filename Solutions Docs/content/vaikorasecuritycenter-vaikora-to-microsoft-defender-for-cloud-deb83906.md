@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Vaikora_SecurityAlerts_CL`](../tables/vaikora-securityalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) | ✗ | ✓ | ✗ |
 
 ## Logic App Connectors
 
@@ -43,7 +43,7 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Poll_Vaikora_Actions | GET | `https://api.vaikora.com/api/v1/actions` | — |
+| Poll_Vaikora_Actions | GET | `@{outputs('Compose_Poll_Endpoint')}` | — |
 
 </details>
 

@@ -44,6 +44,12 @@ Reference for GraphNotificationsActivityLogs table in Azure Monitor Logs.
 | WorkloadNamespace | string | The workload for which notification gets delivered |
 | WorkloadResource | string | The details related to the resource |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

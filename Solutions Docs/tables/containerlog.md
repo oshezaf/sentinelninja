@@ -16,6 +16,12 @@ Reference for ContainerLog table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerlog) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerlog)
@@ -37,6 +43,12 @@ Reference for ContainerLog table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time the record was created. |
 | TimeOfCommand | datetime | Time that the agent processed the log. This is an optional field mainly useful for troubleshooting latency issues on the agent. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

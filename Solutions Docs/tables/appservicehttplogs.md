@@ -19,6 +19,7 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -56,6 +57,12 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserAgent | string | User agent on HTTP request |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (2)
 
 This table is used by the following solutions:
@@ -65,7 +72,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (2)
 
@@ -80,14 +87,6 @@ This table is used by the following solutions:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.md) |  |
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

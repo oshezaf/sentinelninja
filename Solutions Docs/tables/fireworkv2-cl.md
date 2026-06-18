@@ -15,13 +15,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (41 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare%5CData%20Connectors%5CFlareFireworkEventLogs_ccp/FlareFireworkEventLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -66,6 +67,12 @@
 | user_notes | string | User notes on the event |
 | user_risk_score | int | User-assigned risk score override |
 | victim_name | string | Victim name if applicable |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

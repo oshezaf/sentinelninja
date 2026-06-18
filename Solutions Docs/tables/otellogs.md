@@ -17,6 +17,12 @@ Reference for OTelLogs table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otellogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (45 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otellogs)
@@ -68,6 +74,12 @@ Reference for OTelLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserAccountId | string | Service-defined account associated with the user. |
 | UserId | string | Anonymous ID of a user accessing the service. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

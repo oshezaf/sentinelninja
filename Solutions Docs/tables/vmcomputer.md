@@ -18,6 +18,7 @@ Reference for VMComputer table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -86,6 +87,12 @@ Reference for VMComputer table in Azure Monitor Logs.
 | VirtualMachineNativeId | string | The native id of the server. |
 | VirtualMachineNativeName | string | The name of the VM |
 | VirtualMachineType | string | hyperv vmware xen and so on |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

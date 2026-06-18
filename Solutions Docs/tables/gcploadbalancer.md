@@ -54,6 +54,12 @@ Reference for GCPLoadBalancer table in Azure Monitor Logs.
 | UserAgent | string | The user agent of the request. |
 | Zone | string | The Zone name of the Load Balancer. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

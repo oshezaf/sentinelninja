@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (82 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR%5CData%20Connectors%5CContrastADRCCF/table_attackevents.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADRCCF/table_attackevents.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -108,6 +109,12 @@
 | vectorAnalysis | dynamic |
 | vectorAnalysis_callLocation | string |
 | vectorAnalysis_vectorFields | dynamic |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

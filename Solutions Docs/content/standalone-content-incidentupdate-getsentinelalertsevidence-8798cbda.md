@@ -23,16 +23,6 @@ This content item queries data from the following tables:
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [DerdackSIGNL4](../connectors/derdacksignl4.md) | [SIGNL4](../solutions/signl4.md) |
-
-**Solutions:** [SIGNL4](../solutions/signl4.md)
-
 ## Logic App Connectors
 
 This playbook uses **4** Logic App connectors / built-in actions:

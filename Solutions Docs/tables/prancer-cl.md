@@ -16,6 +16,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -136,6 +137,12 @@
 | TimeGenerated | datetime |
 | Type | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -152,7 +159,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (14)
 
 ### Analytic Rules (11)
 
@@ -181,19 +188,13 @@ This table is ingested by the following connectors:
 | [Hunting Query for Failed CSPM Scan Items](../content/prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-f3f9773b.md) |  |
 | [Hunting Query for High Severity PAC findings](../content/prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-27744bcd.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [PrancerSentinelAnalytics](../content/prancer-pensuiteai-integration-prancersentinelanalytics-cba49168.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [PrancerSentinelAnalytics](../content/github-only-prancersentinelanalytics-43012f16.md) |  |
 
 ---
 

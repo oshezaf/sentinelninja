@@ -19,7 +19,7 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
-- [Content Items](#content-items-using-this-table)
+- [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
 ## Schema (27 columns)
@@ -56,17 +56,13 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 | TotalRowCount | long | The total number of rows in the table |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:** `TableName !contains "raw"`<br>`TableName contains "raw"`
-
-| Workbook |
-|:-------------|
-| [ADXvsLA](../content/github-only-adxvsla-0ddedeb5.md) |
 
 ## Resource Types
 

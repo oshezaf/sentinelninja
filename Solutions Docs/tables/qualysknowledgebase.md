@@ -21,6 +21,7 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -59,6 +60,12 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 | VendorReferenceUrl | dynamic | URL for vendor-specific reference. |
 | VulnTitle | string | Title of the ingested vulnerability. |
 | VulnType | string | Type or classification of the vulnerability. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

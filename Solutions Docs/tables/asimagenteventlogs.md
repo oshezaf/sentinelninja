@@ -18,6 +18,7 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -101,6 +102,12 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 | ToolName | string | The name of the tool used in the event. |
 | ToolOriginalType | string | The original type of the tool as reported by the source. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

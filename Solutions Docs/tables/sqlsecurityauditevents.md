@@ -16,6 +16,12 @@ Reference for SQLSecurityAuditEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlsecurityauditevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (56 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlsecurityauditevents)
@@ -78,6 +84,12 @@ Reference for SQLSecurityAuditEvents table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserDefinedEventId | int | User defined event id passed as an argument to sp_audit_write. |
 | UserDefinedInformation | string | Used to record any extra information the user wants to record in audit log by using the sp_audit_write stored procedure. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

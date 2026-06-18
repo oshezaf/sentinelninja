@@ -16,6 +16,12 @@ Reference for StorageMoverJobRunLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagemoverjobrunlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (12 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagemoverjobrunlogs)
@@ -34,6 +40,12 @@ Reference for StorageMoverJobRunLogs table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time in UTC when the log was generated on the Storage Mover agent. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

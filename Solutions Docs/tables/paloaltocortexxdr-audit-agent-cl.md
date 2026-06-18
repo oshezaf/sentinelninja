@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR%5CData%20Connectors%5CCortexXDR_ccp/table_agent.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR/Data%20Connectors/CortexXDR_ccp/table_agent.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -37,6 +38,12 @@
 | TimeGenerated | datetime | The time when the record was generated |
 | Timestamp | datetime | The timestamp of the event |
 | TrapsVersion | string | Version of the Traps agent installed on the endpoint |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (2)
 

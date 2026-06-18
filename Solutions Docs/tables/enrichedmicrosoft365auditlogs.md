@@ -19,6 +19,7 @@ Reference for EnrichedMicrosoft365AuditLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
@@ -52,6 +53,12 @@ Reference for EnrichedMicrosoft365AuditLogs table in Azure Monitor Logs.
 | UserKey | string | An alternative ID for the user identified in the UserId property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange. This property may also specify the same value as the UserID property for events occurring in other services and events performed by system accounts. |
 | UserType | string | The type of user that performed the operation. |
 | Workload | string | The Office 365 service where the activity occurred. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

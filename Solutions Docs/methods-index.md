@@ -12,18 +12,19 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **185** | 149 | 1 | 35 |
+| [CCF](methods/ccf.md) | **186** | 149 | 1 | 36 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
 | [Azure Function](methods/azure-function.md) | **127** | 84 | 27 | 16 |
 | [REST Pull API](methods/rest-pull-api.md) | **51** | 35 | 1 | 15 |
 | [CCF Push](methods/ccf-push.md) | **41** | 39 | 0 | 2 |
-| [Native](methods/native.md) | **18** | 16 | 1 | 1 |
 | [Unknown](methods/unknown.md) | **17** | 17 | 0 | 0 |
+| [Native](methods/native.md) | **17** | 15 | 1 | 1 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
+| [Defender](methods/defender.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **639** | **406** | **153** | **80** |
+| **Total** | **640** | **406** | **153** | **81** |
 
 ---
 

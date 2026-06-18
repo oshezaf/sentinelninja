@@ -16,6 +16,12 @@ Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appplatformingresslogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appplatformingresslogs)
@@ -50,6 +56,12 @@ Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 | UpstreamResponseLength | string | The length in bytes of the response obtained from the upstream server |
 | UpstreamResponseTime | string | Time spent on receiving the response from the upstream server, the time is kept in seconds with millisecond resolution |
 | UpstreamStatus | string | Status code of the response obtained from the upstream server |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

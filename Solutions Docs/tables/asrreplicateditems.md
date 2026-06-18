@@ -16,6 +16,12 @@ Reference for ASRReplicatedItems table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrreplicateditems) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (40 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrreplicateditems)
@@ -62,6 +68,12 @@ Reference for ASRReplicatedItems table in Azure Monitor Logs.
 | VaultName | string | Name of the vault associated with the replicated item. |
 | VaultType | string | Type of the vault associated with the replicated item. |
 | Version | string | The API version. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

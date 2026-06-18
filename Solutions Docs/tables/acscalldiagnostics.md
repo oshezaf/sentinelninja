@@ -16,6 +16,12 @@ Reference for ACSCallDiagnostics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscalldiagnostics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (38 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscalldiagnostics)
@@ -60,6 +66,12 @@ Reference for ACSCallDiagnostics table in Azure Monitor Logs.
 | VideoBitRateAvg | int | Average bitrate. |
 | VideoBitRateMax | int | Maximum bitrate. |
 | VideoFrameRateAvg | real | Average frames per second. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

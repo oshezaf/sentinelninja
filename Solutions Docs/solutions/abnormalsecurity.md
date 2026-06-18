@@ -30,7 +30,7 @@ The Abnormal Security solution provides real-time security event ingestion from 
 This solution provides **2 data connector(s)**:
 
 - [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶
-- [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶
+- [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -42,15 +42,15 @@ This solution uses **11 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
-| [`ABNORMAL_SECURITY_ABUSE_MAILBOX_CL`](../tables/abnormal-security-abuse-mailbox-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_AUDIT_LOG_CL`](../tables/abnormal-security-audit-log-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_CASE_CL`](../tables/abnormal-security-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_LOGS_CL`](../tables/abnormal-security-logs-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_POSTURE_CHANGE_CL`](../tables/abnormal-security-posture-change-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_REMEDIATION_CL`](../tables/abnormal-security-remediation-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_THREAT_LOG_CL`](../tables/abnormal-security-threat-log-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
-| [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_ABUSE_MAILBOX_CL`](../tables/abnormal-security-abuse-mailbox-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_AUDIT_LOG_CL`](../tables/abnormal-security-audit-log-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_CASE_CL`](../tables/abnormal-security-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_LOGS_CL`](../tables/abnormal-security-logs-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_POSTURE_CHANGE_CL`](../tables/abnormal-security-posture-change-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_REMEDIATION_CL`](../tables/abnormal-security-remediation-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_THREAT_LOG_CL`](../tables/abnormal-security-threat-log-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
 
 

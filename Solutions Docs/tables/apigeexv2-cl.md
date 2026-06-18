@@ -6,6 +6,12 @@
 
 ---
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (9 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ApigeeXV2_CL.json)
@@ -21,6 +27,12 @@
 | severity | string |
 | TimeGenerated | datetime |
 | timestamp | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

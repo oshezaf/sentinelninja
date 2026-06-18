@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (9 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar%5CData%20Connectors%5CNordStellar_ccf/table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -31,6 +32,12 @@
 | RiskLevel | string | NordStellar risk level: CRITICAL, HIGH, MEDIUM, LOW, or INFORMATIONAL. |
 | Tags | dynamic | Tags attached to the event. |
 | TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel. Derived from event.date_added (leaked-data, dark-web, domain-permutation), event.detected_at (attack-surface), or the envelope time field as fallback. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

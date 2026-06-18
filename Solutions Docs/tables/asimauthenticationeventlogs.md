@@ -20,6 +20,7 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -164,6 +165,12 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (4)
 
 This table is used by the following solutions:
@@ -181,7 +188,7 @@ This table is ingested by the following connectors:
 |:----------|:-------------------|
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
 
 ---
 
@@ -214,6 +221,21 @@ This table is ingested by the following connectors:
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/authenticationevent`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 1 | - | - | - | **1** |
+| **Total** | **1** | **0** | **0** | **0** | **1** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Carbon Black Cloud` | `VMWare` | 1 | - | - | - | **1** |
 
 ---
 

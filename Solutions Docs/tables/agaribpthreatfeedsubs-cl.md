@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (5 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari%5CData%20Connectors%5CAgari_CCF/table_AgariBPThreatFeedSubs.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/table_AgariBPThreatFeedSubs.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -27,6 +28,12 @@
 | ThreatFeedId | long | Identifier of the parent threat feed |
 | TimeGenerated | datetime |  |
 | Uri | string | URL IoC extracted from the threat feed submission |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

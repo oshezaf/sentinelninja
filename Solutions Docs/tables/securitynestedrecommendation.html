@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SecurityNestedRecommendation &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -37,19 +39,29 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (4)</h2>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (3)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
 <li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (6)</h2>
-<h3 id="analytic-rules">Analytic Rules (2)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
-<table>
+<table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Analytic Rule</th>
@@ -63,22 +75,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-vulnerable-machines-related-to-omigod-cve-2021-38647-4d94d4a9-dc96-450a-9dea-4d4d4594199b-99c76b14.html">Vulnerable Machines related to OMIGOD CVE-2021-38647</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (4)</h3>
+<h3 id="workbooks">Workbooks (3)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -124,26 +121,35 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

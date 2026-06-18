@@ -34,7 +34,7 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -42,7 +42,6 @@ This solution uses **5 table(s)**:
 | [`ABAPAuthorizationDetails_CL`](../tables/abapauthorizationdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
 | [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md), [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
 | [`ABAPUserDetails_CL`](../tables/abapuserdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
-| [`SentinelHealth`](../tables/sentinelhealth.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
 
 ## Content Items
 

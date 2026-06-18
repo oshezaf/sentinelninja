@@ -48,6 +48,12 @@ Reference for ABAPUserDetails table in Azure Monitor Logs.
 | UserType | string | User Type (dialog, system). |
 | ValidityDate | datetime | Last valid day for login in. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

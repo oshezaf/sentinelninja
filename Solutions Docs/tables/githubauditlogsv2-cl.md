@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (232 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGitHubAuditLogs_AzStorage/table_GitHubAuditLogsV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GitHubAuditLogs_AzStorage/table_GitHubAuditLogsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -258,6 +259,12 @@
 | VulnerabilityAlertRuleName | string | The name of the vulnerability alert rule. |
 | WorkflowId | real | The numeric identifier of the workflow. |
 | WorkflowRunId | real | The numeric identifier of the workflow run. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -16,6 +16,12 @@ Reference for AddonAzureBackupPolicy table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackuppolicy) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (86 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/addonazurebackuppolicy)
@@ -108,6 +114,12 @@ Reference for AddonAzureBackupPolicy table in Azure Monitor Logs.
 | YearlyRetentionMonthsOfTheYear | string |  |
 | YearlyRetentionTimes | string |  |
 | YearlyRetentionWeeksOfTheMonth | string |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

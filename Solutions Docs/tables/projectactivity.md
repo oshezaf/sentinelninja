@@ -20,6 +20,7 @@ Reference for ProjectActivity table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -53,6 +54,12 @@ Reference for ProjectActivity table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserType | string | The type of user that performed the operation. |
 | Workload | string | The Office 365 service where the activity occurred. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

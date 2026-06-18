@@ -16,6 +16,12 @@ Reference for AOIStorage table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aoistorage) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (55 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aoistorage)
@@ -77,6 +83,12 @@ Reference for AOIStorage table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Uri | string | Uniform resource identifier that is requested. |
 | UserAgentHeader | string | The User-Agent header value, in quotes. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

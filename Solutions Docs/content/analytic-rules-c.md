@@ -71,7 +71,7 @@
 | [Cisco SEG - Potential phishing link](ciscoseg-cisco-seg-potential-phishing-link-2e5158e1-9fc2-40ff-a909-c701a13a0405-0b87976a.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Suspicious link](ciscoseg-cisco-seg-suspicious-link-506291dd-8050-4c98-a92f-58e376080a0a-090fa657.md) | High | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Suspicious sender domain](ciscoseg-cisco-seg-suspicious-sender-domain-ef0a253c-95b5-48e1-8ebc-dbeb073b9338-8e5c2362.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
-| [Cisco SEG - Unexpected attachment](ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md) | High | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
+| [Cisco SEG - Unexpected attachment](ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-e6c2dafa.md) | High | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Unexpected link](ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Unscannable attacment](ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco Umbrella - Connection to non-corporate private network](github-only-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-d0eaf302.md) | Medium | 🔗 GitHub Only |

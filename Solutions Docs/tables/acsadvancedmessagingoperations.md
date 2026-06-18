@@ -16,6 +16,12 @@ Reference for ACSAdvancedMessagingOperations table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsadvancedmessagingoperations) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsadvancedmessagingoperations)
@@ -45,6 +51,12 @@ Reference for ACSAdvancedMessagingOperations table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | Type | string | The name of the table |
 | URI | string | The URI of the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

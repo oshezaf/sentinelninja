@@ -50,6 +50,12 @@ Reference for MicrosoftGraphPolicyLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserId | string | The object ID of the user for delegated (user + app) calls. Empty for app-only calls. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

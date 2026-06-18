@@ -16,6 +16,12 @@ Reference for WVDConnections table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnections) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (33 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnections)
@@ -55,6 +61,12 @@ Reference for WVDConnections table in Azure Monitor Logs.
 | TransportType | string | The type of transport used by the RDP connection: Shortpath, TURN, Websocket. |
 | Type | string | The name of the table |
 | UserName | string | The user who initiated the connection. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -16,6 +16,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -99,6 +100,12 @@
 | user_tenantId_s | string |
 | vpnLocation_name_s | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -115,21 +122,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Perimeter 81](../solutions/perimeter-81.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Perimeter81OverviewWorkbook](../content/perimeter-81-perimeter81overviewworkbook-167f2993.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Perimeter81OverviewWorkbook](../content/github-only-perimeter81overviewworkbook-c7882438.md) |  |
 
 ---
 

@@ -16,6 +16,12 @@ Reference for LIATrackingEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/liatrackingevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (34 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/liatrackingevents)
@@ -56,6 +62,12 @@ Reference for LIATrackingEvents table in Azure Monitor Logs.
 | WorkflowSubscriptionId | string | The subscription ID of the workflow. |
 | WorkflowSystemId | string | The workflow system tracking ID. |
 | WorkflowVersion | string | The version of the workflow. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

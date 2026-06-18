@@ -20,6 +20,7 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -79,6 +80,12 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 | UniqueTokenIdentifier | string | Unique token identifier for the request |
 | UserAgent | string | User Agent for the sign-in |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (5)
 
 This table is used by the following solutions:
@@ -99,7 +106,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (1)
 
@@ -109,7 +116,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-### Workbooks (8)
+### Workbooks (3)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`
 
@@ -128,16 +135,6 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AADManagedIdentitySignInLogs](../content/github-only-aadmanagedidentitysigninlogs-e106dbaf.md) | `ResultType == "0"`<br>`ResultType != "0"` |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ## Parsers Using This Table (1)
 

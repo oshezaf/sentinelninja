@@ -16,6 +16,12 @@ Reference for HDInsightSparkEnvironmentEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightsparkenvironmentevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightsparkenvironmentevents)
@@ -46,6 +52,12 @@ Reference for HDInsightSparkEnvironmentEvents table in Azure Monitor Logs.
 | YarnMaxAttempts | int | The max number of attempts Yarn will make for the application. |
 | YarnQueue | string | The type of YARN queue for the application. |
 | YarnTags | string | The YARN tag of the application. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

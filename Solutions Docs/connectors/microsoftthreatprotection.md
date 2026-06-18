@@ -13,7 +13,7 @@
 | **Connector ID** | `MicrosoftThreatProtection` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| **Collection Method** | [Native](../methods/native.md) |
+| **Collection Method** | [Defender](../methods/defender.md) |
 | **Connector Definition Files** | [MicrosoftThreatProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Data%20Connectors/MicrosoftThreatProtection.JSON) |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-defender-xdr) |
 
@@ -47,7 +47,6 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ? |
@@ -66,8 +65,6 @@ This connector ingests data into the following tables:
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ? |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ | ✓ |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | ✓ | ✗ | ✓ |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ? |
 
 ## Permissions

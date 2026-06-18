@@ -16,6 +16,12 @@ Reference for CDBMongoRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbmongorequests) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbmongorequests)
@@ -50,6 +56,12 @@ Reference for CDBMongoRequests table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |
 | UserId | string | The user ID associated with the client issuing the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -20,6 +20,7 @@ Reference for AADUserRiskEvents table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -58,6 +59,12 @@ Reference for AADUserRiskEvents table in Azure Monitor Logs.
 | UserId | string | Unique ID of the user. |
 | UserPrincipalName | string | The user principal name (UPN) of the user. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (7)
 
 This table is used by the following solutions:
@@ -80,9 +87,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (6)
 
-### Workbooks (12)
+### Workbooks (6)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -119,17 +126,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

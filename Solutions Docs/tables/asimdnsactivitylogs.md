@@ -21,6 +21,7 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
@@ -174,6 +175,12 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | TransactionIdHex | string | The DNS unique hex transaction ID. |
 | Type | string | The name of the table |
 | UrlCategory | string | A DNS event source may also look up the category of the requested Domains. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Additional Information
 

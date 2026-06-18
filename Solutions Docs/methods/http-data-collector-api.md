@@ -67,7 +67,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
-| [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
+| [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Derdack | 1 | [SIGNL4](../solutions/signl4.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | [REST Pull API](../methods/rest-pull-api.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [ESET Inspect](../connectors/esetinspect.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
@@ -98,7 +98,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |

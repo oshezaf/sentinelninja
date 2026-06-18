@@ -13,13 +13,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (29 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF%5CData%20Connectors%5CCitrixAnalytics_CCF/CitrixAnalytics_tableCVADEvents.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF/Data%20Connectors/CitrixAnalytics_CCF/CitrixAnalytics_tableCVADEvents.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -52,6 +53,12 @@
 | timestamp | datetime |
 | version | int |
 | workspaceAppStatus | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

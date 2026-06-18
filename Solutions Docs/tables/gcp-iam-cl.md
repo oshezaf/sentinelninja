@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -104,6 +105,12 @@
 | TimeGenerated | datetime |
 | timestamp_t | datetime |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (5)
 
 This table is used by the following solutions:
@@ -124,7 +131,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (27)
+## Content Items Using This Table (25)
 
 ### Analytic Rules (10)
 
@@ -160,7 +167,7 @@ This table is ingested by the following connectors:
 | [GCP IAM - Top service accounts by failed actions](../content/googlecloudplatformiam-gcp-iam-top-service-accounts-by-failed-actions-27234847-8d3f-4d33-a3ef-5d3ec2575154-690da1f5.md) |  |
 | [GCP IAM - Top source IP addresses with failed actions](../content/googlecloudplatformiam-gcp-iam-top-source-ip-addresses-with-failed-actions-2f906618-68e1-49ae-a961-8483cb7b6523-0c683ae9.md) |  |
 
-### Workbooks (7)
+### Workbooks (5)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -191,13 +198,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

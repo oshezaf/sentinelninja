@@ -16,6 +16,12 @@ Reference for AMSStreamingEndpointRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amsstreamingendpointrequests) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amsstreamingendpointrequests)
@@ -37,6 +43,12 @@ Reference for AMSStreamingEndpointRequests table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) when the event was generated. |
 | Type | string | The name of the table |
 | URL | string | The streaming URL from Azure Media Services. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

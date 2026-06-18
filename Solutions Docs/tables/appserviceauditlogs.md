@@ -19,7 +19,7 @@ Reference for AppServiceAuditLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
-- [Content Items](#content-items-using-this-table)
+- [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
 ## Schema (14 columns)
@@ -43,17 +43,13 @@ Reference for AppServiceAuditLogs table in Azure Monitor Logs.
 | UserAddress | string | Client IP addres of the publishing user |
 | UserDisplayName | string | Email address of a user in case publishing was authorized via AAD authentication |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

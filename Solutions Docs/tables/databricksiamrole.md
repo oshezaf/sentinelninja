@@ -15,6 +15,12 @@ Reference for DatabricksIAMRole table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksiamrole) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (21 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databricksiamrole)
@@ -42,6 +48,12 @@ Reference for DatabricksIAMRole table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp of the action (UTC). |
 | Type | string | The name of the table |
 | UserAgent | string | The browser or API client used to make the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

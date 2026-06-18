@@ -15,6 +15,12 @@ Reference for WVDSessionHostManagement table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdsessionhostmanagement) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdsessionhostmanagement)
@@ -45,6 +51,12 @@ Reference for WVDSessionHostManagement table in Azure Monitor Logs.
 | UpdateMaxVmsRemoved | int | The maximum number of virtual machines that might become unavailable during the session host update operation. |
 | UpdateMethod | string | The method that is used for the session host update operation (e.g.: VmRecreate). |
 | UpdateStartWindowInMinutes | int | The window of allowable time for an update to start in minutes. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

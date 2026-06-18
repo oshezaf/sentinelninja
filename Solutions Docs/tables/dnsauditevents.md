@@ -17,6 +17,12 @@ Reference for DnsAuditEvents table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsauditevents) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (99 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsauditevents)
@@ -122,6 +128,12 @@ Reference for DnsAuditEvents table in Azure Monitor Logs.
 | ZoneName | string | The name of a DNS zone on which the zone which the event relates to. |
 | ZoneScope | string | A list of scopes and weights for the zone. |
 | ZoneSignatureValidityPeriod | int | The amount of time that signatures that cover all other record sets are valid. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

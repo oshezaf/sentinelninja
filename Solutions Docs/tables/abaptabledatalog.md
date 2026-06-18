@@ -50,6 +50,12 @@ Reference for ABAPTableDataLog table in Azure Monitor Logs.
 | User | string | The User who performed the a specific event or activity. |
 | VersionNumber | string | The version number of the event. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

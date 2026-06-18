@@ -47,6 +47,12 @@ Reference for MicrosoftServicePrincipalSignInLogs table in Azure Monitor Logs.
 | Type | string | For sign-ins, this value is always MicrosoftServicePrincipalSignInLogs |
 | UniqueTokenIdentifier | string | Unique token identifier for the request |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

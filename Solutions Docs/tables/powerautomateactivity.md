@@ -20,6 +20,7 @@ Reference for PowerAutomateActivity table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
@@ -55,6 +56,12 @@ Reference for PowerAutomateActivity table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserUpn | string | Unique ID of the user. Always equivalent to UserKey. |
 | Workload | string | The Office 365 service where the activity occurred. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Additional Information
 

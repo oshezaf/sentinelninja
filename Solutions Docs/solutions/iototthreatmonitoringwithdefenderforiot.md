@@ -49,7 +49,7 @@ The following **2 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | [Microsoft Defender for IoT](../connectors/iot.md) | Analytics, Playbooks |
+| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics, Playbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
 ## Content Items

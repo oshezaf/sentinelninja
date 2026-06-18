@@ -35,10 +35,7 @@ The [Network Security Group](https://docs.microsoft.com/azure/virtual-network/ne
 
 This solution provides **1 data connector(s)**:
 
-- [Network Security Groups](../connectors/azurensg.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Network Security Groups](../connectors/azurensg.md)
 
 ## Tables Used
 

@@ -20,6 +20,7 @@ Reference for PowerBIActivity table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -71,6 +72,12 @@ Reference for PowerBIActivity table in Azure Monitor Logs.
 | UserType | string | The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other. |
 | Workload | string | The Office 365 service where the activity occurred. |
 | WorkspaceId | string | The ID of the PowerBI workspace. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

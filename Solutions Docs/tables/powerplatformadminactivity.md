@@ -20,6 +20,7 @@ Reference for PowerPlatformAdminActivity table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
@@ -50,6 +51,12 @@ Reference for PowerPlatformAdminActivity table in Azure Monitor Logs.
 | TimeGenerated | datetime | The date and time in (UTC) when the user performed the activity. |
 | Type | string | The name of the table |
 | Workload | string | The Office 365 service where the activity occurred. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Additional Information
 

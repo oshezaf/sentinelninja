@@ -16,6 +16,12 @@ Reference for SignalRServiceDiagnosticLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signalrservicediagnosticlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signalrservicediagnosticlogs)
@@ -45,6 +51,12 @@ Reference for SignalRServiceDiagnosticLogs table in Azure Monitor Logs.
 | TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype. |
 | Type | string | The name of the table |
 | UserId | string | The user ID of the connection. It is defined by the client or app server. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

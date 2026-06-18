@@ -29,7 +29,7 @@ This playbook uses **1** Logic App connector / built-in action:
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Get_CrowdStrike_Token | POST | `@{parameters('CrowdStrike_BaseUrl')}/oauth2/token` | — |
-| Get_Vaikora_Actions | GET | `@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&per_page=100` | — |
+| Get_Vaikora_Actions | GET | `@{outputs('Compose_Poll_Endpoint')}` | — |
 | Post_IOC_to_CrowdStrike | POST | `@{parameters('CrowdStrike_BaseUrl')}/iocs/entities/indicators/v1?ignore_warnings=true` | — |
 
 </details>

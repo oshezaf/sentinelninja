@@ -16,6 +16,12 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent)
@@ -37,6 +43,12 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | TimeGenerated | datetime | The date and time the raw event was generated. |
 | TimeStamp | datetime | The date and time the raw event was first detected. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

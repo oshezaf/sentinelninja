@@ -15,6 +15,12 @@ Reference for AMAHealth table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amahealth) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (18 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amahealth)
@@ -39,6 +45,12 @@ Reference for AMAHealth table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 | VMUUID | string | The VM UUID of the virtual machine on which the agent is running. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

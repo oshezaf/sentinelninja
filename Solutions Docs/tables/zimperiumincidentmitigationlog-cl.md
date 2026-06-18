@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (6 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense%5CData%20Connectors%5CZimperiumMTD_CCF/ZimperiumIncidentMitigationLog_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense/Data%20Connectors/ZimperiumMTD_CCF/ZimperiumIncidentMitigationLog_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -28,6 +29,12 @@
 | incident_status | string |
 | incident_updated_date | datetime |
 | TimeGenerated | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (31 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk%5CData%20Connectors%5CMailRisk_CCP/table%20-%20MailRiskEmails.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/table%20-%20MailRiskEmails.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -55,6 +56,12 @@
 | SPF | string | The SPF (Sender Policy Framework) result for the email. |
 | Subject | string | The subject of the email. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

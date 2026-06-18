@@ -45,14 +45,6 @@ These alerts can be seen by Office customers in the ** Office Security and Compl
 
 For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2219942&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "OATP"` | ✓ | ✗ | ✓ |
-
 ## Permissions
 
 **Resource Provider Permissions:**

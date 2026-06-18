@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (191 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -215,6 +216,12 @@
 | VerificationMethod | string | The method by which the user attempted to verify identity (e.g., Email, Sms, U2F, Totp). |
 | VersionId | string | The specific version of a document in Salesforce CRM Content or Files. |
 | VersionNumber | string | The version number of the file. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

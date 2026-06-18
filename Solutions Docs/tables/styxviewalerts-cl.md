@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (29 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence%5CData%20Connectors%5CAlerts/StyxView%20Alerts_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence/Data%20Connectors/Alerts/StyxView%20Alerts_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -51,6 +52,12 @@
 | AlertTimestampOriginal | datetime |  |
 | AlertUuid | string |  |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

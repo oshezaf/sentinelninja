@@ -18,6 +18,7 @@ Reference for SentinelBehaviorEntities table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -77,6 +78,12 @@ Reference for SentinelBehaviorEntities table in Azure Monitor Logs.
 | ThreatFamily | string | Malware family that the suspicious or malicious file or process has been classified under. |
 | TimeGenerated | datetime | Date and time when the record was generated. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

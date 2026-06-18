@@ -21,6 +21,7 @@ Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -62,6 +63,12 @@ Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp when the log entry was created in AWS Network Firewall. |
 | Timestamp | datetime | The exact timestamp when the event was captured. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

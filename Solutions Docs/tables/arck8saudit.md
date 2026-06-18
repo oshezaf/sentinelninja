@@ -16,6 +16,12 @@ Reference for ArcK8sAudit table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit)
@@ -46,6 +52,12 @@ Reference for ArcK8sAudit table in Azure Monitor Logs.
 | User | dynamic | Authenticated user metadata of the requesting client, including optional fields such as UID and groups. |
 | UserAgent | string | The user agent string presented by the originating client. |
 | Verb | string | The Kubernetes verb associated with the request. For non-resource requests, this is the lower-cased HTTP method. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -6,16 +6,10 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
 ## Contents
 
 - [Schema](#schema)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
+- [Schema References](#schema-references)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (44 columns)
@@ -69,23 +63,13 @@
 | triaged_as_interesting_b | bool |
 | type_s | string |
 
-## Solutions (1)
+## Schema References
 
-This table is used by the following solutions:
+Official Microsoft Learn documentation for field/column information:
 
-- [Standalone Content](../solutions/standalone-content.md)
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
-
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Trust Monitor Event](../content/standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md) |  |
 
 ## Parsers Using This Table (1)
 

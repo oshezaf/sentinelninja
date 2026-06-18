@@ -15,6 +15,12 @@ Reference for AzureSQLDatabaseWaitStatistics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqldatabasewaitstatistics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (21 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqldatabasewaitstatistics)
@@ -42,6 +48,12 @@ Reference for AzureSQLDatabaseWaitStatistics table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp when the log was generated. |
 | Type | string | The name of the table |
 | WaitType | string | Wait type name. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -44,6 +44,12 @@ Microsoft 365-connected OAuth applications registered with Microsoft Entra ID an
 | Type | string | The name of the table |
 | VerifiedPublisher | dynamic | Specifies details about the verified publisher of the application which this service principal represents |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

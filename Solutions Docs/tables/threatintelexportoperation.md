@@ -18,6 +18,7 @@ Reference for ThreatIntelExportOperation table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -47,6 +48,12 @@ Reference for ThreatIntelExportOperation table in Azure Monitor Logs.
 | TimeExported | datetime | The time of export to destination (UTC). |
 | TimeGenerated | datetime | The timestamp of when the log entry was generated (UTC). |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

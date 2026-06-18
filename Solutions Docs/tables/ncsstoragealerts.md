@@ -16,6 +16,12 @@ Reference for NCSStorageAlerts table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ncsstoragealerts) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (21 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ncsstoragealerts)
@@ -43,6 +49,12 @@ Reference for NCSStorageAlerts table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (UTC) when the log was generated. |
 | Type | string | The name of the table |
 | User | string | Array user of the storage appliance. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

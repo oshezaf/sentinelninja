@@ -19,6 +19,7 @@ Reference for ConfigurationData table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -69,6 +70,12 @@ Reference for ConfigurationData table in Azure Monitor Logs.
 | ValueName | string | Name of the value for the registry key being tracked |
 | ValueType | string | Type of the value for the registry key being tracked |
 | VMUUID | string |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (2)
 

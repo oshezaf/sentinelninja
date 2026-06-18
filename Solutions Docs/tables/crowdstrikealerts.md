@@ -21,6 +21,7 @@ Reference for CrowdStrikeAlerts table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -139,6 +140,12 @@ Reference for CrowdStrikeAlerts table in Azure Monitor Logs.
 | Users | dynamic | List of users associated with the alert. |
 | VendorPatternId | string | Vendor-specific pattern identifier. |
 | XdrEventId | string | XDR event ID associated with the alert. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -57,6 +57,12 @@ Reference for MDCDetectionProcessV2Events table in Azure Monitor Logs.
 | UpperLayer | bool | Indicates if the container image uses an upper layer in the overlay filesystem. |
 | User | string | The username running the process inside the container. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

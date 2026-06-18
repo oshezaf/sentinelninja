@@ -16,6 +16,12 @@ Reference for KubeNodeInventory table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubenodeinventory) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (19 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubenodeinventory)
@@ -41,6 +47,12 @@ Reference for KubeNodeInventory table in Azure Monitor Logs.
 | Status | string | Comma separated list of node's status.conditions.type for conditions.status that are true. |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

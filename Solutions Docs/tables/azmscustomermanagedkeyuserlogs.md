@@ -16,6 +16,12 @@ Reference for AZMSCustomerManagedKeyUserLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmscustomermanagedkeyuserlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (16 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmscustomermanagedkeyuserlogs)
@@ -38,6 +44,12 @@ Reference for AZMSCustomerManagedKeyUserLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The event start time(UTC). |
 | Type | string | The name of the table |
 | Version | string | The version of the key-vault key. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

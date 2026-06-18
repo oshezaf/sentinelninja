@@ -57,6 +57,12 @@ Reference for MDCDetectionK8SApiEvents table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Url | string | The full url for this request. This will contain the scheme, host, port (if applicable), path, and query string. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

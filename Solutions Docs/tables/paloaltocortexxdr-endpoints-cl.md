@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR%5CData%20Connectors%5CCortexXDR_ccp/table_endpoint.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR/Data%20Connectors/CortexXDR_ccp/table_endpoint.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -34,6 +35,12 @@
 | Tags | dynamic | Tags or labels associated with the endpoint, stored as a dynamic object. |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Users | dynamic | List of users associated with the endpoint, stored as a dynamic object. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (2)
 

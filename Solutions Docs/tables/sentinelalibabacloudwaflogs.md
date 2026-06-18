@@ -112,6 +112,12 @@ Reference for SentinelAlibabaCloudWAFLogs table in Azure Monitor Logs.
 | WafRuleType | string | The type of the rule that is triggered. The rule is created for the Protection Rules Engine. Valid values: xss, code_exec, webshell, sqli, lfilei, rfilei, crlf, other |
 | WafTest | bool | The protection mode that is used for the client request after a rule created for the Protection Rules Engine is triggered. true: observation mode, false: prevention mode |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

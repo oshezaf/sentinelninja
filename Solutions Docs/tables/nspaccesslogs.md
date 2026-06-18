@@ -16,6 +16,12 @@ Reference for NSPAccessLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nspaccesslogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (40 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nspaccesslogs)
@@ -62,6 +68,12 @@ Reference for NSPAccessLogs table in Azure Monitor Logs.
 | TimeGeneratedEndTime | datetime | Timestamp indicating the end of event aggregation. |
 | TrafficType | string | Indicates whether traffic is 'Private', 'Public', 'Intra' or 'Cross' perimeter. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

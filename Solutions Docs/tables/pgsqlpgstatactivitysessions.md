@@ -16,6 +16,12 @@ Reference for PGSQLPgStatActivitySessions table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlpgstatactivitysessions) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlpgstatactivitysessions)
@@ -50,6 +56,12 @@ Reference for PGSQLPgStatActivitySessions table in Azure Monitor Logs.
 | UserId | int | ID (OID) of the user logged into this backend. |
 | WaitEvent | string | Wait event name if backend is currently waiting, otherwise empty string. |
 | WaitEventType | string | The type of event for which the backend is waiting, if any, otherwise empty string. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

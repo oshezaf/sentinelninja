@@ -14,9 +14,9 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (24 columns)
@@ -50,6 +50,12 @@
 | url_s | string |
 | userAgent_s | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -65,17 +71,6 @@ This table is ingested by the following connectors:
 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) |  |
 
 ---
-
-## Content Items Using This Table (2)
-
-### Workbooks (2)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
-| [ProofpointTAP](../content/github-only-proofpointtap-f64c9a5d.md) |  |
 
 ## Parsers Using This Table (1)
 

@@ -15,6 +15,12 @@ Reference for CDBDataPlaneRequests5M table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbdataplanerequests5m) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (40 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbdataplanerequests5m)
@@ -61,6 +67,12 @@ Reference for CDBDataPlaneRequests5M table in Azure Monitor Logs.
 | TotalResponseLength | real | The total payload size (in bytes) of the server response in this interval. |
 | Type | string | The name of the table |
 | UserAgent | string | The name of the user specified user agent suffix (as specified when initializing the Cosmos DB client) when running in Direct mode. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

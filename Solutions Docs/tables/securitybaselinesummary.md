@@ -19,6 +19,7 @@ Reference for SecurityBaselineSummary table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -55,6 +56,12 @@ Reference for SecurityBaselineSummary table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | WarningFailedRules | int |  |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -63,22 +70,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ## Resource Types
 

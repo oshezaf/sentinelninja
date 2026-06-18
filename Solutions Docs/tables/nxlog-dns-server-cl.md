@@ -6,6 +6,12 @@
 
 ---
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (69 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NXLog_DNS_Server_CL.json)
@@ -81,6 +87,12 @@
 | XID_s | string |
 | Zone_s | string |
 | ZoneScope_s | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

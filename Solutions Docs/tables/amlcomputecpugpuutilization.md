@@ -16,6 +16,12 @@ Reference for AmlComputeCpuGpuUtilization table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization)
@@ -50,6 +56,12 @@ Reference for AmlComputeCpuGpuUtilization table in Azure Monitor Logs.
 | Utilization | string | Compute utilization of node. |
 | WorkspaceId | string | Unique workspace identifer. |
 | WorkspaceName | string | User friendly workspace identifier. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

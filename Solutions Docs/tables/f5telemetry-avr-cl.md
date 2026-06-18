@@ -10,6 +10,18 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -18,21 +30,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [F5BIGIPSystemMetrics](../content/github-only-f5bigipsystemmetrics-f6e795e8.md) |  |
 
 ---
 

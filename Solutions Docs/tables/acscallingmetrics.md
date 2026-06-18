@@ -16,6 +16,12 @@ Reference for ACSCallingMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallingmetrics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (36 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallingmetrics)
@@ -58,6 +64,12 @@ Reference for ACSCallingMetrics table in Azure Monitor Logs.
 | TimestampMax | datetime | The max timestamp for each dimension. |
 | Type | string | The name of the table |
 | Unit | string | Unit of metric |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

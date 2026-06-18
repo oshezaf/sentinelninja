@@ -15,13 +15,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (26 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos%5CData%20Connectors%5CDragosSiteStore_CCP/table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -51,6 +52,12 @@
 | summary | string |
 | threatInfo | dynamic |
 | TimeGenerated | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

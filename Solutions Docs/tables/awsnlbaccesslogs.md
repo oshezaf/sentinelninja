@@ -20,6 +20,7 @@ Reference for AWSNLBAccessLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -57,6 +58,12 @@ Reference for AWSNLBAccessLogs table in Azure Monitor Logs.
 | TLSProtocolVersion | string | Version of the TLS protocol used (e.g., TLS 1.2, TLS 1.3). |
 | Type | string | The name of the table |
 | Version | string | Version of the NLB log format. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

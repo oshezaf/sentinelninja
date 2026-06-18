@@ -16,6 +16,12 @@ Reference for AGSGrafanaLoginEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agsgrafanaloginevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (19 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agsgrafanaloginevents)
@@ -41,6 +47,12 @@ Reference for AGSGrafanaLoginEvents table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | User | string | The user identity of the login event. |
 | UserRole | string | The Grafana role of the user for the login event. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

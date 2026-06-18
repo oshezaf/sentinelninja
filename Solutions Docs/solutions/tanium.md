@@ -36,10 +36,7 @@ The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables yo
 
 This solution provides **1 data connector(s)**:
 
-- [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Tanium's CCF Push Connector](../connectors/taniumconnector.md)
 
 ## Tables Used
 
@@ -47,19 +44,16 @@ This solution uses **10 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
-| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) 🔶 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Workbooks |
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | Analytics, Workbooks |
 
 ## Content Items
 

@@ -21,6 +21,7 @@ Reference for AWSVPCFlow table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -78,6 +79,12 @@ Reference for AWSVPCFlow table in Azure Monitor Logs.
 | Version | int | The VPC Flow Logs version. |
 | VpcId | string | The ID of the VPC. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (6)
 
 This table is used by the following solutions:
@@ -100,9 +107,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -127,14 +134,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) | `Action in "-,ACCEPT,REJECT"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

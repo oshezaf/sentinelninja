@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**96 products** with 92 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**97 products** with 93 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -75,6 +75,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Microsoft Windows Events Sysmon](#microsoft-windows-events-sysmon) | 4 | 2 | 2 |
 | [MS DNS Events](#ms-dns-events) | 2 | 1 | 2 |
 | [Native](#native) | 10 | 10 | 10 |
+| [Netskope Security Cloud](#netskope-security-cloud) | 1 | 1 | 1 |
 | [Okta](#okta) | 3 | 1 | 3 |
 | [OpenSSH](#openssh) | 1 | 1 | 1 |
 | [Palo Alto Cortex Data Lake](#palo-alto-cortex-data-lake) | 3 | 3 | 1 |
@@ -917,6 +918,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimRegistryEventNative](asimregistryeventnative.md)<br>vim: [vimRegistryEventNative](vimregistryeventnative.md) | RegistryEvent | [ASimRegistryEventLogs](../tables/asimregistryeventlogs.md) | 0.1.0 |
 | ASim: [ASimUserManagementNative](asimusermanagementnative.md)<br>vim: [vimUserManagementNative](vimusermanagementnative.md) | UserManagement | [ASimUserManagementActivityLogs](../tables/asimusermanagementactivitylogs.md) | 0.1.0 |
 | ASim: [ASimWebSessionNative](asimwebsessionnative.md)<br>vim: [vimWebSessionNative](vimwebsessionnative.md) | WebSession | [ASimWebSessionLogs](../tables/asimwebsessionlogs.md) | 0.1 |
+
+## Netskope Security Cloud
+
+**Schemas:** AlertEvent
+
+**Tables:** [NetskopeAlerts_CL](../tables/netskopealerts-cl.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAlertEventNetskopeSecurityCloud](asimalerteventnetskopesecuritycloud.md)<br>vim: [vimAlertEventNetskopeSecurityCloud](vimalerteventnetskopesecuritycloud.md) | AlertEvent | [NetskopeAlerts_CL](../tables/netskopealerts-cl.md) | 0.1.0 |
 
 ## Okta
 

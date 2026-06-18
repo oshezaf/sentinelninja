@@ -16,6 +16,12 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsoperational) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (44 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsoperational)
@@ -66,6 +72,12 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | WorkflowStatus | string | Running, Successful. |
 | WorkflowSubmissionKind | string | OnDemand or Scheduled. |
 | WorkflowType | string | Full or incremental refresh. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

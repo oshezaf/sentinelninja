@@ -15,17 +15,20 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (201 columns)
+## Schema (205 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeAlerts_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| _ItemId | string |
+| _ResourceId | string |
 | access_method | string |
 | account_id | string |
 | account_name | string |
@@ -95,7 +98,7 @@
 | exposure | string |
 | external_collaborator_count | int |
 | external_email | int |
-| file_cls_encrypted | bool |
+| file_cls_encrypted | int |
 | file_lang | string |
 | file_path | string |
 | file_size | int |
@@ -199,6 +202,7 @@
 | suppression_key | string |
 | suppression_start_time | int |
 | telemetry_app | string |
+| TenantId | string |
 | threat_match_field | string |
 | threat_match_value | string |
 | threat_source_id | int |
@@ -215,6 +219,7 @@
 | true_obj_type | string |
 | tss_mode | string |
 | two_factor_auth | string |
+| Type | string |
 | type_s | string |
 | universal_connector | string |
 | ur_normalized | string |
@@ -227,6 +232,12 @@
 | userkey | string |
 | userPrincipalName | string |
 | web_universal_connector | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 
@@ -254,7 +265,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NetskopeCCPDashboard](../content/netskopev2-netskopeccpdashboard-b47aef2b.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAlertEventNetskopeSecurityCloud](../asim/asimalerteventnetskopesecuritycloud.md) | AlertEvent | Netskope Security Cloud |  |
 
 ### Other Parsers (1)
 

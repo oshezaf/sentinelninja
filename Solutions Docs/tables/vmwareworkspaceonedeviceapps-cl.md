@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE%5CData%20Connectors%5CVMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDeviceApps.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDeviceApps.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -32,6 +33,12 @@
 | LatestUemActionTime | datetime | Timestamp of the most recent UEM action for this application. |
 | SizeInBytes | long | Application binary size in bytes. |
 | TimeGenerated | datetime | UTC timestamp when the record was ingested into Microsoft Sentinel. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

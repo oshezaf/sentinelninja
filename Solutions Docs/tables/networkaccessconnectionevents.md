@@ -76,6 +76,12 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | UserId | string | A machine-readable, alphanumeric, unique representation of the source user. |
 | UserPrincipalName | string | The source username, including domain information when available. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

@@ -39,6 +39,12 @@ Reference for UAIESiteDiscovery table in Azure Monitor Logs.
 | URL | string |  |
 | Zone | string |  |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

@@ -15,6 +15,12 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdautoscaleevaluationpooled) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (26 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdautoscaleevaluationpooled)
@@ -47,6 +53,12 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | TotalSessionHostCount | int | Number of session hosts in the host pool. |
 | Type | string | The name of the table |
 | UnhealthySessionHostCount | int | Number of session hosts in a faulty state. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

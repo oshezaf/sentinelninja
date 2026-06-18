@@ -20,6 +20,7 @@ Reference for AADServicePrincipalRiskEvents table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -59,6 +60,12 @@ Reference for AADServicePrincipalRiskEvents table in Azure Monitor Logs.
 | TokenIssuerType | string | Indicates the type of token issuer for the detected sign-in risk. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -75,24 +82,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (1)
 
-### Workbooks (5)
+### Workbooks (1)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

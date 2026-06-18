@@ -20,9 +20,9 @@ Reference for AADRiskyUsers table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (17 columns)
 
@@ -48,6 +48,12 @@ Reference for AADRiskyUsers table in Azure Monitor Logs.
 | UserDisplayName | string | Risky user display name. |
 | UserPrincipalName | string | Risky user principal name. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -63,18 +69,6 @@ This table is ingested by the following connectors:
 | [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
-
-## Content Items Using This Table (3)
-
-### Workbooks (3)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ---
 

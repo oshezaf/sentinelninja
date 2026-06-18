@@ -16,6 +16,12 @@ Reference for ADFSandboxActivityRun table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfsandboxactivityrun) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfsandboxactivityrun)
@@ -57,6 +63,12 @@ Reference for ADFSandboxActivityRun table in Azure Monitor Logs.
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 | UserProperties | string |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

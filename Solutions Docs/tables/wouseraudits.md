@@ -16,6 +16,12 @@ Reference for WOUserAudits table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouseraudits) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (20 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouseraudits)
@@ -42,6 +48,12 @@ Reference for WOUserAudits table in Azure Monitor Logs.
 | User | string | The Microsoft Entra ID object Id of the requester. |
 | WOServiceInstance | string | workload orchestration service pod name. |
 | WOServiceName | string | workload orchestration service name. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

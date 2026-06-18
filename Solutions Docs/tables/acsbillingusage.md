@@ -16,6 +16,12 @@ Reference for ACSBillingUsage table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsbillingusage) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (21 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsbillingusage)
@@ -43,6 +49,12 @@ Reference for ACSBillingUsage table in Azure Monitor Logs.
 | UsageType | string | The type of resource being consumed. |
 | UserIdA | string | User ID consuming the resource. |
 | UserIdB | string | User ID consuming the resource for consumables involving two users. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

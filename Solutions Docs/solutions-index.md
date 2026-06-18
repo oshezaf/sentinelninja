@@ -8,7 +8,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**543 solutions** with 509 unique connectors and 429 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**544 solutions** with 510 unique connectors and 429 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -114,6 +114,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blacklens.svg" alt="" width="40" height="40"> | [Blacklens](solutions/blacklens.md) | 2025-12-31 | 🟡 Low (11%) | blacklens.io Support |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blinkops.svg" alt="" width="40" height="40"> | [BlinkOps](solutions/blinkops.md) | 2025-05-05 | ⚪ Very Low (5%) | Blink Support |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="40" height="40"> | [BloodHound Enterprise](solutions/bloodhound-enterprise.md) ⚠️ | 2023-05-04 |  | SpecterOps |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BlueVoyant.svg" alt="" width="40" height="40"> | [BlueVoyant Anthropic ClaudeCompliance](solutions/bluevoyant-anthropic-claudecompliance.md) ⚠️ | 2026-06-09 |  | BlueVoyant |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="" width="40" height="40"> | [Box](solutions/box.md) | 2022-05-20 | 🔵 Medium (64%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) | 2022-05-02 | 🟡 Low (38%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md) | 2023-08-04 | 🟡 Low (43%) | Microsoft Corporation |
@@ -524,7 +525,7 @@ Browse solutions alphabetically:
 
 | | Solution | First Published | Popularity | Publisher |
 |:--:|----------|----------------|:----------:|----------|
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SailPointIdentityNow](solutions/sailpointidentitynow.md) | 2021-10-26 | 🟢 High (80%) | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SailPointIdentityNow](solutions/sailpointidentitynow.md) | 2021-10-26 | 🟢 High (80%) | SailPoint |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salem_logo.svg" alt="" width="40" height="40"> | [SalemCyber](solutions/salemcyber.md) ⚠️ | 2023-07-21 |  | Salem Cyber |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="40" height="40"> | [Salesforce Service Cloud](solutions/salesforce-service-cloud.md) | 2022-05-16 | 🟢 High (92%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="40" height="40"> | [Samsung Knox Asset Intelligence](solutions/samsung-knox-asset-intelligence.md) | 2025-01-15 | 🟢 High (83%) | Samsung Electronics Co., Ltd. |

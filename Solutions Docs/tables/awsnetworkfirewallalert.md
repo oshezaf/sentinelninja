@@ -20,6 +20,7 @@ Reference for AWSNetworkFirewallAlert table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -59,6 +60,12 @@ Reference for AWSNetworkFirewallAlert table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | VerdictAction | string | The final decision made by the firewall (e.g., pass, drop, alert). |
 | Version | string | The version of the log schema or Suricata rule format used. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

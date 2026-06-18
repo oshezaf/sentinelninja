@@ -19,8 +19,8 @@ Reference for SentinelHealth table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (17 columns)
@@ -47,41 +47,29 @@ Reference for SentinelHealth table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | WorkspaceId | string | The workspace ID. |
 
-## Solutions (2)
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
+## Solutions (1)
 
 This table is used by the following solutions:
 
-- [SAP](../solutions/sap.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) |  |
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (1)
 
-### Workbooks (5)
+### Workbooks (1)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):** `SentinelResourceType in "Automation rule,Playbook"`
 
 | Workbook |
 |:-------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) | `SentinelResourceType in "Automation rule,Playbook"` |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `SentinelResourceType has "Data connector"`<br>`SentinelResourceType has "analytics rule"` |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `SentinelResourceType in "Analytics Rule,Automation rule,Playbook"` |
-| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
 
 ## Selection Criteria Summary (1 criteria, 1 total references)
 

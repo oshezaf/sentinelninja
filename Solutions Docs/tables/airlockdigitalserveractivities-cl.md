@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (6 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalServerActivities.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/table_AirlockDigitalServerActivities.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -28,6 +29,12 @@
 | Task | string | Type of server task performed |
 | TimeGenerated | datetime |  |
 | User | string | User associated with the task |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

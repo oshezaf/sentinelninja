@@ -42,6 +42,12 @@
 | VnetResourceGroup | string | Azure resource group of Virtual Network. |
 | VnetSubscriptionId | string | Azure subscription ID of Virtual Network. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

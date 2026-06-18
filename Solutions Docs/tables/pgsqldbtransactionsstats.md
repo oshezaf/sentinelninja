@@ -16,6 +16,12 @@ Reference for PGSQLDbTransactionsStats table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqldbtransactionsstats) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqldbtransactionsstats)
@@ -50,6 +56,12 @@ Reference for PGSQLDbTransactionsStats table in Azure Monitor Logs.
 | UserId | int | Owner of the database, usually the user who created it. |
 | VacuumFreezeMinAge | int | Value of the parameter vacuum_freeze_min_age at the collection time. |
 | VacuumMultixactFreezeMinAge | int | Value of the parameter vacuum_multixact_freeze_min_age at the collection time. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

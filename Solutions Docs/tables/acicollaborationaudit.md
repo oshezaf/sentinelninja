@@ -16,6 +16,12 @@ Reference for ACICollaborationAudit table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acicollaborationaudit) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acicollaborationaudit)
@@ -46,6 +52,12 @@ Reference for ACICollaborationAudit table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) of when the audit was generated. |
 | Type | string | The name of the table |
 | UserName | string | Name of the user that initiated the pipeline. Available only if the audit relate to owned resource |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

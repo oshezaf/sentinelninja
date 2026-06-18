@@ -16,6 +16,12 @@ Reference for SynapseIntegrationTriggerRuns table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapseintegrationtriggerruns) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapseintegrationtriggerruns)
@@ -47,6 +53,12 @@ Reference for SynapseIntegrationTriggerRuns table in Azure Monitor Logs.
 | TriggerType | string | The trigger type of the log record. |
 | Type | string | The type of the pipeline run. |
 | UserProperties | dynamic | The user properties of the log record. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

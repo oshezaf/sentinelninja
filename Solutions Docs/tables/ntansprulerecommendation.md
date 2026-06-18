@@ -46,6 +46,12 @@ Reference for NTANspRuleRecommendation table in Azure Monitor Logs.
 | TrafficType | string | Indicates whether the traffic is internal or external. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

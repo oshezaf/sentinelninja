@@ -42,7 +42,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [1Password](../connectors/1password.md) | [Azure Function](../methods/azure-function.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | [CCF](../methods/ccf.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) ⚠️ | [CCF Push](../methods/ccf-push.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
-| [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | [CCF Push](../methods/ccf-push.md) | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | [CCF Push](../methods/ccf-push.md) | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Atlassian Jira Audit (via Codeless Connector Framework)](../connectors/jiraauditccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | [Azure Function](../methods/azure-function.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
 | [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) ⚠️ | [CCF Push](../methods/ccf-push.md) | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
@@ -96,7 +96,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | [CCF Push](../methods/ccf-push.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | [Onapsis Defend Integration](../connectors/onapsis.md) | [CCF Push](../methods/ccf-push.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | [CCF Push](../methods/ccf-push.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
-| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) 🔶 | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
+| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | [CCF Push](../methods/ccf-push.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
@@ -106,7 +106,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | [CCF Push](../methods/ccf-push.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 2 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | [CCF Push](../methods/ccf-push.md) | Synqly | 10 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
-| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | [CCF Push](../methods/ccf-push.md) | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
+| [Tanium's CCF Push Connector](../connectors/taniumconnector.md) | [CCF Push](../methods/ccf-push.md) | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | [Azure Function](../methods/azure-function.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | [Azure Function](../methods/azure-function.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
 | [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | [Azure Function](../methods/azure-function.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |

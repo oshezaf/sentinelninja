@@ -41,14 +41,6 @@ Connect Microsoft Defender for Identity to gain visibility into the events and u
 
 For more information, see the [Microsoft Sentinel documentation >](https://go.microsoft.com/fwlink/p/?linkid=2220069&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Advanced Threat Protection"` | ✓ | ✗ | ✓ |
-
 ## Permissions
 
 **Resource Provider Permissions:**

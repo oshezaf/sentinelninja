@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-05-07</td>
+  <td style="text-align:left">2026-05-28</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -72,7 +72,7 @@
 </tr>
 </tbody>
 </table>
-<p>The Vaikora Microsoft Defender for Cloud solution integrates <a href="https://vaikora.com">Vaikora</a> AI-driven security signal detection with Microsoft Sentinel and Microsoft Defender for Cloud. A Logic App playbook polls the Vaikora API every 6 hours, filters high-severity actions, anomalies, and threat detections, and writes them to a custom Log Analytics table (Vaikora_SecurityAlerts_CL). Analytic rules then surface these signals in Sentinel for investigation.</p>
+<p>The Vaikora Microsoft Defender for Cloud solution integrates <a href="https://vaikora.com">Vaikora</a> AI-driven security signal detection with Microsoft Sentinel and Microsoft Defender for Cloud. A Logic App playbook polls the Vaikora API every 6 hours, filters high-severity actions and behavioral anomalies, and writes them to a custom Log Analytics table (Vaikora_AgentSignals_CL). Analytic rules then surface these signals in Sentinel for investigation.</p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -93,7 +93,7 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+  <td><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
   <td>Analytics, Playbooks (writes)</td>
 </tr>
 </tbody>
@@ -130,22 +130,22 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-anomaly-detection-c0984707-0855-430e-9c36-5e2d0d0ce56f-f798b3f0.html">Vaikora - Anomaly detection</a></td>
+  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-behavioral-anomaly-detected-c0984707-0855-430e-9c36-5e2d0d0ce56f-89d50910.html">Vaikora - Behavioral anomaly detected</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">Discovery, LateralMovement, Collection, Exfiltration</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-feed-outage-detection-5f7789fa-0a6b-4dff-a2da-dfa4b682f3af-c7fc740b.html">Vaikora - Feed outage detection</a></td>
   <td style="text-align:left">Low</td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-high-severity-security-alerts-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-e38a4327.html">Vaikora - High severity security alerts</a></td>
+  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-high-severity-ai-agent-action-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-31cd3c0a.html">Vaikora - High severity AI agent action</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess, Execution, Persistence, DefenseEvasion, CredentialAccess, Discovery, LateralMovement, Collection, CommandAndControl, Exfiltration, Impact</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -162,7 +162,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.html">Vaikora to Microsoft Defender for Cloud</a></td>
   <td style="text-align:left">This playbook polls the Vaikora AI signal exchange API every 6 hours, filters actions with high/crit...</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a> <em>(write)</em></td>
 </tr>
 </tbody>
 </table>

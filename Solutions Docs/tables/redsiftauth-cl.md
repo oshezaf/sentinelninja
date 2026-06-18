@@ -15,13 +15,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (19 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift%5CData%20Connectors%5CRedSift_ccp/RedSift_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_table.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -44,6 +45,12 @@
 | TypeUid | int |
 | UserEmail | string |
 | UserUid | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

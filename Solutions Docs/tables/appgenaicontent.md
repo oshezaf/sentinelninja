@@ -15,6 +15,12 @@ Reference for AppGenAIContent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appgenaicontent) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (27 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appgenaicontent)
@@ -48,6 +54,12 @@ Reference for AppGenAIContent table in Azure Monitor Logs.
 | ToolDefinitions | string | The list of source system tool definitions available to the GenAI agent or model. |
 | TraceId | string | The identifier of the trace this record belongs to. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

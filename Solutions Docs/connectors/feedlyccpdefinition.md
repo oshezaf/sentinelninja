@@ -18,7 +18,6 @@
 | **DCR Definition Files** | [Feedly_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_CCF/Feedly_DCR.json) |
 | **CCF Configuration** | [Feedly_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_CCF/Feedly_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#feedly-ioc) |
 
 The [Feedly](https://feedly.com/) IoC data connector provides the capability to ingest Indicators of Compromise (IoCs) from Feedly API into Microsoft Sentinel.
@@ -29,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

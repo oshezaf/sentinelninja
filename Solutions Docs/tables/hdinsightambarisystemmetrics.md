@@ -16,6 +16,12 @@ Reference for HDInsightAmbariSystemMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambarisystemmetrics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (39 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightambarisystemmetrics)
@@ -61,6 +67,12 @@ Reference for HDInsightAmbariSystemMetrics table in Azure Monitor Logs.
 | WriteBytes | real | Number of bytes written. |
 | WriteCount | real | Number of write operations. |
 | WriteTime | real | Time spent on write operations. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

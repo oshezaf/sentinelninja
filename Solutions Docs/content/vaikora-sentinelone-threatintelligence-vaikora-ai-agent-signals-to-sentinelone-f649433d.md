@@ -28,7 +28,7 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Get_Vaikora_Actions | GET | `@{concat(parameters('Vaikora_ApiBaseUrl'), '/actions?agent_id=', encodeUriComponent(parameters('VaikoraAgentId')), '&per_page=100')}` | — |
+| Get_Vaikora_Actions | GET | `@{outputs('Compose_Poll_Endpoint')}` | — |
 | List_STAR_Rules | GET | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules?accountIds=@{parameters('SentinelOne_AccountId')}` | — |
 | Create_STAR_Rule | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules` | — |
 | Post_IOC_to_SentinelOne | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs` | — |

@@ -16,6 +16,12 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsquerylogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (32 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsquerylogs)
@@ -54,6 +60,12 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Version | string | The version number of the query log format. |
 | VirtualNetworkId | string | The ID of the virtual network that the query originated in. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

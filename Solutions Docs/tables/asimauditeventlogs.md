@@ -21,6 +21,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -161,6 +162,12 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
 | ValueType | string | The type of the old and new values. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (6)
 

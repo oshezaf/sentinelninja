@@ -13,13 +13,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (15 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitSightCompanyRatingDetails.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitSightCompanyRatingDetails.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -38,6 +39,12 @@
 | RiskVectorOrder | int | Display order of the risk vector within its category. |
 | RiskVectorSlug | string | URL-friendly identifier for the risk vector (dict key — always null due to CCF JSONPath limitation; use RiskVectorLabel). |
 | TimeGenerated | datetime |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

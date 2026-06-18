@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -22,7 +23,7 @@
 
 ## Schema (44 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports%5CData%20Connectors%5CZoomReports_ccf/table_ZoomV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Data%20Connectors/ZoomReports_ccf/table_ZoomV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -70,6 +71,12 @@
 | UserType | real | User type as numeric value (1=Basic, 2=Licensed, etc.) - populated by user reports only |
 | Uuid | string | Meeting UUID |
 | Version | string | Zoom client version of the user |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

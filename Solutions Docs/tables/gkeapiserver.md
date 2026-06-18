@@ -20,6 +20,7 @@ Reference for GKEAPIServer table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -64,6 +65,12 @@ Reference for GKEAPIServer table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | URI | string | Full URI of the API request to the Kubernetes API server. |
 | UserAgent | string | The User-Agent string sent with the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

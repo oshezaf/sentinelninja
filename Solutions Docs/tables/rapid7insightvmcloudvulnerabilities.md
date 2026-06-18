@@ -21,6 +21,7 @@ Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -80,6 +81,12 @@ Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.
 | TimeGenerated | datetime | The time the event was generated |
 | Type | string | The name of the table |
 | VulnerabilityTitle | string | The title (summary) of the vulnerability |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

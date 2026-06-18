@@ -16,6 +16,12 @@ Reference for PFTitleAuditLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs)
@@ -39,6 +45,12 @@ Reference for PFTitleAuditLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserId | string | ID of the user who performed the action which generated the log. |
 | UserName | string | Name or Email of the user who performed the action which generated the log. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

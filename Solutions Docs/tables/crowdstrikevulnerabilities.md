@@ -20,6 +20,7 @@ Reference for CrowdStrikeVulnerabilities table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -50,6 +51,12 @@ Reference for CrowdStrikeVulnerabilities table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UpdatedTimestamp | datetime | Timestamp when the vulnerability record was last updated. |
 | VulnerabilityId | string | Unique identifier for the specific vulnerability. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -84,7 +84,7 @@
 <tr>
   <td style="text-align:left">Get_Vaikora_Actions</td>
   <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&amp;per_page=100</code></td>
+  <td style="text-align:left"><code>@{outputs('Compose_Poll_Endpoint')}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>

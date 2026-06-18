@@ -14,9 +14,9 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (339 columns)
@@ -365,6 +365,12 @@
 | web_url_s | string |
 | windowId_d | real |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -380,16 +386,6 @@ This table is ingested by the following connectors:
 | [Netskope](../connectors/netskope.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ## Parsers Using This Table (2)
 

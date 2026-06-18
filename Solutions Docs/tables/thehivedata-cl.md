@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (35 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive%5CData%20Connectors%5CCCF/table_TheHiveData.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/table_TheHiveData.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -57,6 +58,12 @@
 | UpdatedAt | long | Updated at |
 | UpdatedBy | string | Updated by |
 | UserPermissions | dynamic | User permissions |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

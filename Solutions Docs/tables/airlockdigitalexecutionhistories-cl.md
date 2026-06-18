@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (26 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalExecutionHistories.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/table_AirlockDigitalExecutionHistories.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -48,6 +49,12 @@
 | SHA512 | string | SHA-512 file hash |
 | TimeGenerated | datetime |  |
 | Username | string | User account that executed the file |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

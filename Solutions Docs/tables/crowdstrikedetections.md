@@ -20,6 +20,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -139,6 +140,12 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | UserName | string | Username associated with the detected process. |
 | UserPrincipal | string | User principal name (UPN) associated with the detected process. |
 | XdrDetectionId | string | XDR detection ID associated with the detection. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

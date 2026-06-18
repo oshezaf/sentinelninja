@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (12 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroContentLogs_CCF/MiroContentLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -34,6 +35,12 @@
 | relationships | dynamic | Relationships of the content item in JSON format |
 | state | dynamic | State information of the content item in JSON format |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time when the event was ingested |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

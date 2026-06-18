@@ -61,7 +61,7 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) | Analytics |
+| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics |
 
 ## Content Items
 

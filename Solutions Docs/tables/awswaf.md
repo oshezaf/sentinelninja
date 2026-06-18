@@ -21,6 +21,7 @@ Reference for AWSWAF table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -66,6 +67,12 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Uri | string | The URI of the request. |
 | WebAclId | string | The GUID of the web ACL applied to the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -19,6 +19,7 @@ Reference for ProtectionStatus table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -64,6 +65,12 @@ Reference for ProtectionStatus table in Azure Monitor Logs.
 | TypeofProtection | string |  |
 | VMUUID | string |  |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (2)
 
 This table is used by the following solutions:
@@ -73,9 +80,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (2)
 
-### Workbooks (4)
+### Workbooks (2)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -88,13 +95,6 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) | `ThreatStatusRank != "150"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ## Resource Types
 

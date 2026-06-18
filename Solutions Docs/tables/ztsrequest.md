@@ -16,6 +16,12 @@ Reference for ZTSRequest table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ztsrequest) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (16 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ztsrequest)
@@ -38,6 +44,12 @@ Reference for ZTSRequest table in Azure Monitor Logs.
 | TimeGenerated | datetime | UTC timestamp when the log record was generated. |
 | Type | string | The name of the table |
 | Uri | string | The full URI of the request, including endpoint and query parameters. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

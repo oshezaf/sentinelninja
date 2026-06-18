@@ -72,6 +72,12 @@ Cloud storage activity and related events
 | Type | string | The name of the table |
 | UserAgentHeader | string | Details of the user agent accessing the storage (for example, browser or application) |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

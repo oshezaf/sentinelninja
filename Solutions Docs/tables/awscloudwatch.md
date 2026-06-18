@@ -21,9 +21,9 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (8 columns)
 
@@ -40,6 +40,12 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) when the event was generated and equals to 'ExtractedTime' when included in message. If timestamp is missing, it's set to the ingestion time. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -55,16 +61,6 @@ This table is ingested by the following connectors:
 | [Amazon Web Services S3](../connectors/awss3.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ---
 

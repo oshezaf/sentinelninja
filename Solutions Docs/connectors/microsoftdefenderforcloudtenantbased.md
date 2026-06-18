@@ -23,14 +23,6 @@ Microsoft Defender for Cloud is a security management tool that allows you to de
 
 📖 **Setup Guide:** [Microsoft Defender for Cloud connector](https://learn.microsoft.com/azure/sentinel/connect-defender-for-cloud) - Connect Defender for Cloud alerts to Microsoft Sentinel
 
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Security Center"` | ✓ | ✗ | ✓ |
-
 ## Permissions
 
 **Resource Provider Permissions:**

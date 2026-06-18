@@ -16,6 +16,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -39,6 +40,12 @@
 | TimeGenerated | datetime |
 | Type | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -55,22 +62,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [F5Networks](../content/f5-big-ip-f5networks-56be211d.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [F5Networks](../content/github-only-f5networks-1dca2cd9.md) |  |
 
 ---
 

@@ -36,17 +36,13 @@ Reference for DSMDataClassificationLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Uri | string | Uniform resource identifier representing the asset that was scanned. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 
 ---
 

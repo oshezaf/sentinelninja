@@ -16,6 +16,12 @@ Reference for AZFWNatRuleAggregation table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwnatruleaggregation) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwnatruleaggregation)
@@ -39,6 +45,12 @@ Reference for AZFWNatRuleAggregation table in Azure Monitor Logs.
 | TranslatedIp | string | Original Destination IP address of the packet is replaced with TranslatedIp. |
 | TranslatedPort | int | Original Destination port of the packet is replaced with TranslatedPort. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

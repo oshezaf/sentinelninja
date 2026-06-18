@@ -14,6 +14,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -35,6 +36,12 @@
 | TimeGenerated | datetime |
 | version_d | real |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -51,21 +58,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Citrix](../content/github-only-citrix-c2c704c4.md) |  |
 
 ---
 

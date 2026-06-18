@@ -58,28 +58,6 @@
 <p>Microsoft Defender for Cloud is a security management tool that allows you to detect and quickly respond to threats across Azure, hybrid, and multi-cloud workloads. This connector allows you to stream your MDC security alerts from Microsoft 365 Defender into Microsoft Sentinel, so you can can leverage the advantages of XDR correlations connecting the dots across your cloud resources, devices and identities and view the data in workbooks, queries and investigate and respond to incidents. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2269832&amp;wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci">Microsoft Sentinel documentation</a>.</p>
 <h2 id="additional-information">Additional Information</h2>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-defender-for-cloud">Microsoft Defender for Cloud connector</a> - Connect Defender for Cloud alerts to Microsoft Sentinel</p>
-<h2 id="tables-ingested">Tables Ingested</h2>
-<p>This connector ingests data into the following tables:</p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-  <td style="text-align:left"><code>ProductName == &quot;Azure Security Center&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
-</tr>
-</tbody>
-</table>
 <h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong></p>
 <ul>

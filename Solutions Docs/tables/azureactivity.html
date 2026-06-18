@@ -59,6 +59,7 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
@@ -263,6 +264,11 @@
 </tr>
 </tbody>
 </table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
 <h2 id="solutions">Solutions (20)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
@@ -304,8 +310,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (78)</h2>
-<h3 id="analytic-rules">Analytic Rules (26)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (54)</h2>
+<h3 id="analytic-rules">Analytic Rules (22)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -465,34 +471,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-azure-diagnostic-settings-removed-from-a-resource-6e95aef3-a1e0-4063-8e74-cd59aa59f245-652cb0e3.html">Azure Diagnostic settings removed from a resource</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Success&quot;</code><br><code>Caller has &quot;@&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue != &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue endswith &quot;/DELETE&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.html">Azure VM Run Command operation executed during suspicious login window</a></td>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.html">Azure VM Run Command operations executing a unique PowerShell script</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.html">Workspace deletion activity from an infected device</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>OperationNameValue has_any &quot;/workspaces/computes/delete&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (22)</h3>
+<h3 id="hunting-queries">Hunting Queries (17)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -590,49 +569,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.html">Anomalous Resource Creation and related Network Activity</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.html">Azure CloudShell Usage</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>OperationNameValue != &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>ResourceGroup has &quot;cloud-shell-storage&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.html">User Granted Access and created resources</a></td>
-  <td style="text-align:left"><code>OperationName has &quot;Create&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.html">Azure VM Run Command linked with MDE</a></td>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.html">Storage Account Key Enumeration</a></td>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (29)</h3>
+<h3 id="workbooks">Workbooks (14)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -818,77 +755,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-azureactivity-31e8481e.html">AzureActivity</a></td>
-  <td style="text-align:left"><code>Level in &quot;Error,Informational,Warning&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-azureservicehealthworkbook-c0a0870d.html">AzureServiceHealthWorkbook</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;ServiceHealth&quot;</code><br><code>Level in &quot;Error,Information,Warning&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.html">AzureThreatResearchMatrixWorkbook</a></td>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>ActivityStatusValue in &quot;Accepted,Failed,Start,Succeeded,Success&quot;</code><br><code>ActivityStatusValue != &quot;Start&quot;</code><br><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Security&quot;</code><br><code>OperationName in &quot;Add application,Add conditional access policy,Delete conditional access policy,Invite external user,Redeem external user invite,Update application – Certificates</code><br><code>secrets management,Update conditional access policy&quot;</code><br><code>OperationName in &quot;Add service principal,Add user,Admin deleted security info,Admin registered security info,Admin updated security info,Register device,Unregister device,User changed default security info,User deleted security info,User registered security info&quot;</code><br><code>OperationName has &quot;Add app role assignment to service principal&quot;</code><br><code>OperationName has &quot;Add delegated permission grant&quot;</code><br><code>OperationName has &quot;Consent to application&quot;</code><br><code>OperationName has_any &quot;Update user&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE,Microsoft.Authorization/policies/deny/action,Microsoft.Authorization/policies/deployIfNotExists/action,Microsoft.Management&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.COMPUTE/SNAPSHOTS/WRITE,MICROSOFT.COMPUTE/VIRTUALMACHINES/EXTENSIONS/WRITE,MICROSOFT.MANAGEMENT/MANAGEMENTGROUPS/DELETE,MICROSOFT.MANAGEMENT/MANAGEMENTGROUPS/WRITE,MICROSOFT.RESOURCES/DEPLOYMENTS/VALIDATE/ACTION,MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/MOVERESOURCES/ACTION,MICROSOFT.SERIALCONSOLE/SERIALPORTS/CONNECT/ACTION,Microsoft.Compute/disks/BeginGetAccess/action,Microsoft.ManagedServices/registrationAssignments/Write&quot;</code><br><code>OperationNameValue contains &quot;dnszones&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code><br><code>Properties contains &quot;got moved from tenant&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code><br><code>ResourceProviderValue == &quot;MICROSOFT.STORAGE&quot;</code><br><code>_ResourceId contains &quot;VMAccessWindowsPasswordReset&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.SECURITYCOPILOT/CAPACITIES/WRITE,MICROSOFT.SECURITYCOPILOT/REGISTER/ACTION&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
-  <td style="text-align:left"><code>ResourceProvider == &quot;Microsoft.HybridCompute&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-  <td style="text-align:left"><code>Caller contains &quot;@&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-playbookhealth-6ce06262.html">PlaybookHealth</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Microsoft.Logic/workflows/workflowRunCompleted&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has &quot;Delete&quot;</code><br><code>OperationName has &quot;Disable&quot;</code><br><code>OperationName has &quot;Enable&quot;</code><br><code>OperationName has &quot;set&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowAction&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowRun&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowRunCompleted&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowTrigger&quot;</code><br><code>ResourceProviderValue in &quot;Microsoft.Logic,Microsoft.Web&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.html">SensitiveOperationsinAzureActivityLogReview</a></td>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>ActivityStatusValue in &quot;Accepted,Failed&quot;</code><br><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName == &quot;Create or Update Virtual Machine Extension&quot;</code><br><code>OperationNameValue in &quot;Microsoft.Authorization/policies/deny/action,Microsoft.Authorization/policies/deployIfNotExists/action&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.RESOURCES/DEPLOYMENTS/VALIDATE/ACTION,Microsoft.Compute/disks/BeginGetAccess/action,Microsoft.ManagedServices/registrationAssignments/Write&quot;</code><br><code>OperationNameValue contains &quot;dnszones&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code><br><code>_ResourceId contains &quot;VMAccessWindowsPasswordReset&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-workspaceauditing-b4e840dd.html">WorkspaceAuditing</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue contains &quot;Failed&quot;</code><br><code>ActivityStatusValue contains &quot;Succeeded&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationNameValue contains &quot;SecurityInsights&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-  <td style="text-align:left"><code>Caller contains &quot;@&quot;</code></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="asim-parsers-1-selection-criteria-categoryvalue-quotadministrativequot">ASIM Parsers (1) — Selection Criteria: <code>CategoryValue == &quot;Administrative&quot;</code></h3>
 <table>
@@ -1046,8 +912,8 @@
 <li><code>microsoft.network/bastionhosts</code></li>
 <li><code>microsoft.healthcareapis/services</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (39 criteria, 46 total references)</h2>
-<p>References by type: 0 connectors, 45 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (33 criteria, 39 total references)</h2>
+<p>References by type: 0 connectors, 38 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1097,14 +963,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
@@ -1165,30 +1023,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Success&quot;</code><br><code>Caller has &quot;@&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue != &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue endswith &quot;/DELETE&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>OperationNameValue has_any &quot;/workspaces/computes/delete&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1206,6 +1040,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created,OK&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1270,30 +1112,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>OperationNameValue != &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>ResourceGroup has &quot;cloud-shell-storage&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OperationName has &quot;Create&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1375,10 +1193,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>45</strong></td>
+  <td style="text-align:center"><strong>38</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>46</strong></td>
+  <td style="text-align:center"><strong>39</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1398,10 +1216,10 @@
 <tr>
   <td style="text-align:left"><code>Succeeded</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Accepted</code></td>
@@ -1437,10 +1255,10 @@
 <tr>
   <td style="text-align:left"><code>Success</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
+  <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>startswith Accept</code></td>
@@ -1451,15 +1269,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Succeeded</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any Success</code></td>
+  <td style="text-align:left"><code>Accepted</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1467,7 +1277,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Accepted</code></td>
+  <td style="text-align:left"><code>has_any Succeeded</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1531,10 +1341,10 @@
 <tr>
   <td style="text-align:left"><code>has virtualMachines</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1552,15 +1362,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has @</code></td>
+  <td style="text-align:left"><code>contains @</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains @</code></td>
+  <td style="text-align:left"><code>has @</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1700,14 +1510,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
-<tr>
-  <td style="text-align:left"><code>has Create</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
 </tbody>
 </table>
 <h3 id="operationnamevalue">OperationNameValue</h3>
@@ -1756,14 +1558,6 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>endswith delete</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1772,23 +1566,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Microsoft.ADHybridHealthService/services/delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1812,6 +1598,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>contains Microsoft.SecurityInsights/dataConnectors/</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1820,39 +1614,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>endswith /DELETE</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any /workspaces/computes/delete</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>microsoft.storage/storageaccounts/listkeys/action</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1885,14 +1655,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any ipfilterrules</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= Microsoft.Storage/storageAccounts/listKeys/action</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2011,14 +1773,6 @@
 <tbody>
 <tr>
   <td style="text-align:left"><code>has cloud-shell</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has cloud-shell-storage</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

@@ -15,6 +15,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -35,6 +36,12 @@
 | user_email | string |
 | user_uuid | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -51,7 +58,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (10)
 
 ### Analytic Rules (9)
 
@@ -69,19 +76,13 @@ This table is ingested by the following connectors:
 | [NordPass - User fails authentication](../content/nordpass-nordpass-user-fails-authentication-27b261dc-68f3-489a-944f-bc252e0c1960-90f54b58.md) |  |
 | [NordPass - Vault export](../content/nordpass-nordpass-vault-export-c7f14b43-7625-4516-b137-30b7fda65bcf-aff9055e.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [NordPass](../solutions/nordpass.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NordPass](../content/nordpass-nordpass-9080f186.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NordPass](../content/github-only-nordpass-d00813f6.md) |  |
 
 ---
 

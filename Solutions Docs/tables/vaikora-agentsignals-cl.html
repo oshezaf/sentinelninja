@@ -21,6 +21,9 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<blockquote>
+<p><strong>Internal Use Table:</strong> This table is created and used internally by the following solutions: <a href="../solutions/vaikora-sentinel.html">Vaikora-Sentinel</a>, <a href="../solutions/vaikorasecuritycenter.html">VaikoraSecurityCenter</a>. It is written to by playbooks for solution-specific data storage.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -30,8 +33,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Internal</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
@@ -50,12 +53,13 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
 <h2 id="schema">Schema (13 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel%5CData%20Connectors%5CVaikoraSentinel_CCF/Vaikora_Table.json">Connector definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel/Data%20Connectors/VaikoraSentinel_CCF/Vaikora_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -118,10 +122,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (1)</h2>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/vaikora-sentinel.html">Vaikora-Sentinel</a></li>
+<li><a href="../solutions/vaikorasecuritycenter.html">VaikoraSecurityCenter</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -140,8 +150,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
-<h3 id="analytic-rules">Analytic Rules (3)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (8)</h2>
+<h3 id="analytic-rules">Analytic Rules (6)</h3>
 <p><strong>In solution <a href="../solutions/vaikora-sentinel.html">Vaikora-Sentinel</a>:</strong></p>
 <table>
 <thead>
@@ -161,6 +171,29 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.html">Vaikora - High severity AI agent action detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/vaikorasecuritycenter.html">VaikoraSecurityCenter</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-behavioral-anomaly-detected-c0984707-0855-430e-9c36-5e2d0d0ce56f-89d50910.html">Vaikora - Behavioral anomaly detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-feed-outage-detection-5f7789fa-0a6b-4dff-a2da-dfa4b682f3af-c7fc740b.html">Vaikora - Feed outage detection</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikorasecuritycenter-vaikora-high-severity-ai-agent-action-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-31cd3c0a.html">Vaikora - High severity AI agent action</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

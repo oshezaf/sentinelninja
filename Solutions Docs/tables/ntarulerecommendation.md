@@ -53,6 +53,12 @@ Reference for NTARuleRecommendation table in Azure Monitor Logs.
 | UnecryptedFlowDetails | string | For unencrypted flow, it specifies the encryption level. Possible values are Unencrypted, Unsupported hardware, Software not ready, Drop due to no encryption, Discovery not supported, Destination on same host, Fall back to no encryption. |
 | VirtualNetworkResourceId | string | Virtual network name targeted by rule. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

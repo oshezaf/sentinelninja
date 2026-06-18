@@ -45,6 +45,12 @@ Files that were processed by Microsoft Defender for Office 365 in SharePoint Onl
 | Type | string | The name of the table |
 | Workload | string | Information about the workload from which the URL originated from. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

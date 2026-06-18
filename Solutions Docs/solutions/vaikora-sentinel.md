@@ -28,7 +28,7 @@ The [Vaikora AI Agent Behavioral Signals](https://vaikora.com) solution integrat
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Tables Used](#tables-used)
+- [Internal Tables](#internal-tables)
 - [Content Items](#content-items)
 - [Additional Documentation](#additional-documentation)
 
@@ -36,21 +36,15 @@ The [Vaikora AI Agent Behavioral Signals](https://vaikora.com) solution integrat
 
 This solution provides **1 data connector(s)**:
 
-- [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) 🔶
+- [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md)
 
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+## Internal Tables
 
-
-## Tables Used
-
-This solution uses **1 table(s)**:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) 🔶 | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -65,15 +59,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Vaikora - Agent policy violation](../content/vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.md) | Medium | Impact, DefenseEvasion | [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
-| [Vaikora - Behavioral anomaly detected](../content/vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.md) | Medium | DefenseEvasion, Execution | [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
-| [Vaikora - High severity AI agent action detected](../content/vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.md) | High | Impact, Execution, PrivilegeEscalation | [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
+| [Vaikora - Agent policy violation](../content/vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.md) | Medium | Impact, DefenseEvasion | *Internal use:*<br>[`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
+| [Vaikora - Behavioral anomaly detected](../content/vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.md) | Medium | DefenseEvasion, Execution | *Internal use:*<br>[`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
+| [Vaikora - High severity AI agent action detected](../content/vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.md) | High | Impact, Execution, PrivilegeEscalation | *Internal use:*<br>[`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VaikoraAgentSignalsDashboard](../content/vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.md) | [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
+| [VaikoraAgentSignalsDashboard](../content/vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.md) | *Internal use:*<br>[`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) |
 
 ## Additional Documentation
 

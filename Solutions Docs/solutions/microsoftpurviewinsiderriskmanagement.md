@@ -84,7 +84,7 @@ The following **6 table(s)** are used internally by this solution's content item
 | [`Anomalies`](../tables/anomalies.md) | - | Workbooks |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Hunting, Workbooks |
 | [`IdentityInfo`](../tables/identityinfo.md) | - | Workbooks |
-| [`SecurityAlert`](../tables/securityalert.md) | [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Analytics, Hunting, Workbooks |
+| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics, Hunting, Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Analytics, Workbooks |
 | [`Watchlist`](../tables/watchlist.md) | - | Workbooks |
 

@@ -6,6 +6,12 @@
 
 ---
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (54 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_anomaly_CL.json)
@@ -66,6 +72,12 @@
 | uid | string |
 | use_case | string |
 | use_case_description | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

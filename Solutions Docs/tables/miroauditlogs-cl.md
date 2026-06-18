@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (20 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroAuditLogs_CCF/MiroAuditLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -42,6 +43,12 @@
 | object_id | string | Unique identifier of the object affected by the event |
 | object_name | string | Name of the object affected by the event |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time when the event was ingested |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

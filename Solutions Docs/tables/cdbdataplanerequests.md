@@ -16,6 +16,12 @@ Reference for CDBDataPlaneRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbdataplanerequests) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (32 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbdataplanerequests)
@@ -54,6 +60,12 @@ Reference for CDBDataPlaneRequests table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (in UTC) when the data plane request was issued. |
 | Type | string | The name of the table |
 | UserAgent | string | The name of the user specified user agent suffix (as specified when initializing the Cosmos DB client) when running in Direct mode. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

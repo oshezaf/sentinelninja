@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (155 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent%5CData%20Connectors%5CElasticAgent_CCF/table_ElasticAgentLogsV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/table_ElasticAgentLogsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -179,6 +180,12 @@
 | SystemProcessMemorySize | long | Process memory size in bytes. |
 | Tags | dynamic | Event tags. |
 | TimeGenerated | datetime | The timestamp (in UTC) when the event was collected. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

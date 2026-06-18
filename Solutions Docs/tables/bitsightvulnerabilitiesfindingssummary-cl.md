@@ -13,6 +13,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -20,7 +21,7 @@
 
 ## Schema (6 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitsightVulnerabilitiesFindingsSummary.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitsightVulnerabilitiesFindingsSummary.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -30,6 +31,12 @@
 | Name | string | Slug identifier for the vulnerability type (e.g., 'patching_cadence'). |
 | Severity | string | Severity level of the vulnerability type (e.g., 'high', 'medium', 'low'). |
 | TimeGenerated | datetime |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

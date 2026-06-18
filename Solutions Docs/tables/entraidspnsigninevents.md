@@ -16,17 +16,13 @@ Microsoft Entra service principal and managed identity sign-ins
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidspnsigninevents-table) |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Hunting Queries (1)
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [AddedCredentialFromContryXAndSigninFromCountryY](../content/github-only-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-5872c09f.md) |  |
 
 ---
 

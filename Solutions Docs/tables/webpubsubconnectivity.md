@@ -16,6 +16,12 @@ Reference for WebPubSubConnectivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubconnectivity) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubconnectivity)
@@ -37,6 +43,12 @@ Reference for WebPubSubConnectivity table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) of the log. |
 | Type | string | The name of the table |
 | UserId | string | The unique identifier of the user. It is defined by the client or app server. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

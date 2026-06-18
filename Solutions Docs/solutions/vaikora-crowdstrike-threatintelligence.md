@@ -16,9 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-04-02 |
+| **Last Updated** | 2026-05-28 |
 | **Solution Folder** | [Vaikora-CrowdStrike-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-CrowdStrike-ThreatIntelligence) |
 
 The Vaikora CrowdStrike AI Agent Security solution polls Vaikora AI agent signals (actions with high/critical risk levels or anomaly detections) and pushes them as Custom IOCs to CrowdStrike Falcon for detection and prevention.
@@ -47,6 +48,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------|
+| 3.0.1       | 28-05-2026                     | Fixed Get_Vaikora_Actions URI to omit the agent_id query parameter when VaikoraAgentId is empty. Without the fix the request includes agent_id= and the Vaikora API rejects it with HTTP 422. |
 | 3.0.0       | 28-04-2026                     | Initial release. Vaikora AI to CrowdStrike IOC integration with automated severity mapping and deduplication.|
 
 ---

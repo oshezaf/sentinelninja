@@ -40,6 +40,12 @@ Reference for AWSEKSLogs table in Azure Monitor Logs.
 | UserAgent | string | The user agent string of the client that made the request. |
 | Verb | string | The Kubernetes API verb (action) performed (e.g., get, create, update, delete). |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

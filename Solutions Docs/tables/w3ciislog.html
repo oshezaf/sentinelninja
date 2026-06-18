@@ -59,6 +59,7 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
@@ -298,14 +299,18 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (8)</h2>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (7)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
 <li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
@@ -331,8 +336,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (38)</h2>
-<h3 id="analytic-rules">Analytic Rules (15)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (13)</h2>
+<h3 id="analytic-rules">Analytic Rules (7)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -412,50 +417,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-anomalous-user-agent-connection-attempt-f845881e-2500-44dc-8ed7-b372af3e1e25-29a3ec02.html">Anomalous User Agent connection attempt</a></td>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-exchange-ssrf-autodiscover-proxyshell-detection-968358d6-6af8-49bb-aaa4-187b3067fb95-9f834a08.html">Exchange SSRF Autodiscover ProxyShell - Detection</a></td>
-  <td style="text-align:left"><code>csUriQuery !has &quot;Protocol&quot;</code><br><code>csUriQuery contains &quot;:&quot;</code><br><code>csUriQuery contains &quot;@&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-exchange-worker-process-making-remote-call-2c701f94-783c-4cd4-bc9b-3b3334976090-ea016158.html">Exchange Worker Process Making Remote Call</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-connections-by-client-ip-on-many-ports-44a555d8-ecee-4a25-95ce-055879b4b14b-ec2b57ee.html">High count of connections by client IP on many ports</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-failed-attempts-from-same-client-ip-19e01883-15d8-4eb6-a7a5-3276cd668388-e4e52bb9.html">High count of failed attempts from same client IP</a></td>
-  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-failed-logons-by-a-user-884c4957-70ea-4f57-80b9-1bca3890315b-2a0ac893.html">High count of failed logons by a user</a></td>
-  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-silk-typhoon-suspicious-exchange-request-23005e87-2d3a-482b-b03d-edbebd1ae151-e396d92c.html">Silk Typhoon Suspicious Exchange Request</a></td>
-  <td style="text-align:left"><code>csUriQuery startswith &quot;t=&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (16)</h3>
+<h3 id="hunting-queries">Hunting Queries (3)</h3>
 <p><strong>In solution <a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -490,81 +452,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-potential-iis-brute-force-934011da-1fe6-4507-aadb-d3914c877bcd-a771ce72.html">Potential IIS brute force</a></td>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code><br><code>scStatus startswith &quot;20&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-potential-iis-code-injection-attempt-96977c95-74b4-4cc2-b1a7-6a3ab17bd3f9-83c60a16.html">Potential IIS code injection attempt</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-rare-user-agent-strings-3de523b5-9608-43d5-801e-732c741dd82e-fcfe2bac.html">Rare User Agent strings</a></td>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-same-ip-address-with-multiple-csuseragent-4edbb420-2df7-4089-9906-c335f065803e-844fb539.html">Same IP address with multiple csUserAgent</a></td>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>scStatus !startswith &quot;20&quot;</code><br><code>scStatus !startswith &quot;30&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-suspect-mailbox-export-on-iis-owa-a523786c-8382-4029-80e9-f1a7ecd067c1-c99d7e83.html">Suspect Mailbox Export on IIS/OWA</a></td>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriStem contains &quot;/owa/&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-uri-requests-from-single-client-a787a819-40df-4c9f-a5ae-850d5a2a0cf6-02dc8d65.html">URI requests from single client</a></td>
-  <td style="text-align:left"><code>csUserAgent startswith &quot;Mozilla&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.html">Web shell command alert enrichment</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.html">Web shell file alert enrichment</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-exchange-server-proxylogon-uris-bcbebbae-d59a-4692-b138-93434bccf3db-59863ca0.html">Exchange Server ProxyLogon URIs</a></td>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-exchange-server-suspicious-uris-visited-3122423d-6c33-43c8-bc10-6d27b4350176-f62a3505.html">Exchange Server Suspicious URIs Visited</a></td>
-  <td style="text-align:left"><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.html">Exchange Servers and Associated Security Alerts</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.html">Suspected ProxyToken Exploitation</a></td>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csCookie has &quot;SecurityToken&quot;</code><br><code>csMethod == &quot;POST&quot;</code><br><code>csUriQuery has &quot;msExchEcpCanary&quot;</code><br><code>csUriStem has &quot;/ecp&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (7)</h3>
+<h3 id="workbooks">Workbooks (3)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -610,33 +498,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-  <td style="text-align:left"><code>cIP !startswith &quot;10.&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;172.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriQuery startswith &quot;t=&quot;</code><br><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-usermap-db59dcfa.html">UserMap</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="asim-parsers">ASIM Parsers (1)</h3>
 <table>
@@ -666,8 +527,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 17 total references)</h2>
-<p>References by type: 0 connectors, 17 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (3 criteria, 4 total references)</h2>
+<p>References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -683,14 +544,6 @@
 <tr>
   <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -698,30 +551,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csUriQuery contains &quot;args&quot;</code><br><code>csUriQuery contains &quot;clazz&quot;</code><br><code>csUriQuery contains &quot;codes&quot;</code><br><code>csUriQuery contains &quot;method&quot;</code><br><code>csUriStem contains &quot;logoimagehandler.ashx&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>csUriQuery !has &quot;Protocol&quot;</code><br><code>csUriQuery contains &quot;:&quot;</code><br><code>csUriQuery contains &quot;@&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>csUriQuery startswith &quot;t=&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -737,68 +566,12 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>scStatus !startswith &quot;20&quot;</code><br><code>scStatus !startswith &quot;30&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code><br><code>scStatus startswith &quot;20&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>csUserAgent startswith &quot;Mozilla&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriStem contains &quot;/owa/&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csCookie has &quot;SecurityToken&quot;</code><br><code>csMethod == &quot;POST&quot;</code><br><code>csUriQuery has &quot;msExchEcpCanary&quot;</code><br><code>csUriStem has &quot;/ecp&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>17</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>17</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -818,65 +591,26 @@
 <tr>
   <td style="text-align:left"><code>!startswith 127.</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>!startswith ::</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>!startswith fe80</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= ::1</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!startswith 192.168.</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="cscookie">csCookie</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>has SecurityToken</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -900,14 +634,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>POST</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -980,47 +706,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!has Protocol</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains :</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains @</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>startswith t=</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>has whoami</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has msExchEcpCanary</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1052,147 +738,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has whoami</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>/ews/exchange.asmx</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains /owa/</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has /ecp</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="csuseragent">csUserAgent</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>!= -</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= MSRPC</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>startswith Mozilla</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="csusername">csUserName</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>!= -</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="scstatus">scStatus</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>401</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>403</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!startswith 20</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!startswith 30</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>startswith 20</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

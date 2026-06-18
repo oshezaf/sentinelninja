@@ -16,6 +16,12 @@ Reference for MCVPAuditLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpauditlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (19 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mcvpauditlogs)
@@ -41,6 +47,12 @@ Reference for MCVPAuditLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (in UTC) when the audit log was created. |
 | TraceId | string | An identifier for distributed tracing through a system (W3C TraceContext). |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

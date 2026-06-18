@@ -16,6 +16,12 @@ Reference for ACSCallSurvey table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallsurvey) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (34 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallsurvey)
@@ -56,6 +62,12 @@ Reference for ACSCallSurvey table in Azure Monitor Logs.
 | VideoRatingScoreLowerBound | int | Minimum value of the VideoRatingScore scale. |
 | VideoRatingScoreThreshold | int | The VideoRatingScore greater than this value indicates better quality. |
 | VideoRatingScoreUpperBound | int | Maximum value of the VideoRatingScore scale. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

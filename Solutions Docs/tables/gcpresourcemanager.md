@@ -21,6 +21,7 @@ Reference for GCPResourceManager table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -128,6 +129,12 @@ Reference for GCPResourceManager table in Azure Monitor Logs.
 | TimeGenerated | datetime | The time the log entry was received by logging. |
 | Timestamp | datetime | The time the event described by the log entry occurred. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

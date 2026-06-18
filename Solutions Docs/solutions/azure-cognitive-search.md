@@ -34,10 +34,7 @@ The [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md)
 
 ## Tables Used
 

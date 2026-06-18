@@ -16,6 +16,12 @@ Reference for PGSQLQueryStoreRuntime table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlquerystoreruntime) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (42 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pgsqlquerystoreruntime)
@@ -64,6 +70,12 @@ Reference for PGSQLQueryStoreRuntime table in Azure Monitor Logs.
 | TotalExecDurationMs | real | Total query execution duration in milliseconds for all calls in this time bucket. |
 | Type | string | The name of the table |
 | UserId | int | ID (OID) of the user that executed the statement. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

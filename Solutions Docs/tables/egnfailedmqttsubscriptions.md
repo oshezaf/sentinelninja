@@ -16,6 +16,12 @@ Reference for EGNFailedMqttSubscriptions table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/egnfailedmqttsubscriptions) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (12 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/egnfailedmqttsubscriptions)
@@ -34,6 +40,12 @@ Reference for EGNFailedMqttSubscriptions table in Azure Monitor Logs.
 | TimeGenerated | datetime | Timestamp (UTC) when the log was generated. |
 | TopicFilters | string | MQTT Topic Filters that the client subscribed to. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

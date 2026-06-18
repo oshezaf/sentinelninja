@@ -32,17 +32,17 @@ The collection method for these connectors could not be automatically determined
 | [Google Security Command Center](../connectors/googlesccdefinition.md) ➕ | Microsoft | 1 | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | [Microsoft Agent Identities](../connectors/entranhiassets.md) | Microsoft | ? | [Agent 365](../solutions/agent-365.md) |
 | [Microsoft Dataverse](../connectors/microsoftdataverse.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
-| [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | Microsoft | 2 | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
-| [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) | Microsoft | 1 | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
-| [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) | Microsoft | 1 | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
+| [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | Microsoft | 1 | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
+| [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) | Microsoft | ? | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
+| [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) | Microsoft | ? | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
 | [Microsoft Entra ID](../connectors/azureactivedirectory.md) ➕ | Microsoft | 12 | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Microsoft Entra ID Assets](../connectors/entraidassets.md) | Microsoft | ? | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
-| [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Microsoft | 1 | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
+| [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Microsoft | ? | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ➕ | Microsoft | 2 | [SAP](../solutions/sap.md) |
-| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | Microsoft | 5 | [SAP](../solutions/sap.md) |
-| [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | Microsoft | 4 | [SAP](../solutions/sap.md) |
+| [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | ? | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
 ---

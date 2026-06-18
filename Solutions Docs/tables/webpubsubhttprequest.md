@@ -16,6 +16,12 @@ Reference for WebPubSubHttpRequest table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubhttprequest) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (19 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/webpubsubhttprequest)
@@ -41,6 +47,12 @@ Reference for WebPubSubHttpRequest table in Azure Monitor Logs.
 | TraceId | string | The unique identifier of the invocations. It's used for tracing invocations. |
 | Type | string | The name of the table |
 | Url | string | The uniform resource locator of the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

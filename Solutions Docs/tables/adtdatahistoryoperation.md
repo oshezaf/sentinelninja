@@ -16,6 +16,12 @@ Reference for ADTDataHistoryOperation table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adtdatahistoryoperation) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adtdatahistoryoperation)
@@ -47,6 +53,12 @@ Reference for ADTDataHistoryOperation table in Azure Monitor Logs.
 | TraceId | string | TraceId as part of W3C's trace context. The ID of the whole trace used to uniquely identify a distributed trace across systems. |
 | TraceState | string | TraceState as part of W3C's trace context. Additional vendor-specific trace identification information to span across different distributed tracing systems. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

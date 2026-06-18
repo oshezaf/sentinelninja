@@ -20,6 +20,7 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
@@ -63,6 +64,12 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | UserKey | string | An alternative ID for the user identified in the UserId property. |
 | UserType | string | The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users. |
 | UserUpn | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Additional Information
 

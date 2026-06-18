@@ -21,6 +21,7 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -68,6 +69,12 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UniqueId | string | A unique identifier for the specific insight or event. |
 | VEScore | real | Vulnerability exposure score indicating the risk level. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

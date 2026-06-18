@@ -46,6 +46,12 @@ Reference for ABAPAuthorizationDetails table in Azure Monitor Logs.
 | TypeOfChange | string | I and J for insert, U for update, D and E for deletion. |
 | UpdatedOn | datetime | The date and time when the role was last updated. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

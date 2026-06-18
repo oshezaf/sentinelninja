@@ -21,6 +21,7 @@ Reference for AWSRoute53Resolver table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -53,6 +54,12 @@ Reference for AWSRoute53Resolver table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Version | string | Version of the log format. |
 | VpcId | string | The ID of the VPC where the DNS query originated. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

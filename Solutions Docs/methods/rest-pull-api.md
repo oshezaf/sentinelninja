@@ -43,7 +43,7 @@ The collection method for these connectors could not be automatically determined
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
-| [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
+| [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 1 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
@@ -60,7 +60,7 @@ The collection method for these connectors could not be automatically determined
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |

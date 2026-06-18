@@ -16,6 +16,12 @@ Reference for ACSChatIncomingOperations table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acschatincomingoperations) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acschatincomingoperations)
@@ -46,6 +52,12 @@ Reference for ACSChatIncomingOperations table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | URI | string | The URI of the request. |
 | UserId | string | The request sender's user ID. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -37,6 +37,12 @@ Email campaigns identified by Microsoft Defender for Office 365
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

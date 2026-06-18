@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (40 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App%5CData%20Connectors%5CSecurityBridge_PUSH_CCP/SecurityBridge_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Data%20Connectors/SecurityBridge_PUSH_CCP/SecurityBridge_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -62,6 +63,12 @@
 | User_Full | string |
 | UserGroup | string |
 | UserType | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

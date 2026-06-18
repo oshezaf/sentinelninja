@@ -74,6 +74,12 @@ Account information from various sources, including Microsoft Entra ID. This tab
 | Timestamp | datetime | Date and time that the line was written to the database. |
 | Type | string | The name of the table |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

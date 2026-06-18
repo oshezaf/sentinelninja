@@ -12,9 +12,8 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Publisher** | SailPoint |
+| **Support Tier** | Partner |
 | **Categories** | Security - Threat Protection,Identity |
 | **Version** | 3.0.1 |
 | **Author** | SailPointIdentityNow |

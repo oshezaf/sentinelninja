@@ -13,12 +13,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (30 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE%5CData%20Connectors%5CVMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDevices.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDevices.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -52,6 +53,12 @@
 | TotalPhysicalMemory | long | Total physical memory (RAM) as reported by the API. |
 | UserEmailAddress | string | Email address of the enrolled user. |
 | WifiSsid | string | Wi-Fi SSID the device was connected to at last check-in. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

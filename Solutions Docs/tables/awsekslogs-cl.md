@@ -16,12 +16,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS%5CData%20Connectors/AWSEKS_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -38,6 +39,12 @@
 | User | string | User |
 | UserAgent | string | User agent |
 | Verb | string | Verb |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

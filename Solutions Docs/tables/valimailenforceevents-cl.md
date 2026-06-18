@@ -15,13 +15,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (11 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce%5CData%20Connectors%5CValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce/Data%20Connectors/ValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -36,6 +37,12 @@
 | Subject | string | Subject of the performed action. Currently domains and application users |
 | TimeGenerated | datetime | Date and time (UTC) when the event was registered |
 | User | string | email address or organization that performed the action |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -16,6 +16,12 @@ Reference for DevCenterBillingEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenterbillingeventlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devcenterbillingeventlogs)
@@ -45,6 +51,12 @@ Reference for DevCenterBillingEventLogs table in Azure Monitor Logs.
 | UsageResourceUniqueId | string | The unique ID of the consumption resource. |
 | UsageType | string | The type of resource being consumed. |
 | UserId | string | User ID consuming the resource. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

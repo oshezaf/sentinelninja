@@ -15,11 +15,11 @@
 | Name | Severity | Source |
 |:-----|:---------|:-------|
 | [Vaikora - Agent policy violation](vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
-| [Vaikora - Anomaly detection](vaikorasecuritycenter-vaikora-anomaly-detection-c0984707-0855-430e-9c36-5e2d0d0ce56f-f798b3f0.md) | Medium | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
+| [Vaikora - Behavioral anomaly detected](vaikorasecuritycenter-vaikora-behavioral-anomaly-detected-c0984707-0855-430e-9c36-5e2d0d0ce56f-89d50910.md) | Medium | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vaikora - Behavioral anomaly detected](vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | [Vaikora - Feed outage detection](vaikorasecuritycenter-vaikora-feed-outage-detection-5f7789fa-0a6b-4dff-a2da-dfa4b682f3af-c7fc740b.md) | Low | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
+| [Vaikora - High severity AI agent action](vaikorasecuritycenter-vaikora-high-severity-ai-agent-action-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-31cd3c0a.md) | High | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vaikora - High severity AI agent action detected](vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.md) | High | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
-| [Vaikora - High severity security alerts](vaikorasecuritycenter-vaikora-high-severity-security-alerts-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-e38a4327.md) | High | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Valence Security Alerts](valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | 📦 [Valence Security](../solutions/valence-security.md) |
 | [Valimail Enforce - DMARC Policy Weakened to None](valimailenforce-valimail-enforce-dmarc-policy-weakened-to-none-44ec1fa4-a502-41ae-879a-3aad3557edce-ba6726ed.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [Valimail Enforce - Email Authentication Key Deleted](valimailenforce-valimail-enforce-email-authentication-key-deleted-483078c6-d029-40f3-931a-30af0032008b-737952e9.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |

@@ -16,6 +16,12 @@ Reference for RetinaNetworkFlowLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs)
@@ -57,6 +63,12 @@ Reference for RetinaNetworkFlowLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UUID | string | The UUID of the flow (flow.uuid). |
 | Verdict | string | The verdict of the flow (e.g., FORWARDED, DROPPED) (flow.verdict). |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

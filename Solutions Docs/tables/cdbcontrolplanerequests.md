@@ -16,6 +16,12 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcontrolplanerequests) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (63 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcontrolplanerequests)
@@ -85,6 +91,12 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 | VnetDatabaseAccountEntries | string | The list of virtual networks specified for the account. |
 | VnetLocation | string | The Azure region in which the VNet for the account is location. |
 | VnetResourceGroupName | string | The name of the resource group within which the VNet is created. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

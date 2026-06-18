@@ -13,6 +13,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -20,7 +21,7 @@
 
 ## Schema (15 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_Events_CCF/table_BitSightAlerts.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_Events_CCF/table_BitSightAlerts.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -39,6 +40,12 @@
 | StartDate | string | The start date of the alert (YYYY-MM-DD). |
 | TimeGenerated | datetime |  |
 | Trigger | string | What triggered the alert. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

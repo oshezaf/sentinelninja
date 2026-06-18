@@ -13,13 +13,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft%5CData%20Connectors%5CMulesoftCloudHubAlerts_CCF/table_MulesoftCloudhubAlerts.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/table_MulesoftCloudhubAlerts.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -36,6 +37,12 @@
 | ProductName | string | Product name (e.g., cloudhub) |
 | Severity | string | Alert severity level |
 | TimeGenerated | datetime |  |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

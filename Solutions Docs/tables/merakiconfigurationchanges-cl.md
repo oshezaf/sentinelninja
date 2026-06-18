@@ -12,9 +12,16 @@
 
 ## Contents
 
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 
@@ -24,15 +31,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CiscoMeraki](../content/github-only-ciscomeraki-82d0689d.md) |  |
+## Content Items Using This Table (1)
 
 ## Parsers Using This Table (1)
 

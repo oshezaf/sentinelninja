@@ -15,12 +15,13 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (6 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn%5CData%20Connectors%5CDataBahn_PUSH_CCP/DataBahn_table_databahn_device_inventory.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn/Data%20Connectors/DataBahn_PUSH_CCP/DataBahn_table_databahn_device_inventory.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -30,6 +31,12 @@
 | sourceId | string |
 | sourceName | string |
 | TimeGenerated | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

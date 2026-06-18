@@ -16,9 +16,9 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (591 columns)
@@ -619,6 +619,12 @@
 | xdrCustomerId_g_g | string |
 | xdrCustomerId_g_g_g | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -634,16 +640,6 @@ This table is ingested by the following connectors:
 | [Trend Vision One](../connectors/trendmicroxdr.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ## Parsers Using This Table (2)
 

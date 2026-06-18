@@ -14,6 +14,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -35,6 +36,12 @@
 | Status_s | string |
 | TimeGenerated | datetime |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -51,7 +58,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (2)
 
@@ -62,19 +69,13 @@ This table is ingested by the following connectors:
 | [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.md) |  |
 | [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [QualysVM](../solutions/qualysvm.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [QualysVMv2](../content/qualysvm-qualysvmv2-0981091b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [QualysVMv2](../content/github-only-qualysvmv2-2417a2a6.md) |  |
 
 ## Parsers Using This Table (1)
 

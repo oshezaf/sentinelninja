@@ -8,14 +8,14 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 ---
 
-**13 schemas** with 92 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**13 schemas** with 93 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 
 ## Schemas
 
 - [AgentEvent](#agentevent) (1 union pair)
-- [AlertEvent](#alertevent) (2 source pairs, 1 union pair)
+- [AlertEvent](#alertevent) (3 source pairs, 1 union pair)
 - [AssetEntity](#assetentity) (1 union pair)
 - [AuditEvent](#auditevent) (10 source pairs, 1 union pair)
 - [Authentication](#authentication) (18 source pairs, 1 union pair)
@@ -47,12 +47,12 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
-| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
+| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
+| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
 
 ### Supported Products
 
-[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [Palo Alto XDR](asim-products-index.md#palo-alto-xdr), [SentinelOne](asim-products-index.md#sentinelone)
+[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [Netskope Security Cloud](asim-products-index.md#netskope-security-cloud), [Palo Alto XDR](asim-products-index.md#palo-alto-xdr), [SentinelOne](asim-products-index.md#sentinelone)
 
 ### Source Parsers
 
@@ -61,6 +61,7 @@ These are the main entry points that combine all source parsers:
 | [BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | Bitdefender | [GravityZone](../solutions/gravityzone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md) |
 | [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
 | [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
+| [NetskopeSecurityCloud](asimalerteventnetskopesecuritycloud.md) | Netskope Security Cloud | [Netskopev2](../solutions/netskopev2.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventNetskopeSecurityCloud.md) |
 | [PaloAltoXDR](asimalerteventpaloaltoxdr.md) | Palo Alto XDR | [Cortex XDR](../solutions/cortex-xdr.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventPaloAltoXDR.md) |
 | [SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md) |
 

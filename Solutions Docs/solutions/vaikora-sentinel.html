@@ -76,20 +76,17 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#internal-tables">Internal Tables</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/vaikorasentinel.html">Vaikora AI Agent Behavioral Signals</a> 🔶</li>
+<li><a href="../connectors/vaikorasentinel.html">Vaikora AI Agent Behavioral Signals</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<h2 id="internal-tables">Internal Tables</h2>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -100,15 +97,12 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a> 🔶</td>
+  <td><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
   <td><a href="../connectors/vaikorasentinel.html">Vaikora AI Agent Behavioral Signals</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
@@ -144,19 +138,19 @@
   <td style="text-align:left"><a href="../content/vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.html">Vaikora - Agent policy violation</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">Impact, DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.html">Vaikora - Behavioral anomaly detected</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion, Execution</td>
-  <td style="text-align:left"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.html">Vaikora - High severity AI agent action detected</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Impact, Execution, PrivilegeEscalation</td>
-  <td style="text-align:left"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -171,7 +165,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.html">VaikoraAgentSignalsDashboard</a></td>
-  <td style="text-align:left"><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/vaikora-agentsignals-cl.html"><code>Vaikora_AgentSignals_CL</code></a></td>
 </tr>
 </tbody>
 </table>

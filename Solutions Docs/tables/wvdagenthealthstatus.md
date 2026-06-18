@@ -16,6 +16,12 @@ Reference for WVDAgentHealthStatus table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdagenthealthstatus) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdagenthealthstatus)
@@ -46,6 +52,12 @@ Reference for WVDAgentHealthStatus table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UpgradeErrorMsg | string | The version of the reverse connect listener running on the VM |
 | UpgradeState | string | The last known state from a previous update |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

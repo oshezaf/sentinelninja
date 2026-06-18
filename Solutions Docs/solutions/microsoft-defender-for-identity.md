@@ -37,14 +37,6 @@ This solution provides **1 data connector(s)**:
 
 - [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md)
 
-## Internal Tables
-
-The following **1 table(s)** are used internally by this solution's content items:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) | - |
-
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |

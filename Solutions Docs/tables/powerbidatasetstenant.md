@@ -16,6 +16,12 @@ Reference for PowerBIDatasetsTenant table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbidatasetstenant) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (36 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbidatasetstenant)
@@ -58,6 +64,12 @@ Reference for PowerBIDatasetsTenant table in Azure Monitor Logs.
 | XmlaProperties | string | Properties of the XMLA request. |
 | XmlaRequestId | string | Unique Identifier of request. |
 | XmlaSessionId | string | Analysis services session identifier. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

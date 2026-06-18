@@ -78,7 +78,7 @@
 <tr>
   <td style="text-align:left">Get_Vaikora_Actions</td>
   <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{concat(parameters('Vaikora_ApiBaseUrl'), '/actions?agent_id=', encodeUriComponent(parameters('VaikoraAgentId')), '&amp;per_page=100')}</code></td>
+  <td style="text-align:left"><code>@{outputs('Compose_Poll_Endpoint')}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>

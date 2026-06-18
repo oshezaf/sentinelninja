@@ -21,6 +21,7 @@ Reference for AWSS3ServerAccess table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -61,6 +62,12 @@ Reference for AWSS3ServerAccess table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserAgent | string | The value of the HTTP User-Agent header (e.g., client software or browser). |
 | VersionId | string | The version ID of the object involved in the request, or '-' if not applicable. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

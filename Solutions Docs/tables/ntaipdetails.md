@@ -42,6 +42,12 @@ Reference for NTAIpDetails table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Url | string | For Malicious IPs only: Url associated with this IP. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

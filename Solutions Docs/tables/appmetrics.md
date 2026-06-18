@@ -16,6 +16,12 @@ Reference for AppMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appmetrics) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appmetrics)
@@ -57,6 +63,12 @@ Reference for AppMetrics table in Azure Monitor Logs.
 | UserAccountId | string | Application-defined account associated with the user. |
 | UserAuthenticatedId | string | Persistent string that uniquely represents each authenticated user in the application. |
 | UserId | string | Anonymous ID of a user accessing the application. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

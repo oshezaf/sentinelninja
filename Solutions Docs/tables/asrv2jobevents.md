@@ -16,6 +16,12 @@ Reference for ASRv2JobEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2jobevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2jobevents)
@@ -45,6 +51,12 @@ Reference for ASRv2JobEvents table in Azure Monitor Logs.
 | TimeTaken | real | The duration of the operation in milliseconds. |
 | Type | string | The name of the table |
 | Version | string | The version for the event properties. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

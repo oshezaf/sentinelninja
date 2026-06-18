@@ -15,6 +15,12 @@ Reference for SynapseDXCommand table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxcommand) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxcommand)
@@ -46,6 +52,12 @@ Reference for SynapseDXCommand table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | User | string | User that invoked the query |
 | WorkloadGroup | string | Workload are a means of resource governance for incoming requests to the cluster |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

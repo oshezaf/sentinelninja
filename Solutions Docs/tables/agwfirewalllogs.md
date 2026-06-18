@@ -19,6 +19,7 @@ Reference for AGWFirewallLogs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -58,6 +59,12 @@ Reference for AGWFirewallLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | Time (UTC) when the log was created. |
 | TransactionId | string | Unique ID for a given transaction which helps group multiple rule violations that occurred within the same request. |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

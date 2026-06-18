@@ -13,13 +13,14 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (16 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitSightDiligenceStatistics.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitSightDiligenceStatistics.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -39,6 +40,12 @@
 | TypographicalErrors | int | [domain_squatting] Count of typographical-error lookalike domains. |
 | Unknown | int | Count of findings with unknown severity. |
 | Warn | int | Count of warn findings. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

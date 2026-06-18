@@ -41,11 +41,8 @@ a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.
 
 This solution provides **2 data connector(s)**:
 
-- [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) 🔶
-- [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md)
+- [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md)
 
 ## Tables Used
 
@@ -53,10 +50,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md), [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | [IONIX Security Logs (via Codeless Connector Framework)](../connectors/ionixdefinition.md), [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
 
 ## Content Items
 

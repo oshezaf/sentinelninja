@@ -20,6 +20,7 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -111,6 +112,12 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 | Workload | string | The Office 365 service where the activity occurred. |
 | WorkLoadItemId | string | The workload item id. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (4)
 
 This table is used by the following solutions:
@@ -130,9 +137,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
-### Workbooks (4)
+### Workbooks (3)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `LabelName !in "General"`
 
@@ -151,12 +158,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
-
-**GitHub Only:** `Operation == "SensitivityLabelApplied"`
-
-| Workbook |
-|:-------------|
-| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) |
 
 ## Selection Criteria Summary (1 criteria, 2 total references)
 

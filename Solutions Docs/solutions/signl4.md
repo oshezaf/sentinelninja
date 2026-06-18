@@ -56,14 +56,6 @@ This solution uses **1 table(s)**:
 |-------|-------------------|----------------|
 | [`SIGNL4_CL`](../tables/signl4-cl.md) 🔶 | [Derdack SIGNL4](../connectors/derdacksignl4.md) | - |
 
-### Internal Tables
-
-The following **1 table(s)** are used internally by this solution's content items:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`SecurityIncident`](../tables/securityincident.md) | [Derdack SIGNL4](../connectors/derdacksignl4.md) | - |
-
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 

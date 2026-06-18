@@ -16,6 +16,18 @@ Microsoft Entra interactive and non-interactive sign-ins
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-aadsignineventsbeta-table) |
 
+## Contents
+
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:

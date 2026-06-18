@@ -20,6 +20,7 @@ Reference for ThreatIntelObjects table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
@@ -46,6 +47,12 @@ Reference for ThreatIntelObjects table in Azure Monitor Logs.
 | TimeGenerated | datetime | The time of STIX object ingestion. |
 | Type | string | The name of the table |
 | WorkspaceId | string | The workspace that submitted the STIX object. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (10)
 

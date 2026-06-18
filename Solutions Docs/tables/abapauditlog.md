@@ -21,6 +21,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -73,6 +74,12 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Variable2 | string | The Variable2 used by the SAP system for additional information regarding the event or activity that was performed. |
 | Variable3 | string | The Variable3 used by the SAP system for additional information regarding the event or activity that was performed. |
 | Variable4 | string | The Variable4 used by the SAP system for additional information regarding the event or activity that was performed. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (4)
 

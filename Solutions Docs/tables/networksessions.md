@@ -150,6 +150,12 @@ Reference for NetworkSessions table in Azure Monitor Logs.
 | UrlHostname | string | The domain part of an HTTP request URL for HTTP/HTTPS network sessions. |
 | UrlOriginal | string | The HTTP request URL for HTTP/HTTPS network sessions. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---

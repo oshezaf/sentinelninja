@@ -58,17 +58,13 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 | UserId | string | The identifier of the user making the request. |
 | Wids | string | Denotes the tenant-wide roles assigned to this user. |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:** `ClientAuthMethod == "Unknown"`<br>`ResponseStatusCode in "401,500"`<br>`Scopes has "Directory.ReadWrite.All"`<br>`Scopes has "User.ReadWrite.All"`
-
-| Workbook |
-|:-------------|
-| [MicrosoftGraphActivityLogs](../content/github-only-microsoftgraphactivitylogs-55b4bbfd.md) |
 
 ---
 

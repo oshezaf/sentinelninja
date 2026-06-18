@@ -8,18 +8,18 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
 ## Schema (24 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity%5CData%20Connectors%5CAbnormalSecurity_CCF/AbnormalSecurity_table_AbuseMailbox.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Data%20Connectors/AbnormalSecurity_CCF/AbnormalSecurity_table_AbuseMailbox.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -47,6 +47,12 @@
 | abx_metadata_trace_id_g | string | Trace ID (GUID) from top-level abx_metadata |
 | Time | string | Event timestamp in RFC3339 format |
 | TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

@@ -36,10 +36,7 @@ The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) 
 
 This solution provides **1 data connector(s)**:
 
-- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md)
 
 ## Tables Used
 
@@ -47,10 +44,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) 🔶 | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
 
 ## Content Items
 

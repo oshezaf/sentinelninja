@@ -6,6 +6,12 @@
 
 ---
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (19 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CBS_CompromisedCards_CL.json)
@@ -31,6 +37,12 @@
 | User | string |
 | UserDomain | string |
 | Website | string |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

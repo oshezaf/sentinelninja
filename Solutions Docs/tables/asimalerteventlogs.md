@@ -15,6 +15,12 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
 ## Schema (101 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs)
@@ -122,6 +128,12 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | UserScopeId | string | The scope ID, such as Microsoft Entra Directory ID, in which UserId and Username are defined. |
 | UserSessionId | string | The unique ID of the user's session associated with the alert. |
 | UserType | string | The type of the Actor. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

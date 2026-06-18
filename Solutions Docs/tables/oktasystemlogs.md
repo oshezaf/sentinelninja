@@ -16,6 +16,12 @@ Reference for OktaSystemLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oktasystemlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
 ## Schema (62 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oktasystemlogs)
@@ -84,6 +90,12 @@ Reference for OktaSystemLogs table in Azure Monitor Logs.
 | TransactionType | string | The type of transaction associated with the event. |
 | Type | string | The name of the table |
 | Version | string | The version of the event format or schema. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
 

@@ -13,6 +13,7 @@
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
@@ -43,6 +44,12 @@
 | TimeGenerated | datetime |
 | timestamp | string |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ## Solutions (1)
 
 This table is used by the following solutions:
@@ -59,7 +66,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -69,19 +76,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Filewall - Blocked emails](../content/filewall-for-microsoft-365-filewall-blocked-emails-9b784b65-2d16-4c9f-9f59-2a5d4c659f42-395f5a5b.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [FilewallM365Overview](../content/filewall-for-microsoft-365-filewallm365overview-90daf6a7.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [FilewallM365Overview](../content/github-only-filewallm365overview-0b6e3b68.md) |  |
 
 ## Parsers Using This Table (1)
 

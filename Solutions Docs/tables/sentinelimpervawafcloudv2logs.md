@@ -19,6 +19,7 @@ Reference for SentinelImpervaWAFCloudV2Logs table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
@@ -88,6 +89,12 @@ Reference for SentinelImpervaWAFCloudV2Logs table in Azure Monitor Logs.
 | Ver | string | The TLS or HTTP protocol version used. |
 | VID | string | The visitor identifier assigned by Imperva for tracking. |
 | Xff | string | The X-Forwarded-For header value indicating original client IP behind proxies. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

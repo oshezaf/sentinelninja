@@ -89,7 +89,7 @@ This solution includes **23 content item(s)**:
 | [Cisco SEG - Potential phishing link](../content/ciscoseg-cisco-seg-potential-phishing-link-2e5158e1-9fc2-40ff-a909-c701a13a0405-0b87976a.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco SEG - Suspicious link](../content/ciscoseg-cisco-seg-suspicious-link-506291dd-8050-4c98-a92f-58e376080a0a-090fa657.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco SEG - Suspicious sender domain](../content/ciscoseg-cisco-seg-suspicious-sender-domain-ef0a253c-95b5-48e1-8ebc-dbeb073b9338-8e5c2362.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Cisco SEG - Unexpected attachment](../content/ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Unexpected attachment](../content/ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-e6c2dafa.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco SEG - Unexpected link](../content/ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco SEG - Unscannable attacment](../content/ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 

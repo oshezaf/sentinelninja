@@ -21,6 +21,7 @@ Reference for GCPCDN table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
@@ -142,6 +143,12 @@ Reference for GCPCDN table in Azure Monitor Logs.
 | Timestamp | datetime | The time when the first layer GFE receives the request |
 | Trace | string | Identifier of the trace |
 | Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

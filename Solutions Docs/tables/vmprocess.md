@@ -18,6 +18,7 @@ Reference for VMProcess table in Azure Monitor Logs.
 ## Contents
 
 - [Schema](#schema)
+- [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
@@ -57,6 +58,12 @@ Reference for VMProcess table in Azure Monitor Logs.
 | UserDomain | string | The domain under which the process is executing |
 | UserName | string | The account under which the process is executing |
 | WorkingDirectory | string | The working directory |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 

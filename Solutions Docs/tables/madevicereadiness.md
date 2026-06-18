@@ -50,6 +50,12 @@ Reference for MADeviceReadiness table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | WindowsUpgradeDecision | string |  |
 
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
 ---
 
 ---
