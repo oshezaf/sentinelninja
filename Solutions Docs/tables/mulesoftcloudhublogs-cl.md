@@ -20,7 +20,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftLogs_CCF/table_MuleSoftCloudhubLogs.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft%5CData%20Connectors%5CMulesoftLogs_CCF/table_MuleSoftCloudhubLogs.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

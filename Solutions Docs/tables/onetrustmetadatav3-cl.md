@@ -21,7 +21,7 @@
 
 ## Schema (50 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust/Data%20Connectors/OneTrustLogs_CCF/OneTrustLogs_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust%5CData%20Connectors%5COneTrustLogs_CCF/OneTrustLogs_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

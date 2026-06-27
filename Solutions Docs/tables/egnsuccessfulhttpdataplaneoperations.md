@@ -42,14 +42,14 @@ Reference for EGNSuccessfulHttpDataPlaneOperations table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the log was generated. |
 | TLSVersion | string | The transport layer security (TLS) version used by the client connection. Possible values are: 1.2 and 1.3 |
-| TotalOperations | string | The total number of request with above values issued within the minute. These traces aren't emitted for each request. An aggregate for each unique combination of above values is emitted every minute |
+| TotalOperations | string | The total number of requests with above values issued within the minute. These traces aren't emitted for each request. An aggregate for each unique combination of above values is emitted every minute |
 | Type | string | The name of the table |
 
 ## Schema References
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [EGNSuccessfulHttpDataPlaneOperations Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/egnsuccessfulhttpdataplaneoperations)
 
 ---
 

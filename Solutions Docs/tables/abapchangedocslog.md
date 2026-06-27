@@ -30,7 +30,7 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 | ChangedTableKey | string | Changed table key. |
 | ChangeNumber | string | Document change number. |
 | ClientId | string | The ClientId is a three-digit number that identifies a specific client within an SAP system. The ClientId is used in various SAP transactions and configuration settings to identify the client and ensure that the correct client is being accessed or configured. |
-| CreatedFromPlannedChange | string | Created from planned change, in the following syntax:('X' , ' '). |
+| CreatedFromPlannedChange | string | Created from planned change, in the following syntax:('X', ' '). |
 | CurrencyKeyNew | string | Currency key: new value. |
 | CurrencyKeyOld | string | Currency key: old value. |
 | FieldName | string | Field name. |
@@ -54,7 +54,7 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UOMNew | string | Unit of measure: new value. |
 | UOMOld | string | Unit of measure: old value. |
-| UpdatedOn | datetime | The date and time of the event occured in the SAP system in UTC format. |
+| UpdatedOn | datetime | The date and time of the event occurred in the SAP system in UTC format. |
 | User | string | The User who performed the a specific event or activity. |
 | ValueNew | string | Field content: new value. |
 | ValueOld | string | Field content: old value. |
@@ -64,7 +64,7 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ABAPChangeDocsLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapchangedocslog)
 
 ---
 

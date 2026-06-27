@@ -6,7 +6,7 @@
 
 ---
 
-Files, IP addresses, URLs, users, or devices associated with alerts
+Reference for AlertEvidence table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
 ## Contents
 
@@ -81,9 +80,9 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AlertEvidence Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence)
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
@@ -91,12 +90,13 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (25)
 
 ### Analytic Rules (2)
 
@@ -112,19 +112,35 @@ This table is used by the following solutions:
 |:-------------|
 | [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) |
 
-### Hunting Queries (5)
+### Hunting Queries (16)
+
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_Evidenceforasingledevice](../content/standalone-content-mde-evidenceforasingledevice-f173f87f-fa09-4258-8eaf-d95164318e7e-49f4057e.md) |  |
 
 **GitHub Only:**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
-| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) | `ActionType == "ChatCreated"` |
+| [Hunt for alerts correlated with Teams messages](../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.md) | `ActionType == "ChatCreated"` |
+| [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.md) |  |
+| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
+| [Identify acting user for reported phish](../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
+| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) | `EntityType == "User"` |
+| [KNOTWEED-AV Detections](../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
+| [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
+| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
 | [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
+| [URL click on ZAP email](../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.md) |  |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
+| [URLClick details based on malicious URL click alert](../content/github-only-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-8acf46eb.md) |  |
 
-### Workbooks (5)
+### Workbooks (7)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -138,23 +154,30 @@ This table is used by the following solutions:
 |:-------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`Title startswith "CC_"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
 
 | Workbook |
 |:-------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):** `Title contains "backdoor"`<br>`Title contains "dos"`<br>`Title contains "exploit"`<br>`Title contains "file"`<br>`Title contains "mining"`<br>`Title contains "test"`<br>`Title contains "tool"`<br>`Title contains "ware"`
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
-| Workbook |
-|:-------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`Title contains "IDS"`<br>`Title contains "IPS"`<br>`Title contains "anomal"`<br>`Title contains "auth"`<br>`Title contains "behavior"`<br>`Title contains "data"`<br>`Title contains "deception"`<br>`Title contains "denial"`<br>`Title contains "detonation"`<br>`Title contains "dns"`<br>`Title contains "dos"`<br>`Title contains "dynamic"`<br>`Title contains "email"`<br>`Title contains "exfil"`<br>`Title contains "exploit"`<br>`Title contains "fusion"`<br>`Title contains "honeytoken"`<br>`Title contains "intrusion"`<br>`Title contains "learning"`<br>`Title contains "login"`<br>`Title contains "loss"`<br>`Title contains "mal"`<br>`Title contains "malware"`<br>`Title contains "password"`<br>`Title contains "phish"`<br>`Title contains "sand"`<br>`Title contains "url"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Workbook |
-|:-------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -164,33 +187,37 @@ This table is used by the following solutions:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (6 criteria, 6 total references)
+## Selection Criteria Summary (7 criteria, 9 total references)
 
-References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "ChatCreated"` | - | 2 | - | - | **2** |
+| `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | - | 2 | - | - | **2** |
 | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`EntityType in "MailMessage,Url"`<br>`ServiceSource == "Microsoft Defender for Office 365"` | - | 1 | - | - | **1** |
 | `EntityType in "Device,User"` | - | 1 | - | - | **1** |
+| `EntityType == "User"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`Title startswith "CC_"` | - | 1 | - | - | **1** |
-| `Title contains "backdoor"`<br>`Title contains "dos"`<br>`Title contains "exploit"`<br>`Title contains "file"`<br>`Title contains "mining"`<br>`Title contains "test"`<br>`Title contains "tool"`<br>`Title contains "ware"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`Title contains "IDS"`<br>`Title contains "IPS"`<br>`Title contains "anomal"`<br>`Title contains "auth"`<br>`Title contains "behavior"`<br>`Title contains "data"`<br>`Title contains "deception"`<br>`Title contains "denial"`<br>`Title contains "detonation"`<br>`Title contains "dns"`<br>`Title contains "dos"`<br>`Title contains "dynamic"`<br>`Title contains "email"`<br>`Title contains "exfil"`<br>`Title contains "exploit"`<br>`Title contains "fusion"`<br>`Title contains "honeytoken"`<br>`Title contains "intrusion"`<br>`Title contains "learning"`<br>`Title contains "login"`<br>`Title contains "loss"`<br>`Title contains "mal"`<br>`Title contains "malware"`<br>`Title contains "password"`<br>`Title contains "phish"`<br>`Title contains "sand"`<br>`Title contains "url"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **6** | **0** | **0** | **6** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **9** | **0** | **0** | **9** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Add member to role` | - | 2 | - | - | **2** |
-| `Add user` | - | 2 | - | - | **2** |
-| `InteractiveLogon` | - | 2 | - | - | **2** |
-| `RemoteInteractiveLogon` | - | 2 | - | - | **2** |
-| `Reset user password` | - | 2 | - | - | **2** |
-| `ResourceAccess` | - | 2 | - | - | **2** |
-| `Sign-in` | - | 2 | - | - | **2** |
-| `Update user` | - | 2 | - | - | **2** |
+| `ChatCreated` | - | 2 | - | - | **2** |
+| `MoveToDeletedItems` | - | 2 | - | - | **2** |
+| `MovedToDeletedItems` | - | 2 | - | - | **2** |
 | `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
 | `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
 | `AttackSimUserSubmission` | - | 1 | - | - | **1** |
 | `ClickBlocked` | - | 1 | - | - | **1** |
@@ -215,55 +242,16 @@ References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `User` | - | 2 | - | - | **2** |
 | `MailMessage` | - | 1 | - | - | **1** |
 | `Url` | - | 1 | - | - | **1** |
 | `Device` | - | 1 | - | - | **1** |
-| `User` | - | 1 | - | - | **1** |
 
 ### ServiceSource
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Microsoft Defender for Office 365` | - | 1 | - | - | **1** |
-
-### Title
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains dos` | - | 2 | - | - | **2** |
-| `contains exploit` | - | 2 | - | - | **2** |
-| `startswith CC_` | - | 1 | - | - | **1** |
-| `contains backdoor` | - | 1 | - | - | **1** |
-| `contains file` | - | 1 | - | - | **1** |
-| `contains mining` | - | 1 | - | - | **1** |
-| `contains test` | - | 1 | - | - | **1** |
-| `contains tool` | - | 1 | - | - | **1** |
-| `contains ware` | - | 1 | - | - | **1** |
-| `contains IDS` | - | 1 | - | - | **1** |
-| `contains IPS` | - | 1 | - | - | **1** |
-| `contains anomal` | - | 1 | - | - | **1** |
-| `contains auth` | - | 1 | - | - | **1** |
-| `contains behavior` | - | 1 | - | - | **1** |
-| `contains data` | - | 1 | - | - | **1** |
-| `contains deception` | - | 1 | - | - | **1** |
-| `contains denial` | - | 1 | - | - | **1** |
-| `contains detonation` | - | 1 | - | - | **1** |
-| `contains dns` | - | 1 | - | - | **1** |
-| `contains dynamic` | - | 1 | - | - | **1** |
-| `contains email` | - | 1 | - | - | **1** |
-| `contains exfil` | - | 1 | - | - | **1** |
-| `contains fusion` | - | 1 | - | - | **1** |
-| `contains honeytoken` | - | 1 | - | - | **1** |
-| `contains intrusion` | - | 1 | - | - | **1** |
-| `contains learning` | - | 1 | - | - | **1** |
-| `contains login` | - | 1 | - | - | **1** |
-| `contains loss` | - | 1 | - | - | **1** |
-| `contains mal` | - | 1 | - | - | **1** |
-| `contains malware` | - | 1 | - | - | **1** |
-| `contains password` | - | 1 | - | - | **1** |
-| `contains phish` | - | 1 | - | - | **1** |
-| `contains sand` | - | 1 | - | - | **1** |
-| `contains url` | - | 1 | - | - | **1** |
 
 ---
 

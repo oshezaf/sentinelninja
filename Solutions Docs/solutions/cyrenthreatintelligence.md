@@ -21,7 +21,7 @@
 | **First Published** | 2025-11-16 |
 | **Last Updated** | 2026-06-10 |
 | **Solution Folder** | [CyrenThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel) · Popularity: 🟡 Low (22%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel) · Popularity: ⚪ Very Low (0%) |
 
 The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.
 
@@ -36,7 +36,10 @@ The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) 
 
 This solution provides **1 data connector(s)**:
 
-- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md)
+- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
@@ -44,7 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) 🔶 | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

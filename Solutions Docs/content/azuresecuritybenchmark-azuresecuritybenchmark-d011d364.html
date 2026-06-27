@@ -56,7 +56,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/aadmanagedidentitysigninlogs.html"><code>AADManagedIdentitySignInLogs</code></a></td>
-  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
@@ -91,7 +91,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✗</td>
@@ -154,7 +154,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-  <td style="text-align:left"><code>AlertName contains &quot;auth&quot;</code><br><code>AlertName contains &quot;cert&quot;</code><br><code>AlertName contains &quot;cred&quot;</code><br><code>AlertName contains &quot;password&quot;</code><br><code>AlertName contains &quot;secret&quot;</code><br><code>ProviderName == &quot;IPC&quot;</code></td>
+  <td style="text-align:left"><code>AlertName contains &quot;auth&quot;</code><br><code>AlertName contains &quot;cert&quot;</code><br><code>AlertName contains &quot;cred&quot;</code><br><code>AlertName contains &quot;password&quot;</code><br><code>AlertName contains &quot;secret&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
@@ -175,21 +175,21 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Severity == &quot;High&quot;</code><br><code>Title !contains &quot;URL&quot;</code><br><code>Title !contains &quot;net&quot;</code><br><code>Title !contains &quot;normalization&quot;</code><br><code>Title !contains &quot;web&quot;</code><br><code>Title contains &quot;AAD&quot;</code><br><code>Title contains &quot;Account&quot;</code><br><code>Title contains &quot;Identity&quot;</code><br><code>Title contains &quot;Login&quot;</code><br><code>Title contains &quot;Sign&quot;</code><br><code>Title contains &quot;User&quot;</code><br><code>Title contains &quot;WAF&quot;</code><br><code>Title contains &quot;access&quot;</code><br><code>Title contains &quot;anti&quot;</code><br><code>Title contains &quot;app&quot;</code><br><code>Title contains &quot;auth&quot;</code><br><code>Title contains &quot;cert&quot;</code><br><code>Title contains &quot;certificate&quot;</code><br><code>Title contains &quot;cred&quot;</code><br><code>Title contains &quot;data&quot;</code><br><code>Title contains &quot;dns&quot;</code><br><code>Title contains &quot;dos&quot;</code><br><code>Title contains &quot;exploit&quot;</code><br><code>Title contains &quot;impersonate&quot;</code><br><code>Title contains &quot;inject&quot;</code><br><code>Title contains &quot;intrusion&quot;</code><br><code>Title contains &quot;key&quot;</code><br><code>Title contains &quot;mal&quot;</code><br><code>Title contains &quot;mining&quot;</code><br><code>Title contains &quot;password&quot;</code><br><code>Title contains &quot;program&quot;</code><br><code>Title contains &quot;secret&quot;</code><br><code>Title contains &quot;sensitive&quot;</code><br><code>Title contains &quot;service principal&quot;</code><br><code>Title contains &quot;tool&quot;</code><br><code>Title contains &quot;travel&quot;</code><br><code>Title contains &quot;virus&quot;</code><br><code>Title contains &quot;ware&quot;</code><br><code>Title contains &quot;worm&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securitynestedrecommendation.html"><code>SecurityNestedRecommendation</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>RecommendationState == &quot;Unhealthy&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityregulatorycompliance.html"><code>SecurityRegulatoryCompliance</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ComplianceStandard == &quot;Microsoft-cloud-security-benchmark&quot;</code><br><code>State == &quot;Failed&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">?</td>

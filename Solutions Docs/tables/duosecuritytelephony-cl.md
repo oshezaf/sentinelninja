@@ -6,10 +6,16 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Ingestion API Supported** | ✓ Yes |
+
 ## Contents
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (7 columns)
@@ -33,6 +39,16 @@ Official Microsoft Learn documentation for field/column information:
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 
 ## Parsers Using This Table (1)
 

@@ -23,7 +23,7 @@
 
 ## Schema (30 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofPointTAPMessagesBlockedV2_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap%5CData%20Connectors%5CProofpointTAP_CCP/ProofPointTAPMessagesBlockedV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|

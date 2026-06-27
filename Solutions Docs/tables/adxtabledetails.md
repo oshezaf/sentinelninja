@@ -20,6 +20,7 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
 ## Schema (27 columns)
@@ -60,9 +61,19 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ADXTableDetails Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:** `TableName !contains "raw"`<br>`TableName contains "raw"`
+
+| Workbook |
+|:-------------|
+| [ADXvsLA](../content/github-only-adxvsla-0ddedeb5.md) |
 
 ## Resource Types
 

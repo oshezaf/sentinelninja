@@ -21,7 +21,7 @@
 
 ## Schema (155 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/table_ElasticAgentLogsV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent%5CData%20Connectors%5CElasticAgent_CCF/table_ElasticAgentLogsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

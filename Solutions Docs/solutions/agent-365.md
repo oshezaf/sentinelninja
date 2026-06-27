@@ -1,4 +1,4 @@
-# Agent 365 solution for Sentinel
+# Agent 365 solution for Sentinel (Preview)
 
 *Solution: Agent 365*
 
@@ -19,7 +19,7 @@
 | **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-25 |
-| **Last Updated** | 2026-06-09 |
+| **Last Updated** | 2026-06-15 |
 | **Solution Folder** | [Agent 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agent%20365) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-a365observability) · Popularity: 🟢 High (91%) |
 

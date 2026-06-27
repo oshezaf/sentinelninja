@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.14 |
+| **Version** | 3.0.15 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-01-23 |
+| **Last Updated** | 2026-06-26 |
 | **Solution Folder** | [Microsoft Defender XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoft365defender) Â· Rating: â˜…â˜…â˜†â˜†â˜† 2.0/5 (3 ratings) Â· Popularity: ðŸŸ¢ High (97%) |
 
@@ -51,11 +51,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **28 table(s)**:
+This solution uses **27 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | - | Hunting |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DeviceEvents`](../tables/deviceevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
@@ -177,7 +176,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [Attacked more than x times average](../content/microsoft-defender-xdr-attacked-more-than-x-times-average-de480ca4-4095-4fef-b3e7-2a3f17f24e78-ec4cee0f.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Audit Email Preview-Download action](../content/microsoft-defender-xdr-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-334fb71d.md) | PrivilegeEscalation | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Authentication failures by time and authentication type](../content/microsoft-defender-xdr-authentication-failures-by-time-and-authentication-type-7fbf7687-5ded-4c39-9fe9-f4f6aa6fc422-a410ff8f.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`EmailEvents`](../tables/emailevents.md) |
+| [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [BEC - File sharing tactics - Dropbox](../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.md) | LateralMovement | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.md) | LateralMovement | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Bad email percentage of Inbound emails](../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -222,7 +221,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [Email Top Domains sending Malware](../content/microsoft-defender-xdr-email-top-domains-sending-malware-a2a7bede-cf55-47ed-9aeb-7b4c97079f4f-512f33b8.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Email Top Domains sending Phish](../content/microsoft-defender-xdr-email-top-domains-sending-phish-0b197e26-7899-47ff-9be9-f7ba6dc949ea-f793c65e.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Email bombing attacks](../content/microsoft-defender-xdr-email-bombing-attacks-c1cac5ad-7aaa-40de-89aa-954f5a33a578-84420089.md) | Initial access | [`EmailEvents`](../tables/emailevents.md) |
-| [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) | Execution | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
+| [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) | Execution | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
 | [Email containing malware sent by an internal sender](../content/microsoft-defender-xdr-email-containing-malware-sent-by-an-internal-sender-07c85687-6dee-4266-9345-1e34de85d989-56ad4103.md) | LateralMovement | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Email malware detection report](../content/microsoft-defender-xdr-email-malware-detection-report-23dbd58b-23ce-42ae-b4d1-0dfdd35871ea-8e5c7329.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Email sender IP address Geo location information](../content/microsoft-defender-xdr-email-sender-ip-address-geo-location-information-0d5ae69d-bdb2-404d-8c8c-50ebe68b6a5b-ee4c8459.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -238,7 +237,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [File Malware by Top Malware Families (Anti Virus)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [File Malware by Top Malware Families (Safe Attachments)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Files share contents and suspicious sign-in activity](../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`EmailEvents`](../tables/emailevents.md) |
+| [Files share contents and suspicious sign-in activity](../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Good emails from senders with bad patterns](../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md) |
@@ -314,7 +313,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [Phish Detections by delivery location trend](../content/microsoft-defender-xdr-phish-detections-by-delivery-location-trend-b20e56b8-e335-43d9-b7b3-43c034c43aea-304b06c0.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [PhishingEmailUrlRedirector (1)](../content/microsoft-defender-xdr-phishingemailurlredirector-1-08aff8c6-b983-43a3-be95-68a10c3d35e6-edcd3f18.md) | InitialAccess | [`EmailUrlInfo`](../tables/emailurlinfo.md) |
 | [Possible Teams phishing activity](../content/microsoft-defender-xdr-possible-teams-phishing-activity-01cf63bd-debd-4d03-847c-d19c31844501-3b0f03e4.md) | InitialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Possible device code phishing attempts](../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md) |
+| [Possible device code phishing attempts](../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.md) | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
 | [Possible partner impersonation in external Team messages](../content/microsoft-defender-xdr-possible-partner-impersonation-in-external-team-messages-f094e9f1-2d55-450d-af1a-0fdcd290f8c4-38f8b481.md) | DefenseEvasion | [`MessageEvents`](../tables/messageevents.md) |
 | [Post Delivery Events by Admin](../content/microsoft-defender-xdr-post-delivery-events-by-admin-21bafecb-ae8f-4667-b7d6-144e047cb602-48001463.md) | InitialAccess | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
 | [Post Delivery Events by Location](../content/microsoft-defender-xdr-post-delivery-events-by-location-5e8d5202-ffdc-4d16-ad33-d56eb319c175-052dc420.md) | InitialAccess | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
@@ -344,7 +343,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-b1f8aac2-766d-47ec-8787-84bc7692ff77-8be87cf1.md) | DefenseEvasion | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |
 | [Regsvr32 Rundll32 with Anomalous Parent Process](../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-54ea2379-28e7-48e1-8dfd-aaf8fb1331ba-f2e2f8cf.md) | DefenseEvasion | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.md) | LateralMovement | [`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Risky sign-in attempt from a non-managed device](../content/microsoft-defender-xdr-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-e5e2a978.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) |
+| [Risky sign-in attempt from a non-managed device](../content/microsoft-defender-xdr-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-e5e2a978.md) | InitialAccess | - |
 | [Robbinhood Driver](../content/microsoft-defender-xdr-robbinhood-driver-4713d763-122d-419c-bf6f-bdef111cd8e2-6f03bc00.md) | Execution, DefenseEvasion | [`DeviceFileEvents`](../tables/devicefileevents.md) |
 | [SAM Name Change CVE-2021-42278](../content/microsoft-defender-xdr-sam-name-change-cve-2021-42278-1299962c-804e-459a-8d3d-41d68bc45ba2-fdacc34d.md) | PrivilegeEscalation, Vulnerability | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |
 | [SPF Failure Trend](../content/microsoft-defender-xdr-spf-failure-trend-79755078-7be8-4f13-a8e7-1ce87cb7d5c0-c89e8f51.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -379,7 +378,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered ðŸ
 | [Suspicious Spoolsv Child Process](../content/microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.md) | PrivilegeEscalation, Execution | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |
 | [Suspicious Teams Display Name](../content/microsoft-defender-xdr-suspicious-teams-display-name-02bdbd93-02b7-40e4-9468-d501463e57af-e0e082e9.md) | InitialAccess | [`MessageEvents`](../tables/messageevents.md) |
 | [Suspicious Tomcat Confluence Process Launch](../content/microsoft-defender-xdr-suspicious-tomcat-confluence-process-launch-c5b3e559-7c44-442c-9e73-c753abb02c13-64887431.md) | Execution, PrivilegeEscalation | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Suspicious sign-in attempts from QR code phishing campaigns](../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md) |
+| [Suspicious sign-in attempts from QR code phishing campaigns](../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Teams Admin submission of Malware and Phish daily trend](../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.md) | DefenseEvasion | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Teams Admin submission of No Threats daily trend](../content/microsoft-defender-xdr-teams-admin-submission-of-no-threats-daily-trend-b2a6440b-6ebd-4d86-aa33-cfe11f9defcf-321ed5ca.md) | DefenseEvasion | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Teams Admin-User Submissions Grading Verdicts](../content/microsoft-defender-xdr-teams-admin-user-submissions-grading-verdicts-20c9d89a-ad65-48f4-ba14-605715af640a-11968695.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |

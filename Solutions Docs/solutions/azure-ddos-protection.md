@@ -20,7 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-13 |
 | **Solution Folder** | [Azure DDoS Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureddosprotection) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureddosprotection) · Popularity: 🔵 Medium (79%) |
 
 The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Solution for Microsoft Sentinel enables you to easily ingest Azure DDoS Protection Standard logs to Microsoft Sentinel. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
 
@@ -42,7 +42,10 @@ The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddo
 
 This solution provides **1 data connector(s)**:
 
-- [Azure DDoS Protection](../connectors/ddos.md)
+- [Azure DDoS Protection](../connectors/ddos.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

@@ -65,6 +65,10 @@
   <td style="text-align:left"><strong>Ingestion API</strong></td>
   <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#nordstellar-push">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The <a href="https://nordstellar.com">NordStellar</a> connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified <code>NordStellar_CL</code> table with common columns (<code>EventId</code>, <code>EventType</code>, <code>Module</code>, <code>RiskLevel</code>, <code>AssetType</code>, <code>AssetValue</code>, <code>Tags</code>) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic <code>Details</code> column.</p>
@@ -93,9 +97,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/nordstellar-cl.html"><code>NordStellar_CL</code></a></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 </tbody>
 </table>

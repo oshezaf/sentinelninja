@@ -22,7 +22,7 @@
 
 ## Schema (129 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector/Data%20Connectors/Gigamon_CCF/Gigamon_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector%5CData%20Connectors%5CGigamon_CCF/Gigamon_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

@@ -20,7 +20,7 @@
 | **Author** | Intel 471 Inc. |
 | **First Published** | 2023-06-21 |
 | **Solution Folder** | [Intel471](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intel471inc1641226539011.intel471_threat_intelligence) · Popularity: 🔵 Medium (54%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intel471inc1641226539011.intel471_threat_intelligence) · Popularity: ⚪ Very Low (0%) |
 
 Intel 471 Threat Intelligence integration ingests malware indicators into Log Analytics workspace.
 

@@ -22,7 +22,7 @@
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF/Data%20Connectors/SOCPrime_ccp/SOCPrime_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF%5CData%20Connectors%5CSOCPrime_ccp/SOCPrime_table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

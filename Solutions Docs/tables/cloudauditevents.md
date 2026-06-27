@@ -6,15 +6,14 @@
 
 ---
 
-Cloud audit events for various cloud platforms protected by the organization's Microsoft Defender for Cloud
+Reference for CloudAuditEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudauditevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudauditevents-table) |
 
 ## Schema (19 columns)
 
@@ -46,7 +45,7 @@ Cloud audit events for various cloud platforms protected by the organization's M
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [CloudAuditEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudauditevents)
 
 ---
 

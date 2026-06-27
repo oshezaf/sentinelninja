@@ -188,7 +188,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ASimWebSessionLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimwebsessionlogs)
 
 ## Solutions (3)
 
@@ -204,7 +204,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -233,21 +233,14 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/websessionlogs`
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,HTTPSession"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **0** | **1** | **0** | **2** |
-
-### EventProduct / EventVendor
-
-| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
+| **Total** | **0** | **0** | **1** | **0** | **1** |
 
 ### EventType
 

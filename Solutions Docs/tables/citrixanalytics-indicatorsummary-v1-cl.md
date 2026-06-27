@@ -20,7 +20,7 @@
 
 ## Schema (26 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF/Data%20Connectors/CitrixAnalytics_CCF/CitrixAnalytics_tableIndicatorSummary.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF%5CData%20Connectors%5CCitrixAnalytics_CCF/CitrixAnalytics_tableIndicatorSummary.json)
 
 | Column Name | Type |
 |:------------|:-----|

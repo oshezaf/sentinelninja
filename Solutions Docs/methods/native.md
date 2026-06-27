@@ -20,8 +20,8 @@ Native connectors provide built-in integration with Microsoft services and are t
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **17** |
-| Active | 15 |
+| Total Connectors | **18** |
+| Active | 16 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 1 |
 
@@ -40,6 +40,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Microsoft Defender for IoT](../connectors/iot.md) | Microsoft | ? | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | Microsoft | ? | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
+| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) ➕ | Microsoft | 19 | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Microsoft PowerBI](../connectors/officepowerbi.md) | Microsoft | 1 | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [Microsoft Project](../connectors/office365project.md) | Microsoft | 1 | [Microsoft Project](../solutions/microsoft-project.md) |
 | [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md) ➕ | Microsoft | 1 | [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md) |

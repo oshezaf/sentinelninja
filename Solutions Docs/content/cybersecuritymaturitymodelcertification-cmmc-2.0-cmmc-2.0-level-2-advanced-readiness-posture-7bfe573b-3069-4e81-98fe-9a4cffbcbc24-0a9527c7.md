@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | `ComplianceStandard == "NIST-SP-800-171-R2"`<br>`State == "Failed"` | ✓ | ✗ | ? |
 
 ---
 

@@ -20,7 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [GoogleCloudPlatformIDS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIDS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpids) · Popularity: ⚪ Very Low (3%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpids) · Popularity: ⚪ Very Low (0%) |
 
 The Google Cloud Platform IDS solution provides the capability to ingest [Cloud IDS Audit logs](https://cloud.google.com/intrusion-detection-system/docs/audit-logging), [Cloud IDS Threat logs](https://cloud.google.com/intrusion-detection-system/docs/logging) and [Cloud IDS Traffic logs](https://cloud.google.com/intrusion-detection-system/docs/logging) into Microsoft Sentinel using the GCP IDS API.
 

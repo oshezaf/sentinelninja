@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | `Title contains "Critical"`<br>`Title contains "IPS"`<br>`Title contains "adopted"`<br>`Title contains "data connector"`<br>`Title contains "log shipping"`<br>`Title startswith "UniFi Site Manager"` | ✓ | ✗ | ✓ |
 | [`Unifi_SiteManager_Devices_CL`](../tables/unifi-sitemanager-devices-cl.md) |  | ? | ✓ | ? |
 | [`Unifi_SiteManager_Hosts_CL`](../tables/unifi-sitemanager-hosts-cl.md) |  | ? | ✓ | ? |
 | [`Unifi_SiteManager_ISPMetrics_CL`](../tables/unifi-sitemanager-ispmetrics-cl.md) |  | ? | ✓ | ? |

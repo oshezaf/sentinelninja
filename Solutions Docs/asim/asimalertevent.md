@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimAlertEvent` |
-| **Built-in Parser** | `_ASim_AlertEvent` |
+| **Parser Name** | `ASimAlertEvent` (parameter-less) · `imAlertEvent` (filtering) |
+| **Built-in Parser** | `_ASim_AlertEvent` (parameter-less) · `_Im_AlertEvent` (filtering) |
 | **Schema** | AlertEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |

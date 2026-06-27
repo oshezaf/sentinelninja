@@ -19,7 +19,7 @@
 
 ## Schema (321 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditDLP_CCF/M365Audit_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP%5CData%20Connectors%5CM365AuditDLP_CCF/M365Audit_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

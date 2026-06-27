@@ -19,7 +19,7 @@
 
 ## Schema (35 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/table_TheHiveData.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive%5CData%20Connectors%5CCCF/table_TheHiveData.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

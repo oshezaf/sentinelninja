@@ -20,7 +20,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/table_MulesoftCloudhubAlerts.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft%5CData%20Connectors%5CMulesoftCloudHubAlerts_CCF/table_MulesoftCloudhubAlerts.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

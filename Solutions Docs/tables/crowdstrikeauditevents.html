@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrowdStrikeAuditEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="crowdstrikeauditevents">CrowdStrikeAuditEvents</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Crowdstrike</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (199 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AccountId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud account ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AddedPrivileges</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Privileges that were added to the account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the CrowdStrike agent.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentIdString</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The agent ID string.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AggregateId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Aggregate identifier for related detections.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ApiClientId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">API client ID used for the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuditEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event type from the audit attributes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuditKeyValues</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing audit key-value pairs.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthenticationProtocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Authentication protocol used (e.g., NTLM, Kerberos).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Author</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Author of the detection rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Category of the identity protection event (e.g., Incident).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Cid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Customer ID in the CrowdStrike platform.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudIndicator</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the detection involves cloud-based indicators.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudPlatform</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud platform (e.g., AWS, Azure, GCP).</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud provider (e.g., aws, azure, gcp).</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudService</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud service involved (e.g., EC2, S3).</td>
+</tr>
+<tr>
+  <td style="text-align:left">CommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line used to execute the process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CompositeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Composite identifier combining multiple detection attributes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ComputerName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the computer where the IOC was detected.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectionDirection</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direction of the network connection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Consumes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content type consumed by the API.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ContextTimeStamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Context timestamp of the IDP detection event (Unix epoch).</td>
+</tr>
+<tr>
+  <td style="text-align:left">CurrentPrivileges</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current privilege level of the account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Customer identifier in the CrowdStrike platform.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomerIdString</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The customer ID string.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataDomains</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Data domains associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Detailed description of the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationEndpointIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the destination endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationEndpointName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the destination endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Disposition</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Assessment result (e.g., Failed, Passed).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Eid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElapsedMicroseconds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Elapsed time in microseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElapsedTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Elapsed time of the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndpointIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the endpoint involved in the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndpointName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the endpoint involved in the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Unix epoch timestamp when the session ended.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Action that triggered the IOA (e.g., TerminateInstances).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of the event (e.g., aws.cloudtrail).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of event, used to filter logs.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventUuid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique UUID for the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExecutionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Execution identifier for the report run.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExternalApiType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The external API type.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FalconHostLink</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Link to the detection details in the CrowdStrike Falcon console.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the file associated with the IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FilePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full path to the file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Finding</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details of the finding.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FineScore</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Fine score of the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FirstSeen</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">First time the hash spreading was observed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Flags</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing firewall rule flags (Audit, Log, Monitor).</td>
+</tr>
+<tr>
+  <td style="text-align:left">GrandParentCommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line of the grandparent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GrandParentImageFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Image file name of the grandparent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GrandParentImageFilePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full path to the grandparent process image file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hash</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Credential hash observed spreading across hosts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Highlights</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing highlights of the notification.</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostGroups</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host groups the system belongs to.</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the host involved in the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hostname</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the host where the event occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostnameField</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hostname of the target system.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IcmpCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ICMP code if the protocol is ICMP.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IcmpType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ICMP type if the protocol is ICMP.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IdentityProtectionIncidentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the identity protection incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ImageFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Image file name of the process associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the hash spreading incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of the incident (Unix epoch).</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of the incident (Unix epoch).</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of identity protection incident (e.g., GoldenTicketAlert).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Ipv</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP version (ipv4 or ipv6).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the matched item.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemPostedTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the item was posted.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the matched item.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastSeen</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Last time the hash spreading was observed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LateralMovement</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Lateral movement indicator for the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local IP address involved in the firewall event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local IP address of the host.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalIpv6</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local IPv6 address of the host.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalPort</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local port number involved in the firewall event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LogonDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Logon domain associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MACAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MAC address of the host.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchCount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of times the firewall rule was matched.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchCountSinceLastReport</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of matches since the last report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchedTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the match was found.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MD5String</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Message associated with the audit event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MitreAttack</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing MITRE ATT&amp;CK framework details.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MobileDetectionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the mobile detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkProfile</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Network profile identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Nonce</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique nonce value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NotificationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the recon notification.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NumberOfCompromisedEntities</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of compromised entities in the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NumbersOfAlerts</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of alerts associated with the incident.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Objective</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Objective of the detection (e.g., Follow Through).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Offset</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Stream offset value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation performed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentCommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line of the parent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentImageFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Image file name of the parent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentImageFilePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full path to the parent process image file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Process ID of the parent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Partition</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Stream partition.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDispositionDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the pattern disposition action.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDispositionFlags</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing flags indicating various pattern disposition actions.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDispositionValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Numerical value of the pattern disposition.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier for the detection pattern.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Pid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Process ID associated with the firewall event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlatformId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Platform ID (e.g., 0=Windows, 1=Mac, 2=Linux).</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlatformName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the platform (e.g., Windows, Linux, Mac).</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Policy identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the firewall policy.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyStatement</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the CSPM policy that was triggered.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PreviousPrivileges</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Previous privilege level of the account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the detected process ended.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Process ID associated with the IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the detected process started.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Produces</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content type produced by the API.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Network protocol (e.g., 1=ICMP, 6=TCP, 17=UDP).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReceivedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the request was received.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Region</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud region (e.g., us-west-2).</td>
+</tr>
+<tr>
+  <td style="text-align:left">RemoteAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Remote IP address involved in the firewall event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RemotePort</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Remote port number involved in the firewall event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportFileReference</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">File reference path for downloading the report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the scheduled report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the report (e.g., spotlight_vulnerabilities).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the CSPM assessment report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestAccept</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Accept header of the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestContentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content type of the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP method of the request (e.g., POST, GET).</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Path of the API request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestUriLength</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Length of the request URI.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceAttributes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing resource attributes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceCreateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Creation time of the resource.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the resource identifier (e.g., Instance Id).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourcesId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the cloud resource.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourcesName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the cloud resource.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the resource in the cloud console.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskScore</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Risk score associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Action taken by the firewall rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the firewall rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleFamilyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Family identifier of the firewall rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the firewall rule group.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the recon rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the recon rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RulePriority</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Priority of the recon rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleTopic</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Topic of the recon rule (e.g., Credential Exposure).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Scopes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">API scopes used for the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SensorId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the CrowdStrike sensor on the mobile device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SensorIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Sensor IDs associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the service (e.g., api_request).</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the remote response session.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Numerical severity level.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SeverityName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Text representation of the severity level.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SHA1String</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA1 hash of the detected file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SHA256Hashes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA256 hashes associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SHA256String</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA256 hash of the detected file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Source</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of the audit event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceAccountDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the source account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceAccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the source account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceAccountObjectSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Object SID of the source account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceAccountUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User principal name of the source account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceEndpointIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the source endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceEndpointName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the source endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceProducts</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Products associated with the detection source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceVendors</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Vendors associated with the detection source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SpreadCount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of hosts the hash has been observed on.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Unix epoch timestamp when the session started.</td>
+</tr>
+<tr>
+  <td style="text-align:left">State</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current state of the incident (e.g., IN_PROGRESS, CLOSED).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the report execution.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StatusCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP status code of the response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StatusMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status message for the report execution.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Success</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the API call was successful.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tactic</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK tactic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TacticId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MITRE ATT&amp;CK tactic ID associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TacticIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK tactic IDs associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tactics</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK tactics associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing resource tags.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Technique</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK technique.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TechniqueId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MITRE ATT&amp;CK technique ID associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TechniqueIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK technique IDs associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Techniques</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK techniques associated with the detection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (in UTC) when the log entry was generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TraceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Trace ID for request tracing.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TreeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Tree identifier for the process tree.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent string of the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User ID associated with the activity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the user making the API call.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Username who performed the action.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserSourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source IP of the user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserUuid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">UUID of the user who owns the scheduled report.</td>
+</tr>
+<tr>
+  <td style="text-align:left">XdrType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of XDR detection (e.g., xdr).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents">CrowdStrikeAuditEvents Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

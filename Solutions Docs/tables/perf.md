@@ -54,7 +54,7 @@ Reference for Perf table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [Perf Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf)
 
 ## Solutions (3)
 
@@ -66,9 +66,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (7)
 
-### Workbooks (3)
+### Workbooks (7)
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):** `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"`
 
@@ -87,6 +87,15 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Barracuda](../content/github-only-barracuda-84e65401.md) | `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"` |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) | `CounterName in "Available MBytes,Available MBytes Memory,Free Megabytes"` |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) | `CounterName contains "Processor Time"` |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 
 ## Resource Types
 

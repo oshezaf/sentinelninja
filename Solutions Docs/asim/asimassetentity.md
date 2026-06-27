@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimAssetEntity` |
-| **Built-in Parser** | `_ASim_AssetEntity` |
+| **Parser Name** | `ASimAssetEntity` (parameter-less) · `imAssetEntity` (filtering) |
+| **Built-in Parser** | `_ASim_AssetEntity` (parameter-less) · `_Im_AssetEntity` (filtering) |
 | **Schema** | AssetEntity |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |

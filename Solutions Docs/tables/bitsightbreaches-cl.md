@@ -21,7 +21,7 @@
 
 ## Schema (14 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_Events_CCF/table_BitSightBreaches.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_Events_CCF/table_BitSightBreaches.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

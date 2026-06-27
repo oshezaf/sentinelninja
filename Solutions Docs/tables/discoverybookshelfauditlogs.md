@@ -11,7 +11,7 @@ Reference for DiscoveryBookshelfAuditLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit |
-| **Basic Logs Eligible** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/discoverybookshelfauditlogs) |
 
@@ -44,7 +44,7 @@ Reference for DiscoveryBookshelfAuditLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [DiscoveryBookshelfAuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/discoverybookshelfauditlogs)
 
 ---
 

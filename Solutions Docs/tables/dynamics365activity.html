@@ -21,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for Dynamics365Activity table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -29,6 +30,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
@@ -41,19 +50,202 @@
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
   <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamics365activity">View Documentation</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
+<h2 id="schema">Schema (33 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamics365activity">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the device that was used when the activity was logged</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique value used to associate related rows</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrmOrganizationUniqueName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique name of the organization</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the entity</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the entity in the organization</td>
+</tr>
+<tr>
+  <td style="text-align:left">Fields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">JSON of Key Value pair reflecting the values that were created or updated</td>
+</tr>
+<tr>
+  <td style="text-align:left">InstanceUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of object that was accessed or modified. See the ItemType table for details on the types of objects</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the record emitting the log</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the message called in the Dynamics365 SDK</td>
+</tr>
+<tr>
+  <td style="text-align:left">OfficeWorkload</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Office 365 service where the activity occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the operation that the user is performing</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization</td>
+</tr>
+<tr>
+  <td style="text-align:left">OriginalObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ObjectId for SharePoint and OneDrive about business activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">Query</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The query filter parameters used while executing the FetchXML</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call</td>
+</tr>
+<tr>
+  <td style="text-align:left">RecordType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of operation indicated by the record. See the AuditLogRecordType table in Office 365 management activity api schema documentation for details on the types of audit log records</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the action (specified in the Operation property) was successful or not</td>
+</tr>
+<tr>
+  <td style="text-align:left">ServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Service generating the log</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceRecordId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of an audit record</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">SystemUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the user GUID in the organization</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time in Coordinated Universal Time (UTC) when the user performed the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alternative ID for the user identified in the UserId property</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamics365activity">Dynamics365Activity Schema Reference (Azure Monitor)</a></li>
 </ul>
 <h2 id="solutions">Solutions (5)</h2>
 <p>This table is used by the following solutions:</p>
@@ -66,7 +258,7 @@
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
   <th style="text-align:left">Connector</th>
@@ -81,8 +273,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
-<h3 id="workbooks">Workbooks (4)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (6)</h2>
+<h3 id="workbooks">Workbooks (6)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
@@ -139,6 +331,25 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

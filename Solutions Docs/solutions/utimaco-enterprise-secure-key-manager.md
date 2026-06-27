@@ -1,6 +1,4 @@
-# ⚠️ Utimaco Enterprise Secure Key Manager
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Utimaco Enterprise Secure Key Manager
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/UtimacoLogoSVG.svg" alt="Utimaco Enterprise Secure Key Manager Logo" width="75" height="75">
 
@@ -19,7 +17,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Utimaco - support@utimaco.com |
 | **First Published** | 2026-05-29 |
+| **Last Updated** | 2026-06-17 |
 | **Solution Folder** | [Utimaco Enterprise Secure Key Manager](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Utimaco%20Enterprise%20Secure%20Key%20Manager) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/utimacoisgmbh1676995905654.azure-sentinel-solution-eskm) · Popularity: 🔵 Medium (64%) |
 
 The [Utimaco ESKM](https://utimaco.com/key-management/enterprise-secure-key-manager) solution ingests KMIP server logs from Utimaco Enterprise Secure Key Manager (ESKM) into Microsoft Sentinel using the Codeless Connector Platform (CCP). It enables monitoring of key management operations, authentication events, and KMIP client activity, helping you detect misuse, configuration issues, and unauthorized access to cryptographic material. 
  

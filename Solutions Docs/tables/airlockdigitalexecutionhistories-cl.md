@@ -19,7 +19,7 @@
 
 ## Schema (26 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/table_AirlockDigitalExecutionHistories.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalExecutionHistories.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

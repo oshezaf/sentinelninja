@@ -11,6 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -25,7 +26,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel/Data%20Connectors/VaikoraSentinel_CCF/Vaikora_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel%5CData%20Connectors%5CVaikoraSentinel_CCF/Vaikora_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

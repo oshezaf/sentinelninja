@@ -21,7 +21,7 @@
 | **First Published** | 2025-02-11 |
 | **Last Updated** | 2026-05-14 |
 | **Solution Folder** | [ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop-revealx-sentinel) · Popularity: 🔵 Medium (62%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop-revealx-sentinel) · Popularity: 🔵 Medium (67%) |
 
 Configure the ExtraHop Detection Data Connector to send ExtraHop detection data to the Microsoft Sentinel. An ExtraHop workbook and analytic rules available from the Microsoft Sentinel Workspace enable you to gain insight into detections and generate detection alerts.
 

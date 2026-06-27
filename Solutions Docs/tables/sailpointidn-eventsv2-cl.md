@@ -19,7 +19,7 @@
 
 ## Schema (40 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/table_SailPointIDN_EventsV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow%5CData%20Connectors%5CSearchEvent_CCF/table_SailPointIDN_EventsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

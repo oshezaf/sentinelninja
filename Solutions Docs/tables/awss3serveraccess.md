@@ -67,7 +67,7 @@ Reference for AWSS3ServerAccess table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AWSS3ServerAccess Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awss3serveraccess)
 
 ## Solutions (1)
 

@@ -19,7 +19,7 @@
 
 ## Schema (19 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/table_AgariAPDTCLog.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari%5CData%20Connectors%5CAgari_CCF/table_AgariAPDTCLog.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

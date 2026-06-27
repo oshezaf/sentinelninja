@@ -306,7 +306,7 @@
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update">Update Schema Reference (Azure Monitor)</a></li>
 </ul>
 <h2 id="solutions">Solutions (4)</h2>
 <p>This table is used by the following solutions:</p>
@@ -317,8 +317,8 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
-<h3 id="workbooks">Workbooks (4)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (7)</h2>
+<h3 id="workbooks">Workbooks (7)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
@@ -364,7 +364,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>Classification != &quot;Feature Packs&quot;</code><br><code>UpdateState != &quot;Installed&quot;</code></p>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>UpdateState != &quot;Installed&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -374,6 +374,29 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-asc-complianceandprotection-70588a9c.html">ASC-ComplianceandProtection</a></td>
+  <td style="text-align:left"><code>UpdateState != &quot;Installed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+  <td style="text-align:left"><code>UpdateState != &quot;Installed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -402,7 +425,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Classification != &quot;Feature Packs&quot;</code><br><code>UpdateState != &quot;Installed&quot;</code></td>
+  <td style="text-align:left"><code>UpdateState != &quot;Installed&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -415,29 +438,6 @@
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="classification">Classification</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>!= Feature Packs</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>

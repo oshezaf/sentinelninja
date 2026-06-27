@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-01 |
 | **Last Updated** | 2026-06-10 |
 | **Solution Folder** | [ZeroFoxAlerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFoxAlerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: ⚪ Very Low (1%) |
 
 The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) into Microsoft Sentinel using the ZeroFox API. 
 
@@ -35,7 +35,10 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [ZeroFox Alerts](../connectors/zerofoxalertsdefinition.md)
+- [ZeroFox Alerts](../connectors/zerofoxalertsdefinition.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
@@ -43,7 +46,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | [ZeroFox Alerts](../connectors/zerofoxalertsdefinition.md) | - |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | [ZeroFox Alerts](../connectors/zerofoxalertsdefinition.md) | - |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Release Notes
 

@@ -8,7 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,7 +21,7 @@
 
 ## Schema (9 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar%5CData%20Connectors%5CNordStellar_ccf/table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

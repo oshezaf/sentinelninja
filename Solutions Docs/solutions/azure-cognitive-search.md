@@ -20,7 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [Azure Cognitive Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurecognitivesearch) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurecognitivesearch) · Popularity: 🟢 High (88%) |
 
 The [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search) solution for Microsoft Sentinel enables you to ingest Azure Cognitive Search diagnostics logs using Diagnostic Settings into Microsoft Sentinel. 
 
@@ -34,7 +34,10 @@ The [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md)
+- [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

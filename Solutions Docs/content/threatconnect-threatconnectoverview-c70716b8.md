@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | `SourceSystem startswith "ThreatConnect-"` | ✓ | ✗ | ✓ |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |
 
 ---

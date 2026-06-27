@@ -19,7 +19,7 @@
 
 ## Schema (20 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroAuditLogs_CCF/MiroAuditLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

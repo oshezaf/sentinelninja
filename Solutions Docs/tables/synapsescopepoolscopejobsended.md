@@ -45,7 +45,7 @@ Reference for SynapseScopePoolScopeJobsEnded table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [SynapseScopePoolScopeJobsEnded Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsescopepoolscopejobsended)
 
 ---
 

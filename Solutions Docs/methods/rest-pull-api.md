@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **51** |
-| Active | 35 |
+| Active | 36 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 15 |
+| Unpublished ⚠️ | 14 |
 
 ## Connectors Using This Method
 
@@ -60,7 +60,7 @@ The collection method for these connectors could not be automatically determined
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
@@ -72,7 +72,7 @@ The collection method for these connectors could not be automatically determined
 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) ⚠️ 🔶 | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
-| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) ⚠️ | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | Talon Security | 1 | [Talon](../solutions/talon.md) |
 | [Theom](../connectors/theom.md) 🔶 | Theom | 1 | [Theom](../solutions/theom.md) |

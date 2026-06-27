@@ -21,7 +21,7 @@
 
 ## Schema (11 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FieldEffectMDR/Data%20Connectors/FieldEffect_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FieldEffectMDR%5CData%20Connectors/FieldEffect_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

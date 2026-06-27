@@ -22,7 +22,7 @@
 
 ## Schema (23 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector/Data%20Connectors/RSIDPlus_AdminLogs_Connector_CCP/RSAIDPlus_AdminLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector%5CData%20Connectors%5CRSIDPlus_AdminLogs_Connector_CCP/RSAIDPlus_AdminLogs_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

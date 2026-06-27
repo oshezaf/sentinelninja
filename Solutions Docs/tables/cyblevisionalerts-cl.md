@@ -23,7 +23,7 @@
 
 ## Schema (72 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Data%20Connectors/CybleVisionAlerts_CCF/CybleVision_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision%5CData%20Connectors%5CCybleVisionAlerts_CCF/CybleVision_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

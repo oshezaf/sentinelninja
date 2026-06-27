@@ -20,7 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-30 |
 | **Solution Folder** | [Azure Batch Account](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Batch%20Account) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-batchaccount) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-batchaccount) · Popularity: 🟢 High (86%) |
 
 The [Azure Batch Account](https://docs.microsoft.com/azure/batch/accounts) solution for Microsoft Sentinel enables you to ingest Azure Batch Account diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
 
@@ -34,7 +34,10 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Batch Account](../connectors/azurebatchaccount-ccp.md)
+- [Azure Batch Account](../connectors/azurebatchaccount-ccp.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

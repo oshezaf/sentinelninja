@@ -20,7 +20,7 @@
 
 ## Schema (8 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitSightObservationStatistics.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitSightObservationStatistics.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

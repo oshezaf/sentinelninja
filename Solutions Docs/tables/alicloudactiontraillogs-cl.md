@@ -21,7 +21,7 @@
 
 ## Schema (27 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail%5CData%20Connectors%5CAliCloudCloudTrailConnector_CCP/AliCloudActionTrail_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

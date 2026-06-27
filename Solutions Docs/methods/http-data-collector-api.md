@@ -19,9 +19,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 72 |
+| Active | 73 |
 | Deprecated 🚫 | 28 |
-| Unpublished ⚠️ | 41 |
+| Unpublished ⚠️ | 40 |
 
 ### By Collection Method
 
@@ -98,7 +98,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
@@ -118,7 +118,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
-| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) | [REST Pull API](../methods/rest-pull-api.md) | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Talon Security | 1 | [Talon](../solutions/talon.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |

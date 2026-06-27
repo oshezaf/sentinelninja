@@ -81,7 +81,7 @@ Reference for Update table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [Update Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update)
 
 ## Solutions (4)
 
@@ -94,9 +94,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (7)
 
-### Workbooks (4)
+### Workbooks (7)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -116,11 +116,19 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |  |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):** `Classification != "Feature Packs"`<br>`UpdateState != "Installed"`
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `UpdateState != "Installed"`
 
 | Workbook |
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) | `UpdateState != "Installed"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `UpdateState != "Installed"` |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ## Resource Types
 
@@ -139,14 +147,8 @@ References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Classification != "Feature Packs"`<br>`UpdateState != "Installed"` | - | 1 | - | - | **1** |
+| `UpdateState != "Installed"` | - | 1 | - | - | **1** |
 | **Total** | **0** | **1** | **0** | **0** | **1** |
-
-### Classification
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= Feature Packs` | - | 1 | - | - | **1** |
 
 ### UpdateState
 

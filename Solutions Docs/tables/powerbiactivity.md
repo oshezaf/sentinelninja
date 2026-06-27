@@ -40,7 +40,7 @@ Reference for PowerBIActivity table in Azure Monitor Logs.
 | ActorUserType | string | The type of user that performed the operation. Possible types are: Admin, System, Application, Service Principal and Other. |
 | DashboardId | string | The ID of the dashboard that the activity was performed on. |
 | DashboardName | string | The name of the dashboard where the event occurred. |
-| DataClassification | string | The data classification, if exists, for the dashboard where the event occurred. |
+| DataClassification | string | The data classification, if it exists, for the dashboard where the event occurred. |
 | DatasetName | string | The name of the dataset where the event occurred. |
 | DistributionMethod | string | Indicates the distribution method of the content. |
 | EventOriginalType | string | The name of the user or admin activity that performed the activity. For a description of the most common operations/activities, see "Search the audit log" in the Office 365 Protection Center. For Exchange admin activity, this property identifies the name of the cmdlet that was run. For Dlp events, this can be "DlpRuleMatch", "DlpRuleUndo" or "DlpInfo", which are described under "DLP schema" below. |
@@ -77,7 +77,7 @@ Reference for PowerBIActivity table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [PowerBIActivity Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerbiactivity)
 
 ## Solutions (1)
 

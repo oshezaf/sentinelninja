@@ -23,7 +23,7 @@
 
 ## Schema (19 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_tables.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit%5CData%20Connectors%5CJiraAuditAPISentinelConnector_ccpv2/JiraAudit_tables.json)
 
 | Column Name | Type |
 |:------------|:-----|

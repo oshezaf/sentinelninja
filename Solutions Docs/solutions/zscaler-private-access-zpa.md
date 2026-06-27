@@ -21,7 +21,7 @@
 | **First Published** | 2022-01-31 |
 | **Last Updated** | 2026-04-28 |
 | **Solution Folder** | [Zscaler Private Access (ZPA)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zscalerprivateaccess) · Rating: ★★☆☆☆ 2.0/5 (3 ratings) · Popularity: 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zscalerprivateaccess) · Rating: ★★☆☆☆ 2.0/5 (3 ratings) · Popularity: 🟢 High (83%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Zscaler Private Access (ZPA)](https://www.zscaler.com/) solution provides the capability to ingest [Zscaler Private Access events](https://help.zscaler.com/zpa/what-zscaler-private-access) into Microsoft Sentinel.

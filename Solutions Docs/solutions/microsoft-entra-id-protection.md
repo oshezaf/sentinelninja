@@ -19,7 +19,7 @@
 | **First Published** | 2022-05-18 |
 | **Last Updated** | 2026-05-13 |
 | **Solution Folder** | [Microsoft Entra ID Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectoryip) · Popularity: 🟢 High (94%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectoryip) · Popularity: 🟢 High (95%) |
 
 The [Microsoft Entra ID Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Entra ID Protection for risky users and events in Microsoft Entra ID.
 

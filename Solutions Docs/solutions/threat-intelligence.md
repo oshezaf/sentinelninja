@@ -23,7 +23,7 @@
 | **First Published** | 2022-05-18 |
 | **Last Updated** | 2026-01-27 |
 | **Solution Folder** | [Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-taxii) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟡 Low (42%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-taxii) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟡 Low (41%) |
 
 The Threat Intelligence solution contains data connectors for import of supported STIX objects into Microsoft Sentinel, analytic rules for matching TI data with event data, workbook, and hunting queries. Threat indicators can be malicious IP's, URL's, filehashes, domains, email addresses etc.
 

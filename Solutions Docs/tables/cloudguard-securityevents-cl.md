@@ -21,7 +21,7 @@
 
 ## Schema (44 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_Tables.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP%5CData%20Connectors%5CCloudGuard_ccp/CloudGuard_Tables.json)
 
 | Column Name | Type |
 |:------------|:-----|

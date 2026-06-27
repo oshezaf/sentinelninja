@@ -21,7 +21,7 @@
 
 ## Schema (43 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/table_BitSightCompanyDetails.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitSightCompanyDetails.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

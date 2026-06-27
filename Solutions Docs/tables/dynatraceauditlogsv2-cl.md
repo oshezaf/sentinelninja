@@ -23,7 +23,7 @@
 
 ## Schema (11 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceAuditLogsV2/Connector_Dynatrace_AuditLogs_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace%5CData%20Connectors%5CDynatraceAuditLogsV2/Connector_Dynatrace_AuditLogs_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

@@ -20,7 +20,7 @@
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2023-07-28 |
 | **Solution Folder** | [ZeroFox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-sentinel-connector) · Popularity: 🔵 Medium (63%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-sentinel-connector) · Popularity: 🔵 Medium (62%) |
 
 The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) and [ZeroFox CTI events](https://www.zerofox.com/threat-intelligence/) into Microsoft Sentinel using the ZeroFox API. 
 
@@ -42,7 +42,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **2 data connector(s)**:
 
-- [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md)
+- [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) 🔶
 - [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -54,7 +54,7 @@ This solution uses **21 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) | Analytics |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) | Analytics |
 | [`ZeroFox_CTI_C2_CL`](../tables/zerofox-cti-c2-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
 | [`ZeroFox_CTI_advanced_dark_web_CL`](../tables/zerofox-cti-advanced-dark-web-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
 | [`ZeroFox_CTI_botnet_CL`](../tables/zerofox-cti-botnet-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |

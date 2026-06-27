@@ -24,6 +24,7 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 
 ## Schema (8 columns)
 
@@ -44,7 +45,7 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AWSCloudWatch Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudwatch)
 
 ## Solutions (1)
 
@@ -61,6 +62,16 @@ This table is ingested by the following connectors:
 | [Amazon Web Services S3](../connectors/awss3.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ---
 

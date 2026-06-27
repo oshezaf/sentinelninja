@@ -6,7 +6,7 @@
 
 ---
 
-Information about files attached to emails
+Reference for EmailAttachmentInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,6 @@ Information about files attached to emails
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailattachmentinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailattachmentinfo-table) |
 
 ## Contents
 
@@ -57,7 +56,7 @@ Information about files attached to emails
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [EmailAttachmentInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailattachmentinfo)
 
 ## Solutions (4)
 
@@ -78,9 +77,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (23)
 
-### Hunting Queries (6)
+### Hunting Queries (17)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -93,12 +92,23 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Campaign with randomly named attachments](../content/microsoft-defender-xdr-campaign-with-randomly-named-attachments-25150085-015a-4673-9b67-bc6ad9475500-8c3fd9dd.md) |  |
+| [Campaign with randomly named attachments](../content/github-only-campaign-with-randomly-named-attachments-25150085-015a-4673-9b67-bc6ad9475500-628a7be3.md) |  |
+| [Check for Maalware Baazar (abuse.ch) hashes in your mail flow](../content/github-only-check-for-maalware-baazar-abuse.ch-hashes-in-your-mail-flow-3dfabb54-3553-47cf-b734-5327e9133874-cb51ecac.md) |  |
 | [Email containing malware sent by an internal sender](../content/microsoft-defender-xdr-email-containing-malware-sent-by-an-internal-sender-07c85687-6dee-4266-9345-1e34de85d989-56ad4103.md) |  |
+| [Email containing malware sent by an internal sender](../content/github-only-email-containing-malware-sent-by-an-internal-sender-07c85687-6dee-4266-9345-1e34de85d989-81bd03ba.md) |  |
 | [Hunt for malicious attachments using external IOC source](../content/microsoft-defender-xdr-hunt-for-malicious-attachments-using-external-ioc-source-0da830c3-5d0e-4b98-bfa1-d5131a8d0ebe-4ace8da6.md) |  |
+| [Hunt for malicious attachments using external IOC source](../content/github-only-hunt-for-malicious-attachments-using-external-ioc-source-0da830c3-5d0e-4b98-bfa1-d5131a8d0ebe-c2233519.md) |  |
 | [Hunting for sender patterns](../content/microsoft-defender-xdr-hunting-for-sender-patterns-68aa199c-259b-4bb0-8e7a-8ed6f96c5525-4214a903.md) |  |
+| [Hunting for sender patterns](../content/github-only-hunting-for-sender-patterns-68aa199c-259b-4bb0-8e7a-8ed6f96c5525-a7084d35.md) |  |
 | [JNLP-File-Attachment](../content/microsoft-defender-xdr-jnlp-file-attachment-b6392f39-a1f4-4ec8-8689-4cb9d28c295a-a5972f2c.md) |  |
+| [JNLP-File-Attachment](../content/github-only-jnlp-file-attachment-b6392f39-a1f4-4ec8-8689-4cb9d28c295a-122fd663.md) |  |
+| [Potentially malicious svg file delivered to Inbox](../content/github-only-potentially-malicious-svg-file-delivered-to-inbox-ca777d68-fdd7-4f84-8c56-7c3af68f92d3-1859441b.md) |  |
+| [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
+| [files-from-malicious-sender](../content/github-only-files-from-malicious-sender-43625c12-5712-44df-8741-c334746aeccc-a436fe47.md) | `SenderFromAddress == "MaliciousSender@example.com"` |
+| [insider-threat-detection-queries (18)](../content/github-only-insider-threat-detection-queries-18-8ba93e9e-ea27-4b2f-9bb4-b458bc3e42e8-e207dd3f.md) |  |
+| [jar-attachments](../content/github-only-jar-attachments-3a45afa5-e955-4bff-8876-a42934f3533f-48b6c703.md) |  |
 
-### Workbooks (3)
+### Workbooks (6)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -112,11 +122,48 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365](../content/microsoft-defender-for-office-365-microsoftdefenderforoffice365-cc793056.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+
+| Workbook |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+
+**GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+| [MicrosoftDefenderForOffice365](../content/github-only-microsoftdefenderforoffice365-a5892291.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
+
+## Selection Criteria Summary (2 criteria, 2 total references)
+
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `SenderFromAddress == "MaliciousSender@example.com"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### ActionType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
+
+### SenderFromAddress
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `MaliciousSender@example.com` | - | 1 | - | - | **1** |
 
 ---
 

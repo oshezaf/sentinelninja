@@ -21,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for AzureDevOpsAuditing table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -30,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -37,19 +46,177 @@
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing">View Documentation</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
+<h2 id="schema">Schema (28 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the action that occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorClientId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">When the action was performed by a managed identity or other service principal, this value represents the client ID of that principal. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field is populated, ActorCUID and ActorUserId will both be 00000000-0000-0000-0000-000000000000.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorCUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">When the action was performed by a user, this value represents a consistently unique identifier for that actor. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of the user who initiated the auditing event to be logged.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUPN</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The actor's user principal name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">When the action was performed by a user or Azure DevOps service, this value represents that actor's user identifier. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Area</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Part of the Azure DevOps product where the auditing event occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthenticationMechanism</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of authentication used by the actor.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of action that occurred when the auditing event was logged.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CategoryDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of action that occurred when the auditing event was logged.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">CorrelationId allows two or more auditing events to be grouped together. This happens when a single action causes a cascade of auditing entries. An example being project creation.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Data</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional data that's unique to the type of auditing event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Details</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of what happened.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the audit event, unique across services.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IpAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address where the event originated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier for the type of auditing event that occurred. For example, Git.CreateRepo identifies the an auditing event for Git repository creation.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProjectName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Friendly name of the project that an auditing event occurred in. If not provided then the event isn't scoped to a particular project.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScopeDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User friendly name for the scope level that an auditing event occurred at.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The organization identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScopeType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The level (scope) that the event occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time the auditing event occurred in UTC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent from the request.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing">AzureDevOpsAuditing Schema Reference (Azure Monitor)</a></li>
 </ul>
 <h2 id="solutions">Solutions (3)</h2>
 <p>This table is used by the following solutions:</p>
@@ -62,7 +229,7 @@
 <h2 id="content-items-using-this-table">Content Items Using This Table (38)</h2>
 <h3 id="analytic-rules">Analytic Rules (19)</h3>
 <p><strong>In solution <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a>:</strong></p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
   <th style="text-align:left">Analytic Rule</th>

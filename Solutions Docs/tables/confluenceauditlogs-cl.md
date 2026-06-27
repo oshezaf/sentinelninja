@@ -21,7 +21,7 @@
 
 ## Schema (30 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit/Data%20Connectors/AtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit%5CData%20Connectors%5CAtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

@@ -19,7 +19,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity/Data%20Connectors/SonraiSecurity_ccp/SonraiSecurity_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity%5CData%20Connectors%5CSonraiSecurity_ccp/SonraiSecurity_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

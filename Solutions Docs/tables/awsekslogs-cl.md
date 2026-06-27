@@ -22,7 +22,7 @@
 
 ## Schema (13 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS%5CData%20Connectors/AWSEKS_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

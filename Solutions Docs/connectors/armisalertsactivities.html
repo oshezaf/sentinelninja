@@ -21,15 +21,44 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
-<p>| Attribute | Value |
-|:----------|:------|
-| <strong>Connector ID</strong> | <code>ArmisAlertsActivities</code> |
-| <strong>Publisher</strong> | Armis |
-| <strong>Used in Solutions</strong> | <a href="../solutions/armis.html">Armis</a> |
-| <strong>Collection Method</strong> | <a href="../methods/azure-function.html">Azure Function</a> |
-| <strong>Connector Definition Files</strong> | <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Data%20Connectors/ArmisAlertsActivities/ArmisAlertsActivities_API_FunctionApp.json">ArmisAlertsActivities_API_FunctionApp.json</a> |
-| <strong>Ingestion API</strong> | <a href="../methods/log-ingestion-api-undetermined.html">Log Ingestion API|Undetermined</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources|Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em> |
-| <strong>Microsoft Learn</strong> | <a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#armis-alerts-activities-using-azure-functions">View on Learn</a> |</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>ArmisAlertsActivities</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Armis</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/armis.html">Armis</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Data%20Connectors/ArmisAlertsActivities/ArmisAlertsActivities_API_FunctionApp.json">ArmisAlertsActivities_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> | <a href="../methods/undetermined.html">Undetermined</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#armis-alerts-activities-using-azure-functions">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
 <p>The <a href="https://www.armis.com/">Armis</a> Alerts Activities connector gives the capability to ingest Armis Alerts and Activities into Microsoft Sentinel through the Armis REST API. Refer to the API documentation: <code>https://&lt;YourArmisInstance&gt;.armis.com/api/v1/docs</code> for more information. The connector provides the ability to get alert and activity information from the Armis platform and to identify and prioritize threats in your environment. Armis uses your existing infrastructure to discover and identify devices without having to deploy any agents.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>

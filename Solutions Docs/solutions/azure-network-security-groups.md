@@ -21,7 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [Azure Network Security Groups](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Network%20Security%20Groups) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksecuritygroup) · Popularity: 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksecuritygroup) · Popularity: 🔵 Medium (79%) |
 
 The [Network Security Group](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview) solution enables you to stream and ingest diagnostic logs from your Azure NSG instances for Security Monitoring in to Microsoft Sentinel using Resource Diagnostic settings. 
 
@@ -35,7 +35,10 @@ The [Network Security Group](https://docs.microsoft.com/azure/virtual-network/ne
 
 This solution provides **1 data connector(s)**:
 
-- [Network Security Groups](../connectors/azurensg.md)
+- [Network Security Groups](../connectors/azurensg.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

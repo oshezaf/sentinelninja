@@ -55,8 +55,8 @@ Reference for DnsInventory table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
+- [DnsInventory Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsinventory)
 - [DnsInventory Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/dns-ama-fields)
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ## Solutions (1)
 
@@ -74,15 +74,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Dns](../content/github-only-dns-ff664046.md) |  |
 
 ## Resource Types
 

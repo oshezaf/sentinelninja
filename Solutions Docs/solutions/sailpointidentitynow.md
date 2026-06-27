@@ -19,7 +19,7 @@
 | **Author** | SailPointIdentityNow |
 | **First Published** | 2021-10-26 |
 | **Solution Folder** | [SailPointIdentityNow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sailpoint1582673310610.sentinel_offering) · Rating: ★★★★★ 4.7/5 (173 ratings) · Popularity: 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sailpoint1582673310610.sentinel_offering) · Rating: ★★★★★ 4.7/5 (175 ratings) · Popularity: 🔵 Medium (69%) |
 
 The [SailPoint Integration](https://www.sailpoint.com/) solution provides the capability to ingest SailPoint IdentityNow search events into Microsoft Sentinel through the REST API. The solution includes two data connectors: a legacy Azure Function-based connector and a Codeless Connector Framework (CCF) based connector. 
 

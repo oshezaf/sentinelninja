@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ? | ✓ | ? |
+| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ✓ | ✓ | ✓ |
 | [`CiscoUmbrellaCloudFirewall_CL`](../tables/ciscoumbrellacloudfirewall-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDLP_CL`](../tables/ciscoumbrelladlp-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDNS_CL`](../tables/ciscoumbrelladns-cl.md) | ? | ✓ | ? |

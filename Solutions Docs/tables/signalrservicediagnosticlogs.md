@@ -43,12 +43,12 @@ Reference for SignalRServiceDiagnosticLogs table in Azure Monitor Logs.
 | Location | string | The location of Azure SignalR service. |
 | Message | string | The message of the log event. It describes the log event in detail. |
 | MessageTracingId | long | The tracing ID of the message. It's used for tracing messages. |
-| MessageType | string | The type of the messsage. Can be 'BroadcastDataMessage', 'MultiConnectionDataMessage', 'GroupBroadcastDataMessage', 'MultiGroupBroadcastDataMessage', 'UserDataMessage', 'MultiUserDataMessage', 'JoinGroupWithAckMessage' and 'LeaveGroupWithAckMessage'. For more details, see <a href="https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols" data-linktype="external">https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols</a>. |
+| MessageType | string | The type of the message. Can be 'BroadcastDataMessage', 'MultiConnectionDataMessage', 'GroupBroadcastDataMessage', 'MultiGroupBroadcastDataMessage', 'UserDataMessage', 'MultiUserDataMessage', 'JoinGroupWithAckMessage' and 'LeaveGroupWithAckMessage'. For more information, see <a href="https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols" data-linktype="external">https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols</a>. |
 | OperationName | string | The operation name of the log event. it can be used to filter the log based on a specific operation name. |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of the log. |
-| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more details, see dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype. |
+| TransportType | string | The transport type of the connection. Can be 'WebSockets', 'ServerSentEvents', or 'LongPolling'. For more information, see dotnet/api/microsoft.aspnetcore.http.connections.httptransporttype. |
 | Type | string | The name of the table |
 | UserId | string | The user ID of the connection. It is defined by the client or app server. |
 
@@ -56,7 +56,7 @@ Reference for SignalRServiceDiagnosticLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [SignalRServiceDiagnosticLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signalrservicediagnosticlogs)
 
 ---
 

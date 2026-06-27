@@ -6,15 +6,14 @@
 
 ---
 
-Account information from various sources, including Microsoft Entra ID. This table also includes information and link to the identity that owns the account.
+Reference for IdentityAccountInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table) |
 
 ## Schema (51 columns)
 
@@ -78,7 +77,7 @@ Account information from various sources, including Microsoft Entra ID. This tab
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [IdentityAccountInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo)
 
 ---
 

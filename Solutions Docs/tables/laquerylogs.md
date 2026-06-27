@@ -24,7 +24,7 @@ Reference for LAQueryLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (34 columns)
+## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs)
 
@@ -44,8 +44,9 @@ Reference for LAQueryLogs table in Azure Monitor Logs.
 | IsWorkspaceInFailover | bool | Indicates whether the queried workspace was in failover mode. |
 | QueryText | string | The full body of the query as submitted by the user. |
 | QueryThumbprint | string | A hash representing the query structure, useful for identifying similar queries. |
-| QueryTimeRangeEnd | datetime | The end time (UTC) of the time range across which the query was was requested by the caller to be executed. |
-| QueryTimeRangeStart | datetime | The starting time (UTC) of the time range across which the query was was requested by the caller to be executed. |
+| QueryTimeRangeEnd | datetime | The end time (UTC) of the time range across which the query was requested by the caller to be executed. |
+| QueryTimeRangeStart | datetime | The starting time (UTC) of the time range across which the query was requested by the caller to be executed. |
+| RecordKind | string | The record kind. Classifies whether the record is backfilled for missed statistics retrieval. If it is not backfilled, the value is empty. |
 | RequestClientApp | string | ClientApp string in the request header (x-ms-app). |
 | RequestContext | dynamic | ResourceId of all referenced workspaces, applications, and resources across which the query was requested by the caller to be executed. |
 | RequestContextFilters | dynamic | Filters applied to the request context. |
@@ -69,21 +70,53 @@ Reference for LAQueryLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [LAQueryLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs)
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+- [Standalone Content](../solutions/standalone-content.md)
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (20)
 
-### Workbooks (3)
+### Analytic Rules (1)
+
+**Standalone Content:** `QueryText has_any "_GetWatchlist("`
+
+| Analytic Rule |
+|:-------------|
+| [Users searching for VIP user activity](../content/standalone-content-users-searching-for-vip-user-activity-f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e-aebfac5d.md) |
+
+### Hunting Queries (11)
+
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Cross workspace query anomolies](../content/standalone-content-cross-workspace-query-anomolies-8f18c6ea-fcd0-4d9a-a8fd-19a6aaa1660c-c649c5f9.md) |  |
+| [Multiple large queries made by user](../content/standalone-content-multiple-large-queries-made-by-user-cd11d6a1-e2ad-47fa-9a9f-4c70b143d4fd-5c0b6215.md) | `ResponseRowCount == "10001"` |
+| [New ServicePrincipal running queries](../content/standalone-content-new-serviceprincipal-running-queries-98e4df23-7bd2-480d-814a-a03f77efc670-8103d8fa.md) | `AADEmail !contains "@"`<br>`RequestClientApp != "AppAnalytics"`<br>`ResponseCode == "200"` |
+| [New client running queries](../content/standalone-content-new-client-running-queries-1dd98313-f43f-4d8b-9870-5a1dfb2cf93f-c7d32c1c.md) | `ResponseCode == "200"` |
+| [New users running queries](../content/standalone-content-new-users-running-queries-8c4fb385-98b0-4ef5-b3da-65db0fb22d89-113f7831.md) |  |
+| [Query data volume anomolies](../content/standalone-content-query-data-volume-anomolies-97543188-a4e8-4439-980d-17b231149617-2488d78c.md) |  |
+| [Query looking for secrets](../content/standalone-content-query-looking-for-secrets-2bf19f27-0466-4c16-a821-ce84e524476d-bba63411.md) | `RequestClientApp != "Sentinel-General"` |
+| [User returning more data than daily average](../content/standalone-content-user-returning-more-data-than-daily-average-8699df3f-f89e-431f-9dea-056c4ce7014a-cb19a4e5.md) |  |
+| [User running multiple queries that fail](../content/standalone-content-user-running-multiple-queries-that-fail-a2fca6ac-1155-4eec-934b-65aa62cdbb09-4fd90040.md) | `ResponseCode != "200"` |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Cross-service Azure Data Explorer queries](../content/github-only-cross-service-azure-data-explorer-queries-58b17f82-f594-4d36-9b78-4e4b03992708-26494ee3.md) |  |
+| [New users calling sensitive Watchlist](../content/github-only-new-users-calling-sensitive-watchlist-f3dc87f3-64f9-405d-aa1b-fed98f859357-5436e4d3.md) | `QueryText has_any "_GetWatchlist("` |
+
+### Workbooks (8)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `RequestClientApp != "Sentinel-General"`
 
@@ -103,38 +136,68 @@ This table is used by the following solutions:
 |:-------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [LogAnalyticsQueryAnalysis](../content/github-only-loganalyticsqueryanalysis-50cfc93a.md) |  |
+| [LogSourcesAndAnalyticRulesCoverage](../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.md) | `QueryText !startswith "search"`<br>`QueryText !startswith "top"`<br>`QueryText !startswith "union"`<br>`RequestClientApp in "ASC_Portal,ASI_Portal,AppAnalytics,AppInsightsPortalExtension,AzureInformationProtection,AzureMonitorLogsConnector,IbizaExtension,Sentinel-Investigation-Queries,Sentinel-analyticsManagement-customerQuery"` |
+| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) | `ResponseCode != "200"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
 - `microsoft.operationalinsights/workspaces`
 
-## Selection Criteria Summary (2 criteria, 3 total references)
+## Selection Criteria Summary (7 criteria, 10 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `RequestClientApp != "Sentinel-General"` | - | 2 | - | - | **2** |
+| `RequestClientApp != "Sentinel-General"` | - | 3 | - | - | **3** |
+| `QueryText has_any "_GetWatchlist("` | - | 2 | - | - | **2** |
+| `ResponseRowCount == "10001"` | - | 1 | - | - | **1** |
+| `ResponseCode == "200"` | - | 1 | - | - | **1** |
+| `AADEmail !contains "@"`<br>`RequestClientApp != "AppAnalytics"`<br>`ResponseCode == "200"` | - | 1 | - | - | **1** |
+| `ResponseCode != "200"` | - | 1 | - | - | **1** |
 | `RequestClientApp != "Sentinel-General"`<br>`ResponseCode != "200"`<br>`ResponseRowCount == "5000"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
+| **Total** | **0** | **10** | **0** | **0** | **10** |
+
+### AADEmail
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!contains @` | - | 1 | - | - | **1** |
+
+### QueryText
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any _GetWatchlist(` | - | 2 | - | - | **2** |
 
 ### RequestClientApp
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= Sentinel-General` | - | 3 | - | - | **3** |
+| `!= Sentinel-General` | - | 4 | - | - | **4** |
+| `!= AppAnalytics` | - | 1 | - | - | **1** |
 
 ### ResponseCode
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= 200` | - | 1 | - | - | **1** |
+| `200` | - | 2 | - | - | **2** |
+| `!= 200` | - | 2 | - | - | **2** |
 
 ### ResponseRowCount
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `10001` | - | 1 | - | - | **1** |
 | `5000` | - | 1 | - | - | **1** |
 
 ---

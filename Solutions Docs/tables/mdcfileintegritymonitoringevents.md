@@ -73,8 +73,8 @@ Reference for MDCFileIntegrityMonitoringEvents table in Azure Monitor Logs.
 | OldValueFullRegistryKey | string | Relevant for 'Registry' monitored entity type. Holds the previous full registry key. |
 | OldValueName | string | Relevant for 'Registry' monitored entity type. Holds the previous registry value name. |
 | OldValueType | string | Relevant for 'Registry' monitored entity type. Holds the previous registry value type. |
-| OriginalFileName | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original name the file that was renamed, before the rename occured. |
-| OriginalFilePath | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original path of the file that was renamed, before the rename occured. |
+| OriginalFileName | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original name the file that was renamed, before the rename occurred. |
+| OriginalFilePath | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original path of the file that was renamed, before the rename occurred. |
 | RegistryHive | string | Relevant for 'Registry' monitored entity type. Holds the grouping configuration settings for the operating system and applications. |
 | RegistryKey | string | Relevant for 'Registry' monitored entity type. Holds the full registry key of the registry that was created or the new registry key of the registry that was renamed. |
 | RequestAccountDomain | string | Relevant for 'File' monitored entity type. Holds the domain of the account of the user that caused the file event. |
@@ -92,7 +92,7 @@ Reference for MDCFileIntegrityMonitoringEvents table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [MDCFileIntegrityMonitoringEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcfileintegritymonitoringevents)
 
 ---
 

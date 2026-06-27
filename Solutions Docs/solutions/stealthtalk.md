@@ -1,6 +1,6 @@
-# ⚠️ StealthTalk
+# StealthTalk Anomalous Authentication
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: StealthTalk*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/StealthTalk/Workbooks/Images/Logo/st-ms-def-hub.svg" alt="StealthTalk Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | StealthTalk - support@stealthtalk.com |
 | **First Published** | 2026-05-01 |
+| **Last Updated** | 2026-06-19 |
 | **Solution Folder** | [StealthTalk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/stealthtalkinc.stealthtalk-sentinel-solution) · Popularity: 🟡 Low (37%) |
 
 The **StealthTalk Anomalous Authentication** solution ingests StealthTalk Enterprise sign-in anomaly data into Microsoft Sentinel so SOC teams can investigate anomalous authentication activity alongside Microsoft security telemetry. The solution includes a Logs Ingestion API data connector, scheduled analytic rules, hunting queries, ASIM authentication parsers, a workbook, and a Microsoft Teams playbook. It depends on [Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/overview), [Azure Monitor Logs Ingestion](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), [custom tables](https://learn.microsoft.com/azure/azure-monitor/logs/create-custom-table), [Logic Apps](https://learn.microsoft.com/azure/logic-apps/logic-apps-overview), and [ASIM](https://learn.microsoft.com/azure/sentinel/normalization).
 

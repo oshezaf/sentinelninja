@@ -19,7 +19,7 @@
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAIAuditLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI%5CData%20Connectors%5COpenAI_CCP/OpenAIAuditLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

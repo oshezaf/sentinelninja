@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AZMSApplicationMetricLogs &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -50,10 +52,129 @@
 </tr>
 </tbody>
 </table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
+<h2 id="schema">Schema (20 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsapplicationmetriclogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Internal ID, used to identify the specified activity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Authentication ID configured for Event Hub.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of authentication (Azure Active Directory or SAS Policy).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Entity name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Entity type.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NamespaceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Namespace name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Operation performed on Event Hub (ConsumerLag, ActiveConnection, IncomingMessages, Etc.).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Outcome</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of operation. Possible values: Success/Failure.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Properties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Metadata that are specific to the operation.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Protocol used to perform the operation. Possible value: AMQP, Kafka, and SBMP.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Provider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event provider name. Possible values: eventhub, relay, and servicebus.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The event start time (UTC).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">Value</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Value with respect to performed operation.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsapplicationmetriclogs">AZMSApplicationMetricLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
 <h2 id="resource-types">Resource Types</h2>
@@ -67,6 +188,30 @@
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

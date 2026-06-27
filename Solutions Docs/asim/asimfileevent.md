@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimFileEvent` |
-| **Built-in Parser** | `_ASim_FileEvent` |
+| **Parser Name** | `ASimFileEvent` (parameter-less) · `imFileEvent` (filtering) |
+| **Built-in Parser** | `_ASim_FileEvent` (parameter-less) · `_Im_FileEvent` (filtering) |
 | **Schema** | FileEvent |
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 📦 Union (schema-level) |

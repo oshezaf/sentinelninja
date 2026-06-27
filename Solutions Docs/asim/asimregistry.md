@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimRegistry` |
-| **Built-in Parser** | `_ASim_RegistryEvent` |
+| **Parser Name** | `ASimRegistry` (parameter-less) · `imRegistry` (filtering) |
+| **Built-in Parser** | `_ASim_RegistryEvent` (parameter-less) · `_Im_RegistryEvent` (filtering) |
 | **Schema** | RegistryEvent |
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 📦 Union (schema-level) |

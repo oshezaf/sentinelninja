@@ -19,7 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-04-02 |
-| **Last Updated** | 2026-05-28 |
+| **Last Updated** | 2026-06-24 |
 | **Solution Folder** | [Vaikora-SentinelOne-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-SentinelOne-ThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-vaikora-sentinelone) · Popularity: ⚪ Very Low (0%) |
 

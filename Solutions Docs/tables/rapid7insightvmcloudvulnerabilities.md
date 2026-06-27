@@ -86,7 +86,7 @@ Reference for Rapid7InsightVMCloudVulnerabilities table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [Rapid7InsightVMCloudVulnerabilities Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities)
 
 ## Solutions (1)
 

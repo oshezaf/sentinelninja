@@ -38,7 +38,7 @@ Reference for OEWExperimentScorecards table in Azure Monitor Logs.
 | FeatureFlagReference | string | The fully qualified Id of the feature. |
 | FeatureName | string | The name of the feature. |
 | Insights | dynamic | Scorecard-level Insights derived from the analysis results in JSON format. |
-| Label | string | The name of the label for the feature (if exists). |
+| Label | string | The name of the label for the feature (if it exists). |
 | ScorecardId | string | The Id of the experiment scorecard. |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
@@ -49,7 +49,7 @@ Reference for OEWExperimentScorecards table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [OEWExperimentScorecards Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oewexperimentscorecards)
 
 ---
 

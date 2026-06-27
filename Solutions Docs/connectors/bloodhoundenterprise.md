@@ -17,7 +17,7 @@
 | **Used in Solutions** | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BloodHoundFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise/Data%20Connectors/BloodHoundFunction.json) |
-| **Ingestion API** | [Log Ingestion API|HTTP Data Collector API](../methods/log-ingestion-api-http-data-collector-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources|Connector definition requires workspace key (SharedKey pattern)* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) \| [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Connector definition requires workspace key (SharedKey pattern)* |
 
 **[BloodHound Enterprise](https://bloodhoundenterprise.io/)** from **[SpecterOps](https://specterops.io/)** is an **Identity Attack Path Management** platform: it maps how attackers can move through identity relationships to reach critical assets so teams can **prioritize and remediate** those paths not only detect them. It brings clarity to identity sprawl in **Active Directory**, **Azure**, and beyond, including **Privilege Zone** style protection around what matters most in your environment.
 

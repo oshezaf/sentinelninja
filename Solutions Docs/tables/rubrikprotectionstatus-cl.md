@@ -19,7 +19,7 @@
 
 ## Schema (50 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud%5CData%20Connectors%5CRubrikSecurityCloud_CCF/RubrikSecurityCloud_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

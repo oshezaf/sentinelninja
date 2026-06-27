@@ -60,7 +60,7 @@ Reference for CopilotActivity table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [CopilotActivity Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/copilotactivity)
 
 ## Solutions (1)
 
@@ -78,7 +78,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (4)
 
@@ -100,13 +100,19 @@ This table is ingested by the following connectors:
 | [Copilot - Access From External IP Address](../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` |
 | [Copilot - Plugin Enabled After Being Disabled](../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Microsoft Copilot](../solutions/microsoft-copilot.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftCopilotActivityMonitoring](../content/microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftCopilotActivityMonitoring](../content/github-only-microsoftcopilotactivitymonitoring-5169439d.md) |  |
 
 ## Selection Criteria Summary (3 criteria, 3 total references)
 

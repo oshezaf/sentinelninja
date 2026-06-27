@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimProcessEventTerminate` |
-| **Built-in Parser** | `_ASim_ProcessEvent_Terminate` |
+| **Parser Name** | `ASimProcessEventTerminate` (parameter-less) · `imProcessTerminate` (filtering) |
+| **Built-in Parser** | `_ASim_ProcessEvent_Terminate` (parameter-less) · `_Im_ProcessTerminate` (filtering) |
 | **Schema** | ProcessEvent |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |

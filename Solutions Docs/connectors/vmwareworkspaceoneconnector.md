@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [VMwareWorkspaceOne_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/VMwareWorkspaceOne_DCR.json) |
 | **CCF Configuration** | [VMwareWorkspaceOne_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/VMwareWorkspaceOne_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#vmware-workspace-one-via-codeless-connector-framework) |
 
 The VMware Workspace ONE connector ingests enrolled device inventory and installed application details from the Workspace ONE Unified Endpoint Management (UEM) platform into Microsoft Sentinel. It supports device compliance tracking, non-compliant endpoint detection, and unauthorized application discovery across iOS, Android, Windows, and macOS managed devices.
 

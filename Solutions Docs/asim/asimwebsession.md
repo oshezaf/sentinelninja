@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimWebSession` |
-| **Built-in Parser** | `_ASim_WebSession` |
+| **Parser Name** | `ASimWebSession` (parameter-less) · `imWebSession` (filtering) |
+| **Built-in Parser** | `_ASim_WebSession` (parameter-less) · `_Im_WebSession` (filtering) |
 | **Schema** | WebSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |

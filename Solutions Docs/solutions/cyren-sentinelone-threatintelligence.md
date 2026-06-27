@@ -1,6 +1,4 @@
-# Cyren SentinelOne IOC Automation
-
-*Solution: Cyren-SentinelOne-ThreatIntelligence*
+# Cyren-SentinelOne-ThreatIntelligence
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/cyren_logo.svg" alt="Cyren-SentinelOne-ThreatIntelligence Logo" width="75" height="75">
 
@@ -19,9 +17,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-02-17 |
-| **Last Updated** | 2026-04-08 |
 | **Solution Folder** | [Cyren-SentinelOne-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyren-SentinelOne-ThreatIntelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-s1-ioc-automation) · Popularity: 🔵 Medium (55%) |
 
 The Cyren SentinelOne Threat Intelligence solution polls the Cyren CCF (IP reputation, malware URLs) threat intelligence feed and pushes indicators of compromise (IOCs) to SentinelOne's Threat Intelligence API for automated detection and response.
 

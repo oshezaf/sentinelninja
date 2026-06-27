@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimAuthentication` |
-| **Built-in Parser** | `_ASim_Authentication` |
+| **Parser Name** | `ASimAuthentication` (parameter-less) · `imAuthentication` (filtering) |
+| **Built-in Parser** | `_ASim_Authentication` (parameter-less) · `_Im_Authentication` (filtering) |
 | **Schema** | Authentication |
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 📦 Union (schema-level) |

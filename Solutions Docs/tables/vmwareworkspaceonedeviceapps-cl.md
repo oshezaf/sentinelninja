@@ -19,7 +19,7 @@
 
 ## Schema (10 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDeviceApps.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE%5CData%20Connectors%5CVMwareWorkspaceOneConnector_CCF/table_VMwareWorkspaceOneDeviceApps.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

@@ -22,7 +22,7 @@
 
 ## Schema (23 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/Data%20Connectors/D3SOAR_CCF/D3SOAR_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR%5CData%20Connectors%5CD3SOAR_CCF/D3SOAR_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

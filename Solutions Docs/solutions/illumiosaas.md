@@ -21,7 +21,7 @@
 | **First Published** | 2024-05-13 |
 | **Last Updated** | 2026-06-05 |
 | **Solution Folder** | [IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) · Popularity: 🟡 Low (43%) |
 
 **1. Azure Function App: **
 

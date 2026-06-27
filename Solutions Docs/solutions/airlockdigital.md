@@ -21,7 +21,7 @@
 | **First Published** | 2026-05-20 |
 | **Last Updated** | 2026-06-04 |
 | **Solution Folder** | [AirlockDigital](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-airlockdigital) · Popularity: 🔵 Medium (52%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-airlockdigital) · Popularity: 🔵 Medium (58%) |
 
 The [Airlock Digital](https://www.airlockdigital.com/) Solution for Microsoft Sentinel enables you to ingest Airlock Digital application control and execution logs into Microsoft Sentinel using the Codeless Connector Platform (CCP). This solution provides visibility into file executions, server activities, and security event summaries from your Airlock Digital server.
 

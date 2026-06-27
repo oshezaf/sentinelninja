@@ -19,7 +19,7 @@
 | **Version** | 3.1.0 |
 | **Author** | Halcyon - support@halcyon.ai |
 | **First Published** | 2025-12-22 |
-| **Last Updated** | 2026-04-30 |
+| **Last Updated** | 2026-06-26 |
 | **Solution Folder** | [Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/halcyontech1743610828684.azure-sentinel-solution-halcyon) · Popularity: ⚪ Very Low (0%) |
 

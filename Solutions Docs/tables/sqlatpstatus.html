@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SqlAtpStatus &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SqlAtpStatus table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -35,12 +46,119 @@
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlatpstatus">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (18 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlatpstatus">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the source monitoring agent</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The start time of the Microsoft Monitoring Agent process running SQL ATP solution. This can help find agents who restart frequently or not at all and can indicate a problem or machine with out-of-date configuration</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Client IP address of the source computer</td>
+</tr>
+<tr>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the computer that hosts the SQL Server</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID of the machine hosting the SQL Instance, if it exists</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntelligencePackVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP version of SQL Advanced Threat Protection running on the machine</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastError</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The last error from SQL Advanced Threat Protection (if it exists). The error refers to the time passed from the previous status entry and can help diagnose transient or persistent issues with SQL ATP protection</td>
+</tr>
+<tr>
+  <td style="text-align:left">MachineUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the machine running the Microsoft Monitoring Agent</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">SqlInstanceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SQL Server instance name</td>
+</tr>
+<tr>
+  <td style="text-align:left">SqlInstanceStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The start time of the SQL Server instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">SqlInstanceVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SQL Server instance version</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SQL Advanced Threat Protection status for the SQL instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the log was generated</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
 </tbody>
 </table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sqlatpstatus">SqlAtpStatus Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
 <hr />
@@ -48,6 +166,30 @@
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

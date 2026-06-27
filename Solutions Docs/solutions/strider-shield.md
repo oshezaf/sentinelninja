@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-28 |
 | **Last Updated** | 2026-06-04 |
 | **Solution Folder** | [Strider Shield](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nvisocvba1591630627500.nviso-strider-shield-azure-sentinel-solution) · Popularity: 🟡 Low (14%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nvisocvba1591630627500.nviso-strider-shield-azure-sentinel-solution) · Popularity: 🟡 Low (25%) |
 
 The [Strider Shield](https://www.striderintel.com/shield/) Data Connector delivers curated intelligence on state-sponsored actors by ingesting Strider Shield data into Microsoft Sentinel.
 

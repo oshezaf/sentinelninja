@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | ✗ | ✓ | ✗ |
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

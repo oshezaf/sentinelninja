@@ -40,7 +40,7 @@ Reference for ACSEmailSendMailOperational table in Azure Monitor Logs.
 | Location | string | The location the request was processed. |
 | OperationName | string | The operation associated with log record. |
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
-| Size | real | The size of the email in megabypes. |
+| Size | real | The size of the email in megabytes. |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
@@ -53,7 +53,7 @@ Reference for ACSEmailSendMailOperational table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ACSEmailSendMailOperational Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acsemailsendmailoperational)
 
 ---
 

@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimUserManagement` |
-| **Built-in Parser** | `_ASim_UserManagement` |
+| **Parser Name** | `ASimUserManagement` (parameter-less) · `imUserManagement` (filtering) |
+| **Built-in Parser** | `_ASim_UserManagement` (parameter-less) · `_Im_UserManagement` (filtering) |
 | **Schema** | UserManagement |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |

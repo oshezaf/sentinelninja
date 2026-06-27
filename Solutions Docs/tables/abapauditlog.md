@@ -53,9 +53,9 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | RemoteIpCountry | string | The country of the TerminalIpV6 according to the GEO information at the time of the record ingestion. |
 | RemoteIpLatitude | real | The Latitude of the TerminalIpV6 according to the GEO information at the time of the record ingestion. |
 | RemoteIpLongitude | real | The Longitude of the TerminalIpV6 according to the GEO information at the time of the record ingestion. |
-| SalDateChar8 | string | The SalDateChar8 is the date the event occured in char8 format (yyyyMMdd) eg: 20190101. |
+| SalDateChar8 | string | The SalDateChar8 is the date the event occurred in char8 format (yyyyMMdd) eg: 20190101. |
 | SalIpAddress | string | The SALIpAddress refers to the IP address associated with a specific user or system that generated a specific log entry. |
-| SalTimeChar6 | string | The SalTimeChar6 is the time the event occured in char6 format (hhMMss) eg: 110804. |
+| SalTimeChar6 | string | The SalTimeChar6 is the time the event occurred in char6 format (hhMMss) eg: 110804. |
 | SapProcessType | string | The SapProcessType refers to the type of process that is being executed within the SAP system. This can include various types of processes such as background jobs, dialog processes, or update processes. |
 | SapWorkProcessName | string | The SapWorkProcessName refers to the name of a specific work process within the SAP system used to identify and monitor specific work processes. It is typically a unique alphanumeric code. |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
@@ -68,7 +68,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time when the record was generated |
 | TransactionCode | string | the TransactionCode is a unique identifier for a specific SAP transaction used to identify and execute a specific transaction within the SAP system. It is typically a four-character alphanumeric code and can be used in various SAP transactions and reports. |
 | Type | string | The name of the table |
-| UpdatedOn | datetime | The date and time of the event occured in the SAP system in UTC format. |
+| UpdatedOn | datetime | The date and time of the event occurred in the SAP system in UTC format. |
 | User | string | The User who performed the a specific event or activity. |
 | Variable1 | string | The Variable1 used by the SAP system for additional information regarding the event or activity that was performed. |
 | Variable2 | string | The Variable2 used by the SAP system for additional information regarding the event or activity that was performed. |
@@ -79,7 +79,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ABAPAuditLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapauditlog)
 
 ## Solutions (4)
 

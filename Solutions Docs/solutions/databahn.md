@@ -21,7 +21,7 @@
 | **First Published** | 2026-02-06 |
 | **Last Updated** | 2026-05-12 |
 | **Solution Folder** | [Databahn](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/databahninc1771934525923.databahn-sentinel-push) · Popularity: 🟡 Low (40%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/databahninc1771934525923.databahn-sentinel-push) · Popularity: 🟡 Low (41%) |
 
 The Databahn connector provides the capability to push real-time platform telemetry from your Databahn environment directly into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. This connector ingests audit logs, operational alerts, and device inventory into custom Log Analytics tables for analysis, alerting, and visualization.
 

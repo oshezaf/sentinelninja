@@ -23,6 +23,7 @@ Reference for AADProvisioningLogs table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 
 ## Schema (28 columns)
 
@@ -63,7 +64,7 @@ Reference for AADProvisioningLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AADProvisioningLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs)
 
 ## Solutions (1)
 
@@ -80,6 +81,18 @@ This table is ingested by the following connectors:
 | [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
+
+## Content Items Using This Table (3)
+
+### Workbooks (3)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ---
 

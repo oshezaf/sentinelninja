@@ -46,14 +46,14 @@ Reference for CloudHsmServiceOperationAuditLogs table in Azure Monitor Logs.
 | Sku | dynamic | Information about the Cloud HSM SKU including family and name. |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Timestamp (UTC) when operation occured. |
+| TimeGenerated | datetime | Timestamp (UTC) when operation occurred. |
 | Type | string | The name of the table |
 
 ## Schema References
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [CloudHsmServiceOperationAuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudhsmserviceoperationauditlogs)
 
 ---
 

@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UCClient &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for UCClient table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -36,15 +47,342 @@
   <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclient">View Documentation</a></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (62 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclient">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AzureADDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to the AAD Tenant to which the device belongs.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AzureADTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to this device's AAD Device ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">City</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The last-reported location of device (city), based on IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Country</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The last-reported location of device (country), based on IP address. Shown as country code.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceFamily</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device family e.g. PC, Phone.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceFormFactor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device form factor e.g. Notebook, Desktop, Phone.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceManufacturer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device OEM Manufacturer e.g. Hewlett-Packard.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceModel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device's OEM model e.g. HP7420 Workstation.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Device given name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Microsoft internal Global Device Identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsDeviceHotpatchEligible</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies whether a device meets the necessary criteria to receive windows security updates without requiring a restart.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsDeviceHotpatchEnrolled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the device has been enrolled to receive windows security updates without requiring a restart.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsDeviceVBSEnabled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether Virtual Based Security (VBS) is enabled on the device. Enabling VBS is a prerequisite for devices to recieve windows security updates without a restart.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsVirtual</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether device is a Virtual Device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastCensusScanTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The last time this device performed a successful Census Scan, if any.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastHotpatchEnrolledTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The last time when device was enrolled to receive security updates without restart.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastWUScanTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The last time this device performed a successful WU Scan, if any.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSArchitecture</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The architecture of the Operating System e.g. x86.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSBuild</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSBuildNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">An integer value for the revision number of the currently-installed Windows 10 OSBuild on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSEdition</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Windows 10 Edition or SKU.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSFeatureUpdateComplianceStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest Feature Update being Offered by WUfB DS, else NotApplicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSFeatureUpdateEOSTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The end of service date of the Feature Update currently installed on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSFeatureUpdateReleaseTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The release date of the Feature Update currently installed on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSFeatureUpdateStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest available Feature Update.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSQualityUpdateComplianceStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest Quality Update being Offered by WUfB DS, else NotApplicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSQualityUpdateReleaseTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The release date of the Quality Update currently installed on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSQualityUpdateStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest available Quality Update, for its Feature Update.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSRevisionNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">An integer value for the revision number of the currently-installed Windows 10 OSBuild on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSSecurityUpdateComplianceStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest Security update (QU, Classification==Security) being offered by WUfB DS, else NotApplicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSSecurityUpdateStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not the device is on the latest available Security Update, for its Feature Update.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSServicingChannel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The elected Windows 10 Servicing Channel of the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OSVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of Windows 10 as is organized on aka.ms/win10releaseinfo.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PrimaryDiskFreeCapacityMb</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Free disk capacity of the primary disk in Megabytes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SCCMClientId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to the SCCM Client ID on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time the snapshot generated this specific record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateConnectivityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not this device is maintaining a sufficiently cumulative and continuous connection to Windows Update so the update can progress optimally.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUAutomaticUpdates</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: AllowAutoUpdate &amp;'AuOptions' Enables the IT admin to manage automatic update behavior to scan, download, and install updates.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUDeadlineNoAutoRestart</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP:ConfigureDeadlineNoAutoReboot. Devices will not automatically restart outside of active hours until the deadline is reached, 1 - Enabled 0 (default) - Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUDODownloadMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The WU DO DownloadMode configuration, brought over from Update Compliance.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeatureDeadlineDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the deadline in days.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeatureDeferralDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: DeferFeatureUpdates. The WU Feature Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the policy setting.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeatureGracePeriodDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The WU grace period for feature update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeaturePauseEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">CSP:PauseFEatureUpdatesEndTime The time WU Feature Update Pause will end, if activated, else null.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeaturePauseStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">CSP: PauseFeatureUpdatesStartTime. The time WU Feature Update Pause was activated, if activated, else null.eature Updates will be paused for 35 days from the specified start date.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUFeaturePauseState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates pause status of device for FU, possible values are Paused, NotPaused, NotConfigured.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUNotificationLevel</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: UpdateNotificationLevel. This policy allows you to define what Windows Update notifications users see. 0 (default) Use the default Windows Update notifications. 1 Turn off all notifications, excluding restart warnings. 2 Turn off all notifications, including restart warnings</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUPauseUXDisabled</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: SetDisablePauseUXAccess. This policy allows the IT admin to disable the Pause Updates feature. When this policy is enabled, the user cannot access the Pause updates&quot; feature. Supported values 0, 1.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityDeadlineDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the deadline in days.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityDeferralDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the policy setting.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityGracePeriodDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The WU grace period for quality update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityPauseEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">CSP:PauseQualityUpdatesEndTimeThe time WU Quality Update Pause will end, if activated, else null.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityPauseStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">CSP:PauseQualityUpdatesStartTime The time WU Quality Update Pause was activated; if activated; else null.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUQualityPauseState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates pause status of device for QU, possible values are Paused, NotPaused, NotConfigured.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WURestartNotification</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP: AutoRestartRequiredNotificationDismissal. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.The following list shows the supported values: 1 (default) = Auto Dismissal. 2 User Dismissal.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUServiceURLConfigured</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">CSP:UpdateServiceUrl. The following list shows the supported values: Not configured. The device checks for updates from Microsoft Update. Set to a URL, such as http://abcd-srv:8530. The device checks for updates from the WSUS server at the specified URL. Not configured. The device checks for updates from Microsoft Update. Set to a URL, such as http://abcd-srv:8530. The device checks for updates from the WSUS server at the specified URL.</td>
+</tr>
+<tr>
+  <td style="text-align:left">WUUXDisabled</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">CSP:SetDisableUXWUAccess.This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user cannot access the Windows Update scan, download, and install features. Default is 0. Supported values 0, 1.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclient">UCClient Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
 <hr />
@@ -52,6 +390,30 @@
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

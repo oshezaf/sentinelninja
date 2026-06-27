@@ -21,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for SecurityIncident table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -34,6 +35,10 @@
   <td style="text-align:left">Internal</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -45,18 +50,201 @@
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident">View Documentation</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
+<h2 id="schema">Schema (33 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional data on the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The IDs of the alerts related to the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">BookmarkIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The IDs of the bookmarks related to the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">Classification</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The classification the incident was given when closed</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClassificationComment</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the reason the incident was closed</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClassificationReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The classification reason the incident was given when closed</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClosedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the incident was last closed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Comments</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The comments added to the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">CreatedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the incident was created</td>
+</tr>
+<tr>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The description of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">FirstActivityTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the first activity in the incident occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">FirstModifiedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the incident was first modified</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The resource name of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The sequential number of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The URI to open the incident in Azure Sentinel portal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Labels</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The labels added to the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastActivityTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the last activity in the incident occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastModifiedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the incident was last modified</td>
+</tr>
+<tr>
+  <td style="text-align:left">ModifiedBy</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source of the change in the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">Owner</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The user the incident is assigned to</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProviderIncidentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The incident ID assigned by the incident provider</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProviderName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the source provider that generated the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">RelatedAnalyticRuleIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The IDs of the Analytic rules associated with the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The status of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tasks</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The tasks added to the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the incident was ingested</td>
+</tr>
+<tr>
+  <td style="text-align:left">Title</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The title of the incident</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident">SecurityIncident Schema Reference (Azure Monitor)</a></li>
 </ul>
 <h2 id="solutions">Solutions (34)</h2>
 <p>This table is used by the following solutions:</p>
@@ -97,10 +285,10 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (51)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (70)</h2>
 <h3 id="analytic-rules">Analytic Rules (3)</h3>
 <p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
   <th style="text-align:left">Analytic Rule</th>
@@ -118,38 +306,34 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong> <code>Labels has &quot;SOCRadar&quot;</code><br><code>Labels has &quot;Synced&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/socradar-socradar-unsynced-closed-incident-6e2f8d4b-5a71-4c9e-b3f6-8a1c9d4e7b2a-ea970a79.html">SOCRadar Unsynced Closed Incident</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <h3 id="hunting-queries">Hunting Queries (1)</h3>
-<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/socradar.html">SOCRadar</a>:</strong> <code>Labels has &quot;SOCRadar&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.html">SOCRadar Incident Correlation</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (39)</h3>
+<h3 id="workbooks">Workbooks (58)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -195,33 +379,29 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>Severity == &quot;High&quot;</code><br><code>Title !contains &quot;URL&quot;</code><br><code>Title !contains &quot;net&quot;</code><br><code>Title !contains &quot;normalization&quot;</code><br><code>Title !contains &quot;web&quot;</code><br><code>Title contains &quot;AAD&quot;</code><br><code>Title contains &quot;Account&quot;</code><br><code>Title contains &quot;Identity&quot;</code><br><code>Title contains &quot;Login&quot;</code><br><code>Title contains &quot;Sign&quot;</code><br><code>Title contains &quot;User&quot;</code><br><code>Title contains &quot;WAF&quot;</code><br><code>Title contains &quot;access&quot;</code><br><code>Title contains &quot;anti&quot;</code><br><code>Title contains &quot;app&quot;</code><br><code>Title contains &quot;auth&quot;</code><br><code>Title contains &quot;cert&quot;</code><br><code>Title contains &quot;certificate&quot;</code><br><code>Title contains &quot;cred&quot;</code><br><code>Title contains &quot;data&quot;</code><br><code>Title contains &quot;dns&quot;</code><br><code>Title contains &quot;dos&quot;</code><br><code>Title contains &quot;exploit&quot;</code><br><code>Title contains &quot;impersonate&quot;</code><br><code>Title contains &quot;inject&quot;</code><br><code>Title contains &quot;intrusion&quot;</code><br><code>Title contains &quot;key&quot;</code><br><code>Title contains &quot;mal&quot;</code><br><code>Title contains &quot;mining&quot;</code><br><code>Title contains &quot;password&quot;</code><br><code>Title contains &quot;program&quot;</code><br><code>Title contains &quot;secret&quot;</code><br><code>Title contains &quot;sensitive&quot;</code><br><code>Title contains &quot;service principal&quot;</code><br><code>Title contains &quot;tool&quot;</code><br><code>Title contains &quot;travel&quot;</code><br><code>Title contains &quot;virus&quot;</code><br><code>Title contains &quot;ware&quot;</code><br><code>Title contains &quot;worm&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/censys.html">Censys</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/censys.html">Censys</a>:</strong> <code>ModifiedBy contains &quot;playbook - censys&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/censys-censys-21c23ffd.html">Censys</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -240,18 +420,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>Classification in &quot;BenignPositive,FalsePositive,TruePositive,Undetermined&quot;</code><br><code>Severity == &quot;High&quot;</code><br><code>Title contains &quot;PII&quot;</code><br><code>Title contains &quot;USB&quot;</code><br><code>Title contains &quot;access&quot;</code><br><code>Title contains &quot;account&quot;</code><br><code>Title contains &quot;backdoor&quot;</code><br><code>Title contains &quot;beacon&quot;</code><br><code>Title contains &quot;brute&quot;</code><br><code>Title contains &quot;c2&quot;</code><br><code>Title contains &quot;confidential&quot;</code><br><code>Title contains &quot;cred&quot;</code><br><code>Title contains &quot;data&quot;</code><br><code>Title contains &quot;deny&quot;</code><br><code>Title contains &quot;drive&quot;</code><br><code>Title contains &quot;execution&quot;</code><br><code>Title contains &quot;exfil&quot;</code><br><code>Title contains &quot;exploit&quot;</code><br><code>Title contains &quot;file&quot;</code><br><code>Title contains &quot;intellectual&quot;</code><br><code>Title contains &quot;leak&quot;</code><br><code>Title contains &quot;logon&quot;</code><br><code>Title contains &quot;loss&quot;</code><br><code>Title contains &quot;media&quot;</code><br><code>Title contains &quot;removable&quot;</code><br><code>Title contains &quot;restricted&quot;</code><br><code>Title contains &quot;sensitive&quot;</code><br><code>Title contains &quot;shared&quot;</code><br><code>Title contains &quot;sign&quot;</code><br><code>Title contains &quot;software&quot;</code><br><code>Title contains &quot;spill&quot;</code><br><code>Title contains &quot;storage&quot;</code><br><code>Title contains &quot;test&quot;</code><br><code>Title contains &quot;tool&quot;</code><br><code>Title contains &quot;trojan&quot;</code><br><code>Title contains &quot;usb&quot;</code><br><code>Title contains &quot;virus&quot;</code><br><code>Title contains &quot;ware&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -364,18 +542,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a>:</strong> <code>AdditionalData contains &quot;T0801&quot;</code><br><code>AdditionalData contains &quot;T0803&quot;</code><br><code>AdditionalData contains &quot;T0806&quot;</code><br><code>AdditionalData contains &quot;T0807&quot;</code><br><code>AdditionalData contains &quot;T0809&quot;</code><br><code>AdditionalData contains &quot;T0811&quot;</code><br><code>AdditionalData contains &quot;T0814&quot;</code><br><code>AdditionalData contains &quot;T0816&quot;</code><br><code>AdditionalData contains &quot;T0817&quot;</code><br><code>AdditionalData contains &quot;T0821&quot;</code><br><code>AdditionalData contains &quot;T0822&quot;</code><br><code>AdditionalData contains &quot;T0826&quot;</code><br><code>AdditionalData contains &quot;T0828&quot;</code><br><code>AdditionalData contains &quot;T0831&quot;</code><br><code>AdditionalData contains &quot;T0836&quot;</code><br><code>AdditionalData contains &quot;T0838&quot;</code><br><code>AdditionalData contains &quot;T0839&quot;</code><br><code>AdditionalData contains &quot;T0842&quot;</code><br><code>AdditionalData contains &quot;T0843&quot;</code><br><code>AdditionalData contains &quot;T0845&quot;</code><br><code>AdditionalData contains &quot;T0846&quot;</code><br><code>AdditionalData contains &quot;T0847&quot;</code><br><code>AdditionalData contains &quot;T0848&quot;</code><br><code>AdditionalData contains &quot;T0849&quot;</code><br><code>AdditionalData contains &quot;T0851&quot;</code><br><code>AdditionalData contains &quot;T0855&quot;</code><br><code>AdditionalData contains &quot;T0857&quot;</code><br><code>AdditionalData contains &quot;T0858&quot;</code><br><code>AdditionalData contains &quot;T0859&quot;</code><br><code>AdditionalData contains &quot;T0861&quot;</code><br><code>AdditionalData contains &quot;T0863&quot;</code><br><code>AdditionalData contains &quot;T0865&quot;</code><br><code>AdditionalData contains &quot;T0866&quot;</code><br><code>AdditionalData contains &quot;T0867&quot;</code><br><code>AdditionalData contains &quot;T0869&quot;</code><br><code>AdditionalData contains &quot;T0871&quot;</code><br><code>AdditionalData contains &quot;T0874&quot;</code><br><code>AdditionalData contains &quot;T0874T0812&quot;</code><br><code>AdditionalData contains &quot;T0881&quot;</code><br><code>AdditionalData contains &quot;T0882&quot;</code><br><code>AdditionalData contains &quot;T0883&quot;</code><br><code>AdditionalData contains &quot;T0884&quot;</code><br><code>AdditionalData contains &quot;T0885&quot;</code><br><code>AdditionalData contains &quot;T0886&quot;</code><br><code>AdditionalData contains &quot;T0889&quot;</code><br><code>Severity in &quot;High,Low,Medium&quot;</code><br><code>Title contains &quot;(MDIoT)&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/iototthreatmonitoringwithdefenderforiot-iototthreatmonitoringwithdefenderforiot-d8edfecb.html">IoTOTThreatMonitoringwithDefenderforIoT</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -424,18 +600,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>Classification == &quot;TruePositive&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -469,18 +643,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/reversinglabs.html">ReversingLabs</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/reversinglabs.html">ReversingLabs</a>:</strong> <code>Comments !contains &quot;Comment created from playbook&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.html">ReversingLabs-CapabilitiesOverview</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -507,7 +679,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/soc-handbook-incidentoverview-c120b199.html">IncidentOverview</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ModifiedBy != &quot;Incident created from alert&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
@@ -515,7 +687,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/soc-handbook-securityoperationsefficiency-d083776e.html">SecurityOperationsEfficiency</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ModifiedBy !in &quot;Alert Grouping,Fusion,Incident created from alert&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/soc-handbook-sentinelcentral-27b23efc.html">SentinelCentral</a></td>
@@ -549,11 +721,11 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.html">IncidentTasksWorkbook</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Owner == &quot;Unassigned&quot;</code><br><code>Owner != &quot;Unassigned&quot;</code><br><code>Tasks != &quot;[]&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.html">SecurityOperationsEfficiency</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ModifiedBy !in &quot;Alert Grouping,Fusion,Incident created from alert&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -602,37 +774,46 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/threatconnect.html">ThreatConnect</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/threatconnect.html">ThreatConnect</a>:</strong> <code>SourceSystem startswith &quot;ThreatConnect-&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/threatconnect-threatconnectoverview-c70716b8.html">ThreatConnectOverview</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/unifi-site-manager-ccf.html">UniFi Site Manager (CCF)</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/unifi-site-manager-ccf.html">UniFi Site Manager (CCF)</a>:</strong> <code>Title contains &quot;Critical&quot;</code><br><code>Title contains &quot;IPS&quot;</code><br><code>Title contains &quot;adopted&quot;</code><br><code>Title contains &quot;data connector&quot;</code><br><code>Title contains &quot;log shipping&quot;</code><br><code>Title startswith &quot;UniFi Site Manager&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/unifi-site-manager-ccf-unifisitemanager-eafe5588.html">UnifiSiteManager</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>AdditionalData contains &quot;Microsoft Defender for Endpoint&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
 <tr>
@@ -642,8 +823,1462 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+  <td style="text-align:left"><a href="../content/github-only-amamigrationtracker-7a7462f4.html">AMAmigrationTracker</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-advancedworkbookconcepts-3495e806.html">AdvancedWorkbookConcepts</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-analyticsefficiency-b881d5ae.html">AnalyticsEfficiency</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-analyticshealthaudit-cb1c8682.html">AnalyticsHealthAudit</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-anomaliesvisualization-9d418617.html">AnomaliesVisualization</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-anomalydata-27a3f7c6.html">AnomalyData</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurekeyvaultworkbook-81485e59.html">AzureKeyVaultWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-incidenttasksworkbook-b100c180.html">IncidentTasksWorkbook</a></td>
+  <td style="text-align:left"><code>Owner == &quot;Unassigned&quot;</code><br><code>Owner != &quot;Unassigned&quot;</code><br><code>Tasks != &quot;[]&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"><code>Classification in &quot;BenignPositive,FalsePositive,TruePositive,Undetermined&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-optimizationworkbook-7387c8bb.html">OptimizationWorkbook</a></td>
+  <td style="text-align:left"><code>ModifiedBy !has &quot;automation&quot;</code><br><code>ModifiedBy !has &quot;automation rule&quot;</code><br><code>ModifiedBy !has &quot;playbook&quot;</code><br><code>ModifiedBy has &quot;automation&quot;</code><br><code>ModifiedBy has_any &quot;playbook&quot;</code><br><code>Tasks != &quot;[]&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-securityoperationsefficiency-84293023.html">SecurityOperationsEfficiency</a></td>
+  <td style="text-align:left"><code>ModifiedBy !in &quot;Alert Grouping,Fusion,Incident created from alert&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinel-central-2a36f7ae.html">Sentinel_Central</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-threatintelligence-250cda74.html">ThreatIntelligence</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-userentitybehavioranalytics-2c986bb5.html">UserEntityBehaviorAnalytics</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-analytics-workbook-b95f3e5a.html">User_Analytics_Workbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 15 total references)</h2>
+<p>References by type: 0 connectors, 15 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>ModifiedBy !in &quot;Alert Grouping,Fusion,Incident created from alert&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Labels has &quot;SOCRadar&quot;</code><br><code>Labels has &quot;Synced&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Labels has &quot;SOCRadar&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Severity == &quot;High&quot;</code><br><code>Title !contains &quot;URL&quot;</code><br><code>Title !contains &quot;net&quot;</code><br><code>Title !contains &quot;normalization&quot;</code><br><code>Title !contains &quot;web&quot;</code><br><code>Title contains &quot;AAD&quot;</code><br><code>Title contains &quot;Account&quot;</code><br><code>Title contains &quot;Identity&quot;</code><br><code>Title contains &quot;Login&quot;</code><br><code>Title contains &quot;Sign&quot;</code><br><code>Title contains &quot;User&quot;</code><br><code>Title contains &quot;WAF&quot;</code><br><code>Title contains &quot;access&quot;</code><br><code>Title contains &quot;anti&quot;</code><br><code>Title contains &quot;app&quot;</code><br><code>Title contains &quot;auth&quot;</code><br><code>Title contains &quot;cert&quot;</code><br><code>Title contains &quot;certificate&quot;</code><br><code>Title contains &quot;cred&quot;</code><br><code>Title contains &quot;data&quot;</code><br><code>Title contains &quot;dns&quot;</code><br><code>Title contains &quot;dos&quot;</code><br><code>Title contains &quot;exploit&quot;</code><br><code>Title contains &quot;impersonate&quot;</code><br><code>Title contains &quot;inject&quot;</code><br><code>Title contains &quot;intrusion&quot;</code><br><code>Title contains &quot;key&quot;</code><br><code>Title contains &quot;mal&quot;</code><br><code>Title contains &quot;mining&quot;</code><br><code>Title contains &quot;password&quot;</code><br><code>Title contains &quot;program&quot;</code><br><code>Title contains &quot;secret&quot;</code><br><code>Title contains &quot;sensitive&quot;</code><br><code>Title contains &quot;service principal&quot;</code><br><code>Title contains &quot;tool&quot;</code><br><code>Title contains &quot;travel&quot;</code><br><code>Title contains &quot;virus&quot;</code><br><code>Title contains &quot;ware&quot;</code><br><code>Title contains &quot;worm&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ModifiedBy contains &quot;playbook - censys&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Classification in &quot;BenignPositive,FalsePositive,TruePositive,Undetermined&quot;</code><br><code>Severity == &quot;High&quot;</code><br><code>Title contains &quot;PII&quot;</code><br><code>Title contains &quot;USB&quot;</code><br><code>Title contains &quot;access&quot;</code><br><code>Title contains &quot;account&quot;</code><br><code>Title contains &quot;backdoor&quot;</code><br><code>Title contains &quot;beacon&quot;</code><br><code>Title contains &quot;brute&quot;</code><br><code>Title contains &quot;c2&quot;</code><br><code>Title contains &quot;confidential&quot;</code><br><code>Title contains &quot;cred&quot;</code><br><code>Title contains &quot;data&quot;</code><br><code>Title contains &quot;deny&quot;</code><br><code>Title contains &quot;drive&quot;</code><br><code>Title contains &quot;execution&quot;</code><br><code>Title contains &quot;exfil&quot;</code><br><code>Title contains &quot;exploit&quot;</code><br><code>Title contains &quot;file&quot;</code><br><code>Title contains &quot;intellectual&quot;</code><br><code>Title contains &quot;leak&quot;</code><br><code>Title contains &quot;logon&quot;</code><br><code>Title contains &quot;loss&quot;</code><br><code>Title contains &quot;media&quot;</code><br><code>Title contains &quot;removable&quot;</code><br><code>Title contains &quot;restricted&quot;</code><br><code>Title contains &quot;sensitive&quot;</code><br><code>Title contains &quot;shared&quot;</code><br><code>Title contains &quot;sign&quot;</code><br><code>Title contains &quot;software&quot;</code><br><code>Title contains &quot;spill&quot;</code><br><code>Title contains &quot;storage&quot;</code><br><code>Title contains &quot;test&quot;</code><br><code>Title contains &quot;tool&quot;</code><br><code>Title contains &quot;trojan&quot;</code><br><code>Title contains &quot;usb&quot;</code><br><code>Title contains &quot;virus&quot;</code><br><code>Title contains &quot;ware&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AdditionalData contains &quot;T0801&quot;</code><br><code>AdditionalData contains &quot;T0803&quot;</code><br><code>AdditionalData contains &quot;T0806&quot;</code><br><code>AdditionalData contains &quot;T0807&quot;</code><br><code>AdditionalData contains &quot;T0809&quot;</code><br><code>AdditionalData contains &quot;T0811&quot;</code><br><code>AdditionalData contains &quot;T0814&quot;</code><br><code>AdditionalData contains &quot;T0816&quot;</code><br><code>AdditionalData contains &quot;T0817&quot;</code><br><code>AdditionalData contains &quot;T0821&quot;</code><br><code>AdditionalData contains &quot;T0822&quot;</code><br><code>AdditionalData contains &quot;T0826&quot;</code><br><code>AdditionalData contains &quot;T0828&quot;</code><br><code>AdditionalData contains &quot;T0831&quot;</code><br><code>AdditionalData contains &quot;T0836&quot;</code><br><code>AdditionalData contains &quot;T0838&quot;</code><br><code>AdditionalData contains &quot;T0839&quot;</code><br><code>AdditionalData contains &quot;T0842&quot;</code><br><code>AdditionalData contains &quot;T0843&quot;</code><br><code>AdditionalData contains &quot;T0845&quot;</code><br><code>AdditionalData contains &quot;T0846&quot;</code><br><code>AdditionalData contains &quot;T0847&quot;</code><br><code>AdditionalData contains &quot;T0848&quot;</code><br><code>AdditionalData contains &quot;T0849&quot;</code><br><code>AdditionalData contains &quot;T0851&quot;</code><br><code>AdditionalData contains &quot;T0855&quot;</code><br><code>AdditionalData contains &quot;T0857&quot;</code><br><code>AdditionalData contains &quot;T0858&quot;</code><br><code>AdditionalData contains &quot;T0859&quot;</code><br><code>AdditionalData contains &quot;T0861&quot;</code><br><code>AdditionalData contains &quot;T0863&quot;</code><br><code>AdditionalData contains &quot;T0865&quot;</code><br><code>AdditionalData contains &quot;T0866&quot;</code><br><code>AdditionalData contains &quot;T0867&quot;</code><br><code>AdditionalData contains &quot;T0869&quot;</code><br><code>AdditionalData contains &quot;T0871&quot;</code><br><code>AdditionalData contains &quot;T0874&quot;</code><br><code>AdditionalData contains &quot;T0874T0812&quot;</code><br><code>AdditionalData contains &quot;T0881&quot;</code><br><code>AdditionalData contains &quot;T0882&quot;</code><br><code>AdditionalData contains &quot;T0883&quot;</code><br><code>AdditionalData contains &quot;T0884&quot;</code><br><code>AdditionalData contains &quot;T0885&quot;</code><br><code>AdditionalData contains &quot;T0886&quot;</code><br><code>AdditionalData contains &quot;T0889&quot;</code><br><code>Severity in &quot;High,Low,Medium&quot;</code><br><code>Title contains &quot;(MDIoT)&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Classification == &quot;TruePositive&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Comments !contains &quot;Comment created from playbook&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Owner == &quot;Unassigned&quot;</code><br><code>Owner != &quot;Unassigned&quot;</code><br><code>Tasks != &quot;[]&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ModifiedBy != &quot;Incident created from alert&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;ThreatConnect-&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Title contains &quot;Critical&quot;</code><br><code>Title contains &quot;IPS&quot;</code><br><code>Title contains &quot;adopted&quot;</code><br><code>Title contains &quot;data connector&quot;</code><br><code>Title contains &quot;log shipping&quot;</code><br><code>Title startswith &quot;UniFi Site Manager&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AdditionalData contains &quot;Microsoft Defender for Endpoint&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>15</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="additionaldata">AdditionalData</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>contains T0801</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0803</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0806</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0807</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0809</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0811</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0814</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0816</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0817</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0821</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0822</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0826</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0828</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0831</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0836</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0838</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0839</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0842</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0843</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0845</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0846</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0847</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0848</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0849</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0851</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0855</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0857</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0858</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0859</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0861</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0863</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0865</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0866</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0867</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0869</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0871</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0874</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0874T0812</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0881</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0882</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0883</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0884</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0885</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0886</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains T0889</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Microsoft Defender for Endpoint</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="classification">Classification</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>TruePositive</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>BenignPositive</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>FalsePositive</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Undetermined</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="comments">Comments</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>!contains Comment created from playbook</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="labels">Labels</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>has SOCRadar</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Synced</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="modifiedby">ModifiedBy</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>!= Incident created from alert</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Alert Grouping</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Fusion</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains playbook - censys</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="owner">Owner</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>Unassigned</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Unassigned</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="severity">Severity</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>High</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Low</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Medium</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sourcesystem">SourceSystem</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>startswith ThreatConnect-</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tasks">Tasks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>!= []</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="title">Title</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>contains access</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains cred</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains data</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains exploit</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains sensitive</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains tool</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains virus</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains ware</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!contains URL</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!contains net</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!contains normalization</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!contains web</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains AAD</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Account</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Identity</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Login</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Sign</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains User</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains WAF</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains anti</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains app</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains auth</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains cert</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains certificate</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains dns</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains dos</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains impersonate</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains inject</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains intrusion</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains key</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains mal</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains mining</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains program</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains secret</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains service principal</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains travel</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains worm</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains PII</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains USB</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains account</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains backdoor</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains beacon</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains brute</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains c2</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains confidential</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains deny</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains drive</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains execution</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains exfil</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains file</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains intellectual</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains leak</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains logon</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains loss</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains media</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains removable</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains restricted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains shared</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains sign</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains software</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains spill</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains storage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains test</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains trojan</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains usb</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains (MDIoT)</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Critical</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains IPS</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains adopted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains data connector</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains log shipping</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith UniFi Site Manager</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>

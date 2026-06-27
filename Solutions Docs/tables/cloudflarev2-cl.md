@@ -23,7 +23,7 @@
 
 ## Schema (495 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%5CData%20Connectors%5CCloudflareLog_CCF/CloudflareLog_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

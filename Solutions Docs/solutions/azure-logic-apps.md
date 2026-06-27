@@ -20,7 +20,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Azure Logic Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-logicapps) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-logicapps) · Popularity: 🟢 High (92%) |
 
 The [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview) solution for Microsoft Sentinel enables you to ingest  Azure Logic App diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
  
@@ -34,7 +34,10 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Logic Apps](../connectors/azurelogicapps-ccp.md)
+- [Azure Logic Apps](../connectors/azurelogicapps-ccp.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

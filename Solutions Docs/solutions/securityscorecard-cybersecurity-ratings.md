@@ -21,7 +21,7 @@
 | **First Published** | 2022-10-01 |
 | **Last Updated** | 2022-10-01 |
 | **Solution Folder** | [SecurityScorecard Cybersecurity Ratings](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securityscorecardinc1667844176331.ssc-rating-sentinel) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securityscorecardinc1667844176331.ssc-rating-sentinel) · Popularity: 🟡 Low (41%) |
 
 This package includes three data connectors and an associated workbook for the SecurityScorecard offering within Microsoft Sentinel. These connectors are able to import 11 company scores from SecurityScorecard (overall score and 10 factor scores) as well as new issue events.
 

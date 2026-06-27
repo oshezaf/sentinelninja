@@ -15,9 +15,9 @@
 | **Used in Solutions** | [GitHub](../solutions/github.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GithubWebhookV2_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/GithubWebhookV2_API_FunctionApp.json) |
-| **Ingestion API** | [Log Ingestion API|Undetermined](../methods/log-ingestion-api-undetermined.md) — *Sibling ARM template declares DCR / Log Ingestion API resources|Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) \| [Undetermined](../methods/undetermined.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-using-webhooks) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-using-webhooks-v2) |
 
 The [GitHub](https://www.github.com) webhook data connector (V2) provides the capability to ingest GitHub subscribed events into Microsoft Sentinel using [GitHub webhook events](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads). This connector uses the Azure Monitor **Logs Ingestion API (CLv2)** with **Managed Identity** authentication and is the designated successor to the original GitHub (using Webhooks) connector, which uses the CLv1 HTTP Data Collector API (ODS endpoint) that Microsoft is replacing with CLv2.
 
@@ -39,7 +39,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ✗ | ✓ | ✗ |
 | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

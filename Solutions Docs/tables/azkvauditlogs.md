@@ -34,17 +34,17 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
 | Algorithm | string | Algorithm used to generate the key |
-| AppliedAssignmentId | string | AssignmentId that eiher granted or denied access as part of access check |
+| AppliedAssignmentId | string | AssignmentId that either granted or denied access as part of access check |
 | CallerIpAddress | string | IP address of the client that made the request |
 | CertificateIssuerProperties | dynamic | Information about certificate issuer properties including provider, id |
-| CertificatePolicyProperties | dynamic | Information about certificate policy properties including keyproperties, secretproperties, issuerproperties |
-| CertificateProperties | dynamic | Information about certificate audit properties including atttributes, subject, hashing algorithm |
-| CertificateRequestProperties | dynamic | Boolean value indicating if certificate request operation was cancelled |
+| CertificatePolicyProperties | dynamic | Information about certificate policy properties including <code>keyproperties</code>, <code>secretproperties</code>, <code>issuerproperties</code> |
+| CertificateProperties | dynamic | Information about certificate audit properties including attributes, subject, hashing algorithm |
+| CertificateRequestProperties | dynamic | Boolean value indicating if certificate request operation was canceled |
 | ClientInfo | string | User agent information |
 | CorrelationId | string | An optional GUID that the client can pass to correlate client-side logs with service-side (Key Vault) logs. |
 | DurationMs | int | Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time |
 | EnabledForDeployment | bool | Specifies if the vault is enabled for deployment |
-| EnabledForDiskEncryption | bool | Specifes if disk encryption is enabled |
+| EnabledForDiskEncryption | bool | Specifies if disk encryption is enabled |
 | EnabledForTemplateDeployment | bool | Specifies whether template deployment is enabled |
 | EnablePurgeProtection | bool | Specifies if purge protection is enabled |
 | EnableRbacAuthorization | bool | Specifies if RBAC authorization is enabled |
@@ -55,36 +55,36 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | Identity | dynamic | Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet. |
 | IsAccessPolicyMatch | bool | True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access. |
 | IsAddressAuthorized | bool | Specifies whether request came from an authorized entity |
-| IsRbacAuthorized | bool | Specifies whether an access was granted or not as part of an access check |
+| IsRbacAuthorized | bool | Specifies whether access was granted or not as part of an access check |
 | KeyProperties | dynamic | Information about key properties including type, size, curve |
 | NetworkAcls | dynamic | Information about network acls that govern access to the vault |
 | Nsp | dynamic | Network security perimeter properties including access control list, nsp id's associated with profiles. |
 | OperationName | string | Name of the operation |
-| OperationVersion | string | REST api version requested by the client. |
+| OperationVersion | string | REST API version requested by the client. |
 | Properties | dynamic | Information that varies based on the operation (Operationname). In most cases, this field contains client information (the user agent string passed by the client), the exact REST API request URI, and the HTTP status code. In addition, when an object is returned as a result of a request (for example, KeyCreate or VaultGet), it also contains the key URI (as id), vault URI, or secret URI. |
 | RequestUri | string | URI of the request |
 | ResultDescription | string | Additional description about the result, when available. |
 | ResultSignature | string | HTTP status of the request/response |
 | ResultType | string | Result of the REST API request. |
-| SecretProperties | dynamic | Information about secret properties including type, atttributes |
-| Sku | dynamic | Information about vault including family, name and capacity |
+| SecretProperties | dynamic | Information about secret properties including type, attributes |
+| Sku | dynamic | Information about vault including family, name, and capacity |
 | SoftDeleteRetentionInDays | int | Specifies soft delete retention in days |
 | SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
-| StorageAccountProperties | dynamic | Information about storage account properties including activekeyname, resourceid |
-| StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties including sastype, validityperiod |
+| StorageAccountProperties | dynamic | Information about storage account properties including <code>activekeyname</code>, <code>resourceid</code> |
+| StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties including <code>sastype</code>, <code>validityperiod</code> |
 | SubnetId | string | Id of subnet if request comes from a known subnet |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Timestamp (in UTC) when operation occured. |
+| TimeGenerated | datetime | Timestamp (in UTC) when operation occurred. |
 | Tlsversion | string | Network crypto protocol |
 | TrustedService | string | Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service |
 | Type | string | The name of the table |
-| VaultProperties | dynamic | Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc |
+| VaultProperties | dynamic | Detailed vault properties containing <code>accesspolicy</code>, <code>iprule</code>, <code>virtualnetwork</code> etc. |
 
 ## Schema References
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AZKVAuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs)
 
 ---
 

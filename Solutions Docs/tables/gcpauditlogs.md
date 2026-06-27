@@ -66,7 +66,7 @@ Reference for GCPAuditLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [GCPAuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpauditlogs)
 
 ## Solutions (2)
 
@@ -86,9 +86,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (14)
+## Content Items Using This Table (15)
 
-### Analytic Rules (9)
+### Analytic Rules (10)
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
 
@@ -109,6 +109,12 @@ This table is ingested by the following connectors:
 | [Cross-Cloud Suspicious Compute resource creation in GCP](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.md) |  |
 | [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.md) | `AuthenticationInfo !has "system:"`<br>`PrincipalEmail !endswith "gserviceaccount.com"` |
 
+**GitHub Only:** `MethodName endswith "instances.insert"`<br>`ServiceName == "compute.googleapis.com"`
+
+| Analytic Rule |
+|:-------------|
+| [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |
+
 ### Hunting Queries (5)
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
@@ -121,9 +127,9 @@ This table is ingested by the following connectors:
 | [GCP Audit Logs - List All GCP VPN Tunnels Deleted](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-all-gcp-vpn-tunnels-deleted-8f3e4a2b-6c7d-4e8f-9a0b-1c2d3e4f5a6b-45f3f0b9.md) | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` |
 | [GCP Audit Logs - List GCP Organization Policy Modifications by Principal](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-gcp-organization-policy-modifications-by-principal-7a3e8c5f-4b9d-4e6a-8c7b-5f2a9d6e8b3c-a149a2a1.md) | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` |
 
-## Selection Criteria Summary (12 criteria, 13 total references)
+## Selection Criteria Summary (13 criteria, 14 total references)
 
-References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 14 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -135,11 +141,12 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `GCPResourceType == "gcs_bucket"`<br>`MethodName == "storage.setIamPermissions"`<br>`ServiceName == "storage.googleapis.com"` | - | 1 | - | - | **1** |
 | `MethodName has "DeleteVpcFlowLogsConfig"`<br>`MethodName has_any "VpcFlowLogsService.UpdateVpcFlowLogsConfig"`<br>`ServiceName == "networkmanagement.googleapis.com"` | - | 1 | - | - | **1** |
 | `AuthenticationInfo !has "system:"`<br>`PrincipalEmail !endswith "gserviceaccount.com"` | - | 1 | - | - | **1** |
+| `MethodName endswith "instances.insert"`<br>`ServiceName == "compute.googleapis.com"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "gce_firewall_rule"`<br>`MethodName has "delete"`<br>`MethodName has "insert"`<br>`MethodName has "patch"`<br>`MethodName has "update"`<br>`MethodName has_any "compute.firewalls.insert"`<br>`ServiceName == "compute.googleapis.com"` | - | 1 | - | - | **1** |
 | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.insert"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **13** | **0** | **0** | **13** |
+| **Total** | **0** | **14** | **0** | **0** | **14** |
 
 ### AuthenticationInfo
 
@@ -173,6 +180,7 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `storage.setIamPermissions` | - | 1 | - | - | **1** |
 | `has DeleteVpcFlowLogsConfig` | - | 1 | - | - | **1** |
 | `has_any VpcFlowLogsService.UpdateVpcFlowLogsConfig` | - | 1 | - | - | **1** |
+| `endswith instances.insert` | - | 1 | - | - | **1** |
 | `has delete` | - | 1 | - | - | **1** |
 | `has update` | - | 1 | - | - | **1** |
 | `has_any compute.firewalls.insert` | - | 1 | - | - | **1** |
@@ -191,7 +199,7 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `compute.googleapis.com` | - | 5 | - | - | **5** |
+| `compute.googleapis.com` | - | 6 | - | - | **6** |
 | `cloudresourcemanager.googleapis.com` | - | 2 | - | - | **2** |
 | `orgpolicy.googleapis.com` | - | 2 | - | - | **2** |
 | `dns.googleapis.com` | - | 1 | - | - | **1** |

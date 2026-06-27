@@ -19,7 +19,7 @@
 | **First Published** | 2021-08-13 |
 | **Last Updated** | 2026-05-25 |
 | **Solution Folder** | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortinetfortigate) · Rating: ★★★☆☆ 3.0/5 (1 ratings) · Popularity: 🟢 High (82%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortinetfortigate) · Rating: ★★★☆☆ 3.0/5 (1 ratings) · Popularity: 🟢 High (80%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 Gain insight into your organization's network and improve your security operation capabilities with the [Fortinet FortiGate Next-generation Firewall](https://www.fortinet.com/products/next-generation-firewall) Solution for Microsoft Sentinel. It allows you to easily connect your FortiGate logs with Microsoft Sentinel. This enables you to view dashboards, create custom alerts, and improve investigation. 

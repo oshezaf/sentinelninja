@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimAuditEvent` |
-| **Built-in Parser** | `_ASim_AuditEvent` |
+| **Parser Name** | `ASimAuditEvent` (parameter-less) · `imAuditEvent` (filtering) |
+| **Built-in Parser** | `_ASim_AuditEvent` (parameter-less) · `_Im_AuditEvent` (filtering) |
 | **Schema** | AuditEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |

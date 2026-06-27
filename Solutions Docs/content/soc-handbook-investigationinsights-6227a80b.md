@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) | `AdditionalDetails contains "fraud"` | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
@@ -35,10 +35,10 @@ This content item queries data from the following tables:
 | [`SecurityBaselineSummary`](../tables/securitybaselinesummary.md) |  | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | `AccountType != "Computer"`<br>`AccountType != "Machine"`<br>`ErrorCode == "500121"`<br>`EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"`<br>`TargetAccount !contains "NT AUTHORITY"`<br>`TargetAccount !endswith "$"` | ✓ | ✓ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName == "Windows Sign In"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName == "Windows Sign In"` | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
-| [`Update`](../tables/update.md) | `Classification != "Feature Packs"`<br>`UpdateState != "Installed"` | ✓ | ✗ | ? |
+| [`Update`](../tables/update.md) | `UpdateState != "Installed"` | ✓ | ✗ | ? |
 | [`UpdateSummary`](../tables/updatesummary.md) |  | ✓ | ✗ | ? |
 | [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
 

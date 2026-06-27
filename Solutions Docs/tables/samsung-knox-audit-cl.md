@@ -69,7 +69,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (1)
 
@@ -79,13 +79,19 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Samsung Knox - Security Log Full Events](../content/samsung-knox-asset-intelligence-samsung-knox-security-log-full-events-bf9be360-7f08-48b2-8e9d-ca240c48b404-349fe6fb.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
 
 ---
 

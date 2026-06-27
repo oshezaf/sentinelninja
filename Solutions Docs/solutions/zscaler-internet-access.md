@@ -21,7 +21,7 @@
 | **First Published** | 2022-10-10 |
 | **Last Updated** | 2026-06-02 |
 | **Solution Folder** | [Zscaler Internet Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zscaler1579058425289.zscaler_zia) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zscaler1579058425289.zscaler_zia) · Popularity: 🔵 Medium (64%) |
 
 The [Zscaler Internet Access](https://www.zscaler.com/products-and-solutions/zscaler-internet-access) solution for Microsoft Sentinel enables you to ingest [Zscaler Internet Access Logs](https://help.zscaler.com/zia/nanolog-streaming-service) into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

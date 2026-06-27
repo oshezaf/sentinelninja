@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UCClientUpdateStatus &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for UCClientUpdateStatus table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -36,15 +47,252 @@
   <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientupdatestatus">View Documentation</a></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (44 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientupdatestatus">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AzureADDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to the AAD Tenant to which the device belongs.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AzureADTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to this device's AAD Device ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CatalogId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The update catalog ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Higher-level bucketization of ClientSubstate.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientSubstate</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Last-known state of this update relative to the device, from the client (the device's WDD).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientSubstateRank</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Ranking of Client Substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientSubstateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">DateTime of last Client Substate transition.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeploymentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the Deployment that is targeting this update to this device, else empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Device's given name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Json to fill with arbitrary K/V pairs. Used to populate contextual data that would otherwise be sparsely populated if elevated to a field always present in the schema.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FurthestClientSubstate</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Furthest clientSubstate.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FurthestClientSubstateRank</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Ranking of furthest clientSubstate.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Microsoft internal Global Device Identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsHotpatchUpdate</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Status of whether a device is taking a windows security update without requiring a restart or not</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsUpdateHealthy</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">True: No issues preventing this device from updating to this update have been found. False: There is something that may prevent this device from updating.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OfferReceivedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">DateTime when device last reported entering OfferReceived, else empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RestartRequiredTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">DateTime when device first reported entering RebootRequired (or RebootPending), else empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SCCMClientId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID corresponding to the SCCM Client ID on the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetBuild</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385).</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetBuildNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Integer of the Major portion of Build.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetKBNumber</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">KB Article.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetRevisionNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Integer or the Minor (or Revision) portion of Build.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The target OS Version - eg, 1909.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time the snapshot generated this specific record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of content this DeviceUpdateEvent is tracking.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateClassification</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether this content is an Upgrade (FU), Security (QU), NonSecurity (QU).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateConnectivityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether or not this device is maintaining a sufficiently cumulative and continuous connection to Windows Update so the update can progress optimally.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The long-form display name for the given update. Varies on content type (FU/QU).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupL1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Grouping design to describe the current update installation's &quot;health&quot;, L1 (highest-level).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupL2</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Second grouping, subset of L1, more detailed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupL3</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Third grouping, subset of L3, more detailed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupRankL1</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Integer for ranking the L1 UpdateHealthGroup.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupRankL2</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Integer for ranking the L2 UpdateHealthGroup.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateHealthGroupRankL3</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Integer for ranking the L3 UpdateHealthGroup.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Update ID of the targeted update.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateInstalledTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">DateTime when event transitioned to UpdateInstalled, else empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateManufacturer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Manufacturer of update. Microsoft for WU FU/QU, for D&amp;F name of driver manufacturer e.g. NVIDIA.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateReleaseTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The release date of the update.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source of the update - UUP, MUv6, Media.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientupdatestatus">UCClientUpdateStatus Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
 <hr />
@@ -52,6 +300,30 @@
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 ---
 
-Security events that occur post-delivery, after Microsoft 365 delivers the emails to the recipient mailbox
+Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,6 @@ Security events that occur post-delivery, after Microsoft 365 delivers the email
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailpostdeliveryevents-table) |
 
 ## Contents
 
@@ -55,7 +54,7 @@ Security events that occur post-delivery, after Microsoft 365 delivers the email
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [EmailPostDeliveryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents)
 
 ## Solutions (1)
 
@@ -73,9 +72,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (22)
 
-### Hunting Queries (10)
+### Hunting Queries (20)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -94,10 +93,20 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
+| [Email containing malware accessed on a unmanaged device](../content/github-only-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-2e5f8871.md) |  |
+| [MDO Threat Protection Detections trend over time](../content/github-only-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-f1170f50.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
+| [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
+| [Post Delivery Events by Admin](../content/github-only-post-delivery-events-by-admin-ee4dc300-5eaa-4cc5-b455-e53cb427e215-14d67447.md) |  |
+| [Post Delivery Events by Location](../content/github-only-post-delivery-events-by-location-9b83fc5e-1271-4a5b-af84-e7ebf5436180-8ca89243.md) |  |
+| [Post Delivery Events by ZAP type](../content/github-only-post-delivery-events-by-zap-type-c0efc072-fce7-46c2-83a1-51e8a9e6a1e1-e6a82d26.md) |  |
+| [Post Delivery Events over time](../content/github-only-post-delivery-events-over-time-c10b22a0-6021-46f9-bdaf-05bf2350a554-b2376473.md) |  |
+| [Quarantine releases by Detection Types](../content/github-only-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-c85b108a.md) | `Action == "Quarantine release"`<br>`DeliveryLocation == "Quarantine"` |
+| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `Action == "Quarantine release"`<br>`ActionResult == "Success"`
 
@@ -105,21 +114,27 @@ This table is ingested by the following connectors:
 |:-------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+**GitHub Only:**
 
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+
+## Selection Criteria Summary (2 criteria, 3 total references)
+
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Action == "Quarantine release"`<br>`DeliveryLocation == "Quarantine"` | - | 1 | - | - | **1** |
+| `Action == "Quarantine release"`<br>`DeliveryLocation == "Quarantine"` | - | 2 | - | - | **2** |
 | `Action == "Quarantine release"`<br>`ActionResult == "Success"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### Action
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Quarantine release` | - | 2 | - | - | **2** |
+| `Quarantine release` | - | 3 | - | - | **3** |
 
 ### ActionResult
 
@@ -131,7 +146,7 @@ References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Quarantine` | - | 1 | - | - | **1** |
+| `Quarantine` | - | 2 | - | - | **2** |
 
 ---
 

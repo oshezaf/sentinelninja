@@ -19,7 +19,7 @@
 
 ## Schema (35 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsGraph_CCP/table_IllumioInsightsGraph.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight%5CData%20Connectors%5CIllumioInsightsGraph_CCP/table_IllumioInsightsGraph.json)
 
 | Column Name | Type |
 |:------------|:-----|

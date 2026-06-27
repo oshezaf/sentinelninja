@@ -21,7 +21,7 @@
 | **First Published** | 2023-08-01 |
 | **Last Updated** | 2026-03-02 |
 | **Solution Folder** | [Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly) · Popularity: 🔵 Medium (58%) |
 
 The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Microsoft Sentinel provides a simple way to ingest Indicators of Compromise from your Feedly streams into Microsoft Sentinel.
 
@@ -29,7 +29,10 @@ The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Micro
 
 This solution provides **1 data connector(s)**:
 
-- [Feedly IoC](../connectors/feedlyccpdefinition.md)
+- [Feedly IoC](../connectors/feedlyccpdefinition.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
@@ -37,7 +40,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | [Feedly IoC](../connectors/feedlyccpdefinition.md) | - |
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | [Feedly IoC](../connectors/feedlyccpdefinition.md) | - |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Release Notes
 

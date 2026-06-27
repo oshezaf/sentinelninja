@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ZeroFoxAlerts_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_DCR.json), [ZeroFoxAlerts_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFoxAlerts/Data%20Connectors/Alerts/ZeroFoxAlerts_DCR.json) |
 | **CCF Configuration** | [ZeroFoxAlerts_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---alerts-polling-ccf) |
 
 Collects alerts from ZeroFox API.
@@ -28,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | ✓ | ✓ | ✓ |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

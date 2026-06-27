@@ -20,23 +20,23 @@
 <p>📚 <strong>Learn more:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions for Microsoft Sentinel</a></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>13 schemas</strong> with 93 source parser pairs and 15 union parser pairs. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
-<p>* <em>Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.</em></p>
+<p><strong>13 schemas</strong> with 186 source parsers and 15 unifying parsers. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p>* <em>Each unifying parser is available as a parameter-less <code>ASim</code> parser and a filtering <code>im</code>/<code>vim</code> parser; both are listed on the parser's page.</em></p>
 <h2 id="schemas">Schemas</h2>
 <ul>
-<li><a href="#agentevent">AgentEvent</a> (1 union pair)</li>
-<li><a href="#alertevent">AlertEvent</a> (3 source pairs, 1 union pair)</li>
-<li><a href="#assetentity">AssetEntity</a> (1 union pair)</li>
-<li><a href="#auditevent">AuditEvent</a> (10 source pairs, 1 union pair)</li>
-<li><a href="#authentication">Authentication</a> (18 source pairs, 1 union pair)</li>
-<li><a href="#dhcpevent">DhcpEvent</a> (1 source pairs, 1 union pair)</li>
-<li><a href="#dns">Dns</a> (7 source pairs, 1 union pair)</li>
-<li><a href="#fileevent">FileEvent</a> (8 source pairs, 1 union pair)</li>
-<li><a href="#networksession">NetworkSession</a> (18 source pairs, 1 union pair)</li>
-<li><a href="#processevent">ProcessEvent</a> (8 source pairs, 3 union pairs)</li>
-<li><a href="#registryevent">RegistryEvent</a> (4 source pairs, 1 union pair)</li>
-<li><a href="#usermanagement">UserManagement</a> (3 source pairs, 1 union pair)</li>
-<li><a href="#websession">WebSession</a> (9 source pairs, 1 union pair)</li>
+<li><a href="#agentevent">AgentEvent</a> (1 unifying)</li>
+<li><a href="#alertevent">AlertEvent</a> (6 source, 1 unifying)</li>
+<li><a href="#assetentity">AssetEntity</a> (1 unifying)</li>
+<li><a href="#auditevent">AuditEvent</a> (20 source, 1 unifying)</li>
+<li><a href="#authentication">Authentication</a> (37 source, 1 unifying)</li>
+<li><a href="#dhcpevent">DhcpEvent</a> (2 source, 1 unifying)</li>
+<li><a href="#dns">Dns</a> (15 source, 1 unifying)</li>
+<li><a href="#fileevent">FileEvent</a> (17 source, 1 unifying)</li>
+<li><a href="#networksession">NetworkSession</a> (37 source, 1 unifying)</li>
+<li><a href="#processevent">ProcessEvent</a> (17 source, 3 unifying)</li>
+<li><a href="#registryevent">RegistryEvent</a> (9 source, 1 unifying)</li>
+<li><a href="#usermanagement">UserManagement</a> (7 source, 1 unifying)</li>
+<li><a href="#websession">WebSession</a> (19 source, 1 unifying)</li>
 </ul>
 <h2 id="agentevent">AgentEvent</h2>
 <h3 id="union-parsers">Union Parsers</h3>
@@ -54,11 +54,6 @@
   <td style="text-align:left"><a href="asimagentevent.html">ASimAgentEvent</a></td>
   <td style="text-align:left"><code>_ASim_AgentEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md">0.1.0</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imagentevent.html">imAgentEvent</a></td>
-  <td style="text-align:left"><code>_Im_AgentEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/imAgentEvent.md">0.1.0</a></td>
 </tr>
 </tbody>
 </table>
@@ -78,11 +73,6 @@
   <td style="text-align:left"><a href="asimalertevent.html">ASimAlertEvent</a></td>
   <td style="text-align:left"><code>_ASim_AlertEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.4</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imalertevent.html">imAlertEvent</a></td>
-  <td style="text-align:left"><code>_Im_AlertEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.4</a></td>
 </tr>
 </tbody>
 </table>
@@ -154,11 +144,6 @@
   <td style="text-align:left"><code>_ASim_AssetEntity</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAssetEntity/CHANGELOG/ASimAssetEntity.md">0.1.0</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="imassetentity.html">imAssetEntity</a></td>
-  <td style="text-align:left"><code>_Im_AssetEntity</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAssetEntity/CHANGELOG/imAssetEntity.md">0.1.0</a></td>
-</tr>
 </tbody>
 </table>
 <h2 id="auditevent">AuditEvent</h2>
@@ -177,11 +162,6 @@
   <td style="text-align:left"><a href="asimauditevent.html">ASimAuditEvent</a></td>
   <td style="text-align:left"><code>_ASim_AuditEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md">0.1.7</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imauditevent.html">imAuditEvent</a></td>
-  <td style="text-align:left"><code>_Im_AuditEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/imAuditEvent.md">0.1.6</a></td>
 </tr>
 </tbody>
 </table>
@@ -336,11 +316,6 @@
   <td style="text-align:left"><a href="asimauthentication.html">ASimAuthentication</a></td>
   <td style="text-align:left"><code>_ASim_Authentication</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md">0.2.15</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imauthentication.html">imAuthentication</a></td>
-  <td style="text-align:left"><code>_Im_Authentication</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md">0.3.12</a></td>
 </tr>
 </tbody>
 </table>
@@ -598,11 +573,6 @@
   <td style="text-align:left"><code>_ASim_DhcpEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEvent.md">0.1.0</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="imdhcpevent.html">imDhcpEvent</a></td>
-  <td style="text-align:left"><code>_Im_DhcpEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/imDhcpEvent.md">0.1.0</a></td>
-</tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
@@ -648,11 +618,6 @@
   <td style="text-align:left"><a href="asimdns.html">ASimDns</a></td>
   <td style="text-align:left"><code>_ASim_Dns</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md">0.5.2</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imdns.html">imDns</a></td>
-  <td style="text-align:left"><code>_Im_Dns</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/imDns.md">0.5.2</a></td>
 </tr>
 </tbody>
 </table>
@@ -777,11 +742,6 @@
   <td style="text-align:left"><a href="asimfileevent.html">ASimFileEvent</a></td>
   <td style="text-align:left"><code>_ASim_FileEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md">0.1.4</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imfileevent.html">imFileEvent</a></td>
-  <td style="text-align:left"><code>_Im_FileEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/imFileEvent.md">0.2.2</a></td>
 </tr>
 </tbody>
 </table>
@@ -918,11 +878,6 @@
   <td style="text-align:left"><a href="asimnetworksession.html">ASimNetworkSession</a></td>
   <td style="text-align:left"><code>_ASim_NetworkSession</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md">0.7.2</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imnetworksession.html">imNetworkSession</a></td>
-  <td style="text-align:left"><code>_Im_NetworkSession</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/imNetworkSession.md">0.6.3</a></td>
 </tr>
 </tbody>
 </table>
@@ -1190,21 +1145,6 @@
   <td style="text-align:left"><code>_ASim_ProcessEvent_Terminate</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminate.md">0.1.1</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="improcesscreate.html">imProcessCreate</a></td>
-  <td style="text-align:left"><code>_Im_ProcessCreate</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessCreate.md">0.1.2</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="improcessevent.html">imProcessEvent</a></td>
-  <td style="text-align:left"><code>_Im_ProcessEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessEvent.md">0.1.3</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="improcessterminate.html">imProcessTerminate</a></td>
-  <td style="text-align:left"><code>_Im_ProcessTerminate</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessTerminate.md">0.1.2</a></td>
-</tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
@@ -1341,11 +1281,6 @@
   <td style="text-align:left"><code>_ASim_RegistryEvent</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistry.md">0.1.3</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="imregistry.html">imRegistry</a></td>
-  <td style="text-align:left"><code>_Im_RegistryEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/imRegistry.md">0.1.4</a></td>
-</tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
@@ -1434,11 +1369,6 @@
   <td style="text-align:left"><code>_ASim_UserManagement</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagement.md">0.1.2</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="imusermanagement.html">imUserManagement</a></td>
-  <td style="text-align:left"><code>_Im_UserManagement</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/imUserManagement.md">0.1.3</a></td>
-</tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
@@ -1514,11 +1444,6 @@
   <td style="text-align:left"><a href="asimwebsession.html">ASimWebSession</a></td>
   <td style="text-align:left"><code>_ASim_WebSession</code></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md">0.5.6</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="imwebsession.html">imWebSession</a></td>
-  <td style="text-align:left"><code>_Im_WebSession</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md">0.6.4</a></td>
 </tr>
 </tbody>
 </table>

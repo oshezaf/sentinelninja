@@ -21,7 +21,7 @@
 | **First Published** | 2026-02-27 |
 | **Last Updated** | 2026-03-10 |
 | **Solution Folder** | [CyeraDSPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyera1658314682323.azure-sentinel-solution-cyeradspm-v3) · Popularity: 🟡 Low (34%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyera1658314682323.azure-sentinel-solution-cyeradspm-v3) · Popularity: 🟡 Low (41%) |
 
 The [Cyera DSPM](https://api.cyera.io/) data connector allows you to connect to your Cyera's DSPM instance and ingesting Classifications, Assets, Issues, and Identity Definitions into Microsoft Sentinel. The data connector is built on Microsoft Sentinel's Codeless Connector Platform and uses the Cyera's API to fetch Cyera's [DSPM Telemetry](https://www.cyera.com/) once recieced can be correlated with security events creating custom columns so that queries don't need to parse it again, thus resulting in better performance.
 

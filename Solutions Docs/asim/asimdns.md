@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimDns` |
-| **Built-in Parser** | `_ASim_Dns` |
+| **Parser Name** | `ASimDns` (parameter-less) · `imDns` (filtering) |
+| **Built-in Parser** | `_ASim_Dns` (parameter-less) · `_Im_Dns` (filtering) |
 | **Schema** | Dns |
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 📦 Union (schema-level) |

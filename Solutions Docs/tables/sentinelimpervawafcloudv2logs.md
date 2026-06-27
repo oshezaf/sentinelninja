@@ -94,7 +94,7 @@ Reference for SentinelImpervaWAFCloudV2Logs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [SentinelImpervaWAFCloudV2Logs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelimpervawafcloudv2logs)
 
 ## Solutions (1)
 

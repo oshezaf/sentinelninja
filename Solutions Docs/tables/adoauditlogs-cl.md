@@ -23,7 +23,7 @@
 
 ## Schema (24 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Data%20Connectors/AzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing%5CData%20Connectors%5CAzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

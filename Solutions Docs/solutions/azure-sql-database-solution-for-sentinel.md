@@ -1,4 +1,6 @@
-# Azure SQL Database solution for sentinel
+# SQL Database on Azure for Sentinel
+
+*Solution: Azure SQL Database solution for sentinel*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureSQL.svg" alt="Azure SQL Database solution for sentinel Logo" width="75" height="75">
 
@@ -17,8 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-19 |
+| **Last Updated** | 2026-06-15 |
 | **Solution Folder** | [Azure SQL Database solution for sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sql.sentinel4sql) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sql.sentinel4sql) · Popularity: 🔵 Medium (75%) |
 
 The [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/) solution for Microsoft Sentinel enables you to stream Azure SQL database audit and diagnostic logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances. 
   
@@ -38,7 +41,10 @@ The [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/) soluti
 
 This solution provides **1 data connector(s)**:
 
-- [Azure SQL Databases](../connectors/azuresql.md)
+- [Azure SQL Databases](../connectors/azuresql.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 

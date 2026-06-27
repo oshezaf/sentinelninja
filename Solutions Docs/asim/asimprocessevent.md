@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimProcessEvent` |
-| **Built-in Parser** | `_ASim_ProcessEvent` |
+| **Parser Name** | `ASimProcessEvent` (parameter-less) · `imProcessEvent` (filtering) |
+| **Built-in Parser** | `_ASim_ProcessEvent` (parameter-less) · `_Im_ProcessEvent` (filtering) |
 | **Schema** | ProcessEvent |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |

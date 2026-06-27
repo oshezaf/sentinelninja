@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ? | ✓ | ? |
+| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ✓ | ✓ | ✓ |
 | [`CiscoUmbrellaCloudFirewall_CL`](../tables/ciscoumbrellacloudfirewall-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDLP_CL`](../tables/ciscoumbrelladlp-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDNS_CL`](../tables/ciscoumbrelladns-cl.md) | ? | ✓ | ? |
@@ -46,6 +46,18 @@ This content item queries data from the following tables:
 | [`Cisco_Umbrella_ravpnlogs_CL`](../tables/cisco-umbrella-ravpnlogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
 | [`Cisco_Umbrella_ztaflow_CL`](../tables/cisco-umbrella-ztaflow-cl.md) 🔶 | ✗ | ✓ | ✗ |
 | [`Cisco_Umbrella_ztna_CL`](../tables/cisco-umbrella-ztna-cl.md) 🔶 | ✗ | ✓ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [CiscoUmbrellaConnector](../connectors/ciscoumbrellaconnector.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+| [CiscoUmbrellaDataConnector](../connectors/ciscoumbrelladataconnector.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+| [CiscoUmbrellaDataConnectorelasticpremium](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+
+**Solutions:** [CiscoUmbrella](../solutions/ciscoumbrella.md)
 
 ---
 

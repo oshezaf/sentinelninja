@@ -23,7 +23,7 @@
 
 ## Schema (17 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceRuntimeVulnerabilitiesV2/Connector_Dynatrace_RuntimeVulnerabilities_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace%5CData%20Connectors%5CDynatraceRuntimeVulnerabilitiesV2/Connector_Dynatrace_RuntimeVulnerabilities_table.json)
 
 | Column Name | Type |
 |:------------|:-----|

@@ -19,6 +19,7 @@
 | **CCF Configuration** | [dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSFWLogs_ccp/dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zscaler-internet-access-cloud-nss-firewall-log-push-connector) |
 
 The [Zscaler](https://www.zscaler.com/) connector provides the capability to read ZIA firewall log data in Microsoft Sentinel.
 

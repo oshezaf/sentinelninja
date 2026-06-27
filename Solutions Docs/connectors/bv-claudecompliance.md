@@ -1,6 +1,4 @@
-# ⚠️ BV-ClaudeCompliance (via Codeless Connector Framework)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# BV-ClaudeCompliance (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BlueVoyant.svg" alt="" width="75" height="75">
 

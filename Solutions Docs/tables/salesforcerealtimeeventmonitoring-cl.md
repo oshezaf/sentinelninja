@@ -21,7 +21,7 @@
 
 ## Schema (191 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

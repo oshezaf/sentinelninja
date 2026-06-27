@@ -24,9 +24,9 @@ Detects Microsoft Sentinel incidents tagged as SOCRadar that were closed more th
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityIncident`](../tables/securityincident.md) | `Labels has "SOCRadar"`<br>`Labels has "Synced"` | ✓ | ✗ | ✓ |
 
 ---
 

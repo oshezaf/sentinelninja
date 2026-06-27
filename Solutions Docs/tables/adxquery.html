@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADXQuery &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for ADXQuery table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
@@ -28,6 +31,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -35,19 +46,291 @@
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxquery">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
+<h2 id="schema">Schema (44 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxquery">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the application that invoked the query</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheDiskHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Disk cache hits</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheDiskMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Disk cache misses</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheMemoryHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory cache hits</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheMemoryMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory cache misses</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheShardsBypassBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cache bypass bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheShardsColdHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cold cache hits</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheShardsColdMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cold cache misses</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheShardsHotHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards hot cache hits</td>
+</tr>
+<tr>
+  <td style="text-align:left">CacheShardsHotMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards hot cache misses</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The category of this log. For this event, it will be Query</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientRequestProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The client request properties of the query</td>
+</tr>
+<tr>
+  <td style="text-align:left">ComponentFault</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occurred, it will be 'Server'</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The client request ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the database that the command ran on</td>
+</tr>
+<tr>
+  <td style="text-align:left">Duration</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command duration</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExtentsMaxDataScannedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Maximum data scan time</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExtentsMinDataScannedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Minimum data scan time</td>
+</tr>
+<tr>
+  <td style="text-align:left">FailureReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The failure reason</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastUpdatedOn</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time (UTC) at which this command ended</td>
+</tr>
+<tr>
+  <td style="text-align:left">MemoryPeak</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory peak</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of this operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Principal</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The principal that invoked the query</td>
+</tr>
+<tr>
+  <td style="text-align:left">RootActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The root activity ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScannedExtentsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Scanned extents count</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScannedRowsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Scanned rows count</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartedOn</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time (UTC) at which this command started</td>
+</tr>
+<tr>
+  <td style="text-align:left">State</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The state the command ended with</td>
+</tr>
+<tr>
+  <td style="text-align:left">TableCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Table count</td>
+</tr>
+<tr>
+  <td style="text-align:left">TablesStatistics</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tables statistics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">Text</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The text of the invoked query</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) at which this event was generated</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalCPU</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Total CPU duration</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalExtentsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total extents count</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalRowsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total rows count</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user that invoked the query</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkloadGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The workload group the query was classified to</td>
+</tr>
 </tbody>
 </table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxquery">ADXQuery Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
+<h2 id="resource-types">Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.kusto/clusters</code></li>
+</ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [AirlockDigital_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/AirlockDigital_DCR.json) |
 | **CCF Configuration** | [AirlockDigital_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/AirlockDigital_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#airlock-digital-connector-via-codeless-connector-framework) |
 
 The Airlock Digital connector collects application control and execution logs from your Airlock Digital server, providing visibility into file executions, server activities, and security event summaries in Microsoft Sentinel.
 

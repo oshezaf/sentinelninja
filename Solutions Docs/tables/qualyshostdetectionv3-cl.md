@@ -23,7 +23,7 @@
 
 ## Schema (12 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM%5CData%20Connectors%5CQualysVMHostLogs_ccp/QualysVMHostLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

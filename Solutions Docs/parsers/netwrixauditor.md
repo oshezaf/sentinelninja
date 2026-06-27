@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for NetwrixAuditor |
 | Location | Solution |
-| Solution | [Netwrix Auditor](../solutions/netwrix-auditor.md) |
+| Solution | [Netwrix Auditor](../solutions/netwrix-auditor.md) ⚠️ |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

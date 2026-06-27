@@ -21,7 +21,7 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
-## Schema (66 columns)
+## Schema (69 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs)
 
@@ -58,8 +58,10 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 | EntityCreatedTime | datetime | The timestamp (UTC) of when the entity was originally created in the source system. |
 | EntityFeedType | string | The type or category of the data feed that provided the entity record. |
 | EntityId | string | A unique identifier for the entity within the normalized schema. |
+| EntityIdType | string | The type or format of the entity identifier. |
 | EntityIngestionTime | datetime | The timestamp (UTC) of when the entity record was ingested into the system. |
 | EntityIsDeleted | bool | Indicates whether the entity has been deleted in the source system. |
+| EntityKey | string | The unique identifier of the entity, used for correlation across schemas. |
 | EntityLastAccessedTime | datetime | The timestamp (UTC) of when the entity was last accessed. |
 | EntityLastModifiedTime | datetime | The timestamp (UTC) of when the entity was last modified in the source system. |
 | EntityName | string | The display name or identifier of the entity. |
@@ -69,6 +71,7 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 | EntityProduct | string | The product name associated with the source that reported the entity. |
 | EntitySchema | string | The ASIM schema name for this entity record. |
 | EntitySchemaVersion | string | The version of the ASIM schema used for this entity record. |
+| EntitySnapshotId | string | The identifier of the snapshot to which the current record belongs. |
 | EntitySource | string | The data source or connector that provided the entity record. |
 | EntitySubProduct | string | The sub-product or component name associated with the source that reported the entity. |
 | EntityUpdatedTime | datetime | The timestamp (UTC) of when the entity record was last updated. |
@@ -98,7 +101,7 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ASimAssetEntityLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs)
 
 ---
 

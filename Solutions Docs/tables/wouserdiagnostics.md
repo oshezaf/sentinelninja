@@ -36,7 +36,7 @@ Reference for WOUserDiagnostics table in Azure Monitor Logs.
 | CorrelationId | string | Correlation ID of the operation. |
 | EdgeLocation | string | The Azure Edge custom location resource Id on which the operation happens. |
 | Location | string | Azure region in which the workload orchestration diagnostic resource is located. |
-| Message | string | The diagnose message. |
+| Message | string | The diagnostic message. |
 | OperatingResourceId | string | The operating resource id refers to the specific operational resource that the workload orchestration is managing when this event is triggered. |
 | OperatingResourceK8SId | string | The operating resource K8s id refers to K8s resource id (namespace/name) of the specific operational resource that the workload orchestration is managing when this event is triggered. |
 | OperationName | string | Operation name of the event. |
@@ -53,7 +53,7 @@ Reference for WOUserDiagnostics table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [WOUserDiagnostics Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics)
 
 ---
 

@@ -61,7 +61,7 @@ Reference for AADDomainServicesDirectoryServiceAccess table in Azure Monitor Log
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AADDomainServicesDirectoryServiceAccess Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaddomainservicesdirectoryserviceaccess)
 
 ---
 

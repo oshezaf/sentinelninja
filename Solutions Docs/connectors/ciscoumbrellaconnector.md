@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CiscoUmbrella_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_CCP/CiscoUmbrella_DCR.json) |
 | **CCF Configuration** | [CiscoUmbrella_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_CCP/CiscoUmbrella_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-umbrella-via-codeless-connector-framework) |
 
 The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest [Cisco Secure Access](https://securitydocs.cisco.com/secure-access-sub-landing-page) and [Cisco Umbrella](https://securitydocs.cisco.com/umbrella-sub-landing-page) logs stored in Cisco-managed Amazon S3 Bucket into Microsoft Sentinel using the Amazon S3 REST API. Refer to [Cisco Cloud Security log management documentation](https://securitydocs.cisco.com/docs/csa/olh/118897.dita) for more information.
 
@@ -27,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ? | ✓ | ? |
+| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ✓ | ✓ | ✓ |
 | [`CiscoUmbrellaCloudFirewall_CL`](../tables/ciscoumbrellacloudfirewall-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDLP_CL`](../tables/ciscoumbrelladlp-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDNS_CL`](../tables/ciscoumbrelladns-cl.md) | ? | ✓ | ? |

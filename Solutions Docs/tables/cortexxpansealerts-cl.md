@@ -21,7 +21,7 @@
 
 ## Schema (76 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF%5CData%20Connectors%5CCortexXpanse_ccp/CortexXpanse_Table.json)
 
 | Column Name | Type |
 |:------------|:-----|

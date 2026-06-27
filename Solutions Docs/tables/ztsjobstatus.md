@@ -22,7 +22,7 @@ Reference for ZTSJobStatus table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
-## Schema (12 columns)
+## Schema (13 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ztsjobstatus)
 
@@ -33,6 +33,7 @@ Reference for ZTSJobStatus table in Azure Monitor Logs.
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | CorrelationId | string | ZTS correlation ID used in support scenarios. |
+| JobErrorCode | string | Short, stable error code emitted with the job status log (e.g. 'None', 'JobDeleteFailed', 'NoWorkspaceConnectivity', 'PartialWorkspaceConnectivity', 'RequestValidationFailed', 'JobScheduleFailed', 'RunFailed'). |
 | JobMessage | string | Job message. |
 | Location | string | Azure region of the resource. |
 | LogLevel | string | Indicates the log level. |
@@ -45,7 +46,7 @@ Reference for ZTSJobStatus table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ZTSJobStatus Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ztsjobstatus)
 
 ---
 

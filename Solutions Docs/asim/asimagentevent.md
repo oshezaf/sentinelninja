@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimAgentEvent` |
-| **Built-in Parser** | `_ASim_AgentEvent` |
+| **Parser Name** | `ASimAgentEvent` (parameter-less) · `imAgentEvent` (filtering) |
+| **Built-in Parser** | `_ASim_AgentEvent` (parameter-less) · `_Im_AgentEvent` (filtering) |
 | **Schema** | AgentEvent |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |

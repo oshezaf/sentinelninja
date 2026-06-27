@@ -20,7 +20,7 @@
 | **Author** | BlinkOps - support@blinkops.com |
 | **First Published** | 2025-05-05 |
 | **Solution Folder** | [BlinkOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/blinkoperations1709924858838.azure-sentinel-blink_automation) · Popularity: ⚪ Very Low (5%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/blinkoperations1709924858838.azure-sentinel-blink_automation) · Popularity: 🟡 Low (33%) |
 
 BlinkOps integrates with Sentinel to automate incident response and streamline security operations.
 

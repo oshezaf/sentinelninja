@@ -46,7 +46,7 @@ Reference for ABAPTableDataLog table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time when the record was generated. |
 | TransactionCode | string | The transaction code of the event. |
 | Type | string | The name of the table |
-| UpdatedOn | datetime | The date and time of the event occured in the SAP system in UTC format. |
+| UpdatedOn | datetime | The date and time of the event occurred in the SAP system in UTC format. |
 | User | string | The User who performed the a specific event or activity. |
 | VersionNumber | string | The version number of the event. |
 
@@ -54,7 +54,7 @@ Reference for ABAPTableDataLog table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [ABAPTableDataLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abaptabledatalog)
 
 ---
 

@@ -20,7 +20,7 @@
 
 ## Schema (43 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/TrellixEvents_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix%5CData%20Connectors%5CTrellix_CCF/TrellixEvents_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

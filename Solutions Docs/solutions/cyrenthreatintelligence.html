@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel">Azure Marketplace</a> · Popularity: 🟡 Low (22%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -83,8 +83,11 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a></li>
+<li><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a> 🔶</li>
 </ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -97,12 +100,15 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a></td>
+  <td><a href="../tables/cyren-indicators-cl.html"><code>Cyren_Indicators_CL</code></a> 🔶</td>
   <td><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>

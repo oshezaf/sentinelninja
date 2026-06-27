@@ -10,8 +10,8 @@
 
 | Property | Value |
 |:---------|:------|
-| **Parser Name** | `ASimNetworkSession` |
-| **Built-in Parser** | `_ASim_NetworkSession` |
+| **Parser Name** | `ASimNetworkSession` (parameter-less) · `imNetworkSession` (filtering) |
+| **Built-in Parser** | `_ASim_NetworkSession` (parameter-less) · `_Im_NetworkSession` (filtering) |
 | **Schema** | NetworkSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |

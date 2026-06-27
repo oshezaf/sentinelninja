@@ -6,7 +6,7 @@
 
 ---
 
-Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices
+Reference for DeviceTvmSecureConfigurationAssessment table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,13 @@ Microsoft Defender Vulnerability Management assessment events, indicating the st
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessment) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessment-table) |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
 
 ## Schema (18 columns)
 
@@ -46,9 +52,56 @@ Microsoft Defender Vulnerability Management assessment events, indicating the st
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [DeviceTvmSecureConfigurationAssessment Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessment)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
 
 ---
+
+## Content Items Using This Table (3)
+
+### Hunting Queries (3)
+
+**Standalone Content:** `ConfigurationId == "scid-2011"`
+
+| Hunting Query |
+|:-------------|
+| [MDE_DeviceHealth](../content/standalone-content-mde-devicehealth-da4eeb70-c39b-4d8f-a4f0-22e15a745230-d1196843.md) |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Endpoint Agent Health Status Report](../content/github-only-endpoint-agent-health-status-report-64c0f54f-9a8d-4630-95c8-aa2751e5da0c-7b7ccf5d.md) | `OSPlatform has "Linux"`<br>`OSPlatform has "macOS"`<br>`OSPlatform startswith "Windows"` |
+| [MD AV Signature and Platform Version](../content/github-only-md-av-signature-and-platform-version-30035880-b7af-4d5e-8617-be7f070a5c1c-78f9bd77.md) | `ConfigurationId == "scid-2011"` |
+
+## Selection Criteria Summary (2 criteria, 3 total references)
+
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ConfigurationId == "scid-2011"` | - | 2 | - | - | **2** |
+| `OSPlatform has "Linux"`<br>`OSPlatform has "macOS"`<br>`OSPlatform startswith "Windows"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
+
+### ConfigurationId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `scid-2011` | - | 2 | - | - | **2** |
+
+### OSPlatform
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Linux` | - | 1 | - | - | **1** |
+| `has macOS` | - | 1 | - | - | **1** |
+| `startswith Windows` | - | 1 | - | - | **1** |
 
 ---
 

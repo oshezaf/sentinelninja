@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-03 |
 | **Last Updated** | 2026-06-09 |
 | **Solution Folder** | [Vaikora-Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-vaikora-sentinel) · Popularity: 🔵 Medium (56%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-vaikora-sentinel) · Popularity: 🟡 Low (31%) |
 
 The [Vaikora AI Agent Behavioral Signals](https://vaikora.com) solution integrates Vaikora AI agent behavioral data into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (Vaikora_AgentSignals_CL), analytics rules, and visualization workbook to help security teams monitor AI agent activity, detect behavioral anomalies, and investigate policy violations.
 
@@ -36,7 +36,10 @@ The [Vaikora AI Agent Behavioral Signals](https://vaikora.com) solution integrat
 
 This solution provides **1 data connector(s)**:
 
-- [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md)
+- [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Internal Tables
 
@@ -44,7 +47,10 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) | Analytics, Workbooks |
+| [`Vaikora_AgentSignals_CL`](../tables/vaikora-agentsignals-cl.md) 🔶 | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) | Analytics, Workbooks |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

@@ -22,7 +22,7 @@
 
 ## Schema (12 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka/Data%20Connectors/QuokkaQscoutAppEventsLogs_ccf/QuokkaQScoutAppEventsLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka%5CData%20Connectors%5CQuokkaQscoutAppEventsLogs_ccf/QuokkaQScoutAppEventsLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

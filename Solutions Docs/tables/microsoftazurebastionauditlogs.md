@@ -20,6 +20,7 @@ Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
 ## Schema (25 columns)
@@ -58,9 +59,19 @@ Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [MicrosoftAzureBastionAuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftazurebastionauditlogs)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

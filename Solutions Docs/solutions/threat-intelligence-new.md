@@ -17,9 +17,9 @@
 | **Version** | 3.0.19 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |
-| **Last Updated** | 2026-05-05 |
+| **Last Updated** | 2026-06-26 |
 | **Solution Folder** | [Threat Intelligence (NEW)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-updated) · Popularity: 🟢 High (94%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-updated) · Popularity: 🟢 High (91%) |
 
 Microsoft Sentinel has recently improved its threat intelligence hunting experience by incorporating support for STIX objects like Threat Actor, Attack Pattern, Identity, and Relationship. As a result, we have updated our TI Solutions to leverage the new ThreatIntelIndicator table.
 [Work with STIX objects and indicators to enhance threat intelligence and threat hunting in Microsoft Sentinel (Preview) - Microsoft Sentinel | Microsoft Learn](https://learn.microsoft.com/azure/sentinel/work-with-stix-objects-indicators).

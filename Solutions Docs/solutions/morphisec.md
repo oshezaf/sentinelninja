@@ -1,4 +1,4 @@
-# Morphisec | Anti-Ransomware
+# Morphisec Anti Ransomware
 
 *Solution: Morphisec*
 
@@ -19,9 +19,9 @@
 | **Version** | 3.1.0 |
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |
-| **Last Updated** | 2026-06-11 |
+| **Last Updated** | 2026-06-16 |
 | **Solution Folder** | [Morphisec](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/morphisec.morphisec_utpp_mss) · Rating: ★★★★★ 4.8/5 (12 ratings) · Popularity: 🟡 Low (16%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/morphisec.morphisec_utpp_mss) · Rating: ★★★★★ 4.8/5 (12 ratings) · Popularity: 🟡 Low (32%) |
 
 The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enables you to integrate vital insights from your security products with the Morphisec Data Connector for Microsoft Sentinel and expand your analytical capabilities with search and correlation, threat intelligence, and customized alerts. With a single, cross-product view, you can make real-time, data-backed decisions to protect your most important assets.
 

@@ -66,7 +66,7 @@ Reference for SecurityBaseline table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [SecurityBaseline Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitybaseline)
 
 ## Solutions (7)
 
@@ -82,9 +82,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (11)
 
-### Workbooks (7)
+### Workbooks (11)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `AnalyzeResult in "Failed,Passed"`
 
@@ -127,6 +127,15 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) | `AnalyzeResult != "Passed"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `AnalyzeResult in "Failed,Passed"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `AnalyzeResult == "Failed"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `AnalyzeResult in "Failed,Passed"` |
 
 ## Resource Types
 

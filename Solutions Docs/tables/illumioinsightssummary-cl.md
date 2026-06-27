@@ -21,7 +21,7 @@
 
 ## Schema (12 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsSummaryConnector_CCP/table_IllumioInsightsSummary.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight%5CData%20Connectors%5CIllumioInsightsSummaryConnector_CCP/table_IllumioInsightsSummary.json)
 
 | Column Name | Type |
 |:------------|:-----|

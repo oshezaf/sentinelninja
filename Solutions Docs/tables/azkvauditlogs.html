@@ -102,7 +102,7 @@
 <tr>
   <td style="text-align:left">AppliedAssignmentId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">AssignmentId that eiher granted or denied access as part of access check</td>
+  <td style="text-align:left">AssignmentId that either granted or denied access as part of access check</td>
 </tr>
 <tr>
   <td style="text-align:left">CallerIpAddress</td>
@@ -117,17 +117,17 @@
 <tr>
   <td style="text-align:left">CertificatePolicyProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about certificate policy properties including keyproperties, secretproperties, issuerproperties</td>
+  <td style="text-align:left">Information about certificate policy properties including <code>keyproperties</code>, <code>secretproperties</code>, <code>issuerproperties</code></td>
 </tr>
 <tr>
   <td style="text-align:left">CertificateProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about certificate audit properties including atttributes, subject, hashing algorithm</td>
+  <td style="text-align:left">Information about certificate audit properties including attributes, subject, hashing algorithm</td>
 </tr>
 <tr>
   <td style="text-align:left">CertificateRequestProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Boolean value indicating if certificate request operation was cancelled</td>
+  <td style="text-align:left">Boolean value indicating if certificate request operation was canceled</td>
 </tr>
 <tr>
   <td style="text-align:left">ClientInfo</td>
@@ -152,7 +152,7 @@
 <tr>
   <td style="text-align:left">EnabledForDiskEncryption</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Specifes if disk encryption is enabled</td>
+  <td style="text-align:left">Specifies if disk encryption is enabled</td>
 </tr>
 <tr>
   <td style="text-align:left">EnabledForTemplateDeployment</td>
@@ -207,7 +207,7 @@
 <tr>
   <td style="text-align:left">IsRbacAuthorized</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Specifies whether an access was granted or not as part of an access check</td>
+  <td style="text-align:left">Specifies whether access was granted or not as part of an access check</td>
 </tr>
 <tr>
   <td style="text-align:left">KeyProperties</td>
@@ -232,7 +232,7 @@
 <tr>
   <td style="text-align:left">OperationVersion</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">REST api version requested by the client.</td>
+  <td style="text-align:left">REST API version requested by the client.</td>
 </tr>
 <tr>
   <td style="text-align:left">Properties</td>
@@ -262,12 +262,12 @@
 <tr>
   <td style="text-align:left">SecretProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about secret properties including type, atttributes</td>
+  <td style="text-align:left">Information about secret properties including type, attributes</td>
 </tr>
 <tr>
   <td style="text-align:left">Sku</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about vault including family, name and capacity</td>
+  <td style="text-align:left">Information about vault including family, name, and capacity</td>
 </tr>
 <tr>
   <td style="text-align:left">SoftDeleteRetentionInDays</td>
@@ -282,12 +282,12 @@
 <tr>
   <td style="text-align:left">StorageAccountProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about storage account properties including activekeyname, resourceid</td>
+  <td style="text-align:left">Information about storage account properties including <code>activekeyname</code>, <code>resourceid</code></td>
 </tr>
 <tr>
   <td style="text-align:left">StorageSasDefinitionProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about storage sas definition properties including sastype, validityperiod</td>
+  <td style="text-align:left">Information about storage sas definition properties including <code>sastype</code>, <code>validityperiod</code></td>
 </tr>
 <tr>
   <td style="text-align:left">SubnetId</td>
@@ -302,7 +302,7 @@
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp (in UTC) when operation occured.</td>
+  <td style="text-align:left">Timestamp (in UTC) when operation occurred.</td>
 </tr>
 <tr>
   <td style="text-align:left">Tlsversion</td>
@@ -322,14 +322,14 @@
 <tr>
   <td style="text-align:left">VaultProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc</td>
+  <td style="text-align:left">Detailed vault properties containing <code>accesspolicy</code>, <code>iprule</code>, <code>virtualnetwork</code> etc.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs">AZKVAuditLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
 <h2 id="resource-types">Resource Types</h2>

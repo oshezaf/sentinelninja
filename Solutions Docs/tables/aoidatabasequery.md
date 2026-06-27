@@ -42,7 +42,7 @@ Reference for AOIDatabaseQuery table in Azure Monitor Logs.
 | CacheShardsColdMisses | long | Shards cold cache misses. |
 | CacheShardsHotHits | long | Shards hot cache hits. |
 | CacheShardsHotMisses | long | Shards hot cache misses. |
-| ComponentFault | string | The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occured, it will be 'Server'. |
+| ComponentFault | string | The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault will be 'Client'. If an internal error occurred, it will be 'Server'. |
 | CorrelationId | string | The client request ID. |
 | DatabaseName | string | The name of the database that the command ran on. |
 | DurationMs | string | Command duration in milliseconds. |
@@ -76,7 +76,7 @@ Reference for AOIDatabaseQuery table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [AOIDatabaseQuery Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aoidatabasequery)
 
 ---
 

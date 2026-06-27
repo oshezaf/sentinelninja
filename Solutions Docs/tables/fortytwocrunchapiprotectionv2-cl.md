@@ -21,7 +21,7 @@
 
 ## Schema (18 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/table_FortyTwoCrunchAPIProtectionV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection%5CData%20Connectors%5C42Crunch_CCF/table_FortyTwoCrunchAPIProtectionV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

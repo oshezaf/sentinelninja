@@ -32,9 +32,9 @@ Reference for NTAInsights table in Azure Monitor Logs.
 | InsightsResourceId | string | Resource ID for the resource for which data is aggregated |
 | IntervalEnd | datetime | End time of the data insights processing interval. |
 | IntervalStart | datetime | Start time of the data insights processing interval. |
-| Periodicity | real | The number of hours after whichthe data repeats itself. |
+| Periodicity | real | The number of hours after which the data repeats itself. |
 | PivotType | string | Pivot type for insights aggregation. |
-| ProcessingTime | datetime | The time when periodicty is calculated. |
+| ProcessingTime | datetime | The time when periodicity is calculated. |
 | Region | string | Region of Vnet flow logs. |
 | SchemaVersion | string | Schema version. |
 | SeriesNumber | real | An incremental value to represent the last aggregated series. |
@@ -42,7 +42,7 @@ Reference for NTAInsights table in Azure Monitor Logs.
 | SubType | string | Subtype for the insights logs. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time when the data gets ingested into the Log Analytics Workspace. |
-| TrafficTime | datetime | Time when the anomaly has occured in data pattern. |
+| TrafficTime | datetime | Time when the anomaly has occurred in data pattern. |
 | TrafficVolumeActual | real | The actual traffic volume in the time period. |
 | TrafficVolumeBaseline | real | The predicted value of the series, according to the decomposition per the anomaly calculation algorithm. |
 | TrafficVolumeUnit | string | The aggregated values represent Flows/Bytes/Packets. |
@@ -52,7 +52,7 @@ Reference for NTAInsights table in Azure Monitor Logs.
 
 Official Microsoft Learn documentation for field/column information:
 
-- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+- [NTAInsights Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntainsights)
 
 ---
 

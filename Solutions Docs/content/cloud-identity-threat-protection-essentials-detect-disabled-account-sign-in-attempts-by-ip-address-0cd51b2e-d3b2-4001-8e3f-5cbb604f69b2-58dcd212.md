@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultDescription == "User account is disabled. The account has been disabled by an administrator."`<br>`ResultType == "50057"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "50057"` | ✓ | ✗ | ✓ |
 
 ---
 

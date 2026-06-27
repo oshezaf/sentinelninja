@@ -19,7 +19,7 @@
 | **First Published** | 2024-03-04 |
 | **Last Updated** | 2026-03-18 |
 | **Solution Folder** | [AWS EKS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awseks) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awseks) · Popularity: 🟡 Low (21%) |
 
 The AWS EKS solution for Microsoft Sentinel allows you to ingest Amazon Elastic Kubernetes Service (EKS) audit logs into Microsoft Sentinel. This connector provides the capability to monitor and analyze Kubernetes cluster activities, API server calls, and security events from your EKS environments for comprehensive security monitoring and threat detection.
 

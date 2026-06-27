@@ -23,7 +23,7 @@
 
 ## Schema (232 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GitHubAuditLogs_AzStorage/table_GitHubAuditLogsV2.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGitHubAuditLogs_AzStorage/table_GitHubAuditLogsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ? | ✓ | ? |
+| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

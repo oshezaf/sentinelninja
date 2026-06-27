@@ -21,16 +21,48 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
-<p>| Attribute | Value |
-|:----------|:------|
-| <strong>Connector ID</strong> | <code>GitHubWebhookV2</code> |
-| <strong>Publisher</strong> | Microsoft |
-| <strong>Used in Solutions</strong> | <a href="../solutions/github.html">GitHub</a> |
-| <strong>Collection Method</strong> | <a href="../methods/azure-function.html">Azure Function</a> |
-| <strong>Connector Definition Files</strong> | <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/GithubWebhookV2_API_FunctionApp.json">GithubWebhookV2_API_FunctionApp.json</a> |
-| <strong>Ingestion API</strong> | <a href="../methods/log-ingestion-api-undetermined.html">Log Ingestion API|Undetermined</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources|Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em> |
-| <strong>Custom Log V1 Tables</strong> | Yes 🔶 — ingests into tables with type-suffixed columns |
-| <strong>Microsoft Learn</strong> | <a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-using-webhooks">View on Learn</a> |</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>GitHubWebhookV2</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/github.html">GitHub</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/GithubWebhookV2_API_FunctionApp.json">GithubWebhookV2_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> | <a href="../methods/undetermined.html">Undetermined</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
+  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-using-webhooks-v2">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
 <p>The <a href="https://www.github.com">GitHub</a> webhook data connector (V2) provides the capability to ingest GitHub subscribed events into Microsoft Sentinel using <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads">GitHub webhook events</a>. This connector uses the Azure Monitor <strong>Logs Ingestion API (CLv2)</strong> with <strong>Managed Identity</strong> authentication and is the designated successor to the original GitHub (using Webhooks) connector, which uses the CLv1 HTTP Data Collector API (ODS endpoint) that Microsoft is replacing with CLv2.</p>
 <p>Events are written to the <code>GitHubAdvancedSecurityAlerts_CL</code> table. The <code>githubscanaudit</code> parser function provides a unified view across both the legacy <code>githubscanaudit_CL</code> table and the new <code>GitHubAdvancedSecurityAlerts_CL</code> table, so all existing workbooks, analytic rules, and hunting queries continue to work without modification.</p>
 <blockquote>
@@ -53,9 +85,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/githubadvancedsecurityalerts-cl.html"><code>GitHubAdvancedSecurityAlerts_CL</code></a> 🔶</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a></td>

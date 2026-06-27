@@ -21,7 +21,7 @@
 | **First Published** | 2024-10-29 |
 | **Last Updated** | 2025-06-17 |
 | **Solution Folder** | [ESET Protect Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/esetresearch1579795941720.eset-protect-platform-solution) · Popularity: 🟡 Low (37%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/esetresearch1579795941720.eset-protect-platform-solution) · Popularity: ⚪ Very Low (0%) |
 
 ESET Protect Platform solution for Microsoft Sentinel ingests detections from [ESET Protect Platform](https://www.eset.com/int/business/protect-platform/) using the provided [Integration REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors). 
 

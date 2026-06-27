@@ -22,7 +22,7 @@
 
 ## Schema (11 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce/Data%20Connectors/ValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_Table.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce%5CData%20Connectors%5CValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|

@@ -8,25 +8,25 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 ---
 
-**13 schemas** with 93 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**13 schemas** with 186 source parsers and 15 unifying parsers. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
-\* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+\* *Each unifying parser is available as a parameter-less `ASim` parser and a filtering `im`/`vim` parser; both are listed on the parser's page.*
 
 ## Schemas
 
-- [AgentEvent](#agentevent) (1 union pair)
-- [AlertEvent](#alertevent) (3 source pairs, 1 union pair)
-- [AssetEntity](#assetentity) (1 union pair)
-- [AuditEvent](#auditevent) (10 source pairs, 1 union pair)
-- [Authentication](#authentication) (18 source pairs, 1 union pair)
-- [DhcpEvent](#dhcpevent) (1 source pairs, 1 union pair)
-- [Dns](#dns) (7 source pairs, 1 union pair)
-- [FileEvent](#fileevent) (8 source pairs, 1 union pair)
-- [NetworkSession](#networksession) (18 source pairs, 1 union pair)
-- [ProcessEvent](#processevent) (8 source pairs, 3 union pairs)
-- [RegistryEvent](#registryevent) (4 source pairs, 1 union pair)
-- [UserManagement](#usermanagement) (3 source pairs, 1 union pair)
-- [WebSession](#websession) (9 source pairs, 1 union pair)
+- [AgentEvent](#agentevent) (1 unifying)
+- [AlertEvent](#alertevent) (6 source, 1 unifying)
+- [AssetEntity](#assetentity) (1 unifying)
+- [AuditEvent](#auditevent) (20 source, 1 unifying)
+- [Authentication](#authentication) (37 source, 1 unifying)
+- [DhcpEvent](#dhcpevent) (2 source, 1 unifying)
+- [Dns](#dns) (15 source, 1 unifying)
+- [FileEvent](#fileevent) (17 source, 1 unifying)
+- [NetworkSession](#networksession) (37 source, 1 unifying)
+- [ProcessEvent](#processevent) (17 source, 3 unifying)
+- [RegistryEvent](#registryevent) (9 source, 1 unifying)
+- [UserManagement](#usermanagement) (7 source, 1 unifying)
+- [WebSession](#websession) (19 source, 1 unifying)
 
 ## AgentEvent
 
@@ -37,7 +37,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimAgentEvent](asimagentevent.md) | `_ASim_AgentEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md) |
-| [imAgentEvent](imagentevent.md) | `_Im_AgentEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/imAgentEvent.md) |
 
 ## AlertEvent
 
@@ -48,7 +47,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
-| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
 
 ### Supported Products
 
@@ -74,7 +72,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimAssetEntity](asimassetentity.md) | `_ASim_AssetEntity` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAssetEntity/CHANGELOG/ASimAssetEntity.md) |
-| [imAssetEntity](imassetentity.md) | `_Im_AssetEntity` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAssetEntity/CHANGELOG/imAssetEntity.md) |
 
 ## AuditEvent
 
@@ -85,7 +82,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimAuditEvent](asimauditevent.md) | `_ASim_AuditEvent` | [0.1.7](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md) |
-| [imAuditEvent](imauditevent.md) | `_Im_AuditEvent` | [0.1.6](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/imAuditEvent.md) |
 
 ### Supported Products
 
@@ -125,7 +121,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimAuthentication](asimauthentication.md) | `_ASim_Authentication` | [0.2.15](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md) |
-| [imAuthentication](imauthentication.md) | `_Im_Authentication` | [0.3.12](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md) |
 
 ### Supported Products
 
@@ -182,7 +177,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimDhcpEvent](asimdhcpevent.md) | `_ASim_DhcpEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEvent.md) |
-| [imDhcpEvent](imdhcpevent.md) | `_Im_DhcpEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/imDhcpEvent.md) |
 
 ### Supported Products
 
@@ -204,7 +198,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimDns](asimdns.md) | `_ASim_Dns` | [0.5.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md) |
-| [imDns](imdns.md) | `_Im_Dns` | [0.5.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/imDns.md) |
 
 ### Supported Products
 
@@ -239,7 +232,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimFileEvent](asimfileevent.md) | `_ASim_FileEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md) |
-| [imFileEvent](imfileevent.md) | `_Im_FileEvent` | [0.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/imFileEvent.md) |
 
 ### Supported Products
 
@@ -276,7 +268,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimNetworkSession](asimnetworksession.md) | `_ASim_NetworkSession` | [0.7.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md) |
-| [imNetworkSession](imnetworksession.md) | `_Im_NetworkSession` | [0.6.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/imNetworkSession.md) |
 
 ### Supported Products
 
@@ -335,9 +326,6 @@ These are the main entry points that combine all source parsers:
 | [ASimProcessEvent](asimprocessevent.md) | `_ASim_ProcessEvent` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md) |
 | [ASimProcessEventCreate](asimprocesseventcreate.md) | `_ASim_ProcessEvent_Create` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreate.md) |
 | [ASimProcessEventTerminate](asimprocesseventterminate.md) | `_ASim_ProcessEvent_Terminate` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminate.md) |
-| [imProcessCreate](improcesscreate.md) | `_Im_ProcessCreate` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessCreate.md) |
-| [imProcessEvent](improcessevent.md) | `_Im_ProcessEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessEvent.md) |
-| [imProcessTerminate](improcessterminate.md) | `_Im_ProcessTerminate` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessTerminate.md) |
 
 ### Supported Products
 
@@ -374,7 +362,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimRegistry](asimregistry.md) | `_ASim_RegistryEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistry.md) |
-| [imRegistry](imregistry.md) | `_Im_RegistryEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/imRegistry.md) |
 
 ### Supported Products
 
@@ -403,7 +390,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimUserManagement](asimusermanagement.md) | `_ASim_UserManagement` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagement.md) |
-| [imUserManagement](imusermanagement.md) | `_Im_UserManagement` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/imUserManagement.md) |
 
 ### Supported Products
 
@@ -430,7 +416,6 @@ These are the main entry points that combine all source parsers:
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
 | [ASimWebSession](asimwebsession.md) | `_ASim_WebSession` | [0.5.6](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md) |
-| [imWebSession](imwebsession.md) | `_Im_WebSession` | [0.6.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md) |
 
 ### Supported Products
 
