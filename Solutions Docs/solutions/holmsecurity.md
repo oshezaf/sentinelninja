@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.holmsecurity.com/](https://support.holmsecurity.com/) |
 | **Categories** | Security - Vulnerability Management |
+| **Source Vendor** | Holm Security *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Holm Security |
 | **First Published** | 2022-07-18 |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://42crunch.com/](https://42crunch.com/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | 42Crunch *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | 42Crunch - plugins@42crunch.com |
 | **First Published** | 2022-09-21 |

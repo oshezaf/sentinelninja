@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureBatchAccount_CCP` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Azure Batch Account](../solutions/azure-batch-account.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureBatchAccount_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Batch%20Account/Data%20Connectors/AzureBatchAccount_CCP.JSON) |

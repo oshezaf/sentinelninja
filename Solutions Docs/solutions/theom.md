@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.theom.ai](https://www.theom.ai) |
 | **Categories** | Security - Cloud Security |
+| **Source Vendor** | Theom *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-04 |

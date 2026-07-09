@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
 | **Categories** | Networking,Security - Threat Intelligence,Security - Threat Protection,Security - Network |
+| **Source Vendor** | Infoblox *(basis: event)* |
+| **Source Product** | Data Connector |
 | **Version** | 3.0.2 |
 | **Author** | Infoblox |
 | **First Published** | 2024-07-15 |

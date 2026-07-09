@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Netskope` |
 | **Publisher** | Netskope |
+| **Source Vendor** | Netskope *(basis: publisher)* |
 | **Used in Solutions** | [Netskope](../solutions/netskope.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Netskope_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope/Data%20Connectors/Netskope/Netskope_API_FunctionApp.json) |

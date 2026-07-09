@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Netskope *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -198,7 +199,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (12)
 
 ### Analytic Rules (10)
 
@@ -217,7 +218,7 @@ This table is ingested by the following connectors:
 | [Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)](../content/netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.md) |  |
 | [Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)](../content/netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.md) |  |
 
-### Workbooks (3)
+### Workbooks (2)
 
 **In solution [NetskopeWebTx](../solutions/netskopewebtx.md):**
 
@@ -230,12 +231,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NetskopeWebTx_Workbook](../content/github-only-netskopewebtx-workbook-8c510694.md) |  |
 
 ## Parsers Using This Table (2)
 

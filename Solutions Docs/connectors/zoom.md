@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `Zoom` |
 | **Publisher** | Zoom |
+| **Source Vendor** | Zoom *(basis: publisher)* |
 | **Used in Solutions** | [ZoomReports](../solutions/zoomreports.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ZoomReports_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Data%20Connectors/ZoomReports_API_FunctionApp.json) |

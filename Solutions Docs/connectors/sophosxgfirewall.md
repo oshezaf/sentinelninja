@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `SophosXGFirewall` |
 | **Publisher** | Sophos |
+| **Source Vendor** | Sophos *(basis: publisher)* |
 | **Used in Solutions** | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_SophosXGFirewall.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall/Data%20Connectors/Connector_Syslog_SophosXGFirewall.json) |

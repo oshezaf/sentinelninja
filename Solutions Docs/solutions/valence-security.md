@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.valencesecurity.com/](https://www.valencesecurity.com/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Valence Security *(basis: publisher)* |
 | **Version** | 1.0.0 |
 | **Author** | Valence Security - info@valencesecurity.com |
 | **First Published** | 2023-11-20 |

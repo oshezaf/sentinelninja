@@ -36,16 +36,24 @@
   <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Vendor</strong></td>
+  <td style="text-align:left">SAP <em>(basis: override)</em></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
   <td style="text-align:left"><a href="../solutions/sap.html">SAP</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/unknown.html">Unknown</a></td>
+  <td style="text-align:left"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a></td>
 </tr>
 </tbody>
 </table>
-<p>Modern agentless ingestion of SAP NetWeaver/ABAP/HANA telemetry into Microsoft Sentinel via the Codeless Connector Framework (CCF). Streams ABAPAuditLog, ABAPChangeDocsLog, ABAPUserDetails, ABAPAuthorizationDetails, and SentinelHealth as defined in Solutions/SAP/Tools/IntegrationSuite/SAPCC_DCR.json. Recommended modern path alongside the agent-based MicrosoftSentinelSAP connector.</p>
+<p>Modern agentless ingestion of SAP NetWeaver/ABAP/HANA telemetry into Microsoft Sentinel. Streams the native ABAPAuditLog, ABAPAuthorizationDetails, ABAPChangeDocsLog, ABAPUserDetails, and SentinelHealth tables as defined in Solutions/SAP/Tools/IntegrationSuite/SAPCC_DCR.json. Recommended modern path alongside the agent-based MicrosoftSentinelSAP connector.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -59,26 +67,26 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/abapauditlog-cl.html"><code>ABAPAuditLog_CL</code></a></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:left"><a href="../tables/abapauditlog.html"><code>ABAPAuditLog</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/abapauthorizationdetails.html"><code>ABAPAuthorizationDetails</code></a></td>
+  <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/abapauthorizationdetails-cl.html"><code>ABAPAuthorizationDetails_CL</code></a></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:left"><a href="../tables/abapchangedocslog.html"><code>ABAPChangeDocsLog</code></a></td>
+  <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/abapchangedocslog-cl.html"><code>ABAPChangeDocsLog_CL</code></a></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:left"><a href="../tables/abapuserdetails.html"><code>ABAPUserDetails</code></a></td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../tables/abapuserdetails-cl.html"><code>ABAPUserDetails_CL</code></a></td>
-  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>

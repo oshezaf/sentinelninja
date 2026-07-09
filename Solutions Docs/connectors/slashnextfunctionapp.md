@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `SlashNextFunctionApp` |
 | **Publisher** | SlashNext |
+| **Source Vendor** | SlashNext *(basis: publisher)* |
 | **Used in Solutions** | [SlashNext](../solutions/slashnext.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SlashNext_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/DataConnectors/SlashNext_FunctionApp.json) |

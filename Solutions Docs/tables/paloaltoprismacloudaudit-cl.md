@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Palo Alto Networks *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

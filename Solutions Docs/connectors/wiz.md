@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Wiz` |
 | **Publisher** | Wiz |
+| **Source Vendor** | Wiz *(basis: publisher)* |
 | **Used in Solutions** | [Wiz](../solutions/wiz.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [template_WIZ.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz/Data%20Connectors/template_WIZ.json) |

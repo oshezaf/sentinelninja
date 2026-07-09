@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ZNSegmentAuditCCPDefinition` |
 | **Publisher** | Zero Networks |
+| **Source Vendor** | Zero Networks *(basis: publisher)* |
 | **Used in Solutions** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZNSegmentAudit_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegmentAudit_CCP_Pull/ZNSegmentAudit_ConnectorDefinition.json) |

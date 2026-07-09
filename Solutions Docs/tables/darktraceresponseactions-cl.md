@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Darktrace *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

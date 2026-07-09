@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Forescout` |
 | **Publisher** | Forescout |
+| **Source Vendor** | Forescout *(basis: publisher)* |
 | **Used in Solutions** | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Forescout_syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29/Data%20Connectors/Forescout_syslog.json) |

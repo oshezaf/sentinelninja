@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.bluevoyant.com/](https://www.bluevoyant.com/) |
 | **Categories** | Security - Threat Protection,Security - Threat Intelligence |
+| **Source Vendor** | BlueVoyant *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | BlueVoyant - soc@bluevoyant.com |
 | **First Published** | 2026-06-09 |

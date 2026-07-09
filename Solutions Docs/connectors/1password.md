@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `1Password` |
 | **Publisher** | 1Password |
+| **Source Vendor** | 1Password *(basis: publisher)* |
 | **Used in Solutions** | [1Password](../solutions/1password.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [1Password_data_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/deployment/1Password_data_connector.json) |

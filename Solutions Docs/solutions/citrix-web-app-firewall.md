@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.citrix.com/support/](https://www.citrix.com/support/) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Citrix *(basis: event)* |
+| **Source Product** | NetScaler |
 | **Version** | 3.0.2 |
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |

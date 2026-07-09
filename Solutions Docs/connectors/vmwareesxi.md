@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `VMwareESXi` |
 | **Publisher** | VMWare |
+| **Source Vendor** | VMware *(basis: publisher)* |
 | **Used in Solutions** | [VMWareESXi](../solutions/vmwareesxi.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_VMwareESXi.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi/Data%20Connectors/Connector_Syslog_VMwareESXi.json) |

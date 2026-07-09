@@ -11,6 +11,7 @@ Reference for AzureMetrics table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Low value |
+| **Source Vendor** | Microsoft *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |

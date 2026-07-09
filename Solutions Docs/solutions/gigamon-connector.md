@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.gigamon.com/](https://www.gigamon.com/) |
 | **Categories** | Security - Network |
+| **Source Vendor** | GigamonDefinition *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Gigamon |
 | **Last Updated** | 2026-03-06 |

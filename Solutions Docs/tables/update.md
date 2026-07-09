@@ -94,9 +94,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -121,14 +121,6 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) | `UpdateState != "Installed"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `UpdateState != "Installed"` |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ## Resource Types
 

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IllumioInsightsSummaryCCP` |
 | **Publisher** | Illumio |
+| **Source Vendor** | Illumio *(basis: publisher)* |
 | **Used in Solutions** | [Illumio Insight](../solutions/illumio-insight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioInsightsSummary_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsSummaryConnector_CCP/IllumioInsightsSummary_ConnectorDefinition.json) |

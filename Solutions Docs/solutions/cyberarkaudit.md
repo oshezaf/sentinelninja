@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyberark.com/services-support/technical-support-contact/](https://www.cyberark.com/services-support/technical-support-contact/) |
 | **Categories** | Security - Threat Intelligence,Identity |
+| **Source Vendor** | CyberArk *(basis: publisher)* |
 | **Version** | 3.1.0 |
 | **Author** | CyberArk Business Development - BizDevTech@cyberark.com |
 | **First Published** | 2024-03-01 |

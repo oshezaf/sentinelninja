@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `PostgreSQL` |
 | **Publisher** | PostgreSQL |
+| **Source Vendor** | PostgreSQL *(basis: publisher)* |
 | **Used in Solutions** | [PostgreSQL](../solutions/postgresql.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_PostgreSQL.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PostgreSQL/Data%20Connectors/Connector_PostgreSQL.json) |

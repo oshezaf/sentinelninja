@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Red Hat *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

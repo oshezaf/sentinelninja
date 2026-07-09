@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CortexXDRDataConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Cortex XDR](../solutions/cortex-xdr.md), [Palo Alto Cortex XDR CCP](../solutions/palo-alto-cortex-xdr-ccp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR/Data%20Connectors/CortexXDR_ccp/DataConnectorDefinition.json) |

@@ -11,6 +11,7 @@ Reference for AZFWDnsQuery table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
+| **Source Vendor** | Microsoft *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -63,12 +64,11 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AZFWDnsQuery Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwdnsquery)
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
-- [Standalone Content](../solutions/standalone-content.md)
 
 ## Connectors (1)
 
@@ -80,16 +80,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
-
-### Analytic Rules (2)
-
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+## Content Items Using This Table (1)
 
 ### Workbooks (1)
 

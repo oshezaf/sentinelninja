@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://awakesecurity.com/](https://awakesecurity.com/) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Arista Networks *(basis: event)* |
+| **Source Product** | Awake Security |
 | **Version** | 3.0.1 |
 | **Author** | Arista Networks - support-security@arista.com |
 | **First Published** | 2021-10-18 |

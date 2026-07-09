@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MISP2SentinelConnector` |
 | **Publisher** | MISP project & cudeso.be |
+| **Source Vendor** | MISP project & cudeso.be *(basis: publisher)* |
 | **Used in Solutions** | [MISP2Sentinel](../solutions/misp2sentinel.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [MISP2SentinelConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel/Data%20Connectors/MISP2SentinelConnector_UploadIndicatorsAPI.json) |

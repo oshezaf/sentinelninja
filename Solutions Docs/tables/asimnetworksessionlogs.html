@@ -35,6 +35,14 @@
   <td style="text-align:left">Normalized</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Vendor</strong></td>
+  <td style="text-align:left">Cisco, CrowdStrike, Microsoft, Synqly, VMware <em>(basis: projected)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source Product</strong></td>
+  <td style="text-align:left">Carbon Black Cloud, Meraki, Windows Firewall</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -818,13 +826,12 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimnetworksessionlogs">ASimNetworkSessionLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (7)</h2>
+<h2 id="solutions">Solutions (6)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></li>
 <li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/synqlyintegrationconnector.html">SynqlyIntegrationConnector</a></li>
 <li><a href="../solutions/vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a></li>
 <li><a href="../solutions/windows-firewall.html">Windows Firewall</a></li>
@@ -841,7 +848,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></td>
-  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)</a></td>
@@ -862,22 +869,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
-<h3 id="hunting-queries">Hunting Queries (1)</h3>
-<p><strong>Standalone Content:</strong> <code>DstIpAddr !in &quot;8.8.8.8,1.1.1.1&quot;</code></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-potential-rootkit-network-activity-missing-from-mde-564bf64a-bada-4c6b-8821-53138d660f78-09fce37b.html">Potential rootkit network activity missing from MDE</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (2)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
 <table>
 <thead>
@@ -890,19 +883,6 @@
 <tr>
   <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
   <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong> <code>DstPortNumber == &quot;3389&quot;</code><br><code>DvcAction in &quot;Allow,Drop&quot;</code><br><code>EventProduct == &quot;Windows Firewall&quot;</code><br><code>SrcIpAddr !in &quot;::1,-&quot;</code></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-windowsfirewallviaama-c6e9060b.html">WindowsFirewallViaAMA</a></td>
 </tr>
 </tbody>
 </table>
@@ -946,8 +926,8 @@
 <ul>
 <li><code>microsoft.securityinsights/networksessionnormalized</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 4 total references)</h2>
-<p>References by type: 2 connectors, 1 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 2 total references)</h2>
+<p>References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -961,25 +941,9 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>EventProduct == &quot;Windows Firewall&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DstIpAddr !in &quot;8.8.8.8,1.1.1.1&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
@@ -994,11 +958,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>2</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1017,50 +981,10 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Meraki</code></td>
-  <td style="text-align:left"><code>Cisco</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Windows Firewall</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="dstipaddr">DstIpAddr</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>!= 8.8.8.8</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= 1.1.1.1</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>

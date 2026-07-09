@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | NVISO *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

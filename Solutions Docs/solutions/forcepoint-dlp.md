@@ -14,6 +14,7 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Security - Information Protection |
+| **Source Vendor** | Forcepoint *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | Forcepoint - isv@email.com |
 | **First Published** | 2022-05-09 |

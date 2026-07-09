@@ -18,6 +18,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.iboss.com/contact-us/](https://www.iboss.com/contact-us/) |
 | **Categories** | Security - Network |
+| **Source Vendor** | iboss *(basis: event)* |
 | **Version** | 3.1.2 |
 | **Author** | iboss |
 | **First Published** | 2022-02-15 |

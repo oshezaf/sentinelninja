@@ -15,6 +15,7 @@
 | **Publisher** | Cisco Systems |
 | **Support Tier** | Partner |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Cisco |
 | **First Published** | 2024-03-04 |

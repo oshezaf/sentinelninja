@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `NucleusCyberNCProtect` |
 | **Publisher** | archTIS |
+| **Source Vendor** | archTIS *(basis: publisher)* |
 | **Used in Solutions** | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [NucleusCyberNCProtect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector/Data%20Connectors/NucleusCyberNCProtect.json) |

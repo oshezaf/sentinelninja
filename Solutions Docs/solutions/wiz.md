@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.wiz.io/](https://support.wiz.io/) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
+| **Source Vendor** | Wiz *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |

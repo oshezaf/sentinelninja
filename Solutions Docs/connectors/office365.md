@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Office365` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Microsoft 365](../solutions/microsoft-365.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [Microsoft365.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365/Data%20Connectors/Microsoft365.JSON) |

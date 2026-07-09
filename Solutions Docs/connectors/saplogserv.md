@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SAPLogServ` |
 | **Publisher** | SAP SE |
+| **Source Vendor** | SAP *(basis: override)* |
 | **Used in Solutions** | [SAP LogServ](../solutions/sap-logserv.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SAPLogServ.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ/Data%20Connectors/SAPLogServ.json) |

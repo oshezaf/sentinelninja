@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://data443.com/support](https://data443.com/support) |
 | **Categories** | Security - Threat Intelligence,Security - Others |
+| **Source Vendor** | Data443 *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-04-03 |

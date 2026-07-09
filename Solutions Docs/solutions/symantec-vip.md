@@ -14,6 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Symantec *(basis: publisher)* |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-16 |

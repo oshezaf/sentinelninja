@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varmour.com/contact-us/](https://www.varmour.com/contact-us/) |
 | **Categories** | IT Operations |
+| **Source Vendor** | vArmour *(basis: event)* |
+| **Source Product** | AC |
 | **Version** | 3.0.1 |
 | **Author** | vArmour |
 | **First Published** | 2022-06-01 |

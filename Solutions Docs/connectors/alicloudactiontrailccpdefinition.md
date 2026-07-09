@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AliCloudActionTrailCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AliCloudActionTrail_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_DataConnectorDefinition.json) |

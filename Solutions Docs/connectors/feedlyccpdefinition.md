@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `FeedlyCCPDefinition` |
 | **Publisher** | Feedly |
+| **Source Vendor** | Feedly *(basis: publisher)* |
 | **Used in Solutions** | [Feedly](../solutions/feedly.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Feedly_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_CCF/Feedly_DataConnectorDefinition.json) |

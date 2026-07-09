@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VaikoraSentinel` |
 | **Publisher** | Data443 Risk Mitigation, Inc. |
+| **Source Vendor** | Data443 *(basis: publisher)* |
 | **Used in Solutions** | [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Vaikora_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel/Data%20Connectors/VaikoraSentinel_CCF/Vaikora_ConnectorDefinition.json) |

@@ -16,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security – Network |
+| **Source Vendor** | IronNet *(basis: event)* |
+| **Source Product** | IronDefense, IronDome |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |

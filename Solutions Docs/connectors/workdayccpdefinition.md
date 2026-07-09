@@ -12,6 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `WorkdayCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Workday |
 | **Used in Solutions** | [Workday](../solutions/workday.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Workday_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday/Data%20Connectors/Workday_ccp/Workday_DataConnectorDefinition.json) |

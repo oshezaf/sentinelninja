@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TenableIE` |
 | **Publisher** | Tenable |
+| **Source Vendor** | Tenable *(basis: publisher)* |
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TenableIE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json) |

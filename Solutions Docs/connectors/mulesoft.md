@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MuleSoft` |
 | **Publisher** | MuleSoft |
+| **Source Vendor** | MuleSoft *(basis: publisher)* |
 | **Used in Solutions** | [Mulesoft](../solutions/mulesoft.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [MuleSoft_Cloudhub_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MuleSoft_Cloudhub_API_FunctionApp.json) |

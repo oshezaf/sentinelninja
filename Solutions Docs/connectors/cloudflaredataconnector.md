@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `CloudflareDataConnector` |
 | **Publisher** | Cloudflare |
+| **Source Vendor** | Cloudflare *(basis: publisher)* |
 | **Used in Solutions** | [Cloudflare](../solutions/cloudflare.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Cloudflare_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare/Data%20Connectors/Cloudflare_API_FunctionApp.json) |

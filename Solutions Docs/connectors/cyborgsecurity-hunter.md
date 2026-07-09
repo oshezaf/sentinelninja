@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyborgSecurity_HUNTER` |
 | **Publisher** | Cyborg Security |
+| **Source Vendor** | Cyborg Security *(basis: publisher)* |
 | **Used in Solutions** | [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CyborgSecurity_HUNTER.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER/Data%20Connectors/CyborgSecurity_HUNTER.json) |

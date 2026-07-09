@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VeeamCustomTablesDataConnector` |
 | **Publisher** | Veeam |
+| **Source Vendor** | Veeam *(basis: publisher)* |
 | **Used in Solutions** | [Veeam](../solutions/veeam.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Veeam_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Data%20Connectors/Veeam_API_FunctionApp.json) |

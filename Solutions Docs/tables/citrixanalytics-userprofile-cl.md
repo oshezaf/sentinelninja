@@ -69,21 +69,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Citrix](../content/github-only-citrix-c2c704c4.md) |  |
 
 ---
 

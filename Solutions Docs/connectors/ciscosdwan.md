@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoSDWAN` |
 | **Publisher** | Cisco |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Used in Solutions** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CiscoSDWAN.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Data%20Connectors/CiscoSDWAN.json) |

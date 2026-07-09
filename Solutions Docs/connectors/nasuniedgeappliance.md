@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `NasuniEdgeAppliance` |
 | **Publisher** | Nasuni |
+| **Source Vendor** | Nasuni *(basis: publisher)* |
 | **Used in Solutions** | [Nasuni](../solutions/nasuni.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Nasuni%20Data%20Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni/Data%20Connectors/Nasuni%20Data%20Connector.json) |

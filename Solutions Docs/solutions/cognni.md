@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cognni.ai/contact-support/](https://cognni.ai/contact-support/) |
 | **Categories** | Security - Information Protection |
+| **Source Vendor** | Cognni *(basis: publisher)* |
 | **Version** | 2.0.0 |
 | **Author** | Cognni |
 | **First Published** | 2022-05-06 |

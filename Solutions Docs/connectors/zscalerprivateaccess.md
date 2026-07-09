@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ZscalerPrivateAccess` |
 | **Publisher** | Zscaler |
+| **Source Vendor** | Zscaler *(basis: publisher)* |
 | **Used in Solutions** | [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_LogAnalytics_agent_Zscaler_ZPA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29/Data%20Connectors/Connector_LogAnalytics_agent_Zscaler_ZPA.json) |

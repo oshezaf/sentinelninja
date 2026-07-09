@@ -17,14 +17,6 @@ Identify dllhost.exe using WMIC to discover additional hosts and associated doma
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Ransomware/DEV-0270/DLLHost.exe%20WMIC%20domain%20discovery.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine == "dllhost.exe"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessCommandLine has "wmic computersystem get domain"` | ✓ | ✗ | ? |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

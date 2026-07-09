@@ -11,6 +11,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
+| **Source Vendor** | Cofense, Cognyte, Microsoft, Mimecast *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -146,7 +147,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (98)
+## Content Items Using This Table (92)
 
 ### Analytic Rules (72)
 
@@ -279,7 +280,7 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (21)
+### Workbooks (15)
 
 **In solution [CofenseIntelligence](../solutions/cofenseintelligence.md):** `SourceSystem == "Cofense Intelligence"`
 
@@ -360,17 +361,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

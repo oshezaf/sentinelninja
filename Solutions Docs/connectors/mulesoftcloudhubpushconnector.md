@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MulesoftCloudhubPushConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Mulesoft](../solutions/mulesoft.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [MulesoftLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftLogs_CCF/MulesoftLogs_ConnectorDefinition.json) |

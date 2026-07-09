@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://claroty.com/support-policy](https://claroty.com/support-policy) |
 | **Categories** | Security - Threat Intelligence,Security - Vulnerability Management,Healthcare,Manufacturing |
+| **Source Vendor** | Claroty *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Claroty |
 | **First Published** | 2024-02-01 |

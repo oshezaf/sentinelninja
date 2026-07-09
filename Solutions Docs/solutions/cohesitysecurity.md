@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cohesity.com/](https://support.cohesity.com/) |
 | **Categories** | Security - Cloud Security,Security - Automation (SOAR) |
+| **Source Vendor** | Cohesity *(basis: publisher)* |
 | **Version** | 3.1.3 |
 | **Author** | Cohesity - support@cohesity.com |
 | **First Published** | 2022-10-10 |

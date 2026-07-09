@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.withsecure.com/en/support](https://www.withsecure.com/en/support) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | WithSecure *(basis: event)* |
 | **Version** | 3.0.1 |
 | **Author** | WithSecure |
 | **First Published** | 2022-11-03 |

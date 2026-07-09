@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `ForcepointCSG` |
 | **Publisher** | Forcepoint |
+| **Source Vendor** | Forcepoint *(basis: event)* |
+| **Source Product** | Email, Web |
 | **Used in Solutions** | [Forcepoint CSG](../solutions/forcepoint-csg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [ForcepointCloudSecurityGateway.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG/Data%20Connectors/ForcepointCloudSecurityGateway.json) |

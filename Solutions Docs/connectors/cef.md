@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CEF` |
 | **Publisher** | Any |
+| **Source Vendor** | Any *(basis: publisher)* |
 | **Used in Solutions** | [Common Event Format](../solutions/common-event-format.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CEF.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format/Data%20Connectors/CEF.JSON) |

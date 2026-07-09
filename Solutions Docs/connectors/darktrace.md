@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `Darktrace` |
 | **Publisher** | Darktrace |
+| **Source Vendor** | Darktrace *(basis: event)* |
 | **Used in Solutions** | [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [AIA-Darktrace.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace/Data%20Connectors/AIA-Darktrace.json) |

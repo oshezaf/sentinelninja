@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cognyte.com/contact/](https://www.cognyte.com/contact/) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
+| **Source Vendor** | Cognyte *(basis: publisher)* |
 | **Version** | 3.0.2 |
 | **Author** | Cognyte |
 | **First Published** | 2023-09-15 |

@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `PDNSBlockDataConnector` |
 | **Publisher** | Nominet |
+| **Source Vendor** | Nominet *(basis: publisher)* |
 | **Used in Solutions** | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [PDNSBlockDataConnector_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PDNS%20Block%20Data%20Connector/DataConnectors/PDNSBlockDataConnector_API_FunctionApp.json) |

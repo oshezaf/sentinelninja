@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyberArkAudit` |
 | **Publisher** | CyberArk |
+| **Source Vendor** | CyberArk *(basis: publisher)* |
 | **Used in Solutions** | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CyberArkAudit_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_API_FunctionApp.json) |

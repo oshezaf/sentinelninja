@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
+| **Source Vendor** | Amazon, CrowdStrike *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

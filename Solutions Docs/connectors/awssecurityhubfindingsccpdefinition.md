@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AwsSecurityHubFindingsCcpDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Used in Solutions** | [AWS Security Hub](../solutions/aws-security-hub.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSSecurityHubFindings_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub/Data%20Connectors/AWSSecurityHubFindings_CCP/AWSSecurityHubFindings_DataConnectorDefinition.json) |

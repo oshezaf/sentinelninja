@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `AristaAwakeSecurity` |
 | **Publisher** | Arista Networks |
+| **Source Vendor** | Arista Networks *(basis: event)* |
+| **Source Product** | Awake Security |
 | **Used in Solutions** | [AristaAwakeSecurity](../solutions/aristaawakesecurity.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_AristaAwakeSecurity_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity/Data%20Connectors/Connector_AristaAwakeSecurity_CEF.json) |

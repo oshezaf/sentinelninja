@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ArmisAlerts` |
 | **Publisher** | Armis |
+| **Source Vendor** | Armis *(basis: publisher)* |
 | **Used in Solutions** | [Armis](../solutions/armis.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ArmisAlerts_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Data%20Connectors/ArmisAlerts/ArmisAlerts_API_FunctionApp.json) |

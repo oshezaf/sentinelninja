@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPFirewallLogsCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Used in Solutions** | [Google Cloud Platform Firewall Logs](../solutions/google-cloud-platform-firewall-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCP_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Firewall%20Logs/Data%20Connectors/GCPFirewallLogs_ccp/GCP_ConnectorDefinition.json) |

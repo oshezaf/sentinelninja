@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.darktrace.com/contact/](https://www.darktrace.com/contact/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Darktrace *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Darktrace - customers@darktrace.com |
 | **First Published** | 2022-05-02 |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
+| **Source Vendor** | ZeroFox *(basis: publisher)* |
 | **Version** | 3.2.2 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2023-07-28 |

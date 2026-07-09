@@ -14,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Automation (SOAR),Security - Network |
+| **Source Vendor** | Fortinet *(basis: event)* |
+| **Source Product** | Fortigate |
 | **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |

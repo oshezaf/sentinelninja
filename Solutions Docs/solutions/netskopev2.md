@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Netskope *(basis: publisher)* |
 | **Version** | 3.1.4 |
 | **Author** | Netskope |
 | **First Published** | 2024-03-18 |

@@ -11,6 +11,8 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
+| **Source Vendor** | CrowdStrike, Microsoft, Synqly *(basis: projected)* |
+| **Source Product** | DNS Server |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CognyteLuminar` |
 | **Publisher** | Cognyte Technologies Israel Ltd |
+| **Source Vendor** | Cognyte *(basis: publisher)* |
 | **Used in Solutions** | [CognyteLuminar](../solutions/cognyteluminar.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CognyteLuminar_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar/Data%20Connectors/CognyteLuminar_FunctionApp.json) |

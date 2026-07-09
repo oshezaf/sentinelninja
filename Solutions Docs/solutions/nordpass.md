@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.nordpass.com/](https://support.nordpass.com/) |
 | **Categories** | Security - Others,Identity |
+| **Source Vendor** | NordPass *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Nord Security Inc. |
 | **First Published** | 2025-04-22 |

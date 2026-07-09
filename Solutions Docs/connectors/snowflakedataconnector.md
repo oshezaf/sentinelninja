@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `SnowflakeDataConnector` |
 | **Publisher** | Snowflake |
+| **Source Vendor** | Snowflake *(basis: publisher)* |
 | **Used in Solutions** | [Snowflake](../solutions/snowflake.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Snowflake_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/Snowflake_API_FunctionApp.json) |

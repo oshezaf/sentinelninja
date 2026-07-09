@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `PaloAltoPrismaCloud` |
 | **Publisher** | Palo Alto |
+| **Source Vendor** | Palo Alto Networks *(basis: publisher)* |
 | **Used in Solutions** | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [PrismaCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Data%20Connectors/PrismaCloud_API_FunctionApp.json) |

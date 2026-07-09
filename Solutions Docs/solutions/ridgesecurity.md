@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://ridgesecurity.ai/about-us/](https://ridgesecurity.ai/about-us/) |
 | **Categories** | Security - Vulnerability Management |
+| **Source Vendor** | RidgeSecurity *(basis: event)* |
 | **Version** | 3.0.1 |
 | **Author** | RidgeSecurity - oliver@ridgesecurity.ai |
 | **First Published** | 2023-10-23 |

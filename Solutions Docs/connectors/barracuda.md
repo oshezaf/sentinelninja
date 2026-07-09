@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `Barracuda` |
 | **Publisher** | Barracuda |
+| **Source Vendor** | Barracuda *(basis: event)* |
 | **Used in Solutions** | [Barracuda WAF](../solutions/barracuda-waf.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_Barracuda.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF/Data%20Connectors/template_Barracuda.json) |

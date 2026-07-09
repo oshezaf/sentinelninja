@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoSEG` |
 | **Publisher** | Cisco |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Used in Solutions** | [CiscoSEG](../solutions/ciscoseg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Cisco_SEG_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG/Data%20Connectors/Connector_Cisco_SEG_CEF.json) |

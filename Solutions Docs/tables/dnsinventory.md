@@ -11,6 +11,7 @@ Reference for DnsInventory table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Network |
+| **Source Vendor** | Microsoft *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -74,21 +75,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Dns](../content/github-only-dns-ff664046.md) |  |
 
 ## Resource Types
 

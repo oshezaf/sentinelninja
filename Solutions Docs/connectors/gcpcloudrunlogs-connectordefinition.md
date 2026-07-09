@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPCloudRunLogs_ConnectorDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Used in Solutions** | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPCloudRunLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run/Data%20Connectors/GCPCloudRunLog_CCF/GCPCloudRunLogs_ConnectorDefinition.json) |

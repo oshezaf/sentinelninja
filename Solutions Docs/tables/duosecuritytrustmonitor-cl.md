@@ -6,17 +6,10 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
 ## Contents
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (44 columns)
@@ -76,23 +69,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Standalone Content](../solutions/standalone-content.md)
-
 ---
-
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Trust Monitor Event](../content/standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md) |  |
 
 ## Parsers Using This Table (1)
 

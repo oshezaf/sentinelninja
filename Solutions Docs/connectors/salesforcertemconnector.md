@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SalesForceRTEMConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SalesforceRealTimeEventMonitoring_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_DataConnectorDefinition.json) |

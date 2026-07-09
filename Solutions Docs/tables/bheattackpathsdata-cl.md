@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | SpecterOps *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.tanium.com](https://support.tanium.com) |
 | **Categories** | Security - Network,Security - Threat Protection |
+| **Source Vendor** | Tanium *(basis: publisher)* |
 | **Version** | 3.3.0 |
 | **Author** | Tanium - support@tanium.com |
 | **First Published** | 2022-05-16 |

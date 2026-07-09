@@ -11,6 +11,7 @@ Reference for ThreatIntelExportOperation table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
+| **Source Vendor** | Microsoft *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelexportoperation) |

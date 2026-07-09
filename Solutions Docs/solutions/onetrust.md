@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.onetrust.com/support/](https://www.onetrust.com/support/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
+| **Source Vendor** | OneTrust *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Support - support@onetrust.com |
 | **First Published** | 2025-10-24 |

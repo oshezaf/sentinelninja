@@ -14,6 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-26 |

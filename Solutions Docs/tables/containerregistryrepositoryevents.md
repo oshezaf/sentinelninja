@@ -20,7 +20,6 @@ Reference for ContainerRegistryRepositoryEvents table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
-- [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
 ## Schema (26 columns)
@@ -63,16 +62,6 @@ Official Microsoft Learn documentation for field/column information:
 - [ContainerRegistryRepositoryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerregistryrepositoryevents)
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

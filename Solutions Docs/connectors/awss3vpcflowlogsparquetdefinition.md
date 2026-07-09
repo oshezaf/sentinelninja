@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `AWSS3VPCFlowLogsParquetDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Used in Solutions** | [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSVPCFlowLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/Data%20Connectors/AWSVPCFlowLogs_CCP/AWSVPCFlowLogs_DataConnectorDefinition.json) |

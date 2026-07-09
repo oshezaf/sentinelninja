@@ -8,6 +8,8 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | OpenAI *(basis: projected)* |
+| **Source Product** | OpenAI API Platform |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

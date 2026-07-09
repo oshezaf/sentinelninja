@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `NordPass` |
 | **Publisher** | NordPass |
+| **Source Vendor** | NordPass *(basis: publisher)* |
 | **Used in Solutions** | [NordPass](../solutions/nordpass.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [NordPass_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass/Data%20Connectors/NordPass_API_FunctionApp.json), [NordPass_data_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass/Data%20Connectors/deployment/NordPass_data_connector.json) |

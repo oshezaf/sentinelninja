@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SecurePracticeMailRiskConnector` |
 | **Publisher** | Secure Practice |
+| **Source Vendor** | Secure Practice *(basis: publisher)* |
 | **Used in Solutions** | [MailRisk](../solutions/mailrisk.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MailRisk_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/MailRisk_ConnectorDefinition.json) |

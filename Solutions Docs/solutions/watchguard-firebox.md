@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.watchguard.com/wgrd-support/contact-support](https://www.watchguard.com/wgrd-support/contact-support) |
 | **Categories** | Security - Network |
+| **Source Vendor** | WatchGuard Technologies *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | WatchGuard |
 | **First Published** | 2022-05-06 |

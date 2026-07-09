@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.silverfort.com/customer-success/#support](https://www.silverfort.com/customer-success/#support) |
 | **Categories** | Identity |
+| **Source Vendor** | Silverfort *(basis: event)* |
+| **Source Product** | Admin Console |
 | **Version** | 3.0.1 |
 | **Author** | Silverfort |
 | **First Published** | 2024-09-01 |

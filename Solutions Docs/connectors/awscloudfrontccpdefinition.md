@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AwsCloudfrontCcpDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Used in Solutions** | [AWS CloudFront](../solutions/aws-cloudfront.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSCloudFrontLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_ConnectorDefinition.json) |

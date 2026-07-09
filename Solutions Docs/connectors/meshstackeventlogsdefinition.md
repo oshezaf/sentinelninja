@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `meshStackEventLogsDefinition` |
 | **Publisher** | meshcloud |
+| **Source Vendor** | meshcloud *(basis: publisher)* |
 | **Used in Solutions** | [meshStack](../solutions/meshstack.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [meshStackEventLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_connectorDefinition.json) |

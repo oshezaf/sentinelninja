@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.joesecurity.org/support](https://www.joesecurity.org/support) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
+| **Source Vendor** | Joe Security *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Stefan Bühlmann |
 | **First Published** | 2025-09-12 |

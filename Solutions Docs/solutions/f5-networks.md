@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.f5.com/services/support](https://www.f5.com/services/support) |
 | **Categories** | Security - Network |
+| **Source Vendor** | F5 *(basis: event)* |
 | **Version** | 3.0.1 |
 | **Author** | F5 |
 | **First Published** | 2022-05-12 |

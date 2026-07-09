@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `RidgeBotDataConnector` |
 | **Publisher** | RidgeSecurity |
+| **Source Vendor** | RidgeSecurity *(basis: event)* |
 | **Used in Solutions** | [RidgeSecurity](../solutions/ridgesecurity.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [RidgeSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity/Data%20Connectors/RidgeSecurity.json) |

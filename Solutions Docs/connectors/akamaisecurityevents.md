@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `AkamaiSecurityEvents` |
 | **Publisher** | Akamai |
+| **Source Vendor** | Akamai *(basis: event)* |
+| **Source Product** | akamai_siem |
 | **Used in Solutions** | [Akamai Security Events](../solutions/akamai-security-events.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_CEF_Akamai.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events/Data%20Connectors/Connector_CEF_Akamai.json) |

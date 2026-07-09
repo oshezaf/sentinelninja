@@ -11,6 +11,7 @@ Reference for AWSVPCFlow table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Source Vendor** | Amazon *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -107,9 +108,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -134,14 +135,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) | `Action in "-,ACCEPT,REJECT"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

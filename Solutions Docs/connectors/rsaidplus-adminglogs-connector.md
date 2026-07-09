@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `RSAIDPlus_AdmingLogs_Connector` |
 | **Publisher** | RSA |
+| **Source Vendor** | RSA *(basis: publisher)* |
 | **Used in Solutions** | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [RSAIDPlus_AdminLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector/Data%20Connectors/RSIDPlus_AdminLogs_Connector_CCP/RSAIDPlus_AdminLogs_ConnectorDefinition.json) |

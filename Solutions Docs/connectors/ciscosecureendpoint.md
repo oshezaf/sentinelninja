@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoSecureEndpoint` |
 | **Publisher** | Cisco |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Used in Solutions** | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CiscoSecureEndpoint_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpoint_API_FunctionApp.json) |

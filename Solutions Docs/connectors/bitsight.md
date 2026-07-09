@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `BitSight` |
 | **Publisher** | BitSight Technologies, Inc. |
+| **Source Vendor** | BitSight *(basis: publisher)* |
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BitSight_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json) |

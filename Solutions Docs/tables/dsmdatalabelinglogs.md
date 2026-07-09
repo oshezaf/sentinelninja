@@ -16,12 +16,6 @@ Reference for DSMDataLabelingLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dsmdatalabelinglogs) |
 
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Content Items](#content-items-using-this-table)
-
 ## Schema (10 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dsmdatalabelinglogs)
@@ -46,16 +40,6 @@ Official Microsoft Learn documentation for field/column information:
 - [DSMDataLabelingLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dsmdatalabelinglogs)
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 
 ---
 

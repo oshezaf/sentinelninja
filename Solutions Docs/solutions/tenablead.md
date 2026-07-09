@@ -12,6 +12,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
+| **Source Vendor** | Tenable *(basis: publisher)* |
 | **Solution Folder** | [TenableAD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD) |
 
 ## Contents

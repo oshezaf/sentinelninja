@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://bitdefender.com](https://bitdefender.com) |
 | **Categories** | Security - Information Protection,Security - Cloud Security,Security - Threat Protection |
+| **Source Vendor** | Bitdefender *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Bitdefender SRL - support@bitdefender.com |
 | **First Published** | 2026-04-21 |

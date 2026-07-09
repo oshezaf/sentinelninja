@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IllumioSaaSDataConnector` |
 | **Publisher** | Illumio |
+| **Source Vendor** | Illumio *(basis: publisher)* |
 | **Used in Solutions** | [IllumioSaaS](../solutions/illumiosaas.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IllumioSaaS_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaaS_FunctionApp.json) |

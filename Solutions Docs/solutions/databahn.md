@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://app-us-west-2-poc.databahn.app/help/docs/category/azure](https://app-us-west-2-poc.databahn.app/help/docs/category/azure) |
 | **Categories** | Security - Others |
+| **Source Vendor** | DataBahn *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Databahn - support@databahn.ai |
 | **First Published** | 2026-02-06 |

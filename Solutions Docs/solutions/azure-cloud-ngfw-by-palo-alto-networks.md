@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.paloaltonetworks.com](https://support.paloaltonetworks.com) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
+| **Source Vendor** | Palo Alto Networks *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-11-03 |

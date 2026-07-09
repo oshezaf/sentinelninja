@@ -12,6 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `carbonBlackAWSS3` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | VMware *(basis: event)* |
+| **Source Product** | Carbon Black Cloud |
 | **Used in Solutions** | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CarbonBlack_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DataConnectorDefinition.json) |
@@ -31,8 +33,8 @@ This connector ingests data into the following tables:
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | ✓ | ✓ | ? |
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | ✓ | ✓ | ? |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
 | [`CarbonBlack_Watchlist_CL`](../tables/carbonblack-watchlist-cl.md) |  | ? | ✓ | ? |
 

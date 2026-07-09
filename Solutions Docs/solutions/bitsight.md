@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.bitsight.com/customer-success-support](https://www.bitsight.com/customer-success-support) |
 | **Categories** | Security - Others |
+| **Source Vendor** | BitSight *(basis: publisher)* |
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |

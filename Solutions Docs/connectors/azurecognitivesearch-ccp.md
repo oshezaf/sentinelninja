@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureCognitiveSearch_CCP` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Azure Cognitive Search](../solutions/azure-cognitive-search.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureCognitiveSearch_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search/Data%20Connectors/AzureCognitiveSearch_CCP.JSON) |

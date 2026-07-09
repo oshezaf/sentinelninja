@@ -12,6 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `OneIdentity` |
 | **Publisher** | One Identity LLC. |
+| **Source Vendor** | One Identity *(basis: event)* |
+| **Source Product** | SPS |
 | **Used in Solutions** | [OneIdentity](../solutions/oneidentity.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [OneIdentity.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity/Data%20Connectors/OneIdentity.JSON) |

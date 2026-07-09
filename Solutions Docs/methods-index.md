@@ -15,11 +15,11 @@ Data connectors use different collection methods to ingest data into Microsoft S
 | [CCF](methods/ccf.md) | **186** | 151 | 1 | 34 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
 | [Azure Function](methods/azure-function.md) | **127** | 84 | 27 | 16 |
-| [REST Pull API](methods/rest-pull-api.md) | **51** | 36 | 1 | 14 |
+| [REST Pull API](methods/rest-pull-api.md) | **53** | 38 | 1 | 14 |
 | [CCF Push](methods/ccf-push.md) | **41** | 39 | 0 | 2 |
 | [Native](methods/native.md) | **18** | 16 | 1 | 1 |
-| [Unknown](methods/unknown.md) | **17** | 17 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
+| [Unknown](methods/unknown.md) | **15** | 15 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
@@ -62,11 +62,11 @@ API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) u
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
 | [Azure Function](methods/azure-function.md) | 44 | 74 | 3 | **121** |
-| [REST Pull API](methods/rest-pull-api.md) | - | 51 | - | **51** |
+| [REST Pull API](methods/rest-pull-api.md) | 1 | 52 | - | **53** |
 | [CCF Push](methods/ccf-push.md) | 41 | - | - | **41** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
 | [CCF](methods/ccf.md) | 8 | - | - | **8** |
-| **Total** | **93** | **125** | **3** | **241** |
+| **Total** | **94** | **126** | **3** | **243** |
 
 ---
 

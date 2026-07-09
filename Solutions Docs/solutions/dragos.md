@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dragos.com](https://www.dragos.com) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Dragos *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Dragos Inc. - support@dragos.com |
 | **First Published** | 2025-01-23 |

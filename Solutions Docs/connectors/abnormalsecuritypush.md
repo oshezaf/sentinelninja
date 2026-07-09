@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AbnormalSecurityPush` |
 | **Publisher** | Abnormal Security |
+| **Source Vendor** | Abnormal Security *(basis: publisher)* |
 | **Used in Solutions** | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [AbnormalSecurity_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Data%20Connectors/AbnormalSecurity_CCF/AbnormalSecurity_connectorDefinition.json) |

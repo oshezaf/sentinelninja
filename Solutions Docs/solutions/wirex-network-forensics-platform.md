@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://wirexsystems.com/contact-us/](https://wirexsystems.com/contact-us/) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
+| **Source Vendor** | WireX Systems *(basis: event)* |
+| **Source Product** | WireX NFP |
 | **Version** | 3.0.1 |
 | **Author** | WireX Systems - info@wirexsystems.com |
 | **First Published** | 2022-05-06 |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://developer.visa.com/capabilities/visa_threat_intelligence](https://developer.visa.com/capabilities/visa_threat_intelligence) |
 | **Categories** | Security - Threat Intelligence |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Version** | 3.0.5 |
 | **Author** | Visa Inc. - GDLVTIPSupport@visa.com |
 | **First Published** | 2026-02-20 |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VMwareWorkspaceOneConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [VMware Workspace ONE](../solutions/vmware-workspace-one.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [VMwareWorkspaceOne_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE/Data%20Connectors/VMwareWorkspaceOneConnector_CCF/VMwareWorkspaceOne_ConnectorDefinition.json) |

@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `VisaThreatIntelligenceCCP` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Visa%20Threat%20Intelligence%20%28VTI%29/Package/mainTemplate.json) |

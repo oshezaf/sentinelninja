@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AbnormalSecurity` |
 | **Publisher** | AbnormalSecurity |
+| **Source Vendor** | Abnormal Security *(basis: publisher)* |
 | **Used in Solutions** | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [AbnormalSecurity_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Data%20Connectors/AbnormalSecurity_API_FunctionApp.json) |

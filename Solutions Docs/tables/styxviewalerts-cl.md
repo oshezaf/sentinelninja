@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Styx Intelligence *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

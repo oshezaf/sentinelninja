@@ -8,6 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | SAP *(basis: projected)* |
+| **Collector Vendor** | Onapsis *(basis: projected)* |
+| **Collector Product** | Onapsis Defend |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

@@ -16,12 +16,6 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs) |
 
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Content Items](#content-items-using-this-table)
-
 ## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs)
@@ -71,16 +65,6 @@ Official Microsoft Learn documentation for field/column information:
 - [MicrosoftGraphActivityLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs)
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:** `ClientAuthMethod == "Unknown"`<br>`ResponseStatusCode in "401,500"`<br>`Scopes has "Directory.ReadWrite.All"`<br>`Scopes has "User.ReadWrite.All"`
-
-| Workbook |
-|:-------------|
-| [MicrosoftGraphActivityLogs](../content/github-only-microsoftgraphactivitylogs-55b4bbfd.md) |
 
 ---
 

@@ -14,6 +14,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Security - Cloud Security |
+| **Source Vendor** | Forcepoint *(basis: event)* |
+| **Source Product** | Email, Web |
 | **Version** | 3.0.3 |
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-10 |

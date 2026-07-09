@@ -16,8 +16,8 @@ The collection method for these connectors could not be automatically determined
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **17** |
-| Active | 17 |
+| Total Connectors | **15** |
+| Active | 15 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 0 |
 
@@ -40,8 +40,6 @@ The collection method for these connectors could not be automatically determined
 | [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Microsoft | ? | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
-| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ➕ | Microsoft | 2 | [SAP](../solutions/sap.md) |
-| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | Microsoft | 4 | [SAP](../solutions/sap.md) |
 | [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | ? | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 

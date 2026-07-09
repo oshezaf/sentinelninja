@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyberArkEPM` |
 | **Publisher** | CyberArk |
+| **Source Vendor** | CyberArk *(basis: publisher)* |
 | **Used in Solutions** | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CyberArkEPM_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Data%20Connectors/CyberArkEPM_API_FunctionApp.json) |

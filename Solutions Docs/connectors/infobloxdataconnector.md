@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `InfobloxDataConnector` |
 | **Publisher** | Infoblox |
+| **Source Vendor** | Infoblox *(basis: publisher)* |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Infoblox_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxCloudDataConnector/Infoblox_API_FunctionApp.json) |

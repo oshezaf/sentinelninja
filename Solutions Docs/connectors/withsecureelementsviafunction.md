@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `WithSecureElementsViaFunction` |
 | **Publisher** | WithSecure |
+| **Source Vendor** | WithSecure *(basis: publisher)* |
 | **Used in Solutions** | [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [WithSecureElementsViaFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction/Data%20Connectors/WithSecureElementsViaFunction.json) |

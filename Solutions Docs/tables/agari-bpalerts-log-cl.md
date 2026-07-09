@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Agari *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

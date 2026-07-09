@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyberark.com/services-support/technical-support/](https://www.cyberark.com/services-support/technical-support/) |
 | **Categories** | Identity |
+| **Source Vendor** | CyberArk *(basis: event)* |
+| **Source Product** | Vault |
 | **Version** | 3.0.3 |
 | **Author** | Cyberark |
 | **First Published** | 2022-05-02 |

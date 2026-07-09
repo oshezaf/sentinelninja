@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GigamonDefinition` |
 | **Publisher** | GigamonDefinition |
+| **Source Vendor** | GigamonDefinition *(basis: publisher)* |
 | **Used in Solutions** | [Gigamon Connector](../solutions/gigamon-connector.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Gigamon_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector/Data%20Connectors/Gigamon_CCF/Gigamon_ConnectorDefinition.json) |

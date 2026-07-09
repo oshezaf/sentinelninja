@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AWSRoute53ResolverCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Used in Solutions** | [Amazon Web Services Route 53](../solutions/amazon-web-services-route-53.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSRoute53Resolver_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053/Data%20Connectors/AWSRoute53Resolver_CCP/AWSRoute53Resolver_DataConnectorDefinition.json) |

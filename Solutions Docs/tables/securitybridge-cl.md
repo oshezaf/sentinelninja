@@ -8,6 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | SAP *(basis: projected)* |
+| **Collector Vendor** | SecurityBridge *(basis: projected)* |
+| **Collector Product** | SecurityBridge Platform |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

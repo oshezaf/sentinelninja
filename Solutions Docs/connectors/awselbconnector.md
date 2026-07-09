@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AWSELBConnector` |
 | **Publisher** | Amazon Web Services |
+| **Source Vendor** | Amazon *(basis: publisher)* |
 | **Used in Solutions** | [AWS ELB](../solutions/aws-elb.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSELBConnector_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_ConnectorDefinition.json) |

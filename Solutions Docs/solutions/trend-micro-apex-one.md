@@ -16,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Trend Micro *(basis: publisher)* |
+| **Source Product** | Apex Central |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-06 |

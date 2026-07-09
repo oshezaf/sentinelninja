@@ -18,6 +18,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Protection |
+| **Source Vendor** | Proofpoint *(basis: publisher)* |
 | **Version** | 3.1.3 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2022-05-23 |

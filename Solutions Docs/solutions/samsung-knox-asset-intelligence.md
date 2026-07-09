@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www2.samsungknox.com/en/support](https://www2.samsungknox.com/en/support) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Samsung *(basis: publisher)* |
 | **Version** | 3.0.3 |
 | **Author** | Samsung - kai.sme@samsung.com |
 | **First Published** | 2025-01-15 |

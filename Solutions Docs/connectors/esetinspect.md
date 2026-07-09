@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `ESETInspect` |
 | **Publisher** | ESET Netherlands |
+| **Source Vendor** | ESET *(basis: publisher)* |
 | **Used in Solutions** | [ESET Inspect](../solutions/eset-inspect.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ESETInspect_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect/Data%20Connectors/ESETInspect_API_FunctionApp.json) |

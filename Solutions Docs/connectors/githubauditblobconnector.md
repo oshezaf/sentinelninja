@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GitHubAuditBlobConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [GitHub](../solutions/github.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GitHubAuditLogs_AzStorage/ConnectorDefinition.json) |

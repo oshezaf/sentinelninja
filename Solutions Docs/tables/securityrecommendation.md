@@ -72,7 +72,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (18)
+## Content Items Using This Table (15)
 
 ### Analytic Rules (9)
 
@@ -118,7 +118,7 @@ This table is used by the following solutions:
 |:-------------|
 | [CDM_ContinuousDiagnostics&Mitigation_Posture](../content/continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posture-e15944a8-4172-4208-a928-631e01920d9c-8130a499.md) |
 
-### Workbooks (8)
+### Workbooks (5)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `RecommendationDisplayName contains "access"`<br>`RecommendationDisplayName contains "account"`<br>`RecommendationDisplayName contains "admin"`<br>`RecommendationDisplayName contains "agent"`<br>`RecommendationDisplayName contains "aks"`<br>`RecommendationDisplayName contains "audit"`<br>`RecommendationDisplayName contains "auth"`<br>`RecommendationDisplayName contains "back"`<br>`RecommendationDisplayName contains "bound"`<br>`RecommendationDisplayName contains "cert"`<br>`RecommendationDisplayName contains "cmk"`<br>`RecommendationDisplayName contains "collect"`<br>`RecommendationDisplayName contains "contain"`<br>`RecommendationDisplayName contains "data"`<br>`RecommendationDisplayName contains "detect"`<br>`RecommendationDisplayName contains "edr"`<br>`RecommendationDisplayName contains "endpoint"`<br>`RecommendationDisplayName contains "endpoint protection"`<br>`RecommendationDisplayName contains "event"`<br>`RecommendationDisplayName contains "firewall"`<br>`RecommendationDisplayName contains "gateway"`<br>`RecommendationDisplayName contains "http"`<br>`RecommendationDisplayName contains "identity"`<br>`RecommendationDisplayName contains "incident"`<br>`RecommendationDisplayName contains "internet"`<br>`RecommendationDisplayName contains "intrusion"`<br>`RecommendationDisplayName contains "just"`<br>`RecommendationDisplayName contains "key"`<br>`RecommendationDisplayName contains "kube"`<br>`RecommendationDisplayName contains "malware"`<br>`RecommendationDisplayName contains "network"`<br>`RecommendationDisplayName contains "port"`<br>`RecommendationDisplayName contains "priv"`<br>`RecommendationDisplayName contains "privacy"`<br>`RecommendationDisplayName contains "protection"`<br>`RecommendationDisplayName contains "proxy"`<br>`RecommendationDisplayName contains "root"`<br>`RecommendationDisplayName contains "sql"`<br>`RecommendationDisplayName contains "storage"`<br>`RecommendationDisplayName contains "subnet"`<br>`RecommendationDisplayName contains "supply"`<br>`RecommendationDisplayName contains "tls"`<br>`RecommendationDisplayName contains "token"`<br>`RecommendationDisplayName contains "traffic"`<br>`RecommendationDisplayName contains "trust"`<br>`RecommendationDisplayName contains "url"`<br>`RecommendationDisplayName contains "user"`<br>`RecommendationDisplayName contains "web"`
 
@@ -149,14 +149,6 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) | `RecommendationState contains "unhealthy"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `RecommendationName == "File integrity monitoring should be enabled on machines"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `RecommendationName == "File integrity monitoring should be enabled on machines"` |
 
 ## Selection Criteria Summary (7 criteria, 15 total references)
 

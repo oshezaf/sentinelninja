@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `BetterMTD` |
 | **Publisher** | BETTER Mobile |
+| **Source Vendor** | BETTER Mobile *(basis: publisher)* |
 | **Used in Solutions** | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [BETTERMTD.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BETTER%20Mobile%20Threat%20Defense%20%28MTD%29/Data%20Connectors/BETTERMTD.json) |

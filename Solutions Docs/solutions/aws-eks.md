@@ -14,6 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,Security - Network |
+| **Source Vendor** | Amazon *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2024-03-04 |

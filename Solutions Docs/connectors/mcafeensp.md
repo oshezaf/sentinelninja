@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `McAfeeNSP` |
 | **Publisher** | McAfee |
+| **Source Vendor** | McAfee *(basis: publisher)* |
 | **Used in Solutions** | [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [McAfeeNSP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20Network%20Security%20Platform/Data%20Connectors/McAfeeNSP.json) |

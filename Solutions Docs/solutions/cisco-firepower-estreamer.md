@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cisco.com/c/en_in/support/index.html](https://www.cisco.com/c/en_in/support/index.html) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Cisco *(basis: event)* |
+| **Source Product** | Firepower |
 | **Version** | 3.0.1 |
 | **Author** | Cisco |
 | **First Published** | 2022-05-25 |

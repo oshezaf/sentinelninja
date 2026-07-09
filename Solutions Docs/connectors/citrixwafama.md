@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `CitrixWAFAma` |
 | **Publisher** | Citrix Systems Inc. |
+| **Source Vendor** | Citrix *(basis: event)* |
+| **Source Product** | NetScaler |
 | **Used in Solutions** | [Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_Citrix_WAFAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall/Data%20Connectors/template_Citrix_WAFAMA.json) |

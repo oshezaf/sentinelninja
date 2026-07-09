@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.barracuda.com/support](https://www.barracuda.com/support) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Barracuda *(basis: event)* |
 | **Version** | 3.0.0 |
 | **Author** | Barracuda |
 | **First Published** | 2022-05-13 |

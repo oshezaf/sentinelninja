@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TropicoEventsDefinition` |
 | **Publisher** | Tropico Security |
+| **Source Vendor** | Tropico Security *(basis: publisher)* |
 | **Used in Solutions** | [Tropico](../solutions/tropico.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [TropicoEvents_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoEvents_CCF/TropicoEvents_ConnectorDefinition.json) |

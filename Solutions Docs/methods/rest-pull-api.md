@@ -16,8 +16,8 @@ The collection method for these connectors could not be automatically determined
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **51** |
-| Active | 36 |
+| Total Connectors | **53** |
+| Active | 38 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 14 |
 
@@ -56,6 +56,8 @@ The collection method for these connectors could not be automatically determined
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ➕ 🔶 | Microsoft | 4 | [SAP](../solutions/sap.md) |
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | Microsoft | 4 | [SAP](../solutions/sap.md) |
 | [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |

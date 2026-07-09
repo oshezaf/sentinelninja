@@ -111,7 +111,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (70)
+## Content Items Using This Table (51)
 
 ### Analytic Rules (3)
 
@@ -136,7 +136,7 @@ This table is used by the following solutions:
 |:-------------|
 | [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |
 
-### Workbooks (58)
+### Workbooks (39)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -331,30 +331,6 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [AnalyticsEfficiency](../content/github-only-analyticsefficiency-b881d5ae.md) |  |
-| [AnalyticsHealthAudit](../content/github-only-analyticshealthaudit-cb1c8682.md) |  |
-| [AnomaliesVisualization](../content/github-only-anomaliesvisualization-9d418617.md) |  |
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [IncidentTasksWorkbook](../content/github-only-incidenttasksworkbook-b100c180.md) | `Owner == "Unassigned"`<br>`Owner != "Unassigned"`<br>`Tasks != "[]"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `Classification in "BenignPositive,FalsePositive,TruePositive,Undetermined"` |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `ModifiedBy !has "automation"`<br>`ModifiedBy !has "automation rule"`<br>`ModifiedBy !has "playbook"`<br>`ModifiedBy has "automation"`<br>`ModifiedBy has_any "playbook"`<br>`Tasks != "[]"` |
-| [SecurityOperationsEfficiency](../content/github-only-securityoperationsefficiency-84293023.md) | `ModifiedBy !in "Alert Grouping,Fusion,Incident created from alert"` |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
-| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
-| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Selection Criteria Summary (14 criteria, 15 total references)
 

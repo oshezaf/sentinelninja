@@ -6,6 +6,10 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Source Vendor** | Microsoft *(basis: projected)* |
+
 ## Contents
 
 - [Schema References](#schema-references)

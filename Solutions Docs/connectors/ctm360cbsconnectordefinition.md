@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CTM360CBSConnectorDefinition` |
 | **Publisher** | CTM360 |
+| **Source Vendor** | CTM360 *(basis: publisher)* |
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CTM360_CBS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/CBS/CTM360_CBS_ConnectorDefinition.json) |

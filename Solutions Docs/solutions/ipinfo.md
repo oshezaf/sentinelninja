@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ipinfo.io/](https://www.ipinfo.io/) |
 | **Categories** | Storage,Application |
+| **Source Vendor** | IPinfo *(basis: publisher)* |
 | **Version** | 3.0.5 |
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |

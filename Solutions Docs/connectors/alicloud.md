@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AliCloud` |
 | **Publisher** | AliCloud |
+| **Source Vendor** | AliCloud *(basis: publisher)* |
 | **Used in Solutions** | [Alibaba Cloud](../solutions/alibaba-cloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [AliCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud/DataConnectors/AliCloud_API_FunctionApp.json) |

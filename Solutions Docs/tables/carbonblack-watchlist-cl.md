@@ -8,6 +8,8 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | VMware *(basis: projected)* |
+| **Source Product** | Carbon Black Cloud |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

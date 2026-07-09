@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CheckPointCyberintIOC` |
 | **Publisher** | Checkpoint Cyberint |
+| **Source Vendor** | Check Point *(basis: publisher)* |
 | **Used in Solutions** | [Check Point Cyberint IOC](../solutions/check-point-cyberint-ioc.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberintArgosIOCLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC/Data%20Connectors/CyberintArgosIOCLogs_ccp/CyberintArgosIOCLogs_connectorDefinition.json) |

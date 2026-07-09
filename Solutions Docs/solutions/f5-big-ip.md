@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.f5.com/csp/home](https://support.f5.com/csp/home) |
 | **Categories** | Security - Network |
+| **Source Vendor** | F5 *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | F5 Networks |
 | **First Published** | 2022-05-25 |

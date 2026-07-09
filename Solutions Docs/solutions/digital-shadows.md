@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.digitalshadows.com/](https://www.digitalshadows.com/) |
 | **Categories** | Security - Threat Intelligence |
+| **Source Vendor** | Digital Shadows *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Digital Shadows - support@digitalshadows.com |
 | **Last Updated** | 2025-12-14 |

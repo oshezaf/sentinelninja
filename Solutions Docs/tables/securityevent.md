@@ -11,6 +11,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
+| **Source Vendor** | Cyborg Security, Microsoft, Semperis *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -269,7 +270,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent)
 
-## Solutions (30)
+## Solutions (29)
 
 This table is used by the following solutions:
 
@@ -295,7 +296,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -319,9 +319,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (217)
+## Content Items Using This Table (145)
 
-### Analytic Rules (85)
+### Analytic Rules (50)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -438,47 +438,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [AD FS Abnormal EKU object identifier attribute](../content/standalone-content-ad-fs-abnormal-eku-object-identifier-attribute-cfc1ae62-db63-4a3e-b88b-dc04030c2257-02097b85.md) | `EventID == "501"` |
-| [AD account with Don't Expire Password](../content/standalone-content-ad-account-with-don't-expire-password-6c360107-f3ee-4b91-9f43-f4cfd90441cf-b63ef58d.md) |  |
-| [ADFS DKM Master Key Export](../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.md) |  |
-| [Account added and removed from privileged groups](../content/standalone-content-account-added-and-removed-from-privileged-groups-7efc75ce-e2a4-400f-a8b1-283d3b0f2c60-50f0398b.md) |  |
-| [AdminSDHolder Modifications](../content/standalone-content-adminsdholder-modifications-52aec824-96c1-4a03-8e44-bb70532e6cea-5f0a7fb2.md) | `EventData contains "<Data Name=\"`<br>`EventID == "5136"` |
-| [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md) | `AccountType != "Machine"`<br>`EventID == "1"`<br>`Process == "auditpol.exe"` |
-| [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) | `EventID == "4657"` |
-| [Email access via active sync](../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.md) | `EventID in "1,4688"` |
-| [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md) |  |
-| [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md) |  |
-| [Failed logon attempts by valid accounts within 10 mins](../content/standalone-content-failed-logon-attempts-by-valid-accounts-within-10-mins-0777f138-e5d8-4eab-bec1-e11ddfbc2be2-127ed234.md) |  |
-| [Fake computer account created](../content/standalone-content-fake-computer-account-created-c1faf5e8-6958-11ec-90d6-0242ac120003-5106eb49.md) | `EventID == "4720"` |
-| [Gain Code Execution on ADFS Server via Remote WMI Execution](../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md) |  |
-| [Group created then added to built in domain local or global group](../content/standalone-content-group-created-then-added-to-built-in-domain-local-or-global-group-a7564d76-ec6b-4519-a66b-fcc80c42332b-1a2e6754.md) |  |
-| [Identify Mango Sandstorm powershell commands](../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md) |  |
-| [Microsoft Entra ID Health Monitoring Agent Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-monitoring-agent-registry-keys-access-f819c592-c5f9-4d5c-a79f-1e6819863533-9af33463.md) | `AccountType != "Machine"` |
-| [Microsoft Entra ID Health Service Agents Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-service-agents-registry-keys-access-06bbf969-fcbe-43fa-bac2-b2fa131d113a-b4251aca.md) | `AccountType != "Machine"`<br>`EventID in "4656,4663"` |
-| [Midnight Blizzard - Script payload stored in Registry](../content/standalone-content-midnight-blizzard-script-payload-stored-in-registry-00cb180c-08a8-4e55-a276-63fb1442d5b5-7c2a822d.md) |  |
-| [Midnight Blizzard - suspicious rundll32.exe execution of vbscript](../content/standalone-content-midnight-blizzard-suspicious-rundll32.exe-execution-of-vbscript-d82e1987-4356-4a7b-bc5e-064f29b143c0-e1d64a0c.md) |  |
-| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) |  |
-| [Multiple RDP connections from Single System](../content/standalone-content-multiple-rdp-connections-from-single-system-78422ef2-62bf-48ca-9bab-72c69818a425-6fdca3be.md) |  |
-| [New user created and added to the built-in administrators group](../content/standalone-content-new-user-created-and-added-to-the-built-in-administrators-group-aa1eff90-29d4-49dc-a3ea-b65199f516db-5300f307.md) |  |
-| [Possible Resource-Based Constrained Delegation Abuse](../content/standalone-content-possible-resource-based-constrained-delegation-abuse-2937bc6b-7cda-4fba-b452-ea43ba8e835f-0940e8da.md) | `EventID == "5136"` |
-| [Potential Build Process Compromise](../content/standalone-content-potential-build-process-compromise-5ef06767-b37c-4818-b035-47de950d0046-3d9f2492.md) |  |
-| [Potential Kerberoasting](../content/standalone-content-potential-kerberoasting-1572e66b-20a7-4012-9ec4-77ec4b101bc8-6d60a025.md) |  |
-| [RDP Nesting](../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md) |  |
-| [Rare RDP Connections](../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md) |  |
-| [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) |  |
-| [Service Principal Name (SPN) Assigned to User Account](../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.md) | `EventID == "5136"` |
-| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |  |
-| [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) |  |
-| [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) |  |
-| [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md) |  |
-| [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) |  |
-| [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) |  |
-
-### Hunting Queries (90)
+### Hunting Queries (73)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -587,35 +547,13 @@ This table is ingested by the following connectors:
 | [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md) | `AccountType == "User"`<br>`EventID == "4625"`<br>`LogonType in "2,3"` |
 | [Windows System Time changed on hosts](../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.md) | `EventID == "4616"` |
 
-**Standalone Content:**
+**GitHub Only:** `EventID == "4740"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [External IP address in Command Line](../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.md) | `EventID == "4688"` |
-| [Failed Login Attempt by Expired account](../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md) | `AccountType == "User"`<br>`EventID in "4625,4769,4776"` |
-| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` |
+| Hunting Query |
+|:-------------|
+| [Summary of failed user logons by reason of failure](../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.md) |
 
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [AD Account Lockout](../content/github-only-ad-account-lockout-e7642e6e-cf27-46ec-a4b9-e4475228fead-ea34d25c.md) | `EventID == "4740"` |
-| [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
-| [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
-| [Fake computer account authentication attempt](../content/github-only-fake-computer-account-authentication-attempt-f68084a2-87eb-11ec-a8a3-0242ac120002-10c686fb.md) | `EventID in "4624,4625"`<br>`LogonTypeName in "10,2,7"` |
-| [Large Scale Malware Deployment via GPO Scheduled Task Modification](../content/github-only-large-scale-malware-deployment-via-gpo-scheduled-task-modification-a1a06ba2-87f8-11ec-a8a3-0242ac120002-da222fca.md) | `EventID == "5145"`<br>`RelativeTargetName endswith "ScheduledTasks.xml"`<br>`ShareName == "\\\\*\\SYSVOL"` |
-| [Possible command injection attempts against Azure Integration Runtimes](../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.md) |  |
-| [Potential Process Doppelganging](../content/github-only-potential-process-doppelganging-97ff9459-dade-404a-b90e-d93b9acde1a4-9e113d99.md) | `EventID == "4985"` |
-| [RID Hijacking](../content/github-only-rid-hijacking-fcdeec10-6948-11ec-90d6-0242ac120003-a1db9674.md) | `EventID in "4624,4625"`<br>`TargetUserSid endswith "-500"` |
-| [Rare firewall rule changes using netsh](../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.md) | `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` |
-| [Recon Activity with Interactive Logon Correlation](../content/github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.md) | `EventID == "4624"`<br>`LogonType == "10"` |
-| [Remote Task Creation/Update using Schtasks Process](../content/github-only-remote-task-creation-update-using-schtasks-process-9a5f5afa-8d85-11ec-b909-0242ac120002-98b45ded.md) | `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` |
-| [Summary of failed user logons by reason of failure](../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.md) | `EventID == "4740"` |
-| [Suspicious command line tokens in LolBins or LolScripts](../content/github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.md) | `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` |
-| [Users Opening and Reading the Local Device Identity Key](../content/github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.md) | `Activity == "5058 - Key file operation."` |
-
-### Workbooks (42)
+### Workbooks (22)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"`
 
@@ -724,32 +662,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) | `EventID == "and test !has"` |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [EventAnalyzer](../content/github-only-eventanalyzer-fed80a16.md) | `EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"` |
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine contains "-e"`<br>`CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"`<br>`CommandLine has "https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1"`<br>`EventID in "3,4663,4688,5136"`<br>`ParentProcessName has_any "umworkerprocess.exe"`<br>`Process in "powershell.exe,powershell_ise.exe"`<br>`Process has_any "cmd.exe"`<br>`Process has_any "powershell.exe"`<br>`Process has_any "umworkerprocess.exe"` |
-| [IdentityAndAccess](../content/github-only-identityandaccess-c7aa136c.md) | `Process != "-"` |
-| [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776,5827,5828,5829,5830,5831"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `AccountType != "Computer"`<br>`AccountType != "Machine"`<br>`ErrorCode == "500121"`<br>`EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"`<br>`TargetAccount !contains "NT AUTHORITY"`<br>`TargetAccount !endswith "$"` |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `CommandLine !contains "|"`<br>`CommandLine has "$true"`<br>`CommandLine has "-mx9"`<br>`CommandLine has "/IM"`<br>`CommandLine has "Set-MpPreference"`<br>`CommandLine has "Start"`<br>`CommandLine has "config"`<br>`CommandLine has "start"`<br>`CommandLine matchesregex "rundll32\\s+c\\:\\\\windows\\\\[a-zA-Z0-9\\.]*\\\\[a-zA-Z0-9\\\\\\.]*\\.dll\\s+[a-zA-Z_]{3,}"`<br>`ErrorCode == "0"`<br>`EventID in "17,18,4624,4662,4670,4688,5145,87"`<br>`LogonType == "10"`<br>`MandatoryLabel in "S-1-16-12288,S-1-16-16384"`<br>`NewProcessName == "c:\\windows\\syswow64\
-etsetupsvc.dll"`<br>`NewProcessName has "SolarWinds"`<br>`ObjectName contains "<GUID of ADFS Policy Store DKM Group object"`<br>`ObjectServer == "DS"`<br>`ObjectType == "Key"`<br>`ObjectType contains "5cb41ed0-0e4c-11d0-a286-00aa003049e2"`<br>`OperationType == "Object Access"`<br>`Process in "dllhost.exe,rundll32.exe"`<br>`Properties contains "8d3bca50-1d7e-11d0-a081-00aa006c33ed"`<br>`RelativeTargetName contains "583da945-62af-10e8-4902-a8f205c72b2e"` |
-| [SysmonThreatHunting](../content/github-only-sysmonthreathunting-ea4856c6.md) | `EventID in "1,10,11,12,13,17,18,22,3,4624,4625,4720,4722,4723,4724,4725,4726,4728,4729,4732,4733,4738,4740,4746,4747,4751,4752,4756,4761,4762,4767,4771,4781,7,8"` |
-| [WindowsAuditChecker](../content/github-only-windowsauditchecker-d8c63df2.md) | `EventID in "4624,4625,4768,4769,4771"` |
-| [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` |
-| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-
 ## Parsers Using This Table (7)
 
 ### ASIM Parsers (6)
@@ -780,23 +692,18 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (100 criteria, 138 total references)
+## Selection Criteria Summary (85 criteria, 115 total references)
 
-References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 16 | 1 | - | **17** |
+| `EventID == "4688"` | - | 15 | 1 | - | **16** |
 | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | 1 | 7 | - | 1 | **9** |
 | `EventID in "4624,4625"` | - | 5 | - | - | **5** |
-| `EventID == "5136"` | - | 3 | - | - | **3** |
-| `EventID == "4740"` | - | 3 | - | - | **3** |
 | `AccountType == "User"`<br>`EventID == "4625"` | - | 2 | - | - | **2** |
-| `EventID == "4657"` | - | 2 | - | - | **2** |
-| `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` | - | 2 | - | - | **2** |
 | `EventID in "4648,4673,4688,8002"` | - | 2 | - | - | **2** |
-| `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | - | 2 | - | - | **2** |
-| `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` | - | 2 | - | - | **2** |
+| `EventID == "4740"` | - | 2 | - | - | **2** |
 | `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4625"`<br>`LogonType == "10"` | - | 1 | - | - | **1** |
 | `EventSourceName == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
@@ -810,6 +717,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `EventID == "20012"`<br>`EventSourceName == "Semperis-Operation-Log"` | - | 1 | - | - | **1** |
 | `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"` | - | 1 | - | - | **1** |
 | `EventID in "412,501,5156"` | - | 1 | - | - | **1** |
+| `EventID == "5136"` | - | 1 | - | - | **1** |
 | `Account !endswith "$"`<br>`EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"`<br>`LogonType == "3"`<br>`RelativeTargetName in "atsvc,svcctl"` | - | 1 | - | - | **1** |
 | `EventID in "4656,4663"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` | - | 1 | - | - | **1** |
@@ -819,15 +727,9 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `EventID == "1102"`<br>`EventSourceName == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
 | `EventID in "4657,4688"`<br>`ParentProcessName endswith "cmd.exe"`<br>`ParentProcessName endswith "powershell.exe"`<br>`ParentProcessName endswith "powershell_ise.exe"`<br>`Process == "fodhelper.exe"` | - | 1 | - | - | **1** |
 | `CommandLine !has "sdelete"`<br>`CommandLine has_all "accepteula"`<br>`EventID == "4688"`<br>`Process != "sdelete.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4657"` | - | 1 | - | - | **1** |
 | `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4656"` | - | 1 | - | - | **1** |
-| `AccountType != "Machine"`<br>`EventID == "1"`<br>`Process == "auditpol.exe"` | - | 1 | - | - | **1** |
-| `EventID in "1,4688"` | - | 1 | - | - | **1** |
-| `AccountType != "Machine"` | - | 1 | - | - | **1** |
-| `AccountType != "Machine"`<br>`EventID in "4656,4663"` | - | 1 | - | - | **1** |
-| `EventID == "501"` | - | 1 | - | - | **1** |
-| `EventData contains "<Data Name=\"`<br>`EventID == "5136"` | - | 1 | - | - | **1** |
-| `EventID == "4720"` | - | 1 | - | - | **1** |
 | `NewValue contains "CreateObject"`<br>`NewValue contains "Execute("`<br>`NewValue contains "RegRead"`<br>`NewValue contains "RunHTMLApplication"`<br>`NewValue contains "jscript"`<br>`NewValue contains "mshtml"`<br>`NewValue contains "mshtml,"`<br>`NewValue contains "vbscript"`<br>`NewValue contains "window.close"`<br>`ObjectName !has "\\Run"`<br>`ObjectName has "\\CurrentVersion"` | - | 1 | - | - | **1** |
 | `NewProcessName has_any "arp.exe"` | - | 1 | - | - | **1** |
 | `NewProcessName endswith "werfault.exe"`<br>`ObjectName endswith "lsass.exe"` | - | 1 | - | - | **1** |
@@ -839,6 +741,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `CommandLine has "cmd.exe"`<br>`CommandLine has_any ",.dll"`<br>`CommandLine has_any "explorer"`<br>`CommandLine matchesregex "\\/[Cc] +[Ss][Tt][Aa][Rr][Tt].*\\.exe"`<br>`ParentProcessName has "explorer.exe"`<br>`Process has_any "wscript.exe"` | - | 1 | - | - | **1** |
 | `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` | - | 1 | - | - | **1** |
 | `EventID in "4698,4702"` | - | 1 | - | - | **1** |
+| `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`ParentProcessName endswith "wmiprvse.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4657"`<br>`ObjectValueName == "CrashDumpEnabled"` | - | 1 | - | - | **1** |
 | `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | - | 1 | - | - | **1** |
@@ -853,7 +756,9 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `CommandLine has "-e"`<br>`EventID == "4688"`<br>`Process in "powershell.exe,powershell_ise.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`Process has_any "cmd.exe"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4688"` | - | 1 | - | - | **1** |
+| `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | - | 1 | - | - | **1** |
 | `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` | - | 1 | - | - | **1** |
 | `CommandLine matchesregex "(.*)>(.*)"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID in "4624,4625"` | - | 1 | - | - | **1** |
@@ -863,14 +768,6 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `AccountType == "User"`<br>`EventID == "4720"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID == "4625"`<br>`LogonType in "2,3"` | - | 1 | - | - | **1** |
 | `EventID == "4616"` | - | 1 | - | - | **1** |
-| `AccountType == "User"`<br>`EventID in "4625,4769,4776"` | - | 1 | - | - | **1** |
-| `EventID == "4624"`<br>`LogonType == "10"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625"`<br>`LogonTypeName in "10,2,7"` | - | 1 | - | - | **1** |
-| `EventID == "5145"`<br>`RelativeTargetName endswith "ScheduledTasks.xml"`<br>`ShareName == "\\\\*\\SYSVOL"` | - | 1 | - | - | **1** |
-| `EventID == "4985"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625"`<br>`TargetUserSid endswith "-500"` | - | 1 | - | - | **1** |
-| `Activity == "5058 - Key file operation."` | - | 1 | - | - | **1** |
 | `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"`<br>`Process != "-"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4720,4722,4724,4725,4726,7036"` | - | 1 | - | - | **1** |
@@ -886,7 +783,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **131** | **5** | **1** | **138** |
+| **Total** | **1** | **108** | **5** | **1** | **115** |
 
 ### AccessMask
 
@@ -908,15 +805,14 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `User` | - | 11 | - | - | **11** |
-| `!= Machine` | - | 7 | - | - | **7** |
+| `User` | - | 10 | - | - | **10** |
+| `!= Machine` | - | 3 | - | - | **3** |
 | `!= Computer` | - | 1 | - | - | **1** |
 
 ### Activity
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `5058 - Key file operation.` | - | 1 | - | - | **1** |
 | `has privileged` | - | 1 | - | - | **1** |
 | `has_any An account failed to log on` | - | 1 | - | - | **1** |
 
@@ -937,8 +833,6 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has_all advfirewall` | - | 2 | - | - | **2** |
-| `has /s` | - | 2 | - | - | **2** |
 | `has SysAidServer` | - | 1 | - | - | **1** |
 | `contains TVqQAAMAAAAEAAA` | - | 1 | - | - | **1** |
 | `contains .decode(` | - | 1 | - | - | **1** |
@@ -960,6 +854,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `has cmd.exe` | - | 1 | - | - | **1** |
 | `has_any .dll` | - | 1 | - | - | **1** |
 | `has_any explorer` | - | 1 | - | - | **1** |
+| `has_all advfirewall` | - | 1 | - | - | **1** |
 | `has powershell` | - | 1 | - | - | **1** |
 | `has_any cdn.discordapp.com` | - | 1 | - | - | **1** |
 | `has Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin` | - | 1 | - | - | **1** |
@@ -967,6 +862,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `has Remove-MailboxExportRequest` | - | 1 | - | - | **1** |
 | `has $client = New-Object System.Net.Sockets.TCPClient` | - | 1 | - | - | **1** |
 | `has -e` | - | 1 | - | - | **1** |
+| `has /s` | - | 1 | - | - | **1** |
 | `has_all procdump` | - | 1 | - | - | **1** |
 | `has_all rundll32` | - | 1 | - | - | **1** |
 
@@ -983,41 +879,31 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `50126` | - | 1 | - | - | **1** |
 | `500121` | - | 1 | - | - | **1** |
 
-### EventData
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains <Data Name=\` | - | 1 | - | - | **1** |
-
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 46 | 1 | - | **47** |
-| `4624` | - | 22 | - | - | **22** |
-| `4625` | - | 19 | - | - | **19** |
+| `4688` | - | 42 | 1 | - | **43** |
+| `4624` | - | 18 | - | - | **18** |
+| `4625` | - | 15 | - | - | **15** |
 | `9208` | 1 | 8 | - | 1 | **10** |
 | `9211` | 1 | 8 | - | 1 | **10** |
 | `9212` | 1 | 8 | - | 1 | **10** |
-| `4663` | - | 5 | 2 | - | **7** |
-| `4657` | - | 6 | 1 | - | **7** |
-| `4720` | - | 7 | - | - | **7** |
+| `4663` | - | 4 | 2 | - | **6** |
+| `4657` | - | 5 | 1 | - | **6** |
 | `4648` | - | 5 | - | - | **5** |
-| `4656` | - | 5 | - | - | **5** |
-| `4732` | - | 5 | - | - | **5** |
-| `5136` | - | 4 | - | - | **4** |
-| `5145` | - | 4 | - | - | **4** |
-| `1` | - | 4 | - | - | **4** |
-| `4728` | - | 4 | - | - | **4** |
-| `4756` | - | 4 | - | - | **4** |
-| `4726` | - | 4 | - | - | **4** |
+| `4720` | - | 5 | - | - | **5** |
+| `4656` | - | 4 | - | - | **4** |
+| `4732` | - | 4 | - | - | **4** |
 | `4768` | - | 3 | - | - | **3** |
 | `4698` | - | 3 | - | - | **3** |
 | `4702` | - | 3 | - | - | **3** |
+| `5145` | - | 3 | - | - | **3** |
 | `1102` | - | 3 | - | - | **3** |
 | `4673` | - | 3 | - | - | **3** |
-| `4740` | - | 3 | - | - | **3** |
-| `4776` | - | 3 | - | - | **3** |
+| `4728` | - | 3 | - | - | **3** |
+| `4756` | - | 3 | - | - | **3** |
+| `4726` | - | 3 | - | - | **3** |
 | `4724` | - | 3 | - | - | **3** |
 | `4719` | - | 3 | - | - | **3** |
 | `4634` | - | 2 | - | - | **2** |
@@ -1026,15 +912,14 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `5143` | - | 2 | - | - | **2** |
 | `20002` | - | 2 | - | - | **2** |
 | `20012` | - | 2 | - | - | **2** |
-| `501` | - | 2 | - | - | **2** |
 | `5156` | - | 2 | - | - | **2** |
 | `4699` | - | 2 | - | - | **2** |
 | `4700` | - | 2 | - | - | **2** |
 | `4701` | - | 2 | - | - | **2** |
 | `8002` | - | 2 | - | - | **2** |
+| `4740` | - | 2 | - | - | **2** |
 | `4754` | - | 2 | - | - | **2** |
-| `4769` | - | 2 | - | - | **2** |
-| `4985` | - | 2 | - | - | **2** |
+| `4776` | - | 2 | - | - | **2** |
 | `4723` | - | 2 | - | - | **2** |
 | `4660` | - | 2 | - | - | **2** |
 | `4670` | - | 2 | - | - | **2** |
@@ -1043,8 +928,11 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `5059` | - | 1 | - | - | **1** |
 | `30001` | - | 1 | - | - | **1** |
 | `412` | - | 1 | - | - | **1** |
+| `501` | - | 1 | - | - | **1** |
+| `5136` | - | 1 | - | - | **1** |
 | `4697` | - | 1 | - | - | **1** |
 | `4662` | - | 1 | - | - | **1** |
+| `1` | - | 1 | - | - | **1** |
 | `4727` | - | 1 | - | - | **1** |
 | `4731` | - | 1 | - | - | **1** |
 | `4729` | - | 1 | - | - | **1** |
@@ -1057,9 +945,9 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `4761` | - | 1 | - | - | **1** |
 | `4762` | - | 1 | - | - | **1** |
 | `4616` | - | 1 | - | - | **1** |
-| `7045` | - | 1 | - | - | **1** |
 | `2889` | - | 1 | - | - | **1** |
 | `3000` | - | 1 | - | - | **1** |
+| `4769` | - | 1 | - | - | **1** |
 | `4722` | - | 1 | - | - | **1** |
 | `4725` | - | 1 | - | - | **1** |
 | `7036` | - | 1 | - | - | **1** |
@@ -1086,6 +974,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `4906` | - | 1 | - | - | **1** |
 | `4908` | - | 1 | - | - | **1** |
 | `4912` | - | 1 | - | - | **1** |
+| `4985` | - | 1 | - | - | **1** |
 | `5031` | - | 1 | - | - | **1** |
 | `5039` | - | 1 | - | - | **1** |
 | `5051` | - | 1 | - | - | **1** |
@@ -1132,23 +1021,14 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `10` | - | 3 | - | - | **3** |
 | `3` | - | 3 | - | - | **3** |
+| `10` | - | 2 | - | - | **2** |
 | `2` | - | 1 | - | - | **1** |
-
-### LogonTypeName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `10` | - | 1 | - | - | **1** |
-| `2` | - | 1 | - | - | **1** |
-| `7` | - | 1 | - | - | **1** |
 
 ### NewProcessName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `C:\\Windows\\System32\\schtasks.exe` | - | 2 | - | - | **2** |
 | `has C:\\Windows\\` | - | 1 | - | - | **1** |
 | `has_any Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}` | - | 1 | - | - | **1** |
 | `has_any arp.exe` | - | 1 | - | - | **1** |
@@ -1160,6 +1040,7 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `!has :\\Windows\\System32` | - | 1 | - | - | **1** |
 | `!has :\\Windows\\Syswow64` | - | 1 | - | - | **1** |
 | `endswith \\svchost.exe` | - | 1 | - | - | **1** |
+| `C:\\Windows\\System32\\schtasks.exe` | - | 1 | - | - | **1** |
 
 ### NewValue
 
@@ -1227,7 +1108,6 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has_any cmd.exe` | - | 3 | - | - | **3** |
-| `netsh.exe` | - | 2 | - | - | **2** |
 | `has_any powershell.exe` | - | 2 | - | - | **2** |
 | `powershell.exe` | - | 2 | - | - | **2** |
 | `!= -` | - | 2 | - | - | **2** |
@@ -1236,9 +1116,9 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `!= sdelete.exe` | - | 1 | - | - | **1** |
 | `sdelete.exe` | - | 1 | - | - | **1** |
 | `svchost.exe` | - | 1 | - | - | **1** |
-| `auditpol.exe` | - | 1 | - | - | **1** |
 | `has powershell.exe` | - | 1 | - | - | **1** |
 | `has_any wscript.exe` | - | 1 | - | - | **1** |
+| `netsh.exe` | - | 1 | - | - | **1** |
 | `cmd.exe` | - | 1 | - | - | **1** |
 | `powershell_ise.exe` | - | 1 | - | - | **1** |
 
@@ -1257,21 +1137,19 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | `atsvc` | - | 2 | - | - | **2** |
 | `svcctl` | - | 1 | - | - | **1** |
 | `spoolss` | - | 1 | - | - | **1** |
-| `endswith ScheduledTasks.xml` | - | 1 | - | - | **1** |
 
 ### ShareName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `\\\\*\\IPC$` | - | 1 | - | - | **1** |
-| `\\\\*\\SYSVOL` | - | 1 | - | - | **1** |
 
 ### SubjectUserName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= SYSTEM` | - | 2 | - | - | **2** |
-| `!endswith $` | - | 2 | - | - | **2** |
+| `!= SYSTEM` | - | 1 | - | - | **1** |
+| `!endswith $` | - | 1 | - | - | **1** |
 | `!has $` | - | 1 | - | - | **1** |
 
 ### SubjectUserSid
@@ -1308,12 +1186,6 @@ References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!= S-1-5-32-555` | - | 1 | - | - | **1** |
-
-### TargetUserSid
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `endswith -500` | - | 1 | - | - | **1** |
 
 ---
 

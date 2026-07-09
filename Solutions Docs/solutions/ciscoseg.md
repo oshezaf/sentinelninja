@@ -16,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Cisco *(basis: publisher)* |
+| **Source Product** | ESA_CONSOLIDATED_LOG_EVENT |
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-23 |

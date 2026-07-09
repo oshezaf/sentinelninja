@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/](https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/) |
 | **Categories** | IT Operations,Security - Threat Protection |
+| **Source Vendor** | Veeam *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Veeam Software - microsoftappsupport@veeam.com |
 | **First Published** | 2025-08-26 |

@@ -11,11 +11,19 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
+| **Source Vendor** | SAP *(basis: override)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapchangedocslog) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
 
 ## Schema (36 columns)
 
@@ -65,6 +73,20 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [ABAPChangeDocsLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapchangedocslog)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SAP](../solutions/sap.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) |  |
 
 ---
 

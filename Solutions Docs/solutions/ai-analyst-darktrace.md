@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.darktrace.com/contact/](https://www.darktrace.com/contact/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Darktrace *(basis: event)* |
 | **Version** | 3.0.2 |
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |

@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `MimecastSIEMAPI` |
 | **Publisher** | Mimecast |
+| **Source Vendor** | Mimecast *(basis: publisher)* |
 | **Used in Solutions** | [MimecastSEG](../solutions/mimecastseg.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [MimecastSEG_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG/Data%20Connectors/MimecastSEG_API_AzureFunctionApp.json) |

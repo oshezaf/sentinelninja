@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `OrcaSecurityAlerts` |
 | **Publisher** | Orca Security |
+| **Source Vendor** | Orca Security *(basis: publisher)* |
 | **Used in Solutions** | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [OrcaSecurityAlerts.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlerts.json) |

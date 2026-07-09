@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `ImpervaWAFGateway` |
 | **Publisher** | Imperva |
+| **Source Vendor** | Imperva *(basis: event)* |
+| **Source Product** | WAF Gateway |
 | **Used in Solutions** | [Imperva WAF Gateway](../solutions/imperva-waf-gateway.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Imperva_WAF_Gateway.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway/Data%20Connectors/Connector_Imperva_WAF_Gateway.json) |

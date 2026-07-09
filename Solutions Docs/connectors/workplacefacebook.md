@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `WorkplaceFacebook` |
 | **Publisher** | Facebook |
+| **Source Vendor** | Facebook *(basis: publisher)* |
 | **Used in Solutions** | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [WorkplaceFacebook_Webhooks_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workplace%20from%20Facebook/Data%20Connectors/WorkplaceFacebook/WorkplaceFacebook_Webhooks_FunctionApp.json) |

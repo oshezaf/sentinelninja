@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://tropicosecurity.com/](https://tropicosecurity.com/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Tropico Security *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Tropico Security - dev@tropicosecurity.com |
 | **First Published** | 2025-12-02 |

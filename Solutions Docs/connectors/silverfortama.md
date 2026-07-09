@@ -12,6 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `SilverfortAma` |
 | **Publisher** | Silverfort |
+| **Source Vendor** | Silverfort *(basis: event)* |
+| **Source Product** | Admin Console |
 | **Used in Solutions** | [Silverfort](../solutions/silverfort.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [SilverfortAma.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort/Data%20Connectors/SilverfortAma.json) |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPVPCFlowLogsCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Used in Solutions** | [Google Cloud Platform VPC Flow Logs](../solutions/google-cloud-platform-vpc-flow-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPVPCFlowLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20VPC%20Flow%20Logs/Data%20Connectors/GCPVPCFlowLogs_GCP_CCP/GCPVPCFlowLogs_ConnectorDefinition.json) |

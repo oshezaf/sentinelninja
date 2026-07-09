@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IllumioInsightsDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Illumio Insight](../solutions/illumio-insight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioInsight_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsight_CCP/IllumioInsight_Definition.json) |

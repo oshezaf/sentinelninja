@@ -18,6 +18,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Agari *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Agari - support@agari.com |
 | **First Published** | 2026-05-14 |

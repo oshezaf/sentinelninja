@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://flare.io/contact/](https://flare.io/contact/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Flare Systems *(basis: publisher)* |
 | **Version** | 3.1.0 |
 | **Author** | Flare - support@flare.io |
 | **First Published** | 2021-10-20 |

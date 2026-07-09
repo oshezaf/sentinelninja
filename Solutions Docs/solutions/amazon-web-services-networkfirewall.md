@@ -16,6 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dataminr.com/dataminr-support#support](https://www.dataminr.com/dataminr-support#support) |
 | **Categories** | Security - Others,Security - Threat Intelligence,Security - Automation (SOAR) |
+| **Source Vendor** | Dataminr *(basis: publisher)* |
 | **Version** | 3.0.5 |
 | **Author** | Dataminr - info@dataminr.com |
 | **First Published** | 2023-04-12 |

@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://globalcontacts.cloudapps.cisco.com/contacts/contactDetails/en_US/c1o1-c2o2-c3o8](https://globalcontacts.cloudapps.cisco.com/contacts/contactDetails/en_US/c1o1-c2o2-c3o8) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Version** | 2.0.0 |
 | **Author** | Cisco Systems - support@cisco.com |
 | **First Published** | 2023-06-01 |

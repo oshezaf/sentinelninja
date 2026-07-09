@@ -14,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Aruba Networks *(basis: event)* |
+| **Source Product** | ClearPass |
 | **Version** | 3.0.3 |
 | **Author** | Aruba Networks |
 | **First Published** | 2022-05-23 |

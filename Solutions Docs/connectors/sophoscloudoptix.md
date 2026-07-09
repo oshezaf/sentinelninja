@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `SophosCloudOptix` |
 | **Publisher** | Sophos |
+| **Source Vendor** | Sophos *(basis: publisher)* |
 | **Used in Solutions** | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_REST_API_SophosCloudOptix.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix/Data%20Connectors/Connector_REST_API_SophosCloudOptix.json) |

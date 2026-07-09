@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Alsid, Tenable *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -61,7 +62,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (44)
+## Content Items Using This Table (42)
 
 ### Analytic Rules (36)
 
@@ -116,7 +117,7 @@ This table is ingested by the following connectors:
 | [Tenable.ad privileged accounts issues](../content/tenablead-tenable.ad-privileged-accounts-issues-353d6474-d795-4086-a179-ba1db4d8bbcb-6c66bb05.md) |  |
 | [Tenable.ad user accounts issues](../content/tenablead-tenable.ad-user-accounts-issues-4f8ed6f3-8815-437d-9462-f0def9dc70d6-2adebfa6.md) |  |
 
-### Workbooks (8)
+### Workbooks (6)
 
 **In solution [Alsid For AD](../solutions/alsid-for-ad.md):**
 
@@ -138,13 +139,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TenableAdIoA](../content/tenablead-tenableadioa-34869e80.md) |  |
 | [TenableAdIoE](../content/tenablead-tenableadioe-cff627f5.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AlsidIoA](../content/github-only-alsidioa-6dd0a5fc.md) |  |
-| [AlsidIoE](../content/github-only-alsidioe-3d7bf853.md) |  |
 
 ## Parsers Using This Table (2)
 

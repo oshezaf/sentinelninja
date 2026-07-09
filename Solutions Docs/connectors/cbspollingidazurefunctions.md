@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CBSPollingIDAzureFunctions` |
 | **Publisher** | CTM360 |
+| **Source Vendor** | CTM360 *(basis: publisher)* |
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CTM360_CBS_API_functionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CBS/CTM360_CBS_API_functionApp.json) |

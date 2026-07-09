@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ArmisDevices` |
 | **Publisher** | Armis |
+| **Source Vendor** | Armis *(basis: publisher)* |
 | **Used in Solutions** | [Armis](../solutions/armis.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ArmisDevice_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Data%20Connectors/ArmisDevice/ArmisDevice_API_FunctionApp.json) |

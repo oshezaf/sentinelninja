@@ -35,6 +35,14 @@
   <td style="text-align:left">Normalized</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Vendor</strong></td>
+  <td style="text-align:left">Cisco, Synqly <em>(basis: projected)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source Product</strong></td>
+  <td style="text-align:left">Meraki</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -853,7 +861,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
@@ -902,8 +910,8 @@
 <ul>
 <li><code>microsoft.securityinsights/websessionlogs</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
-<p>References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 2 total references)</h2>
+<p>References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -917,6 +925,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>EventType in &quot;EndpointNetworkSession,HTTPSession&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -926,10 +942,35 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventproduct-eventvendor">EventProduct / EventVendor</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">EventProduct</th>
+  <th style="text-align:left">EventVendor</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>Meraki</code></td>
+  <td style="text-align:left"><code>Cisco</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>

@@ -12,6 +12,9 @@
 |:----------|:------|
 | **Connector ID** | `Pathlock_TDnR` |
 | **Publisher** | Pathlock Inc. |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | Pathlock *(basis: override)* |
+| **Collector Product** | Threat Detection and Response |
 | **Used in Solutions** | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Pathlock_TDnR_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_connectorDefinition.json) |

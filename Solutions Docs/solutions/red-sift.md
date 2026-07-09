@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.redsift.com/contact](https://www.redsift.com/contact) |
 | **Categories** | Security - Threat Protection,Identity |
+| **Source Vendor** | Red Sift *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Red Sift - support@redsift.com |
 | **First Published** | 2026-04-10 |

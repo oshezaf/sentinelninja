@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://zeronetworks.com](https://zeronetworks.com) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Zero Networks *(basis: publisher)* |
 | **Version** | 3.0.3 |
 | **Author** | Nicholas DiCola - nicholas@zeronetworks.com |
 | **First Published** | 2022-06-06 |
@@ -59,7 +60,7 @@ This solution uses **5 table(s)**:
 | [`ZNIdentityActivity_CL`](../tables/znidentityactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
 | [`ZNNetworkActivity_CL`](../tables/znnetworkactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
 | [`ZNRPCActivity_CL`](../tables/znrpcactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md), [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Analytics, Hunting, Workbooks |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md), [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 

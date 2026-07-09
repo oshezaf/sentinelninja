@@ -16,6 +16,9 @@
 |:----------|:------|
 | **Connector ID** | `SecurityBridgeSAP` |
 | **Publisher** | SecurityBridge |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | SecurityBridge *(basis: override)* |
+| **Collector Product** | SecurityBridge Platform |
 | **Used in Solutions** | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_SecurityBridge.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Data%20Connectors/Connector_SecurityBridge.json) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://securepractice.co/support](https://securepractice.co/support) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Secure Practice *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Secure Practice - support@securepractice.co |
 | **First Published** | 2023-03-16 |

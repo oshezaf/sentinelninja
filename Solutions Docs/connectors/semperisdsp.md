@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SemperisDSP` |
 | **Publisher** | SEMPERIS |
+| **Source Vendor** | Semperis *(basis: publisher)* |
 | **Used in Solutions** | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [SemperisDSP-connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector/Data%20Connectors/SemperisDSP-connector.json) |

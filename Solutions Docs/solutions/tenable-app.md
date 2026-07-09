@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.tenable.com/support/technical-support](https://www.tenable.com/support/technical-support) |
 | **Categories** | Security - Vulnerability Management |
+| **Source Vendor** | Tenable *(basis: publisher)* |
 | **Version** | 3.1.2 |
 | **Author** | Tenable - support@tenable.com |
 | **First Published** | 2024-06-06 |

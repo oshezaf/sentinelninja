@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `JoeSandbox` |
 | **Publisher** | Joe Security LLC |
+| **Source Vendor** | Joe Security *(basis: publisher)* |
 | **Used in Solutions** | [JoeSandbox](../solutions/joesandbox.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [JoeSandboxThreatIntelligence_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Data%20Connectors/JoeSandboxThreatIntelligence_FunctionApp.json) |

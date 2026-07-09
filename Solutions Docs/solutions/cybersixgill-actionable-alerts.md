@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cybersixgill.com/](https://www.cybersixgill.com/) |
 | **Categories** | Security - Threat Intelligence |
+| **Source Vendor** | Cybersixgill *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Cybersixgill |
 | **First Published** | 2023-02-27 |

@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `InfobloxNIOS` |
 | **Publisher** | Infoblox |
+| **Source Vendor** | Infoblox *(basis: publisher)* |
 | **Used in Solutions** | [Infoblox NIOS](../solutions/infoblox-nios.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_Infoblox.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS/Data%20Connectors/Connector_Syslog_Infoblox.json) |

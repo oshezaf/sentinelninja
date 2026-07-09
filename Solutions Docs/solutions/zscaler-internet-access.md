@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zscaler.com/support/](https://www.zscaler.com/support/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
+| **Source Vendor** | Zscaler *(basis: publisher)* |
+| **Source Product** | NSSAuditlog, NSSCasbactivitylog, NSSCasbcrmlog, NSSCasbcloudstoragelog, NSSCasbcollablog, NSSCasbemaillog, NSSCasbfilesharinglog, NSSCasbitsmlog, NSSCasbrepolog, NSSDNSlog, NSSEmaildlplog, NSSEndpointdlplog, NSSFWlog, NSSTunnellog, NSSWeblog |
 | **Version** | 3.0.4 |
 | **Author** | Zscaler |
 | **First Published** | 2022-10-10 |

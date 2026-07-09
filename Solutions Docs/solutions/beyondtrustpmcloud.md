@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.beyondtrust.com/](https://www.beyondtrust.com/) |
 | **Categories** | Security - Threat Protection,IT Operations |
+| **Source Vendor** | BeyondTrust *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | BeyondTrust - mysupport@beyondtrust.com |
 | **First Published** | 2025-10-31 |

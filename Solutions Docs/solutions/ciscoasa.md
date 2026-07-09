@@ -18,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Automation (SOAR) |
+| **Source Vendor** | Cisco *(basis: event)* |
+| **Source Product** | ASA |
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |

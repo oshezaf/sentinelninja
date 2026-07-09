@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TrendMicroCAS` |
 | **Publisher** | Trend Micro |
+| **Source Vendor** | Trend Micro *(basis: publisher)* |
 | **Used in Solutions** | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TerndMicroCAS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security/Data%20Connectors/TerndMicroCAS_API_FunctionApp.json) |

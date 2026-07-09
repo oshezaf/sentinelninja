@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cloud.google.com/support](https://cloud.google.com/support) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
+| **Source Vendor** | Google *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Google - secops-sentinel-support@crestdata.ai |
 | **First Published** | 2025-04-04 |

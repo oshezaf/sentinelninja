@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `SonicWallFirewall` |
 | **Publisher** | SonicWall |
+| **Source Vendor** | SonicWall *(basis: event)* |
 | **Used in Solutions** | [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [SonicwallFirewall.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall/Data%20Connectors/SonicwallFirewall.json) |

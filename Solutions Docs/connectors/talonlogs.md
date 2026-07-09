@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TalonLogs` |
 | **Publisher** | Talon Security |
+| **Source Vendor** | Talon Security *(basis: publisher)* |
 | **Used in Solutions** | [Talon](../solutions/talon.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [TalonLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon/Data%20Connectors/TalonLogs.json) |

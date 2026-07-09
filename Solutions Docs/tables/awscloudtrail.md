@@ -11,6 +11,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Source Vendor** | Amazon *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -95,7 +96,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AWSCloudTrail Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail)
 
-## Solutions (14)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -109,7 +110,6 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -125,9 +125,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (131)
+## Content Items Using This Table (118)
 
-### Analytic Rules (76)
+### Analytic Rules (73)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -242,15 +242,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Failed AWS Console logons but success logon to AzureAD](../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.md) | `EventName == "ConsoleLogin"` |
-| [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md) | `EventName == "ConsoleLogin"` |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-
-### Hunting Queries (38)
+### Hunting Queries (37)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -299,13 +291,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md) |  |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-### Workbooks (17)
+### Workbooks (8)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -350,20 +336,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,GetCallerIdentity,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"`<br>`UserIdentityType in "AssumedRole,IAMUser"` |
-| [AmazonWebServicesNetworkActivities](../content/github-only-amazonwebservicesnetworkactivities-3fb3ce58.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"` |
-| [AmazonWebServicesUserActivities](../content/github-only-amazonwebservicesuseractivities-59b7a9c6.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`UserIdentityType in "AssumedRole,IAMUser"` |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (3)
@@ -374,15 +346,15 @@ This table is ingested by the following connectors:
 | [ASimFileEventAWSCloudTrail](../asim/asimfileeventawscloudtrail.md) | FileEvent | AWS Cloud Trail | `EventSource == "s3.amazonaws.com"` |
 | [ASimUserManagementAWSCloudTrail](../asim/asimusermanagementawscloudtrail.md) | UserManagement | AWS Cloud Trail | `EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"` |
 
-## Selection Criteria Summary (67 criteria, 101 total references)
+## Selection Criteria Summary (67 criteria, 99 total references)
 
-References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 95 content items, 3 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | - | 11 | - | - | **11** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | - | 10 | - | - | **10** |
-| `EventName == "ConsoleLogin"` | - | 6 | 1 | - | **7** |
+| `EventName == "ConsoleLogin"` | - | 4 | 1 | - | **5** |
 | `EventName == "DescribeImageScanFindings"` | - | 3 | - | - | **3** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` | - | 3 | - | - | **3** |
 | `EventName == "CreateAccessKey"` | - | 3 | - | - | **3** |
@@ -447,7 +419,7 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`UserIdentityType in "AssumedRole,IAMUser"` | - | 1 | - | - | **1** |
 | `EventSource == "s3.amazonaws.com"` | - | - | 1 | - | **1** |
 | `EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **97** | **3** | **0** | **101** |
+| **Total** | **1** | **95** | **3** | **0** | **99** |
 
 ### ErrorCode
 
@@ -474,7 +446,7 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 | `PutUserPolicy` | - | 12 | - | - | **12** |
 | `CreatePolicy` | - | 11 | - | - | **11** |
 | `PutRolePolicy` | - | 11 | - | - | **11** |
-| `ConsoleLogin` | - | 8 | 1 | - | **9** |
+| `ConsoleLogin` | - | 6 | 1 | - | **7** |
 | `CreateAccessKey` | - | 5 | - | - | **5** |
 | `CreateUser` | 1 | 3 | - | - | **4** |
 | `GetObject` | - | 4 | - | - | **4** |

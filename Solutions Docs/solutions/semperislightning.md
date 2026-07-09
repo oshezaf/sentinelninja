@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.semperis.com/support/](https://www.semperis.com/support/) |
 | **Categories** | Security - Cloud Security,Security - Threat Intelligence |
+| **Source Vendor** | Semperis *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Semperis |
 | **First Published** | 2026-03-01 |

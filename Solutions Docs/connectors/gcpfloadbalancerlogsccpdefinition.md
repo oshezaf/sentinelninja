@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPFLoadBalancerLogsCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Used in Solutions** | [Google Cloud Platform Load Balancer Logs](../solutions/google-cloud-platform-load-balancer-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPFLoadBalancerLogs_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Load%20Balancer%20Logs/Data%20Connectors/GCPFLoadBalancerLogs_GCP_CCP/GCPFLoadBalancerLogs_Definition.json) |

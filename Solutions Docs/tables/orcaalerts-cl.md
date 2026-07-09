@@ -132,21 +132,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Orca Security Alerts](../solutions/orca-security-alerts.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [OrcaAlerts](../content/orca-security-alerts-orcaalerts-8a812d22.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [OrcaAlerts](../content/github-only-orcaalerts-1d7fde1d.md) |  |
 
 ---
 

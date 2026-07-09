@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `Tenable.ad` |
 | **Publisher** | Tenable |
+| **Source Vendor** | Tenable *(basis: publisher)* |
 | **Used in Solutions** | [TenableAD](../solutions/tenablead.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Tenable.ad.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Data%20Connectors/Tenable.ad.json) |

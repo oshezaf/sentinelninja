@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Veeam *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -68,22 +69,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
-| [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) |  |
 
 ---
 

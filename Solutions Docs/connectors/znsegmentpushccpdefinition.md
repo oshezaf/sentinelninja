@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ZNSegmentPushCCPDefinition` |
 | **Publisher** | Zero Networks |
+| **Source Vendor** | Zero Networks *(basis: publisher)* |
 | **Used in Solutions** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [ZNSegmentPush_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegment_CCP_Push/ZNSegmentPush_connectorDefinition.json) |

@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `DelineaSecretServer_CEF` |
 | **Publisher** | Delinea, Inc |
+| **Source Vendor** | Delinea *(basis: event)* |
+| **Source Product** | Secret Server |
 | **Used in Solutions** | [Delinea Secret Server](../solutions/delinea-secret-server.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [DelineaSecretServer_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server/Data%20Connectors/DelineaSecretServer_CEF.json) |

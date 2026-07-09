@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPIAMCCPDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Used in Solutions** | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPIAMLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Data%20Connectors/GCPIAMLog_CCP/GCPIAMLog_ConnectorDefinition.json) |

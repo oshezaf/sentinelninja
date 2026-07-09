@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Field Effect *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://nviso.eu/](https://nviso.eu/) |
 | **Categories** | Security - Threat Intelligence,Security - Others |
+| **Source Vendor** | NVISO *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Ioannis Bakomichalis - ioannis.bakomichalis@nviso.eu |
 | **First Published** | 2026-04-28 |

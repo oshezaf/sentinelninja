@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SailPointIdentityNow` |
 | **Publisher** | SailPoint |
+| **Source Vendor** | SailPoint *(basis: publisher)* |
 | **Used in Solutions** | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SailPoint_IdentityNow_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SailPoint_IdentityNow_FunctionApp.json) |

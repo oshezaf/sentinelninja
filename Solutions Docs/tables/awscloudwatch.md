@@ -11,6 +11,7 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Source Vendor** | Amazon *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -24,7 +25,6 @@ Reference for AWSCloudWatch table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (8 columns)
 
@@ -62,16 +62,6 @@ This table is ingested by the following connectors:
 | [Amazon Web Services S3](../connectors/awss3.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ---
 

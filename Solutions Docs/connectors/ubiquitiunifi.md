@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `UbiquitiUnifi` |
 | **Publisher** | Ubiquiti |
+| **Source Vendor** | Ubiquiti *(basis: publisher)* |
 | **Used in Solutions** | [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Ubiquiti_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi/Data%20Connectors/Connector_Ubiquiti_agent.json) |

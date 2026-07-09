@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Trend Micro *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
@@ -70,7 +71,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -80,20 +81,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Create Incident for XDR Alerts](../content/trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd-cbe34215.md) |  |
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Trend Micro Vision One](../solutions/trend-micro-vision-one.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview-d7791cc7.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [TrendMicroXDROverview](../content/github-only-trendmicroxdroverview-fd0efed8.md) |  |
 
 ---
 

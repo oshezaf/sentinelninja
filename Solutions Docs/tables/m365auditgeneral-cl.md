@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Marko Lauren *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

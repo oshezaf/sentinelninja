@@ -19,8 +19,8 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **93** |
-| Active | 88 |
+| Total Connectors | **94** |
+| Active | 89 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 5 |
 
@@ -31,7 +31,8 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Azure Function](../methods/azure-function.md) | 44 |
 | [CCF Push](../methods/ccf-push.md) | 41 |
 | [CCF](../methods/ccf.md) | 8 |
-| **Total** | **93** |
+| [REST Pull API](../methods/rest-pull-api.md) | 1 |
+| **Total** | **94** |
 
 ## Connectors Using This API
 
@@ -84,6 +85,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | [CCF Push](../methods/ccf-push.md) | Jamf | 3 | [Jamf Protect](../solutions/jamf-protect.md) |
 | [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) | [CCF Push](../methods/ccf-push.md) | Keeper Security | 1 | [Keeper Security](../solutions/keeper-security.md) |
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 4 | [SAP](../solutions/sap.md) |
 | [Mimecast Audit](../connectors/mimecastauditapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 4 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |

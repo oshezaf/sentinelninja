@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://illusive.com/support](https://illusive.com/support) |
 | **Categories** | Security - Threat Protection,Security - Others |
+| **Source Vendor** | illusive *(basis: event)* |
+| **Source Product** | illusive |
 | **Version** | 3.0.1 |
 | **Author** | Illusive Networks |
 | **First Published** | 2022-05-25 |

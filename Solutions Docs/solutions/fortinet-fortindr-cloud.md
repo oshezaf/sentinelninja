@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.fortinet.com/support](https://www.fortinet.com/support) |
 | **Categories** | Security - Automation (SOAR) |
+| **Source Vendor** | Fortinet *(basis: publisher)* |
 | **Version** | 3.0.3 |
 | **Author** | Fortinet - cs@fortinet.com |
 | **First Published** | 2024-01-15 |

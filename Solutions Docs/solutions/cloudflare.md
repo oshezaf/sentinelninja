@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
 | **Categories** | Networking,Security - Network |
+| **Source Vendor** | Cloudflare *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |

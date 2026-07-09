@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CynerioSecurityEvents` |
 | **Publisher** | Cynerio |
+| **Source Vendor** | Cynerio *(basis: publisher)* |
 | **Used in Solutions** | [Cynerio](../solutions/cynerio.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Cynerio_Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio/Data%20Connectors/Cynerio_Connector.json) |

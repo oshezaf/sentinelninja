@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DragosSitestoreCCP` |
 | **Publisher** | Dragos |
+| **Source Vendor** | Dragos *(basis: publisher)* |
 | **Used in Solutions** | [Dragos](../solutions/dragos.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [dragosSitestoreDataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dragosSitestoreDataConnectorDefinition.json) |

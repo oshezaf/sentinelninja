@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `CiscoFirepowerEStreamerAma` |
 | **Publisher** | Cisco |
+| **Source Vendor** | Cisco *(basis: event)* |
+| **Source Product** | Firepower |
 | **Used in Solutions** | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_CiscoFirepowerEStreamerAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Data%20Connectors/template_CiscoFirepowerEStreamerAMA.json) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vmray.com/contact/customer-support/](https://www.vmray.com/contact/customer-support/) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
+| **Source Vendor** | VMRay *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | VMRay |
 | **First Published** | 2025-07-23 |

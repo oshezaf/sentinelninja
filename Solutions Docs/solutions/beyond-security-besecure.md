@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://beyondsecurity.freshdesk.com/support/home](https://beyondsecurity.freshdesk.com/support/home) |
 | **Categories** | Security – Vulnerability Management |
+| **Source Vendor** | Beyond Security *(basis: publisher)* |
 | **Version** | 2.0.0 |
 | **Author** | Beyond Security - isv@email.com |
 | **First Published** | 2022-05-02 |

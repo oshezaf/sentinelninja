@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ContrastADRCCF` |
 | **Publisher** | Contrast Security |
+| **Source Vendor** | Contrast Security *(basis: publisher)* |
 | **Used in Solutions** | [ContrastADR](../solutions/contrastadr.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADRCCF/connectorDefinition.json) |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `OnetrustPush` |
 | **Publisher** | OneTrust |
+| **Source Vendor** | OneTrust *(basis: publisher)* |
 | **Used in Solutions** | [OneTrust](../solutions/onetrust.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [OneTrustLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust/Data%20Connectors/OneTrustLogs_CCF/OneTrustLogs_connectorDefinition.json) |

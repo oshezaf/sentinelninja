@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TrendMicroXDR` |
 | **Publisher** | Trend Micro |
+| **Source Vendor** | Trend Micro *(basis: publisher)* |
 | **Used in Solutions** | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TrendMicroXDR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One/Data%20Connectors/TrendMicroXDR.json) |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ARGOSCloudSecurity` |
 | **Publisher** | ARGOS Cloud Security |
+| **Source Vendor** | ARGOS Cloud Security *(basis: publisher)* |
 | **Used in Solutions** | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_ARGOS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity/Data%20Connectors/Connector_ARGOS.json) |

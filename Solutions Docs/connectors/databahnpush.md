@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DataBahnPush` |
 | **Publisher** | DataBahn |
+| **Source Vendor** | DataBahn *(basis: publisher)* |
 | **Used in Solutions** | [Databahn](../solutions/databahn.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [DataBahn_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn/Data%20Connectors/DataBahn_PUSH_CCP/DataBahn_connectorDefinition.json) |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GreyNoise2SentinelAPI` |
 | **Publisher** | GreyNoise, Inc. and BlueCycle LLC |
+| **Source Vendor** | GreyNoise, Inc. and BlueCycle LLC *(basis: publisher)* |
 | **Used in Solutions** | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [GreyNoiseConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence/Data%20Connectors/GreyNoiseConnector_UploadIndicatorsAPI.json) |

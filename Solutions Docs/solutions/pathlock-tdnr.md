@@ -16,6 +16,9 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://pathlock.com/support/](https://pathlock.com/support/) |
 | **Categories** | Security - Network,Finance |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | Pathlock *(basis: override)* |
+| **Collector Product** | Threat Detection and Response |
 | **Version** | 3.0.1 |
 | **Author** | Pathlock Inc. - support@pathlock.com |
 | **First Published** | 2022-02-17 |

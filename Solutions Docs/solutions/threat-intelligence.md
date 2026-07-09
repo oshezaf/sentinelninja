@@ -18,6 +18,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Intelligence |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Version** | 3.1.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-18 |

@@ -10,8 +10,11 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftSentinelSAP` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | SAP *(basis: override)* |
 | **Used in Solutions** | [SAP](../solutions/sap.md) |
-| **Collection Method** | [Unknown](../methods/unknown.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Microsoft Sentinel solution for SAP allows you to monitor SAP systems and detect sophisticated threats throughout the business logic and application layers. The solution includes the Microsoft Sentinel for SAP data connector which collects logs from across the entire SAP system landscape using a containerized agent.
 
@@ -27,8 +30,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) | ? | ✓ | ? |
-| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | ? | ✓ | ? |
+| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) 🔶 | ? | ✓ | ? |
+| [`ABAPAuthorizationDetails_CL`](../tables/abapauthorizationdetails-cl.md) 🔶 | ? | ✓ | ? |
+| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) 🔶 | ? | ✓ | ? |
+| [`ABAPUserDetails_CL`](../tables/abapuserdetails-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

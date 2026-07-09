@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `UniFiSiteManagerConnector` |
 | **Publisher** | Community |
+| **Source Vendor** | Community *(basis: publisher)* |
 | **Used in Solutions** | [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [UnifiSiteManager_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/UniFi%20Site%20Manager%20%28CCF%29/Data%20Connectors/UnifiSiteManagerLogs_ccf/UnifiSiteManager_ConnectorDefinition.json) |

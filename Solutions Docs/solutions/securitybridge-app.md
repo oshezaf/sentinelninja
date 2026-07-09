@@ -16,6 +16,9 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://securitybridge.com/contact/](https://securitybridge.com/contact/) |
 | **Categories** | Security - Network,Finance |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | SecurityBridge *(basis: override)* |
+| **Collector Product** | SecurityBridge Platform |
 | **Version** | 3.2.1 |
 | **Author** | SecurityBridge - support@securitybridge.com |
 | **First Published** | 2022-02-17 |

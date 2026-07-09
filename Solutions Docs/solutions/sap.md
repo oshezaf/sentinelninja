@@ -12,6 +12,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
+| **Source Vendor** | SAP *(basis: override)* |
 | **Last Updated** | 2026-06-03 |
 | **Solution Folder** | [SAP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sap.sentinel4sap) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🔵 Medium (77%) |
@@ -29,19 +30,29 @@ Microsoft Sentinel solution for SAP® applications
 
 This solution provides **2 data connector(s)**:
 
-- [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md)
+- [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) 🔶
 - [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md)
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md), [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
-| [`ABAPAuthorizationDetails_CL`](../tables/abapauthorizationdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
-| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md), [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
-| [`ABAPUserDetails_CL`](../tables/abapuserdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) 🔶 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+| [`ABAPAuthorizationDetails`](../tables/abapauthorizationdetails.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPAuthorizationDetails_CL`](../tables/abapauthorizationdetails-cl.md) 🔶 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+| [`ABAPChangeDocsLog`](../tables/abapchangedocslog.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) 🔶 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+| [`ABAPUserDetails`](../tables/abapuserdetails.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPUserDetails_CL`](../tables/abapuserdetails-cl.md) 🔶 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

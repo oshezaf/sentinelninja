@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://markolauren.github.io/M365AuditGeneralAndDLPSolution/](https://markolauren.github.io/M365AuditGeneralAndDLPSolution/) |
 | **Categories** | Cloud Provider |
+| **Source Vendor** | Marko Lauren *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Marko Lauren - M365AuditGeneralAndDLPSolution@outlook.com |
 | **First Published** | 2026-01-08 |

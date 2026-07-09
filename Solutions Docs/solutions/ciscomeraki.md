@@ -16,6 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
+| **Source Vendor** | Cisco *(basis: publisher)* |
 | **Version** | 3.0.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-08 |

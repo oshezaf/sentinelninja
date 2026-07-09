@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Source Vendor** | Amazon *(basis: projected)* |
 
 ## Contents
 

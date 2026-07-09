@@ -18,8 +18,8 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **125** |
-| Active | 73 |
+| Total Connectors | **126** |
+| Active | 74 |
 | Deprecated 🚫 | 28 |
 | Unpublished ⚠️ | 40 |
 
@@ -28,8 +28,8 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Collection Method | Count |
 |:-----------------|------:|
 | [Azure Function](../methods/azure-function.md) | 74 |
-| [REST Pull API](../methods/rest-pull-api.md) | 51 |
-| **Total** | **125** |
+| [REST Pull API](../methods/rest-pull-api.md) | 52 |
+| **Total** | **126** |
 
 ## Connectors Using This API
 
@@ -89,6 +89,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 4 | [SAP](../solutions/sap.md) |
 | [MuleSoft Cloudhub](../connectors/mulesoft.md) 🔶 | [Azure Function](../methods/azure-function.md) | MuleSoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |

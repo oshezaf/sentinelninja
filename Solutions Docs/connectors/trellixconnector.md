@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TrellixConnector` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Used in Solutions** | [Trellix](../solutions/trellix.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Trellix_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_DataConnectorDefinition.json) |

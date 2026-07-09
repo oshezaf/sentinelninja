@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cyble.com/talk-to-sales/](https://cyble.com/talk-to-sales/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Cyble *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | Cyble Inc |
 | **First Published** | 2025-05-05 |

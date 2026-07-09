@@ -14,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Workday |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-02-15 |

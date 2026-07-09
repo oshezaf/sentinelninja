@@ -12,6 +12,9 @@
 |:----------|:------|
 | **Connector ID** | `SecurityBridge` |
 | **Publisher** | SecurityBridge Group GmbH |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | SecurityBridge *(basis: override)* |
+| **Collector Product** | SecurityBridge Platform |
 | **Used in Solutions** | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SecurityBridge_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Data%20Connectors/SecurityBridge_PUSH_CCP/SecurityBridge_connectorDefinition.json) |

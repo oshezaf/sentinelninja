@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://transmitsecurity.com/support](https://transmitsecurity.com/support) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | TransmitSecurity *(basis: publisher)* |
 | **Version** | 3.0.2 |
 | **Author** | Transmit Security |
 | **First Published** | 2024-06-10 |

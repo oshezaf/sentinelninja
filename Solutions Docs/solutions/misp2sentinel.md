@@ -14,6 +14,7 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/cudeso/misp2sentinel](https://github.com/cudeso/misp2sentinel) |
 | **Categories** | Security - Threat Intelligence,Security - Threat Protection,Aeronautics,Education,Finance,Healthcare,Manufacturing,Retail |
+| **Source Vendor** | MISP project & cudeso.be *(basis: publisher)* |
 | **Version** | 3.1.0 |
 | **Author** | MISP project & cudeso.be - info@cudeso.be |
 | **First Published** | 2023-07-29 |

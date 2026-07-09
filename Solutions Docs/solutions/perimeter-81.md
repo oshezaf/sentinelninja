@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.perimeter81.com/docs](https://support.perimeter81.com/docs) |
 | **Categories** | Security - Network |
+| **Source Vendor** | Perimeter 81 *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | Perimeter 81 |
 | **First Published** | 2022-05-06 |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CortexXDRIncidents` |
 | **Publisher** | DEFEND Ltd. |
+| **Source Vendor** | DEFEND *(basis: publisher)* |
 | **Used in Solutions** | [Cortex XDR](../solutions/cortex-xdr.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CortexXDR_DataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR/Data%20Connectors/CortexXDR_DataConnector.json) |

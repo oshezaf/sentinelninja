@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `PaloAltoCDLAma` |
 | **Publisher** | Palo Alto Networks |
+| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Source Product** | LF |
 | **Used in Solutions** | [PaloAltoCDL](../solutions/paloaltocdl.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_PaloAlto_CDLAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoCDL/Data%20Connectors/template_PaloAlto_CDLAMA.json) |

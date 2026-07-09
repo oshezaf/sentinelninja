@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AWS` |
 | **Publisher** | Amazon |
+| **Source Vendor** | Amazon *(basis: publisher)* |
 | **Used in Solutions** | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_AWS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services/Data%20Connectors/template_AWS.json) |

@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `Claroty` |
 | **Publisher** | Claroty |
+| **Source Vendor** | Claroty *(basis: publisher)* |
 | **Used in Solutions** | [Claroty](../solutions/claroty.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Claroty_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Data%20Connectors/Connector_Claroty_CEF.json) |

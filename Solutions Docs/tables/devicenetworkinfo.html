@@ -35,6 +35,10 @@
   <td style="text-align:left">MDE</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Vendor</strong></td>
+  <td style="text-align:left">Microsoft <em>(basis: projected)</em></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -189,12 +193,11 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkinfo">DeviceNetworkInfo Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (3)</h2>
+<h2 id="solutions">Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -213,107 +216,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (20)</h2>
-<h3 id="analytic-rules">Analytic Rules (1)</h3>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.html">RDP Nesting</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (15)</h3>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-mde-deviceinventory-lastuserloggedin-39226090-3c73-407f-bef8-9a09f98fc668-613b4c17.html">MDE_DeviceInventory-LastUserLoggedIn</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-potential-rootkit-network-activity-missing-from-mde-564bf64a-bada-4c6b-8821-53138d660f78-09fce37b.html">Potential rootkit network activity missing from MDE</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-alert-events-from-internal-ip-address-f936ddfa-58e3-4db1-834b-fb50e8bd55c5-0c346d92.html">Alert Events from Internal IP Address</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-connectednetworkdevicediscovery-c7813a5c-ef11-4ee9-8feb-731402f31259-5481412c.html">ConnectedNetworkDeviceDiscovery</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-62ddb799.html">Device Logons from Unknown IPs</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-devices-in-subnet-ipaddressv4-7f4a9010-4948-4e0c-b668-7a2f603c7dc8-a32cecb4.html">Devices In Subnet - IPAddressV4</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-devices-in-subnet-ipaddressv6-008f87b5-5b80-4487-9612-80032d931a69-3641f437.html">Devices In Subnet - IPAddressV6</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-machine-info-from-ip-address-34a7334e-7bc0-4e3f-abc5-469ac7e29be7-44505e2c.html">Machine info from IP address</a></td>
-  <td style="text-align:left"><code>ConnectedNetworks contains &quot;corp.contoso.com&quot;</code><br><code>DefaultGateways contains &quot;\&quot;</code><br><code>IPv4Dhcp == &quot;10.164.3.12&quot;</code><br><code>NetworkAdapterStatus == &quot;Up&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-machine-info-from-ip-address-1-49cf658e-f446-476e-a7da-30909caaa3e3-db8ff898.html">Machine info from IP address (1)</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-machine-info-from-ip-address-3-e10dd84f-e4d6-4b21-a9da-816699de0ba8-0cc85c2d.html">Machine info from IP address (3)</a></td>
-  <td style="text-align:left"><code>NetworkAdapterStatus == &quot;Up&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-network-info-of-machine-86fb56b4-3a10-443b-8345-d00a45046d15-7a7ced1d.html">Network info of machine</a></td>
-  <td style="text-align:left"><code>NetworkAdapterStatus == &quot;Up&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-seen-connected-networks-cd1492a0-7e53-4615-9e63-f930576a3f6b-f083ca4f.html">Seen Connected Networks</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-seen-ipv4-network-subnets-919047fa-f646-469a-bfeb-69a0dcbf44c0-0fa1d029.html">Seen IPv4 Network Subnets</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-seen-ipv6-network-subnets-dab99d96-b53d-438f-9826-fd0934e8578c-4cf6873a.html">Seen IPv6 Network Subnets</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (4)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
+<h3 id="workbooks">Workbooks (2)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
@@ -344,25 +248,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
 <h3 id="other-parsers">Other Parsers (2)</h3>
 <table>
@@ -383,138 +268,6 @@
   <td style="text-align:left"><a href="../parsers/devicefromip.html">Devicefromip</a></td>
   <td style="text-align:left"><a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a></td>
   <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 3 total references)</h2>
-<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>NetworkAdapterStatus == &quot;Up&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ConnectedNetworks contains &quot;corp.contoso.com&quot;</code><br><code>DefaultGateways contains &quot;\&quot;</code><br><code>IPv4Dhcp == &quot;10.164.3.12&quot;</code><br><code>NetworkAdapterStatus == &quot;Up&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>3</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="connectednetworks">ConnectedNetworks</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>contains corp.contoso.com</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="defaultgateways">DefaultGateways</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>contains \</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="ipv4dhcp">IPv4Dhcp</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>10.164.3.12</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="networkadapterstatus">NetworkAdapterStatus</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>Up</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>

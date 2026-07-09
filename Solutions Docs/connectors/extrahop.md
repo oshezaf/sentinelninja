@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ExtraHop` |
 | **Publisher** | ExtraHop |
+| **Source Vendor** | ExtraHop *(basis: publisher)* |
 | **Used in Solutions** | [ExtraHop](../solutions/extrahop.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ExtraHop_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop/Data%20Connectors/ExtraHopDataConnector/ExtraHop_FunctionApp.json) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Abnormal Security *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | AbnormalSecurity - support@abnormalsecurity.com |
 | **First Published** | 2021-10-20 |

@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.oneidentity.com/](https://support.oneidentity.com/) |
 | **Categories** | Security - Others |
+| **Source Vendor** | One Identity *(basis: event)* |
+| **Source Product** | SPS |
 | **Version** | 2.0.1 |
 | **Author** | One Identity |
 | **First Published** | 2022-05-02 |

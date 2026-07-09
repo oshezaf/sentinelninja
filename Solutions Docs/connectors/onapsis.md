@@ -12,6 +12,9 @@
 |:----------|:------|
 | **Connector ID** | `Onapsis` |
 | **Publisher** | Onapsis Platform |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | Onapsis *(basis: override)* |
+| **Collector Product** | Onapsis Defend |
 | **Used in Solutions** | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Onapsis.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis.json) |

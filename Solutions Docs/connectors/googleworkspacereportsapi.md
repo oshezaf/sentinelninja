@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `GoogleWorkspaceReportsAPI` |
 | **Publisher** | Google |
+| **Source Vendor** | Google *(basis: publisher)* |
 | **Used in Solutions** | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GWorkspaceReports_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports/Data%20Connectors/GWorkspaceReports_API_FunctionApp.json) |

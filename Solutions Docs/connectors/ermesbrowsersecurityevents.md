@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ErmesBrowserSecurityEvents` |
 | **Publisher** | Ermes Cyber Security S.p.A. |
+| **Source Vendor** | Ermes Cyber Security S.p.A. *(basis: publisher)* |
 | **Used in Solutions** | [Ermes Browser Security](../solutions/ermes-browser-security.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ErmesBrowserSecurityEvents_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security/Data%20Connectors/ErmesBrowserSecurityEvents_CCF/ErmesBrowserSecurityEvents_ConnectorDefinition.json) |

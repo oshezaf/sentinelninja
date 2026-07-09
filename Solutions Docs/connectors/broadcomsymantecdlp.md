@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `BroadcomSymantecDLP` |
 | **Publisher** | Broadcom |
+| **Source Vendor** | Symantec *(basis: event)* |
+| **Source Product** | DLP |
 | **Used in Solutions** | [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_SymantecDLP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Broadcom%20SymantecDLP/Data%20Connectors/Connector_Syslog_SymantecDLP.json) |

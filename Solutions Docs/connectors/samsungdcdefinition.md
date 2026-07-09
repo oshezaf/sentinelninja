@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SamsungDCDefinition` |
 | **Publisher** | Samsung |
+| **Source Vendor** | Samsung *(basis: publisher)* |
 | **Used in Solutions** | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Template_Samsung.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence/Data%20Connectors/Template_Samsung.json) |

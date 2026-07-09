@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TaniumConnector` |
 | **Publisher** | Tanium Inc. |
+| **Source Vendor** | Tanium *(basis: publisher)* |
 | **Used in Solutions** | [Tanium](../solutions/tanium.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Data%20Connectors/ConnectorDefinition.json) |

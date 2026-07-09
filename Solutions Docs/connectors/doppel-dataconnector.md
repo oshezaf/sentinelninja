@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Doppel_DataConnector` |
 | **Publisher** | Doppel |
+| **Source Vendor** | Doppel *(basis: publisher)* |
 | **Used in Solutions** | [Doppel](../solutions/doppel.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Template_Doppel.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel/Data%20Connectors/Template_Doppel.json) |

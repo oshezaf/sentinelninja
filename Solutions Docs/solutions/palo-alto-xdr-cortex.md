@@ -12,6 +12,8 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
+| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Source Product** | Cortex XDR |
 | **Solution Folder** | [Palo Alto - XDR (Cortex)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29) |
 
 ## Contents

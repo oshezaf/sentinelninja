@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.prancer.io](https://www.prancer.io) |
 | **Categories** | Security - Threat Protection,DevOps |
+| **Source Vendor** | Prancer *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Prancer |
 | **First Published** | 2023-08-02 |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.halcyon.ai](https://www.halcyon.ai) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Halcyon *(basis: publisher)* |
 | **Version** | 3.1.0 |
 | **Author** | Halcyon - support@halcyon.ai |
 | **First Published** | 2025-12-22 |

@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | Akamai *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

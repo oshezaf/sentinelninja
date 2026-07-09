@@ -8,6 +8,8 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | SAP *(basis: override)* |
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -34,7 +36,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) |  |
+| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) |  |
 
 ---
 

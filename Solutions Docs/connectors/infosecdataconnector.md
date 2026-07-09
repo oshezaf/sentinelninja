@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `InfoSecDataConnector` |
 | **Publisher** | InfoSecGlobal |
+| **Source Vendor** | InfoSecGlobal *(basis: publisher)* |
 | **Used in Solutions** | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_Analytics_InfoSec.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector/Data%20Connectors/Connector_Analytics_InfoSec.json) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.rubrik.com](https://support.rubrik.com) |
 | **Categories** | Security - Others |
+| **Source Vendor** | Rubrik *(basis: publisher)* |
 | **Version** | 3.5.2 |
 | **Author** | Ben Meadowcroft - ben.meadowcroft@rubrik.com |
 | **First Published** | 2022-07-19 |

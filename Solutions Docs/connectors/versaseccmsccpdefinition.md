@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VersasecCmsCCPDefinition` |
 | **Publisher** | Versasec AB |
+| **Source Vendor** | Versasec *(basis: publisher)* |
 | **Used in Solutions** | [VersasecCMS](../solutions/versaseccms.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [VersasecCMS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_ConnectorDefinition.json) |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MongoDBAtlasLogsAzureFunctions` |
 | **Publisher** | MongoDB |
+| **Source Vendor** | MongoDB *(basis: publisher)* |
 | **Used in Solutions** | [MongoDBAtlas](../solutions/mongodbatlas.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [MongoDBAtlasLogs_AzureFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas/Data%20Connectors/MongoDBAtlasLogs/MongoDBAtlasLogs_AzureFunction.json) |

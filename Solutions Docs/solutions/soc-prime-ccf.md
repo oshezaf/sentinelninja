@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://socprime.com/](https://socprime.com/) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
 | **Version** | 3.0.1 |
 | **Author** | SOC Prime - support@socprime.com |
 | **First Published** | 2025-09-25 |

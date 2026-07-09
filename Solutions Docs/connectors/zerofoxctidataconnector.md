@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ZeroFoxCTIDataConnector` |
 | **Publisher** | ZeroFox |
+| **Source Vendor** | ZeroFox *(basis: publisher)* |
 | **Used in Solutions** | [ZeroFox](../solutions/zerofox.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ZeroFoxCTI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/CTI/ZeroFoxCTI.json) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.illumio.com/support/support](https://www.illumio.com/support/support) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | Illumio *(basis: publisher)* |
 | **Version** | 3.3.3 |
 | **Author** | Microsoft |
 | **First Published** | 2025-08-10 |

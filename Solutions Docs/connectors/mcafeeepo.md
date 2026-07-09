@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `McAfeeePO` |
 | **Publisher** | McAfee |
+| **Source Vendor** | McAfee *(basis: publisher)* |
 | **Used in Solutions** | [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_McAfee_ePO.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20ePolicy%20Orchestrator/Data%20Connectors/Connector_McAfee_ePO.json) |

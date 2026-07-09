@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AtlassianBeaconAlerts` |
 | **Publisher** | DEFEND Ltd. |
+| **Source Vendor** | DEFEND *(basis: publisher)* |
 | **Used in Solutions** | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [AtlassianBeacon_DataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon/Data%20Connectors/AtlassianBeacon_DataConnector.json) |

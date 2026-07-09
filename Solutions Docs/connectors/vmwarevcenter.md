@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `VMwarevCenter` |
 | **Publisher** | VMware |
+| **Source Vendor** | VMware *(basis: publisher)* |
 | **Used in Solutions** | [VMware vCenter](../solutions/vmware-vcenter.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_vcenter.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter/Data%20Connectors/Connector_Syslog_vcenter.json) |

@@ -11,6 +11,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Office 365 |
+| **Source Vendor** | Microsoft *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -182,7 +183,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [OfficeActivity Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity)
 
-## Solutions (26)
+## Solutions (25)
 
 This table is used by the following solutions:
 
@@ -205,7 +206,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Teams](../solutions/teams.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -225,9 +225,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (104)
+## Content Items Using This Table (78)
 
-### Analytic Rules (42)
+### Analytic Rules (33)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -322,21 +322,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Anomalous login followed by Teams action](../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.md) | `CommunicationType in "GroupChat,OneonOne"`<br>`Operation in "AppInstalled,BotAddedToTeam,MemberAdded,MemberRemoved,MemberRoleChanged,TeamsAdminAction"` |
-| [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md) | `Operation == "Add-MailboxPermission"`<br>`ResultStatus == "True"` |
-| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
-| [High risk Office operation conducted by IP Address that recently attempted to log into a disabled account](../content/standalone-content-high-risk-office-operation-conducted-by-ip-address-that-recently-attempted-to-log-int-9adbd1c3-a4be-44ef-ac2f-503fd25692ee-6176c458.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"` |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) | `OfficeWorkload == "AzureActiveDirectory"` |
-| [NRT Malicious Inbox Rule](../content/standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.md) | `OfficeWorkload == "Exchange"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` |
-| [NRT Multiple users email forwarded to same destination](../content/standalone-content-nrt-multiple-users-email-forwarded-to-same-destination-3b05727d-a8d1-477d-bbdd-d957da96ac7b-d149a49e.md) | `OfficeWorkload == "Exchange"`<br>`Parameters has_any "ForwardTo"` |
-
-### Hunting Queries (30)
+### Hunting Queries (26)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -389,21 +375,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-new-ti-map-file-entity-to-officeactivity-event-bbdb951c-9aba-4d66-85df-f564a1f86881-bfe1f81a.md) |  |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
-| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-**GitHub Only:** `Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"`
-
-| Hunting Query |
-|:-------------|
-| [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |
-
-### Workbooks (32)
+### Workbooks (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -504,24 +476,6 @@ This table is ingested by the following connectors:
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ExchangeOnline](../content/github-only-exchangeonline-663577e1.md) | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `Operation in "New-InboxRule,Set-Mailbox"` |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) | `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` |
-| [Office365](../content/github-only-office365-fa05d9ea.md) | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` |
-| [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) | `OfficeWorkload in "OneDrive,SharePoint"` |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (1) — Selection Criteria: `RecordType == "ExchangeAdmin"`
@@ -536,9 +490,9 @@ This table is ingested by the following connectors:
 |:-------|:---------|
 | [MESOfficeActivityLogs](../parsers/mesofficeactivitylogs.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 
-## Selection Criteria Summary (51 criteria, 65 total references)
+## Selection Criteria Summary (44 criteria, 58 total references)
 
-References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 55 content items, 1 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -564,12 +518,6 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "SharePoint"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileDownloaded"` | - | 1 | - | - | **1** |
-| `CommunicationType in "GroupChat,OneonOne"`<br>`Operation in "AppInstalled,BotAddedToTeam,MemberAdded,MemberRemoved,MemberRoleChanged,TeamsAdminAction"` | - | 1 | - | - | **1** |
-| `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"` | - | 1 | - | - | **1** |
-| `Operation == "Add-MailboxPermission"`<br>`ResultStatus == "True"` | - | 1 | - | - | **1** |
-| `OfficeWorkload == "AzureActiveDirectory"` | - | 1 | - | - | **1** |
-| `OfficeWorkload == "Exchange"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` | - | 1 | - | - | **1** |
-| `OfficeWorkload == "Exchange"`<br>`Parameters has_any "ForwardTo"` | - | 1 | - | - | **1** |
 | `Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` | - | 1 | - | - | **1** |
 | `OfficeObjectId has ".exe."`<br>`Operation in "FileAccessed,FileDownloaded"`<br>`RecordType == "SharePointFileOperation"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "MemberAdded,MemberRemoved"` | - | 1 | - | - | **1** |
@@ -583,7 +531,6 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `RecordType == "SharePointFileOperation"` | - | 1 | - | - | **1** |
 | `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`<br>`UserId != "app@sharepoint"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileUploaded,MemberAdded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
-| `Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | - | 1 | - | - | **1** |
 | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` | - | 1 | - | - | **1** |
@@ -593,7 +540,7 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `Operation in "New-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
 | `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"` | - | 1 | - | - | **1** |
 | `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
-| **Total** | **1** | **62** | **1** | **1** | **65** |
+| **Total** | **1** | **55** | **1** | **1** | **58** |
 
 ### ClientIP
 
@@ -612,8 +559,6 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `GroupChat` | - | 1 | - | - | **1** |
-| `OneonOne` | - | 1 | - | - | **1** |
 | `Team` | - | 1 | - | - | **1** |
 
 ### EventSource
@@ -644,13 +589,13 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Exchange` | 1 | 21 | - | - | **22** |
+| `Exchange` | 1 | 19 | - | - | **20** |
 | `MicrosoftTeams` | 1 | 14 | - | - | **15** |
 | `SharePoint` | 1 | 6 | - | - | **7** |
 | `has_any OneDrive` | - | 7 | - | - | **7** |
 | `OneDrive` | 1 | 3 | - | - | **4** |
 | `has_any SharePoint` | - | 4 | - | - | **4** |
-| `AzureActiveDirectory` | - | 4 | - | - | **4** |
+| `AzureActiveDirectory` | - | 3 | - | - | **3** |
 | `has_any Exchange` | - | 3 | - | - | **3** |
 | `SPO/OneDrive` | - | 1 | - | - | **1** |
 | `Teams` | - | 1 | - | - | **1** |
@@ -660,28 +605,26 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `FileUploaded` | - | 8 | - | - | **8** |
-| `New-InboxRule` | - | 7 | - | - | **7** |
-| `MemberAdded` | - | 7 | - | - | **7** |
-| `Set-Mailbox` | - | 6 | - | - | **6** |
+| `New-InboxRule` | - | 6 | - | - | **6** |
+| `MemberAdded` | - | 6 | - | - | **6** |
 | `FileDownloaded` | - | 6 | - | - | **6** |
-| `MemberRemoved` | - | 5 | - | - | **5** |
-| `Set-InboxRule` | - | 4 | - | - | **4** |
-| `Add-MailboxPermission` | - | 4 | - | - | **4** |
-| `MemberRoleChanged` | - | 4 | - | - | **4** |
+| `Set-Mailbox` | - | 5 | - | - | **5** |
+| `MemberRemoved` | - | 4 | - | - | **4** |
 | `MailboxLogin` | - | 4 | - | - | **4** |
 | `FileAccessed` | - | 3 | - | - | **3** |
 | `TeamDeleted` | - | 3 | - | - | **3** |
-| `BotAddedToTeam` | - | 3 | - | - | **3** |
+| `Set-InboxRule` | - | 3 | - | - | **3** |
+| `MemberRoleChanged` | - | 3 | - | - | **3** |
 | `MailItemsAccessed` | - | 2 | - | - | **2** |
-| `Add-MailboxFolderPermission` | - | 2 | - | - | **2** |
-| `New-ManagementRoleAssignment` | - | 2 | - | - | **2** |
-| `Set-TransportRule` | - | 2 | - | - | **2** |
+| `Add-MailboxPermission` | - | 2 | - | - | **2** |
 | `has_any FileDownloaded` | - | 2 | - | - | **2** |
-| `AppInstalled` | - | 2 | - | - | **2** |
-| `TeamsAdminAction` | - | 2 | - | - | **2** |
+| `BotAddedToTeam` | - | 2 | - | - | **2** |
 | `Set-AdminAuditLogConfig` | - | 1 | - | - | **1** |
 | `contains download` | - | 1 | - | - | **1** |
 | `contains upload` | - | 1 | - | - | **1** |
+| `Add-MailboxFolderPermission` | - | 1 | - | - | **1** |
+| `New-ManagementRoleAssignment` | - | 1 | - | - | **1** |
+| `Set-TransportRule` | - | 1 | - | - | **1** |
 | `Remove-MailboxPermission` | - | 1 | - | - | **1** |
 | `UpdateFolderPermissions` | - | 1 | - | - | **1** |
 | `contains HardDelete` | - | 1 | - | - | **1** |
@@ -701,6 +644,8 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `Remove-ConditionalAccessPolicy` | - | 1 | - | - | **1** |
 | `Set-ConditionalAccessPolicy` | - | 1 | - | - | **1** |
 | `SharingSet` | - | 1 | - | - | **1** |
+| `AppInstalled` | - | 1 | - | - | **1** |
+| `TeamsAdminAction` | - | 1 | - | - | **1** |
 | `contains Added` | - | 1 | - | - | **1** |
 | `contains Created` | - | 1 | - | - | **1** |
 | `contains Deleted` | - | 1 | - | - | **1** |
@@ -710,13 +655,13 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has Deleted Items` | - | 6 | - | - | **6** |
-| `has Junk Email` | - | 6 | - | - | **6** |
-| `contains ForwardTo` | - | 5 | - | - | **5** |
-| `has DeleteMessage` | - | 3 | - | - | **3** |
-| `has_any ForwardTo` | - | 3 | - | - | **3** |
-| `contains ForwardingSmtpAddress` | - | 3 | - | - | **3** |
-| `contains RedirectTo` | - | 2 | - | - | **2** |
+| `has Deleted Items` | - | 5 | - | - | **5** |
+| `has Junk Email` | - | 5 | - | - | **5** |
+| `contains ForwardTo` | - | 4 | - | - | **4** |
+| `has DeleteMessage` | - | 2 | - | - | **2** |
+| `has_any ForwardTo` | - | 2 | - | - | **2** |
+| `contains ForwardingSmtpAddress` | - | 2 | - | - | **2** |
+| `contains RedirectTo` | - | 1 | - | - | **1** |
 
 ### RecordType
 
@@ -731,7 +676,7 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Succeeded` | - | 3 | - | - | **3** |
-| `True` | - | 2 | - | - | **2** |
+| `True` | - | 1 | - | - | **1** |
 
 ### SourceRelativeUrl
 

@@ -16,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Automation (SOAR),Security - Network |
+| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Source Product** | PAN-OS |
 | **Version** | 3.0.9 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-09 |

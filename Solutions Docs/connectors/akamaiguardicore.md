@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `AkamaiGuardicore` |
 | **Publisher** | Akamai |
+| **Source Vendor** | Akamai *(basis: publisher)* |
 | **Used in Solutions** | [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AkamaiGuardicore_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_ConnectorDefinition.json) |

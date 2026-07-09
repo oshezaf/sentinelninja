@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `ZeroFoxDisruptionDefinition` |
 | **Publisher** | ZeroFox Enterprise |
+| **Source Vendor** | ZeroFox *(basis: publisher)* |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_Disruption_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Disruption/ZeroFoxThreatIntelligence_Disruption_ConnectorDefinition.json) |

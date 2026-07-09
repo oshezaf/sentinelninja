@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ContrastProtectAma` |
 | **Publisher** | Contrast Security |
+| **Source Vendor** | Contrast Security *(basis: event)* |
 | **Used in Solutions** | [Contrast Protect](../solutions/contrast-protect.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ContrastProtectAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect/Data%20Connectors/template_ContrastProtectAMA.json) |

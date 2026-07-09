@@ -16,6 +16,9 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://onapsis.com/support/](https://onapsis.com/support/) |
 | **Categories** | Security - Threat Protection,Identity,Application,Cloud Provider |
+| **Source Vendor** | SAP *(basis: override)* |
+| **Collector Vendor** | Onapsis *(basis: override)* |
+| **Collector Product** | Onapsis Defend |
 | **Version** | 3.0.0 |
 | **Author** | Onapsis |
 | **First Published** | 2025-07-17 |

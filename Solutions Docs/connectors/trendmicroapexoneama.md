@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `TrendMicroApexOneAma` |
 | **Publisher** | Trend Micro |
+| **Source Vendor** | Trend Micro *(basis: event)* |
+| **Source Product** | Apex Central |
 | **Used in Solutions** | [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_TrendMicro_ApexOneAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Apex%20One/Data%20Connectors/template_TrendMicro_ApexOneAMA.json) |

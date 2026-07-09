@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `IllumioCore` |
 | **Publisher** | Illumio |
+| **Source Vendor** | Illumio *(basis: publisher)* |
 | **Used in Solutions** | [Illumio Core](../solutions/illumio-core.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_IllumioCore_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core/Data%20Connectors/Connector_IllumioCore_CEF.json) |

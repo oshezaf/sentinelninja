@@ -16,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vectra.ai/support](https://www.vectra.ai/support) |
 | **Categories** | Security - Network,Security - Cloud Security |
+| **Source Vendor** | Vectra *(basis: event)* |
+| **Source Product** | X Series |
 | **Version** | 3.0.2 |
 | **Author** | Vectra AI |
 | **First Published** | 2022-05-24 |

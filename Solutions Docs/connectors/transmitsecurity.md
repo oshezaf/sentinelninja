@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TransmitSecurity` |
 | **Publisher** | TransmitSecurity |
+| **Source Vendor** | TransmitSecurity *(basis: publisher)* |
 | **Used in Solutions** | [TransmitSecurity](../solutions/transmitsecurity.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TransmitSecurity_API_FunctionApp.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity/Data%20Connectors/TransmitSecurity_API_FunctionApp.JSON) |

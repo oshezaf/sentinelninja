@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.extrahop.com/support/](https://www.extrahop.com/support/) |
 | **Categories** | Security - Threat Protection,Security - Cloud Security |
+| **Source Vendor** | ExtraHop *(basis: event)* |
 | **Version** | 3.0.1 |
 | **Author** | ExtraHop |
 | **First Published** | 2022-05-19 |

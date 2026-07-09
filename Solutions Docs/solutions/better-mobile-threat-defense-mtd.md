@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.better.mobi/about#contact-us](https://www.better.mobi/about#contact-us) |
 | **Categories** | Security - Threat Protection |
+| **Source Vendor** | BETTER Mobile *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | Better Mobile Security Inc |
 | **First Published** | 2022-05-02 |

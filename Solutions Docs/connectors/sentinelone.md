@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `SentinelOne` |
 | **Publisher** | SentinelOne |
+| **Source Vendor** | SentinelOne *(basis: publisher)* |
 | **Used in Solutions** | [SentinelOne](../solutions/sentinelone.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SentinelOne_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_API_FunctionApp.json) |

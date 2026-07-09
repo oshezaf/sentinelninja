@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.1password.com/](https://support.1password.com/) |
 | **Categories** | Security - Others,Identity |
+| **Source Vendor** | 1Password *(basis: publisher)* |
 | **Version** | 3.0.2 |
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |

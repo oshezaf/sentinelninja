@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CloudGuardCCPDefinition` |
 | **Publisher** | CheckPoint |
+| **Source Vendor** | Check Point *(basis: publisher)* |
 | **Used in Solutions** | [Check Point CloudGuard CNAPP](../solutions/check-point-cloudguard-cnapp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CloudGuard_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_DataConnectorDefinition.json) |

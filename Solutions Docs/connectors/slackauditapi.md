@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `SlackAuditAPI` |
 | **Publisher** | Slack |
+| **Source Vendor** | Slack *(basis: publisher)* |
 | **Used in Solutions** | [SlackAudit](../solutions/slackaudit.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SlackAudit_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAudit_API_FunctionApp.json) |

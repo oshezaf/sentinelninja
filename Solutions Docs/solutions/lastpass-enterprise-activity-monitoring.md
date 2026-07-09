@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://thecollective.eu](https://thecollective.eu) |
 | **Categories** | Application |
+| **Source Vendor** | The Collective Consulting BV *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | Thijs Lecomte - thijs.lecomte@thecollective.eu |
 | **First Published** | 2021-10-20 |

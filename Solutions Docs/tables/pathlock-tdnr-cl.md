@@ -8,6 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Source Vendor** | SAP *(basis: projected)* |
+| **Collector Vendor** | Pathlock *(basis: projected)* |
+| **Collector Product** | Threat Detection and Response |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

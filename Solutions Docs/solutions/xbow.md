@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.xbow.com](https://docs.xbow.com) |
 | **Categories** | Security - Vulnerability Management |
+| **Source Vendor** | XBOW *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | XBOW - support@xbow.com |
 | **First Published** | 2026-03-04 |

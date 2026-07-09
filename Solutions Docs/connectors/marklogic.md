@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `MarkLogic` |
 | **Publisher** | MarkLogic |
+| **Source Vendor** | MarkLogic *(basis: publisher)* |
 | **Used in Solutions** | [MarkLogicAudit](../solutions/marklogicaudit.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_MarkLogicAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MarkLogicAudit/DataConnectors/Connector_MarkLogicAudit.json) |

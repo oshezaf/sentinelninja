@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AwsS3ServerAccessLogsDefinition` |
 | **Publisher** | Microsoft |
+| **Source Vendor** | Amazon *(basis: name_pattern)* |
 | **Used in Solutions** | [AWS_AccessLogs](../solutions/aws-accesslogs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSS3ServerAccessLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_AccessLogs/Data%20Connectors/AwsS3ServerAccessLogsDefinition_CCP/AWSS3ServerAccessLogs_ConnectorDefinition.json) |

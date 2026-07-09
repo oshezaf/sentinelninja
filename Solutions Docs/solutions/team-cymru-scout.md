@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [http://team-cymru.com](http://team-cymru.com) |
 | **Categories** | Security - Others,Security - Threat Intelligence,Security - Automation (SOAR) |
+| **Source Vendor** | Team Cymru Scout *(basis: publisher)* |
 | **Version** | 3.1.1 |
 | **Author** | Team Cymru - support@cymru.com |
 | **First Published** | 2024-07-16 |

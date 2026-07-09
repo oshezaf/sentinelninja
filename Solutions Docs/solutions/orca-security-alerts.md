@@ -14,6 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://orca.security/about/contact/](https://orca.security/about/contact/) |
 | **Categories** | Security - Threat Protection,Cloud Security |
+| **Source Vendor** | Orca Security *(basis: publisher)* |
 | **Version** | 2.0.1 |
 | **Author** | Orca Security |
 | **First Published** | 2022-05-10 |

@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `Agari` |
 | **Publisher** | Agari |
+| **Source Vendor** | Agari *(basis: publisher)* |
 | **Used in Solutions** | [Agari](../solutions/agari.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Agari_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_API_FunctionApp.json) |

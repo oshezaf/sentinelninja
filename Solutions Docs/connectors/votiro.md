@@ -16,6 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `Votiro` |
 | **Publisher** | Votiro |
+| **Source Vendor** | Votiro *(basis: event)* |
+| **Source Product** | Votiro cloud |
 | **Used in Solutions** | [Votiro](../solutions/votiro.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [VotiroEvents.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro/Data%20Connectors/VotiroEvents.json) |
