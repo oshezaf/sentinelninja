@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SymantecProxySG` |
-| **Publisher** | Symantec |
-| **Source Vendor** | Symantec *(basis: publisher)* |
+| **Publisher / Vendor** | Symantec |
 | **Used in Solutions** | [SymantecProxySG](../solutions/symantecproxysg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_SymantecProxySG.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SymantecProxySG/Data%20Connectors/Connector_Syslog_SymantecProxySG.json) |

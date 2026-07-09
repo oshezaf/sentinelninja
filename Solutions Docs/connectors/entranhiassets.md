@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `EntraNHIAssets` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [Agent 365](../solutions/agent-365.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [EntraNHIAssets_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agent%20365/Data%20Connectors/EntraNHIAssets_DataConnectorDefinition.json) |

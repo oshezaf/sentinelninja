@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | DEFEND *(basis: publisher)* |
+| **Source Vendor** | Palo Alto Networks, DEFEND *(basis: mixed)* |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2023-07-12 |

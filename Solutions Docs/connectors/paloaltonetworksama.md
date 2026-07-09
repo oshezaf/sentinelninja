@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PaloAltoNetworksAma` |
-| **Publisher** | Palo Alto Networks |
-| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Publisher / Vendor** | Palo Alto Networks |
 | **Source Product** | PAN-OS |
 | **Used in Solutions** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

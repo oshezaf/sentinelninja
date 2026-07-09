@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OneLogin` |
-| **Publisher** | OneLogin |
-| **Source Vendor** | OneLogin *(basis: publisher)* |
+| **Publisher / Vendor** | OneLogin |
 | **Used in Solutions** | [OneLoginIAM](../solutions/oneloginiam.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [OneLogin_Webhooks_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLogin_Webhooks_FunctionApp.json) |

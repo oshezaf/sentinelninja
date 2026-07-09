@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CloudflareDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | Cloudflare *(basis: description_url)* |
 | **Used in Solutions** | [Cloudflare](../solutions/cloudflare.md), [Cloudflare CCF](../solutions/cloudflare-ccf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CloudflareLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare/Data%20Connectors/CloudflareLog_CCF/CloudflareLog_ConnectorDefinition.json) |

@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `vArmourAC` |
-| **Publisher** | vArmour |
-| **Source Vendor** | vArmour *(basis: event)* |
+| **Publisher / Vendor** | vArmour |
 | **Source Product** | AC |
 | **Used in Solutions** | [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Theom` |
-| **Publisher** | Theom |
-| **Source Vendor** | Theom *(basis: publisher)* |
+| **Publisher / Vendor** | Theom |
 | **Used in Solutions** | [Theom](../solutions/theom.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Theom.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom/Data%20Connectors/Theom.json) |

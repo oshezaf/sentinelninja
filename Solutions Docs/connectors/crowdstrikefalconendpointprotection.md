@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CrowdStrikeFalconEndpointProtection` |
-| **Publisher** | CrowdStrike |
-| **Source Vendor** | CrowdStrike *(basis: event)* |
+| **Publisher / Vendor** | CrowdStrike |
 | **Source Product** | FalconHost |
 | **Used in Solutions** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

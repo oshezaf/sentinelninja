@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OfficeIRM` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_OfficeIRM.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement/Data%20Connectors/template_OfficeIRM.JSON) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `FortinetFortiWebAma` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | Fortinet *(basis: description_url)* |
 | **Used in Solutions** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_FortiwebAma.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Data%20Connectors/template_FortiwebAma.json) |

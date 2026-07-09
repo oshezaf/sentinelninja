@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SOCPrimeAuditLogsDataConnector` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SOCPrime_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF/Data%20Connectors/SOCPrime_ccp/SOCPrime_DataConnectorDefinition.json) |

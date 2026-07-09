@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PaloAltoNetworksCortex` |
-| **Publisher** | Palo Alto Networks |
-| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Publisher / Vendor** | Palo Alto Networks |
 | **Source Product** | Cortex XDR |
 | **Used in Solutions** | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `GitLab` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | GitLab *(basis: description_url)* |
 | **Used in Solutions** | [GitLab](../solutions/gitlab.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_GitLab.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab/Data%20Connectors/Connector_Syslog_GitLab.json) |

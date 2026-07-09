@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ForcepointCSG` |
-| **Publisher** | Forcepoint |
-| **Source Vendor** | Forcepoint *(basis: event)* |
+| **Publisher / Vendor** | Forcepoint |
 | **Source Product** | Email, Web |
 | **Used in Solutions** | [Forcepoint CSG](../solutions/forcepoint-csg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

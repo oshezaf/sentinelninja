@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TenableVM` |
-| **Publisher** | Tenable |
-| **Source Vendor** | Tenable *(basis: publisher)* |
+| **Publisher / Vendor** | Tenable |
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TenableVM.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableVM/TenableVM.json) |

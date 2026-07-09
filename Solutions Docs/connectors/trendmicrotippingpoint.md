@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TrendMicroTippingPoint` |
-| **Publisher** | Trend Micro |
-| **Source Vendor** | Trend Micro *(basis: publisher)* |
+| **Publisher / Vendor** | Trend Micro |
 | **Used in Solutions** | [Trend Micro TippingPoint](../solutions/trend-micro-tippingpoint.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TrendMicroTippingPoint.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20TippingPoint/Data%20Connectors/TrendMicroTippingPoint.json) |

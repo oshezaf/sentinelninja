@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoASA` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: event)* |
+| **Publisher / Vendor** | Cisco |
 | **Source Product** | ASA |
 | **Used in Solutions** | [CiscoASA](../solutions/ciscoasa.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

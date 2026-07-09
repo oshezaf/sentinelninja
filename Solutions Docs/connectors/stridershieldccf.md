@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `StriderShieldCCF` |
-| **Publisher** | NVISO |
-| **Source Vendor** | NVISO *(basis: publisher)* |
+| **Publisher / Vendor** | NVISO |
 | **Used in Solutions** | [Strider Shield](../solutions/strider-shield.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [StriderShield_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_ConnectorDefinition.json) |

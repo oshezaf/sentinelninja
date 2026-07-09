@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Datalake2SentinelConnector` |
-| **Publisher** | Orange Cyberdefense |
-| **Source Vendor** | Orange Cyberdefense *(basis: publisher)* |
+| **Publisher / Vendor** | Orange Cyberdefense |
 | **Used in Solutions** | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Datalake2SentinelConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel/Data%20Connectors/Datalake2SentinelConnector.json) |

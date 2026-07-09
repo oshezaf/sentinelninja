@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `LookoutAPI` |
-| **Publisher** | Lookout |
-| **Source Vendor** | Lookout *(basis: publisher)* |
+| **Publisher / Vendor** | Lookout |
 | **Used in Solutions** | [Lookout](../solutions/lookout.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Lookout_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/Lookout_API_FunctionApp.json) |

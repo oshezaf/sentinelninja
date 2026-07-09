@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Votiro` |
-| **Publisher** | Votiro |
-| **Source Vendor** | Votiro *(basis: event)* |
+| **Publisher / Vendor** | Votiro |
 | **Source Product** | Votiro cloud |
 | **Used in Solutions** | [Votiro](../solutions/votiro.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

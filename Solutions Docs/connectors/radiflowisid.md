@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `RadiflowIsid` |
-| **Publisher** | Radiflow |
-| **Source Vendor** | Radiflow *(basis: publisher)* |
+| **Publisher / Vendor** | Radiflow |
 | **Source Product** | iSID |
 | **Used in Solutions** | [Radiflow](../solutions/radiflow.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

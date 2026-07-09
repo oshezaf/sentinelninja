@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PaloAltoCDLAma` |
-| **Publisher** | Palo Alto Networks |
-| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Publisher / Vendor** | Palo Alto Networks |
 | **Source Product** | LF |
 | **Used in Solutions** | [PaloAltoCDL](../solutions/paloaltocdl.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

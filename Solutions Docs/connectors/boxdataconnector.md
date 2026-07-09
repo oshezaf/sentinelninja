@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BoxDataConnector` |
-| **Publisher** | Box |
-| **Source Vendor** | Box *(basis: publisher)* |
+| **Publisher / Vendor** | Box |
 | **Used in Solutions** | [Box](../solutions/box.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Box_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/Box_API_FunctionApp.json) |

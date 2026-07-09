@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BitwardenEventLogs` |
-| **Publisher** | Bitwarden Inc |
-| **Source Vendor** | Bitwarden *(basis: publisher)* |
+| **Publisher / Vendor** | Bitwarden Inc |
 | **Used in Solutions** | [Bitwarden](../solutions/bitwarden.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [definitions.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden/Data%20Connectors/BitwardenEventLogs/definitions.json) |

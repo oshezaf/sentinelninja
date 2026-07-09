@@ -8,7 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Imperva, Microsoft *(basis: projected)* |
+| **Source Vendor** | Imperva *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PrancerLogData` |
-| **Publisher** | Prancer |
-| **Source Vendor** | Prancer *(basis: publisher)* |
+| **Publisher / Vendor** | Prancer |
 | **Used in Solutions** | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [PrancerLogData.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration/Data%20Connectors/PrancerLogData.json) |

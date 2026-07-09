@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `FireEyeNX` |
-| **Publisher** | FireEye |
-| **Source Vendor** | FireEye *(basis: publisher)* |
+| **Publisher / Vendor** | FireEye |
 | **Used in Solutions** | [FireEye Network Security](../solutions/fireeye-network-security.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_FireEyeNX_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FireEye%20Network%20Security/Data%20Connectors/Connector_FireEyeNX_CEF.json) |

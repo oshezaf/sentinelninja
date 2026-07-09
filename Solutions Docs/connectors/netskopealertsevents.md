@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `NetskopeAlertsEvents` |
-| **Publisher** | Netskope |
-| **Source Vendor** | Netskope *(basis: publisher)* |
+| **Publisher / Vendor** | Netskope |
 | **Used in Solutions** | [Netskopev2](../solutions/netskopev2.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [NetskopeAlertsEvents_ConnectorDefination.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefination.json) |

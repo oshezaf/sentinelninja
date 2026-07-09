@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TenableIE` |
-| **Publisher** | Tenable |
-| **Source Vendor** | Tenable *(basis: publisher)* |
+| **Publisher / Vendor** | Tenable |
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TenableIE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json) |
@@ -26,8 +25,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | ? | ✓ | ? |
 | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | ✓ | ✓ | ✓ |
-| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

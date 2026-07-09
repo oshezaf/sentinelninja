@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TropicoAlertsDefinition` |
-| **Publisher** | Tropico Security |
-| **Source Vendor** | Tropico Security *(basis: publisher)* |
+| **Publisher / Vendor** | Tropico Security |
 | **Used in Solutions** | [Tropico](../solutions/tropico.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [TropicoAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoAlerts_CCF/TropicoAlerts_ConnectorDefinition.json) |

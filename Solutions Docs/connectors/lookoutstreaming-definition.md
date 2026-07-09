@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `LookoutStreaming_Definition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | Lookout *(basis: description_url)* |
 | **Used in Solutions** | [Lookout](../solutions/lookout.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [LookoutStreaming_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DataConnectorDefinition.json) |

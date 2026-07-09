@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ISCBind` |
-| **Publisher** | ISC |
-| **Source Vendor** | ISC *(basis: publisher)* |
+| **Publisher / Vendor** | ISC |
 | **Used in Solutions** | [ISC Bind](../solutions/isc-bind.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_ISCBind.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ISC%20Bind/Data%20Connectors/Connector_Syslog_ISCBind.json) |

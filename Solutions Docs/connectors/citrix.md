@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Citrix` |
-| **Publisher** | CITRIX |
-| **Source Vendor** | Citrix *(basis: publisher)* |
+| **Publisher / Vendor** | CITRIX |
 | **Used in Solutions** | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [CitrixSecurityAnalytics.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security/Data%20Connectors/CitrixSecurityAnalytics.json) |

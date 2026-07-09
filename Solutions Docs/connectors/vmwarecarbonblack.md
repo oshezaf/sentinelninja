@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `VMwareCarbonBlack` |
-| **Publisher** | VMware |
-| **Source Vendor** | VMware *(basis: publisher)* |
+| **Publisher / Vendor** | VMware |
 | **Used in Solutions** | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VMwareCarbonBlack_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlack_API_FunctionApp.json) |

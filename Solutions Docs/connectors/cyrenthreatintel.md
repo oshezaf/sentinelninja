@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CyrenThreatIntel` |
-| **Publisher** | Cyren |
-| **Source Vendor** | Cyren *(basis: publisher)* |
+| **Publisher / Vendor** | Cyren |
 | **Used in Solutions** | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Cyren_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_ConnectorDefinition.json) |

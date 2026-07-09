@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PaloAltoNetworks` |
-| **Publisher** | Palo Alto Networks |
-| **Source Vendor** | Palo Alto Networks *(basis: event)* |
+| **Publisher / Vendor** | Palo Alto Networks |
 | **Used in Solutions** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [PaloAltoNetworks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Data%20Connectors/PaloAltoNetworks.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ArubaClearPassAma` |
-| **Publisher** | Aruba Networks |
-| **Source Vendor** | Aruba Networks *(basis: event)* |
+| **Publisher / Vendor** | Aruba Networks |
 | **Source Product** | ClearPass |
 | **Used in Solutions** | [Aruba ClearPass](../solutions/aruba-clearpass.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

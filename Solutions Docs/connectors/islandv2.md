@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IslandV2` |
-| **Publisher** | Island |
-| **Source Vendor** | Island *(basis: publisher)* |
+| **Publisher / Vendor** | Island |
 | **Used in Solutions** | [Island](../solutions/island.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IslandV2_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandV2_CCP/IslandV2_connectorDefinition.json) |

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OneIdentity` |
-| **Publisher** | One Identity LLC. |
-| **Source Vendor** | One Identity *(basis: event)* |
+| **Publisher / Vendor** | One Identity LLC. |
 | **Source Product** | SPS |
 | **Used in Solutions** | [OneIdentity](../solutions/oneidentity.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

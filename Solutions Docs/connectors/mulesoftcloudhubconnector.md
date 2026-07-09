@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MulesoftCloudhubConnector` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | MuleSoft *(basis: title)* |
 | **Used in Solutions** | [Mulesoft](../solutions/mulesoft.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MuleSoftCloudHubAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MuleSoftCloudHubAlerts_ConnectorDefinition.json) |

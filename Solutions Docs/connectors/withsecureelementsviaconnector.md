@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WithSecureElementsViaConnector` |
-| **Publisher** | WithSecure |
-| **Source Vendor** | WithSecure *(basis: event)* |
+| **Publisher / Vendor** | WithSecure |
 | **Used in Solutions** | [WithSecureElementsViaConnector](../solutions/withsecureelementsviaconnector.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [WithSecureElementsViaConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector/Data%20Connectors/WithSecureElementsViaConnector.json) |

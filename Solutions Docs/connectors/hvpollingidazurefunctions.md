@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `HVPollingIDAzureFunctions` |
-| **Publisher** | CTM360 |
-| **Source Vendor** | CTM360 *(basis: publisher)* |
+| **Publisher / Vendor** | CTM360 |
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CTM360_HV_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/HackerView/CTM360_HV_API_FunctionApp.json) |

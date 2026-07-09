@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Perimeter81ActivityLogs` |
-| **Publisher** | Perimeter 81 |
-| **Source Vendor** | Perimeter 81 *(basis: publisher)* |
+| **Publisher / Vendor** | Perimeter 81 |
 | **Used in Solutions** | [Perimeter 81](../solutions/perimeter-81.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Perimeter81ActivityLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081/Data%20Connectors/Perimeter81ActivityLogs.json) |

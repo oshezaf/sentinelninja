@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `RSASecurIDAM` |
-| **Publisher** | RSA |
-| **Source Vendor** | RSA *(basis: publisher)* |
+| **Publisher / Vendor** | RSA |
 | **Used in Solutions** | [RSA SecurID](../solutions/rsa-securid.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [RSASecurID.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSA%20SecurID/Data%20Connectors/RSASecurID.json) |

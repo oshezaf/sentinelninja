@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ESETProtectPlatform` |
-| **Publisher** | ESET |
-| **Source Vendor** | ESET *(basis: publisher)* |
+| **Publisher / Vendor** | ESET |
 | **Used in Solutions** | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ESETProtectPlatform_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors/ESETProtectPlatform_API_FunctionApp.json) |

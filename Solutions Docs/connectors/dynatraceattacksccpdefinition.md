@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DynatraceAttacksCCPDefinition` |
-| **Publisher** | Dynatrace |
-| **Source Vendor** | Dynatrace *(basis: publisher)* |
+| **Publisher / Vendor** | Dynatrace |
 | **Used in Solutions** | [Dynatrace](../solutions/dynatrace.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Connector_Dynatrace_Attacks_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceAttacksV2/Connector_Dynatrace_Attacks_Definition.json) |

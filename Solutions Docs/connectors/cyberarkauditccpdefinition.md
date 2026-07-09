@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyberArkAuditCCPDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | CyberArk *(basis: description_url)* |
 | **Used in Solutions** | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberArkAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_DataConnectorDefinition.json) |

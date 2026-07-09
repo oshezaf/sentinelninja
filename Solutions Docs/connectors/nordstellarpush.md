@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `NordStellarPush` |
-| **Publisher** | Nord Security Inc. |
-| **Source Vendor** | Nord Security *(basis: publisher)* |
+| **Publisher / Vendor** | Nord Security Inc. |
 | **Used in Solutions** | [NordStellar](../solutions/nordstellar.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/connectorDefinition.json) |

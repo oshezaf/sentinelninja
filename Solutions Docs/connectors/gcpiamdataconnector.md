@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `GCPIAMDataConnector` |
-| **Publisher** | Google |
-| **Source Vendor** | Google *(basis: publisher)* |
+| **Publisher / Vendor** | Google |
 | **Used in Solutions** | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GCP_IAM_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Data%20Connectors/GCP_IAM_API_FunctionApp.json) |

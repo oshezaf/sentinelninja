@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CTM360HackerViewConnectorDefinition` |
-| **Publisher** | CTM360 |
-| **Source Vendor** | CTM360 *(basis: publisher)* |
+| **Publisher / Vendor** | CTM360 |
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CTM360_HV_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_ConnectorDefinition.json) |

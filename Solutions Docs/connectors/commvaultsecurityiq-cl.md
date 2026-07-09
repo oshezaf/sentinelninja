@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CommvaultSecurityIQ_CL` |
-| **Publisher** | Commvault |
-| **Source Vendor** | Commvault *(basis: publisher)* |
+| **Publisher / Vendor** | Commvault |
 | **Used in Solutions** | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CommvaultSecurityIQ_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/Data%20Connectors/CommvaultSecurityIQ_API_AzureFunctionApp.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `GoogleSCCDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | Google *(basis: title)* |
 | **Used in Solutions** | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [GCPSecurityCommandCenter.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Security%20Command%20Center/Data%20Connectors/GCPSecurityCommandCenter.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Exabeam` |
-| **Publisher** | Exabeam |
-| **Source Vendor** | Exabeam *(basis: publisher)* |
+| **Publisher / Vendor** | Exabeam |
 | **Used in Solutions** | [Exabeam Advanced Analytics](../solutions/exabeam-advanced-analytics.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Exabeam_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Exabeam%20Advanced%20Analytics/Data%20Connectors/Connector_Exabeam_Syslog.json) |

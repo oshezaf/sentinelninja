@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `NGINXHTTPServer` |
-| **Publisher** | Nginx |
-| **Source Vendor** | Nginx *(basis: publisher)* |
+| **Publisher / Vendor** | Nginx |
 | **Used in Solutions** | [NGINX HTTP Server](../solutions/nginx-http-server.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_NGINX_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server/Data%20Connectors/Connector_NGINX_agent.json) |

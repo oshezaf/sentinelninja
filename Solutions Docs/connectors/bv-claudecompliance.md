@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BV-ClaudeCompliance` |
-| **Publisher** | BlueVoyant |
-| **Source Vendor** | BlueVoyant *(basis: publisher)* |
+| **Publisher / Vendor** | BlueVoyant |
 | **Used in Solutions** | [BlueVoyant Anthropic ClaudeCompliance](../solutions/bluevoyant-anthropic-claudecompliance.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [BlueVoyantAnthropicClaudeCompliance_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance/Data%20Connectors/BlueVoyantAnthropicClaudeCompliance_CCF/BlueVoyantAnthropicClaudeCompliance_ConnectorDefinition.json) |

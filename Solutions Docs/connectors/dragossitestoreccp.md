@@ -1,4 +1,4 @@
-#  Dragos Notifications via Cloud Sitestore
+# Dragos Notifications via Cloud Sitestore
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Dragos.svg" alt="" width="75" height="75">
 
@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DragosSitestoreCCP` |
-| **Publisher** | Dragos |
-| **Source Vendor** | Dragos *(basis: publisher)* |
+| **Publisher / Vendor** | Dragos |
 | **Used in Solutions** | [Dragos](../solutions/dragos.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [dragosSitestoreDataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dragosSitestoreDataConnectorDefinition.json) |

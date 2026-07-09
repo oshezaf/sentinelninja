@@ -11,7 +11,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
-| **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Vendor** | CrowdStrike *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

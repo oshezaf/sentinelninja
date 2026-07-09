@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ProofpointTAPv2` |
-| **Publisher** | Proofpoint |
-| **Source Vendor** | Proofpoint *(basis: publisher)* |
+| **Publisher / Vendor** | Proofpoint |
 | **Used in Solutions** | [ProofPointTap](../solutions/proofpointtap.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ProofpointTAP_defination.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_defination.json) |

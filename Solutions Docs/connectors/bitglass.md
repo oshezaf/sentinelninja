@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Bitglass` |
-| **Publisher** | Bitglass |
-| **Source Vendor** | Bitglass *(basis: publisher)* |
+| **Publisher / Vendor** | Bitglass |
 | **Used in Solutions** | [Bitglass](../solutions/bitglass.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Bitglass_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass/Data%20Connectors/Bitglass_API_FunctionApp.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoISE` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: publisher)* |
+| **Publisher / Vendor** | Cisco |
 | **Used in Solutions** | [Cisco ISE](../solutions/cisco-ise.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Cisco_ISE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Data%20Connectors/Connector_Cisco_ISE.json) |

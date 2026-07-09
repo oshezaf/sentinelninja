@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OktaSSO` |
-| **Publisher** | Okta |
-| **Source Vendor** | Okta *(basis: publisher)* |
+| **Publisher / Vendor** | Okta |
 | **Used in Solutions** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Connector_REST_API_FunctionApp_Okta.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaSingleSign-On/Connector_REST_API_FunctionApp_Okta.json) |

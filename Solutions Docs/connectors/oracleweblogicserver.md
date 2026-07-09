@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OracleWebLogicServer` |
-| **Publisher** | Oracle |
-| **Source Vendor** | Oracle *(basis: publisher)* |
+| **Publisher / Vendor** | Oracle |
 | **Used in Solutions** | [OracleWebLogicServer](../solutions/oracleweblogicserver.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_OracleWebLogicServer_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleWebLogicServer/Data%20Connectors/Connector_OracleWebLogicServer_agent.json) |

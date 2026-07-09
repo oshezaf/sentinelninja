@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ImpervaWAFGateway` |
-| **Publisher** | Imperva |
-| **Source Vendor** | Imperva *(basis: event)* |
+| **Publisher / Vendor** | Imperva |
 | **Source Product** | WAF Gateway |
 | **Used in Solutions** | [Imperva WAF Gateway](../solutions/imperva-waf-gateway.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

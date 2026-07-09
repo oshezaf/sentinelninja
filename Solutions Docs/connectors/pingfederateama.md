@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PingFederateAma` |
-| **Publisher** | Ping Identity |
-| **Source Vendor** | Ping Identity *(basis: publisher)* |
+| **Publisher / Vendor** | Ping Identity |
 | **Used in Solutions** | [PingFederate](../solutions/pingfederate.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_PingFederateAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingFederate/Data%20Connectors/template_PingFederateAMA.json) |

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ASimDnsActivityLogs` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: event)* |
+| **Publisher / Vendor** | Microsoft |
 | **Source Product** | DNS Server |
 | **Used in Solutions** | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

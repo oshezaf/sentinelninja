@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IPinfoWHOISMNTDataConnector` |
-| **Publisher** | IPinfo |
-| **Source Vendor** | IPinfo *(basis: publisher)* |
+| **Publisher / Vendor** | IPinfo |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_WHOIS_MNT_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/WHOIS%20MNT/IPinfo_WHOIS_MNT_API_AzureFunctionApp.json) |

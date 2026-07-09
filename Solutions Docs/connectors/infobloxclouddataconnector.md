@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `InfobloxCloudDataConnector` |
-| **Publisher** | Infoblox |
-| **Source Vendor** | Infoblox *(basis: event)* |
+| **Publisher / Vendor** | Infoblox |
 | **Source Product** | Data Connector |
 | **Used in Solutions** | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

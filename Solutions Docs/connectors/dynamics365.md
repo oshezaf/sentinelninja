@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Dynamics365` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [Dynamics 365](../solutions/dynamics-365.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_Dynamics365.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynamics%20365/Data%20Connectors/template_Dynamics365.json) |

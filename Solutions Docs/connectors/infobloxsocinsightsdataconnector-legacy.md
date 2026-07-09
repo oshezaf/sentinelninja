@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `InfobloxSOCInsightsDataConnector_Legacy` |
-| **Publisher** | Infoblox |
-| **Source Vendor** | Infoblox *(basis: event)* |
+| **Publisher / Vendor** | Infoblox |
 | **Source Product** | Data Connector |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md), [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

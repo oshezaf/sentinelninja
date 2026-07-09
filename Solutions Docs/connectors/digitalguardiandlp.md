@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DigitalGuardianDLP` |
-| **Publisher** | Digital Guardian |
-| **Source Vendor** | Digital Guardian *(basis: publisher)* |
+| **Publisher / Vendor** | Digital Guardian |
 | **Used in Solutions** | [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_DigitalGuardian_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention/Data%20Connectors/Connector_DigitalGuardian_Syslog.json) |

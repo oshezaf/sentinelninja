@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TeamCymruScout` |
-| **Publisher** | Team Cymru Scout |
-| **Source Vendor** | Team Cymru Scout *(basis: publisher)* |
+| **Publisher / Vendor** | Team Cymru Scout |
 | **Used in Solutions** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TeamCymruScout_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Data%20Connectors/TeamCymruScout/TeamCymruScout_API_FunctionApp.json) |

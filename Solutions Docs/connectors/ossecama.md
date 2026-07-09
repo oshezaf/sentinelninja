@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OSSECAma` |
-| **Publisher** | OSSEC |
-| **Source Vendor** | OSSEC *(basis: event)* |
+| **Publisher / Vendor** | OSSEC |
 | **Used in Solutions** | [OSSEC](../solutions/ossec.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_OSSECAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC/Data%20Connectors/template_OSSECAMA.json) |

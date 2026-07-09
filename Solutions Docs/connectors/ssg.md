@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SSG` |
-| **Publisher** | Siemens AG |
-| **Source Vendor** | Siemens *(basis: publisher)* |
+| **Publisher / Vendor** | Siemens AG |
 | **Used in Solutions** | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [data_connector_GenericUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SINEC%20Security%20Guard/Data%20Connectors/data_connector_GenericUI.json) |

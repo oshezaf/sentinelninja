@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `GSDetectionAlerts` |
-| **Publisher** | Google |
-| **Source Vendor** | Google *(basis: publisher)* |
+| **Publisher / Vendor** | Google |
 | **Used in Solutions** | [GoogleSecOps](../solutions/googlesecops.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GoogleSecOpsDetectionAlerts_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleSecOps/Data%20Connectors/GoogleSecOpsDetectionAlerts/GoogleSecOpsDetectionAlerts_API_FunctionApp.json) |

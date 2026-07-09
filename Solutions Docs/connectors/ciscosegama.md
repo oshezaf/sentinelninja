@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoSEGAma` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: event)* |
+| **Publisher / Vendor** | Cisco |
 | **Source Product** | ESA_CONSOLIDATED_LOG_EVENT |
 | **Used in Solutions** | [CiscoSEG](../solutions/ciscoseg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

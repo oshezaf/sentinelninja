@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `MongoDB` |
-| **Publisher** | MongoDB |
-| **Source Vendor** | MongoDB *(basis: publisher)* |
+| **Publisher / Vendor** | MongoDB |
 | **Used in Solutions** | [MongoDBAudit](../solutions/mongodbaudit.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_MongoDBAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit/Data%20Connectors/Connector_MongoDBAudit.json) |

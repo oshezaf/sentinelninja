@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `VirtualMetricMSSentinelConnector` |
-| **Publisher** | VirtualMetric |
-| **Source Vendor** | VirtualMetric *(basis: publisher)* |
+| **Publisher / Vendor** | VirtualMetric |
 | **Used in Solutions** | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Template_Sentinel.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream/Data%20Connectors/VirtualMetric-Sentinel/Template_Sentinel.json) |

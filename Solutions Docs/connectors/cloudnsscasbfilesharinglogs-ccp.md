@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CloudNSSCASBFileSharingLogs_ccp` |
-| **Publisher** | Zscaler |
-| **Source Vendor** | Zscaler *(basis: publisher)* |
+| **Publisher / Vendor** | Zscaler |
 | **Source Product** | NSSCasbfilesharinglog |
 | **Used in Solutions** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |

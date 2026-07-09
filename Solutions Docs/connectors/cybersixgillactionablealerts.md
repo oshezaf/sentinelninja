@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CybersixgillActionableAlerts` |
-| **Publisher** | Cybersixgill |
-| **Source Vendor** | Cybersixgill *(basis: publisher)* |
+| **Publisher / Vendor** | Cybersixgill |
 | **Used in Solutions** | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Cybersixgill_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Data%20Connectors/Cybersixgill_FunctionApp.json) |

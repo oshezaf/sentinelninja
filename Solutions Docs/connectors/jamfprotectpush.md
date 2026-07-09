@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `JamfProtectPush` |
-| **Publisher** | Jamf |
-| **Source Vendor** | Jamf *(basis: publisher)* |
+| **Publisher / Vendor** | Jamf |
 | **Used in Solutions** | [Jamf Protect](../solutions/jamf-protect.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Data%20Connectors/JamfProtect_ccp/connectorDefinition.json) |

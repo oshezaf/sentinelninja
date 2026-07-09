@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SymantecVIP` |
-| **Publisher** | Symantec |
-| **Source Vendor** | Symantec *(basis: publisher)* |
+| **Publisher / Vendor** | Symantec |
 | **Used in Solutions** | [Symantec VIP](../solutions/symantec-vip.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_SymantecVIP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20VIP/Data%20Connectors/Connector_Syslog_SymantecVIP.json) |

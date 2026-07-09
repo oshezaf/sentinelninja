@@ -9,8 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `MailGuard365` |
-| **Publisher** | MailGuard365 |
-| **Source Vendor** | MailGuard365 *(basis: publisher)* |
+| **Publisher / Vendor** | MailGuard365 |
 | **Used in Solutions** | [MailGuard 365](../solutions/mailguard-365.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [MailGuard365.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365/Data%20Connectors/MailGuard365.json) |

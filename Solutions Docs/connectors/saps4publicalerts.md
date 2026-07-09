@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SAPS4PublicAlerts` |
-| **Publisher** | SAP |
-| **Source Vendor** | SAP *(basis: override)* |
+| **Publisher / Vendor** | SAP |
 | **Used in Solutions** | [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPS4Public_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition/Data%20Connectors/SAPS4PublicPollerConnector/SAPS4Public_connectorDefinition.json) |

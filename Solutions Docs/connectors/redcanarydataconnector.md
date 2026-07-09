@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `RedCanaryDataConnector` |
-| **Publisher** | Red Canary |
-| **Source Vendor** | Red Canary *(basis: publisher)* |
+| **Publisher / Vendor** | Red Canary |
 | **Used in Solutions** | [Red Canary](../solutions/red-canary.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [RedCanaryDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanaryDataConnector.json) |

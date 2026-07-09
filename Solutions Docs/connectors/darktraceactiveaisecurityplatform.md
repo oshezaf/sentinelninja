@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DarktraceActiveAISecurityPlatform` |
-| **Publisher** | Darktrace |
-| **Source Vendor** | Darktrace *(basis: publisher)* |
+| **Publisher / Vendor** | Darktrace |
 | **Used in Solutions** | [Darktrace](../solutions/darktrace.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Darktrace_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Data%20Connectors/ccf/Darktrace_ConnectorDefinition.json) |

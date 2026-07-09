@@ -1,4 +1,4 @@
-# AbnormalSecurity 
+# AbnormalSecurity
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="" width="75" height="75">
 

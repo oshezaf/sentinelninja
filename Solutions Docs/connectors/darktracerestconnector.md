@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DarktraceRESTConnector` |
-| **Publisher** | Darktrace |
-| **Source Vendor** | Darktrace *(basis: publisher)* |
+| **Publisher / Vendor** | Darktrace |
 | **Used in Solutions** | [Darktrace](../solutions/darktrace.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [DarktraceConnectorRESTAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Data%20Connectors/DarktraceConnectorRESTAPI.json) |

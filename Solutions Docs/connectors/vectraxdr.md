@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `VectraXDR` |
-| **Publisher** | Vectra |
-| **Source Vendor** | Vectra *(basis: publisher)* |
+| **Publisher / Vendor** | Vectra |
 | **Used in Solutions** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VectraXDR_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraDataConnector/VectraXDR_API_FunctionApp.json) |

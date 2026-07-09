@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `1PasswordCCPDefinition` |
-| **Publisher** | 1Password |
-| **Source Vendor** | 1Password *(basis: publisher)* |
+| **Publisher / Vendor** | 1Password |
 | **Used in Solutions** | [1Password](../solutions/1password.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [1Password_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/1Password_ccpv2/1Password_DataConnectorDefinition.json) |

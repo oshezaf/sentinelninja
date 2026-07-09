@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BloodHoundEnterprise` |
-| **Publisher** | SpecterOps |
-| **Source Vendor** | SpecterOps *(basis: publisher)* |
+| **Publisher / Vendor** | SpecterOps |
 | **Used in Solutions** | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BloodHoundFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise/Data%20Connectors/BloodHoundFunction.json) |

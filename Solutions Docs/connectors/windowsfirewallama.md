@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WindowsFirewallAma` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Source Product** | Windows Firewall |
 | **Used in Solutions** | [Windows Firewall](../solutions/windows-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -8,7 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Vendor** | Okta *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

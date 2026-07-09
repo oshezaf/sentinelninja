@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `JiraAuditCCPDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | Atlassian *(basis: description_url)* |
 | **Used in Solutions** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [JiraAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_DataConnectorDefinition.json) |

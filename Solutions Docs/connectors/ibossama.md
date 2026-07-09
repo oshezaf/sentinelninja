@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ibossAma` |
-| **Publisher** | iboss |
-| **Source Vendor** | iboss *(basis: event)* |
+| **Publisher / Vendor** | iboss |
 | **Used in Solutions** | [iboss](../solutions/iboss.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ibossAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss/Data%20Connectors/template_ibossAMA.json) |

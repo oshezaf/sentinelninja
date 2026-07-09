@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SilverfortAma` |
-| **Publisher** | Silverfort |
-| **Source Vendor** | Silverfort *(basis: event)* |
+| **Publisher / Vendor** | Silverfort |
 | **Source Product** | Admin Console |
 | **Used in Solutions** | [Silverfort](../solutions/silverfort.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

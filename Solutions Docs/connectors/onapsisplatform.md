@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OnapsisPlatform` |
-| **Publisher** | Onapsis |
-| **Source Vendor** | Onapsis *(basis: event)* |
+| **Publisher / Vendor** | Onapsis |
 | **Source Product** | OSP |
 | **Used in Solutions** | [Onapsis Platform](../solutions/onapsis-platform.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

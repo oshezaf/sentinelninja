@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoACI` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: publisher)* |
+| **Publisher / Vendor** | Cisco |
 | **Used in Solutions** | [Cisco ACI](../solutions/cisco-aci.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CiscoACI_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ACI/Data%20Connectors/CiscoACI_Syslog.json) |

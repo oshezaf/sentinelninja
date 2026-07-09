@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TenableIOAPI` |
-| **Publisher** | Tenable |
-| **Source Vendor** | Tenable *(basis: publisher)* |
+| **Publisher / Vendor** | Tenable |
 | **Used in Solutions** | [TenableIO](../solutions/tenableio.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TenableIO.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO/Data%20Connectors/TenableIO.json) |

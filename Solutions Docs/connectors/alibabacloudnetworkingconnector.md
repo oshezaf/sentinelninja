@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AlibabaCloudNetworkingConnector` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [Alibaba Cloud Networking](../solutions/alibaba-cloud-networking.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AlibabaCloudNetworking_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_ConnectorDefinition.json) |

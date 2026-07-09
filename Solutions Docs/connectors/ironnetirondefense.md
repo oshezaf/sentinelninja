@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IronNetIronDefense` |
-| **Publisher** | IronNet |
-| **Source Vendor** | IronNet *(basis: event)* |
+| **Publisher / Vendor** | IronNet |
 | **Source Product** | IronDefense, IronDome |
 | **Used in Solutions** | [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SymantecEndpointProtection` |
-| **Publisher** | Broadcom |
-| **Source Vendor** | Broadcom *(basis: publisher)* |
+| **Publisher / Vendor** | Broadcom |
 | **Used in Solutions** | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_SymantecEndpointProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection/Data%20Connectors/Connector_Syslog_SymantecEndpointProtection.json) |

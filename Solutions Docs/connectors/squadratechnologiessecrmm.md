@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SquadraTechnologiesSecRMM` |
-| **Publisher** | Squadra Technologies |
-| **Source Vendor** | Squadra Technologies *(basis: publisher)* |
+| **Publisher / Vendor** | Squadra Technologies |
 | **Used in Solutions** | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [SquadraTechnologiesSecRMM.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm/Data%20Connectors/SquadraTechnologiesSecRMM.json) |

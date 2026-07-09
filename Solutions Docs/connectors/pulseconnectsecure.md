@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PulseConnectSecure` |
-| **Publisher** | Pulse Secure |
-| **Source Vendor** | Pulse Secure *(basis: publisher)* |
+| **Publisher / Vendor** | Pulse Secure |
 | **Used in Solutions** | [Pulse Connect Secure](../solutions/pulse-connect-secure.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_PulseConnectSecure.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pulse%20Connect%20Secure/Data%20Connectors/Connector_Syslog_PulseConnectSecure.json) |

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `HolmSecurityAssets` |
-| **Publisher** | Holm Security |
-| **Source Vendor** | Holm Security *(basis: publisher)* |
+| **Publisher / Vendor** | Holm Security |
 | **Used in Solutions** | [HolmSecurity](../solutions/holmsecurity.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [HolmSecurityAssets_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity/Data%20Connectors/HolmSecurityAssets_API_FunctionApp.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ForcepointNgfwAma` |
-| **Publisher** | Forcepoint |
-| **Source Vendor** | Forcepoint *(basis: event)* |
+| **Publisher / Vendor** | Forcepoint |
 | **Source Product** | NGFW |
 | **Used in Solutions** | [Forcepoint NGFW](../solutions/forcepoint-ngfw.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

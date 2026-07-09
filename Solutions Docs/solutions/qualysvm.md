@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
-| **Source Vendor** | Qualys *(basis: publisher)* |
+| **Source Vendor** | Qualys *(basis: description_url)* |
 | **Version** | 3.0.9 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |

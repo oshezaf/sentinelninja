@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WorkdayCCPDefinition` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Source Product** | Workday |
 | **Used in Solutions** | [Workday](../solutions/workday.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |

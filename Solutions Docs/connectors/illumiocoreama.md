@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IllumioCoreAma` |
-| **Publisher** | Illumio |
-| **Source Vendor** | Illumio *(basis: event)* |
+| **Publisher / Vendor** | Illumio |
 | **Used in Solutions** | [Illumio Core](../solutions/illumio-core.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_IllumioCoreAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core/Data%20Connectors/template_IllumioCoreAMA.json) |

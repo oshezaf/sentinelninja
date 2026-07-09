@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoFirepowerEStreamerAma` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: event)* |
+| **Publisher / Vendor** | Cisco |
 | **Source Product** | Firepower |
 | **Used in Solutions** | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SalesforceServiceCloud` |
-| **Publisher** | Salesforce |
-| **Source Vendor** | Salesforce *(basis: publisher)* |
+| **Publisher / Vendor** | Salesforce |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SalesforceServiceCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceServiceCloud_API_FunctionApp.json) |

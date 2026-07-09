@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyfirmaAttackSurfaceAlertsConnector` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | CYFIRMA *(basis: name_pattern)* |
 | **Used in Solutions** | [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyfirmaASAlerts_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface/Data%20Connectors/CyfirmaASAlerts_ccp/CyfirmaASAlerts_DataConnectorDefinition.json) |

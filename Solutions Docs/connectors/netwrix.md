@@ -17,8 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Netwrix` |
-| **Publisher** | Netwrix |
-| **Source Vendor** | Netwrix *(basis: publisher)* |
+| **Publisher / Vendor** | Netwrix |
 | **Used in Solutions** | [Netwrix Auditor](../solutions/netwrix-auditor.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_NetwrixAuditor.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netwrix%20Auditor/Data%20Connectors/Connector_NetwrixAuditor.json) |

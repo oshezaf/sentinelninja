@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `UtimacoESKMConnector` |
-| **Publisher** | Utimaco |
-| **Source Vendor** | Utimaco *(basis: publisher)* |
+| **Publisher / Vendor** | Utimaco |
 | **Used in Solutions** | [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [UtimacoESKM_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Utimaco%20Enterprise%20Secure%20Key%20Manager/Data%20Connectors/sentinel-connectors/UtimacoESKM_CCF/UtimacoESKM_ConnectorDefinition.json) |

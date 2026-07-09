@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureDataLakeStorageGen1_CCP` |
-| **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Publisher / Vendor** | Microsoft |
 | **Used in Solutions** | [Azure Data Lake Storage Gen1](../solutions/azure-data-lake-storage-gen1.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureDataLakeStorageGen1_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Data%20Lake%20Storage%20Gen1/Data%20Connectors/AzureDataLakeStorageGen1_CCP.JSON) |

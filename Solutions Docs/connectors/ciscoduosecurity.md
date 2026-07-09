@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoDuoSecurity` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: publisher)* |
+| **Publisher / Vendor** | Cisco |
 | **Used in Solutions** | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CiscoDuo_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuo_API_FunctionApp.json) |

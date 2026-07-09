@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SAPETDAlerts` |
-| **Publisher** | SAP |
-| **Source Vendor** | SAP *(basis: override)* |
+| **Publisher / Vendor** | SAP |
 | **Used in Solutions** | [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPETD_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_connectorDefinition.json) |

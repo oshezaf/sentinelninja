@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WatchguardFirebox` |
-| **Publisher** | WatchGuard Technologies |
-| **Source Vendor** | WatchGuard Technologies *(basis: publisher)* |
+| **Publisher / Vendor** | WatchGuard Technologies |
 | **Used in Solutions** | [Watchguard Firebox](../solutions/watchguard-firebox.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_syslog_WatchGuardFirebox.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox/Data%20Connectors/Connector_syslog_WatchGuardFirebox.json) |

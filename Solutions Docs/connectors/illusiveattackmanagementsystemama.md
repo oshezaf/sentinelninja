@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `illusiveAttackManagementSystemAma` |
-| **Publisher** | illusive |
-| **Source Vendor** | illusive *(basis: event)* |
+| **Publisher / Vendor** | illusive |
 | **Source Product** | illusive |
 | **Used in Solutions** | [Illusive Platform](../solutions/illusive-platform.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

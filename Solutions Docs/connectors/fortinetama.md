@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `FortinetAma` |
-| **Publisher** | Fortinet |
-| **Source Vendor** | Fortinet *(basis: event)* |
+| **Publisher / Vendor** | Fortinet |
 | **Source Product** | Fortigate |
 | **Used in Solutions** | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DelineaSecretServerAma` |
-| **Publisher** | Delinea, Inc |
-| **Source Vendor** | Delinea *(basis: event)* |
+| **Publisher / Vendor** | Delinea, Inc |
 | **Source Product** | Secret Server |
 | **Used in Solutions** | [Delinea Secret Server](../solutions/delinea-secret-server.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

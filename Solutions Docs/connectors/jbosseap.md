@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `JBossEAP` |
-| **Publisher** | Red Hat |
-| **Source Vendor** | Red Hat *(basis: publisher)* |
+| **Publisher / Vendor** | Red Hat |
 | **Used in Solutions** | [JBoss](../solutions/jboss.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_JBoss.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JBoss/Data%20Connectors/Connector_JBoss.json) |

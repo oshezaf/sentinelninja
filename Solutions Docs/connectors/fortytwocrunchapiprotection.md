@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `FortyTwoCrunchAPIProtection` |
 | **Publisher** | Microsoft Corporation |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | 42Crunch *(basis: title)* |
 | **Used in Solutions** | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [42CrunchAPIProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection.json) |

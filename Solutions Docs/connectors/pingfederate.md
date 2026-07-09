@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `PingFederate` |
-| **Publisher** | Ping Identity |
-| **Source Vendor** | Ping Identity *(basis: publisher)* |
+| **Publisher / Vendor** | Ping Identity |
 | **Used in Solutions** | [PingFederate](../solutions/pingfederate.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_CEF_PingFederate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingFederate/Data%20Connectors/Connector_CEF_PingFederate.json) |

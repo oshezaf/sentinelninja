@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CloudNSSCASBCollabLogs_ccp` |
-| **Publisher** | Zscaler |
-| **Source Vendor** | Zscaler *(basis: publisher)* |
+| **Publisher / Vendor** | Zscaler |
 | **Source Product** | NSSCasbcollablog |
 | **Used in Solutions** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |

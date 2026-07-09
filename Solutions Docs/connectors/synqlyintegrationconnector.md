@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SynqlyIntegrationConnector` |
-| **Publisher** | Synqly |
-| **Source Vendor** | Synqly *(basis: publisher)* |
+| **Publisher / Vendor** | Synqly |
 | **Used in Solutions** | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SynqlyIntegrationConnector_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SynqlyIntegrationConnector/Data%20Connectors/SynqlyIntegrationConnector_CCF/SynqlyIntegrationConnector_ConnectorDefinition.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AkamaiSecurityEvents` |
-| **Publisher** | Akamai |
-| **Source Vendor** | Akamai *(basis: event)* |
+| **Publisher / Vendor** | Akamai |
 | **Source Product** | akamai_siem |
 | **Used in Solutions** | [Akamai Security Events](../solutions/akamai-security-events.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

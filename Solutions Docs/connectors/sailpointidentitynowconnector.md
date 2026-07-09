@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SailPointIdentityNowConnector` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Vendor** | SailPoint *(basis: description_url)* |
 | **Used in Solutions** | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SailPointIdentityNow_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_ConnectorDefinition.json) |

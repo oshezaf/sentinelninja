@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `InsightVMCloudAPI` |
-| **Publisher** | Rapid7 |
-| **Source Vendor** | Rapid7 *(basis: publisher)* |
+| **Publisher / Vendor** | Rapid7 |
 | **Used in Solutions** | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [InsightVMCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Data%20Connectors/InsightVMCloud_API_FunctionApp.json) |

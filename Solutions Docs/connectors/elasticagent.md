@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ElasticAgent` |
-| **Publisher** | Elastic |
-| **Source Vendor** | Elastic *(basis: publisher)* |
+| **Publisher / Vendor** | Elastic |
 | **Used in Solutions** | [ElasticAgent](../solutions/elasticagent.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_ElasticAgent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/Connector_ElasticAgent.json) |

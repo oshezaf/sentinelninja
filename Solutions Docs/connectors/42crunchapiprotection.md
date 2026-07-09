@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `42CrunchAPIProtection` |
-| **Publisher** | 42Crunch |
-| **Source Vendor** | 42Crunch *(basis: publisher)* |
+| **Publisher / Vendor** | 42Crunch |
 | **Used in Solutions** | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [42CrunchAPIProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch/42CrunchAPIProtection.json) |

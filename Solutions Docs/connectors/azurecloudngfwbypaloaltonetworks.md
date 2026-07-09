@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureCloudNGFWByPaloAltoNetworks` |
-| **Publisher** | Palo Alto Networks |
-| **Source Vendor** | Palo Alto Networks *(basis: publisher)* |
+| **Publisher / Vendor** | Palo Alto Networks |
 | **Used in Solutions** | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [CloudNgfwByPAN.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cloud%20NGFW%20by%20Palo%20Alto%20Networks/Data%20Connectors/CloudNgfwByPAN.json) |

@@ -8,7 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Vendor** | 42Crunch *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

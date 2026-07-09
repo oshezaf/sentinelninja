@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IPinfoPlusDataConnector` |
-| **Publisher** | IPinfo |
-| **Source Vendor** | IPinfo *(basis: publisher)* |
+| **Publisher / Vendor** | IPinfo |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_Plus_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/Plus/IPinfo_Plus_API_AzureFunctionApp.json) |

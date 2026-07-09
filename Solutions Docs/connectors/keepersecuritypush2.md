@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `KeeperSecurityPush2` |
-| **Publisher** | Keeper Security |
-| **Source Vendor** | Keeper Security *(basis: publisher)* |
+| **Publisher / Vendor** | Keeper Security |
 | **Used in Solutions** | [Keeper Security](../solutions/keeper-security.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [KepperSecurity_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security/Data%20Connectors/KeeperSecurity_ccp/KepperSecurity_Definition.json) |

@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TrendMicroApexOneAma` |
-| **Publisher** | Trend Micro |
-| **Source Vendor** | Trend Micro *(basis: event)* |
+| **Publisher / Vendor** | Trend Micro |
 | **Source Product** | Apex Central |
 | **Used in Solutions** | [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

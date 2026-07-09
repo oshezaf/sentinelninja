@@ -8,7 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Cisco, Microsoft *(basis: projected)* |
+| **Source Vendor** | Cisco *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

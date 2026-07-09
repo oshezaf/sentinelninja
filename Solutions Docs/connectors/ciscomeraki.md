@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoMeraki` |
-| **Publisher** | Cisco |
-| **Source Vendor** | Cisco *(basis: publisher)* |
+| **Publisher / Vendor** | Cisco |
 | **Used in Solutions** | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_CiscoMeraki.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Data%20Connectors/Connector_Syslog_CiscoMeraki.json) |

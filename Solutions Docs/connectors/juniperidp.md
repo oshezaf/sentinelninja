@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `JuniperIDP` |
-| **Publisher** | Juniper |
-| **Source Vendor** | Juniper *(basis: publisher)* |
+| **Publisher / Vendor** | Juniper |
 | **Used in Solutions** | [JuniperIDP](../solutions/juniperidp.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_LogAnalytics_agent_JuniperIDP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP/Data%20Connectors/Connector_LogAnalytics_agent_JuniperIDP.json) |

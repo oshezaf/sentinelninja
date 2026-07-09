@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TrendMicroApexOne` |
-| **Publisher** | Trend Micro |
-| **Source Vendor** | Trend Micro *(basis: publisher)* |
+| **Publisher / Vendor** | Trend Micro |
 | **Used in Solutions** | [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TrendMicro_ApexOne.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Apex%20One/Data%20Connectors/TrendMicro_ApexOne.json) |

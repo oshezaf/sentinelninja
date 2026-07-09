@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `NetskopeWebTxConnector` |
-| **Publisher** | Netskope |
-| **Source Vendor** | Netskope *(basis: publisher)* |
+| **Publisher / Vendor** | Netskope |
 | **Used in Solutions** | [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [NetskopeWebtx_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_connectorDefinition.json) |

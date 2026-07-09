@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CognniSentinelDataConnector` |
-| **Publisher** | Cognni |
-| **Source Vendor** | Cognni *(basis: publisher)* |
+| **Publisher / Vendor** | Cognni |
 | **Used in Solutions** | [Cognni](../solutions/cognni.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [CognniSentinelConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cognni/Data%20Connectors/CognniSentinelConnector.json) |

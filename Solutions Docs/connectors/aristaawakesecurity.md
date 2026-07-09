@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AristaAwakeSecurity` |
-| **Publisher** | Arista Networks |
-| **Source Vendor** | Arista Networks *(basis: event)* |
+| **Publisher / Vendor** | Arista Networks |
 | **Source Product** | Awake Security |
 | **Used in Solutions** | [AristaAwakeSecurity](../solutions/aristaawakesecurity.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |

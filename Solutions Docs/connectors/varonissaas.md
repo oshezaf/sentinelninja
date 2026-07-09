@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `VaronisSaaS` |
-| **Publisher** | Varonis |
-| **Source Vendor** | Varonis *(basis: publisher)* |
+| **Publisher / Vendor** | Varonis |
 | **Used in Solutions** | [VaronisSaaS](../solutions/varonissaas.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VaronisSaaS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS/Data%20Connectors/VaronisSaaS_API_FunctionApp.json) |
