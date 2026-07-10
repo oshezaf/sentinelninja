@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.forgerock.com/support](https://www.forgerock.com/support) |
 | **Categories** | Identity |
 | **Source Vendor** | ForgeRock *(basis: event)* |
+| **Source Product** | Identity Platform |
 | **Version** | 3.0.0 |
 | **Author** | ForgeRock - isv@email.com |
 | **First Published** | 2022-05-04 |

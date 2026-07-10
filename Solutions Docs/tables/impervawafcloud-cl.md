@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Imperva *(basis: projected)* |
+| **Source Product** | Cloud WAF |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.mongodb.com/company/contact](https://www.mongodb.com/company/contact) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | MongoDB *(basis: publisher)* |
+| **Source Product** | Atlas |
 | **Version** | 3.0.8 |
 | **Author** | steve.lord@improving.com |
 | **First Published** | 2025-08-22 |

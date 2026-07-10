@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftCopilot` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Copilot |
 | **Used in Solutions** | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MicrosoftCopilot_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_ConnectorDefinition.json) |

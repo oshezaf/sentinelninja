@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Networking |
 | **Source Vendor** | Juniper *(basis: publisher)* |
+| **Source Product** | SRX |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |

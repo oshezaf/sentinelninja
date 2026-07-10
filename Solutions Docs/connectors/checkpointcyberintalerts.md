@@ -13,6 +13,7 @@
 | **Connector ID** | `CheckPointCyberintAlerts` |
 | **Publisher** | Checkpoint Cyberint |
 | **Source Vendor** | Check Point *(basis: publisher)* |
+| **Source Product** | Cyberint Alerts |
 | **Used in Solutions** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberintArgosAlertsLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Data%20Connectors/CyberintArgosAlertsLogs_ccp/CyberintArgosAlertsLogs_connectorDefinition.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.extrahop.com/customer-support](https://www.extrahop.com/customer-support) |
 | **Categories** | Security - Network |
 | **Source Vendor** | ExtraHop *(basis: publisher)* |
+| **Source Product** | Detections |
 | **Version** | 3.0.2 |
 | **Author** | Shwetha Somashekar - shwethas@extrahop.com |
 | **First Published** | 2025-02-11 |

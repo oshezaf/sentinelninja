@@ -15,6 +15,7 @@
 | **Connector ID** | `ExtraHopNetworks` |
 | **Publisher** | ExtraHop Networks |
 | **Source Vendor** | ExtraHop *(basis: event)* |
+| **Source Product** | Reveal |
 | **Used in Solutions** | [ExtraHop Reveal(x)](../solutions/extrahop-reveal-x.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ExtraHopNetworks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29/Data%20Connectors/template_ExtraHopNetworks.json) |

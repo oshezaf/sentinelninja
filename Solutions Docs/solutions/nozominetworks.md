@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Internet of Things (IoT) |
 | **Source Vendor** | Nozomi Networks *(basis: publisher)* |
+| **Source Product** | N2OS |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |

@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
 | **Source Vendor** | Alibaba *(basis: title)* |
+| **Source Product** | Cloud Networking |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-12 |

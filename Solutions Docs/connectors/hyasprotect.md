@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `HYASProtect` |
 | **Publisher / Vendor** | HYAS |
+| **Source Product** | Protect |
 | **Used in Solutions** | [HYAS Protect](../solutions/hyas-protect.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [HYASProtect_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS%20Protect/Data%20Connectors/HYASProtect_FunctionApp.json) |

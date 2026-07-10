@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Google *(basis: projected)* |
+| **Source Product** | ApigeeX |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

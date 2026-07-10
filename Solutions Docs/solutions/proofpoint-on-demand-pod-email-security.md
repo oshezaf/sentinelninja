@@ -17,6 +17,7 @@
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Proofpoint *(basis: publisher)* |
+| **Source Product** | On Demand Email Security |
 | **Version** | 3.1.4 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2021-03-31 |

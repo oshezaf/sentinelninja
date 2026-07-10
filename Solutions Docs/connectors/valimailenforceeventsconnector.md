@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ValimailEnforceEventsConnector` |
 | **Publisher / Vendor** | Valimail |
+| **Source Product** | Enforce Configuration |
 | **Used in Solutions** | [ValimailEnforce](../solutions/valimailenforce.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ValimailEnforceEventLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce/Data%20Connectors/ValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_connectorDefinition.json) |

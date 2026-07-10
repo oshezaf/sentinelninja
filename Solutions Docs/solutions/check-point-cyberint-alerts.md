@@ -17,6 +17,7 @@
 | **Support Link** | [https://cyberint.com/customer-support/](https://cyberint.com/customer-support/) |
 | **Categories** | Security - Threat Intelligence |
 | **Source Vendor** | Check Point *(basis: publisher)* |
+| **Source Product** | Cyberint Alerts |
 | **Version** | 3.1.0 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-03-18 |

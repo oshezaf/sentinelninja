@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Rubrik *(basis: projected)* |
+| **Source Product** | Security Cloud |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

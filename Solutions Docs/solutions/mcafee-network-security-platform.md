@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | McAfee *(basis: publisher)* |
+| **Source Product** | Network Security Platform |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-29 |

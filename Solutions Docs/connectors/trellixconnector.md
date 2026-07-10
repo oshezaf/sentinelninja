@@ -13,6 +13,7 @@
 | **Connector ID** | `TrellixConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Trellix *(basis: description_url)* |
+| **Source Product** | Endpoint Security |
 | **Used in Solutions** | [Trellix](../solutions/trellix.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Trellix_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_DataConnectorDefinition.json) |

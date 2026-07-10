@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | VMware *(basis: title)* |
+| **Source Product** | Workspace ONE |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-07 |

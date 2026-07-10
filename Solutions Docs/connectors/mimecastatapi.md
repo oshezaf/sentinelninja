@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MimecastATAPI` |
 | **Publisher / Vendor** | Mimecast |
+| **Source Product** | Awareness Training |
 | **Used in Solutions** | [Mimecast](../solutions/mimecast.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_AT_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastAT/Mimecast_AT_FunctionApp.json) |

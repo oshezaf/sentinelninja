@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.squadratechnologies.com/Contact.aspx](https://www.squadratechnologies.com/Contact.aspx) |
 | **Categories** | Security - Information Protection,Security - Threat Protection |
 | **Source Vendor** | Squadra Technologies *(basis: publisher)* |
+| **Source Product** | secRMM |
 | **Version** | 3.0.0 |
 | **Author** | Squadra Technologies |
 | **First Published** | 2022-05-09 |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
 | **Source Vendor** | Rapid7 *(basis: publisher)* |
+| **Source Product** | Insight Platform Vulnerability Management Reports |
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |

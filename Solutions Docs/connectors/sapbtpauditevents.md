@@ -13,6 +13,7 @@
 | **Connector ID** | `SAPBTPAuditEvents` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | SAP *(basis: override)* |
+| **Source Product** | BTP |
 | **Used in Solutions** | [SAP BTP](../solutions/sap-btp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPBTP_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DataConnectorDefinition.json) |

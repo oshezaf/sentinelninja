@@ -17,6 +17,7 @@
 | **Support Link** | [https://versasec.com/support/](https://versasec.com/support/) |
 | **Categories** | Security - Others |
 | **Source Vendor** | Versasec *(basis: publisher)* |
+| **Source Product** | Cms |
 | **Version** | 3.0.1 |
 | **Author** | Versasec AB - info@versasec.com |
 | **Last Updated** | 2026-03-10 |

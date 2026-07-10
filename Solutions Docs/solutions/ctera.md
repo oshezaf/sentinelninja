@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.ctera.com/](https://www.ctera.com/) |
 | **Categories** | Storage |
 | **Source Vendor** | CTERA *(basis: publisher)* |
+| **Source Product** | Syslog |
 | **Version** | 3.0.1 |
 | **Author** | CTERA Networks - support@ctera.com |
 | **First Published** | 2024-07-28 |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft, VMware *(basis: projected)* |
+| **Source Product** | vCenter |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

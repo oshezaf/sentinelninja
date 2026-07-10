@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Darktrace *(basis: projected)* |
+| **Source Product** | Connector for Microsoft Sentinel REST API |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

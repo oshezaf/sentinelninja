@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Darktrace *(basis: projected)* |
+| **Source Product** | ActiveAI Security Platform |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

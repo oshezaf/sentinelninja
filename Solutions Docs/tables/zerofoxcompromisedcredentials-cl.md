@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
+| **Source Product** | Enterprise - Compromised Credentials |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

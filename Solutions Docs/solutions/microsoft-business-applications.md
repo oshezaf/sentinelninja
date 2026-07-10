@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application,Cloud Provider |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Dataverse, Power Automate, Power Platform Admin Activity |
 | **Version** | 3.2.2 |
 | **Author** | Microsoft |
 | **First Published** | 2023-04-19 |

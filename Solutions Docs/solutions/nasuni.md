@@ -17,6 +17,7 @@
 | **Support Link** | [https://github.com/nasuni-labs/Azure-Sentinel](https://github.com/nasuni-labs/Azure-Sentinel) |
 | **Categories** | Storage |
 | **Source Vendor** | Nasuni *(basis: publisher)* |
+| **Source Product** | Edge Appliance |
 | **Version** | 3.0.3 |
 | **Author** | Nasuni - support@nasuni.com |
 | **First Published** | 2023-07-07 |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Forescout *(basis: publisher)* |
+| **Source Product** | Host Property Monitor |
 | **Version** | 3.0.0 |
 | **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |

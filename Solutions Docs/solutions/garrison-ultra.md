@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.ultra.garrison.com](https://support.ultra.garrison.com) |
 | **Categories** | Application,User Behavior (UEBA) |
 | **Source Vendor** | Garrison *(basis: publisher)* |
+| **Source Product** | ULTRA Remote |
 | **Version** | 3.0.0 |
 | **Author** | Garrison - support.ultra@garrison.com |
 | **First Published** | 2024-10-04 |

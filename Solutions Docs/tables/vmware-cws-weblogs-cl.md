@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | VMware *(basis: projected)* |
+| **Source Product** | SD-WAN and SASE |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Digital Shadows *(basis: projected)* |
+| **Source Product** | Searchlight |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

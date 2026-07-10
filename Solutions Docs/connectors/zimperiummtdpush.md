@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ZimperiumMTDPush` |
 | **Publisher / Vendor** | Zimperium |
+| **Source Product** | Mobile Threat Defense CCF |
 | **Used in Solutions** | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [ZimperiumMTD_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense/Data%20Connectors/ZimperiumMTD_CCF/ZimperiumMTD_connectorDefinition.json) |

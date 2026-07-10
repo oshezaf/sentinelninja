@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Utimaco *(basis: projected)* |
+| **Source Product** | Enterprise Secure Key Manager |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

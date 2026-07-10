@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.citrix.com/support/](https://www.citrix.com/support/) |
 | **Categories** | Security - Network,Security - Cloud Security |
 | **Source Vendor** | Citrix *(basis: publisher)* |
+| **Source Product** | SECURITY ANALYTICS |
 | **Version** | 2.0.1 |
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |

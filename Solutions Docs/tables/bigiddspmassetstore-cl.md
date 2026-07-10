@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | BigID *(basis: projected)* |
+| **Source Product** | DSPM |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

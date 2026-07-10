@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `NetskopeWebTransactionsDataConnector` |
 | **Publisher / Vendor** | Netskope |
+| **Source Product** | Web Transactions |
 | **Used in Solutions** | [Netskopev2](../solutions/netskopev2.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Netskope_WebTransactions.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeWebTransactionsDataConnector/Netskope_WebTransactions.json) |

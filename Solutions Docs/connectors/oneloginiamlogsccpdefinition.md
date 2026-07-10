@@ -13,6 +13,7 @@
 | **Connector ID** | `OneLoginIAMLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | OneLogin *(basis: description_url)* |
+| **Source Product** | IAM Platform |
 | **Used in Solutions** | [OneLoginIAM](../solutions/oneloginiam.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [OneLoginIAMLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLoginIAMLogs_ccp/OneLoginIAMLogs_ConnectorDefinition.json) |

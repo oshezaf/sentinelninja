@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Agari *(basis: projected)* |
+| **Source Product** | Phishing Defense and Brand Protection |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

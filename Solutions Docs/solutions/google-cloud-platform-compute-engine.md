@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider,Networking |
 | **Source Vendor** | Google *(basis: name_pattern)* |
+| **Source Product** | Cloud Platform Compute Engine |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Qualys *(basis: projected)* |
+| **Source Product** | Vulnerability Management |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

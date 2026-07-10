@@ -12,7 +12,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | Cisco, Synqly *(basis: projected)* |
-| **Source Product** | Meraki |
+| **Source Product** | Integration, Meraki |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -206,7 +206,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -235,21 +235,14 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/websessionlogs`
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,HTTPSession"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **0** | **1** | **0** | **2** |
-
-### EventProduct / EventVendor
-
-| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
+| **Total** | **0** | **0** | **1** | **0** | **1** |
 
 ### EventType
 

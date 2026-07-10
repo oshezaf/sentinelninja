@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ApacheHTTPServer` |
 | **Publisher / Vendor** | Apache |
+| **Source Product** | HTTP Server |
 | **Used in Solutions** | [ApacheHTTPServer](../solutions/apachehttpserver.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_ApacheHTTPServer_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer/Data%20Connectors/Connector_ApacheHTTPServer_agent.json) |

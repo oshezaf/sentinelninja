@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
 | **Source Vendor** | FireEye *(basis: publisher)* |
+| **Source Product** | Network Security |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |

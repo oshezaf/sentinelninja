@@ -39,6 +39,10 @@
   <td style="text-align:left">Cofense, Cognyte, Microsoft, Mimecast <em>(basis: projected)</em></td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Product</strong></td>
+  <td style="text-align:left">Intelligence Threat Indicators Ingestion, Intelligence for Microsoft - Microsoft Sentinel, Triage Threat Indicators Ingestion</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -1127,7 +1131,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;Premium Microsoft Defender Threat Intelligence&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem !startswith &quot;Cofense :&quot;</code><br><code>SourceSystem startswith &quot;Cofense :&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1143,7 +1147,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem == &quot;Premium Microsoft Defender Threat Intelligence&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1151,7 +1155,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem !startswith &quot;Cofense :&quot;</code><br><code>SourceSystem startswith &quot;Cofense :&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1190,7 +1194,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Premium Microsoft Defender Threat Intelligence</code></td>
+  <td style="text-align:left"><code>!startswith Cofense :</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith Cofense :</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1214,23 +1226,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Premium Microsoft Defender Threat Intelligence</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!startswith Cofense :</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>startswith Cofense :</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

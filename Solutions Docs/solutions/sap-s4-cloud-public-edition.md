@@ -17,6 +17,7 @@
 | **Support Link** | [https://api.sap.com/api/SecurityAuditLog_ODataService/overview](https://api.sap.com/api/SecurityAuditLog_ODataService/overview) |
 | **Categories** | Security - Threat Protection,Identity,Application,Cloud Provider |
 | **Source Vendor** | SAP *(basis: override)* |
+| **Source Product** | S/4HANA Cloud Public Edition |
 | **Version** | 3.0.2 |
 | **Author** | SAP |
 | **First Published** | 2025-09-12 |

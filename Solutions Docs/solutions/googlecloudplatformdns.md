@@ -19,6 +19,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider,Networking |
 | **Source Vendor** | Google *(basis: publisher)* |
+| **Source Product** | Cloud Platform DNS |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |

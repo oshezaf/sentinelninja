@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `BarracudaCloudFirewall` |
 | **Publisher / Vendor** | Barracuda |
+| **Source Product** | CloudGen Firewall |
 | **Used in Solutions** | [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_BarracudaCloudFirewall.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall/Data%20Connectors/template_BarracudaCloudFirewall.json) |

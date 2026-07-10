@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | OneLogin *(basis: projected)* |
+| **Source Product** | IAM Platform |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

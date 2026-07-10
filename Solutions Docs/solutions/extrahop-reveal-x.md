@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.extrahop.com/support/](https://www.extrahop.com/support/) |
 | **Categories** | Security - Threat Protection,Security - Cloud Security |
 | **Source Vendor** | ExtraHop *(basis: event)* |
+| **Source Product** | Reveal |
 | **Version** | 3.0.1 |
 | **Author** | ExtraHop |
 | **First Published** | 2022-05-19 |

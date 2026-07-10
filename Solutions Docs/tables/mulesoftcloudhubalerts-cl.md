@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | MuleSoft *(basis: projected)* |
+| **Source Product** | CloudHub Alerts |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

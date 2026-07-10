@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
+| **Source Product** | Enterprise - Botnet Compromised Credentials |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

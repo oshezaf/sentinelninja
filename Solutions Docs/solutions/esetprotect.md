@@ -17,6 +17,7 @@
 | **Support Link** | [https://techcenter.eset.nl/en/](https://techcenter.eset.nl/en/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | ESET *(basis: publisher)* |
+| **Source Product** | PROTECT |
 | **Version** | 3.0.0 |
 | **Author** | ESET NL - support@eset.nl |
 | **First Published** | 2021-10-20 |

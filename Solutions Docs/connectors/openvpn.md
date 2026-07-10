@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `OpenVPN` |
 | **Publisher / Vendor** | OpenVPN |
+| **Source Product** | Server |
 | **Used in Solutions** | [OpenVPN](../solutions/openvpn.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [OpenVPN_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenVPN/Data%20Connectors/OpenVPN_Syslog.json) |

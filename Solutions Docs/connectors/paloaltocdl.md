@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `PaloAltoCDL` |
 | **Publisher / Vendor** | Palo Alto Networks |
+| **Source Product** | Cortex Data Lake |
 | **Used in Solutions** | [PaloAltoCDL](../solutions/paloaltocdl.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_PaloAlto_CDL_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoCDL/Data%20Connectors/Connector_PaloAlto_CDL_CEF.json) |

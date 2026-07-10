@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VaronisPurviewPush` |
 | **Publisher / Vendor** | Varonis |
+| **Source Product** | Purview Push |
 | **Used in Solutions** | [Varonis Purview](../solutions/varonis-purview.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [VaronisPurview_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview/Data%20Connectors/VaronisPurview_ccp/VaronisPurview_connectorDefinition.json) |

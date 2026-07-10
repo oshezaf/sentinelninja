@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Intelligence |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Defender Threat Intelligence |
 | **Version** | 3.0.19 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |

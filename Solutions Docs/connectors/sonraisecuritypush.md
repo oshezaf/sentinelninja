@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SonraiSecurityPush` |
 | **Publisher / Vendor** | Sonrai |
+| **Source Product** | Security Push |
 | **Used in Solutions** | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SonraiSecurity_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity/Data%20Connectors/SonraiSecurity_ccp/SonraiSecurity_Definition.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Source Vendor** | ZeroFox *(basis: publisher)* |
+| **Source Product** | Enterprise - Advanced Dark Web, Enterprise - Botnet Compromised Credentials, Enterprise - Botnet, Enterprise - Breaches, Enterprise - Compromised Credentials, Enterprise - Credit Cards, Enterprise - Dark Web, Enterprise - Discord, Enterprise - Disruption, Enterprise - Email Addresses, Enterprise - Exploits, Enterprise - Indicators, Enterprise - Key Incidents, Enterprise - National IDs, Enterprise - Physical Threats, Enterprise - Telegram, Enterprise - Vulnerabilities |
 | **Version** | 3.0.0 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-02-18 |

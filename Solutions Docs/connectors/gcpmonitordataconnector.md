@@ -18,6 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPMonitorDataConnector` |
 | **Publisher / Vendor** | Google |
+| **Source Product** | Cloud Platform Cloud Monitoring |
 | **Used in Solutions** | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GCP_Monitor_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Monitoring/Data%20Connectors/GCP_Monitor_API_FunctionApp.json) |

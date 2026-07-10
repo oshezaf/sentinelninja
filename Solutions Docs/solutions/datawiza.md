@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.datawiza.com/contact-us/](https://www.datawiza.com/contact-us/) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Datawiza *(basis: publisher)* |
+| **Source Product** | DAP |
 | **Version** | 3.0.0 |
 | **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |

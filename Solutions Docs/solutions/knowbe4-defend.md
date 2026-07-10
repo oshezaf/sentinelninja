@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.knowbe4.com](https://support.knowbe4.com) |
 | **Categories** | Application |
 | **Source Vendor** | KnowBe4 *(basis: publisher)* |
+| **Source Product** | Defend |
 | **Version** | 3.0.0 |
 | **Author** | KnowBe4 - support@knowbe4.com |
 | **First Published** | 2025-02-05 |

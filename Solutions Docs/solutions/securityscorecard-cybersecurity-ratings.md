@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.securityscorecard.com/hc/en-us/requests/new](https://support.securityscorecard.com/hc/en-us/requests/new) |
 | **Categories** | Security,Security - Network,Security - Vulnerability Management |
 | **Source Vendor** | SecurityScorecard *(basis: publisher)* |
+| **Source Product** | Factor, Issue, Cybersecurity Ratings |
 | **Version** | 2.0.0 |
 | **Author** | SecurityScorecard - integrations@securityscorecard.io |
 | **First Published** | 2022-10-01 |

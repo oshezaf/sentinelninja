@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DatawizaDapSolution` |
 | **Publisher / Vendor** | Datawiza |
+| **Source Product** | DAP |
 | **Used in Solutions** | [Datawiza](../solutions/datawiza.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Datawiza_DAP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza/Data%20Connectors/Datawiza_DAP.json) |

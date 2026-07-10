@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Others |
 | **Source Vendor** | Exabeam *(basis: publisher)* |
+| **Source Product** | Advanced Analytics |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |

@@ -13,6 +13,7 @@
 | **Connector ID** | `SophosEndpointProtectionCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Sophos *(basis: description_url)* |
+| **Source Product** | Endpoint Protection |
 | **Used in Solutions** | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SophosEP_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DataConnectorDefinition.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | Security - Threat Intelligence,Identity |
 | **Source Vendor** | TacitRed *(basis: publisher)* |
+| **Source Product** | Compromised Credentials |
 | **Version** | 3.0.0 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-01-01 |

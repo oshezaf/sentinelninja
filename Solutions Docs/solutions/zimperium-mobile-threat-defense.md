@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.zimperium.com/support/](https://www.zimperium.com/support/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Zimperium *(basis: publisher)* |
+| **Source Product** | Mobile Threat Defense CCF, Mobile Threat Defense |
 | **Version** | 3.1.0 |
 | **Author** | Zimperium |
 | **First Published** | 2022-05-02 |

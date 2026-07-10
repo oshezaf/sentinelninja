@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Slack *(basis: projected)* |
+| **Source Product** | Audit |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

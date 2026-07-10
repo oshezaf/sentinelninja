@@ -13,6 +13,7 @@
 | **Connector ID** | `QualysVMLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Qualys *(basis: description_url)* |
+| **Source Product** | Vulnerability Management |
 | **Used in Solutions** | [QualysVM](../solutions/qualysvm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [QualysVMHostLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_ConnectorDefinition.json) |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | VMware *(basis: projected)* |
+| **Source Product** | Workspace ONE |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

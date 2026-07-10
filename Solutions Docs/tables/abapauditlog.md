@@ -12,6 +12,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Security |
 | **Source Vendor** | SAP *(basis: override)* |
+| **Source Product** | S/4HANA Cloud Public Edition |
 | **Collector Vendor** | Onapsis, Pathlock, SecurityBridge *(basis: projected)* |
 | **Collector Product** | Onapsis Defend, SecurityBridge Platform, Threat Detection and Response |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |

@@ -16,6 +16,7 @@
 | **Support Tier** | Partner |
 | **Categories** | Compliance |
 | **Source Vendor** | Sonrai *(basis: publisher)* |
+| **Source Product** | Security Push |
 | **Version** | 3.0.1 |
 | **Author** | Sonrai - support@sonraisecurity.com |
 | **First Published** | 2021-10-18 |

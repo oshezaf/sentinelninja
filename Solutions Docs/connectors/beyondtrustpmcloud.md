@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `BeyondTrustPMCloud` |
 | **Publisher / Vendor** | BeyondTrust |
+| **Source Product** | PM Cloud |
 | **Used in Solutions** | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BeyondTrustPMCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/Data%20Connectors/BeyondTrustPMCloud_API_FunctionApp.json) |

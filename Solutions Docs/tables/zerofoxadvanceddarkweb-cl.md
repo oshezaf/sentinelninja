@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
+| **Source Product** | Enterprise - Advanced Dark Web |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

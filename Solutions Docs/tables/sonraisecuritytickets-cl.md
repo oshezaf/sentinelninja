@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Sonrai *(basis: projected)* |
+| **Source Product** | Security Push |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

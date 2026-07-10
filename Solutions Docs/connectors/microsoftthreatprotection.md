@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftThreatProtection` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Defender XDR |
 | **Used in Solutions** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [MicrosoftThreatProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Data%20Connectors/MicrosoftThreatProtection.JSON) |

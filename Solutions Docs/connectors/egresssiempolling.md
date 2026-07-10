@@ -13,6 +13,7 @@
 | **Connector ID** | `EgressSiemPolling` |
 | **Publisher** | Egress Software Technologies |
 | **Source Vendor** | Egress *(basis: publisher)* |
+| **Source Product** | Iris |
 | **Used in Solutions** | [Egress Iris](../solutions/egress-iris.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [EgressDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris/Data%20Connectors/EgressDataConnector.json) |

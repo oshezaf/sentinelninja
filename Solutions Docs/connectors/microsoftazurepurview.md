@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftAzurePurview` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Purview |
 | **Used in Solutions** | [Microsoft Purview](../solutions/microsoft-purview.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [MicrosoftPurview.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview/Data%20Connectors/MicrosoftPurview.json) |

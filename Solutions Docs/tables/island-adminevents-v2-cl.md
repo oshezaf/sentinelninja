@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Island *(basis: projected)* |
+| **Source Product** | Enterprise Browser V2 |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

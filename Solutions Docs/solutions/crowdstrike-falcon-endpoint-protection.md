@@ -15,7 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Source Vendor** | CrowdStrike, Amazon *(basis: mixed)* |
-| **Source Product** | FalconHost |
+| **Source Product** | API, Falcon Adversary Intelligence, FalconHost, Falcon Data Replicator |
 | **Version** | 3.3.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Trellix *(basis: projected)* |
+| **Source Product** | Endpoint Security |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

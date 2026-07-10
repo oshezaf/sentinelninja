@@ -17,6 +17,7 @@
 | **Support Link** | [https://support@slashnext.com](https://support@slashnext.com) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Source Vendor** | SlashNext *(basis: publisher)* |
+| **Source Product** | Function App |
 | **Version** | 3.0.0 |
 | **Author** | SlashNext - support@slashnext.com |
 | **First Published** | 2022-08-12 |

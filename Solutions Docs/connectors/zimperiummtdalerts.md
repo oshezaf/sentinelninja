@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ZimperiumMtdAlerts` |
 | **Publisher / Vendor** | Zimperium |
+| **Source Product** | Mobile Threat Defense |
 | **Used in Solutions** | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Zimperium%20MTD%20Alerts.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense/Data%20Connectors/Zimperium%20MTD%20Alerts.json) |

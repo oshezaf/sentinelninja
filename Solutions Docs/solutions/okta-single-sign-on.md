@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity,Security - Automation (SOAR) |
 | **Source Vendor** | Okta *(basis: publisher)* |
+| **Source Product** | Single Sign-On |
 | **Version** | 3.1.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-24 |

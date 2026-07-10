@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `OfficeATP` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Defender for Office 365 |
 | **Used in Solutions** | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_OfficeATP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Data%20Connectors/template_OfficeATP.json) |

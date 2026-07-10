@@ -13,6 +13,7 @@
 | **Connector ID** | `GoogleApigeeXLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: title)* |
+| **Source Product** | ApigeeX |
 | **Used in Solutions** | [Google Apigee](../solutions/google-apigee.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GoogleApigeeXLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee/Data%20Connectors/GoogleApigeeXLog_CCP/GoogleApigeeXLog_ConnectorDefinition.json) |

@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `NonameSecurityMicrosoftSentinel` |
 | **Publisher / Vendor** | Noname Security |
+| **Source Product** | for Microsoft Sentinel |
 | **Used in Solutions** | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_RESTAPI_NonameSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity/Data%20Connectors/Connector_RESTAPI_NonameSecurity.json) |

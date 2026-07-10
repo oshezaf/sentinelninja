@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.akamai.com/global-services/support/guardicore-support](https://www.akamai.com/global-services/support/guardicore-support) |
 | **Categories** | Security - Cloud Security,Security - Network |
 | **Source Vendor** | Akamai *(basis: publisher)* |
+| **Source Product** | Guardicore |
 | **Version** | 3.0.0 |
 | **Author** | Akamai Guardicore - specialist@akamai.com |
 | **First Published** | 2025-04-23 |

@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `CofenseIntelligence` |
 | **Publisher / Vendor** | Cofense |
+| **Source Product** | Intelligence Threat Indicators Ingestion |
 | **Used in Solutions** | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CofenseIntelligence_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence/Data%20Connectors/CofenseIntelligenceDataConnector/CofenseIntelligence_API_FunctionApp.json) |

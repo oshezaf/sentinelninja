@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.citrix.com/support/](https://www.citrix.com/support/) |
 | **Categories** | Security - Network,Security - Cloud Security |
 | **Source Vendor** | Citrix *(basis: publisher)* |
+| **Source Product** | Analytics |
 | **Version** | 3.0.0 |
 | **Author** | Citrix Systems, Inc. |
 | **First Published** | 2026-01-21 |

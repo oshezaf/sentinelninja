@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `M365Assets` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | 365 Assets |
 | **Used in Solutions** | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [M365Asset_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Assets/Data%20Connectors/M365Asset_DataConnectorDefinition.json) |

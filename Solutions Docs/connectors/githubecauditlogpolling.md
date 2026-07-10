@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `GitHubEcAuditLogPolling` |
 | **Publisher / Vendor** | GitHub |
+| **Source Product** | Enterprise Audit |
 | **Used in Solutions** | [GitHub](../solutions/github.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [azuredeploy_GitHub_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/azuredeploy_GitHub_native_poller_connector.json) |

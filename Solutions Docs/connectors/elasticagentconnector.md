@@ -13,6 +13,7 @@
 | **Connector ID** | `ElasticAgentConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Elastic *(basis: title)* |
+| **Source Product** | Agent |
 | **Used in Solutions** | [ElasticAgent](../solutions/elasticagent.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ElasticAgent_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_ConnectorDefinition.json) |

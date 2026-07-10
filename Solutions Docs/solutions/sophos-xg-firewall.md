@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Sophos *(basis: publisher)* |
+| **Source Product** | XG Firewall |
 | **Version** | 3.0.1 |
 | **Author** | SophosXGFirewall |
 | **First Published** | 2021-10-20 |

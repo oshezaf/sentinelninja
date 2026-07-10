@@ -10,6 +10,7 @@
 |:----------|:------|
 | **Category** | AWS |
 | **Source Vendor** | Amazon *(basis: projected)* |
+| **Source Product** | Elastic Load Balancing |
 
 ## Contents
 

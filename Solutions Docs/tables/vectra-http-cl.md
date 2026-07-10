@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Vectra *(basis: projected)* |
+| **Source Product** | AI Stream |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

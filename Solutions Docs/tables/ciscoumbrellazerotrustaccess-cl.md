@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Cisco *(basis: projected)* |
+| **Source Product** | Cloud Security, Umbrella |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

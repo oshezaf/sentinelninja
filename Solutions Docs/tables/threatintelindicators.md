@@ -12,6 +12,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Internal |
 | **Source Vendor** | CrowdStrike, Cyjax, GreyNoise, Inc. and BlueCycle LLC, Infoblox, Joe Security, Lumen, MISP project & cudeso.be, Microsoft, Orange Cyberdefense, VMRay *(basis: projected)* |
+| **Source Product** | Defender Threat Feed Data Connector V2, Defender Threat Intelligence, Falcon Adversary Intelligence, Threat Intelligence, Threat Intelligence IOC |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

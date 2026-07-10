@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
 | **Source Vendor** | Google *(basis: title)* |
+| **Source Product** | Security Command Center |
 | **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-09-11 |

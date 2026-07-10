@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `BlackberryCylancePROTECT` |
 | **Publisher / Vendor** | Blackberry |
+| **Source Product** | CylancePROTECT |
 | **Used in Solutions** | [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_BlackberryCylancePROTECT.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT/Data%20Connectors/template_BlackberryCylancePROTECT.JSON) |

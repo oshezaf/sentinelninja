@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
+| **Source Product** | Enterprise - National IDs |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

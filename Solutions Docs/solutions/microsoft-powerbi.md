@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | PowerBI |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |

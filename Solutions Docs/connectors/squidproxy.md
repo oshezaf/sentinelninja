@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `SquidProxy` |
 | **Publisher / Vendor** | Squid |
+| **Source Product** | Proxy |
 | **Used in Solutions** | [SquidProxy](../solutions/squidproxy.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_CustomLog_SquidProxy.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SquidProxy/Data%20Connectors/Connector_CustomLog_SquidProxy.json) |

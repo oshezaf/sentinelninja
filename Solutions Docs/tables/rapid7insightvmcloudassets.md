@@ -12,6 +12,7 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Security |
 | **Source Vendor** | Rapid7 *(basis: projected)* |
+| **Source Product** | Insight Platform Vulnerability Management Reports |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

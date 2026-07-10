@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.ipinfo.io/](https://www.ipinfo.io/) |
 | **Categories** | Storage,Application |
 | **Source Vendor** | IPinfo *(basis: publisher)* |
+| **Source Product** | ASN, Abuse, Carrier, Company, Core, Country ASN, Domain, Iplocation, Iplocation Extended, Plus, Privacy, Privacy Extended, RIRWHOIS, RWHOIS, ResProxy, WHOIS ASN, WHOIS MNT, WHOIS NET, WHOIS ORG, WHOIS POC |
 | **Version** | 3.0.5 |
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |

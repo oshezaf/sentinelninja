@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `KnowBe4DefendPolling` |
 | **Publisher / Vendor** | KnowBe4 |
+| **Source Product** | Defend |
 | **Used in Solutions** | [KnowBe4 Defend](../solutions/knowbe4-defend.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DefendAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KnowBe4%20Defend/Data%20Connectors/DefendAPIConnector.json) |

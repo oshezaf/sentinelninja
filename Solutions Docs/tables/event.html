@@ -39,6 +39,10 @@
   <td style="text-align:left">AutomatedLogic, Microsoft <em>(basis: projected)</em></td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Source Product</strong></td>
+  <td style="text-align:left">Exchange Admin Audit Logs by, Exchange Logs and</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -794,14 +798,6 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventLevel in &quot;1,2,3&quot;</code><br><code>Source == &quot;ALCWebCTRL&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>EventLog in &quot;Application,MSExchange Management,System&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -810,7 +806,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventLog == &quot;MSExchange Management&quot;</code></td>
+  <td style="text-align:left"><code>EventLog == &quot;Application&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -818,7 +814,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventLog == &quot;Application&quot;</code></td>
+  <td style="text-align:left"><code>EventLevel in &quot;1,2,3&quot;</code><br><code>Source == &quot;ALCWebCTRL&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventLog == &quot;MSExchange Management&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.illumio.com/support/support](https://www.illumio.com/support/support) |
 | **Categories** | Security - Network,Security - Threat Protection |
 | **Source Vendor** | Illumio *(basis: publisher)* |
+| **Source Product** | SaaS, Saas |
 | **Version** | 3.4.0 |
 | **Author** | app-integrations@illumio.com |
 | **First Published** | 2024-05-13 |

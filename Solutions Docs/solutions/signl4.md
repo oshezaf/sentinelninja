@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.signl4.com](https://www.signl4.com) |
 | **Categories** | DevOps,IT Operations |
 | **Source Vendor** | Derdack *(basis: publisher)* |
+| **Source Product** | SIGNL4 |
 | **Version** | 2.0.3 |
 | **Author** | Ronald Czachara - ron@signl4.com |
 | **First Published** | 2021-12-10 |

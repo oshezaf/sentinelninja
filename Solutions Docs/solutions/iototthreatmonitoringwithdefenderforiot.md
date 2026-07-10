@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Internet of Things (IoT),Security - Threat Protection |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Defender for IoT |
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-26 |

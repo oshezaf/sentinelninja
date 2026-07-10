@@ -13,6 +13,7 @@
 | **Connector ID** | `SlackAuditLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Slack *(basis: description_url)* |
+| **Source Product** | Audit |
 | **Used in Solutions** | [SlackAudit](../solutions/slackaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SlackAuditLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_ConnectorDefinition.json) |

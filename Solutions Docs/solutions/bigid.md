@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.bigid.com](https://support.bigid.com) |
 | **Categories** | Compliance,Security - Information Protection,Storage |
 | **Source Vendor** | BigID *(basis: publisher)* |
+| **Source Product** | DSPM |
 | **Version** | 3.0.0 |
 | **Author** | BigID - mhebrard@bigid.com |
 | **First Published** | 2025-10-07 |

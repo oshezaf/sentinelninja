@@ -17,6 +17,7 @@
 | **Connector ID** | `IllumioSaasCCFDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Illumio *(basis: description_url)* |
+| **Source Product** | Saas |
 | **Used in Solutions** | [IllumioSaaS](../solutions/illumiosaas.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioSaasLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/IllumioSaasLogs_ConnectorDefinition.json) |

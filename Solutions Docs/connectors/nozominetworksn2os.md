@@ -16,6 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `NozomiNetworksN2OS` |
 | **Publisher / Vendor** | Nozomi Networks |
+| **Source Product** | N2OS |
 | **Used in Solutions** | [NozomiNetworks](../solutions/nozominetworks.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [NozomiNetworksN2OS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NozomiNetworks/Data%20Connectors/NozomiNetworksN2OS.json) |

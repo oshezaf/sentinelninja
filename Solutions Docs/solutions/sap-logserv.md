@@ -17,6 +17,7 @@
 | **Support Link** | [https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/announcing-limited-preview-of-sap-logserv-integration-with-microsoft/ba-p/13942180](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/announcing-limited-preview-of-sap-logserv-integration-with-microsoft/ba-p/13942180) |
 | **Categories** | Security - Threat Protection,Identity,Application,Cloud Provider |
 | **Source Vendor** | SAP *(basis: override)* |
+| **Source Product** | LogServ |
 | **Version** | 3.0.3 |
 | **Author** | SAP |
 | **First Published** | 2025-02-17 |

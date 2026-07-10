@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `OfficeIRM` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | 365 Insider Risk Management |
 | **Used in Solutions** | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_OfficeIRM.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement/Data%20Connectors/template_OfficeIRM.JSON) |

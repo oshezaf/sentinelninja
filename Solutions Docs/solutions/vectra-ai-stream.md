@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.vectra.ai/support](https://www.vectra.ai/support) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Vectra *(basis: publisher)* |
+| **Source Product** | AI Stream |
 | **Version** | 3.0.1 |
 | **Author** | Vectra TME Team - tme@vetcra.ai |
 | **First Published** | 2021-10-18 |

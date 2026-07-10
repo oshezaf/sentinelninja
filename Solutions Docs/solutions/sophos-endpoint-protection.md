@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Sophos *(basis: publisher)* |
+| **Source Product** | Endpoint Protection |
 | **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |

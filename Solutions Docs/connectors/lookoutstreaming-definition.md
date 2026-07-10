@@ -13,6 +13,7 @@
 | **Connector ID** | `LookoutStreaming_Definition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Lookout *(basis: description_url)* |
+| **Source Product** | Mobile Threat Detection |
 | **Used in Solutions** | [Lookout](../solutions/lookout.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [LookoutStreaming_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DataConnectorDefinition.json) |

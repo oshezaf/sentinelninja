@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftDefenderThreatIntelligence` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Defender Threat Intelligence |
 | **Used in Solutions** | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_MicrosoftDefenderThreatIntelligence.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29/Data%20Connectors/template_MicrosoftDefenderThreatIntelligence.json) |

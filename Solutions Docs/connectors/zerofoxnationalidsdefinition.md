@@ -15,6 +15,7 @@
 | **Connector ID** | `ZeroFoxNationalIdsDefinition` |
 | **Publisher** | ZeroFox Enterprise |
 | **Source Vendor** | ZeroFox *(basis: publisher)* |
+| **Source Product** | Enterprise - National IDs |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_NationalIds_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/National%20Ids/ZeroFoxThreatIntelligence_NationalIds_ConnectorDefinition.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Lookout *(basis: publisher)* |
+| **Source Product** | Mobile Threat Detection |
 | **Version** | 3.0.5 |
 | **Author** | Lookout |
 | **First Published** | 2021-10-18 |

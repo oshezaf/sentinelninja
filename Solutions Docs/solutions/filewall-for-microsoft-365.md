@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.odi-x.com/contact-filewall-support/](https://www.odi-x.com/contact-filewall-support/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Filewall *(basis: publisher)* |
+| **Source Product** | for Microsoft 365 |
 | **Version** | 3.0.0 |
 | **Author** | Filewall - support@filewall.com |
 | **First Published** | 2026-01-06 |

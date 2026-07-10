@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.withsecure.com/en/support](https://www.withsecure.com/en/support) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | WithSecure *(basis: publisher)* |
+| **Source Product** | Elements API |
 | **Version** | 3.0.2 |
 | **Author** | WithSecure |
 | **First Published** | 2024-02-22 |

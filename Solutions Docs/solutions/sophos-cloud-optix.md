@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.sophos.com/en-us/support](https://www.sophos.com/en-us/support) |
 | **Categories** | Security - Threat Protection,Security - Cloud Security |
 | **Source Vendor** | Sophos *(basis: publisher)* |
+| **Source Product** | Cloud Optix |
 | **Version** | 2.0.1 |
 | **Author** | Sophos |
 | **First Published** | 2022-05-02 |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://duo.com/support](https://duo.com/support) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Cisco *(basis: publisher)* |
+| **Source Product** | Duo Security |
 | **Version** | 3.1.1 |
 | **Author** | CiscoDuoSecurity - support@duosecurity.com |
 | **First Published** | 2022-01-07 |

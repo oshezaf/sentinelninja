@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Forescout *(basis: publisher)* |
+| **Source Product** | eyeInspect for OT Security |
 | **Version** | 3.0.0 |
 | **Author** | Rao Peraka - rao.peraka@forescout.com |
 | **First Published** | 2025-07-10 |

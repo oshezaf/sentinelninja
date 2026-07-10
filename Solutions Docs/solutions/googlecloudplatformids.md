@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider,Networking |
 | **Source Vendor** | Google *(basis: name_pattern)* |
+| **Source Product** | Cloud Platform Cloud IDS |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |

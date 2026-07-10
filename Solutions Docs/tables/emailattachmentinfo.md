@@ -12,6 +12,7 @@ Reference for EmailAttachmentInfo table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Defender |
 | **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Product** | Defender XDR |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |

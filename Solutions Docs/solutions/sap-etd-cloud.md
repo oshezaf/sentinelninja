@@ -17,6 +17,7 @@
 | **Support Link** | [https://help.sap.com/docs/SAP_ENTERPRISE_THREAT_DETECTION_CLOUD_EDITION](https://help.sap.com/docs/SAP_ENTERPRISE_THREAT_DETECTION_CLOUD_EDITION) |
 | **Categories** | Security - Threat Protection,Identity,Application |
 | **Source Vendor** | SAP *(basis: override)* |
+| **Source Product** | Enterprise Threat Detection, cloud edition |
 | **Version** | 3.0.5 |
 | **Author** | SAP |
 | **First Published** | 2025-02-17 |

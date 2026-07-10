@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Juniper *(basis: publisher)* |
+| **Source Product** | IDP |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-03-31 |

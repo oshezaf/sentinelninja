@@ -13,6 +13,7 @@
 | **Connector ID** | `BitSightEventsConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | BitSight *(basis: description_url)* |
+| **Source Product** | Security |
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_Events_CCF/ConnectorDefinition.json) |

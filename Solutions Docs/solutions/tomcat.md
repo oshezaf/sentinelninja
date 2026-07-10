@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,Application |
 | **Source Vendor** | Apache *(basis: publisher)* |
+| **Source Product** | Tomcat |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |

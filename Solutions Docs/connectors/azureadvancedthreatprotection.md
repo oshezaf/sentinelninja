@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureAdvancedThreatProtection` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Defender for Identity |
 | **Used in Solutions** | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [MicrosoftDefenderforIdentity.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20For%20Identity/Data%20Connectors/MicrosoftDefenderforIdentity.JSON) |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Filewall *(basis: projected)* |
+| **Source Product** | for Microsoft 365 |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

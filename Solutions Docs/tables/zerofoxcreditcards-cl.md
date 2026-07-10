@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
+| **Source Product** | Enterprise - Credit Cards |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

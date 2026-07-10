@@ -13,6 +13,7 @@
 | **Connector ID** | `GCPCDNLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: name_pattern)* |
+| **Source Product** | Cloud Platform CDN |
 | **Used in Solutions** | [GoogleCloudPlatformCDN](../solutions/googlecloudplatformcdn.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPCDNLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformCDN/Data%20Connectors/GCPCDNLogs_ccp/GCPCDNLogs_ConnectorDefinition.json) |

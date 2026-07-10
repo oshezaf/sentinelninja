@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
 | **Source Vendor** | GitHub *(basis: title)* |
+| **Source Product** | Enterprise Audit |
 | **Version** | 3.3.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |

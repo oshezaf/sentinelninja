@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Alibaba *(basis: projected)* |
+| **Source Product** | Cloud Networking |
 
 ## Contents
 

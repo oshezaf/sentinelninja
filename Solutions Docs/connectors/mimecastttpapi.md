@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MimecastTTPAPI` |
 | **Publisher / Vendor** | Mimecast |
+| **Source Product** | Targeted Threat Protection |
 | **Used in Solutions** | [Mimecast](../solutions/mimecast.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_TTP_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastTTP/Mimecast_TTP_FunctionApp.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Elastic *(basis: publisher)* |
+| **Source Product** | Agent |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-12 |

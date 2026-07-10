@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Netskope *(basis: projected)* |
+| **Source Product** | Alerts and |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

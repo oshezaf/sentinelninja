@@ -17,6 +17,7 @@
 | **Connector ID** | `TheHiveProjectTheHive` |
 | **Publisher** | TheHive Project |
 | **Source Vendor** | TheHive *(basis: publisher)* |
+| **Source Product** | Project - TheHive |
 | **Used in Solutions** | [TheHive](../solutions/thehive.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TheHive_Webhooks_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/TheHive_Webhooks_FunctionApp.json) |

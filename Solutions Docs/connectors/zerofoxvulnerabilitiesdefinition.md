@@ -15,6 +15,7 @@
 | **Connector ID** | `ZeroFoxVulnerabilitiesDefinition` |
 | **Publisher** | ZeroFox Enterprise |
 | **Source Vendor** | ZeroFox *(basis: publisher)* |
+| **Source Product** | Enterprise - Vulnerabilities |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_Vulnerabilities_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Vulnerabilities/ZeroFoxThreatIntelligence_Vulnerabilities_ConnectorDefinition.json) |

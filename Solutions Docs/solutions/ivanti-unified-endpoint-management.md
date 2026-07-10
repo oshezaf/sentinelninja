@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations,Security - Others |
 | **Source Vendor** | Ivanti *(basis: publisher)* |
+| **Source Product** | Unified Endpoint Management |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-05 |

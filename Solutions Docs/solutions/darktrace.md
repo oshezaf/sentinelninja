@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.darktrace.com/contact/](https://www.darktrace.com/contact/) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Darktrace *(basis: publisher)* |
+| **Source Product** | ActiveAI Security Platform, Connector for Microsoft Sentinel REST API |
 | **Version** | 3.0.0 |
 | **Author** | Darktrace - customers@darktrace.com |
 | **First Published** | 2022-05-02 |

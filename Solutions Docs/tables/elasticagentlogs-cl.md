@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Elastic *(basis: projected)* |
+| **Source Product** | Agent |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

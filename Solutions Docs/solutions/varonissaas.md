@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Varonis *(basis: publisher)* |
+| **Source Product** | SaaS |
 | **Version** | 3.0.3 |
 | **Author** | Varonis |
 | **First Published** | 2023-11-10 |

@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Atlassian *(basis: projected)* |
+| **Source Product** | Confluence Audit |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

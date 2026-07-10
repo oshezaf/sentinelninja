@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `MimecastTIRegionalConnectorAzureFunctions` |
 | **Publisher / Vendor** | Mimecast |
+| **Source Product** | Intelligence for Microsoft - Microsoft Sentinel |
 | **Used in Solutions** | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [MimecastTIRegional_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastTIRegional/Data%20Connectors/MimecastTIRegional_API_AzureFunctionApp.json) |

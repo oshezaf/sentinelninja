@@ -13,6 +13,7 @@
 | **Connector ID** | `F5BigIp` |
 | **Publisher** | F5 Networks |
 | **Source Vendor** | F5 *(basis: publisher)* |
+| **Source Product** | BIG-IP |
 | **Used in Solutions** | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [F5BigIp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP/Data%20Connectors/F5BigIp.json) |

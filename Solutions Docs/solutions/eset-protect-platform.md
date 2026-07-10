@@ -17,6 +17,7 @@
 | **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Protection |
 | **Source Vendor** | ESET *(basis: publisher)* |
+| **Source Product** | Protect Platform |
 | **Version** | 3.2.0 |
 | **Author** | ESET |
 | **First Published** | 2024-10-29 |

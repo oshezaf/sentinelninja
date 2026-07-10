@@ -10,6 +10,7 @@
 |:----------|:------|
 | **Category** | GCP |
 | **Source Vendor** | Google *(basis: projected)* |
+| **Source Product** | Cloud Platform Cloud Monitoring |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

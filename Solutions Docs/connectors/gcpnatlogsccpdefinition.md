@@ -13,6 +13,7 @@
 | **Connector ID** | `GCPNATLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: name_pattern)* |
+| **Source Product** | Cloud Platform NAT |
 | **Used in Solutions** | [GoogleCloudPlatformNAT](../solutions/googlecloudplatformnat.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPNATLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT/Data%20Connectors/GCPNATLogs_ccp/GCPNATLogs_ConnectorDefinition.json) |

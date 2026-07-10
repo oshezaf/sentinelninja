@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.jamf.com/support/](https://www.jamf.com/support/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Source Vendor** | Jamf *(basis: publisher)* |
+| **Source Product** | Protect Push |
 | **Version** | 3.3.0 |
 | **Author** | Thijs Xhaflaire - thijs.xhaflaire@jamf.com |
 | **First Published** | 2022-10-10 |

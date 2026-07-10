@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.morphisec.com/support/home](https://support.morphisec.com/support/home) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Morphisec *(basis: publisher)* |
+| **Source Product** | API |
 | **Version** | 3.1.0 |
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IoT` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Defender for IoT |
 | **Used in Solutions** | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_IoT.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Data%20Connector/template_IoT.JSON) |

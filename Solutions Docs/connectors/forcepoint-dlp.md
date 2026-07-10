@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Forcepoint_DLP` |
 | **Publisher / Vendor** | Forcepoint |
+| **Source Product** | DLP |
 | **Used in Solutions** | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Forcepoint%20DLP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP/Data%20Connectors/Forcepoint%20DLP.json) |

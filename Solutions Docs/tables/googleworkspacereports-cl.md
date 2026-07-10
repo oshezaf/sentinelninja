@@ -10,6 +10,7 @@
 |:----------|:------|
 | **Category** | GCP |
 | **Source Vendor** | Google *(basis: projected)* |
+| **Source Product** | Workspace |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

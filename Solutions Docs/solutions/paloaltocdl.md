@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
 | **Source Vendor** | Palo Alto Networks *(basis: publisher)* |
-| **Source Product** | LF |
+| **Source Product** | Cortex Data Lake, LF |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |

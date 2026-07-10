@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `SophosEP` |
 | **Publisher / Vendor** | Sophos |
+| **Source Product** | Endpoint Protection |
 | **Used in Solutions** | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SophosEP_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_API_FunctionApp.json) |

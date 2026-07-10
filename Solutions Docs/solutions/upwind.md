@@ -17,6 +17,7 @@
 | **Support Link** | [https://upwind.io](https://upwind.io) |
 | **Categories** | Security - Cloud Security |
 | **Source Vendor** | Upwind *(basis: publisher)* |
+| **Source Product** | Logs Loader |
 | **Version** | 3.0.2 |
 | **Author** | Upwind - hello@upwind.io |
 | **First Published** | 2026-03-10 |

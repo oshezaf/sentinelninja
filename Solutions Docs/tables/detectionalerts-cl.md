@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Google *(basis: projected)* |
+| **Source Product** | SecOps Detection Alerts |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
