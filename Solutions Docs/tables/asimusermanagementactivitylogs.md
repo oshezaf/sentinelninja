@@ -12,7 +12,7 @@ Reference for ASimUserManagementActivityLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | CrowdStrike, Synqly *(basis: projected)* |
-| **Source Product** | Falcon Data Replicator, Integration |
+| **Source Product** | Falcon Data Replicator, Integration Connector |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

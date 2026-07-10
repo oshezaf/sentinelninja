@@ -17,7 +17,7 @@
 | **Support Link** | [https://help.miro.com](https://help.miro.com) |
 | **Categories** | Security - Automation (SOAR),Security - Insider Threat,Security - Information Protection,Security - Threat Protection,Security - Cloud Security,Compliance,User Behavior (UEBA),Application |
 | **Source Vendor** | Miro *(basis: publisher)* |
-| **Source Product** | Audit, Content |
+| **Source Product** | Audit Logs, Content Logs |
 | **Version** | 3.0.0 |
 | **Author** | Miro - enterprise_integrations@miro.com |
 | **Last Updated** | 2026-01-08 |

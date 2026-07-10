@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MiroAuditLogsDataConnector` |
 | **Publisher / Vendor** | Miro |
-| **Source Product** | Audit |
+| **Source Product** | Audit Logs |
 | **Used in Solutions** | [Miro](../solutions/miro.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MiroAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DataConnectorDefinition.json) |

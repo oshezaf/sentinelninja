@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Product** | Fortra Agari |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

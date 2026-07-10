@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Semperis *(basis: projected)* |
-| **Source Product** | Lightning |
+| **Source Product** | Lightning Logs |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

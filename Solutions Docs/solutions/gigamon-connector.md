@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.gigamon.com/](https://www.gigamon.com/) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Gigamon *(basis: publisher)* |
-| **Source Product** | AMX |
+| **Source Product** | AMX Connector |
 | **Version** | 3.0.0 |
 | **Author** | Gigamon |
 | **Last Updated** | 2026-03-06 |

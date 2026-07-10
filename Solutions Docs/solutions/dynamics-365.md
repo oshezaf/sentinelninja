@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application,Cloud Provider |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Dynamics 365 |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-17 |

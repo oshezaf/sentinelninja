@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.keepersecurity.com](https://www.keepersecurity.com) |
 | **Categories** | Security - Threat Protection,Security - Information Protection |
 | **Source Vendor** | Keeper Security *(basis: publisher)* |
-| **Source Product** | Push |
+| **Source Product** | Push Connector |
 | **Version** | 3.0.0 |
 | **Author** | Joao Paulo Oliveira Santos - jsantos@keepersecurity.com |
 | **First Published** | 2025-06-03 |

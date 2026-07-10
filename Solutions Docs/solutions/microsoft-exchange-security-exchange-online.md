@@ -17,6 +17,7 @@
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Application |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Exchange Security Insights Online |
 | **Version** | 3.1.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |

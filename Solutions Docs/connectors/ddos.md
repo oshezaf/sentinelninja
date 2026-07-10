@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DDOS` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Azure DDoS Protection |
 | **Used in Solutions** | [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [DDOS.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection/Data%20Connectors/DDOS.JSON) |

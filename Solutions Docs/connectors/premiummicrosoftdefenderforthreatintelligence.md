@@ -14,6 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `PremiumMicrosoftDefenderForThreatIntelligence` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Premium Microsoft Defender Threat Intelligence |
 | **Used in Solutions** | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_PremiumMicrosoftDefenderThreatIntelligence.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Data%20Connectors/template_PremiumMicrosoftDefenderThreatIntelligence.json) |

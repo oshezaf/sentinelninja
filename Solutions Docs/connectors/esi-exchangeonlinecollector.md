@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ESI-ExchangeOnlineCollector` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Exchange Security Insights Online |
 | **Used in Solutions** | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ESI-ExchangeOnlineCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ExchangeOnlineCollector.json) |

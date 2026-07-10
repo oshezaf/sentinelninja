@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MiroContentLogsDataConnector` |
 | **Publisher / Vendor** | Miro |
-| **Source Product** | Content |
+| **Source Product** | Content Logs |
 | **Used in Solutions** | [Miro](../solutions/miro.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MiroContentLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_DataConnectorDefinition.json) |

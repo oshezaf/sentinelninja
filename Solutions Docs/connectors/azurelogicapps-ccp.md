@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureLogicApps_CCP` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Azure Logic Apps |
 | **Used in Solutions** | [Azure Logic Apps](../solutions/azure-logic-apps.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureLogicApps_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps/Data%20Connectors/AzureLogicApps_CCP.JSON) |

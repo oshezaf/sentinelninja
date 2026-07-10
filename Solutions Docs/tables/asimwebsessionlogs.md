@@ -12,7 +12,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | Cisco, Synqly *(basis: projected)* |
-| **Source Product** | Integration, Meraki |
+| **Source Product** | Integration Connector, Meraki |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

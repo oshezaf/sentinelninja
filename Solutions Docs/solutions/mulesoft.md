@@ -15,7 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,IT Operations |
 | **Source Vendor** | MuleSoft *(basis: publisher)* |
-| **Source Product** | Cloudhub, CloudHub Alerts, CloudHub |
+| **Source Product** | Cloudhub, CloudHub Alerts, CloudHub Logs |
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |

@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | BitSight *(basis: projected)* |
-| **Source Product** | Security |
+| **Source Product** | Security Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

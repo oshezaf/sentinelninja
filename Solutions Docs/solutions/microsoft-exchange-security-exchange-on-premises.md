@@ -17,7 +17,7 @@
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Application |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Exchange Logs and, Exchange Admin Audit Logs by, Active-Directory Domain Controllers Security, Exchange Message Tracking, Exchange HTTP Proxy |
+| **Source Product** | Exchange Logs and, Exchange Security Insights On-Premises, Exchange Admin Audit Logs by, Active-Directory Domain Controllers Security, IIS Logs of Microsoft Exchange Servers, Exchange Message Tracking, Exchange HTTP Proxy |
 | **Version** | 3.3.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |

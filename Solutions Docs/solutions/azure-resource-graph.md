@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
+| **Source Product** | Azure Resource Graph |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft |
 | **First Published** | 2025-06-20 |

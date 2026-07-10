@@ -12,6 +12,7 @@ Reference for ThreatIntelExportOperation table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Security |
 | **Source Vendor** | Microsoft *(basis: projected)* |
+| **Source Product** | Threat intelligence - TAXII Export |
 | **Basic Logs Eligible** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelexportoperation) |

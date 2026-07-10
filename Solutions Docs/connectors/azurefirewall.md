@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureFirewall` |
 | **Publisher / Vendor** | Microsoft |
+| **Source Product** | Azure Firewall |
 | **Used in Solutions** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureFirewall.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Data%20Connectors/AzureFirewall.JSON) |

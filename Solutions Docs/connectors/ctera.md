@@ -13,7 +13,6 @@
 | **Connector ID** | `CTERA` |
 | **Publisher** | CTERA Networks Ltd |
 | **Source Vendor** | CTERA *(basis: publisher)* |
-| **Source Product** | Syslog |
 | **Used in Solutions** | [CTERA](../solutions/ctera.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CTERA_Data_Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA/Data%20Connectors/CTERA_Data_Connector.json) |
