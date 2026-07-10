@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
-| **Source Vendor** | AliCloud *(basis: publisher)* |
+| **Source Vendor** | Alibaba *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |

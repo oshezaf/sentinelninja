@@ -8,7 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | TheHive Project *(basis: projected)* |
+| **Source Vendor** | TheHive *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

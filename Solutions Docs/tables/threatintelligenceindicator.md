@@ -376,8 +376,8 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
@@ -387,9 +387,9 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
-| `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `!startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense :` | 1 | - | - | - | **1** |

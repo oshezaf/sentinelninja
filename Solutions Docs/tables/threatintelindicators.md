@@ -361,14 +361,14 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "ipv4-addr:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
-| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
+| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
+| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
@@ -390,10 +390,10 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
-| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `Lumen` | 2 | - | - | - | **2** |
-| `MISP` | 1 | - | - | - | **1** |
+| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `MISP` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
 
 ---
