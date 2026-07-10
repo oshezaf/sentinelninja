@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyberArkEPMCCPDefinition` |
 | **Publisher / Vendor** | CyberArk |
-| **Source Product** | EPM |
+| **Source Product** | EPM *(basis: title)* |
 | **Used in Solutions** | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Package/mainTemplate.json) |

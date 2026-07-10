@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `PaloAltoNetworksAma` |
 | **Publisher / Vendor** | Palo Alto Networks |
-| **Source Product** | PAN-OS |
+| **Source Product** | PAN-OS *(basis: event)* |
 | **Used in Solutions** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_PaloAltoNetworksAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Data%20Connectors/template_PaloAltoNetworksAMA.json) |

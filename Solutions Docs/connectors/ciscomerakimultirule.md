@@ -13,7 +13,7 @@
 | **Connector ID** | `CiscoMerakiMultiRule` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Cisco *(basis: event)* |
-| **Source Product** | Meraki |
+| **Source Product** | Meraki *(basis: event)* |
 | **Used in Solutions** | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [dataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API/Data%20Connectors/CiscoMerakiMultiRule_ccp/dataConnectorDefinition.json) |
@@ -44,8 +44,8 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | ✓ | ✓ | ✓ |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | ✓ | ✓ | ✓ |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | MongoDB *(basis: projected)* |
-| **Source Product** | Atlas Logs |
+| **Source Product** | Atlas *(basis: projected)* |
+| **Event Type** | Logs |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

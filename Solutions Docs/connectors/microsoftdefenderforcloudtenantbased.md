@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftDefenderForCloudTenantBased` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Tenant-based Microsoft Defender for Cloud |
+| **Source Product** | Tenant-based Microsoft Defender for Cloud *(basis: title)* |
 | **Used in Solutions** | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [MicrosoftDefenderForCloudTenantBased.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud/Data%20Connectors/MicrosoftDefenderForCloudTenantBased.json) |

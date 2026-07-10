@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.cyjax.com/demo](https://www.cyjax.com/demo) |
 | **Categories** | Security - Threat Intelligence |
 | **Source Vendor** | Cyjax *(basis: publisher)* |
-| **Source Product** | Threat Intelligence IOC |
+| **Source Product** | Threat Intelligence |
 | **Version** | 3.0.0 |
 | **Author** | Cyjax - info@cyjax.com |
 | **First Published** | 2026-03-24 |

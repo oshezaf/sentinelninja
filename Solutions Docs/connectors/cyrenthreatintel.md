@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CyrenThreatIntel` |
 | **Publisher / Vendor** | Cyren |
-| **Source Product** | Threat Intelligence |
+| **Source Product** | Threat Intelligence *(basis: title)* |
 | **Used in Solutions** | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Cyren_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_ConnectorDefinition.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `WindowsFirewall` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Windows Firewall |
+| **Source Product** | Windows Firewall *(basis: title)* |
 | **Used in Solutions** | [Windows Firewall](../solutions/windows-firewall.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Windows%20Firewall.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall/Data%20Connectors/Windows%20Firewall.JSON) |

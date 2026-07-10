@@ -17,7 +17,6 @@
 | **Support Link** | [https://cynerio.com](https://cynerio.com) |
 | **Categories** | Security - Vulnerability Management,Security - Network |
 | **Source Vendor** | Cynerio *(basis: publisher)* |
-| **Source Product** | Security Events |
 | **Version** | 3.0.0 |
 | **Author** | micha@cynerio.co |
 | **First Published** | 2023-03-29 |

@@ -12,7 +12,8 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | Cisco, CrowdStrike, Microsoft, Synqly, VMware *(basis: projected)* |
-| **Source Product** | Carbon Black Cloud, Falcon Data Replicator, Integration Connector, Meraki, Windows Firewall |
+| **Source Product** | Carbon Black Cloud, Falcon Data Replicator, Integration, Meraki, Windows Firewall *(basis: projected)* |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -206,11 +207,11 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---
 
@@ -244,25 +245,21 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (4 criteria, 4 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 3 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 1 | - | - | - | **1** |
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
-| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **3** | **0** | **1** | **0** | **4** |
+| **Total** | **1** | **0** | **1** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Carbon Black Cloud` | `VMWare` | 1 | - | - | - | **1** |
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 
 ### EventType
 

@@ -18,7 +18,8 @@
 |:----------|:------|
 | **Connector ID** | `ConfluenceAuditAPI` |
 | **Publisher / Vendor** | Atlassian |
-| **Source Product** | Confluence Audit |
+| **Source Product** | Confluence *(basis: title)* |
+| **Event Type** | Audit |
 | **Used in Solutions** | [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ConfluenceAudit_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit/Data%20Connectors/AtlassianConfluenceAuditDataConnector/ConfluenceAudit_API_FunctionApp.json) |

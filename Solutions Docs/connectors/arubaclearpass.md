@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ArubaClearPass` |
 | **Publisher / Vendor** | Aruba Networks |
-| **Source Product** | ClearPass |
+| **Source Product** | ClearPass *(basis: event)* |
 | **Used in Solutions** | [Aruba ClearPass](../solutions/aruba-clearpass.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_ArubaClearPass.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass/Data%20Connectors/Connector_Syslog_ArubaClearPass.json) |

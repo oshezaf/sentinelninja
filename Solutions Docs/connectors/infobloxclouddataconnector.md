@@ -18,7 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `InfobloxCloudDataConnector` |
 | **Publisher / Vendor** | Infoblox |
-| **Source Product** | Data Connector |
+| **Source Product** | Cloud *(basis: title)* |
 | **Used in Solutions** | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [InfobloxCloudDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector/Data%20Connectors/InfobloxCloudDataConnector.json) |

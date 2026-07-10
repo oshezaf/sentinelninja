@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ClarotyxDome` |
 | **Publisher / Vendor** | Claroty |
-| **Source Product** | xDome |
+| **Source Product** | xDome *(basis: title)* |
 | **Used in Solutions** | [Claroty xDome](../solutions/claroty-xdome.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Claroty_xDome.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty%20xDome/Data%20Connectors/Claroty_xDome.json) |

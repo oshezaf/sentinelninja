@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Dynamics365Finance` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Dynamics 365 Finance and Operations |
+| **Source Product** | Dynamics 365 Finance and Operations *(basis: title)* |
 | **Used in Solutions** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DynamicsFinOps_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Data%20Connectors/DynamicsFinOpsPollerConnector/DynamicsFinOps_DataConnectorDefinition.json) |

@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `FieldEffectCCF` |
 | **Publisher / Vendor** | Field Effect |
-| **Source Product** | MDR |
+| **Source Product** | MDR *(basis: title)* |
 | **Used in Solutions** | [FieldEffectMDR](../solutions/fieldeffectmdr.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [FieldEffect_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FieldEffectMDR/Data%20Connectors/FieldEffect_ConnectorDefinition.json) |

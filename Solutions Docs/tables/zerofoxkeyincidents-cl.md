@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Key Incidents |
+| **Source Product** | Enterprise - Key *(basis: projected)* |
+| **Event Type** | Incidents |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

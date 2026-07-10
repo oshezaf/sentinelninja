@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Druva Events |
+| **Source Product** | Druva *(basis: projected)* |
+| **Event Type** | Events |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

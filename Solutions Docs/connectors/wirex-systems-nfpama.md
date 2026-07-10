@@ -15,7 +15,7 @@
 | **Connector ID** | `WireX_Systems_NFPAma` |
 | **Publisher** | WireX_Systems |
 | **Source Vendor** | WireX Systems *(basis: event)* |
-| **Source Product** | WireX NFP |
+| **Source Product** | WireX NFP *(basis: event)* |
 | **Used in Solutions** | [WireX Network Forensics Platform](../solutions/wirex-network-forensics-platform.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_WireXsystemsNFPAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform/Data%20Connectors/template_WireXsystemsNFPAMA.json) |

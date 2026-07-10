@@ -12,7 +12,7 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Security |
 | **Source Vendor** | Illumio *(basis: projected)* |
-| **Source Product** | Insights |
+| **Source Product** | Insights *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

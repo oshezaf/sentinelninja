@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Miro *(basis: projected)* |
-| **Source Product** | Audit Logs |
+| **Event Type** | Audit Logs |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

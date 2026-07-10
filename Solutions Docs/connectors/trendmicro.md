@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `TrendMicro` |
 | **Publisher / Vendor** | Trend Micro |
-| **Source Product** | Deep Security |
+| **Source Product** | Deep Security *(basis: title)* |
 | **Used in Solutions** | [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TrendMicroDeepSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security/Data%20Connectors/TrendMicroDeepSecurity.json) |

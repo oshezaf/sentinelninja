@@ -13,7 +13,7 @@
 | **Connector ID** | `OpenAIConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | OpenAI *(basis: event)* |
-| **Source Product** | OpenAI API Platform |
+| **Source Product** | OpenAI API Platform *(basis: event)* |
 | **Used in Solutions** | [OpenAI](../solutions/openai.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [OpenAI_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAI_ConnectorDefinition.json) |

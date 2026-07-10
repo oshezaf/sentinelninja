@@ -18,7 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `GCPDNSDataConnector` |
 | **Publisher / Vendor** | Google |
-| **Source Product** | Cloud Platform DNS |
+| **Source Product** | Cloud Platform DNS *(basis: title)* |
 | **Used in Solutions** | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GCP_DNS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS/Data%20Connectors/GCP_DNS_API_FunctionApp.json) |

@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
 | **Categories** | Security - Cloud Security |
 | **Source Vendor** | Lookout *(basis: publisher)* |
-| **Source Product** | Cloud Security for Microsoft Sentinel |
+| **Source Product** | Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Lookout |
 | **First Published** | 2023-02-17 |

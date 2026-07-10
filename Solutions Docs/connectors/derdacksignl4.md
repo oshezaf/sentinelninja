@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DerdackSIGNL4` |
 | **Publisher / Vendor** | Derdack |
-| **Source Product** | SIGNL4 |
+| **Source Product** | SIGNL4 *(basis: title)* |
 | **Used in Solutions** | [SIGNL4](../solutions/signl4.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [DerdackSIGNL4.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Data%20Connectors/DerdackSIGNL4.json) |

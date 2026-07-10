@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ESI-Opt5ExchangeIISLogs` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | IIS Logs of Microsoft Exchange Servers |
+| **Source Product** | IIS Logs of Microsoft Exchange Servers *(basis: title)* |
 | **Used in Solutions** | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [ESI-Opt5ExchangeIISLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-Opt5ExchangeIISLogs.json) |

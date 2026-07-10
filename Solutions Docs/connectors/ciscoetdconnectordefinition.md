@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoETDConnectorDefinition` |
 | **Publisher / Vendor** | Cisco |
-| **Source Product** | Email Threat Defense |
+| **Source Product** | Email Threat Defense *(basis: title)* |
 | **Used in Solutions** | [Cisco ETD](../solutions/cisco-etd.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CiscoETD_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD/Data%20Connectors/CiscoETD_ccp/CiscoETD_connectorDefinition.json) |

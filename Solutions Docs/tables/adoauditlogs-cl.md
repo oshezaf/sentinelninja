@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Azure DevOps Audit |
+| **Source Product** | Azure DevOps *(basis: projected)* |
+| **Event Type** | Audit Logs |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

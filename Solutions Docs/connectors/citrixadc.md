@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CitrixADC` |
 | **Publisher / Vendor** | Citrix |
-| **Source Product** | ADC |
+| **Source Product** | ADC *(basis: title)* |
 | **Used in Solutions** | [Citrix ADC](../solutions/citrix-adc.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_CitrixADC_syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC/Data%20Connectors/Connector_CitrixADC_syslog.json) |

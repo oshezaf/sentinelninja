@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Cisco *(basis: publisher)* |
-| **Source Product** | Secure Email Gateway, ESA_CONSOLIDATED_LOG_EVENT |
+| **Source Product** | Secure Email Gateway |
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-23 |

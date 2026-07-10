@@ -15,7 +15,7 @@
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Mimecast *(basis: publisher)* |
-| **Source Product** | Awareness Training, Audit, Cloud Integrated, Secure Email Gateway, Targeted Threat Protection |
+| **Source Product** | Awareness Training, Cloud Integrated, Secure Email Gateway, Targeted Threat Protection |
 | **Version** | 3.1.0 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2024-09-10 |

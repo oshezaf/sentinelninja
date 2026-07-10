@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftSysmonForLinux` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Sysmon For Linux |
+| **Source Product** | Sysmon For Linux *(basis: title)* |
 | **Used in Solutions** | [Microsoft Sysmon For Linux](../solutions/microsoft-sysmon-for-linux.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [SysmonForLinux.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Sysmon%20For%20Linux/Data%20Connectors/SysmonForLinux.json) |

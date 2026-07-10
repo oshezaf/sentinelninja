@@ -13,7 +13,8 @@
 | **Connector ID** | `MulesoftCloudhubConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | MuleSoft *(basis: title)* |
-| **Source Product** | CloudHub Alerts |
+| **Source Product** | CloudHub *(basis: title)* |
+| **Event Type** | Alerts |
 | **Used in Solutions** | [Mulesoft](../solutions/mulesoft.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MuleSoftCloudHubAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MuleSoftCloudHubAlerts_ConnectorDefinition.json) |

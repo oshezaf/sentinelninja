@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Tropico Security *(basis: projected)* |
-| **Source Product** | Incidents |
+| **Event Type** | Incidents |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft, Squid *(basis: projected)* |
-| **Source Product** | Proxy |
+| **Source Product** | Custom, Proxy *(basis: projected)* |
+| **Event Type** | logs |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

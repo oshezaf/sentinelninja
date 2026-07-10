@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `WindowsSecurityEvents` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Windows Security |
+| **Source Product** | Windows *(basis: title)* |
+| **Event Type** | Security Events |
 | **Used in Solutions** | [Windows Security Events](../solutions/windows-security-events.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_WindowsSecurityEvents.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Data%20Connectors/template_WindowsSecurityEvents.JSON) |

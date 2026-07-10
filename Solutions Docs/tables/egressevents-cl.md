@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Egress *(basis: projected)* |
-| **Source Product** | Iris Connector |
+| **Source Product** | Iris *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

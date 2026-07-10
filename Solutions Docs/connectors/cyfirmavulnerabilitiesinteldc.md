@@ -13,7 +13,7 @@
 | **Connector ID** | `CyfirmaVulnerabilitiesIntelDC` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | CYFIRMA *(basis: name_pattern)* |
-| **Source Product** | Vulnerabilities Intelligence |
+| **Source Product** | Vulnerabilities Intelligence *(basis: title)* |
 | **Used in Solutions** | [Cyfirma Vulnerabilities Intel](../solutions/cyfirma-vulnerabilities-intel.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyfirmaVulnerabilities_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel/Data%20Connectors/CyfirmaVulnerabilitiesIntel_ccp/CyfirmaVulnerabilities_DataConnectorDefinition.json) |

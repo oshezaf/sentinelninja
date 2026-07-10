@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Category** | Crowdstrike |
 | **Source Vendor** | Amazon, CrowdStrike *(basis: projected)* |
-| **Source Product** | Falcon Data Replicator |
+| **Source Product** | Falcon Data Replicator *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

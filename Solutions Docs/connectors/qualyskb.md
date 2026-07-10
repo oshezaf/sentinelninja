@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `QualysKB` |
 | **Publisher / Vendor** | Qualys |
-| **Source Product** | VM KnowledgeBase |
+| **Source Product** | VM KnowledgeBase *(basis: title)* |
 | **Used in Solutions** | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [QualysKB_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_API_FunctionApp.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftCloudAppSecurity` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Defender for Cloud Apps |
+| **Source Product** | Defender for Cloud Apps *(basis: title)* |
 | **Used in Solutions** | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [MicrosoftCloudAppSecurity.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps/Data%20Connectors/MicrosoftCloudAppSecurity.JSON) |

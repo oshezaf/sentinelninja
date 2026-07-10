@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Atlassian *(basis: projected)* |
-| **Source Product** | Jira Audit |
+| **Source Product** | Jira *(basis: projected)* |
+| **Event Type** | Audit |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |

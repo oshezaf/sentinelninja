@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoWSA` |
 | **Publisher / Vendor** | Cisco |
-| **Source Product** | Web Security Appliance |
+| **Source Product** | Web Security Appliance *(basis: title)* |
 | **Used in Solutions** | [CiscoWSA](../solutions/ciscowsa.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_WSA_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA/Data%20Connectors/Connector_WSA_Syslog.json) |

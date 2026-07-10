@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `InfobloxSOCInsightsDataConnector_Legacy` |
 | **Publisher / Vendor** | Infoblox |
-| **Source Product** | Data Connector |
+| **Source Product** | SOC Insight *(basis: title)* |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md), [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [InfobloxSOCInsightsDataConnector_Legacy.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxSOCInsights/InfobloxSOCInsightsDataConnector_Legacy.json) |

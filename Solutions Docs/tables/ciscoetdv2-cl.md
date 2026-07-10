@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Cisco *(basis: projected)* |
-| **Source Product** | Email Threat Defense |
+| **Source Product** | Email Threat Defense *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

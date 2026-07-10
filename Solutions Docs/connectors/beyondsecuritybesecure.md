@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `BeyondSecuritybeSECURE` |
 | **Publisher / Vendor** | Beyond Security |
-| **Source Product** | beSECURE |
+| **Source Product** | beSECURE *(basis: title)* |
 | **Used in Solutions** | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Beyond%20Security%20beSECURE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Beyond%20Security%20beSECURE/Data%20Connectors/Beyond%20Security%20beSECURE.json) |

@@ -13,7 +13,7 @@
 | **Connector ID** | `GCPComputeEngineLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: name_pattern)* |
-| **Source Product** | Cloud Platform Compute Engine |
+| **Source Product** | Cloud Platform Compute Engine *(basis: title)* |
 | **Used in Solutions** | [Google Cloud Platform Compute Engine](../solutions/google-cloud-platform-compute-engine.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPComputeEngineLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Compute%20Engine/Data%20Connectors/GCPComputeEngineLog_CCP/GCPComputeEngineLog_ConnectorDefinition.json) |

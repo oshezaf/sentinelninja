@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `RadiflowIsid` |
 | **Publisher / Vendor** | Radiflow |
-| **Source Product** | iSID |
+| **Source Product** | iSID *(basis: event)* |
 | **Used in Solutions** | [Radiflow](../solutions/radiflow.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [RadiflowIsid.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow/Data%20Connectors/RadiflowIsid.json) |

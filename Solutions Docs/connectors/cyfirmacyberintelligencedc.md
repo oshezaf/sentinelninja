@@ -13,7 +13,7 @@
 | **Connector ID** | `CyfirmaCyberIntelligenceDC` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | CYFIRMA *(basis: name_pattern)* |
-| **Source Product** | Cyber Intelligence |
+| **Source Product** | Cyber Intelligence *(basis: title)* |
 | **Used in Solutions** | [Cyfirma Cyber Intelligence](../solutions/cyfirma-cyber-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyfirmaCyberIntel_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Data%20Connectors/CyfirmaCyberIntelligence_ccp/CyfirmaCyberIntel_DataConnectorDefinition.json) |

@@ -12,7 +12,7 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | CrowdStrike, Synqly, VMware *(basis: projected)* |
-| **Source Product** | Carbon Black Cloud, Falcon Data Replicator, Integration Connector |
+| **Source Product** | Carbon Black Cloud, Falcon Data Replicator, Integration *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

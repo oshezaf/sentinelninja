@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Disruption |
+| **Source Product** | Enterprise - Disruption *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

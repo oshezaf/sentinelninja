@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoISE` |
 | **Publisher / Vendor** | Cisco |
-| **Source Product** | Identity Services Engine |
+| **Source Product** | Identity Services Engine *(basis: title)* |
 | **Used in Solutions** | [Cisco ISE](../solutions/cisco-ise.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Cisco_ISE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Data%20Connectors/Connector_Cisco_ISE.json) |

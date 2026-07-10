@@ -14,7 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `CyjaxIOCAPI` |
 | **Publisher / Vendor** | Cyjax |
-| **Source Product** | Threat Intelligence IOC |
+| **Source Product** | Threat Intelligence *(basis: title)* |
+| **Event Type** | IOC |
 | **Used in Solutions** | [Cyjax](../solutions/cyjax.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CyjaxIOC_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Data%20Connectors/CyjaxIOC_API_FunctionApp.json) |

@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `ASimDnsActivityLogs` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | DNS Server |
+| **Source Product** | DNS Server *(basis: event)* |
+| **Event Type** | Events |
 | **Used in Solutions** | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ASimDnsActivityLogs.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Data%20Connectors/template_ASimDnsActivityLogs.JSON) |

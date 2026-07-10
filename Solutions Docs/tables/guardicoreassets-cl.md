@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Akamai *(basis: projected)* |
-| **Source Product** | Guardicore |
+| **Source Product** | Guardicore *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -13,7 +13,7 @@
 | **Connector ID** | `AwsS3WafCcpDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Amazon *(basis: name_pattern)* |
-| **Source Product** | S3 WAF |
+| **Source Product** | S3 WAF *(basis: title)* |
 | **Used in Solutions** | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AwsS3_WAF_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services/Data%20Connectors/AWS_WAF_CCP/AwsS3_WAF_DataConnectorDefinition.json) |

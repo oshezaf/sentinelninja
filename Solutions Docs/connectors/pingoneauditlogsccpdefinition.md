@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `PingOneAuditLogsCCPDefinition` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Ping One |
+| **Source Product** | Ping One *(basis: title)* |
 | **Used in Solutions** | [PingOne](../solutions/pingone.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [PingOneAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/Data%20Connectors/PingOneAuditLogs_ccp/PingOneAuditLogs_DataConnectorDefinition.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CloudNSSDNSLogs_ccp` |
 | **Publisher / Vendor** | Zscaler |
-| **Source Product** | NSSDNSlog |
+| **Source Product** | NSSDNSlog *(basis: event)* |
 | **Used in Solutions** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSDNSLogs_ccp/connectorDefinition.json) |

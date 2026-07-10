@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Illumio *(basis: projected)* |
-| **Source Product** | Saas |
+| **Source Product** | Saas *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

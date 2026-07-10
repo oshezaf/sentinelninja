@@ -9,7 +9,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Cyera *(basis: projected)* |
-| **Source Product** | DSPM Microsoft Sentinel |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

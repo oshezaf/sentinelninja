@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Imperva *(basis: projected)* |
-| **Source Product** | Cloud WAF |
+| **Source Product** | Cloud WAF *(basis: projected)* |
 
 ## Contents
 

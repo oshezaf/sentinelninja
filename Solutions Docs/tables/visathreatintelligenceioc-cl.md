@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Visa Threat Intelligence |
+| **Source Product** | Visa Threat Intelligence *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureEventHub_CCP` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure Event Hub |
+| **Source Product** | Azure Event Hub *(basis: title)* |
 | **Used in Solutions** | [Azure Event Hubs](../solutions/azure-event-hubs.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureEventHub_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Event%20Hubs/Data%20Connectors/AzureEventHub_CCP.JSON) |

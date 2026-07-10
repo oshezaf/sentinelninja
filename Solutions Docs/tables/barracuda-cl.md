@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Barracuda *(basis: projected)* |
-| **Source Product** | Web Application Firewall |
+| **Source Product** | Web Application Firewall *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

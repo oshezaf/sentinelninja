@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `vArmourAC` |
 | **Publisher / Vendor** | vArmour |
-| **Source Product** | AC |
+| **Source Product** | AC *(basis: event)* |
 | **Used in Solutions** | [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_vArmour_AppController_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller/Data%20Connectors/Connector_vArmour_AppController_CEF.json) |

@@ -18,7 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `ProofpointTAP` |
 | **Publisher / Vendor** | Proofpoint |
-| **Source Product** | TAP |
+| **Source Product** | TAP *(basis: title)* |
 | **Used in Solutions** | [ProofPointTap](../solutions/proofpointtap.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ProofpointTAP_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_API_FunctionApp.json) |

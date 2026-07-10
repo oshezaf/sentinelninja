@@ -12,7 +12,7 @@ Reference for GCPDNS table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | GCP |
 | **Source Vendor** | Google *(basis: projected)* |
-| **Source Product** | Cloud Platform DNS |
+| **Source Product** | Cloud Platform DNS *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

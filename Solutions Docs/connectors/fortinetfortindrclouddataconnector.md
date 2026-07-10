@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `FortinetFortiNdrCloudDataConnector` |
 | **Publisher / Vendor** | Fortinet |
-| **Source Product** | FortiNDR Cloud |
+| **Source Product** | FortiNDR Cloud *(basis: title)* |
 | **Used in Solutions** | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [FortinetFortiNdrCloud_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud/Data%20Connectors/FortinetFortiNdrCloud_API_AzureFunctionApp.json) |

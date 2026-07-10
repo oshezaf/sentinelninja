@@ -16,7 +16,8 @@
 |:----------|:------|
 | **Connector ID** | `ZeroNetworksSegmentAuditNativePoller` |
 | **Publisher / Vendor** | Zero Networks |
-| **Source Product** | Segment Audit |
+| **Source Product** | Segment *(basis: title)* |
+| **Event Type** | Audit |
 | **Used in Solutions** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [azuredeploy_ZeroNetworks_Segment_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/SegmentNativePollerConnector/azuredeploy_ZeroNetworks_Segment_native_poller_connector.json) |

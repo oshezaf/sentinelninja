@@ -15,7 +15,8 @@
 | **Connector ID** | `ZeroFoxPhysicalThreatsDefinition` |
 | **Publisher** | ZeroFox Enterprise |
 | **Source Vendor** | ZeroFox *(basis: publisher)* |
-| **Source Product** | Enterprise - Physical Threats |
+| **Source Product** | Enterprise - Physical *(basis: title)* |
+| **Event Type** | Threats |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_PhysicalThreats_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Physical%20Threats/ZeroFoxThreatIntelligence_PhysicalThreats_ConnectorDefinition.json) |

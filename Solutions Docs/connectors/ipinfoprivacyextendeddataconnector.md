@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IPinfoPrivacyExtendedDataConnector` |
 | **Publisher / Vendor** | IPinfo |
-| **Source Product** | Privacy Extended |
+| **Source Product** | Privacy Extended *(basis: title)* |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_Privacy_Extended_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/Privacy%20Extended/IPinfo_Privacy_Extended_API_AzureFunctionApp.json) |

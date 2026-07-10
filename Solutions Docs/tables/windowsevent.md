@@ -12,7 +12,8 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Windows |
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Windows Forwarded |
+| **Source Product** | Windows Forwarded *(basis: projected)* |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

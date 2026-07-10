@@ -12,7 +12,7 @@ Reference for PurviewDataSensitivityLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Azure Resources, Security |
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Purview |
+| **Source Product** | Purview *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |

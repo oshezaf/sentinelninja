@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.holmsecurity.com/](https://support.holmsecurity.com/) |
 | **Categories** | Security - Vulnerability Management |
 | **Source Vendor** | Holm Security *(basis: publisher)* |
-| **Source Product** | Asset Data |
+| **Source Product** | Asset |
 | **Version** | 3.0.1 |
 | **Author** | Holm Security |
 | **First Published** | 2022-07-18 |

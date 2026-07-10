@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IPinfoAbuseDataConnector` |
 | **Publisher / Vendor** | IPinfo |
-| **Source Product** | Abuse |
+| **Source Product** | Abuse *(basis: title)* |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_Abuse_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/Abuse/IPinfo_Abuse_API_AzureFunctionApp.json) |

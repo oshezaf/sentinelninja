@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Symantec` |
 | **Publisher / Vendor** | Symantec |
-| **Source Product** | Integrated Cyber Defense Exchange |
+| **Source Product** | Integrated Cyber Defense Exchange *(basis: title)* |
 | **Used in Solutions** | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [SymantecICDX.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense/Data%20Connectors/SymantecICDX.JSON) |

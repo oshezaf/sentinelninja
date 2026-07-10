@@ -12,7 +12,7 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | Synqly *(basis: projected)* |
-| **Source Product** | Integration Connector |
+| **Source Product** | Integration *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

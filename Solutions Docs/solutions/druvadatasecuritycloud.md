@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.druva.com/](https://support.druva.com/) |
 | **Categories** | Security - Others |
 | **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Druva Events |
+| **Source Product** | Druva |
 | **Version** | 3.0.0 |
 | **Author** | Druva - support@druva.com |
 | **First Published** | 2024-12-24 |

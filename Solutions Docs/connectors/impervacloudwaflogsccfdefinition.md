@@ -13,7 +13,7 @@
 | **Connector ID** | `ImpervaCloudWAFLogsCCFDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Imperva *(basis: description_url)* |
-| **Source Product** | Cloud WAF |
+| **Source Product** | Cloud WAF *(basis: title)* |
 | **Used in Solutions** | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ImpervaCloudWAFLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaCloudWAFLogs_ccf/ImpervaCloudWAFLogs_ConnectorDefinition.json) |

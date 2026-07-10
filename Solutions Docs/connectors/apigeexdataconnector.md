@@ -18,7 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `ApigeeXDataConnector` |
 | **Publisher / Vendor** | Google |
-| **Source Product** | ApigeeX |
+| **Source Product** | ApigeeX *(basis: title)* |
 | **Used in Solutions** | [Google Apigee](../solutions/google-apigee.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ApigeeX_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee/Data%20Connectors/ApigeeX_FunctionApp.json) |

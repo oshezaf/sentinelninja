@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Zero Networks *(basis: projected)* |
-| **Source Product** | Segment Audit |
+| **Source Product** | Segment *(basis: projected)* |
+| **Event Type** | Audit |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

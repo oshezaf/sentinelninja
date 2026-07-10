@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Rapid7 *(basis: projected)* |
-| **Source Product** | Insight Platform Vulnerability Management Reports |
+| **Source Product** | Insight Platform Vulnerability Management *(basis: projected)* |
+| **Event Type** | Reports |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `DigitalShadowsSearchlightAzureFunctions` |
 | **Publisher / Vendor** | Digital Shadows |
-| **Source Product** | Searchlight |
+| **Source Product** | Searchlight *(basis: title)* |
 | **Used in Solutions** | [Digital Shadows](../solutions/digital-shadows.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [DigitalShadowsSearchlight_API_functionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Data%20Connectors/DigitalShadowsSearchlight_API_functionApp.json) |

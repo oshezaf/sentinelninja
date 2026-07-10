@@ -12,7 +12,7 @@ Reference for KubeEvents table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Containers |
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Azure Kubernetes Service |
+| **Source Product** | Azure Kubernetes Service *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |

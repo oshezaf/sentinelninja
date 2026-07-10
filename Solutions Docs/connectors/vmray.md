@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `VMRay` |
 | **Publisher / Vendor** | VMRay |
-| **Source Product** | Threat Intelligence |
+| **Source Product** | Threat Intelligence *(basis: title)* |
 | **Used in Solutions** | [VMRay](../solutions/vmray.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [VMRayThreatIntelligence_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Data%20Connectors/VMRayThreatIntelligence_FunctionApp.json) |

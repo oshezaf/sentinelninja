@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ImpervaWAFCloudAPI` |
 | **Publisher / Vendor** | Imperva |
-| **Source Product** | Cloud WAF |
+| **Source Product** | Cloud WAF *(basis: title)* |
 | **Used in Solutions** | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ImpervaWAFCloud_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaWAFCloud_FunctionApp.json) |

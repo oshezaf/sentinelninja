@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `CiscoACI` |
 | **Publisher / Vendor** | Cisco |
-| **Source Product** | Application Centric Infrastructure |
+| **Source Product** | Application Centric Infrastructure *(basis: title)* |
 | **Used in Solutions** | [Cisco ACI](../solutions/cisco-aci.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CiscoACI_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ACI/Data%20Connectors/CiscoACI_Syslog.json) |

@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Rubrik *(basis: projected)* |
-| **Source Product** | Security Cloud Protection Status |
+| **Source Product** | Security Cloud Protection Status *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `RedSiftPush` |
 | **Publisher / Vendor** | Red Sift |
+| **Event Type** | Events |
 | **Used in Solutions** | [Red Sift](../solutions/red-sift.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [RedSift_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_Definition.json) |

@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `EsetSMC` |
 | **Publisher / Vendor** | Eset |
-| **Source Product** | Security Management Center |
+| **Source Product** | Security Management Center *(basis: title)* |
 | **Used in Solutions** | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [esetSmc.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center/Data%20Connectors/esetSmc.json) |

@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | CrowdStrike *(basis: projected)* |
-| **Source Product** | Falcon Data Replicator |
+| **Source Product** | Falcon Data Replicator *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ForescoutHostPropertyMonitor` |
 | **Publisher / Vendor** | Forescout |
-| **Source Product** | Host Property Monitor |
+| **Source Product** | Host Property Monitor *(basis: title)* |
 | **Used in Solutions** | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [ForescoutHostPropertyMonitor.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Data%20Connectors/ForescoutHostPropertyMonitor.json) |

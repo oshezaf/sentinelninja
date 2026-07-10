@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Botnet |
+| **Source Product** | Enterprise - Botnet *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

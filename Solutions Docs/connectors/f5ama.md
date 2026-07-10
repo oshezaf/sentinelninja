@@ -15,7 +15,7 @@
 | **Connector ID** | `F5Ama` |
 | **Publisher** | F5 Networks |
 | **Source Vendor** | F5 *(basis: event)* |
-| **Source Product** | Networks |
+| **Source Product** | Networks *(basis: title)* |
 | **Used in Solutions** | [F5 Networks](../solutions/f5-networks.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_F5NetworksAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks/Data%20Connectors/template_F5NetworksAMA.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IPinfoDomainDataConnector` |
 | **Publisher / Vendor** | IPinfo |
-| **Source Product** | Domain |
+| **Source Product** | Domain *(basis: title)* |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_Domain_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/Domain/IPinfo_Domain_API_AzureFunctionApp.json) |

@@ -12,7 +12,7 @@ Reference for Heartbeat table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Endpoint |
 | **Source Vendor** | Cisco *(basis: projected)* |
-| **Source Product** | ASA/FTD |
+| **Source Product** | ASA/FTD *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat) |

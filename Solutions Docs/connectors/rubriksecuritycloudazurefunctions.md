@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `RubrikSecurityCloudAzureFunctions` |
 | **Publisher / Vendor** | Rubrik, Inc |
-| **Source Product** | Security Cloud |
+| **Source Product** | Security Cloud *(basis: title)* |
 | **Used in Solutions** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [RubrikWebhookEvents_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikWebhookEvents/RubrikWebhookEvents_FunctionApp.json) |

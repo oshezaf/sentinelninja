@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Field Effect *(basis: projected)* |
-| **Source Product** | MDR |
+| **Source Product** | MDR *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

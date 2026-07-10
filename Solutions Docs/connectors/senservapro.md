@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `SenservaPro` |
 | **Publisher / Vendor** | Senserva |
-| **Source Product** | Pro |
+| **Source Product** | Pro *(basis: title)* |
 | **Used in Solutions** | [SenservaPro](../solutions/senservapro.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [SenservaPro.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SenservaPro/Data%20Connectors/SenservaPro.json) |

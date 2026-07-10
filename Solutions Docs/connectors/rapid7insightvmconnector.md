@@ -13,7 +13,8 @@
 | **Connector ID** | `Rapid7InsightVMConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Rapid7 *(basis: description_url)* |
-| **Source Product** | Insight Platform Vulnerability Management Reports |
+| **Source Product** | Insight Platform Vulnerability Management *(basis: title)* |
+| **Event Type** | Reports |
 | **Used in Solutions** | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Rapid7InsightVM_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Data%20Connectors/Rapid7InsightVM_CCP/Rapid7InsightVM_ConnectorDefinition.json) |

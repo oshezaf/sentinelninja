@@ -17,7 +17,7 @@
 | **Support Link** | [https://cyberint.com/customer-support/](https://cyberint.com/customer-support/) |
 | **Categories** | Security - Threat Intelligence |
 | **Source Vendor** | Check Point *(basis: publisher)* |
-| **Source Product** | Cyberint IOC |
+| **Source Product** | Cyberint |
 | **Version** | 3.0.1 |
 | **Author** | Cyberint - support@checkpoint.com |
 | **First Published** | 2025-04-29 |

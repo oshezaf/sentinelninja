@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `ESI-Opt1ExchangeAdminAuditLogsByEventLogs` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Exchange Admin Audit Logs by |
+| **Source Product** | Exchange *(basis: title)* |
+| **Event Type** | Admin Audit Logs Event Logs |
 | **Used in Solutions** | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [ESI-Opt1ExchangeAdminAuditLogsByEventLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-Opt1ExchangeAdminAuditLogsByEventLogs.json) |

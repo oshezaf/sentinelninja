@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `CloudNSSCASBCollabLogs_ccp` |
 | **Publisher / Vendor** | Zscaler |
-| **Source Product** | NSSCasbcollablog |
+| **Source Product** | NSSCasbcollablog *(basis: event)* |
 | **Used in Solutions** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSCASBCollabLogs_ccp/connectorDefinition.json) |

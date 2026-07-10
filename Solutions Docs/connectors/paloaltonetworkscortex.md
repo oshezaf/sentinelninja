@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `PaloAltoNetworksCortex` |
 | **Publisher / Vendor** | Palo Alto Networks |
-| **Source Product** | Cortex XDR |
+| **Source Product** | Cortex XDR *(basis: event)* |
 | **Used in Solutions** | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_PaloAlto_XDR_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29/Data%20Connectors/Connector_PaloAlto_XDR_CEF.json) |

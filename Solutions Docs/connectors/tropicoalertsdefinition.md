@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `TropicoAlertsDefinition` |
 | **Publisher / Vendor** | Tropico Security |
-| **Source Product** | Alerts |
+| **Event Type** | Alerts |
 | **Used in Solutions** | [Tropico](../solutions/tropico.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [TropicoAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoAlerts_CCF/TropicoAlerts_ConnectorDefinition.json) |

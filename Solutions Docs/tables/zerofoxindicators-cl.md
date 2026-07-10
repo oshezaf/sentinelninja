@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Indicators |
+| **Source Product** | Enterprise *(basis: projected)* |
+| **Event Type** | Indicators |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

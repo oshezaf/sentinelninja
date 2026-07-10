@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `IPinfoResProxyDataConnector` |
 | **Publisher / Vendor** | IPinfo |
-| **Source Product** | ResProxy |
+| **Source Product** | ResProxy *(basis: title)* |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_ResProxy_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/ResProxy/IPinfo_ResProxy_API_AzureFunctionApp.json) |

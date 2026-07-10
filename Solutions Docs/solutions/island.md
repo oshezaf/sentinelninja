@@ -15,7 +15,7 @@
 | **Support Link** | [https://www.island.io](https://www.island.io) |
 | **Categories** | Security - Information Protection,Security - Threat Protection |
 | **Source Vendor** | Island *(basis: publisher)* |
-| **Source Product** | Enterprise Browser V2, Enterprise Browser Admin, Enterprise Browser User |
+| **Source Product** | Enterprise Browser, Enterprise Browser Admin, Enterprise Browser User |
 | **Version** | 3.2.0 |
 | **Author** | Island - support@island.io |
 | **First Published** | 2023-05-02 |

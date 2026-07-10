@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | 42Crunch *(basis: projected)* |
-| **Source Product** | API Protection |
+| **Source Product** | API Protection *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

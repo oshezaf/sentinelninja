@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `SentinelIllumioInsightsGraphCCP` |
 | **Publisher / Vendor** | Illumio |
-| **Source Product** | Insights Graph |
+| **Source Product** | Insights Graph *(basis: title)* |
 | **Used in Solutions** | [Illumio Insight](../solutions/illumio-insight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioInsightsGraph_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsGraph_CCP/IllumioInsightsGraph_ConnectorDefinition.json) |

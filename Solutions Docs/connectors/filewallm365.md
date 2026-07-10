@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `FilewallM365` |
 | **Publisher / Vendor** | Filewall |
-| **Source Product** | for Microsoft 365 |
+| **Source Product** | for Microsoft 365 *(basis: title)* |
 | **Used in Solutions** | [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [FilewallM365_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Filewall%20for%20Microsoft%20365/Data%20Connectors/FilewallM365Logs_CCP/FilewallM365_ConnectorDefinition.json) |

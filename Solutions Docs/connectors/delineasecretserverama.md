@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `DelineaSecretServerAma` |
 | **Publisher / Vendor** | Delinea, Inc |
-| **Source Product** | Secret Server |
+| **Source Product** | Secret Server *(basis: event)* |
 | **Used in Solutions** | [Delinea Secret Server](../solutions/delinea-secret-server.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_DelineaSecretServerAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server/Data%20Connectors/template_DelineaSecretServerAMA.json) |

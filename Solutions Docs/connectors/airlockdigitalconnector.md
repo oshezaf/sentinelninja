@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AirlockDigitalConnector` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Airlock Digital |
+| **Source Product** | Airlock Digital *(basis: title)* |
 | **Used in Solutions** | [AirlockDigital](../solutions/airlockdigital.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AirlockDigital_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigital_CCF/AirlockDigital_ConnectorDefinition.json) |

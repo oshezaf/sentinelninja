@@ -17,7 +17,7 @@
 | **Connector ID** | `CyberArk` |
 | **Publisher** | Cyber-Ark |
 | **Source Vendor** | CyberArk *(basis: event)* |
-| **Source Product** | Vault |
+| **Source Product** | Enterprise Password Vault *(basis: title)* |
 | **Used in Solutions** | [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CyberArk%20Data%20Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events/Data%20Connectors/CyberArk%20Data%20Connector.json) |

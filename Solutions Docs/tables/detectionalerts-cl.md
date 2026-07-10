@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Google *(basis: projected)* |
-| **Source Product** | SecOps Detection Alerts |
+| **Source Product** | SecOps Detection *(basis: projected)* |
+| **Event Type** | Alerts |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

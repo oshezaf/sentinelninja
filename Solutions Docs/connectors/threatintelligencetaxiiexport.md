@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `ThreatIntelligenceTaxiiExport` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Threat intelligence - TAXII Export |
+| **Source Product** | Threat intelligence - TAXII Export *(basis: title)* |
 | **Used in Solutions** | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_ThreatIntelligenceTaxiiExport.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29/Data%20Connectors/template_ThreatIntelligenceTaxiiExport.json) |

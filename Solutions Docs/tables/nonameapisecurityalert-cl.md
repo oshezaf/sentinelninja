@@ -9,7 +9,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Noname Security *(basis: projected)* |
-| **Source Product** | for Microsoft Sentinel |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

@@ -13,7 +13,7 @@
 | **Connector ID** | `QualysKbConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Qualys *(basis: title)* |
-| **Source Product** | Knowledge Base |
+| **Source Product** | Knowledge Base *(basis: title)* |
 | **Used in Solutions** | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [QualysKB_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_ccf/QualysKB_ConnectorDefinition.json) |

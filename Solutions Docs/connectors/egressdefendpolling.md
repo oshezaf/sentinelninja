@@ -15,7 +15,7 @@
 | **Connector ID** | `EgressDefendPolling` |
 | **Publisher** | Egress Software Technologies |
 | **Source Vendor** | Egress *(basis: publisher)* |
-| **Source Product** | Defend |
+| **Source Product** | Defend *(basis: title)* |
 | **Used in Solutions** | [Egress Defend](../solutions/egress-defend.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DefendAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend/Data%20Connectors/DefendAPIConnector.json) |

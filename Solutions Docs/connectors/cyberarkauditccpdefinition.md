@@ -13,7 +13,7 @@
 | **Connector ID** | `CyberArkAuditCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | CyberArk *(basis: description_url)* |
-| **Source Product** | Audit |
+| **Event Type** | Audit |
 | **Used in Solutions** | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberArkAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_DataConnectorDefinition.json) |

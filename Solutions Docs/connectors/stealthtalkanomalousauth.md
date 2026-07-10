@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `StealthTalkAnomalousAuth` |
 | **Publisher / Vendor** | StealthTalk |
-| **Source Product** | Anomalous Authentication |
+| **Source Product** | Anomalous Authentication *(basis: title)* |
 | **Used in Solutions** | [StealthTalk](../solutions/stealthtalk.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [StealthTalkConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk/Data%20Connectors/StealthTalkConnector.json) |

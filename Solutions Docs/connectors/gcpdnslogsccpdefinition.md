@@ -13,7 +13,7 @@
 | **Connector ID** | `GCPDNSLogsCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: name_pattern)* |
-| **Source Product** | Cloud Platform DNS |
+| **Source Product** | Cloud Platform DNS *(basis: title)* |
 | **Used in Solutions** | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPDNSLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS/Data%20Connectors/GCPDNSLog_CCP/GCPDNSLog_ConnectorDefinition.json) |

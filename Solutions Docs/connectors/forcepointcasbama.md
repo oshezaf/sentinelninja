@@ -17,7 +17,7 @@
 | **Connector ID** | `ForcepointCasbAma` |
 | **Publisher** | Forcepoint CASB |
 | **Source Vendor** | Forcepoint *(basis: event)* |
-| **Source Product** | CASB |
+| **Source Product** | CASB *(basis: title)* |
 | **Used in Solutions** | [Forcepoint CASB](../solutions/forcepoint-casb.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_Forcepoint%20CASBAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB/Data%20Connectors/template_Forcepoint%20CASBAMA.json) |

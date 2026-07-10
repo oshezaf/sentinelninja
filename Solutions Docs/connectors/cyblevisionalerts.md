@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `CybleVisionAlerts` |
 | **Publisher / Vendor** | Cyble |
-| **Source Product** | Vision Alerts |
+| **Source Product** | Vision *(basis: title)* |
+| **Event Type** | Alerts |
 | **Used in Solutions** | [Cyble Vision](../solutions/cyble-vision.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CybleVisionAlerts_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Data%20Connectors/CybleVisionAlerts_CCF/CybleVisionAlerts_DataConnectorDefinition.json) |

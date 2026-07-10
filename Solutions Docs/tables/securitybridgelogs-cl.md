@@ -9,6 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft, SAP *(basis: projected)* |
+| **Source Product** | Custom *(basis: projected)* |
+| **Event Type** | logs |
 | **Collector Vendor** | SecurityBridge *(basis: projected)* |
 | **Collector Product** | SecurityBridge Platform |
 | **Supports Transformations** | ✓ Yes |

@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Exchange Logs and |
+| **Source Product** | Exchange *(basis: projected)* |
+| **Event Type** | Logs Events |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

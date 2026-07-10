@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `IvantiUEM` |
 | **Publisher / Vendor** | Ivanti |
-| **Source Product** | Unified Endpoint Management |
+| **Source Product** | Unified Endpoint Management *(basis: title)* |
 | **Used in Solutions** | [Ivanti Unified Endpoint Management](../solutions/ivanti-unified-endpoint-management.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Ivanti_UEM_Syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management/Data%20Connectors/Ivanti_UEM_Syslog.json) |

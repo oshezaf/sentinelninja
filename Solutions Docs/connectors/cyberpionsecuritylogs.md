@@ -14,7 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `CyberpionSecurityLogs` |
 | **Publisher / Vendor** | IONIX |
-| **Source Product** | Security Logs |
+| **Source Product** | Security *(basis: title)* |
+| **Event Type** | Logs |
 | **Used in Solutions** | [IONIX](../solutions/ionix.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [IONIXSecurityLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX/Data%20Connectors/IONIXSecurityLogs.json) |

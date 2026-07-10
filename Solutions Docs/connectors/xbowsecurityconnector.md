@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `XbowSecurityConnector` |
 | **Publisher / Vendor** | XBOW |
-| **Source Product** | Security Platform |
+| **Source Product** | Security Platform *(basis: title)* |
 | **Used in Solutions** | [XBOW](../solutions/xbow.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Xbow_API_Xbow.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XBOW/Data%20Connectors/Xbow_API_Xbow.json) |

@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Bitwarden *(basis: projected)* |
-| **Source Product** | Event Logs |
+| **Event Type** | Event Logs |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

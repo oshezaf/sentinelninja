@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ForgeRock` |
 | **Publisher / Vendor** | ForgeRock Inc |
-| **Source Product** | Identity Platform |
+| **Source Product** | Identity Platform *(basis: title)* |
 | **Used in Solutions** | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [ForgeRock_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF/Data%20Connectors/ForgeRock_CEF.json) |

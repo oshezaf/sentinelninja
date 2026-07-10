@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `JuniperSRX` |
 | **Publisher / Vendor** | Juniper |
-| **Source Product** | SRX |
+| **Source Product** | SRX *(basis: title)* |
 | **Used in Solutions** | [Juniper SRX](../solutions/juniper-srx.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_JuniperSRX.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Juniper%20SRX/Data%20Connectors/Connector_Syslog_JuniperSRX.json) |

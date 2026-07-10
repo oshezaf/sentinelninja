@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Salesforce *(basis: projected)* |
-| **Source Product** | Service Cloud |
+| **Source Product** | Service Cloud *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

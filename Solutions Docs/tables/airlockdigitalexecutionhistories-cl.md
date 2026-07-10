@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Airlock Digital |
+| **Source Product** | Airlock Digital *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

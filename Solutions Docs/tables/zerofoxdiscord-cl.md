@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Discord |
+| **Source Product** | Enterprise - Discord *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

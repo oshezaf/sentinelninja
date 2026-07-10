@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureStorageAccount` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure Storage Account |
+| **Source Product** | Azure Storage Account *(basis: title)* |
 | **Used in Solutions** | [Azure Storage](../solutions/azure-storage.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureStorageAccount_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Storage/Data%20Connectors/AzureStorageAccount_CCP.JSON) |

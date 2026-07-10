@@ -13,7 +13,7 @@
 | **Connector ID** | `GKECCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: title)* |
-| **Source Product** | Kubernetes Engine |
+| **Source Product** | Kubernetes Engine *(basis: title)* |
 | **Used in Solutions** | [Google Kubernetes Engine](../solutions/google-kubernetes-engine.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GoogleKubernetesEngineLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_ConnectorDefinition.json) |

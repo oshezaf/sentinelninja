@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.virtualmetric.com](https://support.virtualmetric.com) |
 | **Categories** | Security - Network,Security - Cloud Security,IT Operations |
 | **Source Vendor** | VirtualMetric *(basis: publisher)* |
-| **Source Product** | Director Proxy, DataStream for Microsoft Sentinel, DataStream for Microsoft Sentinel data lake |
+| **Source Product** | Director Proxy, DataStream |
 | **Version** | 3.0.0 |
 | **Author** | VirtualMetric |
 | **First Published** | 2025-09-15 |

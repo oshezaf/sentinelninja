@@ -15,7 +15,7 @@
 | **Connector ID** | `ZeroFoxDarkWebDefinition` |
 | **Publisher** | ZeroFox Enterprise |
 | **Source Vendor** | ZeroFox *(basis: publisher)* |
-| **Source Product** | Enterprise - Dark Web |
+| **Source Product** | Enterprise - Dark Web *(basis: title)* |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_DarkWeb_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_ConnectorDefinition.json) |

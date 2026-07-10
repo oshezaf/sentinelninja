@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `SOCPrimeAuditLogsDataConnector` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | SOC Prime Platform Audit |
+| **Source Product** | SOC Prime Platform *(basis: title)* |
+| **Event Type** | Audit Logs |
 | **Used in Solutions** | [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SOCPrime_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF/Data%20Connectors/SOCPrime_ccp/SOCPrime_DataConnectorDefinition.json) |

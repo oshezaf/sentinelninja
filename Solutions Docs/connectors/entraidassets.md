@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `EntraIDAssets` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Entra ID Assets |
+| **Source Product** | Entra ID Assets *(basis: title)* |
 | **Used in Solutions** | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [EntraIDAssets_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets/Data%20Connectors/EntraIDAssets_DataConnectorDefinition.json) |

@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Microsoft, MongoDB *(basis: projected)* |
-| **Source Product** | Audit |
+| **Source Product** | Custom *(basis: projected)* |
+| **Event Type** | Audit, logs |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

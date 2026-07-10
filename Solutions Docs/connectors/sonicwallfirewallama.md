@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `SonicWallFirewallAma` |
 | **Publisher / Vendor** | SonicWall |
-| **Source Product** | Firewall |
+| **Source Product** | Firewall *(basis: title)* |
 | **Used in Solutions** | [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_SonicwallFirewallAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall/Data%20Connectors/template_SonicwallFirewallAMA.json) |

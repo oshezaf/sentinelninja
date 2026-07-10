@@ -13,7 +13,8 @@
 | **Connector ID** | `AtlassianConfluenceConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Atlassian *(basis: description_url)* |
-| **Source Product** | Confluence Audit |
+| **Source Product** | Confluence *(basis: title)* |
+| **Event Type** | Audit |
 | **Used in Solutions** | [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AtlassianConfluenceAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit/Data%20Connectors/AtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_DataConnectorDefinition.json) |

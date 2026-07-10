@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Oracle *(basis: projected)* |
-| **Source Product** | Cloud Infrastructure |
+| **Source Product** | Cloud Infrastructure *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

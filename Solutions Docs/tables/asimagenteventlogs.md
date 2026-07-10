@@ -12,7 +12,7 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | Normalized |
 | **Source Vendor** | OpenAI *(basis: projected)* |
-| **Source Product** | OpenAI API Platform |
+| **Source Product** | OpenAI API Platform *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs) |

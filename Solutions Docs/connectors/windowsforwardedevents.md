@@ -12,7 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `WindowsForwardedEvents` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Windows Forwarded |
+| **Source Product** | Windows Forwarded *(basis: title)* |
+| **Event Type** | Events |
 | **Used in Solutions** | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [WindowsForwardedEvents.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events/Data%20Connectors/WindowsForwardedEvents.JSON) |

@@ -17,7 +17,7 @@
 | **Support Link** | [https://support.armis.com/](https://support.armis.com/) |
 | **Categories** | Security - Network |
 | **Source Vendor** | Armis *(basis: publisher)* |
-| **Source Product** | Activities, Alerts, Alerts Activities, Devices |
+| **Source Product** | Devices |
 | **Version** | 3.2.0 |
 | **Author** | {Armis - support@armis.com} |
 | **First Published** | 2022-08-02 |

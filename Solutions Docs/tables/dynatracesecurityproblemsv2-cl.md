@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Dynatrace *(basis: projected)* |
-| **Source Product** | Runtime Vulnerabilities V1, Runtime Vulnerabilities V2 |
+| **Source Product** | Runtime *(basis: projected)* |
+| **Event Type** | Vulnerabilities |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

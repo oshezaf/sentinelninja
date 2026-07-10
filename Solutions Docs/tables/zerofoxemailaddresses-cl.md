@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Email Addresses |
+| **Source Product** | Enterprise - Email Addresses *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

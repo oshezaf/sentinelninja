@@ -17,7 +17,6 @@
 | **Support Link** | [https://support.cyera.io](https://support.cyera.io) |
 | **Categories** | Security - Information Protection |
 | **Source Vendor** | Cyera *(basis: publisher)* |
-| **Source Product** | DSPM Microsoft Sentinel |
 | **Version** | 3.0.0 |
 | **Author** | Cyera DSPM OCTO Team - support@cyera.io |
 | **First Published** | 2026-02-27 |

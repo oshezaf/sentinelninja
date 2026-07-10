@@ -18,7 +18,7 @@
 |:----------|:------|
 | **Connector ID** | `CrowdStrikeFalconEndpointProtection` |
 | **Publisher / Vendor** | CrowdStrike |
-| **Source Product** | FalconHost |
+| **Source Product** | Falcon Endpoint Protection *(basis: title)* |
 | **Used in Solutions** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_CrowdStrikeFalconEndpointProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Connector_Syslog_CrowdStrikeFalconEndpointProtection.json) |

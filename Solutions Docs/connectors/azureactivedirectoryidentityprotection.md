@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `AzureActiveDirectoryIdentityProtection` |
 | **Publisher / Vendor** | Microsoft |
-| **Source Product** | Entra ID Protection |
+| **Source Product** | Entra ID Protection *(basis: title)* |
 | **Used in Solutions** | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [template_AzureActiveDirectoryIdentityProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Data%20Connectors/template_AzureActiveDirectoryIdentityProtection.JSON) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `UpwindLogsLoader` |
 | **Publisher / Vendor** | Upwind |
-| **Source Product** | Logs Loader |
+| **Source Product** | Logs Loader *(basis: title)* |
 | **Used in Solutions** | [Upwind](../solutions/upwind.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [UpwindLogsLoader_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind/Data%20Connectors/UpwindLogsLoader_API_FunctionApp.json) |

@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ForcepointCSGAma` |
 | **Publisher / Vendor** | Forcepoint |
-| **Source Product** | Email, Web |
+| **Source Product** | Email, Web *(basis: event)* |
 | **Used in Solutions** | [Forcepoint CSG](../solutions/forcepoint-csg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ForcepointCloudSecurityGatewayAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG/Data%20Connectors/template_ForcepointCloudSecurityGatewayAMA.json) |

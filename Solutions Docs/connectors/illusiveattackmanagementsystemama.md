@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `illusiveAttackManagementSystemAma` |
 | **Publisher / Vendor** | illusive |
-| **Source Product** | illusive |
+| **Source Product** | illusive *(basis: event)* |
 | **Used in Solutions** | [Illusive Platform](../solutions/illusive-platform.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_IllusivePlatformAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform/Data%20Connectors/template_IllusivePlatformAMA.json) |

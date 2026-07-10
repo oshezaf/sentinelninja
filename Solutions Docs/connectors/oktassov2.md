@@ -13,7 +13,7 @@
 | **Connector ID** | `OktaSSOv2` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Okta *(basis: description_url)* |
-| **Source Product** | Single Sign-On |
+| **Source Product** | Single Sign-On *(basis: title)* |
 | **Used in Solutions** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [OktaSSOv2_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaNativePollerConnectorV2/OktaSSOv2_DataConnectorDefinition.json) |

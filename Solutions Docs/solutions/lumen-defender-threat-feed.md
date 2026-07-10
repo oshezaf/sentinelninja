@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.lumen.com/en-us/contact-us/support.html](https://www.lumen.com/en-us/contact-us/support.html) |
 | **Categories** | Security - Threat Intelligence |
 | **Source Vendor** | Lumen *(basis: publisher)* |
-| **Source Product** | Defender Threat Feed Data Connector V2 |
+| **Source Product** | Defender Threat Feed |
 | **Version** | 3.2.0 |
 | **Author** | Matthew Collier - matthew.collier@lumen.com |
 | **First Published** | 2025-09-12 |
