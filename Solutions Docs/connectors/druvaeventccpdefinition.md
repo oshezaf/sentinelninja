@@ -11,8 +11,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DruvaEventCCPDefinition` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Druva *(basis: title)* |
+| **Publisher** | Microsoft |
+| **Source Vendor** | Druva *(basis: title)* |
 | **Event Type** | Events |
 | **Used in Solutions** | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |

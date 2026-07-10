@@ -17,6 +17,7 @@
 | **Support Link** | [https://success.trendmicro.com/dcx/s/?language=en_US](https://success.trendmicro.com/dcx/s/?language=en_US) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Trend Micro *(basis: publisher)* |
+| **Source Product** | Vision One |
 | **Version** | 3.0.0 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-11 |

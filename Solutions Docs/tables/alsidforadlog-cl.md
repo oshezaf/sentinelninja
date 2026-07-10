@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Alsid, Tenable *(basis: projected)* |
-| **Source Product** | Identity Exposure, for Active Directory *(basis: projected)* |
+| **Source Product** | Active Directory, Identity Exposure *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

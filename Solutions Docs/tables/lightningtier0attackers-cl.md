@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | Semperis *(basis: projected)* |
 | **Source Product** | Lightning *(basis: projected)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

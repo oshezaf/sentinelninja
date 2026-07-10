@@ -8,7 +8,8 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | DEFEND, Palo Alto Networks *(basis: projected)* |
+| **Source Vendor** | Palo Alto Networks *(basis: projected)* |
+| **Source Product** | Cortex XDR *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

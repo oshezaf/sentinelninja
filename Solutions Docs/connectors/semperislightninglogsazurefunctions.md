@@ -13,7 +13,7 @@
 | **Connector ID** | `SemperisLightningLogsAzureFunctions` |
 | **Publisher / Vendor** | Semperis |
 | **Source Product** | Lightning *(basis: title)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [SemperisLightning](../solutions/semperislightning.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SemperisLightningLogs_AzureFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/Data%20Connectors/SemperisLightningLogs/SemperisLightningLogs_AzureFunction.json) |

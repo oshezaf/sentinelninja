@@ -40,11 +40,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Defender Threat Feed, Defender Threat Intelligence, Falcon Adversary Intelligence, Threat Intelligence, Threat Intelligence Platforms, Threat intelligence - TAXII <em>(basis: projected)</em></td>
+  <td style="text-align:left">Defender Threat Feed, Defender Threat Intelligence, Falcon Adversary Intelligence, Sandbox Threat Intelligence, Threat Intelligence, Threat Intelligence Platforms, Threat intelligence - TAXII <em>(basis: projected)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">IOC</td>
+  <td style="text-align:left">IOCs</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
@@ -1042,17 +1042,17 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;GreyNoise&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value&quot;</code><br><code>SourceSystem == &quot;Lumen&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value&quot;</code><br><code>SourceSystem == &quot;Lumen&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:left"><code>SourceSystem == &quot;GreyNoise&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
@@ -1090,6 +1090,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SourceSystem == &quot;Cyjax-IOCs&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>SourceSystem == &quot;MISP&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1099,14 +1107,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SourceSystem == &quot;CrowdStrike Falcon Adversary Intelligence&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;Cyjax-IOCs&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1224,6 +1224,14 @@
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Lumen</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>GreyNoise</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
@@ -1232,12 +1240,12 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Lumen</code></td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:left"><code>Cyjax-IOCs</code></td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>MISP</code></td>
@@ -1249,14 +1257,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>CrowdStrike Falcon Adversary Intelligence</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Cyjax-IOCs</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

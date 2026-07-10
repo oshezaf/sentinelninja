@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Palo Alto Networks *(basis: projected)* |
+| **Source Product** | Prisma Cloud CSPM *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

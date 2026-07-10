@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `AlsidForAD` |
 | **Publisher / Vendor** | Alsid |
-| **Source Product** | for Active Directory *(basis: title)* |
+| **Source Product** | Active Directory *(basis: title)* |
 | **Used in Solutions** | [Alsid For AD](../solutions/alsid-for-ad.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [AlsidForAD.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD/Data%20Connectors/AlsidForAD.json) |

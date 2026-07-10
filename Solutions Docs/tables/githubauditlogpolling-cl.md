@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | GitHub *(basis: projected)* |
 | **Source Product** | Enterprise *(basis: projected)* |
-| **Event Type** | Audit Log |
+| **Event Type** | Audit |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

@@ -16,7 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Palo Alto Networks, DEFEND *(basis: mixed)* |
+| **Source Vendor** | Palo Alto Networks *(basis: name_pattern)* |
+| **Source Product** | Cortex XDR |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2023-07-12 |

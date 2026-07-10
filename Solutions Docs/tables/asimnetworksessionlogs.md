@@ -207,7 +207,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
@@ -245,20 +245,22 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **0** | **1** | **0** | **2** |
+| **Total** | **2** | **0** | **1** | **0** | **3** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
 
 ### EventType

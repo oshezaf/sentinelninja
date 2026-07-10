@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Netskope *(basis: projected)* |
-| **Event Type** | Alerts Events |
+| **Event Type** | Alerts, Events |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

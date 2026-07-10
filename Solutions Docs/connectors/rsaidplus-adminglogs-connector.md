@@ -13,7 +13,7 @@
 | **Connector ID** | `RSAIDPlus_AdmingLogs_Connector` |
 | **Publisher / Vendor** | RSA |
 | **Source Product** | ID Plus Admin *(basis: title)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [RSAIDPlus_AdminLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector/Data%20Connectors/RSIDPlus_AdminLogs_Connector_CCP/RSAIDPlus_AdminLogs_ConnectorDefinition.json) |

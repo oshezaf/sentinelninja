@@ -15,6 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | Pulse Secure *(basis: publisher)* |
+| **Source Product** | Connect Secure |
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |

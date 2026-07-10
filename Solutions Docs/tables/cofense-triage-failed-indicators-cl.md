@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Cofense *(basis: projected)* |
-| **Source Product** | Triage Threat Indicators Ingestion *(basis: projected)* |
+| **Source Product** | Triage *(basis: projected)* |
+| **Event Type** | IOCs |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

@@ -13,7 +13,7 @@
 | **Connector ID** | `AzureDevOpsAuditLogs` |
 | **Publisher / Vendor** | Microsoft |
 | **Source Product** | Azure DevOps *(basis: title)* |
-| **Event Type** | Audit Logs |
+| **Event Type** | Audit |
 | **Used in Solutions** | [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AzureDevOpsAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Data%20Connectors/AzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_DataConnectorDefinition.json) |

@@ -15,7 +15,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
 | **Source Vendor** | Amazon *(basis: name_pattern)* |
-| **Source Product** | S3 DNS Route53 |
+| **Source Product** | DNS Route53 |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-21 |

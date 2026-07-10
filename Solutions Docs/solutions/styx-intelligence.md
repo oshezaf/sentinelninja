@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.styxintel.com/contact-us/](https://www.styxintel.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Source Vendor** | Styx Intelligence *(basis: publisher)* |
+| **Source Product** | View |
 | **Version** | 3.0.0 |
 | **Author** | Styx Intelligence - support.team@styxintel.com |
 | **First Published** | 2025-02-07 |

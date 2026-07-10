@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `Netclean_ProActive_Incidents` |
 | **Publisher / Vendor** | NetClean Technologies |
+| **Source Product** | ProActive *(basis: title)* |
+| **Event Type** | Incidents |
 | **Used in Solutions** | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_NetClean.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive/Data%20Connectors/Connector_NetClean.json) |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://www.netclean.com/contact](https://www.netclean.com/contact) |
 | **Categories** | Security - Threat Protection |
 | **Source Vendor** | NetClean Technologies *(basis: publisher)* |
+| **Source Product** | ProActive |
 | **Version** | 3.0.2 |
 | **Author** | NetClean Technologies AB |
 | **First Published** | 2022-06-30 |

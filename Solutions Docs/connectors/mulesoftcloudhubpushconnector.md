@@ -14,7 +14,7 @@
 | **Publisher** | Microsoft |
 | **Source Vendor** | MuleSoft *(basis: title)* |
 | **Source Product** | CloudHub *(basis: title)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [Mulesoft](../solutions/mulesoft.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [MulesoftLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftLogs_CCF/MulesoftLogs_ConnectorDefinition.json) |

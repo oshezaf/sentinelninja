@@ -13,7 +13,7 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 | **Category** | GCP |
 | **Source Vendor** | Google *(basis: projected)* |
 | **Source Product** | Workspace *(basis: projected)* |
-| **Event Type** | Activities |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

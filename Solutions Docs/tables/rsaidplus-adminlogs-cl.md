@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | RSA *(basis: projected)* |
 | **Source Product** | ID Plus Admin *(basis: projected)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

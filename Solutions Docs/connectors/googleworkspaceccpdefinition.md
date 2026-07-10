@@ -14,7 +14,7 @@
 | **Publisher** | Microsoft |
 | **Source Vendor** | Google *(basis: name_pattern)* |
 | **Source Product** | Workspace *(basis: title)* |
-| **Event Type** | Activities |
+| **Event Type** | Events |
 | **Used in Solutions** | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GoogleWorkspaceReports_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports/Data%20Connectors/GoogleWorkspaceTemplate_ccp/GoogleWorkspaceReports_DataConnectorDefinition.json) |

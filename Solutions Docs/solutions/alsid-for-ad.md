@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.alsid.com/contact-us/](https://www.alsid.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Identity |
 | **Source Vendor** | Alsid *(basis: publisher)* |
-| **Source Product** | for Active Directory |
+| **Source Product** | Active Directory |
 | **Version** | 2.0.0 |
 | **Author** | Alsid |
 | **First Published** | 2022-05-06 |

@@ -14,7 +14,7 @@
 | **Publisher** | Microsoft |
 | **Source Vendor** | Workday *(basis: description_url)* |
 | **Source Product** | Workday *(basis: event)* |
-| **Event Type** | Activity |
+| **Event Type** | Events |
 | **Used in Solutions** | [Workday](../solutions/workday.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Workday_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday/Data%20Connectors/Workday_ccp/Workday_DataConnectorDefinition.json) |

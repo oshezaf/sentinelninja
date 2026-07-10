@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Armis *(basis: projected)* |
-| **Event Type** | Alerts, Alerts Activities |
+| **Event Type** | Alerts, Alerts, Events |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

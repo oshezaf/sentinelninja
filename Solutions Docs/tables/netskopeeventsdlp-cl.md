@@ -9,7 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | Netskope *(basis: projected)* |
-| **Event Type** | Alerts Events |
+| **Event Type** | Alerts, Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

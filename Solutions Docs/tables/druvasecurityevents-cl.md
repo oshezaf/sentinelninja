@@ -8,8 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Druva *(basis: projected)* |
+| **Source Vendor** | Druva *(basis: projected)* |
 | **Event Type** | Events |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |

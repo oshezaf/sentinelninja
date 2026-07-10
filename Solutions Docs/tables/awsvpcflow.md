@@ -12,8 +12,8 @@ Reference for AWSVPCFlow table in Azure Monitor Logs.
 |:----------|:------|
 | **Category** | AWS |
 | **Source Vendor** | Amazon *(basis: projected)* |
-| **Source Product** | S3, S3 VPC Flow *(basis: projected)* |
-| **Event Type** | Logs |
+| **Source Product** | VPC Flow *(basis: projected)* |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

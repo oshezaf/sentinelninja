@@ -12,6 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `FireworkPush` |
 | **Publisher / Vendor** | Flare Systems |
+| **Source Product** | Push *(basis: title)* |
 | **Used in Solutions** | [Flare](../solutions/flare.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [FlareFireworkEventLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_connectorDefinition.json) |

@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `Phosphorus_Polling` |
 | **Publisher / Vendor** | Phosphorus Inc. |
-| **Source Product** | Devices *(basis: title)* |
+| **Event Type** | Devices |
 | **Used in Solutions** | [Phosphorus](../solutions/phosphorus.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [PhosphorusDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/Data%20Connectors/PhosphorusDataConnector.json) |

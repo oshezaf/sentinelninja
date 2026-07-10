@@ -13,7 +13,7 @@
 | **Connector ID** | `CustomlogsviaAMA` |
 | **Publisher / Vendor** | Microsoft |
 | **Source Product** | Custom *(basis: title)* |
-| **Event Type** | logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [CustomLogsAma](../solutions/customlogsama.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CustomLogsAma/Package/mainTemplate.json) |

@@ -13,7 +13,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Category** | Audit, Azure Resources, Security |
 | **Source Vendor** | Microsoft *(basis: projected)* |
 | **Source Product** | Azure *(basis: projected)* |
-| **Event Type** | Activity |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |

@@ -14,7 +14,7 @@
 |:----------|:------|
 | **Connector ID** | `Auth0` |
 | **Publisher / Vendor** | Auth0 |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [Auth0](../solutions/auth0.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Auth0_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_FunctionApp.json) |

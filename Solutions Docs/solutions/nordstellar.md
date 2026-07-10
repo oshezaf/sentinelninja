@@ -17,6 +17,7 @@
 | **Support Link** | [https://nordstellar.com](https://nordstellar.com) |
 | **Categories** | Security - Threat Intelligence,Security - Threat Protection |
 | **Source Vendor** | Nord Security *(basis: publisher)* |
+| **Source Product** | Stellar |
 | **Version** | 3.0.0 |
 | **Author** | Nord Security Inc. - support@nordstellar.com |
 | **First Published** | 2026-05-27 |

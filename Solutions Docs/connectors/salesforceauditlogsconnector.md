@@ -13,7 +13,7 @@
 | **Connector ID** | `SalesforceAuditLogsConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Salesforce *(basis: description_url)* |
-| **Event Type** | Audit Logs |
+| **Event Type** | Audit |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SalesforceAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_DataConnectorDefinition.json) |

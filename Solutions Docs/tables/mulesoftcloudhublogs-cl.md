@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | MuleSoft *(basis: projected)* |
 | **Source Product** | CloudHub *(basis: projected)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

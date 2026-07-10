@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `StyxViewEndpointConnectorDefinition` |
 | **Publisher / Vendor** | Styx Intelligence |
+| **Source Product** | View *(basis: title)* |
+| **Event Type** | Alerts |
 | **Used in Solutions** | [Styx Intelligence](../solutions/styx-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [StyxView%20Alerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence/Data%20Connectors/Alerts/StyxView%20Alerts_ConnectorDefinition.json) |

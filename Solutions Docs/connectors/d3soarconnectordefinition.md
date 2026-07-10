@@ -12,6 +12,8 @@
 |:----------|:------|
 | **Connector ID** | `D3SOARConnectorDefinition` |
 | **Publisher / Vendor** | D3 Security |
+| **Source Product** | Smart SOAR *(basis: title)* |
+| **Event Type** | Incidents |
 | **Used in Solutions** | [D3SmartSOAR](../solutions/d3smartsoar.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [D3SOAR_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/Data%20Connectors/D3SOAR_CCF/D3SOAR_DataConnectorDefinition.json) |

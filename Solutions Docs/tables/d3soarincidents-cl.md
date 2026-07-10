@@ -9,6 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Source Vendor** | D3 Security *(basis: projected)* |
+| **Source Product** | Smart SOAR *(basis: projected)* |
+| **Event Type** | Incidents |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

@@ -13,6 +13,7 @@
 | **Connector ID** | `PaloAltoExpanseCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Palo Alto Networks *(basis: name_pattern)* |
+| **Source Product** | Cortex Xpanse *(basis: title)* |
 | **Used in Solutions** | [Palo Alto Cortex Xpanse CCF](../solutions/palo-alto-cortex-xpanse-ccf.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CortexXpanse_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_ConnectorDefinition.json) |

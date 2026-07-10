@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | Miro *(basis: projected)* |
 | **Source Product** | Content *(basis: projected)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

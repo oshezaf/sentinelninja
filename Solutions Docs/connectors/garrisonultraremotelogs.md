@@ -13,7 +13,7 @@
 | **Connector ID** | `GarrisonULTRARemoteLogs` |
 | **Publisher / Vendor** | Garrison |
 | **Source Product** | ULTRA Remote *(basis: title)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [Garrison ULTRA](../solutions/garrison-ultra.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [GarrisonULTRARemoteLogs_ConnectorUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Garrison%20ULTRA/Data%20Connectors/GarrisonULTRARemoteLogs/GarrisonULTRARemoteLogs_ConnectorUI.json) |

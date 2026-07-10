@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | ZeroFox *(basis: projected)* |
 | **Source Product** | Enterprise *(basis: projected)* |
-| **Event Type** | Indicators |
+| **Event Type** | IOCs |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

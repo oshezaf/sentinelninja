@@ -16,7 +16,7 @@
 |:----------|:------|
 | **Connector ID** | `ArmisActivities` |
 | **Publisher / Vendor** | Armis |
-| **Event Type** | Activities |
+| **Event Type** | Events |
 | **Used in Solutions** | [Armis](../solutions/armis.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ArmisActivities_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Data%20Connectors/ArmisActivities/ArmisActivities_API_FunctionApp.json) |

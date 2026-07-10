@@ -10,7 +10,7 @@
 |:----------|:------|
 | **Source Vendor** | MarkLogic, Microsoft *(basis: projected)* |
 | **Source Product** | Custom *(basis: projected)* |
-| **Event Type** | Audit, logs |
+| **Event Type** | Audit, Events |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

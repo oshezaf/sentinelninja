@@ -17,7 +17,6 @@
 | **Support Link** | [https://phosphorus.io](https://phosphorus.io) |
 | **Categories** | Application |
 | **Source Vendor** | Phosphorus *(basis: publisher)* |
-| **Source Product** | Devices |
 | **Version** | 1.0.0 |
 | **Author** | Phosphorus |
 | **First Published** | 2024-08-13 |

@@ -13,7 +13,7 @@
 | **Connector ID** | `BitSightStatisticsConnector` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | BitSight *(basis: description_url)* |
-| **Source Product** | Security Statistics *(basis: title)* |
+| **Event Type** | Statistics |
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSight_CCF/ConnectorDefinition.json) |

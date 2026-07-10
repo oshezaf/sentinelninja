@@ -13,7 +13,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | **Category** | Windows |
 | **Source Vendor** | Cyborg Security, Microsoft, Semperis *(basis: projected)* |
 | **Source Product** | Active-Directory Domain Controllers Security, Directory Services Protector, Exchange, HUNTER Hunt Packages, Windows *(basis: projected)* |
-| **Event Type** | Event Logs, Logs Events, Security Events |
+| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |

@@ -17,6 +17,7 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations,Security - Network |
 | **Source Vendor** | Sevco Security *(basis: publisher)* |
+| **Source Product** | Platform |
 | **Version** | 3.0.0 |
 | **Author** | Sevco Security - support@sevco.io |
 | **First Published** | 2023-05-01 |

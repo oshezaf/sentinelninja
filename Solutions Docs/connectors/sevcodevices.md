@@ -14,6 +14,8 @@
 |:----------|:------|
 | **Connector ID** | `SevcoDevices` |
 | **Publisher / Vendor** | Sevco Security |
+| **Source Product** | Platform *(basis: title)* |
+| **Event Type** | Devices |
 | **Used in Solutions** | [SevcoSecurity](../solutions/sevcosecurity.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_SevcoSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SevcoSecurity/Data%20Connectors/Connector_SevcoSecurity.json) |

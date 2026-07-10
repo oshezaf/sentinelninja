@@ -13,7 +13,7 @@
 | **Connector ID** | `Auth0ConnectorCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Source Vendor** | Auth0 *(basis: description_url)* |
-| **Event Type** | Logs |
+| **Event Type** | Events |
 | **Used in Solutions** | [Auth0](../solutions/auth0.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/DataConnectorDefinition.json) |
