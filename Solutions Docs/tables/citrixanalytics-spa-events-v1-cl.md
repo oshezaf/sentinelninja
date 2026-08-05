@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Citrix *(basis: projected)* |
-| **Source Product** | Analytics *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

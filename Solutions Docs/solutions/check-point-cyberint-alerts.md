@@ -14,11 +14,9 @@
 |:------------------------|:------|
 | **Publisher** | Check Point |
 | **Support Tier** | Partner |
-| **Support Link** | [https://cyberint.com/customer-support/](https://cyberint.com/customer-support/) |
+| **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | Check Point *(basis: publisher)* |
-| **Source Product** | Cyberint |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.2 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-03-18 |
 | **Last Updated** | 2026-04-17 |
@@ -75,12 +73,12 @@ This solution includes **11 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Check Point EM - Importer (Alerts → Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.md) | Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and cr... | [`argsentdc_CL`](../tables/argsentdc-cl.md) *(read)* |
+| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and wr... | [`argsentdc_CL`](../tables/argsentdc-cl.md) *(read)* |
 | [Check Point Exposure Management - Credential Leak Validation and Response](../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | When a new Microsoft Sentinel incident is created for leaked credentials, this playbook queries the ... | - |
-| [Check Point Exposure Management - Exporter (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.md) | When a Sentinel incident status changes, this playbook pushes the update to the corresponding alert(... | - |
-| [Check Point Exposure Management - Fetch Attachments On-Demand](../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | On-demand playbook that fetches alert attachments and analysis report for a Sentinel incident, surfa... | - |
+| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | When a Microsoft Sentinel incident status changes, this playbook pushes the update to the correspond... | - |
+| [Check Point Exposure Management - Fetch Attachments On-Demand](../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | On-demand playbook that fetches alert attachments and analysis report for a Microsoft Sentinel incid... | - |
 | [Check Point Exposure Management - IOC Enrichment and Triage](../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | When a new Microsoft Sentinel incident is created, this playbook enriches IOC entities (IPs, domains... | - |
-| [Check Point Exposure Management - Manual Status Update (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.md) | On-demand playbook that reads the current Sentinel incident status and pushes it to the correspondin... | - |
+| [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | On-demand playbook that reads the current Microsoft Sentinel incident status and pushes it to the co... | - |
 | [Check Point Exposure Management - Phishing Takedown](../content/check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | When a new Microsoft Sentinel incident is created for a phishing website alert, this playbook extrac... | - |
 | [Check Point Exposure Management - Vulnerability Exploitation Monitoring](../content/check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.md) | When a new Microsoft Sentinel incident is created containing CVE identifiers, this playbook enriches... | - |
 
@@ -88,7 +86,7 @@ This solution includes **11 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CPEMAlerts](../parsers/cpemalerts.md) | - | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) *(read)*<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) *(read)* |
+| [CPEMAlerts](../parsers/cpemalerts.md) | - | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) *(read)*<br>[`SigninLogs`](../tables/signinlogs.md) *(read)*<br>[`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) *(read)*<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) *(read)* |
 
 ## Additional Documentation
 
@@ -159,6 +157,7 @@ This solution integrates **Check Point Exposure Management** with **Microsoft Se
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
 | ----------- |--------------------------------| ------------------------ |
+| 3.1.2       | 02-06-2026                     | Updated support contact information and documentation links. |
 | 3.1.0       | 10-03-2026                     | Update **Data Connector**, add bi-directional sync playbooks, analytic rule (ingestion anomaly), workbook (alert overview & sync health), and automation rules. |
 | 3.0.0       | 17-06-2025                     | Initial Solution release. |
 

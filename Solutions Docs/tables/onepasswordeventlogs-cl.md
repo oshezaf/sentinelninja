@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | 1Password *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -21,15 +20,18 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (28 columns)
+## Schema (33 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password%5CData%20Connectors%5C1Password_ccpv2/1Password_tables.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| account_uuid | string |
 | action | string |
 | action_type | string |
+| actor_account_uuid | string |
 | actor_details | dynamic |
+| actor_type | string |
 | actor_uuid | string |
 | aux_details | dynamic |
 | aux_id | int |
@@ -53,6 +55,8 @@
 | timestamp | datetime |
 | used_version | int |
 | user | dynamic |
+| user_account_uuid | string |
+| user_type | string |
 | uuid_s | string |
 | vault_uuid | string |
 

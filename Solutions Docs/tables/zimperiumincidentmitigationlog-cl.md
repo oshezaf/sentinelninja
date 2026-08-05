@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Zimperium *(basis: projected)* |
-| **Source Product** | Mobile Threat Defense CCF *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Holm Security *(basis: projected)* |
-| **Source Product** | Asset *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
@@ -44,13 +42,14 @@ This table is used by the following solutions:
 
 - [HolmSecurity](../solutions/holmsecurity.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Holm Security Asset Data](../connectors/holmsecurityassets.md) |  |
+| [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) |  |
+| [Holm Security Data Connector](../connectors/holmsecurityccf.md) |  |
 
 ---
 

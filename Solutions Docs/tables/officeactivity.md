@@ -11,8 +11,6 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Office 365 |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | 365 *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -307,8 +305,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map Email entity to OfficeActivity](../content/threat-intelligence-new-ti-map-email-entity-to-officeactivity-795d43a3-6edc-4c99-971f-00d05841e5ac-5834b2a5.md) |  |
-| [TI map IP entity to OfficeActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-officeactivity-f50280e5-5eb1-4e95-99fd-9d584a987bdd-0c3d2238.md) |  |
+| [TI Map Email entity to OfficeActivity](../content/threat-intelligence-new-ti-map-email-entity-to-officeactivity-795d43a3-6edc-4c99-971f-00d05841e5ac-60dcc528.md) |  |
+| [TI Map IP entity to OfficeActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-officeactivity-f50280e5-5eb1-4e95-99fd-9d584a987bdd-172c25fa.md) |  |
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 

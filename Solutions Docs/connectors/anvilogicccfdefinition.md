@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AnvilogicCCFDefinition` |
-| **Publisher / Vendor** | Anvilogic |
+| **Publisher** | Anvilogic |
 | **Used in Solutions** | [Anvilogic](../solutions/anvilogic.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Anvilogic_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic/Data%20Connectors/AnviLogic_CCF/Anvilogic_DataConnectorDefinition.json) |

@@ -15,8 +15,8 @@
 | **Schema** | NetworkSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.7.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md)) |
-| **Last Updated** | Mar 30, 2026 |
+| **Parser Version** | 0.7.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md)) |
+| **Last Updated** | Jun 26, 2026 |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSession.yaml) |
 
 ## Description
@@ -38,6 +38,7 @@ This union parser includes parsers for the following products:
 | CheckPointFirewall | [_ASim_NetworkSession_CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | CheckPointSmartDefense | [_ASim_NetworkSession_CheckPointSmartDefense](asimnetworksessioncheckpointsmartdefense.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | CiscoASA | [_ASim_NetworkSession_CiscoASA](asimnetworksessionciscoasa.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Cisco FTD | [_ASim_NetworkSession_CiscoFTD](asimnetworksessionciscoftd.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco Firepower | [_ASim_NetworkSession_CiscoFirepower](asimnetworksessionciscofirepower.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco ISE | [_ASim_NetworkSession_CiscoISE](asimnetworksessionciscoise.md) | [Syslog](../solutions/syslog.md) |
 | Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) | [CustomLogsAma](../solutions/customlogsama.md) |

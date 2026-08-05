@@ -13,7 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Authomize` |
-| **Publisher / Vendor** | Authomize |
+| **Publisher** | Authomize |
 | **Used in Solutions** | [Authomize](../solutions/authomize.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [AuthomizeCustomConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize/Data%20Connectors/AuthomizeCustomConnector.json) |

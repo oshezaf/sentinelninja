@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Source Vendor** | VMware *(basis: publisher)* |
-| **Source Product** | vCenter |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |

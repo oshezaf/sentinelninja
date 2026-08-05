@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transmit Security Data Connector for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>⚠️ Transmit Security Data Connector for Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,11 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="transmit-security-data-connector-for-microsoft-sentinel">Transmit Security Data Connector for Microsoft Sentinel</h1>
+<h1 id="transmit-security-data-connector-for-microsoft-sentinel">⚠️ Transmit Security Data Connector for Microsoft Sentinel</h1>
 <p><em>Solution: TransmitSecurity</em></p>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
 <img src="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Logos/Transmit_Security_Logo.svg" alt="TransmitSecurity Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -47,10 +50,6 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">TransmitSecurity <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.2</td>
 </tr>
@@ -78,15 +77,19 @@
 </table>
 <p>The [Transmit Security] data connector provides the capability to ingest common Transmit Security API events into Microsoft Sentinel through the REST API. <a href="https://developer.transmitsecurity.com/">Refer to API documentation for more information</a>. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/transmitsecurity.html">Transmit Security Connector</a> 🔶</li>
+<li><a href="../connectors/transmitsecurity.html">Transmit Security Connector</a> ⚠️ 🔶</li>
+<li><a href="../connectors/transmitsecurityconnectordefinition.html">Transmit Security Data Connector (via Codeless Connector Framework)</a></li>
 </ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -99,6 +102,11 @@
 <tr>
   <td><a href="../tables/transmitsecurityactivity-cl.html"><code>TransmitSecurityActivity_CL</code></a> 🔶</td>
   <td><a href="../connectors/transmitsecurity.html">Transmit Security Connector</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/transmitsecurityactivity-v2-cl.html"><code>TransmitSecurityActivity_V2_CL</code></a></td>
+  <td><a href="../connectors/transmitsecurityconnectordefinition.html">Transmit Security Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -118,8 +126,8 @@
 <tbody>
 <tr>
   <td>3.0.2</td>
-  <td>20-11-2024</td>
-  <td>Change Functions to support one endpoint at a time</td>
+  <td>13-07-2026</td>
+  <td>Update data connector from the deprecated Azure Function connector to CCF</td>
 </tr>
 <tr>
   <td>3.0.1</td>

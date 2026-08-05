@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ObsidianDatasharing` |
-| **Publisher / Vendor** | Obsidian Security |
-| **Source Product** | Datasharing *(basis: title)* |
+| **Publisher** | Obsidian Security |
 | **Used in Solutions** | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [ObsidianDatasharing_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing/Data%20Connectors/ObsidianDatasharing_CCP/ObsidianDatasharing_ConnectorDefinition.json) |

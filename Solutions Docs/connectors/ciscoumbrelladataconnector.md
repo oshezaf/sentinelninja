@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoUmbrellaDataConnector` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | Cloud Security *(basis: title)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CiscoUmbrella_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_API_FunctionApp.json) |
@@ -93,7 +92,7 @@ This connector ingests data into the following tables:
 
 1. Click the **Deploy to Azure** button below. 
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinelciscoumbrellaazuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinelciscoumbrellaazuredeploy-gov)
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinelciscoumbrellaazuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinelciscoumbrellaazuredeploy-gov)
 2. Select the preferred **Subscription**, **Resource Group** and **Location**. 
 3. Enter the **Workspace ID**, **Workspace Key**, **S3Bucket**, **AWSAccessKeyId**, **AWSSecretAccessKey**
 **Note:** For the S3Bucket use the value that Cisco referrs to as the _S3 Bucket Data Path_ and add a / (forward slash) to the end of the value

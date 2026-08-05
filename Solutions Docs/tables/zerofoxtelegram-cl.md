@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise - Telegram *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

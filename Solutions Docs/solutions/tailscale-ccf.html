@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Tailscale CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="tailscale">⚠️ Tailscale (CCF)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tailscale.svg" alt="Tailscale (CCF) Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Tailscale (CCF)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Community</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/issues">https://github.com/Azure/Azure-Sentinel/issues</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Networking,Security - Network,Identity</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">noodlemctwoodle - ccfconnectors.county118@passmail.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-05-19</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-05-19</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tailscale%20%28CCF%29">Tailscale (CCF)</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://tailscale.com/">Tailscale</a> solution for Microsoft Sentinel ingests Tailscale identity, device, configuration, audit and (Premium) network-flow telemetry via OAuth2-secured APIs. Built on the Codeless Connector Framework (CCF) - no Function App or container required.</p>
+<p><strong>Data connectors in this solution (install the one matching your Tailscale plan):</strong></p>
+<ul>
+<li><strong>Tailscale Standard (CCF)</strong> - Configuration audit, devices, users, keys, webhooks, DNS, settings. Use on <strong>Personal (Free), Starter and Premium</strong> tailnets.</li>
+<li><strong>Tailscale Premium (CCF)</strong> - Everything in Standard plus network flow logs and posture integrations. Use on <strong>Premium and Enterprise</strong> tailnets for full coverage.</li>
+</ul>
+<p><strong>Pre-requisites:</strong></p>
+<ol>
+<li>Sign in to <a href="https://login.tailscale.com/admin/settings/oauth">Tailscale OAuth settings</a></li>
+<li>Create an OAuth client with the scopes for your tier (see the README in this solution).</li>
+<li>Copy the client ID and client secret (secret shown once).</li>
+<li>Note your tailnet name (e.g. <code>tailb094d7.ts.net</code>) from the <a href="https://login.tailscale.com/admin/settings/keys">Keys page</a>.</li>
+</ol>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></li>
+<li><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>9 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-dns-cl.html"><code>Tailscale_Dns_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-keys-cl.html"><code>Tailscale_Keys_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-postureintegrations-cl.html"><code>Tailscale_PostureIntegrations_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-settings-cl.html"><code>Tailscale_Settings_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/tailscale-webhooks-cl.html"><code>Tailscale_Webhooks_CL</code></a></td>
+  <td><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a>, <a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>50 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">24</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">22</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-derp-relay-traffic-surge-0a1c8d12-e7d3-4890-8b89-8d6dbc1be2f0-fab92f1d.html">Tailscale Premium: DERP relay traffic surge</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-large-outbound-transfer-over-tailnet-d2e3f4a5-2b3c-4d5e-6f7a-8b9c0d1e2f3a-69b67d96.html">Tailscale Premium: Large outbound transfer over tailnet</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Exfiltration, Collection</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-mass-fan-out-from-single-node-f4a5b6c7-4d5e-6f7a-8b9c-0d1e2f3a4b5c-b89550b1.html">Tailscale Premium: Mass fan-out from single node</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Discovery, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-network-flow-beaconing-detected-e3f4a5b6-3c4d-5e6f-7a8b-9c0d1e2f3a4b-1e9c1f7e.html">Tailscale Premium: Network flow beaconing detected</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CommandAndControl, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-new-posture-integration-added-b2c3d4e5-6789-0123-45ab-cdef12345031-01ab9a83.html">Tailscale Premium: New posture integration added</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-posture-integration-disabled-or-removed-a1b2c3d4-5678-9012-34ab-cdef12345030-9712642c.html">Tailscale Premium: Posture integration disabled or removed</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-subnet-router-throughput-anomaly-a5b6c7d8-5e6f-7a8b-9c0d-1e2f3a4b5c6d-5e3449f5.html">Tailscale Premium: Subnet router throughput anomaly</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">Exfiltration, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-unexpected-exit-node-egress-c1d2e3f4-1a2b-3c4d-5e6f-7a8b9c0d1e2f-ac7c83d9.html">Tailscale Premium: Unexpected exit-node egress</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CommandAndControl, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-auth-key-created-6b052c8d-5de8-eab0-1956-69a297765a32-8e137252.html">Tailscale: Auth key created</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-dns-nameservers-modified-c5d6e7f8-2345-6789-01ab-cdef12345011-4a059b52.html">Tailscale: DNS nameservers modified</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-tailscale-ssh-newly-enabled-f0a1b2c3-4567-8901-23de-f12345670041-0940f253.html">Tailscale: Device Tailscale SSH newly enabled</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-key-expiring-within-7-days-b1a2c3d4-1234-5678-90ab-cdef12345001-ea43faab.html">Tailscale: Device key expiring within 7 days</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-started-advertising-subnet-routes-c2b3d4e5-2345-6789-01ab-cdef12345002-965edc54.html">Tailscale: Device started advertising subnet routes</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">LateralMovement, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-exit-node-advertised-or-approved-f42f2906-c8e6-23d0-e48c-0620e50d5510-8d8d4179.html">Tailscale: Exit node advertised or approved</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">CommandAndControl, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-external-shared-in-device-added-b2c3d4e5-6789-0123-4567-890123450043-78b0111a.html">Tailscale: External (shared-in) device added</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-magicdns-disabled-f8a9b0c1-4567-8901-23ab-cdef12345020-eaaf81b1.html">Tailscale: MagicDNS disabled</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-mass-credential-revocation-in-short-window-f817e2fa-6fa0-fc25-5369-cef9b58771af-5adb0491.html">Tailscale: Mass credential revocation in short window</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion, Impact</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-new-api-access-token-or-oauth-client-created-668b43fd-cf28-961a-85af-957850df5027-c2f19698.html">Tailscale: New API access token or OAuth client created</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-oauth-client-or-api-key-created-with-write-scopes-7237a848-30f2-499b-9ad5-024aea1288bd-be5847ed.html">Tailscale: OAuth client or API key created with write scopes</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-policy-file-acl-modified-1e7249c2-1a9d-05fd-45cb-c859eef5b8ae-753940c9.html">Tailscale: Policy file (ACL) modified</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-split-dns-configuration-modified-b4c5d6e7-1234-5678-90ab-cdef12345010-0b8e88e1.html">Tailscale: Split-DNS configuration modified</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-tailnet-lock-validation-failed-e9f0a1b2-3456-7890-12cd-ef1234560040-e374e237.html">Tailscale: Tailnet lock validation failed</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-unauthorized-device-connected-to-control-plane-a1b2c3d4-5678-9012-3456-789012340042-c6a2d685.html">Tailscale: Unauthorized device connected to control plane</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-user-role-elevated-to-admin-or-owner-d3c4e5f6-3456-7890-12ab-cdef12345003-11393154.html">Tailscale: User role elevated to admin or owner</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-beaconing-candidates-regular-periodic-flows-b28cbdd2-8cef-be9b-a38e-7faceedfdbec-7ec62e6f.html">Tailscale Premium: Beaconing candidates (regular periodic flows)</a></td>
+  <td style="text-align:left">CommandAndControl, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-cross-tag-flow-matrix-a8978f27-3c85-4c29-a45a-c4a5e43fef2d-d4a839ac.html">Tailscale Premium: Cross-tag flow matrix</a></td>
+  <td style="text-align:left">LateralMovement, Discovery</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-current-posture-integration-inventory-c3d4e5f6-7890-1234-56ab-cdef12345032-2211ead1.html">Tailscale Premium: Current posture integration inventory</a></td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/tailscale-postureintegrations-cl.html"><code>Tailscale_PostureIntegrations_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-devices-with-persistent-derp-relay-usage-20457fba-08e2-42d7-b972-fbe9acf583c8-c954c76c.html">Tailscale Premium: Devices with persistent DERP relay usage</a></td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-exit-node-usage-patterns-a37bacc1-7bde-ad8a-f27d-6e9bcdcecadb-a09875a8.html">Tailscale Premium: Exit-node usage patterns</a></td>
+  <td style="text-align:left">CommandAndControl, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-network-flows-outside-business-hours-622ce88a-0838-4bbe-8a00-ab8ac8377f41-efe1b1a6.html">Tailscale Premium: Network flows outside business hours</a></td>
+  <td style="text-align:left">Exfiltration, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-new-src-dst-node-pairs-lateral-movement-candidates-e55f8aaf-5fbc-8b6e-d05b-4c7faabcadbe-a838c390.html">Tailscale Premium: New src-&gt;dst node pairs (lateral movement candidates)</a></td>
+  <td style="text-align:left">LateralMovement, Discovery</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-tagged-services-with-broad-inbound-exposure-f8d4e7bc-3450-4c55-84ac-90e6e9c6b8fe-33d60d66.html">Tailscale Premium: Tagged services with broad inbound exposure</a></td>
+  <td style="text-align:left">LateralMovement, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-top-talkers-by-bytes-virtual-traffic-f46a9bb0-6acd-9c7f-e16c-5d8abbcdbeca-e2ccb573.html">Tailscale Premium: Top talkers by bytes (virtual traffic)</a></td>
+  <td style="text-align:left">Exfiltration, Collection</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-users-generating-traffic-from-multiple-devices-daac10bd-d842-4122-90cc-9957256f04e3-fb758768.html">Tailscale Premium: Users generating traffic from multiple devices</a></td>
+  <td style="text-align:left">InitialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a><br><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-acl-policy-churn-b82e5d4d-2c8f-5e3b-ad2e-1f4c6e8d9eab-3a8b5a48.html">Tailscale: ACL policy churn</a></td>
+  <td style="text-align:left">DefenseEvasion, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-auth-key-sprawl-d64e7f6f-4eab-7a5d-cf4a-3b6e8aafbcad-31f5b16a.html">Tailscale: Auth key sprawl</a></td>
+  <td style="text-align:left">Persistence, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-auth-keys-with-no-expiry-f5e6a7b8-5678-9012-34ab-cdef12345005-f65b26f5.html">Tailscale: Auth keys with no expiry</a></td>
+  <td style="text-align:left">Persistence, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-keys-cl.html"><code>Tailscale_Keys_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-not-seen-in-30+-days-e4d5f6a7-4567-8901-23ab-cdef12345004-bdc21c59.html">Tailscale: Devices not seen in 30+ days</a></td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-with-tailscale-ssh-enabled-c3d4e5f6-7890-1234-5678-901234560044-de5ffa75.html">Tailscale: Devices with Tailscale SSH enabled</a></td>
+  <td style="text-align:left">LateralMovement, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-with-outdated-client-version-e5f6a7b8-9012-3456-7890-123456780046-3abf50b7.html">Tailscale: Devices with outdated client version</a></td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-external-shared-in-device-inventory-d4e5f6a7-8901-2345-6789-012345670045-df24a7cb.html">Tailscale: External (shared-in) device inventory</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-first-seen-actor-making-configuration-changes-a91f4d3c-1b7e-4f2a-9c1d-0e3b5f7c8d9a-04635080.html">Tailscale: First-seen actor making configuration changes</a></td>
+  <td style="text-align:left">InitialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-off-hours-configuration-changes-c73f6e5e-3d9a-6f4c-be3f-2a5d7f9eafbc-e6aa0de9.html">Tailscale: Off-hours configuration changes</a></td>
+  <td style="text-align:left">InitialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-split-dns-per-domain-change-history-e7f8a9b0-3456-7890-12ab-cdef12345012-4ab18359.html">Tailscale: Split-DNS per-domain change history</a></td>
+  <td style="text-align:left">DefenseEvasion, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-subnet-router-cidr-exposure-inventory-f6a7b8c9-0123-4567-8901-234567890047-d615e7b6.html">Tailscale: Subnet router CIDR exposure inventory</a></td>
+  <td style="text-align:left">LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-users-with-zero-devices-a6f7b8c9-6789-0123-45ab-cdef12345006-448573f1.html">Tailscale: Users with zero devices</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscalepremiumoperations-5218a067.html">TailscalePremiumOperations</a></td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a><br><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a><br><a href="../tables/tailscale-dns-cl.html"><code>Tailscale_Dns_CL</code></a><br><a href="../tables/tailscale-keys-cl.html"><code>Tailscale_Keys_CL</code></a><br><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a><br><a href="../tables/tailscale-postureintegrations-cl.html"><code>Tailscale_PostureIntegrations_CL</code></a><br><a href="../tables/tailscale-settings-cl.html"><code>Tailscale_Settings_CL</code></a><br><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscalestandardoperations-76dbc0de.html">TailscaleStandardOperations</a></td>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a><br><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a><br><a href="../tables/tailscale-dns-cl.html"><code>Tailscale_Dns_CL</code></a><br><a href="../tables/tailscale-keys-cl.html"><code>Tailscale_Keys_CL</code></a><br><a href="../tables/tailscale-settings-cl.html"><code>Tailscale_Settings_CL</code></a><br><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimnetworksessiontailscale.html">ASimNetworkSessionTailscale</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/vimnetworksessiontailscale.html">vimNetworkSessionTailscale</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/tailscale-network-cl.html"><code>Tailscale_Network_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tailscale%20%28CCF%29/README.md">Tailscale (CCF)/README.md</a></em></p>
+</blockquote>
+<p>Microsoft Sentinel solution that ingests Tailscale identity, device, configuration, audit and (Premium) network-flow telemetry via the OAuth2-secured Tailscale API. Built on the Codeless Connector Framework (CCF) - no Function App or container required.</p>
+<ul>
+<li><strong>2 data connectors</strong> (Standard, Premium) - install whichever matches your Tailscale plan</li>
+<li><strong>24 analytic rules</strong> (16 Standard + 8 Premium-only)</li>
+<li><strong>22 hunting queries</strong> (12 Standard + 10 Premium-only)</li>
+<li><strong>2 workbooks</strong> (Standard Operations, Premium Operations)</li>
+<li><strong>2 ASIM NetworkSession parsers</strong> (<code>vimNetworkSessionTailscale</code> + <code>ASimNetworkSessionTailscale</code> wrapper) - Premium only</li>
+<li><strong>9 custom tables</strong> ingested via 9-11 polling rules behind a single Connect button</li>
+</ul>
+<hr />
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#1-pick-your-tier">Pick your tier</a></li>
+<li><a href="#2-pre-requisites">Pre-requisites</a></li>
+<li><a href="#3-installation">Installation</a></li>
+<li><a href="#4-verification">Verification</a></li>
+<li><a href="#5-custom-tables">Custom tables</a></li>
+<li><a href="#6-analytic-rules">Analytic rules</a></li>
+<li><a href="#7-hunting-queries">Hunting queries</a></li>
+<li><a href="#8-workbooks">Workbooks</a></li>
+<li><a href="#9-architecture-notes">Architecture notes</a></li>
+<li><a href="#10-limitations">Limitations</a></li>
+<li><a href="#11-troubleshooting">Troubleshooting</a></li>
+<li><a href="#12-support">Support</a></li>
+<li><a href="#13-acknowledgements">Acknowledgements</a></li>
+</ol>
+<hr />
+<h2 id="1-pick-your-tier">1. Pick your tier</h2>
+<p>Install <strong>one</strong> of the two connectors based on your Tailscale plan. The split mirrors what the Tailscale API actually exposes per tier - network flow logs are only available on Premium and Enterprise tailnets.</p>
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th>Tailscale Standard (CCF)</th>
+  <th>Tailscale Premium (CCF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Tailscale plan</strong></td>
+  <td>Personal (Free), Starter, Premium*</td>
+  <td>Premium, Enterprise</td>
+</tr>
+<tr>
+  <td><strong>Pollers behind one Connect</strong></td>
+  <td>9</td>
+  <td>11</td>
+</tr>
+<tr>
+  <td><strong>Custom tables created</strong></td>
+  <td>7</td>
+  <td>9</td>
+</tr>
+<tr>
+  <td><strong>Analytic rules wired</strong></td>
+  <td>16</td>
+  <td>24 (Standard 16 + Premium 8)</td>
+</tr>
+<tr>
+  <td><strong>Hunting queries wired</strong></td>
+  <td>12</td>
+  <td>22 (Standard 12 + Premium 10)</td>
+</tr>
+<tr>
+  <td><strong>Workbook</strong></td>
+  <td>Standard Operations</td>
+  <td>Premium Operations</td>
+</tr>
+<tr>
+  <td><strong>Network flow logs</strong></td>
+  <td>not exposed by API</td>
+  <td><code>Tailscale_Network_CL</code></td>
+</tr>
+<tr>
+  <td><strong>Posture integrations</strong></td>
+  <td>not exposed by API</td>
+  <td><code>Tailscale_PostureIntegrations_CL</code></td>
+</tr>
+<tr>
+  <td><strong>Required OAuth scopes</strong></td>
+  <td><code>logs:configuration:read</code>, <code>devices:read</code>, <code>users:read</code>, <code>keys:read</code>, <code>webhooks:read</code>, <code>dns:read</code>, <code>settings:read</code></td>
+  <td>All of Standard plus <code>logs:network:read</code>, <code>posture-integrations:read</code></td>
+</tr>
+</tbody>
+</table>
+<p>* Premium tailnets can use the Standard connector if you don't want network-flow data, but the Premium connector is the recommended path.</p>
+<hr />
+<h2 id="2-pre-requisites">2. Pre-requisites</h2>
+<p>You need four things before clicking Connect:</p>
+<ol>
+<li><strong>A Microsoft Sentinel-enabled Log Analytics workspace</strong> in any region.</li>
+<li><strong>A Data Collection Endpoint (DCE)</strong> in the same region as the workspace. The Sentinel Content Hub installer creates one automatically if you don't already have a shared DCE.</li>
+<li><strong>A Tailscale OAuth client</strong> generated at <a href="https://login.tailscale.com/admin/settings/oauth">https://login.tailscale.com/admin/settings/oauth</a>. Personal API tokens (<code>tskey-api-...</code>) do <strong>not</strong> work - see <a href="#9-architecture-notes">Architecture notes</a> for the reason.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>19-05-2026</td>
+  <td>Initial Solution Release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

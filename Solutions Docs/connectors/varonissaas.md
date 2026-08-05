@@ -1,4 +1,6 @@
-# Varonis SaaS
+# 🚫 [Deprecated] Varonis SaaS
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="" width="75" height="75">
 
@@ -11,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `VaronisSaaS` |
-| **Publisher / Vendor** | Varonis |
-| **Source Product** | SaaS *(basis: title)* |
+| **Publisher** | Varonis |
 | **Used in Solutions** | [VaronisSaaS](../solutions/varonissaas.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VaronisSaaS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS/Data%20Connectors/VaronisSaaS_API_FunctionApp.json) |

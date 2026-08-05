@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>CrowdStrikeFalconAdversaryIntelligence</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">CrowdStrike</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Falcon Adversary Intelligence <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -181,6 +177,295 @@ LOOK_BACK_DAYS
 WORKSPACE_ID</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: [CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeFalconAdversaryIntelligence\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike Falcon Endpoint Protection\Data Connectors\CrowdStrikeFalconAdversaryIntelligence\README.md)</em></p>
+</blockquote>
+<h1 id="crowdstrike-falcon-adversary-intelligence-data-connector">CrowdStrike Falcon Adversary Intelligence – Data Connector</h1>
+<h2 id="summary"><strong>Summary</strong></h2>
+<p>This Microsoft Sentinel data connector enables ingestion of <strong>threat intelligence indicators</strong> from the <strong>CrowdStrike Falcon Intelligence</strong> API. It fetches indicators of compromise (IOCs), converts them to <strong>STIX 2.1</strong> format, and uploads them to the Microsoft Sentinel threat intelligence store.</p>
+<p>The connector runs as an <strong>Azure Function App</strong> on a 10-minute timer trigger, giving security teams continuously updated, high-confidence threat intelligence to power analytics, hunting, and incident detection.</p>
+<hr />
+<h2 id="features"><strong>Features</strong></h2>
+<ul>
+<li>Connects to the <strong>CrowdStrike Falcon Intelligence REST API</strong> using OAuth 2.0 client credentials authentication.</li>
+<li>Converts CrowdStrike indicators to <strong>STIX 2.1</strong> and uploads them via the Microsoft Sentinel threat intelligence upload API.</li>
+<li>Supports a wide range of indicator types: file hashes (MD5/SHA-1/SHA-256), URLs, domains, IP addresses, mutexes, file names, email addresses, usernames, and wallet/coin addresses.</li>
+<li>Maps CrowdStrike <code>malicious_confidence</code> (high/medium/low) to STIX confidence scores (85/60/30).</li>
+<li>Uses incremental, marker-based pagination with <strong>state persistence</strong> in an Azure File Share so each run resumes where the previous one left off.</li>
+<li>Time-aware batching: exits gracefully before the next execution window to prevent overlapping runs.</li>
+</ul>
+<hr />
+<h2 id="prerequisites"><strong>Prerequisites</strong></h2>
+<ol>
+<li>A valid <strong>CrowdStrike Falcon</strong> tenant with an <strong>Intelligence</strong> subscription.</li>
+<li>An <strong>API Client</strong> configured in CrowdStrike Falcon with:<ul>
+<li><strong>Client ID</strong></li>
+<li><strong>Client Secret</strong></li>
+<li><strong>Base URL</strong> (region-specific)</li>
+<li>The <code>indicators:read</code> API scope.</li>
+</ul>
+</li>
+<li>An <strong>Azure AD application</strong> (service principal) used to authenticate to the Microsoft Sentinel threat intelligence upload API, with:<ul>
+<li><strong>Tenant ID</strong></li>
+<li><strong>Client ID</strong></li>
+<li><strong>Client Secret</strong></li>
+<li>The <strong>Microsoft Sentinel Contributor</strong> role assigned on the target workspace.</li>
+</ul>
+</li>
+<li>Access to an Azure subscription with <strong>Microsoft Sentinel</strong> enabled and permissions to deploy a Function App.</li>
+</ol>
+<hr />
+<h2 id="generating-crowdstrike-falcon-api-credentials"><strong>Generating CrowdStrike Falcon API Credentials</strong></h2>
+<h3 id="1-access-the-falcon-console"><strong>1. Access the Falcon Console</strong></h3>
+<ol>
+<li>Sign into the <strong>CrowdStrike Falcon console</strong>.</li>
+<li>Navigate to <strong>Support &amp; Resources</strong> → <strong>API clients and keys</strong>.</li>
+</ol>
+<h3 id="2-create-api-client"><strong>2. Create API Client</strong></h3>
+<ol>
+<li>Click <strong>Create/Add new API client</strong>.</li>
+<li>Provide a descriptive <strong>name</strong> and <strong>description</strong> for the connector.</li>
+<li>Grant the <strong><code>indicators:read</code></strong> scope.</li>
+<li>Note the <strong>Client ID</strong> and <strong>Client Secret</strong> (the secret is displayed only once).</li>
+</ol>
+<h3 id="3-identify-your-base-url"><strong>3. Identify Your Base URL</strong></h3>
+<table>
+<thead>
+<tr>
+  <th><strong>Region</strong></th>
+  <th><strong>Base URL</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>US-1</td>
+  <td><code>https://api.crowdstrike.com</code></td>
+</tr>
+<tr>
+  <td>US-2</td>
+  <td><code>https://api.us-2.crowdstrike.com</code></td>
+</tr>
+<tr>
+  <td>EU-1</td>
+  <td><code>https://api.eu-1.crowdstrike.com</code></td>
+</tr>
+<tr>
+  <td>US-GOV-1</td>
+  <td><code>https://api.laggar.gcw.crowdstrike.com</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deployment-parameters"><strong>Deployment Parameters</strong></h2>
+<p>When deploying the connector, you'll provide the following parameters:</p>
+<table>
+<thead>
+<tr>
+  <th><strong>Parameter</strong></th>
+  <th style="text-align:center"><strong>Required</strong></th>
+  <th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>FunctionName</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>A name for the deployed Function App.</td>
+</tr>
+<tr>
+  <td><code>CrowdStrikeClientId</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>CrowdStrike API client ID.</td>
+</tr>
+<tr>
+  <td><code>CrowdStrikeClientSecret</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>CrowdStrike API client secret.</td>
+</tr>
+<tr>
+  <td><code>CrowdStrikeBaseUrl</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Region-specific CrowdStrike API base URL (see table above).</td>
+</tr>
+<tr>
+  <td><code>WorkspaceId</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Microsoft Sentinel workspace ID.</td>
+</tr>
+<tr>
+  <td><code>TenantId</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Azure AD tenant ID.</td>
+</tr>
+<tr>
+  <td><code>AadClientId</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Azure AD application client ID.</td>
+</tr>
+<tr>
+  <td><code>AadClientSecret</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Azure AD application client secret.</td>
+</tr>
+<tr>
+  <td><code>Indicators</code></td>
+  <td style="text-align:center">Yes</td>
+  <td>Comma-separated indicator types to ingest (e.g. <code>url,hash_md5,domain,ip_address</code>).</td>
+</tr>
+<tr>
+  <td><code>LookBackDays</code></td>
+  <td style="text-align:center">No</td>
+  <td>Time window (in days) used on the first run only. Default <code>1</code>, maximum <code>60</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supported-indicator-types"><strong>Supported indicator types</strong></h3>
+<p>The <code>Indicators</code> parameter accepts any combination of the following types:</p>
+<p><code>hash_md5</code>, <code>hash_sha256</code>, <code>hash_sha1</code>, <code>url</code>, <code>domain</code>, <code>ip_address</code>, <code>mutex_name</code>, <code>password</code>, <code>file_name</code>, <code>email_address</code>, <code>username</code>, <code>persona_name</code>, <code>ip_address_block</code>, <code>coin_address</code>, <code>bitcoin_address</code>.</p>
+<h3 id="optional-application-settings"><strong>Optional application settings</strong></h3>
+<p>These can be set as Application Settings on the Function App after deployment:</p>
+<table>
+<thead>
+<tr>
+  <th><strong>Setting</strong></th>
+  <th style="text-align:center"><strong>Default</strong></th>
+  <th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>VALIDUNTIL</code></td>
+  <td style="text-align:center"><code>20m</code></td>
+  <td>Duration string (<code>m</code>, <code>h</code>, or <code>d</code> — e.g. <code>20m</code>, <code>2h</code>, <code>7d</code>) that sets the STIX <code>valid_until</code> field on uploaded indicators.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-vnet-integration"><strong>Optional: VNet integration</strong></h3>
+<p>By default the Function App and its storage account are publicly accessible. For a network-isolated deployment, the ARM template can provision a Virtual Network, integrate the Function App with it, and route storage access through private endpoints. Set <code>EnableVNetIntegration</code> to <code>true</code> to enable this; all other VNet parameters are ignored when it is <code>false</code>. Be aware that this will increase your Azure costs through private endpoints and a new consumption plan.</p>
+<table>
+<thead>
+<tr>
+  <th><strong>Parameter</strong></th>
+  <th style="text-align:center"><strong>Default</strong></th>
+  <th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>EnableVNetIntegration</code></td>
+  <td style="text-align:center"><code>false</code></td>
+  <td>Set to <code>true</code> to deploy a VNet and integrate the Function App with it. When <code>false</code>, VNet resources are skipped and storage remains publicly accessible.</td>
+</tr>
+<tr>
+  <td><code>VNetAddressPrefix</code></td>
+  <td style="text-align:center"><code>10.0.0.0/16</code></td>
+  <td>Address space for the Virtual Network in CIDR notation.</td>
+</tr>
+<tr>
+  <td><code>SubnetName</code></td>
+  <td style="text-align:center"><code>snet-functionapp</code></td>
+  <td>Name of the subnet delegated to the Function App for VNet integration.</td>
+</tr>
+<tr>
+  <td><code>SubnetAddressPrefix</code></td>
+  <td style="text-align:center"><code>10.0.0.0/24</code></td>
+  <td>Address prefix for the Function App integration subnet. Must be within the VNet address space. Minimum <code>/28</code>.</td>
+</tr>
+<tr>
+  <td><code>PrivateEndpointSubnetName</code></td>
+  <td style="text-align:center"><code>snet-privateendpoints</code></td>
+  <td>Name of the subnet used for storage private endpoints. Must not be delegated.</td>
+</tr>
+<tr>
+  <td><code>PrivateEndpointSubnetAddressPrefix</code></td>
+  <td style="text-align:center"><code>10.0.1.0/24</code></td>
+  <td>Address prefix for the private endpoint subnet. Must be within the VNet address space and not overlap with the Function App subnet.</td>
+</tr>
+<tr>
+  <td><code>UseExistingDnsZones</code></td>
+  <td style="text-align:center"><code>false</code></td>
+  <td>Set to <code>true</code> when the private DNS zones and their VNet links already exist (e.g. from a prior deployment). Skips creating DNS zones and VNet links to avoid conflicts.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deployment-instructions"><strong>Deployment Instructions</strong></h2>
+<h3 id="1-open-the-connector-page"><strong>1. Open the Connector Page</strong></h3>
+<ol>
+<li>Go to <strong>Microsoft Sentinel</strong> → <strong>Data Connectors</strong>.</li>
+<li>Search for and select <strong>CrowdStrike Falcon Adversary Intelligence (using Azure Functions)</strong>.</li>
+<li>Click <strong>Open connector page</strong>.</li>
+</ol>
+<h3 id="2-complete-the-prerequisite-steps"><strong>2. Complete the Prerequisite Steps</strong></h3>
+<p>On the connector page, complete the configuration steps:</p>
+<ul>
+<li><strong>STEP 1 — Generate CrowdStrike API credentials.</strong> Create an API client with the <strong>Indicators (Falcon Intelligence)</strong> scope set to <strong>read</strong>, and note the <strong>Client ID</strong>, <strong>Client Secret</strong>, and region-specific <strong>Base URL</strong>.</li>
+<li><strong>STEP 2 — Register a Microsoft Entra application</strong> with a client secret, and assign it the <strong>Microsoft Sentinel Contributor</strong> role on the target Log Analytics workspace. Note the <strong>Tenant ID</strong>, <strong>Client ID</strong>, and <strong>Client Secret</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying, copy your <strong>Workspace ID</strong> from the connector page.</p>
+</blockquote>
+<h3 id="3-deploy-the-connector"><strong>3. Deploy the Connector</strong></h3>
+<ol>
+<li>Click the <strong>Deploy to Azure</strong> button on the connector page.</li>
+<li>On the custom deployment page, select the <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Region</strong> to deploy into.</li>
+<li>Provide the following parameters: <code>CrowdStrikeClientId</code>, <code>CrowdStrikeClientSecret</code>, <code>CrowdStrikeBaseUrl</code>, <code>WorkspaceId</code>, <code>TenantId</code>, <code>Indicators</code>, <code>AadClientId</code>, <code>AadClientSecret</code>, <code>LookBackDays</code>.</li>
+<li>Click <strong>Review + create</strong> → <strong>Create</strong>.</li>
+</ol>
+<hr />
+<h2 id="post-deployment-steps"><strong>Post-Deployment Steps</strong></h2>
+<h3 id="1-verify-execution"><strong>1. Verify Execution</strong></h3>
+<ul>
+<li>In the Azure portal, open the deployed Function App and confirm the timer-triggered function runs every 10 minutes without errors.</li>
+<li>Review the function logs in <strong>Application Insights</strong> for the execution summary (e.g. <em>&quot;Execution completed: processed N indicators across M batches&quot;</em>).</li>
+</ul>
+<h3 id="2-verify-threat-intelligence-ingestion"><strong>2. Verify Threat Intelligence Ingestion</strong></h3>
+<p>Confirm indicators are flowing into Microsoft Sentinel:</p>
+<ol>
+<li>Go to <strong>Microsoft Sentinel</strong> → <strong>Threat Intelligence</strong>, and filter by source <strong>CrowdStrike Falcon Adversary Intelligence</strong>.</li>
+<li>Or run the following query under <strong>Logs</strong>:</li>
+</ol>
+<pre><code class="language-kql">ThreatIntelIndicators
+| where SourceSystem == &quot;CrowdStrike Falcon Adversary Intelligence&quot;
+| take 10
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> The first run uses <code>LookBackDays</code> to establish a starting window. Subsequent runs ingest only new, high-confidence indicators newer than the last persisted marker.</p>
+</blockquote>
+<hr />
+<h2 id="troubleshooting"><strong>Troubleshooting</strong></h2>
+<h3 id="1-authentication-errors"><strong>1. Authentication Errors (401 Unauthorized)</strong></h3>
+<ul>
+<li><strong>Cause</strong>: Incorrect credentials or insufficient API scopes.</li>
+<li><strong>Solution</strong>:<ul>
+<li>Verify the CrowdStrike Client ID/Secret and that the <code>indicators:read</code> scope is granted.</li>
+<li>Verify the Azure AD Tenant ID, Client ID, and Client Secret.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-no-indicators-ingested"><strong>2. No Indicators Ingested</strong></h3>
+<ul>
+<li><strong>Cause</strong>: Incorrect Base URL, no new indicators in the lookback window, or network connectivity issues.</li>
+<li><strong>Solution</strong>:<ul>
+<li>Confirm the Base URL matches your CrowdStrike region.</li>
+<li>Confirm the <code>Indicators</code> list contains valid, subscribed indicator types.</li>
+<li>Check outbound connectivity from the Function App to the CrowdStrike and Sentinel endpoints.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-function-exits-early"><strong>3. Function Exits Early</strong></h3>
+<ul>
+<li><strong>Cause</strong>: Expected behavior — the function exits when fewer than 60 seconds remain before the next 10-minute execution window.</li>
+<li><strong>Solution</strong>: No action needed; processing resumes from the persisted marker on the next run.</li>
+</ul>
+<h3 id="support-resources"><strong>Support Resources</strong></h3>
+<ul>
+<li><strong>CrowdStrike API Documentation</strong>: Available in the Falcon console under API documentation.</li>
+<li><strong>Microsoft Sentinel Documentation</strong>: <a href="https://learn.microsoft.com/azure/sentinel/">Microsoft Learn - Sentinel Connectors</a>.</li>
+<li><strong>Connector Logs</strong>: Available in <strong>Application Insights</strong> for the deployed Function App.</li>
+</ul>
+<hr />
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

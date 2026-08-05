@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Salesforce *(basis: projected)* |
-| **Source Product** | Service Cloud *(basis: projected)* |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -23,7 +21,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (456 columns)
+## Schema (457 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesforceSentinelConnector_CCP/SalesforceServiceCloud_Tables.json)
 
@@ -397,6 +395,7 @@
 | SdkVersion | string | The SDK version. |
 | Search | string | The search. |
 | SearchQuery | string | The search query. |
+| SecureConnectionStart | string | The secure connection start time. |
 | SecureConnectStart | string | The secure connection start time. |
 | Select | string | The select clause. |
 | Sequence | string | The sequence. |

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SentinelOne *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -24,7 +23,7 @@
 
 ## Schema (47 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Threats.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneThreats.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
@@ -71,7 +70,7 @@
 | SiteName | string | The name of the site. |
 | ThreatInfo | dynamic | The information about the threat. |
 | ThreatName | string | Details about the threat name. |
-| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
+| TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
 | UpdatedAt | datetime | The timestamp (UTC) when the record was last updated. |
 | Username | string | The username associated with the event. |
 | WhiteningOptions | string | Details of the whitening options. |

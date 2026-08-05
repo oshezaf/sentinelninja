@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Source Vendor** | GitHub *(basis: title)* |
-| **Source Product** | Enterprise |
 | **Version** | 3.3.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
@@ -60,13 +58,14 @@ This solution provides **5 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Azure Storage)](../connectors/githubauditblobconnector.md), [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
+| [`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) | [GitHub Enterprise Audit Log (via Azure Storage)](../connectors/githubauditblobconnector.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
 | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | [GitHub (using Webhooks)](../connectors/githubwebhook.md), [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | Workbooks |
 
@@ -88,33 +87,33 @@ This solution includes **29 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [GitHub - A payment method was removed](../content/github-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-e799ada5.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - Oauth application - a client secret was removed](../content/github-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-3d9031f7.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - Repository was created](../content/github-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-bac13237.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - Repository was destroyed](../content/github-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-96c04043.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - User visibility Was changed](../content/github-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-d51a61fb.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - User was added to the organization](../content/github-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-4e723f97.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - User was blocked](../content/github-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-97304d92.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - User was invited to the repository](../content/github-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-7209ee58.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - pull request was created](../content/github-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-18555696.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub - pull request was merged](../content/github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub - A payment method was removed](../content/github-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-e799ada5.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - Oauth application - a client secret was removed](../content/github-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-3d9031f7.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - Repository was created](../content/github-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-bac13237.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - Repository was destroyed](../content/github-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-96c04043.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - User visibility Was changed](../content/github-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-d51a61fb.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - User was added to the organization](../content/github-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-4e723f97.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - User was blocked](../content/github-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-97304d92.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - User was invited to the repository](../content/github-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-7209ee58.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - pull request was created](../content/github-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-18555696.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub - pull request was merged](../content/github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
 | [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) |
-| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
+| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) |
 
 ### Workbooks
 
@@ -127,7 +126,7 @@ This solution includes **29 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitHubAuditData](../parsers/githubauditdata.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)* |
+| [GitHubAuditData](../parsers/githubauditdata.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)*<br>[`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) *(read)* |
 | [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | - | - |
 | [GitHubDependabotData](../parsers/githubdependabotdata.md) | - | - |
 | [GitHubScanAudit](../parsers/githubscanaudit.md) | - | - |
@@ -137,6 +136,9 @@ This solution includes **29 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.5.0       | 30-07-2026                     | Promoted the GitHub Azure Storage Audit Logs data connector to GA, add multi-stream support, and updated its generated configuration with advanced Event Grid filters. |
+| 3.4.0       | 25-06-2026                     | Added all api.request fields and created V3 table for AzStorage connector         |
+| 3.3.1       | 17-06-2026                     | Added SAS related instruction.          |
 | 3.3.0       | 04-06-2026                     | Introducing a new Azure Storage CCF GitHub Audit Log Connector for Public Preview.          |
 | 3.2.1       | 04-05-2026                     | Migrated Parsers and Workbooks to `githubscanaudit` CLv1 & CLv2 union alias.          |
 | 3.2.0       | 24-04-2026                     | Added **GitHub Webhook V2** data connector (CLv2/Logs Ingestion API) public preview. |

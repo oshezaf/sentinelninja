@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Stealthwatch` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | Secure Cloud Analytics *(basis: title)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Cisco_Stealthwatch_syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Cloud%20Analytics/Data%20Connectors/Cisco_Stealthwatch_syslog.json) |

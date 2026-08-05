@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://success.trendmicro.com/dcx/s/?language=en_US](https://success.trendmicro.com/dcx/s/?language=en_US) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Trend Micro *(basis: publisher)* |
-| **Source Product** | Deep Security |
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |

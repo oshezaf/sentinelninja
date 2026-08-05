@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Wiz *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -18,7 +17,6 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (4 columns)
 
@@ -52,16 +50,6 @@ This table is ingested by the following connectors:
 | [Wiz](../connectors/wiz.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Wiz](../solutions/wiz.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [WizFindings](../content/wiz-wizfindings-78285767.md) |  |
 
 ---
 

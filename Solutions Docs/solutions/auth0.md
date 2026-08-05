@@ -14,7 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity |
-| **Source Vendor** | Auth0 *(basis: publisher)* |
 | **Version** | 3.1.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
@@ -82,6 +81,23 @@ This solution includes **2 content item(s)**:
 
 > 📄 *Source: [Auth0/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/README.md)*
 
+# Upgrading to the multi-host (multi-domain) Auth0 Logs connector
+
+Starting with solution version **3.2.0**, the **Auth0 Logs (via Codeless Connector Framework)** data connector supports collecting logs from **multiple Auth0 hosts** from a single connector. Each ingested record is tagged with an **Auth0Domain** column so you can tell the hosts apart (for example: `Auth0Logs_CL | summarize count() by Auth0Domain`).
+
+**What happens when you upgrade:**
+
+1. Update the **Auth0** solution to 3.2.0 (or later) from Content Hub. Your existing Auth0 log collection keeps running during and after the update — no data is lost.
+2. Upgrading the solution only refreshes the connector *definition*. It does **not** change the data collection rule or poller already running in your workspace, so the new multi-host experience and the `Auth0Domain` column are **not** applied automatically.
+3. To enable multi-host collection, open **Microsoft Sentinel > Data connectors > Auth0 Logs (via Codeless Connector Framework)**, then **reconnect**:
+   - In the connection grid, add each Auth0 host as its own connection using **Add Auth0 host**, providing that host's **Domain**, **Client ID**, and **Client Secret**.
+   - Reconnecting re-provisions the data collection rule (now including the `Auth0Domain` column) and starts a separate poller per host.
+4. New host connections take a cycle or two to warm up (initial token fetch, first backfill window, then ingestion), so a newly added host may lag the first one before data appears.
+
+> **Note:** Records collected before the upgrade remain in `Auth0Logs_CL` with an empty `Auth0Domain`. Records collected after you reconnect a host are tagged with that host's domain.
+
+---
+
 # Steps to Configure Auth0 app
 The following are steps to be followed in Auth0 App.
 
@@ -106,14 +122,14 @@ The following are steps to be followed in Auth0 App.
 
 ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/API.png%3Fraw%3Dtrue)
 
-6. Please make sure the domain value under settings --> Environment Variables, please refer below screen shot for reference and other values are entered from the above step copied values and Domain should be  starts with https://,then click on Apply  and restart function app
 
-![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/functionappvalues.png%3Fraw%3Dtrue)
+*[Content truncated...]*
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.2.0       | 20-07-2026                     | Auth0 Logs (via Codeless Connector Framework) **Data Connector** now supports collecting from multiple Auth0 hosts (multi-domain) and tags each record with the **Auth0Domain** column |
 | 3.1.5       | 13-04-2026                     | Deprecate Auth0 Logs (using Azure Function) |
 | 3.1.4       | 30-03-2026                     | Fix space in name, Rename to Auth0 Logs (via Codeless Connector Framework)|
 | 3.1.3       | 20-03-2026                     | Rename to Auth0 Logs(via Codeless Connector Framework)|

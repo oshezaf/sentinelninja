@@ -1,6 +1,6 @@
-# Palo Alto Cortex XDR CCP
+# ⚠️ Palo Alto Cortex XDR CCP
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CortexXDR_Logo.svg" alt="Palo Alto Cortex XDR CCP Logo" width="75" height="75">
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -10,46 +10,15 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | Security - Threat Protection |
-| **Version** | 3.0.4 |
-| **Author** | Microsoft |
-| **First Published** | 2024-12-07 |
-| **Last Updated** | 2026-06-16 |
+| **Publisher** |  |
+| **Support Tier** |  |
 | **Solution Folder** | [Palo Alto Cortex XDR CCP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20XDR%20CCP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cortexccp) · Popularity: 🔵 Medium (67%) |
-
-The [Palo Alto Cortex XDR](https://cortex-panw.stoplight.io/docs/cortex-xdr/branches/main/09agw06t5dpvw-cortex-xdr-rest-api) data connector allows ingesting logs from the Palo Alto Cortex XDR API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the Palo Alto Cortex XDR API to fetch agents, alerts, incidents, management and endpoint logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table, thus resulting in better performance.
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md)
-
-## Tables Used
-
-This solution uses **5 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`PaloAltoCortexXDR_Alerts_CL`](../tables/paloaltocortexxdr-alerts-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-| [`PaloAltoCortexXDR_Audit_Agent_CL`](../tables/paloaltocortexxdr-audit-agent-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-| [`PaloAltoCortexXDR_Audit_Management_CL`](../tables/paloaltocortexxdr-audit-management-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-| [`PaloAltoCortexXDR_Endpoints_CL`](../tables/paloaltocortexxdr-endpoints-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-
-## Release Notes
-
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
-|-------------|--------------------------------|--------------------------------------------------------------------------|
-| 3.0.4       | 12-06-2026                     | Updating CCF Polling file to implement parameters                           |
-| 3.0.3       | 09-04-2025                     | Updating CCF connector parameters                                        |
-| 3.0.2       | 10-02-2025                     | Advancing CCF **Data Connector** from Public preview to Global Availability.|
-| 3.0.1       | 22-01-2025                     | Added Preview tag to **Data Connector**                                                 |
-| 3.0.0       | 17-12-2024                     | Initial Solution Release                                                 |
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ---
 

@@ -17,7 +17,7 @@ This query detects cases in which Okta FastPass effectively prevented access to 
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess |
-| **Techniques** | T1566 |
+| **Techniques** | T1566.002 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Analytic%20Rules/PhishingDetection.yaml) |
 

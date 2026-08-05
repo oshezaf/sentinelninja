@@ -14,11 +14,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.bluevoyant.com/](https://www.bluevoyant.com/) |
 | **Categories** | Security - Threat Protection,Security - Threat Intelligence |
-| **Source Vendor** | BlueVoyant *(basis: publisher)* |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | BlueVoyant - soc@bluevoyant.com |
 | **First Published** | 2026-06-09 |
-| **Last Updated** | 2026-06-24 |
+| **Last Updated** | 2026-06-30 |
 | **Solution Folder** | [BlueVoyant Anthropic ClaudeCompliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance) · Popularity: ⚪ Very Low (0%) |
 
@@ -62,6 +61,7 @@ The BlueVoyant Anthropic Claude Compliance solution for Microsoft Sentinel inges
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.1       | 30-06-2026                     | Added many Claude Compliance API activity-specific fields, needed for hunting and rules in Sentinel, to the table schema and DCR. The request_body column has been removed due to the possibility that it could contain sensitive data. The Claude Compliance connector has been updated to version 1.0.1. |
 | 3.0.0       | 15-06-2026                     | Initial release of the BlueVoyant Anthropic Claude Compliance solution for Microsoft Sentinel, including a Codeless Connector Framework (CCF) data connector that ingests Claude Compliance API activity into the BV_ClaudeCompliance_ComplianceActivities_CL table. |
 
 ---

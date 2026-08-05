@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Vaikora-O365 &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="vaikora-o365">⚠️ Vaikora-O365</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="Vaikora-O365 Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Data443 Risk Mitigation, Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.data443.com">https://www.data443.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Data443 Risk Mitigation, Inc. - support@data443.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-05-13</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-O365">Vaikora-O365</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://vaikora.com">Vaikora</a> for O365 solution ships the Microsoft Sentinel content that pairs with the Vaikora-O365 black-box Azure VM. The VM scans Microsoft 365 mailboxes via Microsoft Graph API, classifies messages with the CTASD inference engine, and writes quarantine events into a custom Log Analytics table (VaikoraO365_Quarantine_CL). This solution adds a Logic App playbook that turns each quarantine event into a Microsoft Sentinel incident, plus analytic rules over the custom table that fire on high-confidence phishing scores and tenant-wide quarantine rate anomalies.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/vaikorao365-quarantine-cl.html"><code>VaikoraO365_Quarantine_CL</code></a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikora-o365-vaikora-engine-offline-968b70c1-b468-418a-ac02-1eb74783a52a-92ff8909.html">Vaikora - Engine offline</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/vaikorao365-quarantine-cl.html"><code>VaikoraO365_Quarantine_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikora-o365-vaikora-high-score-quarantine-017031f6-be1d-4c68-b4d3-182fa84378cc-0e337c3a.html">Vaikora - High score quarantine</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CredentialAccess, Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/vaikorao365-quarantine-cl.html"><code>VaikoraO365_Quarantine_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikora-o365-vaikora-quarantine-rate-spike-3b3eb1cd-578d-4198-9b7a-bd7253b0dc9f-a2e9d10e.html">Vaikora - Quarantine rate spike</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/vaikorao365-quarantine-cl.html"><code>VaikoraO365_Quarantine_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikora-o365-vaikorao365quarantinedashboard-f059fd4f.html">VaikoraO365QuarantineDashboard</a></td>
+  <td style="text-align:left"><a href="../tables/vaikorao365-quarantine-cl.html"><code>VaikoraO365_Quarantine_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.html">Vaikora for O365 - Quarantine Incident Responder</a></td>
+  <td style="text-align:left">This playbook responds to Microsoft Sentinel incidents raised from the VaikoraO365_Quarantine_CL cus...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>13-05-2026</td>
+  <td>Initial release. Vaikora for O365 quarantine solution pairing the customer-tenant Vaikora-O365 black-box Azure VM with Microsoft Sentinel. Ships one Sentinel-incident-triggered playbook (VaikoraO365ToQuarantine) and three analytic rules over the VaikoraO365_Quarantine_CL custom Log Analytics table: high-confidence phishing/suspected quarantine, abnormal quarantine rate spikes, and engine offline detection.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

@@ -13,7 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `M365AuditDLPCCPDefinition` |
-| **Publisher / Vendor** | Marko Lauren |
+| **Publisher** | Marko Lauren |
 | **Used in Solutions** | [Microsoft 365 Audit General and DLP](../solutions/microsoft-365-audit-general-and-dlp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [M365AuditDLP_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditDLP_CCF/M365AuditDLP_ConnectorDefinition.json) |

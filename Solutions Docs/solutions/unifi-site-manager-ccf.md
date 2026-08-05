@@ -16,7 +16,6 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Networking,Security - Network |
-| **Source Vendor** | Community *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | noodlemctwoodle - ccfconnectors.county118@passmail.com |
 | **First Published** | 2026-05-11 |

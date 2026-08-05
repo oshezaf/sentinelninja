@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Cisco *(basis: event)* |
-| **Source Product** | Meraki |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-07-12 |
@@ -45,22 +43,27 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md)
+- [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md)
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **7 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`CiscoMerakiAirMarshalEvents_CL`](../tables/ciscomerakiairmarshalevents-cl.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`CiscoMerakiNetworkClients_CL`](../tables/ciscomerakinetworkclients-cl.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`CiscoMerakiOrganizationNetworks_CL`](../tables/ciscomerakiorganizationnetworks-cl.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
+| [`CiscoMerakiOrganizations_CL`](../tables/ciscomerakiorganizations-cl.md) | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | - |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.0       | 06-07-2026                     | Added four new data types to the **CCP Connector**: Organizations, Organization Networks, Network Clients, and Wireless Air Marshal Events. |
 | 3.0.2       | 10-01-2025                     | Transitioned the **CCP Connector** to General Availability (GA).    |
 | 3.0.1       | 30-09-2024                     | Cisco Meraki via REST API configuration Changes pagination fix     |
 | 3.0.0       | 27-12-2023                     | Initial Solution Release with new addition of **CCP Connector**                                  |

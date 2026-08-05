@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ESETPROTECT` |
-| **Publisher / Vendor** | ESET |
-| **Source Product** | PROTECT *(basis: title)* |
+| **Publisher** | ESET |
 | **Used in Solutions** | [ESETPROTECT](../solutions/esetprotect.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_ESETPROTECT.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESETPROTECT/Data%20Connectors/Connector_Syslog_ESETPROTECT.json) |

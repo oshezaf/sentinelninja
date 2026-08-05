@@ -70,7 +70,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AuditLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/auditlogs)
 
-## Solutions (21)
+## Solutions (23)
 
 This table is used by the following solutions:
 
@@ -81,6 +81,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
@@ -90,6 +91,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
@@ -106,7 +108,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (97)
+## Content Items Using This Table (107)
 
 ### Analytic Rules (75)
 
@@ -225,7 +227,7 @@ This table is ingested by the following connectors:
 | [[Entra ID] Privileged Role Assigned to User](../content/edcrule-[entra-id]-privileged-role-assigned-to-user-fad0f8b9-a0a5-430a-9a94-049a1144bf54-83a30e48.md) | `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` |
 | [[Entra ID] Privileged Role Assigned to a New User](../content/edcrule-[entra-id]-privileged-role-assigned-to-a-new-user-b64ac0e2-a241-4b9a-ad3e-ae572630b295-a5a10709.md) |  |
 
-### Hunting Queries (8)
+### Hunting Queries (17)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -242,6 +244,17 @@ This table is ingested by the following connectors:
 | [Interactive STS refresh token modifications](../content/cloud-identity-threat-protection-essentials-interactive-sts-refresh-token-modifications-4696e072-aca8-4a4f-bf05-89fddc5ac3c9-f22e226e.md) | `OperationName has "StsRefreshTokenValidFrom"` |
 | [User Granted Access and Grants Access to Other Users](../content/cloud-identity-threat-protection-essentials-user-granted-access-and-grants-access-to-other-users-2b6a3882-d601-4298-983b-880f6dc7acdb-c6da3825.md) |  |
 
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) |  |
+| [MFA Method Added on Risky Account](../content/hybrid-attack-cloud-&-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.md) |  |
+| [Secret Added to Dormant Service Principal](../content/hybrid-attack-cloud-&-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.md) | `OperationName == "Add service principal credentials"` |
+| [Service principal credential change followed by novel SP sign-in](../content/hybrid-attack-cloud-&-identity-service-principal-credential-change-followed-by-novel-sp-sign-in-872ac8db-7642-4907-bcb2-d7822ae6be9c-d99cf1bb.md) |  |
+| [Suspicious OAuth App Consent Granting Sensitive Permissions](../content/hybrid-attack-cloud-&-identity-suspicious-oauth-app-consent-granting-sensitive-permissions-470f2af8-2b5d-41d4-9be6-686da24f370a-8a44eb7d.md) | `OperationName in "Add app role assignment to service principal,Add delegated permission grant,Consent to application"` |
+| [Suspicious sign-in followed by auth method or role change](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-auth-method-or-role-change-adaf1ceb-db2d-49e9-989f-bf4116f53153-4324add3.md) |  |
+
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
 | Hunting Query | Selection Criteria |
@@ -255,7 +268,15 @@ This table is ingested by the following connectors:
 | [Anomalous Entra High-Privilege Role Modification](../content/ueba-essentials-anomalous-entra-high-privilege-role-modification-8741deeb-332e-4061-8873-5086040920e3-adf63a52.md) | `OperationName == "Update user"` |
 | [Anomalous High-Privileged Role Assignment](../content/ueba-essentials-anomalous-high-privileged-role-assignment-5aa5083c-1de6-42bb-a128-2ec2aba1de39-89a0f496.md) | `OperationName == "Add member to role"` |
 
-### Workbooks (14)
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Conditional Access policy exclusion added](../content/standalone-content-conditional-access-policy-exclusion-added-a14106c1-af19-41fb-9fbd-6d9ef402537b-abbd9031.md) | `OperationName == "Update conditional access policy"` |
+| [Member or owner added to a role-assignable group within 24 hours of its creation](../content/standalone-content-member-or-owner-added-to-a-role-assignable-group-within-24-hours-of-its-creation-17b75367-3b4e-4292-b985-30112acc2de0-f00086f1.md) | `OperationName in "Add group,Add member to group,Add owner to group"` |
+| [Role-assignable group created](../content/standalone-content-role-assignable-group-created-745c2179-a7db-4185-90c1-b33d78c5a6ac-c4a830ba.md) | `OperationName == "Add group"` |
+
+### Workbooks (15)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -286,6 +307,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -343,13 +370,13 @@ This table collects data from the following Azure resource types:
 - `microsoft.azureadgraph/tenants`
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (44 criteria, 65 total references)
+## Selection Criteria Summary (48 criteria, 70 total references)
 
-References by type: 0 connectors, 65 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 70 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Update conditional access policy"` | - | 6 | - | - | **6** |
+| `OperationName == "Update conditional access policy"` | - | 7 | - | - | **7** |
 | `OperationName has "Update a partner cross-tenant access setting"` | - | 4 | - | - | **4** |
 | `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 3 | - | - | **3** |
 | `OperationName has_any "Add service principal,Certificates`<br>`secrets management"` | - | 3 | - | - | **3** |
@@ -390,10 +417,14 @@ References by type: 0 connectors, 65 content items, 0 ASIM parsers, 0 other pars
 | `ActivityDisplayName has_any "Add eligible member to role"`<br>`LoggedByService in "Core Directory,PIM"` | - | 1 | - | - | **1** |
 | `OperationName has "Add app role assignment to service principal"` | - | 1 | - | - | **1** |
 | `OperationName has "StsRefreshTokenValidFrom"` | - | 1 | - | - | **1** |
+| `OperationName in "Add app role assignment to service principal,Add delegated permission grant,Consent to application"` | - | 1 | - | - | **1** |
+| `OperationName == "Add service principal credentials"` | - | 1 | - | - | **1** |
 | `OperationName == "Add member to role"` | - | 1 | - | - | **1** |
+| `OperationName in "Add group,Add member to group,Add owner to group"` | - | 1 | - | - | **1** |
+| `OperationName == "Add group"` | - | 1 | - | - | **1** |
 | `SourceSystem == "Azure AD"` | - | 1 | - | - | **1** |
 | `AdditionalDetails contains "fraud"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **65** | **0** | **0** | **65** |
+| **Total** | **0** | **70** | **0** | **0** | **70** |
 
 ### AADOperationType
 
@@ -448,10 +479,10 @@ References by type: 0 connectors, 65 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Update conditional access policy` | - | 6 | - | - | **6** |
-| `Add delegated permission grant` | - | 5 | - | - | **5** |
-| `Consent to application` | - | 5 | - | - | **5** |
-| `Add app role assignment to service principal` | - | 4 | - | - | **4** |
+| `Update conditional access policy` | - | 7 | - | - | **7** |
+| `Add delegated permission grant` | - | 6 | - | - | **6** |
+| `Consent to application` | - | 6 | - | - | **6** |
+| `Add app role assignment to service principal` | - | 5 | - | - | **5** |
 | `has Update a partner cross-tenant access setting` | - | 4 | - | - | **4** |
 | `Invite external user` | - | 3 | - | - | **3** |
 | `Set domain authentication` | - | 3 | - | - | **3** |
@@ -464,8 +495,12 @@ References by type: 0 connectors, 65 content items, 0 ASIM parsers, 0 other pars
 | `Update user` | - | 2 | - | - | **2** |
 | `Add user` | - | 2 | - | - | **2** |
 | `Delete user` | - | 2 | - | - | **2** |
+| `Add service principal credentials` | - | 2 | - | - | **2** |
+| `Add member to group` | - | 2 | - | - | **2** |
+| `Add owner to group` | - | 2 | - | - | **2** |
 | `Add unverified domain` | - | 2 | - | - | **2** |
 | `has Add member to role outside of PIM` | - | 2 | - | - | **2** |
+| `Add group` | - | 2 | - | - | **2** |
 | `Add member to role completed (PIM activation)` | - | 1 | - | - | **1** |
 | `has Add eligible member` | - | 1 | - | - | **1** |
 | `Redeem external user invite` | - | 1 | - | - | **1** |
@@ -475,12 +510,9 @@ References by type: 0 connectors, 65 content items, 0 ASIM parsers, 0 other pars
 | `Delete conditional access policy` | - | 1 | - | - | **1** |
 | `Add conditional access policy` | - | 1 | - | - | **1** |
 | `Update group` | - | 1 | - | - | **1** |
-| `Add service principal credentials` | - | 1 | - | - | **1** |
 | `has Add a partner to cross-tenant access setting` | - | 1 | - | - | **1** |
 | `has Delete partner specific cross-tenant access setting` | - | 1 | - | - | **1** |
 | `has Certificates` | - | 1 | - | - | **1** |
-| `Add member to group` | - | 1 | - | - | **1** |
-| `Add owner to group` | - | 1 | - | - | **1** |
 | `Add verified domain` | - | 1 | - | - | **1** |
 | `has Consent to application` | - | 1 | - | - | **1** |
 | `Update device` | - | 1 | - | - | **1** |

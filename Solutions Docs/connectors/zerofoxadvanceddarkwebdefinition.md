@@ -1,6 +1,4 @@
-# ⚠️ ZeroFox Enterprise - Advanced Dark Web
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# ZeroFox Enterprise - Advanced Dark Web
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/foxy-mark.svg" alt="" width="75" height="75">
 
@@ -14,8 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `ZeroFoxAdvancedDarkWebDefinition` |
 | **Publisher** | ZeroFox Enterprise |
-| **Source Vendor** | ZeroFox *(basis: publisher)* |
-| **Source Product** | Enterprise - Advanced Dark Web *(basis: title)* |
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_AdvancedDarkWeb_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Advanced%20Dark%20Web/ZeroFoxThreatIntelligence_AdvancedDarkWeb_ConnectorDefinition.json) |

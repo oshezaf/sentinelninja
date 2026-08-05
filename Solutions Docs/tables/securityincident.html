@@ -246,7 +246,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident">SecurityIncident Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (34)</h2>
+<h2 id="solutions">Solutions (35)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -266,6 +266,7 @@
 <li><a href="../solutions/iototthreatmonitoringwithdefenderforiot.html">IoTOTThreatMonitoringwithDefenderforIoT</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoft-active-directory-tier-model.html">Microsoft Active Directory Tier Model</a></li>
 <li><a href="../solutions/microsoft-defender-threat-intelligence.html">Microsoft Defender Threat Intelligence</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
@@ -285,7 +286,7 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (51)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (52)</h2>
 <h3 id="analytic-rules">Analytic Rules (3)</h3>
 <p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
 <table>
@@ -333,7 +334,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (39)</h3>
+<h3 id="workbooks">Workbooks (40)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -585,6 +586,19 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/microsoft-active-directory-tier-model.html">Microsoft Active Directory Tier Model</a>:</strong> <code>Severity in &quot;High,Informational,Low,Medium&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-microsoftadtiermodel-3fad41c8.html">MicrosoftADTierModel</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/microsoft-defender-threat-intelligence.html">Microsoft Defender Threat Intelligence</a>:</strong></p>
 <table>
 <thead>
@@ -813,8 +827,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 15 total references)</h2>
-<p>References by type: 0 connectors, 15 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (15 criteria, 16 total references)</h2>
+<p>References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -884,6 +898,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Severity in &quot;High,Informational,Low,Medium&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Classification == &quot;TruePositive&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -942,10 +964,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:center"><strong>16</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:center"><strong>16</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1527,21 +1549,29 @@
 <tr>
   <td style="text-align:left"><code>High</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Low</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Medium</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Informational</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

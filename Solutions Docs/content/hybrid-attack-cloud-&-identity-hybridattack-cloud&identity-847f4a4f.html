@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HybridAttack-Cloud&amp;Identity &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="hybridattack-cloudampidentity">HybridAttack-Cloud&amp;Identity</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hybrid%20Attack%20-%20Cloud%20%26%20Identity/Workbooks/HybridAttack-Cloud%26Identity.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+  <td style="text-align:left"><code>OperationName in &quot;Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info&quot;</code><br><code>OperationName has_any &quot;clusterrolebindings,rolebindings&quot;</code><br><code>OperationName has_any &quot;cronjobs,daemonsets&quot;</code><br><code>OperationName has_any &quot;cronjobs/create,daemonsets/create&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+  <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code><br><code>Category has &quot;kube-audit&quot;</code></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType in &quot;MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/cloudprocessevents.html"><code>CloudProcessEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;0100044547&quot;</code><br><code>DeviceProduct != &quot;Cortex XDR&quot;</code><br><code>DeviceProduct !has &quot;ASM&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/devicenetworkinfo.html"><code>DeviceNetworkInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/event.html"><code>Event</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
+  <td style="text-align:left"><code>StatusCode in &quot;200,206&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td style="text-align:left"><code>ObservableKey == &quot;ipv4-addr:value&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Back to Hybrid Attack - Cloud &amp; Identity</a></p>
+
+</div>
+
+</body>
+</html>

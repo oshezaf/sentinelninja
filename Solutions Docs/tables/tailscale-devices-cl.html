@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TailscaleDevicesCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="tailscale_devices_cl">Tailscale_Devices_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (29 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tailscale_Devices_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Addresses</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdvertisedRoutes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authorized</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">BlocksIncomingConnections</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientConnectivity</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientVersion</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectedToControl</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">Created</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Distro</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">EnabledRoutes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">Expires</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hostname</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsExternal</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">KeyExpiryDisabled</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastSeen</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">MachineKey</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">NodeKey</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Os</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SshEnabled</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">TailnetLockError</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TailnetLockKey</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateAvailable</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></li>
+</ul>
+<h2 id="connectors">Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/tailscaleccf.html">Tailscale Standard (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (14)</h2>
+<h3 id="analytic-rules">Analytic Rules (6)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-tailscale-ssh-newly-enabled-f0a1b2c3-4567-8901-23de-f12345670041-0940f253.html">Tailscale: Device Tailscale SSH newly enabled</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-key-expiring-within-7-days-b1a2c3d4-1234-5678-90ab-cdef12345001-ea43faab.html">Tailscale: Device key expiring within 7 days</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-device-started-advertising-subnet-routes-c2b3d4e5-2345-6789-01ab-cdef12345002-965edc54.html">Tailscale: Device started advertising subnet routes</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-external-shared-in-device-added-b2c3d4e5-6789-0123-4567-890123450043-78b0111a.html">Tailscale: External (shared-in) device added</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-tailnet-lock-validation-failed-e9f0a1b2-3456-7890-12cd-ef1234560040-e374e237.html">Tailscale: Tailnet lock validation failed</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-unauthorized-device-connected-to-control-plane-a1b2c3d4-5678-9012-3456-789012340042-c6a2d685.html">Tailscale: Unauthorized device connected to control plane</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (6)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-users-generating-traffic-from-multiple-devices-daac10bd-d842-4122-90cc-9957256f04e3-fb758768.html">Tailscale Premium: Users generating traffic from multiple devices</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-not-seen-in-30+-days-e4d5f6a7-4567-8901-23ab-cdef12345004-bdc21c59.html">Tailscale: Devices not seen in 30+ days</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-with-tailscale-ssh-enabled-c3d4e5f6-7890-1234-5678-901234560044-de5ffa75.html">Tailscale: Devices with Tailscale SSH enabled</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-devices-with-outdated-client-version-e5f6a7b8-9012-3456-7890-123456780046-3abf50b7.html">Tailscale: Devices with outdated client version</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-external-shared-in-device-inventory-d4e5f6a7-8901-2345-6789-012345670045-df24a7cb.html">Tailscale: External (shared-in) device inventory</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-subnet-router-cidr-exposure-inventory-f6a7b8c9-0123-4567-8901-234567890047-d615e7b6.html">Tailscale: Subnet router CIDR exposure inventory</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscalepremiumoperations-5218a067.html">TailscalePremiumOperations</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscalestandardoperations-76dbc0de.html">TailscaleStandardOperations</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider |
-| **Source Vendor** | Palo Alto Networks *(basis: name_pattern)* |
-| **Source Product** | Prisma Cloud CWPP |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |

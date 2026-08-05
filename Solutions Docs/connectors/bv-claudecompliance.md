@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BV-ClaudeCompliance` |
-| **Publisher / Vendor** | BlueVoyant |
+| **Publisher** | BlueVoyant |
 | **Used in Solutions** | [BlueVoyant Anthropic ClaudeCompliance](../solutions/bluevoyant-anthropic-claudecompliance.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [BlueVoyantAnthropicClaudeCompliance_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance/Data%20Connectors/BlueVoyantAnthropicClaudeCompliance_CCF/BlueVoyantAnthropicClaudeCompliance_ConnectorDefinition.json) |
@@ -74,10 +74,9 @@ This connector ingests data into the following tables:
 
 **1. Connect BV-ClaudeCompliance (via Codeless Connector Framework) to Microsoft Sentinel**
 
-To obtain a Claude Compliance API key, follow the instructions found here:
-[Access the Compliance API](https://support.claude.com/en/articles/13015708-access-the-compliance-api).
+To obtain a Claude Compliance API key, follow the instructions found here: [Access the Compliance API](https://support.claude.com/en/articles/13015708-access-the-compliance-api).
 
-The API key must include the **`read:compliance_activities`** scope.
+The API key created must include the **`read:compliance_activities`** scope for proper data ingestion.
 
 Paste the key below and select **Connect**.
 - **API Key**: (password field)

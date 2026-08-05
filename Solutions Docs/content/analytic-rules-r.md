@@ -1,6 +1,6 @@
 # Analytic Rules - R
 
-**53 analytic rules** starting with 'R'.
+**57 analytic rules** starting with 'R'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -35,7 +35,11 @@
 | [Rare RDP Connections](standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md) | Medium | 📄 Standalone Content |
 | [Rare subscription-level operations in Azure](azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [RDP Nesting](standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md) | Medium | 📄 Standalone Content |
+| [Recorded Future Alerts Incident Creation](recorded-future-recorded-future-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab3-75450771.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [Recorded Future Identity - Credential Exposure Detected](recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) | High | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
+| [Recorded Future Playbook Alerts Incident Creation](recorded-future-recorded-future-playbook-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab2-33b657fc.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
+| [Recorded Future Sandbox - Malicious Email Attachment](recorded-future-recorded-future-sandbox-malicious-email-attachment-a1b2c3d4-5678-90ab-cdef-222222222222-262dc20b.md) | High | 📦 [Recorded Future](../solutions/recorded-future.md) |
+| [Recorded Future Sandbox - Malicious File in Storage Account](recorded-future-recorded-future-sandbox-malicious-file-in-storage-account-a1b2c3d4-5678-90ab-cdef-333333333333-28a242ec.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture Threat Hunting Domain All Actors](recorded-future-recordedfuture-threat-hunting-domain-all-actors-acbf7ef6-f964-44c3-9031-7834ec68175f-9002c0d5.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture Threat Hunting Hash All Actors](recorded-future-recordedfuture-threat-hunting-hash-all-actors-6db6a8e6-2959-440b-ba57-a505875fcb37-f0b99a01.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture Threat Hunting IP All Actors](recorded-future-recordedfuture-threat-hunting-ip-all-actors-e31bc14e-2b4c-42a4-af34-5bfd7d768aea-57f811e9.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |

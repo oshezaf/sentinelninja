@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://bitwarden.com](https://bitwarden.com) |
 | **Categories** | Security - Threat Protection,Security - Information Protection |
-| **Source Vendor** | Bitwarden *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Bitwarden - hello@bitwarden.com |
 | **First Published** | 2024-05-12 |

@@ -18,7 +18,7 @@ Detects when multiple instances were launched.
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1496 |
-| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md) |
+| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md), [OracleCloudInfraConnector](../connectors/oraclecloudinfraconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Analytic%20Rules/OCIMultipleInstancesLaunched.yaml) |
 
 ## Tables Used

@@ -11,13 +11,16 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WithSecureElementsViaFunction` |
-| **Publisher / Vendor** | WithSecure |
-| **Source Product** | Elements API *(basis: title)* |
+| **Publisher** | WithSecure |
 | **Used in Solutions** | [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [WithSecureElementsViaFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction/Data%20Connectors/WithSecureElementsViaFunction.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#withsecure-elements-api-azure-function) |
+
+> **[DEPRECATED]** This Azure Function based connector is deprecated and is no longer actively maintained. Please use the **WithSecure Elements via Codeless Connector Framework (CCF)** solution instead, which provides the same data ingestion without the need to deploy and maintain an Azure Function. New deployments should use the CCF solution.
+
+
 
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.
 

@@ -8,21 +8,10 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Fortinet *(basis: projected)* |
-| **Source Product** | FortiNDR Cloud *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
-
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
-- [Parsers](#parsers-using-this-table)
 
 ## Schema (30 columns)
 
@@ -67,39 +56,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) |  |
-
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [FortinetFortiNdrCloudWorkbook](../content/fortinet-fortindr-cloud-fortinetfortindrcloudworkbook-9c938d85.md) |  |
-
-## Parsers Using This Table (1)
-
-### Other Parsers (1)
-
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [Fortinet_FortiNDR_Cloud](../parsers/fortinet-fortindr-cloud.md) | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |  |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ---
 
-Query searches for top files recieved via email services.
+Query searches for top files received via email services.
 
 | Attribute | Value |
 |:----------|:------|
@@ -25,6 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ? | ✓ | ? |
 | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

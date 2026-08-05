@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CyeraDSPMCCF` |
-| **Publisher / Vendor** | Cyera Inc |
+| **Publisher** | Cyera Inc |
 | **Used in Solutions** | [CyeraDSPM](../solutions/cyeradspm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyeraDSPMLogs_ConnectorDefinitionCCF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPMLogs_ConnectorDefinitionCCF.json) |

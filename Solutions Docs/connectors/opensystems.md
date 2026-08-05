@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OpenSystems` |
-| **Publisher / Vendor** | Open Systems |
+| **Publisher** | Open Systems |
 | **Used in Solutions** | [Open Systems](../solutions/open-systems.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [OpenSystems.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems/DataConnectors/OpenSystems.json) |

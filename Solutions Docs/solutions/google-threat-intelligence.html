@@ -76,31 +76,53 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#internal-tables">Internal Tables</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p><strong>This solution does not include data connectors.</strong></p>
-<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
-<h2 id="internal-tables">Internal Tables</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/googlethreatintelligencerelevancesystemalertsapi.html">Google Threat Intelligence Relevance System Alerts</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+  <td><a href="../connectors/googlethreatintelligencerelevancesystemalertsapi.html">Google Threat Intelligence Relevance System Alerts</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
 <p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
   <th>Table</th>
+  <th>Used By Connectors</th>
   <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td>-</td>
   <td>Analytics, Hunting</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>16 content item(s)</strong>:</p>
+<p>This solution includes <strong>23 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -110,16 +132,20 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">10</td>
+</tr>
+<tr>
   <td style="text-align:left">Playbooks</td>
   <td style="text-align:left">8</td>
 </tr>
 <tr>
-  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">Hunting Queries</td>
   <td style="text-align:left">4</td>
 </tr>
 <tr>
-  <td style="text-align:left">Hunting Queries</td>
-  <td style="text-align:left">4</td>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -134,6 +160,42 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-data-leak-alert-detected-d4e5f6a7-b8c9-0123-defa-234567890124-c47c0531.html">GTI - Data Leak Alert Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Exfiltration, Impact, CredentialAccess, Collection</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-high-relevance-alert-detected-f6a7b8c9-d0e1-2345-fabc-456789012345-8fc2e3f3.html">GTI - High Relevance Alert Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Exfiltration, Impact, CredentialAccess, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-high-and-critical-priority-alerts-b2c3d4e5-f6a7-8901-bcde-f12345678902-eac20a8f.html">GTI - High and Critical Priority Alerts</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Impact, CredentialAccess, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-initial-access-broker-alert-detected-c3d4e5f6-a7b8-9012-cdef-123456789013-8ea823e9.html">GTI - Initial Access Broker Alert Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-insider-threat-alert-detected-e5f6a7b8-c9d0-1234-efab-345678901234-1ae6bfc8.html">GTI - Insider Threat Alert Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation, Exfiltration, CredentialAccess, Impact</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-relevance-system-alert-incident-by-alert-id-a1b2c3d4-e5f6-7890-abcd-ef1234567891-4ca388b2.html">GTI Relevance System Alert - Incident by Alert ID</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess, Reconnaissance, Impact, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
   <td style="text-align:left">Medium</td>
@@ -244,6 +306,23 @@
 </tr>
 </tbody>
 </table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/gtirelevancesystemalerts.html">GTIRelevanceSystemAlerts</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/README.md">Google Threat Intelligence/README.md</a></em></p>
@@ -261,8 +340,8 @@
 <tbody>
 <tr>
   <td>3.2.3</td>
-  <td>27-05-2026</td>
-  <td>Added Custom <strong>Connector</strong> manual prerequisite for Playbooks.</td>
+  <td>04-06-2026</td>
+  <td>- Added <strong>Data Connector</strong> <em>GTI Relevance System Alerts</em> (Azure Function App, Log Ingestion API). <br/>- Added <strong>Parser</strong> <em>GTIRelevanceSystemAlerts</em>. <br/>- Added <strong>Analytics Rules</strong>: GTI High Relevance Alerts, GTI High &amp; Critical Priority Alerts, GTI Data Leak Alerts, GTI Initial Access Broker Alerts, GTI Insider Threat Alerts, GTI Relevance System Alerts Incident by Alert ID. <br/>- Added Custom <strong>Connector</strong> manual prerequisite for Playbooks.</td>
 </tr>
 <tr>
   <td>3.2.2</td>

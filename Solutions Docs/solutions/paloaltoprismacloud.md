@@ -18,8 +18,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Source Vendor** | Palo Alto Networks *(basis: publisher)* |
-| **Source Product** | Prisma Cloud CSPM |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-04-16 |

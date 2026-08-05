@@ -1,6 +1,4 @@
-# ⚠️ 42Crunch API Protection (Push Connector via Codeless Connector Framework)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# 42Crunch API Protection (Push Connector via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/42CrunchLogo.svg" alt="" width="75" height="75">
 
@@ -14,13 +12,11 @@
 |:----------|:------|
 | **Connector ID** | `FortyTwoCrunchAPIProtection` |
 | **Publisher** | Microsoft Corporation |
-| **Source Vendor** | 42Crunch *(basis: title)* |
-| **Source Product** | API Protection *(basis: title)* |
 | **Used in Solutions** | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
-| **Connector Definition Files** | [42CrunchAPIProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection.json) |
-| **DCR Definition Files** | [DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/DCR.json) |
-| **CCF Configuration** | [PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/PollingConfig.json) |
+| **Connector Definition Files** | [42CrunchAPIProtection_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection_ConnectorDefinition.json) |
+| **DCR Definition Files** | [42CrunchAPIProtection_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection_DCR.json) |
+| **CCF Configuration** | [42CrunchAPIProtection_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection_PollerConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 
@@ -119,7 +115,7 @@ If data is not appearing:
 After deploying the Azure resources, configure the **42Crunch Log Forwarder** Docker container to send data to the deployed DCE/DCR endpoints instead of the legacy HTTP Data Collector API.
 ### Update Docker Compose / Helm Chart Environment Variables
 
-Replace the legacy `WORKSPACE_ID` and `WORKSPACE_KEY` environment variables with the new DCE/DCR configuration:
+> **Note:** This step applies if you already have an existing 42Crunch Log Forwarder deployment using the legacy HTTP Data Collector API. Migrate it by replacing the legacy `WORKSPACE_ID` and `WORKSPACE_KEY` environment variables with the new DCE/DCR configuration:
 
 ```yaml
 environment:
@@ -136,29 +132,49 @@ environment:
   - 42C_FIREWALL_TOKEN=<your-firewall-token>
   - 42C_PLATFORM_URL=<your-platform-url>
 ```
+> **Note:** If you don't have an existing Docker deployment or need an example to follow, use the steps below.
+### 1. Download the sample deployment
+
+Download the [`sample-deployment`](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/42Crunch%20API%20Protection/sample-deployment) folder from the Azure-Sentinel repository. It contains the `docker-compose.yml`, `.env.example`, and log forwarder used to send data to Microsoft Sentinel.
+### 2. Create your `.env` file
+
+Copy `.env.example` to `.env` and fill in your values before running `docker compose up`.
+
+- By default this sample runs in **online mode** and requires a 42Crunch platform token.
+- To run in **offline mode** (no token required), set `PROTECTION_TOKEN=NOTUSED` and uncomment `PLATFORM_CONNECTIVITY=NONE` in `docker-compose.yml`.
+
+> **SECURITY:** Do **NOT** put `CLIENT_SECRET` in the `.env` file. Pass it as a shell environment variable instead. Docker Compose merges shell environment variables with the `.env` file automatically.
+
+```powershell
+# PowerShell
+$env:CLIENT_SECRET = (Read-Host -Prompt "CLIENT_SECRET" -AsSecureString | ConvertFrom-SecureString -AsPlainText)
+docker compose up --build
+```
+
+```bash
+# Bash/Linux
+read -rs CLIENT_SECRET && export CLIENT_SECRET
+docker compose up --build
+```
+### 3. Obtain your 42Crunch protection token
+
+From the 42Crunch platform ([platform.42crunch.com](https://platform.42crunch.com)):
+
+- **Online mode:** get the token from **Protect > your API > Protection > Firewall Instances > Add instance**.
+- **Offline mode** (no platform account): set `PROTECTION_TOKEN=NOTUSED` and uncomment `PLATFORM_CONNECTIVITY=NONE` in `docker-compose.yml`.
 The DCE endpoint URL and DCR immutable ID are displayed after deploying the ARM resources in Step 1. For full configuration details, refer to the [42Crunch Microsoft Sentinel Integration](https://github.com/42Crunch/azure-sentinel-integration) documentation.
+For a complete migration guide, see the [42Crunch API Protection Migration Guide](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Migration_Guide.md).
 ### Important: Connection Status
 
 This is a **push-based connector** - it receives data from the 42Crunch Log Forwarder and does not maintain an active polling connection. The connector shows as **Connected** when data has been received within the last 7 days.
 
 **1. Uninstall connector**
 
-Use this PowerShell script to delete the connector instance.
+Follow these steps to disconnect and delete the connector instance.
 ### Delete the Connector Instance
-Run the following PowerShell commands to remove the data connector instance:
-
-```powershell
-$sub = "<subscription-id>"
-$rg  = "<resource-group-name>"
-$ws  = "<workspace-name>"
-$connectorName = "FortyTwoCrunchAPIProtection"
-$armEndpoint = (az cloud show --query endpoints.resourceManager -o tsv).TrimEnd('/')
-
-Write-Host "Deleting $connectorName..." -NoNewline
-az rest --method DELETE --uri "$armEndpoint/subscriptions/$sub/resourceGroups/$rg/providers/Microsoft.OperationalInsights/workspaces/$ws/providers/Microsoft.SecurityInsights/dataConnectors/$connectorName`?api-version=2024-09-01"
-Write-Host " Done" -ForegroundColor Green
-```
-> NOTE: Replace `<subscription-id>`, `<resource-group-name>`, and `<workspace-name>` with your actual Azure values before running the script.
+1. To disconnect the connector and revoke its access, select the **Revoke access** button.
+2. Return to the **Data connectors** page, select the connector's overflow menu (the three dots), and choose **Delete** to remove the connector instance.
+3. Navigate to the **Content hub**, locate the corresponding solution, and delete it to complete the removal.
 This removes the push connector instance. Historical data in your Log Analytics workspace will be retained.
 
 ---

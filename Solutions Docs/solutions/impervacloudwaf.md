@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Imperva *(basis: description_url)* |
-| **Source Product** | Cloud WAF |
 | **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
@@ -124,6 +122,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                               |
 |-------------|--------------------------------|------------------------------------------------- |
+| 3.1.3       | 07-07-2026                     |  Promoted the Imperva Cloud WAF CCF Connector to General Availability |
 | 3.1.2       | 10-06-2026                     |  Modify to use `CommonEventFormatTransformer` to fix data ingestion issues |
 | 3.1.1       | 10-04-2026                     |  Add `"CsvEscapeMode": "NoEscape"` to prevent logs with embedded JSON from being dropped during ingestion |
 | 3.1.0       | 30-03-2026                     |  Promoted the Imperva Cloud WAF CCF connector to Public Preview |

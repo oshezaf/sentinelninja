@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Atlassian *(basis: projected)* |
-| **Source Product** | Confluence *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

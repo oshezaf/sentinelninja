@@ -6,6 +6,8 @@
 
 ---
 
+Parser for ESET Protect Platform detections. Normalizes data from both the legacy Azure Functions connector (IntegrationTable_CL) and the Codeless Connector Framework (CCF) connector (IntegrationTableV2_CL) so that downstream content works regardless of which data connector is deployed.
+
 ## Parser Information
 
 | Attribute | Value |
@@ -13,8 +15,8 @@
 | Title | Parser for ESET Protect Platform |
 | Location | Solution |
 | Solution | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
-| Version | 1.0.0 |
-| Last Updated | 2024-11-08 |
+| Version | 1.1.0 |
+| Last Updated | 2026-07-02 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Parsers/ESETProtectPlatform.yaml) |
@@ -25,6 +27,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`IntegrationTableV2_CL`](../tables/integrationtablev2-cl.md) |  | ? | ✓ | ? |
 | [`IntegrationTable_CL`](../tables/integrationtable-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---

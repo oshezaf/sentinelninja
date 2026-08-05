@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedback.meshcloud.io](https://feedback.meshcloud.io) |
 | **Categories** | Application,IT Operations |
-| **Source Vendor** | meshcloud *(basis: publisher)* |
 | **Version** | 3.0.1 |
 | **Author** | meshcloud - support@meshcloud.io |
 | **First Published** | 2025-12-15 |

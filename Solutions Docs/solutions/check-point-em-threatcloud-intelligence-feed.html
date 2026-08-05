@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Check Point EM ThreatCloud Intelligence Feed &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="check-point-em-threatcloud-intelligence-feed">⚠️ Check Point EM ThreatCloud Intelligence Feed</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" alt="Check Point EM ThreatCloud Intelligence Feed Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Check Point</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.checkpoint.com/support-services/contact-support/">https://www.checkpoint.com/support-services/contact-support/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Check Point - support@checkpoint.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-04-26</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed">Check Point EM ThreatCloud Intelligence Feed</a></td>
+</tr>
+</tbody>
+</table>
+<p>Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline premium IOC ingestion and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. The ThreatCloud Intelligence Feed connector incrementally pulls high-fidelity indicators — IPs, domains, URLs, and file hashes — enriched with confidence, severity, malicious classification, kill-chain stage, blocking and uniqueness flags, malware types, and CVE/campaign associations.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution depends on the following technologies, and some of which may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or may incur additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework</a> (used by the ThreatCloud Intelligence Feed data connector to poll the Check Point Exposure Management API)</p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">Log Analytics custom logs</a> via <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data Collection Rules (DCR)</a></p>
+<p>c. <a href="https://azure.microsoft.com/services/logic-apps/">Azure Logic Apps</a> (used by the Check_Point_EM_IOCIntelligenceEnrichment playbook)</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/checkpointemiocintelligence.html">Check Point EM ThreatCloud Intelligence Feed Connector</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/emiocintel-cl.html"><code>emiocintel_CL</code></a></td>
+  <td><a href="../connectors/checkpointemiocintelligence.html">Check Point EM ThreatCloud Intelligence Feed Connector</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.html">Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage</a></td>
+  <td style="text-align:left">When a new Microsoft Sentinel incident is created, this playbook enriches IOC entities (IPs, domains...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed/README.md">Check Point EM ThreatCloud Intelligence Feed/README.md</a></em></p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" width="75px" height="75px">
+
+<h2 id="overview">Overview</h2>
+<p>This solution streams the <strong>Check Point Exposure Management</strong> (Infinity External Risk Management / Argos) ThreatCloud Intelligence Feed into Microsoft Sentinel and provides an out-of-the-box (OOTB) enrichment playbook for Sentinel incident entities.</p>
+<h3 id="whats-included">What's included</h3>
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Data Connector</strong> (CCP)</td>
+  <td>Polls the Check Point EM ThreatCloud Intelligence Feed API on a recurrence and ingests indicators (IPs, domains, URLs, file hashes) with confidence, severity, malicious classification, kill-chain stage, blocking and uniqueness flags, malware types, and CVE/campaign associations into <code>emiocintel_CL</code>.</td>
+</tr>
+<tr>
+  <td><strong>Playbook</strong> <code>CPEM_IOCIntelligenceEnrichment</code></td>
+  <td>Triggers on Microsoft Sentinel incident webhook; enriches IP / FileHash / Domain / URL entities against the same API and appends a structured enrichment comment to the incident.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before deploying this solution:</p>
+<ol>
+<li><p><strong>Microsoft Sentinel must be enabled on the target Log Analytics workspace.</strong> Enabling Sentinel auto-provisions the Data Collection Endpoint (DCE) that this solution's CCP data connector relies on. Without Sentinel enabled, the <code>Microsoft.Insights/dataCollectionRules</code> resource in this template fails to deploy with a &quot;DCE not found&quot; error.</p>
+<ul>
+<li>To enable Sentinel: in the Azure Portal, navigate to <strong>Microsoft Sentinel</strong> → <strong>Add</strong> → select your Log Analytics workspace → <strong>Add</strong>.</li>
+<li>This is the same prerequisite that applies to the sibling <strong>Check Point Cyberint IOC</strong> and <strong>Check Point Cyberint Alerts</strong> solutions.</li>
+</ul>
+</li>
+<li><p><strong>Check Point Exposure Management API access:</strong> a valid Argos URL (e.g. <code>https://your-tenant.cyberint.io</code>), API access token, and the Customer Name registered with your Cyberint account.</p>
+</li>
+<li><p><strong>Permissions:</strong> the deploying principal needs Microsoft Sentinel Contributor (or equivalent) on the workspace and the resource group.</p>
+</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p>Two supported paths:</p>
+<ul>
+<li><strong>Content Hub (recommended for customers):</strong> Microsoft Sentinel → Content Hub → search &quot;Check Point EM ThreatCloud Intelligence Feed&quot; → Install. The connector setup UI walks you through configuring the API token and other parameters; Sentinel handles the DCE wiring.</li>
+<li><strong>ARM direct (for automation / GitOps):</strong> deploy <code>Package/mainTemplate.json</code> against a Sentinel-enabled workspace. The DCE referenced by the DCR is the workspace's auto-provisioned endpoint, so it must exist before deployment (see Prerequisite #1).</li>
+</ul>
+<h2 id="support">Support</h2>
+<ul>
+<li><strong>Provider:</strong> Check Point</li>
+<li><strong>Tier:</strong> Partner</li>
+<li><strong>Contact:</strong> <a href="https://www.checkpoint.com/support-services/contact-support/">Check Point Support</a></li>
+</ul>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>02-06-2026</td>
+  <td>Initial Solution release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

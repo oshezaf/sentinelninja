@@ -12,14 +12,12 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | Cyberint |
+| **Publisher** | Check Point |
 | **Support Tier** | Partner |
-| **Support Link** | [https://cyberint.com/customer-support/](https://cyberint.com/customer-support/) |
+| **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | Check Point *(basis: publisher)* |
-| **Source Product** | Cyberint |
-| **Version** | 3.0.1 |
-| **Author** | Cyberint - support@checkpoint.com |
+| **Version** | 3.0.4 |
+| **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
 | **Last Updated** | 2026-04-21 |
 | **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
@@ -45,6 +43,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
 | ----------- | ------------------------------ | ------------------------ |
+| 3.0.4       | 02-06-2026                     | Updated support contact information and documentation links. |
 | 3.0.2       | 03-04-2026                     | Fixed table schema definition causing connector creation failure.<br>Fixed apiEndpoint URL construction (removed duplicate https:// prefix).<br>Added Customer Name configuration field.<br>Improved connector UI with field descriptions, placeholders, and password masking for API Token.<br>Updated connector description and prerequisites text. |
 | 3.0.1       | 12-09-2025                     | Replaces the variable reference for graphQueriesTableName with the explicit table name **'iocsent_CL'** |
 | 3.0.0       | 17-06-2025                     | Initial Solution release. |

@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>DigitalShadowsSearchlightAzureFunctions</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">Digital Shadows</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Searchlight <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -55,11 +51,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
@@ -81,10 +73,10 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/digitalshadows-cl.html"><code>DigitalShadows_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/digitalshadows-v2-cl.html"><code>DigitalShadows_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -100,6 +92,7 @@
 <p><strong>Custom Permissions:</strong></p>
 <ul>
 <li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>Role Assignment on the Data Collection Rule</strong>: Permission to assign the <strong>Monitoring Metrics Publisher</strong> role on the Data Collection Rule to each Function App's system-assigned managed identity is required at deployment time (e.g. <strong>Owner</strong> or <strong>User Access Administrator</strong> at the deployment scope).</li>
 <li><strong>REST API Credentials/permissions</strong>: <strong>Digital Shadows account ID, secret and key</strong> is required.  See the documentation to learn more about API on the <code>https://portal-digitalshadows.com/learn/searchlight-api/overview/description</code>.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
@@ -110,24 +103,14 @@
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to a 'Digital Shadows Searchlight' to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 </blockquote>
 <blockquote>
-<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>(Optional Step)</strong> Securely store the 'Digital Shadows Searchlight' API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
 <p><strong>STEP 1 - Configuration steps for the 'Digital Shadows Searchlight' API</strong></p>
 <p>The provider should provide or link to detailed steps to configure the 'Digital Shadows Searchlight' API endpoint so that the Azure Function can authenticate to it successfully, get its authorization key or token, and pull the appliance's logs into Microsoft Sentinel.</p>
 <p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the 'Digital Shadows Searchlight' connector, have the Workspace ID  and Workspace Primary Key (can be copied from the following), as well as the 'Digital Shadows Searchlight' API authorization key(s) or Token, readily available.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the 'Digital Shadows Searchlight' connector, have the resource ID of the Log Analytics workspace where the <code>DigitalShadows_V2_CL</code> table will live, as well as the 'Digital Shadows Searchlight' API authorization key(s) or Token, readily available. The connector authenticates to Azure Monitor using a system-assigned managed identity; no shared workspace key is required.</p>
 </blockquote>
-<ul>
-<li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-<li><strong>Primary Key</strong>: <code>PrimaryKey</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-</ul>
 <p><strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the 'Digital Shadows Searchlight' connector.</p>
 <ol>
@@ -136,7 +119,7 @@
 </li>
 <li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.</p>
 </li>
-<li><p>Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>API Username</strong>, <strong>API Password</strong>, 'and/or Other required fields'.</p>
+<li><p>Enter the <strong>DcrWorkspaceResourceId</strong> (the full resource ID of your Log Analytics workspace, in the form <code>/subscriptions/&lt;sub&gt;/resourceGroups/&lt;rg&gt;/providers/Microsoft.OperationalInsights/workspaces/&lt;workspace&gt;</code>), <strong>API Username</strong>, <strong>API Password</strong>, 'and/or Other required fields'.</p>
 </li>
 </ol>
 <blockquote>
@@ -144,7 +127,7 @@
 </blockquote>
 <ol start="4">
 <li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</li>
-<li>Click <strong>Purchase</strong> to deploy.</li>
+<li>Click <strong>Purchase</strong> to deploy. The template provisions a Data Collection Endpoint, a Data Collection Rule, the <code>DigitalShadows_V2_CL</code> table, and grants the Function Apps' managed identities the <strong>Monitoring Metrics Publisher</strong> role on the Data Collection Rule.</li>
 </ol>
 <p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
 <p>Use the following step-by-step instructions to deploy the 'Digital Shadows Searchlight' connector manually with Azure Functions.</p>
@@ -158,48 +141,56 @@
 <li>'Add other required configurations'.</li>
 <li>'Make other preferable configuration changes', if needed, then click <strong>Create</strong>.</li>
 </ol>
-<p><strong>2. Import Function App Code(Zip deployment)</strong></p>
+<p><strong>2. Enable the system-assigned managed identity and grant it permission to publish metrics</strong></p>
+<ol>
+<li>In the Function App screen, open <strong>Identity</strong> under <strong>Settings</strong>.</li>
+<li>On the <strong>System assigned</strong> tab, set <strong>Status</strong> to <strong>On</strong> and click <strong>Save</strong>. Note the displayed <strong>Object (principal) ID</strong> — you will need it to grant the role.</li>
+<li>Navigate to the <strong>Data Collection Rule</strong> (DCR) that owns the <code>Custom-DigitalShadows_V2_CL</code> stream and open its <strong>Access control (IAM)</strong> blade.</li>
+<li>Click <strong>+ Add role assignment</strong>, select the <strong>Monitoring Metrics Publisher</strong> role, choose <strong>Managed identity</strong> as the member type, and assign the Function App's system-assigned identity. Save.</li>
+<li>Repeat steps 1-4 for the second (<code>exclude</code>) Function App if you are running both.</li>
+</ol>
+<p><strong>3. Import Function App Code(Zip deployment)</strong></p>
 <ol>
 <li>Install Azure CLI</li>
-<li>From terminal type <strong>az functionapp deployment source config-zip -g <ResourceGroup> -n <FunctionApp> --src <Zip File></strong> and hit enter. Set the <code>ResourceGroup</code> value to: your resource group name. Set the <code>FunctionApp</code> value to: your newly created function app name. Set the <code>Zip File</code> value to: <code>digitalshadowsConnector.zip</code>(path to your zip file). Note:- Download the zip file from the link - <a href="https://aka.ms/sentinel-DigitalShadows-functionapp">Function App Code</a></li>
+<li>From terminal type <strong>az functionapp deployment source config-zip -g <ResourceGroup> -n <FunctionApp> --src <Zip File></strong> and hit enter. Set the <code>ResourceGroup</code> value to: your resource group name. Set the <code>FunctionApp</code> value to: your newly created function app name. Set the <code>Zip File</code> value to: <code>digitalshadowsConnector.zip</code>(path to your zip file). Note:- Download the zip file from the link - <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Data%20Connectors/Digital%20Shadows/digitalshadowsConnector.zip">Function App Code</a></li>
 </ol>
-<p><strong>3. Configure the Function App</strong></p>
+<p><strong>4. Configure the Function App</strong></p>
 <ol>
 <li>In the Function App screen, click the Function App name and select <strong>Configuration</strong>.</li>
 <li>In the <strong>Application settings</strong> tab, select <strong>+ New application setting</strong>.</li>
-<li>Add each of the following 'x (number of)' application settings individually, under Name, with their respective string values (case-sensitive) under Value:
+<li>Add each of the following application settings individually, under Name, with their respective string values (case-sensitive) under Value:
 DigitalShadowsAccountID
-WorkspaceID
-WorkspaceKey
 DigitalShadowsKey
 DigitalShadowsSecret
-HistoricalDays
 DigitalShadowsURL
+HistoricalDays
+DCE_URL
+DCR_IMMUTABLE_ID
+STREAM_NAME
 ClassificationFilterOperation
 HighVariabilityClassifications
 FUNCTION_NAME
-logAnalyticsUri (optional)
 (add any other settings required by the Function App)
 Set the <code>DigitalShadowsURL</code> value to: <code>https://api.searchlight.app/v1</code>
 Set the <code>HighVariabilityClassifications</code> value to: <code>exposed-credential,marked-document</code>
-Set the <code>ClassificationFilterOperation</code> value to: <code>exclude</code> for exclude function app or <code>include</code> for include function app</li>
+Set the <code>ClassificationFilterOperation</code> value to: <code>exclude</code> for exclude function app or <code>include</code> for include function app
+Set the <code>DCE_URL</code> value to your Data Collection Endpoint logs-ingestion URI (e.g. <code>https://&lt;dce-name&gt;.&lt;region&gt;-1.ingest.monitor.azure.com</code>).
+Set the <code>DCR_IMMUTABLE_ID</code> value to the immutable ID of the Data Collection Rule (visible in the DCR overview blade as <code>Immutable ID</code>).
+Set the <code>STREAM_NAME</code> value to: <code>Custom-DigitalShadows_V2_CL</code></li>
+</ol>
+<ol start="4">
+<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
 <blockquote>
 <p>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Azure Key Vault references documentation</a> for further details.</p>
 </blockquote>
-<ul>
-<li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: https://<CustomerId>.ods.opinsights.azure.us.</li>
-</ul>
-<ol start="4">
-<li>Once all application settings have been entered, click <strong>Save</strong>.</li>
-</ol>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: [Digital Shadows\Data Connectors\readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital Shadows\Data Connectors\readme.md)</em></p>
 </blockquote>
 <h1 id="digital-shadows-integration-for-microsoft-sentinel">Digital Shadows Integration for Microsoft Sentinel</h1>
 <h2 id="introduction">Introduction</h2>
-<p>This folder contains the Azure function time trigger code for Digital Shadows-Microsoft Sentinel connector. The connector will run periodically and ingest the Digital Shadows incidents and alerts data into the Microsoft Sentinel logs custom table <code>DigitalShadows_CL</code>. After the data has been ingested, Analytic rule will promote the data and create the Microsoft Sentinel incidents out of them. Analytic rule will also trigger playbooks, <code>status-and-severity-update</code> and <code>add-comments</code>. The playbooks will change the status and severity and add comments to Microsoft Sentinel incidents according to the latest Digital Shadows data logged. The data can be visualized in the Workbook labelled <code>Digital Shadows workbook</code>.</p>
+<p>This folder contains the Azure function time trigger code for Digital Shadows-Microsoft Sentinel connector. The connector will run periodically and ingest the Digital Shadows incidents and alerts data into the Microsoft Sentinel logs custom table <code>DigitalShadows_V2_CL</code> via the Logs Ingestion API. The Function Apps authenticate to Azure Monitor using their system-assigned managed identity (granted the <code>Monitoring Metrics Publisher</code> role on the Data Collection Rule). After the data has been ingested, Analytic rule will promote the data and create the Microsoft Sentinel incidents out of them. Analytic rule will also trigger playbooks, <code>status-and-severity-update</code> and <code>add-comments</code>. The playbooks will change the status and severity and add comments to Microsoft Sentinel incidents according to the latest Digital Shadows data logged. The data can be visualized in the Workbook labelled <code>Digital Shadows workbook</code>.</p>
 <h2 id="folders">Folders</h2>
 <ol>
 <li><code>Digital shadows/</code> - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.</li>

@@ -38,14 +38,6 @@
   <td style="text-align:left">SAP SE</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SAP <em>(basis: override)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">LogServ <em>(basis: title)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
   <td style="text-align:left"><a href="../solutions/sap-logserv.html">SAP LogServ</a></td>
 </tr>
@@ -83,12 +75,14 @@
 <p>Main Features include:</p>
 <p>Near Realtime Log Collection: With ability to integrate into Microsoft Sentinel as SIEM solution.</p>
 <p>LogServ complements the existing SAP application layer threat monitoring and detections in Microsoft Sentinel with the log types owned by SAP ECS as the system provider. This includes logs like: SAP Security Audit Log (AS ABAP), HANA database, AS JAVA, ICM, SAP Web Dispatcher, SAP Cloud Connector, OS, SAP Gateway, 3rd party Database, Network, DNS, Proxy, Firewall</p>
+<p><strong>ASIM-Enabled Routing:</strong> Standard log formats (Linux/Syslog, Windows OS, DNS, network, web access) are automatically routed to dedicated Microsoft ASIM-normalized tables via DCR data flow branching, enabling reuse of existing detections and partner analytics. SAP Security Audit Log (AS ABAP) is routed to the Microsoft standard <strong>ABAPAuditLog</strong> table. SAP-specific logs remain in the SAPLogServ_CL custom table.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
   <th style="text-align:center">Transformations</th>
   <th style="text-align:center">Ingestion API</th>
   <th style="text-align:center">Lake-Only</th>
@@ -96,7 +90,57 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../tables/abapauditlog.html"><code>ABAPAuditLog</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a></td>
+  <td style="text-align:left"><code>EventProduct in &quot;AzureVNet,BIND,SAP Web Dispatcher&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>CollectorHostName == &quot;SAPLogServ&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+  <td style="text-align:left"><code>Provider startswith &quot;Microsoft&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>

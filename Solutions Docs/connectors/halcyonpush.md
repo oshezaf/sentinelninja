@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `HalcyonPush` |
-| **Publisher / Vendor** | Halcyon |
+| **Publisher** | Halcyon |
 | **Used in Solutions** | [Halcyon](../solutions/halcyon.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Halcyon_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp/Halcyon_connectorDefinition.json) |

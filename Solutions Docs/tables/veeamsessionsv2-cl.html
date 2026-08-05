@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeeamSessionsV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="veeamsessionsv2_cl">VeeamSessionsV2_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam%5CData%20Connectors%5CVeeam_CCF/table_VeeamSessionsV2.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">CreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when session was created</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when session completed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique session identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsCanceled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether session was canceled</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Associated job identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Session result message</td>
+</tr>
+<tr>
+  <td style="text-align:left">Name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parent session identifier if applicable</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlatformId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Platform identifier associated with the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlatformName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Platform name associated with the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProgressPercent</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Session completion percentage</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceReference</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reference to associated resource</td>
+</tr>
+<tr>
+  <td style="text-align:left">Result</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Session result status</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultIsCanceled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether session was canceled</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Session result message</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Session result status</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of Veeam session operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">State</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current state of the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Usn</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Update sequence number</td>
+</tr>
+<tr>
+  <td style="text-align:left">VbrHostName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Veeam Backup &amp; Replication server hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">VeeamResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Veeam resource identifier</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/veeam.html">Veeam</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/veeamconnector.html">Veeam Data Connector (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

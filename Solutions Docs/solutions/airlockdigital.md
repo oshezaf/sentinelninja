@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Airlock Digital |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-20 |
@@ -53,6 +51,8 @@ This solution uses **3 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.1.1       | 28-07-2026                     | Promoted the Airlock Digital data connector from public preview to general availability (GA). |
+| 3.1.0       | 23-07-2026                     | Added multi-instance support: multiple simultaneous Airlock Digital server connections via a grid and context-pane UX with a multi-select data type dropdown and per-connection friendly name. Added a ConnectorName column to all data tables to identify the originating connection. Fixed log ingestion: increased data connector poller timeout to 120s and corrected the pagination token path to slice notation for Server Activities and Execution Histories to resolve fetch timeouts and out-of-range paging errors. Removed deprecated graphQueriesTableName property (hardcoded table names in queries). |
 | 3.0.1       | 02-06-2026                     | Fixed: Removed empty ApiKeyIdentifier field for Partner Center certification compliance. Fixed UX description typo. |
 | 3.0.0       | 20-05-2026                     | Created a Data Connector for Airlock Digital CCF Container with Server Activities, Execution Histories, and File Activity Summary data streams. |
 

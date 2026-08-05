@@ -65,7 +65,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AADUserRiskEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaduserriskevents)
 
-## Solutions (7)
+## Solutions (8)
 
 This table is used by the following solutions:
 
@@ -73,6 +73,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
@@ -87,9 +88,17 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (8)
 
-### Workbooks (6)
+### Hunting Queries (1)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Risky Successful Sign-in to VPN or Network Access Application](../content/hybrid-attack-cloud-&-identity-risky-successful-sign-in-to-vpn-or-network-access-application-482a1615-5bc6-4b23-b2c5-97a4c3179240-5cf359b4.md) |  |
+
+### Workbooks (7)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -114,6 +123,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 

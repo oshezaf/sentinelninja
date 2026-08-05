@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ContrastADR` |
-| **Publisher / Vendor** | Contrast Security |
-| **Source Product** | ADR *(basis: title)* |
+| **Publisher** | Contrast Security |
 | **Used in Solutions** | [ContrastADR](../solutions/contrastadr.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [ContrastADR_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADR_API_FunctionApp.json) |

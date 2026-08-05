@@ -6,7 +6,7 @@
 
 ---
 
-This playbook will trigger on emails with attachmets and send them to Recorded Future Sandbox. The result will be written as a reply and a Sentinel Incident will be created if the file attachment has a sandbox risk score grater then the configured threshold value.
+This playbook will trigger on emails with attachments and send them to Recorded Future Sandbox. The result will be written to a custom log (RecordedFutureSandboxResults_CL) and an email notification will be sent if the score is above threshold. To create Microsoft Defender incidents, use a Analytics Rule that queries RecordedFutureSandboxResults_CL. Direct incident creation via Logic Apps is no longer supported in the unified Microsoft Defender portal.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,24 +14,31 @@ This playbook will trigger on emails with attachmets and send them to Recorded F
 | **Solution** | [Recorded Future](../solutions/recorded-future.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Sandboxing/RecordedFuture-Sandbox_Outlook_Attachment/azuredeploy.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) 🔶 | ? | ✓ | ? |
+
 ## Logic App Connectors
 
 This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
 | [`outlook`](../logic-apps/managed-outlook.md) | Managed | 1 | 1 |
 | [`recordedfuturesandbo`](../logic-apps/managed-recordedfuturesandbo.md) | Managed | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Create_incident | put | `/Incidents/subscriptions/@{encodeURIComponent('5129b3ff-c0c6-4e86-bd1c-70e5fcd579cf')}/resourceGroups/@{encodeURIComponent('RF')}/workspaces/@{encodeURIComponent('RF-log-analyitics')}` | — |
+| Send_sandbox_results_to_log_analytics | post | `/api/logs` | — |
 
 #### [`outlook`](../logic-apps/managed-outlook.md) (Managed)
 

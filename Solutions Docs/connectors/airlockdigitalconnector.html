@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>AirlockDigitalConnector</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">Microsoft</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Airlock Digital <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -133,25 +129,50 @@
 </ul>
 <p><strong>Base URL:</strong> Enter your Airlock Digital server URL. Default port is 3129 for REST API.</p>
 <p>Example: <code>https://airlock.company.com:3129</code></p>
+<p><strong>The connector collects:</strong></p>
 <ul>
-<li><strong>Base URL</strong>: https://server.name:3129</li>
-<li><strong>API Key</strong>: (password field)</li>
-</ul>
-<p><strong>2. Connect and Start Data Collection</strong></p>
-<p>Click Connect to start ingesting Airlock Digital logs
-<strong>The connector collects:</strong></p>
-<ul>
-<li><p><strong>Execution Histories</strong>: File execution events including blocked, audited, and trusted executions with file hashes, publishers, and user details</p>
-</li>
 <li><p><strong>Server Activities</strong>: Administrative actions, policy changes, agent check-ins, and repository updates</p>
+</li>
+<li><p><strong>Execution Histories</strong>: File execution events including blocked, audited, and trusted executions with file hashes, publishers, and user details</p>
 </li>
 <li><p><strong>File Activity Summary</strong>: Aggregated statistics on file activity, security events, and execution trends</p>
 </li>
 </ul>
 <p><strong>Data refresh:</strong> Logs are retrieved every 5 minutes. Data should appear within 5-10 minutes after connection.</p>
+<p><strong>2. Connect Airlock Digital servers to Microsoft Sentinel</strong></p>
+<p>This connector supports multiple simultaneous connections. Add one connection per Airlock Digital server; each connection ingests the selected data types in parallel. Use the grid below to review existing connections or add a new one.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
 <ul>
-<li>Click 'Connect' to establish connection</li>
+<li><strong>Connector Name</strong></li>
+<li><strong>Data Type</strong></li>
+<li><strong>Endpoint</strong></li>
 </ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Connect an Airlock Digital server</strong></p>
+<p><em>Airlock Digital</em></p>
+<p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<h2 id="connection-details">Connection details</h2>
+<p>Provide the Airlock Digital server URL and API key, then choose which data types to collect. Create a separate connection for each Airlock Digital server.</p>
+<ul>
+<li><strong>Base URL</strong> (required): https://server.name:3129</li>
+<li><strong>API Key</strong> (required): Enter your Airlock Digital API Key</li>
+<li><strong>Data Types</strong> (required): Select from available options<ul>
+<li>Server Activities</li>
+<li>Execution Histories</li>
+<li>File Activity Summary</li>
+</ul>
+</li>
+<li><strong>Connector Friendly Name</strong> (required): Enter a unique friendly name for this connection</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

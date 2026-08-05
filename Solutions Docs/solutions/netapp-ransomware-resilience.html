@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ NetApp Ransomware Resilience &mdash; Solutions Analyzer</title>
+<title>NetApp Ransomware Resilience for Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,8 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="netapp-ransomware-resilience">⚠️ NetApp Ransomware Resilience</h1>
-<blockquote>
-<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
+<h1 id="netapp-ransomware-resilience-for-microsoft-sentinel">NetApp Ransomware Resilience for Microsoft Sentinel</h1>
+<p><em>Solution: NetApp Ransomware Resilience</em></p>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NetApp.svg" alt="NetApp Ransomware Resilience Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -50,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.1.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -62,11 +60,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-02-16</td>
+  <td style="text-align:left">2026-07-28</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience">NetApp Ransomware Resilience</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.azure-sentinel-solution-netapprrs">Azure Marketplace</a> · Popularity: 🔵 Medium (76%)</td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +77,7 @@
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>7 content item(s)</strong>:</p>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -86,7 +88,7 @@
 <tbody>
 <tr>
   <td style="text-align:left">Playbooks</td>
-  <td style="text-align:left">7</td>
+  <td style="text-align:left">10</td>
 </tr>
 </tbody>
 </table>
@@ -116,6 +118,11 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-block-user-playbook-d874068b.html">NetApp Ransomware Resilience Block User Playbook</a></td>
+  <td style="text-align:left">This playbook blocks a user by calling the NetApp Ransomware Resilience block-user API endpoint afte...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-ip-playbook-0190ca9d.html">NetApp Ransomware Resilience Enrich IP Playbook</a></td>
   <td style="text-align:left">This playbook enriches IP data by calling the updated NetApp Ransomware Resilience enrich IP address...</td>
   <td style="text-align:left">-</td>
@@ -126,8 +133,18 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-unblock-user-playbook-00b8d77d.html">NetApp Ransomware Resilience Unblock User Playbook</a></td>
+  <td style="text-align:left">This playbook unblocks a user by calling the NetApp Ransomware Resilience unblock-user API endpoint ...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-volume-offline-playbook-12183796.html">NetApp Ransomware Resilience Volume Offline Playbook</a></td>
   <td style="text-align:left">This playbook takes a NetApp volume offline using the updated NetApp Ransomware Resilience take-volu...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netapp-ransomware-resilience-netapp-ransomware-resilience-volume-online-playbook-92f6c250.html">NetApp Ransomware Resilience Volume Online Playbook</a></td>
+  <td style="text-align:left">This playbook takes a NetApp volume online by calling the NetApp Ransomware Resilience take-volume-o...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -138,9 +155,27 @@
 </tbody>
 </table>
 <h2 id="release-notes">Release Notes</h2>
-<p><strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong>|     <strong>ChangeHistory</strong>                                                                      |
-|------------|-------------------------------|-------------------------------------------------------------------------------------------|
-| 3.0.0      | 16-12-2025                    | Added Initial changes for Playbooks, Data Connectors and Analytics Rules.                 |</p>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>30-06-2026</td>
+  <td>Added three new playbooks: Block User, Unblock User, and Volume Online for user access containment/recovery and volume restoration.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>16-12-2025</td>
+  <td>Added initial changes for Playbooks, Data Connectors and Analytics Rules.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

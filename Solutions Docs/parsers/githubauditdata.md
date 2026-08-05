@@ -13,8 +13,8 @@
 | Title | Parser for GitHubAuditData |
 | Location | Solution |
 | Solution | [GitHub](../solutions/github.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-06-26 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Parsers/GitHubAuditData.yaml) |
@@ -27,6 +27,7 @@ This parser reads from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ✓ | ✓ | ✓ |
 | [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) | ? | ✓ | ? |
 
 ---
 

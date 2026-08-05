@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CloudNSSTunnelLogs_ccp` |
-| **Publisher / Vendor** | Zscaler |
-| **Source Product** | NSSTunnellog *(basis: event)* |
+| **Publisher** | Zscaler |
 | **Used in Solutions** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Data%20Connectors/CloudNSSTunnelLogs_ccp/connectorDefinition.json) |

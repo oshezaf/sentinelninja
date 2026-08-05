@@ -12,9 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `GitHubAuditBlobConnector` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | GitHub *(basis: title)* |
-| **Source Product** | Enterprise *(basis: title)* |
-| **Event Type** | Audit |
 | **Used in Solutions** | [GitHub](../solutions/github.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GitHubAuditLogs_AzStorage/ConnectorDefinition.json) |
@@ -31,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -73,22 +70,50 @@ This connector ingests data into the following tables:
 To assign these roles: navigate to the Storage Account -> **Access Control (IAM)** -> **Add role assignment**, search for the service principal ID shown below, and assign both roles.
 - **Collecting GitHub audit logs to your blob container**: Follow the steps in the [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage) to configure audit log streaming to your Azure Blob Storage container.
 
+- When following the guidance to generate a SAS token, two signing methods are supported: **Account key** and **User delegation key**. 
+
+For the **Account key** method, we recommend first creating a [Stored Access Policy](https://learn.microsoft.com/en-us/rest/api/storageservices/define-stored-access-policy) and then generating the SAS tied to that policy. 
+
+Binding the SAS to a policy lets you change its expiry and permissions, or revoke it, on the server side. This enables seamless rotation by updating the policy rather than reissuing the token.
+
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
 **1. Connect GitHub Audit Logs to Microsoft Sentinel**
 
-To enable the GitHub Audit Log ingestion from Azure Blob Storage, provide the required information below and click on Connect.
->
-> 📋 **Additional Configuration Step**: This connector includes a configuration step of type `ServicePrincipalIDTextBox_test`. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.
-- **The blob container URL you want to collect data from**
-- **The blob folder name in the container. Optional.**
-- **The blob container's storage account location**: eastus
-- **The blob container's storage account resource group name**: my-resource-group
-- **The blob container's storage account subscription id**
-- **The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.**
-- Click 'Connect' to establish connection
+Use the connection grid to add and manage GitHub Audit Log blob connections.
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Connection Alias**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Connect GitHub Audit Logs to Microsoft Sentinel**
+
+*Provide the required storage information for a new connection.*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+*Connection configuration*
+
+- **Connection alias** (required): e.g. Production
+- **The blob container URL you want to collect data from** (optional)
+- **The blob folder name in the container. Optional.** (optional)
+- **The blob container's storage account location** (optional): eastus
+- **The blob container's storage account resource group name** (optional)
+- **The blob container's storage account subscription id** (optional)
+- **The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.** (optional)
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
+
 
 **2. Blob Lifecycle Policy (Recommended)**
 
@@ -114,7 +139,7 @@ For detailed instructions on setting up the Azure Storage connector to stream lo
 If you encounter issues with data ingestion:
 - **Enable the health feature** - If the connector health feature isn't enabled, enable it to monitor connector status and detect issues early.
 - **Enable diagnostic logs** - Consider enabling diagnostic logs for both the **Storage Account** and **Event Grid** resources to help identify and troubleshoot health issues.
-- For more details, see [Troubleshoot Azure Storage Blob connector issues](https://review.learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot?branch=main).
+- For more details, see [Troubleshoot Azure Storage Blob connector issues](https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot).
 
 ---
 

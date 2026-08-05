@@ -46,10 +46,6 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SentinelOne <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.10</td>
 </tr>
@@ -87,16 +83,17 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a> 🔶</li>
 <li><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>11 table(s)</strong>:</p>
+<p>This solution uses <strong>13 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -108,12 +105,17 @@
 <tbody>
 <tr>
   <td><a href="../tables/oneactivities-cl.html"><code>OneActivities_CL</code></a></td>
-  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></td>
+  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/oneagents-cl.html"><code>OneAgents_CL</code></a></td>
-  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></td>
+  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/onealertsv2-cl.html"><code>OneAlertsV2_CL</code></a></td>
+  <td><a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -123,12 +125,12 @@
 </tr>
 <tr>
   <td><a href="../tables/onegroups-cl.html"><code>OneGroups_CL</code></a></td>
-  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></td>
+  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/onethreats-cl.html"><code>OneThreats_CL</code></a></td>
-  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a></td>
+  <td><a href="../connectors/sentineloneccp.html">SentinelOne (via Codeless Connector Framework)</a>, <a href="../connectors/sentinelonev2connector.html">SentinelOne V2 (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -138,6 +140,11 @@
 </tr>
 <tr>
   <td><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a></td>
+  <td><a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a></td>
   <td><a href="../connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
   <td>Analytics, Hunting, Workbooks</td>
 </tr>
@@ -209,67 +216,67 @@
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-admin-login-from-new-location-382f37b3-b49a-492f-b436-a4717c8c5c3e-e7ec747e.html">Sentinel One - Admin login from new location</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess, PrivilegeEscalation</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-agent-uninstalled-from-multiple-hosts-4ad87e4a-d045-4c6b-9652-c9de27fcb442-10a3603c.html">Sentinel One - Agent uninstalled from multiple hosts</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-alert-from-custom-rule-5f37de91-ff2b-45fb-9eda-49e9f76a3942-7cb8d841.html">Sentinel One - Alert from custom rule</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-blacklist-hash-deleted-de339761-2298-4b37-8f1b-80ebd4f0b5f6-8fa631c1.html">Sentinel One - Blacklist hash deleted</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-exclusion-added-4224409f-a7bf-45eb-a931-922d79575a05-c94db4fe.html">Sentinel One - Exclusion added</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-multiple-alerts-on-host-47e427e6-61bc-4e24-8d16-a12871b9f939-a9644e81.html">Sentinel One - Multiple alerts on host</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-new-admin-created-e73d293d-966c-47ec-b8e0-95255755f12c-c6c1cb15.html">Sentinel One - New admin created</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">PrivilegeEscalation</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-rule-deleted-e171b587-22bd-46ec-b96c-7c99024847a7-13809a6c.html">Sentinel One - Rule deleted</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-rule-disabled-84e210dd-8982-4398-b6f3-264fd72d036c-8dd4a965.html">Sentinel One - Rule disabled</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-same-custom-rule-triggered-on-different-hosts-5586d378-1bce-4d9b-9ac8-e7271c9d5a9a-6f74484f.html">Sentinel One - Same custom rule triggered on different hosts</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess, LateralMovement</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-user-viewed-agent%27s-passphrase-51999097-60f4-42c0-bee8-fa28160e5583-1188d485.html">Sentinel One - User viewed agent's passphrase</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CredentialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -286,52 +293,52 @@
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-agent-not-updated-7fc83c11-1d80-4d1e-9d4b-4f48bbf77abe-d8920f73.html">Sentinel One - Agent not updated</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-agent-status-4b2ed4b6-10bf-4b2c-b31e-ae51b575dfd4-ecfcfb9d.html">Sentinel One - Agent status</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-alert-triggers-files,-processes,-strings-660e92b5-1ef6-471f-b753-44a34af82c41-3e9fb5c4.html">Sentinel One - Alert triggers (files, processes, strings)</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-deleted-rules-8d1ca735-e29a-4bea-a2ec-93162790b686-ccd750bf.html">Sentinel One - Deleted rules</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-hosts-not-scanned-recently-e45ff570-e8a6-4f8e-9c08-7ee92ef86060-f02435bd.html">Sentinel One - Hosts not scanned recently</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-new-rules-9c3a38e4-0975-4f96-82ee-90ce68bec76a-83965701.html">Sentinel One - New rules</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-scanned-hosts-17c77743-8bdb-4d29-a3cb-a7a08676122f-33d8fd36.html">Sentinel One - Scanned hosts</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-sources-by-alert-count-acd0a127-461e-48c8-96fa-27d14595abe0-e0f215ff.html">Sentinel One - Sources by alert count</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-uninstalled-agents-f3a7cedd-6fc3-4661-a0ad-c1738e531917-9f651695.html">Sentinel One - Uninstalled agents</a></td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinel-one-users-by-alert-count-56500e23-4e64-45a5-a444-98a1acb2f700-01daf4b9.html">Sentinel One - Users by alert count</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -346,7 +353,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/sentinelone-sentinelone-8f12ec76.html">SentinelOne</a></td>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a><br><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a><br><a href="../tables/sentinelonealertsv2-cl.html"><code>SentinelOneAlertsV2_CL</code></a><br><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a><br><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a><br><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a><br><a href="../tables/sentinelone-cl.html"><code>SentinelOne_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -377,6 +384,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>01-07-2026</td>
+  <td>Added new <strong>SentinelOne V2 (via Codeless Connector Framework)</strong> <strong>Data Connector</strong> (ingests alerts via the GraphQL API)</td>
+</tr>
 <tr>
   <td>3.0.10</td>
   <td>03-06-2026</td>

@@ -18,18 +18,18 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **126** |
-| Active | 74 |
-| Deprecated 🚫 | 28 |
-| Unpublished ⚠️ | 40 |
+| Total Connectors | **123** |
+| Active | 69 |
+| Deprecated 🚫 | 30 |
+| Unpublished ⚠️ | 41 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 74 |
+| [Azure Function](../methods/azure-function.md) | 71 |
 | [REST Pull API](../methods/rest-pull-api.md) | 52 |
-| **Total** | **126** |
+| **Total** | **123** |
 
 ## Connectors Using This API
 
@@ -41,7 +41,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Agari Phishing Defense and Brand Protection](../connectors/agari.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Agari | 3 | [Agari](../solutions/agari.md) |
 | [AIShield](../connectors/boschaishield.md) | [REST Pull API](../methods/rest-pull-api.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [AliCloud](../connectors/alicloud.md) | [Azure Function](../methods/azure-function.md) | AliCloud | 1 | [Alibaba Cloud](../solutions/alibaba-cloud.md) |
-| [API Protection](../connectors/42crunchapiprotection.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [API Protection](../connectors/42crunchapiprotection.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Armorblox](../connectors/armorblox.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
@@ -61,14 +61,13 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cribl | 4 | [Cribl](../solutions/cribl.md) |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Derdack | 1 | [SIGNL4](../solutions/signl4.md) |
-| [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | [REST Pull API](../methods/rest-pull-api.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [ESET Inspect](../connectors/esetinspect.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
@@ -76,14 +75,12 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
-| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
-| [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
+| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | [REST Pull API](../methods/rest-pull-api.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) | [REST Pull API](../methods/rest-pull-api.md) | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
-| [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | [Azure Function](../methods/azure-function.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
-| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
+| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | [REST Pull API](../methods/rest-pull-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
@@ -98,7 +95,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
-| [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
+| [Orca Security Alerts](../connectors/orcasecurityalerts.md) | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
@@ -125,13 +122,11 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |
 | [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | TheHive Project | 1 | [TheHive](../solutions/thehive.md) |
 | [Theom](../connectors/theom.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Theom | 1 | [Theom](../solutions/theom.md) |
-| [Transmit Security Connector](../connectors/transmitsecurity.md) 🔶 | [Azure Function](../methods/azure-function.md) | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
-| [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | [Azure Function](../methods/azure-function.md) | Trend Micro | 1 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
+| [Transmit Security Connector](../connectors/transmitsecurity.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
+| [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | [Azure Function](../methods/azure-function.md) | Trend Micro | 2 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | [Azure Function](../methods/azure-function.md) | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
-| [Varonis SaaS](../connectors/varonissaas.md) 🔶 | [Azure Function](../methods/azure-function.md) | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | [Azure Function](../methods/azure-function.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | [Azure Function](../methods/azure-function.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
-| [Wiz](../connectors/wiz.md) 🔶 | [Azure Function](../methods/azure-function.md) | Wiz | 6 | [Wiz](../solutions/wiz.md) |
 | [Workplace from Facebook](../connectors/workplacefacebook.md) | [Azure Function](../methods/azure-function.md) | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | ZeroFox | 20 | [ZeroFox](../solutions/zerofox.md) |
 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
@@ -151,6 +146,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | [Azure Function](../methods/azure-function.md) | Google | 22 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| 🚫 [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | [Azure Function](../methods/azure-function.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | 🚫 [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | [REST Pull API](../methods/rest-pull-api.md) | IONIX | 1 | [IONIX](../solutions/ionix.md) |
 | 🚫 [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | [Azure Function](../methods/azure-function.md) | Lookout | 1 | [Lookout](../solutions/lookout.md) |
 | 🚫 [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | [Azure Function](../methods/azure-function.md) | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
@@ -161,10 +157,11 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | [Azure Function](../methods/azure-function.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
 | 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | [Azure Function](../methods/azure-function.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | [Azure Function](../methods/azure-function.md) | SentinelOne | 6 | [SentinelOne](../solutions/sentinelone.md) |
+| 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | [Azure Function](../methods/azure-function.md) | SentinelOne | 7 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | [Azure Function](../methods/azure-function.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | [Azure Function](../methods/azure-function.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |
 | 🚫 [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | [Azure Function](../methods/azure-function.md) | Sophos | 1 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
+| 🚫 [[Deprecated] Varonis SaaS](../connectors/varonissaas.md) | [Azure Function](../methods/azure-function.md) | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | 🚫 [[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)](../connectors/vmwarecarbonblack.md) | [Azure Function](../methods/azure-function.md) | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | 🚫 [[DEPRECATED] Zoom Reports](../connectors/zoom.md) | [Azure Function](../methods/azure-function.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 | 🚫 [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 2 | [MimecastSEG](../solutions/mimecastseg.md) |

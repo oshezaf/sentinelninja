@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkpoint Email Security &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="checkpoint-email-security">Checkpoint Email Security</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Checkpoint Email Security Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft Corporation</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-05-20</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-07-27</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security">Checkpoint Email Security</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security">Azure Marketplace</a> · Popularity: ⚪ Very Low (5%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.checkpoint.com/harmony/email-security/">Check Point Email Security (Harmony Email &amp; Collaboration)</a> Solution for Microsoft Sentinel enables you to ingest security events, anti-phishing exceptions, spam exceptions, and audit logs from Check Point's Email Security platform into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution provides visibility into advanced email threats including zero-day threats, phishing, account takeover, data leakage, and shadow IT discovery.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform (CCP)</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/checkpointemailsecantiphishingexceptions-cl.html"><code>CheckPointEmailSecAntiPhishingExceptions_CL</code></a></td>
+  <td><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/checkpointemailsecurityauditlogs-cl.html"><code>CheckPointEmailSecurityAuditLogs_CL</code></a></td>
+  <td><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/checkpointemailsecurityevents-cl.html"><code>CheckPointEmailSecurityEvents_CL</code></a></td>
+  <td><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/checkpointemailsecurityspamexceptions-cl.html"><code>CheckPointEmailSecuritySpamExceptions_CL</code></a></td>
+  <td><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security/README.md">Checkpoint Email Security/README.md</a></em></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>The Check Point Email Security (Harmony Email &amp; Collaboration) solution for Microsoft Sentinel enables you to ingest security events and audit logs from Check Point's Email Security platform using the Codeless Connector Framework (CCF). This connector provides visibility into advanced email threats including:</p>
+<h2 id="data-collected">Data Collected</h2>
+<p>The connector ingests data into four custom tables in your Log Analytics workspace:</p>
+<ul>
+<li>Security events including phishing, malware, DLP, and other threat detections with severity levels, confidence indicators, and remediation actions</li>
+<li>Anti-phishing whitelist and exception rules configured in your tenant</li>
+<li>Spam whitelist and exception rules configured in your tenant</li>
+<li>Administrative actions and system events including login/logout, configuration changes, and other audit trail data</li>
+</ul>
+<h3 id="key-fields-in-security-events">Key Fields in Security Events</h3>
+<ul>
+<li><strong>EventType</strong> - Type of security event (dlp, phishing, malware, etc.)</li>
+<li><strong>Severity</strong> - Severity level (Low, Medium, High, Highest)</li>
+<li><strong>ConfidenceIndicator</strong> - Detection confidence (malicious, suspicious)</li>
+<li><strong>SenderAddress</strong> - Email sender associated with the event</li>
+<li><strong>State</strong> - Current event state (active, dismissed)</li>
+<li><strong>Saas</strong> - Source platform (office365_emails, gmail)</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before configuring the connector, you need:</p>
+<ol>
+<li><strong>Microsoft Sentinel workspace</strong> with read and write permissions</li>
+<li><strong>Check Point Infinity Portal account</strong> with access to:<ul>
+<li>Harmony Email &amp; Collaboration service</li>
+<li>Logs as a Service capability</li>
+</ul>
+</li>
+</ol>
+<h3 id="api-credentials-required">API Credentials Required</h3>
+<p>You need <strong>two separate API keys</strong> from the Check Point Infinity Portal:</p>
+<table>
+<thead>
+<tr>
+  <th>Credential</th>
+  <th>Service</th>
+  <th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Client ID + Client Secret</td>
+  <td>Harmony Email &amp; Collaboration</td>
+  <td>Security events and exceptions</td>
+</tr>
+<tr>
+  <td>Audit Client ID + Audit Client Secret</td>
+  <td>Logs as a Service</td>
+  <td>Audit logs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-connect">How to Connect</h2>
+<h3 id="step-1-generate-api-keys-in-check-point-infinity-portal">Step 1: Generate API Keys in Check Point Infinity Portal</h3>
+<ol>
+<li>Log in to your <a href="https://portal.checkpoint.com">Check Point Infinity Portal</a></li>
+<li>Navigate to <strong>Global Settings</strong> &gt; <strong>API Keys</strong></li>
+<li>Create the first API key:<ul>
+<li>Select service: <strong>Harmony Email &amp; Collaboration</strong></li>
+<li>Save the <strong>Client ID</strong> and <strong>Client Secret</strong></li>
+</ul>
+</li>
+<li>Create the second API key:<ul>
+<li>Select service: <strong>Logs as a Service</strong></li>
+<li>Save the <strong>Audit Client ID</strong> and <strong>Audit Client Secret</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-identify-your-api-base-url">Step 2: Identify Your API Base URL</h3>
+<p>The API Base URL is region-specific. Use the appropriate URL for your tenant:</p>
+<table>
+<thead>
+<tr>
+  <th>Region</th>
+  <th>API Base URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>US</td>
+  <td><code>https://cloudinfra-gw.portal.checkpoint.com</code></td>
+</tr>
+<tr>
+  <td>EU</td>
+  <td><code>https://cloudinfra-gw-eu.portal.checkpoint.com</code></td>
+</tr>
+<tr>
+  <td>AP</td>
+  <td><code>https://cloudinfra-gw-ap.portal.checkpoint.com</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-3-configure-the-connector-in-microsoft-sentinel">Step 3: Configure the Connector in Microsoft Sentinel</h3>
+<ol>
+<li>In Microsoft Sentinel, navigate to <strong>Data connectors</strong></li>
+<li>Search for <strong>Check Point Email Security (via Codeless Connector Framework)</strong></li>
+<li>Click <strong>Open connector page</strong></li>
+<li>Click <strong>Add Connection</strong></li>
+<li>Enter the following:</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>21-07-2026</td>
+  <td>Promote CCF Data Connector to GA.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>08-07-2026</td>
+  <td>Initial release. Added <strong>Data Connector</strong> for Check Point Email Security (via Codeless Connector Framework) ingesting Security Events, Anti-Phishing Exceptions, Spam Exceptions, and Audit Logs data streams.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

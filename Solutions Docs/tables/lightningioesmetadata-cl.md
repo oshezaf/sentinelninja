@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Semperis *(basis: projected)* |
-| **Source Product** | Lightning *(basis: projected)* |
-| **Event Type** | Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

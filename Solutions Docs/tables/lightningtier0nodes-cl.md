@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Semperis *(basis: projected)* |
-| **Source Product** | Lightning *(basis: projected)* |
-| **Event Type** | Events |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

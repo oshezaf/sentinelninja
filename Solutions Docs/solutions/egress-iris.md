@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.egress.com](https://support.egress.com) |
 | **Categories** | Application |
-| **Source Vendor** | Egress *(basis: publisher)* |
-| **Source Product** | Iris |
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2024-03-11 |

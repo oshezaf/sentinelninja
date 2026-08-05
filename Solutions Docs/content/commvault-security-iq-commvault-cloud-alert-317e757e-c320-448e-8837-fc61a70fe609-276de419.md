@@ -18,7 +18,7 @@ This query identifies Alerts from Commvault Cloud.
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion, Impact |
 | **Techniques** | T1578, T1531 |
-| **Required Connectors** | [CommvaultSecurityIQ_CL](../connectors/commvaultsecurityiq-cl.md) |
+| **Required Connectors** | [CommvaultSecurityIQConnector](../connectors/commvaultsecurityiqconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/Analytic%20Rules/CommvaultSecurityIQ_Alert.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) | ✓ | ✓ | ✓ |
+| [`CommvaultAlertsCCF_CL`](../tables/commvaultalertsccf-cl.md) | ? | ✓ | ? |
 
 ---
 

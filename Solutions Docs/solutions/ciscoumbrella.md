@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Cloud Security,Security - Automation (SOAR) |
-| **Source Vendor** | Cisco *(basis: publisher)* |
-| **Source Product** | Umbrella, Cloud Security |
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-01 |
@@ -147,6 +145,9 @@ This solution includes **26 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                          |
 |-------------|--------------------------------|-------------------------------------------------------------|
+| 3.2.2       | 04-08-2026                     | Fixed broken **Deploy to Azure Gov** button link in **Data Connectors** and **Playbooks**. |
+| 3.2.1       | 27-07-2026                     | Updated Parser to set EventType for dnslogs, proxylogs, cloudfirewalllogs. |
+| 3.2.0       | 01-07-2026                     | Updated Cisco Umbrella CCF data connector as generally available (isPreview false). |
 | 3.1.0       | 22-05-2026                     | Added new CCF (Codeless Connector) for Cisco Umbrella with 10 new tables (DNS, WebTraffic, CloudFirewall, AdminAudit, DLP, FileEvent, IPS, RemoteAccessVPN, ZeroTrustAccess, ZeroTrustAccessFlow) and updated parser to union new tables. (Public Preview) |
 | 3.0.10      | 23-03-2026                     | Added null-byte sanitization for corrupted state manager timestamps in Data Connector to prevent crashes on corrupted Azure File Share markers. Added null-byte stripping in date formatting to handle corrupted date fields from csv file. |
 | 3.0.9       | 13-03-2026                     | Moved csv.field_size_limit to module level so all 12 CSV parsers are covered. Added csv.Error guardrail to prevent a single oversized row from stalling ingestion. Consolidated null-byte stripping into unpack_file() to prevent _csv.Error on embedded NUL characters across all parsers. |

@@ -12,13 +12,11 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | Microsoft |
+| **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Agent 365, Agent Identities |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-25 |
 | **Last Updated** | 2026-06-15 |
@@ -38,6 +36,8 @@ This solution provides **2 data connector(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.3       | 06-07-2026                     | Fixed the Microsoft Agent Identities data connector query parsing issue. |
+| 3.1.2       | 29-06-2026                     | Bumped the Microsoft Agent Identities data connector version so Content Hub applies the latest connector content on solution update. |
 | 3.1.1       | 08-06-2026                     | Restored the stable Agent 365 solution content ID to align installed packages with the Content Hub catalog. |
 | 3.1.0       | 21-05-2026                     | Added the **Microsoft Agent Identities** **Data Connector** in Public Preview. This version is not recommended due to an incorrect solution ID that prevents update detection in Content Hub; use version 3.1.1 or later. |
 | 3.0.1       | 13-05-2026                     | Renamed solution and connector from A365 Observability to Agent 365. |

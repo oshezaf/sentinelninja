@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Source Vendor** | Amazon *(basis: publisher)* |
-| **Source Product** | WAF |
 | **Version** | 3.0.10 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-26 |

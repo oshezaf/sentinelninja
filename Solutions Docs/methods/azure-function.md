@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **127** |
-| Active | 84 |
-| Deprecated 🚫 | 27 |
-| Unpublished ⚠️ | 16 |
+| Total Connectors | **129** |
+| Active | 83 |
+| Deprecated 🚫 | 29 |
+| Unpublished ⚠️ | 17 |
 
 ## Connectors Using This Method
 
@@ -49,22 +49,22 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Cohesity](../connectors/cohesitydataconnector.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
-| [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
+| [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [ESET Inspect](../connectors/esetinspect.md) ⚠️ 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
 | [ESET Protect Platform](../connectors/esetprotectplatform.md) | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | ExtraHop | 1 | [ExtraHop](../solutions/extrahop.md) |
-| [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
+| [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Fortinet | 1 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | Microsoft | 2 | [GitHub](../solutions/github.md) |
-| [Google SecOps Detection Alerts](../connectors/gsdetectionalerts.md) ⚠️ | Google | 1 | [GoogleSecOps](../solutions/googlesecops.md) |
+| [Google SecOps Detection Alerts](../connectors/gsdetectionalerts.md) | Google | 1 | [GoogleSecOps](../solutions/googlesecops.md) |
+| [Google Threat Intelligence Relevance System Alerts](../connectors/googlethreatintelligencerelevancesystemalertsapi.md) | Google | 1 | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
-| [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) ⚠️ 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
@@ -115,17 +115,17 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |
 | [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) ⚠️ 🔶 | TheHive Project | 1 | [TheHive](../solutions/thehive.md) |
-| [Transmit Security Connector](../connectors/transmitsecurity.md) 🔶 | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
-| [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | Trend Micro | 1 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
+| [Transmit Security Connector](../connectors/transmitsecurity.md) ⚠️ 🔶 | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
+| [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | Trend Micro | 2 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
-| [Varonis SaaS](../connectors/varonissaas.md) 🔶 | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) ⚠️ | VMware by Broadcom | 4 | [VMware SASE](../solutions/vmware-sase.md) |
 | [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md) | WithSecure | 1 | [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
-| [Wiz](../connectors/wiz.md) 🔶 | Wiz | 6 | [Wiz](../solutions/wiz.md) |
+| [Wiz](../connectors/wiz.md) ⚠️ 🔶 | Wiz | 6 | [Wiz](../solutions/wiz.md) |
+| [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md) | Wiz | 3 | [Wiz](../solutions/wiz.md) |
 | [Workplace from Facebook](../connectors/workplacefacebook.md) | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | [XBOW Security Platform (via Azure Function)](../connectors/xbowsecurityconnector.md) | XBOW | 3 | [XBOW](../solutions/xbow.md) |
 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶 | ZeroFox | 20 | [ZeroFox](../solutions/zerofox.md) |
@@ -145,6 +145,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) | Google | 1 | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Google | 22 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| 🚫 [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | 🚫 [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Lookout | 1 | [Lookout](../solutions/lookout.md) |
 | 🚫 [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | 🚫 [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | OneLogin | 3 | [OneLoginIAM](../solutions/oneloginiam.md) |
@@ -154,10 +155,11 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
 | 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | SentinelOne | 6 | [SentinelOne](../solutions/sentinelone.md) |
+| 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | SentinelOne | 7 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |
 | 🚫 [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | Sophos | 1 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
+| 🚫 [[Deprecated] Varonis SaaS](../connectors/varonissaas.md) | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | 🚫 [[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)](../connectors/vmwarecarbonblack.md) | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | 🚫 [[DEPRECATED] Zoom Reports](../connectors/zoom.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 | 🚫 [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Mimecast | 2 | [MimecastSEG](../solutions/mimecastseg.md) |

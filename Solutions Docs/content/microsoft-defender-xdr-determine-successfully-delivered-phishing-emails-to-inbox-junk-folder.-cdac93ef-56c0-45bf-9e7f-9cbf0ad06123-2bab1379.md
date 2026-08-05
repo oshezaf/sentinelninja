@@ -15,7 +15,7 @@ This query identifies threats which got successfully delivered to Inbox/Junk fol
 | **ID** | `cdac93ef-56c0-45bf-9e7f-9cbf0ad06123` |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1566 |
-| **Required Connectors** | [OfficeATP](../connectors/officeatp.md) |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/EmailDelivered-ToInbox.yaml) |
 
 ## Tables Used

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SentinelOne *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -24,26 +23,26 @@
 
 ## Schema (16 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Groups.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneGroups.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
-| CreatedAt | datetime | The timestamp (UTC) when the object was created. |
-| Creator | string | The name of the creator. |
-| CreatorId | string | The unique identifier of the creator. |
-| FilterId | string | The unique identifier of the filter. |
-| FilterName | string | The name of the filter applied. |
-| GroupType | string | The type of the object. |
-| Id | string | The unique identifier for the object. |
-| Inherits | string | Indicates whether the object inherits properties. |
-| IsDefault | string | Indicates whether this is the default setting. |
-| Name | string | The name of the object. |
-| Rank | real | The rank of the object. |
-| RegistrationToken | string | The token used for registration. |
-| SiteId | string | The unique identifier of the site. |
-| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
-| TotalAgents | string | The total number of agents. |
-| UpdatedAt | datetime | The timestamp (UTC) when the object was last updated. |
+| CreatedAt | datetime | Created at |
+| Creator | string | Creator |
+| CreatorId | string | Creator id |
+| FilterId | string | Filter id |
+| FilterName | string | Filter name |
+| GroupType | string | Group type |
+| Id | string | Id |
+| Inherits | string | Inherits |
+| IsDefault | string | Is default |
+| Name | string | Name |
+| Rank | real | Rank |
+| RegistrationToken | string | Registration token |
+| SiteId | string | Site id |
+| TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
+| TotalAgents | string | Total agents |
+| UpdatedAt | datetime | Updated at |
 
 ## Schema References
 

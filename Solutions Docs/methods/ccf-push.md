@@ -18,8 +18,8 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **41** |
-| Active | 39 |
+| Total Connectors | **46** |
+| Active | 44 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 2 |
 
@@ -29,30 +29,35 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) ⚠️ | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) ⚠️ | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [Darktrace ActiveAI Security Platform Connector](../connectors/darktraceactiveaisecurityplatform.md) | Darktrace | 6 | [Darktrace](../solutions/darktrace.md) |
 | [DataBahn](../connectors/databahnpush.md) | DataBahn | 3 | [Databahn](../solutions/databahn.md) |
 | [Flare Push Connector](../connectors/fireworkpush.md) | Flare Systems | 1 | [Flare](../solutions/flare.md) |
+| [Gambit Security Policy Issues (Push)](../connectors/gambitsecuritypush.md) | Gambit Security | 1 | [GambitSecurity](../solutions/gambitsecurity.md) |
 | [Gigamon AMX Connector](../connectors/gigamondefinition.md) | GigamonDefinition | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
 | [Halcyon Connector](../connectors/halcyonpush.md) | Halcyon | 1 | [Halcyon](../solutions/halcyon.md) |
+| [Halcyon Connector (v2)](../connectors/halcyonpushv2.md) | Halcyon | 2 | [Halcyon](../solutions/halcyon.md) |
 | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Jamf | 3 | [Jamf Protect](../solutions/jamf-protect.md) |
 | [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) | Keeper Security | 1 | [Keeper Security](../solutions/keeper-security.md) |
+| [Mimecast Security Events (via Codeless Connector Framework)](../connectors/mimecasteventsccfdefinition.md) ⚠️ | Obrela | 1 | [MimecastEvents-CCF](../solutions/mimecastevents-ccf.md) |
 | [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | Microsoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [NordStellar (Push)](../connectors/nordstellarpush.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | [Onapsis Defend Integration](../connectors/onapsis.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
+| [Orca Security Alerts (via Microsoft Entra ID)](../connectors/orcasecurityalertsccf.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
-| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | SAP SE | 8 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) ➕ | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | Synqly | 10 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
+| [Varonis SaaS (Push)](../connectors/varonissaasalertspush.md) 🔶 | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | Zero Networks | 4 | [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | Zimperium | 4 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | [Zscaler Internet Access Cloud NSS Audit Log Push Connector](../connectors/cloudnssauditlogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |

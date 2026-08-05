@@ -6,7 +6,7 @@
 
 ---
 
-This query identifies Device Registration from IP addresses identified as malicious by Okta ThreatInsight.
+This rule identifies successful Okta device registration events that originate from IP addresses also observed by Okta ThreatInsight as malicious or suspicious.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,7 +17,7 @@ This query identifies Device Registration from IP addresses identified as malici
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Persistence |
-| **Techniques** | T1098 |
+| **Techniques** | T1098.005 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Analytic%20Rules/DeviceRegistrationMaliciousIP.yaml) |
 

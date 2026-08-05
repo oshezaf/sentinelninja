@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `MicrosoftDefenderAdvancedThreatProtection` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Defender for Endpoint *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [template_MicrosoftDefenderAdvancedThreatProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftDefenderForEndpoint/Data%20Connectors/template_MicrosoftDefenderAdvancedThreatProtection.JSON) |

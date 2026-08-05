@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CorelightConnectorExporter` |
-| **Publisher / Vendor** | Corelight |
-| **Source Product** | Connector Exporter *(basis: title)* |
+| **Publisher** | Corelight |
 | **Used in Solutions** | [Corelight](../solutions/corelight.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [CorelightConnectorExporter.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Data%20Connectors/CorelightConnectorExporter.json) |

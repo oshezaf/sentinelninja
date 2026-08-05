@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **53** |
-| Active | 38 |
+| Active | 39 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 14 |
+| Unpublished ⚠️ | 13 |
 
 ## Connectors Using This Method
 
@@ -28,7 +28,7 @@ The collection method for these connectors could not be automatically determined
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
 | [AIShield](../connectors/boschaishield.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
-| [API Protection](../connectors/42crunchapiprotection.md) ⚠️ 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
 | [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
@@ -49,9 +49,9 @@ The collection method for these connectors could not be automatically determined
 | [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶 | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
-| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶 | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
+| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
-| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶 | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
+| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
@@ -61,7 +61,7 @@ The collection method for these connectors could not be automatically determined
 | [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
-| [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
+| [Orca Security Alerts](../connectors/orcasecurityalerts.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |

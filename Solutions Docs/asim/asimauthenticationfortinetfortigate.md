@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Fortigate |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationFortinetFortigate.md)) |
-| **Last Updated** | Mar 10, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationFortinetFortigate.md)) |
+| **Last Updated** | Jun 23, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationFortinetFortigate.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationFortinetFortigate.yaml) |
 

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Protection |
-| **Source Vendor** | ESET *(basis: publisher)* |
-| **Source Product** | Protect Platform |
 | **Version** | 3.2.0 |
 | **Author** | ESET |
 | **First Published** | 2024-10-29 |
@@ -45,17 +43,21 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
+- [ESET Connect Data Connector (via Codeless Connector Framework)](../connectors/esetconnectconnector.md)
 - [ESET Protect Platform](../connectors/esetprotectplatform.md)
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`ESETInspectV2_CL`](../tables/esetinspectv2-cl.md) | [ESET Connect Data Connector (via Codeless Connector Framework)](../connectors/esetconnectconnector.md) | - |
+| [`IntegrationTableIncidentsV2_CL`](../tables/integrationtableincidentsv2-cl.md) | [ESET Connect Data Connector (via Codeless Connector Framework)](../connectors/esetconnectconnector.md) | - |
 | [`IntegrationTableIncidents_CL`](../tables/integrationtableincidents-cl.md) | [ESET Protect Platform](../connectors/esetprotectplatform.md) | - |
+| [`IntegrationTableV2_CL`](../tables/integrationtablev2-cl.md) | [ESET Connect Data Connector (via Codeless Connector Framework)](../connectors/esetconnectconnector.md) | - |
 | [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | [ESET Protect Platform](../connectors/esetprotectplatform.md) | - |
 
 ## Content Items
@@ -70,12 +72,13 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETProtectPlatform](../parsers/esetprotectplatform.md) | - | [`IntegrationTable_CL`](../tables/integrationtable-cl.md) *(read)* |
+| [ESETProtectPlatform](../parsers/esetprotectplatform.md) | Parser for ESET Protect Platform detections. Normalizes data from both the legacy Azure Functions co... | [`IntegrationTableV2_CL`](../tables/integrationtablev2-cl.md) *(read)*<br>[`IntegrationTable_CL`](../tables/integrationtable-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                         |
 |-------------|--------------------------------|----------------------------------------------------------------------------|
+| 3.3.0       | 02-07-2026                     | Created a new CCF Connector for all the products of ESET Protect Platform and updated the **Parser** to normalize data from both the legacy Azure Functions connector (IntegrationTable_CL) and the new CCF connector (IntegrationTableV2_CL)  |
 | 3.1.1       | 25-04-2025                     | Add the location parameter to ARM template and update the email address.   |
 | 3.1.0       | 06-02-2025                     | Updated **Data Connector** FunctionApp code to work with old param and new |
 | 3.0.0       | 04-11-2024                     | Initial Solution Release                                                   |

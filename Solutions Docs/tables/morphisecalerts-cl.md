@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Morphisec *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

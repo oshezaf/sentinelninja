@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security,Cloud Provider |
-| **Source Vendor** | Amazon *(basis: name_pattern)* |
-| **Source Product** | VPC Flow |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-07-30 |

@@ -6,7 +6,7 @@
 
 ---
 
-On-demand playbook that fetches alert attachments and analysis report for a Sentinel incident, surfacing the results as an incident comment.
+On-demand playbook that fetches alert attachments and analysis report for a Microsoft Sentinel incident, surfacing the results as an incident comment.
 
 | Attribute | Value |
 |:----------|:------|

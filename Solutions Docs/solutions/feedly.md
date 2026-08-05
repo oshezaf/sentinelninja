@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedly.com/i/support/contactUs](https://feedly.com/i/support/contactUs) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Feedly *(basis: publisher)* |
 | **Version** | 3.0.4 |
 | **Author** | Feedly ml@feedly.com |
 | **First Published** | 2023-08-01 |

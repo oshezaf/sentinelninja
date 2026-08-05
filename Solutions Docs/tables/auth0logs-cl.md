@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Auth0 *(basis: projected)* |
-| **Event Type** | Events |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -22,34 +20,35 @@
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (22 columns)
+## Schema (23 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0%5CData%20Connectors%5CAuth0_CCP/table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| ActorUserId | string |
-| ActorUsername | string |
-| Audience | string |
-| ClientId | string |
-| ClientName | string |
-| Connection | string |
-| ConnectionId | string |
-| Description | string |
-| Details | dynamic |
-| event_date | datetime |
-| EventType | string |
-| HttpUserAgent | string |
-| IsMobile | bool |
-| LocationInfo | dynamic |
-| LogId | string |
-| Scope | string |
-| SrcHostname | string |
-| SrcIpAddr | string |
-| Strategy | string |
-| StrategyType | string |
-| TenantName | string |
-| TimeGenerated | datetime |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| ActorUserId | string | Identifier of the user involved in the event. |
+| ActorUsername | string | Name of the user involved in the event. |
+| Audience | string | API audience the event applies to. |
+| Auth0Domain | string | Auth0 host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
+| ClientId | string | Identifier of the application (client) that triggered the event. |
+| ClientName | string | Name of the application (client) that triggered the event. |
+| Connection | string | Name of the connection the event relates to. |
+| ConnectionId | string | Identifier of the connection the event relates to. |
+| Description | string | Description of this event. |
+| Details | dynamic | Additional useful details related to the event, in JSON format. |
+| event_date | datetime | Date and time when the event occurred (event-occurrence time). |
+| EventType | string | Type of event. |
+| HttpUserAgent | string | User agent that triggered the event. |
+| IsMobile | bool | Indicates whether the event originated from a mobile device. |
+| LocationInfo | dynamic | Geographical location information of the event source. |
+| LogId | string | Unique identifier of the log event. |
+| Scope | string | Scopes the event applies to. |
+| SrcHostname | string | Hostname the event applies to. |
+| SrcIpAddr | string | IP address of the log event source. |
+| Strategy | string | Name of the strategy involved in the event. |
+| StrategyType | string | Type of strategy involved in the event. |
+| TenantName | string | Name of the Auth0 tenant that produced the event. |
+| TimeGenerated | datetime | The time when the log entry was generated. |
 
 ## Schema References
 

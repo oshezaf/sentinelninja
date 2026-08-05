@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoUCS` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | UCS *(basis: title)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [Cisco UCS](../solutions/cisco-ucs.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Syslog_CiscoUCS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS/Data%20Connectors/Connector_Syslog_CiscoUCS.json) |

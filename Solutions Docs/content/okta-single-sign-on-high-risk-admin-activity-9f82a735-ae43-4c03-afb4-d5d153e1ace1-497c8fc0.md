@@ -6,7 +6,7 @@
 
 ---
 
-The Okta risk engine auto-assigns risk levels to each login attempt. This query identifies admin operations originating from events associated with high-risk profiles.
+The Okta risk engine auto-assigns risk levels to each login attempt. This rule identifies successful admin operations that correlate with successful high-risk Okta authentication or session start events.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ The Okta risk engine auto-assigns risk levels to each login attempt. This query 
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | Persistence |
-| **Techniques** | T1098 |
+| **Tactics** | Persistence, PrivilegeEscalation |
+| **Techniques** | T1098, T1078.004 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Analytic%20Rules/HighRiskAdminActivity.yaml) |
 

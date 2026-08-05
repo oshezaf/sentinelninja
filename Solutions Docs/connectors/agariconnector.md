@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AgariConnector` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Fortra Agari *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Agari](../solutions/agari.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Agari_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_ConnectorDefinition.json) |

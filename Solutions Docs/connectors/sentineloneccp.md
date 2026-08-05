@@ -12,7 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `SentinelOneCCP` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | SentinelOne *(basis: description_url)* |
 | **Used in Solutions** | [SentinelOne](../solutions/sentinelone.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_ccp/connectorDefinition.json) |

@@ -11,9 +11,6 @@ Reference for Event table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Source Vendor** | AutomatedLogic, Microsoft *(basis: projected)* |
-| **Source Product** | Exchange *(basis: projected)* |
-| **Event Type** | Audit, Events, Events |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -66,7 +63,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Event Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event)
 
-## Solutions (17)
+## Solutions (18)
 
 This table is used by the following solutions:
 
@@ -78,6 +75,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
@@ -101,7 +99,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (39)
+## Content Items Using This Table (40)
 
 ### Analytic Rules (18)
 
@@ -192,7 +190,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
 
-### Workbooks (9)
+### Workbooks (10)
 
 **In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):**
 
@@ -217,6 +215,12 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):** `EventID in "1,6"`<br>`EventLog == "MSExchange Management"`
 
@@ -295,10 +299,10 @@ References by type: 4 connectors, 32 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 2 | 1 | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`RenderedDescription has_any "Downloaded"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
-| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
 | `EventLog == "Application"` | 1 | - | - | - | **1** |
+| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
+| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |

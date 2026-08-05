@@ -11,9 +11,6 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Source Vendor** | Cyborg Security, Microsoft, Semperis *(basis: projected)* |
-| **Source Product** | Active-Directory Domain Controllers Security, Directory Services Protector, Exchange, HUNTER Hunt Packages, Windows *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -272,7 +269,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent)
 
-## Solutions (29)
+## Solutions (33)
 
 This table is used by the following solutions:
 
@@ -287,17 +284,21 @@ This table is used by the following solutions:
 - [FalconFriday](../solutions/falconfriday.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
+- [SAP LogServ](../solutions/sap-logserv.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -306,7 +307,7 @@ This table is used by the following solutions:
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
-## Connectors (6)
+## Connectors (7)
 
 This table is ingested by the following connectors:
 
@@ -315,15 +316,16 @@ This table is ingested by the following connectors:
 | [Cyborg Security HUNTER Hunt Packages](../connectors/cyborgsecurity-hunter.md) |  |
 | [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) |  |
 | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) |  |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) |  |
 | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
 | [Windows Security Events via AMA](../connectors/windowssecurityevents.md) |  |
 
 ---
 
-## Content Items Using This Table (145)
+## Content Items Using This Table (166)
 
-### Analytic Rules (50)
+### Analytic Rules (70)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -372,6 +374,30 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in SecurityEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-securityevents-140a2cb5-4b4a-485c-aab3-2415c24d37e6-27374577.md) |  |
 
+**In solution [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [PROD (TM001.1) - GROUP - Added to Group Outside the Object Tier Level](../content/microsoft-active-directory-tier-model-prod-tm001.1-group-added-to-group-outside-the-object-tier-level-b300c7f8-dc5e-4fc6-879b-63f0013358ce-6006006d.md) | `Activity has "modified"`<br>`EventData has "OperationType"`<br>`EventID == "5136"` |
+| [PROD (TM002.1) - OBJECT - Created or Deleted a Tier Level Object](../content/microsoft-active-directory-tier-model-prod-tm002.1-object-created-or-deleted-a-tier-level-object-b58adf25-fb44-4296-9b6c-0e6b97139dad-2795650c.md) | `EventID in "5137,5141"` |
+| [PROD (TM003.1) - OBJECT - Moved or Recovered a Tier Level Account](../content/microsoft-active-directory-tier-model-prod-tm003.1-object-moved-or-recovered-a-tier-level-account-1d858e12-777d-4156-b0af-b5ef410739e6-21ce2bb5.md) | `EventID in "5138,5139"` |
+| [PROD (TM004.1) - OBJECT - Enabled, Disabled, Unlocked, or Password Reset of a Tier Level Object](../content/microsoft-active-directory-tier-model-prod-tm004.1-object-enabled,-disabled,-unlocked,-or-password-reset-1da0cf44-c927-4b6f-9b43-91871b2391b3-c917af1c.md) | `EventData has "AttributeLDAPDisplayName"`<br>`EventData has "AttributeValue"`<br>`EventData has "OperationType"`<br>`EventID == "5136"` |
+| [PROD (TM005.1) - GPO - Linked, Unlinked, or Enforced at Tier Level OU](../content/microsoft-active-directory-tier-model-prod-tm005.1-gpo-linked,-unlinked,-or-enforced-at-tier-level-ou-02cf2172-0eb7-4a4a-bce7-7251cdd3e233-ba1eb9dc.md) | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM006.1) - ACL - Modified at Tier Level OU](../content/microsoft-active-directory-tier-model-prod-tm006.1-acl-modified-at-tier-level-ou-f3e2433b-6456-4009-a1cb-0d4eb3a36125-b432541c.md) | `Activity has "modified"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM007.1) - OU - Created or Deleted at Tier Level](../content/microsoft-active-directory-tier-model-prod-tm007.1-ou-created-or-deleted-at-tier-level-4e027b5f-fc4a-4de6-be24-3eb9324e2fc8-9888d4d6.md) | `EventID in "5137,5141"` |
+| [PROD (TM008.1) - GPO - Linked, Unlinked, or Enforced at Root of Domain](../content/microsoft-active-directory-tier-model-prod-tm008.1-gpo-linked,-unlinked,-or-enforced-at-root-of-domain-fe468726-b1dc-4e76-adad-3480de4a2c56-f94601bc.md) | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM009.1) - ACL - Modified at Root of the Domain](../content/microsoft-active-directory-tier-model-prod-tm009.1-acl-modified-at-root-of-the-domain-7437402c-800b-4cf3-90d9-0c1f12204375-1a4c6470.md) | `Activity has "modified"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM010.1) - BITLOCKER - Stored Bitlocker Recovery Key to Tier Level Computer Object](../content/microsoft-active-directory-tier-model-prod-tm010.1-bitlocker-stored-bitlocker-recovery-key-to-tier-level-eea9c640-afe0-4ce4-9a41-c409d4c2c924-1aa7bcc6.md) | `EventID == "5137"` |
+| [PROD (TM011.1) - LAPS - Tier Level Computer Object LAPS Password Expiration Time Set Manually](../content/microsoft-active-directory-tier-model-prod-tm011.1-laps-tier-level-computer-object-laps-password-expirat-daf2b9f7-dcf2-4b45-831a-d7142318c7e9-dc070dd3.md) | `AccountType == "User"`<br>`EventID == "5136"` |
+| [PROD (TM012.1) - GPO - Enforced Outside of Tier Model](../content/microsoft-active-directory-tier-model-prod-tm012.1-gpo-enforced-outside-of-tier-model-05846968-15cc-4309-bddc-eaa296f84af1-ddc937c8.md) | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM013.1) - OU - Block Inheritance was Enabled on an OU](../content/microsoft-active-directory-tier-model-prod-tm013.1-ou-block-inheritance-was-enabled-on-an-ou-17371300-904a-4af5-9550-cf57ee727bb7-7e50854e.md) | `Activity has "modified"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM014.1) - GPO - Linked, Unlinked, or Enforced at the AD Site Level](../content/microsoft-active-directory-tier-model-prod-tm014.1-gpo-linked,-unlinked,-or-enforced-at-the-ad-site-leve-38f2f6f4-2869-401c-8341-e3a5c11018a5-8c131a4d.md) | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM015.1) - ACL - Modified at KRBTGT or AdminSDHolder Object Level](../content/microsoft-active-directory-tier-model-prod-tm015.1-acl-modified-at-krbtgt-or-adminsdholder-object-level-a9f94bf1-856e-40ff-a176-24f967da1e27-38fd56fc.md) | `Activity has "modified"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` |
+| [PROD (TM016.1) - GROUP - Added to Well-Known or Tier Model Group](../content/microsoft-active-directory-tier-model-prod-tm016.1-group-added-to-well-known-or-tier-model-group-763fc00b-4971-43c2-9cd1-f12b58a542bd-e013fae3.md) | `EventID == "5136"` |
+| [PROD (TM017.1) - GROUP - Tier 0 Added to Allow RODC Password Replication Group](../content/microsoft-active-directory-tier-model-prod-tm017.1-group-tier-0-added-to-allow-rodc-password-replication-634a69b4-0e46-4349-8463-af1c8d191620-79a47382.md) | `Activity has "modified"`<br>`EventData has "OperationType"`<br>`EventData matchesregex "(?i)CN=Allowed RODC Password Replication Group,CN=Users"`<br>`EventID == "5136"` |
+| [PROD (TM018.1) - DOMAIN - Child Domain promoted within the Forest](../content/microsoft-active-directory-tier-model-prod-tm018.1-domain-child-domain-promoted-within-the-forest-ff1bec81-e241-44bf-98ed-c6e37805a2e3-72a39c20.md) | `EventData has "CN=Partitions,CN=Configuration"`<br>`EventID == "5137"` |
+| [PROD (TM019.1) - TRUST - A new AD Trust has been established](../content/microsoft-active-directory-tier-model-prod-tm019.1-trust-a-new-ad-trust-has-been-established-891315d2-e080-4ac8-af5a-50bae17f2d4d-e9ddae80.md) | `EventData has "CN=System"`<br>`EventID == "5137"` |
+
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 
 | Analytic Rule | Selection Criteria |
@@ -402,8 +428,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
-| [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
+| [TI Map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-92d02723.md) |  |
+| [TI Map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-5a340913.md) |  |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):** `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"`
 
@@ -440,7 +466,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 
-### Hunting Queries (73)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |  |
+
+### Hunting Queries (74)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -476,6 +508,12 @@ This table is ingested by the following connectors:
 | [Remote Scheduled Task Creation or Update using ATSVC Named Pipe](../content/endpoint-threat-protection-essentials-remote-scheduled-task-creation-or-update-using-atsvc-named-pipe-7aad876a-a6fe-4c11-879e-8b29d35ff739-f9a3a936.md) | `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` |
 | [Scheduled Task Creation or Update from User Writable Directory](../content/endpoint-threat-protection-essentials-scheduled-task-creation-or-update-from-user-writable-directory-0b827a49-427e-4721-b05e-b151a8af524e-f6c2b013.md) | `EventID in "4698,4702"` |
 | [Unicode Obfuscation in Command Line](../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `EventID == "4769"`
+
+| Hunting Query |
+|:-------------|
+| [Kerberoast burst followed by cloud sign-in](../content/hybrid-attack-cloud-&-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.md) |
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 
@@ -694,15 +732,19 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (85 criteria, 115 total references)
+## Selection Criteria Summary (97 criteria, 135 total references)
 
-References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventID == "4688"` | - | 15 | 1 | - | **16** |
 | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | 1 | 7 | - | 1 | **9** |
 | `EventID in "4624,4625"` | - | 5 | - | - | **5** |
+| `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` | - | 4 | - | - | **4** |
+| `Activity has "modified"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` | - | 4 | - | - | **4** |
+| `EventID in "5137,5141"` | - | 2 | - | - | **2** |
+| `EventID == "5136"` | - | 2 | - | - | **2** |
 | `AccountType == "User"`<br>`EventID == "4625"` | - | 2 | - | - | **2** |
 | `EventID in "4648,4673,4688,8002"` | - | 2 | - | - | **2** |
 | `EventID == "4740"` | - | 2 | - | - | **2** |
@@ -714,12 +756,19 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5059"` | - | 1 | - | - | **1** |
 | `EventID == "4768"` | - | 1 | - | - | **1** |
 | `EventID == "5143"` | - | 1 | - | - | **1** |
+| `Activity has "modified"`<br>`EventData has "OperationType"`<br>`EventID == "5136"` | - | 1 | - | - | **1** |
+| `EventID in "5138,5139"` | - | 1 | - | - | **1** |
+| `EventData has "AttributeLDAPDisplayName"`<br>`EventData has "AttributeValue"`<br>`EventData has "OperationType"`<br>`EventID == "5136"` | - | 1 | - | - | **1** |
+| `EventID == "5137"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID == "5136"` | - | 1 | - | - | **1** |
+| `Activity has "modified"`<br>`EventData has "OperationType"`<br>`EventData matchesregex "(?i)CN=Allowed RODC Password Replication Group,CN=Users"`<br>`EventID == "5136"` | - | 1 | - | - | **1** |
+| `EventData has "CN=Partitions,CN=Configuration"`<br>`EventID == "5137"` | - | 1 | - | - | **1** |
+| `EventData has "CN=System"`<br>`EventID == "5137"` | - | 1 | - | - | **1** |
 | `EventID == "20002"`<br>`EventSourceName == "Semperis-Operation-Log"` | - | 1 | - | - | **1** |
 | `EventID == "30001"`<br>`EventSourceName == "Semperis-DSP-Notifications"` | - | 1 | - | - | **1** |
 | `EventID == "20012"`<br>`EventSourceName == "Semperis-Operation-Log"` | - | 1 | - | - | **1** |
 | `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"` | - | 1 | - | - | **1** |
 | `EventID in "412,501,5156"` | - | 1 | - | - | **1** |
-| `EventID == "5136"` | - | 1 | - | - | **1** |
 | `Account !endswith "$"`<br>`EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"`<br>`LogonType == "3"`<br>`RelativeTargetName in "atsvc,svcctl"` | - | 1 | - | - | **1** |
 | `EventID in "4656,4663"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` | - | 1 | - | - | **1** |
@@ -744,6 +793,7 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` | - | 1 | - | - | **1** |
 | `EventID in "4698,4702"` | - | 1 | - | - | **1** |
 | `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4769"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`ParentProcessName endswith "wmiprvse.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4657"`<br>`ObjectValueName == "CrashDumpEnabled"` | - | 1 | - | - | **1** |
 | `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | - | 1 | - | - | **1** |
@@ -785,7 +835,7 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **108** | **5** | **1** | **115** |
+| **Total** | **1** | **128** | **5** | **1** | **135** |
 
 ### AccessMask
 
@@ -807,7 +857,7 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `User` | - | 10 | - | - | **10** |
+| `User` | - | 11 | - | - | **11** |
 | `!= Machine` | - | 3 | - | - | **3** |
 | `!= Computer` | - | 1 | - | - | **1** |
 
@@ -815,6 +865,7 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has modified` | - | 10 | - | - | **10** |
 | `has privileged` | - | 1 | - | - | **1** |
 | `has_any An account failed to log on` | - | 1 | - | - | **1** |
 
@@ -881,6 +932,20 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `50126` | - | 1 | - | - | **1** |
 | `500121` | - | 1 | - | - | **1** |
 
+### EventData
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has <Data Name=` | - | 8 | - | - | **8** |
+| `has ;0]` | - | 4 | - | - | **4** |
+| `has ;1]` | - | 4 | - | - | **4** |
+| `has ;2]` | - | 4 | - | - | **4** |
+| `has OperationType` | - | 3 | - | - | **3** |
+| `has AttributeLDAPDisplayName` | - | 1 | - | - | **1** |
+| `has AttributeValue` | - | 1 | - | - | **1** |
+| `has CN=Partitions,CN=Configuration` | - | 1 | - | - | **1** |
+| `has CN=System` | - | 1 | - | - | **1** |
+
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
@@ -888,12 +953,14 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `4688` | - | 42 | 1 | - | **43** |
 | `4624` | - | 18 | - | - | **18** |
 | `4625` | - | 15 | - | - | **15** |
+| `5136` | - | 14 | - | - | **14** |
 | `9208` | 1 | 8 | - | 1 | **10** |
 | `9211` | 1 | 8 | - | 1 | **10** |
 | `9212` | 1 | 8 | - | 1 | **10** |
 | `4663` | - | 4 | 2 | - | **6** |
 | `4657` | - | 5 | 1 | - | **6** |
 | `4648` | - | 5 | - | - | **5** |
+| `5137` | - | 5 | - | - | **5** |
 | `4720` | - | 5 | - | - | **5** |
 | `4656` | - | 4 | - | - | **4** |
 | `4732` | - | 4 | - | - | **4** |
@@ -912,12 +979,14 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `4647` | - | 2 | - | - | **2** |
 | `4675` | - | 2 | - | - | **2** |
 | `5143` | - | 2 | - | - | **2** |
+| `5141` | - | 2 | - | - | **2** |
 | `20002` | - | 2 | - | - | **2** |
 | `20012` | - | 2 | - | - | **2** |
 | `5156` | - | 2 | - | - | **2** |
 | `4699` | - | 2 | - | - | **2** |
 | `4700` | - | 2 | - | - | **2** |
 | `4701` | - | 2 | - | - | **2** |
+| `4769` | - | 2 | - | - | **2** |
 | `8002` | - | 2 | - | - | **2** |
 | `4740` | - | 2 | - | - | **2** |
 | `4754` | - | 2 | - | - | **2** |
@@ -928,10 +997,11 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `4907` | - | 2 | - | - | **2** |
 | `5058` | - | 1 | - | - | **1** |
 | `5059` | - | 1 | - | - | **1** |
+| `5138` | - | 1 | - | - | **1** |
+| `5139` | - | 1 | - | - | **1** |
 | `30001` | - | 1 | - | - | **1** |
 | `412` | - | 1 | - | - | **1** |
 | `501` | - | 1 | - | - | **1** |
-| `5136` | - | 1 | - | - | **1** |
 | `4697` | - | 1 | - | - | **1** |
 | `4662` | - | 1 | - | - | **1** |
 | `1` | - | 1 | - | - | **1** |
@@ -949,7 +1019,6 @@ References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other par
 | `4616` | - | 1 | - | - | **1** |
 | `2889` | - | 1 | - | - | **1** |
 | `3000` | - | 1 | - | - | **1** |
-| `4769` | - | 1 | - | - | **1** |
 | `4722` | - | 1 | - | - | **1** |
 | `4725` | - | 1 | - | - | **1** |
 | `7036` | - | 1 | - | - | **1** |

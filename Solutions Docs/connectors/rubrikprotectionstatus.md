@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `RubrikProtectionStatus` |
-| **Publisher / Vendor** | Rubrik, Inc |
-| **Source Product** | Security Cloud Protection Status *(basis: title)* |
+| **Publisher** | Rubrik, Inc |
 | **Used in Solutions** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [RubrikSecurityCloud_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_ConnectorDefinition.json) |

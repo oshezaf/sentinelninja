@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Abnormal Security *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -18,6 +17,8 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (24 columns)
 
@@ -71,6 +72,40 @@ This table is ingested by the following connectors:
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) |  |
 
 ---
+
+## Content Items Using This Table (3)
+
+### Analytic Rules (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - User-reported email judged malicious](../content/abnormalsecurity-abnormal-security-user-reported-email-judged-malicious-51c6ba55-fecd-4be0-9064-1aafc4d3e8d6-6ee04478.md) |  |
+
+### Hunting Queries (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - User-reported email campaigns](../content/abnormalsecurity-abnormal-security-user-reported-email-campaigns-71d3da2b-2cd4-46ee-8436-438e0a9e243a-c02788ad.md) |  |
+
+### Workbooks (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AbnormalSecurityOverview](../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AbnormalSecurityAbuseMailbox](../parsers/abnormalsecurityabusemailbox.md) | [AbnormalSecurity](../solutions/abnormalsecurity.md) |  |
 
 ---
 

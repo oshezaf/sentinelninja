@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Copilot |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft |
 | **First Published** | 2025-10-01 |

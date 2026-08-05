@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureStreamAnalytics_CCP` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure Stream Analytics *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Azure Stream Analytics](../solutions/azure-stream-analytics.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureStreamAnalytics_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Stream%20Analytics/Data%20Connectors/AzureStreamAnalytics_CCP.JSON) |

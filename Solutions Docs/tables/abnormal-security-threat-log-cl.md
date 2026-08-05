@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Abnormal Security *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -18,6 +17,8 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (53 columns)
 
@@ -100,6 +101,41 @@ This table is ingested by the following connectors:
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) |  |
 
 ---
+
+## Content Items Using This Table (4)
+
+### Analytic Rules (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - High-risk email attack detected](../content/abnormalsecurity-abnormal-security-high-risk-email-attack-detected-8effd19a-abab-433a-9184-ae67ac51e6d0-39f20acc.md) |  |
+
+### Hunting Queries (2)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - Most-targeted recipients](../content/abnormalsecurity-abnormal-security-most-targeted-recipients-9dbf1df0-03cd-4c5a-ba22-4f10b82ac90a-9cb3f041.md) |  |
+| [Abnormal Security - Threats still in the mailbox](../content/abnormalsecurity-abnormal-security-threats-still-in-the-mailbox-b341a0db-0925-40de-b03e-fe5b350b4a7a-3a7ba3eb.md) |  |
+
+### Workbooks (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AbnormalSecurityOverview](../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AbnormalSecurityThreatLog](../parsers/abnormalsecuritythreatlog.md) | [AbnormalSecurity](../solutions/abnormalsecurity.md) |  |
 
 ---
 

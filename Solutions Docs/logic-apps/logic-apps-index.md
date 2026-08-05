@@ -9,19 +9,19 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | Managed connectors | 96 | `Microsoft.Web/connections` resources backed by Microsoft-published APIs (`/providers/Microsoft.Web/locations/.../managedApis/...`). |
 | Custom connectors | 56 | Solution-specific APIs (`/customApis/...`). |
 | Built-in action types | 3 | Workflow actions of type `Http`, `Function`, `Workflow`, or `ApiManagement` that don't use a connection resource. |
-| Playbooks using Logic App connectors / built-ins | 879 | |
+| Playbooks using Logic App connectors / built-ins | 898 | |
 
 | Connector / Action | Type | Playbooks | Solutions | Microsoft Learn |
 |:-------------------|:-----|----------:|----------:|:----------------|
-| [`azuresentinel`](managed-azuresentinel.md) | Managed | 689 | 121 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
-| [`http`](builtin-http.md) | Built-in | 380 | 62 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
-| [`keyvault`](managed-keyvault.md) | Managed | 151 | 25 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
+| [`azuresentinel`](managed-azuresentinel.md) | Managed | 698 | 125 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
+| [`http`](builtin-http.md) | Built-in | 398 | 67 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
+| [`keyvault`](managed-keyvault.md) | Managed | 161 | 26 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 | [`azuremonitorlogs`](managed-azuremonitorlogs.md) | Managed | 107 | 27 | [Learn](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
 | [`teams`](managed-teams.md) | Managed | 104 | 33 | [Learn](https://learn.microsoft.com/en-us/connectors/teams/) |
-| [`azureloganalyticsdatacollector`](managed-azureloganalyticsdatacollector.md) | Managed | 101 | 20 | [Learn](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
+| [`azureloganalyticsdatacollector`](managed-azureloganalyticsdatacollector.md) | Managed | 103 | 20 | [Learn](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
 | [`office365`](managed-office365.md) | Managed | 71 | 19 | [Learn](https://learn.microsoft.com/en-us/connectors/office365/) |
 | [`workflow`](builtin-workflow.md) | Built-in | 63 | 12 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
-| [`function`](builtin-function.md) | Built-in | 54 | 14 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
+| [`function`](builtin-function.md) | Built-in | 55 | 15 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
 | [`microsoftsentinel`](managed-microsoftsentinel.md) | Managed | 34 | 12 | — |
 | [`azuread`](managed-azuread.md) | Managed | 29 | 5 | [Learn](https://learn.microsoft.com/en-us/connectors/azuread/) |
 | [`wdatp`](managed-wdatp.md) | Managed | 29 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/wdatp/) |

@@ -11,9 +11,6 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Source Vendor** | Cofense, Cognyte, Microsoft, Mimecast *(basis: projected)* |
-| **Source Product** | Intelligence, Intelligence for Microsoft, Premium Microsoft Defender Threat Intelligence, Triage *(basis: projected)* |
-| **Event Type** | IOCs |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -378,10 +375,10 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **4** | **1** | **0** | **0** | **5** |
 
@@ -389,12 +386,12 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
 | `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
+| `!startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense :` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ---

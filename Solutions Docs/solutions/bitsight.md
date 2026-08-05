@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.bitsight.com/customer-success-support](https://www.bitsight.com/customer-success-support) |
 | **Categories** | Security - Others |
-| **Source Vendor** | BitSight *(basis: publisher)* |
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |
@@ -124,7 +123,7 @@ This solution includes **20 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
-| 3.2.0       | 04-06-2026                     | Replaced legacy Function App connector with two **Codeless Connector Framework (CCF)** connectors: **BitSight Security Events** (Alerts, Breaches, Findings) and **BitSight Security Statistics** (CompanyDetails, CompanyRatingDetails, DiligenceHistoricalStatistics, DiligenceStatistics, ObservationStatistics, IndustrialStatistics, VulnerabilitiesFindingsSummary, FindingsSummary). Added parsers for **BitSightCompanyRatingDetails** and **BitSightVulnerabilitiesFindingsSummary**. |
+| 3.2.0       | 15-06-2026                     | Replaced legacy Function App connector with two **Codeless Connector Framework (CCF)** connectors: **BitSight Security Events** (Alerts, Breaches, Findings) and **BitSight Security Statistics** (CompanyDetails, CompanyRatingDetails, DiligenceHistoricalStatistics, DiligenceStatistics, ObservationStatistics, IndustrialStatistics, VulnerabilitiesFindingsSummary, FindingsSummary). Added parsers for **BitSightCompanyRatingDetails** and **BitSightVulnerabilitiesFindingsSummary**. Updated Function App UI page for Log Ingestion API. |
 | 3.1.1       | 22-04-2026                     | Updated **Solution Package** with the fix of solutionId |
 | 3.1.0       | 31-03-2026                     | Updated the python runtime version to 3.12. Added support for Log Ingestion API and updated parsers accordingly. <br> Reverted the solution id to fix the BitSight Solution publishing issue.                   |
 | 3.0.2       | 26-07-2024                     | Update **Analytic rules** for missing TTP                          |

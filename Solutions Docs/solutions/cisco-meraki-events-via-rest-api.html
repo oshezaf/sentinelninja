@@ -46,14 +46,6 @@
   <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Cisco <em>(basis: event)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Meraki</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.1</td>
 </tr>
@@ -101,10 +93,10 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></li>
+<li><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>3 table(s)</strong>:</p>
+<p>This solution uses <strong>7 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -116,17 +108,37 @@
 <tbody>
 <tr>
   <td><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
-  <td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
-  <td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
-  <td><a href="../connectors/ciscomerakimultirule.html">Cisco Meraki (using REST API)</a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/ciscomerakiairmarshalevents-cl.html"><code>CiscoMerakiAirMarshalEvents_CL</code></a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/ciscomerakinetworkclients-cl.html"><code>CiscoMerakiNetworkClients_CL</code></a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/ciscomerakiorganizationnetworks-cl.html"><code>CiscoMerakiOrganizationNetworks_CL</code></a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/ciscomerakiorganizations-cl.html"><code>CiscoMerakiOrganizations_CL</code></a></td>
+  <td><a href="../connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -141,6 +153,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>06-07-2026</td>
+  <td>Added four new data types to the <strong>CCP Connector</strong>: Organizations, Organization Networks, Network Clients, and Wireless Air Marshal Events.</td>
+</tr>
 <tr>
   <td>3.0.2</td>
   <td>10-01-2025</td>

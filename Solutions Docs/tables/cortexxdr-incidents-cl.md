@@ -77,13 +77,14 @@ Official Microsoft Learn documentation for field/column information:
 
 ---
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
 
-### Other Parsers (1)
+### Other Parsers (2)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [CortexXDR_Incidents_CL](../parsers/cortexxdr-incidents-cl.md) | [Cortex XDR](../solutions/cortex-xdr.md) |  |
+| [PaloAltoCortexXDR_Incidents](../parsers/paloaltocortexxdr-incidents.md) | [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md) |  |
 
 ---
 

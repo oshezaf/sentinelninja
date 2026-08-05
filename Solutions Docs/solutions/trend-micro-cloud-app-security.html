@@ -46,16 +46,8 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Trend Micro <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Cloud App Security</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">2.0.0</td>
+  <td style="text-align:left">3.1.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -77,9 +69,12 @@
 </table>
 <p>The <a href="https://www.trendmicro.com/en_be/business/products/user-protection/sps/email-and-collaboration/cloud-app-security.html">Trend Micro Cloud App Security</a> data connector provides the capability to retrieve security event logs of the services that Cloud App Security protects and more events into Microsoft Sentinel through the Log Retrieval API. Refer to API <a href="https://docs.trendmicro.com/enterprise/cloud-app-security-integration-api-online-help/supported-cloud-app-/log-retrieval-api/get-security-logs.aspx">documentation</a> for more information. The connector provides the ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
-<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
-<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions </a></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<p>b. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Log Ingestion API</a></p>
+<p>c. <a href="https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data Collection Rules (DCR)</a></p>
+<p>d. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>e. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions </a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -87,15 +82,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/trendmicrocas.html">Trend Micro Cloud App Security</a> 🔶</li>
+<li><a href="../connectors/trendmicrocasconnector.html">Trend Micro Cloud App Security (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,6 +101,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a></td>
+  <td><a href="../connectors/trendmicrocas.html">Trend Micro Cloud App Security</a>, <a href="../connectors/trendmicrocasconnector.html">Trend Micro Cloud App Security (via Codeless Connector Framework)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
 <tr>
   <td><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a> 🔶</td>
   <td><a href="../connectors/trendmicrocas.html">Trend Micro Cloud App Security</a></td>
@@ -116,40 +117,30 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>22 content item(s)</strong> (21 in solution, 1 discovered 🔍):</p>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Content Type</th>
-  <th style="text-align:right">Total</th>
-  <th style="text-align:right">In Solution</th>
-  <th style="text-align:right">Discovered</th>
+  <th style="text-align:left">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:right">10</td>
-  <td style="text-align:right">10</td>
-  <td style="text-align:right">-</td>
+  <td style="text-align:left">10</td>
 </tr>
 <tr>
   <td style="text-align:left">Hunting Queries</td>
-  <td style="text-align:right">10</td>
-  <td style="text-align:right">10</td>
-  <td style="text-align:right">-</td>
+  <td style="text-align:left">10</td>
 </tr>
 <tr>
   <td style="text-align:left">Workbooks</td>
-  <td style="text-align:right">1</td>
-  <td style="text-align:right">1</td>
-  <td style="text-align:right">-</td>
+  <td style="text-align:left">1</td>
 </tr>
 <tr>
   <td style="text-align:left">Parsers</td>
-  <td style="text-align:right">1</td>
-  <td style="text-align:right">0</td>
-  <td style="text-align:right">1</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -168,61 +159,61 @@
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violation-1ddeb8ad-cad9-4db4-b074-f9da003ca3ed-c2ad4a9b.html">Trend Micro CAS - DLP violation</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Exfiltration</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-infected-user-3649dfb8-a5ca-47dd-8965-cd2f633ca533-c328711b.html">Trend Micro CAS - Infected user</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-multiple-infected-users-65c2a6fe-ff7b-46b0-9278-61265f77f3bc-7781315a.html">Trend Micro CAS - Multiple infected users</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-possible-phishing-mail-9e7b3811-d743-479c-a296-635410562429-957a05f4.html">Trend Micro CAS - Possible phishing mail</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-infection-0bec3f9a-dbe9-4b4c-9ff6-498d64bbef90-22bb1ea1.html">Trend Micro CAS - Ransomware infection</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Impact</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-outbreak-38e043ce-a1fd-497b-8d4f-ce5ca2db90cd-6b0de8bc.html">Trend Micro CAS - Ransomware outbreak</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Impact</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-filename-52c4640a-1e2b-4155-b69e-e1869c9a57c9-66f09287.html">Trend Micro CAS - Suspicious filename</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-threat-detected-and-not-blocked-c8e2ad52-bd5f-4f74-a2f7-6c3ab8ba687a-436c2e90.html">Trend Micro CAS - Threat detected and not blocked</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-on-file-share-de54f817-f338-46bf-989b-4e016ea6b71b-1f79585f.html">Trend Micro CAS - Unexpected file on file share</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-via-mail-201fd2d1-9131-4b29-bace-ce5d19f3e4ee-d71c6070.html">Trend Micro CAS - Unexpected file via mail</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -239,52 +230,52 @@
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violations-001be88a-e98f-4e9a-ad30-62b9ad8222a5-4cb75935.html">Trend Micro CAS - DLP violations</a></td>
   <td style="text-align:left">Exfiltration</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-files-received-via-email-services-5b2dc14b-a55c-4002-8c2a-94f521baa0f4-954b84fb.html">Trend Micro CAS - Files received via email services</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-files-stored-on-cloud-fileshare-services-765f1769-cbe2-4c1a-a708-1769c2c48d79-0a1554e2.html">Trend Micro CAS - Files stored on cloud fileshare services</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-infected-files-received-via-email-8c386a11-7282-41ae-8181-2bfcafe20aad-c92c7774.html">Trend Micro CAS - Infected files received via email</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-threats-440f5440-e452-4b19-a8a4-5e39b5676657-a6a9f869.html">Trend Micro CAS - Ransomware threats</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-rare-files-received-via-email-services-08df251e-56c6-4e06-a41b-2c86344cb383-23c556a9.html">Trend Micro CAS - Rare files received via email services</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-risky-users-496a35f6-bc85-47f9-a48f-9a55d3c9530f-6a42d9e4.html">Trend Micro CAS - Risky users</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-security-risk-scan-threats-993ca829-5d6a-4432-b192-e5dcf7bfea0c-f8be4250.html">Trend Micro CAS - Security risk scan threats</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-files-on-sharepoint-dfd91afc-66f0-4661-90d7-82f9b5bf3d8f-d5aef5bb.html">Trend Micro CAS - Suspicious files on sharepoint</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trend-micro-cas-virtual-analyzer-threats-5ce1415f-cdea-4740-a481-73c1394248c2-7b62ce38.html">Trend Micro CAS - Virtual Analyzer threats</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -299,7 +290,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/trend-micro-cloud-app-security-trendmicrocas-43101d68.html">TrendMicroCAS</a></td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -314,15 +305,49 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../parsers/trendmicrocas.html">TrendMicroCAS</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/trendmicrocas.html">TrendMicroCAS</a></td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../tables/trendmicrocasv2-cl.html"><code>TrendMicroCASV2_CL</code></a> <em>(read)</em><br><a href="../tables/trendmicrocas-cl.html"><code>TrendMicroCAS_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
-</blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.1.2</td>
+  <td>23-07-2026</td>
+  <td>Updated CCF Data Connector graph queries pattern.</td>
+</tr>
+<tr>
+  <td>3.1.1</td>
+  <td>17-07-2026</td>
+  <td>Promoted CCF connector (<code>TrendMicroCASConnector</code>) to General Availability: set <code>isPreview</code> to <code>false</code> and removed Preview disclaimer from solution description.</td>
+</tr>
+<tr>
+  <td>3.1.0</td>
+  <td>02-07-2026</td>
+  <td>Updated Underlying Microsoft Technologies list in the solution description to include Codeless Connector Framework (CCF), Log Ingestion API, and Data Collection Rules (DCR) for the CCF data connector.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>29-05-2026</td>
+  <td>Added dual-schema parser support for CLv1 (<code>TrendMicroCAS_CL</code>) and CLv2 (<code>TrendMicroCASV2_CL</code>) data, introduced Codeless Connector Framework (CCF) <strong>Data Connector</strong> alongside the legacy Azure Function connector.</td>
+</tr>
+<tr>
+  <td>2.0.0</td>
+  <td>23-08-2023</td>
+  <td>Initial release.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

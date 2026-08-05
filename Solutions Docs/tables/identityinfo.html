@@ -362,7 +362,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo">IdentityInfo Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (18)</h2>
+<h2 id="solutions">Solutions (19)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/azure-activity.html">Azure Activity</a></li>
@@ -371,6 +371,7 @@
 <li><a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
@@ -385,7 +386,7 @@
 <li><a href="../solutions/edcrule.html">eDCRule</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (35)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (52)</h2>
 <h3 id="analytic-rules">Analytic Rules (13)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
@@ -516,7 +517,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (14)</h3>
+<h3 id="hunting-queries">Hunting Queries (30)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -579,6 +580,37 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-aad-connect-host-remote-admin-followed-by-entra-privilege-operation-c9b4347a-e5cf-4ca9-a58d-a9822c82467f-22b6048d.html">AAD Connect host remote admin followed by Entra privilege operation</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-entra-hybrid-user-sign-in-followed-by-on-prem-lateral-movement-638446a2-8342-43dd-ae70-3308a3319f6f-1d8f481c.html">Entra hybrid user sign-in followed by on-prem lateral movement</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.html">Kerberoast burst followed by cloud sign-in</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rdp-to-hybrid-joined-device-followed-by-entra-access-9f776b5c-d9a6-4d95-8794-5cfec9f9d22d-24505083.html">RDP to hybrid joined device followed by Entra access</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-wmi-or-remote-admin-execution-on-hybrid-device-followed-by-cloud-sign-in-638d7a85-0c62-4f9d-9a90-937a7c565e1b-0d54206f.html">WMI or remote admin execution on hybrid device followed by cloud sign-in</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
 <table>
 <thead>
@@ -632,12 +664,56 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-hard-coded-credentials-in-tools-or-configuration-fdc8a7ec-586d-4021-a78a-d27544986178-72f83c28.html">AI Agents - Hard-coded credentials in Tools or Configuration</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-instructions-changed-on-previously-published-agent-662eae7f-494f-41a8-bfef-23dd80361795-0e3ddc5d.html">AI Agents - Instructions changed on previously published agent</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-mcp-tool-configured-a4e48491-6ed6-4064-bac2-385ef0e41afe-23c69432.html">AI Agents - MCP Tool Configured</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-missing-tools-in-instructions-4bfbe654-d961-4712-b2a3-f1fd7eaa9da3-521dd75d.html">AI Agents - Missing Tools in Instructions</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-newly-observed-mcp-server-on-existing-agent-d6ab015a-0a76-47f4-959f-54f49edff3f3-e81d92fe.html">AI Agents - Newly observed MCP server on existing agent</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-organization-wide-shared-8a53cf8e-04b1-4de6-95f2-916cc7c2b805-ad09cc30.html">AI Agents - Organization-wide Shared</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-47ea3b0e-bedd-4fde-bda9-86aa76684a9b-ab0c6f59.html">AI Agents - Orphaned Agents with Disabled Owners</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-owner-added-to-mcp-enabled-agent-c35b5a60-71ee-448c-935d-f60f4a4c7f2b-e01a6f5e.html">AI Agents - Owner added to MCP-enabled agent</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-published-agents-with-short-instructions-2f1f88de-d79f-44bf-96d0-52fd9cbf49c4-ffe6a11f.html">AI Agents - Published Agents with Short Instructions</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-published-agents-without-instructions-d51077dc-2a79-45e2-a036-503d74c85111-be5d96d1.html">AI Agents - Published Agents without Instructions</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-sharing-expanded-to-organization-wide-dbdba9cc-d7a0-434d-9c3d-82d2203a79fd-db1de9a8.html">AI Agents - Sharing expanded to organization-wide</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.html">User not covered under display name impersonation</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (8)</h3>
+<h3 id="workbooks">Workbooks (9)</h3>
 <p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
 <table>
 <thead>
@@ -679,6 +755,21 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-hybridattack-cloud&amp;identity-847f4a4f.html">HybridAttack-Cloud&amp;Identity</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

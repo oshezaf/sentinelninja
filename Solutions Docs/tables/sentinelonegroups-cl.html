@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SentinelOne <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -57,7 +53,7 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (16 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Groups.json">Connector definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneGroups.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -70,82 +66,82 @@
 <tr>
   <td style="text-align:left">CreatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was created.</td>
+  <td style="text-align:left">Created at</td>
 </tr>
 <tr>
   <td style="text-align:left">Creator</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the creator.</td>
+  <td style="text-align:left">Creator</td>
 </tr>
 <tr>
   <td style="text-align:left">CreatorId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier of the creator.</td>
+  <td style="text-align:left">Creator id</td>
 </tr>
 <tr>
   <td style="text-align:left">FilterId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier of the filter.</td>
+  <td style="text-align:left">Filter id</td>
 </tr>
 <tr>
   <td style="text-align:left">FilterName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the filter applied.</td>
+  <td style="text-align:left">Filter name</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of the object.</td>
+  <td style="text-align:left">Group type</td>
 </tr>
 <tr>
   <td style="text-align:left">Id</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the object.</td>
+  <td style="text-align:left">Id</td>
 </tr>
 <tr>
   <td style="text-align:left">Inherits</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates whether the object inherits properties.</td>
+  <td style="text-align:left">Inherits</td>
 </tr>
 <tr>
   <td style="text-align:left">IsDefault</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates whether this is the default setting.</td>
+  <td style="text-align:left">Is default</td>
 </tr>
 <tr>
   <td style="text-align:left">Name</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the object.</td>
+  <td style="text-align:left">Name</td>
 </tr>
 <tr>
   <td style="text-align:left">Rank</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The rank of the object.</td>
+  <td style="text-align:left">Rank</td>
 </tr>
 <tr>
   <td style="text-align:left">RegistrationToken</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The token used for registration.</td>
+  <td style="text-align:left">Registration token</td>
 </tr>
 <tr>
   <td style="text-align:left">SiteId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier of the site.</td>
+  <td style="text-align:left">Site id</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+  <td style="text-align:left">The timestamp (in UTC) when the log entry was generated.</td>
 </tr>
 <tr>
   <td style="text-align:left">TotalAgents</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The total number of agents.</td>
+  <td style="text-align:left">Total agents</td>
 </tr>
 <tr>
   <td style="text-align:left">UpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was last updated.</td>
+  <td style="text-align:left">Updated at</td>
 </tr>
 </tbody>
 </table>

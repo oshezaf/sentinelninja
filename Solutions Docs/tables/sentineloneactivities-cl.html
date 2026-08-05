@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SentinelOne <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -57,7 +53,7 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (23 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Activities.json">Connector definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneActivities.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -70,117 +66,117 @@
 <tr>
   <td style="text-align:left">AccountId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the account.</td>
+  <td style="text-align:left">Account id</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the account associated with the event.</td>
+  <td style="text-align:left">Account name</td>
 </tr>
 <tr>
   <td style="text-align:left">ActivityType</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The type of activity represented by an integer.</td>
+  <td style="text-align:left">Activity type</td>
 </tr>
 <tr>
   <td style="text-align:left">ActivityUuid</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The UUID of the activity associated with the event.</td>
+  <td style="text-align:left">Activity uuid</td>
 </tr>
 <tr>
   <td style="text-align:left">AgentId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the agent.</td>
+  <td style="text-align:left">Agent id</td>
 </tr>
 <tr>
   <td style="text-align:left">AgentUpdatedVersion</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the agent that was updated.</td>
+  <td style="text-align:left">Agent updated version</td>
 </tr>
 <tr>
   <td style="text-align:left">Comments</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Any comments associated with the event.</td>
+  <td style="text-align:left">Comments</td>
 </tr>
 <tr>
   <td style="text-align:left">CreatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the record was created.</td>
+  <td style="text-align:left">Created at</td>
 </tr>
 <tr>
   <td style="text-align:left">Data</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Activity metadata.</td>
+  <td style="text-align:left">Data</td>
 </tr>
 <tr>
   <td style="text-align:left">Description</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The description of the event.</td>
+  <td style="text-align:left">Description</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the group.</td>
+  <td style="text-align:left">Group id</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the group associated with the event.</td>
+  <td style="text-align:left">Group name</td>
 </tr>
 <tr>
   <td style="text-align:left">Hash</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The hash associated with the event.</td>
+  <td style="text-align:left">Hash</td>
 </tr>
 <tr>
   <td style="text-align:left">Id</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the record.</td>
+  <td style="text-align:left">Id</td>
 </tr>
 <tr>
   <td style="text-align:left">OsFamily</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating system family, such as macOS.</td>
+  <td style="text-align:left">Os family</td>
 </tr>
 <tr>
   <td style="text-align:left">PrimaryDescription</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The primary description of the event.</td>
+  <td style="text-align:left">Primary description</td>
 </tr>
 <tr>
   <td style="text-align:left">SecondaryDescription</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The secondary description of the event.</td>
+  <td style="text-align:left">Secondary description</td>
 </tr>
 <tr>
   <td style="text-align:left">SiteId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the site.</td>
+  <td style="text-align:left">Site id</td>
 </tr>
 <tr>
   <td style="text-align:left">SiteName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the site associated with the event.</td>
+  <td style="text-align:left">Site name</td>
 </tr>
 <tr>
   <td style="text-align:left">ThreatId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the threat.</td>
+  <td style="text-align:left">Threat id</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+  <td style="text-align:left">The timestamp (in UTC) when the log entry was generated.</td>
 </tr>
 <tr>
   <td style="text-align:left">UpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the record was last updated.</td>
+  <td style="text-align:left">Updated at</td>
 </tr>
 <tr>
   <td style="text-align:left">UserId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the user.</td>
+  <td style="text-align:left">User id</td>
 </tr>
 </tbody>
 </table>

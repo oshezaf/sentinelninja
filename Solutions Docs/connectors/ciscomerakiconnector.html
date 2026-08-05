@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cisco Meraki Events using REST API via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cisco-meraki-events-using-rest-api">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>CiscoMerakiConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API/Data%20Connectors/CiscoMerakiMultiRule_ccp/CiscoMeraki_ConnectorDefinition.json">CiscoMeraki_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API/Data%20Connectors/CiscoMerakiMultiRule_ccp/CiscoMeraki_dcr.json">CiscoMeraki_dcr.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API/Data%20Connectors/CiscoMerakiMultiRule_ccp/CiscoMeraki_PollerConfig.json">CiscoMeraki_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code>, <code>Nested</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://aka.ms/ciscomeraki">Cisco Meraki</a> connector allows you to easily connect your Cisco Meraki organization events (Security events, Configuration Changes and API Requests) to Microsoft Sentinel. The data connector uses the <a href="https://developer.cisco.com/meraki/api-v1/#!get-organization-appliance-security-events">Cisco Meraki REST API</a> to fetch logs and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> that parses the received data and ingests into ASIM and custom tables in your Log Analytics workspace. This data connector benefits from capabilities such as DCR based ingestion-time filtering, data normalization.</p>
+<p>In addition to the ASIM-normalized events, this connector also ingests Cisco Meraki Dashboard inventory and wireless security data into custom tables - Organizations, Network Clients, Organization Networks, and wireless Air Marshal (rogue access point) events.</p>
+<p><strong>Supported ASIM schema:</strong></p>
+<ol>
+<li><p>Network Session</p>
+</li>
+<li><p>Web Session</p>
+</li>
+<li><p>Audit Event</p>
+</li>
+</ol>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventType == &quot;Notable&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/ciscomerakiairmarshalevents-cl.html"><code>CiscoMerakiAirMarshalEvents_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/ciscomerakinetworkclients-cl.html"><code>CiscoMerakiNetworkClients_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/ciscomerakiorganizationnetworks-cl.html"><code>CiscoMerakiOrganizationNetworks_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/ciscomerakiorganizations-cl.html"><code>CiscoMerakiOrganizations_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Configuration steps for the Cisco Meraki Dashboard API</strong></p>
+<p>Follow the instructions below to obtain your Cisco Meraki API credentials.</p>
+<h4 id="1-sign-in-to-meraki-dashboard">1. Sign in to Meraki Dashboard</h4>
+<p>Navigate to <a href="https://dashboard.meraki.com">Cisco Meraki Dashboard</a> and sign in with your administrator account.</p>
+<h4 id="2-generate-api-key">2. Generate API Key</h4>
+<ol>
+<li>Navigate to <strong>Organization &gt; API &amp; Webhooks</strong> from the left navigation menu</li>
+<li>Select <strong>API keys and access</strong> from the top tabs</li>
+<li>Click <strong>Generate new API key</strong> or use an existing one</li>
+<li>Copy the API key and store it securely (it will only be shown once)</li>
+</ol>
+<h4 id="3-retrieve-organization-id">3. Retrieve Organization ID</h4>
+<ol>
+<li>While logged into the Meraki Dashboard, look at the URL in your browser</li>
+<li>The Organization ID appears in the dashboard URL path as <code>dashboard.meraki.com/o/&lt;organizationId&gt;/...</code></li>
+<li>Copy the Organization ID for use below</li>
+</ol>
+<h4 id="4-api-access-requirements">4. API Access Requirements</h4>
+<ul>
+<li>The API key must have <strong>Read</strong> access to:<ul>
+<li>Organization settings</li>
+<li>Network settings</li>
+<li>Wireless settings</li>
+</ul>
+</li>
+<li>Rate limit: 10 requests per second per organization</li>
+<li>Maximum lookback period: 31 days</li>
+</ul>
+<p><strong>2. Connect Cisco Meraki organizations to Microsoft Sentinel</strong></p>
+<p>This connector supports multi-tenant ingestion. Add one connection per Cisco Meraki organization; each connection ingests events for that organization in parallel. Use the grid below to review existing connections or add a new one.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Organization Id</strong></li>
+<li><strong>Data Type</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Connect a Cisco Meraki organization</strong></p>
+<p><em>Cisco Meraki</em></p>
+<p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<ul>
+<li><strong>API Base URL</strong> (required): https://api.meraki.com/api/v1</li>
+<li><strong>Organization ID</strong> (required): Your Cisco Meraki Organization ID</li>
+<li><strong>API Key</strong> (required): Your Cisco Meraki API Key</li>
+<li><strong>Data Types</strong> (required): Select from available options<ul>
+<li>Organizations</li>
+<li>Organization Networks</li>
+<li>Network Clients</li>
+<li>Air Marshal Events</li>
+<li>API Requests (ASIM Web Session)</li>
+<li>... and 2 more options</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

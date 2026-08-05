@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureActiveDirectory` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Entra ID *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [template_AzureActiveDirectory.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Data%20Connectors/template_AzureActiveDirectory.JSON) |

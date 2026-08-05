@@ -12,8 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `SAPLogServ` |
 | **Publisher** | SAP SE |
-| **Source Vendor** | SAP *(basis: override)* |
-| **Source Product** | LogServ *(basis: title)* |
 | **Used in Solutions** | [SAP LogServ](../solutions/sap-logserv.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SAPLogServ.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ/Data%20Connectors/SAPLogServ.json) |
@@ -31,13 +29,24 @@ Near Realtime Log Collection: With ability to integrate into Microsoft Sentinel 
 
 LogServ complements the existing SAP application layer threat monitoring and detections in Microsoft Sentinel with the log types owned by SAP ECS as the system provider. This includes logs like: SAP Security Audit Log (AS ABAP), HANA database, AS JAVA, ICM, SAP Web Dispatcher, SAP Cloud Connector, OS, SAP Gateway, 3rd party Database, Network, DNS, Proxy, Firewall
 
+
+
+**ASIM-Enabled Routing:** Standard log formats (Linux/Syslog, Windows OS, DNS, network, web access) are automatically routed to dedicated Microsoft ASIM-normalized tables via DCR data flow branching, enabling reuse of existing detections and partner analytics. SAP Security Audit Log (AS ABAP) is routed to the Microsoft standard **ABAPAuditLog** table. SAP-specific logs remain in the SAPLogServ_CL custom table.
+
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | ✓ | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) |  | ✓ | ✓ | ✓ |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | ✓ | ✓ | ✓ |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ? |
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) |  | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `CollectorHostName == "SAPLogServ"` | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `Provider startswith "Microsoft"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

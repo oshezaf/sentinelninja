@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Source Vendor** | CrowdStrike, Amazon *(basis: mixed)* |
-| **Source Product** | Falcon Adversary Intelligence, Falcon Endpoint Protection, Falcon Data Replicator |
 | **Version** | 3.3.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
@@ -52,8 +50,8 @@ This solution provides **4 data connector(s)** (plus 2 discovered⚠️):
 - [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md)
 - [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md) ⚠️
 - [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md) ⚠️
-- [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md)
-- [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md)
+- [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md)
+- [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md)
 
 Connectors from dependency solutions:
 
@@ -68,35 +66,35 @@ This solution uses **30 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
+| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency), [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md), [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md) | Analytics, Workbooks |
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md), [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_DNS_Events_CL`](../tables/crowdstrike-dns-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_File_Events_CL`](../tables/crowdstrike-file-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_Network_Events_CL`](../tables/crowdstrike-network-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_Process_Events_CL`](../tables/crowdstrike-process-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_Registry_Events_CL`](../tables/crowdstrike-registry-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
-| [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md), [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`CrowdStrike_User_Events_CL`](../tables/crowdstrike-user-events-cl.md) | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md), [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_DNS_Events_CL`](../tables/crowdstrike-dns-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_File_Events_CL`](../tables/crowdstrike-file-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Network_Events_CL`](../tables/crowdstrike-network-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Process_Events_CL`](../tables/crowdstrike-process-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Registry_Events_CL`](../tables/crowdstrike-registry-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md), [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
+| [`CrowdStrike_User_Events_CL`](../tables/crowdstrike-user-events-cl.md) | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | - |
 | [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | - |
 
 ### Internal Tables
@@ -122,8 +120,8 @@ This solution includes **10 content item(s)** (9 in solution, 1 discovered 🔍)
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | Execution, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | Impact, DefenseEvasion | - |
+| [Common Event Format (CEF) via AMA - Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-common-event-format-cef-via-ama-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-2c942313.md) | High | Execution, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Common Event Format (CEF) via AMA - Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-common-event-format-cef-via-ama-critical-or-high-severity-detecti-4465ebde-b381-45f7-ad08-7d818070a11c-f81cc940.md) | High | Impact, DefenseEvasion | - |
 
 ### Workbooks
 
@@ -247,6 +245,9 @@ Before configuring the Microsoft Sentinel connector:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.3.9       | 24-07-2026                     | Updated titles for both **CrowdStrike Falcon Data Replicator** connectors |
+| 3.3.8       | 24-07-2026                     | Updated **CrowdStrike API Data Connector** polling to use updated time instead of created time |
+| 3.3.7       | 13-07-2026                     | Updated **CrowdStrike API Data Connector** UI labels |
 | 3.3.6       | 28-05-2026                     | Added support of multiple domains to **Crowdstrike API Data Connector** |
 | 3.3.5       | 20-05-2026                     | Updated **Analytic Rules** (v1.0.5): improved descriptions, added MITRE ATT&CK tactics, and optimized KQL queries. Updated **Workbook** to remove hardcoded resource IDs. Added non-analytics tier queries to *CrowdStrike Falcon Data Replicator (AWS S3)* **Data Connector** to support Basic/Auxiliary plan tables (Usage-based fallback, 14h window). |
 | 3.3.4       | 30-04-2026                     | remove deprecated tag. CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) is not deprecated |

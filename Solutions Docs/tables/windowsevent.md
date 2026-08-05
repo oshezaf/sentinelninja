@@ -11,9 +11,6 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Windows Forwarded *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -70,7 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [WindowsEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent)
 
-## Solutions (9)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -79,24 +76,27 @@ This table is used by the following solutions:
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
+- [SAP LogServ](../solutions/sap-logserv.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
 - [Windows Security Events](../solutions/windows-security-events.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | `Provider startswith "Microsoft"` |
 | [Windows Forwarded Events](../connectors/windowsforwardedevents.md) |  |
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (24)
 
-### Analytic Rules (13)
+### Analytic Rules (14)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -136,8 +136,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
-| [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
+| [TI Map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-92d02723.md) |  |
+| [TI Map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-5a340913.md) |  |
 
 **In solution [Windows Forwarded Events](../solutions/windows-forwarded-events.md):**
 
@@ -145,6 +145,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Caramel Tsunami Actor IOC - July 2021](../content/windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md) | `EventData has_any "reg add"`<br>`EventID == "4688"` |
 | [Chia_Crypto_Mining IOC - June 2021](../content/windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | `EventID == "4688"` |
+
+**Standalone Content:** `EventID == "4688"`
+
+| Analytic Rule |
+|:-------------|
+| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |
 
 ### Hunting Queries (10)
 
@@ -204,14 +210,15 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
 
-## Selection Criteria Summary (17 criteria, 19 total references)
+## Selection Criteria Summary (18 criteria, 21 total references)
 
-References by type: 0 connectors, 7 content items, 12 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 8 content items, 12 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 1 | 1 | - | **2** |
+| `EventID == "4688"` | - | 2 | 1 | - | **3** |
 | `EventID in "12,13,4657"` | - | 2 | - | - | **2** |
+| `Provider startswith "Microsoft"` | 1 | - | - | - | **1** |
 | `EventID == "1102"`<br>`Provider == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
 | `EventData has_any "reg add"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
 | `EventID in "4688,87"` | - | 1 | - | - | **1** |
@@ -227,7 +234,7 @@ References by type: 0 connectors, 7 content items, 12 ASIM parsers, 0 other pars
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **7** | **12** | **0** | **19** |
+| **Total** | **1** | **8** | **12** | **0** | **21** |
 
 ### EventData
 
@@ -239,7 +246,7 @@ References by type: 0 connectors, 7 content items, 12 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 4 | 1 | - | **5** |
+| `4688` | - | 5 | 1 | - | **6** |
 | `12` | - | 2 | 1 | - | **3** |
 | `13` | - | 2 | 1 | - | **3** |
 | `4657` | - | 2 | 1 | - | **3** |
@@ -267,6 +274,7 @@ References by type: 0 connectors, 7 content items, 12 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Microsoft-Windows-Sysmon` | - | - | 6 | - | **6** |
 | `Microsoft-Windows-Eventlog` | - | 1 | 1 | - | **2** |
+| `startswith Microsoft` | 1 | - | - | - | **1** |
 
 ---
 

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ NetskopeAlertEvents &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netskopealertevents">⚠️ NetskopeAlertEvents</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="NetskopeAlertEvents Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Netskope</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.netskope.com/services#support">https://www.netskope.com/services#support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Cloud Security,Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Netskope</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-06-17</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-06-17</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeAlertEvents">NetskopeAlertEvents</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Netskope Alerts &amp; Events solution enables streaming of alert and event logs from Netskope to Microsoft Sentinel via Azure Blob Storage and Event Grid. It provides visibility into DLP incidents, malware and threat detections, policy violations, anomalous behavior, and cloud application activity across the Netskope Security Cloud.</p>
+<p><strong>Included Content:</strong></p>
+<ul>
+<li>1 Data Connector (CCF-based Blob Storage connector)</li>
+<li>1 Workbook (Alerts &amp; Events Dashboard)</li>
+<li>3 Analytics Rules</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/netskopealerteventsconnector.html">Netskope Alerts &amp; Events (via Log Streaming)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a></td>
+  <td><a href="../connectors/netskopealerteventsconnector.html">Netskope Alerts &amp; Events (via Log Streaming)</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/netskopealertevents-netskope-dlp-incident-spike-c3f8e4d6-0d57-4a3b-9e2c-4f6a8b0d3e52-1e2b0092.html">Netskope - DLP Incident Spike</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Exfiltration, Collection</td>
+  <td style="text-align:left"><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netskopealertevents-netskope-high-severity-alert-a1f6c2d4-8b35-4e19-9c7a-2d4e6f8a1b30-dd52ea1e.html">Netskope - High Severity Alert</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netskopealertevents-netskope-suspicious-application-activity-low-confidence-risky-app-b2e7d3c5-9c46-4f2a-8d1b-3e5f7a9c2d41-f7dd180b.html">Netskope - Suspicious Application Activity (Low Confidence / Risky App)</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Exfiltration, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/netskopealertevents-netskopealertevents-workbook-9d0c49b9.html">NetskopeAlertEvents_Workbook</a></td>
+  <td style="text-align:left"><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netskopealertevents.html">NetskopeAlertEvents</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netskopealertevents-cl.html"><code>NetskopeAlertEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeAlertEvents/README.md">NetskopeAlertEvents/README.md</a></em></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>The <strong>Netskope Alerts &amp; Events</strong> solution streams alert and event logs from the
+Netskope Security Cloud into Microsoft Sentinel using <strong>Netskope Log Streaming (NLS)</strong>.
+Logs are delivered to an Azure Blob Storage container as <strong>gzip-compressed,
+positional CSV</strong> and ingested by Sentinel's <strong>Codeless Connector Framework (CCF)</strong>
+Blob Storage connector into the custom Log Analytics table
+<strong><code>NetskopeAlertEvents_CL</code></strong>. The DCR stream declares <strong>254 columns in a fixed
+order</strong>; NLS must emit fields in that same order because values are mapped by
+position.</p>
+<p>The solution provides visibility into:</p>
+<ul>
+<li>DLP incidents and sensitive-data movement</li>
+<li>Malware and threat detections</li>
+<li>Policy violations and enforcement actions</li>
+<li>Anomalous user and application behavior (Shadow IT, risky apps)</li>
+<li>Geographic distribution of activity</li>
+</ul>
+<p><strong>Included content</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Content</th>
+  <th>Count</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data Connector</td>
+  <td>1</td>
+  <td>CCF Blob Storage connector (<code>NetskopeAlertEventsConnector</code>)</td>
+</tr>
+<tr>
+  <td>Custom Table</td>
+  <td>1</td>
+  <td><code>NetskopeAlertEvents_CL</code></td>
+</tr>
+<tr>
+  <td>Parser</td>
+  <td>1</td>
+  <td><code>NetskopeAlertEvents</code> (saved function)</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td>1</td>
+  <td>Netskope Alerts &amp; Events Dashboard</td>
+</tr>
+<tr>
+  <td>Analytic Rules</td>
+  <td>3</td>
+  <td>High Severity Alert, Suspicious Application Activity, DLP Incident Spike</td>
+</tr>
+</tbody>
+</table>
+<h2 id="architecture">Architecture</h2>
+<pre><code>        Netskope Log Streaming
+                 |
+                 v
+        Azure Blob Storage            (gzip-compressed CSV)
+                 |
+                 v
+           Event Grid                 (Blob Created notifications)
+                 |
+                 v
+         Storage Queue                (notification queue + dead-letter queue)
+                 |
+                 v
+   Sentinel CCF Connector             (Service Principal auth + DCR transform)
+                 |
+                 v
+      NetskopeAlertEvents_CL          (Log Analytics custom table)
+</code></pre>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A Microsoft Sentinel-enabled Log Analytics workspace.</li>
+<li>Permissions to install solutions from Content Hub and to create:<ul>
+<li>Data Collection Endpoint (DCE) and Data Collection Rule (DCR)</li>
+<li>Storage queues (notification + dead-letter)</li>
+<li>Event Grid system topic and subscription</li>
+<li>Role assignments on the storage account / blob container</li>
+</ul>
+</li>
+<li>An Azure Storage account + blob container that Netskope NLS streams to.</li>
+<li>A Netskope tenant with administrator access to configure Log Streaming.</li>
+<li>The Service Principal (object) ID of the Microsoft Sentinel CCF storage app
+(<code>appId 4f05ce56-95b6-4612-9d98-a45c8cc33f9f</code>) in your tenant.</li>
+</ul>
+<h2 id="deployment-steps">Deployment Steps</h2>
+<h3 id="1-configure-netskope-log-streaming">1. Configure Netskope Log Streaming</h3>
+<p>In the Netskope admin console, create a <strong>Log Streaming</strong> configuration that streams
+<strong>Alerts</strong> and <strong>Events</strong> to your Azure Blob Storage container as <strong>gzip-compressed CSV</strong>.</p>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>17-06-2026</td>
+  <td>Initial solution release. Netskope Alerts &amp; Events CCF (Blob Storage) connector, custom table <code>NetskopeAlertEvents_CL</code>, parser, 1 workbook, and 3 analytic rules.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

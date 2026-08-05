@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ PRODAFT USTA - Payment Card Fraud Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="prodaft-usta---payment-card-fraud-intelligence">⚠️ PRODAFT USTA - Payment Card Fraud Intelligence</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaPCFI.svg" alt="PRODAFT USTA - Payment Card Fraud Intelligence Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">PRODAFT</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.prodaft.com">https://www.prodaft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">PRODAFT - integration@prodaft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-08</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Payment%20Card%20Fraud%20Intelligence">PRODAFT USTA - Payment Card Fraud Intelligence</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>PRODAFT USTA - Payment Card Fraud Intelligence</strong> solution ingests compromised payment cards from the PRODAFT USTA platform into Microsoft Sentinel via a codeless (Codeless Connector Framework) data connector. The full card number (PAN) is dropped at ingestion — only the BIN (first 6), the last 4 digits, the card brand, and the length are retained for triage. Includes analytic rules to alert on newly exposed payment cards and on non-expired (still-usable) exposed cards, a hunting query, an overview workbook, and an on-demand backfill playbook for loading historical data.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/prodaftustapcficcpdefinition.html">PRODAFT USTA - Payment Card Fraud Intelligence (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a></td>
+  <td><a href="../connectors/prodaftustapcficcpdefinition.html">PRODAFT USTA - Payment Card Fraud Intelligence (via Codeless Connector Framework)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-non-expired-payment-card-exposed-674429c9-a858-436c-95b8-5808024ebd01-f3b34a4c.html">PRODAFT USTA - Non-expired payment card exposed</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-payment-card-exposed-bd550c7f-5455-48de-b23d-30fced82d02b-61f1004e.html">PRODAFT USTA - Payment card exposed</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-payment-card-exposure-by-company-9f895380-3aad-47e4-9181-7c717a76af77-6ca37f0c.html">PRODAFT USTA - Payment card exposure by company</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfioverview-314477da.html">PRODAFTUstaPCFIOverview</a></td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfi-backfill-5ae17346.html">PRODAFTUstaPCFI-Backfill</a></td>
+  <td style="text-align:left">On-demand backfill playbook for PRODAFT USTA - Payment Card Fraud Intelligence. Pages through the US...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/prodaftustacompromisedcards.html">PRODAFTUstaCompromisedCards</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcards-cl.html"><code>PRODAFTUstaCompromisedCards_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Payment%20Card%20Fraud%20Intelligence/README.md">PRODAFT USTA - Payment Card Fraud Intelligence/README.md</a></em></p>
+</blockquote>
+<p>Ingests <strong>compromised payment cards</strong> from the PRODAFT USTA Payment Card Fraud
+Intelligence API into Microsoft Sentinel via a codeless (Codeless Connector Framework)
+data connector. The full card number (PAN) is never stored - the DCR transform drops it at
+ingestion and retains only the BIN (first 6), the last 4 digits, the card brand, and the
+length.</p>
+<h2 id="contents">Contents</h2>
+<table>
+<thead>
+<tr>
+  <th>Content</th>
+  <th>Items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data connector (CCF)</td>
+  <td><code>Data Connectors/PRODAFTUstaPCFI_ccp/</code> - ConnectorDefinition, PollingConfig, DCR, Table</td>
+</tr>
+<tr>
+  <td>Parser</td>
+  <td><code>PRODAFTUstaCompromisedCards</code> - query-time dedup (one row per <code>TicketId</code>)</td>
+</tr>
+<tr>
+  <td>Analytic rules</td>
+  <td>Payment card exposed; Non-expired payment card exposed</td>
+</tr>
+<tr>
+  <td>Hunting query</td>
+  <td>Payment card exposure by company</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td><code>PRODAFTUstaPCFIOverview</code></td>
+</tr>
+<tr>
+  <td>Playbook</td>
+  <td><code>PRODAFTUstaPCFI-Backfill</code> - on-demand historical backfill</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment">Deployment</h2>
+<h3 id="from-the-portal">From the portal (Content Hub)</h3>
+<ol>
+<li>Once published, install <strong>PRODAFT USTA - Payment Card Fraud Intelligence</strong> from
+<strong>Microsoft Sentinel → Content hub</strong>.</li>
+<li>Open <strong>Configuration → Data connectors → PRODAFT USTA - Payment Card Fraud Intelligence
+(via Codeless Connector Framework)</strong>, enter the USTA base URL and your API key, and
+select <strong>Connect</strong>. The connector polls every minute going forward.</li>
+<li>To load history, deploy and run the <strong>PRODAFTUstaPCFI-Backfill</strong> playbook once - see
+<a href="Playbooks/PRODAFTUstaPCFI-Backfill/readme.html">Playbooks/PRODAFTUstaPCFI-Backfill/readme.md</a>.</li>
+</ol>
+<h3 id="via-scripts">Via scripts (this repository)</h3>
+<ol>
+<li><p>Generate the deployable package with the repo's packaging tool (creates
+<code>Package/mainTemplate.json</code> + <code>Package/createUiDefinition.json</code>). The tool is a
+PowerShell 7 script and runs the same on Windows, Linux, and macOS via <code>pwsh</code>.
+One-time setup (see <code>Tools/Create-Azure-Sentinel-Solution/README.md</code>):
+PowerShell 7.1+, Node.js, and the YAML module (<code>pwsh -Command 'Install-Module powershell-yaml -Scope CurrentUser'</code>).</p>
+<pre><code class="language-bash"># from the repository root - pass the ABSOLUTE path to this solution's Data folder
+# (the tool rejects paths that start with &quot;Solutions/&quot;)
+pwsh Tools/Create-Azure-Sentinel-Solution/V3/createSolutionV3.ps1 \
+  -SolutionDataFolderPath &quot;$(pwd)/Solutions/PRODAFT USTA - Payment Card Fraud Intelligence/Data&quot; \
+  -VersionMode local -VersionBump patch
+</code></pre>
+<p><code>-VersionMode local</code> versions from this solution's Data file and bumps it on every run
+(<code>patch</code>/<code>minor</code>/<code>major</code>), writing the new version back. The default <code>catalog</code> mode looks
+the offer up in the Content Hub catalog and, for unpublished solutions, falls back to
+3.0.0. Package versions must be <strong>3.x</strong>: the tool aborts on 1.x versions and 2.x
+builds only the deprecated templateSpec format, so the Content Hub packaging format
+(<code>contentSchemaVersion</code> 3) requires 3.x - which is why the initial release is 3.0.0.</p>
+</li>
+<li><p>Deploy from scratch - creates the resource group and the Log Analytics workspace,</p>
+</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<h1 id="prodaft-usta---payment-card-fraud-intelligence---release-notes">PRODAFT USTA - Payment Card Fraud Intelligence - Release Notes</h1>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>08-07-2026</td>
+  <td>Initial Solution Release. Codeless (CCF) data connector for compromised payment-card tickets with ingestion-time PAN redaction (only BIN, last 4 digits, brand, and length are stored). Two <strong>Analytic Rules</strong> (payment card exposed; non-expired payment card exposed), one <strong>Hunting Query</strong>, an overview <strong>Workbook</strong>, a query-time dedup <strong>Parser</strong>, and an on-demand backfill <strong>Playbook</strong> (Logs Ingestion API via managed identity) for loading historical data.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

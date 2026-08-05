@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://zeronetworks.com](https://zeronetworks.com) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Zero Networks *(basis: publisher)* |
-| **Source Product** | Segment |
 | **Version** | 3.0.3 |
 | **Author** | Nicholas DiCola - nicholas@zeronetworks.com |
 | **First Published** | 2022-06-06 |

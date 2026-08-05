@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `EntraIDAssets` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Entra ID Assets *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [EntraIDAssets_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets/Data%20Connectors/EntraIDAssets_DataConnectorDefinition.json) |
@@ -32,12 +31,15 @@ Requires GlobalAdmin, SecurityAdmin on the workspace's tenant
 1. Connect Microsoft Entra ID assets to ingest into Microsoft Sentinel Lake.
   - EntraApplications
   - EntraDevices
+  - EntraEligibleMembers
   - EntraGroupMemberships
   - EntraGroups
   - EntraMembers
   - EntraOrgContacts
   - EntraOrganizations
+  - EntraOwners
   - EntraServicePrincipals
+  - EntraSponsors
   - EntraUsers
 
 ---

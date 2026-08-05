@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Sophos *(basis: projected)* |
-| **Source Product** | Endpoint Protection *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

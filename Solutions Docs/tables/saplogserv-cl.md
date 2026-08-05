@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SAP *(basis: projected)* |
-| **Source Product** | LogServ *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -65,18 +63,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (5)
-
-### Analytic Rules (4)
-
-**In solution [SAP LogServ](../solutions/sap-logserv.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [SAP LogServ - HANA DB - Assign Admin Authorizations](../content/sap-logserv-sap-logserv-hana-db-assign-admin-authorizations-4981469b-8618-43a7-b44c-5744594fa494-5de53ca7.md) |  |
-| [SAP LogServ - HANA DB - Audit Trail Policy Changes](../content/sap-logserv-sap-logserv-hana-db-audit-trail-policy-changes-e8394afb-82a7-4718-8d31-cc57ad352fa8-98541953.md) |  |
-| [SAP LogServ - HANA DB - Deactivation of Audit Trail](../content/sap-logserv-sap-logserv-hana-db-deactivation-of-audit-trail-8fb9fb88-693f-4906-8be2-4bb9771418fc-6f2dd94f.md) |  |
-| [SAP LogServ - HANA DB - User Admin actions](../content/sap-logserv-sap-logserv-hana-db-user-admin-actions-a9e4b02a-5a8c-4c59-9836-a204d1028632-72af1011.md) |  |
+## Content Items Using This Table (1)
 
 ### Workbooks (1)
 

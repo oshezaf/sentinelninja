@@ -8,11 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft, SAP *(basis: projected)* |
-| **Source Product** | Custom *(basis: projected)* |
-| **Event Type** | Events |
-| **Collector Vendor** | SecurityBridge *(basis: projected)* |
-| **Collector Product** | SecurityBridge Platform |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |

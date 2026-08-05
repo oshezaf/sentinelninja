@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IPinfoRIRWHOISDataConnector` |
-| **Publisher / Vendor** | IPinfo |
-| **Source Product** | RIRWHOIS *(basis: title)* |
+| **Publisher** | IPinfo |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_RIRWHOIS_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/RIRWHOIS/IPinfo_RIRWHOIS_API_AzureFunctionApp.json) |

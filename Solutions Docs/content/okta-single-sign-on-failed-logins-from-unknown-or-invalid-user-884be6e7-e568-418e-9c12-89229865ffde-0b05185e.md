@@ -6,7 +6,7 @@
 
 ---
 
-This query searches for numerous login attempts to the management console with an unknown or invalid user name.
+This rule alerts when an unknown or invalid user generates more than 15 failed Okta management console login attempts from the same IP address within 5 minutes.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,7 +17,7 @@ This query searches for numerous login attempts to the management console with a
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
-| **Techniques** | T1110 |
+| **Techniques** | T1110.001 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Analytic%20Rules/FailedLoginsFromUnknownOrInvalidUser.yaml) |
 

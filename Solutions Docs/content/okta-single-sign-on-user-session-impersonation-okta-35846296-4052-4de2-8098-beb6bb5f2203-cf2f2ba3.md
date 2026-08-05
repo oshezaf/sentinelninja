@@ -6,7 +6,7 @@
 
 ---
 
-A user has started a session impersonation, gaining access with the impersonated users permissions. This typically signifies Okta admin access and should only happen if anticipated and requested.
+This query detects instances of user session impersonation, where an attacker successfully initiates a session impersonation event. The query extracts detailed information about the target user and the actor involved in the impersonation, providing insights into potential privilege escalation activities.
 
 | Attribute | Value |
 |:----------|:------|
@@ -25,10 +25,10 @@ A user has started a session impersonation, gaining access with the impersonated
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | ? | ✓ | ? |
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) |  | ? | ✓ | ? |
+| [`Okta_CL`](../tables/okta-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ---
 

@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Okta *(basis: projected)* |
-| **Source Product** | Single Sign-On *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

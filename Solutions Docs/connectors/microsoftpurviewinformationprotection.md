@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `MicrosoftPurviewInformationProtection` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Purview Information Protection *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [MicrosoftPurviewInformationProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview%20Information%20Protection/Data%20Connectors/MicrosoftPurviewInformationProtection.json) |

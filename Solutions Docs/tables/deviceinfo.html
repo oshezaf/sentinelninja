@@ -35,14 +35,6 @@
   <td style="text-align:left">MDE</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Microsoft <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Defender XDR <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -351,10 +343,11 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo">DeviceInfo Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (5)</h2>
+<h2 id="solutions">Solutions (6)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
@@ -377,7 +370,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (8)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (13)</h2>
 <h3 id="analytic-rules">Analytic Rules (5)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
 <table>
@@ -443,7 +436,34 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (1)</h3>
+<h3 id="hunting-queries">Hunting Queries (5)</h3>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-azure-network-configuration-tampered-by-compromised-identity-455ffadf-ce55-4a0e-b339-fd3c2d67c71c-7151e2d8.html">Azure Network Configuration Tampered by Compromised Identity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-entra-hybrid-user-sign-in-followed-by-on-prem-lateral-movement-638446a2-8342-43dd-ae70-3308a3319f6f-1d8f481c.html">Entra hybrid user sign-in followed by on-prem lateral movement</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rdp-to-hybrid-joined-device-followed-by-entra-access-9f776b5c-d9a6-4d95-8794-5cfec9f9d22d-24505083.html">RDP to hybrid joined device followed by Entra access</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-wmi-or-remote-admin-execution-on-hybrid-device-followed-by-cloud-sign-in-638d7a85-0c62-4f9d-9a90-937a7c565e1b-0d54206f.html">WMI or remote admin execution on hybrid device followed by cloud sign-in</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
 <table>
 <thead>
@@ -459,7 +479,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (2)</h3>
+<h3 id="workbooks">Workbooks (3)</h3>
 <p><strong>In solution <a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a>:</strong></p>
 <table>
 <thead>
@@ -471,6 +491,21 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-hybridattack-cloud&amp;identity-847f4a4f.html">HybridAttack-Cloud&amp;Identity</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

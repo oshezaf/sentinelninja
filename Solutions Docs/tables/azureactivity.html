@@ -35,18 +35,6 @@
   <td style="text-align:left">Audit, Azure Resources, Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Microsoft <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Azure <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Events</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
@@ -281,7 +269,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity">AzureActivity Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (20)</h2>
+<h2 id="solutions">Solutions (21)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -291,6 +279,7 @@
 <li><a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
+<li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
@@ -322,7 +311,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (54)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (71)</h2>
 <h3 id="analytic-rules">Analytic Rules (22)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
@@ -461,11 +450,11 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.html">TI Map IP Entity to AzureActivity</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-eea41d96.html">TI Map Email entity to AzureActivity</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.html">TI map Email entity to AzureActivity</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.html">TI Map IP Entity to AzureActivity</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -483,7 +472,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (17)</h3>
+<h3 id="hunting-queries">Hunting Queries (33)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -568,6 +557,81 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-appliance-management-session-followed-by-rbac-write-80752d7f-8b48-4a80-8eea-0f9f3024f75f-17196699.html">Appliance management session followed by RBAC write</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-cloud-run-command-followed-by-kernel-persistence-indicators-on-target-ser-b441f4ca-9de2-4dd4-b0de-7c8f869f20a1-49bbe6d8.html">Cloud Run Command followed by kernel persistence indicators on target servers</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-cross-subscription-and-resource-group-enumeration-sweep-by-single-identit-8ccbe013-d93f-4db2-ad52-e4ad2d0ad7fd-e54f2c94.html">Cross-subscription and resource-group enumeration sweep by single identity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-iam-and-subscription-enumeration-followed-by-key-vault-operations-87ca398d-e3f8-4b2f-b665-57f6600f59fb-6c209476.html">IAM and subscription enumeration followed by Key Vault operations</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-iam-reconnaissance-followed-by-role-assignment-write-attempt-9259db24-159e-411d-a893-a9f2c819bdf4-47e2cd7f.html">IAM reconnaissance followed by role assignment write attempt</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-identity-and-app-enumeration-followed-by-novel-non-interactive-tuple-c59f5f45-42fc-4f30-9f22-08908fc4d1ea-4e94a17e.html">Identity and app enumeration followed by novel non-interactive tuple</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-discovery-followed-by-data-store-access-enumeration-48f40e49-cf3d-4f54-8f91-9077f6494186-79855d5a.html">Key Vault discovery followed by data-store access enumeration</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-harvest-to-spn-sign-in-then-out-of-scope-resource-access-9e0f2cf7-e3cb-4de2-a3f0-4a01fca52790-5feab5b0.html">Key Vault harvest to SPN sign-in then out-of-scope resource access</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-harvest-followed-by-novel-spn-sign-in-from-non-1p-ip-2b0d36b0-ec89-4bc3-8e7b-c2984c6e8f5d-c75e5795.html">Key Vault secret harvest followed by novel SPN sign-in from non-1P IP</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-read-then-storage-key-auth-pivot-1af2ec86-70ef-4d66-b3db-dfcbcb0167bd-571cd836.html">Key Vault secret read then Storage key-auth pivot</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-read-then-partial-storage-exfil-0f9db4ae-4ec1-4baf-b6e1-a6d7af5d36f6-891da7bb.html">Key Vault secret read then partial storage exfil</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-multi-service-network-exposure-followed-by-key-and-data-access-baebef19-9013-4e90-8511-92c036ca2710-f445ed0c.html">Multi-service network exposure followed by key and data access</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-spn-sign-in-followed-by-azure-rbac-write-4ad6abf5-d8a4-4f1d-a39f-8d8eb1dfc7e2-837d745f.html">Novel SPN sign-in followed by Azure RBAC write</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.html">Novel identity then Key Vault secret burst</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.html">Novel sign-in context followed by IAM reconnaissance burst</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.html">Suspicious sign-in followed by cloud network exposure writes</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code></p>
 <table>
 <thead>
@@ -581,7 +645,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (14)</h3>
+<h3 id="workbooks">Workbooks (15)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -650,6 +714,19 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-hybridattack-cloud&amp;identity-847f4a4f.html">HybridAttack-Cloud&amp;Identity</a></td>
 </tr>
 </tbody>
 </table>
@@ -920,8 +997,8 @@
 <li><code>microsoft.network/bastionhosts</code></li>
 <li><code>microsoft.healthcareapis/services</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (35 criteria, 41 total references)</h2>
-<p>References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (36 criteria, 42 total references)</h2>
+<p>References by type: 0 connectors, 41 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1175,6 +1252,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1217,10 +1302,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>40</strong></td>
+  <td style="text-align:center"><strong>41</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>41</strong></td>
+  <td style="text-align:center"><strong>42</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1279,10 +1364,10 @@
 <tr>
   <td style="text-align:left"><code>Success</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>startswith Accept</code></td>
@@ -1388,10 +1473,10 @@
 <tr>
   <td style="text-align:left"><code>contains @</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>has @</code></td>
@@ -2079,6 +2164,86 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>contains Insights</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Microsoft.Authorization/roleAssignments/delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains WebApplicationFirewall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains azureFirewall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains firewallPolicies</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains networkSecurityGroup</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains roleAssignments</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains routeTable</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains routes/</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains subnets</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains virtualNetworkGateway</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

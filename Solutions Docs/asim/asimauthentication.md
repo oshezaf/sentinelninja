@@ -15,8 +15,8 @@
 | **Schema** | Authentication |
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.2.15 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
-| **Last Updated** | May 05, 2026 |
+| **Parser Version** | 0.2.19 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
+| **Last Updated** | Jul 16, 2026 |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthentication.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthentication.yaml) |
 
 ## Description
@@ -36,6 +36,7 @@ This union parser includes parsers for the following products:
 | Barracuda WAF | [_ASim_Authentication_BarracudaWAF](asimauthenticationbarracudawaf.md) | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco Adaptive Security Appliance (ASA) | [_ASim_Authentication_CiscoASA](asimauthenticationciscoasa.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco DNAC | [_ASim_Authentication_CiscoDNAC](asimauthenticationciscodnac.md) | [Syslog](../solutions/syslog.md) |
+| Cisco FTD | [_ASim_Authentication_CiscoFTD](asimauthenticationciscoftd.md) | [Syslog](../solutions/syslog.md) |
 | Cisco IOS | [_ASim_Authentication_CiscoIOS](asimauthenticationciscoios.md) | [Syslog](../solutions/syslog.md) |
 | Cisco ISE | [_ASim_Authentication_CiscoISE](asimauthenticationciscoise.md) | [Syslog](../solutions/syslog.md) |
 | Cisco ISE Administrator | [_ASim_Authentication_CiscoISEAdministrator](asimauthenticationciscoiseadministrator.md) | [Syslog](../solutions/syslog.md) |
@@ -44,6 +45,7 @@ This union parser includes parsers for the following products:
 | CrowdStrike Falcon Endpoint Protection | [_ASim_Authentication_CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[CrowdStrike Falcon Endpoint Protection (legacy connector)](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Fortigate | [_ASim_Authentication_FortinetFortigate](asimauthenticationfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Google Workspace | [_ASim_Authentication_GoogleWorkspace](asimauthenticationgoogleworkspace.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
+| Google Workspace | [_ASim_Authentication_GoogleWorkspaceLogins](asimauthenticationgoogleworkspacelogins.md) | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | Illumio | [_ASim_Authentication_IllumioSaaSCore](asimauthenticationillumiosaascore.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | M365 Defender for EndPoint | [_ASim_Authentication_M365Defender](asimauthenticationm365defender.md) |  |
 | Microsoft Defender for IoT | [_ASim_Authentication_MD4IoT](asimauthenticationmd4iot.md) |  |
@@ -56,6 +58,7 @@ This union parser includes parsers for the following products:
 | Palo Alto Cortex Data Lake | [_ASim_Authentication_PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto PAN-OS GlobalProtect | [_ASim_Authentication_PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto PAN-OS | [_ASim_Authentication_PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Palo Alto Prisma Cloud Compute | [_ASim_Authentication_PaloAltoPrismaCloud](asimauthenticationpaloaltoprismacloud.md) | [Syslog](../solutions/syslog.md) |
 | PostgreSQL | [_ASim_Authentication_PostgreSQL](asimauthenticationpostgresql.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[PostgreSQL (legacy connector)](../solutions/postgresql.md) |
 | Salesforce Service Cloud | [_ASim_Authentication_SalesforceSC](asimauthenticationsalesforcesc.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
 | SentinelOne | [_ASim_Authentication_SentinelOne](asimauthenticationsentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.sonicwall.com/support/](https://www.sonicwall.com/support/) |
 | **Categories** | Security - Network |
-| **Source Vendor** | SonicWall *(basis: event)* |
-| **Source Product** | Firewall |
 | **Version** | 3.1.2 |
 | **Author** | SonicWall |
 | **First Published** | 2022-05-06 |

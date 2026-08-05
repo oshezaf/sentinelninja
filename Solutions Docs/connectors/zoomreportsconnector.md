@@ -12,8 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `ZoomReportsConnector` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Zoom *(basis: description_url)* |
-| **Event Type** | Reports |
 | **Used in Solutions** | [ZoomReports](../solutions/zoomreports.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Data%20Connectors/ZoomReports_ccf/ConnectorDefinition.json) |

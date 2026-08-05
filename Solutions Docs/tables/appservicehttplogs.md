@@ -86,7 +86,7 @@ This table is used by the following solutions:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.md) |  |
+| [TI Map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-5cfb258e.md) |  |
 
 ## Resource Types
 

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://delinea.com/support/](https://delinea.com/support/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Delinea *(basis: event)* |
-| **Source Product** | Secret Server |
 | **Version** | 3.0.1 |
 | **Author** | Delinea |
 | **First Published** | 2022-05-06 |

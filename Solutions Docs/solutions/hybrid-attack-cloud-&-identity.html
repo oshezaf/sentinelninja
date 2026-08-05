@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ Hybrid Attack - Cloud &amp; Identity &mdash; Solutions Analyzer</title>
+<title>Hybrid Attack - Cloud &amp; Identity &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,9 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="hybrid-attack---cloud-amp-identity">⚠️ Hybrid Attack - Cloud &amp; Identity</h1>
-<blockquote>
-<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
+<h1 id="hybrid-attack---cloud-amp-identity">Hybrid Attack - Cloud &amp; Identity</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Hybrid Attack - Cloud & Identity Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -32,21 +31,485 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left">Microsoft Corporation</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-06-15</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-07-29</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hybrid%20Attack%20-%20Cloud%20%26%20Identity">Hybrid Attack - Cloud &amp; Identity</a></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-hybridattackcloudidentity">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
 </tbody>
 </table>
+<p>This solution includes hunting queries for hybrid attack scenarios spanning on-premises, cloud, and identity environments. The queries are designed to detect multi-stage attack techniques that leverage both cloud and identity signals. By correlating activities across different domains, these hunting queries help security analysts identify complex attack patterns that may go unnoticed when looking at individual data sources in isolation.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>19 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/cloudprocessevents.html"><code>CloudProcessEvents</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
+  <td>Hunting</td>
+</tr>
+<tr>
+  <td><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/devicenetworkinfo.html"><code>DeviceNetworkInfo</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+  <td>Hunting</td>
+</tr>
+<tr>
+  <td><a href="../tables/event.html"><code>Event</code></a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td>Hunting</td>
+</tr>
+<tr>
+  <td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td>Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>55 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">54</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-aad-connect-host-remote-admin-followed-by-entra-privilege-operation-c9b4347a-e5cf-4ca9-a58d-a9822c82467f-22b6048d.html">AAD Connect host remote admin followed by Entra privilege operation</a></td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation, LateralMovement</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-app-credential-change-followed-by-sp-sign-in-burst-1bd11966-beb8-4ee9-bb8d-f6627b45a250-22e9839d.html">App credential change followed by SP sign-in burst</a></td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-appliance-management-session-followed-by-rbac-write-80752d7f-8b48-4a80-8eea-0f9f3024f75f-17196699.html">Appliance management session followed by RBAC write</a></td>
+  <td style="text-align:left">LateralMovement, PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-azure-network-configuration-tampered-by-compromised-identity-455ffadf-ce55-4a0e-b339-fd3c2d67c71c-7151e2d8.html">Azure Network Configuration Tampered by Compromised Identity</a></td>
+  <td style="text-align:left">DefenseEvasion, Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a><br><a href="../tables/devicenetworkinfo.html"><code>DeviceNetworkInfo</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-azure-storage-access-via-accountkey-or-sas-token-from-first-seen-external-fed80b62-1836-4e06-a01f-7ec467d46e24-57922c5a.html">Azure Storage Access via AccountKey or SAS Token from First-Seen External IP</a></td>
+  <td style="text-align:left">Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-azure-storage-bulk-download-via-accountkey-or-sas-token-from-external-ip-eea3dc6d-7abd-465e-b8e8-5176c205bb8e-ef5da964.html">Azure Storage Bulk Download via AccountKey or SAS Token from External IP</a></td>
+  <td style="text-align:left">Exfiltration, Collection</td>
+  <td style="text-align:left"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-azure-vm-web-process-to-imds-token-theft-chain-b8c5b7f8-6c3c-4c34-8d12-3f2f5f0dc184-a4905960.html">Azure VM web process to IMDS token theft chain</a></td>
+  <td style="text-align:left">InitialAccess, Execution, CredentialAccess</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-cve-exploitation-indicators-on-network-appliance-3p-e54511b5-f377-42d5-bf6b-9ab41fed938d-f116b40c.html">CVE Exploitation Indicators on Network Appliance (3P)</a></td>
+  <td style="text-align:left">InitialAccess, Persistence, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-cloud-run-command-followed-by-kernel-persistence-indicators-on-target-ser-b441f4ca-9de2-4dd4-b0de-7c8f869f20a1-49bbe6d8.html">Cloud Run Command followed by kernel persistence indicators on target servers</a></td>
+  <td style="text-align:left">LateralMovement, Persistence, Execution</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a><br><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-credential-stuffing-or-password-spray-on-vpn-or-firewall-3p-appliance-d3a8effb-09e8-4d06-942b-0e6bbb717568-3473c00b.html">Credential Stuffing or Password Spray on VPN or Firewall (3P Appliance)</a></td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-cross-subscription-and-resource-group-enumeration-sweep-by-single-identit-8ccbe013-d93f-4db2-ad52-e4ad2d0ad7fd-e54f2c94.html">Cross-subscription and resource-group enumeration sweep by single identity</a></td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-email-forwarding-rule-created-to-external-address-e8c2d54d-908e-4e20-b930-8dfb865d0b71-ca2e8295.html">Email Forwarding Rule Created to External Address</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-entra-app-credential-change-followed-by-service-principal-sign-in-burst-24e7f5fe-4f87-43b3-85f5-c620f8b51a83-040a8b72.html">Entra App credential change followed by service principal sign-in burst</a></td>
+  <td style="text-align:left">Persistence, CredentialAccess, DefenseEvasion</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-entra-hybrid-user-sign-in-followed-by-on-prem-lateral-movement-638446a2-8342-43dd-ae70-3308a3319f6f-1d8f481c.html">Entra hybrid user sign-in followed by on-prem lateral movement</a></td>
+  <td style="text-align:left">LateralMovement, ValidAccounts</td>
+  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.html">Federated Identity Provider Added to Tenant</a></td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-iam-and-subscription-enumeration-followed-by-key-vault-operations-87ca398d-e3f8-4b2f-b665-57f6600f59fb-6c209476.html">IAM and subscription enumeration followed by Key Vault operations</a></td>
+  <td style="text-align:left">Discovery, CredentialAccess, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-iam-reconnaissance-followed-by-role-assignment-write-attempt-9259db24-159e-411d-a893-a9f2c819bdf4-47e2cd7f.html">IAM reconnaissance followed by role assignment write attempt</a></td>
+  <td style="text-align:left">Discovery, PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-identity-and-app-enumeration-followed-by-novel-non-interactive-tuple-c59f5f45-42fc-4f30-9f22-08908fc4d1ea-4e94a17e.html">Identity and app enumeration followed by novel non-interactive tuple</a></td>
+  <td style="text-align:left">Discovery, CredentialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-k8s-token-audit-then-novel-cloud-control-plane-operations-90379ce8-b674-4f81-ac66-7d3c66439fd6-07c603d5.html">K8s token audit then novel cloud control plane operations</a></td>
+  <td style="text-align:left">CredentialAccess, Discovery, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.html">Kerberoast burst followed by cloud sign-in</a></td>
+  <td style="text-align:left">CredentialAccess, LateralMovement, ValidAccounts</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-discovery-followed-by-data-store-access-enumeration-48f40e49-cf3d-4f54-8f91-9077f6494186-79855d5a.html">Key Vault discovery followed by data-store access enumeration</a></td>
+  <td style="text-align:left">Discovery, Collection, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-harvest-to-spn-sign-in-then-out-of-scope-resource-access-9e0f2cf7-e3cb-4de2-a3f0-4a01fca52790-5feab5b0.html">Key Vault harvest to SPN sign-in then out-of-scope resource access</a></td>
+  <td style="text-align:left">CredentialAccess, Discovery, Collection</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-harvest-followed-by-novel-spn-sign-in-from-non-1p-ip-2b0d36b0-ec89-4bc3-8e7b-c2984c6e8f5d-c75e5795.html">Key Vault secret harvest followed by novel SPN sign-in from non-1P IP</a></td>
+  <td style="text-align:left">CredentialAccess, DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-read-then-storage-key-auth-pivot-1af2ec86-70ef-4d66-b3db-dfcbcb0167bd-571cd836.html">Key Vault secret read then Storage key-auth pivot</a></td>
+  <td style="text-align:left">Exfiltration, CredentialAccess, Collection, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-key-vault-secret-read-then-partial-storage-exfil-0f9db4ae-4ec1-4baf-b6e1-a6d7af5d36f6-891da7bb.html">Key Vault secret read then partial storage exfil</a></td>
+  <td style="text-align:left">CredentialAccess, Collection, Exfiltration, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-daemonset-or-cronjob-by-non-automation-identity-2d38986b-3068-4f43-9841-b4f82268c14f-1ffde728.html">Kubernetes daemonset or cronjob by non-automation identity</a></td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-first-seen-control-plane-writer-b03e4fca-d3ba-4b87-ae4f-99111fe43e3a-c4d20961.html">Kubernetes first-seen control-plane writer</a></td>
+  <td style="text-align:left">InitialAccess, Execution, Persistence</td>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-secret-enumeration-followed-by-pod-exec-7f48f9be-5912-48df-9ba5-d380ec1484f2-9b8c9f98.html">Kubernetes secret enumeration followed by pod exec</a></td>
+  <td style="text-align:left">CredentialAccess, Execution</td>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.html">MFA Method Added on Risky Account</a></td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-multi-mailbox-access-by-single-ip-via-cloud-app-permissions-c53bf4ae-bd8b-4c72-b9c3-10baa8c13885-6d487c75.html">Multi-Mailbox Access by Single IP via Cloud App Permissions</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-multi-service-network-exposure-followed-by-key-and-data-access-baebef19-9013-4e90-8511-92c036ca2710-f445ed0c.html">Multi-service network exposure followed by key and data access</a></td>
+  <td style="text-align:left">DefenseEvasion, CredentialAccess, Collection</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-spn-sign-in-followed-by-azure-rbac-write-4ad6abf5-d8a4-4f1d-a39f-8d8eb1dfc7e2-837d745f.html">Novel SPN sign-in followed by Azure RBAC write</a></td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.html">Novel identity then Key Vault secret burst</a></td>
+  <td style="text-align:left">Exfiltration, Discovery, CredentialAccess, Collection</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.html">Novel sign-in context followed by IAM reconnaissance burst</a></td>
+  <td style="text-align:left">Discovery, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-oauth-consent-change-followed-by-first-seen-oauthappid-burst-10faf58e-d006-482f-87f0-a95b019cbf6f-619e7560.html">OAuth consent change followed by first-seen OAuthAppId burst</a></td>
+  <td style="text-align:left">InitialAccess, Discovery, Collection</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-partial-failures-followed-by-read-concentration-c4bc0ab8-8834-4b16-8baf-95ddf0328e30-b408d4cd.html">Partial failures followed by read concentration</a></td>
+  <td style="text-align:left">Discovery, Collection, Exfiltration, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-pod-cloud-cli-then-keyvault-or-storage-access-6bc3f56b-2e7f-4820-8aac-f6b40917f931-2ce5980e.html">Pod cloud CLI then KeyVault or storage access</a></td>
+  <td style="text-align:left">CredentialAccess, Discovery, Collection</td>
+  <td style="text-align:left"><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a><br><a href="../tables/cloudprocessevents.html"><code>CloudProcessEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-pod-token-tooling-then-cloud-rbac-write-7f5d5715-8326-4865-b039-f9968f48de95-3154cdc1.html">Pod token tooling then cloud RBAC write</a></td>
+  <td style="text-align:left">CredentialAccess, PrivilegeEscalation, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a><br><a href="../tables/cloudprocessevents.html"><code>CloudProcessEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-post-auth-config-change-on-network-appliance-3p-3d0ffd07-026f-44cf-9f60-8df51ba76690-6d29302f.html">Post-Auth Config Change on Network Appliance (3P)</a></td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rdp-to-hybrid-joined-device-followed-by-entra-access-9f776b5c-d9a6-4d95-8794-5cfec9f9d22d-24505083.html">RDP to hybrid joined device followed by Entra access</a></td>
+  <td style="text-align:left">LateralMovement, ValidAccounts</td>
+  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rare-kernel-load-followed-by-novel-non-interactive-sign-in-tuple-6f8a8f48-e63b-4afb-9d2a-3ef5f6e2d1bc-1cd5ae04.html">Rare kernel load followed by novel non-interactive sign-in tuple</a></td>
+  <td style="text-align:left">Persistence, DefenseEvasion, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rare-service-principal-authentication-tuple-b1ce8746-fa4a-485f-a978-9a72d9bd0ba4-98e17830.html">Rare service principal authentication tuple</a></td>
+  <td style="text-align:left">CredentialAccess, Persistence</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-rare-service-principal-sign-in-followed-by-rbac-write-d4deaf24-f2cf-4ed8-b869-a057f865f08f-65fe0b50.html">Rare service principal sign-in followed by RBAC write</a></td>
+  <td style="text-align:left">CredentialAccess, PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-risky-successful-sign-in-to-vpn-or-network-access-application-482a1615-5bc6-4b23-b2c5-97a4c3179240-5cf359b4.html">Risky Successful Sign-in to VPN or Network Access Application</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.html">Secret Added to Dormant Service Principal</a></td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-service-principal-conditional-access-anomaly-92076c80-49fd-4af0-9f9d-ea9dd1fa85c6-58eb67f7.html">Service principal Conditional Access anomaly</a></td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-service-principal-credential-change-followed-by-novel-sp-sign-in-872ac8db-7642-4907-bcb2-d7822ae6be9c-d99cf1bb.html">Service principal credential change followed by novel SP sign-in</a></td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-suspicious-oauth-app-consent-granting-sensitive-permissions-470f2af8-2b5d-41d4-9be6-686da24f370a-8a44eb7d.html">Suspicious OAuth App Consent Granting Sensitive Permissions</a></td>
+  <td style="text-align:left">Collection, Exfiltration, Persistence</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-suspicious-sign-in-followed-by-auth-method-or-role-change-adaf1ceb-db2d-49e9-989f-bf4116f53153-4324add3.html">Suspicious sign-in followed by auth method or role change</a></td>
+  <td style="text-align:left">InitialAccess, Persistence, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.html">Suspicious sign-in followed by cloud network exposure writes</a></td>
+  <td style="text-align:left">InitialAccess, DefenseEvasion, Discovery</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-threat-intelligence-matched-ip-on-network-appliance-traffic-68adb008-8ade-469d-a88c-60672a063194-8a62ba53.html">Threat Intelligence Matched IP on Network Appliance Traffic</a></td>
+  <td style="text-align:left">InitialAccess, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-vpn-credential-stuffing-and-password-spray-a1b2c3d4-e5f6-7890-abcd-ef1234567890-f34272b4.html">VPN Credential Stuffing and Password Spray</a></td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/tacitred-findings-cl.html"><code>TacitRed_Findings_CL</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-wmi-or-remote-admin-execution-on-hybrid-device-followed-by-cloud-sign-in-638d7a85-0c62-4f9d-9a90-937a7c565e1b-0d54206f.html">WMI or remote admin execution on hybrid device followed by cloud sign-in</a></td>
+  <td style="text-align:left">LateralMovement, Execution, ValidAccounts</td>
+  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-web-service-child-process-with-egress-5f1c1a92-cd98-4e7b-a3df-6bd6d5d2c2a1-de3860f6.html">Web service child process with egress</a></td>
+  <td style="text-align:left">InitialAccess, Execution</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-hybridattack-cloud&amp;identity-847f4a4f.html">HybridAttack-Cloud&amp;Identity</a></td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/aaduserriskevents.html"><code>AADUserRiskEvents</code></a><br><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a><br><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/cloudauditevents.html"><code>CloudAuditEvents</code></a><br><a href="../tables/cloudprocessevents.html"><code>CloudProcessEvents</code></a><br><a href="../tables/cloudstorageaggregatedevents.html"><code>CloudStorageAggregatedEvents</code></a><br><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a><br><a href="../tables/devicenetworkinfo.html"><code>DeviceNetworkInfo</code></a><br><a href="../tables/event.html"><code>Event</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -59,8 +522,8 @@
 <tbody>
 <tr>
   <td>3.0.0</td>
-  <td>18-05-2026</td>
-  <td>First Commit</td>
+  <td>26-06-2026</td>
+  <td>Private Preview Release</td>
 </tr>
 </tbody>
 </table>

@@ -46,14 +46,6 @@
   <td style="text-align:left">Security - Insider Threat</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Oracle <em>(basis: title)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Cloud Infrastructure</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.10</td>
 </tr>
@@ -332,6 +324,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>16-07-2026</td>
+  <td><strong>Ingestion-volume optimization (CCF Data Connector)</strong>: DCR transform no longer stores the raw <code>data</code>/<code>oracle</code> dynamic payloads alongside flattened columns; removed HTTP request/response header noise, CloudEvents boilerplate, duplicated fields, credential-bearing headers and the <code>stateChange.current.keyValue</code> key blob. Table schema reduced 201 → 86 columns; all columns used by the Parser, Analytic Rules, Hunting Queries, and Workbook are preserved. Fixed <code>SrcIpAddr</code> mapping typo (<code>ipAddres</code>), <code>data_request_id_s</code>/<code>data_request_path_s</code> payload-level mapping, and hyphenated request-header access (<code>X-Forwarded-For</code>, <code>X-Real-IP</code>, <code>oci-original-url</code>). <strong>Parser</strong> updated to v1.1.0: continues to read both <code>OCI_Logs_CL</code> and <code>OCI_LogsV2_CL</code>, and now derives <code>EventStartTime</code>/<code>EventEndTime</code> for V2 flow-log rows at read time. <strong>Analytic Rules &amp; Hunting Queries</strong>: added the CCF connector (<code>OracleCloudInfraConnector</code>) to <code>requiredDataConnectors</code> alongside the existing connector.</td>
+</tr>
 <tr>
   <td>3.0.10</td>
   <td>26-05-2026</td>

@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 | [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) |  | ✗ | ✓ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 

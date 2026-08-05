@@ -31,7 +31,7 @@
 | [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone | 1 | 1 |
 | [Censys Alert Rescan](../content/censys-censys-alert-rescan-19e1ad3a.md) | [Censys](../solutions/censys.md) | 1 | 2 |
 | [Censys Rescan](../content/censys-censys-rescan-51275b90.md) | [Censys](../solutions/censys.md) | 1 | 1 |
-| [Check Point EM - Importer (Alerts → Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 1 |
+| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 1 |
 | [CiscoISE-False Positives Clear Policies](../content/cisco-ise-ciscoise-false-positives-clear-policies-6ccdd088.md) | [Cisco ISE](../solutions/cisco-ise.md) | 1 | 1 |
 | [CiscoSDWANReport](../content/cisco-sd-wan-ciscosdwanreport-0a3a1816.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | 1 | 6 |
 | [Close-Incident-MCAS](../content/standalone-content-close-incident-mcas-e13fac57.md) | 📄 Standalone | 1 | 1 |

@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Airlock Digital *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -19,7 +17,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (17 columns)
+## Schema (18 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalFileActivitySummary.json)
 
@@ -31,6 +29,7 @@
 | BlockedUnique | int | Unique count of blocked executions |
 | BlocklistAuditTotal | int | Total count of blocklist audit executions |
 | BlocklistTotal | int | Total count of blocklist executions |
+| ConnectorName | string | Connector Friendly Name assigned during connector setup |
 | EndDate | string | End date of the summary period |
 | MaliciousFilesCount | int | Count of malicious files (optional) |
 | NewFilesCount | int | Count of unique new file hashes |

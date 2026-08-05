@@ -11,9 +11,6 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | IT & Management Tools, Virtual Machines |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Exchange, IIS Logs of Microsoft Exchange Servers *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |

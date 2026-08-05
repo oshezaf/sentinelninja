@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Palo Alto Networks *(basis: projected)* |
-| **Source Product** | Cortex XDR *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -78,7 +76,7 @@ Official Microsoft Learn documentation for field/column information:
 This table is used by the following solutions:
 
 - [Cortex XDR](../solutions/cortex-xdr.md)
-- [Palo Alto Cortex XDR CCP](../solutions/palo-alto-cortex-xdr-ccp.md)
+- [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md)
 
 ## Connectors (2)
 
@@ -91,9 +89,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (6)
 
-### Analytic Rules (3)
+### Analytic Rules (6)
 
 **In solution [Cortex XDR](../solutions/cortex-xdr.md):**
 
@@ -103,13 +101,22 @@ This table is ingested by the following connectors:
 | [Cortex XDR Incident - Low](../content/cortex-xdr-cortex-xdr-incident-low-1426bbcf-a9ae-4aa5-9da6-abbf48f04115-5efdbb9e.md) |  |
 | [Cortex XDR Incident - Medium](../content/cortex-xdr-cortex-xdr-incident-medium-2b05823b-ee15-4b92-a642-b13170e37c35-674c5fb1.md) |  |
 
-## Parsers Using This Table (1)
+**In solution [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md):**
 
-### Other Parsers (1)
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Cortex XDR Incident - High](../content/palo-alto-cortex-xdr-cortex-xdr-incident-high-06263265-ff65-43ff-8b15-6ac82325a672-38ff1458.md) |  |
+| [Cortex XDR Incident - Low](../content/palo-alto-cortex-xdr-cortex-xdr-incident-low-0d3fbeba-f9c9-40c7-9b71-8afb1816d7b2-8a53b87c.md) |  |
+| [Cortex XDR Incident - Medium](../content/palo-alto-cortex-xdr-cortex-xdr-incident-medium-2e638f3d-611f-4281-81b1-1fd4aa240ffb-e5042f93.md) |  |
+
+## Parsers Using This Table (2)
+
+### Other Parsers (2)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [CortexXDR_Incidents_CL](../parsers/cortexxdr-incidents-cl.md) | [Cortex XDR](../solutions/cortex-xdr.md) |  |
+| [PaloAltoCortexXDR_Incidents](../parsers/paloaltocortexxdr-incidents.md) | [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md) |  |
 
 ---
 

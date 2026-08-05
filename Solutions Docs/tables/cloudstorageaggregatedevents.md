@@ -15,6 +15,13 @@ Reference for CloudStorageAggregatedEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (49 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents)
@@ -77,7 +84,33 @@ Official Microsoft Learn documentation for field/column information:
 
 - [CloudStorageAggregatedEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents)
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
+
 ---
+
+## Content Items Using This Table (4)
+
+### Hunting Queries (3)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Key Vault secret read then Storage key-auth pivot](../content/hybrid-attack-cloud-&-identity-key-vault-secret-read-then-storage-key-auth-pivot-1af2ec86-70ef-4d66-b3db-dfcbcb0167bd-571cd836.md) |  |
+| [Key Vault secret read then partial storage exfil](../content/hybrid-attack-cloud-&-identity-key-vault-secret-read-then-partial-storage-exfil-0f9db4ae-4ec1-4baf-b6e1-a6d7af5d36f6-891da7bb.md) |  |
+| [Partial failures followed by read concentration](../content/hybrid-attack-cloud-&-identity-partial-failures-followed-by-read-concentration-c4bc0ab8-8834-4b16-8baf-95ddf0328e30-b408d4cd.md) |  |
+
+### Workbooks (1)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 ---
 

@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Netskope *(basis: projected)* |
-| **Source Product** | Web Transaction *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -23,159 +21,210 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (147 columns)
+## Schema (198 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx%5CData%20Connectors%5CNetskopeWebTx_CCF/NetskopeWebtx_Table.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
-| Bytes | int | bytes. |
-| CIp | string | c-ip. |
-| CsBytes | int | cs-bytes. |
-| CsContentType | string | cs-content-type. |
-| CsDns | string | cs-dns. |
-| CsHost | string | cs-host. |
-| CsMethod | string | cs-method. |
-| CsReferer | string | cs-referer. |
-| CsUri | string | cs-uri. |
-| CsUriPort | int | cs-uri-port. |
-| CsUriQuery | string | cs-uri-query. |
-| CsUriScheme | string | cs-uri-scheme. |
-| CsUserAgent | string | cs-user-agent. |
-| CsUsername | string | cs-username. |
-| Date | string | date. |
-| RsStatus | int | rs-status. |
-| ScBytes | int | sc-bytes. |
-| ScContentType | string | sc-content-type. |
-| ScStatus | int | sc-status. |
-| SIp | string | s-ip. |
-| Time | string | time. |
+| Bytes | int | Total bytes transferred |
+| CIp | string | Client IP address |
+| CsBytes | int | Client to server bytes |
+| CsContentType | string | Request content type |
+| CsDns | string | DNS name |
+| CsHost | string | Host name |
+| CsMethod | string | HTTP method |
+| CsReferer | string | HTTP Referer header |
+| CsUri | string | URI |
+| CsUriPort | int | URI port |
+| CsUriQuery | string | URI query string |
+| CsUriScheme | string | URI scheme (http/https) |
+| CsUserAgent | string | User agent string |
+| CsUsername | string | Username |
+| Date | string | Event date |
+| RsBytes | int | Real server bytes |
+| RsStatus | int | Real server status |
+| ScBytes | int | Server to client bytes |
+| ScContentType | string | Response content type |
+| ScStatus | int | HTTP status code |
+| SIp | string | Server IP address |
+| SrBytes | int | Server request bytes |
+| Time | string | Event time |
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
-| TimeTaken | int | time-taken. |
-| XCategory | string | x-category. |
-| XCategoryId | int | x-category-id. |
-| XCBrowser | string | x-c-browser. |
-| XCBrowserVersion | int | x-c-browser-version. |
-| XCCountry | string | x-c-country. |
-| XCDevice | string | x-c-device. |
-| XCLatitude | real | x-c-latitude. |
-| XClientSslErr | string | x-client-ssl-err. |
-| XCLocalTime | string | x-c-local-time. |
-| XCLocation | string | x-c-location. |
-| XCLongitude | real | x-c-longitude. |
-| XCOs | string | x-c-os. |
-| XCRegion | string | x-c-region. |
-| XCsAccessMethod | string | x-cs-access-method. |
-| XCsApp | string | x-cs-app. |
-| XCsAppActivity | string | x-cs-app-activity. |
-| XCsAppCategory | string | x-cs-app-category. |
-| XCsAppCci | int | x-cs-app-cci. |
-| XCsAppCcl | string | x-cs-app-ccl. |
-| XCsAppFromUser | string | x-cs-app-from-user. |
-| XCsAppInstanceId | string | x-cs-app-instance-id. |
-| XCsAppInstanceName | string | x-cs-app-instance-name. |
-| XCsAppInstanceTag | string | x-cs-app-instance-tag. |
-| XCsAppObjectId | string | x-cs-app-object-id. |
-| XCsAppObjectName | string | x-cs-app-object-name. |
-| XCsAppObjectType | string | x-cs-app-object-type. |
-| XCsAppSuite | string | x-cs-app-suite. |
-| XCsAppTags | string | x-cs-app-tags. |
-| XCsAppToUser | string | x-cs-app-to-user. |
-| XCsConnectHost | string | x-cs-connect-host. |
-| XCsConnectPort | string | x-cs-connect-port. |
-| XCsConnectUserAgent | string | x-cs-connect-user-agent. |
-| XCsDomainFrontedSni | string | x-cs-domain-fronted-sni. |
-| XCsDstIp | string | x-cs-dst-ip. |
-| XCsDstPort | int | x-cs-dst-port. |
-| XCsHttpVersion | string | x-cs-http-version. |
-| XCsIpConnectXff | string | x-cs-ip-connect-xff. |
-| XCsIpXff | string | x-cs-ip-xff. |
-| XCsPageId | string | x-cs-page-id. |
-| XCsSessionId | string | x-cs-session-id. |
-| XCsSite | string | x-cs-site. |
-| XCsSni | string | x-cs-sni. |
-| XCsSrcIp | string | x-cs-src-ip. |
-| XCsSrcIpEgress | string | x-cs-src-ip-egress. |
-| XCsSrcPort | int | x-cs-src-port. |
-| XCsSslCipher | string | x-cs-ssl-cipher. |
-| XCsSslEngineAction | string | x-cs-ssl-engine-action. |
-| XCsSslEngineActionReason | string | x-cs-ssl-engine-action-reason. |
-| XCsSslFrontingError | string | x-cs-ssl-fronting-error. |
-| XCsSslHandshakeError | string | x-cs-ssl-handshake-error. |
-| XCsSslJa3 | string | x-cs-ssl-ja3. |
-| XCsSslVersion | string | x-cs-ssl-version. |
-| XCsTimestamp | long | x-cs-timestamp. |
-| XCsTrafficType | string | x-cs-traffic-type. |
-| XCsTunnelId | string | x-cs-tunnel-id. |
-| XCsUriPath | string | x-cs-uri-path. |
-| XCsUrl | string | x-cs-url. |
-| XCsUserIp | string | x-cs-userip. |
-| XCZipcode | int | x-c-zipcode. |
-| XError | string | x-error. |
-| XOtherCategory | string | x-other-category. |
-| XOtherCategoryId | string | x-other-category-id. |
-| XPolicyAction | string | x-policy-action. |
-| XPolicyDstHost | string | x-policy-dst-host. |
-| XPolicyDstHostSource | string | x-policy-dst-host-source. |
-| XPolicyDstIp | string | x-policy-dst-ip. |
-| XPolicyJustificationReason | string | x-policy-justification-reason. |
-| XPolicyJustificationType | string | x-policy-justification-type. |
-| XPolicyName | string | x-policy-name. |
-| XPolicySrcIp | string | x-policy-src-ip. |
-| XRCertEndDate | string | x-r-cert-enddate. |
-| XRCertExpired | string | x-r-cert-expired. |
-| XRCertIncompleteChain | string | x-r-cert-incomplete-chain. |
-| XRCertIssuerCn | string | x-r-cert-issuer-cn. |
-| XRCertMismatch | string | x-r-cert-mismatch. |
-| XRCertRevocationCheck | string | x-r-cert-revocation-check. |
-| XRCertRevoked | string | x-r-cert-revoked. |
-| XRCertSelfSigned | string | x-r-cert-self-signed. |
-| XRCertStartDate | string | x-r-cert-startdate. |
-| XRCertSubjectCn | string | x-r-cert-subject-cn. |
-| XRCertUntrustedRoot | string | x-r-cert-untrusted-root. |
-| XRCertValid | string | x-r-cert-valid. |
-| XRequestId | string | x-request-id. |
-| XRsFileCategory | string | x-rs-file-category. |
-| XRsFileLanguage | string | x-rs-file-language. |
-| XRsFileMd5 | string | x-rs-file-md5. |
-| XRsFileSha256 | string | x-rs-file-sha256. |
-| XRsFileSize | int | x-rs-file-size. |
-| XRsFileType | string | x-rs-file-type. |
-| XScNotificationName | string | x-sc-notification-name. |
-| XSCountry | string | x-s-country. |
-| XSCustomSigningCaError | string | x-s-custom-signing-ca-error. |
-| XSDpName | string | x-s-dp-name. |
-| XServerSslErr | string | x-server-ssl-err. |
-| XSLatitude | real | x-s-latitude. |
-| XSLocation | string | x-s-location. |
-| XSLongitude | real | x-s-longitude. |
-| XSrDstIp | string | x-sr-dst-ip. |
-| XSrDstPort | int | x-sr-dst-port. |
-| XSRegion | string | x-s-region. |
-| XSrHeadersName | string | x-sr-headers-name. |
-| XSrHeadersValue | string | x-sr-headers-value. |
-| XSrSrcIp | string | x-sr-src-ip. |
-| XSrSrcPort | string | x-sr-src-port. |
-| XSrSslCipher | string | x-sr-ssl-cipher. |
-| XSrSslClientCertificateError | string | x-sr-ssl-client-certificate-error. |
-| XSrSslEngineAction | string | x-sr-ssl-engine-action. |
-| XSrSslEngineActionReason | string | x-sr-ssl-engine-action-reason. |
-| XSrSslHandshakeError | string | x-sr-ssl-handshake-error. |
-| XSrSslJa3S | string | x-sr-ssl-ja3s. |
-| XSrSslMalformedSsl | string | x-sr-ssl-malformed-ssl. |
-| XSrSslVersion | string | x-sr-ssl-version. |
-| XSslBypass | string | x-ssl-bypass. |
-| XSslBypassReason | string | x-ssl-bypass-reason. |
-| XSslPolicyAction | string | x-ssl-policy-action. |
-| XSslPolicyCategories | string | x-ssl-policy-categories. |
-| XSslPolicyDstHost | string | x-ssl-policy-dst-host. |
-| XSslPolicyDstHostSource | string | x-ssl-policy-dst-host-source. |
-| XSslPolicyDstIp | string | x-ssl-policy-dst-ip. |
-| XSslPolicyName | string | x-ssl-policy-name. |
-| XSslPolicySrcIp | string | x-ssl-policy-src-ip. |
-| XSZipcode | int | x-s-zipcode. |
-| XTransactionId | string | x-transaction-id. |
-| XType | string | x-type. |
+| TimeTaken | int | Time taken for request in milliseconds |
+| XAction | string | Action |
+| XActionReason | string | Action reason |
+| XCategory | string | URL category |
+| XCategoryId | int | Category ID |
+| XCAuthnSource | string | Authentication source |
+| XCAuthnSurrogate | string | Authentication surrogate |
+| XCAuthnSurrogateStatus | string | Authentication surrogate status |
+| XCAuthnUser | string | Authenticated user |
+| XCAuthzGroups | string | Authorization groups |
+| XCAuthzOu | string | Authorization OU |
+| XCAuthzSource | string | Authorization source |
+| XCBrowser | string | Client browser |
+| XCBrowserVersion | int | Client browser version |
+| XCCountry | string | Client country |
+| XCDevice | string | Client device type |
+| XCDeviceClassification | string | Client device classification |
+| XCDeviceUid | string | Client device UID |
+| XCHostname | string | Client hostname |
+| XCLatitude | real | Client latitude |
+| XClientSslErr | string | Client SSL error |
+| XCLocalTime | string | Client local time |
+| XCLocalTimestamp | long | Client local timestamp (epoch) |
+| XCLocation | string | Client location |
+| XCLongitude | real | Client longitude |
+| XCNsclientClientProfile | string | Netskope client profile |
+| XCNsclientSteeringProfile | string | Netskope steering profile |
+| XCNsclientVersion | string | Netskope client version |
+| XCOs | string | Client operating system |
+| XCOsFamily | string | Client OS family |
+| XCOsVersion | string | Client OS version |
+| XCRegion | string | Client region |
+| XCsAccessMethod | string | Access method (Client, API, etc.) |
+| XCsAccessProxy | string | Access proxy |
+| XCsApp | string | Application name |
+| XCsAppActivity | string | Application activity |
+| XCsAppCategory | string | Application category |
+| XCsAppCci | int | Application Cloud Confidence Index |
+| XCsAppCcl | string | Application Cloud Confidence Level |
+| XCsAppFromUser | string | Application from user |
+| XCsAppInstanceId | string | Application instance ID |
+| XCsAppInstanceName | string | Application instance name |
+| XCsAppInstanceTag | string | Application instance tag |
+| XCsAppInstanceTags | string | App instance tags |
+| XCsAppObjectId | string | Application object ID |
+| XCsAppObjectName | string | Application object name |
+| XCsAppObjectType | string | Application object type |
+| XCsAppSuite | string | Application suite |
+| XCsAppTags | string | Application tags |
+| XCsAppToUser | string | Application to user |
+| XCsConnectHost | string | Connect host |
+| XCsConnectPort | string | Connect port |
+| XCsConnectUserAgent | string | Connect user agent |
+| XCsConnectXau | string | Connect X-Authenticated-User |
+| XCsDomainFrontedSni | string | Domain fronted SNI |
+| XCsDstIp | string | Client destination IP |
+| XCsDstPort | int | Client destination port |
+| XCsHttpVersion | string | HTTP version |
+| XCsIpConnectXff | string | Connect X-Forwarded-For |
+| XCsIpXff | string | X-Forwarded-For header |
+| XCsNsclientTunnelType | string | Netskope client tunnel type |
+| XCsPageId | string | Page ID |
+| XCsParentProcess | string | Parent process name |
+| XCsPid | string | Process ID |
+| XCsPpid | string | Parent process ID |
+| XCsProcess | string | Process name |
+| XCsSessionId | string | Session ID |
+| XCsSite | string | Site |
+| XCsSni | string | Server Name Indication (SNI) |
+| XCsSrcIp | string | Client source IP |
+| XCsSrcIpEgress | string | Client source IP egress |
+| XCsSrcPort | int | Client source port |
+| XCsSslCipher | string | Client SSL cipher |
+| XCsSslEngineAction | string | Client SSL engine action |
+| XCsSslEngineActionReason | string | Client SSL engine action reason |
+| XCsSslFrontingError | string | SSL fronting error |
+| XCsSslHandshakeError | string | Client SSL handshake error |
+| XCsSslJa3 | string | SSL JA3 fingerprint |
+| XCsSslMalformedSsl | string | Client SSL malformed |
+| XCsSslVersion | string | Client SSL version |
+| XCsTimestamp | long | Event timestamp (epoch seconds) |
+| XCsTrafficType | string | Traffic type |
+| XCsTunnelId | string | Tunnel ID |
+| XCsUriPath | string | URI path |
+| XCsUrl | string | Full URL |
+| XCsUserIp | string | User IP address |
+| XCsXau | string | X-Authenticated-User |
+| XCTimezone | string | Client timezone |
+| XCUserConfidenceIndex | string | User confidence index |
+| XCZipcode | int | Client zipcode |
+| XEipPolicyFootprint | string | EIP policy footprint |
+| XEipPolicyName | string | EIP policy name |
+| XError | string | Error message |
+| XOtherCategory | string | Other URL category |
+| XOtherCategoryId | string | Other category ID |
+| XPolicyAction | string | Policy action |
+| XPolicyCategories | string | Policy categories |
+| XPolicyDstHost | string | Policy destination host |
+| XPolicyDstHostSource | string | Policy destination host source |
+| XPolicyDstIp | string | Policy destination IP |
+| XPolicyJustificationReason | string | Policy justification reason |
+| XPolicyJustificationType | string | Policy justification type |
+| XPolicyName | string | Policy name |
+| XPolicySrcIp | string | Policy source IP |
+| XRCertEnd | string | Remote cert end |
+| XRCertEndDate | string | Remote cert end date |
+| XRCertExpired | string | Remote cert expired flag |
+| XRCertIncompleteChain | string | Remote cert incomplete chain flag |
+| XRCertIssuerCn | string | Remote cert issuer CN |
+| XRCertMismatch | string | Remote cert mismatch flag |
+| XRCertRevocationCheck | string | Remote cert revocation check status |
+| XRCertRevoked | string | Remote cert revoked flag |
+| XRCertSelfSigned | string | Remote cert self-signed flag |
+| XRCertStart | string | Remote cert start |
+| XRCertStartDate | string | Remote cert start date |
+| XRCertSubjectCn | string | Remote cert subject CN |
+| XRCertUntrustedRoot | string | Remote cert untrusted root flag |
+| XRCertValid | string | Remote cert valid flag |
+| XRCountry | string | Remote country |
+| XRequestId | string | Request ID |
+| XRLatitude | real | Remote latitude |
+| XRLocation | string | Remote location |
+| XRLongitude | real | Remote longitude |
+| XRRegion | string | Remote region |
+| XRsFileCategory | string | File category |
+| XRsFileLanguage | string | File language |
+| XRsFileMd5 | string | File MD5 hash |
+| XRsFileSha256 | string | File SHA256 hash |
+| XRsFileSize | int | File size in bytes |
+| XRsFileType | string | File type |
+| XRZipcode | int | Remote zipcode |
+| XScNotificationName | string | Notification name |
+| XSCountry | string | Server country |
+| XSCustomSigningCaError | string | Custom signing CA error |
+| XSDpName | string | Data plane name |
+| XServerSslErr | string | Server SSL error |
+| XSLatitude | real | Server latitude |
+| XSLocation | string | Server location |
+| XSLongitude | real | Server longitude |
+| XSrDstIp | string | Server destination IP |
+| XSrDstPort | int | Server destination port |
+| XSRegion | string | Server region |
+| XSrForwardDest | string | Server request forward destination |
+| XSrHeadersName | string | Response headers name |
+| XSrHeadersValue | string | Response headers value |
+| XSrSrcIp | string | Server source IP |
+| XSrSrcPort | string | Server source port |
+| XSrSslCipher | string | Server SSL cipher |
+| XSrSslClientCertificateError | string | Server SSL client certificate error |
+| XSrSslEngineAction | string | Server SSL engine action |
+| XSrSslEngineActionReason | string | Server SSL engine action reason |
+| XSrSslHandshakeError | string | Server SSL handshake error |
+| XSrSslJa3S | string | SSL JA3S fingerprint |
+| XSrSslMalformedSsl | string | Server SSL malformed flag |
+| XSrSslVersion | string | Server SSL version |
+| XSslBypass | string | SSL bypass flag |
+| XSslBypassReason | string | SSL bypass reason |
+| XSslPolicyAction | string | SSL policy action |
+| XSslPolicyCategories | string | SSL policy categories |
+| XSslPolicyDstHost | string | SSL policy destination host |
+| XSslPolicyDstHostSource | string | SSL policy destination host source |
+| XSslPolicyDstIp | string | SSL policy destination IP |
+| XSslPolicyIssuer | string | SSL policy issuer |
+| XSslPolicyName | string | SSL policy name |
+| XSslPolicySrcIp | string | SSL policy source IP |
+| XSupport | string | Support |
+| XSZipcode | int | Server zipcode |
+| XTenantId | string | Tenant ID |
+| XTpEngine | string | Threat protection engine |
+| XTpMalwareName | string | Threat protection malware name |
+| XTpResult | string | Threat protection result |
+| XTpSeverity | string | Threat protection severity |
+| XTransactionId | string | Transaction ID |
+| XType | string | Event type |
 
 ## Schema References
 
@@ -196,11 +245,11 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Netskope Web Transaction Connector (via Blob Storage)](../connectors/netskopewebtxconnector.md) |  |
+| [Netskope Web Transactions (via Blob Storage)](../connectors/netskopewebtxconnector.md) |  |
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (13)
 
 ### Analytic Rules (10)
 
@@ -219,7 +268,7 @@ This table is ingested by the following connectors:
 | [Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)](../content/netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.md) |  |
 | [Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)](../content/netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.md) |  |
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [NetskopeWebTx](../solutions/netskopewebtx.md):**
 
@@ -232,6 +281,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeWebTx_Workbook](../content/github-only-netskopewebtx-workbook-8c510694.md) |  |
 
 ## Parsers Using This Table (2)
 

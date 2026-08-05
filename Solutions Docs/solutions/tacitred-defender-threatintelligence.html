@@ -142,12 +142,15 @@
 <li>TacitRed API credentials</li>
 <li>Microsoft Defender Threat Intelligence license</li>
 <li>Appropriate RBAC permissions to deploy Logic Apps</li>
+<li>An administrator who can grant <code>Storage Blob Data Owner</code> to the Function App managed identity on the deployed storage account after installation</li>
 </ul>
 <h2 id="deployment">Deployment</h2>
 <ol>
 <li>Navigate to Microsoft Sentinel Content Hub</li>
 <li>Search for &quot;TacitRed Defender Threat Intelligence&quot;</li>
 <li>Click Install and follow the deployment wizard</li>
+<li>Assign <code>Storage Blob Data Owner</code> to the Function App managed identity on the storage account created for the Function App</li>
+<li>Assign <code>Reader</code> and <code>Microsoft Sentinel Contributor</code> to the Function App managed identity on the target Log Analytics workspace</li>
 <li>Configure the playbook with your TacitRed API credentials</li>
 </ol>
 <h2 id="how-it-works">How It Works</h2>
@@ -180,6 +183,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>25-05-2026</td>
+  <td>Fixed Content Hub <code>InvalidTemplate</code> deployment failure on hyphenated workspace names. Bound Application Insights to the selected Log Analytics workspace via <code>WorkspaceResourceId</code> so deployment does not require permission to create a managed resource group. Replaced hardcoded <code>EndpointSuffix=core.windows.net</code> with <code>environment().suffixes.storage</code> so the template works in sovereign clouds. Changed the <code>location</code> parameter default in <code>Playbooks/TacitRedDefenderTI_FunctionApp/azuredeploy.json</code> to <code>[resourceGroup().location]</code> so standalone deployments resolve a real region. Post-deployment guidance in README still requires manually assigning <code>Storage Blob Data Owner</code> to the Function App managed identity.</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>11-02-2026</td>

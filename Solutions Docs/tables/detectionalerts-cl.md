@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Google *(basis: projected)* |
-| **Source Product** | SecOps Detection *(basis: projected)* |
-| **Event Type** | Alerts |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -84,7 +81,13 @@ This table is ingested by the following connectors:
 | [Google SecOps - Multi-Event Correlated Alert](../content/googlesecops-google-secops-multi-event-correlated-alert-d4f8a032-6d5b-4e9f-b3a0-8c2e4f7d0b6e-b1a07461.md) |  |
 | [Google SecOps - Single-Event Alert](../content/googlesecops-google-secops-single-event-alert-e5a9b143-7e6c-4f0a-c4b1-9d3f5a8e1c7f-4b55b757.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAlertEventGoogleSecOps](../asim/asimalerteventgooglesecops.md) | AlertEvent | Google SecOps |  |
 
 ### Other Parsers (1)
 

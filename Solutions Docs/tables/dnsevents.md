@@ -11,8 +11,6 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Network |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | DNS *(basis: projected)* |
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -130,8 +128,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-287993a9.md) |  |
 | [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md) | `SubType == "LookupQuery"` |
-| [TI map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-1b58bbc8.md) |  |
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 

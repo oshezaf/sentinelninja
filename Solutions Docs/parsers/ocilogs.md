@@ -13,8 +13,8 @@
 | Title | Parser for OCILogs |
 | Location | Solution |
 | Solution | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-07-16 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Parsers/OCILogs.yaml) |

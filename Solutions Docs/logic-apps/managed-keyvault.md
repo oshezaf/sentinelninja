@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 151 |
-| **Solutions** | 25 |
+| **Playbooks using** | 161 |
+| **Solutions** | 26 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 
 ## Playbooks Using This Connector
@@ -24,7 +24,7 @@
 | [AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-blob-storage-add-domains-to-zscaler-url-category-dffe258e.md) | 📄 Standalone | 1 | 2 |
 | [AS-Block-GitHub-User](../content/standalone-content-as-block-github-user-8d97b5dd.md) | 📄 Standalone | 1 | 1 |
 | [AS-Block-Hash-in-Defender](../content/standalone-content-as-block-hash-in-defender-0c0410bc.md) | 📄 Standalone | 1 | 1 |
-| [AS-Checkmarx-Audit-Ingestion](../content/standalone-content-as-checkmarx-audit-ingestion-8715fea6.md) | 📄 Standalone | 0 | 1 |
+| [AS-Checkmarx-Audit-Ingestion](../content/standalone-content-as-checkmarx-audit-ingestion-8715fea6.md) | 📄 Standalone | 1 | 1 |
 | [AS-Checkmarx-SAST-Ingestion](../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone | 1 | 1 |
 | [AS-Clear-Okta-Network-Zone-List](../content/standalone-content-as-clear-okta-network-zone-list-38fe847c.md) | 📄 Standalone | 1 | 1 |
 | [AS-Create-Opsgenie-Incident](../content/standalone-content-as-create-opsgenie-incident-220c25ba.md) | 📄 Standalone | 1 | 1 |
@@ -166,6 +166,16 @@
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 4 |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
+| [Whisper Security - Batch Indicator Enrichment](../content/whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Check ASN Reputation](../content/whisper-whisper-security-check-asn-reputation-f2a79814.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Discover Co-Hosted Domains](../content/whisper-whisper-security-discover-co-hosted-domains-df0d4f7c.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain ASN](../content/whisper-whisper-security-explain-asn-71637933.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain Domain](../content/whisper-whisper-security-explain-domain-b479e0f2.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain IP Address](../content/whisper-whisper-security-explain-ip-address-1e68b177.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain Network](../content/whisper-whisper-security-explain-network-c99337ce.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Get BGP History](../content/whisper-whisper-security-get-bgp-history-150c0325.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Get Infrastructure Chain](../content/whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Get WHOIS History](../content/whisper-whisper-security-get-whois-history-ccdf0e6e.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
 
 ---
 

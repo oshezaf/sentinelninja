@@ -15,7 +15,7 @@ This query identifies phishing emails sent that were successfully delivered, by 
 | **ID** | `cdac93ef-56c0-45bf-9e7f-9cbf0ad06567` |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1566 |
-| **Required Connectors** | [OfficeATP](../connectors/officeatp.md) |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Delivered%20Bad%20Emails%20from%20Top%20bad%20IPv4%20addresses.yaml) |
 
 ## Tables Used

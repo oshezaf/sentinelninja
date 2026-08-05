@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AutomatedLogicWebCTRL` |
-| **Publisher / Vendor** | AutomatedLogic |
+| **Publisher** | AutomatedLogic |
 | **Used in Solutions** | [ALC-WebCTRL](../solutions/alc-webctrl.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_WindowsEvents_WebCTRL.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL/Data%20Connectors/Connector_WindowsEvents_WebCTRL.json) |

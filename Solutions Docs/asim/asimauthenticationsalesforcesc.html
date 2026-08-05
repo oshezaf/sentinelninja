@@ -42,7 +42,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Schema Version</strong></td>
-  <td style="text-align:left">0.1.3</td>
+  <td style="text-align:left">0.1.4</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Parser Type</strong></td>
@@ -54,11 +54,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Parser Version</strong></td>
-  <td style="text-align:left">0.1.0 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md">version history</a>)</td>
+  <td style="text-align:left">0.2.0 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md">version history</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">Dec 12th, 2023</td>
+  <td style="text-align:left">Jun 25, 2026</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Unifying Parser</strong></td>
@@ -71,7 +71,7 @@
 </tbody>
 </table>
 <h2 id="description">Description</h2>
-<p>This ASIM parser supports normalizing Salesforce sign in logs, stored in the  SalesforceServiceCloud_CL table, to the ASIM Authentication schema.</p>
+<p>This ASIM parser supports normalizing Salesforce sign in logs, stored in the SalesforceServiceCloud_CL, SalesforceServiceCloudV2_CL or SalesforceServiceCloudV3_CL tables, to the ASIM Authentication schema.</p>
 <h2 id="source-tables">Source Tables</h2>
 <p>This parser reads from the following tables:</p>
 <table>
@@ -84,6 +84,18 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> 🔶</td>
   <td style="text-align:center">?</td>
@@ -107,6 +119,11 @@
   <td style="text-align:left">bool</td>
   <td style="text-align:left">False</td>
 </tr>
+<tr>
+  <td style="text-align:left"><code>pack</code></td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">False</td>
+</tr>
 </tbody>
 </table>
 <h2 id="associated-connectors">Associated Connectors</h2>
@@ -123,13 +140,16 @@
   <td style="text-align:left"><a href="../connectors/salesforceservicecloud.html">SalesforceServiceCloud</a></td>
   <td style="text-align:left"><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud (legacy connector)</a></td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/salesforceservicecloudccpdefinition.html">SalesforceServiceCloudCCPDefinition</a></td>
+  <td style="text-align:left"><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
+</tr>
 </tbody>
 </table>
 <p><strong>Solutions:</strong> <a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud (legacy connector)</a></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://aka.ms/ASimAuthenticationDoc">ASIM Authentication Schema</a></li>
-<li><a href="https:/aka.ms/AboutASIM">ASIM</a></li>
 <li><a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_eventlogfile_login.htm">Salesforce Service Cloud</a></li>
 </ul>
 <hr />

@@ -17,7 +17,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `iboss` |
-| **Publisher / Vendor** | iboss |
+| **Publisher** | iboss |
 | **Used in Solutions** | [iboss](../solutions/iboss.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [iboss_cef.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss/Data%20Connectors/iboss_cef.json) |

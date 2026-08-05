@@ -40,23 +40,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://cyberint.com/customer-support/">https://cyberint.com/customer-support/</a></td>
+  <td style="text-align:left"><a href="https://www.checkpoint.com/support-services/contact-support/">https://www.checkpoint.com/support-services/contact-support/</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
   <td style="text-align:left">Security - Threat Intelligence</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Check Point <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Cyberint</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.0</td>
+  <td style="text-align:left">3.1.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -184,8 +176,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-em-importer-alerts-%E2%86%92-sentinel-incidents-16ebefeb.html">Check Point EM - Importer (Alerts → Sentinel Incidents)</a></td>
-  <td style="text-align:left">Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and cr...</td>
+  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-em-importer-alerts-%E2%86%92-securityalert-%E2%86%92-microsoft-sentinel-incidents-01097cbb.html">Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)</a></td>
+  <td style="text-align:left">Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and wr...</td>
   <td style="text-align:left"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
@@ -194,13 +186,13 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-%E2%86%92-argos-980b2f1d.html">Check Point Exposure Management - Exporter (Sentinel → Argos)</a></td>
-  <td style="text-align:left">When a Sentinel incident status changes, this playbook pushes the update to the corresponding alert(...</td>
+  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-%E2%86%92-argos-1931ff3d.html">Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident status changes, this playbook pushes the update to the correspond...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.html">Check Point Exposure Management - Fetch Attachments On-Demand</a></td>
-  <td style="text-align:left">On-demand playbook that fetches alert attachments and analysis report for a Sentinel incident, surfa...</td>
+  <td style="text-align:left">On-demand playbook that fetches alert attachments and analysis report for a Microsoft Sentinel incid...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -209,8 +201,8 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-%E2%86%92-argos-6353fe22.html">Check Point Exposure Management - Manual Status Update (Sentinel → Argos)</a></td>
-  <td style="text-align:left">On-demand playbook that reads the current Sentinel incident status and pushes it to the correspondin...</td>
+  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-%E2%86%92-argos-e0c710a5.html">Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)</a></td>
+  <td style="text-align:left">On-demand playbook that reads the current Microsoft Sentinel incident status and pushes it to the co...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -238,7 +230,7 @@
 <tr>
   <td style="text-align:left"><a href="../parsers/cpemalerts.html">CPEMAlerts</a></td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/tacitred-findings-cl.html"><code>TacitRed_Findings_CL</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a> <em>(read)</em><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a> <em>(read)</em><br><a href="../tables/tacitred-findings-cl.html"><code>TacitRed_Findings_CL</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -332,6 +324,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.2</td>
+  <td>02-06-2026</td>
+  <td>Updated support contact information and documentation links.</td>
+</tr>
 <tr>
   <td>3.1.0</td>
   <td>10-03-2026</td>

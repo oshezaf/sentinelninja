@@ -13,8 +13,8 @@ User.session.impersonation, usually triggered by Okta Support, are rare. This qu
 | **Type** | Hunting Query |
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **ID** | `96fb9b37-e2b7-45f6-9b2a-cb9cdfd2b0fc` |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1195 |
+| **Tactics** | PrivilegeEscalation, Persistence |
+| **Techniques** | T1078.004, T1098 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Hunting%20Queries/ImpersonationSession.yaml) |
 

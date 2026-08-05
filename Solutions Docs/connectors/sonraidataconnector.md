@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SonraiDataConnector` |
-| **Publisher / Vendor** | Sonrai |
+| **Publisher** | Sonrai |
 | **Used in Solutions** | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [Connector_REST_API_Sonrai.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity/Data%20Connectors/Connector_REST_API_Sonrai.json) |

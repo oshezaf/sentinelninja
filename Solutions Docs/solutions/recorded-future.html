@@ -83,15 +83,15 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#internal-tables">Internal Tables</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
-<h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>2 table(s)</strong> from its content items:</p>
+<h2 id="internal-tables">Internal Tables</h2>
+<p>The following <strong>6 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -102,24 +102,16 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 <tbody>
 <tr>
   <td><a href="../tables/recordedfutureplaybookalerts-cl.html"><code>RecordedFuturePlaybookAlerts_CL</code></a></td>
-  <td>Playbooks (writes)</td>
+  <td>Analytics, Playbooks (writes)</td>
 </tr>
 <tr>
   <td><a href="../tables/recordedfutureportalalerts-cl.html"><code>RecordedFuturePortalAlerts_CL</code></a></td>
-  <td>Playbooks (writes)</td>
+  <td>Analytics, Playbooks (writes)</td>
 </tr>
-</tbody>
-</table>
-<h3 id="internal-tables">Internal Tables</h3>
-<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
-<table>
-<thead>
 <tr>
-  <th>Table</th>
-  <th>Used By Content</th>
+  <td><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a></td>
+  <td>Analytics, Playbooks (writes)</td>
 </tr>
-</thead>
-<tbody>
 <tr>
   <td><a href="../tables/recordedfuturethreatmapmalware-cl.html"><code>RecordedFutureThreatMapMalware_CL</code></a></td>
   <td>Playbooks (writes), Workbooks</td>
@@ -135,7 +127,7 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>37 content item(s)</strong> (33 in solution, 4 discovered 🔍):</p>
+<p>This solution includes <strong>41 content item(s)</strong> (37 in solution, 4 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -153,15 +145,15 @@ This solution depends on underlying Microsoft technologies. Some of these depend
   <td style="text-align:right">-</td>
 </tr>
 <tr>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytic Rules</td>
   <td style="text-align:right">8</td>
   <td style="text-align:right">8</td>
   <td style="text-align:right">-</td>
 </tr>
 <tr>
-  <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:right">4</td>
-  <td style="text-align:right">4</td>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">8</td>
   <td style="text-align:right">-</td>
 </tr>
 <tr>
@@ -183,6 +175,30 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/recorded-future-recorded-future-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab3-75450771.html">Recorded Future Alerts Incident Creation</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfutureportalalerts-cl.html"><code>RecordedFuturePortalAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/recorded-future-recorded-future-playbook-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab2-33b657fc.html">Recorded Future Playbook Alerts Incident Creation</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfutureplaybookalerts-cl.html"><code>RecordedFuturePlaybookAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/recorded-future-recorded-future-sandbox-malicious-email-attachment-a1b2c3d4-5678-90ab-cdef-222222222222-262dc20b.html">Recorded Future Sandbox - Malicious Email Attachment</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/recorded-future-recorded-future-sandbox-malicious-file-in-storage-account-a1b2c3d4-5678-90ab-cdef-333333333333-28a242ec.html">Recorded Future Sandbox - Malicious File in Storage Account</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-acbf7ef6-f964-44c3-9031-7834ec68175f-9002c0d5.html">RecordedFuture Threat Hunting Domain All Actors</a></td>
   <td style="text-align:left">Medium</td>
@@ -301,8 +317,8 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-alert-importer-744ed2e2.html">RecordedFuture-Alert-Importer</a></td>
-  <td style="text-align:left">This playbook imports alerts from Recorded Future and stores them in a custom log in the log analyti...</td>
-  <td style="text-align:left"><a href="../tables/recordedfutureportalalerts-cl.html"><code>RecordedFuturePortalAlerts_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left">This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePor...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfutureportalalerts-cl.html"><code>RecordedFuturePortalAlerts_CL</code></a> <em>(read/write)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-domain-c2-dns-name-tiprocessor-fa1b7c55.html">RecordedFuture-DOMAIN-C2_DNS_Name-TIProcessor</a></td>
@@ -351,8 +367,8 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.html">RecordedFuture-Playbook-Alert-Importer</a></td>
-  <td style="text-align:left">This playbook imports alerts from Recorded Future and stores them in a custom log in the log analyti...</td>
-  <td style="text-align:left"><a href="../tables/recordedfutureplaybookalerts-cl.html"><code>RecordedFuturePlaybookAlerts_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left">This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePla...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfutureplaybookalerts-cl.html"><code>RecordedFuturePlaybookAlerts_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-sandbox-enrichment-url-500e284d.html">RecordedFuture-Sandbox_Enrichment-Url</a></td>
@@ -361,13 +377,13 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.html">RecordedFuture-Sandbox_Outlook_Attachment</a></td>
-  <td style="text-align:left">This playbook will trigger on emails with attachmets and send them to Recorded Future Sandbox. The r...</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">This playbook will trigger on emails with attachments and send them to Recorded Future Sandbox. The ...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.html">RecordedFuture-Sandbox_StorageAccount</a></td>
   <td style="text-align:left">This playbook will trigger on files in a Storage Account and send them to Recorded Future Sandbox. T...</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-recordedfuture-threatintelligenceimport-ef10c4ab.html">RecordedFuture-ThreatIntelligenceImport</a></td>
@@ -457,6 +473,11 @@ Microsoft Sentinel analytic rules correlates threat intelligence indicators with
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.20</td>
+  <td>04-05-2026</td>
+  <td>Removed <strong>incident creation</strong> from affected playbooks, in preparation for Microsoft Defender migration. Added Analytic Rules that will handle incident creation.</td>
+</tr>
 <tr>
   <td>3.2.19</td>
   <td>13-04-2026</td>

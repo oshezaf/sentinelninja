@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Threat Intelligence</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Digital Shadows <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Searchlight</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.0</td>
 </tr>
@@ -90,11 +82,8 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/digitalshadowssearchlightazurefunctions.html">Digital Shadows Searchlight</a> 🔶</li>
+<li><a href="../connectors/digitalshadowssearchlightazurefunctions.html">Digital Shadows Searchlight</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -107,15 +96,12 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/digitalshadows-cl.html"><code>DigitalShadows_CL</code></a> 🔶</td>
+  <td><a href="../tables/digitalshadows-v2-cl.html"><code>DigitalShadows_V2_CL</code></a></td>
   <td><a href="../connectors/digitalshadowssearchlightazurefunctions.html">Digital Shadows Searchlight</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
@@ -155,13 +141,13 @@
   <td style="text-align:left"><a href="../content/digital-shadows-digital-shadows-incident-creation-for-exclude-app-f7abe9c1-1e6c-4317-b907-25769e7764c5-54e3b41d.html">Digital Shadows Incident Creation for exclude-app</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/digitalshadows-cl.html"><code>DigitalShadows_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/digitalshadows-v2-cl.html"><code>DigitalShadows_V2_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/digital-shadows-digital-shadows-incident-creation-for-include-app-ede3071d-9317-45f9-b36c-6a6effee5294-078d7289.html">Digital Shadows Incident Creation for include-app</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/digitalshadows-cl.html"><code>DigitalShadows_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/digitalshadows-v2-cl.html"><code>DigitalShadows_V2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -176,7 +162,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/digital-shadows-digitalshadows-3362ae13.html">DigitalShadows</a></td>
-  <td style="text-align:left"><a href="../tables/digitalshadows-cl.html"><code>DigitalShadows_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/digitalshadows-v2-cl.html"><code>DigitalShadows_V2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -207,6 +193,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>24-06-2026</td>
+  <td>Migrated ingestion from the retiring HTTP Data Collector API to the Logs Ingestion API. New table <code>DigitalShadows_V2_CL</code> with clean PascalCase columns; legacy <code>DigitalShadows_CL</code> data ages out per workspace retention. <strong>New required deployment parameter <code>DcrWorkspaceResourceId</code></strong> (full resource ID of the Log Analytics workspace). Function Apps now authenticate via system-assigned managed identity (Monitoring Metrics Publisher on the DCR); legacy <code>WorkspaceID</code>/<code>WorkspaceKey</code> parameters removed. Both Function Apps upgraded to Python 3.11. Analytic rules updated to query <code>DigitalShadows_V2_CL</code> while keeping detection logic intact via KQL <code>project-rename</code> aliases.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>04-06-2026</td>

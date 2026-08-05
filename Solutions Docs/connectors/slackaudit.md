@@ -15,7 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SlackAudit` |
-| **Publisher / Vendor** | Slack |
+| **Publisher** | Slack |
 | **Used in Solutions** | [SlackAudit](../solutions/slackaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [azuredeploy_Slack_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackNativePollerConnector/azuredeploy_Slack_native_poller_connector.json) |

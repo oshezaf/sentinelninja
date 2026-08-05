@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `BoschAIShield` |
-| **Publisher / Vendor** | Bosch |
+| **Publisher** | Bosch |
 | **Used in Solutions** | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [AIShieldConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring/Data%20Connectors/AIShieldConnector.json) |

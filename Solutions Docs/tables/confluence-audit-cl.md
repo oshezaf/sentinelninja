@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Atlassian *(basis: projected)* |
-| **Source Product** | Confluence *(basis: projected)* |
-| **Event Type** | Audit |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

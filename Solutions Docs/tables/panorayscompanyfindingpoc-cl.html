@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanoraysCompanyFindingPOCCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="panorayscompanyfindingpoc_cl">PanoraysCompanyFindingPOC_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (20 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays%5CData%20Connectors%5CPanoraysSelfFindings_ccf/PanoraysSelfFindings_Table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">asset_name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The specific digital asset where the finding was detected (e.g., a domain, subdomain, IP address, or URL).</td>
+</tr>
+<tr>
+  <td style="text-align:left">category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The high-level security domain of the finding (Possible values: Human, Network and IT, Application)</td>
+</tr>
+<tr>
+  <td style="text-align:left">cves</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of Common Vulnerabilities and Exposures (CVE) IDs associated with this finding, if applicable (e.g., [CVE-2024-44228]).</td>
+</tr>
+<tr>
+  <td style="text-align:left">description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A detailed explanation of the vulnerability, including why it is a risk and the potential impact</td>
+</tr>
+<tr>
+  <td style="text-align:left">evidence</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Technical proof collected during the scan. May include HTTP headers, open port nr., or specific configuration settings that triggered the finding.</td>
+</tr>
+<tr>
+  <td style="text-align:left">finding_text</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The headline or short title of the specific finding (e.g., Cloud Private Services Exposed)</td>
+</tr>
+<tr>
+  <td style="text-align:left">id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier for this specific finding within the Panorays platform.</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_hidden</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if this finding has been manually suppressed or hidden in the Panorays dashboard (true = hidden)</td>
+</tr>
+<tr>
+  <td style="text-align:left">metadata</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A JSON object containing additional context specific to the finding type (e.g., specific port numbers, certificate details)</td>
+</tr>
+<tr>
+  <td style="text-align:left">previously_disputed</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Flag indicating if this finding was previously marked as a false positive or disputed by an analyst.</td>
+</tr>
+<tr>
+  <td style="text-align:left">segments</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of business units, tags, or asset groups within Panorays that this finding is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The risk level assigned to this finding. Possible values: Critical, High, Medium, Low, Info.</td>
+</tr>
+<tr>
+  <td style="text-align:left">status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The current lifecycle state of the finding. Possible values Open, Done, Closed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">status_update_ts</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The timestamp (as a string) reflecting specifically when the status field last changed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">sub_category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A granular classification of the finding within the parent category (e.g., Exposed Services, Mail Server etc.).</td>
+</tr>
+<tr>
+  <td style="text-align:left">test_name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the security test that generated this finding</td>
+</tr>
+<tr>
+  <td style="text-align:left">test_text</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The descriptive text of the security test</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The UTC timestamp when this event was ingested into Microsoft Sentinel. Use this for time-range filtering in KQL</td>
+</tr>
+<tr>
+  <td style="text-align:left">update_ts</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) when the record was last modified in the Panorays.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updated_by</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user or system process that performed the last update to this record.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/panorays.html">Panorays</a></li>
+</ul>
+<h2 id="connectors">Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/panorays-connectordefinition.html">Panorays</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/%5Bresourceid-%27microsoft.operationalinsights-workspaces-providers-dataconnectordefinitions%27,-parameters-%27workspacename%27-,-%27microsoft.securityinsights%27,-variables-%27connectordefinitionname%27-%5D.html">Panorays (Manual)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 54 |
-| **Solutions** | 14 |
+| **Playbooks using** | 55 |
+| **Solutions** | 15 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
 
 ## Playbooks Using This Connector
@@ -52,6 +52,7 @@
 | [O365 - Block Spam Domain](../content/microsoft-defender-for-office-365-o365-block-spam-domain-87d2a630.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) | 0 | 5 |
 | [O365 - Block Suspicious Sender](../content/microsoft-defender-for-office-365-o365-block-suspicious-sender-a4f1718c.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) | 0 | 4 |
 | [O365 - Delete All Malicious Inbox Rule](../content/microsoft-defender-for-office-365-o365-delete-all-malicious-inbox-rule-c33bc467.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) | 0 | 7 |
+| [Quarantine-Email](../content/checkpoint-harmony-email-and-collaboration-quarantine-email-83dd4f94.md) | [CheckPoint Harmony Email and Collaboration](../solutions/checkpoint-harmony-email-and-collaboration.md) | 0 | 1 |
 | [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment-6996dff4.md) | [SlashNext](../solutions/slashnext.md) | 0 | 2 |
 | [TacitRed to Defender TI](../content/tacitred-defender-threatintelligence-tacitred-to-defender-ti-00c46953.md) | [TacitRed-Defender-ThreatIntelligence](../solutions/tacitred-defender-threatintelligence.md) | 0 | 1 |
 | [Veeam-CollectConfigurationBackups](../content/veeam-veeam-collectconfigurationbackups-9c233254.md) | [Veeam](../solutions/veeam.md) | 0 | 3 |

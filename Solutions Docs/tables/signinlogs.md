@@ -135,7 +135,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SigninLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 
-## Solutions (35)
+## Solutions (36)
 
 This table is used by the following solutions:
 
@@ -152,6 +152,7 @@ This table is used by the following solutions:
 - [GitLab](../solutions/gitlab.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -185,7 +186,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (78)
+## Content Items Using This Table (87)
 
 ### Analytic Rules (31)
 
@@ -281,8 +282,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-493f3f65.md) |  |
 | [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md) |  |
-| [TI map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.md) |  |
 
 **In solution [eDCRule](../solutions/edcrule.md):**
 
@@ -290,7 +291,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Entra ID] Suspicious Continuous OAuth Token Usage](../content/edcrule-[entra-id]-suspicious-continuous-oauth-token-usage-67802748-435b-4f80-9f61-b9a9ac6ea15c-abe74de3.md) |  |
 
-### Hunting Queries (25)
+### Hunting Queries (33)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -312,6 +313,19 @@ This table is ingested by the following connectors:
 | [Sign-ins From VPS Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.md) | `ResultType == "0"` |
 | [Sign-ins from Nord VPN Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.md) | `ResultType == "0"` |
 | [Suspicious Sign-ins to Privileged Account](../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) | `OperationName in "Set domain authentication,Set federation settings on domain"` |
+| [MFA Method Added on Risky Account](../content/hybrid-attack-cloud-&-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.md) | `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered security info,User updated security info"` |
+| [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
+| [Novel sign-in context followed by IAM reconnaissance burst](../content/hybrid-attack-cloud-&-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.md) |  |
+| [Risky Successful Sign-in to VPN or Network Access Application](../content/hybrid-attack-cloud-&-identity-risky-successful-sign-in-to-vpn-or-network-access-application-482a1615-5bc6-4b23-b2c5-97a4c3179240-5cf359b4.md) |  |
+| [Suspicious sign-in followed by auth method or role change](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-auth-method-or-role-change-adaf1ceb-db2d-49e9-989f-bf4116f53153-4324add3.md) |  |
+| [Suspicious sign-in followed by cloud network exposure writes](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.md) |  |
+| [VPN Credential Stuffing and Password Spray](../content/hybrid-attack-cloud-&-identity-vpn-credential-stuffing-and-password-spray-a1b2c3d4-e5f6-7890-abcd-ef1234567890-f34272b4.md) |  |
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
@@ -367,7 +381,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Solorigate Encoded Domain in URL](../content/windows-server-dns-solorigate-encoded-domain-in-url-29a1815a-3ada-4182-a178-e52c483d2f95-55f1aaa9.md) |  |
 
-### Workbooks (22)
+### Workbooks (23)
 
 **In solution [1Password](../solutions/1password.md):**
 
@@ -422,6 +436,12 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
@@ -510,9 +530,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (22 criteria, 32 total references)
+## Selection Criteria Summary (24 criteria, 34 total references)
 
-References by type: 0 connectors, 32 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -528,6 +548,8 @@ References by type: 0 connectors, 32 content items, 0 ASIM parsers, 0 other pars
 | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
 | `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` | - | 1 | - | - | **1** |
+| `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 1 | - | - | **1** |
+| `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered security info,User updated security info"` | - | 1 | - | - | **1** |
 | `ResultType in "50125,50140,70043,70044"` | - | 1 | - | - | **1** |
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `AuthenticationRequirement == "singleFactorAuthentication"`<br>`ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
@@ -538,7 +560,7 @@ References by type: 0 connectors, 32 content items, 0 ASIM parsers, 0 other pars
 | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`ResultType != "0"` | - | 1 | - | - | **1** |
 | `AppDisplayName has_any "teams"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **32** | **0** | **0** | **32** |
+| **Total** | **0** | **34** | **0** | **0** | **34** |
 
 ### AppDisplayName
 
@@ -590,6 +612,15 @@ References by type: 0 connectors, 32 content items, 0 ASIM parsers, 0 other pars
 | `Reset user password` | - | 2 | - | - | **2** |
 | `Sign-in activity` | - | 2 | - | - | **2** |
 | `!= Consent to application` | - | 2 | - | - | **2** |
+| `Set domain authentication` | - | 1 | - | - | **1** |
+| `Set federation settings on domain` | - | 1 | - | - | **1** |
+| `Admin deleted security info` | - | 1 | - | - | **1** |
+| `Admin registered security info` | - | 1 | - | - | **1** |
+| `Admin updated security info` | - | 1 | - | - | **1** |
+| `User changed default security info` | - | 1 | - | - | **1** |
+| `User deleted security info` | - | 1 | - | - | **1** |
+| `User registered security info` | - | 1 | - | - | **1** |
+| `User updated security info` | - | 1 | - | - | **1** |
 | `has_any Add directory role member` | - | 1 | - | - | **1** |
 | `has_any Add member to role` | - | 1 | - | - | **1** |
 | `has_any Add user` | - | 1 | - | - | **1** |

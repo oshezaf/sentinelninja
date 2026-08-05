@@ -45,19 +45,17 @@ This solution depends on **1 other solution(s)**:
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **4 data connector(s)**:
 
+- [Infoblox SOC Insights (via Codeless Connector Framework)](../connectors/infobloxsocinsightsconnector.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
-- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶
+- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
 
 Connectors from dependency solutions:
 
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
 
 ## Tables Used
 
@@ -77,7 +75,7 @@ The following **7 table(s)** are used internally by this solution's content item
 | [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md), [Infoblox SOC Insights (via Codeless Connector Framework)](../connectors/infobloxsocinsightsconnector.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
@@ -131,6 +129,7 @@ This solution includes **12 content item(s)**:
 
 | **Version**   | **Date Modified**              | **Change History**                      |
 |---------------|--------------------------------|-----------------------------------------|
+| 3.1.0         | 07-09-2026                     | **Data Connector** via Codeless Connector Framework added  |
 | 3.0.2         | 28-06-2024                     | Deprecating data connectors  |
 | 3.0.1         | 03-05-2024                     | Repackaged for parser issue fix on reinstall |
 | 3.0.0         | 04-03-2024                     | Initial Solution Release                |

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://obsidiansecurity.com/contact](https://obsidiansecurity.com/contact) |
 | **Categories** | Security - Cloud Security,Security - Network |
-| **Source Vendor** | Obsidian Security *(basis: publisher)* |
-| **Source Product** | Datasharing |
 | **Version** | 3.0.0 |
 | **Author** | Timothy Zhou - tzhou@obsidiansecurity.com |
 | **First Published** | 2024-01-01 |

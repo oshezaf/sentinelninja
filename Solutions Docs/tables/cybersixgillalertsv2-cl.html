@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSixgillAlertsV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cybersixgillalertsv2_cl">CyberSixgillAlertsV2_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (41 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts%5CData%20Connectors%5CCybersixgillAlerts_CCF/table_CyberSixgillAlertsV2.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ActorUrlWithContext</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direct link to the threat actor in the Cybersixgill portal, scoped by source site. Empty string when threat_actor is unknown. Mirrors the Azure Function actor_url_with_context_s, computed from es_item.creator and es_item.site (the AzFunc populates this only when its 3rd-call branch sets threat_actor; CCF computes it whenever es_item.creator is present, which is strictly more coverage).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUrlWithoutContext</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direct link to the threat actor in the Cybersixgill portal, without source-site scope. Empty string when threat_actor is unknown. Mirrors the Azure Function actor_url_without_context_s.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalInfo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Nested additional_info object from the per-alert detail call. Declared so DCR transforms can extract cve_id, nvd.v3/v2.current, score.current, organization_name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertCreationDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the alert record was ingested</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertDate</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Date and time when the alert was generated</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the actionable alert as returned by the Cybersixgill API</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertTitle</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Title of the actionable alert</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertTypeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Alert type identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">Assets</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Flat list of asset values (bins + domain_names) concatenated from matched_assets, mirroring the Azure Function flattening behaviour.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Legacy HTTP Data Collector auto-field carrying the source host name. Populated with empty string to preserve byte-compatibility with the Azure Function table - ingestion is direct HTTPS from Cybersixgill so there is no source host.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content details of the actionable alert. Matches the Azure Function branching: when additional_info.cve_id is present, use additional_info.cve_description; otherwise fall back to es_item.content when the top-level content field is empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Cve</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">CVE identifier when the alert relates to a vulnerability. Empty string for non-CVE alerts. Mirrors the Azure Function cve_s field, sourced from additional_info.cve_id in the per-alert detail response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CveUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direct link to the CVE record in the Cybersixgill portal when cve_id is present. Empty string otherwise. Mirrors the Azure Function cve_url_s field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CyberSixgillCvss20</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">CVSS v2.0 score for CVE-related alerts, sourced from additional_info.nvd.v2.current. Defaults to -1 when the CVE has no v2 score (matches Azure Function); null for non-CVE alerts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CyberSixgillCvss31</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">CVSS v3.1 score for CVE-related alerts, sourced from additional_info.nvd.v3.current. Defaults to -1 when the CVE has no v3 score (matches Azure Function); null for non-CVE alerts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CyberSixgillDveScore</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Cybersixgill DVE (Dynamic Vulnerability Exploit) score for CVE-related alerts, sourced from additional_info.score.current. Null for non-CVE alerts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EsId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Elasticsearch document identifier for the underlying intelligence item</td>
+</tr>
+<tr>
+  <td style="text-align:left">EsItem</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Nested es_item object from the per-alert detail call. Declared so DCR transforms can extract creator, site, content.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the actionable alert</td>
+</tr>
+<tr>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Legacy SCOM Management Group name. Populated with empty string to preserve byte-compatibility with the Azure Function table - SCOM is not part of the CCF/DCR pipeline.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchedAssets</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Nested matched_assets object from the bulk alert response. Declared so DCR transforms can extract bins and domain_names.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchedAssetsBins</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Matched assets bins extracted from matched_assets</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchedAssetsDomainNames</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain names extracted from matched_assets</td>
+</tr>
+<tr>
+  <td style="text-align:left">MG</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Legacy SCOM Management Group GUID. Populated with the empty-GUID sentinel to preserve byte-compatibility with the Azure Function table - there is no real management group in the CCF/DCR pipeline.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the organization the alert was raised for, sourced from additional_info.organization_name. Mirrors the Azure Function field of the same name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PortalUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direct link to this alert in the Cybersixgill portal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Read</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the alert has been read</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Severity level of the alert as an integer score (e.g. 10)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Site</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Site where the threat was observed</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Legacy HTTP Data Collector field. Hard-coded to 'RestAPI' to preserve byte-compatibility with the Azure Function table so production parsers behave identically across AzFunc and CCF ingestion paths.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Nested status object from the bulk alert response. Declared so DCR transforms can extract status.name with the 'Treatment Required' fallback.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StatusName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Machine-readable status name of the alert (e.g. treatment_required). Defaults to 'Treatment Required' when missing, matching the Azure Function fallback behaviour.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubAlerts</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Raw sub_alerts array from the Cybersixgill API, preserved as a dynamic column. The CyberSixgillAlertsExpanded parser uses mv-expand on this column at query time to fan out one row per sub-alert - matching the per-sub-alert rows the legacy Azure Function emitted into CyberSixgill_Alerts_CL.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubAlertsCount</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Number of sub-alerts. Computed from array_length(sub_alerts) to match the Azure Function (which uses len(sub_alerts) regardless of the API-supplied sub_alerts_count).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatActor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Threat actor (dark web username or channel name) extracted from es_item</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Threat level of the alert (e.g. imminent, emerging)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threats</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Threats associated with the alert, serialized from array</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Dark web site or platform where the threat was observed, extracted from es_item</td>
+</tr>
+<tr>
+  <td style="text-align:left">Time</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp of the alert, mirrored from the date field</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User ID associated with the alert</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/cybersixgill-actionable-alerts.html">Cybersixgill-Actionable-Alerts</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/cybersixgillalertsccfconnector.html">Cybersixgill Actionable Alerts (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

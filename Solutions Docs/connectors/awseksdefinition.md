@@ -12,7 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `AWSEKSDefinition` |
 | **Publisher** | Amazon Web Services |
-| **Source Vendor** | Amazon *(basis: publisher)* |
 | **Used in Solutions** | [AWS EKS](../solutions/aws-eks.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSEKS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_ConnectorDefinition.json) |

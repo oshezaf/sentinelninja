@@ -10,7 +10,6 @@
 |:----------|:------|
 | **Connector ID** | `MicrosoftSentinelSAP` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | SAP *(basis: override)* |
 | **Used in Solutions** | [SAP](../solutions/sap.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) |

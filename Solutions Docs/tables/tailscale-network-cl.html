@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TailscaleNetworkCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="tailscale_network_cl">Tailscale_Network_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (29 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tailscale_Network_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">DstAddresses</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstCount</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstNodeId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstNodeName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstNodes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstOs</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstTags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstUser</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExitTraffic</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">FlowEnd</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">FlowStart</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">HasExitTraffic</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">HasPhysicalTraffic</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">HasSubnetTraffic</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">HasVirtualTraffic</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsRelayed</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">NodeId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">PhysicalTraffic</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcAddresses</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcNode</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcNodeName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcOs</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcTags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUser</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubnetTraffic</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">VirtualTraffic</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/tailscalepremiumccf.html">Tailscale Premium (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (16)</h2>
+<h3 id="analytic-rules">Analytic Rules (6)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-derp-relay-traffic-surge-0a1c8d12-e7d3-4890-8b89-8d6dbc1be2f0-fab92f1d.html">Tailscale Premium: DERP relay traffic surge</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-large-outbound-transfer-over-tailnet-d2e3f4a5-2b3c-4d5e-6f7a-8b9c0d1e2f3a-69b67d96.html">Tailscale Premium: Large outbound transfer over tailnet</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-mass-fan-out-from-single-node-f4a5b6c7-4d5e-6f7a-8b9c-0d1e2f3a4b5c-b89550b1.html">Tailscale Premium: Mass fan-out from single node</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-network-flow-beaconing-detected-e3f4a5b6-3c4d-5e6f-7a8b-9c0d1e2f3a4b-1e9c1f7e.html">Tailscale Premium: Network flow beaconing detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-subnet-router-throughput-anomaly-a5b6c7d8-5e6f-7a8b-9c0d-1e2f3a4b5c6d-5e3449f5.html">Tailscale Premium: Subnet router throughput anomaly</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-unexpected-exit-node-egress-c1d2e3f4-1a2b-3c4d-5e6f-7a8b9c0d1e2f-ac7c83d9.html">Tailscale Premium: Unexpected exit-node egress</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (9)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-beaconing-candidates-regular-periodic-flows-b28cbdd2-8cef-be9b-a38e-7faceedfdbec-7ec62e6f.html">Tailscale Premium: Beaconing candidates (regular periodic flows)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-cross-tag-flow-matrix-a8978f27-3c85-4c29-a45a-c4a5e43fef2d-d4a839ac.html">Tailscale Premium: Cross-tag flow matrix</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-devices-with-persistent-derp-relay-usage-20457fba-08e2-42d7-b972-fbe9acf583c8-c954c76c.html">Tailscale Premium: Devices with persistent DERP relay usage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-exit-node-usage-patterns-a37bacc1-7bde-ad8a-f27d-6e9bcdcecadb-a09875a8.html">Tailscale Premium: Exit-node usage patterns</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-network-flows-outside-business-hours-622ce88a-0838-4bbe-8a00-ab8ac8377f41-efe1b1a6.html">Tailscale Premium: Network flows outside business hours</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-new-src-dst-node-pairs-lateral-movement-candidates-e55f8aaf-5fbc-8b6e-d05b-4c7faabcadbe-a838c390.html">Tailscale Premium: New src-&gt;dst node pairs (lateral movement candidates)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-tagged-services-with-broad-inbound-exposure-f8d4e7bc-3450-4c55-84ac-90e6e9c6b8fe-33d60d66.html">Tailscale Premium: Tagged services with broad inbound exposure</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-top-talkers-by-bytes-virtual-traffic-f46a9bb0-6acd-9c7f-e16c-5d8abbcdbeca-e2ccb573.html">Tailscale Premium: Top talkers by bytes (virtual traffic)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscale-premium-users-generating-traffic-from-multiple-devices-daac10bd-d842-4122-90cc-9957256f04e3-fb758768.html">Tailscale Premium: Users generating traffic from multiple devices</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/tailscale-ccf-tailscalepremiumoperations-5218a067.html">TailscalePremiumOperations</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
+<h3 id="other-parsers">Other Parsers (2)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimnetworksessiontailscale.html">ASimNetworkSessionTailscale</a></td>
+  <td style="text-align:left"><a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/vimnetworksessiontailscale.html">vimNetworkSessionTailscale</a></td>
+  <td style="text-align:left"><a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

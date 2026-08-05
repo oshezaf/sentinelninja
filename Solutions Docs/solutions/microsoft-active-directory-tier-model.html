@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Active Directory Tier Model &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="microsoft-active-directory-tier-model">Microsoft Active Directory Tier Model</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/MicrosoftADTierModel.svg" alt="Microsoft Active Directory Tier Model Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft Corporation</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Identity,Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-14</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-07-31</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Active%20Directory%20Tier%20Model">Microsoft Active Directory Tier Model</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftadtiermodel">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft Active Directory Tier Model solution for Microsoft Sentinel provides detection, triage automation, and reporting for the Active Directory (AD) administrative tier model - Tier 0 (T0), Tier 1 (T1), and Tier 2 (T2) - across Active Directory Domain Services (AD DS / ADDS). It monitors tier-sensitive changes on Domain Controllers, including group membership, object creation and deletion, ACL modifications, Group Policy (GPO) links and enforcement, organizational unit (OU) changes, block inheritance, domain trusts, child-domain promotion, BitLocker recovery keys, and LAPS activity, using Windows Security Event logs.</p>
+<p>The analytic rules dynamically build each alert title from the affected object's tier and type, which keeps the number of rules low instead of duplicating a rule per tier. Automation rules then tag Tier Model incidents and automatically set severity or close expected, low-value activity, and a workbook provides Tier Model metrics.</p>
+<p><strong>Important:</strong> The analytic rules, automation rules, and workbook are linked by the rule names - each alert title carries a (TMxxx.1) identifier that the automation rules and workbook depend on. Do not rename or modify the default analytic and automation rule names, or the automation rules and workbook will not function correctly.</p>
+<p><strong>Prerequisites:</strong></p>
+<ol>
+<li><p>Active Directory Tier Model deployed. This solution monitors an existing Tier Model and expects the standard Tier 0 / Tier 1 / Tier 2 organizational unit (OU) structure (for example, OU=Tier 0 Accounts, OU=Tier 1 Member Servers, OU=Tier 0 PAW, OU=Tier 0 Groups). If your OU names differ, adjust the analytic rule queries to match. To deploy and audit the Tier Model, see the <a href="https://github.com/microsoft/ActiveDirectoryTierModel/">Microsoft Active Directory Tier Model project</a> and its <a href="https://microsoft.github.io/ActiveDirectoryTierModel/">documentation</a>.</p>
+</li>
+<li><p>Domain Controller telemetry. All Domain Controllers must run as Azure virtual machines or be onboarded to Azure Arc, with a Data Collection Rule (DCR) that collects Security event logs from every Domain Controller into the Microsoft Sentinel workspace.</p>
+</li>
+<li><p>Automation rules (required). The solution's automation rules are provided as an ARM template in the solution's Playbooks folder (MicrosoftADTierModelAutomationRules) and must be deployed as a required post-installation step for incident tagging, severity assignment, and the workbook to function correctly. See the automation rules README for one-click deployment.</p>
+</li>
+</ol>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<ol>
+<li><p><a href="https://learn.microsoft.com/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent">Azure Monitor Agent (AMA) and Data Collection Rules</a></p>
+</li>
+<li><p><a href="https://learn.microsoft.com/azure/sentinel/data-connectors/windows-security-events-via-ama">Windows Security Events via AMA</a></p>
+</li>
+</ol>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>21 content item(s)</strong> (20 in solution, 1 discovered 🔍):</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:right">Total</th>
+  <th style="text-align:right">In Solution</th>
+  <th style="text-align:right">Discovered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">-</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm001.1-group-added-to-group-outside-the-object-tier-level-b300c7f8-dc5e-4fc6-879b-63f0013358ce-6006006d.html">PROD (TM001.1) - GROUP - Added to Group Outside the Object Tier Level</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm002.1-object-created-or-deleted-a-tier-level-object-b58adf25-fb44-4296-9b6c-0e6b97139dad-2795650c.html">PROD (TM002.1) - OBJECT - Created or Deleted a Tier Level Object</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm003.1-object-moved-or-recovered-a-tier-level-account-1d858e12-777d-4156-b0af-b5ef410739e6-21ce2bb5.html">PROD (TM003.1) - OBJECT - Moved or Recovered a Tier Level Account</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm004.1-object-enabled,-disabled,-unlocked,-or-password-reset-1da0cf44-c927-4b6f-9b43-91871b2391b3-c917af1c.html">PROD (TM004.1) - OBJECT - Enabled, Disabled, Unlocked, or Password Reset of a Tier Level Object</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm005.1-gpo-linked,-unlinked,-or-enforced-at-tier-level-ou-02cf2172-0eb7-4a4a-bce7-7251cdd3e233-ba1eb9dc.html">PROD (TM005.1) - GPO - Linked, Unlinked, or Enforced at Tier Level OU</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm006.1-acl-modified-at-tier-level-ou-f3e2433b-6456-4009-a1cb-0d4eb3a36125-b432541c.html">PROD (TM006.1) - ACL - Modified at Tier Level OU</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm007.1-ou-created-or-deleted-at-tier-level-4e027b5f-fc4a-4de6-be24-3eb9324e2fc8-9888d4d6.html">PROD (TM007.1) - OU - Created or Deleted at Tier Level</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm008.1-gpo-linked,-unlinked,-or-enforced-at-root-of-domain-fe468726-b1dc-4e76-adad-3480de4a2c56-f94601bc.html">PROD (TM008.1) - GPO - Linked, Unlinked, or Enforced at Root of Domain</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm009.1-acl-modified-at-root-of-the-domain-7437402c-800b-4cf3-90d9-0c1f12204375-1a4c6470.html">PROD (TM009.1) - ACL - Modified at Root of the Domain</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm010.1-bitlocker-stored-bitlocker-recovery-key-to-tier-level-eea9c640-afe0-4ce4-9a41-c409d4c2c924-1aa7bcc6.html">PROD (TM010.1) - BITLOCKER - Stored Bitlocker Recovery Key to Tier Level Computer Object</a></td>
+  <td style="text-align:left">Informational</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm011.1-laps-tier-level-computer-object-laps-password-expirat-daf2b9f7-dcf2-4b45-831a-d7142318c7e9-dc070dd3.html">PROD (TM011.1) - LAPS - Tier Level Computer Object LAPS Password Expiration Time Set Manually</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm012.1-gpo-enforced-outside-of-tier-model-05846968-15cc-4309-bddc-eaa296f84af1-ddc937c8.html">PROD (TM012.1) - GPO - Enforced Outside of Tier Model</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm013.1-ou-block-inheritance-was-enabled-on-an-ou-17371300-904a-4af5-9550-cf57ee727bb7-7e50854e.html">PROD (TM013.1) - OU - Block Inheritance was Enabled on an OU</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm014.1-gpo-linked,-unlinked,-or-enforced-at-the-ad-site-leve-38f2f6f4-2869-401c-8341-e3a5c11018a5-8c131a4d.html">PROD (TM014.1) - GPO - Linked, Unlinked, or Enforced at the AD Site Level</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm015.1-acl-modified-at-krbtgt-or-adminsdholder-object-level-a9f94bf1-856e-40ff-a176-24f967da1e27-38fd56fc.html">PROD (TM015.1) - ACL - Modified at KRBTGT or AdminSDHolder Object Level</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm016.1-group-added-to-well-known-or-tier-model-group-763fc00b-4971-43c2-9cd1-f12b58a542bd-e013fae3.html">PROD (TM016.1) - GROUP - Added to Well-Known or Tier Model Group</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm017.1-group-tier-0-added-to-allow-rodc-password-replication-634a69b4-0e46-4349-8463-af1c8d191620-79a47382.html">PROD (TM017.1) - GROUP - Tier 0 Added to Allow RODC Password Replication Group</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm018.1-domain-child-domain-promoted-within-the-forest-ff1bec81-e241-44bf-98ed-c6e37805a2e3-72a39c20.html">PROD (TM018.1) - DOMAIN - Child Domain promoted within the Forest</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm019.1-trust-a-new-ad-trust-has-been-established-891315d2-e080-4ac8-af5a-50bae17f2d4d-e9ddae80.html">PROD (TM019.1) - TRUST - A new AD Trust has been established</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-microsoftadtiermodel-3fad41c8.html">MicrosoftADTierModel</a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-workbooksmetadata-743e7b34.html">workbooksMetadata</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Active%20Directory%20Tier%20Model/README.md">Microsoft Active Directory Tier Model/README.md</a></em></p>
+</blockquote>
+<h1 id="overview">Overview</h1>
+<hr />
+<h2 id="microsoft-sentinel-microsoft-active-directory-tier-model-solution">Microsoft Sentinel: Microsoft Active Directory Tier Model Solution</h2>
+<p>The <strong>Microsoft Active Directory Tier Model</strong> solution for Microsoft Sentinel provides detection, triage automation, and reporting for the Active Directory (AD) administrative tier model - Tier 0 (T0), Tier 1 (T1), and Tier 2 (T2) - across Active Directory Domain Services (AD DS / ADDS). It monitors tier-sensitive changes on Domain Controllers using Windows Security Event logs, tags and triages the resulting incidents with automation rules, and visualizes Tier Model activity in a workbook.</p>
+<p>This solution contains:</p>
+<ul>
+<li><strong>19 Analytic rule templates</strong> (TM001 - TM019)</li>
+<li><strong>1 Workbook</strong> (Microsoft Active Directory Tier Model)</li>
+<li><strong>5 Automation rules</strong> (deployed separately - see <a href="#deploying-the-automation-rules">Deploying the Automation Rules</a>)</li>
+</ul>
+<h2 id="try-on-portal">Try on Portal</h2>
+<p>You can deploy the solution by clicking on the buttons below:</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%2520Active%2520Directory%2520Tier%2520Model%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%2520Active%2520Directory%2520Tier%2520Model%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Active%20Directory%20Tier%20Model/Workbooks/Images/Preview/MicrosoftADTierModelWhite.png?raw=true" alt="Workbook Overview" /></p>
+<h2 id="getting-started">Getting Started</h2>
+<p>This solution <strong>monitors an existing Active Directory Tier Model deployment</strong>. Without the Tier Model deployed, the analytic rules will not match any activity and the solution provides no value. The rules key off the standard Tier 0 / Tier 1 / Tier 2 organizational unit (OU) structure (for example <code>OU=Tier 0 Accounts</code>, <code>OU=Tier 1 Member Servers</code>, <code>OU=Tier 0 PAW</code>, <code>OU=Tier 0 Groups</code>).</p>
+<blockquote>
+<p><strong>Important - do not rename the default rule names.</strong> The analytic rules, automation rules, and workbook are tied together by the rule <strong>names</strong>. Each analytic rule stamps its alert title with a <code>(TMxxx.1)</code> identifier (for example <code>(TM002.1)</code>), and that identifier is the shared key across all three components:</p>
+<ul>
+<li>The <strong>automation rules</strong> match incidents by the <code>(TMxxx.1)</code> title tag to apply tagging, severity changes, and closures.</li>
+<li>The <strong>workbook</strong> filters and groups Tier Model incidents by these alert names.</li>
+</ul>
+<p>Because the analytic rule number, the automation rule, and the alert name are all linked, <strong>renaming or modifying the default names will break the automation rules and the workbook.</strong> Keep the default names as shipped. If you must customize a rule, preserve its <code>(TMxxx.1)</code> prefix so the dependencies continue to function.</p>
+</blockquote>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>14-07-2026</td>
+  <td>Initial solution release</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

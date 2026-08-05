@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://hunter.cyborgsecurity.io/customer-support](https://hunter.cyborgsecurity.io/customer-support) |
 | **Categories** | Security - Network,Security - Automation (SOAR),Security - Threat Protection,Security - Threat Intelligence |
-| **Source Vendor** | Cyborg Security *(basis: publisher)* |
-| **Source Product** | HUNTER Hunt Packages |
 | **Version** | 3.0.0 |
 | **Author** | Mike Mitchell - mike@cyborgsecurity.com |
 | **First Published** | 2023-07-03 |

@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Symantec *(basis: publisher)* |
-| **Source Product** | Integrated Cyber Defense Exchange |
 | **Version** | 2.0.0 |
 | **Author** | Symantec |
 | **First Published** | 2022-06-02 |

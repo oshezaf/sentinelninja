@@ -11,13 +11,12 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ForescoutHostPropertyMonitor` |
-| **Publisher / Vendor** | Forescout |
-| **Source Product** | Host Property Monitor *(basis: title)* |
+| **Publisher** | Forescout |
 | **Used in Solutions** | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [ForescoutHostPropertyMonitor.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Data%20Connectors/ForescoutHostPropertyMonitor.json) |
+| **DCR Definition Files** | [ForescoutHostPropertyMonitor_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Data%20Connectors/ForescoutHostPropertyMonitor_ccf/ForescoutHostPropertyMonitor_DCR.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#forescout-host-property-monitor) |
 
 The Forescout Host Property Monitor connector allows you to connect host/policy/compliance properties from Forescout platform with Microsoft Sentinel, to view, create custom incidents, and improve investigation. This gives you more insight into your organization network and improves your security operation capabilities.
@@ -29,7 +28,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | ? | ✓ | ? |
-| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | ✓ | ✓ | ✓ |
 | [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
@@ -47,7 +46,7 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-Instructions on how to configure Forescout Microsoft Sentinel plugin are provided at Forescout Documentation Portal (https://docs.forescout.com/bundle/microsoft-sentinel-module-v2-0-0-h)
+Instructions on how to configure Forescout Microsoft Sentinel plugin are provided at Forescout Documentation Portal (https://docs.forescout.com)
 - **Workspace ID**: `WorkspaceId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Primary Key**: `PrimaryKey`

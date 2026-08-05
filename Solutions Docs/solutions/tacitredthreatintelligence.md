@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | Security - Threat Intelligence,Identity |
-| **Source Vendor** | TacitRed *(basis: publisher)* |
-| **Source Product** | Compromised Credentials |
 | **Version** | 3.0.0 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-01-01 |
@@ -68,7 +66,7 @@ This solution includes **3 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [TacitRed - High Confidence Compromise](../content/tacitredthreatintelligence-tacitred-high-confidence-compromise-b2c3d4e5-f6a7-8901-bcde-f23456789012-9220bb1c.md) | High | CredentialAccess, InitialAccess, Reconnaissance | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) |
-| [TacitRed - Repeat Compromise Detection](../content/tacitredthreatintelligence-tacitred-repeat-compromise-detection-a1b2c3d4-e5f6-7890-abcd-ef1234567890-01245705.md) | High | CredentialAccess, Persistence | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [TacitRed - Repeat Compromise Detection](../content/tacitredthreatintelligence-tacitred-repeat-compromise-detection-a1b2c3d4-e5f6-7890-abcd-ef1234567890-01245705.md) | High | CredentialAccess, Persistence | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 
 ### Workbooks
 

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veeam Data Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="veeam-data-connector">Veeam Data Connector (via Codeless Connector Framework)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VeeamLogo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>VeeamConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/veeam.html">Veeam</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Data%20Connectors/Veeam_CCF/Veeam_ConnectorDefinition.json">Veeam_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Data%20Connectors/Veeam_CCF/Veeam_DCR.json">Veeam_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Data%20Connectors/Veeam_CCF/Veeam_PollerConfig.json">Veeam_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#veeam-data-connector-using-azure-functions">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>Veeam Data Connector allows you to ingest Veeam telemetry data from multiple custom tables into Microsoft Sentinel.</p>
+<p>The connector supports integration with Veeam Backup &amp; Replication, Veeam ONE and Coveware platforms to provide comprehensive monitoring and security analytics. The data is collected through Azure Functions and stored in custom Log Analytics tables with dedicated Data Collection Rules (DCR) and Data Collection Endpoints (DCE).</p>
+<p><strong>Custom Tables Included:</strong></p>
+<ul>
+<li><p><strong>VeeamMalwareEventsV2_CL</strong>: Malware detection events from Veeam Backup &amp; Replication</p>
+</li>
+<li><p><strong>VeeamSecurityComplianceAnalyzerV2_CL</strong>: Security &amp; Compliance Analyzer results collected from Veeam backup infrastructure components</p>
+</li>
+<li><p><strong>VeeamAuthorizationEventsV2_CL</strong>: Authorization and authentication events</p>
+</li>
+<li><p><strong>VeeamOneTriggeredAlarmsV2_CL</strong>: Triggered alarms from Veeam ONE servers</p>
+</li>
+<li><p><strong>VeeamCovewareFindingsV2_CL</strong>: Security findings from Coveware solution</p>
+</li>
+<li><p><strong>VeeamSessionsV2_CL</strong>: Veeam sessions</p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeamauthorizationeventsv2-cl.html"><code>VeeamAuthorizationEventsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeamcovewarefindingsv2-cl.html"><code>VeeamCovewareFindingsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeammalwareeventsv2-cl.html"><code>VeeamMalwareEventsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeamonetriggeredalarmsv2-cl.html"><code>VeeamOneTriggeredAlarmsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeamsecuritycomplianceanalyzerv2-cl.html"><code>VeeamSecurityComplianceAnalyzerV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/veeamsessionsv2-cl.html"><code>VeeamSessionsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Veeam Data Access</strong>: Access to Veeam systems is required to collect security and operational data. The connector supports data ingestion from Veeam Backup &amp; Replication, Veeam ONE, and Coveware platforms.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Prerequisites</strong></p>
+<p>Follow the instructions to configure the Veeam Data Connector.</p>
+<p>ℹ️ <strong>Note:</strong> This data connector depends on parsers based on Kusto Functions to work as expected. These parsers are installed with the Microsoft Sentinel Solution for Veeam.</p>
+<p><strong>1. Configuration steps for Veeam Data Connector</strong></p>
+<ol>
+<li>Configure your Veeam systems to export security and operational data.</li>
+<li>Set up data collection endpoints to ingest data into the custom Log Analytics tables.</li>
+<li>Ensure proper permissions are configured for data access.</li>
+<li>Verify connectivity and data flow to Microsoft Sentinel.</li>
+</ol>
+<p><strong>2. Coveware API Configuration</strong></p>
+<p>Configure Coveware API credentials for security findings data collection.</p>
+<h4 id="21-obtain-coveware-api-credentials">2.1 Obtain Coveware API Credentials</h4>
+<ol>
+<li>Log in to your Coveware management console</li>
+<li>Navigate to API settings or integrations section</li>
+<li>Create or configure an API application</li>
+<li>Generate or obtain a Bearer token for API access</li>
+<li>Note your Coveware API base URL</li>
+</ol>
+<ul>
+<li><strong>Coveware API URL</strong>: https://api.coveware.com</li>
+<li><strong>Coveware Bearer Token</strong>: (password field)</li>
+</ul>
+<p><strong>3. Veeam API Configuration</strong></p>
+<p>Configure Veeam API credentials for all Veeam services (Malware Events, Security Analyzer, and Authorization Events).</p>
+<h4 id="31-obtain-veeam-api-access-token">3.1 Obtain Veeam API Access Token</h4>
+<ol>
+<li>Access your Veeam Backup &amp; Replication management console</li>
+<li>Navigate to the REST API settings or authentication section</li>
+<li>Generate or obtain a Bearer token for API access</li>
+<li>Ensure the token has appropriate permissions for:<ul>
+<li>Malware Detection API (v1.3-rev1)</li>
+<li>Security &amp; Compliance Analyzer API (v1.3-rev1)</li>
+<li>Authorization Events API (v1.3-rev1)</li>
+<li>Sessions API (v1.3-rev1)</li>
+</ul>
+</li>
+<li>Note the API base URL (typically https://your-veeam-server.com:9419)</li>
+<li>This token will be used for both on-premises and CDN-hosted APIs</li>
+</ol>
+<ul>
+<li><strong>Veeam API URL</strong>: https://your-veeam-server.com:9419</li>
+<li><strong>Veeam Bearer Token</strong>: (password field)</li>
+</ul>
+<p><strong>4. Veeam ONE API Configuration</strong></p>
+<p>Configure Veeam ONE API credentials for triggered alarms data collection.</p>
+<h4 id="41-obtain-veeam-one-api-access-key">4.1 Obtain Veeam ONE API Access Key</h4>
+<ol>
+<li>Access your Veeam ONE management console</li>
+<li>Navigate to Administration -&gt; Users and Roles</li>
+<li>Create or use an existing user with API access permissions</li>
+<li>Generate or obtain a Bearer token for API access</li>
+<li>Note the Veeam ONE server URL and port (typically https://your-veeam-one-server:1239)</li>
+</ol>
+<ul>
+<li><strong>Veeam ONE API URL</strong>: https://your-veeam-one-server:1239</li>
+<li><strong>Veeam ONE API Bearer Token</strong>: (password field)</li>
+</ul>
+<p><strong>5. Connect</strong></p>
+<p>Enable the Veeam Data Connector.</p>
+<ul>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

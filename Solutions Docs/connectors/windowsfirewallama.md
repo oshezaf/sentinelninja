@@ -11,9 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `WindowsFirewallAma` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Windows Firewall *(basis: event)* |
-| **Event Type** | Events |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Windows Firewall](../solutions/windows-firewall.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_WindowsFirewallAma.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall/Data%20Connectors/template_WindowsFirewallAma.JSON) |

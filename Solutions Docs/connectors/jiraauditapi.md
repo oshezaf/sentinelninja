@@ -13,9 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `JiraAuditAPI` |
-| **Publisher / Vendor** | Atlassian |
-| **Source Product** | Jira *(basis: title)* |
-| **Event Type** | Audit |
+| **Publisher** | Atlassian |
 | **Used in Solutions** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [JiraAudit_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAudit_API_FunctionApp.json) |

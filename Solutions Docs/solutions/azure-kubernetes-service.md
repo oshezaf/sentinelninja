@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Azure Kubernetes Service |
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |

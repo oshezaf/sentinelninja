@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Defender XDR |
 | **Version** | 3.0.15 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
@@ -99,11 +97,11 @@ The following **5 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **377 content item(s)** (371 in solution, 6 discovered 🔍):
+This solution includes **377 content item(s)** (374 in solution, 3 discovered 🔍):
 
 | Content Type | Total | In Solution | Discovered |
 |:-------------|------:|------------:|-----------:|
-| Hunting Queries | 333 | 328 | 5 |
+| Hunting Queries | 333 | 331 | 2 |
 | Analytic Rules | 40 | 40 | - |
 | Workbooks | 3 | 3 | - |
 | Playbooks | 1 | 0 | 1 |
@@ -244,9 +242,9 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered �
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for Admin email access](../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.md) | PrivilegeEscalation | [`CloudAppEvents`](../tables/cloudappevents.md) |
-| [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) ⚠️ | InitialAccess, Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`MessageEvents`](../tables/messageevents.md) |
+| [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) | InitialAccess, Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`MessageEvents`](../tables/messageevents.md) |
 | [Hunt for TABL changes](../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.md) | DefenseEvasion | [`CloudAppEvents`](../tables/cloudappevents.md) |
-| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) ⚠️ | InitialAccess, Discovery | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`Event`](../tables/event.md)<br>[`MessageEvents`](../tables/messageevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) | InitialAccess, Discovery | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`Event`](../tables/event.md)<br>[`MessageEvents`](../tables/messageevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
 | [Hunt for email bombing attacks](../content/microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for email conversation take over attempts](../content/microsoft-defender-xdr-hunt-for-email-conversation-take-over-attempts-fb46ca1b-0b46-4d9c-b3b3-2f8f807e9f72-2af16c6e.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for malicious URLs using external IOC source](../content/microsoft-defender-xdr-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-96846dc9.md) | InitialAccess | [`EmailUrlInfo`](../tables/emailurlinfo.md) |
@@ -254,7 +252,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered �
 | [Hunt for malicious messages using External Threat Intelligence](../content/microsoft-defender-xdr-hunt-for-malicious-messages-using-external-threat-intelligence-28c79831-120c-4028-8a2b-4e4ae3082148-7fefb5f5.md) | InitialAccess | [`MessageUrlInfo`](../tables/messageurlinfo.md) |
 | [Hunting for sender patterns](../content/microsoft-defender-xdr-hunting-for-sender-patterns-68aa199c-259b-4bb0-8e7a-8ed6f96c5525-4214a903.md) | InitialAccess | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Hunting for user signals-clusters](../content/microsoft-defender-xdr-hunting-for-user-signals-clusters-8c852f12-499f-499b-afc1-25c50aa9b462-97023f5f.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
+| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
 | [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-846bf25e-3d2d-4122-9b60-adfadd2fc616-8ac809d0.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Impersonation Detections Trend](../content/microsoft-defender-xdr-impersonation-detections-trend-416cd270-6327-441a-9304-940c832cf361-79ee8cd4.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Impersonation Detections by Detection Technology](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-15a17150-811d-4829-a3d6-489139c9ff5e-b3543837.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -511,7 +509,7 @@ This solution includes **377 content item(s)** (371 in solution, 6 discovered �
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                    |
 |-------------|--------------------------------|---------------------------------------------------------------------------------------|
-| 3.0.15       | 15-06-2026                     | Refactor OAuth and device-code phishing hunting queries to construct login.microsoftonline.com and login.microsoftonline.us URLs via strcat() (resolves ARM-TTK 'DeploymentTemplate Must Not Contain Hardcoded Uri'); remove empty groupByAlertDetails/groupByCustomDetails arrays from PossibleWebpBufferOverflow analytic rule (resolves ARM-TTK 'Template Should Not Contain Blanks'). |
+| 3.0.15       | 22-06-2026                     | Refactor OAuth and device-code phishing hunting queries to construct login.microsoftonline.com and login.microsoftonline.us URLs via strcat() (resolves ARM-TTK 'DeploymentTemplate Must Not Contain Hardcoded Uri'); remove empty groupByAlertDetails/groupByCustomDetails arrays from PossibleWebpBufferOverflow analytic rule (resolves ARM-TTK 'Template Should Not Contain Blanks'). Updated `Microsoft Defender XDR` to Product Name filter in **Data Connector** queries. Added new **Hunting Queries** Hunt for RMM tool execution following Teams messages, Hunt for alerts correlated with Teams messages and Identify acting user for reported phish. Also updated **Hunting Query** Punycode chars lookalike and corrected the incorrect mapping of `dataTypes: EmailEvents` with `connectorId: OfficeATP` across multiple **Hunting Queries**. |
 | 3.0.14      | 09-02-2026                     | Added new **Hunting Query** Punycode chars lookalike domains.yaml.		       |
 | 3.0.13      | 22-01-2026                     | Updated Defender XDR solution with new **Hunting Queries**.				   |
 | 3.0.12      | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |

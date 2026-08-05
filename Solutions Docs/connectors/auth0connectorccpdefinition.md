@@ -12,17 +12,15 @@
 |:----------|:------|
 | **Connector ID** | `Auth0ConnectorCCPDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Auth0 *(basis: description_url)* |
-| **Event Type** | Events |
 | **Used in Solutions** | [Auth0](../solutions/auth0.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/DataConnectorDefinition.json) |
 | **DCR Definition Files** | [DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/DCR.json) |
 | **CCF Configuration** | [PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/PollingConfig.json) |
-| **CCF Capabilities** | `OAuth2` |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#auth0-logs-via-codeless-connector-framework) |
 
-The [Auth0](https://auth0.com/docs/api/management/v2/logs/get-logs) data connector allows ingesting logs from Auth0 API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses Auth0 API to fetch logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table so that queries don't need to parse it again, thus resulting in better performance.
+The [Auth0](https://auth0.com/docs/api/management/v2/logs/get-logs) data connector ingests tenant log events from the Auth0 Management API into Microsoft Sentinel. Built on the Codeless Connector Framework, it supports connecting multiple Auth0 hosts and tags each record with its Auth0 domain.
 
 ## Tables Ingested
 
@@ -39,19 +37,50 @@ This connector ingests data into the following tables:
 **Resource Provider Permissions:**
 - **Workspace** (Workspace): Read and Write permissions are required.
 
+**Custom Permissions:**
+- **Auth0 API credentials**: **Auth0 Management API** credentials are required: Domain, Client ID, and Client Secret from a Machine-to-Machine application authorized for `read:logs` and `read:logs_users`.
+
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-#### STEP 1 - Configuration steps for the Auth0 Management API
-Follow the instructions to obtain the credentials. 
- 1. In Auth0 Dashboard, go to [**Applications > Applications**]
- 2. Select your Application. This should be a [**Machine-to-Machine**] Application configured with at least [**read:logs**] and [**read:logs_users**] permissions. 
- 3. Copy [**Domain, ClientID, Client Secret**]
-- **Base API URL**: https://example.auth0.com
-- **Client ID**: Client ID
-- **Client Secret**: (password field)
-- Click 'Connect' to establish connection
+**1. Configure the Auth0 Management API application**
+
+Follow these steps to obtain the credentials:
+1. In the Auth0 Dashboard, go to **Applications > Applications**.
+2. Select (or create) a **Machine-to-Machine** application authorized against the Auth0 Management API with at least the **read:logs** and **read:logs_users** permissions.
+3. From the application settings, copy the **Domain** (it must start with `https://`), **Client ID**, and **Client Secret**.
+
+To collect logs from multiple Auth0 hosts, add a separate connection for each host. Every record is tagged with its **Auth0Domain** so you can differentiate hosts.
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Auth0 Domain**
+- **Data Type**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Add Auth0 Connection**
+
+*Connect to the Auth0 Management API*
+
+When you click the "Add Auth0 host" button in the portal, a configuration form will open. You'll need to provide:
+
+## Authentication
+
+Provide the credentials from your Auth0 Machine-to-Machine application. These are used to obtain an OAuth2 access token for the Management API.
+
+- **Domain** (required): e.g. https://example.auth0.com
+- **Client ID** (required): Auth0 application Client ID
+- **Client Secret** (required): Auth0 application Client Secret
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

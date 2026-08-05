@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ForcepointNgfwAma` |
-| **Publisher / Vendor** | Forcepoint |
-| **Source Product** | NGFW *(basis: event)* |
+| **Publisher** | Forcepoint |
 | **Used in Solutions** | [Forcepoint NGFW](../solutions/forcepoint-ngfw.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_FORCEPOINT_NGFWAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW/Data%20Connectors/template_FORCEPOINT_NGFWAMA.json) |

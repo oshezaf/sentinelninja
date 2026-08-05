@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ApacheHTTPServer` |
-| **Publisher / Vendor** | Apache |
-| **Source Product** | HTTP Server *(basis: title)* |
+| **Publisher** | Apache |
 | **Used in Solutions** | [ApacheHTTPServer](../solutions/apachehttpserver.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_ApacheHTTPServer_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer/Data%20Connectors/Connector_ApacheHTTPServer_agent.json) |
@@ -47,7 +46,7 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
->**NOTE:** This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias ApacheHTTPServer and load the function code or click [here](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer/Parsers/ApacheHTTPServer.txt). The function usually takes 10-15 minutes to activate after solution installation/update.
+>**NOTE:** This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias ApacheHTTPServer and load the function code or click [here](https://aka.ms/sentinel-apachehttpserver-parser). The function usually takes 10-15 minutes to activate after solution installation/update.
 
 **1. Install and onboard the agent for Linux or Windows**
 

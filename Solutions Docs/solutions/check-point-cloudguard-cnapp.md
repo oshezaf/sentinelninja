@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Check Point *(basis: publisher)* |
-| **Source Product** | CloudGuard CNAPP |
 | **Version** | 3.0.0 |
 | **Author** | Checkpoint - support@checkpoint.com |
 | **First Published** | 2024-11-12 |

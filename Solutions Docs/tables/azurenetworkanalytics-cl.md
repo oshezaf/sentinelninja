@@ -240,7 +240,7 @@ This table is used by the following solutions:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-d566e349.md) |  |
+| [TI Map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-05442c9a.md) |  |
 
 ### Hunting Queries (2)
 

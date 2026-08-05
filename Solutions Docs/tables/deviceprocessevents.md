@@ -11,8 +11,6 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -114,7 +112,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [DeviceProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents)
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -124,6 +122,7 @@ This table is used by the following solutions:
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -141,7 +140,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (98)
+## Content Items Using This Table (100)
 
 ### Analytic Rules (41)
 
@@ -211,7 +210,7 @@ This table is ingested by the following connectors:
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-### Hunting Queries (53)
+### Hunting Queries (55)
 
 **In solution [Cyware](../solutions/cyware.md):** `ProcessCommandLine has "powershell.exe"`
 
@@ -227,6 +226,12 @@ This table is ingested by the following connectors:
 | [Potential Microsoft Security Services Tampering](../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.md) | `InitiatingProcessCommandLine has "$true"`<br>`InitiatingProcessCommandLine has "/IM"`<br>`InitiatingProcessCommandLine has "Set-MpPreference"`<br>`InitiatingProcessCommandLine has "Start"`<br>`InitiatingProcessCommandLine has "config"`<br>`InitiatingProcessParentFileName != "cscript.exe"` |
 | [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md) | `InitiatingProcessCommandLine has_all "advfirewall"`<br>`InitiatingProcessFileName == "netsh.exe"` |
 | [Unicode Obfuscation in Command Line](../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Cloud Run Command followed by kernel persistence indicators on target servers](../content/hybrid-attack-cloud-&-identity-cloud-run-command-followed-by-kernel-persistence-indicators-on-target-ser-b441f4ca-9de2-4dd4-b0de-7c8f869f20a1-49bbe6d8.md) |  |
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 
@@ -297,6 +302,7 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [BadUSB LOLBIN execution via certutil (HID injection via Run dialog)](../content/github-only-badusb-lolbin-execution-via-certutil-hid-injection-via-run-dialog-d71e736b-f6e7-4acb-86f5-3696041868d7-62f2fc72.md) | `InitiatingProcessFileName == "explorer.exe"`<br>`ProcessCommandLine has "certutil"` |
 | [Detect Malicious use of MSIExec](../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.md) | `ProcessCommandLine has "http"`<br>`ProcessCommandLine has "return"` |
 | [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) |  |
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-0b985ed8-aacd-41ba-9b17-489be9224159-bfd6b1c4.md) | `ProcessCommandLine contains "-ma"`<br>`ProcessCommandLine has "-accepteula"`<br>`ProcessCommandLine has "lsass"`<br>`ProcessCommandLine has "lsass.exe"` |
@@ -335,9 +341,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (44 criteria, 56 total references)
+## Selection Criteria Summary (45 criteria, 57 total references)
 
-References by type: 0 connectors, 56 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -384,8 +390,9 @@ References by type: 0 connectors, 56 content items, 0 ASIM parsers, 0 other pars
 | `InitiatingProcessFileName == "wmiprvse.exe"`<br>`ProcessCommandLine has "programdata"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has_any "whoami /all"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "solarwinds.businesslayerhost.exe"` | - | 1 | - | - | **1** |
+| `InitiatingProcessFileName == "explorer.exe"`<br>`ProcessCommandLine has "certutil"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "Set-MpPreference"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **56** | **0** | **0** | **56** |
+| **Total** | **0** | **57** | **0** | **0** | **57** |
 
 ### ActionType
 
@@ -433,6 +440,7 @@ References by type: 0 connectors, 56 content items, 0 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `httpd.exe` | - | 3 | - | - | **3** |
 | `w3wp.exe` | - | 3 | - | - | **3** |
+| `explorer.exe` | - | 3 | - | - | **3** |
 | `dllhost.exe` | - | 2 | - | - | **2** |
 | `startswith psexe` | - | 2 | - | - | **2** |
 | `cmd.exe` | - | 2 | - | - | **2** |
@@ -442,7 +450,6 @@ References by type: 0 connectors, 56 content items, 0 ASIM parsers, 0 other pars
 | `outlook.exe` | - | 2 | - | - | **2** |
 | `winword.exe` | - | 2 | - | - | **2** |
 | `net.exe` | - | 2 | - | - | **2** |
-| `explorer.exe` | - | 2 | - | - | **2** |
 | `mobsync.exe` | - | 2 | - | - | **2** |
 | `java.exe` | - | 2 | - | - | **2** |
 | `oracle.exe` | - | 1 | - | - | **1** |
@@ -486,10 +493,10 @@ References by type: 0 connectors, 56 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has certutil` | - | 4 | - | - | **4** |
 | `contains -ma` | - | 4 | - | - | **4** |
 | `has -accepteula` | - | 4 | - | - | **4** |
 | `has lsass` | - | 4 | - | - | **4** |
-| `has certutil` | - | 3 | - | - | **3** |
 | `!contains /add` | - | 3 | - | - | **3** |
 | `has lsass.exe` | - | 2 | - | - | **2** |
 | `has msexchange` | - | 2 | - | - | **2** |

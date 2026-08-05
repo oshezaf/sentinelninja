@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -55,63 +51,1136 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (12 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutHostProperties_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (224 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor%5CData%20Connectors%5CForescoutHostPropertyMonitor_ccf/ForescoutHostPropertyMonitor_table_ForescoutHostProperties.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Admission</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Admission status</td>
+</tr>
+<tr>
+  <td style="text-align:left">BigFixAgentVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IBM BigFix agent version</td>
+</tr>
+<tr>
+  <td style="text-align:left">BigFixId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IBM BigFix identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">BigFixLastReportedTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IBM BigFix last reported time</td>
+</tr>
+<tr>
+  <td style="text-align:left">BigFixServer</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IBM BigFix server</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbAppControlAgentVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black App Control agent version</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbAppControlComputerConnected</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black App Control computer connected state</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbAppControlDaysOffline</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black App Control days offline</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbAppControlPolicyStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black App Control policy status</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbEdrHealthStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black EDR sensor health status</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbEdrLastCheckin</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black EDR last check-in time</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbEdrNextExpectedCheckin</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black EDR next expected check-in time</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbEdrSensorHealthScore</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black EDR sensor health score</td>
+</tr>
+<tr>
+  <td style="text-align:left">CbEdrSensorVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Carbon Black EDR sensor version</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClassificationVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Manufacturer classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudClassificationGwFunctionClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud classification gateway function classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudClassificationGwOsClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud classification gateway OS classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudClassificationGwVendorClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud classification gateway vendor classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">CommonName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Active Directory common name (CN)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Company</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Active Directory company attribute</td>
+</tr>
+<tr>
+  <td style="text-align:left">ComplianceStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Overall compliance status</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectivityType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connectivity type of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeAgentVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">CrowdStrike agent version</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeDeviceId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">CrowdStrike device ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeHostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">CrowdStrike hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeLastSeenTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">CrowdStrike last seen time</td>
+</tr>
+<tr>
+  <td style="text-align:left">DefenderAntivirusStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Defender antivirus status</td>
+</tr>
+<tr>
+  <td style="text-align:left">DefenderClientId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Defender client ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">DefenderLastSeen</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Defender last seen time</td>
+</tr>
+<tr>
+  <td style="text-align:left">Department</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Active Directory department attribute</td>
+</tr>
+<tr>
+  <td style="text-align:left">DhcpDeviceClass</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">DHCP device class</td>
+</tr>
+<tr>
+  <td style="text-align:left">DhcpOs</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Operating system reported via DHCP</td>
+</tr>
+<tr>
+  <td style="text-align:left">DisplayName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Active Directory display name</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xAuthenticatedEntity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X authenticated entity</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xAuthenticatingDomain</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X authenticating domain</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xAuthenticationType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X authentication type</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xAuthorizeActionSummary</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X authorize action summary</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xHostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xLastAuthenticationState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X last authentication state</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xLastAuthenticationTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X last authentication time</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xLastAuthorizeActionFailure</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X last authorize action failure</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xLastRejectedAuthenticationTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X last rejected authentication time</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xLastSuccessfulAuthenticationTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X last successful authentication time</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xMarComment</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X MAC authentication bypass (MAR) comment</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xNasId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X NAS identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xNasIpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X NAS IPv4 address</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xNasIpv6Addr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X NAS IPv6 address</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xNasPortType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X NAS port type</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xRadiusAuthenticationState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X RADIUS authentication state</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xReauthenticationMethod</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X reauthentication method</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xRequestedAuthorizeAction</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X requested authorize action</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xUserLoginResult</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X user login result</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dot1xUserName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">802.1X user name</td>
+</tr>
+<tr>
   <td style="text-align:left">EmIpAddr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Enterprise Manager IP address (Forescout appliance)</td>
+</tr>
+<tr>
+  <td style="text-align:left">EpoAgentLastCommunication</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">McAfee ePO agent last communication time</td>
+</tr>
+<tr>
+  <td style="text-align:left">EpoAgentManagedState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">McAfee ePO agent managed state</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExternalDevices</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected external devices</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExternalIpReuseDomain</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">External IP reuse domain</td>
+</tr>
+<tr>
+  <td style="text-align:left">ForescoutDeviceType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Forescout device type</td>
+</tr>
+<tr>
+  <td style="text-align:left">FunctionClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Device function/role classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">FunctionDerivedFromVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Device function derived from vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectClientType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect client type</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectComputerName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect computer name</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectComputerPublicIpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect computer public IPv4 address</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectComputerPublicIpv6Addr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect computer public IPv6 address (sanitized from original name with space)</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectGateway</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect gateway</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectServer</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect server</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalProtectUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Palo Alto GlobalProtect user</td>
+</tr>
+<tr>
+  <td style="text-align:left">HardDriveName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Hard drive name</td>
+</tr>
+<tr>
+  <td style="text-align:left">HardDriveState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Hard drive state</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Hostname of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostOnline</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the host is online</td>
 </tr>
 <tr>
   <td style="text-align:left">HostProperties</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Full JSON blob of all Forescout host properties</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostProperties_DnsniffEvent_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">HttpLoginUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">HTTP login user</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostProperties_EmIpAddr_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">InsightvmRiskScore</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Rapid7 InsightVM risk score</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostProperties_IpAddr_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">InsightvmScanResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Rapid7 InsightVM scan results</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostProperties_Ipv4Addr_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">InsightvmScanStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Rapid7 InsightVM scan status</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostProperties_Ipv6Addr_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">IntuneDevice</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device indicator</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceComplianceState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device compliance state</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceLastSyncDateTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device last sync time</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceManufacturer</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device manufacturer</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceModel</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device model</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device name</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntuneDeviceSerialNumber</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Intune device serial number</td>
+</tr>
+<tr>
+  <td style="text-align:left">IpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Primary IP address</td>
 </tr>
 <tr>
   <td style="text-align:left">Ipv4Addr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv4 address of the endpoint</td>
 </tr>
 <tr>
   <td style="text-align:left">Ipv6Addr</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IPv6 address(es) of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">Ipv6LinkLocalAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IPv6 link-local address</td>
+</tr>
+<tr>
+  <td style="text-align:left">Ipv6LinkLocalAddrInternal</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Internal IPv6 link-local address</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfAgentInformation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Jamf agent information</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Jamf identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfManaged</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the device is Jamf managed</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfMobileDeviceName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Jamf mobile device name</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfMobileId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Jamf mobile identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfMobileManaged</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the mobile device is Jamf managed</td>
+</tr>
+<tr>
+  <td style="text-align:left">JamfMobileUserInformation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Jamf mobile user information</td>
+</tr>
+<tr>
+  <td style="text-align:left">LdapUserName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">LDAP/Active Directory user name</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxManageableSecureConnector</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the Linux device is manageable via SecureConnector</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxManageableSshDirectAccess</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the Linux device is manageable via SSH direct access</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxProcessesRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Running processes (Linux)</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxSecureConnectorVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Linux SecureConnector version</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Linux logged-in user</td>
+</tr>
+<tr>
+  <td style="text-align:left">LinuxVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Linux version</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalCredentialsUserName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Local credentials user name</td>
+</tr>
+<tr>
+  <td style="text-align:left">LoginName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Login name</td>
 </tr>
 <tr>
   <td style="text-align:left">MacAddr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">MAC address of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">MacintoshManageableSecureConnector</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the macOS device is manageable via SecureConnector</td>
+</tr>
+<tr>
+  <td style="text-align:left">MacintoshManageableSshDirectAccess</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the macOS device is manageable via SSH direct access</td>
+</tr>
+<tr>
+  <td style="text-align:left">MacintoshProcessesRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Running processes (macOS)</td>
+</tr>
+<tr>
+  <td style="text-align:left">MacintoshSoftwareUpdates</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Pending software updates (macOS)</td>
+</tr>
+<tr>
+  <td style="text-align:left">MacintoshUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">macOS logged-in user</td>
+</tr>
+<tr>
+  <td style="text-align:left">MemberOfGroup</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Groups the endpoint belongs to</td>
+</tr>
+<tr>
+  <td style="text-align:left">ModelClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Device model classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">MsRrpReachable</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether Microsoft RRP (Remote Registry) is reachable</td>
+</tr>
+<tr>
+  <td style="text-align:left">MsSmbReachable</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether Microsoft SMB is reachable</td>
+</tr>
+<tr>
+  <td style="text-align:left">MsWmiReachable</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether Microsoft WMI is reachable</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcClientMode</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller client mode</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcDeviceName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller device name</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcDevicePort</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller device port</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcDeviceType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller device type</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcDeviceVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller device vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcFamily</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller device family</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcHostConnectionStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller host connection status</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcHostInformation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller host information</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcNetworkName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller network name</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcOrganizationName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller organization name</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcPortProfile</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller port profile</td>
+</tr>
+<tr>
+  <td style="text-align:left">NcProduct</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network controller product</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetBiosDomain</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">NetBIOS domain</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetBiosHostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">NetBIOS hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkFunction</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network function of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">NicVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network interface card vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">NumberOfIpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Number of IP addresses on the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">OpenPorts</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Open ports detected on the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">OsClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Operating system classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">OsDerivedFromVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Operating system derived from vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">OsDetailsClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detailed operating system classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtCriticality</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Operational technology (OT) criticality</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtLastSeen</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OT device last seen time</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtPurdueLevel</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OT Purdue model level</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtVulnerabilities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OT device vulnerabilities</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentOs</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Parent operating system</td>
+</tr>
+<tr>
+  <td style="text-align:left">Properties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Raw JSON blob of all Forescout host properties for this record</td>
+</tr>
+<tr>
+  <td style="text-align:left">PropertyType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of property record: host, policy, or compliance</td>
+</tr>
+<tr>
+  <td style="text-align:left">QualysAgent</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Qualys agent information</td>
+</tr>
+<tr>
+  <td style="text-align:left">QualysLastScan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Qualys last scan time</td>
+</tr>
+<tr>
+  <td style="text-align:left">SecureConnectorCompatibility</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">SecureConnector compatibility</td>
+</tr>
+<tr>
+  <td style="text-align:left">SegmentName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Forescout segment name</td>
+</tr>
+<tr>
+  <td style="text-align:left">SegmentPath</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Forescout segment path</td>
+</tr>
+<tr>
+  <td style="text-align:left">SnowHostStatusInCmdb</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">ServiceNow host status in CMDB</td>
+</tr>
+<tr>
+  <td style="text-align:left">SnowLastActionStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">ServiceNow last action status</td>
+</tr>
+<tr>
+  <td style="text-align:left">SplunkAlerts</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Splunk alerts</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchHostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchIpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch IP address</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchIpAddrPortName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch IP address and port name</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchLocation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch location</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchNumberOfHostsOnPort</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Number of hosts on the connected switch port</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchOs</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch operating system</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortAlias</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch port alias</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch port name</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortPoeConnectedDevice</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">PoE device connected to the switch port</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortVlan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch port VLAN</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortVlanName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch port VLAN name</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchPortVoiceVlan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch port voice VLAN</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchVendorAndType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Connected switch vendor and type</td>
+</tr>
+<tr>
+  <td style="text-align:left">SymantecAntiVirusDefinitionDate</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Symantec antivirus definition date</td>
+</tr>
+<tr>
+  <td style="text-align:left">SymantecAutoProtectionStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Symantec auto-protect status</td>
+</tr>
+<tr>
+  <td style="text-align:left">TaniumClientVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tanium client version</td>
+</tr>
+<tr>
+  <td style="text-align:left">TaniumUacStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tanium UAC status</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenableIoCloudIsReachable</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether Tenable.io cloud is reachable</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenableIoLastScan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tenable.io last scan time</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenableIoScanResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tenable.io scan results</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenableScScanStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tenable.sc scan status</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenableScVulnerabilityResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tenable.sc vulnerability results</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the record was generated</td>
 </tr>
 <tr>
   <td style="text-align:left">UploadTime</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the record was uploaded by Forescout</td>
+</tr>
+<tr>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Logged-in user</td>
+</tr>
+<tr>
+  <td style="text-align:left">VendorClassification</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Device vendor classification</td>
+</tr>
+<tr>
+  <td style="text-align:left">VmwareEsxiHostname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VMware ESXi hostname</td>
+</tr>
+<tr>
+  <td style="text-align:left">VmwareServerOsType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VMware server OS type</td>
+</tr>
+<tr>
+  <td style="text-align:left">VmwareVmName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VMware virtual machine name</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnClientType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN client type</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnIpAddr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN IP address</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnLoggedInUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN logged-in user</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogClientPublicIpv4Addr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog client public IPv4 address</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogClientPublicIpv6Addr</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog client public IPv6 address</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogClientVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog client version</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogGatewayName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog gateway name</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogUserGroup</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog user group</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogUserId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog user ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpnSyslogVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">VPN syslog vendor</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsActiveUsers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Active users (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsAntiSpywareInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Anti-spyware installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsAntivirusInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether antivirus is installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsAntivirusInstalledVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Installed antivirus version (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsAntivirusRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether antivirus is running (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsAntivirusUpdateDate</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Antivirus signature update date (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsApplicationsInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Installed applications (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsCloudStorageInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud storage application installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsCloudStorageRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud storage application running (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsDomainMember</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the device is a Windows domain member</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsHardDriveEncryptionInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Hard drive encryption software installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsHardDriveEncryptionState</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Hard drive encryption state (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsInstantMessagingInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Instant messaging application installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsInstantMessagingRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Instant messaging application running (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsLoggedOn</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether a user is logged on (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsManageableDomain</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the device is manageable via domain (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsManageableDomainCurrent</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the device is currently manageable via domain (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsManageableSecureConnector</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Whether the Windows device is manageable via SecureConnector</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsPeerToPeerInstalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Peer-to-peer application installed (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsPeerToPeerRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Peer-to-peer application running (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsPersonalFirewall</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Windows personal firewall status</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsProcessesRunning</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Running processes (Windows)</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsVersion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Windows version</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsVersionCpeFormat</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Windows version in CPE format</td>
+</tr>
+<tr>
+  <td style="text-align:left">WindowsVersionFineTuned</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Fine-tuned Windows version</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanApLocation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless access point location</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanApName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless access point name</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanClientConnectivityStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless client connectivity status</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanClientUsername</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless client username</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanDetectedClientType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless detected client type</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanManagingController</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless managing controller</td>
+</tr>
+<tr>
+  <td style="text-align:left">WlanSsid</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Wireless SSID</td>
 </tr>
 </tbody>
 </table>
@@ -125,7 +1194,7 @@
 <ul>
 <li><a href="../solutions/forescouthostpropertymonitor.html">ForescoutHostPropertyMonitor</a></li>
 </ul>
-<h2 id="connectors">Connectors (1)</h2>
+<h2 id="connectors">Connectors (2)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -137,6 +1206,10 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../connectors/forescouthostpropertymonitor.html">Forescout Host Property Monitor</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/forescouthostpropertymonitor.html">Forescout Host Property Monitor (Push Connector via Codeless Connector Framework)</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

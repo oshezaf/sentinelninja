@@ -30,14 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Microsoft <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Airlock Digital <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -50,7 +42,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
-<h2 id="schema">Schema (17 columns)</h2>
+<h2 id="schema">Schema (18 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalFileActivitySummary.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -90,6 +82,11 @@
   <td style="text-align:left">BlocklistTotal</td>
   <td style="text-align:left">int</td>
   <td style="text-align:left">Total count of blocklist executions</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectorName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Connector Friendly Name assigned during connector setup</td>
 </tr>
 <tr>
   <td style="text-align:left">EndDate</td>

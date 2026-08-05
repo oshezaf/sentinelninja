@@ -15,6 +15,13 @@ Reference for CloudProcessEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (29 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
@@ -57,7 +64,32 @@ Official Microsoft Learn documentation for field/column information:
 
 - [CloudProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
+
 ---
+
+## Content Items Using This Table (3)
+
+### Hunting Queries (2)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Pod cloud CLI then KeyVault or storage access](../content/hybrid-attack-cloud-&-identity-pod-cloud-cli-then-keyvault-or-storage-access-6bc3f56b-2e7f-4820-8aac-f6b40917f931-2ce5980e.md) |  |
+| [Pod token tooling then cloud RBAC write](../content/hybrid-attack-cloud-&-identity-pod-token-tooling-then-cloud-rbac-write-7f5d5715-8326-4865-b039-f9968f48de95-3154cdc1.md) |  |
+
+### Workbooks (1)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 ---
 

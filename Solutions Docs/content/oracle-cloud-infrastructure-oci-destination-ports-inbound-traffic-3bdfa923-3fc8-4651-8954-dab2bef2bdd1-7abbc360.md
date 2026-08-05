@@ -16,7 +16,7 @@ Query searches for destination ports of inbound traffic.
 | **Severity** | Low |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1190 |
-| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md) |
+| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md), [OracleCloudInfraConnector](../connectors/oraclecloudinfraconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Hunting%20Queries/OCIDestinationsIn.yaml) |
 
 ## Tables Used

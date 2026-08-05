@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoUmbrellaConnector` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | Umbrella *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CiscoUmbrella_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_CCP/CiscoUmbrella_DataConnectorDefinition.json) |

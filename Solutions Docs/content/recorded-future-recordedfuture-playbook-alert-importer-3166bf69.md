@@ -6,7 +6,7 @@
 
 ---
 
-This playbook imports alerts from Recorded Future and stores them in a custom log in the log analytics workspace.
+This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePlaybookAlerts_CL) in the log analytics workspace. To create Microsoft Defender incidents from these alerts, use a Analytics Rule that queries the RecordedFuturePlaybookAlerts_CL table. Direct incident creation via Logic Apps is no longer supported in the unified Microsoft Defender portal.
 
 | Attribute | Value |
 |:----------|:------|
@@ -20,16 +20,15 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) | ? | ✓ | ? |
+| [`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Logic App Connectors
 
-This playbook uses **3** Logic App connectors / built-in actions:
+This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
 | [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
-| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 | [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
@@ -39,13 +38,6 @@ This playbook uses **3** Logic App connectors / built-in actions:
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Send_Data | post | `/api/logs` | — |
-
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/workspaces/',parameters('workspace_name') ) ]` | — |
 
 #### [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) (Managed)
 

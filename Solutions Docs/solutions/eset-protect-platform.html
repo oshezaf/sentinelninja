@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Automation (SOAR),Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">ESET <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Protect Platform</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.2.0</td>
 </tr>
@@ -92,12 +84,13 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
+<li><a href="../connectors/esetconnectconnector.html">ESET Connect Data Connector (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/esetprotectplatform.html">ESET Protect Platform</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>5 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -108,8 +101,23 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/esetinspectv2-cl.html"><code>ESETInspectV2_CL</code></a></td>
+  <td><a href="../connectors/esetconnectconnector.html">ESET Connect Data Connector (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/integrationtableincidentsv2-cl.html"><code>IntegrationTableIncidentsV2_CL</code></a></td>
+  <td><a href="../connectors/esetconnectconnector.html">ESET Connect Data Connector (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/integrationtableincidents-cl.html"><code>IntegrationTableIncidents_CL</code></a></td>
   <td><a href="../connectors/esetprotectplatform.html">ESET Protect Platform</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/integrationtablev2-cl.html"><code>IntegrationTableV2_CL</code></a></td>
+  <td><a href="../connectors/esetconnectconnector.html">ESET Connect Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -147,8 +155,8 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../parsers/esetprotectplatform.html">ESETProtectPlatform</a></td>
-  <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/integrationtable-cl.html"><code>IntegrationTable_CL</code></a> <em>(read)</em></td>
+  <td style="text-align:left">Parser for ESET Protect Platform detections. Normalizes data from both the legacy Azure Functions co...</td>
+  <td style="text-align:left"><a href="../tables/integrationtablev2-cl.html"><code>IntegrationTableV2_CL</code></a> <em>(read)</em><br><a href="../tables/integrationtable-cl.html"><code>IntegrationTable_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -162,6 +170,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.3.0</td>
+  <td>02-07-2026</td>
+  <td>Created a new CCF Connector for all the products of ESET Protect Platform and updated the <strong>Parser</strong> to normalize data from both the legacy Azure Functions connector (IntegrationTable_CL) and the new CCF connector (IntegrationTableV2_CL)</td>
+</tr>
 <tr>
   <td>3.1.1</td>
   <td>25-04-2025</td>

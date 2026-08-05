@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MimecastEventsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="mimecastevents_cl">MimecastEvents_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (6 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastEvents_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">mimecast_body</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">mimecastEventId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">mimecastEventType</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">mimecastLogtype</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">mimecastSubtype</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (2)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/mimecast.html">Mimecast</a></li>
+<li><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/mimecasteventsccfdefinition.html">Mimecast Security Events (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (16)</h2>
+<h3 id="analytic-rules">Analytic Rules (13)</h3>
+<p><strong>In solution <a href="../solutions/mimecast.html">Mimecast</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-audit-logon-authentication-failed-f00197ab-491f-41e7-9e22-a7003a4c1e54-34f15bb0.html">Mimecast Audit - Logon Authentication Failed</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-data-leak-prevention-hold-8e52bcf1-4f50-4c39-8678-d9efad64e379-67109c1d.html">Mimecast Data Leak Prevention - Hold</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-data-leak-prevention-notifications-cfd67598-ad0d-430a-a793-027eb4dbe967-9d8dd373.html">Mimecast Data Leak Prevention - Notifications</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-av-33bf0cc9-e568-42bf-9571-c22adf7be66d-a67c05af.html">Mimecast Secure Email Gateway - AV</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-attachment-protect-72bd7b0c-493c-4fa5-8a95-7f6376b6cfb2-e2569fc9.html">Mimecast Secure Email Gateway - Attachment Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-impersonation-protect-2ef77cef-439f-4d94-848f-3eca67510d2f-6b6e10df.html">Mimecast Secure Email Gateway - Impersonation Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-internal-email-protect-d3bd7640-3600-49f9-8d10-6fe312e68b4f-be669a3d.html">Mimecast Secure Email Gateway - Internal Email Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-spam-event-thread-0cda82c8-e8f0-4117-896e-a10f1b43e64a-0143cdf0.html">Mimecast Secure Email Gateway - Spam Event Thread</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-url-protect-80f244cd-b0d6-404e-9aed-37f7a66eda9f-f7c07f28.html">Mimecast Secure Email Gateway - URL Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-secure-email-gateway-virus-d78d7352-fa5a-47d4-b48f-cb2c3252c0eb-2e268db1.html">Mimecast Secure Email Gateway - Virus</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-targeted-threat-protection-attachment-protect-617a55be-a8d8-49c1-8687-d19a0231056f-075f1f5f.html">Mimecast Targeted Threat Protection - Attachment Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-targeted-threat-protection-impersonation-protect-c048fa06-0d50-4626-ae82-a6cea812d9c4-4b305002.html">Mimecast Targeted Threat Protection - Impersonation Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-targeted-threat-protection-url-protect-952faed4-c6a6-4873-aeb9-b348e9ce5aba-ebe7c38c.html">Mimecast Targeted Threat Protection - URL Protect</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (3)</h3>
+<p><strong>In solution <a href="../solutions/mimecast.html">Mimecast</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-audit-workbook-2c0dd88f.html">Mimecast_Audit_Workbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-seg-workbook-c2026bf1.html">Mimecast_SEG_Workbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/mimecast-mimecast-ttp-workbook-c40cabd0.html">Mimecast_TTP_Workbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (7)</h2>
+<h3 id="other-parsers">Other Parsers (7)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastaudit.html">MimecastAudit</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastcg.html">MimecastCG</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastdlp.html">MimecastDLP</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastevents.html">MimecastEvents</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpattachment.html">MimecastTTPAttachment</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpimpersonation.html">MimecastTTPImpersonation</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpurl.html">MimecastTTPUrl</a></td>
+  <td style="text-align:left"><a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

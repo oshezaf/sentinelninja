@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -55,8 +51,8 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (82 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OrcaAlerts_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (25 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts%5CData%20Connectors%5COrcaSecurityAlertsCCF/OrcaSecurityAlerts_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -66,331 +62,103 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">account_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId_s</td>
+  <td style="text-align:left">alert_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">alert_id_s</td>
+  <td style="text-align:left">alert_labels</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">alert_labels_s</td>
+  <td style="text-align:left">alert_type</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">alert_type_s</td>
+  <td style="text-align:left">asset_hostname</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">asset_name_g</td>
+  <td style="text-align:left">asset_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">asset_name_s</td>
+  <td style="text-align:left">asset_state</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">asset_state_s</td>
+  <td style="text-align:left">asset_tags_info_list</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_type</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">asset_type_s</td>
+  <td style="text-align:left">asset_unique_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">asset_unique_id_s</td>
+  <td style="text-align:left">cloud_provider_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">cloud_provider_id_d</td>
+  <td style="text-align:left">cloud_vendor_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cluster_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cluster_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cve_list</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">details</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">findings</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">orca_score</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
-  <td style="text-align:left">cluster_name_s</td>
+  <td style="text-align:left">recommendation</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">cluster_type_s</td>
+  <td style="text-align:left">risk_level</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">source</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">description_s</td>
+  <td style="text-align:left">status</td>
   <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">details_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_arn_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cis_aws_control_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cis_aws_version_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_event_id_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_event_source_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_event_time_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_source_ip_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_user_agent_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_cloudtrail_user_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_mfa_active_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_password_last_used_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_user_creation_time_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_account_iam_policy_user_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_acl_description_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_acl_details_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_acl_public_acl_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_acl_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_affected_packages_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_cve_id_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_cvss3_score_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_cvss3_vector_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_labels_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_published_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_score_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_source_link_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_summary_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_cve_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_file_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_has_macro_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_labels_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_md5_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_modification_time_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_sha1_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_sha256_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_malware_virus_names_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_non_corporate_auth_key_description_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_non_corporate_auth_key_file_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_non_corporate_auth_key_keys_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_non_corporate_auth_key_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_distro_nice_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_distro_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_end_support_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_release_nice_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_release_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_os_end_of_support_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_weak_password_os_labels_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_weak_password_os_password_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_weak_password_os_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">findings_s_weak_password_os_username_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ManagementGroupName</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">MG_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">recommendation_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">score_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">source_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">time_t</td>
-  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">Type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">vm_id_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">vm_id_s</td>
+  <td style="text-align:left">vm_id</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>
@@ -405,7 +173,7 @@
 <ul>
 <li><a href="../solutions/orca-security-alerts.html">Orca Security Alerts</a></li>
 </ul>
-<h2 id="connectors">Connectors (1)</h2>
+<h2 id="connectors">Connectors (2)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -417,6 +185,10 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../connectors/orcasecurityalerts.html">Orca Security Alerts</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/orcasecurityalertsccf.html">Orca Security Alerts (via Microsoft Entra ID)</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

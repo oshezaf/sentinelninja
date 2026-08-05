@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Abnormal Security *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -18,6 +17,8 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (16 columns)
 
@@ -63,6 +64,40 @@ This table is ingested by the following connectors:
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) |  |
 
 ---
+
+## Content Items Using This Table (3)
+
+### Analytic Rules (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - Vendor compromise case detected](../content/abnormalsecurity-abnormal-security-vendor-compromise-case-detected-b15ea4c9-58da-44d8-90e4-6591d947e7e3-5d66afe6.md) |  |
+
+### Hunting Queries (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - Newly observed vendor domains](../content/abnormalsecurity-abnormal-security-newly-observed-vendor-domains-f8d819ef-7c3a-499a-a8ef-33737ce9a146-ba0d4629.md) |  |
+
+### Workbooks (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AbnormalSecurityOverview](../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AbnormalSecurityVendorCases](../parsers/abnormalsecurityvendorcases.md) | [AbnormalSecurity](../solutions/abnormalsecurity.md) |  |
 
 ---
 

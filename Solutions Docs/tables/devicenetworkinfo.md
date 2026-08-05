@@ -11,8 +11,6 @@ Reference for DeviceNetworkInfo table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -62,10 +60,11 @@ Official Microsoft Learn documentation for field/column information:
 
 - [DeviceNetworkInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkinfo)
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 
@@ -79,9 +78,23 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Hunting Queries (1)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Azure Network Configuration Tampered by Compromised Identity](../content/hybrid-attack-cloud-&-identity-azure-network-configuration-tampered-by-compromised-identity-455ffadf-ce55-4a0e-b339-fd3c2d67c71c-7151e2d8.md) |  |
+
+### Workbooks (3)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 

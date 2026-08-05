@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IPinfoWHOISORGDataConnector` |
-| **Publisher / Vendor** | IPinfo |
-| **Source Product** | WHOIS ORG *(basis: title)* |
+| **Publisher** | IPinfo |
 | **Used in Solutions** | [IPinfo](../solutions/ipinfo.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_WHOIS_ORG_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/WHOIS%20ORG/IPinfo_WHOIS_ORG_API_AzureFunctionApp.json) |

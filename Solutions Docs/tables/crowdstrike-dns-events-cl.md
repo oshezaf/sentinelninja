@@ -9,7 +9,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
-| **Source Vendor** | Amazon *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -80,7 +79,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) |  |
+| [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) |  |
 
 ---
 

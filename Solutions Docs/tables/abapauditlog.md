@@ -11,10 +11,6 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Source Vendor** | SAP *(basis: override)* |
-| **Source Product** | S/4HANA Cloud Public Edition *(basis: projected)* |
-| **Collector Vendor** | Onapsis, Pathlock, SecurityBridge *(basis: projected)* |
-| **Collector Product** | Onapsis Defend, SecurityBridge Platform, Threat Detection and Response |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -85,17 +81,18 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ABAPAuditLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapauditlog)
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [Onapsis Defend](../solutions/onapsis-defend.md)
 - [Pathlock_TDnR](../solutions/pathlock-tdnr.md)
 - [SAP](../solutions/sap.md)
+- [SAP LogServ](../solutions/sap-logserv.md)
 - [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md)
 - [SecurityBridge App](../solutions/securitybridge-app.md)
 
-## Connectors (5)
+## Connectors (6)
 
 This table is ingested by the following connectors:
 
@@ -104,6 +101,7 @@ This table is ingested by the following connectors:
 | [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) |  |
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
 | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) |  |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
 | [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) |  |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) |  |
 

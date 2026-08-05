@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Blackberry *(basis: publisher)* |
-| **Source Product** | CylancePROTECT |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-20 |

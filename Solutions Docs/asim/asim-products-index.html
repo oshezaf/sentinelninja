@@ -19,7 +19,7 @@
 <p>This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.</p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <strong>ASIM Products</strong> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>97 products</strong> with 93 source parser pairs covering 11 schemas. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>104 products</strong> with 97 source parser pairs covering 12 schemas. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <h2 id="products-overview">Products Overview</h2>
 <table>
 <thead>
@@ -31,6 +31,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="#anthropic-claude-compliance">Anthropic Claude Compliance</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="#apache-http-server">Apache HTTP Server</a></td>
   <td style="text-align:right">1</td>
@@ -63,6 +69,12 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="#aws-vpc">AWS VPC</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="#aws-waf">AWS WAF</a></td>
   <td style="text-align:right">1</td>
   <td style="text-align:right">1</td>
   <td style="text-align:right">1</td>
@@ -134,6 +146,12 @@
   <td style="text-align:right">1</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="#cisco-ftd">Cisco FTD</a></td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">3</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="#cisco-ios">Cisco IOS</a></td>
   <td style="text-align:right">1</td>
   <td style="text-align:right">1</td>
@@ -188,6 +206,12 @@
   <td style="text-align:right">1</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="#crowdstrike-falcon">CrowdStrike Falcon</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a></td>
   <td style="text-align:right">3</td>
   <td style="text-align:right">3</td>
@@ -224,10 +248,22 @@
   <td style="text-align:right">1</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="#google-secops">Google SecOps</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="#google-threat-intelligence">Google Threat Intelligence</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="#google-workspace">Google Workspace</a></td>
+  <td style="text-align:right">3</td>
   <td style="text-align:right">2</td>
-  <td style="text-align:right">2</td>
-  <td style="text-align:right">2</td>
+  <td style="text-align:right">3</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="#illumio">Illumio</a></td>
@@ -458,6 +494,12 @@
   <td style="text-align:right">1</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="#palo-alto-prisma-cloud-compute">Palo Alto Prisma Cloud Compute</a></td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="#palo-alto-xdr">Palo Alto XDR</a></td>
   <td style="text-align:right">1</td>
   <td style="text-align:right">1</td>
@@ -473,7 +515,7 @@
   <td style="text-align:left"><a href="#salesforce-service-cloud">Salesforce Service Cloud</a></td>
   <td style="text-align:right">2</td>
   <td style="text-align:right">2</td>
-  <td style="text-align:right">2</td>
+  <td style="text-align:right">3</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="#security-events">Security Events</a></td>
@@ -615,6 +657,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="anthropic-claude-compliance">Anthropic Claude Compliance</h2>
+<p><strong>Schemas:</strong> AgentEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/bv-claudecompliance-complianceactivities-cl.html">BV_ClaudeCompliance_ComplianceActivities_CL</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimagenteventanthropicclaudecompliance.html">ASimAgentEventAnthropicClaudeCompliance</a><br>vim: <a href="vimagenteventanthropicclaudecompliance.html">vimAgentEventAnthropicClaudeCompliance</a></td>
+  <td style="text-align:left">AgentEvent</td>
+  <td style="text-align:left"><a href="../tables/bv-claudecompliance-complianceactivities-cl.html">BV_ClaudeCompliance_ComplianceActivities_CL</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="apache-http-server">Apache HTTP Server</h2>
 <p><strong>Schemas:</strong> WebSession</p>
 <p><strong>Tables:</strong> <a href="../tables/apachehttpserver-cl.html">ApacheHTTPServer_CL</a></p>
@@ -753,6 +817,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="aws-waf">AWS WAF</h2>
+<p><strong>Schemas:</strong> WebSession</p>
+<p><strong>Tables:</strong> <a href="../tables/awswaf.html">AWSWAF</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimwebsessionawswaf.html">ASimWebSessionAWSWAF</a><br>vim: <a href="vimwebsessionawswaf.html">vimWebSessionAWSWAF</a></td>
+  <td style="text-align:left">WebSession</td>
+  <td style="text-align:left"><a href="../tables/awswaf.html">AWSWAF</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="azure-firewall">Azure Firewall</h2>
 <p><strong>Schemas:</strong> Dns, NetworkSession, WebSession</p>
 <p><strong>Tables:</strong> <a href="../tables/azfwapplicationrule.html">AZFWApplicationRule</a>, <a href="../tables/azfwdnsquery.html">AZFWDnsQuery</a>, <a href="../tables/azfwidpssignature.html">AZFWIdpsSignature</a>, <a href="../tables/azfwnatrule.html">AZFWNatRule</a>, <a href="../tables/azfwnetworkrule.html">AZFWNetworkRule</a>, <a href="../tables/azfwthreatintel.html">AZFWThreatIntel</a>, <a href="../tables/azurediagnostics.html">AzureDiagnostics</a></p>
@@ -771,7 +857,7 @@
   <td style="text-align:left">ASim: <a href="asimdnsazurefirewall.html">ASimDnsAzureFirewall</a><br>vim: <a href="vimdnsazurefirewall.html">vimDnsAzureFirewall</a></td>
   <td style="text-align:left">Dns</td>
   <td style="text-align:left"><a href="../tables/azfwdnsquery.html">AZFWDnsQuery</a>, <a href="../tables/azurediagnostics.html">AzureDiagnostics</a></td>
-  <td style="text-align:left">0.4.0</td>
+  <td style="text-align:left">0.4.1</td>
 </tr>
 <tr>
   <td style="text-align:left">ASim: <a href="asimnetworksessionazurefirewall.html">ASimNetworkSessionAzureFirewall</a><br>vim: <a href="vimnetworksessionazurefirewall.html">vimNetworkSessionAzureFirewall</a></td>
@@ -1049,6 +1135,34 @@
 </tr>
 </tbody>
 </table>
+<h2 id="cisco-ftd">Cisco FTD</h2>
+<p><strong>Schemas:</strong> Authentication, NetworkSession</p>
+<p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a>, <a href="../tables/syslog.html">Syslog</a>, <a href="../tables/event.html">event</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimauthenticationciscoftd.html">ASimAuthenticationCiscoFTD</a><br>vim: <a href="vimauthenticationciscoftd.html">vimAuthenticationCiscoFTD</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left"><a href="../tables/syslog.html">Syslog</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimnetworksessionciscoftd.html">ASimNetworkSessionCiscoFTD</a><br>vim: <a href="vimnetworksessionciscoftd.html">vimNetworkSessionCiscoFTD</a></td>
+  <td style="text-align:left">NetworkSession</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a>, <a href="../tables/event.html">event</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="cisco-ios">Cisco IOS</h2>
 <p><strong>Schemas:</strong> Authentication</p>
 <p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
@@ -1095,7 +1209,7 @@
   <td style="text-align:left">ASim: <a href="asimauthenticationciscoise.html">ASimAuthenticationCiscoISE</a><br>vim: <a href="vimauthenticationciscoise.html">vimAuthenticationCiscoISE</a></td>
   <td style="text-align:left">Authentication</td>
   <td style="text-align:left"><a href="../tables/syslog.html">Syslog</a></td>
-  <td style="text-align:left">0.1.0</td>
+  <td style="text-align:left">0.1.1</td>
 </tr>
 <tr>
   <td style="text-align:left">ASim: <a href="asimnetworksessionciscoise.html">ASimNetworkSessionCiscoISE</a><br>vim: <a href="vimnetworksessionciscoise.html">vimNetworkSessionCiscoISE</a></td>
@@ -1209,7 +1323,7 @@
   <td style="text-align:left">ASim: <a href="asimalerteventciscosecureendpoint.html">ASimAlertEventCiscoSecureEndpoint</a><br>vim: <a href="vimalerteventciscosecureendpoint.html">vimAlertEventCiscoSecureEndpoint</a></td>
   <td style="text-align:left">AlertEvent</td>
   <td style="text-align:left"><a href="../tables/ciscosecureendpointeventsv2-cl.html">CiscoSecureEndpointEventsV2_CL</a></td>
-  <td style="text-align:left">0.1.0</td>
+  <td style="text-align:left">0.1.1</td>
 </tr>
 </tbody>
 </table>
@@ -1313,6 +1427,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="crowdstrike-falcon">CrowdStrike Falcon</h2>
+<p><strong>Schemas:</strong> AlertEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/crowdstrikedetections.html">CrowdStrikeDetections</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimalerteventcrowdstrikefalcon.html">ASimAlertEventCrowdStrikeFalcon</a><br>vim: <a href="vimalerteventcrowdstrikefalcon.html">vimAlertEventCrowdStrikeFalcon</a></td>
+  <td style="text-align:left">AlertEvent</td>
+  <td style="text-align:left"><a href="../tables/crowdstrikedetections.html">CrowdStrikeDetections</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</h2>
 <p><strong>Schemas:</strong> AuditEvent, Authentication, NetworkSession</p>
 <p><strong>Tables:</strong> <a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></p>
@@ -1409,7 +1545,7 @@
   <td style="text-align:left">ASim: <a href="asimauthenticationfortinetfortigate.html">ASimAuthenticationFortinetFortigate</a><br>vim: <a href="vimauthenticationfortinetfortigate.html">vimAuthenticationFortinetFortigate</a></td>
   <td style="text-align:left">Authentication</td>
   <td style="text-align:left"><a href="../tables/commonsecuritylog.html">CommonSecurityLog</a></td>
-  <td style="text-align:left">0.1.0</td>
+  <td style="text-align:left">0.1.1</td>
 </tr>
 </tbody>
 </table>
@@ -1469,9 +1605,53 @@
 </tr>
 </tbody>
 </table>
+<h2 id="google-secops">Google SecOps</h2>
+<p><strong>Schemas:</strong> AlertEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/detectionalerts-cl.html">DetectionAlerts_CL</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimalerteventgooglesecops.html">ASimAlertEventGoogleSecOps</a><br>vim: <a href="vimalerteventgooglesecops.html">vimAlertEventGoogleSecOps</a></td>
+  <td style="text-align:left">AlertEvent</td>
+  <td style="text-align:left"><a href="../tables/detectionalerts-cl.html">DetectionAlerts_CL</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="google-threat-intelligence">Google Threat Intelligence</h2>
+<p><strong>Schemas:</strong> AlertEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/relevancesystemalerts-cl.html">RelevanceSystemAlerts_CL</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimalerteventgooglethreatintelligence.html">ASimAlertEventGoogleThreatIntelligence</a><br>vim: <a href="vimalerteventgooglethreatintelligence.html">vimAlertEventGoogleThreatIntelligence</a></td>
+  <td style="text-align:left">AlertEvent</td>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html">RelevanceSystemAlerts_CL</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="google-workspace">Google Workspace</h2>
 <p><strong>Schemas:</strong> Authentication, FileEvent</p>
-<p><strong>Tables:</strong> <a href="../tables/gworkspace-reportsapi-drive-cl.html">GWorkspace_ReportsAPI_drive_CL</a>, <a href="../tables/gworkspace-reportsapi-login-cl.html">GWorkspace_ReportsAPI_login_CL</a></p>
+<p><strong>Tables:</strong> <a href="../tables/gworkspace-reportsapi-drive-cl.html">GWorkspace_ReportsAPI_drive_CL</a>, <a href="../tables/gworkspace-reportsapi-login-cl.html">GWorkspace_ReportsAPI_login_CL</a>, <a href="../tables/googleworkspacereports.html">GoogleWorkspaceReports</a></p>
 <h3 id="parsers">Parsers</h3>
 <table>
 <thead>
@@ -1487,6 +1667,12 @@
   <td style="text-align:left">ASim: <a href="asimauthenticationgoogleworkspace.html">ASimAuthenticationGoogleWorkspace</a><br>vim: <a href="vimauthenticationgoogleworkspace.html">vimAuthenticationGoogleWorkspace</a></td>
   <td style="text-align:left">Authentication</td>
   <td style="text-align:left"><a href="../tables/gworkspace-reportsapi-login-cl.html">GWorkspace_ReportsAPI_login_CL</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimauthenticationgoogleworkspacelogins.html">ASimAuthenticationGoogleWorkspaceLogins</a><br>vim: <a href="vimauthenticationgoogleworkspacelogins.html">vimAuthenticationGoogleWorkspaceLogins</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left"><a href="../tables/googleworkspacereports.html">GoogleWorkspaceReports</a></td>
   <td style="text-align:left">0.1.0</td>
 </tr>
 <tr>
@@ -2519,6 +2705,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="palo-alto-prisma-cloud-compute">Palo Alto Prisma Cloud Compute</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/syslog.html">Syslog</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Tables</th>
+  <th style="text-align:left">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ASim: <a href="asimauthenticationpaloaltoprismacloud.html">ASimAuthenticationPaloAltoPrismaCloud</a><br>vim: <a href="vimauthenticationpaloaltoprismacloud.html">vimAuthenticationPaloAltoPrismaCloud</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left"><a href="../tables/syslog.html">Syslog</a></td>
+  <td style="text-align:left">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="palo-alto-xdr">Palo Alto XDR</h2>
 <p><strong>Schemas:</strong> AlertEvent</p>
 <p><strong>Tables:</strong> <a href="../tables/paloaltocortexxdr-alerts-cl.html">PaloAltoCortexXDR_Alerts_CL</a></p>
@@ -2565,7 +2773,7 @@
 </table>
 <h2 id="salesforce-service-cloud">Salesforce Service Cloud</h2>
 <p><strong>Schemas:</strong> Authentication, WebSession</p>
-<p><strong>Tables:</strong> <a href="../tables/salesforceservicecloudv2-cl.html">SalesforceServiceCloudV2_CL</a>, <a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></p>
+<p><strong>Tables:</strong> <a href="../tables/salesforceservicecloudv2-cl.html">SalesforceServiceCloudV2_CL</a>, <a href="../tables/salesforceservicecloudv3-cl.html">SalesforceServiceCloudV3_CL</a>, <a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></p>
 <h3 id="parsers">Parsers</h3>
 <table>
 <thead>
@@ -2580,8 +2788,8 @@
 <tr>
   <td style="text-align:left">ASim: <a href="asimauthenticationsalesforcesc.html">ASimAuthenticationSalesforceSC</a><br>vim: <a href="vimauthenticationsalesforcesc.html">vimAuthenticationSalesforceSC</a></td>
   <td style="text-align:left">Authentication</td>
-  <td style="text-align:left"><a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></td>
-  <td style="text-align:left">0.1.0</td>
+  <td style="text-align:left"><a href="../tables/salesforceservicecloudv2-cl.html">SalesforceServiceCloudV2_CL</a>, <a href="../tables/salesforceservicecloudv3-cl.html">SalesforceServiceCloudV3_CL</a>, <a href="../tables/salesforceservicecloud-cl.html">SalesforceServiceCloud_CL</a></td>
+  <td style="text-align:left">0.2.0</td>
 </tr>
 <tr>
   <td style="text-align:left">ASim: <a href="asimwebsessionsalesforceservicecloudv2.html">ASimWebSessionSalesforceServiceCloudV2</a><br>vim: <a href="vimwebsessionsalesforceservicecloudv2.html">vimWebSessionSalesforceServiceCloudV2</a></td>

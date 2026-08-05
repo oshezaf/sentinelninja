@@ -11,8 +11,6 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Azure Storage Account *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -97,12 +95,13 @@ Official Microsoft Learn documentation for field/column information:
 
 - [StorageBlobLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagebloblogs)
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [Azure Storage](../solutions/azure-storage.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
@@ -117,7 +116,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (1)
 
@@ -127,13 +126,28 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md) |  |
 
-### Workbooks (3)
+### Hunting Queries (2)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `CallerIpAddress startswith "10."`<br>`CallerIpAddress startswith "127."`<br>`CallerIpAddress startswith "169.254."`<br>`CallerIpAddress startswith "172."`<br>`CallerIpAddress startswith "192.168."`<br>`StatusCode in "200,206"`<br>`UserAgentHeader contains "rubrik"`
+
+| Hunting Query |
+|:-------------|
+| [Azure Storage Access via AccountKey or SAS Token from First-Seen External IP](../content/hybrid-attack-cloud-&-identity-azure-storage-access-via-accountkey-or-sas-token-from-first-seen-external-fed80b62-1836-4e06-a01f-7ec467d46e24-57922c5a.md) |
+| [Azure Storage Bulk Download via AccountKey or SAS Token from External IP](../content/hybrid-attack-cloud-&-identity-azure-storage-bulk-download-via-accountkey-or-sas-token-from-external-ip-eea3dc6d-7abd-465e-b8e8-5176c205bb8e-ef5da964.md) |
+
+### Workbooks (4)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `StatusCode in "200,206"`
+
+| Workbook |
+|:-------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -160,6 +174,39 @@ This table is ingested by the following connectors:
 This table collects data from the following Azure resource types:
 
 - `microsoft.storage/storageaccounts`
+
+## Selection Criteria Summary (2 criteria, 3 total references)
+
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `CallerIpAddress startswith "10."`<br>`CallerIpAddress startswith "127."`<br>`CallerIpAddress startswith "169.254."`<br>`CallerIpAddress startswith "172."`<br>`CallerIpAddress startswith "192.168."`<br>`StatusCode in "200,206"`<br>`UserAgentHeader contains "rubrik"` | - | 2 | - | - | **2** |
+| `StatusCode in "200,206"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
+
+### CallerIpAddress
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `startswith 10.` | - | 2 | - | - | **2** |
+| `startswith 127.` | - | 2 | - | - | **2** |
+| `startswith 169.254.` | - | 2 | - | - | **2** |
+| `startswith 172.` | - | 2 | - | - | **2** |
+| `startswith 192.168.` | - | 2 | - | - | **2** |
+
+### StatusCode
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `200` | - | 3 | - | - | **3** |
+| `206` | - | 3 | - | - | **3** |
+
+### UserAgentHeader
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains rubrik` | - | 2 | - | - | **2** |
 
 ---
 

@@ -6,11 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Source Vendor** | Imperva *(basis: projected)* |
-| **Source Product** | Cloud WAF *(basis: projected)* |
-
 ## Contents
 
 - [Schema References](#schema-references)

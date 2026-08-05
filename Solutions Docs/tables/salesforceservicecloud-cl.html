@@ -30,14 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Salesforce <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Service Cloud <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Custom Log V1</strong></td>
   <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
@@ -56,7 +48,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (213 columns)</h2>
+<h2 id="schema">Schema (424 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SalesforceServiceCloud_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -67,11 +59,19 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_ItemId</td>
+  <td style="text-align:left">_ResourceId</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">access_error_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">action_message_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">action_name_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -79,7 +79,51 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">action_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">action_version_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">actual_logged_in_user_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">actual_user_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">agent_action_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">all_or_none_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">analytics_mode_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">apex_entity_name_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_caller_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_client_category_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_family_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_resource_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -115,11 +159,67 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">asset_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attachment_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">authentication_context_class_reference_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">authentication_method_reference_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">authentication_service_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">average_row_size_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">b2b_edition_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">b2b_version_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">batch_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">blocked_uri_domain_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">blocked_uri_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bot_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bot_session_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bot_session_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">browser_device_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -135,7 +235,27 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">bytes_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">caller_package_namespace_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">callout_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cancelled_reason_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">case_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">change_set_name_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -143,11 +263,11 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">class_name_s</td>
+  <td style="text-align:left">clicked_record_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">clicked_record_id_s</td>
+  <td style="text-align:left">client_geo_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -171,11 +291,7 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">component_id_derived_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">component_id_s</td>
+  <td style="text-align:left">column_number_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -187,15 +303,39 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">concurrency_mode_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connect_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connect_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connected_app_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connected_app_name_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">connection_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">console_id_derived_s</td>
+  <td style="text-align:left">content_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">console_id_s</td>
+  <td style="text-align:left">context_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">context_map_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -203,11 +343,35 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">continuation_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">controller_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">correlation_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">count_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">country_code_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">counts_against_api_limit_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">cpu_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">current_sandbox_org_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -231,6 +395,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">dataset_ids_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">db_blocks_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -240,6 +408,10 @@
 </tr>
 <tr>
   <td style="text-align:left">db_total_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">decoded_body_size_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -263,6 +435,14 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">description_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">device_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -275,11 +455,27 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">device_session_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">device_session_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">directive_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">display_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">disposition_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dml_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -291,7 +487,59 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">dom_complete_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dom_content_loaded_event_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dom_content_loaded_event_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dom_interactive_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">domain_lookup_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">domain_lookup_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">download_error_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">download_format_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">duration_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">easy_suite_value_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">effective_account_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">effective_page_time_deviation_error_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">effective_page_time_deviation_reason_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">effective_page_time_deviation_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -299,8 +547,8 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">endtime</td>
-  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">encoded_body_size_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">entity_id_s</td>
@@ -327,15 +575,27 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">error_code_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">error_description_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">error_message_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">error_timestamp_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">event_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventProduct</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">EventVendor</td>
+  <td style="text-align:left">exception_category_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -351,6 +611,34 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">execute_ms_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">expand_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">failure_reason_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">failure_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">feature_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">fetch_ms_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">fetch_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">file_preview_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -359,7 +647,51 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">filter_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">first_entity_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">first_interim_response_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">flow_load_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">flow_process_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">flow_version_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">forwarded_for_ip_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">grandparent_ui_element_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">group_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">group_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">has_chart_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">host_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -371,11 +703,43 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">http_referer_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">initial_reference_ids_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">initiator_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">internal_invoker_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">invocation_source_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">invoking_apex_class_name_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ip_address_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">is_ajax_request_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">is_api_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_cancelled_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -391,7 +755,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">is_initial_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">is_long_running_request_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_managed_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -400,6 +772,26 @@
 </tr>
 <tr>
   <td style="text-align:left">is_new_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_private_on_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_push_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_released_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_request_collation_on_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_retry_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -415,7 +807,31 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">is_successful_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">job_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">job_status_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">key_id_derived_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">key_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">key_prefix_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">key_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -423,15 +839,35 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">large_language_model_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">last_version_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">license_context_s</td>
+  <td style="text-align:left">library_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">limit_usage_percent_s</td>
+  <td style="text-align:left">lightning_cdn_domain_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">limit_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">line_number_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">load_event_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">load_event_start_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -447,6 +883,22 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">login_sub_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">login_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">login_url_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">malformed_url_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">managed_package_namespace_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -455,7 +907,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">master_report_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">media_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">member_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -479,11 +939,39 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">named_credential_name_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">navigation_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">next_hop_protocol_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">next_link_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">num_clicks_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">num_graph_depth_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">num_results_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">num_retries_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">num_rows_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -511,7 +999,19 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">number_of_errors_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">number_of_interviews_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">number_of_records_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">number_requests_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -519,11 +1019,43 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">offset_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operation_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operation_stage_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operation_state_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operation_status_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operation_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">operation_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">orderby_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">organization_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">origin_request_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -536,6 +1068,10 @@
 </tr>
 <tr>
   <td style="text-align:left">os_version_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">package_name_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -555,6 +1091,22 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">page_flexi_page_name_or_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">page_flexi_page_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">page_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">page_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">page_name_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -567,7 +1119,27 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">parent_callout_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parent_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">parent_ui_element_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">pending_sandbox_org_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">permission_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">planner_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -599,11 +1171,31 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">process_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">prompt_template_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">provider_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">query_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">query_identifier_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">query_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_type_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -615,6 +1207,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">rate_limit_usage_percent_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">RawData</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -623,7 +1219,7 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">record_id_derived_s</td>
+  <td style="text-align:left">record_id_g</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -632,6 +1228,30 @@
 </tr>
 <tr>
   <td style="text-align:left">record_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">records_failed_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">records_processed_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">redirect_count_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">redirect_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">redirect_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">referrer_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -644,6 +1264,14 @@
 </tr>
 <tr>
   <td style="text-align:left">related_list_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">remote_address_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">render_blocking_status_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -667,11 +1295,31 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">request_count_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_form_size_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">request_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">request_method_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_path_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">request_size_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_start_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -683,7 +1331,31 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">request_uri_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">requested_access_level_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">requests_limit_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">requests_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">resolution_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_sample_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">response_end_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -691,7 +1363,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">response_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">response_status_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">result_size_mb_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">row_count_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rows_fetched_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -699,7 +1387,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">rows_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">run_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">sample_factor_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">sandbox_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">saved_view_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -716,6 +1420,26 @@
 </tr>
 <tr>
   <td style="text-align:left">search_query_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">search_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">secure_connection_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">select_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_request_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">service_name_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -759,7 +1483,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">source_file_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">source_ip_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">source_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -767,15 +1499,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">sql_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">stack_trace_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">starttime</td>
-  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">start_time_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">status_code_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">status_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -787,15 +1527,19 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">target_org_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">target_ui_element_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">targetusername_has</td>
+  <td style="text-align:left">TenantId</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">throughput_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -819,11 +1563,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">total_execution_time_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">total_ms_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">total_time_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">transaction_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_size_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -839,7 +1595,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">type__s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ui_event_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">ui_event_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ui_event_relative_timestamp_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -859,6 +1631,38 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">ui_number_columns_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ui_root_activity_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ui_root_activity_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ui_thread_response_delay_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">unique_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">unload_event_end_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">unload_event_start_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">update_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">uri_id_derived_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -868,6 +1672,10 @@
 </tr>
 <tr>
   <td style="text-align:left">url_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">use_api_token_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -907,7 +1715,19 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">vf_controller_size_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">view_mode_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">view_state_size_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">viewing_user_id_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -915,7 +1735,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">wave_session_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">wave_timestamp_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">webstore_id_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">webstore_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">worker_start_s</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>
@@ -988,26 +1824,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
-<h3 id="asim-parsers">ASIM Parsers (1)</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Schema</th>
-  <th style="text-align:left">Product</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../asim/asimauthenticationsalesforcesc.html">ASimAuthenticationSalesforceSC</a></td>
-  <td style="text-align:left">Authentication</td>
-  <td style="text-align:left">Salesforce Service Cloud</td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="other-parsers">Other Parsers (1)</h3>
 <table>
 <thead>

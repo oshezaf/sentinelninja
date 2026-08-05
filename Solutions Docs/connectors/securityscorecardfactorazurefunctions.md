@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SecurityScorecardFactorAzureFunctions` |
-| **Publisher / Vendor** | SecurityScorecard |
-| **Source Product** | Factor *(basis: title)* |
+| **Publisher** | SecurityScorecard |
 | **Used in Solutions** | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SecurityScorecardFactor_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardFactor/SecurityScorecardFactor_API_FunctionApp.json) |

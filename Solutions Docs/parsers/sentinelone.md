@@ -13,8 +13,8 @@
 | Title | Parser for SentinelOne |
 | Location | Solution |
 | Solution | [SentinelOne](../solutions/sentinelone.md) |
-| Version | 1.0.1 |
-| Last Updated | 2024-11-25 |
+| Version | 1.0.2 |
+| Last Updated | 2026-07-01 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Parsers/SentinelOne.yaml) |
@@ -27,6 +27,7 @@ This parser reads from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ✓ | ✓ | ✓ |
+| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ? | ✓ | ? |
 | [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ✓ | ✓ | ✓ |

@@ -35,18 +35,6 @@
   <td style="text-align:left">Windows</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Cyborg Security, Microsoft, Semperis <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Active-Directory Domain Controllers Security, Directory Services Protector, Exchange, HUNTER Hunt Packages, Windows <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Events</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -1240,7 +1228,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent">SecurityEvent Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (29)</h2>
+<h2 id="solutions">Solutions (33)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -1254,17 +1242,21 @@
 <li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
+<li><a href="../solutions/microsoft-active-directory-tier-model.html">Microsoft Active Directory Tier Model</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
 <li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
 <li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
+<li><a href="../solutions/sap-logserv.html">SAP LogServ</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
@@ -1273,7 +1265,7 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
-<h2 id="connectors">Connectors (6)</h2>
+<h2 id="connectors">Connectors (7)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -1296,6 +1288,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../connectors/securityevents.html">Security Events via Legacy Agent</a></td>
   <td style="text-align:left"></td>
 </tr>
@@ -1310,8 +1306,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (145)</h2>
-<h3 id="analytic-rules">Analytic Rules (50)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (166)</h2>
+<h3 id="analytic-rules">Analytic Rules (70)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1444,6 +1440,93 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/microsoft-active-directory-tier-model.html">Microsoft Active Directory Tier Model</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm001.1-group-added-to-group-outside-the-object-tier-level-b300c7f8-dc5e-4fc6-879b-63f0013358ce-6006006d.html">PROD (TM001.1) - GROUP - Added to Group Outside the Object Tier Level</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm002.1-object-created-or-deleted-a-tier-level-object-b58adf25-fb44-4296-9b6c-0e6b97139dad-2795650c.html">PROD (TM002.1) - OBJECT - Created or Deleted a Tier Level Object</a></td>
+  <td style="text-align:left"><code>EventID in &quot;5137,5141&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm003.1-object-moved-or-recovered-a-tier-level-account-1d858e12-777d-4156-b0af-b5ef410739e6-21ce2bb5.html">PROD (TM003.1) - OBJECT - Moved or Recovered a Tier Level Account</a></td>
+  <td style="text-align:left"><code>EventID in &quot;5138,5139&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm004.1-object-enabled,-disabled,-unlocked,-or-password-reset-1da0cf44-c927-4b6f-9b43-91871b2391b3-c917af1c.html">PROD (TM004.1) - OBJECT - Enabled, Disabled, Unlocked, or Password Reset of a Tier Level Object</a></td>
+  <td style="text-align:left"><code>EventData has &quot;AttributeLDAPDisplayName&quot;</code><br><code>EventData has &quot;AttributeValue&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm005.1-gpo-linked,-unlinked,-or-enforced-at-tier-level-ou-02cf2172-0eb7-4a4a-bce7-7251cdd3e233-ba1eb9dc.html">PROD (TM005.1) - GPO - Linked, Unlinked, or Enforced at Tier Level OU</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;;0]&quot;</code><br><code>EventData has &quot;;1]&quot;</code><br><code>EventData has &quot;;2]&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm006.1-acl-modified-at-tier-level-ou-f3e2433b-6456-4009-a1cb-0d4eb3a36125-b432541c.html">PROD (TM006.1) - ACL - Modified at Tier Level OU</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm007.1-ou-created-or-deleted-at-tier-level-4e027b5f-fc4a-4de6-be24-3eb9324e2fc8-9888d4d6.html">PROD (TM007.1) - OU - Created or Deleted at Tier Level</a></td>
+  <td style="text-align:left"><code>EventID in &quot;5137,5141&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm008.1-gpo-linked,-unlinked,-or-enforced-at-root-of-domain-fe468726-b1dc-4e76-adad-3480de4a2c56-f94601bc.html">PROD (TM008.1) - GPO - Linked, Unlinked, or Enforced at Root of Domain</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;;0]&quot;</code><br><code>EventData has &quot;;1]&quot;</code><br><code>EventData has &quot;;2]&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm009.1-acl-modified-at-root-of-the-domain-7437402c-800b-4cf3-90d9-0c1f12204375-1a4c6470.html">PROD (TM009.1) - ACL - Modified at Root of the Domain</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm010.1-bitlocker-stored-bitlocker-recovery-key-to-tier-level-eea9c640-afe0-4ce4-9a41-c409d4c2c924-1aa7bcc6.html">PROD (TM010.1) - BITLOCKER - Stored Bitlocker Recovery Key to Tier Level Computer Object</a></td>
+  <td style="text-align:left"><code>EventID == &quot;5137&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm011.1-laps-tier-level-computer-object-laps-password-expirat-daf2b9f7-dcf2-4b45-831a-d7142318c7e9-dc070dd3.html">PROD (TM011.1) - LAPS - Tier Level Computer Object LAPS Password Expiration Time Set Manually</a></td>
+  <td style="text-align:left"><code>AccountType == &quot;User&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm012.1-gpo-enforced-outside-of-tier-model-05846968-15cc-4309-bddc-eaa296f84af1-ddc937c8.html">PROD (TM012.1) - GPO - Enforced Outside of Tier Model</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;;0]&quot;</code><br><code>EventData has &quot;;1]&quot;</code><br><code>EventData has &quot;;2]&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm013.1-ou-block-inheritance-was-enabled-on-an-ou-17371300-904a-4af5-9550-cf57ee727bb7-7e50854e.html">PROD (TM013.1) - OU - Block Inheritance was Enabled on an OU</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm014.1-gpo-linked,-unlinked,-or-enforced-at-the-ad-site-leve-38f2f6f4-2869-401c-8341-e3a5c11018a5-8c131a4d.html">PROD (TM014.1) - GPO - Linked, Unlinked, or Enforced at the AD Site Level</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;;0]&quot;</code><br><code>EventData has &quot;;1]&quot;</code><br><code>EventData has &quot;;2]&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm015.1-acl-modified-at-krbtgt-or-adminsdholder-object-level-a9f94bf1-856e-40ff-a176-24f967da1e27-38fd56fc.html">PROD (TM015.1) - ACL - Modified at KRBTGT or AdminSDHolder Object Level</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm016.1-group-added-to-well-known-or-tier-model-group-763fc00b-4971-43c2-9cd1-f12b58a542bd-e013fae3.html">PROD (TM016.1) - GROUP - Added to Well-Known or Tier Model Group</a></td>
+  <td style="text-align:left"><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm017.1-group-tier-0-added-to-allow-rodc-password-replication-634a69b4-0e46-4349-8463-af1c8d191620-79a47382.html">PROD (TM017.1) - GROUP - Tier 0 Added to Allow RODC Password Replication Group</a></td>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventData matchesregex &quot;(?i)CN=Allowed RODC Password Replication Group,CN=Users&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm018.1-domain-child-domain-promoted-within-the-forest-ff1bec81-e241-44bf-98ed-c6e37805a2e3-72a39c20.html">PROD (TM018.1) - DOMAIN - Child Domain promoted within the Forest</a></td>
+  <td style="text-align:left"><code>EventData has &quot;CN=Partitions,CN=Configuration&quot;</code><br><code>EventID == &quot;5137&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-active-directory-tier-model-prod-tm019.1-trust-a-new-ad-trust-has-been-established-891315d2-e080-4ac8-af5a-50bae17f2d4d-e9ddae80.html">PROD (TM019.1) - TRUST - A new AD Trust has been established</a></td>
+  <td style="text-align:left"><code>EventData has &quot;CN=System&quot;</code><br><code>EventID == &quot;5137&quot;</code></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1531,11 +1614,11 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.html">TI map Email entity to SecurityEvent</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-92d02723.html">TI Map Email entity to SecurityEvent</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.html">TI map File Hash to Security Event</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-5a340913.html">TI Map File Hash to Security Event</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -1651,7 +1734,22 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (73)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.html">Silk Typhoon New UM Service Child Process</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (74)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1762,6 +1860,19 @@
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.html">Unicode Obfuscation in Command Line</a></td>
   <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>EventID == &quot;4769&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.html">Kerberoast burst followed by cloud sign-in</a></td>
 </tr>
 </tbody>
 </table>
@@ -2361,8 +2472,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (85 criteria, 115 total references)</h2>
-<p>References by type: 1 connectors, 108 content items, 5 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (97 criteria, 135 total references)</h2>
+<p>References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2398,6 +2509,38 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;;0]&quot;</code><br><code>EventData has &quot;;1]&quot;</code><br><code>EventData has &quot;;2]&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;&lt;Data Name=&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID in &quot;5137,5141&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>AccountType == &quot;User&quot;</code><br><code>EventID == &quot;4625&quot;</code></td>
@@ -2488,6 +2631,70 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID in &quot;5138,5139&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventData has &quot;AttributeLDAPDisplayName&quot;</code><br><code>EventData has &quot;AttributeValue&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID == &quot;5137&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AccountType == &quot;User&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity has &quot;modified&quot;</code><br><code>EventData has &quot;OperationType&quot;</code><br><code>EventData matchesregex &quot;(?i)CN=Allowed RODC Password Replication Group,CN=Users&quot;</code><br><code>EventID == &quot;5136&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventData has &quot;CN=Partitions,CN=Configuration&quot;</code><br><code>EventID == &quot;5137&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventData has &quot;CN=System&quot;</code><br><code>EventID == &quot;5137&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>EventID == &quot;20002&quot;</code><br><code>EventSourceName == &quot;Semperis-Operation-Log&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2521,14 +2728,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>EventID in &quot;412,501,5156&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>EventID == &quot;5136&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2721,6 +2920,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>AccountType != &quot;Machine&quot;</code><br><code>CommandLine has_all &quot;advfirewall&quot;</code><br><code>EventID == &quot;1&quot;</code><br><code>Process == &quot;netsh.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID == &quot;4769&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -3058,10 +3265,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>108</strong></td>
+  <td style="text-align:center"><strong>128</strong></td>
   <td style="text-align:center"><strong>5</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>115</strong></td>
+  <td style="text-align:center"><strong>135</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3159,10 +3366,10 @@
 <tr>
   <td style="text-align:left"><code>User</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">10</td>
+  <td style="text-align:center">11</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>10</strong></td>
+  <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>!= Machine</code></td>
@@ -3195,6 +3402,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><code>has modified</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">10</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>10</strong></td>
+</tr>
 <tr>
   <td style="text-align:left"><code>has privileged</code></td>
   <td style="text-align:center">-</td>
@@ -3592,6 +3807,93 @@
 </tr>
 </tbody>
 </table>
+<h3 id="eventdata">EventData</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>has &lt;Data Name=</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ;0]</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ;1]</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ;2]</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has OperationType</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has AttributeLDAPDisplayName</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has AttributeValue</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has CN=Partitions,CN=Configuration</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has CN=System</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <h3 id="eventid">EventID</h3>
 <table>
 <thead>
@@ -3628,6 +3930,14 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>15</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>5136</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">14</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>14</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>9208</code></td>
@@ -3671,6 +3981,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>4648</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>5137</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
@@ -3822,6 +4140,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>5141</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>20002</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -3863,6 +4189,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>4701</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>4769</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -3950,6 +4284,22 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>5138</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>5139</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>30001</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -3967,14 +4317,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>501</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>5136</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -4111,14 +4453,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>3000</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>4769</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

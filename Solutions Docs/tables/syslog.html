@@ -35,18 +35,6 @@
   <td style="text-align:left">Syslog/CEF</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Barracuda, Blackberry, Broadcom, CTERA, Cisco, Citrix, Digital Guardian, ESET, Exabeam, Forescout, GitLab, ISC, Infoblox, Ivanti, Juniper, McAfee, Microsoft, Nasuni, OpenVPN, Oracle, Pulse Secure, RSA, Sophos, Symantec, VMware, WatchGuard Technologies <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">ADC, Advanced Analytics, Application Centric Infrastructure, Bind, CloudGen Firewall, Connect Secure, CylancePROTECT, Data Loss Prevention, Database, ESXi, Edge Appliance, Firebox, Identity Services Engine, Meraki, NIOS, Network Security Platform, PROTECT, ProxySG, SRX, Secure Cloud Analytics, Server, Software Defined WAN, Sysmon For Linux, UCS, Unified Endpoint Management, VIP, Web Security Appliance, XG Firewall, ePolicy Orchestrator <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Audit</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -185,7 +173,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog">Syslog Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (54)</h2>
+<h2 id="solutions">Solutions (55)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -228,6 +216,7 @@
 <li><a href="../solutions/pulse-connect-secure.html">Pulse Connect Secure</a></li>
 <li><a href="../solutions/pure-storage.html">Pure Storage</a></li>
 <li><a href="../solutions/rsa-securid.html">RSA SecurID</a></li>
+<li><a href="../solutions/sap-logserv.html">SAP LogServ</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/sophos-xg-firewall.html">Sophos XG Firewall</a></li>
@@ -243,7 +232,7 @@
 <li><a href="../solutions/watchguard-firebox.html">Watchguard Firebox</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2 id="connectors">Connectors (37)</h2>
+<h2 id="connectors">Connectors (38)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -366,6 +355,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td style="text-align:left"><code>CollectorHostName == &quot;SAPLogServ&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../connectors/sophosxgfirewall.html">[Deprecated] Sophos XG Firewall</a></td>
   <td style="text-align:left"><code>Facility == &quot;local0&quot;</code></td>
 </tr>
@@ -404,8 +397,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (356)</h2>
-<h3 id="analytic-rules">Analytic Rules (237)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (360)</h2>
+<h3 id="analytic-rules">Analytic Rules (241)</h3>
 <p><strong>In solution <a href="../solutions/ctera.html">CTERA</a>:</strong></p>
 <table>
 <thead>
@@ -858,6 +851,28 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/sap-logserv.html">SAP LogServ</a>:</strong> <code>CollectorHostName == &quot;SAPLogServ&quot;</code><br><code>SourceSystem == &quot;HANADB&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-assign-admin-authorizations-4981469b-8618-43a7-b44c-5744594fa494-5de53ca7.html">SAP LogServ - HANA DB - Assign Admin Authorizations</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-audit-trail-policy-changes-e8394afb-82a7-4718-8d31-cc57ad352fa8-98541953.html">SAP LogServ - HANA DB - Audit Trail Policy Changes</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-deactivation-of-audit-trail-8fb9fb88-693f-4906-8be2-4bb9771418fc-6f2dd94f.html">SAP LogServ - HANA DB - Deactivation of Audit Trail</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-user-admin-actions-a9e4b02a-5a8c-4c59-9836-a204d1028632-72af1011.html">SAP LogServ - HANA DB - User Admin actions</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/sophos-xg-firewall.html">Sophos XG Firewall</a>:</strong> <code>Facility == &quot;local0&quot;</code></p>
 <table>
 <thead>
@@ -990,11 +1005,11 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.html">TI Map URL Entity to Syslog Data</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-130e8485.html">TI Map Domain entity to Syslog</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-10e0f11d.html">TI map Domain entity to Syslog</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.html">TI Map URL Entity to Syslog Data</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -2011,7 +2026,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage has &quot;DHCPOFFER&quot;</code></p>
+<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage startswith &quot;DHCPACK&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -2257,7 +2272,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/veeam-veeamsecurityactivities-f559a349.html">VeeamSecurityActivities</a></td>
-  <td style="text-align:left"><code>SyslogMessage has &quot;instanceId&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage has &quot;instanceId&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code><br><code>SyslogMessage has &quot;instanceId&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -2276,8 +2291,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (97)</h2>
-<h3 id="asim-parsers">ASIM Parsers (22)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (99)</h2>
+<h3 id="asim-parsers">ASIM Parsers (24)</h3>
 <table>
 <thead>
 <tr>
@@ -2307,6 +2322,12 @@
   <td style="text-align:left"><code>ProcessName == &quot;DNAC&quot;</code><br><code>SyslogMessage has &quot;LOGIN_USER_EVENT&quot;</code><br><code>SyslogMessage has &quot;LOGOFF_USER_EVENT&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../asim/asimauthenticationciscoftd.html">ASimAuthenticationCiscoFTD</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">Cisco FTD</td>
+  <td style="text-align:left"><code>SyslogMessage has &quot;Accepted password&quot;</code><br><code>SyslogMessage has &quot;Failed password&quot;</code><br><code>SyslogMessage startswith &quot;%FTD-5-199017&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../asim/asimauthenticationciscoios.html">ASimAuthenticationCiscoIOS</a></td>
   <td style="text-align:left">Authentication</td>
   <td style="text-align:left">Cisco IOS</td>
@@ -2329,6 +2350,12 @@
   <td style="text-align:left">Authentication</td>
   <td style="text-align:left">Cisco Meraki</td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../asim/asimauthenticationpaloaltoprismacloud.html">ASimAuthenticationPaloAltoPrismaCloud</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">Palo Alto Prisma Cloud Compute</td>
+  <td style="text-align:left"><code>ProcessName == &quot;Twistlock-Console&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../asim/asimauthenticationsshd.html">ASimAuthenticationSshd</a></td>
@@ -2825,8 +2852,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (94 criteria, 439 total references)</h2>
-<p>References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (98 criteria, 446 total references)</h2>
+<p>References by type: 30 connectors, 335 content items, 22 ASIM parsers, 59 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2856,18 +2883,18 @@
   <td style="text-align:center"><strong>27</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName has_any &quot;CISE,CSCO&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">21</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>27</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ProcessName contains &quot;EPOEvents&quot;</code><br><code>SyslogMessage contains &quot;&lt;EPOevent&gt;&quot;</code><br><code>SyslogMessage contains &quot;&lt;UpdateEvents&gt;&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">25</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>27</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ProcessName has_any &quot;CISE,CSCO&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">21</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>27</strong></td>
 </tr>
@@ -2952,15 +2979,7 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility == &quot;local5&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code></td>
+  <td style="text-align:left"><code>ProcessName == &quot;SymantecServer&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -2976,7 +2995,15 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName == &quot;SymantecServer&quot;</code></td>
+  <td style="text-align:left"><code>Facility == &quot;local5&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -2997,6 +3024,14 @@
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CollectorHostName == &quot;SAPLogServ&quot;</code><br><code>SourceSystem == &quot;HANADB&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
@@ -3040,14 +3075,6 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName == &quot;SyslogAlertForwarderNSP&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>SyslogMessage contains &quot;SYSTEM_MSG&quot;</code><br><code>SyslogMessage contains &quot;%LOG_LOCAL&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -3056,7 +3083,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage has &quot;Stealthwatch&quot;</code></td>
+  <td style="text-align:left"><code>ProcessName == &quot;RT_FLOW&quot;</code><br><code>ProcessName in &quot;RT_IDS,sshd&quot;</code><br><code>ProcessName !in &quot;sshd,RT_IDS,RT_FLOW&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3072,6 +3099,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SyslogMessage has &quot;Stealthwatch&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ProcessName == &quot;openvpn&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -3080,7 +3115,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName == &quot;RT_FLOW&quot;</code><br><code>ProcessName in &quot;RT_IDS,sshd&quot;</code><br><code>ProcessName !in &quot;sshd,RT_IDS,RT_FLOW&quot;</code></td>
+  <td style="text-align:left"><code>ProcessName == &quot;SyslogAlertForwarderNSP&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3104,20 +3139,12 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage has &quot;DHCPOFFER&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage startswith &quot;DHCPACK&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName in &quot;GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs&quot;</code><br><code>SyslogMessage contains &quot;HTTP&quot;</code><br><code>SyslogMessage has_any &quot;DELETE,GET,PATCH,POST,PUT&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>ProcessName == &quot;gw-audit&quot;</code><br><code>SyslogMessage contains &quot;gw-audit[-]:&quot;</code><br><code>SyslogMessage contains &quot;portal portal[-]:&quot;</code></td>
@@ -3129,6 +3156,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ProcessName == &quot;sysmon&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CollectorHostName == &quot;SAPLogServ&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName in &quot;GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs&quot;</code><br><code>SyslogMessage contains &quot;HTTP&quot;</code><br><code>SyslogMessage has_any &quot;DELETE,GET,PATCH,POST,PUT&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3312,7 +3355,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage has &quot;instanceId&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage has &quot;instanceId&quot;</code><br><code>SyslogMessage has &quot;predefined_alarm_id&quot;</code><br><code>SyslogMessage has &quot;instanceId&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -3336,6 +3379,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SyslogMessage has &quot;Accepted password&quot;</code><br><code>SyslogMessage has &quot;Failed password&quot;</code><br><code>SyslogMessage startswith &quot;%FTD-5-199017&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>SyslogMessage has &quot;%SEC_LOGIN-4-LOGIN_FAILED&quot;</code><br><code>SyslogMessage has &quot;%SEC_LOGIN-5-LOGIN_SUCCESS&quot;</code><br><code>SyslogMessage has &quot;%SYS-6-LOGOUT&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3345,6 +3396,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ProcessName has &quot;CISE_Administrative_and_Operational_Audit&quot;</code><br><code>SyslogMessage has &quot;Administrator-Login&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ProcessName == &quot;Twistlock-Console&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -3472,14 +3531,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage startswith &quot;DHCPACK&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>SyslogMessage has &quot;Added&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3513,6 +3564,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SyslogMessage has &quot;DHCPINFORM&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SyslogMessage has &quot;DHCPOFFER&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3593,11 +3652,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>29</strong></td>
-  <td style="text-align:center"><strong>331</strong></td>
-  <td style="text-align:center"><strong>20</strong></td>
+  <td style="text-align:center"><strong>30</strong></td>
+  <td style="text-align:center"><strong>335</strong></td>
+  <td style="text-align:center"><strong>22</strong></td>
   <td style="text-align:center"><strong>59</strong></td>
-  <td style="text-align:center"><strong>439</strong></td>
+  <td style="text-align:center"><strong>446</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3644,6 +3703,15 @@
 </tr>
 <tr>
   <td style="text-align:left"></td>
+  <td style="text-align:left"><code>contains EPOEvents</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">25</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>27</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
   <td style="text-align:left"><code>has_any CISE</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">21</td>
@@ -3657,15 +3725,6 @@
   <td style="text-align:center">1</td>
   <td style="text-align:center">21</td>
   <td style="text-align:center">4</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>27</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>contains EPOEvents</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">25</td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>27</strong></td>
 </tr>
@@ -3688,21 +3747,21 @@
   <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>local7</code></td>
-  <td style="text-align:left"><code>GitLab-Audit-Logs</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>8</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>gw-audit</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">7</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>local7</code></td>
+  <td style="text-align:left"><code>GitLab-Audit-Logs</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">6</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
@@ -3733,6 +3792,15 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SymantecServer</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>local5</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
@@ -3752,12 +3820,12 @@
 </tr>
 <tr>
   <td style="text-align:left"></td>
-  <td style="text-align:left"><code>SymantecServer</code></td>
+  <td style="text-align:left"><code>sshd</code></td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"></td>
@@ -3766,15 +3834,6 @@
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>sshd</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
@@ -3803,33 +3862,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>SyslogAlertForwarderNSP</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>local7</code></td>
-  <td style="text-align:left"><code>GitLab-Access-Logs</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>openvpn</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"></td>
@@ -3870,6 +3902,33 @@
 <tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>!= RT_FLOW</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>openvpn</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SyslogAlertForwarderNSP</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>local7</code></td>
+  <td style="text-align:left"><code>GitLab-Access-Logs</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3951,6 +4010,15 @@
 <tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>has CISE_Administrative_and_Operational_Audit</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Twistlock-Console</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -4103,6 +4171,29 @@
 </tr>
 </tbody>
 </table>
+<h3 id="collectorhostname">CollectorHostName</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>SAPLogServ</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+</tbody>
+</table>
 <h3 id="computer">Computer</h3>
 <table>
 <thead>
@@ -4165,6 +4256,29 @@
 </tr>
 </tbody>
 </table>
+<h3 id="sourcesystem">SourceSystem</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>HANADB</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
 <h3 id="syslogmessage">SyslogMessage</h3>
 <table>
 <thead>
@@ -4181,10 +4295,10 @@
 <tr>
   <td style="text-align:left"><code>has instanceId</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">113</td>
+  <td style="text-align:center">114</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
-  <td style="text-align:center"><strong>116</strong></td>
+  <td style="text-align:center"><strong>117</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains &lt;EPOevent&gt;</code></td>
@@ -4315,12 +4429,36 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has predefined_alarm_id</code></td>
+  <td style="text-align:left"><code>contains SYSTEM_MSG</code></td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains %LOG_LOCAL</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_all Alert</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Stealthwatch</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains HTTP</code></td>
@@ -4364,38 +4502,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any PUT</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains SYSTEM_MSG</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains %LOG_LOCAL</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Stealthwatch</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_all Alert</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4507,7 +4613,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has DHCPOFFER</code></td>
+  <td style="text-align:left"><code>startswith DHCPACK</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -4544,6 +4650,14 @@
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has predefined_alarm_id</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
@@ -4979,6 +5093,30 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has Accepted password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Failed password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith %FTD-5-199017</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>has %SEC_LOGIN-4-LOGIN_FAILED</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -5395,14 +5533,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>startswith DHCPACK</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>has Added</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -5436,6 +5566,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has DHCPINFORM</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has DHCPOFFER</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

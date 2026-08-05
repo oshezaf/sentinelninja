@@ -69,7 +69,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [BehaviorAnalytics Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics)
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -79,6 +79,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
@@ -89,7 +90,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (46)
+## Content Items Using This Table (48)
 
 ### Analytic Rules (6)
 
@@ -109,7 +110,7 @@ This table is used by the following solutions:
 |:-------------|
 | [[AzureSubscription] Suspicious Azure VM Run Command Execution Detected](../content/edcrule-[azuresubscription]-suspicious-azure-vm-run-command-execution-detected-6fa564ac-dfb7-4753-a49b-5fc919866c28-eec2ea83.md) |
 
-### Hunting Queries (32)
+### Hunting Queries (33)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -128,6 +129,12 @@ This table is used by the following solutions:
 | [Sign-ins From VPS Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.md) |
 | [Sign-ins from Nord VPN Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.md) |
 | [Suspicious Sign-ins to Privileged Account](../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.md) |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Azure Network Configuration Tampered by Compromised Identity](../content/hybrid-attack-cloud-&-identity-azure-network-configuration-tampered-by-compromised-identity-455ffadf-ce55-4a0e-b339-fd3c2d67c71c-7151e2d8.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -163,7 +170,7 @@ This table is used by the following solutions:
 | [Dormant Local Admin Logon](../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.md) | `ActivityInsights has "True"`<br>`ActivityType == "LogOn"` |
 | [Dormant account activity from uncommon country](../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.md) |  |
 
-### Workbooks (8)
+### Workbooks (9)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -188,6 +195,12 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 

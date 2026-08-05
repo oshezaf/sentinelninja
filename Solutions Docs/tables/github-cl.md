@@ -46,7 +46,7 @@ This table is used by the following solutions:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map IP entity to GitHub_CL](../content/threat-intelligence-new-ti-map-ip-entity-to-github-cl-43d6c173-64c8-4416-b32e-636a9f318d15-5872ba25.md) |  |
+| [TI Map IP entity to GitHub_CL](../content/threat-intelligence-new-ti-map-ip-entity-to-github-cl-43d6c173-64c8-4416-b32e-636a9f318d15-783039ce.md) |  |
 
 ## Parsers Using This Table (1)
 

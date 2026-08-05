@@ -47,16 +47,8 @@
   <td style="text-align:left">Security - Threat Protection,Identity,Application,Cloud Provider</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SAP <em>(basis: override)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">LogServ</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.3</td>
+  <td style="text-align:left">3.0.5</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -68,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2025-07-18</td>
+  <td style="text-align:left">2026-05-27</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -93,7 +85,7 @@
 <li><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -104,9 +96,44 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/abapauditlog.html"><code>ABAPAuditLog</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/asimdnsactivitylogs.html"><code>ASimDnsActivityLogs</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
   <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
-  <td>Analytics, Workbooks</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+  <td><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -145,25 +172,25 @@
   <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-assign-admin-authorizations-4981469b-8618-43a7-b44c-5744594fa494-5de53ca7.html">SAP LogServ - HANA DB - Assign Admin Authorizations</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">PrivilegeEscalation</td>
-  <td style="text-align:left"><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-audit-trail-policy-changes-e8394afb-82a7-4718-8d31-cc57ad352fa8-98541953.html">SAP LogServ - HANA DB - Audit Trail Policy Changes</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Persistence, LateralMovement, DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-deactivation-of-audit-trail-8fb9fb88-693f-4906-8be2-4bb9771418fc-6f2dd94f.html">SAP LogServ - HANA DB - Deactivation of Audit Trail</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Persistence, LateralMovement, DefenseEvasion</td>
-  <td style="text-align:left"><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/sap-logserv-sap-logserv-hana-db-user-admin-actions-a9e4b02a-5a8c-4c59-9836-a204d1028632-72af1011.html">SAP LogServ - HANA DB - User Admin actions</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">PrivilegeEscalation</td>
-  <td style="text-align:left"><a href="../tables/saplogserv-cl.html"><code>SAPLogServ_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -194,8 +221,8 @@
 <tbody>
 <tr>
   <td>3.0.5</td>
-  <td>01-04-2026</td>
-  <td>preview tag remove, UI update</td>
+  <td>20-07-2026</td>
+  <td>Routes SAP LogServ standard logs to Microsoft standard and ASIM tables, updates HANA detections to use Syslog, and improves connector coverage and fallback handling.</td>
 </tr>
 <tr>
   <td>3.0.4</td>

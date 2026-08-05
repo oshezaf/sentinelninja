@@ -75,7 +75,7 @@ When a new Microsoft Sentinel incident is created, this playbook gets triggered 
 1. Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json)
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json)
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json)
 
 2. Fill in the required paramteres:
     * Playbook Name : Enter the playbook name here (ex:OktaPlaybook)
@@ -126,7 +126,6 @@ In this step we post a message in Microsoft Teams to the risky user with Inciden
 
   d. Add a comment to the incident with the following details:
   
-  * User information collected by "Get User" action from Okta such as
 
 *[Content truncated...]*
 

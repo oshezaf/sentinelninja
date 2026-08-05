@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SailPoint *(basis: projected)* |
-| **Source Product** | IdentityNow *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -14,8 +14,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://utimaco.com/support](https://utimaco.com/support) |
 | **Categories** | Security - Information Protection |
-| **Source Vendor** | Utimaco *(basis: publisher)* |
-| **Source Product** | Enterprise Secure Key Manager |
 | **Version** | 3.0.0 |
 | **Author** | Utimaco - support@utimaco.com |
 | **First Published** | 2026-05-29 |

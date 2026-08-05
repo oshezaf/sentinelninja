@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiz for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="wiz-for-microsoft-sentinel">Wiz for Microsoft Sentinel</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>WizSentinel</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Wiz</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/wiz.html">Wiz</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz/Data%20Connectors/WizSentinel.json">WizSentinel.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> | <a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources; Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The Wiz integration pushes Wiz <strong>Issues</strong>, <strong>Detections</strong>, and <strong>Audit Logs</strong> into Microsoft Sentinel in real time. Wiz sends data to a Data Collection Endpoint using the Wiz service principal, so there is no Azure Function to host and no shared keys to manage. This connector grants that service principal the least-privilege RBAC it needs; Wiz then creates the data collection rule and tables and begins pushing once you configure the integration in the Wiz portal.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/wizauditlogsv3-cl.html"><code>WizAuditLogsV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/wizdetectionsv3-cl.html"><code>WizDetectionsV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/wizissuesv3-cl.html"><code>WizIssuesV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Subscription permissions</strong>: <strong>Owner</strong> or <strong>User Access Administrator</strong> at the subscription is required to create the custom role definition (Microsoft.Authorization/roleDefinitions/write).</li>
+<li><strong>Microsoft Entra permissions</strong>: Permission to read (and, if the Wiz enterprise application is not yet consented, create) the Wiz service principal in Microsoft Entra ID.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Get the Wiz service principal object ID</strong></p>
+<p>ARM cannot resolve a Microsoft Entra object, so you supply the Wiz service principal <strong>object ID</strong>. In Azure Cloud Shell (no local install required; creating the service principal needs permission to register enterprise applications in Microsoft Entra ID) run the line below — it prints the object ID, creating the service principal first if it does not yet exist in your tenant:</p>
+<pre><code class="language-bash">az ad sp show --id ae69b94b-e367-4660-9b35-cfb4b5966728 --query id -o tsv 2&gt;/dev/null \
+  || az ad sp create --id ae69b94b-e367-4660-9b35-cfb4b5966728 --query id -o tsv
+</code></pre>
+<p><strong>2. STEP 2 - Grant Wiz the RBAC</strong></p>
+<p>Deploy the custom role and assignment into the resource group that hosts this workspace. Paste the object ID from Step 1 (and, optionally, a Data Collection Endpoint resource ID).</p>
+<ol>
+<li><p>Click <strong>Deploy the Wiz RBAC role</strong>:</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FWiz%2FData%20Connectors%2Fazuredeploy_WizSentinelIntegration.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy the Wiz RBAC role" /></a></p>
+</li>
+<li><p>Select the <strong>Subscription</strong> and the <strong>Resource group</strong> that hosts this workspace.</p>
+</li>
+<li><p>Enter <strong>wizPrincipalObjectId</strong> (from Step 1); optionally <strong>dataCollectionEndpointId</strong>.</p>
+</li>
+<li><p><strong>Review + create</strong>.</p>
+</li>
+</ol>
+<ul>
+<li><strong>Workspace Resource ID</strong>: <code>WorkspaceResourceId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>3. STEP 3 - Configure the integration in Wiz</strong></p>
+<p>In Wiz, go to <strong>Settings &gt; Integrations &gt; Add &gt; Microsoft Sentinel</strong>. Paste your <strong>Tenant ID</strong>, <strong>Workspace Resource ID</strong>, and <strong>Data Collection Endpoint Resource ID</strong>, tick <em>Deployment completed</em>, and save. Wiz then creates the data collection rule and tables and begins pushing Issues, Detections, and Audit Logs into this workspace.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Holm Security for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>⚠️ Holm Security for Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,9 +15,12 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="holm-security-for-microsoft-sentinel">Holm Security for Microsoft Sentinel</h1>
+<h1 id="holm-security-for-microsoft-sentinel">⚠️ Holm Security for Microsoft Sentinel</h1>
 <p><em>Solution: HolmSecurity</em></p>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="HolmSecurity Logo" width="75" height="75">
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/HolmSecurity.svg" alt="HolmSecurity Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -47,24 +50,20 @@
   <td style="text-align:left">Security - Vulnerability Management</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Holm Security <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Asset</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.1</td>
+  <td style="text-align:left">3.0.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">Holm Security</td>
+  <td style="text-align:left">Holm Security - support@holmsecurity.com</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
   <td style="text-align:left">2022-07-18</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-05-19</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -76,16 +75,19 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.holmsecurity.com/">Holm Security</a> solution provides the capability to poll data from Holm Security Center into Microsoft Sentinel.</p>
+<p>The <a href="https://www.holmsecurity.com/">Holm Security</a> solution for Microsoft Sentinel provides the capability to ingest network and web asset data from the <a href="https://www.holmsecurity.com/">Holm Security Vulnerability Management Platform (VMP)</a> into Microsoft Sentinel through the <a href="https://se-api.holmsecurity.com/docs/v2/">REST API</a>.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
-<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<p>a. <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/holmsecurityassets.html">Holm Security Asset Data</a> 🔶</li>
+<li><a href="../connectors/holmsecurityassets.html">[DEPRECATED] Holm Security Asset Data (using Azure Function)</a> ⚠️ 🔶</li>
+<li><a href="../connectors/holmsecurityccf.html">Holm Security Data Connector</a> 🔶</li>
 </ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
@@ -102,12 +104,12 @@
 <tbody>
 <tr>
   <td><a href="../tables/net-assets-cl.html"><code>net_assets_CL</code></a> 🔶</td>
-  <td><a href="../connectors/holmsecurityassets.html">Holm Security Asset Data</a></td>
+  <td><a href="../connectors/holmsecurityccf.html">Holm Security Data Connector</a>, <a href="../connectors/holmsecurityassets.html">[DEPRECATED] Holm Security Asset Data (using Azure Function)</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/web-assets-cl.html"><code>web_assets_CL</code></a> 🔶</td>
-  <td><a href="../connectors/holmsecurityassets.html">Holm Security Asset Data</a></td>
+  <td><a href="../connectors/holmsecurityccf.html">Holm Security Data Connector</a>, <a href="../connectors/holmsecurityassets.html">[DEPRECATED] Holm Security Asset Data (using Azure Function)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -126,19 +128,24 @@
 </thead>
 <tbody>
 <tr>
+  <td>3.0.2</td>
+  <td>30-03-2026</td>
+  <td>Initial release of the <strong>Data Connector</strong> for Holm Security using CCF; ingests network and web assets from the Holm Security VMP API, supports pagination, daily polling, and configurable regional API base URLs.</td>
+</tr>
+<tr>
   <td>3.0.1</td>
   <td>05-10-2023</td>
-  <td>Minor fixes</td>
+  <td>Minor fixes.</td>
 </tr>
 <tr>
   <td>3.0.0</td>
   <td>28-09-2023</td>
-  <td>Repackaged with V3</td>
+  <td>Repackaged with V3.</td>
 </tr>
 <tr>
   <td>2.0.0</td>
   <td>17-02-2022</td>
-  <td>Initial Solution Release</td>
+  <td>Initial Solution Release.</td>
 </tr>
 </tbody>
 </table>

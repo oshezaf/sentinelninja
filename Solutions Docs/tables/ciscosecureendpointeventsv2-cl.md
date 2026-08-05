@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Cisco *(basis: projected)* |
-| **Source Product** | Secure Endpoint *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -23,7 +21,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (195 columns)
+## Schema (196 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpointEventsV2_CL.json)
 
@@ -223,6 +221,7 @@
 | TimeGenerated | datetime |
 | Timestamp | real |
 | TimestampNanoseconds | real |
+| Type | string |
 | Vulnerabilities | string |
 
 ## Schema References

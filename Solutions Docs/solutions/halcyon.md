@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.halcyon.ai](https://www.halcyon.ai) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Halcyon *(basis: publisher)* |
 | **Version** | 3.1.0 |
 | **Author** | Halcyon - support@halcyon.ai |
 | **First Published** | 2025-12-22 |
@@ -38,24 +37,55 @@ c. [Azure Monitor Data Collection Endpoints (DCE)](https://learn.microsoft.com/a
 
 d. [Azure Log Analytics workspaces](https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-overview)
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Halcyon Connector](../connectors/halcyonpush.md)
+- [Halcyon Connector (v2)](../connectors/halcyonpushv2.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`HalcyonAlertUpdatesV2_CL`](../tables/halcyonalertupdatesv2-cl.md) | [Halcyon Connector (v2)](../connectors/halcyonpushv2.md) | - |
+| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) | [Halcyon Connector (v2)](../connectors/halcyonpushv2.md) | - |
 | [`HalcyonEvents_CL`](../tables/halcyonevents-cl.md) | [Halcyon Connector](../connectors/halcyonpush.md) | - |
+
+## Content Items
+
+This solution includes **8 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Parsers | 8 |
+
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [Halcyon_Alerts](../parsers/halcyon-alerts.md) | - | [`HalcyonAlertUpdatesV2_CL`](../tables/halcyonalertupdatesv2-cl.md) *(read)* |
+| [Halcyon_OCSF_ApplicationLifecycle](../parsers/halcyon-ocsf-applicationlifecycle.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_Authentication](../parsers/halcyon-ocsf-authentication.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_DnsActivity](../parsers/halcyon-ocsf-dnsactivity.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_FileActivity](../parsers/halcyon-ocsf-fileactivity.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_KernelActivity](../parsers/halcyon-ocsf-kernelactivity.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_NetworkActivity](../parsers/halcyon-ocsf-networkactivity.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
+| [Halcyon_OCSF_ProcessActivity](../parsers/halcyon-ocsf-processactivity.md) | - | [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+|3.2.0        | 10-06-2026                     | New connector, new event and alert tables with OCSF schema, and parsers | 
 |3.1.0        | 24-03-2026                     | Update Connector to receive events with OCSF schemas | 
 |3.0.0        | 09-12-2025                     | Initial Solution release
 

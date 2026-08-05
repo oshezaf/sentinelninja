@@ -1,6 +1,6 @@
 # Analytic Rules - G
 
-**126 analytic rules** starting with 'G'.
+**133 analytic rules** starting with 'G'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,6 +16,7 @@
 |:-----|:---------|:-------|
 | [Gain Code Execution on ADFS Server via Remote WMI Execution](standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md) | Medium | 📄 Standalone Content |
 | [Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task](windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.md) | Medium | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
+| [Gambit Security - Critical Policy Issue Promotion](gambitsecurity-gambit-security-critical-policy-issue-promotion-8d2b6f4c-1a37-4e9b-b5c8-7f0e3a2d9c14-15369d23.md) | High | 📦 [GambitSecurity](../solutions/gambitsecurity.md) |
 | [GCP Audit Logs - Data Access Logging Exemption Added for Principal](google-cloud-platform-audit-logs-gcp-audit-logs-data-access-logging-exemption-added-for-principal-b7da45ce-fcc8-43c7-a37c-c08454579d26-e999603f.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
 | [GCP Audit Logs - Detect Bulk VM Snapshot Deletion](google-cloud-platform-audit-logs-gcp-audit-logs-detect-bulk-vm-snapshot-deletion-dfdffdc7-929f-4c7e-8f48-30e5ffddb067-3282e1dc.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
 | [GCP Audit Logs - Detect Organization Policy Deletion or Updation](google-cloud-platform-audit-logs-gcp-audit-logs-detect-organization-policy-deletion-or-updation-205e1c9f-faee-43f1-b3b8-1952ffbbeea4-804699fa.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
@@ -99,6 +100,12 @@
 | [GSA - TI Domain Entity](global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI IP Entity](global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI URL Entity](global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
+| [GTI - Data Leak Alert Detected](google-threat-intelligence-gti-data-leak-alert-detected-d4e5f6a7-b8c9-0123-defa-234567890124-c47c0531.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - High and Critical Priority Alerts](google-threat-intelligence-gti-high-and-critical-priority-alerts-b2c3d4e5-f6a7-8901-bcde-f12345678902-eac20a8f.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - High Relevance Alert Detected](google-threat-intelligence-gti-high-relevance-alert-detected-f6a7b8c9-d0e1-2345-fabc-456789012345-8fc2e3f3.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - Initial Access Broker Alert Detected](google-threat-intelligence-gti-initial-access-broker-alert-detected-c3d4e5f6-a7b8-9012-cdef-123456789013-8ea823e9.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - Insider Threat Alert Detected](google-threat-intelligence-gti-insider-threat-alert-detected-e5f6a7b8-c9d0-1234-efab-345678901234-1ae6bfc8.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI Relevance System Alert - Incident by Alert ID](google-threat-intelligence-gti-relevance-system-alert-incident-by-alert-id-a1b2c3d4-e5f6-7890-abcd-ef1234567891-4ca388b2.md) | Medium | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Guardian- Additional check JSON Policy Violation Detection](aishield-ai-security-monitoring-guardian-additional-check-json-policy-violation-detection-9ff28525-3c6f-47ba-806b-ffd913406989-011e6a7c.md) | Informational | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [Guardian- Ban Topic Policy Violation Detection](aishield-ai-security-monitoring-guardian-ban-topic-policy-violation-detection-97a76b2d-02ea-4ae5-b0c4-79e834036481-104a0831.md) | Medium | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [Guardian- BII Detection Policy Violation Detection](aishield-ai-security-monitoring-guardian-bii-detection-policy-violation-detection-e7493b80-88d0-44fb-b11d-40a0467cc497-e3e2a3d5.md) | High | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |

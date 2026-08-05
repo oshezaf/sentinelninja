@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.commvault.com/support](https://www.commvault.com/support) |
 | **Categories** | Security - Automation (SOAR) |
-| **Source Vendor** | Commvault *(basis: publisher)* |
-| **Source Product** | Security IQ |
 | **Version** | 3.0.4 |
 | **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |
@@ -36,17 +34,19 @@ This Microsoft Sentinel integration enables Commvault users to ingest alerts and
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
+- [Commvault Security IQ (via Codeless Connector Framework)](../connectors/commvaultsecurityiqconnector.md)
 - [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
+| [`CommvaultAlertsCCF_CL`](../tables/commvaultalertsccf-cl.md) | [Commvault Security IQ (via Codeless Connector Framework)](../connectors/commvaultsecurityiqconnector.md) | Analytics |
+| [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | - |
 
 ## Content Items
 
@@ -61,7 +61,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | DefenseEvasion, Impact | [`CommvaultAlerts_CL`](../tables/commvaultalerts-cl.md) |
+| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | DefenseEvasion, Impact | [`CommvaultAlertsCCF_CL`](../tables/commvaultalertsccf-cl.md) |
 
 ### Playbooks
 
@@ -75,17 +75,26 @@ This solution includes **4 content item(s)**:
 
 > 📄 *Source: [Commvault Security IQ/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/README.md)*
 
-Commvault Cloud - Microsoft Sentinel Integration
-===============================================
+Commvault Security IQ - Microsoft Sentinel Integration
+======================================================
 
-This SOAR integration connects Commvault Cloud with Microsoft Sentinel to enable automated incident creation and response through Analytic Rules and Playbooks.
+This integration connects Commvault Cloud with Microsoft Sentinel to enable anomaly ingestion, incident creation, investigation, and response through analytic rules, playbooks, and the Commvault Security Investigation Agent.
+
+## Table of Contents
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Required Azure Resources](#required-azure-resources)
+- [Installation](#installation)
+- [Using Commvault Security Investigation Agent](#using-commvault-security-investigation-agent)
+- [Automation Account and Runbooks Setup](#automation-account-and-runbooks-setup)
+- [Support](#support)
 
 ## Overview
 This solution provides:
-- **Data Ingestion**: Automated collection of Commvault security events and anomalies
-- **Incident Creation**: Automatic creation of Sentinel incidents based on Commvault security events
-- **AI Powered Insights**: AI-driven coorelation of Commvault Threat Scan and Risk Analysis events with Sentinel Data Lake signals from tools like CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation.
-- **Incident Response**: Playbooks for automated remediation actions (disable users, disable data aging, etc.)
+- **Data Ingestion**: Automated collection of Commvault client anomaly events via the Codeless Connector Framework
+- **Incident Creation**: Creation of Microsoft Sentinel incidents from Commvault anomaly detections after the analytic rule is created and enabled
+- **AI-powered Insights**: Use the Commvault Security Investigation Agent in Microsoft Security Copilot to correlate Commvault anomaly events with signals from tools such as CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation
+- **Incident Response**: Playbook templates for remediation actions such as disabling users, disabling SAML identity providers, and disabling data aging
 
 ## Prerequisites
 Before beginning the installation, ensure you have:
@@ -100,54 +109,30 @@ Before beginning the installation, ensure you have:
 - **Microsoft Sentinel**: An active Sentinel workspace deployed in your Azure environment
 - **Log Analytics Workspace**: A Log Analytics workspace associated with your Sentinel instance
 - **Azure Cloud Shell**: Access to Azure Cloud Shell with PowerShell support
+- **Response automation resources**: A Key Vault and an Automation Account are required only if you deploy and use the included incident response playbooks
 
 ## Required Azure Resources
-The following Azure resources will be created or configured during this installation:
 
-### Key Vault
-- **Purpose**: Securely stores Commvault credentials and API endpoints
-- **Required Secrets**:
-  - `access-token`: Your Commvault Cloud access token
-  - `environment-endpoint-url`: Your Commvault Cloud API endpoint URL (Commvault/Metallic endpoint URL : https://`hostname`/commandcenter/api )
-  - `refresh-token`: Your Commvault Cloud refresh token
+The **Commvault Security IQ (via Codeless Connector Framework)** data connector collects Commvault anomaly events in Microsoft Sentinel. After you connect the connector, events are available in the `CommvaultAlertsCCF_CL` table.
 
-Installation
-------------
+After you select **Add connector** and click **Connect**, Microsoft Sentinel creates the connector resources and starts polling the Commvault API.
 
-**1\. Create Access Token in Commvault:**
-
-*   Follow the instructions in [Creating an Access Token / Refresh Token](https://documentation.commvault.com/2024e/essential/creating_access_token.html).
-*   Ensure the user creating the token has **Admin** or **Tenant Admin** privileges.
-
-**2\. Create KeyVault:**
-
-*   Azure Portal -> KeyVault -> Create -> Basics (select subscription, RG).
-
-**3\. Create KeyVault Secrets:**
-
-*   Go to Azure Portal -> KeyVault -> Secrets
-*   Create following secrets each by clicking on Generate/Import -> Manual:
-
-| Name | Value | Enabled | Action |
-|---|---|---|---|
-| `"access-token"` | (Your Commvault/Metallic access token) | Yes | Create |
-| `"refresh-token"` | (Your Commvault/Metallic refresh token) | Yes | Create |
-| `"environment-endpoint-url"` | (Your Commvault/Metallic endpoint's URL) | Yes | Create |
-
-**4\. Install Commvault Cloud Solution:**
+The included response playbooks have separate prerequisites: they use an Azure Key Vault to retrieve Commvault credentials and an Azure Automation Account to run the remediation runbooks. These resources are not required for CCF data ingestion.
 
 
 *[Content truncated...]*
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
-|-------------|--------------------------------|---------------------------------------------|
-| 3.0.4       | 05-03-2025                     | Migrate to new data ingestion model via DCR & DCE setup  |
-| 3.0.3       | 12-09-2025                     | Enhanced **Data connector** with configurable event collection and streamlined deployment  |
-| 3.0.2       | 28-03-2024                     | Update **Playbook** - Bug fix in disabling data aging  |
-| 3.0.1       | 28-03-2024                     | Adding **Data Connector** for Commvault Sentinel Integration|
-| 3.0.0       | 21-08-2023                     | Initial Solution Release|
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|-------------|--------------------------------|--------------------|
+| 3.0.6 | 04-08-2026 | Updated the CCF connector and solution documentation. |
+| 3.0.5 | 27-07-2026 | Added **Commvault Security IQ (via Codeless Connector Framework)** data connector, introduced **CommvaultAlertsCCF_CL** custom table and Data Collection Rule (DCR), updated analytics rule to detect client anomalies using **AnomalyType**, enhanced connector UI with sample queries and configuration guidance, and updated solution documentation for CCF-based deployment. |
+| 3.0.4 | 05-03-2025 | Migrate to new data ingestion model via DCR & DCE setup |
+| 3.0.3 | 12-09-2025 | Enhanced **Data connector** with configurable event collection and streamlined deployment |
+| 3.0.2 | 28-03-2024 | Update **Playbook** - Bug fix in disabling data aging |
+| 3.0.1 | 28-03-2024 | Adding **Data Connector** for Commvault Sentinel Integration |
+| 3.0.0 | 21-08-2023 | Initial Solution Release |
 
 ---
 

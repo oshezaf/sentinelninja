@@ -1,0 +1,77 @@
+# Halcyon Connector (v2)
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/halcyon.svg" alt="" width="75" height="75">
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Connector ID** | `HalcyonPushV2` |
+| **Publisher** | Halcyon |
+| **Used in Solutions** | [Halcyon](../solutions/halcyon.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
+| **Connector Definition Files** | [Halcyon_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp_v2/Halcyon_connectorDefinition.json) |
+| **DCR Definition Files** | [Halcyon_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp_v2/Halcyon_DCR.json) |
+| **CCF Configuration** | [Halcyon_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp_v2/Halcyon_dataConnector.json) |
+| **CCF Capabilities** | `Push` |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#halcyon-connector) |
+
+The [Halcyon](https://www.halcyon.ai) connector provides the capability to send data from Halcyon to Microsoft Sentinel. This v2 connector ingests Halcyon Events into `HalcyonEventsV2_CL` and Alert Updates into `HalcyonAlertUpdatesV2_CL`.
+
+## Tables Ingested
+
+This connector ingests data into the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`HalcyonAlertUpdatesV2_CL`](../tables/halcyonalertupdatesv2-cl.md) | ? | ✓ | ? |
+| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
+
+## Permissions
+
+**Resource Provider Permissions:**
+- **Workspace Permissions** (Workspace): Read and Write permissions are required.
+
+**Custom Permissions:**
+- **Microsoft Entra Create Permissions**: Permissions to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.
+- **Role Assignment Permissions**: Write permissions required to assign Monitoring Metrics Publisher role to the data collection rule (DCR). Typically requires Owner or User Access Administrator role at the resource group level.
+
+## Setup Instructions
+
+> ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
+
+**1. Create ARM Resources and Provision Required Permissions**
+
+Clicking "Deploy" creates the Log Analytics tables (HalcyonEventsV2_CL and HalcyonAlertUpdatesV2_CL) and a Data Collection Rule (DCR), then creates an Entra application linked to the DCR and provisions the required permissions. Once configured, Halcyon pushes Events and Alert Updates to the DCR endpoint, ingesting them into the HalcyonEventsV2_CL and HalcyonAlertUpdatesV2_CL tables.
+#### Automated Configuration and Secure Data Ingestion with Entra Application 
+Clicking on "Deploy" will trigger the creation of Log Analytics tables and a Data Collection Rule (DCR). 
+It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
+Deploy Halcyon Connector Resources
+
+**2. Configure your integration in the Halcyon Platform**
+
+Use the following parameters to configure your integration in the Halcyon Platform.
+- **Directory ID (Tenant ID)**: `TenantId`
+  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+- **Entra App Registration Application ID (Client ID)**: `ApplicationId`
+  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+- **Entra App Registration Secret (Credential Secret) (THIS SECRET WILL NOT BE VISIBLE AFTER LEAVING THIS PAGE)**: `ApplicationSecret`
+  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+- **Data Collection Endpoint (URL)**: `DataCollectionEndpoint`
+  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+- **Data Collection Rule ID (Rule ID)**: `DataCollectionRuleId`
+  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+

@@ -15,7 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OSSEC` |
-| **Publisher / Vendor** | OSSEC |
+| **Publisher** | OSSEC |
 | **Used in Solutions** | [OSSEC](../solutions/ossec.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_CEF_OSSEC.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC/Data%20Connectors/Connector_CEF_OSSEC.json) |

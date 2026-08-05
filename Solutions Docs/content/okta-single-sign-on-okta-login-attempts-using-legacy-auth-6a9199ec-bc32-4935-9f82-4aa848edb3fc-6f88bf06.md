@@ -6,7 +6,7 @@
 
 ---
 
-This query identifies use of legacy authentication protocol in the Okta Logs.
+This query identifies use of legacy authentication protocol in Okta logs, specifically requests to the legacy WS-Fed active endpoint, to help identify potentially suspicious sign-in activity for investigation.
 
 | Attribute | Value |
 |:----------|:------|

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Netskope Web Transaction Connector via Blob Storage &mdash; Solutions Analyzer</title>
+<title>Netskope Web Transactions via Blob Storage &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="netskope-web-transaction-connector">Netskope Web Transaction Connector (via Blob Storage)</h1>
+<h1 id="netskope-web-transactions">Netskope Web Transactions (via Blob Storage)</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netskope.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>NetskopeWebTxConnector</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">Netskope</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Web Transaction <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -65,13 +61,10 @@
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
   <td style="text-align:left"><code>StorageAccountBlobContainer</code>, <code>ServicePrincipal</code></td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#netskope-web-transaction-connector-via-blob-storage">View on Learn</a></td>
-</tr>
 </tbody>
 </table>
-<p>The Netskope Web Transaction connector ingests web transaction logs from Netskope Log Streaming into Microsoft Sentinel via Azure Blob Storage using the Codeless Connector Framework (CCF).</p>
+<p>The Netskope Web Transactions data connector enables ingestion of web transaction logs from Netskope into Microsoft Sentinel using Netskope Log Streaming (NLS) capability. Web transaction logs provide detailed visibility into all web traffic processed by Netskope, including user activity, application usage, URL categories, policy actions, and network metadata.</p>
+<p>This connector uses Azure Blob Storage and Event Grid to ingest logs that Netskope streams to your storage account.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -99,47 +92,39 @@
 <p><strong>Resource Provider Permissions:</strong></p>
 <ul>
 <li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
-<li><strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a></li>
+<li><strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required.</li>
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
 <li><strong>Subscription permissions</strong>: You need permissions to create the data flow resources:</li>
-<li>storage queues (notification queue and dead-letter queue)</li>
-<li>event grid topic and subscription (to send 'blob created event' notifications to the notification queue)</li>
-<li>role assignments (to grant access for Microsoft Sentinel app to the blob container and the storage queues.)</li>
-<li><strong>Storage Account Network Configuration</strong>: Network restrictions (firewall/IP rules) on the Azure Blob Storage account are <strong>not supported</strong> for this connector due to <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-limitations">Azure Storage firewall restrictions and limitations</a>:</li>
-<li>IP network rules have<strong>no effect</strong>on requests originating from the same Azure region as the storage account.</li>
-<li>IP network rules<strong>cannot restrict</strong>access to Azure services deployed in the same region, as these services use private Azure IP addresses for communication.</li>
-<li>Virtual network service endpoint rules do not apply to clients in a paired region.</li>
-</ul>
-<p>Ensure the storage account's <strong>Networking</strong> blade is set to <strong>Enabled from all networks</strong>.</p>
-<ul>
-<li><strong>Storage Account Role Assignments</strong>: The following Azure RBAC roles must be assigned to the Microsoft Sentinel enterprise application service principal (displayed below) on the <strong>Storage Account</strong> that contains your blob container:</li>
-<li><strong>Storage Blob Data Contributor</strong> — required for reading blob data from the container.</li>
-<li><strong>Storage Queue Data Contributor</strong> — required for managing notification and dead-letter queue messages.</li>
-</ul>
-<p>To assign these roles: navigate to the Storage Account → <strong>Access Control (IAM)</strong> → <strong>Add role assignment</strong>, search for the service principal ID shown below, and assign both roles.</p>
-<ul>
-<li><strong>Collecting data from Netskope to your blob container</strong>: Follow the steps in the <a href="https://docs.netskope.com/en/log-streaming.html">Netskope Log Streaming documentation</a> to configure Netskope to stream Web Transaction logs to your Azure Blob Storage container.</li>
+<li>Storage queues (notification queue and dead-letter queue)</li>
+<li>Event Grid topic and subscription (to send 'blob created event' notifications)</li>
+<li>Role assignments (to grant access for Microsoft Sentinel app to the blob container and storage queues)</li>
+<li><strong>Netskope Log Streaming Configuration</strong>: Configure Netskope Log Streaming (NLS) to send Web Transaction logs to your Azure Blob Storage container. Follow the <a href="https://docs.netskope.com/en/log-streaming">Netskope NLS documentation</a> for setup instructions.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>1. Connect Netskope WebTx Logs to Microsoft Sentinel</strong></p>
-<p>To enable the Netskope WebTx Logs for Microsoft Sentinel, provide the required information below and click on Connect.</p>
+<p><strong>1. Connect Netskope Web Transaction Logs to Microsoft Sentinel</strong></p>
+<p>To enable the Netskope Web Transactions Logs for Microsoft Sentinel, provide the required information below and click on Connect.</p>
+<p><strong>Prerequisites:</strong></p>
+<ol>
+<li>Configure Netskope NLS to send Web Transaction logs to an Azure Blob Storage container</li>
+<li>Ensure you have the required permissions on the storage account</li>
+</ol>
+<ul>
+<li><strong>Blob Container URL</strong></li>
+<li><strong>Blob Folder Name (Optional)</strong>: Leave empty if logs are at container root</li>
+<li><strong>Storage Account Location</strong>: e.g., eastus</li>
+<li><strong>Storage Account Resource Group Name</strong></li>
+<li><strong>Storage Account Subscription ID</strong></li>
+<li><strong>Event Grid Topic Name (if exists)</strong>: Leave empty to create new topic</li>
+<li>Click 'Connect' to establish connection</li>
+</ul>
 <blockquote>
 <p>📋 <strong>Additional Configuration Step</strong>: This connector includes a configuration step of type <code>ServicePrincipalIDTextBox_test</code>. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.</p>
 </blockquote>
-<ul>
-<li><strong>The blob container URL you want to collect data from</strong></li>
-<li><strong>The blobs folder name in the container. Optional.</strong></li>
-<li><strong>The blob container's storage account location</strong></li>
-<li><strong>The blob container's storage account resource group name</strong></li>
-<li><strong>The blob container's storage account subscription id</strong></li>
-<li><strong>The event grid topic name of the blob container's storage account if exist. else keep empty.</strong></li>
-<li>Click 'Connect' to establish connection</li>
-</ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

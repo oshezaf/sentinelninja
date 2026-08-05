@@ -11,9 +11,6 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Source Vendor** | CrowdStrike, Microsoft, Synqly *(basis: projected)* |
-| **Source Product** | DNS Server, Falcon Data Replicator, Integration *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -189,23 +186,25 @@ Official Microsoft Learn documentation for field/column information:
 
 📖 **Related Documentation:** [ASIM normalized DNS schema](https://learn.microsoft.com/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema) - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the [DNS normalization schema](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details)
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [SAP LogServ](../solutions/sap-logserv.md)
 - [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
 
-## Connectors (3)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -240,20 +239,24 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/dnsnormalized`
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
+| `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | 1 | - | - | - | **1** |
+| **Total** | **2** | **0** | **0** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
+| `AzureVNet` |  | 1 | - | - | - | **1** |
+| `BIND` |  | 1 | - | - | - | **1** |
+| `SAP Web Dispatcher` |  | 1 | - | - | - | **1** |
 
 ### EventResult
 

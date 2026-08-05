@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RecordedFuturePortalAlertsCL &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -19,6 +21,9 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<blockquote>
+<p><strong>Internal Use Table:</strong> This table is created and used internally by the <a href="../solutions/recorded-future.html">Recorded Future</a> solution. It is written to by playbooks for solution-specific data storage.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -28,6 +33,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Internal</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -35,10 +48,59 @@
 </table>
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
+<h2 id="schema">Schema (9 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RecordedFuturePortalAlerts_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">AISummary_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertID_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertName_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleId_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleName_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">Triggered_t</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">URL_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
@@ -50,12 +112,52 @@
 <li><a href="../solutions/recorded-future.html">Recorded Future</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/recorded-future.html">Recorded Future</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/recorded-future-recorded-future-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab3-75450771.html">Recorded Future Alerts Incident Creation</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

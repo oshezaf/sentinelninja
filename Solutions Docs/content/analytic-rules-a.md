@@ -1,6 +1,6 @@
 # Analytic Rules - A
 
-**242 analytic rules** starting with 'A'.
+**246 analytic rules** starting with 'A'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -21,6 +21,10 @@
 | [A potentially malicious web request was executed against a web server](azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.md) | Medium | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [Abnormal Deny Rate for Source IP](azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) | Medium | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Abnormal Port to Protocol](azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md) | Medium | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
+| [Abnormal Security - Account Takeover case opened](abnormalsecurity-abnormal-security-account-takeover-case-opened-da243bf4-382b-46b9-9b4d-ce6ffe9e7beb-df151faa.md) | High | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Abnormal Security - High-risk email attack detected](abnormalsecurity-abnormal-security-high-risk-email-attack-detected-8effd19a-abab-433a-9184-ae67ac51e6d0-39f20acc.md) | High | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Abnormal Security - User-reported email judged malicious](abnormalsecurity-abnormal-security-user-reported-email-judged-malicious-51c6ba55-fecd-4be0-9064-1aafc4d3e8d6-6ee04478.md) | Medium | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Abnormal Security - Vendor compromise case detected](abnormalsecurity-abnormal-security-vendor-compromise-case-detected-b15ea4c9-58da-44d8-90e4-6591d947e7e3-5d66afe6.md) | Medium | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Access to AWS without MFA](authomize-access-to-aws-without-mfa-48a9478b-440a-4330-b42c-94bd84dc904c-13ae6d15.md) | Medium | 📦 [Authomize](../solutions/authomize.md) |
 | [Access Token Manipulation - Create Process with Token](falconfriday-access-token-manipulation-create-process-with-token-8df80270-b4fa-4a7a-931e-8d17c0b321ae-d1e3f3fd.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Accessed files shared by temporary external user](microsoft-365-accessed-files-shared-by-temporary-external-user-bff058b2-500e-4ae5-bb49-a5b1423cbd5b-0f3d0272.md) | Low | 📦 [Microsoft 365](../solutions/microsoft-365.md) |

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.digitalshadows.com/](https://www.digitalshadows.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | Digital Shadows *(basis: publisher)* |
-| **Source Product** | Searchlight |
 | **Version** | 3.0.0 |
 | **Author** | Digital Shadows - support@digitalshadows.com |
 | **Last Updated** | 2025-12-14 |
@@ -44,10 +42,7 @@ The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingesti
 
 This solution provides **1 data connector(s)**:
 
-- [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md)
 
 ## Tables Used
 
@@ -55,10 +50,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) 🔶 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`DigitalShadows_V2_CL`](../tables/digitalshadows-v2-cl.md) | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -74,14 +66,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Digital Shadows Incident Creation for exclude-app](../content/digital-shadows-digital-shadows-incident-creation-for-exclude-app-f7abe9c1-1e6c-4317-b907-25769e7764c5-54e3b41d.md) | Medium | - | [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) |
-| [Digital Shadows Incident Creation for include-app](../content/digital-shadows-digital-shadows-incident-creation-for-include-app-ede3071d-9317-45f9-b36c-6a6effee5294-078d7289.md) | Medium | - | [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) |
+| [Digital Shadows Incident Creation for exclude-app](../content/digital-shadows-digital-shadows-incident-creation-for-exclude-app-f7abe9c1-1e6c-4317-b907-25769e7764c5-54e3b41d.md) | Medium | - | [`DigitalShadows_V2_CL`](../tables/digitalshadows-v2-cl.md) |
+| [Digital Shadows Incident Creation for include-app](../content/digital-shadows-digital-shadows-incident-creation-for-include-app-ede3071d-9317-45f9-b36c-6a6effee5294-078d7289.md) | Medium | - | [`DigitalShadows_V2_CL`](../tables/digitalshadows-v2-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DigitalShadows](../content/digital-shadows-digitalshadows-3362ae13.md) | [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) |
+| [DigitalShadows](../content/digital-shadows-digitalshadows-3362ae13.md) | [`DigitalShadows_V2_CL`](../tables/digitalshadows-v2-cl.md) |
 
 ### Playbooks
 
@@ -93,6 +85,7 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.0       | 24-06-2026                     |  Migrated ingestion from the retiring HTTP Data Collector API to the Logs Ingestion API. New table `DigitalShadows_V2_CL` with clean PascalCase columns; legacy `DigitalShadows_CL` data ages out per workspace retention. **New required deployment parameter `DcrWorkspaceResourceId`** (full resource ID of the Log Analytics workspace). Function Apps now authenticate via system-assigned managed identity (Monitoring Metrics Publisher on the DCR); legacy `WorkspaceID`/`WorkspaceKey` parameters removed. Both Function Apps upgraded to Python 3.11. Analytic rules updated to query `DigitalShadows_V2_CL` while keeping detection logic intact via KQL `project-rename` aliases. |
 | 3.0.0       | 04-06-2026                     |  Updated EventReportUrl construction in both **Analytic Rules**                    |
 |       | 30-11-2023                     |  Added new Entity Mapping to **Analytic Rules**                    |
 

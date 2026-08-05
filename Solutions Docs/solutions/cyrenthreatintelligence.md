@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | Cyren *(basis: publisher)* |
-| **Source Product** | Threat Intelligence |
 | **Version** | 3.0.5 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-16 |

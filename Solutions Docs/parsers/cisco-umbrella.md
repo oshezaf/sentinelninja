@@ -13,8 +13,8 @@
 | Title | Parser for Cisco_Umbrella |
 | Location | Solution |
 | Solution | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
-| Version | 1.0.2 |
-| Last Updated | 2026-05-22 |
+| Version | 1.0.3 |
+| Last Updated | 2026-07-27 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Parsers/Cisco_Umbrella.yaml) |

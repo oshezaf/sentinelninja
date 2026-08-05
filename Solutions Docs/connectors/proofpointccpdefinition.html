@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>ProofpointCCPDefinition</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">Proofpoint</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">On Demand Email Security <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -131,6 +127,102 @@ You must provide your cluster id and security token.</p>
 <li><strong>API Key</strong>: API Key</li>
 <li>Click 'Connect' to establish connection</li>
 </ul>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: [Proofpoint On demand(POD) Email Security\Data Connectors\ProofPointEmailSecurity_CCP\readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint On demand(POD) Email Security\Data Connectors\ProofPointEmailSecurity_CCP\readme.md)</em></p>
+</blockquote>
+<h1 id="websocket-data-connector---configuration-reference">WebSocket Data Connector - Configuration Reference</h1>
+<h4 id="note">Note</h4>
+<p>This documentation is provided as-is for the WebSocket kind connector, considered preview, as of this writing. The references below should be used as a guide to the expected common behaviors rather than an exhaustive list of documentation on the feature.</p>
+<br>
+
+<h2 id="request-parameters---websocket-specific">Request Parameters - WebSocket Specific</h2>
+<p>The following parameters are specific to WebSocket and not covered in the RestApiPoller Request configuration:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>firstWindowBackfillInMin</code></td>
+  <td><code>Integer</code></td>
+  <td><code>60</code></td>
+  <td>Minutes to backfill on first run when no checkpoint exists. Capped at 60 minutes. Only applies when <code>startTimeAttributeName</code> is configured.</td>
+</tr>
+</tbody>
+</table>
+<p>For all other parameters in the <code>Request</code> section, refer to the RestApiPoller Codeless Connector Framework (CCF) documentation:</p>
+<blockquote>
+<p><strong>📖 <a href="https://learn.microsoft.com/en-us/azure/sentinel/data-connector-connection-rules-reference#request-configuration">RestApiPoller Data Connector - Request Configuration</a></strong></p>
+</blockquote>
+<br>
+
+<h2 id="handler-behavior---websocket-specific">Handler Behavior - WebSocket Specific</h2>
+<h3 id="scheme-enforcement">Scheme Enforcement</h3>
+<ul>
+<li>Use the WebSocket protocol <code>wss://</code> only. This is required for the parameter <code>request.apiEndpoint</code></li>
+</ul>
+<h3 id="idle-timeout">Idle Timeout</h3>
+<table>
+<thead>
+<tr>
+  <th>Timeout</th>
+  <th>Value</th>
+  <th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Idle timeout</td>
+  <td>20 seconds</td>
+  <td>If no data received, breaks out of receive loop (success, flushes buffered events)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="health-status-codes">Health Status Codes</h3>
+<table>
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>WS40001</code></td>
+  <td>Credential validation failures including API key token invalid, expired, or could not be obtained. Retriable if the credential provider indicates a transient issue; non-retriable for permanent authentication failures.</td>
+</tr>
+<tr>
+  <td><code>WS40002</code></td>
+  <td>Rule configuration error. The <code>CollectorConfig</code> has invalid or missing required fields. For example, malformed JSON path, missing endpoint, unsupported protocol. The rule will not be retried until the configuration is fixed.</td>
+</tr>
+<tr>
+  <td><code>WS40005</code></td>
+  <td>Unhandled exception during the message receive/process loop that is unexpected. This includes errors such request not matching WebSocket, other configuration, or timeout categories. This excludes <code>OperationCanceledException</code> exception where the cancellation is not reported.</td>
+</tr>
+<tr>
+  <td><code>WS40007</code></td>
+  <td>WebSocket window timeout exceeded. The connection remained open longer than the configured <code>request.timeoutInSeconds</code> without completing.</td>
+</tr>
+<tr>
+  <td><code>WS40009</code></td>
+  <td>Retriable WebSocket connection or processing failure. This includes transient errors such as connection refused, network timeout, DNS resolution failure (&lt; 6 hours), or server-side issues. The message will be retried with backoff.</td>
+</tr>
+<tr>
+  <td><code>WS40012</code></td>
+  <td>SSRF protection blocked the connection. The resolved IP address of <code>request.apiEndpoint</code> falls within a disallowed range (RFC 1918 private, loopback, link-local, or cloud metadata endpoints). The rule will not be retried until the endpoint is changed to an allowed address.</td>
+</tr>
+<tr>
+  <td><code>WS50020</code></td>
+  <td>Remote API returned a failure status in the response payload. The WebSocket message was received and parsed, but the response body contains a status field indicating the request was not successful (checked via <code>response.successStatusJsonPath</code>).</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

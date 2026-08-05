@@ -11,9 +11,6 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Source Vendor** | CrowdStrike, Cyjax, GreyNoise, Inc. and BlueCycle LLC, Infoblox, Joe Security, Lumen, MISP project & cudeso.be, Microsoft, Orange Cyberdefense, VMRay *(basis: projected)* |
-| **Source Product** | Defender Threat Feed, Defender Threat Intelligence, Falcon Adversary Intelligence, Sandbox Threat Intelligence, Threat Intelligence, Threat Intelligence Platforms, Threat intelligence - TAXII *(basis: projected)* |
-| **Event Type** | IOCs |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -70,7 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelIndicators Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators)
 
-## Solutions (21)
+## Solutions (22)
 
 This table is used by the following solutions:
 
@@ -85,6 +82,7 @@ This table is used by the following solutions:
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Infoblox](../solutions/infoblox.md)
 - [JoeSandbox](../solutions/joesandbox.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
@@ -119,7 +117,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (101)
+## Content Items Using This Table (104)
 
 ### Analytic Rules (71)
 
@@ -167,6 +165,27 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map Domain Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-devicenetworkevents-1546f3b3-de8a-4e62-bfea-815422154981-be5129ac.md) |  |
+| [TI Map Domain entity to Cloud App Events](../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-4cdc56ef.md) |  |
+| [TI Map Domain entity to Dns Events (ASIM DNS Schema)](../content/threat-intelligence-new-ti-map-domain-entity-to-dns-events-asim-dns-schema-7c1ea2e6-6210-412c-92e4-180803a741b4-8efee2a8.md) |  |
+| [TI Map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-287993a9.md) |  |
+| [TI Map Domain entity to EmailEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-emailevents-bc3bb047-70b8-4a4b-ac21-e3b1172881a4-0357aaee.md) |  |
+| [TI Map Domain entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-domain-entity-to-emailurlinfo-b56e2290-c65b-45a5-9636-3651e85bbe5d-5336dd53.md) |  |
+| [TI Map Domain entity to PaloAlto](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-418192ba-01b8-4be8-89b7-5b5396a9d062-45633683.md) |  |
+| [TI Map Domain entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-commonsecuritylog-094a4e6e-1a0d-4d49-9d64-cfc3b01a0be1-f0e25fbf.md) |  |
+| [TI Map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-3e490430.md) |  |
+| [TI Map Domain entity to Syslog](../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-130e8485.md) |  |
+| [TI Map Domain entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-domain-entity-to-web-session-events-asim-web-session-schema-afa4cb9e-6fec-4742-a17f-f494b54c01e7-274bce29.md) |  |
+| [TI Map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-eea41d96.md) |  |
+| [TI Map Email entity to Cloud App Events](../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-b1b7b44f.md) |  |
+| [TI Map Email entity to EmailEvents](../content/threat-intelligence-new-ti-map-email-entity-to-emailevents-18b61c3f-55fa-4eb9-8721-72dabd1eb3cb-40d28216.md) |  |
+| [TI Map Email entity to OfficeActivity](../content/threat-intelligence-new-ti-map-email-entity-to-officeactivity-795d43a3-6edc-4c99-971f-00d05841e5ac-60dcc528.md) |  |
+| [TI Map Email entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-email-entity-to-paloalto-commonsecuritylog-17fe80fe-072f-44d4-b62c-97a5bce56a64-6e2f6a24.md) |  |
+| [TI Map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-64339c70.md) |  |
+| [TI Map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-92d02723.md) |  |
+| [TI Map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-493f3f65.md) |  |
+| [TI Map File Hash to CommonSecurityLog Event](../content/threat-intelligence-new-ti-map-file-hash-to-commonsecuritylog-event-432996e9-8a93-4407-985f-13707b318a0b-2bab40d1.md) |  |
+| [TI Map File Hash to DeviceFileEvents Event](../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-cf66ebca.md) |  |
+| [TI Map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-5a340913.md) |  |
 | [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-sql-security-audit-events-239d987e-ee1b-4c49-b146-e88d682930a4-fb7a1cf3.md) |  |
 | [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md) |  |
 | [TI Map IP Entity to CommonSecurityLog](../content/threat-intelligence-new-ti-map-ip-entity-to-commonsecuritylog-cdd1933b-ef94-48a4-b94a-18d45b902751-8a8093d3.md) |  |
@@ -176,6 +195,18 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md) |  |
 | [TI Map IP Entity to VMConnection](../content/threat-intelligence-new-ti-map-ip-entity-to-vmconnection-aed70d71-adb2-4f73-becd-02150b13950b-4964d0d5.md) |  |
 | [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.md) |  |
+| [TI Map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-11aee680.md) |  |
+| [TI Map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-5cfb258e.md) |  |
+| [TI Map IP entity to Azure Key Vault logs](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-07189841.md) |  |
+| [TI Map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-70beb1df.md) |  |
+| [TI Map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-05442c9a.md) |  |
+| [TI Map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-3c95cde8.md) |  |
+| [TI Map IP entity to DNS Events (ASIM DNS schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-dns-events-asim-dns-schema-b306fba8-1a28-449f-aa24-30362e16d4f5-29196824.md) |  |
+| [TI Map IP entity to GitHub_CL](../content/threat-intelligence-new-ti-map-ip-entity-to-github-cl-43d6c173-64c8-4416-b32e-636a9f318d15-783039ce.md) |  |
+| [TI Map IP entity to Network Session Events (ASIM Network Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-54f4ceb4-fd83-4633-b5b0-c0de9feb8890-ffa2fa5f.md) |  |
+| [TI Map IP entity to OfficeActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-officeactivity-f50280e5-5eb1-4e95-99fd-9d584a987bdd-172c25fa.md) |  |
+| [TI Map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-web-session-events-asim-web-session-schema-0548be6c-135e-4eb6-b9ff-14a09df62c77-861f2e00.md) |  |
+| [TI Map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-b0388bf0.md) |  |
 | [TI Map URL Entity to AuditLogs](../content/threat-intelligence-new-ti-map-url-entity-to-auditlogs-9991c277-e0a1-4079-8c40-fbfca2705615-eddd0de5.md) |  |
 | [TI Map URL Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-url-entity-to-devicenetworkevents-4f0356b2-d344-4c19-9375-31b9575d80cb-edd30654.md) |  |
 | [TI Map URL Entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-url-entity-to-emailurlinfo-9e32e545-e60c-47de-9941-f9ca1ada0a42-4894c77c.md) |  |
@@ -183,43 +214,10 @@ This table is ingested by the following connectors:
 | [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-new-ti-map-url-entity-to-securityalert-data-3b6bdb38-93c5-452f-ab3a-97a3d1320d16-46a3b027.md) |  |
 | [TI Map URL Entity to Syslog Data](../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.md) |  |
 | [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md) |  |
-| [TI map Domain entity to Cloud App Events](../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-ec106ba0.md) |  |
-| [TI map Domain entity to Dns Events (ASIM DNS Schema)](../content/threat-intelligence-new-ti-map-domain-entity-to-dns-events-asim-dns-schema-7c1ea2e6-6210-412c-92e4-180803a741b4-d24ac70c.md) |  |
-| [TI map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-1b58bbc8.md) |  |
-| [TI map Domain entity to EmailEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-emailevents-bc3bb047-70b8-4a4b-ac21-e3b1172881a4-c3b01d85.md) |  |
-| [TI map Domain entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-domain-entity-to-emailurlinfo-b56e2290-c65b-45a5-9636-3651e85bbe5d-d68d3e26.md) |  |
-| [TI map Domain entity to PaloAlto](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-418192ba-01b8-4be8-89b7-5b5396a9d062-3c5cbaa4.md) |  |
-| [TI map Domain entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-commonsecuritylog-094a4e6e-1a0d-4d49-9d64-cfc3b01a0be1-b0f33009.md) |  |
-| [TI map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-17792409.md) |  |
-| [TI map Domain entity to Syslog](../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-10e0f11d.md) |  |
-| [TI map Domain entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-domain-entity-to-web-session-events-asim-web-session-schema-afa4cb9e-6fec-4742-a17f-f494b54c01e7-f312b638.md) |  |
-| [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md) |  |
-| [TI map Email entity to Cloud App Events](../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-19029041.md) |  |
-| [TI map Email entity to EmailEvents](../content/threat-intelligence-new-ti-map-email-entity-to-emailevents-18b61c3f-55fa-4eb9-8721-72dabd1eb3cb-33ee20f1.md) |  |
-| [TI map Email entity to OfficeActivity](../content/threat-intelligence-new-ti-map-email-entity-to-officeactivity-795d43a3-6edc-4c99-971f-00d05841e5ac-5834b2a5.md) |  |
-| [TI map Email entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-email-entity-to-paloalto-commonsecuritylog-17fe80fe-072f-44d4-b62c-97a5bce56a64-3f51c924.md) |  |
-| [TI map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-53e6c566.md) |  |
-| [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
-| [TI map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.md) |  |
-| [TI map File Hash to CommonSecurityLog Event](../content/threat-intelligence-new-ti-map-file-hash-to-commonsecuritylog-event-432996e9-8a93-4407-985f-13707b318a0b-a4223a3c.md) |  |
-| [TI map File Hash to DeviceFileEvents Event](../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.md) |  |
-| [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
-| [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
-| [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.md) |  |
-| [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.md) |  |
-| [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md) |  |
-| [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-d566e349.md) |  |
-| [TI map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-f78512ba.md) |  |
-| [TI map IP entity to DNS Events (ASIM DNS schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-dns-events-asim-dns-schema-b306fba8-1a28-449f-aa24-30362e16d4f5-613a3814.md) |  |
-| [TI map IP entity to GitHub_CL](../content/threat-intelligence-new-ti-map-ip-entity-to-github-cl-43d6c173-64c8-4416-b32e-636a9f318d15-5872ba25.md) |  |
-| [TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-54f4ceb4-fd83-4633-b5b0-c0de9feb8890-4e169efc.md) |  |
-| [TI map IP entity to OfficeActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-officeactivity-f50280e5-5eb1-4e95-99fd-9d584a987bdd-0c3d2238.md) |  |
-| [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-web-session-events-asim-web-session-schema-0548be6c-135e-4eb6-b9ff-14a09df62c77-0e576920.md) |  |
-| [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |  |
-| [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
-| [TI map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.md) |  |
+| [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
+| [TI Map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-aba81a50.md) |  |
 
-### Hunting Queries (14)
+### Hunting Queries (16)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -229,6 +227,13 @@ This table is ingested by the following connectors:
 | [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.md) | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md) | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.md) | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Multi-Mailbox Access by Single IP via Cloud App Permissions](../content/hybrid-attack-cloud-&-identity-multi-mailbox-access-by-single-ip-via-cloud-app-permissions-c53bf4ae-bd8b-4c72-b9c3-10baa8c13885-6d487c75.md) | `ObservableKey == "ipv4-addr:value"` |
+| [Threat Intelligence Matched IP on Network Appliance Traffic](../content/hybrid-attack-cloud-&-identity-threat-intelligence-matched-ip-on-network-appliance-traffic-68adb008-8ade-469d-a88c-60672a063194-8a62ba53.md) |  |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -255,7 +260,7 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
-### Workbooks (16)
+### Workbooks (17)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -298,6 +303,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `ObservableKey == "ipv4-addr:value"`
+
+| Workbook |
+|:-------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -354,17 +365,17 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/threatintelligence`
 
-## Selection Criteria Summary (14 criteria, 26 total references)
+## Selection Criteria Summary (14 criteria, 28 total references)
 
-References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ObservableKey == "ipv4-addr:value"` | - | 5 | - | - | **5** |
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
-| `ObservableKey == "ipv4-addr:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
-| `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
 | `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
+| `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
@@ -374,14 +385,14 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
-| **Total** | **6** | **20** | **0** | **0** | **26** |
+| **Total** | **6** | **22** | **0** | **0** | **28** |
 
 ### ObservableKey
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ipv4-addr:value` | 2 | 7 | - | - | **9** |
 | `domain-name:value` | 2 | 5 | - | - | **7** |
-| `ipv4-addr:value` | 2 | 5 | - | - | **7** |
 | `url:value` | - | 5 | - | - | **5** |
 | `contains file:hashes` | - | 3 | - | - | **3** |
 | `contains file:hashes.` | - | 1 | - | - | **1** |
@@ -392,8 +403,8 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
-| `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
+| `Lumen` | 2 | - | - | - | **2** |
 | `Cyjax-IOCs` | 1 | - | - | - | **1** |
 | `MISP` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |

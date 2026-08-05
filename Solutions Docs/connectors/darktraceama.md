@@ -15,7 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `DarktraceAma` |
-| **Publisher / Vendor** | Darktrace |
+| **Publisher** | Darktrace |
 | **Used in Solutions** | [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_AIA-DarktraceAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace/Data%20Connectors/template_AIA-DarktraceAMA.json) |

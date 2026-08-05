@@ -37,12 +37,8 @@
   <td style="text-align:left"><code>VMwareCarbonBlack</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">VMware</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Carbon Black Cloud <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -143,10 +139,10 @@
 </li>
 </ul>
 <p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
-<p>This method provides an automated deployment of the VMware Carbon Black connector using an ARM Tempate.</p>
+<p>This method provides an automated deployment of the VMware Carbon Black connector using an ARM Template.</p>
 <ol>
 <li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
-<p><a href="https://aka.ms/sentinelcarbonblackazuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a> <a href="https://aka.ms/sentinelcarbonblackazuredeploy-gov"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://aka.ms/sentinelcarbonblackazuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a> <a href="https://aka.ms/sentinelcarbonblackazuredeploy-gov"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
 </li>
 <li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.</p>
 </li>
@@ -155,7 +151,7 @@
 </ol>
 <ul>
 <li>The default <strong>Time Interval</strong> is set to pull the last five (5) minutes of data. If the time interval needs to be modified, it is recommended to change the Function App Timer Trigger accordingly (in the function.json file, post deployment) to prevent overlapping data ingestion.</li>
-<li>Carbon Black requires a seperate set of API ID/Keys to ingest Notification alerts. Enter the SIEM API ID/Key values or leave blank, if not required.</li>
+<li>Carbon Black requires a separate set of API ID/Keys to ingest Notification alerts. Enter the SIEM API ID/Key values or leave blank, if not required.</li>
 </ul>
 <blockquote>
 <ul>
@@ -218,7 +214,7 @@ logAnalyticsUri (optional)</li>
 <ul>
 <li>Enter the URI that corresponds to your region. The complete list of API URLs can be <a href="https://community.carbonblack.com/t5/Knowledge-Base/PSC-What-URLs-are-used-to-access-the-APIs/ta-p/67346">found here</a>. The <code>uri</code> value must follow the following schema: <code>https://&lt;API URL&gt;.conferdeploy.net</code> - There is no need to add a time suffix to the URI, the Function App will dynamically append the Time Value to the URI in the proper format.</li>
 <li>Set the <code>timeInterval</code> (in minutes) to the default value of <code>5</code> to correspond to the default Timer Trigger of every <code>5</code> minutes. If the time interval needs to be modified, it is recommended to change the Function App Timer Trigger accordingly to prevent overlapping data ingestion.</li>
-<li>Carbon Black requires a seperate set of API ID/Keys to ingest Notification alerts. Enter the <code>SIEMapiId</code> and <code>SIEMapiKey</code> values, if needed, or omit, if not required.</li>
+<li>Carbon Black requires a separate set of API ID/Keys to ingest Notification alerts. Enter the <code>SIEMapiId</code> and <code>SIEMapiKey</code> values, if needed, or omit, if not required.</li>
 <li>Note: If using Azure Key Vault, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details.</li>
 <li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code></li>
 </ul>

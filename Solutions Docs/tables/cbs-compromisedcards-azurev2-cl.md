@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | CTM360 *(basis: projected)* |
-| **Source Product** | CyberBlindSpot *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

@@ -6,7 +6,7 @@
 
 ---
 
-This query identifies new device being registered from a location where the user does not normally login from
+This query identifies new device being registered from a location where the user does not normally logs in from. This can be an indication of an attacker gaining access to a user's credentials and then registering a new device.
 
 | Attribute | Value |
 |:----------|:------|

@@ -11,9 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureActivity` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure *(basis: title)* |
-| **Event Type** | Events |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Azure Activity](../solutions/azure-activity.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureActivity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Data%20Connectors/AzureActivity.json) |

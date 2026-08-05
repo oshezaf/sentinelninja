@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Microsoft <em>(basis: publisher_fallback — low confidence)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Airlock Digital</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.1</td>
 </tr>
@@ -127,6 +119,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.1</td>
+  <td>28-07-2026</td>
+  <td>Promoted the Airlock Digital data connector from public preview to general availability (GA).</td>
+</tr>
+<tr>
+  <td>3.1.0</td>
+  <td>23-07-2026</td>
+  <td>Added multi-instance support: multiple simultaneous Airlock Digital server connections via a grid and context-pane UX with a multi-select data type dropdown and per-connection friendly name. Added a ConnectorName column to all data tables to identify the originating connection. Fixed log ingestion: increased data connector poller timeout to 120s and corrected the pagination token path to slice notation for Server Activities and Execution Histories to resolve fetch timeouts and out-of-range paging errors. Removed deprecated graphQueriesTableName property (hardcoded table names in queries).</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>02-06-2026</td>

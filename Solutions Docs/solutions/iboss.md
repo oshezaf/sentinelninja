@@ -18,7 +18,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.iboss.com/contact-us/](https://www.iboss.com/contact-us/) |
 | **Categories** | Security - Network |
-| **Source Vendor** | iboss *(basis: event)* |
 | **Version** | 3.1.2 |
 | **Author** | iboss |
 | **First Published** | 2022-02-15 |
@@ -68,16 +67,24 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency), [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency), [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | Analytics, Workbooks |
 
 ## Content Items
 
-This solution includes **3 content item(s)**:
+This solution includes **5 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
+| Analytic Rules | 2 |
 | Workbooks | 2 |
 | Parsers | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [iboss - Command-and-Control Detected](../content/iboss-iboss-command-and-control-detected-40cf9670-d4be-4149-9082-5809a2b12ca1-3d2fa7d5.md) | High | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [iboss - Malware Detected](../content/iboss-iboss-malware-detected-cad35734-b97a-4209-9269-b98c916379eb-2e4fb5d5.md) | High | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
@@ -96,6 +103,7 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.3       | 24-06-2026                     |    Added Malware/C2 **Analytics Rules** and made minor bug fixes   |
 | 3.1.2       | 07-01-2025                     |    Removed Deprecated **Data connector**                           |
 | 3.1.1       | 18-09-2024                     |    Updated AMA and legacy OMS connector to use new iboss field     |
 | 3.1.0       | 05-09-2024                     |    Updated AMA connector with iboss specific instructions          |

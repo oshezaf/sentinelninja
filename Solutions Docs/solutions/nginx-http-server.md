@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network,Networking,DevOps |
-| **Source Vendor** | Nginx *(basis: publisher)* |
-| **Source Product** | HTTP Server |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-12-16 |

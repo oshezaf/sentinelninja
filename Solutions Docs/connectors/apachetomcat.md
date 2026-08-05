@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ApacheTomcat` |
-| **Publisher / Vendor** | Apache |
-| **Source Product** | Tomcat *(basis: title)* |
+| **Publisher** | Apache |
 | **Used in Solutions** | [Tomcat](../solutions/tomcat.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_Tomcat_agent.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat/Data%20Connectors/Connector_Tomcat_agent.json) |

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.rubrik.com](https://support.rubrik.com) |
 | **Categories** | Security - Others |
-| **Source Vendor** | Rubrik *(basis: publisher)* |
-| **Source Product** | Security Cloud Protection Status, Security Cloud |
 | **Version** | 3.5.2 |
 | **Author** | Ben Meadowcroft - ben.meadowcroft@rubrik.com |
 | **First Published** | 2022-07-19 |
@@ -108,7 +106,7 @@ This solution includes **19 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.5.2       | 19-02-2026                     | Added RubrikSecurityCloud CCF (Codeless Connector Framework) Data Connector for ingesting Rubrik Protection Status data into Microsoft Sentinel. Enables backup compliance monitoring, ransomware recovery assessment, and incident correlation with protection status for Azure VMs. |
+| 3.5.2       | 16-07-2026                     | Added RubrikSecurityCloud CCF (Codeless Connector Framework) Data Connector for ingesting Rubrik Protection Status data into Microsoft Sentinel. Enables backup compliance monitoring, ransomware recovery assessment, and incident correlation with protection status for Azure VMs. Update python package version to resolve vulnerability |
 | 3.5.1       | 05-11-2025                     | Updated API Host Name default value in playbooks and custom connector |
 | 3.5.0       | 25-07-2025                     | Added RubrikTurboThreatHunt and RubrikAdvanceThreatHunt playbooks. RubrikThreatMonitoring and RubrikCriticalAnomaly Analytic Rules also added.
 | 3.4.0       | 07-04-2025                     | Added RubrikUpdateAnomalyStatusViaIncident and RubrikUpdateAnomalyStatus playbook. Enhanced RubrikAnomalyAnalysis playbook. Added User-Agent in every API call of each playbook. Removed policy creation resources from data connector Arm template.

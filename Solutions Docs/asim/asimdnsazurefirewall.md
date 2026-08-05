@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Azure Firewall |
-| **Parser Version** | 0.4.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md)) |
-| **Last Updated** | Dec 2, 2025 |
+| **Parser Version** | 0.4.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md)) |
+| **Last Updated** | Jun 26, 2026 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsAzureFirewall.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsAzureFirewall.yaml) |
 

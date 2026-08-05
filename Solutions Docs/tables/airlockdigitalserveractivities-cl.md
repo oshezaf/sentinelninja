@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Airlock Digital *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -19,13 +17,14 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (6 columns)
+## Schema (7 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalServerActivities.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | Checkpoint | string | Event checkpoint identifier for incremental retrieval |
+| ConnectorName | string | Connector Friendly Name assigned during connector setup |
 | Description | string | Detailed description of the server activity |
 | EventDateTime | string | Event timestamp (when server activity occurred) |
 | Task | string | Type of server task performed |

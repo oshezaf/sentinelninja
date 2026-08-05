@@ -11,8 +11,6 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Source Vendor** | Cisco, Synqly *(basis: projected)* |
-| **Source Product** | Integration, Meraki *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -192,21 +190,23 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ASimWebSessionLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimwebsessionlogs)
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [SAP LogServ](../solutions/sap-logserv.md)
 - [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
-## Connectors (2)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---

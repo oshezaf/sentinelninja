@@ -13,7 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SentinelOne` |
-| **Publisher / Vendor** | SentinelOne |
+| **Publisher** | SentinelOne |
 | **Used in Solutions** | [SentinelOne](../solutions/sentinelone.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SentinelOne_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_API_FunctionApp.json) |
@@ -31,6 +31,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ✓ | ✓ | ✓ |
+| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ? | ✓ | ? |
 | [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ✓ | ✓ | ✓ |

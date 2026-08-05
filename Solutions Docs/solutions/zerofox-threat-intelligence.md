@@ -1,6 +1,6 @@
-# ⚠️ ZeroFox Threat Intelligence
+# ZeroFox Threat Intelligence Connector
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: ZeroFox Threat Intelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/foxy-mark.svg" alt="ZeroFox Threat Intelligence Logo" width="75" height="75">
 
@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Source Vendor** | ZeroFox *(basis: publisher)* |
-| **Source Product** | Enterprise - Advanced Dark Web, Enterprise - Botnet Compromised Credentials, Enterprise - Botnet, Enterprise - Breaches, Enterprise - Compromised Credentials, Enterprise - Credit Cards, Enterprise - Dark Web, Enterprise - Discord, Enterprise - Disruption, Enterprise - Email Addresses, Enterprise - Exploits, Enterprise, Enterprise - Key, Enterprise - National IDs, Enterprise - Physical, Enterprise - Telegram |
 | **Version** | 3.0.0 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-02-18 |
+| **Last Updated** | 2026-06-23 |
 | **Solution Folder** | [ZeroFox Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-threat-intel-sentinel-connector) · Popularity: 🟡 Low (25%) |
 
 The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Threat Intelligence](https://www.zerofox.com/threat-intelligence/) into Microsoft Sentinel using the ZeroFox API. 
 

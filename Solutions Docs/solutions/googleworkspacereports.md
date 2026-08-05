@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | IT Operations,Cloud Provider |
-| **Source Vendor** | Google *(basis: name_pattern)* |
-| **Source Product** | Workspace |
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
@@ -149,6 +147,7 @@ This solution includes **26 content item(s)** (24 in solution, 2 discovered 🔍
 
 | **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                              |
 |-------------|-------------------------------|-------------------------------------------------|
+| 3.0.5       | 29-06-2026                     | Updated **queryWindowDelayInMin** for Google Workspace Connector |
 | 3.0.4       | 26-03-2026                     | Updated **Data Connector** Configuration steps |
 | 3.0.3       | 21-01-2026                     | Updated **Data Connector** to support dynamic Redirect URI |
 | 3.0.2       | 26-08-2025                    | Moving GoogleWorkspaceReports **CCF Data Connector** to GA.  | 

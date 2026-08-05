@@ -64,7 +64,7 @@
   <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
   <td style="text-align:left">Built-in</td>
   <td style="text-align:center">0</td>
-  <td style="text-align:center">4</td>
+  <td style="text-align:center">5</td>
 </tr>
 </tbody>
 </table>
@@ -101,7 +101,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">HTTP_-_Get_Token</td>
+  <td style="text-align:left">HTTP_-_Get_Token_Initial</td>
   <td style="text-align:left">POST</td>
   <td style="text-align:left"><code>[concat(parameters('CheckmarxIAMBaseUrl'), '/auth/realms/', parameters('CheckmarxTenant'), '/protocol/openid-connect/token')]</code></td>
   <td style="text-align:left">—</td>
@@ -113,15 +113,21 @@
   <td style="text-align:left">—</td>
 </tr>
 <tr>
+  <td style="text-align:left">HTTP_-_Get_Token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[concat(parameters('CheckmarxIAMBaseUrl'), '/auth/realms/', parameters('CheckmarxTenant'), '/protocol/openid-connect/token')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
   <td style="text-align:left">HTTP_-_Get_SAST_Results_Page</td>
   <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>[concat(parameters('CheckmarxASTBaseUrl'), '/api/sast-results/?scan-id=@{items(''For_Each_Scan'')?[''id'']}')]</code></td>
+  <td style="text-align:left"><code>[concat(parameters('CheckmarxASTBaseUrl'), '/api/sast-results/?scan-id=@{items(''For_Each_-_Scan'')?[''id'']}&amp;limit=@{variables(''ResultPageSize'')}&amp;offset=@{variables(''ResultOffset'')}')]</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
   <td style="text-align:left">HTTP_-_Send_SAST_Batch_to_DCR</td>
   <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>[concat(reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('dataCollectionEndpointName'))).logsIngestion.endpoint, '/dataCollectionRules/', reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataCollectionRuleName'))).immutableId, '/streams/', variables('streamName'), '?api-version=2023-01-01')]</code></td>
+  <td style="text-align:left"><code>[concat(reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', parameters('DataCollectionEndpointName'))).logsIngestion.endpoint, '/dataCollectionRules/', reference(resourceId('Microsoft.Insights/dataCollectionRules', parameters('DataCollectionRuleName'))).immutableId, '/streams/', variables('streamName'), '?api-version=2023-01-01')]</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>

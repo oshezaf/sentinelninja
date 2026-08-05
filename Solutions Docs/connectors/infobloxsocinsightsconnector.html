@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Infoblox SOC Insights via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="infoblox-soc-insights">⚠️ Infoblox SOC Insights (via Codeless Connector Framework)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>InfobloxSOCInsightsConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Data%20Connectors/InfobloxSOCInsights_CCF/InfobloxSOCInsights_ConnectorDefinition.json">InfobloxSOCInsights_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Data%20Connectors/InfobloxSOCInsights_CCF/InfobloxSOCInsights_DCR.json">InfobloxSOCInsights_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Data%20Connectors/InfobloxSOCInsights_CCF/InfobloxSOCInsights_PollingConfig.json">InfobloxSOCInsights_PollingConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.infoblox.com/products/bloxone-threat-defense/">Infoblox SOC Insights</a> data connector enables seamless integration of Infoblox BloxOne SOC Insight data with Microsoft Sentinel, allowing security teams to leverage advanced search, correlation, alerting, and threat intelligence enrichment capabilities. This connector provides comprehensive visibility into active security insights and threat detections, DNS security events with threat classifications, threat family and class categorizations, persistent and spreading threats across your network, and event blocking statistics. By aggregating Infoblox's advanced threat intelligence with Sentinel's powerful analytics, organizations can gain deeper insights into their security posture and respond more effectively to emerging threats. For detailed information about the underlying data sources and API capabilities, refer to the <a href="https://docs.infoblox.com/space/BloxOneThreatDefense/501514252/SOC+Insights">Infoblox SOC Insights documentation</a>.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Infoblox API access</strong>: <strong>Infoblox API Key</strong> is required to access the SOC Insights API</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connector Management</strong></p>
+<p>Manage your Infoblox SOC Insights connector instances</p>
+<h2 id="infoblox-soc-insights-instances">Infoblox SOC Insights Instances</h2>
+<p>Manage multiple Infoblox connector instances. Each instance can connect to different Infoblox environments or regions.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Connector Name</strong></li>
+<li><strong>API URL</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Infoblox SOC Insights Connector</strong></p>
+<p><em>Connect to Infoblox BloxOne Threat Defense API</em></p>
+<p>When you click the &quot;Add Connector&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<h2 id="api-credentials">API Credentials</h2>
+<p>To configure this connector, you need an Infoblox API key with SOC Insights access.</p>
+<h4 id="generate-api-key">Generate API Key</h4>
+<ol>
+<li><p>Log in to your <a href="https://csp.infoblox.com/atlas/app/welcome">Infoblox Cloud Services Portal</a></p>
+</li>
+<li><p>Navigate to <strong>Administration</strong> &gt; <strong>API Keys</strong></p>
+</li>
+<li><p>Click <strong>Create API Key</strong></p>
+</li>
+<li><p>Provide a descriptive name (e.g., 'Microsoft Sentinel Integration')</p>
+</li>
+<li><p>Select appropriate permissions for SOC Insights access</p>
+</li>
+<li><p>Copy and securely store the generated API key</p>
+</li>
+</ol>
+<p><strong>Note</strong>: The API key is displayed only once. Store it securely.</p>
+<p>For detailed instructions, see <a href="https://docs.infoblox.com/space/BloxOneThreatDefense/230394187/How+Do+I+Create+an+API+Key%3F">How to Create an API Key</a>.</p>
+<h2 id="api-configuration">API Configuration</h2>
+<ul>
+<li><strong>Infoblox API Base URL</strong> (required): https://csp.infoblox.com</li>
+<li><strong>API Key</strong> (required): Your Infoblox API Key</li>
+<li><strong>Connector Friendly Name</strong> (required): Enter a unique friendly name for this connector</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

@@ -46,10 +46,6 @@
   <td style="text-align:left">DevOps</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Google <em>(basis: name_pattern)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.2</td>
 </tr>
@@ -107,13 +103,13 @@
 <tbody>
 <tr>
   <td><a href="../tables/gcpauditlogs.html"><code>GCPAuditLogs</code></a></td>
-  <td><a href="../connectors/gcpauditlogsdefinition.html">GCP Pub/Sub Audit Logs</a>, <a href="../connectors/gcppub-subauditlogs.html">GCP Pub/Sub Audit Logs</a></td>
-  <td>Analytics, Hunting</td>
+  <td><a href="../connectors/gcppub-subauditlogs.html">GCP Pub/Sub Audit Logs</a>, <a href="../connectors/gcpauditlogsdefinition.html">GCP Pub/Sub Audit Logs</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<p>This solution includes <strong>13 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -129,6 +125,10 @@
 <tr>
   <td style="text-align:left">Hunting Queries</td>
   <td style="text-align:left">5</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -224,6 +224,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-cloud-platform-audit-logs-gcpauditlogs-72261135.html">GCPAuditLogs</a></td>
+  <td style="text-align:left"><a href="../tables/gcpauditlogs.html"><code>GCPAuditLogs</code></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs/README.md">Google Cloud Platform Audit Logs/README.md</a></em></p>
@@ -280,6 +295,11 @@ Subscription for the topic</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.3</td>
+  <td>28-07-2026</td>
+  <td>Added a new <strong>workbook</strong> for Google Cloud Platform Audit Logs.</td>
+</tr>
 <tr>
   <td>3.0.2</td>
   <td>19-01-2026</td>

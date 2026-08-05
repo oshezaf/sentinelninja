@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Threat Intelligence</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Cybersixgill <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Actionable</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.1</td>
 </tr>
@@ -88,12 +80,13 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/cybersixgillactionablealerts.html">Cybersixgill Actionable Alerts</a></li>
+<li><a href="../connectors/cybersixgillalertsccfconnector.html">Cybersixgill Actionable Alerts (via Codeless Connector Framework)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -104,9 +97,14 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/cybersixgillalertsv2-cl.html"><code>CyberSixgillAlertsV2_CL</code></a></td>
+  <td><a href="../connectors/cybersixgillalertsccfconnector.html">Cybersixgill Actionable Alerts (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/cybersixgill-alerts-cl.html"><code>CyberSixgill_Alerts_CL</code></a></td>
   <td><a href="../connectors/cybersixgillactionablealerts.html">Cybersixgill Actionable Alerts</a></td>
-  <td>Hunting, Workbooks</td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -147,7 +145,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a-f87f4c92.html">Cybersixgill Actionable alerts</a></td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/cybersixgill-alerts-cl.html"><code>CyberSixgill_Alerts_CL</code></a></td>
+  <td style="text-align:left">-</td>
 </tr>
 </tbody>
 </table>
@@ -162,11 +160,11 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.html">ActionableAlertsDashboard</a></td>
-  <td style="text-align:left"><a href="../tables/cybersixgill-alerts-cl.html"><code>CyberSixgill_Alerts_CL</code></a></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/cybersixgill-actionable-alerts-actionablealertslist-16388c4a.html">ActionableAlertsList</a></td>
-  <td style="text-align:left"><a href="../tables/cybersixgill-alerts-cl.html"><code>CyberSixgill_Alerts_CL</code></a></td>
+  <td style="text-align:left">-</td>
 </tr>
 </tbody>
 </table>
@@ -202,6 +200,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>19-06-2026</td>
+  <td>Added Codeless Connector Framework (CCF) data connector and a unified <strong>CyberSixgill_Alerts</strong> parser that combines the legacy Azure Function table (CyberSixgill_Alerts_CL) and the CCF table (CyberSixgillAlertsV2_CL); updated Hunting Query and Workbooks to use the parser</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>02-09-2024</td>

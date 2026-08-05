@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cybersixgill.com/](https://www.cybersixgill.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | Cybersixgill *(basis: publisher)* |
-| **Source Product** | Actionable |
 | **Version** | 3.0.1 |
 | **Author** | Cybersixgill |
 | **First Published** | 2023-02-27 |
@@ -35,17 +33,19 @@ Cybersixgill Actionable Alerts provides a premium automated customized threat i
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md)
+- [Cybersixgill Actionable Alerts (via Codeless Connector Framework)](../connectors/cybersixgillalertsccfconnector.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Hunting, Workbooks |
+| [`CyberSixgillAlertsV2_CL`](../tables/cybersixgillalertsv2-cl.md) | [Cybersixgill Actionable Alerts (via Codeless Connector Framework)](../connectors/cybersixgillalertsccfconnector.md) | - |
+| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | - |
 
 ## Content Items
 
@@ -61,14 +61,14 @@ This solution includes **5 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a-f87f4c92.md) | - | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a-f87f4c92.md) | - | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
-| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist-16388c4a.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.md) | - |
+| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist-16388c4a.md) | - |
 
 ### Playbooks
 
@@ -81,6 +81,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.0       | 19-06-2026                     | Added Codeless Connector Framework (CCF) data connector and a unified **CyberSixgill_Alerts** parser that combines the legacy Azure Function table (CyberSixgill_Alerts_CL) and the CCF table (CyberSixgillAlertsV2_CL); updated Hunting Query and Workbooks to use the parser |
 | 3.0.1       | 02-09-2024                     | Updated the python runtime version to 3.11  |
 | 3.0.0       | 20-02-2024                     | Replaced Hyperlinks with Shortlinks (aka.ms) in Data Connector |
 

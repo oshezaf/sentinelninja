@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Netskope <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Web Transaction</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">1.0.1</td>
 </tr>
@@ -97,7 +89,7 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transaction Connector (via Blob Storage)</a></li>
+<li><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transactions (via Blob Storage)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
@@ -112,7 +104,7 @@
 <tbody>
 <tr>
   <td><a href="../tables/netskopewebtransactions-cl.html"><code>NetskopeWebTransactions_CL</code></a></td>
-  <td><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transaction Connector (via Blob Storage)</a></td>
+  <td><a href="../connectors/netskopewebtxconnector.html">Netskope Web Transactions (via Blob Storage)</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
@@ -259,11 +251,17 @@
 </ul>
 <h3 id="workbooks">Workbooks</h3>
 <ul>
-<li><strong>Netskope Web Transactions Dashboard</strong> - Comprehensive visualization including:<ul>
+<li><strong>Netskope Web Transactions</strong> - Comprehensive visualization including:<ul>
 <li>User Activity Analysis</li>
 <li>Application &amp; Category Usage</li>
 <li>Geographic Traffic Analysis</li>
 <li>HTTP Methods &amp; Status Codes</li>
+<li>Client Information (OS, browser, device)</li>
+<li>Threat Protection (malware detections, severity, engine results)</li>
+<li>Endpoint Posture (device classification, OS family, Netskope client versions)</li>
+<li>Process Activity (top processes and parent processes)</li>
+<li>Identity &amp; Authentication (authenticated users, authorization groups)</li>
+<li>Action Analysis (actions, action reasons, remote destination country)</li>
 <li>SSL Errors &amp; Bypass Events</li>
 <li>Data Quality Monitoring</li>
 </ul>
@@ -297,9 +295,9 @@
 <li>Import the Workbook</li>
 </ol>
 <h2 id="log-table">Log Table</h2>
-<p><code>NetskopeWebTransactions_CL</code></p>
+<p><code>NetskopeWebTransactions_CL</code> — ingested via the connector's Data Collection Rule (DCR) transform. A Kusto Function parser, <strong>NetskopeWebtx</strong>, is included to project the full Web Transaction field set with friendly names.</p>
 <h2 id="version">Version</h2>
-<p>1.0.0</p>
+<p>3.0.1</p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -310,6 +308,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>16-06-2026</td>
+  <td>Expanded <code>NetskopeWebTransactions_CL</code> schema with 51 additional Web Transaction fields (threat protection, endpoint posture, process, identity/authorization, remote geo, action) across the DCR, custom table, and parser. Added new workbook sections (Threat Protection, Endpoint Posture, Process Activity, Identity &amp; Authentication, Action Analysis). Data connector version bumped to 2.0.0 and Microsoft Sentinel branding fix.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>11-02-2026</td>

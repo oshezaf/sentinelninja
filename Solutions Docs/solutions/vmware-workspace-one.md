@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | VMware *(basis: title)* |
-| **Source Product** | Workspace ONE |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-07 |
@@ -55,6 +53,7 @@ This solution uses **2 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |---|---|---|
+| 3.0.1 | 21-07-2026 | Promoted VMware Workspace ONE CCF data connector from public preview to GA |
 | 3.0.0 | 18-05-2026 | First version of the VMware Workspace ONE CCF Connector. <br/> Added Workspace ONE device inventory ingestion support. <br/> Added installed application ingestion support using CCF pollers, DCR, and parsers. |
 
 ---

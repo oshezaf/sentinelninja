@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
 | **Categories** | Networking,Security - Threat Intelligence,Security - Threat Protection,Security - Network |
-| **Source Vendor** | Infoblox *(basis: event)* |
-| **Source Product** | Cloud, SOC Insight |
 | **Version** | 3.0.2 |
 | **Author** | Infoblox |
 | **First Published** | 2024-07-15 |
@@ -46,11 +44,8 @@ This solution provides **5 data connector(s)**:
 - [[Recommended] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md)
 - [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md)
 - [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
-- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶
+- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
 
 ## Tables Used
 
@@ -90,7 +85,7 @@ The following **9 table(s)** are used internally by this solution's content item
 | [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 | - | Playbooks (writes) |
 | [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
@@ -161,7 +156,7 @@ This solution includes **27 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.2       |   19-06-2025                   | Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule.           |
+| 3.0.2       |   16-07-2026                   | Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule. <br> Migrataed checkpoint from file share to azure tables.           |
 | 3.0.1       |   07-11-2024                   | Bug fix in Infoblox_Workbook **Workbook**   |
 | 3.0.0       |   15-07-2024                   | Initial Solution Release                    |
 

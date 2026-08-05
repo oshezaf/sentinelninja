@@ -18,7 +18,7 @@ Detects possible discovery activity.
 | **Kind** | Scheduled |
 | **Tactics** | Discovery |
 | **Techniques** | T1580 |
-| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md) |
+| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md), [OracleCloudInfraConnector](../connectors/oraclecloudinfraconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Analytic%20Rules/OCIDiscoveryActivity.yaml) |
 
 ## Tables Used

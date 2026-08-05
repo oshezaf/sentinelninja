@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
-| **Source Vendor** | Rapid7 *(basis: publisher)* |
-| **Source Product** | Insight Platform Vulnerability Management |
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
@@ -91,6 +89,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.3.0       | 01-07-2026                     | Updated Rapid7InsightVM **CCP data connector** definition generally available. |
 | 3.2.0       | 05-03-2026                     | Added new Rapid7InsightVM **CCP data connector**                              |
 | 3.1.1       | 05-02-2026                     | Update Az Func packages related to **InsightVMCloudData Connector**            |
 | 3.1.0       | 03-02-2026                     | Update **Data Connector** to use latest 4.x Azure Functions extension bundles  |

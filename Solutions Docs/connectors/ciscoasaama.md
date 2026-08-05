@@ -12,8 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `CiscoAsaAma` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Cisco *(basis: event)* |
-| **Source Product** | ASA/FTD *(basis: title)* |
 | **Used in Solutions** | [CiscoASA](../solutions/ciscoasa.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_CiscoAsaAma.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Data%20Connectors/template_CiscoAsaAma.JSON) |

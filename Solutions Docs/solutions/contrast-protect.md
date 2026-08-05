@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.contrastsecurity.com/](https://docs.contrastsecurity.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Contrast Security *(basis: event)* |
-| **Source Product** | Protect |
 | **Version** | 3.0.1 |
 | **Author** | Contrast Security - support@contrastsecurity.com |
 | **First Published** | 2021-10-20 |

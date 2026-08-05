@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureServiceBus_CCP` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure Service Bus *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Azure Service Bus](../solutions/azure-service-bus.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureServiceBus_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Service%20Bus/Data%20Connectors/AzureServiceBus_CCP.JSON) |

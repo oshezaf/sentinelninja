@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Illumio *(basis: projected)* |
-| **Source Product** | Insights Graph *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -30,16 +28,16 @@
 | DestIP | string |
 | DestIsWellKnown | bool |
 | DestLabel | string |
-| DestPort | long |
+| DestPort | int |
 | DestRegion | string |
 | DestResId | string |
-| DestThreatLevel | long |
+| DestThreatLevel | int |
 | DestVnetId | string |
-| FlowCount | long |
+| FlowCount | int |
 | IllumioTenantId | string |
 | IllumioUrl | string |
 | Name | string |
-| Port | long |
+| Port | int |
 | Proto | string |
 | ResourceInternalId | string |
 | ResourceTenantId | string |
@@ -50,15 +48,15 @@
 | SrcIP | string |
 | SrcIsWellKnown | bool |
 | SrcLabel | string |
-| SrcPort | long |
+| SrcPort | int |
 | SrcRegion | string |
 | SrcResId | string |
-| SrcThreatLevel | long |
+| SrcThreatLevel | int |
 | SrcVnetId | string |
 | Status | string |
-| TimeGenerated | string |
-| TotalReceivedBytes | long |
-| TotalSentBytes | long |
+| TimeGenerated | datetime |
+| TotalReceivedBytes | int |
+| TotalSentBytes | int |
 | UniqueId | string |
 
 ## Schema References

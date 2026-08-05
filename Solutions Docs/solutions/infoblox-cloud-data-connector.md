@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
 | **Categories** | Networking,Security - Threat Protection,Security - Network,Security - Threat Intelligence |
-| **Source Vendor** | Infoblox *(basis: event)* |
-| **Source Product** | Cloud |
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |

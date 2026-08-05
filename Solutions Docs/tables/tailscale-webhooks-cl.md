@@ -1,0 +1,65 @@
+# Tailscale_Webhooks_CL
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Tailscale_Webhooks_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Created | datetime |
+| CreatorLoginName | string |
+| EndpointId | string |
+| EndpointUrl | string |
+| LastModified | datetime |
+| ProviderType | string |
+| SourceSystem | string |
+| Subscriptions | dynamic |
+| TenantId | string |
+| TimeGenerated | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Tailscale (CCF)](../solutions/tailscale-ccf.md)
+
+## Connectors (2)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tailscale Standard (CCF)](../connectors/tailscaleccf.md) |  |
+| [Tailscale Premium (CCF)](../connectors/tailscalepremiumccf.md) |  |
+
+---
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

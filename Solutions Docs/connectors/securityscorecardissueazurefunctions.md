@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `SecurityScorecardIssueAzureFunctions` |
-| **Publisher / Vendor** | SecurityScorecard |
-| **Source Product** | Issue *(basis: title)* |
+| **Publisher** | SecurityScorecard |
 | **Used in Solutions** | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SecurityScorecardIssue_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardIssue/SecurityScorecardIssue_API_FunctionApp.json) |

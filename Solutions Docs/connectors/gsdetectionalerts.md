@@ -1,6 +1,4 @@
-# ⚠️ Google SecOps Detection Alerts
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Google SecOps Detection Alerts
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleSecOps.svg" alt="" width="75" height="75">
 
@@ -13,9 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `GSDetectionAlerts` |
-| **Publisher / Vendor** | Google |
-| **Source Product** | SecOps Detection *(basis: title)* |
-| **Event Type** | Alerts |
+| **Publisher** | Google |
 | **Used in Solutions** | [GoogleSecOps](../solutions/googlesecops.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GoogleSecOpsDetectionAlerts_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleSecOps/Data%20Connectors/GoogleSecOpsDetectionAlerts/GoogleSecOpsDetectionAlerts_API_FunctionApp.json) |

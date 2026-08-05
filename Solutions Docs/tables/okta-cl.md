@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Okta *(basis: projected)* |
-| **Source Product** | Single Sign-On *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
@@ -160,7 +158,7 @@ This table is ingested by the following connectors:
 | [Okta login attempts using Legacy Auth](../content/okta-single-sign-on-okta-login-attempts-using-legacy-auth-6a9199ec-bc32-4935-9f82-4aa848edb3fc-6f88bf06.md) |  |
 | [Rare MFA Operations (Okta)](../content/okta-single-sign-on-rare-mfa-operations-okta-18667b4a-18e5-4982-ba75-92ace62bc79c-204f5119.md) |  |
 | [Sign-ins from Nord VPN Providers](../content/okta-single-sign-on-sign-ins-from-nord-vpn-providers-708c33ec-22a2-4739-b248-c14919500cdd-3c19da48.md) |  |
-| [User password reset(Okta)](../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-7f425c2c.md) |  |
+| [User password reset (Okta)](../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-9e55e2be.md) |  |
 
 ### Workbooks (1)
 

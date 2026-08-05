@@ -20,7 +20,7 @@
 <p>Parsers are KQL functions that transform and normalize log data for easier querying.</p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <strong>Parsers</strong> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>570 parsers</strong> (35 legacy, 513 solution, 22 discovered). See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>597 parsers</strong> (35 legacy, 541 solution, 21 discovered). See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p><em>Legacy parsers are located in the top-level <code>/Parsers</code> folder. Solution parsers are included within specific solution packages.</em></p>
 <blockquote>
 <p>⚠️ Discovered parsers were found in solution folders but are not listed in the Solution JSON file. They may be legacy items, under development, or excluded from the official solution package.</p>
@@ -44,6 +44,26 @@
   <td style="text-align:left"><a href="aaduserinfo.html">AADUserInfo</a></td>
   <td style="text-align:left">📂 <em>Legacy</em></td>
   <td style="text-align:left">AADUserInfo_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="abnormalsecurityabusemailbox.html">AbnormalSecurityAbuseMailbox</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+  <td style="text-align:left">ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="abnormalsecurityatocases.html">AbnormalSecurityAtoCases</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+  <td style="text-align:left">ABNORMAL_SECURITY_ATO_CASE_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="abnormalsecuritythreatlog.html">AbnormalSecurityThreatLog</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+  <td style="text-align:left">ABNORMAL_SECURITY_THREAT_LOG_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="abnormalsecurityvendorcases.html">AbnormalSecurityVendorCases</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+  <td style="text-align:left">ABNORMAL_SECURITY_VENDOR_CASE_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="adoauditlogs.html">ADOAuditLogs</a></td>
@@ -404,6 +424,11 @@
   <td style="text-align:left"><a href="asimnetworksessionopensystemsfirewall.html">ASimNetworkSessionOpenSystemsFirewall</a></td>
   <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
   <td style="text-align:left">OpenSystemsFirewallLogs_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="asimnetworksessiontailscale.html">ASimNetworkSessionTailscale</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
+  <td style="text-align:left">Tailscale_Network_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimwebsessionopensystemssecurewebgateway.html">ASimWebSessionOpenSystemsSecureWebGateway</a></td>
@@ -1681,7 +1706,7 @@
 <tr>
   <td style="text-align:left"><a href="esetprotectplatform.html">ESETProtectPlatform</a></td>
   <td style="text-align:left">📦 <a href="../solutions/eset-protect-platform.html">ESET Protect Platform</a></td>
-  <td style="text-align:left">IntegrationTable_CL</td>
+  <td style="text-align:left">IntegrationTableV2_CL, IntegrationTable_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="eventincident.html">EventIncident</a></td>
@@ -1793,7 +1818,7 @@
 <tr>
   <td style="text-align:left"><a href="fortinet-fortindr-cloud.html">Fortinet_FortiNDR_Cloud</a></td>
   <td style="text-align:left">📦 <a href="../solutions/fortinet-fortindr-cloud.html">Fortinet FortiNDR Cloud</a></td>
-  <td style="text-align:left">FncEventsDetections_CL, FncEventsObservation_CL, ...</td>
+  <td style="text-align:left">FortinetFortiNdrCloudRaw_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="fortiweb.html">Fortiweb</a></td>
@@ -1817,6 +1842,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="gambitpoliciesissues.html">GambitPoliciesIssues</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/gambitsecurity.html">GambitSecurity</a></td>
+  <td style="text-align:left">GambitPoliciesIssues_CL</td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="gcp-iam.html">GCP_IAM</a></td>
   <td style="text-align:left">📦 <a href="../solutions/googlecloudplatformiam.html">GoogleCloudPlatformIAM</a></td>
@@ -1850,7 +1880,7 @@
 <tr>
   <td style="text-align:left"><a href="githubauditdata.html">GitHubAuditData</a></td>
   <td style="text-align:left">📦 <a href="../solutions/github.html">GitHub</a></td>
-  <td style="text-align:left">GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL</td>
+  <td style="text-align:left">GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL, ...</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="githubcodescanningdata.html">GitHubCodeScanningData</a></td>
@@ -1898,6 +1928,11 @@
   <td style="text-align:left">DetectionAlerts_CL</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="gtirelevancesystemalerts.html">GTIRelevanceSystemAlerts</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+  <td style="text-align:left">RelevanceSystemAlerts_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="guardian.html">Guardian</a></td>
   <td style="text-align:left">📦 <a href="../solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></td>
   <td style="text-align:left">Guardian_CL</td>
@@ -1923,6 +1958,46 @@
   <td style="text-align:left"><a href="hackerviewlog.html">HackerViewLog</a></td>
   <td style="text-align:left">📦 <a href="../solutions/ctm360.html">CTM360</a></td>
   <td style="text-align:left">HackerViewLog_AzureV2_CL, HackerViewLog_Azure_1_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-alerts.html">Halcyon_Alerts</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonAlertUpdatesV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-applicationlifecycle.html">Halcyon_OCSF_ApplicationLifecycle</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-authentication.html">Halcyon_OCSF_Authentication</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-dnsactivity.html">Halcyon_OCSF_DnsActivity</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-fileactivity.html">Halcyon_OCSF_FileActivity</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-kernelactivity.html">Halcyon_OCSF_KernelActivity</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-networkactivity.html">Halcyon_OCSF_NetworkActivity</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="halcyon-ocsf-processactivity.html">Halcyon_OCSF_ProcessActivity</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left">HalcyonEventsV2_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="hyasprotectdnsactivity.html">HYASProtectDNSActivity</a></td>
@@ -2338,9 +2413,19 @@
   <td style="text-align:left">Audit_CL</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="mimecastaudit.html">MimecastAudit</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="mimecastcg.html">MimecastCG</a></td>
   <td style="text-align:left">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
   <td style="text-align:left">Seg_Cg_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="mimecastcg.html">MimecastCG</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="mimecastcloudintegrated.html">MimecastCloudIntegrated</a></td>
@@ -2353,9 +2438,24 @@
   <td style="text-align:left">Seg_Dlp_CL</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="mimecastdlp.html">MimecastDLP</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="mimecastevents.html">MimecastEvents</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="mimecastttpattachment.html">MimecastTTPAttachment</a></td>
   <td style="text-align:left">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
   <td style="text-align:left">Ttp_Attachment_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="mimecastttpattachment.html">MimecastTTPAttachment</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="mimecastttpimpersonation.html">MimecastTTPImpersonation</a></td>
@@ -2363,9 +2463,19 @@
   <td style="text-align:left">Ttp_Impersonation_CL</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="mimecastttpimpersonation.html">MimecastTTPImpersonation</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="mimecastttpurl.html">MimecastTTPUrl</a></td>
   <td style="text-align:left">📦 <a href="../solutions/mimecast.html">Mimecast</a></td>
   <td style="text-align:left">Ttp_Url_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="mimecastttpurl.html">MimecastTTPUrl</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/mimecastevents-ccf.html">MimecastEvents-CCF</a></td>
+  <td style="text-align:left">MimecastEvents_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="mongodbaudit.html">MongoDBAudit</a></td>
@@ -2418,6 +2528,11 @@
   <td style="text-align:left"><a href="netskope.html">Netskope</a> ⚠️</td>
   <td style="text-align:left">📦 <a href="../solutions/netskope.html">Netskope</a></td>
   <td style="text-align:left">Netskope_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="netskopealertevents.html">NetskopeAlertEvents</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/netskopealertevents.html">NetskopeAlertEvents</a></td>
+  <td style="text-align:left">NetskopeAlertEvents_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="netskopealerts.html">NetskopeAlerts</a></td>
@@ -2589,6 +2704,11 @@
   <td style="text-align:left">CommonSecurityLog</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="paloaltocortexxdr-incidents.html">PaloAltoCortexXDR_Incidents</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/palo-alto-cortex-xdr.html">Palo Alto Cortex XDR</a></td>
+  <td style="text-align:left">CortexXDR_Incidents_CL, PaloAltoCortexXDR_Incidents_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
   <td style="text-align:left">📦 <a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
   <td style="text-align:left">PaloAltoPrismaCloudAlertV2_CL, PaloAltoPrismaCloudAlert_CL, ...</td>
@@ -2612,6 +2732,16 @@
   <td style="text-align:left"><a href="postgresqlevent.html">PostgreSQLEvent</a></td>
   <td style="text-align:left">📦 <a href="../solutions/postgresql.html">PostgreSQL</a></td>
   <td style="text-align:left">PostgreSQL_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="prodaftustacompromisedcards.html">PRODAFTUstaCompromisedCards</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/prodaft-usta-payment-card-fraud-intelligence.html">PRODAFT USTA - Payment Card Fraud Intelligence</a></td>
+  <td style="text-align:left">PRODAFTUstaCompromisedCards_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="prodaftustacompromisedcredentials.html">PRODAFTUstaCompromisedCredentials</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/prodaft-usta-account-takeover-prevention.html">PRODAFT USTA - Account Takeover Prevention</a></td>
+  <td style="text-align:left">PRODAFTUstaCompromisedCredentials_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="proofpointpod.html">ProofpointPOD</a></td>
@@ -2872,9 +3002,9 @@
   <td style="text-align:left">TrellixEvents_CL</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="trendmicrocas.html">TrendMicroCAS</a> ⚠️</td>
+  <td style="text-align:left"><a href="trendmicrocas.html">TrendMicroCAS</a></td>
   <td style="text-align:left">📦 <a href="../solutions/trend-micro-cloud-app-security.html">Trend Micro Cloud App Security</a></td>
-  <td style="text-align:left">TrendMicroCAS_CL</td>
+  <td style="text-align:left">TrendMicroCASV2_CL, TrendMicroCAS_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="trendmicrodeepsecurity.html">TrendMicroDeepSecurity</a></td>
@@ -3084,6 +3214,11 @@
   <td style="text-align:left"><a href="vimnetworksessionopensystemsfirewall.html">vimNetworkSessionOpenSystemsFirewall</a></td>
   <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
   <td style="text-align:left">OpenSystemsFirewallLogs_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="vimnetworksessiontailscale.html">vimNetworkSessionTailscale</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
+  <td style="text-align:left">Tailscale_Network_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="vimwebsessionopensystemsproxysecurewebgateway.html">vimWebSessionOpenSystemsProxySecureWebGateway</a></td>

@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider,Identity |
-| **Source Vendor** | Google *(basis: name_pattern)* |
-| **Source Product** | Cloud Platform IAM |
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-30 |

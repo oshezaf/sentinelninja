@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Cybersixgill *(basis: projected)* |
-| **Source Product** | Actionable *(basis: projected)* |
-| **Event Type** | Alerts |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -21,7 +18,6 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (30 columns)
 
@@ -81,25 +77,6 @@ This table is ingested by the following connectors:
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) |  |
 
 ---
-
-## Content Items Using This Table (3)
-
-### Hunting Queries (1)
-
-**In solution [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md):**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a-f87f4c92.md) |  |
-
-### Workbooks (2)
-
-**In solution [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.md) |  |
-| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist-16388c4a.md) |  |
 
 ---
 

@@ -80,7 +80,7 @@ Official Microsoft Learn documentation for field/column information:
 
 📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
-## Solutions (50)
+## Solutions (51)
 
 This table is used by the following solutions:
 
@@ -109,6 +109,7 @@ This table is used by the following solutions:
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
@@ -137,7 +138,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (119)
+## Content Items Using This Table (120)
 
 ### Analytic Rules (42)
 
@@ -242,9 +243,9 @@ This table is used by the following solutions:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-3e490430.md) |  |
+| [TI Map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-64339c70.md) |  |
 | [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-new-ti-map-url-entity-to-securityalert-data-3b6bdb38-93c5-452f-ab3a-97a3d1320d16-46a3b027.md) |  |
-| [TI map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-17792409.md) |  |
-| [TI map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-53e6c566.md) |  |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 
@@ -299,7 +300,7 @@ This table is used by the following solutions:
 | [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md) |  |
 | [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |  |
 
-### Workbooks (45)
+### Workbooks (46)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -415,6 +416,12 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+
+**In solution [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftADTierModel](../content/microsoft-active-directory-tier-model-microsoftadtiermodel-3fad41c8.md) |  |
 
 **In solution [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md):**
 

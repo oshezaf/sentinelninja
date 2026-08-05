@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://nonamesecurity.com/](https://nonamesecurity.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Noname Security *(basis: publisher)* |
 | **Version** | 2.0.0 |
 | **Author** | Noname Security - support@nonamesecurity.com |
 | **First Published** | 2022-12-01 |

@@ -14,9 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Trend Micro *(basis: publisher)* |
-| **Source Product** | Cloud App Security |
-| **Version** | 2.0.0 |
+| **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
 | **Solution Folder** | [Trend Micro Cloud App Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security) |
@@ -26,11 +24,17 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
  
  **Underlying Microsoft Technologies used:** 
  
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ This solution takes a dependency on the following technologies, and some of these dependencies might result in additional ingestion or operational costs:
  
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/azure/sentinel/create-codeless-connector) 
  
- b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
+ b. [Log Ingestion API](https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) 
+ 
+ c. [Data Collection Rules (DCR)](https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview) 
+ 
+ d. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ 
+ e. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
 
 ## Contents
 
@@ -40,19 +44,21 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶
+- [Trend Micro Cloud App Security (via Codeless Connector Framework)](../connectors/trendmicrocasconnector.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md), [Trend Micro Cloud App Security (via Codeless Connector Framework)](../connectors/trendmicrocasconnector.md) | Analytics, Hunting, Workbooks |
 | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
 
 
@@ -60,58 +66,66 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **22 content item(s)** (21 in solution, 1 discovered 🔍):
+This solution includes **22 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Analytic Rules | 10 | 10 | - |
-| Hunting Queries | 10 | 10 | - |
-| Workbooks | 1 | 1 | - |
-| Parsers | 1 | 0 | 1 |
+| Content Type | Count |
+|:-------------|:------|
+| Analytic Rules | 10 |
+| Hunting Queries | 10 |
+| Workbooks | 1 |
+| Parsers | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Trend Micro CAS - DLP violation](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violation-1ddeb8ad-cad9-4db4-b074-f9da003ca3ed-c2ad4a9b.md) | High | Exfiltration | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Infected user](../content/trend-micro-cloud-app-security-trend-micro-cas-infected-user-3649dfb8-a5ca-47dd-8965-cd2f633ca533-c328711b.md) | High | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Multiple infected users](../content/trend-micro-cloud-app-security-trend-micro-cas-multiple-infected-users-65c2a6fe-ff7b-46b0-9278-61265f77f3bc-7781315a.md) | High | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Possible phishing mail](../content/trend-micro-cloud-app-security-trend-micro-cas-possible-phishing-mail-9e7b3811-d743-479c-a296-635410562429-957a05f4.md) | Medium | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Ransomware infection](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-infection-0bec3f9a-dbe9-4b4c-9ff6-498d64bbef90-22bb1ea1.md) | High | Impact | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Ransomware outbreak](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-outbreak-38e043ce-a1fd-497b-8d4f-ce5ca2db90cd-6b0de8bc.md) | High | Impact | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Suspicious filename](../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-filename-52c4640a-1e2b-4155-b69e-e1869c9a57c9-66f09287.md) | Medium | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Threat detected and not blocked](../content/trend-micro-cloud-app-security-trend-micro-cas-threat-detected-and-not-blocked-c8e2ad52-bd5f-4f74-a2f7-6c3ab8ba687a-436c2e90.md) | High | DefenseEvasion | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Unexpected file on file share](../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-on-file-share-de54f817-f338-46bf-989b-4e016ea6b71b-1f79585f.md) | Medium | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Unexpected file via mail](../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-via-mail-201fd2d1-9131-4b29-bace-ce5d19f3e4ee-d71c6070.md) | Medium | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - DLP violation](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violation-1ddeb8ad-cad9-4db4-b074-f9da003ca3ed-c2ad4a9b.md) | High | Exfiltration | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Infected user](../content/trend-micro-cloud-app-security-trend-micro-cas-infected-user-3649dfb8-a5ca-47dd-8965-cd2f633ca533-c328711b.md) | High | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Multiple infected users](../content/trend-micro-cloud-app-security-trend-micro-cas-multiple-infected-users-65c2a6fe-ff7b-46b0-9278-61265f77f3bc-7781315a.md) | High | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Possible phishing mail](../content/trend-micro-cloud-app-security-trend-micro-cas-possible-phishing-mail-9e7b3811-d743-479c-a296-635410562429-957a05f4.md) | Medium | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Ransomware infection](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-infection-0bec3f9a-dbe9-4b4c-9ff6-498d64bbef90-22bb1ea1.md) | High | Impact | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Ransomware outbreak](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-outbreak-38e043ce-a1fd-497b-8d4f-ce5ca2db90cd-6b0de8bc.md) | High | Impact | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Suspicious filename](../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-filename-52c4640a-1e2b-4155-b69e-e1869c9a57c9-66f09287.md) | Medium | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Threat detected and not blocked](../content/trend-micro-cloud-app-security-trend-micro-cas-threat-detected-and-not-blocked-c8e2ad52-bd5f-4f74-a2f7-6c3ab8ba687a-436c2e90.md) | High | DefenseEvasion | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Unexpected file on file share](../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-on-file-share-de54f817-f338-46bf-989b-4e016ea6b71b-1f79585f.md) | Medium | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Unexpected file via mail](../content/trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-via-mail-201fd2d1-9131-4b29-bace-ce5d19f3e4ee-d71c6070.md) | Medium | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Trend Micro CAS - DLP violations](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violations-001be88a-e98f-4e9a-ad30-62b9ad8222a5-4cb75935.md) | Exfiltration | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Files received via email services](../content/trend-micro-cloud-app-security-trend-micro-cas-files-received-via-email-services-5b2dc14b-a55c-4002-8c2a-94f521baa0f4-954b84fb.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Files stored on cloud fileshare services](../content/trend-micro-cloud-app-security-trend-micro-cas-files-stored-on-cloud-fileshare-services-765f1769-cbe2-4c1a-a708-1769c2c48d79-0a1554e2.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Infected files received via email](../content/trend-micro-cloud-app-security-trend-micro-cas-infected-files-received-via-email-8c386a11-7282-41ae-8181-2bfcafe20aad-c92c7774.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Ransomware threats](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-threats-440f5440-e452-4b19-a8a4-5e39b5676657-a6a9f869.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Rare files received via email services](../content/trend-micro-cloud-app-security-trend-micro-cas-rare-files-received-via-email-services-08df251e-56c6-4e06-a41b-2c86344cb383-23c556a9.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Risky users](../content/trend-micro-cloud-app-security-trend-micro-cas-risky-users-496a35f6-bc85-47f9-a48f-9a55d3c9530f-6a42d9e4.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Security risk scan threats](../content/trend-micro-cloud-app-security-trend-micro-cas-security-risk-scan-threats-993ca829-5d6a-4432-b192-e5dcf7bfea0c-f8be4250.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Suspicious files on sharepoint](../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-files-on-sharepoint-dfd91afc-66f0-4661-90d7-82f9b5bf3d8f-d5aef5bb.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
-| [Trend Micro CAS - Virtual Analyzer threats](../content/trend-micro-cloud-app-security-trend-micro-cas-virtual-analyzer-threats-5ce1415f-cdea-4740-a481-73c1394248c2-7b62ce38.md) | InitialAccess | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - DLP violations](../content/trend-micro-cloud-app-security-trend-micro-cas-dlp-violations-001be88a-e98f-4e9a-ad30-62b9ad8222a5-4cb75935.md) | Exfiltration | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Files received via email services](../content/trend-micro-cloud-app-security-trend-micro-cas-files-received-via-email-services-5b2dc14b-a55c-4002-8c2a-94f521baa0f4-954b84fb.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Files stored on cloud fileshare services](../content/trend-micro-cloud-app-security-trend-micro-cas-files-stored-on-cloud-fileshare-services-765f1769-cbe2-4c1a-a708-1769c2c48d79-0a1554e2.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Infected files received via email](../content/trend-micro-cloud-app-security-trend-micro-cas-infected-files-received-via-email-8c386a11-7282-41ae-8181-2bfcafe20aad-c92c7774.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Ransomware threats](../content/trend-micro-cloud-app-security-trend-micro-cas-ransomware-threats-440f5440-e452-4b19-a8a4-5e39b5676657-a6a9f869.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Rare files received via email services](../content/trend-micro-cloud-app-security-trend-micro-cas-rare-files-received-via-email-services-08df251e-56c6-4e06-a41b-2c86344cb383-23c556a9.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Risky users](../content/trend-micro-cloud-app-security-trend-micro-cas-risky-users-496a35f6-bc85-47f9-a48f-9a55d3c9530f-6a42d9e4.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Security risk scan threats](../content/trend-micro-cloud-app-security-trend-micro-cas-security-risk-scan-threats-993ca829-5d6a-4432-b192-e5dcf7bfea0c-f8be4250.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Suspicious files on sharepoint](../content/trend-micro-cloud-app-security-trend-micro-cas-suspicious-files-on-sharepoint-dfd91afc-66f0-4661-90d7-82f9b5bf3d8f-d5aef5bb.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [Trend Micro CAS - Virtual Analyzer threats](../content/trend-micro-cloud-app-security-trend-micro-cas-virtual-analyzer-threats-5ce1415f-cdea-4740-a481-73c1394248c2-7b62ce38.md) | InitialAccess | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroCAS](../content/trend-micro-cloud-app-security-trendmicrocas-43101d68.md) | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
+| [TrendMicroCAS](../content/trend-micro-cloud-app-security-trendmicrocas-43101d68.md) | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md)<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroCAS](../parsers/trendmicrocas.md) ⚠️ | - | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) *(read)* |
+| [TrendMicroCAS](../parsers/trendmicrocas.md) | - | [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) *(read)*<br>[`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) *(read)* |
 
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.1.2 | 23-07-2026 | Updated CCF Data Connector graph queries pattern. |
+| 3.1.1 | 17-07-2026 | Promoted CCF connector (`TrendMicroCASConnector`) to General Availability: set `isPreview` to `false` and removed Preview disclaimer from solution description. |
+| 3.1.0       | 02-07-2026                     | Updated Underlying Microsoft Technologies list in the solution description to include Codeless Connector Framework (CCF), Log Ingestion API, and Data Collection Rules (DCR) for the CCF data connector. |
+| 3.0.0       | 29-05-2026 | Added dual-schema parser support for CLv1 (`TrendMicroCAS_CL`) and CLv2 (`TrendMicroCASV2_CL`) data, introduced Codeless Connector Framework (CCF) **Data Connector** alongside the legacy Azure Function connector. |
+| 2.0.0 | 23-08-2023 | Initial release. |
 
 ---
 

@@ -11,11 +11,10 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `TrendMicroCAS` |
-| **Publisher / Vendor** | Trend Micro |
-| **Source Product** | Cloud App Security *(basis: title)* |
+| **Publisher** | Trend Micro |
 | **Used in Solutions** | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
-| **Connector Definition Files** | [TerndMicroCAS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security/Data%20Connectors/TerndMicroCAS_API_FunctionApp.json) |
+| **Connector Definition Files** | [TrendMicroCAS_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security/Data%20Connectors/TrendMicroCAS_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
@@ -27,6 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ? | ✓ | ? |
 | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

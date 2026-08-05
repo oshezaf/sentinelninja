@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Abnormal Security *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -18,6 +17,8 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (16 columns)
 
@@ -63,6 +64,32 @@ This table is ingested by the following connectors:
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) |  |
 
 ---
+
+## Content Items Using This Table (2)
+
+### Analytic Rules (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Security - Account Takeover case opened](../content/abnormalsecurity-abnormal-security-account-takeover-case-opened-da243bf4-382b-46b9-9b4d-ce6ffe9e7beb-df151faa.md) |  |
+
+### Workbooks (1)
+
+**In solution [AbnormalSecurity](../solutions/abnormalsecurity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AbnormalSecurityOverview](../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AbnormalSecurityAtoCases](../parsers/abnormalsecurityatocases.md) | [AbnormalSecurity](../solutions/abnormalsecurity.md) |  |
 
 ---
 

@@ -34,12 +34,8 @@
   <td style="text-align:left"><code>FortinetFortiNdrCloudDataConnector</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher / Vendor</strong></td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
   <td style="text-align:left">Fortinet</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">FortiNDR Cloud <em>(basis: title)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -55,11 +51,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
@@ -81,22 +73,10 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/fnceventsdetections-cl.html"><code>FncEventsDetections_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:left"><a href="../tables/fortinetfortindrcloudraw-cl.html"><code>FortinetFortiNdrCloudRaw_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../tables/fnceventsobservation-cl.html"><code>FncEventsObservation_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../tables/fnceventssuricata-cl.html"><code>FncEventsSuricata_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -120,39 +100,31 @@
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <blockquote>
-<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the FortiNDR Cloud API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>NOTE:</strong> This connector uses an enterprise application integration model via Azure Functions to securely pull logs from the FortiNDR Cloud API into Microsoft Sentinel. This deployment may incur data ingestion and compute costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 </blockquote>
 <blockquote>
-<p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
+<p><strong>(Optional Step)</strong> Securely store <strong>API authorization key(s) or token(s)</strong> in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
 <blockquote>
 <p><strong>NOTE:</strong> This connector uses a parser based on a Kusto Function to normalize fields. <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Fortinet%20FortiNDR%20Cloud/Parsers/Fortinet_FortiNDR_Cloud.md">Follow these steps</a> to create the Kusto function alias <strong>Fortinet_FortiNDR_Cloud</strong>.</p>
 </blockquote>
-<p><strong>STEP 1 - Configuration steps for the Fortinet FortiNDR Cloud Logs Collection</strong></p>
-<p>The provider should provide or link to detailed steps to configure the 'PROVIDER NAME APPLICATION NAME' API endpoint so that the Azure Function can authenticate to it successfully, get its authorization key or token, and pull the appliance's logs into Microsoft Sentinel.</p>
-<p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
+<p><strong>STEP 1 - Deploy the connector and the associated Azure Function</strong></p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the Fortinet FortiNDR Cloud connector, have the Workspace ID  and Workspace Primary Key (can be copied from the following), as well as the as well as the FortiNDR Cloud API credentials (available in FortiNDR Cloud account management), readily available.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the Fortinet FortiNDR Cloud connector, have the value below, readily available.</p>
 </blockquote>
 <ul>
 <li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
 <p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
 </li>
-<li><strong>Primary Key</strong>: <code>PrimaryKey</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
 </ul>
-<p><strong>Azure Resource Manager (ARM) Template</strong></p>
+<p><strong>STEP 2 - Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the Fortinet FortiNDR Cloud connector.</p>
 <ol>
 <li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
 <p><a href="https://aka.ms/sentinel-FortinetFortiNDR-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
 </li>
-<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>(Make sure using the same location as your Resource Group, and got the location supports Flex Consumption.</p>
-</li>
-<li><p>Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>AwsAccessKeyId</strong>, <strong>AwsSecretAccessKey</strong>, and/or Other required fields.</p>
+<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.</p>
 </li>
 <li><p>Click <strong>Create</strong> to deploy.</p>
 </li>

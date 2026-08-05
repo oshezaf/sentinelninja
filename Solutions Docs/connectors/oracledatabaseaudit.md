@@ -15,9 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OracleDatabaseAudit` |
-| **Publisher / Vendor** | Oracle |
-| **Source Product** | Database *(basis: title)* |
-| **Event Type** | Audit |
+| **Publisher** | Oracle |
 | **Used in Solutions** | [OracleDatabaseAudit](../solutions/oracledatabaseaudit.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_OracleDatabaseAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Data%20Connectors/Connector_OracleDatabaseAudit.json) |

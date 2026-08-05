@@ -10,7 +10,6 @@
 |:----------|:------|
 | **Connector ID** | `SAPCC` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | SAP *(basis: override)* |
 | **Used in Solutions** | [SAP](../solutions/sap.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) |

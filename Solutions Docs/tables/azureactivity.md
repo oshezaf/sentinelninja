@@ -11,9 +11,6 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit, Azure Resources, Security |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Azure *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
@@ -80,7 +77,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AzureActivity Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity)
 
-## Solutions (20)
+## Solutions (21)
 
 This table is used by the following solutions:
 
@@ -91,6 +88,7 @@ This table is used by the following solutions:
 - [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
@@ -115,7 +113,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (54)
+## Content Items Using This Table (71)
 
 ### Analytic Rules (22)
 
@@ -167,8 +165,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-eea41d96.md) |  |
 | [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md) |  |
-| [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md) |  |
 
 **In solution [eDCRule](../solutions/edcrule.md):** `Authorization has "virtualMachines"`<br>`Caller contains "@"`<br>`OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION"`
 
@@ -176,7 +174,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [[AzureSubscription] Suspicious Azure VM Run Command Execution Detected](../content/edcrule-[azuresubscription]-suspicious-azure-vm-run-command-execution-detected-6fa564ac-dfb7-4753-a49b-5fc919866c28-eec2ea83.md) |
 
-### Hunting Queries (17)
+### Hunting Queries (33)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -204,13 +202,34 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) |
 
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Appliance management session followed by RBAC write](../content/hybrid-attack-cloud-&-identity-appliance-management-session-followed-by-rbac-write-80752d7f-8b48-4a80-8eea-0f9f3024f75f-17196699.md) |  |
+| [Cloud Run Command followed by kernel persistence indicators on target servers](../content/hybrid-attack-cloud-&-identity-cloud-run-command-followed-by-kernel-persistence-indicators-on-target-ser-b441f4ca-9de2-4dd4-b0de-7c8f869f20a1-49bbe6d8.md) |  |
+| [Cross-subscription and resource-group enumeration sweep by single identity](../content/hybrid-attack-cloud-&-identity-cross-subscription-and-resource-group-enumeration-sweep-by-single-identit-8ccbe013-d93f-4db2-ad52-e4ad2d0ad7fd-e54f2c94.md) |  |
+| [IAM and subscription enumeration followed by Key Vault operations](../content/hybrid-attack-cloud-&-identity-iam-and-subscription-enumeration-followed-by-key-vault-operations-87ca398d-e3f8-4b2f-b665-57f6600f59fb-6c209476.md) |  |
+| [IAM reconnaissance followed by role assignment write attempt](../content/hybrid-attack-cloud-&-identity-iam-reconnaissance-followed-by-role-assignment-write-attempt-9259db24-159e-411d-a893-a9f2c819bdf4-47e2cd7f.md) |  |
+| [Identity and app enumeration followed by novel non-interactive tuple](../content/hybrid-attack-cloud-&-identity-identity-and-app-enumeration-followed-by-novel-non-interactive-tuple-c59f5f45-42fc-4f30-9f22-08908fc4d1ea-4e94a17e.md) |  |
+| [Key Vault discovery followed by data-store access enumeration](../content/hybrid-attack-cloud-&-identity-key-vault-discovery-followed-by-data-store-access-enumeration-48f40e49-cf3d-4f54-8f91-9077f6494186-79855d5a.md) |  |
+| [Key Vault harvest to SPN sign-in then out-of-scope resource access](../content/hybrid-attack-cloud-&-identity-key-vault-harvest-to-spn-sign-in-then-out-of-scope-resource-access-9e0f2cf7-e3cb-4de2-a3f0-4a01fca52790-5feab5b0.md) |  |
+| [Key Vault secret harvest followed by novel SPN sign-in from non-1P IP](../content/hybrid-attack-cloud-&-identity-key-vault-secret-harvest-followed-by-novel-spn-sign-in-from-non-1p-ip-2b0d36b0-ec89-4bc3-8e7b-c2984c6e8f5d-c75e5795.md) |  |
+| [Key Vault secret read then Storage key-auth pivot](../content/hybrid-attack-cloud-&-identity-key-vault-secret-read-then-storage-key-auth-pivot-1af2ec86-70ef-4d66-b3db-dfcbcb0167bd-571cd836.md) |  |
+| [Key Vault secret read then partial storage exfil](../content/hybrid-attack-cloud-&-identity-key-vault-secret-read-then-partial-storage-exfil-0f9db4ae-4ec1-4baf-b6e1-a6d7af5d36f6-891da7bb.md) |  |
+| [Multi-service network exposure followed by key and data access](../content/hybrid-attack-cloud-&-identity-multi-service-network-exposure-followed-by-key-and-data-access-baebef19-9013-4e90-8511-92c036ca2710-f445ed0c.md) |  |
+| [Novel SPN sign-in followed by Azure RBAC write](../content/hybrid-attack-cloud-&-identity-novel-spn-sign-in-followed-by-azure-rbac-write-4ad6abf5-d8a4-4f1d-a39f-8d8eb1dfc7e2-837d745f.md) |  |
+| [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
+| [Novel sign-in context followed by IAM reconnaissance burst](../content/hybrid-attack-cloud-&-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.md) |  |
+| [Suspicious sign-in followed by cloud network exposure writes](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.md) |  |
+
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OperationName contains "delete"`<br>`OperationName contains "remove"`
 
 | Hunting Query |
 |:-------------|
 | [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |
 
-### Workbooks (14)
+### Workbooks (15)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -242,6 +261,12 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `ActivityStatusValue == "Success"`<br>`Caller contains "@"`<br>`OperationNameValue == "Microsoft.Authorization/roleAssignments/delete"`<br>`OperationNameValue contains "WebApplicationFirewall"`<br>`OperationNameValue contains "azureFirewall"`<br>`OperationNameValue contains "firewallPolicies"`<br>`OperationNameValue contains "networkSecurityGroup"`<br>`OperationNameValue contains "roleAssignments"`<br>`OperationNameValue contains "routeTable"`<br>`OperationNameValue contains "routes/"`<br>`OperationNameValue contains "subnets"`<br>`OperationNameValue contains "virtualNetworkGateway"`
+
+| Workbook |
+|:-------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -439,9 +464,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (35 criteria, 41 total references)
+## Selection Criteria Summary (36 criteria, 42 total references)
 
-References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 41 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -475,12 +500,13 @@ References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other pars
 | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`<br>`OperationNameValue contains "recovery"`<br>`OperationNameValue startswith "Microsoft.KeyVault"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
 | `OperationName contains "PIM"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`<br>`OperationNameValue contains "Insights"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Success"`<br>`Caller contains "@"`<br>`OperationNameValue == "Microsoft.Authorization/roleAssignments/delete"`<br>`OperationNameValue contains "WebApplicationFirewall"`<br>`OperationNameValue contains "azureFirewall"`<br>`OperationNameValue contains "firewallPolicies"`<br>`OperationNameValue contains "networkSecurityGroup"`<br>`OperationNameValue contains "roleAssignments"`<br>`OperationNameValue contains "routeTable"`<br>`OperationNameValue contains "routes/"`<br>`OperationNameValue contains "subnets"`<br>`OperationNameValue contains "virtualNetworkGateway"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | - | 1 | - | - | **1** |
 | `ActivityStatus in "Accepted,Succeeded"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationNameValue contains "cluster"`<br>`OperationNameValue contains "insights"`<br>`OperationNameValue contains "storage"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
 | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **40** | **1** | **0** | **41** |
+| **Total** | **0** | **41** | **1** | **0** | **42** |
 
 ### ActivityStatus
 
@@ -494,7 +520,7 @@ References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Succeeded` | - | 8 | - | - | **8** |
-| `Success` | - | 5 | - | - | **5** |
+| `Success` | - | 6 | - | - | **6** |
 | `startswith Accept` | - | 2 | - | - | **2** |
 | `Accepted` | - | 1 | - | - | **1** |
 | `has_any Succeeded` | - | 1 | - | - | **1** |
@@ -517,7 +543,7 @@ References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains @` | - | 1 | - | - | **1** |
+| `contains @` | - | 2 | - | - | **2** |
 | `has @` | - | 1 | - | - | **1** |
 
 ### CategoryValue
@@ -617,6 +643,16 @@ References by type: 0 connectors, 40 content items, 1 ASIM parsers, 0 other pars
 | `contains recovery` | - | 1 | - | - | **1** |
 | `startswith Microsoft.KeyVault` | - | 1 | - | - | **1** |
 | `contains Insights` | - | 1 | - | - | **1** |
+| `Microsoft.Authorization/roleAssignments/delete` | - | 1 | - | - | **1** |
+| `contains WebApplicationFirewall` | - | 1 | - | - | **1** |
+| `contains azureFirewall` | - | 1 | - | - | **1** |
+| `contains firewallPolicies` | - | 1 | - | - | **1** |
+| `contains networkSecurityGroup` | - | 1 | - | - | **1** |
+| `contains roleAssignments` | - | 1 | - | - | **1** |
+| `contains routeTable` | - | 1 | - | - | **1** |
+| `contains routes/` | - | 1 | - | - | **1** |
+| `contains subnets` | - | 1 | - | - | **1** |
+| `contains virtualNetworkGateway` | - | 1 | - | - | **1** |
 | `contains Microsoft.Network/loadBalancers/` | - | 1 | - | - | **1** |
 | `contains Network` | - | 1 | - | - | **1** |
 | `contains cluster` | - | 1 | - | - | **1** |

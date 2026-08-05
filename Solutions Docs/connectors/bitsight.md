@@ -12,13 +12,12 @@
 |:----------|:------|
 | **Connector ID** | `BitSight` |
 | **Publisher** | BitSight Technologies, Inc. |
-| **Source Vendor** | BitSight *(basis: publisher)* |
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BitSight_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
 
-The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.
+The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data into Microsoft Sentinel using the [Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview).
 
 ## Tables Ingested
 
@@ -54,7 +53,7 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
->**NOTE:** This connector uses Azure Functions to connect to the BitSight API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the [Azure Functions pricing page](https://azure.microsoft.com/pricing/details/functions/) for details.
+>**NOTE:** This connector uses Azure Functions to connect to the BitSight API to pull its logs into Microsoft Sentinel using the Logs Ingestion API (DCR). This might result in additional data ingestion costs. Check the [Azure Functions pricing page](https://azure.microsoft.com/pricing/details/functions/) for details.
 
 >**(Optional Step)** Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. [Follow these instructions](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references) to use Azure Key Vault with an Azure Function App.
 
@@ -116,11 +115,7 @@ This connector ingests data into the following tables:
 
 **STEP 6 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**
 
->**IMPORTANT:** Before deploying the BitSight data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the BitSight API Token.
-- **Workspace ID**: `WorkspaceId`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Primary Key**: `PrimaryKey`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+>**IMPORTANT:** Before deploying the BitSight data connector, have the BitSight API Token and Azure credentials (Client ID, Client Secret, Tenant ID, Object ID) readily available.
 
 **7. Option 1 - Azure Resource Manager (ARM) Template**
 
@@ -181,7 +176,8 @@ Use this method for automated deployment of the BitSight connector.
 	 x. **Schedule_Portfolio** - Please enter a valid Quartz cron-expression. (Example: 0 */30 * * * *). 
 
 	 y. **AppInsightsWorkspaceResourceID** - Use 'Log Analytic Workspace-->Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'. 
-4. Once all application settings have been entered, click **Review + create** to deploy..
+4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 
+5. Click **Review + Create** and then **Create** to deploy.
 
 **8. Option 2 - Manual Deployment of Azure Functions**
 

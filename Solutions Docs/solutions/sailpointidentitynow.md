@@ -15,8 +15,6 @@
 | **Publisher** | SailPoint |
 | **Support Tier** | Partner |
 | **Categories** | Security - Threat Protection,Identity |
-| **Source Vendor** | SailPoint *(basis: publisher)* |
-| **Source Product** | IdentityNow |
 | **Version** | 3.0.1 |
 | **Author** | SailPointIdentityNow |
 | **First Published** | 2021-10-26 |

@@ -1,4 +1,4 @@
-# Netskope Web Transaction Connector (via Blob Storage)
+# Netskope Web Transactions (via Blob Storage)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netskope.svg" alt="" width="75" height="75">
 
@@ -11,17 +11,19 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `NetskopeWebTxConnector` |
-| **Publisher / Vendor** | Netskope |
-| **Source Product** | Web Transaction *(basis: title)* |
+| **Publisher** | Netskope |
 | **Used in Solutions** | [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [NetskopeWebtx_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_connectorDefinition.json) |
 | **DCR Definition Files** | [NetskopeWebtx_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_DCR.json) |
 | **CCF Configuration** | [NetskopeWebtx_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_PollingConfig.json) |
 | **CCF Capabilities** | `StorageAccountBlobContainer`, `ServicePrincipal` |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#netskope-web-transaction-connector-via-blob-storage) |
 
-The Netskope Web Transaction connector ingests web transaction logs from Netskope Log Streaming into Microsoft Sentinel via Azure Blob Storage using the Codeless Connector Framework (CCF).
+The Netskope Web Transactions data connector enables ingestion of web transaction logs from Netskope into Microsoft Sentinel using Netskope Log Streaming (NLS) capability. Web transaction logs provide detailed visibility into all web traffic processed by Netskope, including user activity, application usage, URL categories, policy actions, and network metadata.
+
+
+
+This connector uses Azure Blob Storage and Event Grid to ingest logs that Netskope streams to your storage account.
 
 ## Tables Ingested
 
@@ -37,41 +39,33 @@ This connector ingests data into the following tables:
 
 **Resource Provider Permissions:**
 - **Workspace** (Workspace): Read and Write permissions are required.
-- **Keys** (Workspace): Read permissions to shared keys for the workspace are required. [See the documentation to learn more about workspace keys](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key)
+- **Keys** (Workspace): Read permissions to shared keys for the workspace are required.
 
 **Custom Permissions:**
-- **Subscription permissions**: You need permissions to create the data flow resources: 
-- storage queues (notification queue and dead-letter queue) 
-- event grid topic and subscription (to send 'blob created event' notifications to the notification queue) 
-- role assignments (to grant access for Microsoft Sentinel app to the blob container and the storage queues.)
-- **Storage Account Network Configuration**: Network restrictions (firewall/IP rules) on the Azure Blob Storage account are **not supported** for this connector due to [Azure Storage firewall restrictions and limitations](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-limitations):
-- IP network rules have**no effect**on requests originating from the same Azure region as the storage account.
-- IP network rules**cannot restrict**access to Azure services deployed in the same region, as these services use private Azure IP addresses for communication.
-- Virtual network service endpoint rules do not apply to clients in a paired region.
-
-Ensure the storage account's **Networking** blade is set to **Enabled from all networks**.
-- **Storage Account Role Assignments**: The following Azure RBAC roles must be assigned to the Microsoft Sentinel enterprise application service principal (displayed below) on the **Storage Account** that contains your blob container:
-- **Storage Blob Data Contributor** — required for reading blob data from the container.
-- **Storage Queue Data Contributor** — required for managing notification and dead-letter queue messages.
-
-To assign these roles: navigate to the Storage Account → **Access Control (IAM)** → **Add role assignment**, search for the service principal ID shown below, and assign both roles.
-- **Collecting data from Netskope to your blob container**: Follow the steps in the [Netskope Log Streaming documentation](https://docs.netskope.com/en/log-streaming.html) to configure Netskope to stream Web Transaction logs to your Azure Blob Storage container.
+- **Subscription permissions**: You need permissions to create the data flow resources:
+- Storage queues (notification queue and dead-letter queue)
+- Event Grid topic and subscription (to send 'blob created event' notifications)
+- Role assignments (to grant access for Microsoft Sentinel app to the blob container and storage queues)
+- **Netskope Log Streaming Configuration**: Configure Netskope Log Streaming (NLS) to send Web Transaction logs to your Azure Blob Storage container. Follow the [Netskope NLS documentation](https://docs.netskope.com/en/log-streaming) for setup instructions.
 
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-**1. Connect Netskope WebTx Logs to Microsoft Sentinel**
+**1. Connect Netskope Web Transaction Logs to Microsoft Sentinel**
 
-To enable the Netskope WebTx Logs for Microsoft Sentinel, provide the required information below and click on Connect.
->
+To enable the Netskope Web Transactions Logs for Microsoft Sentinel, provide the required information below and click on Connect.
+
+**Prerequisites:**
+1. Configure Netskope NLS to send Web Transaction logs to an Azure Blob Storage container
+2. Ensure you have the required permissions on the storage account
 > 📋 **Additional Configuration Step**: This connector includes a configuration step of type `ServicePrincipalIDTextBox_test`. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.
-- **The blob container URL you want to collect data from**
-- **The blobs folder name in the container. Optional.**
-- **The blob container's storage account location**
-- **The blob container's storage account resource group name**
-- **The blob container's storage account subscription id**
-- **The event grid topic name of the blob container's storage account if exist. else keep empty.**
+- **Blob Container URL**
+- **Blob Folder Name (Optional)**: Leave empty if logs are at container root
+- **Storage Account Location**: e.g., eastus
+- **Storage Account Resource Group Name**
+- **Storage Account Subscription ID**
+- **Event Grid Topic Name (if exists)**: Leave empty to create new topic
 - Click 'Connect' to establish connection
 
 ---

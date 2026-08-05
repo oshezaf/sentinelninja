@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cribl.io/support/](https://www.cribl.io/support/) |
 | **Categories** | Security - Others |
-| **Source Vendor** | Cribl *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Cribl - tap@cribl.io |
 | **First Published** | 2024-08-01 |

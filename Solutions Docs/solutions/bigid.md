@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.bigid.com](https://support.bigid.com) |
 | **Categories** | Compliance,Security - Information Protection,Storage |
-| **Source Vendor** | BigID *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | BigID - mhebrard@bigid.com |
 | **First Published** | 2025-10-07 |
@@ -46,6 +45,7 @@ This solution uses **2 table(s)**:
 **Version** | **Date Modified (DD-MM-YYYY)**| **ChangeHistory**                                                                         |
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
 | 3.0.0      | 13-01-2026    | First version of a BigID DSPM CCF Connector. <br/> BigID DSPM CCF Connector now using JWT user token authentication <br/> BigID DSPM Asset expansion and mapping|
+| 3.0.1      | 28-06-2026    | Catalog query adjusted to fix an issue where CCF doesn't poll any catalog object in specific environments |
 
 ---
 

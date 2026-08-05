@@ -1,8 +1,10 @@
-# Holm Security for Microsoft Sentinel
+# ⚠️ Holm Security for Microsoft Sentinel
 
 *Solution: HolmSecurity*
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="HolmSecurity Logo" width="75" height="75">
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/HolmSecurity.svg" alt="HolmSecurity Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,31 +18,29 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.holmsecurity.com/](https://support.holmsecurity.com/) |
 | **Categories** | Security - Vulnerability Management |
-| **Source Vendor** | Holm Security *(basis: publisher)* |
-| **Source Product** | Asset |
-| **Version** | 3.0.1 |
-| **Author** | Holm Security |
+| **Version** | 3.0.2 |
+| **Author** | Holm Security - support@holmsecurity.com |
 | **First Published** | 2022-07-18 |
+| **Last Updated** | 2026-05-19 |
 | **Solution Folder** | [HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/holmsecurityswedenab1639511288603.holmsecurity_sc_sentinel) · Popularity: ⚪ Very Low (0%) |
 
-The [Holm Security](https://www.holmsecurity.com/) solution provides the capability to poll data from Holm Security Center into Microsoft Sentinel.
-  
-  **Underlying Microsoft Technologies used:** 
+The [Holm Security](https://www.holmsecurity.com/) solution for Microsoft Sentinel provides the capability to ingest network and web asset data from the [Holm Security Vulnerability Management Platform (VMP)](https://www.holmsecurity.com/) into Microsoft Sentinel through the [REST API](https://se-api.holmsecurity.com/docs/v2/).
 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+**Underlying Microsoft Technologies used:**
 
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
- b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-
+a. [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶
+- [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) ⚠️ 🔶
+- [Holm Security Data Connector](../connectors/holmsecurityccf.md) 🔶
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -51,19 +51,20 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`net_assets_CL`](../tables/net-assets-cl.md) 🔶 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
-| [`web_assets_CL`](../tables/web-assets-cl.md) 🔶 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
+| [`net_assets_CL`](../tables/net-assets-cl.md) 🔶 | [Holm Security Data Connector](../connectors/holmsecurityccf.md), [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | - |
+| [`web_assets_CL`](../tables/web-assets-cl.md) 🔶 | [Holm Security Data Connector](../connectors/holmsecurityccf.md), [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
-|-------------|--------------------------------|---------------------------------------------|
-| 3.0.1       | 05-10-2023                     | Minor fixes |
-| 3.0.0       | 28-09-2023                     | Repackaged with V3 |
-| 2.0.0       | 17-02-2022                     | Initial Solution Release |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|-------------|--------------------------------|--------------------|
+| 3.0.2       | 30-03-2026                     | Initial release of the **Data Connector** for Holm Security using CCF; ingests network and web assets from the Holm Security VMP API, supports pagination, daily polling, and configurable regional API base URLs. |
+| 3.0.1       | 05-10-2023                     | Minor fixes. |
+| 3.0.0       | 28-09-2023                     | Repackaged with V3. |
+| 2.0.0       | 17-02-2022                     | Initial Solution Release. |
 
 ---
 

@@ -19,7 +19,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>This playbook will trigger on emails with attachmets and send them to Recorded Future Sandbox. The result will be written as a reply and a Sentinel Incident will be created if the file attachment has a sandbox risk score grater then the configured threshold value.</p>
+<p>This playbook will trigger on emails with attachments and send them to Recorded Future Sandbox. The result will be written to a custom log (RecordedFutureSandboxResults_CL) and an email notification will be sent if the score is above threshold. To create Microsoft Defender incidents, use a Analytics Rule that queries RecordedFutureSandboxResults_CL. Direct incident creation via Logic Apps is no longer supported in the unified Microsoft Defender portal.</p>
 <table>
 <thead>
 <tr>
@@ -42,6 +42,26 @@
 </tr>
 </tbody>
 </table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfuturesandboxresults-cl.html"><code>RecordedFutureSandboxResults_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
 <h2 id="logic-app-connectors">Logic App Connectors</h2>
 <p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
 <table>
@@ -55,10 +75,10 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
   <td style="text-align:left">Managed</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
@@ -76,7 +96,7 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
 <table>
 <thead>
 <tr>
@@ -88,15 +108,9 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">Send_sandbox_results_to_log_analytics</td>
   <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Create_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents/subscriptions/@{encodeURIComponent('5129b3ff-c0c6-4e86-bd1c-70e5fcd579cf')}/resourceGroups/@{encodeURIComponent('RF')}/workspaces/@{encodeURIComponent('RF-log-analyitics')}</code></td>
+  <td style="text-align:left"><code>/api/logs</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>

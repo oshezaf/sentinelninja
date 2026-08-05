@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.egress.com/s/](https://support.egress.com/s/) |
 | **Categories** | Application |
-| **Source Vendor** | Egress *(basis: publisher)* |
-| **Source Product** | Defend |
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2023-07-27 |

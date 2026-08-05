@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**879 playbooks** across all Microsoft Sentinel solutions.
+**898 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -36,6 +36,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
+| [Abnormal Security - Add Incident Comment](abnormalsecurity-abnormal-security-add-incident-comment-a5b5c9ac.md) | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [AbuseIPDB Blacklist Ip To Threat Intelligence](abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence-f3279435.md) | 📦 [AbuseIPDB](../solutions/abuseipdb.md) |
 | [AbuseIPDB Enrich Incident By IP Info](abuseipdb-abuseipdb-enrich-incident-by-ip-info-ec814639.md) | 📦 [AbuseIPDB](../solutions/abuseipdb.md) |
 | [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-1d81545b.md) | 📦 [AbuseIPDB](../solutions/abuseipdb.md) |
@@ -200,12 +201,13 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Censys Rescan](censys-censys-rescan-51275b90.md) | 📦 [Censys](../solutions/censys.md) |
 | [Change Incident Severity](standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone Content |
 | [Change-Incident-Severity](standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone Content |
-| [Check Point EM - Importer (Alerts → Sentinel Incidents)](check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | 📦 [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) |
 | [Check Point Exposure Management - Credential Leak Validation and Response](check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
-| [Check Point Exposure Management - Exporter (Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Fetch Attachments On-Demand](check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - IOC Enrichment and Triage](check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
-| [Check Point Exposure Management - Manual Status Update (Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Phishing Takedown](check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Vulnerability Exploitation Monitoring](check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [CheckPhish - Get URL reputation](checkphish-by-bolster-checkphish-get-url-reputation-529bb2b7.md) | 📦 [CheckPhish by Bolster](../solutions/checkphish-by-bolster.md) |
@@ -627,9 +629,12 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Needs-Review-Incident-Email-Notification](armorblox-needs-review-incident-email-notification-0bf41abc.md) | 📦 [Armorblox](../solutions/armorblox.md) |
 | [NetApp Ransomware Resilience Async Poll Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-async-poll-playbook-a4a68793.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp Ransomware Resilience Authentication Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-authentication-playbook-89467ad1.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Block User Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-block-user-playbook-d874068b.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp Ransomware Resilience Enrich IP Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-ip-playbook-0190ca9d.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp Ransomware Resilience Enrich StorageVM Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-storagevm-playbook-141af0cf.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Unblock User Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-unblock-user-playbook-00b8d77d.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp Ransomware Resilience Volume Offline Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-volume-offline-playbook-12183796.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
+| [NetApp Ransomware Resilience Volume Online Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-volume-online-playbook-92f6c250.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp Ransomware Resilience Volume Snapshot Playbook](netapp-ransomware-resilience-netapp-ransomware-resilience-volume-snapshot-playbook-bda48157.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetApp RRS Manual IP to Volume Offline](netapp-ransomware-resilience-netapp-rrs-manual-ip-to-volume-offline-5b223956.md) | 📦 [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | [NetskopeDataConnectorsTriggerSync](netskopev2-netskopedataconnectorstriggersync-51d2eb21.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
@@ -682,6 +687,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Post-Message-Slack](sentinelsoaressentials-post-message-slack-8c72ad08.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post-Message-Teams](sentinelsoaressentials-post-message-teams-e5dff2d7.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post-Tags-And-Comments-To-Your-IntSights-Account](standalone-content-post-tags-and-comments-to-your-intsights-account-771a2367.md) | 📄 Standalone Content |
+| [PRODAFTUstaATP-Backfill](prodaft-usta-account-takeover-prevention-prodaftustaatp-backfill-6bdc69a2.md) | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
+| [PRODAFTUstaPCFI-Backfill](prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfi-backfill-5ae17346.md) | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [Prompt Okta user](okta-single-sign-on-prompt-okta-user-beec822e.md) | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [Prompt User - Alert](microsoft-entra-id-prompt-user-alert-4762e6ab.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Prompt User - Incident](microsoft-entra-id-prompt-user-incident-2db81db3.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -701,6 +708,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [QualysVM-GetAssets-ByCVEID](qualysvm-qualysvm-getassets-bycveid-c760c473.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
 | [QualysVM-GetAssets-ByOpenPort](qualysvm-qualysvm-getassets-byopenport-f3f9bb94.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
 | [QualysVM-LaunchVMScan-GenerateReport](qualysvm-qualysvm-launchvmscan-generatereport-a0439575.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
+| [Quarantine-Email](checkpoint-harmony-email-and-collaboration-quarantine-email-83dd4f94.md) | 📦 [CheckPoint Harmony Email and Collaboration](../solutions/checkpoint-harmony-email-and-collaboration.md) |
 | [Query Azure Monitor with managed identity](standalone-content-query-azure-monitor-with-managed-identity-eb6d2770.md) | 📄 Standalone Content |
 | [Query Azure Resource Graph and enrich sentinel incident](standalone-content-query-azure-resource-graph-and-enrich-sentinel-incident-9599ecfc.md) | 📄 Standalone Content |
 | [Query Azure Resource Graph with HTTP input and output](standalone-content-query-azure-resource-graph-with-http-input-and-output-bd0dfcaa.md) | 📄 Standalone Content |
@@ -946,6 +954,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 |:-----|:-------|
 | [Vaikora AI Agent Signals to CrowdStrike](vaikora-crowdstrike-threatintelligence-vaikora-ai-agent-signals-to-crowdstrike-1c0c6d82.md) | 📦 [Vaikora-CrowdStrike-ThreatIntelligence](../solutions/vaikora-crowdstrike-threatintelligence.md) |
 | [Vaikora AI Agent Signals to SentinelOne](vaikora-sentinelone-threatintelligence-vaikora-ai-agent-signals-to-sentinelone-f649433d.md) | 📦 [Vaikora-SentinelOne-ThreatIntelligence](../solutions/vaikora-sentinelone-threatintelligence.md) |
+| [Vaikora for O365 - Quarantine Incident Responder](vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.md) | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [Vaikora to Microsoft Defender for Cloud](vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vectra Add Note To Entity](vectra-xdr-vectra-add-note-to-entity-869bea53.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity](vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
@@ -994,6 +1003,16 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Watchlist - close incidents with safe IPs](watchlists-utilities-watchlist-close-incidents-with-safe-ips-c258f9d0.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Watchlist-SendSQLData-Watchlist](standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | 📄 Standalone Content |
 | [Watchlists - Inform Subscription Owner](watchlists-utilities-watchlists-inform-subscription-owner-4de3a082.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
+| [Whisper Security - Batch Indicator Enrichment](whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Check ASN Reputation](whisper-whisper-security-check-asn-reputation-f2a79814.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Discover Co-Hosted Domains](whisper-whisper-security-discover-co-hosted-domains-df0d4f7c.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Explain ASN](whisper-whisper-security-explain-asn-71637933.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Explain Domain](whisper-whisper-security-explain-domain-b479e0f2.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Explain IP Address](whisper-whisper-security-explain-ip-address-1e68b177.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Explain Network](whisper-whisper-security-explain-network-c99337ce.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Get BGP History](whisper-whisper-security-get-bgp-history-150c0325.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Get Infrastructure Chain](whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [Whisper Security - Get WHOIS History](whisper-whisper-security-get-whois-history-ccdf0e6e.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [workflow](sap-workflow-3298b428.md) ⚠️ | 📦 [SAP](../solutions/sap.md) |
 | [workflow](sap-workflow-20a8ae88.md) ⚠️ | 📦 [SAP](../solutions/sap.md) |
 

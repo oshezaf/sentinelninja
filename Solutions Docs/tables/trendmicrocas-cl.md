@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Trend Micro *(basis: projected)* |
-| **Source Product** | Cloud App Security *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
@@ -131,9 +129,7 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [TrendMicroCAS](../parsers/trendmicrocas.md) | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [TrendMicroCAS](../parsers/trendmicrocas.md) | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |  |
 
 ---
 

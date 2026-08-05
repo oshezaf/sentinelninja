@@ -18,8 +18,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Mimecast *(basis: publisher)* |
-| **Source Product** | Intelligence for Microsoft |
 | **Version** | 3.0.2 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2023-08-23 |

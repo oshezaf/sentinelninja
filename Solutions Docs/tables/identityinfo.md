@@ -93,7 +93,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [IdentityInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
 
-## Solutions (18)
+## Solutions (19)
 
 This table is used by the following solutions:
 
@@ -103,6 +103,7 @@ This table is used by the following solutions:
 - [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
@@ -118,7 +119,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (35)
+## Content Items Using This Table (52)
 
 ### Analytic Rules (13)
 
@@ -170,7 +171,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [[Entra ID] Authentication Method Changed for Privileged Account](../content/edcrule-[entra-id]-authentication-method-changed-for-privileged-account-9f7197b6-eeb2-46f3-83b1-a2c4dfca46a0-e18c8380.md) |  |
 
-### Hunting Queries (14)
+### Hunting Queries (30)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -191,6 +192,16 @@ This table is used by the following solutions:
 | [Sign-ins From VPS Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.md) |  |
 | [Sign-ins from Nord VPN Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.md) |  |
 | [Suspicious Sign-ins to Privileged Account](../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [AAD Connect host remote admin followed by Entra privilege operation](../content/hybrid-attack-cloud-&-identity-aad-connect-host-remote-admin-followed-by-entra-privilege-operation-c9b4347a-e5cf-4ca9-a58d-a9822c82467f-22b6048d.md) |  |
+| [Entra hybrid user sign-in followed by on-prem lateral movement](../content/hybrid-attack-cloud-&-identity-entra-hybrid-user-sign-in-followed-by-on-prem-lateral-movement-638446a2-8342-43dd-ae70-3308a3319f6f-1d8f481c.md) |  |
+| [Kerberoast burst followed by cloud sign-in](../content/hybrid-attack-cloud-&-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.md) |  |
+| [RDP to hybrid joined device followed by Entra access](../content/hybrid-attack-cloud-&-identity-rdp-to-hybrid-joined-device-followed-by-entra-access-9f776b5c-d9a6-4d95-8794-5cfec9f9d22d-24505083.md) |  |
+| [WMI or remote admin execution on hybrid device followed by cloud sign-in](../content/hybrid-attack-cloud-&-identity-wmi-or-remote-admin-execution-on-hybrid-device-followed-by-cloud-sign-in-638d7a85-0c62-4f9d-9a90-937a7c565e1b-0d54206f.md) |  |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
@@ -214,9 +225,20 @@ This table is used by the following solutions:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [AI Agents - Hard-coded credentials in Tools or Configuration](../content/github-only-ai-agents-hard-coded-credentials-in-tools-or-configuration-fdc8a7ec-586d-4021-a78a-d27544986178-72f83c28.md) |  |
+| [AI Agents - Instructions changed on previously published agent](../content/github-only-ai-agents-instructions-changed-on-previously-published-agent-662eae7f-494f-41a8-bfef-23dd80361795-0e3ddc5d.md) |  |
+| [AI Agents - MCP Tool Configured](../content/github-only-ai-agents-mcp-tool-configured-a4e48491-6ed6-4064-bac2-385ef0e41afe-23c69432.md) |  |
+| [AI Agents - Missing Tools in Instructions](../content/github-only-ai-agents-missing-tools-in-instructions-4bfbe654-d961-4712-b2a3-f1fd7eaa9da3-521dd75d.md) |  |
+| [AI Agents - Newly observed MCP server on existing agent](../content/github-only-ai-agents-newly-observed-mcp-server-on-existing-agent-d6ab015a-0a76-47f4-959f-54f49edff3f3-e81d92fe.md) |  |
+| [AI Agents - Organization-wide Shared](../content/github-only-ai-agents-organization-wide-shared-8a53cf8e-04b1-4de6-95f2-916cc7c2b805-ad09cc30.md) |  |
+| [AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-47ea3b0e-bedd-4fde-bda9-86aa76684a9b-ab0c6f59.md) |  |
+| [AI Agents - Owner added to MCP-enabled agent](../content/github-only-ai-agents-owner-added-to-mcp-enabled-agent-c35b5a60-71ee-448c-935d-f60f4a4c7f2b-e01a6f5e.md) |  |
+| [AI Agents - Published Agents with Short Instructions](../content/github-only-ai-agents-published-agents-with-short-instructions-2f1f88de-d79f-44bf-96d0-52fd9cbf49c4-ffe6a11f.md) |  |
+| [AI Agents - Published Agents without Instructions](../content/github-only-ai-agents-published-agents-without-instructions-d51077dc-2a79-45e2-a036-503d74c85111-be5d96d1.md) |  |
+| [AI Agents - Sharing expanded to organization-wide](../content/github-only-ai-agents-sharing-expanded-to-organization-wide-dbdba9cc-d7a0-434d-9c3d-82d2203a79fd-db1de9a8.md) |  |
 | [User not covered under display name impersonation](../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.md) |  |
 
-### Workbooks (8)
+### Workbooks (9)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -235,6 +257,12 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `AssignedRoles contains "Admin"`<br>`AssignedRoles contains "admin"`<br>`AssignedRoles contains "contributor"`<br>`AssignedRoles contains "owner"`
 

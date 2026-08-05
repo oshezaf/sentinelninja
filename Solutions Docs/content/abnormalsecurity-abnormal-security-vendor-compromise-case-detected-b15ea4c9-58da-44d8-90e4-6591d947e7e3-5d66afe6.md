@@ -1,0 +1,37 @@
+# Abnormal Security - Vendor compromise case detected
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Creates an incident when Abnormal Security opens a vendor case indicating a compromised or impersonated vendor domain (vendor email compromise). Surfaces the vendor domain and Abnormal insights so analysts can review related correspondence.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| **ID** | `b15ea4c9-58da-44d8-90e4-6591d947e7e3` |
+| **Severity** | Medium |
+| **Status** | Available |
+| **Kind** | Scheduled |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1566 |
+| **Required Connectors** | [AbnormalSecurityPush](../connectors/abnormalsecuritypush.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity/Analytic%20Rules/AbnormalSecurity_VendorCompromise.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) 🔶 | ? | ✓ | ? |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to AbnormalSecurity](../solutions/abnormalsecurity.md)
+

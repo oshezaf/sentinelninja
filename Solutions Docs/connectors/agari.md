@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Agari` |
-| **Publisher / Vendor** | Agari |
-| **Source Product** | Phishing Defense and Brand Protection *(basis: title)* |
+| **Publisher** | Agari |
 | **Used in Solutions** | [Agari](../solutions/agari.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Agari_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_API_FunctionApp.json) |

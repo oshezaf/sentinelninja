@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `GravityZoneDataConnector` |
-| **Publisher / Vendor** | Bitdefender |
+| **Publisher** | Bitdefender |
 | **Used in Solutions** | [GravityZone](../solutions/gravityzone.md) |
 | **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
 | **Connector Definition Files** | [GravityZone_API.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GravityZone/Data%20Connectors/GravityZone_API.json) |

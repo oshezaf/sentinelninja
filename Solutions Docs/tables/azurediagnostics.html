@@ -35,14 +35,6 @@
   <td style="text-align:left">Various</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Microsoft <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Azure Batch Account, Azure Cognitive Search, Azure DDoS Protection, Azure Data Lake Storage Gen1, Azure Event Hub, Azure Firewall, Azure Key Vault, Azure Kubernetes Service, Azure Logic Apps, Azure SQL Databases, Azure Service Bus, Azure Stream Analytics, Azure Web Application Firewall, Network Security Groups <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Custom Log V1</strong></td>
   <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
@@ -266,7 +258,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics">AzureDiagnostics Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (34)</h2>
+<h2 id="solutions">Solutions (36)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -291,6 +283,7 @@
 <li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
@@ -301,6 +294,7 @@
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/threatanalysis&amp;response.html">ThreatAnalysis&amp;Response</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
+<li><a href="../solutions/whisper.html">Whisper</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
@@ -373,7 +367,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (78)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (83)</h2>
 <h3 id="analytic-rules">Analytic Rules (36)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
@@ -570,11 +564,11 @@
   <td style="text-align:left"><code>Category == &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.html">TI map IP entity to Azure Key Vault logs</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-07189841.html">TI Map IP entity to Azure Key Vault logs</a></td>
   <td style="text-align:left"><code>ResourceType == &quot;VAULTS&quot;</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.html">TI map IP entity to AzureFirewall</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-70beb1df.html">TI Map IP entity to AzureFirewall</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -594,7 +588,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (19)</h3>
+<h3 id="hunting-queries">Hunting Queries (22)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in &quot;ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog&quot;</code></p>
 <table>
 <thead>
@@ -714,6 +708,29 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-daemonset-or-cronjob-by-non-automation-identity-2d38986b-3068-4f43-9841-b4f82268c14f-1ffde728.html">Kubernetes daemonset or cronjob by non-automation identity</a></td>
+  <td style="text-align:left"><code>Category has &quot;kube-audit&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-first-seen-control-plane-writer-b03e4fca-d3ba-4b87-ae4f-99111fe43e3a-c4d20961.html">Kubernetes first-seen control-plane writer</a></td>
+  <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kubernetes-secret-enumeration-followed-by-pod-exec-7f48f9be-5912-48df-9ba5-d380ec1484f2-9b8c9f98.html">Kubernetes secret enumeration followed by pod exec</a></td>
+  <td style="text-align:left"><code>Category has &quot;kube-audit&quot;</code></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a>:</strong> <code>Category == &quot;AzureFirewallNetworkRule&quot;</code></p>
 <table>
 <thead>
@@ -740,7 +757,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (23)</h3>
+<h3 id="workbooks">Workbooks (25)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Category in &quot;ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog&quot;</code></p>
 <table>
 <thead>
@@ -924,6 +941,19 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>Category == &quot;kube-audit&quot;</code><br><code>Category has &quot;kube-audit&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-hybridattack-cloud&amp;identity-847f4a4f.html">HybridAttack-Cloud&amp;Identity</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>Category in &quot;AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit&quot;</code><br><code>Category contains &quot;SQL&quot;</code><br><code>Resource == &quot;SOC-NS-AG-WAFV2&quot;</code><br><code>ResourceProvider in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT&quot;</code><br><code>ResourceType in &quot;APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES&quot;</code><br><code>msg_s !has &quot;. Url&quot;</code><br><code>msg_s !has &quot;No rule matched&quot;</code><br><code>msg_s !has &quot;Reason:&quot;</code><br><code>msg_s !has &quot;Rule Collection&quot;</code><br><code>msg_s !has &quot;TLS extension was missing&quot;</code><br><code>msg_s !has &quot;Web Category:&quot;</code><br><code>msg_s has &quot;. No rule matched&quot;</code><br><code>msg_s has &quot;. Url&quot;</code><br><code>msg_s has &quot;Reason:&quot;</code><br><code>msg_s has &quot;Rule Collection Group&quot;</code><br><code>msg_s has &quot;Web Category:&quot;</code></p>
 <table>
 <thead>
@@ -1006,6 +1036,19 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/whisper.html">Whisper</a>:</strong> <code>ResourceProvider == &quot;MICROSOFT.LOGIC&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/whisper-incidentenrichmentaudit-aefa8bb1.html">IncidentEnrichmentAudit</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>Category in &quot;ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit&quot;</code><br><code>Category contains &quot;SQL&quot;</code><br><code>Resource == &quot;SOC-NS-AG-WAFV2&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code><br><code>ResourceType in &quot;APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES&quot;</code><br><code>msg_s !has &quot;. Url&quot;</code><br><code>msg_s !has &quot;No rule matched&quot;</code><br><code>msg_s !has &quot;Reason:&quot;</code><br><code>msg_s !has &quot;Rule Collection&quot;</code><br><code>msg_s !has &quot;TLS extension was missing&quot;</code><br><code>msg_s !has &quot;Url&quot;</code><br><code>msg_s !has &quot;Web Category:&quot;</code><br><code>msg_s has &quot;. No rule matched&quot;</code><br><code>msg_s has &quot;. Url&quot;</code><br><code>msg_s has &quot;Reason:&quot;</code><br><code>msg_s has &quot;Rule Collection Group&quot;</code><br><code>msg_s has &quot;Url&quot;</code><br><code>msg_s has &quot;Web Category:&quot;</code></p>
 <table>
 <thead>
@@ -1042,8 +1085,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (41 criteria, 76 total references)</h2>
-<p>References by type: 14 connectors, 61 content items, 0 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (43 criteria, 81 total references)</h2>
+<p>References by type: 14 connectors, 66 content items, 0 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1081,6 +1124,14 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.LOGIC&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Category in &quot;ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
@@ -1097,14 +1148,6 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.LOGIC&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Category == &quot;DDoSMitigationFlowLogs&quot;</code><br><code>ResourceType == &quot;PUBLICIPADDRESSES&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1114,6 +1157,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Category == &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category has &quot;kube-audit&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1145,39 +1204,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.STREAMANALYTICS&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.BATCH&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category in &quot;AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement&quot;</code><br><code>Category contains &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code><br><code>ResourceType == &quot;SERVERS/DATABASES&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceType == &quot;AZUREFIREWALLS&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SEARCH&quot;</code></td>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SERVICEBUS&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1193,7 +1220,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SERVICEBUS&quot;</code></td>
+  <td style="text-align:left"><code>Category in &quot;cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1201,31 +1228,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.DATALAKESTORE&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category == &quot;DDoSMitigationReports&quot;</code><br><code>ResourceType == &quot;PUBLICIPADDRESSES&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceType in &quot;APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS&quot;</code><br><code>action_s == &quot;Blocked&quot;</code></td>
+  <td style="text-align:left"><code>ResourceType == &quot;AZUREFIREWALLS&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1241,7 +1244,63 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Category in &quot;cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler&quot;</code></td>
+  <td style="text-align:left"><code>Category in &quot;AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement&quot;</code><br><code>Category contains &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code><br><code>ResourceType == &quot;SERVERS/DATABASES&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category == &quot;DDoSMitigationReports&quot;</code><br><code>ResourceType == &quot;PUBLICIPADDRESSES&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.DATALAKESTORE&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SEARCH&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceType in &quot;APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS&quot;</code><br><code>action_s == &quot;Blocked&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.BATCH&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.STREAMANALYTICS&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1266,14 +1325,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code><br><code>Resource == &quot;ClusterRoleBinding&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1361,6 +1412,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Category == &quot;kube-audit&quot;</code><br><code>Category has &quot;kube-audit&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Category in &quot;AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit&quot;</code><br><code>Category contains &quot;SQL&quot;</code><br><code>Resource == &quot;SOC-NS-AG-WAFV2&quot;</code><br><code>ResourceProvider in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT&quot;</code><br><code>ResourceType in &quot;APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES&quot;</code><br><code>msg_s !has &quot;. Url&quot;</code><br><code>msg_s !has &quot;No rule matched&quot;</code><br><code>msg_s !has &quot;Reason:&quot;</code><br><code>msg_s !has &quot;Rule Collection&quot;</code><br><code>msg_s !has &quot;TLS extension was missing&quot;</code><br><code>msg_s !has &quot;Web Category:&quot;</code><br><code>msg_s has &quot;. No rule matched&quot;</code><br><code>msg_s has &quot;. Url&quot;</code><br><code>msg_s has &quot;Reason:&quot;</code><br><code>msg_s has &quot;Rule Collection Group&quot;</code><br><code>msg_s has &quot;Web Category:&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1387,10 +1446,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>14</strong></td>
-  <td style="text-align:center"><strong>61</strong></td>
+  <td style="text-align:center"><strong>66</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>76</strong></td>
+  <td style="text-align:center"><strong>81</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1418,10 +1477,10 @@
 <tr>
   <td style="text-align:left"><code>kube-audit</code></td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">9</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>10</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>AzureFirewallNetworkRule</code></td>
@@ -1512,6 +1571,14 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has kube-audit</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>NetworkSecurityGroupRuleCounter</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
@@ -1534,6 +1601,54 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>cluster-autoscaler</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>guard</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>kube-apiserver</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>kube-audit-admin</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>kube-controller-manager</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>kube-scheduler</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>AutomaticTuning</code></td>
@@ -1633,54 +1748,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>contains SQLSecurityAuditEvents</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>cluster-autoscaler</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>guard</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>kube-apiserver</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>kube-audit-admin</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>kube-controller-manager</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>kube-scheduler</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1917,6 +1984,14 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>MICROSOFT.LOGIC</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>MICROSOFT.SQL</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">2</td>
@@ -1925,31 +2000,7 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.LOGIC</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>MICROSOFT.STREAMANALYTICS</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>MICROSOFT.BATCH</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>MICROSOFT.SEARCH</code></td>
+  <td style="text-align:left"><code>MICROSOFT.SERVICEBUS</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1965,7 +2016,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.SERVICEBUS</code></td>
+  <td style="text-align:left"><code>MICROSOFT.DATALAKESTORE</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1973,7 +2024,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.DATALAKESTORE</code></td>
+  <td style="text-align:left"><code>MICROSOFT.SEARCH</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>MICROSOFT.BATCH</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>MICROSOFT.STREAMANALYTICS</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

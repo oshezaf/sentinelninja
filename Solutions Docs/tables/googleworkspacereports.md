@@ -11,9 +11,6 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | GCP |
-| **Source Vendor** | Google *(basis: projected)* |
-| **Source Product** | Workspace *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -27,6 +24,7 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (135 columns)
 
@@ -191,6 +189,14 @@ This table is ingested by the following connectors:
 | [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationGoogleWorkspaceLogins](../asim/asimauthenticationgoogleworkspacelogins.md) | Authentication | Google Workspace |  |
 
 ---
 

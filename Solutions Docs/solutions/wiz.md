@@ -1,6 +1,8 @@
-# Wiz for Microsoft Sentinel
+# ⚠️ Wiz for Microsoft Sentinel
 
 *Solution: Wiz*
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="Wiz Logo" width="75" height="75">
 
@@ -16,7 +18,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.wiz.io/](https://support.wiz.io/) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
-| **Source Vendor** | Wiz *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
@@ -41,25 +42,31 @@ b. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/#overview)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Wiz](../connectors/wiz.md) 🔶
+- [Wiz](../connectors/wiz.md) ⚠️ 🔶
+- [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md)
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizIssues_CL`](../tables/wizissues-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
+| [`WizAuditLogsV3_CL`](../tables/wizauditlogsv3-cl.md) | [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md) | - |
+| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
+| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md) | - |
+| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
+| [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) | [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md) | Workbooks |
+| [`WizIssues_CL`](../tables/wizissues-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
+| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
+| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -76,12 +83,13 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WizFindings](../content/wiz-wizfindings-78285767.md) | [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md)<br>[`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md)<br>[`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md)<br>[`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md)<br>[`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) |
+| [WizFindings](../content/wiz-wizfindings-78285767.md) | [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.1       | 26-06-2026                     | Added a new push-based **Connector** (DCR + RBAC grant): Wiz pushes data to `WizIssuesV3_CL`, `WizDetectionsV3_CL`, and `WizAuditLogsV3_CL` (Issues, Detections, Audit Logs), with no Azure Function to host. **Workbook** updated to the new tables and columns. The legacy Azure Function connector remains available for existing deployments. |
 | 3.0.0       | 15-07-2024                     | Updated the queries on the **Workbook** and **Connector** to match with the new table names we offer  |
 | 2.0.0       | 07-09-2023                     | Updated **Workbook** query in Maintemplate  |
 

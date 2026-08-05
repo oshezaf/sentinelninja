@@ -43,43 +43,91 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (7 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutPolicyStatus_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (15 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor%5CData%20Connectors%5CForescoutHostPropertyMonitor_ccf/ForescoutHostPropertyMonitor_table_ForescoutPolicyStatus.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">DetectedTime</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Time the policy status was detected</td>
+</tr>
+<tr>
   <td style="text-align:left">EmIpAddr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Enterprise Manager IP address (Forescout appliance)</td>
 </tr>
 <tr>
   <td style="text-align:left">HostProperties</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Full JSON blob of all Forescout host properties</td>
 </tr>
 <tr>
   <td style="text-align:left">Ipv4Addr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv4 address of the endpoint</td>
 </tr>
 <tr>
   <td style="text-align:left">Ipv6Addr</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">IPv6 address(es) of the endpoint</td>
 </tr>
 <tr>
   <td style="text-align:left">MacAddr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">MAC address of the endpoint</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Policy identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Policy name</td>
+</tr>
+<tr>
+  <td style="text-align:left">Properties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Raw JSON blob of all Forescout host properties for this record</td>
+</tr>
+<tr>
+  <td style="text-align:left">PropertyType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of property record: host, policy, or compliance</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Rule identifier within the policy</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Rule name within the policy</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Evaluation status of the policy rule for this endpoint</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the record was generated</td>
 </tr>
 <tr>
   <td style="text-align:left">UploadTime</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the record was uploaded by Forescout</td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +141,7 @@
 <ul>
 <li><a href="../solutions/forescouthostpropertymonitor.html">ForescoutHostPropertyMonitor</a></li>
 </ul>
-<h2 id="connectors">Connectors (1)</h2>
+<h2 id="connectors">Connectors (2)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -105,6 +153,10 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../connectors/forescouthostpropertymonitor.html">Forescout Host Property Monitor</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/forescouthostpropertymonitor.html">Forescout Host Property Monitor (Push Connector via Codeless Connector Framework)</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

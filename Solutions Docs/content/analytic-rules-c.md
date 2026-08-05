@@ -1,6 +1,6 @@
 # Analytic Rules - C
 
-**367 analytic rules** starting with 'C'.
+**371 analytic rules** starting with 'C'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -24,6 +24,7 @@
 | [Changes to Application Ownership](standalone-content-changes-to-application-ownership-cc5780ce-3245-4bba-8bc1-e9048c2257ce-9e47b574.md) | Medium | 📄 Standalone Content |
 | [Changes to PIM Settings](standalone-content-changes-to-pim-settings-0ed0fe7c-af29-4990-af7f-bb5ccb231198-dc0157b2.md) | High | 📄 Standalone Content |
 | [Check Point Exposure Management - Alert Ingestion Anomaly](check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.md) | Medium | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Checkpoint - Pending Phishing emails](checkpoint-harmony-email-and-collaboration-checkpoint-pending-phishing-emails-a97e2333-b7de-4c14-9700-e652a1dbef26-bbcae6ab.md) | High | 📦 [CheckPoint Harmony Email and Collaboration](../solutions/checkpoint-harmony-email-and-collaboration.md) |
 | [Chia_Crypto_Mining IOC - June 2021](windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | Low | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Cisco - firewall block but success logon to Microsoft Entra ID](standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md) | Medium | 📄 Standalone Content |
 | [Cisco ASA - average attack detection rate increase](ciscoasa-cisco-asa-average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1-4b63ae5b.md) | Low | 📦 [CiscoASA](../solutions/ciscoasa.md) |
@@ -163,6 +164,8 @@
 | [Cognni Incidents for Medium Sensitivity Legal Information](cognni-cognni-incidents-for-medium-sensitivity-legal-information-db750607-d48f-4aef-b238-085f4a9882f1-180f898f.md) | Medium | 📦 [Cognni](../solutions/cognni.md) |
 | [COM Event System Loading New DLL](standalone-content-com-event-system-loading-new-dll-02f6c2e5-219d-4426-a0bf-ad67abc63d53-d3c38f00.md) | Medium | 📄 Standalone Content |
 | [COM Registry Key Modified to Point to File in Color Profile Folder](standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) | Medium | 📄 Standalone Content |
+| [Common Event Format (CEF) via AMA - Critical or High Severity Detections by User](crowdstrike-falcon-endpoint-protection-common-event-format-cef-via-ama-critical-or-high-severity-detecti-4465ebde-b381-45f7-ad08-7d818070a11c-f81cc940.md) | High | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [Common Event Format (CEF) via AMA - Critical Severity Detection](crowdstrike-falcon-endpoint-protection-common-event-format-cef-via-ama-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-2c942313.md) | High | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Commvault Cloud Alert](commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | 📦 [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Component Object Model Hijacking - Vault7 trick](falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Conditional Access - A Conditional Access app exclusion has changed](microsoft-entra-id-conditional-access-a-conditional-access-app-exclusion-has-changed-0990a481-3bc8-4682-838c-313918dd858c-0a7b28b3.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -205,8 +208,11 @@
 | [Corelight - SMTP Email containing NON Ascii Characters within the Subject](corelight-corelight-smtp-email-containing-non-ascii-characters-within-the-subject-50c61708-9824-46f3-87cf-22490796fae2-fc7b03e6.md) | Low | 📦 [Corelight](../solutions/corelight.md) |
 | [Correlate Unfamiliar sign-in properties & atypical travel alerts](microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67-965fe5ef.md) | High | 📦 [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Cortex XDR Incident - High](cortex-xdr-cortex-xdr-incident-high-f96728eb-9802-4522-b715-47fb66c2ecf5-bb6320e4.md) | High | 📦 [Cortex XDR](../solutions/cortex-xdr.md) |
+| [Cortex XDR Incident - High](palo-alto-cortex-xdr-cortex-xdr-incident-high-06263265-ff65-43ff-8b15-6ac82325a672-38ff1458.md) | High | 📦 [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md) |
 | [Cortex XDR Incident - Low](cortex-xdr-cortex-xdr-incident-low-1426bbcf-a9ae-4aa5-9da6-abbf48f04115-5efdbb9e.md) | Low | 📦 [Cortex XDR](../solutions/cortex-xdr.md) |
+| [Cortex XDR Incident - Low](palo-alto-cortex-xdr-cortex-xdr-incident-low-0d3fbeba-f9c9-40c7-9b71-8afb1816d7b2-8a53b87c.md) | Low | 📦 [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md) |
 | [Cortex XDR Incident - Medium](cortex-xdr-cortex-xdr-incident-medium-2b05823b-ee15-4b92-a642-b13170e37c35-674c5fb1.md) | Medium | 📦 [Cortex XDR](../solutions/cortex-xdr.md) |
+| [Cortex XDR Incident - Medium](palo-alto-cortex-xdr-cortex-xdr-incident-medium-2e638f3d-611f-4281-81b1-1fd4aa240ffb-e5042f93.md) | Medium | 📦 [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md) |
 | [Create Incident for XDR Alerts](trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd-cbe34215.md) | High | 📦 [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | [Create Incidents from IronDefense](ironnet-irondefense-create-incidents-from-irondefense-3cf46cb9-99d5-42ee-a43c-7bd88ea394a1-25613242.md) | Medium | 📦 [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
 | [Creation of expensive computes in Azure](azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
@@ -218,9 +224,7 @@
 | [Credential Record Updated](veeam-credential-record-updated-860e201a-deea-4129-8646-fcf8bdd976b0-56a92981.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [CreepyDrive request URL sequence](standalone-content-creepydrive-request-url-sequence-eda260eb-f4a1-4379-ad98-452604da9b3e-76fc0da4.md) | High | 📄 Standalone Content |
 | [CreepyDrive URLs](standalone-content-creepydrive-urls-b6d03b88-4d27-49a2-9c1c-29f1ad2842dc-e6d3f7ae.md) | High | 📄 Standalone Content |
-| [Critical or High Severity Detections by User](crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Critical Risks](ridgesecurity-critical-risks-1eebfaf3-40e1-4bc2-9f42-049b7b8ceb60-11ad44c8.md) | High | 📦 [RidgeSecurity](../solutions/ridgesecurity.md) |
-| [Critical Severity Detection](crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Critical Severity Incident](morphisec-critical-severity-incident-4f1c9e6e-8b6b-4d2a-9f3e-123456789abc-ecbf5667.md) | High | 📦 [Morphisec](../solutions/morphisec.md) |
 | [Critical Threat Detected](vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0-a9660dac.md) | Medium | 📦 [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | [Cross-Cloud Password Spray detection](multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-password-spray-detection-1f40ed57-f54b-462f-906a-ac3a89cc90d4-5128b308.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |

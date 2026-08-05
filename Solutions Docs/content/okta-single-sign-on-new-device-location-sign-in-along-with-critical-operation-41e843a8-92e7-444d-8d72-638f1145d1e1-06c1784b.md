@@ -6,7 +6,7 @@
 
 ---
 
-This query identifies users seen login from new geo location/country as well as a new device and performing critical operations.
+This query identifies users seen login from a new geo location/country and a new device, then correlates that sign-in with successful risky operations such as policy changes, MFA changes, API token actions etc. This can be an indication of an attacker gaining access to a user's credentials and then performing critical operations, which typically requires admin privileges. By detecting such patterns, organizations can quickly respond to potential security incidents and mitigate risks associated w
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ This query identifies users seen login from new geo location/country as well as 
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess, Persistence |
-| **Techniques** | T1078, T1556 |
+| **Tactics** | InitialAccess, Persistence, PrivilegeEscalation |
+| **Techniques** | T1078, T1556, T1098 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Analytic%20Rules/NewDeviceLocationCriticalOperation.yaml) |
 

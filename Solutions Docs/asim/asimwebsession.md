@@ -15,8 +15,8 @@
 | **Schema** | WebSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.5.6 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md)) |
-| **Last Updated** | Jun 05, 2026 |
+| **Parser Version** | 0.5.7 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md)) |
+| **Last Updated** | Jun 16, 2026 |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSession.yaml) |
 
 ## Description
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| AWS WAF | [_ASim_WebSession_AWSWAF](asimwebsessionawswaf.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | Apache HTTP Server | [_ASim_WebSession_ApacheHTTPServer](asimwebsessionapachehttpserver.md) | [ApacheHTTPServer (legacy connector)](../solutions/apachehttpserver.md)<br>[CustomLogsAma](../solutions/customlogsama.md) |
 | Azure Firewall | [_ASim_WebSession_AzureFirewall](asimwebsessionazurefirewall.md) |  |
 | Barracuda WAF | [_ASim_WebSession_BarracudaCEF](asimwebsessionbarracudacef.md) | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |

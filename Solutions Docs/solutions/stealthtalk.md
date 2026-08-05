@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://stealthtalk.com/support](https://stealthtalk.com/support) |
 | **Categories** | Security - Threat Protection,Identity,Security - Insider Threat |
-| **Source Vendor** | StealthTalk *(basis: event)* |
-| **Source Product** | Anomalous Authentication |
 | **Version** | 3.0.0 |
 | **Author** | StealthTalk - support@stealthtalk.com |
 | **First Published** | 2026-05-01 |

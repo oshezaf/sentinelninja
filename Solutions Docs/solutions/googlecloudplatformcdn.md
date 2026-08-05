@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider,Networking |
-| **Source Vendor** | Google *(basis: name_pattern)* |
-| **Source Product** | Cloud Platform CDN |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-03-07 |

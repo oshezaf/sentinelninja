@@ -47,14 +47,6 @@
   <td style="text-align:left">Identity,Security - Automation (SOAR)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Okta <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Single Sign-On</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.1.6</td>
 </tr>
@@ -194,7 +186,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-high-risk-admin-activity-9f82a735-ae43-4c03-afb4-d5d153e1ace1-497c8fc0.html">High-Risk Admin Activity</a></td>
   <td style="text-align:left">Medium</td>
-  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
@@ -206,7 +198,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-new-device-location-sign-in-along-with-critical-operation-41e843a8-92e7-444d-8d72-638f1145d1e1-06c1784b.html">New Device/Location sign-in along with critical operation</a></td>
   <td style="text-align:left">Medium</td>
-  <td style="text-align:left">InitialAccess, Persistence</td>
+  <td style="text-align:left">InitialAccess, Persistence, PrivilegeEscalation</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
@@ -247,17 +239,17 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-admin-privilege-granted-okta-5309ea6b-463c-4449-a3c4-2fc8ee0080ee-23fe94ba.html">Admin privilege granted (Okta)</a></td>
-  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-create-api-token-okta-c5134bac-044d-447a-a260-d1d439653ae7-0e45b431.html">Create API Token (Okta)</a></td>
-  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left">CredentialAccess, Persistence</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-initiate-impersonation-session-okta-96fb9b37-e2b7-45f6-9b2a-cb9cdfd2b0fc-8f019c66.html">Initiate impersonation session (Okta)</a></td>
-  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
@@ -282,7 +274,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/okta-single-sign-on-rare-mfa-operations-okta-18667b4a-18e5-4982-ba75-92ace62bc79c-204f5119.html">Rare MFA Operations (Okta)</a></td>
-  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left">DefenseEvasion, CredentialAccess</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
@@ -291,7 +283,7 @@
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-7f425c2c.html">User password reset(Okta)</a></td>
+  <td style="text-align:left"><a href="../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-9e55e2be.html">User password reset (Okta)</a></td>
   <td style="text-align:left">Persistence</td>
   <td style="text-align:left"><a href="../tables/oktav2-cl.html"><code>OktaV2_CL</code></a><br><a href="../tables/okta-cl.html"><code>Okta_CL</code></a></td>
 </tr>
@@ -366,6 +358,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.9</td>
+  <td>30-07-2026</td>
+  <td>Update KQL queries of Okta <strong>Analytics rules</strong> <br> Updated Azure Gov button image link.</td>
+</tr>
+<tr>
+  <td>3.1.8</td>
+  <td>10-07-2026</td>
+  <td>Update <strong>Analytic rule</strong> and <strong>Hunting Queries</strong> for Okta SSO.</td>
+</tr>
 <tr>
   <td>3.1.7</td>
   <td>28-04-2026</td>

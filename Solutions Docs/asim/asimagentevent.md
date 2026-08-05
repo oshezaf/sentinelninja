@@ -15,9 +15,9 @@
 | **Schema** | AgentEvent |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md)) |
-| **Last Updated** | Apr 16, 2026 |
-| **Source File** | [Parsers\ASimAgentEvent\Parsers\ASimAgentEntity.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAgentEvent/Parsers/ASimAgentEntity.yaml) |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md)) |
+| **Last Updated** | Jul 08, 2026 |
+| **Source File** | [Parsers\ASimAgentEvent\Parsers\ASimAgentEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAgentEvent/Parsers/ASimAgentEvent.yaml) |
 
 ## Description
 
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| Anthropic Claude Compliance | [_ASim_AgentEvent_AnthropicClaudeCompliance](asimagenteventanthropicclaudecompliance.md) | [BlueVoyant Anthropic ClaudeCompliance](../solutions/bluevoyant-anthropic-claudecompliance.md) |
 
 ## Parameters
 

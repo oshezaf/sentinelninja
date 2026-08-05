@@ -11,8 +11,6 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -92,11 +90,12 @@ Official Microsoft Learn documentation for field/column information:
 
 - [DeviceInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo)
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
@@ -112,7 +111,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (13)
 
 ### Analytic Rules (5)
 
@@ -141,7 +140,16 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md) |  |
 
-### Hunting Queries (1)
+### Hunting Queries (5)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Azure Network Configuration Tampered by Compromised Identity](../content/hybrid-attack-cloud-&-identity-azure-network-configuration-tampered-by-compromised-identity-455ffadf-ce55-4a0e-b339-fd3c2d67c71c-7151e2d8.md) |  |
+| [Entra hybrid user sign-in followed by on-prem lateral movement](../content/hybrid-attack-cloud-&-identity-entra-hybrid-user-sign-in-followed-by-on-prem-lateral-movement-638446a2-8342-43dd-ae70-3308a3319f6f-1d8f481c.md) |  |
+| [RDP to hybrid joined device followed by Entra access](../content/hybrid-attack-cloud-&-identity-rdp-to-hybrid-joined-device-followed-by-entra-access-9f776b5c-d9a6-4d95-8794-5cfec9f9d22d-24505083.md) |  |
+| [WMI or remote admin execution on hybrid device followed by cloud sign-in](../content/hybrid-attack-cloud-&-identity-wmi-or-remote-admin-execution-on-hybrid-device-followed-by-cloud-sign-in-638d7a85-0c62-4f9d-9a90-937a7c565e1b-0d54206f.md) |  |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
@@ -149,13 +157,19 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dataverse - Dataverse export copied to USB devices](../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.md) |  |
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 

@@ -11,8 +11,6 @@ Reference for EmailUrlInfo table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Defender |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -87,8 +85,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Domain entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-domain-entity-to-emailurlinfo-b56e2290-c65b-45a5-9636-3651e85bbe5d-5336dd53.md) |  |
 | [TI Map URL Entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-url-entity-to-emailurlinfo-9e32e545-e60c-47de-9941-f9ca1ada0a42-4894c77c.md) |  |
-| [TI map Domain entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-domain-entity-to-emailurlinfo-b56e2290-c65b-45a5-9636-3651e85bbe5d-d68d3e26.md) |  |
 
 **In solution [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md):**
 

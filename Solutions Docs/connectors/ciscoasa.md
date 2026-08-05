@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoASA` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | ASA *(basis: event)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [CiscoASA](../solutions/ciscoasa.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CiscoASA.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Data%20Connectors/CiscoASA.JSON) |

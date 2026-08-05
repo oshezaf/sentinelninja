@@ -47,10 +47,6 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Abnormal Security <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.0</td>
 </tr>
@@ -77,6 +73,12 @@
 </tbody>
 </table>
 <p>The Abnormal Security solution provides real-time security event ingestion from Abnormal's cloud email security platform into Microsoft Sentinel. Supports both push-based (CCF Push) and pull-based (Azure Functions) connectors. The push connector routes events to per-event-type tables (threats, cases, audit logs, abuse mailbox, posture changes, ATO cases, remediations, vendor cases) using the Codeless Connector Framework.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
@@ -105,12 +107,12 @@
 <tr>
   <td><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a> 🔶</td>
   <td><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
-  <td>-</td>
+  <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a> 🔶</td>
   <td><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
-  <td>-</td>
+  <td>Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/abnormal-security-audit-log-cl.html"><code>ABNORMAL_SECURITY_AUDIT_LOG_CL</code></a> 🔶</td>
@@ -140,12 +142,12 @@
 <tr>
   <td><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a> 🔶</td>
   <td><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
-  <td>-</td>
+  <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a> 🔶</td>
   <td><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
-  <td>-</td>
+  <td>Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/abnormal-threat-messages-cl.html"><code>ABNORMAL_THREAT_MESSAGES_CL</code></a> 🔶</td>
@@ -157,6 +159,171 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>14 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-account-takeover-case-opened-da243bf4-382b-46b9-9b4d-ce6ffe9e7beb-df151faa.html">Abnormal Security - Account Takeover case opened</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-high-risk-email-attack-detected-8effd19a-abab-433a-9184-ae67ac51e6d0-39f20acc.html">Abnormal Security - High-risk email attack detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-user-reported-email-judged-malicious-51c6ba55-fecd-4be0-9064-1aafc4d3e8d6-6ee04478.html">Abnormal Security - User-reported email judged malicious</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-vendor-compromise-case-detected-b15ea4c9-58da-44d8-90e4-6591d947e7e3-5d66afe6.html">Abnormal Security - Vendor compromise case detected</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-most-targeted-recipients-9dbf1df0-03cd-4c5a-ba22-4f10b82ac90a-9cb3f041.html">Abnormal Security - Most-targeted recipients</a></td>
+  <td style="text-align:left">InitialAccess, Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-newly-observed-vendor-domains-f8d819ef-7c3a-499a-a8ef-33737ce9a146-ba0d4629.html">Abnormal Security - Newly observed vendor domains</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-threats-still-in-the-mailbox-b341a0db-0925-40de-b03e-fe5b350b4a7a-3a7ba3eb.html">Abnormal Security - Threats still in the mailbox</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-user-reported-email-campaigns-71d3da2b-2cd4-46ee-8436-438e0a9e243a-c02788ad.html">Abnormal Security - User-reported email campaigns</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.html">AbnormalSecurityOverview</a></td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a><br><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a><br><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a><br><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-add-incident-comment-a5b5c9ac.html">Abnormal Security - Add Incident Comment</a></td>
+  <td style="text-align:left">This playbook is triggered when a Microsoft Sentinel incident is created. It adds a comment to the i...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/abnormalsecurityabusemailbox.html">AbnormalSecurityAbuseMailbox</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/abnormalsecurityatocases.html">AbnormalSecurityAtoCases</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/abnormalsecuritythreatlog.html">AbnormalSecurityThreatLog</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/abnormalsecurityvendorcases.html">AbnormalSecurityVendorCases</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -167,6 +334,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>05-06-2026</td>
+  <td>Added Microsoft Sentinel content for the CCF Push connector to meet MISA integration criteria: four scheduled <strong>Analytic Rules</strong> (high-risk email attack, account takeover, user-reported malicious email, vendor compromise) with entity mappings and MITRE ATT&amp;CK techniques; four <strong>Hunting Queries</strong>; four <strong>Parsers</strong> normalizing the per-event-type tables to friendly column names; an <strong>Abnormal Security Overview Workbook</strong>; and an incident-comment <strong>Playbook</strong>.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>08-05-2026</td>

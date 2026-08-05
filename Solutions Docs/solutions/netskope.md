@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Netskope *(basis: publisher)* |
 | **Version** | 2.0.3 |
 | **Author** | Netskope |
 | **First Published** | 2022-05-05 |

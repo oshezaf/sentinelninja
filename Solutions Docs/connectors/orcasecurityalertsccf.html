@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orca Security Alerts via Microsoft Entra ID &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="orca-security-alerts">Orca Security Alerts (via Microsoft Entra ID)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrcaSecurityLogo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>OrcaSecurityAlertsCCF</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Orca Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/orca-security-alerts.html">Orca Security Alerts</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlertsCCF/OrcaSecurityAlerts_ConnectorDefinition.json">OrcaSecurityAlerts_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlertsCCF/OrcaSecurityAlerts_DCR.json">OrcaSecurityAlerts_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlertsCCF/OrcaSecurityAlerts_PollerConfig.json">OrcaSecurityAlerts_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#orca-security-alerts">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://orca.security/">Orca Security</a> Alerts connector lets you stream Orca cloud security alerts into Microsoft Sentinel. Orca pushes alerts to the Logs Ingestion API of a Data Collection Endpoint using a Microsoft Entra ID application, replacing the legacy Log Analytics Shared Key authentication.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/orcaalerts-cl.html"><code>OrcaAlerts_CL</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra ID</strong>: Permission to create an app registration in Microsoft Entra ID (if using the auto-created app). Typically requires the Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to create and configure Azure resources (DCE, DCR, table) and assign RBAC roles. Typically requires the Contributor and User Access Administrator roles.</li>
+<li><strong>Orca Security</strong>: Access to the Orca Security platform to configure the Microsoft Sentinel integration.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy connector resources</strong></p>
+<p>Deploy the Azure resources required to ingest Orca Security alerts via the Logs Ingestion API using Microsoft Entra ID authentication.</p>
+<h4 id="choose-your-deployment-option">Choose your deployment option</h4>
+<hr />
+<h3 id="option-a-auto-create-a-microsoft-entra-application">Option A: Auto-create a Microsoft Entra application (Recommended)</h3>
+<p>Clicking <strong>Deploy Orca Security Alerts Connector</strong> automatically creates:</p>
+<ul>
+<li>A Data Collection Endpoint (DCE)</li>
+<li>A Data Collection Rule (DCR) with the Orca alerts stream</li>
+<li>The Log Analytics table (OrcaAlerts_CL)</li>
+<li>A Microsoft Entra application with a client secret</li>
+<li>The role assignment (Monitoring Metrics Publisher) on the DCR</li>
+</ul>
+<p><strong>After deployment:</strong> the Tenant ID, Client ID, Client Secret, DCE URI and DCR Immutable ID are auto-populated below for copy-paste into the Orca platform.</p>
+<hr />
+<h3 id="option-b-use-a-pre-existing-microsoft-entra-application">Option B: Use a pre-existing Microsoft Entra application (BYOA)</h3>
+<p>Clicking <strong>Deploy Orca Security Alerts Connector</strong> creates the DCE, DCR and table, plus an Entra application you can ignore.</p>
+<p><strong>Additional steps required:</strong></p>
+<ol>
+<li>Assign your existing Entra application's service principal the <strong>Monitoring Metrics Publisher</strong> role on the created DCR.</li>
+<li>Use your own application's Client ID and Client Secret (ignore the auto-generated ones below).</li>
+<li>Use the DCE URI, DCR Immutable ID and Stream Name from below.</li>
+</ol>
+<hr />
+<p><strong>Click Deploy to begin:</strong>
+Deploy Orca Security Alerts Connector</p>
+<p><strong>2. Configure the Orca Security integration</strong></p>
+<p>Copy the following values into the Microsoft Sentinel integration settings in the Orca Security platform.
+<strong>For Option A (auto-created app):</strong> use all the auto-populated values below.</p>
+<p><strong>For Option B (pre-existing app):</strong> use the DCE URI, DCR Immutable ID and Stream Name below, but use your own application's Tenant ID, Client ID and Client Secret.</p>
+<hr />
+<h4 id="azure-configuration-values">Azure configuration values:</h4>
+<ul>
+<li><strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Application (Client) ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Client Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint (DCE) URI</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule (DCR) Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Stream Name</strong>: <code>Custom-OrcaSecurityAlerts</code></li>
+</ul>
+<hr />
+<h4 id="configure-in-the-orca-security-platform">Configure in the Orca Security platform</h4>
+<ol>
+<li>Log in to your <strong>Orca Security</strong> console.</li>
+<li>Navigate to <strong>Settings &gt; Integrations &gt; Microsoft Sentinel</strong>.</li>
+<li>Paste the configuration values from above (Tenant ID, Application (Client) ID, Client Secret, DCE URI, DCR Immutable ID and Stream Name).</li>
+<li>Click <strong>Save</strong> to complete the integration.</li>
+</ol>
+<p><strong>3. Verify data ingestion</strong></p>
+<p>Confirm that alerts are flowing from Orca Security into Microsoft Sentinel.</p>
+<h4 id="verification-steps">Verification steps</h4>
+<ol>
+<li>Trigger or wait for an alert in Orca Security.</li>
+<li>Wait 5-10 minutes for the data to appear in Microsoft Sentinel.</li>
+<li>Run the following query to verify alerts:</li>
+</ol>
+<pre><code class="language-kusto">OrcaAlerts_CL
+| take 10
+</code></pre>
+<ol start="4">
+<li>Check connectivity:</li>
+</ol>
+<pre><code class="language-kusto">OrcaAlerts_CL
+| summarize LastLogReceived = max(TimeGenerated)
+| project IsConnected = LastLogReceived &gt; ago(30d)
+</code></pre>
+<p>If data appears and IsConnected returns true, the connector is configured correctly.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

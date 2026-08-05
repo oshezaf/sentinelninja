@@ -1,4 +1,8 @@
-# Wiz
+# ⚠️ 🔍 Wiz
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="" width="75" height="75">
 
@@ -11,11 +15,11 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Wiz` |
-| **Publisher / Vendor** | Wiz |
+| **Publisher** | Wiz |
 | **Used in Solutions** | [Wiz](../solutions/wiz.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [template_WIZ.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz/Data%20Connectors/template_WIZ.json) |
-| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) \| [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#wiz-using-azure-functions) |
 

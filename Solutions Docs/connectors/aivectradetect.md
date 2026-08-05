@@ -16,8 +16,6 @@
 |:----------|:------|
 | **Connector ID** | `AIVectraDetect` |
 | **Publisher** | Vectra AI |
-| **Source Vendor** | Vectra *(basis: event)* |
-| **Source Product** | X Series *(basis: event)* |
 | **Used in Solutions** | [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [AIVectraDetect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect/Data%20Connectors/AIVectraDetect.json) |

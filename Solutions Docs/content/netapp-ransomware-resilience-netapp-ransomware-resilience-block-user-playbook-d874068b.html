@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetApp Ransomware Resilience Block User Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netapp-ransomware-resilience-block-user-playbook">NetApp Ransomware Resilience Block User Playbook</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook blocks a user by calling the NetApp Ransomware Resilience block-user API endpoint after obtaining an authentication token from the NetApp Auth playbook.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Block_User_Playbook/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>1</strong> Logic App connector / built-in action:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Call_Auth_Playbook</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[listCallbackUrl(variables('AuthPlaybookTriggerResourceId'), '2019-05-01').value]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Submit_Block_User</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('netAppApiBaseUrl'), '/v1/services/rps/v1/account/', variables('AccountId'), '/users/block-user')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Block_User_Playbook/readme.md">NetApp-RansomwareResilience_Block_User_Playbook/readme.md</a></em></p>
+</blockquote>
+<h1 id="netapp-ransomware-resilience---block-user">NetApp Ransomware Resilience - Block User</h1>
+<h2 id="overview">Overview</h2>
+<p>This playbook helps security teams block user access as part of incident response in NetApp Ransomware Resilience.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Use this playbook when you need a controlled way to block a user based on investigation findings, suspicious behavior, or containment actions.</p>
+<h2 id="deployment-order">Deployment Order</h2>
+<p>This playbook should be deployed after:</p>
+<ol>
+<li>Auth Playbook (required)</li>
+</ol>
+<h3 id="input-parameters">Input Parameters</h3>
+<ul>
+<li><code>user_id</code>: User ID to block (required)</li>
+<li><code>user_ips</code>: Client IPs to block (required for NFS; optional for CIFS)</li>
+<li><code>duration</code>: Block duration - <code>permanent</code> or hours (<code>1</code>, <code>2</code>, <code>4</code>, <code>8</code>, <code>12</code>, <code>24</code>) (optional)</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Auth Playbook must be deployed and functioning correctly.</li>
+<li>Valid NetApp Ransomware Resilience configuration must be completed.</li>
+<li>The playbook caller must provide <code>user_id</code>, and optionally <code>user_ips</code>/<code>duration</code> based on the protection scenario.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment instructions</h3>
+<ol>
+<li>Click the Deploy to Azure button. This opens the ARM template deployment wizard.</li>
+<li>Provide the required parameters:<ul>
+<li><code>PlaybookName</code>: Name of this playbook resource.</li>
+<li><code>NetAppRansomwareResilienceAuthPlaybookName</code>: Name of the deployed NetApp Auth playbook.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNetApp%2520Ransomware%2520Resilience%2FPlaybooks%2FNetApp-RansomwareResilience_Block_User_Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNetApp%2520Ransomware%2520Resilience%2FPlaybooks%2FNetApp-RansomwareResilience_Block_User_Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure US Gov" /></a></p>
+<h3 id="post-deployment">Post-Deployment</h3>
+<h4 id="1-validate-dependency-configuration">1. Validate dependency configuration</h4>
+<ol>
+<li>Confirm the Auth playbook is deployed in the same environment.</li>
+<li>Ensure the <code>NetAppRansomwareResilienceAuthPlaybookName</code> parameter matches the deployed Auth playbook name.</li>
+</ol>
+<h4 id="2-functional-validation">2. Functional validation</h4>
+<ol>
+<li>Run the Block User playbook with a valid payload.</li>
+<li>Verify the expected block action is applied for the target user.</li>
+<li>Validate behavior with and without optional inputs (<code>user_ips</code>, <code>duration</code>).</li>
+</ol>
+<h4 id="3-microsoft-sentinel-usage">3. Microsoft Sentinel usage</h4>
+<ol>
+<li>Add this playbook to an automation rule or run it manually from an incident.</li>
+<li>Pass required entities/details as playbook input (<code>user_id</code>, and optional <code>user_ips</code>/<code>duration</code>).</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/netapp-ransomware-resilience.html">Back to NetApp Ransomware Resilience</a></p>
+
+</div>
+
+</body>
+</html>

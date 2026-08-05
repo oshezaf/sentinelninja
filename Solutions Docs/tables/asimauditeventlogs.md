@@ -11,9 +11,6 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Source Vendor** | Cisco, CrowdStrike, Synqly, Workday *(basis: projected)* |
-| **Source Product** | Falcon Data Replicator, Integration, Meraki, Workday *(basis: projected)* |
-| **Event Type** | Events |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -189,8 +186,8 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Workday User Activity](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
 
@@ -210,7 +207,7 @@ This table is ingested by the following connectors:
 
 | Analytic Rule |
 |:-------------|
-| [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |
+| [TI Map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-b0388bf0.md) |
 
 ## Parsers Using This Table (2)
 

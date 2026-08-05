@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Commvault *(basis: projected)* |
-| **Source Product** | Security IQ *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,7 +18,6 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (12 columns)
 
@@ -62,16 +59,6 @@ This table is ingested by the following connectors:
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**In solution [Commvault Security IQ](../solutions/commvault-security-iq.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) |  |
 
 ---
 

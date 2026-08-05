@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Google SecOps Detection Alerts |
 | Location | Solution |
-| Solution | [GoogleSecOps](../solutions/googlesecops.md) ⚠️ |
+| Solution | [GoogleSecOps](../solutions/googlesecops.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-04-24 |
 | Category | Microsoft Sentinel Parser |

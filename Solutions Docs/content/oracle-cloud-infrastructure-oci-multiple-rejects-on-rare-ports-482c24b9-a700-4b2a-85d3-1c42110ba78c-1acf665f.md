@@ -18,7 +18,7 @@ Detects multiple rejects on rare ports.
 | **Kind** | Scheduled |
 | **Tactics** | Reconnaissance |
 | **Techniques** | T1595 |
-| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md) |
+| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md), [OracleCloudInfraConnector](../connectors/oraclecloudinfraconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Analytic%20Rules/OCIMultipleRejects.yaml) |
 
 ## Tables Used

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `MimecastSEGAPI` |
-| **Publisher / Vendor** | Mimecast |
-| **Source Product** | Secure Email Gateway *(basis: title)* |
+| **Publisher** | Mimecast |
 | **Used in Solutions** | [Mimecast](../solutions/mimecast.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_SEG_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastSEG/Mimecast_SEG_FunctionApp.json) |

@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
 | **Categories** | Security - Others,IT Operations,DevOps,Migration,Security - Threat Protection,Security - Vulnerability Management |
-| **Source Vendor** | Dynatrace *(basis: publisher)* |
-| **Source Product** | Runtime, Attacks, Problems |
 | **Version** | 3.0.3 |
 | **Author** | Dynatrace - microsoftalliances@dynatrace.com |
 | **First Published** | 2022-10-18 |

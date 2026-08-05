@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.fieldeffect.com/](https://support.fieldeffect.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Field Effect *(basis: publisher)* |
-| **Source Product** | MDR |
 | **Version** | 3.0.0 |
 | **Author** | Field Effect |
 | **First Published** | 2026-02-14 |

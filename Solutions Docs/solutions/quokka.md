@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.quokka.io/contact-us#customer-support](https://www.quokka.io/contact-us#customer-support) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Quokka *(basis: publisher)* |
 | **Version** | 3.0.0 |
 | **Author** | Quokka - mvang@quokka.io |
 | **First Published** | 2025-10-30 |

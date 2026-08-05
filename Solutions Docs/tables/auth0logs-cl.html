@@ -30,14 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Auth0 <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Events</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -59,103 +51,131 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (22 columns)</h2>
+<h2 id="schema">Schema (23 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0%5CData%20Connectors%5CAuth0_CCP/table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">ActorUserId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the user involved in the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">ActorUsername</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the user involved in the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">Audience</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">API audience the event applies to.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Auth0Domain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Auth0 host/domain configured for this connection; hard-coded on every record so hosts can be differentiated.</td>
 </tr>
 <tr>
   <td style="text-align:left">ClientId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the application (client) that triggered the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">ClientName</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the application (client) that triggered the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">Connection</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the connection the event relates to.</td>
 </tr>
 <tr>
   <td style="text-align:left">ConnectionId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the connection the event relates to.</td>
 </tr>
 <tr>
   <td style="text-align:left">Description</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of this event.</td>
 </tr>
 <tr>
   <td style="text-align:left">Details</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional useful details related to the event, in JSON format.</td>
 </tr>
 <tr>
   <td style="text-align:left">event_date</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the event occurred (event-occurrence time).</td>
 </tr>
 <tr>
   <td style="text-align:left">EventType</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of event.</td>
 </tr>
 <tr>
   <td style="text-align:left">HttpUserAgent</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent that triggered the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">IsMobile</td>
   <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the event originated from a mobile device.</td>
 </tr>
 <tr>
   <td style="text-align:left">LocationInfo</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Geographical location information of the event source.</td>
 </tr>
 <tr>
   <td style="text-align:left">LogId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the log event.</td>
 </tr>
 <tr>
   <td style="text-align:left">Scope</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Scopes the event applies to.</td>
 </tr>
 <tr>
   <td style="text-align:left">SrcHostname</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Hostname the event applies to.</td>
 </tr>
 <tr>
   <td style="text-align:left">SrcIpAddr</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the log event source.</td>
 </tr>
 <tr>
   <td style="text-align:left">Strategy</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the strategy involved in the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">StrategyType</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of strategy involved in the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">TenantName</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Auth0 tenant that produced the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time when the log entry was generated.</td>
 </tr>
 </tbody>
 </table>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USTA Account Takeover Prevention Sentinel Connector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="usta-account-takeover-prevention-sentinel-connector">USTA Account Takeover Prevention Sentinel Connector</h1>
+<p><em>Solution: PRODAFT USTA - Account Takeover Prevention</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaATP.svg" alt="PRODAFT USTA - Account Takeover Prevention Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">PRODAFT</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.prodaft.com">https://www.prodaft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">PRODAFT - integration@prodaft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-06</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-07-24</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention">PRODAFT USTA - Account Takeover Prevention</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-atp">Azure Marketplace</a> · Popularity: 🔵 Medium (68%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>PRODAFT USTA - Account Takeover Prevention</strong> solution ingests compromised corporate credentials from the PRODAFT USTA platform into Microsoft Sentinel via a codeless (Codeless Connector Framework) data connector. Plaintext passwords are dropped at ingestion — only password strength signals (score and length) are retained for triage. Includes analytic rules to alert on newly exposed corporate credentials and on successful Entra ID sign-ins with known-compromised accounts, a hunting query, an overview workbook, and an on-demand backfill playbook for loading historical data.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/prodaftustaatpccpdefinition.html">PRODAFT USTA - Account Takeover Prevention (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a></td>
+  <td><a href="../connectors/prodaftustaatpccpdefinition.html">PRODAFT USTA - Account Takeover Prevention (via Codeless Connector Framework)</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-account-takeover-prevention-prodaft-usta-compromised-credential-used-in-successful-sign-in-5da571b5-54f6-42c2-8c3e-27edd987ceec-c6c285f0.html">PRODAFT USTA - Compromised credential used in successful sign-in</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-account-takeover-prevention-prodaft-usta-corporate-credential-compromised-9ad6cf22-ffbb-4422-9933-9bbd0104f818-4df5a4e0.html">PRODAFT USTA - Corporate credential compromised</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-account-takeover-prevention-prodaft-usta-infostealer-exposure-across-corporate-identities-c2acc93e-23c8-4d0c-87d7-eee7064e8fec-9eddac19.html">PRODAFT USTA - Infostealer exposure across corporate identities</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-account-takeover-prevention-prodaftustaatpoverview-23fe73af.html">PRODAFTUstaATPOverview</a></td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-account-takeover-prevention-prodaftustaatp-backfill-6bdc69a2.html">PRODAFTUstaATP-Backfill</a></td>
+  <td style="text-align:left">On-demand backfill playbook for PRODAFT USTA - Account Takeover Prevention. Pages through the USTA c...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/prodaftustacompromisedcredentials.html">PRODAFTUstaCompromisedCredentials</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/prodaftustacompromisedcredentials-cl.html"><code>PRODAFTUstaCompromisedCredentials_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention/README.md">PRODAFT USTA - Account Takeover Prevention/README.md</a></em></p>
+</blockquote>
+<p>Ingests <strong>compromised corporate credentials</strong> from the PRODAFT USTA Account Takeover
+Prevention API into Microsoft Sentinel via a codeless (Codeless Connector Framework)
+data connector. Plaintext passwords are never stored — the DCR transform drops them at
+ingestion and retains only password strength signals (score and length).</p>
+<h2 id="contents">Contents</h2>
+<table>
+<thead>
+<tr>
+  <th>Content</th>
+  <th>Items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data connector (CCF)</td>
+  <td><code>Data Connectors/PRODAFTUstaATP_ccp/</code> — ConnectorDefinition, PollingConfig, DCR, Table</td>
+</tr>
+<tr>
+  <td>Parser</td>
+  <td><code>PRODAFTUstaCompromisedCredentials</code> — query-time dedup (one row per <code>TicketId</code>)</td>
+</tr>
+<tr>
+  <td>Analytic rules</td>
+  <td>Corporate credential compromised; Compromised credential used in successful sign-in</td>
+</tr>
+<tr>
+  <td>Hunting query</td>
+  <td>Infostealer exposure across corporate identities</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td><code>PRODAFTUstaATPOverview</code></td>
+</tr>
+<tr>
+  <td>Playbook</td>
+  <td><code>PRODAFTUstaATP-Backfill</code> — on-demand historical backfill</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment">Deployment</h2>
+<h3 id="from-the-portal">From the portal (Content Hub)</h3>
+<ol>
+<li>Once published, install <strong>PRODAFT USTA - Account Takeover Prevention</strong> from
+<strong>Microsoft Sentinel → Content hub</strong>.</li>
+<li>Open <strong>Configuration → Data connectors → PRODAFT USTA - Account Takeover Prevention
+(via Codeless Connector Framework)</strong>, enter the USTA base URL and your API key, and
+select <strong>Connect</strong>. The connector polls every minute going forward.</li>
+<li>To load history, deploy and run the <strong>PRODAFTUstaATP-Backfill</strong> playbook once — see
+<a href="Playbooks/PRODAFTUstaATP-Backfill/readme.html">Playbooks/PRODAFTUstaATP-Backfill/readme.md</a>.</li>
+</ol>
+<h3 id="via-scripts">Via scripts (this repository)</h3>
+<ol>
+<li><p>Generate the deployable package with the repo's packaging tool (creates
+<code>Package/mainTemplate.json</code> + <code>Package/createUiDefinition.json</code>). The tool is a
+PowerShell 7 script and runs the same on Windows, Linux, and macOS via <code>pwsh</code>.
+One-time setup (see <code>Tools/Create-Azure-Sentinel-Solution/README.md</code>):
+PowerShell 7.1+, Node.js, and the YAML module (<code>pwsh -Command 'Install-Module powershell-yaml -Scope CurrentUser'</code>).</p>
+<pre><code class="language-bash"># from the repository root — pass the ABSOLUTE path to this solution's Data folder
+# (the tool rejects paths that start with &quot;Solutions/&quot;)
+pwsh Tools/Create-Azure-Sentinel-Solution/V3/createSolutionV3.ps1 \
+  -SolutionDataFolderPath &quot;$(pwd)/Solutions/PRODAFT USTA - Account Takeover Prevention/Data&quot; \
+  -VersionMode local -VersionBump patch
+</code></pre>
+<p><code>-VersionMode local</code> versions from this solution's Data file and bumps it on every run
+(<code>patch</code>/<code>minor</code>/<code>major</code>), writing the new version back. The default <code>catalog</code> mode looks
+the offer up in the Content Hub catalog and, for unpublished solutions, falls back to
+3.0.0. Package versions must be <strong>3.x</strong>: the tool aborts on 1.x versions and 2.x
+builds only the deprecated templateSpec format, so the Content Hub packaging format
+(<code>contentSchemaVersion</code> 3) requires 3.x — which is why the initial release is 3.0.0.</p>
+</li>
+<li><p>Deploy from scratch — creates the resource group and the Log Analytics workspace,</p>
+</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<h1 id="prodaft-usta---account-takeover-prevention-release-notes">PRODAFT USTA - Account Takeover Prevention — Release Notes</h1>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>27-07-2026</td>
+  <td>Updated the backfill <strong>Playbook</strong> to self-provision its Data Collection Endpoint (DCE) and Data Collection Rule (DCR) and to grant its managed identity the <em>Monitoring Metrics Publisher</em> role on the DCR. Removes the manual ingestion-endpoint URI and DCR immutable-ID setup previously required to run the backfill.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>06-07-2026</td>
+  <td>Initial Solution Release. Codeless (CCF) data connector for compromised-credential tickets with ingestion-time password redaction (only strength signals are stored). Two <strong>Analytic Rules</strong> (corporate credential compromised; compromised credential used in a successful Entra ID sign-in), one <strong>Hunting Query</strong>, an overview <strong>Workbook</strong>, a query-time dedup <strong>Parser</strong>, and an on-demand backfill <strong>Playbook</strong> (Logs Ingestion API via managed identity) for loading historical data.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

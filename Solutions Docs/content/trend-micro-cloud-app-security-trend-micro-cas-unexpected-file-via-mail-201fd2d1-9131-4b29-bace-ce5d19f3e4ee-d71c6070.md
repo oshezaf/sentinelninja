@@ -6,7 +6,7 @@
 
 ---
 
-Detects when unexpected file recieved via mail.
+Detects when unexpected file received via mail.
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,6 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ? | ✓ | ? |
 | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

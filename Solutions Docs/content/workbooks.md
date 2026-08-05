@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**573 workbooks** across all Microsoft Sentinel solutions.
+**592 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -30,6 +30,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [AADManagedIdentitySignInLogs](github-only-aadmanagedidentitysigninlogs-e106dbaf.md) | 🔗 GitHub Only |
 | [AADNonInteractiveUserSignInLogs](github-only-aadnoninteractiveusersigninlogs-dbe045a9.md) | 🔗 GitHub Only |
 | [AADServicePrincipalSignInLogs](github-only-aadserviceprincipalsigninlogs-7f958a93.md) | 🔗 GitHub Only |
+| [AbnormalSecurityOverview](abnormalsecurity-abnormalsecurityoverview-c47e736a.md) | 📦 [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [AcscEssential8](github-only-acscessential8-fa923a42.md) | 🔗 GitHub Only |
 | [ActionableAlertsDashboard](cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.md) | 📦 [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [ActionableAlertsList](cybersixgill-actionable-alerts-actionablealertslist-16388c4a.md) | 📦 [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
@@ -67,6 +68,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [AristaAwakeSecurityWorkbook](aristaawakesecurity-aristaawakesecurityworkbook-9b7c92d9.md) | 📦 [AristaAwakeSecurity](../solutions/aristaawakesecurity.md) |
 | [ArmorbloxOverview](armorblox-armorbloxoverview-181ded5b.md) | 📦 [Armorblox](../solutions/armorblox.md) |
 | [ASC-ComplianceandProtection](github-only-asc-complianceandprotection-70588a9c.md) | 🔗 GitHub Only |
+| [AsnReputationMonitoring](whisper-asnreputationmonitoring-d9e9e316.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [AtlassianJiraAudit](atlassianjiraaudit-atlassianjiraaudit-cdf2e001.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [AttackSurfaceReduction](soc-handbook-attacksurfacereduction-52743d4b.md) | 📦 [SOC Handbook](../solutions/soc-handbook.md) |
 | [AttackSurfaceReduction](github-only-attacksurfacereduction-31c2d611.md) | 🔗 GitHub Only |
@@ -220,6 +222,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Dns](github-only-dns-ff664046.md) | 🔗 GitHub Only |
 | [DNSSolutionWorkbook](dns-essentials-dnssolutionworkbook-9b8ac8e7.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
 | [DoDZeroTrustWorkbook](github-only-dodzerotrustworkbook-844294c8.md) | 🔗 GitHub Only |
+| [DomainRegistrationAnomaly](whisper-domainregistrationanomaly-54326c3f.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [Doppel](doppel-doppel-0def4b82.md) | 📦 [Doppel](../solutions/doppel.md) |
 | [DORACompliance](dora-compliance-doracompliance-21bcc12f.md) | 📦 [DORA Compliance](../solutions/dora-compliance.md) |
 | [DPDPCompliance](dpdp-compliance-dpdpcompliance-18571e87.md) | 📦 [DPDP Compliance](../solutions/dpdp-compliance.md) |
@@ -243,6 +246,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ExchangeCompromiseHunting](github-only-exchangecompromisehunting-4fe3c3f0.md) | 🔗 GitHub Only |
 | [ExchangeOnline](microsoft-365-exchangeonline-c35f597f.md) | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [ExchangeOnline](github-only-exchangeonline-663577e1.md) | 🔗 GitHub Only |
+| [ExternalAttackSurfaceOverview](whisper-externalattacksurfaceoverview-71a72872.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [ExtraHopDetectionsOverview](extrahop-extrahopdetectionsoverview-b10f683c.md) | 📦 [ExtraHop](../solutions/extrahop.md) |
 | [ExtraHopDetectionSummary](extrahop-reveal-x-extrahopdetectionsummary-e66497f1.md) | 📦 [ExtraHop Reveal(x)](../solutions/extrahop-reveal-x.md) |
 | [ExtraHopDetectionSummary](github-only-extrahopdetectionsummary-2cad14c8.md) | 🔗 GitHub Only |
@@ -280,6 +284,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [GCP_IAM](googlecloudplatformiam-gcp-iam-59739972.md) | 📦 [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCPAuditLogs](google-cloud-platform-audit-logs-gcpauditlogs-72261135.md) | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
 | [GCPDNS](googlecloudplatformdns-gcpdns-15de76e5.md) | 📦 [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | [GDPRComplianceAndDataSecurity](gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) | 📦 [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md) |
 | [Gigamon](gigamon-connector-gigamon-07ba033c.md) | 📦 [Gigamon Connector](../solutions/gigamon-connector.md) |
@@ -300,6 +305,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [HIPAACompliance](hipaa-compliance-hipaacompliance-3850f8c8.md) | 📦 [HIPAA Compliance](../solutions/hipaa-compliance.md) |
+| [HybridAttack-Cloud&Identity](hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) | 📦 [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md) |
 
 ## I
 
@@ -318,6 +324,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [IllusiveASM](illusive-platform-illusiveasm-bca1238e.md) | 📦 [Illusive Platform](../solutions/illusive-platform.md) |
 | [IllusiveASM](github-only-illusiveasm-313fc84a.md) | 🔗 GitHub Only |
 | [Imperva WAF Cloud Overview](impervacloudwaf-imperva-waf-cloud-overview-84f383d0.md) | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
+| [IncidentEnrichmentAudit](whisper-incidentenrichmentaudit-aefa8bb1.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [IncidentOverview](sentinelsoaressentials-incidentoverview-c5ea1b65.md) ⚠️ | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [IncidentOverview](soc-handbook-incidentoverview-c120b199.md) | 📦 [SOC Handbook](../solutions/soc-handbook.md) |
 | [IncidentOverview](github-only-incidentoverview-68144052.md) | 🔗 GitHub Only |
@@ -330,6 +337,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [InfobloxNIOS](github-only-infobloxnios-714844bb.md) | 🔗 GitHub Only |
 | [InfobloxSOCInsightsWorkbook](infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) | 📦 [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |
 | [InfoSecGlobal](agilesec-analytics-connector-infosecglobal-f1e4d51f.md) | 📦 [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
+| [InfrastructureThreatLandscape](whisper-infrastructurethreatlandscape-2a76aaf5.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [InsecureProtocols](github-only-insecureprotocols-bd42e6f8.md) | 🔗 GitHub Only |
 | [InsiderRiskManagement](microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | 📦 [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
 | [IntrotoKQL](kql-training-introtokql-c4e57aaa.md) | 📦 [KQL Training](../solutions/kql-training.md) |
@@ -398,6 +406,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Microsoft Exchange Search AdminAuditLog - Online](microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [Microsoft Exchange Security Review](microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Security Review - Online](microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
+| [MicrosoftADTierModel](microsoft-active-directory-tier-model-microsoftadtiermodel-3fad41c8.md) | 📦 [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md) |
 | [MicrosoftCloudAppSecurity](microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) | 📦 [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | [MicrosoftCloudAppSecurity](github-only-microsoftcloudappsecurity-2887ca06.md) | 🔗 GitHub Only |
 | [MicrosoftCopilotActivityMonitoring](microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.md) | 📦 [Microsoft Copilot](../solutions/microsoft-copilot.md) |
@@ -436,6 +445,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [NetCleanProActiveWorkbook](netclean-proactive-netcleanproactiveworkbook-47938b1a.md) | 📦 [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [NetskopeAlertEvents_Workbook](netskopealertevents-netskopealertevents-workbook-9d0c49b9.md) | 📦 [NetskopeAlertEvents](../solutions/netskopealertevents.md) |
+| [NetskopeAlertEvents_Workbook](github-only-netskopealertevents-workbook-d55519c9.md) | 🔗 GitHub Only |
 | [NetskopeCCFWebtxDashboard](netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeCCPDashboard](netskopev2-netskopeccpdashboard-b47aef2b.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeCEDashboard](netskopev2-netskopecedashboard-35668be9.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
@@ -509,6 +520,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [PrancerSentinelAnalytics](prancer-pensuiteai-integration-prancersentinelanalytics-cba49168.md) | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [PrancerSentinelAnalytics](github-only-prancersentinelanalytics-43012f16.md) | 🔗 GitHub Only |
 | [PreventWorkbook](egress-iris-preventworkbook-e3444c6a.md) | 📦 [Egress Iris](../solutions/egress-iris.md) |
+| [PRODAFTUstaATPOverview](prodaft-usta-account-takeover-prevention-prodaftustaatpoverview-23fe73af.md) | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
+| [PRODAFTUstaPCFIOverview](prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfioverview-314477da.md) | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [ProofpointPOD](proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [ProofpointPOD](github-only-proofpointpod-64db84d0.md) | 🔗 GitHub Only |
 | [ProofpointTAP](proofpointtap-proofpointtap-d0be2a01.md) | 📦 [ProofPointTap](../solutions/proofpointtap.md) |
@@ -606,6 +619,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [TacitRedSecOpsWorkbook](tacitredthreatintelligence-tacitredsecopsworkbook-52402f02.md) | 📦 [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
+| [TailscalePremiumOperations](tailscale-ccf-tailscalepremiumoperations-5218a067.md) | 📦 [Tailscale (CCF)](../solutions/tailscale-ccf.md) |
+| [TailscaleStandardOperations](tailscale-ccf-tailscalestandardoperations-76dbc0de.md) | 📦 [Tailscale (CCF)](../solutions/tailscale-ccf.md) |
 | [TalonInsights](talon-taloninsights-a46f557d.md) | 📦 [Talon](../solutions/talon.md) |
 | [TalonInsights](github-only-taloninsights-c91cfb4a.md) | 🔗 GitHub Only |
 | [TaniumWorkbook](tanium-taniumworkbook-97052723.md) | 📦 [Tanium](../solutions/tanium.md) |
@@ -650,6 +665,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [VaikoraAgentSignalsDashboard](vaikora-sentinel-vaikoraagentsignalsdashboard-310774ee.md) | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
+| [VaikoraO365QuarantineDashboard](vaikora-o365-vaikorao365quarantinedashboard-f059fd4f.md) | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [ValenceAlertsWorkbook](valence-security-valencealertsworkbook-fae392cb.md) | 📦 [Valence Security](../solutions/valence-security.md) |
 | [vArmour_AppContoller_Workbook](varmour-application-controller-varmour-appcontoller-workbook-89c75f45.md) | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | [VaronisSaaS](varonissaas-varonissaas-5667e619.md) | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
@@ -686,11 +702,14 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [WindowsFirewall](windows-firewall-windowsfirewall-6cfebfa8.md) | 📦 [Windows Firewall](../solutions/windows-firewall.md) |
 | [WindowsFirewall](github-only-windowsfirewall-e0440cb8.md) | 🔗 GitHub Only |
 | [WindowsFirewallViaAMA](github-only-windowsfirewallviaama-c6e9060b.md) | 🔗 GitHub Only |
+| [WithSecureTopComputersByInfections](withsecureelementsccf-withsecuretopcomputersbyinfections-3b140dfe.md) | 📦 [WithSecureElementsCCF](../solutions/withsecureelementsccf.md) |
 | [WithSecureTopComputersByInfections](withsecureelementsviafunction-withsecuretopcomputersbyinfections-63577228.md) | 📦 [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
 | [WithSecureTopComputersByInfections](github-only-withsecuretopcomputersbyinfections-b9ae720b.md) | 🔗 GitHub Only |
 | [WizFindings](wiz-wizfindings-78285767.md) | 📦 [Wiz](../solutions/wiz.md) |
 | [Workbook-AzureSQLSecurity](azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [workbooksMetadata](microsoft-active-directory-tier-model-workbooksmetadata-743e7b34.md) ⚠️ | 📦 [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md) |
 | [workbooksMetadata](semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | 📦 [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
+| [WorkbooksMetadata](whisper-workbooksmetadata-4425a2d3.md) ⚠️ | 📦 [Whisper](../solutions/whisper.md) |
 | [WorkspaceAuditing](github-only-workspaceauditing-b4e840dd.md) | 🔗 GitHub Only |
 | [WorkspaceUsage](github-only-workspaceusage-97e7cfa7.md) | 🔗 GitHub Only |
 

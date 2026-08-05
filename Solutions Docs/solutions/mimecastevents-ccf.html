@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ MimecastEvents-CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="mimecastevents-ccf">⚠️ MimecastEvents-CCF</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="MimecastEvents-CCF Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Obrela</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.obrela.com/">https://www.obrela.com/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">SecDevOps - secdevops@obrela.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-06</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastEvents-CCF">MimecastEvents-CCF</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Mimecast Security Events (CCF)</strong> solution ingests Mimecast Secure Email Gateway, Targeted Threat Protection, DLP and Audit events into Microsoft Sentinel via Mimecast Event Push and the Codeless Connector Framework (Push). No Mimecast credentials are stored in Sentinel; Mimecast posts events to the Azure Monitor Logs Ingestion API using a Microsoft Entra application.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/mimecasteventsccfdefinition.html">Mimecast Security Events (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a></td>
+  <td><a href="../connectors/mimecasteventsccfdefinition.html">Mimecast Security Events (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>7 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastaudit.html">MimecastAudit</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastcg.html">MimecastCG</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastdlp.html">MimecastDLP</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastevents.html">MimecastEvents</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpattachment.html">MimecastTTPAttachment</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpimpersonation.html">MimecastTTPImpersonation</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/mimecastttpurl.html">MimecastTTPUrl</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/mimecastevents-cl.html"><code>MimecastEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastEvents-CCF/README.md">MimecastEvents-CCF/README.md</a></em></p>
+</blockquote>
+<h1 id="mimecast-events-ccf-push-for-microsoft-sentinel">Mimecast Events (CCF Push) for Microsoft Sentinel</h1>
+<p>Ingests Mimecast Secure Email Gateway (SEG/CG), Targeted Threat Protection
+(URL / Attachment / Impersonation), DLP and Audit events via <strong>Mimecast Event
+Push</strong> → <strong>Azure Monitor Logs Ingestion API</strong>, packaged as a V3 Content Hub
+solution using the Codeless Connector Framework (<strong>Push</strong> — no RestApiPoller).</p>
+<p><strong>No Mimecast credentials are stored in Sentinel.</strong> The Deploy button provisions
+a DCE, DCR, the <code>MimecastEvents_CL</code> table and a Microsoft Entra application;
+those connection values are entered on the Mimecast side (Integrations Hub →
+Event Push, OAuth 2.0 client credentials).</p>
+<h2 id="architecture">Architecture</h2>
+<pre><code>Mimecast Event Push ──HTTPS POST (Bearer via Entra app)──▶ DCE
+  token: login.microsoftonline.com/&lt;tenant&gt;/oauth2/v2.0/token
+  scope: https://monitor.azure.com/.default                 │
+                                                            ▼
+                                       DCR transformKql ──▶ MimecastEvents_CL
+                                                            │
+                     Parsers: MimecastEvents (dedup base), MimecastCG,
+                     MimecastAudit, MimecastTTPUrl, MimecastTTPImpersonation,
+                     MimecastTTPAttachment, MimecastDLP
+</code></pre>
+<h2 id="design">Design (evidence-based)</h2>
+<p>Derived from the legacy Function App tables' real schemas and sanitized samples:</p>
+<ul>
+<li><strong>Single dynamic stream column</strong> <code>mimecast_body</code>; everything extracted in the
+transform. Table stores the full payload as string plus promoted columns
+(<code>mimecastEventType</code>, <code>mimecastEventId</code>, <code>mimecastLogtype</code>, <code>mimecastSubtype</code>).</li>
+<li><strong>Derived discriminator</strong> (records carry no uniform type field). Order:
+<code>auditType</code> → audit; <code>impersonationResults</code> → ttp_impersonation;
+<code>Logtype == email_ttp_ap</code> → email_ttp_ap; <code>Logtype == seg_dlp</code> → seg_dlp;
+any <code>Logtype</code> → seg_cg; attachment shape (<code>fileHash</code>/<code>sha256</code>) → ttp_attachment
+(checked BEFORE <code>url</code>); <code>url</code> → ttp_url; else unknown.
+Observed Logtype values: <code>email_receipt</code>, <code>email_process</code>, <code>email_spam</code>,
+<code>email_ttp_ap</code> (open enum).</li>
+<li><strong>Per-type timestamps</strong>, 2-day clamp: <code>eventTime</code> ISO (Audit/Impersonation),
+<code>date</code> ISO+offset (TTP URL), <code>timestamp</code> epoch <strong>milliseconds</strong> (SEG —
+converted with <code>datetime(1970-01-01) + tolong(x) * 1ms</code>;
+<code>unixtime_milliseconds_todatetime()</code> deliberately avoided as unverified in the
+ingestion-time KQL subset).</li>
+<li><strong>Dedup keys</strong> (read-time, <code>arg_max</code> in parsers): Audit/Impersonation → <code>id</code>;
+SEG → <code>processingId</code> (NOT <code>aggregateId</code>, which groups multiple rows);
+TTP URL → synthetic <code>hash_sha256(messageId|url|date)</code>.</li>
+<li><strong>Legacy compatibility</strong>: per-type parsers project the legacy Function App
+column names so existing queries keep working against the views.</li>
+</ul>
+<h2 id="deployment-amp-mimecast-configuration">Deployment &amp; Mimecast configuration</h2>
+<ol>
+<li>Install the solution; open the connector page; click <strong>Deploy</strong>.</li>
+<li>Copy the five values (Tenant ID, Client ID, Client secret, DCE URL, DCR</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>06-07-2026</td>
+  <td>Initial release: Mimecast Event Push CCF (Push) data connector, 7 parsers.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

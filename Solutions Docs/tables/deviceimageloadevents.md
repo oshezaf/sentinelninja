@@ -11,8 +11,6 @@ Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -87,11 +85,12 @@ Official Microsoft Learn documentation for field/column information:
 
 - [DeviceImageLoadEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents)
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [FalconFriday](../solutions/falconfriday.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 
 ## Connectors (1)
@@ -104,7 +103,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (12)
 
 ### Analytic Rules (5)
 
@@ -123,7 +122,14 @@ This table is ingested by the following connectors:
 | [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-36fbd4e7-5630-4414-aa42-702a7fdded21-4cc759a2.md) |  |
 | [SUNSPOT malware hashes](../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md) |  |
 
-### Hunting Queries (4)
+### Hunting Queries (6)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Cloud Run Command followed by kernel persistence indicators on target servers](../content/hybrid-attack-cloud-&-identity-cloud-run-command-followed-by-kernel-persistence-indicators-on-target-ser-b441f4ca-9de2-4dd4-b0de-7c8f869f20a1-49bbe6d8.md) |  |
+| [Rare kernel load followed by novel non-interactive sign-in tuple](../content/hybrid-attack-cloud-&-identity-rare-kernel-load-followed-by-novel-non-interactive-sign-in-tuple-6f8a8f48-e63b-4afb-9d2a-3ef5f6e2d1bc-1cd5ae04.md) |  |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 

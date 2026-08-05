@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Salesforce *(basis: projected)* |
-| **Source Product** | Service Cloud *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -21,12 +19,13 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (216 columns)
+## Schema (218 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SalesforceServiceCloudV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| _ItemId | string |
 | Action | string |
 | AnalyticsMode | string |
 | ApiType | string |
@@ -222,6 +221,7 @@
 | TriggerId | string |
 | TriggerName | string |
 | TriggerType | string |
+| Type | string |
 | UiEventId | string |
 | UiEventSequenceNum | string |
 | UiEventSource | string |

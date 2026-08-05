@@ -11,9 +11,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Source Vendor** | Infoblox *(basis: projected)* |
-| **Source Product** | SOC Insight *(basis: projected)* |
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -27,42 +24,28 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (30 columns)
+## Schema (16 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsight_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights%5CData%20Connectors%5CInfobloxSOCInsights_CCF/table_InfobloxInsight.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| _ResourceId | string |
-| changer_s | string |
-| Computer | string |
-| DataObservedVia_s | string |
-| dateChanged_t | datetime |
-| eventsBlockedCount_s | string |
-| eventsNotBlockedCount_s | string |
-| feedSource_s | string |
-| hello_s | string |
-| InfobloxInsightID | string |
-| InfobloxInsightLogType_s | string |
-| insightId_g | guid |
-| ManagementGroupName | string |
-| MG | string |
-| mostRecentAt_t | datetime |
-| numEvents_s | string |
-| persistentDate_t | datetime |
-| priorityText_s | string |
-| RawData | string |
-| SourceSystem | string |
-| spreadingDate_t | datetime |
-| startedAt_t | datetime |
-| status_s | string |
-| tClass_s | string |
-| TenantId | string |
-| tFamily_s | string |
-| threatType_s | string |
-| TimeGenerated | datetime |
-| Type | string |
-| userComment_s | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| ConnectorName | string | Connector friendly name assigned during connector setup |
+| DateChanged | datetime | Timestamp when the insight was last modified |
+| EventsBlockedCount | string | Number of events that were blocked (string from API) |
+| EventsNotBlockedCount | string | Number of events that were not blocked (string from API) |
+| FeedSource | string | Source of the threat intelligence feed |
+| InsightId | string | Unique identifier for the insight |
+| MostRecentAt | datetime | Timestamp of the most recent event related to this insight |
+| NumEvents | string | Total number of events associated with this insight (string from API) |
+| PriorityText | string | Priority level in text format (e.g., CRITICAL, HIGH, MEDIUM, LOW) |
+| StartedAt | datetime | Timestamp when the insight was first detected |
+| Status | string | Current status of the insight (e.g., Active, Closed, Dismissed) |
+| TClass | string | Threat class or category |
+| TenantHost | string | Infoblox API host extracted from the configured API URL |
+| TFamily | string | Threat family classification |
+| ThreatType | string | Type of threat detected (e.g., Malware, DNS Tunneling, C2, DGA) |
+| TimeGenerated | datetime | The timestamp (in UTC) when the insight was first detected. |
 
 ## Schema References
 
@@ -77,12 +60,13 @@ This table is used by the following solutions:
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [Infoblox SOC Insights (via Codeless Connector Framework)](../connectors/infobloxsocinsightsconnector.md) |  |
 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) |  |
 
 ---

@@ -1,6 +1,6 @@
-# ⚠️ GoogleSecOps
+# Google SecOps
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: GoogleSecOps*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleSecOps.svg" alt="GoogleSecOps Logo" width="75" height="75">
 
@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cloud.google.com/support](https://cloud.google.com/support) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Source Vendor** | Google *(basis: publisher)* |
-| **Source Product** | SecOps Detection |
 | **Version** | 3.0.0 |
 | **Author** | Google - secops-sentinel-support@crestdata.ai |
 | **First Published** | 2025-04-04 |
+| **Last Updated** | 2026-07-06 |
 | **Solution Folder** | [GoogleSecOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleSecOps) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-googlesecops) · Popularity: 🔵 Medium (77%) |
 
 The [Google SecOps](https://cloud.google.com/security/products/security-operations) solution for Microsoft Sentinel provides the capability to ingest detection alerts from Google SecOps (formerly Chronicle) into Microsoft Sentinel using the legacyStreamDetectionAlerts API.
 

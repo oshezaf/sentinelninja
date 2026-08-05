@@ -1,6 +1,6 @@
 # Analytic Rules - V
 
-**87 analytic rules** starting with 'V'.
+**94 analytic rules** starting with 'V'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -17,15 +17,22 @@
 | [Vaikora - Agent policy violation](vaikora-sentinel-vaikora-agent-policy-violation-54262ad1-f346-4246-a13f-9557595ff7bd-946b4697.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | [Vaikora - Behavioral anomaly detected](vaikorasecuritycenter-vaikora-behavioral-anomaly-detected-c0984707-0855-430e-9c36-5e2d0d0ce56f-89d50910.md) | Medium | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vaikora - Behavioral anomaly detected](vaikora-sentinel-vaikora-behavioral-anomaly-detected-e61258ec-1a7f-454c-95b5-458a6edb1ea4-7a520c0a.md) | Medium | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
+| [Vaikora - Engine offline](vaikora-o365-vaikora-engine-offline-968b70c1-b468-418a-ac02-1eb74783a52a-92ff8909.md) | Medium | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [Vaikora - Feed outage detection](vaikorasecuritycenter-vaikora-feed-outage-detection-5f7789fa-0a6b-4dff-a2da-dfa4b682f3af-c7fc740b.md) | Low | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
+| [Vaikora - High score quarantine](vaikora-o365-vaikora-high-score-quarantine-017031f6-be1d-4c68-b4d3-182fa84378cc-0e337c3a.md) | High | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [Vaikora - High severity AI agent action](vaikorasecuritycenter-vaikora-high-severity-ai-agent-action-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-31cd3c0a.md) | High | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vaikora - High severity AI agent action detected](vaikora-sentinel-vaikora-high-severity-ai-agent-action-detected-15c49777-7cb7-4746-8064-6fa4c7a73df8-39a65e3c.md) | High | 📦 [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
+| [Vaikora - Quarantine rate spike](vaikora-o365-vaikora-quarantine-rate-spike-3b3eb1cd-578d-4198-9b7a-bd7253b0dc9f-a2e9d10e.md) | Medium | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [Valence Security Alerts](valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | 📦 [Valence Security](../solutions/valence-security.md) |
 | [Valimail Enforce - DMARC Policy Weakened to None](valimailenforce-valimail-enforce-dmarc-policy-weakened-to-none-44ec1fa4-a502-41ae-879a-3aad3557edce-ba6726ed.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [Valimail Enforce - Email Authentication Key Deleted](valimailenforce-valimail-enforce-email-authentication-key-deleted-483078c6-d029-40f3-931a-30af0032008b-737952e9.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [Valimail Enforce - High-Value User Management Event](valimailenforce-valimail-enforce-high-value-user-management-event-e960f5b0-cd80-474a-996a-013ff3989772-199686de.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [Valimail Enforce - Unusual Rate of Configuration Changes or User Additions](valimailenforce-valimail-enforce-unusual-rate-of-configuration-changes-or-user-additions-3cbb78d9-81ac-42c9-b3cd-7e6baea7d9ff-19771ced.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [vArmour AppController - SMB Realm Traversal](varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md) | Medium | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
+| [Varonis - High severity alerts detected](varonissaas-varonis-high-severity-alerts-detected-7d2c9a41-5b8e-4f36-9c1a-2e6b8d4f7a13-4e1d4d3c.md) | High | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
+| [Varonis - Informational alerts detected](varonissaas-varonis-informational-alerts-detected-e5a7c93b-8d14-42f6-b7c0-3a9e1f6d5b28-0b3681bb.md) | Informational | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
+| [Varonis - Low severity alerts detected](varonissaas-varonis-low-severity-alerts-detected-9b1f3e7a-6c42-4d18-a5e9-2b7f8c0d4e61-3ed08cd4.md) | Low | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
+| [Varonis - Medium severity alerts detected](varonissaas-varonis-medium-severity-alerts-detected-c4e8b16f-3a92-4d75-8e21-6f9c0b5d2a84-b5ee29f4.md) | Medium | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
 | [Vaults Alerts for Prancer](prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-9e72e923.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [vCenter - Root impersonation](vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | 📦 [VMware vCenter](../solutions/vmware-vcenter.md) |
 | [Vectra Account's Behaviors](vectra-ai-detect-vectra-account's-behaviors-ce54b5d3-4c31-4eaf-a73e-31412270b6ab-45fe2d23.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |

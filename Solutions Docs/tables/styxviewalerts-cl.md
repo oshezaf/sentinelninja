@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Styx Intelligence *(basis: projected)* |
-| **Source Product** | View *(basis: projected)* |
-| **Event Type** | Alerts |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

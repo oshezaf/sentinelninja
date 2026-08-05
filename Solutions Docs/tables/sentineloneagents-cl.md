@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SentinelOne *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -24,79 +23,79 @@
 
 ## Schema (69 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Agents.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneAgents.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
-| AccountId | string | The unique identifier for the account. |
-| AccountName | string | The account name. |
-| ActiveDirectory | string | Details about the active directory. |
-| ActiveThreats | real | The number of active threats. |
-| AgentVersion | string | The version of the agent. |
-| AllowRemoteShell | bool | Indicates whether remote shell is allowed. |
-| AppsVulnerabilityStatus | string | The vulnerability status of the applications. |
-| ComputerName | string | The name of the computer. |
-| ConsoleMigrationStatus | string | The status of the console migration. |
-| CoreCount | real | The number of CPU cores. |
-| CpuCount | real | The number of CPUs. |
-| CpuId | string | The identifier of the CPU. |
-| CreatedAt | datetime | The timestamp (UTC) when the object was created. |
-| Domain | string | The domain of the object. |
-| EncryptedApplications | bool | Indicates whether the applications are encrypted. |
-| ExternalId | string | The external identifier associated with the object. |
-| ExternalIp | string | The external IP address of the object. |
-| FullDiskScanLastUpdatedAt | datetime | The timestamp (UTC) when the full disk scan was last updated. |
-| GroupId | string | The unique identifier for the group. |
-| GroupIp | string | The IP address of the group. |
-| GroupName | string | The name of the group. |
-| GroupUpdatedAt | datetime | The timestamp (UTC) when the group was last updated. |
-| Id | string | The unique identifier for the object. |
-| Infected | bool | Indicates whether the object is infected. |
-| InRemoteShellSession | bool | Indicates whether the object is in a remote shell session. |
-| InstallerType | string | The type of installer used. |
-| IsActive | bool | Indicates whether the object is active. |
-| IsDecommissioned | bool | Indicates whether the object is decommissioned. |
-| IsPendingUninstall | bool | Indicates whether the object is pending uninstallation. |
-| IsUninstalled | bool | Indicates whether the object is uninstalled. |
-| IsUpToDate | bool | Indicates whether the object is up to date. |
-| LastActiveDate | datetime | The timestamp (UTC) when the object was last active. |
-| LastIpToMgmt | string | The last IP address used for management. |
-| LastLoggedInUserName | string | The username of the last logged-in user. |
-| LicenseKey | string | The license key associated with the object. |
-| Locations | string | The locations associated with the object. |
-| LocationType | string | The type of location. |
-| MachineType | string | The type of machine. |
-| MissingPermissions | string | Details of the missing permissions. |
-| MitigationMode | string | The mitigation mode applied. |
-| MitigationModeSuspicious | string | The suspicious mitigation mode applied. |
-| ModelName | string | The model name of the object. |
-| NetworkInterfaces | string | Details of the network interfaces. |
-| NetworkQuarantineEnabled | bool | Is Network Quarantine Enabled on the device. |
-| NetworkStatus | string | The network status of the object. |
-| OperationalStateExpiration | string | Agent operational state. |
-| OsArch | string | The OS architecture. |
-| OsName | string | The name of the operating system. |
-| OsRevision | string | The OS revision. |
-| OsStartTime | datetime | The timestamp (UTC) when the operating system started. |
-| OsType | string | The type of operating system. |
-| OsUsername | string | The username associated with the operating system. |
-| PolicyUpdatedAt | datetime | The timestamp (UTC) when the policy was last updated. |
-| RangerStatus | string | The status of the ranger. |
-| RangerVersion | string | The version of the ranger. |
-| RegisteredAt | datetime | The timestamp (UTC) when the object was registered. |
-| RemoteProfilingState | string | Agent remote profiling state. |
-| ScanAbortedAt | datetime | The timestamp (UTC) when the scan was aborted. |
-| ScanFinishedAt | datetime | The timestamp (UTC) when the scan was finished. |
-| ScanStartedAt | datetime | The timestamp (UTC) when the scan was started. |
-| ScanStatus | string | The scan status of the object. |
-| SiteId | string | The unique identifier for the site. |
-| SiteName | string | The name of the site. |
-| ThreatRebootRequired | bool | Indicates whether a reboot is required due to a threat. |
-| TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
-| TotalMemory | real | The total memory available in MB. |
-| UpdatedAt | datetime | The timestamp (UTC) when the object was last updated. |
-| UserActionsNeeded | string | Details of the user actions needed. |
-| Uuid | string | The unique identifier for the object. |
+| AccountId | string | Account id |
+| AccountName | string | Account name |
+| ActiveDirectory | string | Active directory |
+| ActiveThreats | real | Active threats |
+| AgentVersion | string | Agent version |
+| AllowRemoteShell | bool | Allow remote shell |
+| AppsVulnerabilityStatus | string | Apps vulnerability status |
+| ComputerName | string | Computer name |
+| ConsoleMigrationStatus | string | Console migration status |
+| CoreCount | real | Core count |
+| CpuCount | real | Cpu count |
+| CpuId | string | Cpu id |
+| CreatedAt | datetime | Created at |
+| Domain | string | Domain |
+| EncryptedApplications | bool | Encrypted applications |
+| ExternalId | string | External id |
+| ExternalIp | string | External ip |
+| FullDiskScanLastUpdatedAt | datetime | Full disk scan last updated at |
+| GroupId | string | Group id |
+| GroupIp | string | Group ip |
+| GroupName | string | Group name |
+| GroupUpdatedAt | datetime | Group updated at |
+| Id | string | Id |
+| Infected | bool | Infected |
+| InRemoteShellSession | bool | In remote shell session |
+| InstallerType | string | Installer type |
+| IsActive | bool | Is active |
+| IsDecommissioned | bool | Is decommissioned |
+| IsPendingUninstall | bool | Is pending uninstall |
+| IsUninstalled | bool | Is uninstalled |
+| IsUpToDate | bool | Is up to date |
+| LastActiveDate | datetime | Last active date |
+| LastIpToMgmt | string | Last ip to mgmt |
+| LastLoggedInUserName | string | Last logged in user name |
+| LicenseKey | string | License key |
+| Locations | string | Locations |
+| LocationType | string | Location type |
+| MachineType | string | Machine type |
+| MissingPermissions | string | Missing permissions |
+| MitigationMode | string | Mitigation mode |
+| MitigationModeSuspicious | string | Mitigation mode suspicious |
+| ModelName | string | Model name |
+| NetworkInterfaces | string | Network interfaces |
+| NetworkQuarantineEnabled | bool | Network quarantine enabled |
+| NetworkStatus | string | Network status |
+| OperationalStateExpiration | string | Operational state expiration |
+| OsArch | string | Os arch |
+| OsName | string | Os name |
+| OsRevision | string | Os revision |
+| OsStartTime | datetime | Os start time |
+| OsType | string | Os type |
+| OsUsername | string | Os username |
+| PolicyUpdatedAt | datetime | Policy updated at |
+| RangerStatus | string | Ranger status |
+| RangerVersion | string | Ranger version |
+| RegisteredAt | datetime | Registered at |
+| RemoteProfilingState | string | Remote profiling state |
+| ScanAbortedAt | datetime | Scan aborted at |
+| ScanFinishedAt | datetime | Scan finished at |
+| ScanStartedAt | datetime | Scan started at |
+| ScanStatus | string | Scan status |
+| SiteId | string | Site id |
+| SiteName | string | Site name |
+| ThreatRebootRequired | bool | Threat reboot required |
+| TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
+| TotalMemory | real | Total memory |
+| UpdatedAt | datetime | Updated at |
+| UserActionsNeeded | string | User actions needed |
+| Uuid | string | Uuid |
 
 ## Schema References
 

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 380 |
-| **Solutions** | 62 |
+| **Playbooks using** | 398 |
+| **Solutions** | 67 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -34,7 +34,7 @@
 | [AS-Block-GitHub-User](../content/standalone-content-as-block-github-user-8d97b5dd.md) | 📄 Standalone | 0 | 3 |
 | [AS-Block-Hash-in-Defender](../content/standalone-content-as-block-hash-in-defender-0c0410bc.md) | 📄 Standalone | 0 | 2 |
 | [AS-Checkmarx-Audit-Ingestion](../content/standalone-content-as-checkmarx-audit-ingestion-8715fea6.md) | 📄 Standalone | 0 | 3 |
-| [AS-Checkmarx-SAST-Ingestion](../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone | 0 | 4 |
+| [AS-Checkmarx-SAST-Ingestion](../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone | 0 | 5 |
 | [AS-Clear-Okta-Network-Zone-List](../content/standalone-content-as-clear-okta-network-zone-list-38fe847c.md) | 📄 Standalone | 0 | 2 |
 | [AS-Create-Opsgenie-Incident](../content/standalone-content-as-create-opsgenie-incident-220c25ba.md) | 📄 Standalone | 0 | 1 |
 | [AS-CrowdstrikeAlerts-Integration](../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.md) | 📄 Standalone | 0 | 3 |
@@ -93,11 +93,13 @@
 | [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 0 | 3 |
 | [Censys Related Infrastructure](../content/censys-censys-related-infrastructure-23870661.md) | [Censys](../solutions/censys.md) | 0 | 3 |
 | [Censys Rescan](../content/censys-censys-rescan-51275b90.md) | [Censys](../solutions/censys.md) | 0 | 3 |
+| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
+| [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](../content/check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) | 0 | 4 |
 | [Check Point Exposure Management - Credential Leak Validation and Response](../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
-| [Check Point Exposure Management - Exporter (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
+| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
 | [Check Point Exposure Management - Fetch Attachments On-Demand](../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 3 |
 | [Check Point Exposure Management - IOC Enrichment and Triage](../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 4 |
-| [Check Point Exposure Management - Manual Status Update (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
+| [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
 | [Check Point Exposure Management - Phishing Takedown](../content/check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 2 |
 | [Check Point Exposure Management - Vulnerability Exploitation Monitoring](../content/check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
 | [CiscoUmbrella-AddIpToDestinationList](../content/ciscoumbrella-ciscoumbrella-addiptodestinationlist-7d9bf8a5.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) | 0 | 3 |
@@ -261,9 +263,12 @@
 | [NCSCNLShareSTIXBundle](../content/ncsc-nl-ndn-cyber-threat-intelligence-sharing-ncscnlsharestixbundle-5c475981.md) | [NCSC-NL NDN Cyber Threat Intelligence Sharing](../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.md) | 0 | 4 |
 | [NetApp Ransomware Resilience Async Poll Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-async-poll-playbook-a4a68793.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 3 |
 | [NetApp Ransomware Resilience Authentication Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-authentication-playbook-89467ad1.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 1 |
+| [NetApp Ransomware Resilience Block User Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-block-user-playbook-d874068b.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 2 |
 | [NetApp Ransomware Resilience Enrich IP Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-ip-playbook-0190ca9d.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 3 |
 | [NetApp Ransomware Resilience Enrich StorageVM Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-enrich-storagevm-playbook-141af0cf.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 2 |
+| [NetApp Ransomware Resilience Unblock User Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-unblock-user-playbook-00b8d77d.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 2 |
 | [NetApp Ransomware Resilience Volume Offline Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-volume-offline-playbook-12183796.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 3 |
+| [NetApp Ransomware Resilience Volume Online Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-volume-online-playbook-92f6c250.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 2 |
 | [NetApp Ransomware Resilience Volume Snapshot Playbook](../content/netapp-ransomware-resilience-netapp-ransomware-resilience-volume-snapshot-playbook-bda48157.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 3 |
 | [NetskopeDataConnectorsTriggerSync](../content/netskopev2-netskopedataconnectorstriggersync-51d2eb21.md) | [Netskopev2](../solutions/netskopev2.md) | 0 | 3 |
 | [Notify Sentinel Incident Creation and Update to Torq Webhook](../content/torq-notify-sentinel-incident-creation-and-update-to-torq-webhook-11841fc6.md) | [Torq](../solutions/torq.md) | 0 | 1 |
@@ -272,6 +277,8 @@
 | [Open-ServiceDeskPlusOnDemand-Ticket](../content/standalone-content-open-servicedeskplusondemand-ticket-cea26c5c.md) | 📄 Standalone | 0 | 1 |
 | [Post Message Slack Via Webhook](../content/standalone-content-post-message-slack-via-webhook-e50cb593.md) | 📄 Standalone | 0 | 1 |
 | [Post-Tags-And-Comments-To-Your-IntSights-Account](../content/standalone-content-post-tags-and-comments-to-your-intsights-account-771a2367.md) | 📄 Standalone | 0 | 2 |
+| [PRODAFTUstaATP-Backfill](../content/prodaft-usta-account-takeover-prevention-prodaftustaatp-backfill-6bdc69a2.md) | [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) | 0 | 2 |
+| [PRODAFTUstaPCFI-Backfill](../content/prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfi-backfill-5ae17346.md) | [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) | 0 | 2 |
 | [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-pure-storage-flashblade-file-system-snapshot-2cf3736e.md) | [Pure Storage](../solutions/pure-storage.md) | 0 | 4 |
 | [Pure Storage Protection Group Snapshot](../content/pure-storage-pure-storage-protection-group-snapshot-9fcd6aff.md) | [Pure Storage](../solutions/pure-storage.md) | 0 | 4 |
 | [Pure Storage User Deletion](../content/pure-storage-pure-storage-user-deletion-9d7757a4.md) | [Pure Storage](../solutions/pure-storage.md) | 0 | 4 |
@@ -359,6 +366,7 @@
 | [UserEnrichment.template](../content/github-only-userenrichment.template-384b9ce8.md) | 🔗 GitHub Only | 0 | 16 |
 | [Vaikora AI Agent Signals to CrowdStrike](../content/vaikora-crowdstrike-threatintelligence-vaikora-ai-agent-signals-to-crowdstrike-1c0c6d82.md) | [Vaikora-CrowdStrike-ThreatIntelligence](../solutions/vaikora-crowdstrike-threatintelligence.md) | 0 | 3 |
 | [Vaikora AI Agent Signals to SentinelOne](../content/vaikora-sentinelone-threatintelligence-vaikora-ai-agent-signals-to-sentinelone-f649433d.md) | [Vaikora-SentinelOne-ThreatIntelligence](../solutions/vaikora-sentinelone-threatintelligence.md) | 0 | 4 |
+| [Vaikora for O365 - Quarantine Incident Responder](../content/vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.md) | [Vaikora-O365](../solutions/vaikora-o365.md) | 0 | 1 |
 | [Vaikora to Microsoft Defender for Cloud](../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) | 0 | 1 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
@@ -382,6 +390,16 @@
 | [Veeam-ChangeCollectionTime](../content/veeam-veeam-changecollectiontime-6e10e57b.md) | [Veeam](../solutions/veeam.md) | 0 | 2 |
 | [Veeam-SetupConnections](../content/veeam-veeam-setupconnections-e3e98b5f.md) | [Veeam](../solutions/veeam.md) | 0 | 22 |
 | [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | 📄 Standalone | 0 | 3 |
+| [Whisper Security - Batch Indicator Enrichment](../content/whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Check ASN Reputation](../content/whisper-whisper-security-check-asn-reputation-f2a79814.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Discover Co-Hosted Domains](../content/whisper-whisper-security-discover-co-hosted-domains-df0d4f7c.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain ASN](../content/whisper-whisper-security-explain-asn-71637933.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain Domain](../content/whisper-whisper-security-explain-domain-b479e0f2.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain IP Address](../content/whisper-whisper-security-explain-ip-address-1e68b177.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Explain Network](../content/whisper-whisper-security-explain-network-c99337ce.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Get BGP History](../content/whisper-whisper-security-get-bgp-history-150c0325.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [Whisper Security - Get Infrastructure Chain](../content/whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Get WHOIS History](../content/whisper-whisper-security-get-whois-history-ccdf0e6e.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
 | [workflow](../content/sap-workflow-3298b428.md) | [SAP](../solutions/sap.md) | 0 | 1 |
 | [workflow](../content/sap-workflow-20a8ae88.md) | [SAP](../solutions/sap.md) | 0 | 1 |
 | [Zscaler OAuth2 Authentication](../content/zscaler-internet-access-zscaler-oauth2-authentication-c37368ef.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |

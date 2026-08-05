@@ -9,8 +9,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | GCP |
-| **Source Vendor** | Google *(basis: projected)* |
-| **Source Product** | Cloud Platform IAM *(basis: projected)* |
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 

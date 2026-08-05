@@ -37,18 +37,6 @@
   <td style="text-align:left">Internal</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Infoblox <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">SOC Insight <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
@@ -71,135 +59,96 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (30 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsight_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (16 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights%5CData%20Connectors%5CInfobloxSOCInsights_CCF/table_InfobloxInsight.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">ConnectorName</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Connector friendly name assigned during connector setup</td>
 </tr>
 <tr>
-  <td style="text-align:left">changer_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">DataObservedVia_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">dateChanged_t</td>
+  <td style="text-align:left">DateChanged</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the insight was last modified</td>
 </tr>
 <tr>
-  <td style="text-align:left">eventsBlockedCount_s</td>
+  <td style="text-align:left">EventsBlockedCount</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of events that were blocked (string from API)</td>
 </tr>
 <tr>
-  <td style="text-align:left">eventsNotBlockedCount_s</td>
+  <td style="text-align:left">EventsNotBlockedCount</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Number of events that were not blocked (string from API)</td>
 </tr>
 <tr>
-  <td style="text-align:left">feedSource_s</td>
+  <td style="text-align:left">FeedSource</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of the threat intelligence feed</td>
 </tr>
 <tr>
-  <td style="text-align:left">hello_s</td>
+  <td style="text-align:left">InsightId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the insight</td>
 </tr>
 <tr>
-  <td style="text-align:left">InfobloxInsightID</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">InfobloxInsightLogType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">insightId_g</td>
-  <td style="text-align:left">guid</td>
-</tr>
-<tr>
-  <td style="text-align:left">ManagementGroupName</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">mostRecentAt_t</td>
+  <td style="text-align:left">MostRecentAt</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp of the most recent event related to this insight</td>
 </tr>
 <tr>
-  <td style="text-align:left">numEvents_s</td>
+  <td style="text-align:left">NumEvents</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Total number of events associated with this insight (string from API)</td>
 </tr>
 <tr>
-  <td style="text-align:left">persistentDate_t</td>
+  <td style="text-align:left">PriorityText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Priority level in text format (e.g., CRITICAL, HIGH, MEDIUM, LOW)</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartedAt</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the insight was first detected</td>
 </tr>
 <tr>
-  <td style="text-align:left">priorityText_s</td>
+  <td style="text-align:left">Status</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Current status of the insight (e.g., Active, Closed, Dismissed)</td>
 </tr>
 <tr>
-  <td style="text-align:left">RawData</td>
+  <td style="text-align:left">TClass</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Threat class or category</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">TenantHost</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Infoblox API host extracted from the configured API URL</td>
 </tr>
 <tr>
-  <td style="text-align:left">spreadingDate_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">startedAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">status_s</td>
+  <td style="text-align:left">TFamily</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Threat family classification</td>
 </tr>
 <tr>
-  <td style="text-align:left">tClass_s</td>
+  <td style="text-align:left">ThreatType</td>
   <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">tFamily_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">threatType_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of threat detected (e.g., Malware, DNS Tunneling, C2, DGA)</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">userComment_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">The timestamp (in UTC) when the insight was first detected.</td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +163,7 @@
 <li><a href="../solutions/infoblox.html">Infoblox</a></li>
 <li><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></li>
 </ul>
-<h2 id="connectors">Connectors (1)</h2>
+<h2 id="connectors">Connectors (2)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -224,6 +173,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/infobloxsocinsightsconnector.html">Infoblox SOC Insights (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></td>
   <td style="text-align:left"></td>

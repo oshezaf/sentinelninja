@@ -38,18 +38,6 @@
   <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">GitHub <em>(basis: title)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Enterprise <em>(basis: title)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Audit</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
   <td style="text-align:left"><a href="../solutions/github.html">GitHub</a></td>
 </tr>
@@ -93,10 +81,10 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/githubauditlogsv3-cl.html"><code>GitHubAuditLogsV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -149,26 +137,46 @@
 </ul>
 <p>To assign these roles: navigate to the Storage Account -&gt; <strong>Access Control (IAM)</strong> -&gt; <strong>Add role assignment</strong>, search for the service principal ID shown below, and assign both roles.</p>
 <ul>
-<li><strong>Collecting GitHub audit logs to your blob container</strong>: Follow the steps in the <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage">GitHub documentation</a> to configure audit log streaming to your Azure Blob Storage container.</li>
+<li><p><strong>Collecting GitHub audit logs to your blob container</strong>: Follow the steps in the <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage">GitHub documentation</a> to configure audit log streaming to your Azure Blob Storage container.</p>
+</li>
+<li><p>When following the guidance to generate a SAS token, two signing methods are supported: <strong>Account key</strong> and <strong>User delegation key</strong>.</p>
+</li>
 </ul>
+<p>For the <strong>Account key</strong> method, we recommend first creating a <a href="https://learn.microsoft.com/en-us/rest/api/storageservices/define-stored-access-policy">Stored Access Policy</a> and then generating the SAS tied to that policy.</p>
+<p>Binding the SAS to a policy lets you change its expiry and permissions, or revoke it, on the server side. This enables seamless rotation by updating the policy rather than reissuing the token.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect GitHub Audit Logs to Microsoft Sentinel</strong></p>
-<p>To enable the GitHub Audit Log ingestion from Azure Blob Storage, provide the required information below and click on Connect.</p>
-<blockquote>
-<p>📋 <strong>Additional Configuration Step</strong>: This connector includes a configuration step of type <code>ServicePrincipalIDTextBox_test</code>. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.</p>
-</blockquote>
+<p>Use the connection grid to add and manage GitHub Audit Log blob connections.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
 <ul>
-<li><strong>The blob container URL you want to collect data from</strong></li>
-<li><strong>The blob folder name in the container. Optional.</strong></li>
-<li><strong>The blob container's storage account location</strong>: eastus</li>
-<li><strong>The blob container's storage account resource group name</strong>: my-resource-group</li>
-<li><strong>The blob container's storage account subscription id</strong></li>
-<li><strong>The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.</strong></li>
-<li>Click 'Connect' to establish connection</li>
+<li><strong>Connection Alias</strong></li>
 </ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Connect GitHub Audit Logs to Microsoft Sentinel</strong></p>
+<p><em>Provide the required storage information for a new connection.</em></p>
+<p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Connection configuration</em></p>
+<ul>
+<li><strong>Connection alias</strong> (required): e.g. Production</li>
+<li><strong>The blob container URL you want to collect data from</strong> (optional)</li>
+<li><strong>The blob folder name in the container. Optional.</strong> (optional)</li>
+<li><strong>The blob container's storage account location</strong> (optional): eastus</li>
+<li><strong>The blob container's storage account resource group name</strong> (optional)</li>
+<li><strong>The blob container's storage account subscription id</strong> (optional)</li>
+<li><strong>The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.</strong> (optional)</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
 <p><strong>2. Blob Lifecycle Policy (Recommended)</strong></p>
 <p>To prevent unbounded storage growth, configure a <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview">lifecycle management policy</a> on your storage account to automatically delete blobs after a retention period (for example, 7 days). Once the connector ingests the audit logs into Microsoft Sentinel, the source blobs are no longer needed.</p>
 <p>To create a lifecycle rule scoped to your container:</p>
@@ -193,7 +201,7 @@
 <ul>
 <li><strong>Enable the health feature</strong> - If the connector health feature isn't enabled, enable it to monitor connector status and detect issues early.</li>
 <li><strong>Enable diagnostic logs</strong> - Consider enabling diagnostic logs for both the <strong>Storage Account</strong> and <strong>Event Grid</strong> resources to help identify and troubleshoot health issues.</li>
-<li>For more details, see <a href="https://review.learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot?branch=main">Troubleshoot Azure Storage Blob connector issues</a>.</li>
+<li>For more details, see <a href="https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot">Troubleshoot Azure Storage Blob connector issues</a>.</li>
 </ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>

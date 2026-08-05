@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Palo Alto Networks *(basis: projected)* |
-| **Source Product** | Cortex XDR *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -151,7 +149,7 @@ Official Microsoft Learn documentation for field/column information:
 This table is used by the following solutions:
 
 - [Cortex XDR](../solutions/cortex-xdr.md)
-- [Palo Alto Cortex XDR CCP](../solutions/palo-alto-cortex-xdr-ccp.md)
+- [Palo Alto Cortex XDR](../solutions/palo-alto-cortex-xdr.md)
 
 ## Connectors (1)
 

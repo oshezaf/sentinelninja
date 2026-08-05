@@ -12,7 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `SnowflakeLogsCCPDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Snowflake *(basis: description_url)* |
 | **Used in Solutions** | [Snowflake](../solutions/snowflake.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SnowflakeLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_ConnectorDefinition.json) |

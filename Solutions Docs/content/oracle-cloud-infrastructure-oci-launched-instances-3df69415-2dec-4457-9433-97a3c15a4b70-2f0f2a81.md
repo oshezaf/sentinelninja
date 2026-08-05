@@ -16,7 +16,7 @@ Query searches for new launched instances.
 | **Severity** | Medium |
 | **Tactics** | Impact |
 | **Techniques** | T1499 |
-| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md) |
+| **Required Connectors** | [OracleCloudInfrastructureLogsConnector](../connectors/oraclecloudinfrastructurelogsconnector.md), [OracleCloudInfraConnector](../connectors/oraclecloudinfraconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Hunting%20Queries/OCILaunchedInstances.yaml) |
 
 ## Tables Used

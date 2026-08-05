@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `AzureResourceGraph` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Azure Resource Graph *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Azure Resource Graph](../solutions/azure-resource-graph.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [AzureResourceGraph_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Resource%20Graph/Data%20Connectors/AzureResourceGraph_DataConnectorDefinition.json) |

@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | VMware *(basis: publisher)* |
-| **Source Product** | Carbon Black Cloud |
 | **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
@@ -104,6 +102,8 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                        |
 |-------------|--------------------------------|-----------------------------------------------------------|
+| 3.0.10      | 03-08-2026                     | Fixed broken **Deploy to Azure Gov** button link in **Data Connector** and **Playbooks** |
+| 3.0.9       | 12-07-2026                     | Fixed type mismatch in **Data Connector** |
 | 3.0.8       | 24-03-2026                     | Deprecate to VMware Carbon Black Cloud (using Azure Function) |
 | 3.0.7       | 24-03-2026                     | Rename to VMware Carbon Black Cloud via AWS S3(via Codeless Connector Framework)	   |
 | 3.0.6       | 28-01-2026                     | Updated all VMware Carbon Black Cloud product page URLs to now point to the new  **Broadcom URL**	   |

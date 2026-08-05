@@ -13,8 +13,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CitrixAnalyticsDefinition` |
-| **Publisher / Vendor** | Citrix |
-| **Source Product** | Analytics *(basis: title)* |
+| **Publisher** | Citrix |
 | **Used in Solutions** | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [CitrixAnalytics_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF/Data%20Connectors/CitrixAnalytics_CCF/CitrixAnalytics_Definition.json) |

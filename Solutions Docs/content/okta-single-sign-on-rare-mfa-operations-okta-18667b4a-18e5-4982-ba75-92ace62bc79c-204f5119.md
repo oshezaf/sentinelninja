@@ -6,15 +6,15 @@
 
 ---
 
-MFA prevents credential compromise. This query checks for rare MFA operations like deactivation, update, reset, and bypass attempts often used by adversaries to compromise networks/accounts.
+MFA operations such as deactivation, update, reset, and bypass attempts can indicate account compromise or adversary attempts to weaken authentication controls.
 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **ID** | `18667b4a-18e5-4982-ba75-92ace62bc79c` |
-| **Tactics** | Persistence |
-| **Techniques** | T1098 |
+| **Tactics** | DefenseEvasion, CredentialAccess |
+| **Techniques** | T1556, T1556.006 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Hunting%20Queries/RareMFAOperation.yaml) |
 

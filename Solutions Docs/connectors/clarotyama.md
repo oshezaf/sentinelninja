@@ -15,7 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `ClarotyAma` |
-| **Publisher / Vendor** | Claroty |
+| **Publisher** | Claroty |
 | **Used in Solutions** | [Claroty](../solutions/claroty.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ClarotyAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Data%20Connectors/template_ClarotyAMA.json) |

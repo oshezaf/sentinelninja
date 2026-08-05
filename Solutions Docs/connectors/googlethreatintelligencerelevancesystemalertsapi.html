@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Threat Intelligence Relevance System Alerts &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="google-threat-intelligence-relevance-system-alerts">Google Threat Intelligence Relevance System Alerts</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleThreatIntelligence.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>GoogleThreatIntelligenceRelevanceSystemAlertsAPI</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Google</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIRelevanceSystemAlerts/GTIRelevanceSystemAlerts_API_FunctionApp.json">GTIRelevanceSystemAlerts_API_FunctionApp.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.virustotal.com">Google Threat Intelligence (virustotal)</a> data connector ingests GTI Relevance System Alerts into Microsoft Sentinel. The connector polls the GTI Relevance System Alerts API on a configurable schedule and stores Relevance System Alerts data in the RelevanceSystemAlerts_CL custom table, enabling security analysts to investigate threats, correlate incidents, and respond to intelligence-driven alerts within the Sentinel workspace.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Azure Subscription</strong>: An Azure Subscription with owner role is required to register an application in Microsoft Entra ID and assign the contributor role to the app in the resource group.</li>
+<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>Google Threat Intelligence API Key</strong>: A Google Threat Intelligence API key and project ID are required. See the <a href="https://gtidocs.virustotal.com/docs/how-get-gti-api-keys">GTI documentation</a> to learn how to obtain an API key.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
+<p><strong>NOTE:</strong> This connector uses an Azure Function App (Timer Trigger, Python 3.12) to poll the Google Threat Intelligence Alerts API on a configurable schedule and ingest GTI Relevance System Alerts into the RelevanceSystemAlerts_CL custom table in Microsoft Sentinel. This may result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<p><strong>STEP 1 - Obtain Google Threat Intelligence API Credentials</strong></p>
+<ol>
+<li>Log in to the <a href="https://www.virustotal.com">Google Threat Intelligence portal (virustotal)</a>.</li>
+<li>Navigate to your GTI project settings and copy the <strong>Project ID</strong>.</li>
+<li>Generate an <strong>API Key</strong> for your project and copy it securely.</li>
+</ol>
+<p><strong>STEP 2 - App Registration steps for the Application in Microsoft Entra ID</strong></p>
+<p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new application in Microsoft Entra ID:</p>
+<ol>
+<li>Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.</li>
+<li>Search for and select <strong>Microsoft Entra ID</strong>.</li>
+<li>Under <strong>Manage</strong>, select <strong>App registrations &gt; New registration</strong>.</li>
+<li>Enter a display <strong>Name</strong> for your application (e.g. RelevanceSystemAlertsSentinelConnector).</li>
+<li>Select <strong>Register</strong> to complete the initial app registration.</li>
+<li>When registration finishes, the Azure portal displays the app registration's Overview pane. Copy the <strong>Application (client) ID</strong> and <strong>Directory (Tenant) ID</strong> — these are required as configuration parameters.</li>
+</ol>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
+</blockquote>
+<p><strong>STEP 3 - Add a client secret for the application in Microsoft Entra ID</strong></p>
+<p>Sometimes called an application password, a client secret is a string value required for the connector. Follow the steps in this section to create a new Client Secret:</p>
+<ol>
+<li>In the Azure portal, in <strong>App registrations</strong>, select your application.</li>
+<li>Select <strong>Certificates &amp; secrets &gt; Client secrets &gt; New client secret</strong>.</li>
+<li>Add a description for your client secret.</li>
+<li>Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.</li>
+<li>Select <strong>Add</strong>.</li>
+<li><em>Record the secret's value for use as the AzureClientSecret parameter. This secret value is never displayed again after you leave this page.</em></li>
+</ol>
+<blockquote>
+<p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a></p>
+</blockquote>
+<p><strong>STEP 4 - Get the Object ID of your application in Microsoft Entra ID</strong></p>
+<p>After creating your app registration, follow the steps in this section to get the Object ID:</p>
+<ol>
+<li>Go to <strong>Microsoft Entra ID</strong>.</li>
+<li>Select <strong>Enterprise applications</strong> from the left menu.</li>
+<li>Find your newly created application in the list (search by the name you provided).</li>
+<li>Click on the application.</li>
+<li>On the overview page, copy the <strong>Object ID</strong>. This is the <strong>AzureEntraObjectID</strong> needed for the ARM template role assignment.</li>
+</ol>
+<p><strong>STEP 5 - Deploy the connector and the associated Azure Function App</strong></p>
+<p><strong>6. Azure Resource Manager (ARM) Template</strong></p>
+<p>Use this method for automated deployment of the GTI Relevance System Alerts connector using an ARM Template.</p>
+<ol>
+<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a> <a href="https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy-gov"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+</li>
+<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Location</strong>.</p>
+</li>
+<li><p>Enter the below information:</p>
+<p>a. <strong>FunctionName</strong> - Enter a unique name for the Azure Function App (maximum 11 characters). Example: <code>GTIRSAlerts</code></p>
+<p>b. <strong>Location</strong> - Azure region for the Function App and supporting resources. Defaults to the resource group location. Example: <code>eastus</code></p>
+<p>c. <strong>WorkspaceName</strong> - Enter the Microsoft Sentinel Log Analytics workspace name. Example: <code>MyWorkspace</code></p>
+<p>d. <strong>AppInsightsWorkspaceResourceID</strong> - Enter the fully qualified resource ID of the Log Analytics workspace for Application Insights. Format: <code>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}</code></p>
+<p>e. <strong>AzureTenantID</strong> - Enter the Azure Tenant (Directory) ID obtained in STEP 2. Example: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></p>
+<p>f. <strong>AzureClientID</strong> - Enter the Application (Client) ID obtained in STEP 2. Example: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></p>
+<p>g. <strong>AzureClientSecret</strong> - Enter the client secret value obtained in STEP 3.</p>
+<p>h. <strong>AzureEntraObjectID</strong> - Enter the Object ID of your Microsoft Entra app obtained in STEP 4. Example: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></p>
+<p>i. <strong>GTIProjectId</strong> - Enter the Google Threat Intelligence project ID obtained in STEP 1. Example: <code>my-gti-project-id</code>. See the <a href="https://docs.cloud.google.com/threat-intelligence/guides/get-started">GTI documentation</a> to learn how to get started.</p>
+<p>j. <strong>GTIApiKey</strong> - Enter the Google Threat Intelligence API key obtained in STEP 1.</p>
+<p>k. <strong>GTIRelevanceSystemAlertsTableName</strong> - Enter the name of the custom table for GTI Relevance System Alerts. The <code>_CL</code> suffix is appended automatically. <strong>Maximum 52 characters</strong> (the <code>_CL</code> suffix counts toward the Log Analytics 57-character table name limit). Default: <code>RelevanceSystemAlerts</code></p>
+<p>l. <strong>StartDate</strong> - (Optional) Enter the start datetime in <code>yyyy-mm-ddTHH:MM:SS[.fff]Z</code> format. Example: <code>2026-05-20T15:43:51Z</code>. Must be a past date. If not provided, data from the last 7 days will be fetched.</p>
+<p>m. <strong>GTIFilterExpression</strong> - (Optional) Enter a GTI API filter expression to narrow which alerts are ingested. Example: <code>state = &quot;NEW&quot;</code>. Any <code>audit.update_time</code> condition will be automatically removed — the connector manages that filter internally. Your expression is combined with the checkpoint filter using <code>AND</code>.</p>
+<p>n. <strong>Schedule</strong> - Enter a valid Quartz Cron expression for the timer trigger schedule. Default: <code>0 */10 * * * *</code> (every 10 minutes).</p>
+<p>o. <strong>LogLevel</strong> - Set the log level for the Function App. Allowed values: <code>Debug</code>, <code>Info</code>, <code>Warning</code>, <code>Error</code>. Default: <code>Info</code>.</p>
+<p>p. <strong>KeyVaultName</strong> - Enter name of keyvault where tokens will be stored.</p>
+</li>
+<li><p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</p>
+</li>
+<li><p>Click <strong>Purchase</strong> to deploy.</p>
+</li>
+</ol>
+<p><strong>STEP 6 - Create a Keyvault</strong></p>
+<p>Follow these instructions to create a new Keyvault.</p>
+<ol>
+<li>In the Azure portal, Go to <strong>Key vaults</strong> and click on Create.</li>
+<li>Select Subscription, Resource Group and provide unique name of keyvault.</li>
+</ol>
+<p><strong>STEP 7 - Create Access Policy in Keyvault</strong></p>
+<p>Follow these instructions to create access policy in Keyvault.</p>
+<ol>
+<li>Go to keyvaults, select your keyvault, go to Access policies on left side panel, click on create.</li>
+<li>Select all keys &amp; secrets permissions. Click next.</li>
+<li>In the principal section, search for the function app name which was deployed in STEP - 5. Click next.</li>
+</ol>
+<p><strong>Note:</strong> Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong></p>
+<p><strong>STEP 8 - Verify Data Ingestion</strong></p>
+<p>After deployment, verify that data is being ingested into Microsoft Sentinel:</p>
+<ol>
+<li>Navigate to <strong>Microsoft Sentinel</strong> → <strong>Logs</strong>.</li>
+<li>Run the following query:</li>
+</ol>
+<pre><code class="language-kql">RelevanceSystemAlerts_CL
+| sort by TimeGenerated desc
+| limit 10
+</code></pre>
+<ol start="3">
+<li>Data should appear within <strong>5–10 minutes</strong> of the first function execution.</li>
+<li>The connector status on the <strong>Data connectors</strong> page shows <strong>Connected</strong> once data has been received within the last 30 days.</li>
+</ol>
+<p><strong>Troubleshooting</strong></p>
+<p><strong>Connector shows Disconnected</strong></p>
+<ul>
+<li>Verify the Function App is running: Azure Portal → Function App → Overview → Status should be <strong>Running</strong>.</li>
+<li>Confirm data has been ingested within the last 30 days.</li>
+<li>Review Application Insights logs for errors.</li>
+</ul>
+<p><strong>Authentication errors (401 / 403)</strong></p>
+<ul>
+<li>Verify <strong>AzureClientID</strong>, <strong>AzureClientSecret</strong>, and <strong>AzureTenantID</strong> are correct in Function App → Configuration → Application settings.</li>
+<li>Ensure the client secret has not expired.</li>
+<li>Confirm the App Registration has sufficient permissions.</li>
+</ul>
+<p><strong>No data in RelevanceSystemAlerts_CL table</strong></p>
+<ul>
+<li>Check Function App → Functions → RelevanceSystemAlerts → Monitor for execution errors.</li>
+<li>Verify the GTI API key and project ID are valid.</li>
+<li>Confirm the source API is reachable from Azure.</li>
+<li>Review Application Insights traces:</li>
+</ul>
+<pre><code class="language-kql">traces
+| where timestamp &gt; ago(1h)
+| order by timestamp desc
+| take 50
+</code></pre>
+<p><strong>Rate limit errors (429)</strong></p>
+<ul>
+<li>The connector automatically retries with exponential backoff. If errors persist, reduce the polling frequency by increasing the <strong>Schedule</strong> cron interval.</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

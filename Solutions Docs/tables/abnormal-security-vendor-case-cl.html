@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Abnormal Security <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Custom Log V1</strong></td>
   <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
@@ -49,6 +45,8 @@
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (16 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity%5CData%20Connectors%5CAbnormalSecurity_CCF/AbnormalSecurity_table_VendorCase.json">Connector definition</a></p>
@@ -170,6 +168,73 @@
 </tbody>
 </table>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-vendor-compromise-case-detected-b15ea4c9-58da-44d8-90e4-6591d947e7e3-5d66afe6.html">Abnormal Security - Vendor compromise case detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (1)</h3>
+<p><strong>In solution <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormal-security-newly-observed-vendor-domains-f8d819ef-7c3a-499a-a8ef-33737ce9a146-ba0d4629.html">Abnormal Security - Newly observed vendor domains</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/abnormalsecurity-abnormalsecurityoverview-c47e736a.html">AbnormalSecurityOverview</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/abnormalsecurityvendorcases.html">AbnormalSecurityVendorCases</a></td>
+  <td style="text-align:left"><a href="../solutions/abnormalsecurity.html">AbnormalSecurity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>

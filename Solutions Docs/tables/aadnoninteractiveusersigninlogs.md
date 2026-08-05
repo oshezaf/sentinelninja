@@ -125,7 +125,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AADNonInteractiveUserSignInLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs)
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -135,6 +135,7 @@ This table is used by the following solutions:
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
@@ -152,7 +153,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (27)
 
 ### Analytic Rules (13)
 
@@ -195,8 +196,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [TI Map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-493f3f65.md) |  |
 | [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md) |  |
-| [TI map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.md) |  |
 
 **In solution [eDCRule](../solutions/edcrule.md):**
 
@@ -204,7 +205,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Entra ID] Suspicious Continuous OAuth Token Usage](../content/edcrule-[entra-id]-suspicious-continuous-oauth-token-usage-67802748-435b-4f80-9f61-b9a9ac6ea15c-abe74de3.md) |  |
 
-### Workbooks (7)
+### Hunting Queries (6)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Identity and app enumeration followed by novel non-interactive tuple](../content/hybrid-attack-cloud-&-identity-identity-and-app-enumeration-followed-by-novel-non-interactive-tuple-c59f5f45-42fc-4f30-9f22-08908fc4d1ea-4e94a17e.md) |  |
+| [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
+| [Novel sign-in context followed by IAM reconnaissance burst](../content/hybrid-attack-cloud-&-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.md) |  |
+| [Rare kernel load followed by novel non-interactive sign-in tuple](../content/hybrid-attack-cloud-&-identity-rare-kernel-load-followed-by-novel-non-interactive-sign-in-tuple-6f8a8f48-e63b-4afb-9d2a-3ef5f6e2d1bc-1cd5ae04.md) |  |
+| [Suspicious sign-in followed by cloud network exposure writes](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.md) |  |
+| [VPN Credential Stuffing and Password Spray](../content/hybrid-attack-cloud-&-identity-vpn-credential-stuffing-and-password-spray-a1b2c3d4-e5f6-7890-abcd-ef1234567890-f34272b4.md) |  |
+
+### Workbooks (8)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -235,6 +249,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 

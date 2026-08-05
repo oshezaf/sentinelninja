@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Darktrace *(basis: projected)* |
-| **Source Product** | ActiveAI Security Platform *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -20,12 +18,13 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (39 columns)
+## Schema (40 columns)
 
 **Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Data%20Connectors/ccf/Darktrace_DCR.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| accountName | string |
 | alertTime | datetime |
 | alertUrl | string |
 | antigena | boolean |

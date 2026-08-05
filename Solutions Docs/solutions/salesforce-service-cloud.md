@@ -14,8 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider |
-| **Source Vendor** | Salesforce *(basis: description_url)* |
-| **Source Product** | Real-Time Event Monitoring, Service Cloud |
 | **Version** | 3.4.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
@@ -109,6 +107,9 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.5.0       | 23-07-2026                     | Marked Salesforce Audit Logs connector as GA and made poller resource names unique per connection. |
+| 3.4.2       | 22-07-2026                     | Updated **SalesforceRTEM connector** to use SELECT FIELDS(STANDARD) with corresponding DCR updates. |
+| 3.4.1       | 22-07-2026                     | Added SecureConnectionStart column to **Salesforce event log file CCP data connector** table schema and DCR transform. |
 | 3.4.0       | 26-05-2026                     | Added new **Real time event monitoring data connector** with 19 event types |
 | 3.3.0       | 07-05-2026                     | Add new **Salesforce Audit logs CCF Data Connector** to pull **SetupAuditTrails** and **LoginHistory** logs. |
 | 3.2.0       | 01-05-2026                     | Updated **CCF Data Connector** to include new V3 table that includes additional fields and support for multiple domains. |

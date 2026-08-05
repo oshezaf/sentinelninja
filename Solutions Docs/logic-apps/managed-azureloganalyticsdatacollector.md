@@ -7,7 +7,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 101 |
+| **Playbooks using** | 103 |
 | **Solutions** | 20 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
 
@@ -91,6 +91,8 @@
 | [Put CanaryTokens webhook alerts to Custom Logs table](../content/standalone-content-put-canarytokens-webhook-alerts-to-custom-logs-table-17b0c929.md) | 📄 Standalone | 1 | 1 |
 | [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
+| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
+| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [ReversingLabs-CheckQuota](../content/reversinglabs-reversinglabs-checkquota-9c8101f9.md) | [ReversingLabs](../solutions/reversinglabs.md) | 1 | 7 |

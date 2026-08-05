@@ -11,8 +11,6 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
-| **Source Vendor** | Amazon *(basis: projected)* |
-| **Source Product** | WAF *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
@@ -26,6 +24,7 @@ Reference for AWSWAF table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (36 columns)
 
@@ -91,6 +90,14 @@ This table is ingested by the following connectors:
 | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionAWSWAF](../asim/asimwebsessionawswaf.md) | WebSession | AWS WAF |  |
 
 ---
 

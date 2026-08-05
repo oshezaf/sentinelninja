@@ -1,6 +1,6 @@
 # Analytic Rules - I
 
-**47 analytic rules** starting with 'I'.
+**49 analytic rules** starting with 'I'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -17,6 +17,8 @@
 | [IaaS admin detected](authomize-iaas-admin-detected-dc728ba1-5204-4fde-ab48-eda19c8fad3a-4ade3873.md) | Medium | 📦 [Authomize](../solutions/authomize.md) |
 | [IaaS policy not attached to any identity](authomize-iaas-policy-not-attached-to-any-identity-57bae0c4-50b7-4552-9de9-19dfecddbace-d525d1b3.md) | Informational | 📦 [Authomize](../solutions/authomize.md) |
 | [IaaS shadow admin detected](authomize-iaas-shadow-admin-detected-31f43e9d-1839-4baf-a668-54c28b98af3e-9f7efd58.md) | High | 📦 [Authomize](../solutions/authomize.md) |
+| [iboss - Command-and-Control Detected](iboss-iboss-command-and-control-detected-40cf9670-d4be-4149-9082-5809a2b12ca1-3d2fa7d5.md) | High | 📦 [iboss](../solutions/iboss.md) |
+| [iboss - Malware Detected](iboss-iboss-malware-detected-cad35734-b97a-4209-9269-b98c916379eb-2e4fb5d5.md) | High | 📦 [iboss](../solutions/iboss.md) |
 | [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-a-813ccf3b-0321-4622-b0bc-63518fd14454-4eaea7cb.md) | Medium | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
 | [Identify Mango Sandstorm powershell commands](standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md) | High | 📄 Standalone Content |
 | [Identify SysAid Server web shell creation](web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |

@@ -13,8 +13,8 @@
 | Title | Parser for BoxEvents |
 | Location | Solution |
 | Solution | [Box](../solutions/box.md) |
-| Version | 2.0.0 |
-| Last Updated | 2024-09-24 |
+| Version | 2.1.0 |
+| Last Updated | 2026-07-10 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Parsers/BoxEvents.yaml) |

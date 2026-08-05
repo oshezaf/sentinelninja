@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `Office365Project` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | Project *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Project](../solutions/microsoft-project.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_Office365Project.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project/Data%20Connectors/template_Office365Project.JSON) |

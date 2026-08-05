@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Microsoft *(basis: publisher_fallback — low confidence)* |
-| **Source Product** | Defender for Identity |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-20 |
@@ -43,7 +41,7 @@ This solution provides **1 data connector(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
 |-------------|--------------------------------|----------------------------------------|
-| 3.0.0       | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |
+| 3.0.0       | 08-03-2026                     | Updated ConnectivityCriteria Type in **Data Connector**. <br> Fixed Broken Release Notes URL Reference.|
 
 ---
 

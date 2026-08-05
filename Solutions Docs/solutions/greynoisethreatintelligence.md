@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.greynoise.io/contact/general](https://www.greynoise.io/contact/general) |
 | **Categories** | Security - Threat Intelligence |
-| **Source Vendor** | GreyNoise, Inc. and BlueCycle LLC *(basis: publisher)* |
 | **Version** | 3.1.1 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |

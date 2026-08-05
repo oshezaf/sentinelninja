@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.console.talon-sec.com/](https://docs.console.talon-sec.com/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Talon Security *(basis: publisher)* |
-| **Source Product** | Insights |
 | **Version** | 2.0.0 |
 | **Author** | Talon |
 | **First Published** | 2023-01-25 |

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | BigID *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

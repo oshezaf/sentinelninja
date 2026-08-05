@@ -11,8 +11,6 @@ Reference for CloudAppEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Defender XDR *(basis: projected)* |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
@@ -81,10 +79,11 @@ Official Microsoft Learn documentation for field/column information:
 
 - [CloudAppEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents)
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
+- [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -100,7 +99,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (81)
+## Content Items Using This Table (85)
 
 ### Analytic Rules (9)
 
@@ -123,12 +122,19 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI map Domain entity to Cloud App Events](../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-ec106ba0.md) |  |
-| [TI map Email entity to Cloud App Events](../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-19029041.md) |  |
-| [TI map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-f78512ba.md) |  |
-| [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
+| [TI Map Domain entity to Cloud App Events](../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-4cdc56ef.md) |  |
+| [TI Map Email entity to Cloud App Events](../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-b1b7b44f.md) |  |
+| [TI Map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-3c95cde8.md) |  |
+| [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
 
-### Hunting Queries (70)
+### Hunting Queries (73)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Multi-Mailbox Access by Single IP via Cloud App Permissions](../content/hybrid-attack-cloud-&-identity-multi-mailbox-access-by-single-ip-via-cloud-app-permissions-c53bf4ae-bd8b-4c72-b9c3-10baa8c13885-6d487c75.md) | `ActionType == "MailItemsAccessed"` |
+| [OAuth consent change followed by first-seen OAuthAppId burst](../content/hybrid-attack-cloud-&-identity-oauth-consent-change-followed-by-first-seen-oauthappid-burst-10faf58e-d006-482f-87f0-a95b019cbf6f-619e7560.md) |  |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -184,6 +190,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ATP policy status check](../content/microsoft-defender-xdr-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-99dce879.md) | `ActionType == "Set-AtpPolicyForO365"`<br>`Application == "Microsoft Exchange Online"` |
 | [Audit Email Preview-Download action](../content/microsoft-defender-xdr-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-334fb71d.md) |  |
+| [Display Name - Helpdesk theme impersonation attack detection](../content/github-only-display-name-helpdesk-theme-impersonation-attack-detection-edd48210-532e-4560-a8fe-065240cd2f20-3b00897a.md) | `ActionType == "TeamsImpersonationDetected"` |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | `ActionType == "QuarantineReleaseMessage"` |
@@ -210,7 +217,13 @@ This table is ingested by the following connectors:
 | [Top accounts performing Teams user submissions FN or FP](../content/microsoft-defender-xdr-top-accounts-performing-teams-user-submissions-fn-or-fp-9ffbd78f-c87c-4fd2-96ec-fd46e27bbd21-dfe1925c.md) | `ActionType == "UserSubmission"` |
 | [User reported submissions](../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.md) | `ActionType == "UserSubmission"` |
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"`
+
+| Workbook |
+|:-------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -224,9 +237,9 @@ This table is ingested by the following connectors:
 |:-------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
 
-## Selection Criteria Summary (25 criteria, 63 total references)
+## Selection Criteria Summary (27 criteria, 66 total references)
 
-References by type: 0 connectors, 63 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -235,6 +248,7 @@ References by type: 0 connectors, 63 content items, 0 ASIM parsers, 0 other pars
 | `ActionType == "FileMalwareDetected"` | - | 4 | - | - | **4** |
 | `ActionType == "QuarantineReleaseMessage"` | - | 4 | - | - | **4** |
 | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` | - | 4 | - | - | **4** |
+| `ActionType == "MailItemsAccessed"` | - | 2 | - | - | **2** |
 | `ActionType contains "AdminSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "AdminSubmission,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "SubmissionNotification,UserSubmission"` | - | 2 | - | - | **2** |
@@ -250,12 +264,13 @@ References by type: 0 connectors, 63 content items, 0 ASIM parsers, 0 other pars
 | `ActionType contains "Set-InboxRule"` | - | 1 | - | - | **1** |
 | `ActionType == "FileMalwareDetected"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
 | `ActionType in "AdminSubmissionTriage,UserSubmissionTriage"` | - | 1 | - | - | **1** |
-| `ActionType == "MailItemsAccessed"` | - | 1 | - | - | **1** |
 | `ActionType == "AirInvestigationData"` | - | 1 | - | - | **1** |
 | `ActionType contains "AdminSubmissionTriage"` | - | 1 | - | - | **1** |
 | `ActionType contains "UserSubmissionTriage"` | - | 1 | - | - | **1** |
+| `ActionType == "TeamsImpersonationDetected"` | - | 1 | - | - | **1** |
+| `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
 | `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **63** | **0** | **0** | **63** |
+| **Total** | **0** | **66** | **0** | **0** | **66** |
 
 ### ActionType
 
@@ -266,6 +281,7 @@ References by type: 0 connectors, 63 content items, 0 ASIM parsers, 0 other pars
 | `FileMalwareDetected` | - | 6 | - | - | **6** |
 | `contains Submission` | - | 5 | - | - | **5** |
 | `QuarantineReleaseMessage` | - | 4 | - | - | **4** |
+| `MailItemsAccessed` | - | 3 | - | - | **3** |
 | `AdminSubmission` | - | 3 | - | - | **3** |
 | `contains AdminSubmission` | - | 3 | - | - | **3** |
 | `SubmissionNotification` | - | 3 | - | - | **3** |
@@ -288,8 +304,11 @@ References by type: 0 connectors, 63 content items, 0 ASIM parsers, 0 other pars
 | `contains Set-InboxRule` | - | 1 | - | - | **1** |
 | `AdminSubmissionTriage` | - | 1 | - | - | **1** |
 | `UserSubmissionTriage` | - | 1 | - | - | **1** |
-| `MailItemsAccessed` | - | 1 | - | - | **1** |
 | `AirInvestigationData` | - | 1 | - | - | **1** |
+| `TeamsImpersonationDetected` | - | 1 | - | - | **1** |
+| `New-InboxRule` | - | 1 | - | - | **1** |
+| `Set-InboxRule` | - | 1 | - | - | **1** |
+| `Set-Mailbox` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
 
 ### Application

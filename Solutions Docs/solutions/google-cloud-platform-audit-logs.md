@@ -14,7 +14,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Source Vendor** | Google *(basis: name_pattern)* |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-29 |
@@ -50,16 +49,17 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md), [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) | Analytics, Hunting |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md), [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
-This solution includes **12 content item(s)**:
+This solution includes **13 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 7 |
 | Hunting Queries | 5 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
@@ -82,6 +82,12 @@ This solution includes **12 content item(s)**:
 | [GCP Audit Logs - List All GCP VPN Tunnels Created](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-all-gcp-vpn-tunnels-created-245c0747-db27-460b-b1bf-131042f664b9-fbd7e550.md) | Persistence, CommandAndControl, DefenseEvasion | [`GCPAuditLogs`](../tables/gcpauditlogs.md) |
 | [GCP Audit Logs - List All GCP VPN Tunnels Deleted](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-all-gcp-vpn-tunnels-deleted-8f3e4a2b-6c7d-4e8f-9a0b-1c2d3e4f5a6b-45f3f0b9.md) | Impact, DefenseEvasion | [`GCPAuditLogs`](../tables/gcpauditlogs.md) |
 | [GCP Audit Logs - List GCP Organization Policy Modifications by Principal](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-gcp-organization-policy-modifications-by-principal-7a3e8c5f-4b9d-4e6a-8c7b-5f2a9d6e8b3c-a149a2a1.md) | DefenseEvasion | [`GCPAuditLogs`](../tables/gcpauditlogs.md) |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [GCPAuditLogs](../content/google-cloud-platform-audit-logs-gcpauditlogs-72261135.md) | [`GCPAuditLogs`](../tables/gcpauditlogs.md) |
 
 ## Additional Documentation
 
@@ -140,7 +146,8 @@ if you don't want to perform above steps please use the below link for manual se
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
-|-------------|--------------------------------|--------------------------------------------------------------------| 
+|-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.3       | 28-07-2026                     | Added a new **workbook** for Google Cloud Platform Audit Logs.     | 
 | 3.0.2       | 19-01-2026                     | Added new GCP security **Analytic Rules** and **Hunting Queries**  |
 | 3.0.1       | 28-04-2025                     | Updated **Data Connector** definition file and fixed overlapping collector issue.|
 | 3.0.0       | 15-01-2024                     | Created CCP Package   |

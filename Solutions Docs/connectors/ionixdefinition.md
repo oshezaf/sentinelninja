@@ -11,9 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `IONIXDefinition` |
-| **Publisher / Vendor** | IONIX |
-| **Source Product** | Security *(basis: title)* |
-| **Event Type** | Events |
+| **Publisher** | IONIX |
 | **Used in Solutions** | [IONIX](../solutions/ionix.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IONIX_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX/Data%20Connectors/IONIXActionItems_CCF/IONIX_ConnectorDefinition.json) |

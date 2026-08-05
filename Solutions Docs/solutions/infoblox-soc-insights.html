@@ -95,10 +95,11 @@
 </tbody>
 </table>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>3 data connector(s)</strong>:</p>
+<p>This solution provides <strong>4 data connector(s)</strong>:</p>
 <ul>
+<li><a href="../connectors/infobloxsocinsightsconnector.html">Infoblox SOC Insights (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Deprecated] Infoblox SOC Insight Data Connector via AMA</a></li>
-<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a> 🔶</li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></li>
 </ul>
 <p>Connectors from dependency solutions:</p>
@@ -106,9 +107,6 @@
 <li><a href="../connectors/cef.html">Common Event Format (CEF)</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
 <li><a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> <em>(dependency on <a href="common-event-format.html">Common Event Format</a>)</em></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -159,8 +157,8 @@
   <td>Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> 🔶</td>
-  <td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></td>
+  <td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
+  <td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a>, <a href="../connectors/infobloxsocinsightsconnector.html">Infoblox SOC Insights (via Codeless Connector Framework)</a></td>
   <td>Analytics, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
@@ -325,6 +323,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>07-09-2026</td>
+  <td><strong>Data Connector</strong> via Codeless Connector Framework added</td>
+</tr>
 <tr>
   <td>3.0.2</td>
   <td>28-06-2024</td>

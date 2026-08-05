@@ -38,10 +38,6 @@
   <td style="text-align:left">BitSight Technologies, Inc.</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">BitSight <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
   <td style="text-align:left"><a href="../solutions/bitsight.html">BitSight</a></td>
 </tr>
@@ -59,7 +55,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.BitSight.com/">BitSight</a> Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.</p>
+<p>The <a href="https://www.BitSight.com/">BitSight</a> Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data into Microsoft Sentinel using the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Logs Ingestion API</a>.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -159,7 +155,7 @@
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <blockquote>
-<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the BitSight API to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the BitSight API to pull its logs into Microsoft Sentinel using the Logs Ingestion API (DCR). This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 </blockquote>
 <blockquote>
 <p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
@@ -225,18 +221,8 @@ Go to Settings &gt; Account &gt; API Token.</li>
 </blockquote>
 <p><strong>STEP 6 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the BitSight data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the BitSight API Token.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the BitSight data connector, have the BitSight API Token and Azure credentials (Client ID, Client Secret, Tenant ID, Object ID) readily available.</p>
 </blockquote>
-<ul>
-<li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-<li><strong>Primary Key</strong>: <code>PrimaryKey</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-</ul>
 <p><strong>7. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the BitSight connector.</p>
 <ol>
@@ -272,7 +258,9 @@ Go to Settings &gt; Account &gt; API Token.</li>
 <p>x. <strong>Schedule_Portfolio</strong> - Please enter a valid Quartz cron-expression. (Example: 0 */30 * * * *).</p>
 <p>y. <strong>AppInsightsWorkspaceResourceID</strong> - Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'.</p>
 </li>
-<li><p>Once all application settings have been entered, click <strong>Review + create</strong> to deploy..</p>
+<li><p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</p>
+</li>
+<li><p>Click <strong>Review + Create</strong> and then <strong>Create</strong> to deploy.</p>
 </li>
 </ol>
 <p><strong>8. Option 2 - Manual Deployment of Azure Functions</strong></p>

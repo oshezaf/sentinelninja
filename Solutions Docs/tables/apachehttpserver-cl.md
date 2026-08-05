@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Apache, Microsoft *(basis: projected)* |
-| **Source Product** | Custom, HTTP Server *(basis: projected)* |
-| **Event Type** | Events |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -107,7 +104,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-112ebf76.md) |  |
 
-## Parsers Using This Table (3)
+## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
 
@@ -115,14 +112,11 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimWebSessionApacheHTTPServer](../asim/asimwebsessionapachehttpserver.md) | WebSession | Apache HTTP Server |  |
 
-### Other Parsers (2)
+### Other Parsers (1)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [ApacheHTTPServer](../parsers/apachehttpserver.md) | [ApacheHTTPServer](../solutions/apachehttpserver.md) |  |
-| [ApacheHTTPServer](../parsers/apachehttpserver.md) | [ApacheHTTPServer](../solutions/apachehttpserver.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

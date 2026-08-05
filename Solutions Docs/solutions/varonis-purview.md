@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
 | **Categories** | Security - Information Protection |
-| **Source Vendor** | Varonis *(basis: publisher)* |
-| **Source Product** | Purview Push |
 | **Version** | 3.0.0 |
 | **Author** | Varonis |
 | **First Published** | 2025-10-27 |

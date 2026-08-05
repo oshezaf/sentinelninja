@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Tailscale Standard CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="tailscale-standard">⚠️ Tailscale Standard (CCF)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tailscale.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>TailscaleCCF</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Community</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tailscale%20%28CCF%29/Data%20Connectors/TailscaleAuditLogs_ccf/Tailscale_ConnectorDefinition.json">Tailscale_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tailscale%20%28CCF%29/Data%20Connectors/TailscaleAuditLogs_ccf/Tailscale_DCR.json">Tailscale_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tailscale%20%28CCF%29/Data%20Connectors/TailscaleAuditLogs_ccf/Tailscale_PollerConfig.json">Tailscale_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>OAuth2</code></td>
+</tr>
+</tbody>
+</table>
+<p>Comprehensive Tailscale telemetry for <strong>Personal (Free) and Standard</strong> tier tailnets. Polls nine endpoints in one Connect:</p>
+<ul>
+<li><p><code>/logging/configuration</code> - configuration audit events (includes ACL, DNS, tag/group, settings changes)</p>
+</li>
+<li><p><code>/devices</code> - device inventory (hostname, OS, IPs, tags, lastSeen, expiry)</p>
+</li>
+<li><p><code>/users</code> - user inventory (role, status, deviceCount, connection state)</p>
+</li>
+<li><p><code>/keys?all=true</code> - auth keys, API tokens, and OAuth client metadata</p>
+</li>
+<li><p><code>/webhooks</code> - webhook configuration</p>
+</li>
+<li><p><code>/dns/nameservers</code>, <code>/dns/preferences</code>, <code>/dns/searchpaths</code> - DNS state (merged into single <code>Tailscale_Dns_CL</code> table with <code>ConfigType</code> discriminator)</p>
+</li>
+<li><p><code>/settings</code> - tailnet settings flags (device approval, key duration, etc.)</p>
+</li>
+</ul>
+<p>Split-DNS state (per-domain DNS overrides) is captured via the audit log rather than a separate snapshot table - every change is recorded with the full before/after document and actor attribution, which is richer than a periodic snapshot.</p>
+<p><strong>OAuth scopes required on the Tailscale client:</strong> <code>logs:configuration:read</code>, <code>devices:core:read</code>, <code>users:read</code>, <code>auth_keys:read</code>, <code>webhooks:read</code>, <code>dns:read</code>, <code>feature_settings:read</code> (or the bundled <code>all:read</code>). For Premium and Enterprise tailnets that also need network flow logs and posture integrations, install <strong>Tailscale Premium (CCF)</strong> instead.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-audit-cl.html"><code>Tailscale_Audit_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-devices-cl.html"><code>Tailscale_Devices_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-dns-cl.html"><code>Tailscale_Dns_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-keys-cl.html"><code>Tailscale_Keys_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-settings-cl.html"><code>Tailscale_Settings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-users-cl.html"><code>Tailscale_Users_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/tailscale-webhooks-cl.html"><code>Tailscale_Webhooks_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read/Write on the workspace</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect Tailscale</strong></p>
+<p>Generate an OAuth client at https://login.tailscale.com/admin/settings/oauth with these <strong>Read</strong> scopes: Logs &gt; Configuration, General &gt; DNS, General &gt; Users, Devices &gt; Core, Keys &gt; Auth Keys, Keys &gt; Webhooks, Settings &gt; Feature Settings (or tick <code>all:read</code> to grant all read scopes at once). Find your tailnet name on the Keys page.</p>
+<ul>
+<li><strong>Tailscale tailnet</strong>: tail-XXXX.ts.net</li>
+<li><strong>OAuth Client ID</strong>: k...</li>
+<li><strong>OAuth Client Secret</strong>: (password field)</li>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

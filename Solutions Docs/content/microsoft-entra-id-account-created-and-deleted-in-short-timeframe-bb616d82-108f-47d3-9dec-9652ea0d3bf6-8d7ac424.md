@@ -6,7 +6,7 @@
 
 ---
 
-Search for user principal name (UPN) events. Look for accounts created and then deleted in under 24 hours. Attackers may create an account for their use, and then remove the account when no longer needed. Ref : https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-user-accounts#short-lived-account
+Search for user principal name (UPN) events. Look for accounts created and then deleted within 7 days. Attackers may create an account for their use, and then remove the account when no longer needed. Ref : https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-user-accounts#short-lived-account
 
 | Attribute | Value |
 |:----------|:------|

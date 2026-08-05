@@ -28,38 +28,53 @@ This Google Threat Intelligence Solution contains Playbooks that can help enrich
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Internal Tables](#internal-tables)
+- [Tables Used](#tables-used)
 - [Content Items](#content-items)
 - [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Google Threat Intelligence Relevance System Alerts](../connectors/googlethreatintelligencerelevancesystemalertsapi.md)
 
-## Internal Tables
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) | [Google Threat Intelligence Relevance System Alerts](../connectors/googlethreatintelligencerelevancesystemalertsapi.md) | Analytics |
+
+### Internal Tables
 
 The following **1 table(s)** are used internally by this solution's content items:
 
-| Table | Used By Content |
-|-------|----------------|
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Analytics, Hunting |
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | - | Analytics, Hunting |
 
 ## Content Items
 
-This solution includes **16 content item(s)**:
+This solution includes **23 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
+| Analytic Rules | 10 |
 | Playbooks | 8 |
-| Analytic Rules | 4 |
 | Hunting Queries | 4 |
+| Parsers | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
+| [GTI - Data Leak Alert Detected](../content/google-threat-intelligence-gti-data-leak-alert-detected-d4e5f6a7-b8c9-0123-defa-234567890124-c47c0531.md) | High | Exfiltration, Impact, CredentialAccess, Collection | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
+| [GTI - High Relevance Alert Detected](../content/google-threat-intelligence-gti-high-relevance-alert-detected-f6a7b8c9-d0e1-2345-fabc-456789012345-8fc2e3f3.md) | High | InitialAccess, Exfiltration, Impact, CredentialAccess, PrivilegeEscalation | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
+| [GTI - High and Critical Priority Alerts](../content/google-threat-intelligence-gti-high-and-critical-priority-alerts-b2c3d4e5-f6a7-8901-bcde-f12345678902-eac20a8f.md) | High | InitialAccess, Impact, CredentialAccess, Exfiltration | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
+| [GTI - Initial Access Broker Alert Detected](../content/google-threat-intelligence-gti-initial-access-broker-alert-detected-c3d4e5f6-a7b8-9012-cdef-123456789013-8ea823e9.md) | High | InitialAccess, CredentialAccess | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
+| [GTI - Insider Threat Alert Detected](../content/google-threat-intelligence-gti-insider-threat-alert-detected-e5f6a7b8-c9d0-1234-efab-345678901234-1ae6bfc8.md) | High | PrivilegeEscalation, Exfiltration, CredentialAccess, Impact | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
+| [GTI Relevance System Alert - Incident by Alert ID](../content/google-threat-intelligence-gti-relevance-system-alert-incident-by-alert-id-a1b2c3d4-e5f6-7890-abcd-ef1234567891-4ca388b2.md) | Medium | InitialAccess, Reconnaissance, Impact, CredentialAccess | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) |
 | [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md) | Medium | Execution | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
@@ -87,6 +102,12 @@ This solution includes **16 content item(s)**:
 | [Google Threat Intelligence - Threat List](../content/google-threat-intelligence-google-threat-intelligence-threat-list-c6635a88.md) | This playbook will ingest Google Threat Intelligence into Threat Intelligence Sentinel. | - |
 | [Google Threat Intelligence - URL Enrichment](../content/google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | This playbook will enrich URL entities. | - |
 
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [GTIRelevanceSystemAlerts](../parsers/gtirelevancesystemalerts.md) | - | [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) *(read)* |
+
 ## Additional Documentation
 
 > 📄 *Source: [Google Threat Intelligence/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/README.md)*
@@ -97,7 +118,7 @@ This solution includes **16 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
 |-------------|--------------------------------|------------------------------------------------|
-| 3.2.3       | 27-05-2026                     | Added Custom **Connector** manual prerequisite for Playbooks. |
+| 3.2.3       | 04-06-2026                     | - Added **Data Connector** *GTI Relevance System Alerts* (Azure Function App, Log Ingestion API). <br/>- Added **Parser** *GTIRelevanceSystemAlerts*. <br/>- Added **Analytics Rules**: GTI High Relevance Alerts, GTI High & Critical Priority Alerts, GTI Data Leak Alerts, GTI Initial Access Broker Alerts, GTI Insider Threat Alerts, GTI Relevance System Alerts Incident by Alert ID. <br/>- Added Custom **Connector** manual prerequisite for Playbooks. |
 | 3.2.2       | 02-12-2025                     | - Included new Analytics Rules and Hunting Queries to improve detection capabilities and support proactive investigation. <br/>- Filtering threat lists<br/>- Migrating to Upload STIX Objects |
 | 3.2.1       | 25-08-2025                     | Fix IoC Stream ingestion bug for results with more than 40 items due to a cursor iteration error. |
 | 3.2.0       | 20-05-2025                     | New **Playbook** added *IoC Stream Threat Intelligence*.<br/> Added x-tool header in **Playbook** Customer Connector. |

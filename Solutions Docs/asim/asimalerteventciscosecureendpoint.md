@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco Secure Endpoint |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md)) |
-| **Last Updated** | Mar 04, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md)) |
+| **Last Updated** | Jul 07, 2026 |
 | **Unifying Parser** | [ASimAlertEvent](asimalertevent.md) |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEventCiscoSecureEndpoint.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEventCiscoSecureEndpoint.yaml) |
 

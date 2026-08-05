@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | ZeroFox *(basis: projected)* |
-| **Source Product** | Enterprise *(basis: projected)* |
-| **Event Type** | Vulnerabilities |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

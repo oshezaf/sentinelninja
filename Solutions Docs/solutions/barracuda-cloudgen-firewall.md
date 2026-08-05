@@ -14,8 +14,6 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Barracuda *(basis: publisher)* |
-| **Source Product** | CloudGen Firewall |
 | **Version** | 3.0.2 |
 | **Author** | Barracuda |
 | **First Published** | 2021-05-02 |

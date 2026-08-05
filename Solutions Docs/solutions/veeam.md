@@ -16,10 +16,9 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/](https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/) |
 | **Categories** | IT Operations,Security - Threat Protection |
-| **Source Vendor** | Veeam *(basis: publisher)* |
-| **Version** | 3.0.1 |
+| **Version** | 3.1.0 |
 | **Author** | Veeam Software - microsoftappsupport@veeam.com |
-| **First Published** | 2025-08-26 |
+| **First Published** | 2026-06-16 |
 | **Solution Folder** | [Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) · Popularity: 🔵 Medium (77%) |
 
@@ -51,23 +50,30 @@ g. [Azure Log Analytics](https://learn.microsoft.com/azure/azure-monitor/logs/lo
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
+- [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md)
 - [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md)
 
 ## Tables Used
 
-This solution uses **8 table(s)**:
+This solution uses **14 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Event`](../tables/event.md) | - | Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+| [`VeeamAuthorizationEventsV2_CL`](../tables/veeamauthorizationeventsv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
+| [`VeeamCovewareFindingsV2_CL`](../tables/veeamcovewarefindingsv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | - |
+| [`VeeamMalwareEventsV2_CL`](../tables/veeammalwareeventsv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamOneTriggeredAlarmsV2_CL`](../tables/veeamonetriggeredalarmsv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSecurityComplianceAnalyzerV2_CL`](../tables/veeamsecuritycomplianceanalyzerv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSessionsV2_CL`](../tables/veeamsessionsv2-cl.md) | [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | - |
 | [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
 
 ## Content Items
@@ -273,11 +279,12 @@ This solution includes **164 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                  |
-|-------------|--------------------------------|-------------------------------------------------------------------------------------|
-| 3.0.2       | 15-10-2025                     | Updated author to Veeam Software                                                   |
-| 3.0.1       | 03-10-2025                     | Updated Coveware security findings integration; Removed irrelevant mappings from all analytic rules; Updated Workbooks' drilldown capabilities |
-| 3.0.0       | 26-08-2025                     | Initial Solution Release                                                            |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.1.0 | 10-06-2026 | Added Veeam Data Connector (CCF) with support for VeeamMalwareEventsV2_CL, VeeamSecurityComplianceAnalyzerV2_CL, VeeamAuthorizationEventsV2_CL, VeeamOneTriggeredAlarmsV2_CL, VeeamCovewareFindingsV2_CL, and VeeamSessionsV2_CL. Added alias parsers parser_VeeamMalwareEventsV2AliasFunction, parser_VeeamSecurityComplianceAnalyzerV2AliasFunction, parser_VeeamAuthorizationEventsV2AliasFunction, parser_VeeamOneTriggeredAlarmsV2AliasFunction, parser_VeeamCovewareFindingsV2AliasFunction, and parser_VeeamSessionsV2AliasFunction. |
+| 3.0.2 | 15-10-2025 | Updated author to Veeam Software |
+| 3.0.1 | 03-10-2025 | Updated Coveware security findings integration; Removed irrelevant mappings from all analytic rules; Updated Workbooks drilldown capabilities |
+| 3.0.0 | 26-08-2025 | Initial Solution Release |
 
 ---
 

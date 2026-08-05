@@ -15,8 +15,8 @@
 | **Schema** | AlertEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
-| **Last Updated** | Jun 16, 2026 |
+| **Parser Version** | 0.1.7 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
+| **Last Updated** | Jul 01, 2026 |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEvent.yaml) |
 
 ## Description
@@ -31,6 +31,9 @@ This union parser includes parsers for the following products:
 |:--------|:--------------|:----------|
 | Bitdefender | [_ASim_AlertEvent_BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | [GravityZone](../solutions/gravityzone.md) |
 | Cisco Secure Endpoint | [_ASim_AlertEvent_CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
+| CrowdStrike Falcon | [_ASim_AlertEvent_CrowdStrikeFalcon](asimalerteventcrowdstrikefalcon.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| Google SecOps | [_ASim_AlertEvent_GoogleSecOps](asimalerteventgooglesecops.md) | [GoogleSecOps](../solutions/googlesecops.md) |
+| Google Threat Intelligence | [_ASim_AlertEvent_GoogleThreatIntelligence](asimalerteventgooglethreatintelligence.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |
 | Netskope Security Cloud | [_ASim_AlertEvent_NetskopeSecurityCloud](asimalerteventnetskopesecuritycloud.md) | [Netskopev2](../solutions/netskopev2.md) |
 | Palo Alto XDR | [_ASim_AlertEvent_PaloAltoXDR](asimalerteventpaloaltoxdr.md) | [Cortex XDR](../solutions/cortex-xdr.md) |

@@ -38,14 +38,6 @@
   <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Qualys <em>(basis: description_url)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Vulnerability Management <em>(basis: title)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
   <td style="text-align:left"><a href="../solutions/qualysvm.html">QualysVM</a></td>
 </tr>
@@ -116,7 +108,7 @@
 <ul>
 <li><strong>Qualys API User Name</strong>: Enter UserName</li>
 <li><strong>Qualys API Password</strong>: (password field)</li>
-<li><strong>Qualys API Server URL</strong>: Enter API Server URL</li>
+<li><strong>Qualys API Server URL</strong>: e.g. https://qualysapi.qg1.apps.qualys.com</li>
 </ul>
 <blockquote>
 <p><strong>NOTE:</strong> To gather data for Detections based on Host, expand the <strong>DetectionList</strong> column in the table.
@@ -127,18 +119,19 @@ To gather data from Qualys VM, you need to provide the following resources</p>
 <p>To gather data from Qualys VM, you'll need the Qualys API server URL specific to your region. You can find the exact API server URL for your region <a href="https://www.qualys.com/platform-identification/#api-urls">here</a></p>
 </blockquote>
 <h4 id="3-truncation-limit">3. Truncation Limit</h4>
-<p>Configure the maximum number of host records to retrieve per API call (20-5000 range). Higher values may improve performance but could impact API response times.</p>
+<p>Configure the maximum number of host detection records to retrieve per API call. <strong>Recommended: 1000 (Qualys default).</strong> Lower values reduce response size and are safer for large environments or slow API servers but require more paginated calls. Higher values increase response size and risk API timeouts, especially on large environments. Values below 500 may cause excessive pagination that exceeds processing limits on large deployments.
+<strong>Timeout limit:</strong> The maximum allowed API timeout is <strong>5 minutes (300 seconds)</strong>. This is the platform maximum and cannot be raised. For large environments, lower the <strong>Truncation Limit</strong> to keep each API response within this limit.</p>
 <ul>
 <li><strong>Truncation Limit</strong> (select)<ul>
-<li>1000 - API default value</li>
-<li>20 - Minimal load, slower collection</li>
-<li>100 - Low load</li>
-<li>500 - Moderate load</li>
-<li>2500 - High load, faster collection</li>
+<li>1000 - Recommended default (Qualys default, best balance)</li>
+<li>20 - Not recommended for large environments (risk of pagination timeout)</li>
+<li>100 - Small environments only</li>
+<li>500 - Suitable for medium to large environments</li>
+<li>2500 - Risk of API timeout on large or slow environments</li>
 <li>... and 1 more options</li>
 </ul>
 </li>
-<li><strong>Show QDS Value</strong> (select)<ul>
+<li>** Show QDS Value** (select)<ul>
 <li>False (default)</li>
 <li>True</li>
 </ul>

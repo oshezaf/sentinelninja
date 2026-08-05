@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wiz for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>⚠️ Wiz for Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,11 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="wiz-for-microsoft-sentinel">Wiz for Microsoft Sentinel</h1>
+<h1 id="wiz-for-microsoft-sentinel">⚠️ Wiz for Microsoft Sentinel</h1>
 <p><em>Solution: Wiz</em></p>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="Wiz Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -45,10 +48,6 @@
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
   <td style="text-align:left">Security - Cloud Security,Security - Threat Protection</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Wiz <em>(basis: publisher)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
@@ -84,15 +83,19 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/wiz.html">Wiz</a> 🔶</li>
+<li><a href="../connectors/wiz.html">Wiz</a> ⚠️ 🔶</li>
+<li><a href="../connectors/wizsentinel.html">Wiz for Microsoft Sentinel</a></li>
 </ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>6 table(s)</strong>:</p>
+<p>This solution uses <strong>9 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,32 +108,47 @@
 <tr>
   <td><a href="../tables/wizauditlogsv2-cl.html"><code>WizAuditLogsV2_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
-  <td>Workbooks</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/wizauditlogsv3-cl.html"><code>WizAuditLogsV3_CL</code></a></td>
+  <td><a href="../connectors/wizsentinel.html">Wiz for Microsoft Sentinel</a></td>
+  <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/wizauditlogs-cl.html"><code>WizAuditLogs_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
-  <td>Workbooks</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/wizdetectionsv3-cl.html"><code>WizDetectionsV3_CL</code></a></td>
+  <td><a href="../connectors/wizsentinel.html">Wiz for Microsoft Sentinel</a></td>
+  <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/wizissuesv2-cl.html"><code>WizIssuesV2_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/wizissuesv3-cl.html"><code>WizIssuesV3_CL</code></a></td>
+  <td><a href="../connectors/wizsentinel.html">Wiz for Microsoft Sentinel</a></td>
   <td>Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/wizissues-cl.html"><code>WizIssues_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
-  <td>Workbooks</td>
+  <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/wizvulnerabilitiesv2-cl.html"><code>WizVulnerabilitiesV2_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
-  <td>Workbooks</td>
+  <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/wizvulnerabilities-cl.html"><code>WizVulnerabilities_CL</code></a> 🔶</td>
   <td><a href="../connectors/wiz.html">Wiz</a></td>
-  <td>Workbooks</td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -164,7 +182,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/wiz-wizfindings-78285767.html">WizFindings</a></td>
-  <td style="text-align:left"><a href="../tables/wizauditlogsv2-cl.html"><code>WizAuditLogsV2_CL</code></a><br><a href="../tables/wizauditlogs-cl.html"><code>WizAuditLogs_CL</code></a><br><a href="../tables/wizissuesv2-cl.html"><code>WizIssuesV2_CL</code></a><br><a href="../tables/wizissues-cl.html"><code>WizIssues_CL</code></a><br><a href="../tables/wizvulnerabilitiesv2-cl.html"><code>WizVulnerabilitiesV2_CL</code></a><br><a href="../tables/wizvulnerabilities-cl.html"><code>WizVulnerabilities_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/wizissuesv3-cl.html"><code>WizIssuesV3_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -178,6 +196,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>26-06-2026</td>
+  <td>Added a new push-based <strong>Connector</strong> (DCR + RBAC grant): Wiz pushes data to <code>WizIssuesV3_CL</code>, <code>WizDetectionsV3_CL</code>, and <code>WizAuditLogsV3_CL</code> (Issues, Detections, Audit Logs), with no Azure Function to host. <strong>Workbook</strong> updated to the new tables and columns. The legacy Azure Function connector remains available for existing deployments.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>15-07-2024</td>

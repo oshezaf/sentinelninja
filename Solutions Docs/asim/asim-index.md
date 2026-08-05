@@ -8,25 +8,25 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 ---
 
-**13 schemas** with 186 source parsers and 15 unifying parsers. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**13 schemas** with 195 source parsers and 15 unifying parsers. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 \* *Each unifying parser is available as a parameter-less `ASim` parser and a filtering `im`/`vim` parser; both are listed on the parser's page.*
 
 ## Schemas
 
-- [AgentEvent](#agentevent) (1 unifying)
-- [AlertEvent](#alertevent) (6 source, 1 unifying)
+- [AgentEvent](#agentevent) (1 source, 1 unifying)
+- [AlertEvent](#alertevent) (9 source, 1 unifying)
 - [AssetEntity](#assetentity) (1 unifying)
 - [AuditEvent](#auditevent) (20 source, 1 unifying)
-- [Authentication](#authentication) (37 source, 1 unifying)
+- [Authentication](#authentication) (40 source, 1 unifying)
 - [DhcpEvent](#dhcpevent) (2 source, 1 unifying)
 - [Dns](#dns) (15 source, 1 unifying)
 - [FileEvent](#fileevent) (17 source, 1 unifying)
-- [NetworkSession](#networksession) (37 source, 1 unifying)
+- [NetworkSession](#networksession) (38 source, 1 unifying)
 - [ProcessEvent](#processevent) (17 source, 3 unifying)
 - [RegistryEvent](#registryevent) (9 source, 1 unifying)
 - [UserManagement](#usermanagement) (7 source, 1 unifying)
-- [WebSession](#websession) (19 source, 1 unifying)
+- [WebSession](#websession) (20 source, 1 unifying)
 
 ## AgentEvent
 
@@ -36,7 +36,17 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAgentEvent](asimagentevent.md) | `_ASim_AgentEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md) |
+| [ASimAgentEvent](asimagentevent.md) | `_ASim_AgentEvent` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEvent.md) |
+
+### Supported Products
+
+[Anthropic Claude Compliance](asim-products-index.md#anthropic-claude-compliance)
+
+### Source Parsers
+
+| Parser | Product | Solution | Version |
+|:-------|:--------|:---------|:--------|
+| [AnthropicClaudeCompliance](asimagenteventanthropicclaudecompliance.md) | Anthropic Claude Compliance | [BlueVoyant Anthropic ClaudeCompliance](../solutions/bluevoyant-anthropic-claudecompliance.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAgentEvent/CHANGELOG/ASimAgentEventAnthropicClaudeCompliance.md) |
 
 ## AlertEvent
 
@@ -46,18 +56,21 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
+| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.7](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
 
 ### Supported Products
 
-[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [Netskope Security Cloud](asim-products-index.md#netskope-security-cloud), [Palo Alto XDR](asim-products-index.md#palo-alto-xdr), [SentinelOne](asim-products-index.md#sentinelone)
+[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [CrowdStrike Falcon](asim-products-index.md#crowdstrike-falcon), [Google SecOps](asim-products-index.md#google-secops), [Google Threat Intelligence](asim-products-index.md#google-threat-intelligence), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [Netskope Security Cloud](asim-products-index.md#netskope-security-cloud), [Palo Alto XDR](asim-products-index.md#palo-alto-xdr), [SentinelOne](asim-products-index.md#sentinelone)
 
 ### Source Parsers
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
 | [BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | Bitdefender | [GravityZone](../solutions/gravityzone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md) |
-| [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
+| [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
+| [CrowdStrikeFalcon](asimalerteventcrowdstrikefalcon.md) | CrowdStrike Falcon | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCrowdStrikeFalcon.md) |
+| [GoogleSecOps](asimalerteventgooglesecops.md) | Google SecOps | [GoogleSecOps](../solutions/googlesecops.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventGoogleSecOps.md) |
+| [GoogleThreatIntelligence](asimalerteventgooglethreatintelligence.md) | Google Threat Intelligence | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventGoogleThreatIntelligence.md) |
 | [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
 | [NetskopeSecurityCloud](asimalerteventnetskopesecuritycloud.md) | Netskope Security Cloud | [Netskopev2](../solutions/netskopev2.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventNetskopeSecurityCloud.md) |
 | [PaloAltoXDR](asimalerteventpaloaltoxdr.md) | Palo Alto XDR | [Cortex XDR](../solutions/cortex-xdr.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventPaloAltoXDR.md) |
@@ -120,11 +133,11 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAuthentication](asimauthentication.md) | `_ASim_Authentication` | [0.2.15](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md) |
+| [ASimAuthentication](asimauthentication.md) | `_ASim_Authentication` | [0.2.19](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md) |
 
 ### Supported Products
 
-[AWS](asim-products-index.md#aws), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Adaptive Security Appliance (ASA)](asim-products-index.md#cisco-adaptive-security-appliance-asa), [Cisco DNAC](asim-products-index.md#cisco-dnac), [Cisco IOS](asim-products-index.md#cisco-ios), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco ISE Administrator](asim-products-index.md#cisco-ise-administrator), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [Fortigate](asim-products-index.md#fortigate), [Google Workspace](asim-products-index.md#google-workspace), [Illumio](asim-products-index.md#illumio), [M365 Defender for EndPoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Microsoft Entra ID](asim-products-index.md#microsoft-entra-id), [Native](asim-products-index.md#native), [Okta](asim-products-index.md#okta), [OpenSSH](asim-products-index.md#openssh), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PAN-OS](asim-products-index.md#palo-alto-pan-os), [Palo Alto PAN-OS GlobalProtect](asim-products-index.md#palo-alto-pan-os-globalprotect), [PostgreSQL](asim-products-index.md#postgresql), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SentinelOne](asim-products-index.md#sentinelone), [su](asim-products-index.md#su), [sudo](asim-products-index.md#sudo), [Vectra](asim-products-index.md#vectra), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [VMware ESXi](asim-products-index.md#vmware-esxi), [VMware vCenter](asim-products-index.md#vmware-vcenter), [Windows Security Events](asim-products-index.md#windows-security-events)
+[AWS](asim-products-index.md#aws), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Adaptive Security Appliance (ASA)](asim-products-index.md#cisco-adaptive-security-appliance-asa), [Cisco DNAC](asim-products-index.md#cisco-dnac), [Cisco FTD](asim-products-index.md#cisco-ftd), [Cisco IOS](asim-products-index.md#cisco-ios), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco ISE Administrator](asim-products-index.md#cisco-ise-administrator), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [Fortigate](asim-products-index.md#fortigate), [Google Workspace](asim-products-index.md#google-workspace), [Illumio](asim-products-index.md#illumio), [M365 Defender for EndPoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Microsoft Entra ID](asim-products-index.md#microsoft-entra-id), [Native](asim-products-index.md#native), [Okta](asim-products-index.md#okta), [OpenSSH](asim-products-index.md#openssh), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PAN-OS](asim-products-index.md#palo-alto-pan-os), [Palo Alto PAN-OS GlobalProtect](asim-products-index.md#palo-alto-pan-os-globalprotect), [Palo Alto Prisma Cloud Compute](asim-products-index.md#palo-alto-prisma-cloud-compute), [PostgreSQL](asim-products-index.md#postgresql), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SentinelOne](asim-products-index.md#sentinelone), [su](asim-products-index.md#su), [sudo](asim-products-index.md#sudo), [Vectra](asim-products-index.md#vectra), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [VMware ESXi](asim-products-index.md#vmware-esxi), [VMware vCenter](asim-products-index.md#vmware-vcenter), [Windows Security Events](asim-products-index.md#windows-security-events)
 
 ### Source Parsers
 
@@ -137,14 +150,16 @@ These are the main entry points that combine all source parsers:
 | [BarracudaWAF](asimauthenticationbarracudawaf.md) | Barracuda WAF | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md) |
 | [CiscoASA](asimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoASA.md) |
 | [CiscoDNAC](asimauthenticationciscodnac.md) | Cisco DNAC | [Syslog](../solutions/syslog.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoDNAC.md) |
+| [CiscoFTD](asimauthenticationciscoftd.md) | Cisco FTD | [Syslog](../solutions/syslog.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoFTD.md) |
 | [CiscoIOS](asimauthenticationciscoios.md) | Cisco IOS | [Syslog](../solutions/syslog.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoIOS.md) |
-| [CiscoISE](asimauthenticationciscoise.md) | Cisco ISE | [Syslog](../solutions/syslog.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISE.md) |
+| [CiscoISE](asimauthenticationciscoise.md) | Cisco ISE | [Syslog](../solutions/syslog.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISE.md) |
 | [CiscoISEAdministrator](asimauthenticationciscoiseadministrator.md) | Cisco ISE Administrator | [Syslog](../solutions/syslog.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISEAdministrator.md) |
 | [CiscoMeraki](asimauthenticationciscomeraki.md) | Cisco Meraki | [CustomLogsAma](../solutions/customlogsama.md) | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoMeraki.md) |
 | [CiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) | Cisco Meraki | [Syslog](../solutions/syslog.md) | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoMerakiSyslog.md) |
 | [CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | [Common Event Format](../solutions/common-event-format.md)<br>[CrowdStrike Falcon Endpoint Protection (legacy connector)](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCrowdStrikeFalconHost.md) |
-| [FortinetFortigate](asimauthenticationfortinetfortigate.md) | Fortigate | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationFortinetFortigate.md) |
+| [FortinetFortigate](asimauthenticationfortinetfortigate.md) | Fortigate | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationFortinetFortigate.md) |
 | [GoogleWorkspace](asimauthenticationgoogleworkspace.md) | Google Workspace | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationGoogleWorkspace.md) |
+| [GoogleWorkspaceLogins](asimauthenticationgoogleworkspacelogins.md) | Google Workspace | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationGoogleWorkspaceLogins.md) |
 | [IllumioSaaSCore](asimauthenticationillumiosaascore.md) | Illumio | [IllumioSaaS](../solutions/illumiosaas.md) | [0.3.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationIllumioSaaSCore.md) |
 | [M365Defender](asimauthenticationm365defender.md) | M365 Defender for EndPoint |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationM365Defender.md) |
 | [MD4IoT](asimauthenticationmd4iot.md) | Microsoft Defender for IoT |  | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMD4IoT.md) |
@@ -156,8 +171,9 @@ These are the main entry points that combine all source parsers:
 | [PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoCortexDataLake.md) |
 | [PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | Palo Alto PAN-OS GlobalProtect | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoGlobalProtect.md) |
 | [PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | Palo Alto PAN-OS | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPanOS.md) |
+| [PaloAltoPrismaCloud](asimauthenticationpaloaltoprismacloud.md) | Palo Alto Prisma Cloud Compute | [Syslog](../solutions/syslog.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPrismaCloud.md) |
 | [PostgreSQL](asimauthenticationpostgresql.md) | PostgreSQL | [CustomLogsAma](../solutions/customlogsama.md)<br>[PostgreSQL (legacy connector)](../solutions/postgresql.md) | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPostgreSQL.md) |
-| [SalesforceSC](asimauthenticationsalesforcesc.md) | Salesforce Service Cloud | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md) |
+| [SalesforceSC](asimauthenticationsalesforcesc.md) | Salesforce Service Cloud | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md) |
 | [SentinelOne](asimauthenticationsentinelone.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSentinelOne.md) |
 | [SigninLogs](asimauthenticationsigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSigninLogs.md) |
 | [Sshd](asimauthenticationsshd.md) | OpenSSH | [Syslog](../solutions/syslog.md) | [0.3.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSshd.md) |
@@ -207,7 +223,7 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
-| [AzureFirewall](asimdnsazurefirewall.md) | Azure Firewall | [Azure Firewall](../solutions/azure-firewall.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md) |
+| [AzureFirewall](asimdnsazurefirewall.md) | Azure Firewall | [Azure Firewall](../solutions/azure-firewall.md) | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md) |
 | [CiscoUmbrella](asimdnsciscoumbrella.md) | Cisco Umbrella | [CiscoUmbrella](../solutions/ciscoumbrella.md) | [0.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCiscoUmbrella.md) |
 | [CorelightZeek](asimdnscorelightzeek.md) | Corelight Zeek | [Corelight](../solutions/corelight.md) | [0.5.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md) |
 | [FortinetFortiGate](asimdnsfortinetfortigate.md) | Fortinet FortiGate | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsFortinetFortiGate.md) |
@@ -267,11 +283,11 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimNetworkSession](asimnetworksession.md) | `_ASim_NetworkSession` | [0.7.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md) |
+| [ASimNetworkSession](asimnetworksession.md) | `_ASim_NetworkSession` | [0.7.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md) |
 
 ### Supported Products
 
-[AppGate SDP](asim-products-index.md#appgate-sdp), [AWS VPC](asim-products-index.md#aws-vpc), [Azure Firewall](asim-products-index.md#azure-firewall), [Azure NSG flows](asim-products-index.md#azure-nsg-flows), [Azure NTANetAnalytics](asim-products-index.md#azure-ntanetanalytics), [Barracuda WAF](asim-products-index.md#barracuda-waf), [CheckPointFirewall](asim-products-index.md#checkpointfirewall), [CheckPointSmartDefense](asim-products-index.md#checkpointsmartdefense), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CiscoASA](asim-products-index.md#ciscoasa), [Corelight Zeek](asim-products-index.md#corelight-zeek), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [ForcePointFirewall](asim-products-index.md#forcepointfirewall), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Illumio SaaS Core](asim-products-index.md#illumio-saas-core), [M365 Defender for Endpoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PanOS](asim-products-index.md#palo-alto-panos), [SentinelOne](asim-products-index.md#sentinelone), [SonicWall](asim-products-index.md#sonicwall), [Sysmon for Linux](asim-products-index.md#sysmon-for-linux), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [VMConnection](asim-products-index.md#vmconnection), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [WatchGuard Fireware OS](asim-products-index.md#watchguard-fireware-os), [Windows Firewall](asim-products-index.md#windows-firewall), [Windows Sysmon](asim-products-index.md#windows-sysmon), [Zscaler ZIA Firewall](asim-products-index.md#zscaler-zia-firewall)
+[AppGate SDP](asim-products-index.md#appgate-sdp), [AWS VPC](asim-products-index.md#aws-vpc), [Azure Firewall](asim-products-index.md#azure-firewall), [Azure NSG flows](asim-products-index.md#azure-nsg-flows), [Azure NTANetAnalytics](asim-products-index.md#azure-ntanetanalytics), [Barracuda WAF](asim-products-index.md#barracuda-waf), [CheckPointFirewall](asim-products-index.md#checkpointfirewall), [CheckPointSmartDefense](asim-products-index.md#checkpointsmartdefense), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco FTD](asim-products-index.md#cisco-ftd), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CiscoASA](asim-products-index.md#ciscoasa), [Corelight Zeek](asim-products-index.md#corelight-zeek), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [ForcePointFirewall](asim-products-index.md#forcepointfirewall), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Illumio SaaS Core](asim-products-index.md#illumio-saas-core), [M365 Defender for Endpoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PanOS](asim-products-index.md#palo-alto-panos), [SentinelOne](asim-products-index.md#sentinelone), [SonicWall](asim-products-index.md#sonicwall), [Sysmon for Linux](asim-products-index.md#sysmon-for-linux), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [VMConnection](asim-products-index.md#vmconnection), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [WatchGuard Fireware OS](asim-products-index.md#watchguard-fireware-os), [Windows Firewall](asim-products-index.md#windows-firewall), [Windows Sysmon](asim-products-index.md#windows-sysmon), [Zscaler ZIA Firewall](asim-products-index.md#zscaler-zia-firewall)
 
 ### Source Parsers
 
@@ -286,6 +302,7 @@ These are the main entry points that combine all source parsers:
 | [CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [1.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md) |
 | [CheckPointSmartDefense](asimnetworksessioncheckpointsmartdefense.md) | CheckPointSmartDefense | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointSmartDefense.md) |
 | [CiscoASA](asimnetworksessionciscoasa.md) | CiscoASA | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [1.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoASA.md) |
+| [CiscoFTD](asimnetworksessionciscoftd.md) | Cisco FTD | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoFTD.md) |
 | [CiscoFirepower](asimnetworksessionciscofirepower.md) | Cisco Firepower | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoFirepower.md) |
 | [CiscoISE](asimnetworksessionciscoise.md) | Cisco ISE | [Syslog](../solutions/syslog.md) | [1.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoISE.md) |
 | [CiscoMeraki](asimnetworksessionciscomeraki.md) | Cisco Meraki | [CustomLogsAma](../solutions/customlogsama.md) | [1.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMeraki.md) |
@@ -415,16 +432,17 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimWebSession](asimwebsession.md) | `_ASim_WebSession` | [0.5.6](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md) |
+| [ASimWebSession](asimwebsession.md) | `_ASim_WebSession` | [0.5.7](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md) |
 
 ### Supported Products
 
-[Apache HTTP Server](asim-products-index.md#apache-http-server), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia)
+[Apache HTTP Server](asim-products-index.md#apache-http-server), [AWS WAF](asim-products-index.md#aws-waf), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia)
 
 ### Source Parsers
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
+| [AWSWAF](asimwebsessionawswaf.md) | AWS WAF | [Amazon Web Services](../solutions/amazon-web-services.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionAWSWAF.md) |
 | [ApacheHTTPServer](asimwebsessionapachehttpserver.md) | Apache HTTP Server | [ApacheHTTPServer (legacy connector)](../solutions/apachehttpserver.md)<br>[CustomLogsAma](../solutions/customlogsama.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionApacheHTTPServer.md) |
 | [AzureFirewall](asimwebsessionazurefirewall.md) | Azure Firewall |  | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionAzureFirewall.md) |
 | [BarracudaCEF](asimwebsessionbarracudacef.md) | Barracuda WAF | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionBarracudaCEF.md) |

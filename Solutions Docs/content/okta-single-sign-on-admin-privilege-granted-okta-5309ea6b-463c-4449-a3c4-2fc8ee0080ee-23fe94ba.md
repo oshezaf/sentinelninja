@@ -6,15 +6,15 @@
 
 ---
 
-Query checks for admin permissions granted to users/groups, often used by adversaries for access and privilege elevation.
+This query checks for admin permissions granted to users/groups, often used by adversaries for access and privilege escalation.
 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **ID** | `5309ea6b-463c-4449-a3c4-2fc8ee0080ee` |
-| **Tactics** | Persistence |
-| **Techniques** | T1098 |
+| **Tactics** | Persistence, PrivilegeEscalation |
+| **Techniques** | T1098.001, T1078.003 |
 | **Required Connectors** | [OktaSSO](../connectors/oktasso.md), [OktaSSOv2](../connectors/oktassov2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Hunting%20Queries/AdminPrivilegeGrant.yaml) |
 

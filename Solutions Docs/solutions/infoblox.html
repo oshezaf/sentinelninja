@@ -47,14 +47,6 @@
   <td style="text-align:left">Networking,Security - Threat Intelligence,Security - Threat Protection,Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Infoblox <em>(basis: event)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Cloud, SOC Insight</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.2</td>
 </tr>
@@ -100,12 +92,9 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <li><a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a></li>
 <li><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></li>
-<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a> 🔶</li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>21 table(s)</strong>:</p>
 <table>
@@ -256,7 +245,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
   <td>Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> 🔶</td>
+  <td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
   <td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></td>
   <td>Analytics, Playbooks (writes), Workbooks</td>
 </tr>
@@ -508,8 +497,8 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <tbody>
 <tr>
   <td>3.0.2</td>
-  <td>19-06-2025</td>
-  <td>Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule.</td>
+  <td>16-07-2026</td>
+  <td>Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule. <br> Migrataed checkpoint from file share to azure tables.</td>
 </tr>
 <tr>
   <td>3.0.1</td>

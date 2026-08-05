@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | SentinelOne *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -29,13 +28,14 @@ This table is used by the following solutions:
 
 - [SentinelOne](../solutions/sentinelone.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) |  |
+| [SentinelOne V2 (via Codeless Connector Framework)](../connectors/sentinelonev2connector.md) |  |
 
 ---
 

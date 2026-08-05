@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | MuleSoft *(basis: projected)* |
-| **Source Product** | CloudHub *(basis: projected)* |
-| **Event Type** | Events |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents

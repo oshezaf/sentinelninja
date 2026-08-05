@@ -18,8 +18,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity |
-| **Source Vendor** | OneLogin *(basis: publisher)* |
-| **Source Product** | IAM Platform |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |

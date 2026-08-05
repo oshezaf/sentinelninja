@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
-| **Source Vendor** | Alibaba *(basis: title)* |
-| **Source Product** | Cloud ActionTrail |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-07-03 |

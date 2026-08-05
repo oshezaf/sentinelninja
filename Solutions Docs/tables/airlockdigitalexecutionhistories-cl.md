@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | Microsoft *(basis: projected)* |
-| **Source Product** | Airlock Digital *(basis: projected)* |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -19,7 +17,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (26 columns)
+## Schema (27 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital%5CData%20Connectors%5CAirlockDigital_CCF/table_AirlockDigitalExecutionHistories.json)
 
@@ -27,6 +25,7 @@
 |:------------|:-----|:------------|
 | Checkpoint | string | Event checkpoint identifier for incremental retrieval |
 | CommandLine | string | Command line arguments |
+| ConnectorName | string | Connector Friendly Name assigned during connector setup |
 | EventDateTime | string | Timestamp of execution event |
 | ExecutionType | int | Execution type code (0-18): Trusted, Blocked, Audit, OTP, etc. |
 | ExtensionBrowser | string | Browser type (1=Chrome, 2=Firefox, 3=Edge) |

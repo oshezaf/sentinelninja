@@ -35,18 +35,6 @@
   <td style="text-align:left">Normalized</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">CrowdStrike, Microsoft, Synqly <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">DNS Server, Falcon Data Replicator, Integration <em>(basis: projected)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Event Type</strong></td>
-  <td style="text-align:left">Events</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
   <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
@@ -803,15 +791,16 @@
 </ul>
 <h2 id="additional-information">Additional Information</h2>
 <p>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema">ASIM normalized DNS schema</a> - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the <a href="https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details">DNS normalization schema</a></p>
-<h2 id="solutions">Solutions (4)</h2>
+<h2 id="solutions">Solutions (5)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/sap-logserv.html">SAP LogServ</a></li>
 <li><a href="../solutions/synqlyintegrationconnector.html">SynqlyIntegrationConnector</a></li>
 <li><a href="../solutions/windows-server-dns.html">Windows Server DNS</a></li>
 </ul>
-<h2 id="connectors">Connectors (3)</h2>
+<h2 id="connectors">Connectors (4)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -826,8 +815,12 @@
   <td style="text-align:left"><code>EventProduct == &quot;DNS Server&quot;</code><br><code>EventResult == &quot;Failure&quot;</code><br><code>EventResultDetails == &quot;NXDOMAIN&quot;</code><br><code>EventType == &quot;Query&quot;</code><br><code>EventVendor == &quot;Microsoft&quot;</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)</a></td>
+  <td style="text-align:left"><a href="../connectors/crowdstrikereplicatorv2.html">CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/saplogserv.html">SAP LogServ (RISE), S/4HANA Cloud private edition</a></td>
+  <td style="text-align:left"><code>EventProduct in &quot;AzureVNet,BIND,SAP Web Dispatcher&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
@@ -895,8 +888,8 @@
 <ul>
 <li><code>microsoft.securityinsights/dnsnormalized</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
-<p>References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 2 total references)</h2>
+<p>References by type: 2 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -918,12 +911,20 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>EventProduct in &quot;AzureVNet,BIND,SAP Web Dispatcher&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -944,6 +945,33 @@
 <tr>
   <td style="text-align:left"><code>DNS Server</code></td>
   <td style="text-align:left"><code>Microsoft</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AzureVNet</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>BIND</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SAP Web Dispatcher</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

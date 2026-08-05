@@ -16,8 +16,6 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | Elastic *(basis: publisher)* |
-| **Source Product** | Agent |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-12 |
@@ -76,6 +74,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |---|---|---|
+| 3.0.1 | 16-07-2026 | Promoted ElasticAgent CCF data connector from public preview to GA  |
 | 3.0.0 | 11-05-2026 | **Data Connector** via Codeless Connector Framework added |
 | 2.0.0 | 14-06-2022 | **Data Connector** customs added |
 

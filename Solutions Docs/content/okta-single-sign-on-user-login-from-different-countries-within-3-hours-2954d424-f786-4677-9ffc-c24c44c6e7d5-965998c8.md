@@ -6,7 +6,7 @@
 
 ---
 
-This query searches for successful user logins to the Okta Console from different countries within 3 hours.
+This rule detects successful user logins to the Okta Console from different countries within 3 hours. This may indicate a compromised account or an account being used by multiple individuals in different locations.
 
 | Attribute | Value |
 |:----------|:------|

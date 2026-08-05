@@ -15,8 +15,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoSEGAma` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | Secure Email Gateway *(basis: title)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [CiscoSEG](../solutions/ciscoseg.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_CiscoSEGAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG/Data%20Connectors/template_CiscoSEGAMA.json) |

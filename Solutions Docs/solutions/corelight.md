@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.corelight.com/](https://support.corelight.com/) |
 | **Categories** | IT Operations,Security - Network |
-| **Source Vendor** | Corelight *(basis: publisher)* |
-| **Source Product** | Connector Exporter |
 | **Version** | 3.2.5 |
 | **Author** | Corelight - info@corelight.com |
 | **First Published** | 2022-06-01 |

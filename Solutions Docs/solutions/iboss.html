@@ -50,10 +50,6 @@
   <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">iboss <em>(basis: event)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.1.2</td>
 </tr>
@@ -135,12 +131,12 @@
 <tr>
   <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
   <td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/iboss.html">[Deprecated] iboss via Legacy Agent</a>, <a href="../connectors/ibossama.html">iboss via AMA</a></td>
-  <td>Workbooks</td>
+  <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -150,12 +146,41 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
   <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">2</td>
 </tr>
 <tr>
   <td style="text-align:left">Parsers</td>
   <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/iboss-iboss-command-and-control-detected-40cf9670-d4be-4149-9082-5809a2b12ca1-3d2fa7d5.html">iboss - Command-and-Control Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/iboss-iboss-malware-detected-cad35734-b97a-4209-9269-b98c916379eb-2e4fb5d5.html">iboss - Malware Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Execution</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -205,6 +230,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.3</td>
+  <td>24-06-2026</td>
+  <td>Added Malware/C2 <strong>Analytics Rules</strong> and made minor bug fixes</td>
+</tr>
 <tr>
   <td>3.1.2</td>
   <td>07-01-2025</td>

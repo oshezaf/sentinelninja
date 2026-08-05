@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Varonis <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">SaaS</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.3</td>
 </tr>
@@ -89,9 +81,10 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/varonissaas.html">Varonis SaaS</a> 🔶</li>
+<li><a href="../connectors/varonissaas.html">[Deprecated] Varonis SaaS</a> 🔶</li>
+<li><a href="../connectors/varonissaasalertspush.html">Varonis SaaS (Push)</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
@@ -109,8 +102,8 @@
 <tbody>
 <tr>
   <td><a href="../tables/varonisalerts-cl.html"><code>VaronisAlerts_CL</code></a> 🔶</td>
-  <td><a href="../connectors/varonissaas.html">Varonis SaaS</a></td>
-  <td>Workbooks</td>
+  <td><a href="../connectors/varonissaasalertspush.html">Varonis SaaS (Push)</a>, <a href="../connectors/varonissaas.html">[Deprecated] Varonis SaaS</a></td>
+  <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
@@ -118,7 +111,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -128,8 +121,49 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
   <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/varonissaas-varonis-high-severity-alerts-detected-7d2c9a41-5b8e-4f36-9c1a-2e6b8d4f7a13-4e1d4d3c.html">Varonis - High severity alerts detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/varonisalerts-cl.html"><code>VaronisAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/varonissaas-varonis-informational-alerts-detected-e5a7c93b-8d14-42f6-b7c0-3a9e1f6d5b28-0b3681bb.html">Varonis - Informational alerts detected</a></td>
+  <td style="text-align:left">Informational</td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/varonisalerts-cl.html"><code>VaronisAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/varonissaas-varonis-low-severity-alerts-detected-9b1f3e7a-6c42-4d18-a5e9-2b7f8c0d4e61-3ed08cd4.html">Varonis - Low severity alerts detected</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/varonisalerts-cl.html"><code>VaronisAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/varonissaas-varonis-medium-severity-alerts-detected-c4e8b16f-3a92-4d75-8e21-6f9c0b5d2a84-b5ee29f4.html">Varonis - Medium severity alerts detected</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/varonisalerts-cl.html"><code>VaronisAlerts_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -229,6 +263,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.1</td>
+  <td>29-07-2026</td>
+  <td>Mark Azure Function data connector as Deprecated</td>
+</tr>
+<tr>
+  <td>3.1.0</td>
+  <td>21-04-2026</td>
+  <td>Add CCF Push data connector</td>
+</tr>
 <tr>
   <td>3.0.3</td>
   <td>25-11-2025</td>

@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `OfficePowerBI` |
-| **Publisher / Vendor** | Microsoft |
-| **Source Product** | PowerBI *(basis: title)* |
+| **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_OfficePowerBI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI/Data%20Connectors/template_OfficePowerBI.json) |

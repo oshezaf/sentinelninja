@@ -13,8 +13,8 @@
 | Title | Parser for Fortinet_FortiNDR_Cloud |
 | Location | Solution |
 | Solution | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
-| Version | 1.0.0 |
-| Last Updated | 2024-01-09 |
+| Version | 2.1.2 |
+| Last Updated | 2026-05-26 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud/Parsers/Fortinet_FortiNDR_Cloud.yaml) |
@@ -25,9 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`FortinetFortiNdrCloudRaw_CL`](../tables/fortinetfortindrcloudraw-cl.md) | ? | ✓ | ? |
 
 ---
 

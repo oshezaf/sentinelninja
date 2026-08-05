@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
 | **Categories** | Security - Network |
-| **Source Vendor** | Forescout *(basis: publisher)* |
-| **Source Product** | Host Property Monitor |
 | **Version** | 3.0.0 |
 | **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |
@@ -36,10 +34,7 @@ Forescout Host Property Monitor offers host property analysis, incident generati
 
 This solution provides **1 data connector(s)**:
 
-- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md)
 
 ## Tables Used
 
@@ -47,12 +42,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
-| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Analytics, Workbooks |
-| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md), [Forescout Host Property Monitor (Push Connector via Codeless Connector Framework)](../connectors/forescouthostpropertymonitor.md) | Workbooks |
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md), [Forescout Host Property Monitor (Push Connector via Codeless Connector Framework)](../connectors/forescouthostpropertymonitor.md) | Analytics, Workbooks |
+| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md), [Forescout Host Property Monitor (Push Connector via Codeless Connector Framework)](../connectors/forescouthostpropertymonitor.md) | Workbooks |
 
 ## Content Items
 
@@ -86,6 +78,7 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.1.0       | 07-07-2026                     | Retained the legacy Forescout Host Property Monitor data connector alongside the new Codeless Connector Framework (CCF) push connector so the solution now ships both connector versions. The CCF connector adds a Data Collection Rule with three custom streams and tables (ForescoutHostProperties_CL, ForescoutPolicyStatus_CL, ForescoutComplianceStatus_CL). Updated solution and playbook support contact to Microsoft. |
 | 3.0.0       | 18-02-2025                     | Added new **Workbook** Forescout Host Property Monitor Workbook.<br/> Changes to **Analytic Rules** and **Playbook** corresponding to Customer table changes replaced HTTP Data Collector API with Log Ingestion API.|
 | 2.0.1       | 26-05-2022                     | Updated Support details from Microsoft to Forescout.                                                 |
 | 2.0.0       | 05-11-2023                     | Initial Solution Release.                                                 |

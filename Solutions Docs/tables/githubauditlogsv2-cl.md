@@ -8,9 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | GitHub *(basis: projected)* |
-| **Source Product** | Enterprise *(basis: projected)* |
-| **Event Type** | Audit |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -275,13 +272,12 @@ This table is used by the following solutions:
 
 - [GitHub](../solutions/github.md)
 
-## Connectors (3)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [GitHub Enterprise Audit Log (via Azure Storage)](../connectors/githubauditblobconnector.md) |  |
 | [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md) |  |
 | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) |  |
 

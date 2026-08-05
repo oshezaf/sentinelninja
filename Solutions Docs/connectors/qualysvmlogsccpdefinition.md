@@ -12,8 +12,6 @@
 |:----------|:------|
 | **Connector ID** | `QualysVMLogsCCPDefinition` |
 | **Publisher** | Microsoft |
-| **Source Vendor** | Qualys *(basis: description_url)* |
-| **Source Product** | Vulnerability Management *(basis: title)* |
 | **Used in Solutions** | [QualysVM](../solutions/qualysvm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [QualysVMHostLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_ConnectorDefinition.json) |
@@ -55,17 +53,18 @@ To gather data from Qualys VM, you need to provide the following resources
  To gather data from Qualys VM, you'll need the Qualys API server URL specific to your region. You can find the exact API server URL for your region [here](https://www.qualys.com/platform-identification/#api-urls)
 - **Qualys API User Name**: Enter UserName
 - **Qualys API Password**: (password field)
-- **Qualys API Server URL**: Enter API Server URL
+- **Qualys API Server URL**: e.g. https://qualysapi.qg1.apps.qualys.com
 #### 3. Truncation Limit 
- Configure the maximum number of host records to retrieve per API call (20-5000 range). Higher values may improve performance but could impact API response times.
+ Configure the maximum number of host detection records to retrieve per API call. **Recommended: 1000 (Qualys default).** Lower values reduce response size and are safer for large environments or slow API servers but require more paginated calls. Higher values increase response size and risk API timeouts, especially on large environments. Values below 500 may cause excessive pagination that exceeds processing limits on large deployments.
+**Timeout limit:** The maximum allowed API timeout is **5 minutes (300 seconds)**. This is the platform maximum and cannot be raised. For large environments, lower the **Truncation Limit** to keep each API response within this limit.
 - **Truncation Limit** (select)
-  - 1000 - API default value
-  - 20 - Minimal load, slower collection
-  - 100 - Low load
-  - 500 - Moderate load
-  - 2500 - High load, faster collection
+  - 1000 - Recommended default (Qualys default, best balance)
+  - 20 - Not recommended for large environments (risk of pagination timeout)
+  - 100 - Small environments only
+  - 500 - Suitable for medium to large environments
+  - 2500 - Risk of API timeout on large or slow environments
   - ... and 1 more options
-- **Show QDS Value** (select)
+- ** Show QDS Value** (select)
   - False (default)
   - True
 - Click 'Connect' to establish connection

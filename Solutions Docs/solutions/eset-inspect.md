@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.eset.com/int/business/solutions/endpoint-detection-and-response/](https://www.eset.com/int/business/solutions/endpoint-detection-and-response/) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | ESET *(basis: publisher)* |
-| **Source Product** | Inspect |
 | **Version** | 2.0.0 |
 | **Author** | ESET Netherlands |
 | **First Published** | 2022-06-01 |

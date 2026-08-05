@@ -1,6 +1,4 @@
-# ⚠️ 42Crunch API Protection
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# 42Crunch API Protection
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/42CrunchLogo.svg" alt="42Crunch API Protection Logo" width="75" height="75">
 
@@ -12,16 +10,16 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | 42Crunch API Protection |
-| **Support Tier** | Partner |
-| **Support Link** | [https://42crunch.com/](https://42crunch.com/) |
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Source Vendor** | 42Crunch *(basis: publisher)* |
-| **Source Product** | API Protection |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.3 |
 | **Author** | 42Crunch - plugins@42crunch.com |
 | **First Published** | 2022-09-21 |
+| **Last Updated** | 2026-07-29 |
 | **Solution Folder** | [42Crunch API Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-42crunch-api-protection) · Popularity: 🟡 Low (28%) |
 
 The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by installing a microfirewall inline with the API server. Access logs from the microfirewall are emitted to Microsoft Sentinel allowing analysis and investigation of attacks.
 
@@ -95,6 +93,8 @@ This solution includes **13 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.3       | 27-07-2026                     | Promoted the connector to GA Renamed CCF Push **Data Connector** files (ConnectorDefinition, DCR, PollerConfig) in the `42Crunch_CCF` folder to follow the standard CCF naming convention. Added **Parser** alias function (`FortyTwoCrunchAPIProtectionV2`) for the V2 table. |
+| 3.0.2       | 15-07-2026                     | Update publisher and support information in SolutionMetadata.json |
 | 3.0.1       | 25-05-2026                     | Added CCF Push **Data Connector** (OAuth2/Entra ID via DCE/DCR) alongside legacy connector; added backward-compatible **Parser** (`FortyTwoCrunchAPIProtection`) supporting both `apifirewall_log_1_CL` and `FortyTwoCrunchAPIProtectionV2_CL` schemas. Updated all 11 **Analytic Rules** to use the parser alias and PascalCase column names, added Migration Guide with end-to-end validated `ccf-forwarder` sample deployment, and refreshed **Workbook** metadata. |
 | 3.0.0       | 15-07-2024                     |	Missing Tactics and Techniques added     						|
 

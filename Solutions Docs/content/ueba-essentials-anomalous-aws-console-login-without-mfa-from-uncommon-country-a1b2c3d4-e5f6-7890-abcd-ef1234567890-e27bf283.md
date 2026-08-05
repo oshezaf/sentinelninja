@@ -24,7 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType == "signin.amazonaws.com"`<br>`EventSource contains "aws"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
 
 ---

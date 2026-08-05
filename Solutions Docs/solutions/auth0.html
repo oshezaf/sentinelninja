@@ -46,10 +46,6 @@
   <td style="text-align:left">Identity</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Auth0 <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.1.5</td>
 </tr>
@@ -164,6 +160,23 @@
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/README.md">Auth0/README.md</a></em></p>
 </blockquote>
+<h1 id="upgrading-to-the-multi-host-multi-domain-auth0-logs-connector">Upgrading to the multi-host (multi-domain) Auth0 Logs connector</h1>
+<p>Starting with solution version <strong>3.2.0</strong>, the <strong>Auth0 Logs (via Codeless Connector Framework)</strong> data connector supports collecting logs from <strong>multiple Auth0 hosts</strong> from a single connector. Each ingested record is tagged with an <strong>Auth0Domain</strong> column so you can tell the hosts apart (for example: <code>Auth0Logs_CL | summarize count() by Auth0Domain</code>).</p>
+<p><strong>What happens when you upgrade:</strong></p>
+<ol>
+<li>Update the <strong>Auth0</strong> solution to 3.2.0 (or later) from Content Hub. Your existing Auth0 log collection keeps running during and after the update — no data is lost.</li>
+<li>Upgrading the solution only refreshes the connector <em>definition</em>. It does <strong>not</strong> change the data collection rule or poller already running in your workspace, so the new multi-host experience and the <code>Auth0Domain</code> column are <strong>not</strong> applied automatically.</li>
+<li>To enable multi-host collection, open <strong>Microsoft Sentinel &gt; Data connectors &gt; Auth0 Logs (via Codeless Connector Framework)</strong>, then <strong>reconnect</strong>:<ul>
+<li>In the connection grid, add each Auth0 host as its own connection using <strong>Add Auth0 host</strong>, providing that host's <strong>Domain</strong>, <strong>Client ID</strong>, and <strong>Client Secret</strong>.</li>
+<li>Reconnecting re-provisions the data collection rule (now including the <code>Auth0Domain</code> column) and starts a separate poller per host.</li>
+</ul>
+</li>
+<li>New host connections take a cycle or two to warm up (initial token fetch, first backfill window, then ingestion), so a newly added host may lag the first one before data appears.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Records collected before the upgrade remain in <code>Auth0Logs_CL</code> with an empty <code>Auth0Domain</code>. Records collected after you reconnect a host are tagged with that host's domain.</p>
+</blockquote>
+<hr />
 <h1 id="steps-to-configure-auth0-app">Steps to Configure Auth0 app</h1>
 <p>The following are steps to be followed in Auth0 App.</p>
 <ol>
@@ -188,10 +201,7 @@ c. Get the client secret</strong></em><br></p>
 <li>Under API tab, please make sure Authorized to scopes, Please find below screen shot for reference :-</li>
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/API.png%3Fraw%3Dtrue" alt="" /></p>
-<ol start="6">
-<li>Please make sure the domain value under settings --&gt; Environment Variables, please refer below screen shot for reference and other values are entered from the above step copied values and Domain should be  starts with https://,then click on Apply  and restart function app</li>
-</ol>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Images/functionappvalues.png%3Fraw%3Dtrue" alt="" /></p>
+<p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -202,6 +212,11 @@ c. Get the client secret</strong></em><br></p>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.0</td>
+  <td>20-07-2026</td>
+  <td>Auth0 Logs (via Codeless Connector Framework) <strong>Data Connector</strong> now supports collecting from multiple Auth0 hosts (multi-domain) and tags each record with the <strong>Auth0Domain</strong> column</td>
+</tr>
 <tr>
   <td>3.1.5</td>
   <td>13-04-2026</td>

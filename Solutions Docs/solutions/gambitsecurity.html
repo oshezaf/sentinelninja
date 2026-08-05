@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gambit Security Sentinel Solution &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="gambit-security-sentinel-solution">Gambit Security Sentinel Solution</h1>
+<p><em>Solution: GambitSecurity</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GambitSecurity.svg" alt="GambitSecurity Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Gambit Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://gambit.security/">https://gambit.security/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Cloud Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Gambit Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-07-30</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GambitSecurity">GambitSecurity</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/gambit-security.gambit_security_sentinel_solution">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://gambit.security/">Gambit Security</a> solution for Microsoft Sentinel enables you to push Gambit Security policy issues into Microsoft Sentinel. Each issue is denormalized with resource, affected-system, and policy context so security teams can triage and promote high-severity issues to incidents directly in Microsoft Sentinel.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/gambitsecuritypush.html">Gambit Security Policy Issues (Push)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/gambitpoliciesissues-cl.html"><code>GambitPoliciesIssues_CL</code></a></td>
+  <td><a href="../connectors/gambitsecuritypush.html">Gambit Security Policy Issues (Push)</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/gambitsecurity-gambit-security-critical-policy-issue-promotion-8d2b6f4c-1a37-4e9b-b5c8-7f0e3a2d9c14-15369d23.html">Gambit Security - Critical Policy Issue Promotion</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/gambitpoliciesissues-cl.html"><code>GambitPoliciesIssues_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/gambitpoliciesissues.html">GambitPoliciesIssues</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/gambitpoliciesissues-cl.html"><code>GambitPoliciesIssues_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GambitSecurity/README.md">GambitSecurity/README.md</a></em></p>
+</blockquote>
+<p>The Gambit Security solution ingests <strong>policy issues</strong> from <a href="https://gambit.security/">Gambit Security</a> into Microsoft Sentinel using the Codeless Connector Framework (CCF) <strong>Push</strong> model.</p>
+<h2 id="what-it-ingests">What it ingests</h2>
+<p>Gambit Security pushes each policy issue as an already-shaped record into the <code>GambitPoliciesIssues_CL</code> table. Every row is <strong>denormalized</strong> with the context needed to triage the issue without a join:</p>
+<ul>
+<li><strong>Resource context</strong> — <code>ResourceDisplayId</code>, <code>ResourceType</code>, <code>HostPlatform</code>, <code>Environment</code>.</li>
+<li><strong>Affected systems</strong> — <code>AffectedSystems</code> (array of system display names impacted by the issue).</li>
+<li><strong>Policy context</strong> — <code>PolicyId</code>, <code>PolicyName</code>, <code>PolicyDescription</code>, <code>PolicyCategories</code>, <code>Severity</code>, <code>BusinessImpacts</code>, <code>RemediationSteps</code>.</li>
+<li><strong>Lifecycle</strong> — <code>State</code> (Active / Resolved / Removed), <code>IssueStatus</code>, <code>CreatedAt</code>, <code>LastEvaluationTime</code>.</li>
+</ul>
+<p>Records are append-only; each issue is re-emitted as its state changes. Gambit performs the field mapping, so the Data Collection Rule uses a pure passthrough transform (<code>transformKql: source</code>).</p>
+<h2 id="parser">Parser</h2>
+<p><code>GambitPoliciesIssues</code> is a saved function that returns the latest row per issue:</p>
+<pre><code class="language-kusto">GambitPoliciesIssues_CL
+| summarize arg_max(TimeGenerated, *) by IssueId
+</code></pre>
+<p><code>IssueId</code> is the dedup key — always query through the <code>GambitPoliciesIssues</code> parser to see current issue state rather than the raw append-only table.</p>
+<h2 id="analytic-rule">Analytic rule</h2>
+<p><code>Gambit Security - Critical Policy Issue Promotion</code> is a scheduled rule (1-day frequency/period) that promotes any <strong>Active, High-severity</strong> issue to a Microsoft Sentinel incident:</p>
+<pre><code class="language-kusto">GambitPoliciesIssues
+| where State == &quot;Active&quot; and Severity == &quot;High&quot;
+</code></pre>
+<p>It maps <code>ResourceDisplayId</code> to Host and Azure Resource entities and surfaces <code>PolicyName</code>, <code>PolicyCategories</code>, <code>IssueStatus</code>, <code>AffectedSystems</code>, <code>Environment</code>, and <code>RemediationSteps</code> as custom incident details.</p>
+<h2 id="deployment">Deployment</h2>
+<p>Deploy the connector from the Microsoft Sentinel Content Hub. The <strong>Deploy</strong> button provisions the <code>GambitPoliciesIssues_CL</code> table, the Data Collection Rule and Endpoint, and an Entra app registration granted <strong>Monitoring Metrics Publisher</strong> on the DCR. The connector page then surfaces the five credentials (Tenant ID, Application ID, Application Secret, Data Collection Endpoint URI, Data Collection Rule Immutable ID) and the stream name (<code>Custom-GambitPoliciesIssues</code>) that Gambit Security consumes to push issues.</p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>01-07-2026</td>
+  <td>Initial release: Gambit Security Policy Issues push connector.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

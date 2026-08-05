@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://synqly.com/support](https://synqly.com/support) |
 | **Categories** | Security - Network,Security - Threat Protection,Security - Cloud Security |
-| **Source Vendor** | Synqly *(basis: publisher)* |
-| **Source Product** | Integration |
 | **Version** | 3.0.0 |
 | **Author** | Synqly |
 | **First Published** | 2026-01-30 |

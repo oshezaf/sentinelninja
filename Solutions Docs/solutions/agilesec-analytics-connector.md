@@ -16,7 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.infosecglobal.com/](https://www.infosecglobal.com/) |
 | **Categories** | IT Operations |
-| **Source Vendor** | InfoSecGlobal *(basis: publisher)* |
 | **Version** | 2.0.0 |
 | **Author** | InfoSecGlobal |
 | **Last Updated** | 2026-04-09 |

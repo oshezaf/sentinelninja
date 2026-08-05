@@ -47,14 +47,6 @@
   <td style="text-align:left">Security - Automation (SOAR)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Commvault <em>(basis: publisher)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Source Product</strong></td>
-  <td style="text-align:left">Security IQ</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.0.4</td>
 </tr>
@@ -89,12 +81,13 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
+<li><a href="../connectors/commvaultsecurityiqconnector.html">Commvault Security IQ (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,9 +98,14 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/commvaultalertsccf-cl.html"><code>CommvaultAlertsCCF_CL</code></a></td>
+  <td><a href="../connectors/commvaultsecurityiqconnector.html">Commvault Security IQ (via Codeless Connector Framework)</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
   <td><a href="../tables/commvaultalerts-cl.html"><code>CommvaultAlerts_CL</code></a></td>
   <td><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a></td>
-  <td>Analytics</td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -146,7 +144,7 @@
   <td style="text-align:left"><a href="../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.html">Commvault Cloud Alert</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion, Impact</td>
-  <td style="text-align:left"><a href="../tables/commvaultalerts-cl.html"><code>CommvaultAlerts_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/commvaultalertsccf-cl.html"><code>CommvaultAlertsCCF_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -181,15 +179,25 @@
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/README.md">Commvault Security IQ/README.md</a></em></p>
 </blockquote>
-<h1 id="commvault-cloud---microsoft-sentinel-integration">Commvault Cloud - Microsoft Sentinel Integration</h1>
-<p>This SOAR integration connects Commvault Cloud with Microsoft Sentinel to enable automated incident creation and response through Analytic Rules and Playbooks.</p>
+<h1 id="commvault-security-iq---microsoft-sentinel-integration">Commvault Security IQ - Microsoft Sentinel Integration</h1>
+<p>This integration connects Commvault Cloud with Microsoft Sentinel to enable anomaly ingestion, incident creation, investigation, and response through analytic rules, playbooks, and the Commvault Security Investigation Agent.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#required-azure-resources">Required Azure Resources</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#using-commvault-security-investigation-agent">Using Commvault Security Investigation Agent</a></li>
+<li><a href="#automation-account-and-runbooks-setup">Automation Account and Runbooks Setup</a></li>
+<li><a href="#support">Support</a></li>
+</ul>
 <h2 id="overview">Overview</h2>
 <p>This solution provides:</p>
 <ul>
-<li><strong>Data Ingestion</strong>: Automated collection of Commvault security events and anomalies</li>
-<li><strong>Incident Creation</strong>: Automatic creation of Sentinel incidents based on Commvault security events</li>
-<li><strong>AI Powered Insights</strong>: AI-driven coorelation of Commvault Threat Scan and Risk Analysis events with Sentinel Data Lake signals from tools like CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation.</li>
-<li><strong>Incident Response</strong>: Playbooks for automated remediation actions (disable users, disable data aging, etc.)</li>
+<li><strong>Data Ingestion</strong>: Automated collection of Commvault client anomaly events via the Codeless Connector Framework</li>
+<li><strong>Incident Creation</strong>: Creation of Microsoft Sentinel incidents from Commvault anomaly detections after the analytic rule is created and enabled</li>
+<li><strong>AI-powered Insights</strong>: Use the Commvault Security Investigation Agent in Microsoft Security Copilot to correlate Commvault anomaly events with signals from tools such as CrowdStrike, Netskope, and Palo Alto to validate impact on affected hosts and speed investigation</li>
+<li><strong>Incident Response</strong>: Playbook templates for remediation actions such as disabling users, disabling SAML identity providers, and disabling data aging</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before beginning the installation, ensure you have:</p>
@@ -205,65 +213,12 @@
 <li><strong>Microsoft Sentinel</strong>: An active Sentinel workspace deployed in your Azure environment</li>
 <li><strong>Log Analytics Workspace</strong>: A Log Analytics workspace associated with your Sentinel instance</li>
 <li><strong>Azure Cloud Shell</strong>: Access to Azure Cloud Shell with PowerShell support</li>
+<li><strong>Response automation resources</strong>: A Key Vault and an Automation Account are required only if you deploy and use the included incident response playbooks</li>
 </ul>
 <h2 id="required-azure-resources">Required Azure Resources</h2>
-<p>The following Azure resources will be created or configured during this installation:</p>
-<h3 id="key-vault">Key Vault</h3>
-<ul>
-<li><strong>Purpose</strong>: Securely stores Commvault credentials and API endpoints</li>
-<li><strong>Required Secrets</strong>:<ul>
-<li><code>access-token</code>: Your Commvault Cloud access token</li>
-<li><code>environment-endpoint-url</code>: Your Commvault Cloud API endpoint URL (Commvault/Metallic endpoint URL : https://<code>hostname</code>/commandcenter/api )</li>
-<li><code>refresh-token</code>: Your Commvault Cloud refresh token</li>
-</ul>
-</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<p><strong>1. Create Access Token in Commvault:</strong></p>
-<ul>
-<li>Follow the instructions in <a href="https://documentation.commvault.com/2024e/essential/creating_access_token.html">Creating an Access Token / Refresh Token</a>.</li>
-<li>Ensure the user creating the token has <strong>Admin</strong> or <strong>Tenant Admin</strong> privileges.</li>
-</ul>
-<p><strong>2. Create KeyVault:</strong></p>
-<ul>
-<li>Azure Portal -&gt; KeyVault -&gt; Create -&gt; Basics (select subscription, RG).</li>
-</ul>
-<p><strong>3. Create KeyVault Secrets:</strong></p>
-<ul>
-<li>Go to Azure Portal -&gt; KeyVault -&gt; Secrets</li>
-<li>Create following secrets each by clicking on Generate/Import -&gt; Manual:</li>
-</ul>
-<table>
-<thead>
-<tr>
-  <th>Name</th>
-  <th>Value</th>
-  <th>Enabled</th>
-  <th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>&quot;access-token&quot;</code></td>
-  <td>(Your Commvault/Metallic access token)</td>
-  <td>Yes</td>
-  <td>Create</td>
-</tr>
-<tr>
-  <td><code>&quot;refresh-token&quot;</code></td>
-  <td>(Your Commvault/Metallic refresh token)</td>
-  <td>Yes</td>
-  <td>Create</td>
-</tr>
-<tr>
-  <td><code>&quot;environment-endpoint-url&quot;</code></td>
-  <td>(Your Commvault/Metallic endpoint's URL)</td>
-  <td>Yes</td>
-  <td>Create</td>
-</tr>
-</tbody>
-</table>
-<p><strong>4. Install Commvault Cloud Solution:</strong></p>
+<p>The <strong>Commvault Security IQ (via Codeless Connector Framework)</strong> data connector collects Commvault anomaly events in Microsoft Sentinel. After you connect the connector, events are available in the <code>CommvaultAlertsCCF_CL</code> table.</p>
+<p>After you select <strong>Add connector</strong> and click <strong>Connect</strong>, Microsoft Sentinel creates the connector resources and starts polling the Commvault API.</p>
+<p>The included response playbooks have separate prerequisites: they use an Azure Key Vault to retrieve Commvault credentials and an Azure Automation Account to run the remediation runbooks. These resources are not required for CCF data ingestion.</p>
 <p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
@@ -275,6 +230,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.6</td>
+  <td>04-08-2026</td>
+  <td>Updated the CCF connector and solution documentation.</td>
+</tr>
+<tr>
+  <td>3.0.5</td>
+  <td>27-07-2026</td>
+  <td>Added <strong>Commvault Security IQ (via Codeless Connector Framework)</strong> data connector, introduced <strong>CommvaultAlertsCCF_CL</strong> custom table and Data Collection Rule (DCR), updated analytics rule to detect client anomalies using <strong>AnomalyType</strong>, enhanced connector UI with sample queries and configuration guidance, and updated solution documentation for CCF-based deployment.</td>
+</tr>
 <tr>
   <td>3.0.4</td>
   <td>05-03-2025</td>

@@ -47,10 +47,6 @@
   <td style="text-align:left">Security - Threat Protection</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">Halcyon <em>(basis: publisher)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Version</strong></td>
   <td style="text-align:left">3.1.0</td>
 </tr>
@@ -83,13 +79,20 @@
 <p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Azure Monitor Data Collection Rules (DCR)</a></p>
 <p>c. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-endpoint-overview">Azure Monitor Data Collection Endpoints (DCE)</a></p>
 <p>d. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-overview">Azure Log Analytics workspaces</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/halcyonpush.html">Halcyon Connector</a></li>
+<li><a href="../connectors/halcyonpushv2.html">Halcyon Connector (v2)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -100,9 +103,87 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/halcyonalertupdatesv2-cl.html"><code>HalcyonAlertUpdatesV2_CL</code></a></td>
+  <td><a href="../connectors/halcyonpushv2.html">Halcyon Connector (v2)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a></td>
+  <td><a href="../connectors/halcyonpushv2.html">Halcyon Connector (v2)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/halcyonevents-cl.html"><code>HalcyonEvents_CL</code></a></td>
   <td><a href="../connectors/halcyonpush.html">Halcyon Connector</a></td>
   <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-alerts.html">Halcyon_Alerts</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyonalertupdatesv2-cl.html"><code>HalcyonAlertUpdatesV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-applicationlifecycle.html">Halcyon_OCSF_ApplicationLifecycle</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-authentication.html">Halcyon_OCSF_Authentication</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-dnsactivity.html">Halcyon_OCSF_DnsActivity</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-fileactivity.html">Halcyon_OCSF_FileActivity</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-kernelactivity.html">Halcyon_OCSF_KernelActivity</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-networkactivity.html">Halcyon_OCSF_NetworkActivity</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/halcyon-ocsf-processactivity.html">Halcyon_OCSF_ProcessActivity</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/halcyoneventsv2-cl.html"><code>HalcyonEventsV2_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -116,6 +197,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.0</td>
+  <td>10-06-2026</td>
+  <td>New connector, new event and alert tables with OCSF schema, and parsers</td>
+</tr>
 <tr>
   <td>3.1.0</td>
   <td>24-03-2026</td>

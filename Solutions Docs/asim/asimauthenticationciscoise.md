@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationCiscoISE` |
 | **Built-in Parser** | `_ASim_Authentication_CiscoISE` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.3 |
+| **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco ISE |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISE.md)) |
-| **Last Updated** | July 19, 2023 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoISE.md)) |
+| **Last Updated** | Jun 24, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationCiscoISE.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationCiscoISE.yaml) |
 

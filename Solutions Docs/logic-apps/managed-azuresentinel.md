@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 689 |
-| **Solutions** | 121 |
+| **Playbooks using** | 698 |
+| **Solutions** | 125 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
 
 ## Playbooks Using This Connector
@@ -18,6 +18,7 @@
 | [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.md) | [ProofPointTap](../solutions/proofpointtap.md) | 1 | 3 |
 | [2S-MISP-Forwarder](../content/standalone-content-2s-misp-forwarder-5acdf96c.md) | 📄 Standalone | 1 | 0 |
 | [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 0 |
+| [Abnormal Security - Add Incident Comment](../content/abnormalsecurity-abnormal-security-add-incident-comment-a5b5c9ac.md) | [AbnormalSecurity](../solutions/abnormalsecurity.md) | 1 | 1 |
 | [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-abuseipdb-enrich-incident-by-ip-info-ec814639.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 2 |
 | [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-1d81545b.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 1 |
 | [AD4IoT-AutoAlertStatusSync](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 0 |
@@ -147,12 +148,13 @@
 | [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 1 | 0 |
 | [Change Incident Severity](../content/standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone | 1 | 2 |
 | [Change-Incident-Severity](../content/standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone | 1 | 3 |
-| [Check Point EM - Importer (Alerts → Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-sentinel-incidents-16ebefeb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
+| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 0 |
+| [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](../content/check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) | 1 | 5 |
 | [Check Point Exposure Management - Credential Leak Validation and Response](../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 3 |
-| [Check Point Exposure Management - Exporter (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-sentinel-→-argos-980b2f1d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
+| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
 | [Check Point Exposure Management - Fetch Attachments On-Demand](../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
 | [Check Point Exposure Management - IOC Enrichment and Triage](../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 5 |
-| [Check Point Exposure Management - Manual Status Update (Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-sentinel-→-argos-6353fe22.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
+| [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
 | [Check Point Exposure Management - Phishing Takedown](../content/check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 4 |
 | [Check Point Exposure Management - Vulnerability Exploitation Monitoring](../content/check-point-cyberint-alerts-check-point-exposure-management-vulnerability-exploitation-monitoring-4b89e280.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
 | [CheckPhish - Get URL reputation](../content/checkphish-by-bolster-checkphish-get-url-reputation-529bb2b7.md) | [CheckPhish by Bolster](../solutions/checkphish-by-bolster.md) | 1 | 2 |
@@ -498,12 +500,8 @@
 | [Rapid7 Insight VM - Enrich incident with asset info](../content/rapid7insightvm-rapid7-insight-vm-enrich-incident-with-asset-info-cb13fd3a.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) | 1 | 2 |
 | [Rapid7 Insight VM - Enrich vulnerability info](../content/rapid7insightvm-rapid7-insight-vm-enrich-vulnerability-info-56b018aa.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) | 1 | 2 |
 | [Rapid7 Insight VM - Run scan](../content/rapid7insightvm-rapid7-insight-vm-run-scan-939c1740.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) | 1 | 3 |
-| [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
 | [RecordedFuture-IOC_Enrichment](../content/recorded-future-recordedfuture-ioc-enrichment-dda73772.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 4 |
-| [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
 | [RecordedFuture-Sandbox_Enrichment-Url](../content/recorded-future-recordedfuture-sandbox-enrichment-url-500e284d.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
-| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
-| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
 | [RecordedFuture-ThreatIntelligenceImport](../content/recorded-future-recordedfuture-threatintelligenceimport-ef10c4ab.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [Relate alerts to incident by IP](../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) | 1 | 4 |
 | [Remediate assets on prisma cloud](../content/paloaltoprismacloud-remediate-assets-on-prisma-cloud-25186c76.md) | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) | 1 | 2 |
@@ -655,6 +653,7 @@
 | [URLhaus-CheckURLAndEnrichIncident](../content/urlhaus-urlhaus-checkurlandenrichincident-be303913.md) | [URLhaus](../solutions/urlhaus.md) | 1 | 2 |
 | [User enrichment - Okta](../content/okta-single-sign-on-user-enrichment-okta-3d8dea7d.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) | 1 | 2 |
 | [Username Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-username-breach-data-spycloud-enterprise-78b06e33.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 3 |
+| [Vaikora for O365 - Quarantine Incident Responder](../content/vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.md) | [Vaikora-O365](../solutions/vaikora-o365.md) | 1 | 2 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
@@ -692,6 +691,16 @@
 | [Watchlist - Change Incident Severity and Title if User VIP - Incident Trigger](../content/watchlists-utilities-watchlist-change-incident-severity-and-title-if-user-vip-incident-trigger-f80acbed.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
 | [Watchlist - close incidents with safe IPs](../content/watchlists-utilities-watchlist-close-incidents-with-safe-ips-c258f9d0.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 3 |
 | [Watchlists - Inform Subscription Owner](../content/watchlists-utilities-watchlists-inform-subscription-owner-4de3a082.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
+| [Whisper Security - Batch Indicator Enrichment](../content/whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | [Whisper](../solutions/whisper.md) | 0 | 4 |
+| [Whisper Security - Check ASN Reputation](../content/whisper-whisper-security-check-asn-reputation-f2a79814.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
+| [Whisper Security - Discover Co-Hosted Domains](../content/whisper-whisper-security-discover-co-hosted-domains-df0d4f7c.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Explain ASN](../content/whisper-whisper-security-explain-asn-71637933.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Explain Domain](../content/whisper-whisper-security-explain-domain-b479e0f2.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
+| [Whisper Security - Explain IP Address](../content/whisper-whisper-security-explain-ip-address-1e68b177.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
+| [Whisper Security - Explain Network](../content/whisper-whisper-security-explain-network-c99337ce.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
+| [Whisper Security - Get BGP History](../content/whisper-whisper-security-get-bgp-history-150c0325.md) | [Whisper](../solutions/whisper.md) | 0 | 4 |
+| [Whisper Security - Get Infrastructure Chain](../content/whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
+| [Whisper Security - Get WHOIS History](../content/whisper-whisper-security-get-whois-history-ccdf0e6e.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
 | [workflow](../content/sap-workflow-3298b428.md) | [SAP](../solutions/sap.md) | 0 | 4 |
 | [workflow](../content/sap-workflow-20a8ae88.md) | [SAP](../solutions/sap.md) | 0 | 2 |
 | [Zscaler OAuth2 Blacklist URL](../content/zscaler-internet-access-zscaler-oauth2-blacklist-url-27279293.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 1 | 0 |

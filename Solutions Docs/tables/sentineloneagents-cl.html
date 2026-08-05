@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Source Vendor</strong></td>
-  <td style="text-align:left">SentinelOne <em>(basis: projected)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -57,7 +53,7 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (69 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOne_ccp/table%20-%20Agents.json">Connector definition</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneAgents.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
@@ -70,347 +66,347 @@
 <tr>
   <td style="text-align:left">AccountId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the account.</td>
+  <td style="text-align:left">Account id</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The account name.</td>
+  <td style="text-align:left">Account name</td>
 </tr>
 <tr>
   <td style="text-align:left">ActiveDirectory</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Details about the active directory.</td>
+  <td style="text-align:left">Active directory</td>
 </tr>
 <tr>
   <td style="text-align:left">ActiveThreats</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The number of active threats.</td>
+  <td style="text-align:left">Active threats</td>
 </tr>
 <tr>
   <td style="text-align:left">AgentVersion</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the agent.</td>
+  <td style="text-align:left">Agent version</td>
 </tr>
 <tr>
   <td style="text-align:left">AllowRemoteShell</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether remote shell is allowed.</td>
+  <td style="text-align:left">Allow remote shell</td>
 </tr>
 <tr>
   <td style="text-align:left">AppsVulnerabilityStatus</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The vulnerability status of the applications.</td>
+  <td style="text-align:left">Apps vulnerability status</td>
 </tr>
 <tr>
   <td style="text-align:left">ComputerName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the computer.</td>
+  <td style="text-align:left">Computer name</td>
 </tr>
 <tr>
   <td style="text-align:left">ConsoleMigrationStatus</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The status of the console migration.</td>
+  <td style="text-align:left">Console migration status</td>
 </tr>
 <tr>
   <td style="text-align:left">CoreCount</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The number of CPU cores.</td>
+  <td style="text-align:left">Core count</td>
 </tr>
 <tr>
   <td style="text-align:left">CpuCount</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The number of CPUs.</td>
+  <td style="text-align:left">Cpu count</td>
 </tr>
 <tr>
   <td style="text-align:left">CpuId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier of the CPU.</td>
+  <td style="text-align:left">Cpu id</td>
 </tr>
 <tr>
   <td style="text-align:left">CreatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was created.</td>
+  <td style="text-align:left">Created at</td>
 </tr>
 <tr>
   <td style="text-align:left">Domain</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The domain of the object.</td>
+  <td style="text-align:left">Domain</td>
 </tr>
 <tr>
   <td style="text-align:left">EncryptedApplications</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the applications are encrypted.</td>
+  <td style="text-align:left">Encrypted applications</td>
 </tr>
 <tr>
   <td style="text-align:left">ExternalId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The external identifier associated with the object.</td>
+  <td style="text-align:left">External id</td>
 </tr>
 <tr>
   <td style="text-align:left">ExternalIp</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The external IP address of the object.</td>
+  <td style="text-align:left">External ip</td>
 </tr>
 <tr>
   <td style="text-align:left">FullDiskScanLastUpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the full disk scan was last updated.</td>
+  <td style="text-align:left">Full disk scan last updated at</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the group.</td>
+  <td style="text-align:left">Group id</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupIp</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The IP address of the group.</td>
+  <td style="text-align:left">Group ip</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the group.</td>
+  <td style="text-align:left">Group name</td>
 </tr>
 <tr>
   <td style="text-align:left">GroupUpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the group was last updated.</td>
+  <td style="text-align:left">Group updated at</td>
 </tr>
 <tr>
   <td style="text-align:left">Id</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the object.</td>
+  <td style="text-align:left">Id</td>
 </tr>
 <tr>
   <td style="text-align:left">Infected</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is infected.</td>
+  <td style="text-align:left">Infected</td>
 </tr>
 <tr>
   <td style="text-align:left">InRemoteShellSession</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is in a remote shell session.</td>
+  <td style="text-align:left">In remote shell session</td>
 </tr>
 <tr>
   <td style="text-align:left">InstallerType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of installer used.</td>
+  <td style="text-align:left">Installer type</td>
 </tr>
 <tr>
   <td style="text-align:left">IsActive</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is active.</td>
+  <td style="text-align:left">Is active</td>
 </tr>
 <tr>
   <td style="text-align:left">IsDecommissioned</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is decommissioned.</td>
+  <td style="text-align:left">Is decommissioned</td>
 </tr>
 <tr>
   <td style="text-align:left">IsPendingUninstall</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is pending uninstallation.</td>
+  <td style="text-align:left">Is pending uninstall</td>
 </tr>
 <tr>
   <td style="text-align:left">IsUninstalled</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is uninstalled.</td>
+  <td style="text-align:left">Is uninstalled</td>
 </tr>
 <tr>
   <td style="text-align:left">IsUpToDate</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the object is up to date.</td>
+  <td style="text-align:left">Is up to date</td>
 </tr>
 <tr>
   <td style="text-align:left">LastActiveDate</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was last active.</td>
+  <td style="text-align:left">Last active date</td>
 </tr>
 <tr>
   <td style="text-align:left">LastIpToMgmt</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The last IP address used for management.</td>
+  <td style="text-align:left">Last ip to mgmt</td>
 </tr>
 <tr>
   <td style="text-align:left">LastLoggedInUserName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The username of the last logged-in user.</td>
+  <td style="text-align:left">Last logged in user name</td>
 </tr>
 <tr>
   <td style="text-align:left">LicenseKey</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The license key associated with the object.</td>
+  <td style="text-align:left">License key</td>
 </tr>
 <tr>
   <td style="text-align:left">Locations</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The locations associated with the object.</td>
+  <td style="text-align:left">Locations</td>
 </tr>
 <tr>
   <td style="text-align:left">LocationType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of location.</td>
+  <td style="text-align:left">Location type</td>
 </tr>
 <tr>
   <td style="text-align:left">MachineType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of machine.</td>
+  <td style="text-align:left">Machine type</td>
 </tr>
 <tr>
   <td style="text-align:left">MissingPermissions</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the missing permissions.</td>
+  <td style="text-align:left">Missing permissions</td>
 </tr>
 <tr>
   <td style="text-align:left">MitigationMode</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The mitigation mode applied.</td>
+  <td style="text-align:left">Mitigation mode</td>
 </tr>
 <tr>
   <td style="text-align:left">MitigationModeSuspicious</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The suspicious mitigation mode applied.</td>
+  <td style="text-align:left">Mitigation mode suspicious</td>
 </tr>
 <tr>
   <td style="text-align:left">ModelName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The model name of the object.</td>
+  <td style="text-align:left">Model name</td>
 </tr>
 <tr>
   <td style="text-align:left">NetworkInterfaces</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the network interfaces.</td>
+  <td style="text-align:left">Network interfaces</td>
 </tr>
 <tr>
   <td style="text-align:left">NetworkQuarantineEnabled</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Is Network Quarantine Enabled on the device.</td>
+  <td style="text-align:left">Network quarantine enabled</td>
 </tr>
 <tr>
   <td style="text-align:left">NetworkStatus</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The network status of the object.</td>
+  <td style="text-align:left">Network status</td>
 </tr>
 <tr>
   <td style="text-align:left">OperationalStateExpiration</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Agent operational state.</td>
+  <td style="text-align:left">Operational state expiration</td>
 </tr>
 <tr>
   <td style="text-align:left">OsArch</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The OS architecture.</td>
+  <td style="text-align:left">Os arch</td>
 </tr>
 <tr>
   <td style="text-align:left">OsName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the operating system.</td>
+  <td style="text-align:left">Os name</td>
 </tr>
 <tr>
   <td style="text-align:left">OsRevision</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The OS revision.</td>
+  <td style="text-align:left">Os revision</td>
 </tr>
 <tr>
   <td style="text-align:left">OsStartTime</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the operating system started.</td>
+  <td style="text-align:left">Os start time</td>
 </tr>
 <tr>
   <td style="text-align:left">OsType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of operating system.</td>
+  <td style="text-align:left">Os type</td>
 </tr>
 <tr>
   <td style="text-align:left">OsUsername</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The username associated with the operating system.</td>
+  <td style="text-align:left">Os username</td>
 </tr>
 <tr>
   <td style="text-align:left">PolicyUpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the policy was last updated.</td>
+  <td style="text-align:left">Policy updated at</td>
 </tr>
 <tr>
   <td style="text-align:left">RangerStatus</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The status of the ranger.</td>
+  <td style="text-align:left">Ranger status</td>
 </tr>
 <tr>
   <td style="text-align:left">RangerVersion</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the ranger.</td>
+  <td style="text-align:left">Ranger version</td>
 </tr>
 <tr>
   <td style="text-align:left">RegisteredAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was registered.</td>
+  <td style="text-align:left">Registered at</td>
 </tr>
 <tr>
   <td style="text-align:left">RemoteProfilingState</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Agent remote profiling state.</td>
+  <td style="text-align:left">Remote profiling state</td>
 </tr>
 <tr>
   <td style="text-align:left">ScanAbortedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the scan was aborted.</td>
+  <td style="text-align:left">Scan aborted at</td>
 </tr>
 <tr>
   <td style="text-align:left">ScanFinishedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the scan was finished.</td>
+  <td style="text-align:left">Scan finished at</td>
 </tr>
 <tr>
   <td style="text-align:left">ScanStartedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the scan was started.</td>
+  <td style="text-align:left">Scan started at</td>
 </tr>
 <tr>
   <td style="text-align:left">ScanStatus</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The scan status of the object.</td>
+  <td style="text-align:left">Scan status</td>
 </tr>
 <tr>
   <td style="text-align:left">SiteId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the site.</td>
+  <td style="text-align:left">Site id</td>
 </tr>
 <tr>
   <td style="text-align:left">SiteName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the site.</td>
+  <td style="text-align:left">Site name</td>
 </tr>
 <tr>
   <td style="text-align:left">ThreatRebootRequired</td>
   <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether a reboot is required due to a threat.</td>
+  <td style="text-align:left">Threat reboot required</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+  <td style="text-align:left">The timestamp (in UTC) when the log entry was generated.</td>
 </tr>
 <tr>
   <td style="text-align:left">TotalMemory</td>
   <td style="text-align:left">real</td>
-  <td style="text-align:left">The total memory available in MB.</td>
+  <td style="text-align:left">Total memory</td>
 </tr>
 <tr>
   <td style="text-align:left">UpdatedAt</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the object was last updated.</td>
+  <td style="text-align:left">Updated at</td>
 </tr>
 <tr>
   <td style="text-align:left">UserActionsNeeded</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the user actions needed.</td>
+  <td style="text-align:left">User actions needed</td>
 </tr>
 <tr>
   <td style="text-align:left">Uuid</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the object.</td>
+  <td style="text-align:left">Uuid</td>
 </tr>
 </tbody>
 </table>

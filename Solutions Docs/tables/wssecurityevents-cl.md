@@ -8,8 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Source Vendor** | WithSecure *(basis: projected)* |
-| **Source Product** | Elements API *(basis: projected)* |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -51,25 +49,33 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [WithSecureElementsCCF](../solutions/withsecureelementsccf.md)
 - [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [WithSecure Elements (CCF)](../connectors/withsecureelementsccf.md) |  |
 | [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md) |  |
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [WithSecureElementsCCF](../solutions/withsecureelementsccf.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [WithSecureTopComputersByInfections](../content/withsecureelementsccf-withsecuretopcomputersbyinfections-3b140dfe.md) |  |
 
 **In solution [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md):**
 

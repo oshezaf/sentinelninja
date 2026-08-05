@@ -16,8 +16,6 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.signl4.com](https://www.signl4.com) |
 | **Categories** | DevOps,IT Operations |
-| **Source Vendor** | Derdack *(basis: publisher)* |
-| **Source Product** | SIGNL4 |
 | **Version** | 2.0.3 |
 | **Author** | Ronald Czachara - ron@signl4.com |
 | **First Published** | 2021-12-10 |
@@ -79,6 +77,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                           |
 |-------------|--------------------------------|------------------------------------------------------------------------------|
+| 3.0.1       | 24-07-2026                    | Minor text changes.  |  
 | 3.0.0       | 02-06-2025                     | This version introduces several updates to the SIGNL4 solution for Microsoft Sentinel, focusing on improving metadata, updating templates, and enhancing descriptions for better clarity and functionality.  |
 
 ---

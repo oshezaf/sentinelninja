@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `blacklens_io` |
-| **Publisher / Vendor** | snapSEC GmbH |
+| **Publisher** | snapSEC GmbH |
 | **Used in Solutions** | [Blacklens](../solutions/blacklens.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [blacklens_io.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens/Data%20Connectors/blacklens_io.json) |

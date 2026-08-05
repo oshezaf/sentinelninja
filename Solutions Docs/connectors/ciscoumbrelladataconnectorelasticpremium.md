@@ -11,8 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CiscoUmbrellaDataConnectorelasticpremium` |
-| **Publisher / Vendor** | Cisco |
-| **Source Product** | Cloud Security *(basis: title)* |
+| **Publisher** | Cisco |
 | **Used in Solutions** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CiscoUmbrella_API_FunctionApp_elasticpremium.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_API_FunctionApp_elasticpremium.json) |
@@ -108,7 +107,7 @@ This connector ingests data into the following tables:
 
 1. Click the **Deploy to Azure** button below. 
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy-gov)
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinelciscoumbrellaelasticpremiumazuredeploy-gov)
 2. Select the preferred **Subscription**, **Resource Group** and **Location**. 
 3. Enter the **Workspace ID**, **Workspace Key**, **S3Bucket**, **AWSAccessKeyId**, **AWSSecretAccessKey**
 4. **For Private Access Deployment**: Also enter **existingVnetName**, **existingVnetResourceGroupName**, and **existingSubnetName** (ensure subnet is delegated to Microsoft.Web/serverFarms)
