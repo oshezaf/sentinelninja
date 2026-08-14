@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `RemoteIPType == "Public"` | ✓ | ✗ | ? |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `RemoteIPType == "Public"` | ✓ | ✗ | ✓ |
 
 ---
 

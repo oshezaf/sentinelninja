@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | `Action in "Blocked,Matched"`<br>`Message has "XSS"` | ✓ | ✗ | ? |
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | `Action in "Blocked,Matched"`<br>`Message has "XSS"` | ✓ | ✗ | ✓ |
 
 ---
 

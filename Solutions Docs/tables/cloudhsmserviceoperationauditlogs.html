@@ -36,15 +36,19 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -77,7 +81,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -97,7 +101,7 @@
 <tr>
   <td style="text-align:left">ClientInfo</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">User agent information.</td>
+  <td style="text-align:left">Client or user-agent information.</td>
 </tr>
 <tr>
   <td style="text-align:left">ClientSdkPackageVersion</td>
@@ -105,39 +109,39 @@
   <td style="text-align:left">Version of the client SDK package.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DurationMs</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Time it took to service the request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time.</td>
+  <td style="text-align:left">ClusterType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cluster type of the Cloud HSM resource.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MemberId</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Time taken to service the request in milliseconds (excluding network latency).</td>
+</tr>
+<tr>
+  <td style="text-align:left">HsmInstance</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Member ID of HSM in the Cloud HSM cluster.</td>
+  <td style="text-align:left">HSM instance identifier within the Cloud HSM cluster.</td>
 </tr>
 <tr>
   <td style="text-align:left">Opcode</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Operation code in HEX string format.</td>
+  <td style="text-align:left">Operation code for the request.</td>
 </tr>
 <tr>
   <td style="text-align:left">OperationName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the operation</td>
-</tr>
-<tr>
-  <td style="text-align:left">PoolType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Cloud HSM pool type.</td>
+  <td style="text-align:left">Name of the operation.</td>
 </tr>
 <tr>
   <td style="text-align:left">ResultDescription</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">More detailed description of the result.</td>
+  <td style="text-align:left">Detailed description of the result.</td>
 </tr>
 <tr>
   <td style="text-align:left">ResultSignature</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Short signature of the result.</td>
+  <td style="text-align:left">Short signature indicating the result.</td>
 </tr>
 <tr>
   <td style="text-align:left">ResultType</td>
@@ -147,12 +151,12 @@
 <tr>
   <td style="text-align:left">Sku</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about the Cloud HSM SKU including family and name.</td>
+  <td style="text-align:left">Cloud HSM SKU details including family and name.</td>
 </tr>
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">TenantId</td>
@@ -162,7 +166,7 @@
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp (UTC) when operation occurred.</td>
+  <td style="text-align:left">Timestamp (UTC) when the operation occurred.</td>
 </tr>
 <tr>
   <td style="text-align:left">Type</td>

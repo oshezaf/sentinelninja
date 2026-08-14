@@ -6,7 +6,7 @@
 
 ---
 
-Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_ta17_293a_ps.yml. Questions via Twitter: @janvonkirchheim.
+Original Sigma Rule: https://github.com/SigmaHQ/sigma/blob/master/rules-emerging-threats/2017/TA/Dragonfly/proc_creation_win_apt_ta17_293a_ps.yml Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |
 |:----------|:------|

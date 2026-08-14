@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath startswith "/"` | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath startswith "/"` | ✓ | ✗ | ✓ |
 
 ## Parameters
 

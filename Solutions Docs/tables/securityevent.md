@@ -11,8 +11,8 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) |
@@ -35,7 +35,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AccessMask | string | Hexadecimal mask for the requested or performed operation. |
@@ -209,7 +209,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | ShareName | string | The name of accessed network share. The format is: \*\SHARE_NAME. |
 | SidHistory | string | Contains previous SIDs used for the object if the object was moved from another domain. |
 | SourceComputerId | string | Unique identifier assigned to each computer in a Windows domain. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Status | string | The reason why logon failed. For this event, it typically has '0xC0000234' value. The most common status codes are listed in Table 12. Windows logon status codes. |
 | StorageAccount | string | Sets the storage account access key. |
 | SubcategoryGuid | string | The unique GUID of changed subcategory. |
@@ -251,10 +251,10 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time stamp when the event was generated on the computer. |
 | TokenElevationType | string | Type of token that was assigned to a new process in accordance with User Account Control Policy. |
-| TransmittedServices | string | The list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user - most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <a href="https://msdn.microsoft.com/library/cc246072.aspx" data-linktype="external">https://msdn.microsoft.com/library/cc246072.aspx</a>. |
+| TransmittedServices | string | The list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user - most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, seehttps://msdn.microsoft.com/library/cc246072.aspx. |
 | Type | string | The name of the table |
 | UserAccountControl | string | Shows the list of changes in userAccountControl attribute. You will see a line of text for each change. |
-| UserParameters | string | If you change any setting using Active Directory Users and Computers management console in Dial-in tab of user's account properties, then you will see &lt;value changed, but not displayed&gt; in this field. For local accounts, this field is not applicable and always has &lt;value not set&gt; value. |
+| UserParameters | string | If you change any setting using Active Directory Users and Computers management console in Dial-in tab of user's account properties, then you will see <value changed, but not displayed> in this field. For local accounts, this field is not applicable and always has <value not set> value. |
 | UserPrincipalName | string | Internet-style login name for the account, based on the Internet standard RFC 822. By convention this should map to the account's email name. |
 | UserWorkstations | string | Contains the list of NetBIOS or DNS names of the computers from which the user can logon. Each computer name is separated by a comma. The name of a computer is the sAMAccountName property of a computer object. |
 | VendorIds | string | 'Hardware Ids' attribute of device. To see device properties, start Device Manager, open specific device properties, and click 'Details'. |
@@ -269,7 +269,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent)
 
-## Solutions (33)
+## Solutions (32)
 
 This table is used by the following solutions:
 
@@ -298,7 +298,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -323,14 +322,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (166)
+## Content Items Using This Table (168)
 
-### Analytic Rules (70)
+### Analytic Rules (72)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [PowerShell Encoded Command Execution (Living off the Land)](../content/attacker-tools-threat-protection-essentials-powershell-encoded-command-execution-living-off-the-land-7b2f4d1a-9c3e-4f72-8b1d-3e6a9f2c4b8d-1e416822.md) | `EventID == "4688"` |
 | [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md) |  |
 
 **In solution [Dev 0270 Detection and Hunting](../solutions/dev-0270-detection-and-hunting.md):**
@@ -353,6 +353,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Base64 encoded Windows process command-lines](../content/endpoint-threat-protection-essentials-base64-encoded-windows-process-command-lines-ca67c83e-7fff-4127-a3e3-1af66d6d4cad-01f53023.md) |  |
+| [CertUtil Used for File Download (Living off the Land)](../content/endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.md) | `EventID == "4688"` |
 | [Malware in the recycle bin](../content/endpoint-threat-protection-essentials-malware-in-the-recycle-bin-75bf9902-0789-47c1-a5d8-f57046aa72df-2b92e7a9.md) |  |
 | [Potential Remote Desktop Tunneling](../content/endpoint-threat-protection-essentials-potential-remote-desktop-tunneling-d2e8fd50-8d66-11ec-b909-0242ac120002-811dbf83.md) | `EventID in "4624,4625"`<br>`LogonType == "10"` |
 | [Process executed from binary hidden in Base64 encoded file](../content/endpoint-threat-protection-essentials-process-executed-from-binary-hidden-in-base64-encoded-file-d6190dde-8fd2-456a-ac5b-0a32400b0464-f2c6e93c.md) |  |
@@ -459,18 +460,13 @@ This table is ingested by the following connectors:
 | [Sdelete deployed via GPO and run recursively](../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.md) | `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` |
 | [SecurityEvent - Multiple authentication failures followed by a success](../content/windows-security-events-securityevent-multiple-authentication-failures-followed-by-a-success-cf3ede88-a429-493b-9108-3e46d3c741f7-2bfab486.md) | `EventID in "4624,4625"` |
 | [Starting or Stopping HealthService to Avoid Detection](../content/windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.md) | `EventID in "4624,4656"` |
+| [WMI Spawning Suspicious Child Process (Living off the Land)](../content/windows-security-events-wmi-spawning-suspicious-child-process-living-off-the-land-3c8e5f0b-1d4a-4b69-9c2e-7f0d3a5e8b1f-c2b2f4ac.md) | `EventID == "4688"` |
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
-
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |  |
 
 ### Hunting Queries (74)
 
@@ -732,13 +728,13 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (97 criteria, 135 total references)
+## Selection Criteria Summary (97 criteria, 138 total references)
 
-References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 15 | 1 | - | **16** |
+| `EventID == "4688"` | - | 18 | 1 | - | **19** |
 | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | 1 | 7 | - | 1 | **9** |
 | `EventID in "4624,4625"` | - | 5 | - | - | **5** |
 | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` | - | 4 | - | - | **4** |
@@ -835,7 +831,7 @@ References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other par
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **128** | **5** | **1** | **135** |
+| **Total** | **1** | **131** | **5** | **1** | **138** |
 
 ### AccessMask
 
@@ -950,7 +946,7 @@ References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 42 | 1 | - | **43** |
+| `4688` | - | 45 | 1 | - | **46** |
 | `4624` | - | 18 | - | - | **18** |
 | `4625` | - | 15 | - | - | **15** |
 | `5136` | - | 14 | - | - | **14** |

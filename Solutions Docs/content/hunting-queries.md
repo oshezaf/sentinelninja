@@ -8,7 +8,7 @@
 
 Hunting queries enable proactive threat hunting by security analysts. Unlike analytic rules that run automatically, hunting queries are designed for manual investigation to uncover hidden threats, explore suspicious patterns, and identify indicators of compromise that automated detection may have missed. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting)
 
-**2464 hunting queries** across all Microsoft Sentinel solutions.
+**2467 hunting queries** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -725,6 +725,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [DopplePaymer Procdump](microsoft-defender-xdr-dopplepaymer-procdump-89b31213-4350-4730-8d27-26667ce53894-14013cca.md) | CredentialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Dormant account activity from uncommon country](ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.md) | - | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Dormant Local Admin Logon](ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.md) | PrivilegeEscalation | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
+| [Dormant privileged identities with no recent sign-ins](standalone-content-dormant-privileged-identities-with-no-recent-sign-ins-0a70fd03-6f58-4df3-ab39-f9d123d538cd-c3ea19c2.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [Dormant Service Principal Update Creds and Logs In](github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) | Persistence | 🔗 GitHub Only |
 | [Dormant User Update MFA and Logs In](github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) | Persistence | 🔗 GitHub Only |
 | [Dormant User Update MFA and Logs In - UEBA](github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.md) | Persistence | 🔗 GitHub Only |
@@ -1622,6 +1623,8 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Privileged Accounts Locked Out](github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) | InitialAccess | 🔗 GitHub Only |
 | [Privileged directory role assigned outside PIM workflow](standalone-content-privileged-directory-role-assigned-outside-pim-workflow-2df6ff4f-f90f-4158-ac4a-98c1b23d9e18-e097cfc4.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [Privileged Entra ID account sign-in via legacy authentication protocol](standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) | InitialAccess, DefenseEvasion | 📄 Standalone Content |
+| [Privileged identities authenticating via legacy protocols](standalone-content-privileged-identities-authenticating-via-legacy-protocols-06184800-6d66-46ce-aabd-7e17e9cf3fb0-eebd6f91.md) | InitialAccess, CredentialAccess | 📄 Standalone Content |
+| [Privileged identities whose sign-ins are not protected by Conditional Access](standalone-content-privileged-identities-whose-sign-ins-are-not-protected-by-conditional-access-87245d60-eefb-42dd-9748-cd1949c83a5e-13eedd8a.md) | InitialAccess | 📄 Standalone Content |
 | [Privileged Identity Management role activation outside business hours](standalone-content-privileged-identity-management-role-activation-outside-business-hours-8a1fb81a-b672-4e8c-9799-9c7fd2431688-e511977b.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [Privileged Machines Exposed to the Internet](authomize-privileged-machines-exposed-to-the-internet-7457a420-8c28-4ce2-a55e-d050e5a6bc4f-3beb4360.md) | Discovery | 📦 [Authomize](../solutions/authomize.md) |
 | [Privileged role assigned to newly created account](standalone-content-privileged-role-assigned-to-newly-created-account-1bb5e930-18be-454d-b0d9-351eef15871a-133953c6.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |

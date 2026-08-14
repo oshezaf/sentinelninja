@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [PRODAFTUstaATP_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention/Data%20Connectors/PRODAFTUstaATP_ccp/PRODAFTUstaATP_DCR.json) |
 | **CCF Configuration** | [PRODAFTUstaATP_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention/Data%20Connectors/PRODAFTUstaATP_ccp/PRODAFTUstaATP_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#prodaft-usta---account-takeover-prevention-via-codeless-connector-framework) |
 
 The PRODAFT USTA Account Takeover Prevention data connector ingests compromised-credential tickets from the PRODAFT USTA platform into Microsoft Sentinel. Sensitive values are redacted at ingestion: plaintext passwords are never stored — only password strength signals (score and length) are retained for triage.
 

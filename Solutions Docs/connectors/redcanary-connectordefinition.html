@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Red Canary Threat Detection via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="red-canary-threat-detection">⚠️ Red Canary Threat Detection (via Codeless Connector Framework)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/red_canary_logo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>RedCanary_ConnectorDefinition</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Red Canary</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/red-canary.html">Red Canary</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanary_ccf/RedCanary_ConnectorDefinition.json">RedCanary_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanary_ccf/RedCanary_DCR.json">RedCanary_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanary_ccf/RedCanary_dataconnector.json">RedCanary_dataconnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
+  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.redcanary.com/">Red Canary</a> data connector enables Red Canary to publish detections into Microsoft Sentinel using the Codeless Connector Framework push pattern and the Azure Monitor Logs Ingestion API.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/redcanarydetections-cl.html"><code>RedCanaryDetections_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires the Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign the Monitoring Metrics Publisher role on the data collection rule. Typically requires Azure RBAC Owner or User Access Administrator.</li>
+<li><strong>Red Canary</strong>: Access to configure the Microsoft Sentinel response action in Red Canary.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create connector resources</strong></p>
+<p>Deploy the CCF push resources required for Red Canary detection ingestion.</p>
+<h4 id="automated-configuration-and-secure-data-ingestion">Automated configuration and secure data ingestion</h4>
+<p>Clicking <strong>Deploy</strong> creates the Log Analytics table, Data Collection Rule (DCR), Data Collection Endpoint (DCE), Microsoft Entra application, application secret, and role assignment required to ingest Red Canary detections through the Azure Monitor Logs Ingestion API.
+Deploy Red Canary connector resources</p>
+<p><strong>2. Configure Red Canary</strong></p>
+<p>Use the generated values to configure Red Canary to send detections to this Microsoft Sentinel workspace.</p>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Application ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint URI</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Detections Stream Name</strong>: <code>Custom-RedCanaryDetections</code>
+Configure the Red Canary Microsoft Sentinel response action with the values above. Red Canary should post detection records to the Logs Ingestion API endpoint using the stream name <code>Custom-RedCanaryDetections</code>.</li>
+</ul>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: [Red Canary\Data Connectors\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red Canary\Data Connectors\README.md)</em></p>
+</blockquote>
+<h1 id="red-canary-data-connector-for-microsoft-sentinel">Red Canary Data Connector for Microsoft Sentinel</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This folder contains the Red Canary Codeless Connector Framework (CCF) push connector for Microsoft Sentinel. The connector creates the resources required for Red Canary to send detections to the <code>RedCanaryDetections_CL</code> table through the Azure Monitor Logs Ingestion API.</p>
+<h2 id="folders">Folders</h2>
+<ol>
+<li><code>RedCanary_ccf/</code> - Connector definition, push connector resource, DCR, and table schema.</li>
+</ol>
+<h2 id="installing-for-users">Installing for users</h2>
+<p>After the solution is published, the connector is available in the Microsoft Sentinel data connectors gallery.</p>
+<ol>
+<li>Go to <strong>Microsoft Sentinel</strong> &gt; <strong>Data connectors</strong>.</li>
+<li>Select <strong>Red Canary Threat Detection (via Codeless Connector Framework)</strong>.</li>
+<li>Select <strong>Deploy Red Canary connector resources</strong>.</li>
+<li>Copy the generated tenant, application, secret, data collection endpoint, data collection rule, and stream values from the connector page.</li>
+<li>Configure the Red Canary Microsoft Sentinel response action with those values.</li>
+</ol>
+<p>The connector shows data after Red Canary successfully posts detection records to the Logs Ingestion API.</p>
+<h2 id="installing-for-testing">Installing for testing</h2>
+<p>For package validation, deploy the Red Canary solution package to a Microsoft Sentinel workspace and open the installed connector page. After deploying the connector resources, post a test JSON array to the <code>Custom-RedCanaryDetections</code> stream. The solution README includes the expected payload shape.</p>
+<p>Confirm that:</p>
+<ul>
+<li>Records appear in <code>RedCanaryDetections_CL</code>.</li>
+<li>The connector graph shows recent data.</li>
+<li>One new <code>detection_id_s</code> creates one alert and one incident.</li>
+<li>Re-sending the same <code>detection_id_s</code> creates another raw row while the analytic rule continues to evaluate one representative record per detection ID in its query window.</li>
+<li>Matching alerts group into the same open incident by <code>detection_id</code> for up to seven days.</li>
+</ul>
+<p>Useful ingestion check:</p>
+<pre><code class="language-kusto">RedCanaryDetections_CL
+| where detection_id_s == &quot;rc-detection-12345&quot;
+| summarize Rows=count(), FirstSeen=min(TimeGenerated), LastSeen=max(TimeGenerated) by detection_id_s
+</code></pre>
+<p>The solution README includes the payload contract, alert behavior, and validation queries.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

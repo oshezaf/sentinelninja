@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"` | ✗ | ✗ | ✗ |
-| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) |  | ✓ | ✗ | ? |
+| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) |  | ✓ | ✗ | ✗ |
 
 ## Parameters
 

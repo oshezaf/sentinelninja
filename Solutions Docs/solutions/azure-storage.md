@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider,IT Operations,Storage |
-| **Version** | 2.0.2 |
+| **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [Azure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Storage) |
@@ -47,6 +47,12 @@ This solution uses **5 table(s)**:
 | [`StorageFileLogs`](../tables/storagefilelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
 | [`StorageQueueLogs`](../tables/storagequeuelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
 | [`StorageTableLogs`](../tables/storagetablelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
+|-------------|--------------------------------|--------------------------------------------------------------------------|   
+| 3.0.0       | 31-07-2026                     | Updated Solution to version 3.0.0 by migrating from TemplateSpec to contentTemplates/contentPackages 					  |
 
 ---
 

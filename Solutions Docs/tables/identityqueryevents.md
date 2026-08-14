@@ -6,15 +6,17 @@
 
 ---
 
-Reference for IdentityQueryEvents table in Azure Monitor Logs.
+Queries for Active Directory objects, such as users, groups, devices, and domains
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityqueryevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityqueryevents-table) |
 
 ## Contents
 
@@ -31,7 +33,7 @@ Reference for IdentityQueryEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name of the account user displayed in the address book |
 | AccountDomain | string | Domain of the account |
 | AccountName | string | User name of the account |
@@ -53,7 +55,7 @@ Reference for IdentityQueryEvents table in Azure Monitor Logs.
 | QueryTarget | string | Name of user, group, device, domain, or any other entity type being queried |
 | QueryType | string | Type of query, such as QueryGroup, QueryUser, or EnumerateUsers |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetAccountDisplayName | string | Display name of the account that the recorded action was applied to |
 | TargetAccountUpn | string | User principal name (UPN) of the account that the recorded action was applied to |
 | TargetDeviceName | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
@@ -66,6 +68,7 @@ Reference for IdentityQueryEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityQueryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityqueryevents)
+- [IdentityQueryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityqueryevents-table)
 
 ## Solutions (1)
 

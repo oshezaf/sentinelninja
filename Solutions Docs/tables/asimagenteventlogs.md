@@ -11,9 +11,12 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Contents
 
@@ -23,26 +26,31 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 - [Connectors](#connectors)
 - [Resource Types](#resource-types)
 
-## Schema (73 columns)
+## Schema (80 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActingAppId | string | The identifier of the application that initiated the event. |
+| ActingApplicationEntityKey | string | The entity key associated with the acting application. |
 | ActingAppName | string | The name of the application that initiated the event. |
 | ActingAppType | string | The type of the application that initiated the event. |
+| ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
+| ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | The unique identifier of the actor user. |
 | ActorUserIdType | string | The type of the actor user identifier. |
 | ActorUsername | string | The username of the actor. |
 | ActorUsernameType | string | The type of the actor username. |
 | ActorUserScope | string | The scope of the actor user. |
 | ActorUserScopeId | string | The scope identifier of the actor user. |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information not covered by other fields, stored as key-value pairs. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | EventCount | int | The number of events aggregated in this record. |
 | EventEndTime | datetime | The time at which the event ended. |
 | EventErrorDetails | string | Details about any error that occurred during the event. |
@@ -79,9 +87,10 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 | PlatformTargetAgentId | string | The unique identifier of the platform target agent. |
 | PlatformTargetAgentName | string | The name of the platform target agent. |
 | PlatformTargetOriginalAgentType | string | The original type of the platform target agent as reported by the source. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcAgentBlueprintId | string | The blueprint identifier of the source agent. |
 | SrcAgentDescription | string | A description of the source agent. |
+| SrcAgentEntityKey | string | The entity key associated with the source agent. |
 | SrcAgentId | string | The unique identifier of the source agent. |
 | SrcAgentName | string | The name of the source agent. |
 | SrcAgentOriginalType | string | The original type of the source agent as reported by the source. |
@@ -90,6 +99,7 @@ Reference for ASimAgentEventLogs table in Azure Monitor Logs.
 | SrcPortNumber | int | The port number of the source. |
 | TargetAgentBlueprintId | string | The blueprint identifier of the target agent. |
 | TargetAgentDescription | string | A description of the target agent. |
+| TargetAgentEntityKey | string | The entity key associated with the target agent. |
 | TargetAgentId | string | The unique identifier of the target agent. |
 | TargetAgentName | string | The name of the target agent. |
 | TargetAgentOriginalType | string | The original type of the target agent as reported by the source. |

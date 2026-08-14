@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.4</td>
+  <td style="text-align:left">3.0.6</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-02-19</td>
+  <td style="text-align:left">2026-08-07</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat">Azure Marketplace</a> · Popularity: 🔵 Medium (51%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat">Azure Marketplace</a> · Popularity: 🔵 Medium (64%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
   <td><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
-  <td>Hunting</td>
+  <td>Analytics, Hunting</td>
 </tr>
 <tr>
   <td><a href="../tables/event.html"><code>Event</code></a></td>
@@ -150,7 +150,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>29 content item(s)</strong>:</p>
+<p>This solution includes <strong>30 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -160,12 +160,12 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">Analytic Rules</td>
   <td style="text-align:left">15</td>
 </tr>
 <tr>
-  <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:left">14</td>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">15</td>
 </tr>
 </tbody>
 </table>
@@ -185,6 +185,12 @@
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">Execution, DefenseEvasion</td>
   <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a><br><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.html">CertUtil Used for File Download (Living off the Land)</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CommandAndControl, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-detecting-macro-invoking-shellbrowserwindow-com-objects-e7470b35-0128-4508-bfc9-e01cfb3c2eb7-54d0e1c8.html">Detecting Macro Invoking ShellBrowserWindow COM Objects</a></td>
@@ -364,9 +370,14 @@
 </thead>
 <tbody>
 <tr>
+  <td>3.0.6</td>
+  <td>20-07-2026</td>
+  <td>Added <strong>Analytic Rule</strong> CertUtil Used for File Download.</td>
+</tr>
+<tr>
   <td>3.0.5</td>
   <td>18-11-2024</td>
-  <td>Removed the broken URL in <strong>Analytic Rule</strong> and <strong>Hunting query</strong></td>
+  <td>Removed the broken URL in <strong>Analytic Rule</strong> and <strong>Hunting Query</strong></td>
 </tr>
 <tr>
   <td>3.0.4</td>

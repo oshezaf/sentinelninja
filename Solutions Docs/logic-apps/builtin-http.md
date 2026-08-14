@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 398 |
-| **Solutions** | 67 |
+| **Playbooks using** | 400 |
+| **Solutions** | 68 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -224,9 +224,9 @@
 | [Infoblox-Get-IP-Space-Data](../content/infoblox-infoblox-get-ip-space-data-9ff604c0.md) | [Infoblox](../solutions/infoblox.md) | 0 | 1 |
 | [Infoblox-Get-Service-Name](../content/infoblox-infoblox-get-service-name-0adc147e.md) | [Infoblox](../solutions/infoblox.md) | 0 | 1 |
 | [Infoblox-IPAM-Lookup](../content/infoblox-infoblox-ipam-lookup-794a7a4f.md) | [Infoblox](../solutions/infoblox.md) | 0 | 3 |
-| [Infoblox-SOC-Get-Insight-Details](../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.md) | [Infoblox](../solutions/infoblox.md) | 0 | 6 |
-| [Infoblox-SOC-Get-Open-Insights-API](../content/infoblox-infoblox-soc-get-open-insights-api-5c2cae50.md) | [Infoblox](../solutions/infoblox.md) | 0 | 1 |
-| [Infoblox-SOC-Import-Indicators-TI](../content/infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.md) | [Infoblox](../solutions/infoblox.md) | 0 | 2 |
+| [Infoblox-IQ-for-TD-Get-Insight-Details-API](../content/infoblox-infoblox-iq-for-td-get-insight-details-api-1bdff011.md) | [Infoblox](../solutions/infoblox.md) | 0 | 10 |
+| [Infoblox-IQ-for-TD-Get-Insights-API](../content/infoblox-infoblox-iq-for-td-get-insights-api-6d522794.md) | [Infoblox](../solutions/infoblox.md) | 0 | 3 |
+| [Infoblox-IQ-for-TD-Take-Action-API](../content/infoblox-infoblox-iq-for-td-take-action-api-5af3c01a.md) | [Infoblox](../solutions/infoblox.md) | 0 | 4 |
 | [Infoblox-TIDE-Lookup](../content/infoblox-infoblox-tide-lookup-c25e9a83.md) | [Infoblox](../solutions/infoblox.md) | 0 | 1 |
 | [Infoblox-TIDE-Lookup-Comment-Enrichment](../content/infoblox-infoblox-tide-lookup-comment-enrichment-2943be82.md) | [Infoblox](../solutions/infoblox.md) | 0 | 4 |
 | [InfrequentCountryTriage](../content/github-only-infrequentcountrytriage-2941a459.md) | 🔗 GitHub Only | 0 | 6 |
@@ -341,6 +341,8 @@
 | [Spur IP Enrichment](../content/spur-spur-ip-enrichment-9f8c24e8.md) | [Spur](../solutions/spur.md) | 0 | 2 |
 | [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 0 | 1 |
 | [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone | 0 | 1 |
+| [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 7 |
+| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 4 |
 | [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 0 | 1 |
 | [Sync - Incident Comment To M365D On Update](../content/standalone-content-sync-incident-comment-to-m365d-on-update-c5a6b476.md) | 📄 Standalone | 0 | 1 |
 | [Sync Jira from Sentinel - Create incident](../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 0 | 1 |

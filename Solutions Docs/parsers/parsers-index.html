@@ -20,7 +20,7 @@
 <p>Parsers are KQL functions that transform and normalize log data for easier querying.</p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <strong>Parsers</strong> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>597 parsers</strong> (35 legacy, 541 solution, 21 discovered). See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>596 parsers</strong> (35 legacy, 540 solution, 21 discovered). See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p><em>Legacy parsers are located in the top-level <code>/Parsers</code> folder. Solution parsers are included within specific solution packages.</em></p>
 <blockquote>
 <p>⚠️ Discovered parsers were found in solution folders but are not listed in the Solution JSON file. They may be legacy items, under development, or excluded from the official solution package.</p>
@@ -416,24 +416,9 @@
   <td style="text-align:left">CommonSecurityLog</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="asimauthenticationopensystems.html">ASimAuthenticationOpenSystems</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
-  <td style="text-align:left">OpenSystemsAuthenticationLogs_CL</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="asimnetworksessionopensystemsfirewall.html">ASimNetworkSessionOpenSystemsFirewall</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
-  <td style="text-align:left">OpenSystemsFirewallLogs_CL</td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="asimnetworksessiontailscale.html">ASimNetworkSessionTailscale</a></td>
   <td style="text-align:left">📦 <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
   <td style="text-align:left">Tailscale_Network_CL</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="asimwebsessionopensystemssecurewebgateway.html">ASimWebSessionOpenSystemsSecureWebGateway</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
-  <td style="text-align:left">OpenSystemsProxyLogs_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="assignedipaddress.html">AssignedIPAddress</a></td>
@@ -1607,6 +1592,11 @@
   <td style="text-align:left">DomainToolsDomainEnrichment_CL</td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="domaintoolsthreatinteldomains.html">DomainToolsThreatIntelDomains</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/domaintools-ccf.html">DomainTools CCF</a></td>
+  <td style="text-align:left">DomainToolsThreatIntelDomains_CL</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="dragosnotificationstosentinel.html">DragosNotificationsToSentinel</a></td>
   <td style="text-align:left">📦 <a href="../solutions/dragos.html">Dragos</a></td>
   <td style="text-align:left">SecurityAlert</td>
@@ -1861,6 +1851,16 @@
   <td style="text-align:left"><a href="gcpclouddns.html">GCPCloudDNS</a></td>
   <td style="text-align:left">📦 <a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS</a></td>
   <td style="text-align:left">GCPDNS, GCP_DNS_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="get-spycloud-compass-data.html">get_spycloud_compass_data</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/spycloud-enterprise-protection-ccf.html">SpyCloud Enterprise Protection CCF</a></td>
+  <td style="text-align:left">spycloud_compassV2_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="get-spycloud-enriched-data.html">get_Spycloud_enriched_data</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/spycloud-enterprise-protection-ccf.html">SpyCloud Enterprise Protection CCF</a></td>
+  <td style="text-align:left">SpyCloudBreachCatalogV2_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="getclassificationlist.html">GetClassificationList</a></td>
@@ -2188,11 +2188,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="infobloxinsightcomments.html">InfobloxInsightComments</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/infoblox.html">Infoblox</a></td>
-  <td style="text-align:left">InfobloxInsightComments_CL</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="infobloxinsightcomments.html">InfobloxInsightComments</a></td>
   <td style="text-align:left">📦 <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>
   <td style="text-align:left">InfobloxInsightComments_CL</td>
 </tr>
@@ -2353,7 +2348,7 @@
   <td style="text-align:left">MarkLogicAudit_CL</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="mcafee-common-security-log-parser.html">McAfee Common Security Log Parser</a></td>
+  <td style="text-align:left"><a href="mcafeecommonsecuritylog.html">McAfeeCommonSecurityLog</a></td>
   <td style="text-align:left">📂 <em>Legacy</em></td>
   <td style="text-align:left">CommonSecurityLog</td>
 </tr>
@@ -2842,7 +2837,7 @@
 <tr>
   <td style="text-align:left"><a href="snowflake.html">Snowflake</a></td>
   <td style="text-align:left">📦 <a href="../solutions/snowflake.html">Snowflake</a></td>
-  <td style="text-align:left">SnowflakeLoad_CL, SnowflakeLogin_CL, ...</td>
+  <td style="text-align:left">SnowflakeLoadV2_CL, SnowflakeLoad_CL, ...</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="sophosepevent.html">SophosEPEvent</a></td>
@@ -3000,6 +2995,16 @@
   <td style="text-align:left"><a href="trellixevents.html">TrellixEvents</a></td>
   <td style="text-align:left">📦 <a href="../solutions/trellix.html">Trellix</a></td>
   <td style="text-align:left">TrellixEvents_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="trendaioat-complete.html">TrendAIOAT_Complete</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></td>
+  <td style="text-align:left">TrendAI_XDR_OAT_V2_CL, TrendMicro_XDR_OAT_CL</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="trendaiworkbench-complete.html">TrendAIWorkbench_Complete</a></td>
+  <td style="text-align:left">📦 <a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></td>
+  <td style="text-align:left">TrendAI_XDR_WORKBENCH_V2_CL, TrendMicro_XDR_WORKBENCH_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="trendmicrocas.html">TrendMicroCAS</a></td>
@@ -3211,19 +3216,9 @@
   <td style="text-align:left">VersasecCmsSysLogs_CL</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="vimnetworksessionopensystemsfirewall.html">vimNetworkSessionOpenSystemsFirewall</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
-  <td style="text-align:left">OpenSystemsFirewallLogs_CL</td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="vimnetworksessiontailscale.html">vimNetworkSessionTailscale</a></td>
   <td style="text-align:left">📦 <a href="../solutions/tailscale-ccf.html">Tailscale (CCF)</a></td>
   <td style="text-align:left">Tailscale_Network_CL</td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="vimwebsessionopensystemsproxysecurewebgateway.html">vimWebSessionOpenSystemsProxySecureWebGateway</a></td>
-  <td style="text-align:left">📦 <a href="../solutions/open-systems.html">Open Systems</a></td>
-  <td style="text-align:left">OpenSystemsProxyLogs_CL</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="vmwareesxi.html">VMwareESXi</a></td>

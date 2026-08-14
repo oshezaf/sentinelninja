@@ -1,6 +1,6 @@
-# ⚠️ PRODAFT USTA - Payment Card Fraud Intelligence
+# USTA Payment Card Fraud Intelligence Sentinel Connector
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: PRODAFT USTA - Payment Card Fraud Intelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaPCFI.svg" alt="PRODAFT USTA - Payment Card Fraud Intelligence Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | PRODAFT - integration@prodaft.com |
 | **First Published** | 2026-07-08 |
+| **Last Updated** | 2026-08-05 |
 | **Solution Folder** | [PRODAFT USTA - Payment Card Fraud Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Payment%20Card%20Fraud%20Intelligence) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-pcfi) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The **PRODAFT USTA - Payment Card Fraud Intelligence** solution ingests compromised payment cards from the PRODAFT USTA platform into Microsoft Sentinel via a codeless (Codeless Connector Framework) data connector. The full card number (PAN) is dropped at ingestion — only the BIN (first 6), the last 4 digits, the card brand, and the length are retained for triage. Includes analytic rules to alert on newly exposed payment cards and on non-expired (still-usable) exposed cards, a hunting query, an overview workbook, and an on-demand backfill playbook for loading historical data.
 

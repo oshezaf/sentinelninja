@@ -11,8 +11,8 @@ Reference for SecurityIncident table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident) |
@@ -31,7 +31,7 @@ Reference for SecurityIncident table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AdditionalData | dynamic | Additional data on the incident |
 | AlertIds | dynamic | The IDs of the alerts related to the incident |
 | BookmarkIds | dynamic | The IDs of the bookmarks related to the incident |
@@ -56,7 +56,7 @@ Reference for SecurityIncident table in Azure Monitor Logs.
 | ProviderName | string | The name of the source provider that generated the incident |
 | RelatedAnalyticRuleIds | dynamic | The IDs of the Analytic rules associated with the incident |
 | Severity | string | The severity of the incident |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Status | string | The status of the incident |
 | Tasks | dynamic | The tasks added to the incident |
 | TenantId | string | The Log Analytics workspace ID |
@@ -70,7 +70,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityIncident Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident)
 
-## Solutions (35)
+## Solutions (36)
 
 This table is used by the following solutions:
 
@@ -78,6 +78,7 @@ This table is used by the following solutions:
 - [Azure Key Vault](../solutions/azure-key-vault.md)
 - [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [Cayosoft Guardian](../solutions/cayosoft-guardian.md)
 - [Censys](../solutions/censys.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
@@ -112,7 +113,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (52)
+## Content Items Using This Table (53)
 
 ### Analytic Rules (3)
 
@@ -137,7 +138,7 @@ This table is used by the following solutions:
 |:-------------|
 | [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |
 
-### Workbooks (40)
+### Workbooks (41)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -162,6 +163,12 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
+
+**In solution [Cayosoft Guardian](../solutions/cayosoft-guardian.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [WorkbookContent](../content/cayosoft-guardian-workbookcontent-32aebefa.md) |  |
 
 **In solution [Censys](../solutions/censys.md):** `ModifiedBy contains "playbook - censys"`
 
@@ -216,7 +223,7 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md) |  |
-| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) |  |
+| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) | `Title has "Infoblox - IQ for TD Insight"` |
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
 
@@ -339,9 +346,9 @@ This table is used by the following solutions:
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
-## Selection Criteria Summary (15 criteria, 16 total references)
+## Selection Criteria Summary (16 criteria, 17 total references)
 
-References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 17 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -351,6 +358,7 @@ References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other pars
 | `Severity == "High"`<br>`Title !contains "URL"`<br>`Title !contains "net"`<br>`Title !contains "normalization"`<br>`Title !contains "web"`<br>`Title contains "AAD"`<br>`Title contains "Account"`<br>`Title contains "Identity"`<br>`Title contains "Login"`<br>`Title contains "Sign"`<br>`Title contains "User"`<br>`Title contains "WAF"`<br>`Title contains "access"`<br>`Title contains "anti"`<br>`Title contains "app"`<br>`Title contains "auth"`<br>`Title contains "cert"`<br>`Title contains "certificate"`<br>`Title contains "cred"`<br>`Title contains "data"`<br>`Title contains "dns"`<br>`Title contains "dos"`<br>`Title contains "exploit"`<br>`Title contains "impersonate"`<br>`Title contains "inject"`<br>`Title contains "intrusion"`<br>`Title contains "key"`<br>`Title contains "mal"`<br>`Title contains "mining"`<br>`Title contains "password"`<br>`Title contains "program"`<br>`Title contains "secret"`<br>`Title contains "sensitive"`<br>`Title contains "service principal"`<br>`Title contains "tool"`<br>`Title contains "travel"`<br>`Title contains "virus"`<br>`Title contains "ware"`<br>`Title contains "worm"` | - | 1 | - | - | **1** |
 | `ModifiedBy contains "playbook - censys"` | - | 1 | - | - | **1** |
 | `Classification in "BenignPositive,FalsePositive,TruePositive,Undetermined"`<br>`Severity == "High"`<br>`Title contains "PII"`<br>`Title contains "USB"`<br>`Title contains "access"`<br>`Title contains "account"`<br>`Title contains "backdoor"`<br>`Title contains "beacon"`<br>`Title contains "brute"`<br>`Title contains "c2"`<br>`Title contains "confidential"`<br>`Title contains "cred"`<br>`Title contains "data"`<br>`Title contains "deny"`<br>`Title contains "drive"`<br>`Title contains "execution"`<br>`Title contains "exfil"`<br>`Title contains "exploit"`<br>`Title contains "file"`<br>`Title contains "intellectual"`<br>`Title contains "leak"`<br>`Title contains "logon"`<br>`Title contains "loss"`<br>`Title contains "media"`<br>`Title contains "removable"`<br>`Title contains "restricted"`<br>`Title contains "sensitive"`<br>`Title contains "shared"`<br>`Title contains "sign"`<br>`Title contains "software"`<br>`Title contains "spill"`<br>`Title contains "storage"`<br>`Title contains "test"`<br>`Title contains "tool"`<br>`Title contains "trojan"`<br>`Title contains "usb"`<br>`Title contains "virus"`<br>`Title contains "ware"` | - | 1 | - | - | **1** |
+| `Title has "Infoblox - IQ for TD Insight"` | - | 1 | - | - | **1** |
 | `AdditionalData contains "T0801"`<br>`AdditionalData contains "T0803"`<br>`AdditionalData contains "T0806"`<br>`AdditionalData contains "T0807"`<br>`AdditionalData contains "T0809"`<br>`AdditionalData contains "T0811"`<br>`AdditionalData contains "T0814"`<br>`AdditionalData contains "T0816"`<br>`AdditionalData contains "T0817"`<br>`AdditionalData contains "T0821"`<br>`AdditionalData contains "T0822"`<br>`AdditionalData contains "T0826"`<br>`AdditionalData contains "T0828"`<br>`AdditionalData contains "T0831"`<br>`AdditionalData contains "T0836"`<br>`AdditionalData contains "T0838"`<br>`AdditionalData contains "T0839"`<br>`AdditionalData contains "T0842"`<br>`AdditionalData contains "T0843"`<br>`AdditionalData contains "T0845"`<br>`AdditionalData contains "T0846"`<br>`AdditionalData contains "T0847"`<br>`AdditionalData contains "T0848"`<br>`AdditionalData contains "T0849"`<br>`AdditionalData contains "T0851"`<br>`AdditionalData contains "T0855"`<br>`AdditionalData contains "T0857"`<br>`AdditionalData contains "T0858"`<br>`AdditionalData contains "T0859"`<br>`AdditionalData contains "T0861"`<br>`AdditionalData contains "T0863"`<br>`AdditionalData contains "T0865"`<br>`AdditionalData contains "T0866"`<br>`AdditionalData contains "T0867"`<br>`AdditionalData contains "T0869"`<br>`AdditionalData contains "T0871"`<br>`AdditionalData contains "T0874"`<br>`AdditionalData contains "T0874T0812"`<br>`AdditionalData contains "T0881"`<br>`AdditionalData contains "T0882"`<br>`AdditionalData contains "T0883"`<br>`AdditionalData contains "T0884"`<br>`AdditionalData contains "T0885"`<br>`AdditionalData contains "T0886"`<br>`AdditionalData contains "T0889"`<br>`Severity in "High,Low,Medium"`<br>`Title contains "(MDIoT)"` | - | 1 | - | - | **1** |
 | `Severity in "High,Informational,Low,Medium"` | - | 1 | - | - | **1** |
 | `Classification == "TruePositive"` | - | 1 | - | - | **1** |
@@ -360,7 +368,7 @@ References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other pars
 | `SourceSystem startswith "ThreatConnect-"` | - | 1 | - | - | **1** |
 | `Title contains "Critical"`<br>`Title contains "IPS"`<br>`Title contains "adopted"`<br>`Title contains "data connector"`<br>`Title contains "log shipping"`<br>`Title startswith "UniFi Site Manager"` | - | 1 | - | - | **1** |
 | `AdditionalData contains "Microsoft Defender for Endpoint"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **16** | **0** | **0** | **16** |
+| **Total** | **0** | **17** | **0** | **0** | **17** |
 
 ### AdditionalData
 
@@ -542,6 +550,7 @@ References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other pars
 | `contains test` | - | 1 | - | - | **1** |
 | `contains trojan` | - | 1 | - | - | **1** |
 | `contains usb` | - | 1 | - | - | **1** |
+| `has Infoblox - IQ for TD Insight` | - | 1 | - | - | **1** |
 | `contains (MDIoT)` | - | 1 | - | - | **1** |
 | `contains Critical` | - | 1 | - | - | **1** |
 | `contains IPS` | - | 1 | - | - | **1** |

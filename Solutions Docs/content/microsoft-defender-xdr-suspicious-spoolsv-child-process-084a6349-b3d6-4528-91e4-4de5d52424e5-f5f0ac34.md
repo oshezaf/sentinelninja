@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `InitiatingProcessFileName == "spoolsv.exe"` | ✓ | ✗ | ? |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `InitiatingProcessFileName == "spoolsv.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

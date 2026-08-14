@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureActivity`](../tables/azureactivity.md) | `Authorization has "virtualMachines"`<br>`Caller contains "@"`<br>`OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION"` | ✗ | ✗ | ✗ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `EventSource == "Azure AD"` | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `EventSource == "Azure AD"` | ✓ | ✗ | ✗ |
 
 ---
 

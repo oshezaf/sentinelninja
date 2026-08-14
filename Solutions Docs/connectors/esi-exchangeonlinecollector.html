@@ -116,13 +116,13 @@
 <strong>Parser deployment (When using Microsoft Exchange Security Solution, Parsers are automatically deployed)</strong></p>
 <p><strong>1. Download the Parser files</strong></p>
 <p>The latest version of the 2 files <a href="https://aka.ms/sentinel-ESI-ExchangeConfiguration-Online-parser"><strong>ExchangeConfiguration.yaml</strong></a> and <a href="https://aka.ms/sentinel-ESI-ExchangeEnvironmentList-Online-parser"><strong>ExchangeEnvironmentList.yaml</strong></a></p>
-<p><strong>2. Create Parser **ExchangeConfiguration</strong> function**</p>
+<p><strong>2. Create Parser <strong>ExchangeConfiguration</strong> function</strong></p>
 <p>In 'Logs' explorer of your Microsoft Sentinel's log analytics, copy the content of the file to Log explorer</p>
-<p><strong>3. Save Parser **ExchangeConfiguration</strong> function**</p>
+<p><strong>3. Save Parser <strong>ExchangeConfiguration</strong> function</strong></p>
 <p>Click on save button.
 Define the parameters as asked on the header of the parser file.
 Click save again.</p>
-<p>**4. Reproduce the same steps for Parser **ExchangeEnvironmentList****</p>
+<p><strong>4. Reproduce the same steps for Parser <strong>ExchangeEnvironmentList</strong></strong></p>
 <p>Reproduce the step 2 and 3 with the content of 'ExchangeEnvironmentList.yaml' file</p>
 <blockquote>
 <p><strong>NOTE:</strong> This connector uses Azure Automation to connect to 'Exchange Online' to pull its Security analysis into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/automation/">Azure Automation pricing page</a> for details.</p>
@@ -229,7 +229,7 @@ Repeat the step for the following modules : 'Microsoft.Graph.Authentication', 'M
 <li>Go to your Automation Account, in the <strong>Identity</strong> Section. You can find the Guid of your Managed Identity.</li>
 <li>Replace the GUID in $MI_ID = &quot;XXXXXXXXXXX&quot; with the GUID of your Managed Identity.</li>
 </ol>
-<p><strong>C. Launch the script with a **Global-Administrator</strong> account**</p>
+<p><strong>C. Launch the script with a <strong>Global-Administrator</strong> account</strong></p>
 <p><strong>Attention this script requires MSGraph Modules and Admin Consent to access to your tenant with Microsoft Graph</strong>.
 The script will add 3 permissions to the Managed identity:
 1. Exchange Online ManageAsApp permission

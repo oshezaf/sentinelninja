@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | ✓ | ✗ | ✓ |
 
 ---
 

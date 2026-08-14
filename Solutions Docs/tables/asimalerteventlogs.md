@@ -11,9 +11,12 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Contents
 
@@ -21,16 +24,17 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
-## Schema (101 columns)
+## Schema (107 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | AlertDescription | string | Alias or friendly name for EventMessage field. |
 | AlertId | string | Alias or friendly name for EventUid field. |
@@ -46,6 +50,7 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -82,6 +87,7 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | EventType | string | Describes the operation reported by the record. |
 | EventUid | string | A machine-readable, alphanumeric string that uniquely identifies an alert within a system. |
 | EventVendor | string | The vendor of the product generating the event. |
+| FileEntityKey | string | The entity key associated with the file. |
 | FileMD5 | string | MD5 hash of the file. |
 | FileName | string | Name of the file associated with the alert, without path or a location. |
 | FilePath | string | The full, normalized path of the target file, including the folder or location, the file name, and the extension. |
@@ -92,6 +98,7 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | IndicatorType | string | The type or category of the indicator. |
 | OriginalUserType | string | The user type as reported by the reporting device. |
 | ProcessCommandLine | string | Command line used to start the process. |
+| ProcessEntityKey | string | The entity key associated with the process. |
 | ProcessFileCompany | string | Company that created the process image file. |
 | ProcessId | string | The process ID (PID) associated with the alert. |
 | ProcessName | string | Name of the process. |
@@ -103,7 +110,7 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | RuleDescription | string | Description of the rule associated with the alert. |
 | RuleName | string | The name or ID of the rule associated with the alert. |
 | RuleNumber | int | The number of the rule associated with the alert. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in the alert. |
 | ThreatConfidence | int | The confidence level of the threat identified, normalized to a value between 0 and a 100. |
@@ -120,6 +127,8 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Url | string | The URL string captured in the alert. |
 | User | string | Alias or friendly name for Username field. |
+| UserAdditionalIds | dynamic | Additional identifiers associated with the user. |
+| UserEntityKey | string | The entity key associated with the user. |
 | UserId | string | A machine-readable, alphanumeric, unique representation of the user associated with the alert. |
 | UserIdType | string | The type of the user ID, such as GUID, SID, or Email. |
 | Username | string | Name of the user associated with the alert, including domain information when available. |

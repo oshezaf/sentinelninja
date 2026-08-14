@@ -6,7 +6,7 @@
 
 ---
 
-Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_cloudhopper.yml. Questions via Twitter: @janvonkirchheim.
+Original Sigma Rule: https://github.com/SigmaHQ/sigma/blob/master/rules-emerging-threats/2017/TA/APT10/proc_creation_win_apt_apt10_cloud_hopper.yml Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |
 |:----------|:------|

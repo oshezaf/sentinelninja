@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-08-11 |
 | **Solution Folder** | [Windows Forwarded Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsforwardedevents) · Popularity: 🔵 Medium (56%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsforwardedevents) · Popularity: 🔵 Medium (54%) |
 
 The Windows Forwarded Events solution allows you to ingest all [Windows Event Forwarding](https://docs.microsoft.com/advanced-threat-analytics/configure-event-collection) (WEF) logs from the Windows Servers connected to your Microsoft Sentinel workspace using Azure Monitor Agent (AMA).
 
@@ -52,11 +52,11 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **4 content item(s)** (2 in solution, 2 discovered 🔍):
+This solution includes **4 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Analytic Rules | 4 | 2 | 2 |
+| Content Type | Count |
+|:-------------|:------|
+| Analytic Rules | 4 |
 
 ### Analytic Rules
 
@@ -64,16 +64,15 @@ This solution includes **4 content item(s)** (2 in solution, 2 discovered 🔍):
 |:-----|:---------|:--------|:------------|
 | [Caramel Tsunami Actor IOC - July 2021](../content/windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md) | High | Persistence | [`WindowsEvent`](../tables/windowsevent.md) |
 | [Chia_Crypto_Mining IOC - June 2021](../content/windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | Low | Impact | [`WindowsEvent`](../tables/windowsevent.md) |
-| [Progress MOVEIt File transfer above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) ⚠️ | Medium | Exfiltration | [`Event`](../tables/event.md) |
-| [Progress MOVEIt File transfer folder count above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) ⚠️ | Medium | Exfiltration | [`Event`](../tables/event.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
+| [Progress MOVEIt File transfer above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
+| [Progress MOVEIt File transfer folder count above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 10-04-2024                     | Updated entity mappings of **Analytical Rule**   |
+| 3.0.1       | 10-08-2026                     | Added the missing **Analytical Rule** and cleaned up empty properties.| 
+| 3.0.0       | 10-04-2024                     | Updated entity mappings of **Analytical Rule**  |
 
 ---
 

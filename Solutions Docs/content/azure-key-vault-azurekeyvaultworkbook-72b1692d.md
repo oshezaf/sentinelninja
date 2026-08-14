@@ -19,6 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | ✗ | ✗ | ✗ |
+| [`KeyVaults`](../tables/keyvaults.md) |  | ✗ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) | `AlertType startswith "KV_"` | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 

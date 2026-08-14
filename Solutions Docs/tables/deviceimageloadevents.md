@@ -6,15 +6,17 @@
 
 ---
 
-Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
+DLL loading events
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceimageloadevents-table) |
 
 ## Contents
 
@@ -31,7 +33,7 @@ Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActionType | string | Type of activity that triggered the event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
 | DeviceId | string | Unique identifier for the device in the service. |
@@ -74,7 +76,7 @@ Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
@@ -84,6 +86,7 @@ Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceImageLoadEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents)
+- [DeviceImageLoadEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceimageloadevents-table)
 
 ## Solutions (3)
 
@@ -112,7 +115,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Detect .NET runtime being loaded in JScript for code execution](../content/falconfriday-detect-.net-runtime-being-loaded-in-jscript-for-code-execution-9f921513-65f3-48a2-ae7d-326c5901c55e-fd9342fe.md) |  |
-| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) | `ActionType in "FileCreated,FileModified"` |
+| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) |  |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -148,23 +151,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
-## Selection Criteria Summary (3 criteria, 3 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "regsvr32.exe,rundll32.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "spoolsv.exe"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
-
-### ActionType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 1 | - | - | **1** |
-| `FileModified` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
 
 ### InitiatingProcessFileName
 

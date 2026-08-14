@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) |  | ✗ | ✓ | ✗ |
-| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | ? |
+| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

@@ -11,8 +11,8 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
@@ -35,14 +35,14 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFields | dynamic | The type specifc fields that Sentinel adds. Contains the TLPLevel: white, green, amber, or red. |
 | AzureTenantId | string | The tenant that submitted the indicator. |
 | Confidence | int | The confidence that the creator has in the correctness of their data. The value must be a number in the range of 0-100. |
 | Created | datetime | The date when the indicator was created. |
-| Data | dynamic | All object properties, formatted according to the STIX specification (<a href="https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf" data-linktype="external">https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf</a>). |
+| Data | dynamic | All object properties, formatted according to the STIX specification (https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf). |
 | Id | string | A value that uniquely identifies the indicator STIX object. This value is usable with Sentinel APIs. |
 | IsActive | bool | A value that specifies if an indicator is active and valid for detections. |
 | IsDeleted | bool | A value that indicates whether the data was deleted from Sentinel or not. |
@@ -52,7 +52,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | ObservableValue | string | The entire right-hand side of an equality comparison from the pattern. |
 | Pattern | string | The detection pattern for this indicator MAY be expressed as a STIX pattern. |
 | Revoked | bool | A value that specifies whether the indicator was revoked. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Tags | string | Sentinel defined tags for the indicator. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time of indicator ingestion. |
@@ -374,14 +374,14 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "ipv4-addr:value"` | - | 5 | - | - | **5** |
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
-| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
+| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
@@ -403,10 +403,10 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
-| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `Lumen` | 2 | - | - | - | **2** |
-| `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `MISP` | 1 | - | - | - | **1** |
+| `Cyjax-IOCs` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
 
 ---

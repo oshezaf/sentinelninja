@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for PRODAFT USTA Compromised Cards |
 | Location | Solution |
-| Solution | [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) ⚠️ |
+| Solution | [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-07-08 |
 | Category | Microsoft Sentinel Parser |

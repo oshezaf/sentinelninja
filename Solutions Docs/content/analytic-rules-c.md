@@ -1,6 +1,6 @@
 # Analytic Rules - C
 
-**371 analytic rules** starting with 'C'.
+**374 analytic rules** starting with 'C'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,10 +16,13 @@
 |:-----|:---------|:-------|
 | [C2-NamedPipe](microsoft-defender-xdr-c2-namedpipe-7ce00cba-f76f-4026-ab7f-7e4f1b67bd18-5ae9733b.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Caramel Tsunami Actor IOC - July 2021](windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md) | High | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| [Cayosoft Guardian - Cloud Application Security Threats](cayosoft-guardian-cayosoft-guardian-cloud-application-security-threats-e6f6c71c-f1fd-473b-9129-249db5d7462c-429092f9.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
+| [Cayosoft Guardian - Core Identity and Infrastructure Threats](cayosoft-guardian-cayosoft-guardian-core-identity-and-infrastructure-threats-4720d7a5-6845-4ce4-aa45-79334e1a1176-0f15a2e7.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [CDM_ContinuousDiagnostics&Mitigation_PostureChanged](continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posturechanged-fd950af9-d9db-4879-a60a-7267cc041beb-ff19a723.md) | Medium | 📦 [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md) |
 | [Certified Pre-Owned - backup of CA private key - rule 1](falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Certified Pre-Owned - backup of CA private key - rule 2](falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Certified Pre-Owned - TGTs requested with certificate authentication](falconfriday-certified-pre-owned-tgts-requested-with-certificate-authentication-b838a13c-052e-45b8-a5ac-7d3eb62efa11-8b984753.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
+| [CertUtil Used for File Download (Living off the Land)](endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.md) | High | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Changes to Application Logout URL](standalone-content-changes-to-application-logout-url-492fbe35-cbac-4a8c-9059-826782e6915a-0134247b.md) | Low | 📄 Standalone Content |
 | [Changes to Application Ownership](standalone-content-changes-to-application-ownership-cc5780ce-3245-4bba-8bc1-e9048c2257ce-9e47b574.md) | Medium | 📄 Standalone Content |
 | [Changes to PIM Settings](standalone-content-changes-to-pim-settings-0ed0fe7c-af29-4990-af7f-bb5ccb231198-dc0157b2.md) | High | 📄 Standalone Content |

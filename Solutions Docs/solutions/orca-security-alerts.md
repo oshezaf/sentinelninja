@@ -17,8 +17,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Orca Security |
 | **First Published** | 2022-05-10 |
+| **Last Updated** | 2026-08-07 |
 | **Solution Folder** | [Orca Security Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/orcasecurityinc1621870991703.orca_security_alerts_mss) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/orcasecurityinc1621870991703.orca_security_alerts_mss) · Popularity: 🔵 Medium (73%) |
 
 The [Orca Security Alerts](https://orca.security/) solution for Microsoft Sentinel enables you to ingest Orca Security Alerts into Microsoft Sentinel. Orca Security enables the detection and prioritization of cloud security risks through their agentless cloud security and compliance solution for AWS, Azure, Google Cloud, and Kubernetes.
 

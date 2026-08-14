@@ -1,6 +1,4 @@
-# ⚠️ Citrix Analytics (via Codeless Connector Framework)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Citrix Analytics (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix_logo.svg" alt="" width="75" height="75">
 
@@ -21,6 +19,7 @@
 | **CCF Configuration** | [CitrixAnalytics_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF/Data%20Connectors/CitrixAnalytics_CCF/CitrixAnalytics_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#citrix-analytics-via-codeless-connector-framework) |
 
 Citrix Analytics integration with Microsoft Sentinel helps you to export data analyzed for the events(SPA, Security) from Citrix Analytics into Microsoft Sentinel environment. You can create custom dashboards, analyze data from other sources along with that from Citrix Analytics and create custom workflows using Logic Apps to monitor and mitigate the events.
 

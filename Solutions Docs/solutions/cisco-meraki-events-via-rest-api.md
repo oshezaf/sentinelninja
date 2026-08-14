@@ -14,17 +14,23 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-07-12 |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-07-14 |
 | **Solution Folder** | [Cisco Meraki Events via REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomerakinativepoller) · Popularity: 🔵 Medium (61%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomerakinativepoller) · Popularity: 🔵 Medium (78%) |
 
 The Cisco Meraki Events via REST API solution for Microsoft Sentinel enables you to easily ingest the following events from [Cisco Meraki MX security appliance](https://meraki.cisco.com/products/security-sd-wan/) to Microsoft Sentinel using Cisco Meraki API:
  1. [Organization Appliance Security Events](https://developer.cisco.com/meraki/api-latest/#!get-organization-appliance-security-events) 
  2. [Organization Api Requests](https://developer.cisco.com/meraki/api-latest/#!get-organization-api-requests) 
  3. [Organization Configuration Changes](https://developer.cisco.com/meraki/api-latest/#!get-organization-configuration-changes) 
+
+In addition to the ASIM-normalized events above, the solution also ingests the following Cisco Meraki Dashboard inventory and wireless security data into custom tables:
+ 4. [Organizations](https://developer.cisco.com/meraki/api-latest/#!get-organizations) 
+ 5. [Organization Networks](https://developer.cisco.com/meraki/api-latest/#!get-organization-networks) 
+ 6. [Network Clients](https://developer.cisco.com/meraki/api-latest/#!get-network-clients) 
+ 7. [Wireless Air Marshal Events](https://developer.cisco.com/meraki/api-latest/#!get-network-wireless-air-marshal) 
 
 This enables you to view and analyze this data for security monitoring and using them to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
 

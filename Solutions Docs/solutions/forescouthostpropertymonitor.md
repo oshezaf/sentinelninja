@@ -16,9 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |
+| **Last Updated** | 2026-07-20 |
 | **Solution Folder** | [ForescoutHostPropertyMonitor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/forescout.azure-sentinel-solution-forescout) · Popularity: ⚪ Very Low (0%) |
 

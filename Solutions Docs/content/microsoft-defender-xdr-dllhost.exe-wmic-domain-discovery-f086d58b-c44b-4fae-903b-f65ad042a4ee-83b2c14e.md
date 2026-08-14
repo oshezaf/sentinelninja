@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine == "dllhost.exe"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessCommandLine has "wmic computersystem get domain"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine == "dllhost.exe"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessCommandLine has "wmic computersystem get domain"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -36,14 +36,18 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
@@ -66,7 +70,7 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 <li><a href="#resource-types">Resource Types</a></li>
 </ul>
-<h2 id="schema">Schema (131 columns)</h2>
+<h2 id="schema">Schema (141 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauthenticationeventlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -85,7 +89,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -101,6 +105,11 @@
   <td style="text-align:left">ActingAppId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The ID of the application authorizing on behalf of the actor, including a process, browser, or service.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActingApplicationEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the acting application.</td>
 </tr>
 <tr>
   <td style="text-align:left">ActingAppName</td>
@@ -138,6 +147,16 @@
   <td style="text-align:left">The unique ID of the sign-in session of the Actor.</td>
 </tr>
 <tr>
+  <td style="text-align:left">ActorUserAdditionalIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional identifiers associated with the actor user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUserEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the actor user.</td>
+</tr>
+<tr>
   <td style="text-align:left">ActorUserId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">A machine-readable, alphanumeric, unique representation of the actor.</td>
@@ -163,6 +182,11 @@
   <td style="text-align:left">The type of the Actor.</td>
 </tr>
 <tr>
+  <td style="text-align:left">AdditionalEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional entities associated with the event.</td>
+</tr>
+<tr>
   <td style="text-align:left">AdditionalFields</td>
   <td style="text-align:left">dynamic</td>
   <td style="text-align:left">Additional information, represented using key/value pairs provided by the source which do not map to ASim.</td>
@@ -186,6 +210,11 @@
   <td style="text-align:left">DvcDomainType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The type of DvcDomain.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the device.</td>
 </tr>
 <tr>
   <td style="text-align:left">DvcFQDN</td>
@@ -380,7 +409,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">SrcDescription</td>
@@ -488,9 +517,19 @@
   <td style="text-align:left">The risk level associated with the identified Source.</td>
 </tr>
 <tr>
+  <td style="text-align:left">SrcSystemEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the source system.</td>
+</tr>
+<tr>
   <td style="text-align:left">TargetAppId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The ID of the application to which the authorization is required, often assigned by the reporting device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetApplicationEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the target application.</td>
 </tr>
 <tr>
   <td style="text-align:left">TargetAppName</td>
@@ -618,9 +657,24 @@
   <td style="text-align:left">The unique ID of the sign-in session of the Target actor.</td>
 </tr>
 <tr>
+  <td style="text-align:left">TargetSystemEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the target system.</td>
+</tr>
+<tr>
   <td style="text-align:left">TargetUrl</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">A URL associated with the target application.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetUserAdditionalIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional identifiers associated with the target user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetUserEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the target user.</td>
 </tr>
 <tr>
   <td style="text-align:left">TargetUserId</td>

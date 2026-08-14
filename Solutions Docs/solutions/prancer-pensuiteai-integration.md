@@ -20,7 +20,7 @@
 | **Author** | Prancer |
 | **First Published** | 2023-08-02 |
 | **Solution Folder** | [Prancer PenSuiteAI Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prancerenterprise1600813133757.microsoft-sentinel-solution-prancer) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prancerenterprise1600813133757.microsoft-sentinel-solution-prancer) · Popularity: 🟡 Low (48%) |
 
 The Prancer solution for Microsoft Sentinel enables you to ingest data from the Prancer portal for PAC and CSPM scans. Refer to [Prancer Documentation Site](https://docs.prancer.io/web/) for more information.
 

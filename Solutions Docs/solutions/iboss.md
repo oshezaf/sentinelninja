@@ -18,19 +18,17 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.iboss.com/contact-us/](https://www.iboss.com/contact-us/) |
 | **Categories** | Security - Network |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.3 |
 | **Author** | iboss |
 | **First Published** | 2022-02-15 |
-| **Last Updated** | 2026-02-09 |
+| **Last Updated** | 2026-06-29 |
 | **Solution Folder** | [iboss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/iboss.iboss-sentinel-connector) · Rating: ★★★★☆ 4.2/5 (16 ratings) · Popularity: 🔵 Medium (53%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/iboss.iboss-sentinel-connector) · Rating: ★★★★☆ 4.2/5 (16 ratings) · Popularity: 🔵 Medium (67%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The iboss Solution provides means to connect your Threat Console to Microsoft Sentinel and enrich your instance with iboss URL event logs. Our logs are forwarded in Common Event Format (CEF) over Syslog and the configuration required can be completed on the iboss platform without the use of a proxy. Take advantage of our connector to garner critical data points and gain insight into security threats.
 
  This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.**
 
 ## Contents
 

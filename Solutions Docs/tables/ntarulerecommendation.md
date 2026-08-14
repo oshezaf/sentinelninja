@@ -11,9 +11,10 @@ Reference for NTARuleRecommendation table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Network |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntarulerecommendation) |
 
 ## Schema (30 columns)
@@ -23,7 +24,7 @@ Reference for NTARuleRecommendation table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AdditionalProperties | string | Placeholder for additional properties related to the recommended rule. |
 | DestPortsRanges | string | Comma-separated list of destination port ranges on target resource id. |
 | DestPublicIpCidrs | string | Public destination IPs in CIDR format for outbound flows. |
@@ -38,7 +39,7 @@ Reference for NTARuleRecommendation table in Azure Monitor Logs.
 | RecommendedRuleName | string | The name of the rule being recommended. |
 | RuleScope | string | Scope within which the rule applies. Possible values are SubscriptionId, VirtualNetwork. |
 | SchemaVersion | string | Version of the schema used for this record. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcPublicIpCidrs | string | Public source IPs in CIDR format for inbound flows. |
 | SrcServiceTagsList | string | Service tags associated with source traffic for inbound flows. |
 | SrcSubscriptionId | string | Subscription ID of the target resource id sending the traffic. |

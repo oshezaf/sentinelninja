@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "msiexec.exe"`<br>`ProcessCommandLine contains "privilege::"`<br>`ProcessCommandLine contains "token::"`<br>`ProcessCommandLine has "sekurlsa"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "msiexec.exe"`<br>`ProcessCommandLine contains "privilege::"`<br>`ProcessCommandLine contains "token::"`<br>`ProcessCommandLine has "sekurlsa"` | ✓ | ✗ | ✓ |
 
 ---
 

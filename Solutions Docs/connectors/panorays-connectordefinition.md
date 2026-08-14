@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [PanoraysSelfFindings_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays/Data%20Connectors/PanoraysSelfFindings_ccf/PanoraysSelfFindings_DCR.json) |
 | **CCF Configuration** | [PanoraysSelfFindings_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays/Data%20Connectors/PanoraysSelfFindings_ccf/PanoraysSelfFindings_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#panorays) |
 
 The Panorays data connector allows ingesting company findings from the Panorays API into Microsoft Sentinel.
 
@@ -42,6 +43,7 @@ This connector ingests data into the following tables:
 
 #### Configuration steps for the Panorays API
 - **API Token**: API Token
+- **Panorays API Base URL**: https://api.panoraysapp.com
 - Click 'Connect' to establish connection
 
 ---

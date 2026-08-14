@@ -11,19 +11,20 @@ Reference for DynamicEventCollection table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamiceventcollection) |
 
-## Schema (32 columns)
+## Schema (34 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamiceventcollection)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountSid | string | Security identifier (SID) of the account. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
@@ -35,10 +36,12 @@ Reference for DynamicEventCollection table in Azure Monitor Logs.
 | InitiatingProcessAccountObjectId | string | Azure AD object ID of the user account that ran the process responsible for the event. |
 | InitiatingProcessAccountSid | string | Security Identifier (SID) of the account that ran the process responsible for the event. |
 | InitiatingProcessAccountUpn | string | User principal name (UPN) of the account that ran the process responsible for the event. In Active Directory, a UPN is the name of a system user in an email address format (for example: john.doe@domain.com) |
+| InitiatingProcessCreationTime | datetime | Date and time when the process that initiated the event was started. |
 | InitiatingProcessFolderPath | string | Folder containing the process (image file) that initiated the event. |
 | InitiatingProcessId | long | Process ID (PID) of the process that initiated the event. |
 | InitiatingProcessLogonId | long | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts. |
 | InitiatingProcessMD5 | string | MD5 hash of the process (image file) that initiated the event. |
+| InitiatingProcessParentCreationTime | datetime | Date and time when the parent of the process responsible for the event was started. |
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessParentId | long | Process ID (PID) of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessSHA1 | string | SHA-1 hash of the process (image file) that initiated the event. |
@@ -50,7 +53,7 @@ Reference for DynamicEventCollection table in Azure Monitor Logs.
 | RemoteIP | string | IP address that was being connected to. |
 | RemotePort | int | TCP port on the remote device that was being connected to. |
 | ReportId | long | Unique identifier for the event. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

@@ -24,10 +24,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "ChatCreated"` | ✓ | ✗ | ✓ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "ChatCreated"` | ✓ | ✗ | ✓ |
 | [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
-| [`MessageEvents`](../tables/messageevents.md) |  | ? | ✗ | ? |
+| [`MessageEvents`](../tables/messageevents.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

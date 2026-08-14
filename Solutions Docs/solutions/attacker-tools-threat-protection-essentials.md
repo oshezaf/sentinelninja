@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
-| **Last Updated** | 2026-01-29 |
+| **Last Updated** | 2026-08-07 |
 | **Solution Folder** | [Attacker Tools Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-attackertools) · Popularity: 🟡 Low (38%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-attackertools) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Windows Server DNS](windows-server-dns.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
 The **Attacker Tools Threat Protection Essentials** solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns. These tools can be commercial, open-source, built-in or publicly available and have historically been seen used by adversaries in different phases of the ATTACK kill chain.  
@@ -72,11 +72,11 @@ This solution queries **6 table(s)** from its content items:
 
 ## Content Items
 
-This solution includes **6 content item(s)**:
+This solution includes **7 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 4 |
+| Analytic Rules | 5 |
 | Hunting Queries | 2 |
 
 ### Analytic Rules
@@ -85,6 +85,7 @@ This solution includes **6 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Credential Dumping Tools - File Artifacts](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-file-artifacts-32ffb19e-8ed8-40ed-87a0-1adb4746b7c4-38277ddb.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
 | [Credential Dumping Tools - Service Installation](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-service-installation-4ebbb5c2-8802-11ec-a8a3-0242ac120002-507654df.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
+| [PowerShell Encoded Command Execution (Living off the Land)](../content/attacker-tools-threat-protection-essentials-powershell-encoded-command-execution-living-off-the-land-7b2f4d1a-9c3e-4f72-8b1d-3e6a9f2c4b8d-1e416822.md) | Medium | Execution, DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md) | Medium | Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Execution, Exfiltration, LateralMovement, Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Probable AdFind Recon Tool Usage](../content/attacker-tools-threat-protection-essentials-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-3713de66.md) | High | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 
@@ -99,6 +100,7 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 |-------------|--------------------------------|---------------------------------------------------------------------------|
+| 3.0.4       | 20-07-2026                     | Added **Analytic Rule** PowerShell Encoded Command Execution              |
 | 3.0.3       | 06-06-2024                     | Added missing AMA **Data Connector** reference in **Analytic rules** and **Hunting Queries**|
 | 3.0.2       | 07-02-2024                     | Tagged for dependent solutions for deployment                             |
 | 3.0.1       | 23-01-2024                     | Added subTechniques in Template                                           |

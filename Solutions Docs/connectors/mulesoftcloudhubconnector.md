@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [MulesoftCloudHubAlerts_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MulesoftCloudHubAlerts_DCR.json) |
 | **CCF Configuration** | [MulesoftCloudHubAlerts_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MulesoftCloudHubAlerts_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#mulesoft-cloudhub-alerts-connector-via-codeless-connector-framework) |
 
 The Mulesoft CloudHub data connector enables you to ingest alerts from Mulesoft CloudHub into Microsoft Sentinel through the CloudHub REST API v2. This connector supports configurable endpoints to accommodate different Mulesoft regions and deployment environments including US Commercial Cloud, EU Cloud, Government Cloud, and on-premises deployments. It uses multi-stream support so you can connect to multiple Mulesoft environments simultaneously. Configure the connector with your Anypoint Platform credentials, environment ID, and optional application name filter to begin collecting data. Use the `MuleSoftCloudhub` parser to query ingested alerts. Refer to [Mulesoft CloudHub API documentation](https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/) for more information about the CloudHub APIs.
 

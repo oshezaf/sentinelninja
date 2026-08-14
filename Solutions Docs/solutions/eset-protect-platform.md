@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Protection |
-| **Version** | 3.2.0 |
+| **Version** | 3.3.0 |
 | **Author** | ESET |
 | **First Published** | 2024-10-29 |
 | **Last Updated** | 2025-06-17 |
 | **Solution Folder** | [ESET Protect Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/esetresearch1579795941720.eset-protect-platform-solution) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/esetresearch1579795941720.eset-protect-platform-solution) · Popularity: 🔵 Medium (57%) |
 
 ESET Protect Platform solution for Microsoft Sentinel ingests detections from [ESET Protect Platform](https://www.eset.com/int/business/protect-platform/) using the provided [Integration REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors). 
 
@@ -29,9 +29,13 @@ ESET Protect Platform solution for Microsoft Sentinel ingests detections from [E
 
 The ESET Protect Platform solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-a. [Logs Ingestion API in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview)
+a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/azure/sentinel/create-codeless-connector)
 
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+b. [Logs Ingestion API in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview)
+
+c. [Data Collection Rules (DCR)](https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview)
+
+d. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 
 

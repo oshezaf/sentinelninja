@@ -6,14 +6,17 @@
 
 ---
 
-Reference for CloudStorageAggregatedEvents table in Azure Monitor Logs.
+Cloud storage activity and related events
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudstorageaggregatedevents-table) |
 
 ## Contents
 
@@ -22,14 +25,14 @@ Reference for CloudStorageAggregatedEvents table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (49 columns)
+## Schema (50 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountApplicationId | string | The application ID associated with the storage access |
 | AccountObjectId | string | The unique identifier of the object is making the storage access |
 | AccountTenantId | string | The unique identifier of the Azure tenant |
@@ -53,19 +56,20 @@ Reference for CloudStorageAggregatedEvents table in Azure Monitor Logs.
 | FirstEventTimestamp | datetime | The timestamp of the first observed operation in the aggregation period |
 | HasAnonymousResourceNotFoundFailures | bool | Indicates whether anonymous resource not found failures occurred |
 | HashReputationMd5List | dynamic | A list of MD5 hash reputations for the accessed resources |
-| IpAddress | string | The IP addresses from which the storage was accessed |
+| IPAddress | string | The IP addresses from which the storage was accessed |
 | IsKnownSuspiciousIp | bool | Indicates whether the IP address is known to be suspicious |
 | IsPrivateIp | bool | Indicates whether the IP address is private |
 | IsTorExitNode | bool | Indicates whether the IP address is a Tor exit node |
 | LastEventTimestamp | datetime | The timestamp of the last observed operation in the aggregation period |
 | Location | string | The location of the storage account (region) |
+| Md5Hashes | dynamic | List of MD5 hashes of the accessed resources. |
 | OperationNamesList | dynamic | A list of storage operations performed (for example, CreateContainer, DeleteContainer) |
 | OperationsCount | int | The total number of storage operations performed |
 | ProvinceName | string | The name of the province or state from where the storage was accessed |
 | ReportId | string | GUID to identify the record in the specific table |
 | ResourceGroup | string | Name of the resource group where the storage account resides |
 | ServiceType | string | Specifies the type of storage service (for example, Blob, ADLS Gen2, Files.REST, Files.SMB) |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StorageAccount | string | The identifier for the storage account |
 | StorageContainer | string | The identifier for the storage container |
 | StorageFileShare | string | The identifier for the storage file share |
@@ -83,6 +87,7 @@ Reference for CloudStorageAggregatedEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudStorageAggregatedEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents)
+- [CloudStorageAggregatedEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudstorageaggregatedevents-table)
 
 ## Solutions (1)
 

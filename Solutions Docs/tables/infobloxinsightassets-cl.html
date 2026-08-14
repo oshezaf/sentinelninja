@@ -37,10 +37,6 @@
   <td style="text-align:left">Internal</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -69,36 +65,56 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">cid_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">cmac_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">Computer</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">count_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">InfobloxInsightID_g</td>
+  <td style="text-align:left">description</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">InfobloxInsightID_s</td>
+  <td style="text-align:left">device_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">InfobloxInsightLogType_s</td>
+  <td style="text-align:left">first_detected</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">location_s</td>
+  <td style="text-align:left">indicators</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">InfobloxInsightID</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">InfobloxInsightLogType</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ip_address</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_risky</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_verified</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">last_detected</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">locations</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">mac_address</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">ManagementGroupName</td>
@@ -106,14 +122,6 @@
 </tr>
 <tr>
   <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">osVersion_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">qip_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -129,32 +137,20 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">threatIndicatorDistinctCount_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">threatLevelMax_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">timeMax_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">timeMin_t</td>
-  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">total_events</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">Type</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">user_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">users</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 </tbody>
 </table>
@@ -170,7 +166,7 @@
 <li><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
 <h3 id="workbooks">Workbooks (2)</h3>
 <p><strong>In solution <a href="../solutions/infoblox.html">Infoblox</a>:</strong></p>
 <table>

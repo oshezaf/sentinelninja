@@ -302,7 +302,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (3)
 
@@ -314,19 +314,13 @@ This table is ingested by the following connectors:
 | [Netskope - High Severity Alert](../content/netskopealertevents-netskope-high-severity-alert-a1f6c2d4-8b35-4e19-9c7a-2d4e6f8a1b30-dd52ea1e.md) |  |
 | [Netskope - Suspicious Application Activity (Low Confidence / Risky App)](../content/netskopealertevents-netskope-suspicious-application-activity-low-confidence-risky-app-b2e7d3c5-9c46-4f2a-8d1b-3e5f7a9c2d41-f7dd180b.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [NetskopeAlertEvents](../solutions/netskopealertevents.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeAlertEvents_Workbook](../content/netskopealertevents-netskopealertevents-workbook-9d0c49b9.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NetskopeAlertEvents_Workbook](../content/github-only-netskopealertevents-workbook-d55519c9.md) |  |
 
 ## Parsers Using This Table (1)
 

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"`<br>`ProcessCommandLine matchesregex "cmd.exe /c"`<br>`ProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"`<br>`ProcessCommandLine matchesregex "cmd.exe /c"`<br>`ProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"` | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 
 ---

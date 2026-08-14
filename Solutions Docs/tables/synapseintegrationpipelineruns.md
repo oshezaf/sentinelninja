@@ -11,9 +11,10 @@ Reference for SynapseIntegrationPipelineRuns table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapseintegrationpipelineruns) |
 
 ## Contents
@@ -29,7 +30,7 @@ Reference for SynapseIntegrationPipelineRuns table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Annotations | dynamic | The annotation details of the log record. |
@@ -44,7 +45,7 @@ Reference for SynapseIntegrationPipelineRuns table in Azure Monitor Logs.
 | PipelineTenantId | string | The tenantId details of the pipeline run. |
 | Predecessors | dynamic | The predecessors information of the pipeline log. |
 | RunId | string | The run id of the pipeline job. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Start | datetime | The start time (UTC) of the pipeline run. |
 | Status | string | The Status of the SQL requests. |
 | SystemParameters | dynamic | The system parameter details of the pipeline run. |

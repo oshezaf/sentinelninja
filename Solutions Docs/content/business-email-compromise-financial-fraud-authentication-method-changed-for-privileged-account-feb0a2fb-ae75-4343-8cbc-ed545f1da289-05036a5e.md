@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "User registered security info"`<br>`LoggedByService == "Authentication Methods"` | ✓ | ✗ | ✓ |
-| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

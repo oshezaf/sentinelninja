@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | `Entities has "SAP BTP"` | ✓ | ✗ | ✓ |
-| [`Update`](../tables/update.md) |  | ✓ | ✗ | ? |
+| [`Update`](../tables/update.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

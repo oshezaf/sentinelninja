@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | `LogonType != "Unlock"`<br>`RemoteIPType != "Loopback"` | ✓ | ✗ | ? |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | `LogonType != "Unlock"`<br>`RemoteIPType != "Loopback"` | ✓ | ✗ | ✓ |
 
 ---
 

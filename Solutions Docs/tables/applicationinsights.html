@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ApplicationInsights &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="applicationinsights">ApplicationInsights</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ApplicationInsights table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/applicationinsights">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (99 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/applicationinsights">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AccountAcquisitionDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AnonAcquisitionDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AnonUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationProtocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationTypeVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthAcquisitionDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityDuration</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityDurationCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityDurationMax</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityDurationMin</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityDurationStdDev</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityMax</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityMetricCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityMin</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityRunLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityStdDev</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityTestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityTestName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AvailabilityValue</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Browser</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">BrowserVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">City</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Continent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Country</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">csUserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomEventCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomEventDimensions</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomEventName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DataSizeMetricCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DataSizeMetricValue</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeveloperMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceModel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionAssembly</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionHandledAt</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionHasStack</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionStack</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Host</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">IsAuthenticated</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">isSynthetic</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Language</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Latitude</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalSubnet</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Longitude</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OS</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OsVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewDuration</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewDurationCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewDurationMax</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewDurationMin</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewDurationStdDev</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PageViewName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentOperationID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Province</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDuration</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDurationCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDurationMax</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDurationMin</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDurationStdDev</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestSuccess</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResponseCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Role</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RoleInstance</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SampledCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SamplingRate</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ScreenResolution</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">sPort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TelemetryType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">URL</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">URLBase</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAccountId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/applicationinsights">ApplicationInsights Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

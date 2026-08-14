@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityRecommendation`](../tables/securityrecommendation.md) | `RecommendationDisplayName == "Activity log should be retained for at least one year"`<br>`RecommendationState in "Healthy,Unhealthy"` | ✓ | ✗ | ? |
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | `RecommendationDisplayName == "Activity log should be retained for at least one year"`<br>`RecommendationState in "Healthy,Unhealthy"` | ✓ | ✗ | ✗ |
 
 ---
 

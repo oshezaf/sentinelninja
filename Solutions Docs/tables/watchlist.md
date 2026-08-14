@@ -11,9 +11,10 @@ Reference for Watchlist table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/watchlist) |
 
 ## Contents
@@ -34,7 +35,7 @@ Reference for Watchlist table in Azure Monitor Logs.
 | _DTItemStatus | string | Was the Watchlist or Watchlist item created, updated or deleted by user. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. If a Watchlist is added, the the status would be 'Created'. If the name of the Watchlist is updated from 'RiskyUsers' to 'RiskyEmployees' the status would be 'Updated'. |
 | _DTItemType | string | Distinguish between a Watchlist and a Watchlist item. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. A Watchlist item type will belong to a Watchlist type and the containing Watchlist can identified using the 'WatchlistId'. |
 | _DTTimestamp | datetime | The time (UTC) when the event was generated. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AzureTenantId | string | The AAD tenant ID to which this Watchlist table belongs. |
 | CorrelationId | string | The ID for correlated events. |
 | CreatedBy | dynamic | The JSON object with the user who created the Watchlist or Watchlist item, including: Object ID, email and name. |
@@ -46,7 +47,7 @@ Reference for Watchlist table in Azure Monitor Logs.
 | Provider | string | The input provider of the Watchlist. |
 | SearchKey | string | The SearchKey is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address. |
 | Source | string | The input source of the Watchlist. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Tags | string | The JSON array of tags provided by user. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |

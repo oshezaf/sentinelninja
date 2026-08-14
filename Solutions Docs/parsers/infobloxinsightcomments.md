@@ -12,12 +12,12 @@
 |:----------|:------|
 | Title | Parser for InfobloxInsightComments |
 | Location | Solution |
-| Solution | [Infoblox](../solutions/infoblox.md) |
+| Solution | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) ⚠️ |
 | Version | 1.0.0 |
 | Last Updated | 2024-03-06 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
-| Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Parsers/InfobloxInsightComments.yaml) |
+| Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Parsers/InfobloxInsightComments.yaml) |
 
 ## Source Tables
 
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 | ? | ✓ | ? |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | ? | ✓ | ? |
 
 ---
 

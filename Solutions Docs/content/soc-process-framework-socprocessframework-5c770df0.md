@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
-| [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
+| [`Usage`](../tables/usage.md) |  | ✗ | ✗ | ✗ |
 
 ---
 

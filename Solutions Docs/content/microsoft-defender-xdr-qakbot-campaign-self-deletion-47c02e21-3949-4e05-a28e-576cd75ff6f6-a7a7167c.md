@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has "-n 6"`<br>`InitiatingProcessCommandLine has "127.0.0.1"`<br>`InitiatingProcessCommandLine has "calc.exe"`<br>`InitiatingProcessFileName == "cmd.exe"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has "-n 6"`<br>`InitiatingProcessCommandLine has "127.0.0.1"`<br>`InitiatingProcessCommandLine has "calc.exe"`<br>`InitiatingProcessFileName == "cmd.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

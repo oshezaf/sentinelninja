@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ? |
-| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` | ✓ | ✗ | ✓ |
 
 ---

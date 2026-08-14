@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-18 |
 | **Last Updated** | 2026-02-27 |
 | **Solution Folder** | [Azure Activity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivity) · Popularity: 🟢 High (93%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivity) · Popularity: 🟢 High (96%) |
 
 The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/activity-log) solution for Microsoft Sentinel enables you to ingest Azure Activity Administrative, Security, Service Health, Alert, Recommendation, Policy, Autoscale and Resource Health [logs](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azureactivity) using Diagnostic Settings into Microsoft Sentinel.
 
@@ -113,7 +113,7 @@ This solution includes **31 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                         |
 |-------------|--------------------------------|----------------------------------------------------------------------------|
-| 3.0.4       | 25-02-2026                     | Updated description_detailed for the Rare_Custom_Script_Extension Hunting Query                                            |
+| 3.0.4       | 25-02-2026                     | Updated description_detailed for the Rare_Custom_Script_Extension Hunting Query. |
 | 3.0.3       | 19-02-2025                     | Added new **Workbook** Azure Service Health to the Solution and added new **Hunting query** Machine_Learning_Creation.yaml. <br/> Added new **Analytic Rule** Machine_Learning_Creation.yaml          |
 | 3.0.2       | 21-02-2024                     | Modified Entity Mappings of **Analytic Rules**                             |
 | 3.0.1       | 23-01-2024                     | Added subTechniques in Template                                            |

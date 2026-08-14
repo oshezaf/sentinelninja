@@ -47,107 +47,106 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (23 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RedCanaryDetections_CL.json">KQL validation test schema</a></p>
+<h2 id="schema">Schema (18 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary%5CData%20Connectors%5CRedCanary_ccf/RedCanary_table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">child_process_iocs_s</td>
   <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized child process indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">cross_process_iocs_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized cross-process indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">detection_details_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Detection details provided by Red Canary.</td>
 </tr>
 <tr>
   <td style="text-align:left">detection_headline_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Headline for the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">detection_id_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique Red Canary detection identifier.</td>
 </tr>
 <tr>
   <td style="text-align:left">detection_severity_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity assigned to the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">detection_url_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">URL for the detection in Red Canary.</td>
 </tr>
 <tr>
   <td style="text-align:left">file_modification_iocs_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized file modification indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">host_full_name_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Fully qualified host name for the affected endpoint.</td>
 </tr>
 <tr>
   <td style="text-align:left">host_name_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Host name for the affected endpoint.</td>
 </tr>
 <tr>
   <td style="text-align:left">host_os_family_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Operating system family for the affected host.</td>
 </tr>
 <tr>
   <td style="text-align:left">host_os_version_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Operating system version for the affected host.</td>
 </tr>
 <tr>
   <td style="text-align:left">identities_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized identities associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">network_connection_iocs_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized network connection indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">process_iocs_s</td>
   <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized process indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">registry_modification_iocs_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized registry modification indicators associated with the Red Canary detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">tactics_s</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK tactics associated with the detection.</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">The timestamp when the detection was ingested into Microsoft Sentinel.</td>
 </tr>
 </tbody>
 </table>
@@ -172,7 +171,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/redcanarydataconnector.html">Red Canary Threat Detection</a></td>
+  <td style="text-align:left"><a href="../connectors/redcanary-connectordefinition.html">Red Canary Threat Detection (via Codeless Connector Framework)</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

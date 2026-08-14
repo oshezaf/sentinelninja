@@ -12,18 +12,19 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **211** | 183 | 1 | 27 |
-| [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **129** | 83 | 29 | 17 |
-| [REST Pull API](methods/rest-pull-api.md) | **53** | 39 | 1 | 13 |
-| [CCF Push](methods/ccf-push.md) | **46** | 44 | 0 | 2 |
-| [Native](methods/native.md) | **18** | 16 | 1 | 1 |
+| [CCF](methods/ccf.md) | **217** | 185 | 1 | 31 |
+| [AMA](methods/ama.md) | **167** | 37 | 122 | 8 |
+| [Azure Function](methods/azure-function.md) | **128** | 81 | 29 | 18 |
+| [REST Pull API](methods/rest-pull-api.md) | **52** | 39 | 1 | 12 |
+| [CCF Push](methods/ccf-push.md) | **47** | 45 | 0 | 2 |
+| [Native](methods/native.md) | **17** | 15 | 1 | 1 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **15** | 15 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
+| [Defender](methods/defender.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **672** | **446** | **155** | **71** |
+| **Total** | **678** | **448** | **155** | **75** |
 
 ---
 
@@ -61,12 +62,12 @@ API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) u
 
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
-| [Azure Function](methods/azure-function.md) | 47 | 71 | 3 | **121** |
-| [REST Pull API](methods/rest-pull-api.md) | 1 | 52 | - | **53** |
-| [CCF Push](methods/ccf-push.md) | 46 | - | - | **46** |
+| [Azure Function](methods/azure-function.md) | 47 | 70 | 3 | **120** |
+| [REST Pull API](methods/rest-pull-api.md) | 1 | 51 | - | **52** |
+| [CCF Push](methods/ccf-push.md) | 47 | - | - | **47** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
 | [CCF](methods/ccf.md) | 10 | - | - | **10** |
-| **Total** | **104** | **123** | **3** | **252** |
+| **Total** | **105** | **121** | **3** | **251** |
 
 ---
 

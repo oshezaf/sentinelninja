@@ -36,15 +36,27 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -54,7 +66,7 @@
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#resource-types">Resource Types</a></li>
 </ul>
-<h2 id="schema">Schema (101 columns)</h2>
+<h2 id="schema">Schema (107 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -73,7 +85,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -84,6 +96,11 @@
   <td style="text-align:left">_SubscriptionId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional entities associated with the event.</td>
 </tr>
 <tr>
   <td style="text-align:left">AdditionalFields</td>
@@ -159,6 +176,11 @@
   <td style="text-align:left">DvcDomainType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The type of DvcDomain.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the device.</td>
 </tr>
 <tr>
   <td style="text-align:left">DvcFQDN</td>
@@ -341,6 +363,11 @@
   <td style="text-align:left">The vendor of the product generating the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">FileEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the file.</td>
+</tr>
+<tr>
   <td style="text-align:left">FileMD5</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">MD5 hash of the file.</td>
@@ -389,6 +416,11 @@
   <td style="text-align:left">ProcessCommandLine</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Command line used to start the process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the process.</td>
 </tr>
 <tr>
   <td style="text-align:left">ProcessFileCompany</td>
@@ -448,7 +480,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">TenantId</td>
@@ -529,6 +561,16 @@
   <td style="text-align:left">User</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Alias or friendly name for Username field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAdditionalIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional identifiers associated with the user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserEntityKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity key associated with the user.</td>
 </tr>
 <tr>
   <td style="text-align:left">UserId</td>

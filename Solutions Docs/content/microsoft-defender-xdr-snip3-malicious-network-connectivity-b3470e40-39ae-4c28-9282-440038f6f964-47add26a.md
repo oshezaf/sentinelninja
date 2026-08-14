@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `InitiatingProcessCommandLine == "\"`<br>`InitiatingProcessFileName in "InstallUtil.exe,RegAsm.exe,RegSvcs.exe"`<br>`InitiatingProcessParentFileName endswith "powershell.exe"`<br>`InitiatingProcessParentFileName endswith "powershell_ise.exe"`<br>`InitiatingProcessParentFileName endswith "pwsh.exe"` | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `InitiatingProcessCommandLine == "\"`<br>`InitiatingProcessFileName in "InstallUtil.exe,RegAsm.exe,RegSvcs.exe"`<br>`InitiatingProcessParentFileName endswith "powershell.exe"`<br>`InitiatingProcessParentFileName endswith "powershell_ise.exe"`<br>`InitiatingProcessParentFileName endswith "pwsh.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

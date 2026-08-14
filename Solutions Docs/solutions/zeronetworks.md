@@ -21,7 +21,7 @@
 | **First Published** | 2022-06-06 |
 | **Last Updated** | 2026-03-18 |
 | **Solution Folder** | [ZeroNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zeronetworksltd1629013803351.azure-sentinel-solution-znsegmentaudit) · Popularity: 🟡 Low (48%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zeronetworksltd1629013803351.azure-sentinel-solution-znsegmentaudit) · Popularity: ⚪ Very Low (0%) |
 
 The [Zero Networks Segment](https://zeronetworks.com/product) solution for Microsoft Sentinel allows monitoring Zero Networks Segment Audit activity. Audit log data is ingested in Microsoft Sentinel using REST API.
 

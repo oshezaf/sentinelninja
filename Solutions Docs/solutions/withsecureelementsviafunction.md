@@ -1,4 +1,4 @@
-# WithSecure™ Elements via Function for Microsoft Sentinel
+# WithSecure™ Elements via Function for Microsoft Sentinel [DEPRECATED]
 
 *Solution: WithSecureElementsViaFunction*
 
@@ -16,13 +16,14 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.withsecure.com/en/support](https://www.withsecure.com/en/support) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | WithSecure |
 | **First Published** | 2024-02-22 |
-| **Last Updated** | 2026-03-06 |
+| **Last Updated** | 2026-07-21 |
 | **Solution Folder** | [WithSecureElementsViaFunction](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-via-function) · Popularity: 🟡 Low (21%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-via-function) · Popularity: ⚪ Very Low (0%) |
 
+[DEPRECATED] This Azure Function based solution is deprecated and is no longer actively maintained. Please use the WithSecure Elements via Codeless Connector Framework (CCF) solution instead, which provides the same data ingestion without the need to deploy and maintain an Azure Function. New deployments should use the CCF solution.
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.
 Elevate your security from your endpoints to your cloud applications. Arm yourself against every type of cyber threat, from targeted attacks to zero-day ransomware.
 WithSecure Elements combines powerful predictive, preventive, and responsive security capabilities - all managed and monitored through a single security center. Our modular structure and flexible pricing models give you the freedom to evolve. With our expertise and insight, you'll always be empowered - and you'll never be alone.

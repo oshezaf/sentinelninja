@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.2</td>
+  <td style="text-align:left">3.1.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -68,15 +68,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infoblox.infoblox-app-for-microsoft-sentinel">Azure Marketplace</a> · Popularity: 🟡 Low (18%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infoblox.infoblox-app-for-microsoft-sentinel">Azure Marketplace</a> · Popularity: 🟡 Low (22%)</td>
 </tr>
 </tbody>
 </table>
 <p>The Infoblox Solution for Microsoft Sentinel is designed to enhance the capabilities of Security Operations Centers (SOC) by integrating actionable intelligence and contextual network data derived from DNS data into Microsoft Sentinel. This integration provides SOC analysts with the tools they need to quickly identify and respond to potential threats such as malware and data exfiltration, improving overall security posture. With seamless configuration and intuitive dashboards, the solution ensures that critical security events are monitored and correlated, offering actionable insights that streamline threat detection and response.
-SOC analysts will benefit from the app’s ability to provide contextual network data, including user and device attribution, through various lookups and visualizations. By leveraging unique DNS-based threat intelligence, audit logs and other data sources, analysts can conduct faster and more effective investigations. The solution’s functionalities, such as SOC Insights Overview and DNS Events, empower analysts to reduce alert fatigue by focusing on correlated events, ultimately leading to improved efficiency and protection against emerging threats.</p>
+SOC analysts will benefit from the app’s ability to provide contextual network data, including user and device attribution, through various lookups and visualizations. By leveraging unique DNS-based threat intelligence, audit logs and other data sources, analysts can conduct faster and more effective investigations. The solution’s functionalities, such as IQ for TD Insights Overview and DNS Events, empower analysts to reduce alert fatigue by focusing on correlated events, ultimately leading to improved efficiency and protection against emerging threats.</p>
 <p><strong>Benefits</strong></p>
 <ol>
-<li><strong>Reduce alert fatigue with actionable insights through SOC Insights</strong>: Focus on the most critical alerts and insights to streamline threat detection and response.</li>
+<li><strong>Reduce alert fatigue with actionable insights through IQ for TD Insights</strong>: Focus on the most critical alerts and insights to streamline threat detection and response.</li>
 <li><strong>Faster investigations with contextual network data</strong>: Quickly correlate network activities with potential threats using detailed lookups and visualizations.</li>
 <li><strong>Unique DNS-based Infoblox Threat Intel</strong>: Access unparalleled DNS-based threat intelligence to enhance security decision-making and threat mitigation.</li>
 </ol>
@@ -91,12 +91,12 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <ul>
 <li><a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a></li>
 <li><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></li>
-<li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></li>
-<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox IQ for Threat Defense Insight Data Connector via AMA</a></li>
+<li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox IQ for Threat Defense Insight Data Connector via REST API</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>21 table(s)</strong>:</p>
+<p>This solution uses <strong>24 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -108,7 +108,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <tbody>
 <tr>
   <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-  <td><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a>, <a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a>, <a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></td>
+  <td><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a>, <a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a>, <a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox IQ for Threat Defense Insight Data Connector via AMA</a></td>
   <td>Analytics, Playbooks, Workbooks</td>
 </tr>
 <tr>
@@ -122,6 +122,16 @@ SOC analysts will benefit from the app’s ability to provide contextual network
   <td>Workbooks</td>
 </tr>
 <tr>
+  <td><a href="../tables/infoblox-config-insight-details-cl.html"><code>Infoblox_Config_Insight_Details_CL</code></a> 🔶</td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/infoblox-config-insights-cl.html"><code>Infoblox_Config_Insights_CL</code></a> 🔶</td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
   <td><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a> 🔶</td>
   <td>-</td>
   <td>Workbooks</td>
@@ -130,6 +140,11 @@ SOC analysts will benefit from the app’s ability to provide contextual network
   <td><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
   <td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
   <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/dossier-atp-cl.html"><code>dossier_atp_CL</code></a> 🔶</td>
@@ -214,7 +229,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 </tbody>
 </table>
 <h3 id="internal-tables">Internal Tables</h3>
-<p>The following <strong>9 table(s)</strong> are used internally by this solution's content items:</p>
+<p>The following <strong>8 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -225,29 +240,24 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> 🔶</td>
+  <td><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a></td>
   <td>-</td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> 🔶</td>
+  <td><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a></td>
   <td>-</td>
-  <td>Playbooks (writes)</td>
+  <td>Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> 🔶</td>
+  <td><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a></td>
   <td>-</td>
-  <td>Playbooks (writes), Workbooks</td>
-</tr>
-<tr>
-  <td><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a> 🔶</td>
-  <td>-</td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
-  <td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a></td>
-  <td>Analytics, Playbooks (writes), Workbooks</td>
+  <td><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox IQ for Threat Defense Insight Data Connector via REST API</a></td>
+  <td>Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
@@ -286,11 +296,11 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <tbody>
 <tr>
   <td style="text-align:left">Playbooks</td>
-  <td style="text-align:left">17</td>
+  <td style="text-align:left">18</td>
 </tr>
 <tr>
   <td style="text-align:left">Parsers</td>
-  <td style="text-align:left">6</td>
+  <td style="text-align:left">5</td>
 </tr>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
@@ -314,13 +324,13 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/infoblox-infoblox-soc-insight-detected-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05c34879.html">Infoblox - SOC Insight Detected - API Source</a></td>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-detected-insights-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05b6cca0.html">Infoblox - IQ for TD Detected Insights - API Source</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">Impact</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/infoblox-infoblox-soc-insight-detected-cdc-source-d04f1963-df27-4127-b1ec-3d37148d65be-80d9956d.html">Infoblox - SOC Insight Detected - CDC Source</a></td>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-insight-detected-cdc-source-d04f1963-df27-4127-b1ec-3d37148d65be-66a8b02e.html">Infoblox - IQ for TD Insight Detected - CDC Source</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">Impact</td>
   <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
@@ -342,7 +352,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/infoblox-infoblox-workbook-0b2c239e.html">Infoblox_Workbook</a></td>
-  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/host-name-info-cl.html"><code>Host_Name_Info_CL</code></a><br><a href="../tables/ip-space-info-cl.html"><code>IP_Space_Info_CL</code></a><br><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a><br><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/host-name-info-cl.html"><code>Host_Name_Info_CL</code></a><br><a href="../tables/ip-space-info-cl.html"><code>IP_Space_Info_CL</code></a><br><a href="../tables/infoblox-config-insight-details-cl.html"><code>Infoblox_Config_Insight_Details_CL</code></a><br><a href="../tables/infoblox-config-insights-cl.html"><code>Infoblox_Config_Insights_CL</code></a><br><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -407,18 +417,23 @@ SOC analysts will benefit from the app’s ability to provide contextual network
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.html">Infoblox-SOC-Get-Insight-Details</a></td>
-  <td style="text-align:left">Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info...</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsightindicators-cl.html"><code>InfobloxInsightIndicators_CL</code></a> <em>(write)</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-get-insight-details-api-1bdff011.html">Infoblox-IQ-for-TD-Get-Insight-Details-API</a></td>
+  <td style="text-align:left">Leverages the Infoblox IQ for TD API to enrich a Microsoft Sentinel Incident triggered by an Infoblo...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/infoblox-infoblox-soc-get-open-insights-api-5c2cae50.html">Infoblox-SOC-Get-Open-Insights-API</a></td>
-  <td style="text-align:left">Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t...</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-get-insights-api-6d522794.html">Infoblox-IQ-for-TD-Get-Insights-API</a></td>
+  <td style="text-align:left">Leverages the Infoblox IQ for Threat Defense Insights API to ingest IQ for TD Insights at time of ru...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.html">Infoblox-SOC-Import-Indicators-TI</a></td>
-  <td style="text-align:left">Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox SOC Insight into th...</td>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-import-indicators-ti-4737c54d.html">Infoblox-IQ-for-TD-Import-Indicators-TI</a></td>
+  <td style="text-align:left">Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox IQ for TD Insight i...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-iq-for-td-take-action-api-5af3c01a.html">Infoblox-IQ-for-TD-Take-Action-API</a></td>
+  <td style="text-align:left">Leverages the Infoblox IQ for Threat Defense Insights API to take action on an Insight by applying t...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -469,11 +484,6 @@ SOC analysts will benefit from the app’s ability to provide contextual network
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsightassets-cl.html"><code>InfobloxInsightAssets_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../parsers/infobloxinsightcomments.html">InfobloxInsightComments</a></td>
-  <td style="text-align:left">-</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsightcomments-cl.html"><code>InfobloxInsightComments_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../parsers/infobloxinsightevents.html">InfobloxInsightEvents</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/infobloxinsightevents-cl.html"><code>InfobloxInsightEvents_CL</code></a> <em>(read)</em></td>
@@ -496,9 +506,14 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 </thead>
 <tbody>
 <tr>
+  <td>3.1.0</td>
+  <td>17-07-2026</td>
+  <td>Updated playbooks, parsers, workbooks and analytic rule from SOC insight v1 to Infoblox for IQ for Threat Defense (SOC insight v2).</td>
+</tr>
+<tr>
   <td>3.0.2</td>
-  <td>16-07-2026</td>
-  <td>Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule. <br> Migrataed checkpoint from file share to azure tables.</td>
+  <td>19-06-2025</td>
+  <td>Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule.<br> Migrated checkpoint from file share to azure tables.</td>
 </tr>
 <tr>
   <td>3.0.1</td>

@@ -21,7 +21,7 @@
 | **First Published** | 2026-06-08 |
 | **Last Updated** | 2026-07-10 |
 | **Solution Folder** | [WithSecureElementsCCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsCCF) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-elements-ccf) · Popularity: 🟡 Low (47%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-elements-ccf) · Popularity: 🔵 Medium (75%) |
 
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.
 Elevate your security from your endpoints to your cloud applications. Arm yourself against every type of cyber threat, from targeted attacks to zero-day ransomware.

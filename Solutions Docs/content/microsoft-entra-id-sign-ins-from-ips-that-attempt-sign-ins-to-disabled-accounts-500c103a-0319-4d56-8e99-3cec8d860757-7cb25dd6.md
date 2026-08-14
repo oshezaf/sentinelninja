@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"`<br>`EventSource == "Azure AD"` | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"`<br>`EventSource == "Azure AD"` | ✓ | ✗ | ✗ |
 
 ---
 

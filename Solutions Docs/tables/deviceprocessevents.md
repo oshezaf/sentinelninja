@@ -6,15 +6,17 @@
 
 ---
 
-Reference for DeviceProcessEvents table in Azure Monitor Logs.
+Process creation and related events
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) |
 
 ## Contents
 
@@ -32,7 +34,7 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountObjectId | string | Unique identifier for the account in Azure AD. |
@@ -101,7 +103,7 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
@@ -111,8 +113,9 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents)
+- [DeviceProcessEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table)
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -128,6 +131,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md)
+- [Windows Security Events](../solutions/windows-security-events.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (1)
@@ -140,14 +144,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (100)
+## Content Items Using This Table (102)
 
-### Analytic Rules (41)
+### Analytic Rules (44)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
+| [PowerShell Encoded Command Execution (Living off the Land)](../content/attacker-tools-threat-protection-essentials-powershell-encoded-command-execution-living-off-the-land-7b2f4d1a-9c3e-4f72-8b1d-3e6a9f2c4b8d-1e416822.md) |  |
 | [Probable AdFind Recon Tool Usage](../content/attacker-tools-threat-protection-essentials-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-3713de66.md) |  |
 
 **In solution [Dev 0270 Detection and Hunting](../solutions/dev-0270-detection-and-hunting.md):**
@@ -158,6 +163,12 @@ This table is ingested by the following connectors:
 | [Dev-0270 Malicious Powershell usage](../content/dev-0270-detection-and-hunting-dev-0270-malicious-powershell-usage-422ca2bf-598b-4872-82bb-5f7e8fa731e7-02bc41bc.md) |  |
 | [Dev-0270 Registry IOC - September 2022](../content/dev-0270-detection-and-hunting-dev-0270-registry-ioc-september-2022-2566e99f-ad0f-472a-b9ac-d3899c9283e6-d97be37a.md) |  |
 | [Dev-0270 WMIC  Discovery](../content/dev-0270-detection-and-hunting-dev-0270-wmic-discovery-6b652b4f-9810-4eec-9027-7aa88ce4db23-8289b5fe.md) |  |
+
+**In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [CertUtil Used for File Download (Living off the Land)](../content/endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.md) |  |
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 
@@ -203,6 +214,12 @@ This table is ingested by the following connectors:
 | [Shadow Copy Deletions](../content/microsoft-defender-xdr-shadow-copy-deletions-28c63a44-2d35-48b7-831b-3ed24af17c7e-dcc95706.md) |  |
 | [Stopping multiple processes using taskkill](../content/microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-6e396de6.md) |  |
 
+**In solution [Windows Security Events](../solutions/windows-security-events.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [WMI Spawning Suspicious Child Process (Living off the Land)](../content/windows-security-events-wmi-spawning-suspicious-child-process-living-off-the-land-3c8e5f0b-1d4a-4b69-9c2e-7f0d3a5e8b1f-c2b2f4ac.md) |  |
+
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
 | Analytic Rule | Selection Criteria |
@@ -210,7 +227,7 @@ This table is ingested by the following connectors:
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-### Hunting Queries (55)
+### Hunting Queries (54)
 
 **In solution [Cyware](../solutions/cyware.md):** `ProcessCommandLine has "powershell.exe"`
 
@@ -248,7 +265,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Account Creation](../content/microsoft-defender-xdr-account-creation-d0585c34-1b03-473c-938d-11fe73f7e053-4486ca7f.md) | `InitiatingProcessFileName == "net.exe"`<br>`ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "/domain"` |
-| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) |  |
+| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [Bitsadmin Activity](../content/microsoft-defender-xdr-bitsadmin-activity-bba7bbbe-5aa3-4c08-bd23-dd6cd8ccaf20-7a642ef6.md) | `ProcessCommandLine has "/Upload"`<br>`ProcessCommandLine has_any "/Transfer"` |
 | [Check for multiple signs of Ransomware Activity](../content/microsoft-defender-xdr-check-for-multiple-signs-of-ransomware-activity-4f669adc-2c00-4bc8-896b-e59f068dcb18-164f406c.md) | `ProcessCommandLine has "cl"`<br>`ProcessCommandLine has "config"`<br>`ProcessCommandLine has "delete"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"`<br>`ProcessCommandLine has "wbadmin"`<br>`ProcessCommandLine has "wevtutil"`<br>`ProcessCommandLine has "wmic"` |
 | [Clear System Logs](../content/microsoft-defender-xdr-clear-system-logs-6284b962-ab0d-46d8-a47f-1eb1ac1be463-c8af8f2d.md) | `ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "usn"` |
@@ -302,7 +319,6 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [BadUSB LOLBIN execution via certutil (HID injection via Run dialog)](../content/github-only-badusb-lolbin-execution-via-certutil-hid-injection-via-run-dialog-d71e736b-f6e7-4acb-86f5-3696041868d7-62f2fc72.md) | `InitiatingProcessFileName == "explorer.exe"`<br>`ProcessCommandLine has "certutil"` |
 | [Detect Malicious use of MSIExec](../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.md) | `ProcessCommandLine has "http"`<br>`ProcessCommandLine has "return"` |
 | [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) |  |
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-0b985ed8-aacd-41ba-9b17-489be9224159-bfd6b1c4.md) | `ProcessCommandLine contains "-ma"`<br>`ProcessCommandLine has "-accepteula"`<br>`ProcessCommandLine has "lsass"`<br>`ProcessCommandLine has "lsass.exe"` |
@@ -377,6 +393,7 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 | `ProcessCommandLine has "hklm"`<br>`ProcessCommandLine has "sam"`<br>`ProcessCommandLine has "save"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "usn"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "\\"`<br>`ProcessCommandLine contains "/do"`<br>`ProcessCommandLine contains "/domain"`<br>`ProcessCommandLine contains "group"`<br>`ProcessCommandLine contains "user"` | - | 1 | - | - | **1** |
+| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "http"`<br>`ProcessCommandLine has "return"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "msiexec.exe"`<br>`ProcessCommandLine contains "privilege::"`<br>`ProcessCommandLine contains "token::"`<br>`ProcessCommandLine has "sekurlsa"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "DownloadFile"`<br>`ProcessCommandLine has "IEX"`<br>`ProcessCommandLine has "Invoke-Shellcode"`<br>`ProcessCommandLine has "Invoke-WebRequest"`<br>`ProcessCommandLine has "Net.WebClient"`<br>`ProcessCommandLine has "Start-BitsTransfer"`<br>`ProcessCommandLine has "http"`<br>`ProcessCommandLine has "mpcmdrun.exe"` | - | 1 | - | - | **1** |
@@ -390,7 +407,6 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 | `InitiatingProcessFileName == "wmiprvse.exe"`<br>`ProcessCommandLine has "programdata"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has_any "whoami /all"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "solarwinds.businesslayerhost.exe"` | - | 1 | - | - | **1** |
-| `InitiatingProcessFileName == "explorer.exe"`<br>`ProcessCommandLine has "certutil"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "Set-MpPreference"` | - | 1 | - | - | **1** |
 | **Total** | **0** | **57** | **0** | **0** | **57** |
 
@@ -403,6 +419,7 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 | `InboundConnectionAccepted` | - | 1 | - | - | **1** |
 | `FileCreated` | - | 1 | - | - | **1** |
 | `FileModified` | - | 1 | - | - | **1** |
+| `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
 
 ### FolderPath
 
@@ -440,7 +457,6 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `httpd.exe` | - | 3 | - | - | **3** |
 | `w3wp.exe` | - | 3 | - | - | **3** |
-| `explorer.exe` | - | 3 | - | - | **3** |
 | `dllhost.exe` | - | 2 | - | - | **2** |
 | `startswith psexe` | - | 2 | - | - | **2** |
 | `cmd.exe` | - | 2 | - | - | **2** |
@@ -450,6 +466,7 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 | `outlook.exe` | - | 2 | - | - | **2** |
 | `winword.exe` | - | 2 | - | - | **2** |
 | `net.exe` | - | 2 | - | - | **2** |
+| `explorer.exe` | - | 2 | - | - | **2** |
 | `mobsync.exe` | - | 2 | - | - | **2** |
 | `java.exe` | - | 2 | - | - | **2** |
 | `oracle.exe` | - | 1 | - | - | **1** |
@@ -493,10 +510,10 @@ References by type: 0 connectors, 57 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has certutil` | - | 4 | - | - | **4** |
 | `contains -ma` | - | 4 | - | - | **4** |
 | `has -accepteula` | - | 4 | - | - | **4** |
 | `has lsass` | - | 4 | - | - | **4** |
+| `has certutil` | - | 3 | - | - | **3** |
 | `!contains /add` | - | 3 | - | - | **3** |
 | `has lsass.exe` | - | 2 | - | - | **2** |
 | `has msexchange` | - | 2 | - | - | **2** |

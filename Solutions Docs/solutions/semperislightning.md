@@ -21,7 +21,7 @@
 | **First Published** | 2026-03-01 |
 | **Last Updated** | 2026-03-23 |
 | **Solution Folder** | [SemperisLightning](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning) · Popularity: 🟡 Low (15%) |
 
 This custom data connector uses a Function App to pull Semperis Lightning data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API.
 

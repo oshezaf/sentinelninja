@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [http://support.recordedfuture.com/](http://support.recordedfuture.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.2.19 |
+| **Version** | 3.2.20 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2021-11-01 |
 | **Last Updated** | 2026-04-21 |
 | **Solution Folder** | [Recorded Future](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_sentinel_solution) · Popularity: 🔵 Medium (57%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_sentinel_solution) · Popularity: 🟡 Low (45%) |
 
 [Recorded Future](https://www.recordedfuture.com/) is the worlds largest provider of intelligence for enterprise security. By combining persistent and pervasive automated data collection and analytics with human analysis, Recorded Future delivers intelligence that is timely, accurate, and actionable.
 

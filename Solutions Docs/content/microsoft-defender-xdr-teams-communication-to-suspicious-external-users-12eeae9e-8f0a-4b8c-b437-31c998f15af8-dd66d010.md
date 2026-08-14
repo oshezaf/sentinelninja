@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | `RecipientDetails contains "desk"`<br>`RecipientDetails contains "help"`<br>`RecipientDetails contains "home"`<br>`RecipientDetails contains "it"`<br>`RecipientDetails contains "support"`<br>`RecipientDetails contains "working"` | ? | ✗ | ? |
+| [`MessageEvents`](../tables/messageevents.md) | `RecipientDetails contains "desk"`<br>`RecipientDetails contains "help"`<br>`RecipientDetails contains "home"`<br>`RecipientDetails contains "it"`<br>`RecipientDetails contains "support"`<br>`RecipientDetails contains "working"` | ✓ | ✗ | ✓ |
 
 ---
 

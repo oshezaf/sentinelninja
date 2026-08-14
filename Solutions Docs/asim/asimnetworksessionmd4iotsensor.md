@@ -25,6 +25,14 @@
 
 This ASIM parser supports normalizing Microsoft Defender for IoT sensor logs to the ASIM Network Session normalized schema.
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md) | ✗ | ✗ | ✗ |
+
 ## Parameters
 
 | Name | Type | Default |

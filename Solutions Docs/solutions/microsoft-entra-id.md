@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Identity,Security - Automation (SOAR) |
-| **Version** | 3.3.11 |
+| **Version** | 3.3.16 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-06-26 |
+| **Last Updated** | 2026-08-11 |
 | **Solution Folder** | [Microsoft Entra ID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (94%) |
 
 The [Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)  solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID [Audit](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs), [Sign-in](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins), [Provisioning](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs), [Risk Events and Risky User/Service Principal](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk#risky-users) logs using Diagnostic Settings into Microsoft Sentinel.
 
@@ -194,6 +194,7 @@ This solution includes **88 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                         |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 3.3.16      | 06-08-2026                     | Removed locale-dependent **ResultDescription** filtering from the **Attempts to sign in to disabled accounts Analytic Rule** while retaining ResultType 50057 matching. |
 | 3.3.15       | 10-07-2026                    | Updated **SigninAttemptsByIPviaDisabledAccounts** **Analytic Rule** to include the additional "ResultDescription" value: "The user account is disabled." |
 | 3.3.14       | 30-06-2026                    | Updated **BruteForceAgainstanEntraAuthenticatedWindowsDevice** Analytic rule to add an explicit "sort by TimeGenerated asc" before building "make_list" arrays. |
 | 3.3.13       | 22-06-2026                    | Updated Description of **AccountCreatedandDeletedinShortTimeframe** Analytic Rule. |

@@ -68,7 +68,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Microsoft Azure File Storage](#microsoft-azure-file-storage) | 1 | 1 | 1 |
 | [Microsoft Azure Queue Storage](#microsoft-azure-queue-storage) | 1 | 1 | 1 |
 | [Microsoft Azure Table Storage](#microsoft-azure-table-storage) | 1 | 1 | 1 |
-| [Microsoft Defender for IoT](#microsoft-defender-for-iot) | 4 | 3 | 1 |
+| [Microsoft Defender for IoT](#microsoft-defender-for-iot) | 4 | 3 | 2 |
 | [Microsoft Defender XDR](#microsoft-defender-xdr) | 1 | 1 | 1 |
 | [Microsoft Entra ID](#microsoft-entra-id) | 4 | 1 | 4 |
 | [Microsoft Security Event](#microsoft-security-event) | 1 | 1 | 1 |
@@ -823,7 +823,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** Authentication, NetworkSession, ProcessEvent
 
-**Tables:** [SecurityIoTRawEvent](../tables/securityiotrawevent.md)
+**Tables:** [DefenderIoTRawEvent](../tables/defenderiotrawevent.md), [SecurityIoTRawEvent](../tables/securityiotrawevent.md)
 
 ### Parsers
 
@@ -831,7 +831,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuthenticationMD4IoT](asimauthenticationmd4iot.md)<br>vim: [vimAuthenticationMD4IoT](vimauthenticationmd4iot.md) | Authentication | [SecurityIoTRawEvent](../tables/securityiotrawevent.md) | 0.1.2 |
 | ASim: [ASimNetworkSessionMD4IoTAgent](asimnetworksessionmd4iotagent.md)<br>vim: [vimNetworkSessionMD4IoTAgent](vimnetworksessionmd4iotagent.md) | NetworkSession | [SecurityIoTRawEvent](../tables/securityiotrawevent.md) | 0.2.1 |
-| ASim: [ASimNetworkSessionMD4IoTSensor](asimnetworksessionmd4iotsensor.md)<br>vim: [vimNetworkSessionMD4IoTSensor](vimnetworksessionmd4iotsensor.md) | NetworkSession |  | 0.1 |
+| ASim: [ASimNetworkSessionMD4IoTSensor](asimnetworksessionmd4iotsensor.md)<br>vim: [vimNetworkSessionMD4IoTSensor](vimnetworksessionmd4iotsensor.md) | NetworkSession | [DefenderIoTRawEvent](../tables/defenderiotrawevent.md) | 0.1 |
 | ASim: [ASimProcessEventMD4IoT](asimprocesseventmd4iot.md)<br>vim: [vimProcessEventMD4IoT](vimprocesseventmd4iot.md) | ProcessEvent | [SecurityIoTRawEvent](../tables/securityiotrawevent.md) | 0.1.1 |
 
 ## Microsoft Defender XDR

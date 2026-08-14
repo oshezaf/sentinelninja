@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [WithSecureElements_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsCCF/Data%20Connectors/WithSecureElementsCCP/WithSecureElements_DCR.json) |
 | **CCF Configuration** | [WithSecureElements_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsCCF/Data%20Connectors/WithSecureElementsCCP/WithSecureElements_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#withsecure-elements-ccf) |
 
 WithSecure Elements security events ingested via Microsoft Sentinel's Codeless Connector Framework (CCF) — a fully SaaS deployment with no Azure Function, Storage Account or Key Vault to manage.
 

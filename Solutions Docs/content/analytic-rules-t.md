@@ -1,6 +1,6 @@
 # Analytic Rules - T
 
-**224 analytic rules** starting with 'T'.
+**225 analytic rules** starting with 'T'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -236,6 +236,7 @@
 | [Trend Micro CAS - Threat detected and not blocked](trend-micro-cloud-app-security-trend-micro-cas-threat-detected-and-not-blocked-c8e2ad52-bd5f-4f74-a2f7-6c3ab8ba687a-436c2e90.md) | High | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Micro CAS - Unexpected file on file share](trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-on-file-share-de54f817-f338-46bf-989b-4e016ea6b71b-1f79585f.md) | Medium | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Micro CAS - Unexpected file via mail](trend-micro-cloud-app-security-trend-micro-cas-unexpected-file-via-mail-201fd2d1-9131-4b29-bace-ce5d19f3e4ee-d71c6070.md) | Medium | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
+| [TrendAI Vision One - Create Incident for Workbench Alerts](trendai-vision-one-ccf-trendai-vision-one-create-incident-for-workbench-alerts-2f668615-c372-4673-a5cd-773e4da715b9-1df6fda9.md) | High | 📦 [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
 | [Trust Monitor Event](standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md) | Medium | 📄 Standalone Content |
 | [Trusted Developer Utilities Proxy Execution](falconfriday-trusted-developer-utilities-proxy-execution-5c2bb446-926f-4160-a233-21e335c2c290-aac01cd9.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 

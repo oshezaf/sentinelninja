@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | ✓ | ✗ | ✓ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | ✓ | ✗ | ✓ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
 
 ---
 

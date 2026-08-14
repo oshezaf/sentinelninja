@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "config"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "config"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"` | ✓ | ✗ | ✓ |
 
 ---
 

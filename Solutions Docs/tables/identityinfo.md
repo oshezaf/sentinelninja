@@ -6,15 +6,17 @@
 
 ---
 
-Reference for IdentityInfo table in Azure Monitor Logs.
+Account information from various sources, including Microsoft Entra ID
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
 
 ## Contents
 
@@ -30,7 +32,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountCloudSID | string | The Azure AD security identifier of the account |
 | AccountCreationTime | datetime | The date the user account was created (UTC) |
 | AccountDisplayName | string | The user account display name |
@@ -73,7 +75,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 | RiskState | string | Indication if the account is at risk now or if the risk was remediated |
 | SAMAccountName | string | The SAM account name of the account. |
 | ServicePrincipals | dynamic | Azure AD service principals that are owned by the user |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |
@@ -81,7 +83,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when the event was generated (UTC) |
 | Type | string | The name of the table |
-| UACFlags | string | User Access control flags from AD &amp; AAD |
+| UACFlags | string | User Access control flags from AD & AAD |
 | UserAccountControl | dynamic | Security attributes of the user account in the AD domain |
 | UserState | string | The current state in AAD of the account (Active/Disabled/Dormant/Lockout) |
 | UserStateChangedOn | datetime | Date of the last time the account state was changed (UTC) |
@@ -92,6 +94,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
+- [IdentityInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table)
 
 ## Solutions (19)
 
@@ -119,7 +122,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (52)
+## Content Items Using This Table (41)
 
 ### Analytic Rules (13)
 
@@ -171,7 +174,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [[Entra ID] Authentication Method Changed for Privileged Account](../content/edcrule-[entra-id]-authentication-method-changed-for-privileged-account-9f7197b6-eeb2-46f3-83b1-a2c4dfca46a0-e18c8380.md) |  |
 
-### Hunting Queries (30)
+### Hunting Queries (19)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -225,17 +228,6 @@ This table is used by the following solutions:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [AI Agents - Hard-coded credentials in Tools or Configuration](../content/github-only-ai-agents-hard-coded-credentials-in-tools-or-configuration-fdc8a7ec-586d-4021-a78a-d27544986178-72f83c28.md) |  |
-| [AI Agents - Instructions changed on previously published agent](../content/github-only-ai-agents-instructions-changed-on-previously-published-agent-662eae7f-494f-41a8-bfef-23dd80361795-0e3ddc5d.md) |  |
-| [AI Agents - MCP Tool Configured](../content/github-only-ai-agents-mcp-tool-configured-a4e48491-6ed6-4064-bac2-385ef0e41afe-23c69432.md) |  |
-| [AI Agents - Missing Tools in Instructions](../content/github-only-ai-agents-missing-tools-in-instructions-4bfbe654-d961-4712-b2a3-f1fd7eaa9da3-521dd75d.md) |  |
-| [AI Agents - Newly observed MCP server on existing agent](../content/github-only-ai-agents-newly-observed-mcp-server-on-existing-agent-d6ab015a-0a76-47f4-959f-54f49edff3f3-e81d92fe.md) |  |
-| [AI Agents - Organization-wide Shared](../content/github-only-ai-agents-organization-wide-shared-8a53cf8e-04b1-4de6-95f2-916cc7c2b805-ad09cc30.md) |  |
-| [AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-47ea3b0e-bedd-4fde-bda9-86aa76684a9b-ab0c6f59.md) |  |
-| [AI Agents - Owner added to MCP-enabled agent](../content/github-only-ai-agents-owner-added-to-mcp-enabled-agent-c35b5a60-71ee-448c-935d-f60f4a4c7f2b-e01a6f5e.md) |  |
-| [AI Agents - Published Agents with Short Instructions](../content/github-only-ai-agents-published-agents-with-short-instructions-2f1f88de-d79f-44bf-96d0-52fd9cbf49c4-ffe6a11f.md) |  |
-| [AI Agents - Published Agents without Instructions](../content/github-only-ai-agents-published-agents-without-instructions-d51077dc-2a79-45e2-a036-503d74c85111-be5d96d1.md) |  |
-| [AI Agents - Sharing expanded to organization-wide](../content/github-only-ai-agents-sharing-expanded-to-organization-wide-dbdba9cc-d7a0-434d-9c3d-82d2203a79fd-db1de9a8.md) |  |
 | [User not covered under display name impersonation](../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.md) |  |
 
 ### Workbooks (9)

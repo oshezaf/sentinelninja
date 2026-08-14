@@ -11,7 +11,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -22,60 +21,49 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (48 columns)
+## Schema (37 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightEvents_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| action_s | string |
-| class_s | string |
+| action | string |
+| actor_name | string |
 | Computer | string |
-| confidenceLevel_s | string |
-| detected_s | string |
-| deviceCountry_s | string |
-| deviceIp_s | string |
-| deviceName_g | string |
-| deviceName_s | string |
-| deviceRegion_s | string |
-| dhcpFingerprint_s | string |
-| dnsView_s | string |
-| feed_s | string |
-| id_s | string |
-| InfobloxInsightfulID_s | string |
-| InfobloxInsightID_g | string |
-| InfobloxInsightLogType_s | string |
-| InsightID_g | string |
-| kind_s | string |
-| macAddress_s | string |
+| detected_at | string |
+| device_country | string |
+| device_ip | string |
+| device_name | string |
+| device_region | string |
+| dhcp_fingerprint | string |
+| dns_view | string |
+| feed | string |
+| indicator | string |
+| InfobloxInsightID | string |
+| InfobloxInsightLogType | string |
+| mac_address | string |
 | ManagementGroupName | string |
 | MG | string |
-| name_g | string |
-| osVersion_s | string |
-| policy_s | string |
-| properties_category_s | string |
-| properties_friendlyName_g | string |
-| properties_friendlyName_s | string |
-| properties_malwareName_s | string |
-| properties_objectGuid_g | string |
-| property_s | string |
-| query_s | string |
-| queryType_s | string |
+| os_version | string |
+| policy | string |
+| query | string |
+| query_type | string |
 | RawData | string |
-| response_s | string |
-| responseCountry_s | string |
-| responseRegion_s | string |
-| source_s | string |
+| response | string |
+| response_country | string |
+| response_region | string |
+| source | string |
 | SourceSystem | string |
+| tclass | string |
 | TenantId | string |
-| threatFamily_s | string |
-| threatIndicator_s | string |
-| threatLevel_s | string |
+| tfamily | string |
+| threat_confidence | string |
+| threat_level | string |
 | TimeGenerated | datetime |
+| tproperty | string |
 | Type | string |
-| type_s | string |
-| user_s | string |
+| user | string |
 
 ## Schema References
 
@@ -92,7 +80,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
 ### Workbooks (2)
 

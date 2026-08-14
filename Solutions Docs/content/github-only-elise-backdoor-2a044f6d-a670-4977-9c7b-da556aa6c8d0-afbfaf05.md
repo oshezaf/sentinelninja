@@ -6,7 +6,7 @@
 
 ---
 
-Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_elise.yml. Questions via Twitter: @janvonkirchheim.
+Original Sigma Rule: https://github.com/SigmaHQ/sigma/blob/master/rules-emerging-threats/2018/Malware/Elise-Backdoor/proc_creation_win_malware_elise.yml Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |
 |:----------|:------|

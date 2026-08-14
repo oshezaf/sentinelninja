@@ -6,15 +6,17 @@
 
 ---
 
-Reference for DeviceFileEvents table in Azure Monitor Logs.
+File creation, modification, and other file system events
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) |
 
 ## Contents
 
@@ -32,7 +34,7 @@ Reference for DeviceFileEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActionType | string | Type of activity that triggered the event. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity. |
@@ -91,7 +93,7 @@ Reference for DeviceFileEvents table in Azure Monitor Logs.
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
 | ShareName | string | Name of shared folder containing the file. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
@@ -101,6 +103,7 @@ Reference for DeviceFileEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceFileEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents)
+- [DeviceFileEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table)
 
 ## Solutions (15)
 
@@ -141,7 +144,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md) | `ActionType == "FileRenamed"`<br>`InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` |
-| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) |  |
+| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) | `ActionType in "FileCreated,FileModified"` |
 | [Ingress Tool Transfer - Certutil](../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.md) |  |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
@@ -154,7 +157,7 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) |  |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` |
@@ -204,7 +207,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Dropping Payload via certutil](../content/microsoft-defender-xdr-dropping-payload-via-certutil-4d11f63f-5b64-416e-8d77-266e4c6d382e-5c641ea8.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) |  |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [PrintNightmare CVE-2021-1675 usage Detection](../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.md) | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` |
@@ -229,11 +232,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
-| Workbook |
-|:-------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -253,11 +256,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AntivirusDetection,FileCreated,UsbDriveMounted"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
@@ -273,14 +276,16 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) | FileEvent | Microsoft 365 Defender for EndPoint |
 
-## Selection Criteria Summary (12 criteria, 13 total references)
+## Selection Criteria Summary (14 criteria, 16 total references)
 
-References by type: 0 connectors, 12 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 15 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType in "FileCreated,UsbDriveMounted"` | - | 2 | - | - | **2** |
 | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | - | 2 | - | - | **2** |
 | `ActionType == "FileRenamed"`<br>`InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `MD5 == "5"` | - | 1 | - | - | **1** |
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` | - | 1 | - | - | **1** |
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\"` | - | 1 | - | - | **1** |
@@ -289,25 +294,19 @@ References by type: 0 connectors, 12 content items, 1 ASIM parsers, 0 other pars
 | `FolderPath !endswith ".ini"`<br>`FolderPath !endswith ".js"`<br>`FolderPath !endswith ".json"`<br>`FolderPath !endswith ".log"`<br>`FolderPath !endswith ".tmp"`<br>`FolderPath !endswith ".vb"`<br>`FolderPath !endswith ".xml"`<br>`FolderPath has_any "\\wwwroot\\"`<br>`InitiatingProcessCommandLine contains "MSExchange"`<br>`InitiatingProcessFileName == "w3wp.exe"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileModified,FileRenamed"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "UMWorkerProcess.exe"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| `ActionType in "AntivirusDetection,FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
 | `FolderPath startswith "/"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **12** | **1** | **0** | **13** |
+| **Total** | **0** | **15** | **1** | **0** | **16** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 4 | - | - | **4** |
+| `FileCreated` | - | 8 | - | - | **8** |
 | `FileRenamed` | - | 3 | - | - | **3** |
-| `FileModified` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
+| `UsbDriveMounted` | - | 3 | - | - | **3** |
+| `FileModified` | - | 2 | - | - | **2** |
+| `AntivirusDetection` | - | 1 | - | - | **1** |
 
 ### FolderPath
 

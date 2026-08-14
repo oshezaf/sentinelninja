@@ -11,8 +11,8 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awswaf) |
@@ -33,7 +33,7 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | Action | string | The terminating action taken by AWS WAF (ALLOW, BLOCK, CAPTCHA, or Challenge). |
 | Args | string | The query string parameters of the request. |
 | CaptchaResponse | dynamic | Status of the CAPTCHA action for the request. |
@@ -58,7 +58,7 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | ResponseCodeSent | int | HTTP response code sent to the client. |
 | RuleGroupId | string | ID of the rule group that matched. |
 | RuleGroupList | dynamic | List of rule groups that acted on the request. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TerminatingRule | dynamic | The rule that terminated the request. If this is present, it contains action, ruleId, ruleMatchDetails, and any additional information provided for each rule varies according factors such as the rule configuration, rule match type, and details of the match. |
 | TerminatingRuleId | string | ID of the network rule that matched. |

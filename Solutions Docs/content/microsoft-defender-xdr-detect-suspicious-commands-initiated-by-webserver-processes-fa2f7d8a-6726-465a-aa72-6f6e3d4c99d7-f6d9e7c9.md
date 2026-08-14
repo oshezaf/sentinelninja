@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessFileName startswith "tomcat"`<br>`InitiatingProcessParentFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessParentFileName startswith "tomcat"`<br>`ProcessCommandLine contains "%temp%"`<br>`ProcessCommandLine has "certutil"`<br>`ProcessCommandLine has "ipconfig"`<br>`ProcessCommandLine has "ping"`<br>`ProcessCommandLine has "systeminfo"`<br>`ProcessCommandLine has "timeout"`<br>`ProcessCommandLine has "wget"`<br>`ProcessCommandLine has "whoami"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessFileName startswith "tomcat"`<br>`InitiatingProcessParentFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessParentFileName startswith "tomcat"`<br>`ProcessCommandLine contains "%temp%"`<br>`ProcessCommandLine has "certutil"`<br>`ProcessCommandLine has "ipconfig"`<br>`ProcessCommandLine has "ping"`<br>`ProcessCommandLine has "systeminfo"`<br>`ProcessCommandLine has "timeout"`<br>`ProcessCommandLine has "wget"`<br>`ProcessCommandLine has "whoami"` | ✓ | ✗ | ✓ |
 
 ---
 

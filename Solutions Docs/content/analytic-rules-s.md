@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**191 analytic rules** starting with 'S'.
+**193 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -148,6 +148,8 @@
 | [Sonrai Ticket Updated](sonraisecurity-sonrai-ticket-updated-af9b8eb1-a8ef-40aa-92a4-1fc73a1479c7-12412c0f.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [SpyCloud Enterprise Breach Detection](spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Enterprise Malware Detection](spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
+| [SpyCloud infostealer malware credential exposure](spycloud-enterprise-protection-ccf-spycloud-infostealer-malware-credential-exposure-ead4deed-9d48-4646-aee0-6b46c2dd1ae6-d71d624c.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
+| [SpyCloud plaintext credential exposure detected](spycloud-enterprise-protection-ccf-spycloud-plaintext-credential-exposure-detected-a25eba0e-ff42-4c97-a379-d76bdb2aa1e3-4042bb68.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [Squid proxy events for ToR proxies](syslog-squid-proxy-events-for-tor-proxies-90d3f6ec-80fb-48e0-9937-2c70c9df9bad-1bd82f05.md) | Low | 📦 [Syslog](../solutions/syslog.md) |
 | [Squid proxy events related to mining pools](syslog-squid-proxy-events-related-to-mining-pools-80733eb7-35b2-45b6-b2b8-3c51df258206-05fb1303.md) | Low | 📦 [Syslog](../solutions/syslog.md) |
 | [SSG_Security_Incidents](sinec-security-guard-ssg-security-incidents-d41fa731-45a2-4b23-bb1d-29896fbc5298-8490c938.md) | HIGH | 📦 [SINEC Security Guard](../solutions/sinec-security-guard.md) |

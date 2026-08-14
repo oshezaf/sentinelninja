@@ -11,9 +11,10 @@ Reference for AzureDevOpsAuditing table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | - |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing) |
 
 ## Contents
@@ -31,7 +32,7 @@ Reference for AzureDevOpsAuditing table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActivityId | string | Unique identifier for the action that occurred. |
 | ActorClientId | string | When the action was performed by a managed identity or other service principal, this value represents the client ID of that principal. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field is populated, ActorCUID and ActorUserId will both be 00000000-0000-0000-0000-000000000000. |
 | ActorCUID | string | When the action was performed by a user, this value represents a consistently unique identifier for that actor. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000. |
@@ -53,7 +54,7 @@ Reference for AzureDevOpsAuditing table in Azure Monitor Logs.
 | ScopeDisplayName | string | User friendly name for the scope level that an auditing event occurred at. |
 | ScopeId | string | The organization identifier. |
 | ScopeType | string | The level (scope) that the event occurred. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the auditing event occurred in UTC. |
 | Type | string | The name of the table |

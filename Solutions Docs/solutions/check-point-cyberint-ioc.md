@@ -1,4 +1,4 @@
-# Check Point External Risk Management for Microsoft Sentinel IOC
+# Check Point Exposure Management Threat Intelligence IoC for Microsoft Sentinel
 
 *Solution: Check Point Cyberint IOC*
 
@@ -19,9 +19,9 @@
 | **Version** | 3.0.4 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
-| **Last Updated** | 2026-04-21 |
+| **Last Updated** | 2026-08-06 |
 | **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-cyberint-ioc) · Popularity: 🔵 Medium (64%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-cyberint-ioc) · Popularity: 🟡 Low (31%) |
 
 Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline critical IOC and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Cyberint and Microsoft Sentinel customers can easily pull logs based on Cyberint's findings into Microsoft Sentinel platform.
 

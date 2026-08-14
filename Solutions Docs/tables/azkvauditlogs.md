@@ -11,9 +11,10 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit, Azure Resources |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs) |
 
 ## Contents
@@ -29,7 +30,7 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
@@ -37,7 +38,7 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | AppliedAssignmentId | string | AssignmentId that either granted or denied access as part of access check |
 | CallerIpAddress | string | IP address of the client that made the request |
 | CertificateIssuerProperties | dynamic | Information about certificate issuer properties including provider, id |
-| CertificatePolicyProperties | dynamic | Information about certificate policy properties including <code>keyproperties</code>, <code>secretproperties</code>, <code>issuerproperties</code> |
+| CertificatePolicyProperties | dynamic | Information about certificate policy properties includingkeyproperties,secretproperties,issuerproperties |
 | CertificateProperties | dynamic | Information about certificate audit properties including attributes, subject, hashing algorithm |
 | CertificateRequestProperties | dynamic | Boolean value indicating if certificate request operation was canceled |
 | ClientInfo | string | User agent information |
@@ -69,16 +70,16 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | SecretProperties | dynamic | Information about secret properties including type, attributes |
 | Sku | dynamic | Information about vault including family, name, and capacity |
 | SoftDeleteRetentionInDays | int | Specifies soft delete retention in days |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
-| StorageAccountProperties | dynamic | Information about storage account properties including <code>activekeyname</code>, <code>resourceid</code> |
-| StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties including <code>sastype</code>, <code>validityperiod</code> |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| StorageAccountProperties | dynamic | Information about storage account properties includingactivekeyname,resourceid |
+| StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties includingsastype,validityperiod |
 | SubnetId | string | Id of subnet if request comes from a known subnet |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when operation occurred. |
 | Tlsversion | string | Network crypto protocol |
 | TrustedService | string | Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service |
 | Type | string | The name of the table |
-| VaultProperties | dynamic | Detailed vault properties containing <code>accesspolicy</code>, <code>iprule</code>, <code>virtualnetwork</code> etc. |
+| VaultProperties | dynamic | Detailed vault properties containingaccesspolicy,iprule,virtualnetworketc. |
 
 ## Schema References
 

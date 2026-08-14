@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.panoraysapp.com/](https://support.panoraysapp.com/) |
 | **Categories** | Security - Vulnerability Management |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Panorays - support@panorays.com |
 | **First Published** | 2026-04-01 |
-| **Last Updated** | 2026-07-09 |
+| **Last Updated** | 2026-08-12 |
 | **Solution Folder** | [Panorays](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panorays.panorays-solution-for-azure-sentinel) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panorays.panorays-solution-for-azure-sentinel) · Popularity: 🔵 Medium (70%) |
 
 The [Panorays](https://panorays.com/) solution provides the capability to ingest company findings from the Panorays API into Microsoft Sentinel using the Codeless Connector Framework (CCF).
 
@@ -50,6 +50,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |------------|-------------------------------|--------------------|
+| 3.0.1      | 05-08-2026                    | Fixed offer name mismatch between Partner Center and SolutionMetadata.json.<br>Fixed dcrConfig parameter reference chain in mainTemplate.json.<br>Updated connector definition and poller config per Microsoft Support guidance.<br>Converted required field from string to boolean in connector validations.<br>Bumped package version to 3.0.1 per Partner Center versioning requirement. |
 | 3.0.0      | 03-03-2026                    | Includes all CCF connector definitions and configurations. |
 
 ---

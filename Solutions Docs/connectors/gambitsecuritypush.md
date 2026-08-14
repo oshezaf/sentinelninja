@@ -19,6 +19,7 @@
 | **CCF Configuration** | [GambitSecurity_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GambitSecurity/Data%20Connectors/GambitSecurity_ccf/GambitSecurity_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gambit-security-policy-issues-push) |
 
 The [Gambit Security](https://gambit.security/) connector provides the capability to push Gambit Security policy issues, enriched with resource, affected-system, and policy context, into Microsoft Sentinel.
 

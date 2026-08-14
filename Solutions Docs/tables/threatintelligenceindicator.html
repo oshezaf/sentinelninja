@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -88,7 +88,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">Action</td>
@@ -353,7 +353,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">Tags</td>
@@ -407,7 +407,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator">ThreatIntelligenceIndicator Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (23)</h2>
+<h2 id="solutions">Solutions (24)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a></li>
@@ -417,6 +417,7 @@
 <li><a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a></li>
 <li><a href="../solutions/gitlab.html">GitLab</a></li>
 <li><a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></li>
+<li><a href="../solutions/infoblox.html">Infoblox</a></li>
 <li><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></li>
 <li><a href="../solutions/lastpass-enterprise-activity-monitoring.html">Lastpass Enterprise Activity Monitoring</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
@@ -467,7 +468,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (92)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (93)</h2>
 <h3 id="analytic-rules">Analytic Rules (72)</h3>
 <p><strong>In solution <a href="../solutions/gitlab.html">GitLab</a>:</strong></p>
 <table>
@@ -888,7 +889,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (15)</h3>
+<h3 id="workbooks">Workbooks (16)</h3>
 <p><strong>In solution <a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a>:</strong> <code>SourceSystem == &quot;Cofense Intelligence&quot;</code></p>
 <table>
 <thead>
@@ -928,6 +929,21 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/infoblox.html">Infoblox</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/infoblox-infoblox-workbook-0b2c239e.html">Infoblox_Workbook</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -1123,14 +1139,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>SourceSystem !contains &quot;Luminar&quot;</code><br><code>SourceSystem contains &quot;Luminar&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1148,6 +1156,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SourceSystem !startswith &quot;Cofense :&quot;</code><br><code>SourceSystem startswith &quot;Cofense :&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1186,14 +1202,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>!contains Luminar</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1227,6 +1235,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>startswith Cofense :</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

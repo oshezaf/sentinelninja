@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ZeroFoxThreatIntelligence_Telegram_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Telegram/ZeroFoxThreatIntelligence_Telegram_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_Telegram_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Telegram/ZeroFoxThreatIntelligence_Telegram_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---telegram) |
 
 Collects telegram data from the [ZeroFox](https://www.zerofox.com/threat-intelligence/) API into Microsoft Sentinel.
 

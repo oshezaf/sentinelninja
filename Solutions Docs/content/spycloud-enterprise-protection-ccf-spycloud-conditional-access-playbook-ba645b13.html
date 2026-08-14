@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpyCloud Conditional Access Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spycloud-conditional-access-playbook">SpyCloud Conditional Access Playbook</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Spycloud Conditional access playbook</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/spycloud-enterprise-protection-ccf.html">SpyCloud Enterprise Protection CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_Conditional_Access_Playbook/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">7</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_Password_Latest</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_user_disable</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="office365"><a href="../logic-apps/managed-office365.html"><code>office365</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_an_email_-<em>to_manager</em></td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/Mail</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_User_Details</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}?$select=id,displayName,accountEnabled,lastPasswordChangeDateTime,userPrincipalName</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_user_to_Conditional_Access_Group</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/groups/@{parameters('Azure_CA_Group_Object_ID')}/members/$ref</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Disable_User</td>
+  <td style="text-align:left">PATCH</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Revoke_User_Sessions</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}/revokeSignInSessions</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Force_Password_Reset</td>
+  <td style="text-align:left">PATCH</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">GetAccessToken</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(variables('loginUrl'), parameters('TenantID'), '/oauth2/v2.0/token')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Log_ingestion</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@variables('log_ingestion_api')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_Conditional_Access_Playbook/readme.md">SpyCloud_Conditional_Access_Playbook/readme.md</a></em></p>
+</blockquote>
+<p>This playbook automates Azure AD / Entra ID identity response actions when SpyCloud breach data identifies compromised user credentials.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li>Account disablement</li>
+<li>Session revocation across all applications</li>
+<li>Forced password reset at next sign-in</li>
+<li>Conditional Access group membership enforcement</li>
+<li>Email notifications</li>
+<li>Execution log ingestion to <code>SpyCloud_ConditionalAccessLogsV2_CL</code></li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>App Registration with the Microsoft Graph permissions listed in the <a href="../../SpyCloud_Sentinel_Integration_Guide.html">Integration Guide</a>, Section 2.1</li>
+<li>DCR Immutable ID and DCE Logs Ingestion Endpoint URL for <code>SpyCloud_ConditionalAccessLogsV2_CL</code> (Section 2.2)</li>
+<li>Monitoring Metrics Publisher role assigned to the App Registration on that DCR</li>
+<li>Object ID of the Azure AD Conditional Access enforcement group (if using group membership actions)</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<ol>
+<li>In the Azure Portal, navigate to <strong>Deploy a custom template</strong></li>
+<li>Select this template (<code>azuredeploy.json</code>)</li>
+<li>Confirm Subscription, Resource Group, and Region</li>
+<li>Enter a value for <strong>PlaybookName</strong> (this is the only ARM deployment-time parameter)</li>
+<li>Click <strong>Review + Create</strong>, then <strong>Create</strong></li>
+<li>Authorize the <code>office365</code> and <code>azuresentinel</code> API connections created by the deployment</li>
+</ol>
+<h2 id="post-deployment-configuration">Post-deployment configuration</h2>
+<p>All other settings are <strong>workflow parameters</strong>, baked into the Logic App with default values. After the playbook is deployed, update them with your own values:</p>
+<ol>
+<li>Navigate to the Microsoft Sentinel workspace, open <strong>Automation</strong>, and select the <code>SpyCloud_Conditional_Access_Playbook</code> playbook — or go directly to the Logic App resource in the Azure Portal</li>
+<li>Open the Logic App and click <strong>Edit</strong> to open the workflow designer</li>
+<li>Open the <strong>Parameters</strong> section (in the designer toolbar, or under <strong>Development Tools → Workflow parameters</strong>)</li>
+<li>For each parameter listed below, enter the appropriate value for your environment</li>
+<li>Click <strong>Save</strong> to apply the changes to the playbook</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Notify_Users_Emails</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>Email address(es) for notifications, semicolon-separated</td>
+</tr>
+<tr>
+  <td>Force_Password_Reset_On_Next_SignIn</td>
+  <td>Bool</td>
+  <td>false</td>
+  <td>Forces password reset at next sign-in for affected users</td>
+</tr>
+<tr>
+  <td>Disable_User</td>
+  <td>Bool</td>
+  <td>false</td>
+  <td>Disables affected Azure AD user accounts</td>
+</tr>
+<tr>
+  <td>Add_User_To_Azure_CA_Group</td>
+  <td>Bool</td>
+  <td>false</td>
+  <td>Adds affected users to the Conditional Access enforcement group</td>
+</tr>
+<tr>
+  <td>Azure_CA_Group_Object_ID</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>Object ID of the Azure AD Conditional Access group</td>
+</tr>
+<tr>
+  <td>Revoke_User_Sessions</td>
+  <td>Bool</td>
+  <td>false</td>
+  <td>Revokes all active sign-in sessions for affected users</td>
+</tr>
+<tr>
+  <td>ClientID</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>App Registration Client ID</td>
+</tr>
+<tr>
+  <td>TenantID</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>Azure Tenant ID</td>
+</tr>
+<tr>
+  <td>ClientSecret</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>App Registration Client Secret</td>
+</tr>
+<tr>
+  <td>DCE_Endpoint</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>DCE Logs Ingestion Endpoint URL for CA logs</td>
+</tr>
+<tr>
+  <td>DCE_Immutable_ID</td>
+  <td>String</td>
+  <td>(empty)</td>
+  <td>DCR Immutable ID for <code>SpyCloud_ConditionalAccessLogsV2_CL</code></td>
+</tr>
+<tr>
+  <td>Custom_Table_Name</td>
+  <td>String</td>
+  <td>SpyCloud_ConditionalAccessLogsV2_CL</td>
+  <td>Custom Log Analytics table for playbook logs</td>
+</tr>
+</tbody>
+</table>
+<p>After saving workflow parameters, confirm <code>SpyCloud_Conditional_Access_Playbook</code> shows status <strong>Enabled</strong> and check Run History for immediate failures.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection-ccf.html">Back to SpyCloud Enterprise Protection CCF</a></p>
+
+</div>
+
+</body>
+</html>

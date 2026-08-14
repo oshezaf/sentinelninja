@@ -11,9 +11,10 @@ Reference for UCDeviceAlert table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | - |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucdevicealert) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -24,7 +25,7 @@ Reference for UCDeviceAlert table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AlertClassification | string | Whether this Alert is an Error, a Warning, or Informational. |
 | AlertData | string | An optional string formatted as a json payload containing metadata for the alert. |
 | AlertId | string | The unique identifier of this Alert. |
@@ -42,7 +43,7 @@ Reference for UCDeviceAlert table in Azure Monitor Logs.
 | Recommendation | string | A localized string translated from RecommendedAction, Message, and other fields (depending on source of Alert) that provides a recommended action. |
 | ResolvedTime | datetime | The time this alert was resolved, else empty. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StartTime | datetime | The time this alert was activated. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time at which this event is generated and logged. |

@@ -11,9 +11,10 @@ Reference for DnsAuditEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsauditevents) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -30,7 +31,7 @@ Reference for DnsAuditEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Action | string | If a query meets the criteria of a policy, the action is the response that the policy requires. |
@@ -112,7 +113,7 @@ Reference for DnsAuditEvents table in Azure Monitor Logs.
 | Setting | string | Specific DNS configuration setting modified by the event. |
 | SignatureInceptionOffset | int | Offset time for DNSSEC signature inception. Duration (e.g., seconds) or "Immediate" if no delay. |
 | Source | string | Source of the DNS event (e.g., server, client). |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StandbyKey | string | the backup key that will be used if the current active key is compromised or needs to be replaced in the DNS zone signing process. |
 | StoreKeysInAD | string | Specifies whether the keys are stored in Active Directory Domain Services (AD DS). This setting applies only to Active Directory-integrated zones when the vendor of KeyStorageProvider is Microsoft. |
 | SubTreeAging | string | Mechanism that affects the aging (expiration) of DNS records within a specific subtree or branch of a DNS zone. |

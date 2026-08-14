@@ -61,6 +61,10 @@
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
   <td style="text-align:left"><code>EdgeGrid</code>, <code>Paging</code></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#akamai-security-events-via-codeless-connector-framework">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The <a href="https://techdocs.akamai.com/siem-integration/docs">Akamai SIEM Connector</a> ingests web application firewall (WAF) security events from the <a href="https://techdocs.akamai.com/siem-integration/reference/get-config">Akamai SIEM Integration API</a> into Microsoft Sentinel. The connector collects detailed security event data including attack information, geographic context, and HTTP request/response metadata. Authentication uses Akamai EdgeGrid - provide your three EdgeGrid credentials (client_token, access_token, client_secret) plus the API hostname from your .edgerc file. The platform runtime computes a fresh HMAC-SHA-256 signed Authorization header on every poll request per the EdgeGrid specification.</p>

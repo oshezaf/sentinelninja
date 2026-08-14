@@ -16,14 +16,14 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.halcyon.ai](https://www.halcyon.ai) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.1.0 |
+| **Version** | 3.2.0 |
 | **Author** | Halcyon - support@halcyon.ai |
 | **First Published** | 2025-12-22 |
 | **Last Updated** | 2026-06-26 |
 | **Solution Folder** | [Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/halcyontech1743610828684.azure-sentinel-solution-halcyon) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/halcyontech1743610828684.azure-sentinel-solution-halcyon) · Popularity: 🟢 High (85%) |
 
-The [Halcyon](https://www.halcyon.ai) solution for Microsoft Sentinel enables you to ingest Halcyon Events and Alerts into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
+The [Halcyon](https://www.halcyon.ai) solution for Microsoft Sentinel enables you to ingest Halcyon Events and Alert Updates into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 
 **Underlying Microsoft Technologies used:**
 

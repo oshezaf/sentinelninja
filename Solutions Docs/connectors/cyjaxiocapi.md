@@ -42,7 +42,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "Cyjax-IOCs"` | ✓ | ✓ | ✗ |
-| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -124,7 +124,7 @@ Use this method for automated deployment of the Cyjax IOC Data Connector.
 
 1. Click the **Deploy to Azure** button below.
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-CyjaxIOC-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-CyjaxIOC-azuredeploy-gov)
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-CyjaxIOC-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinel-CyjaxIOC-azuredeploy-gov)
 2. Select the preferred **Subscription**, **Resource Group** and **Region**.
 3. Enter the below information:
 

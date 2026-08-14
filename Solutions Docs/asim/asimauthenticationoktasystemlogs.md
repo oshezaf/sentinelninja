@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OktaSystemLogs`](../tables/oktasystemlogs.md) | ✓ | ✗ | ? |
+| [`OktaSystemLogs`](../tables/oktasystemlogs.md) | ✓ | ✗ | ✓ |
 
 ## Parameters
 

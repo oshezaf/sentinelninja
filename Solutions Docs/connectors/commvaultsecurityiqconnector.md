@@ -19,6 +19,7 @@
 | **CCF Configuration** | [CommvaultSecurityIQ_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/Data%20Connectors/CommvaultSecurityIQ_CCF/CommvaultSecurityIQ_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#commvault-security-iq-via-codeless-connector-framework) |
 
 The Commvault Security IQ data connector ingests anomaly detection events from Commvault environments into Microsoft Sentinel, enabling detection and response for threats targeting backup infrastructure such as ransomware and suspicious file operations. Events are stored in the `CommvaultAlertsCCF_CL` table.
 

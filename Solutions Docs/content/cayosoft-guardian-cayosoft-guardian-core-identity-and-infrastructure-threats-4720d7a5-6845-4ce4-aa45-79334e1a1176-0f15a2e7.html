@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cayosoft Guardian - Core Identity and Infrastructure Threats &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cayosoft-guardian---core-identity-and-infrastructure-threats">Cayosoft Guardian - Core Identity and Infrastructure Threats</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Creates Microsoft Sentinel incidents for identity and infrastructure security threats reported by Cayosoft Guardian across on-premises Active Directory and Microsoft Entra ID. This includes threats related to accounts, service accounts, computers, security groups, and trusted domains. Incident severity is determined dynamically based on the severity of the detected threat.  This rule complements the Cloud Application Security Threats rule, which covers cloud application and service principal thr</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Analytic Rule</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/cayosoft-guardian.html">Cayosoft Guardian</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>4720d7a5-6845-4ce4-aa45-79334e1a1176</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Severity</strong></td>
+  <td style="text-align:left">Medium</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Status</strong></td>
+  <td style="text-align:left">Available</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Kind</strong></td>
+  <td style="text-align:left">Scheduled</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/cayosoftguardianconnector.html">CayosoftGuardianConnector</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cayosoft%20Guardian/Analytic%20Rules/CayosoftGuardian-MainRule.yaml">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/cayosoftthreatalerts-cl.html"><code>CayosoftThreatAlerts_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/cayosoft-guardian.html">Back to Cayosoft Guardian</a></p>
+
+</div>
+
+</body>
+</html>

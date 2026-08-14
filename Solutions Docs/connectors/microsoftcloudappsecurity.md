@@ -41,7 +41,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | ? |
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CitrixDaaS_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20DaaS/Data%20Connectors/CitrixDaaS_CCF/CitrixDaaS_DCR.json) |
 | **CCF Configuration** | [CitrixDaaS_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20DaaS/Data%20Connectors/CitrixDaaS_CCF/CitrixDaaS_PollingConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#citrix-daas-audit--sessions-via-codeless-connector-framework) |
 
 Ingest configuration audit logs and session activity from Citrix DaaS (Citrix Virtual Apps and Desktops service). Provides audit trails for security investigations, compliance monitoring, and operational troubleshooting.
 

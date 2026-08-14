@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType == "LogOn"` | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType == "LogOn"` | ✓ | ✗ | ✗ |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ---

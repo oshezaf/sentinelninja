@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,IT Operations |
-| **Version** | 3.1.0 |
+| **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |
+| **Last Updated** | 2026-07-07 |
 | **Solution Folder** | [Mulesoft](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mulesoft) · Popularity: 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mulesoft) · Popularity: 🟢 High (85%) |
 
 The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration) solution provides the capability to ingest logs from Cloudhub applications into Microsoft Sentinel. This solution includes two data connector options: an Azure Function-based connector using the Cloudhub API, and a push-based CCF connector that receives logs directly via Log4j HTTP appender as recommended by MuleSoft.
 
@@ -35,10 +36,6 @@ c. [Data Collection Rules (DCR)](https://docs.microsoft.com/azure/azure-monitor/
 d. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
 
 e. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-**Data Connectors:** 2, **Parsers:** 1
-
-[Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
 
 ## Contents
 

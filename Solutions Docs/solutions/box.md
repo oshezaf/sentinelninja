@@ -16,9 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Storage,Application |
-| **Version** | 3.1.4 |
+| **Version** | 3.1.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
+| **Last Updated** | 2026-08-13 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-box) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (64%) |
 
@@ -117,6 +118,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.1.6       | 11-08-2026                     | Added top-level action_by ingestion and exposed recorded_at through the parser. |
 | 3.1.5       | 09-07-2026                     | Updated **Parser** and **CCF Data Connector** DCR. |
 | 3.1.4       | 13-04-2026                     | Deprecate Box Events (using Azure Function) |
 | 3.1.3       | 24-03-2026                     | Rename to Box Events (via Codeless Connector Framework) |

@@ -11,9 +11,10 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimfileeventlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -27,16 +28,17 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (128 columns)
+## Schema (138 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimfileeventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActingApplicationEntityKey | string | The entity key associated with the acting application. |
 | ActingProcessCommandLine | string | The command line used to run the acting process. |
 | ActingProcessGuid | string | A generated unique identifier (GUID) of the acting process. |
 | ActingProcessId | string | The process ID (PID) of the acting process. |
@@ -46,17 +48,21 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | ActorScopeId | string | The scope ID, such as Azure AD Directory ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the login session of the Actor. |
 | ActorUserAadId | string | The Azure Active Directory ID of the actor. |
+| ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
+| ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | ActorUserIdType | string | The type of the ID stored in the ActorUserId field. |
 | ActorUsername | string | The Actor username, including domain information when available. |
 | ActorUsernameType | string | Specifies the type of the user name stored in the ActorUsername field. |
 | ActorUserSid | string | The Windows user ID (SIDs) of the actor. |
 | ActorUserType | string | The type of actor. |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DvcAction | string | The action taken on the web session. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. Valid values include 'Windows' and 'FQDN'. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -96,7 +102,7 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | NetworkApplicationProtocol | string | When the operation is initiated by a remote system, the application layer protocol used by the connection or session. |
 | RuleName | string | The name or ID of the rule by associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the device. |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |
@@ -107,6 +113,7 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | SrcDvcScopeId | string | The cloud platform scope ID the device belongs to. |
 | SrcFileCreationTime | datetime | The time at which the source file was created. |
 | SrcFileDirectory | string | The source file folder or location. |
+| SrcFileEntityKey | string | The entity key associated with the source file. |
 | SrcFileExtension | string | The source file extension. |
 | SrcFileMD5 | string | The MD5 hash of the source file. |
 | SrcFileMimeType | string | The Mime or Media type of the source file. |
@@ -128,12 +135,16 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | SrcMacAddr | string | The MAC address of the source device. |
 | SrcOriginalRiskLevel | string | The risk level associated with the source. As reported by the reporting device or enriched. |
 | SrcPortNumber | int | When the operation is initiated by a remote system, the port number from which the connection was initiated. |
+| SrcProcessEntityKey | string | The entity key associated with the source process. |
 | SrcRiskLevel | int | The risk level associated with the source. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
 | TargetAppId | string | The ID of the destination application, as reported by the reporting device. |
+| TargetApplicationEntityKey | string | The entity key associated with the target application. |
 | TargetAppName | string | The name of the destination application. |
 | TargetAppType | string | The type of the destination application. |
 | TargetFileCreationTime | datetime | The time at which the target file was created. |
 | TargetFileDirectory | string | The target file folder or location. |
+| TargetFileEntityKey | string | The entity key associated with the target file. |
 | TargetFileExtension | string | The target file extension. |
 | TargetFileMD5 | string | The MD5 hash of the target file. |
 | TargetFileMimeType | string | The Mime or Media type of the target file. |

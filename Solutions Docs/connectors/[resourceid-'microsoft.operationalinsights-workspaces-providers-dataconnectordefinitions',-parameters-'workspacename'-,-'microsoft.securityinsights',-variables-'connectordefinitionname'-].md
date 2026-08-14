@@ -22,6 +22,7 @@
 | **DCR Definition Files** | [PanoraysSelfFindings_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays/Data%20Connectors/PanoraysSelfFindings_ccf/PanoraysSelfFindings_DCR.json) |
 | **CCF Configuration** | [PanoraysSelfFindings_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays/Data%20Connectors/PanoraysSelfFindings_ccf/PanoraysSelfFindings_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#panorays) |
 
 Manually deployed Panorays Connector for testing.
 

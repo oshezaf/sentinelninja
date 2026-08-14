@@ -35,7 +35,7 @@ This connector ingests data into the following tables:
 ## Permissions
 
 **Resource Provider Permissions:**
-- **Workspace** (Workspace): Read, Write, and Delete permissions are required.
+- **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
 - **Salesforce Event Monitoring API access**: Access to the Salesforce Event Monitoring API through a Connected App is required.

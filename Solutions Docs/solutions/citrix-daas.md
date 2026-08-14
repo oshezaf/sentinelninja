@@ -21,7 +21,7 @@
 | **First Published** | 2026-07-23 |
 | **Last Updated** | 2026-07-30 |
 | **Solution Folder** | [Citrix DaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20DaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-citrixdaas) · Popularity: 🟡 Low (43%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-citrixdaas) · Popularity: 🔵 Medium (73%) |
 
 The Citrix DaaS solution for Microsoft Sentinel provides the capability to ingest configuration audit logs and session activity from [Citrix DaaS](https://www.citrix.com/products/citrix-daas/) (Citrix Virtual Apps and Desktops service) into Microsoft Sentinel using the [Citrix CVAD Manage REST APIs](https://developer.cloud.com/citrixworkspace/citrix-daas/citrix-virtual-apps-and-desktops-service-apis/docs/overview). It provides audit trails for security investigations, compliance monitoring, and operational troubleshooting. Multiple Citrix tenants can be connected from a single data connector, with each record tagged with its Citrix Customer ID for multi-tenant differentiation.
 

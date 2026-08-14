@@ -11,8 +11,10 @@ Reference for DHWipAppLearning table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Desktop Analytics |
-| **Basic Logs Eligible** | ✗ No |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhwipapplearning) |
 
 ## Schema (13 columns)
@@ -22,7 +24,7 @@ Reference for DHWipAppLearning table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AppName | string |  |
 | Computer | string |  |
 | ComputerID | string |  |

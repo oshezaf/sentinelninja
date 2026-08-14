@@ -17,9 +17,9 @@
 | **Version** | 3.0.1 |
 | **Author** | BlueVoyant - soc@bluevoyant.com |
 | **First Published** | 2026-06-09 |
-| **Last Updated** | 2026-06-30 |
+| **Last Updated** | 2026-08-03 |
 | **Solution Folder** | [BlueVoyant Anthropic ClaudeCompliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance) · Popularity: 🔵 Medium (78%) |
 
 The BlueVoyant Anthropic Claude Compliance solution for Microsoft Sentinel ingests compliance activity data from the Anthropic Claude Compliance API into your workspace. Using a Codeless Connector Framework (CCF) data connector, it continuously collects compliance events into the BV_ClaudeCompliance_ComplianceActivities_CL table for monitoring, hunting, and detection.
 

@@ -11,9 +11,10 @@ Reference for UCClient table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | - |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclient) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -24,7 +25,7 @@ Reference for UCClient table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AzureADDeviceId | string | A GUID corresponding to the AAD Tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD Device ID. |
 | City | string | The last-reported location of device (city), based on IP address. |
@@ -60,24 +61,24 @@ Reference for UCClient table in Azure Monitor Logs.
 | OSVersion | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | PrimaryDiskFreeCapacityMb | int | Free disk capacity of the primary disk in Megabytes. |
 | SCCMClientId | string | A GUID corresponding to the SCCM Client ID on the device. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the snapshot generated this specific record. |
 | Type | string | The name of the table |
 | UpdateConnectivityLevel | string | Whether or not this device is maintaining a sufficiently cumulative and continuous connection to Windows Update so the update can progress optimally. |
-| WUAutomaticUpdates | int | CSP: AllowAutoUpdate &amp;'AuOptions' Enables the IT admin to manage automatic update behavior to scan, download, and install updates. |
+| WUAutomaticUpdates | int | CSP: AllowAutoUpdate &'AuOptions' Enables the IT admin to manage automatic update behavior to scan, download, and install updates. |
 | WUDeadlineNoAutoRestart | int | CSP:ConfigureDeadlineNoAutoReboot. Devices will not automatically restart outside of active hours until the deadline is reached, 1 - Enabled 0 (default) - Disabled |
 | WUDODownloadMode | string | The WU DO DownloadMode configuration, brought over from Update Compliance. |
-| WUFeatureDeadlineDays | int | CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the deadline in days. |
-| WUFeatureDeferralDays | int | CSP: DeferFeatureUpdates. The WU Feature Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the policy setting. |
+| WUFeatureDeadlineDays | int | CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
+| WUFeatureDeferralDays | int | CSP: DeferFeatureUpdates. The WU Feature Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the policy setting. |
 | WUFeatureGracePeriodDays | int | The WU grace period for feature update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days. |
 | WUFeaturePauseEndTime | datetime | CSP:PauseFEatureUpdatesEndTime The time WU Feature Update Pause will end, if activated, else null. |
 | WUFeaturePauseStartTime | datetime | CSP: PauseFeatureUpdatesStartTime. The time WU Feature Update Pause was activated, if activated, else null.eature Updates will be paused for 35 days from the specified start date. |
 | WUFeaturePauseState | string | Indicates pause status of device for FU, possible values are Paused, NotPaused, NotConfigured. |
 | WUNotificationLevel | int | CSP: UpdateNotificationLevel. This policy allows you to define what Windows Update notifications users see. 0 (default) Use the default Windows Update notifications. 1 Turn off all notifications, excluding restart warnings. 2 Turn off all notifications, including restart warnings |
 | WUPauseUXDisabled | int | CSP: SetDisablePauseUXAccess. This policy allows the IT admin to disable the Pause Updates feature. When this policy is enabled, the user cannot access the Pause updates" feature. Supported values 0, 1. |
-| WUQualityDeadlineDays | int | CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the deadline in days. |
-| WUQualityDeferralDays | int | CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values &gt;0 indicate the policy setting. |
+| WUQualityDeadlineDays | int | CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
+| WUQualityDeferralDays | int | CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the policy setting. |
 | WUQualityGracePeriodDays | int | The WU grace period for quality update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the Grace Period in days. |
 | WUQualityPauseEndTime | datetime | CSP:PauseQualityUpdatesEndTimeThe time WU Quality Update Pause will end, if activated, else null. |
 | WUQualityPauseStartTime | datetime | CSP:PauseQualityUpdatesStartTime The time WU Quality Update Pause was activated; if activated; else null. |

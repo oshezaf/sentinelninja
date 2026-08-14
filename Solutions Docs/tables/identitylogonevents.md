@@ -6,16 +6,17 @@
 
 ---
 
-Reference for IdentityLogonEvents table in Azure Monitor Logs.
+Authentication events on Active Directory and Microsoft online services
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitylogonevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitylogonevents-table) |
 
 ## Contents
 
@@ -32,7 +33,7 @@ Reference for IdentityLogonEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name of the account user displayed in the address book |
 | AccountDomain | string | Domain of the account |
 | AccountName | string | User name of the account |
@@ -57,7 +58,7 @@ Reference for IdentityLogonEvents table in Azure Monitor Logs.
 | Port | string | TCP port used during communication |
 | Protocol | string | Network protocol used |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetAccountDisplayName | string | Display name of the account that the recorded action was applied to |
 | TargetDeviceName | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | TenantId | string | The Log Analytics workspace ID |
@@ -70,6 +71,7 @@ Reference for IdentityLogonEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityLogonEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitylogonevents)
+- [IdentityLogonEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitylogonevents-table)
 
 ## Solutions (1)
 
@@ -107,7 +109,7 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`<br>`LogonType in "Credentials validation,Resource access"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `LogonType in "Credentials validation,Resource access"`
 
 | Workbook |
 |:-------------|
@@ -120,15 +122,14 @@ References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parse
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "LogonSuccess"`<br>`Protocol == "Kerberos"` | - | 2 | - | - | **2** |
-| `ActionType in "LogonFailed,LogonSuccess"`<br>`LogonType in "Credentials validation,Resource access"` | - | 1 | - | - | **1** |
+| `LogonType in "Credentials validation,Resource access"` | - | 1 | - | - | **1** |
 | **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `LogonSuccess` | - | 3 | - | - | **3** |
-| `LogonFailed` | - | 1 | - | - | **1** |
+| `LogonSuccess` | - | 2 | - | - | **2** |
 
 ### LogonType
 

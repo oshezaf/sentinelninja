@@ -21,7 +21,7 @@
 | **First Published** | 2022-05-02 |
 | **Last Updated** | 2026-06-18 |
 | **Solution Folder** | [Azure Key Vault](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Key%20Vault) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekeyvault) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekeyvault) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
 
 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) Solution for Microsoft Sentinel enables you to stream Azure Key Vault diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances.
 
@@ -42,11 +42,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Key Vault](../connectors/azurekeyvault.md) | Analytics, Workbooks |
+| [`KeyVaults`](../tables/keyvaults.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -82,7 +83,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`KeyVaults`](../tables/keyvaults.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

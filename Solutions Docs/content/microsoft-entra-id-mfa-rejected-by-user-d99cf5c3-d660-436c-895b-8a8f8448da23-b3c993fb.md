@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ? |
-| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "500121"` | ✓ | ✗ | ✓ |
 
 ---

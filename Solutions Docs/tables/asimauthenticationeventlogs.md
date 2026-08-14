@@ -11,9 +11,10 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauthenticationeventlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -27,17 +28,18 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (131 columns)
+## Schema (141 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauthenticationeventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActingAppId | string | The ID of the application authorizing on behalf of the actor, including a process, browser, or service. |
+| ActingApplicationEntityKey | string | The entity key associated with the acting application. |
 | ActingAppName | string | The name of the application authorizing on behalf of the actor, including a process, browser, or service. |
 | ActingAppType | string | The type of acting application. |
 | ActingOriginalAppType | string | The acting application type as reported by the reporting device. |
@@ -45,16 +47,20 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the sign-in session of the Actor. |
+| ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
+| ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | ActorUserIdType | string | The type of the ID stored in the ActorUserId field. |
 | ActorUsername | string | The Actor's username, including domain information when available. |
 | ActorUsernameType | string | Specifies the type of the user name stored in the ActorUsername field. |
 | ActorUserType | string | The type of the Actor. |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -93,7 +99,7 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | LogonProtocol | string | The protocol used to perform authentication. |
 | RuleName | string | The name or ID of the rule associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the source device. |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |
@@ -115,7 +121,9 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | SrcOriginalRiskLevel | string | The risk level associaeted with the identified Source as reported by the reporting device. |
 | SrcPortNumber | int | The IP port from which the connection originated. |
 | SrcRiskLevel | int | The risk level associated with the identified Source. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
 | TargetAppId | string | The ID of the application to which the authorization is required, often assigned by the reporting device. |
+| TargetApplicationEntityKey | string | The entity key associated with the target application. |
 | TargetAppName | string | The name of the application to which the authorization is required, including a service, a URL, or a SaaS application. |
 | TargetAppType | string | The type of the application authorizing on behalf of the Actor. |
 | TargetDescription | string | A descriptive text associated with the target device. |
@@ -141,7 +149,10 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | TargetPortNumber | int | The port of the target device. |
 | TargetRiskLevel | int | The risk level associated with the target. |
 | TargetSessionId | string | The unique ID of the sign-in session of the Target actor. |
+| TargetSystemEntityKey | string | The entity key associated with the target system. |
 | TargetUrl | string | A URL associated with the target application. |
+| TargetUserAdditionalIds | dynamic | Additional identifiers associated with the target user. |
+| TargetUserEntityKey | string | The entity key associated with the target user. |
 | TargetUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | TargetUserIdType | string | The type of the ID stored in the TargetUserId field. |
 | TargetUsername | string | The Target actor's username, including domain information when available. |

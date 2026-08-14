@@ -1,4 +1,6 @@
-# Strider Shield
+# ⚠️ Strider Shield
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/StriderShield.svg" alt="" width="75" height="75">
 
@@ -18,7 +20,6 @@
 | **DCR Definition Files** | [StriderShield_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_DCR.json) |
 | **CCF Configuration** | [StriderShield_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2` |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#strider-shield) |
 
 The Strider Shield connector allows the user to ingest Strider Shield EmailAddresses, EmailDomains, RiskSignals, RiskSignalsDefinitions and Terms events into Microsoft Sentinel.
 

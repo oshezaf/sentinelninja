@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -89,7 +89,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -218,7 +218,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent">WindowsEvent Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (11)</h2>
+<h2 id="solutions">Solutions (10)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -227,7 +227,6 @@
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
 <li><a href="../solutions/sap-logserv.html">SAP LogServ</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></li>
@@ -254,8 +253,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (24)</h2>
-<h3 id="analytic-rules">Analytic Rules (14)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (23)</h2>
+<h3 id="analytic-rules">Analytic Rules (13)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -382,19 +381,6 @@
 <tr>
   <td style="text-align:left"><a href="../content/windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.html">Chia_Crypto_Mining IOC - June 2021</a></td>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Standalone Content:</strong> <code>EventID == &quot;4688&quot;</code></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.html">Silk Typhoon New UM Service Child Process</a></td>
 </tr>
 </tbody>
 </table>
@@ -580,8 +566,8 @@
 <ul>
 <li><code>microsoft.securityinsights/securityinsights</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (18 criteria, 21 total references)</h2>
-<p>References by type: 1 connectors, 8 content items, 12 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (18 criteria, 20 total references)</h2>
+<p>References by type: 1 connectors, 7 content items, 12 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -597,10 +583,10 @@
 <tr>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>EventID in &quot;12,13,4657&quot;</code></td>
@@ -741,10 +727,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
   <td style="text-align:center"><strong>12</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>21</strong></td>
+  <td style="text-align:center"><strong>20</strong></td>
 </tr>
 </tbody>
 </table>
@@ -787,10 +773,10 @@
 <tr>
   <td style="text-align:left"><code>4688</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>12</code></td>

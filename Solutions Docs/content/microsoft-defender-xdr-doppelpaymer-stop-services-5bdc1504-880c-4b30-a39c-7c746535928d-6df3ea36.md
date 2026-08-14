@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName startswith "psexe"`<br>`ProcessCommandLine has "msexchange"`<br>`ProcessCommandLine has "sql"`<br>`ProcessCommandLine has "stop-service"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName startswith "psexe"`<br>`ProcessCommandLine has "msexchange"`<br>`ProcessCommandLine has "sql"`<br>`ProcessCommandLine has "stop-service"` | ✓ | ✗ | ✓ |
 
 ---
 

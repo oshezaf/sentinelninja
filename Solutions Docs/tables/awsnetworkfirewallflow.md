@@ -11,8 +11,8 @@ Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsnetworkfirewallflow) |
@@ -32,7 +32,7 @@ Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | Ack | bool | Indicates whether the ACK flag is set in the TCP packet (true/false). |
 | AppProto | string | The application layer protocol detected (e.g., HTTP, HTTPS, DNS). |
 | AvailabilityZone | string | The AWS Availability Zone where the firewall instance is located. |
@@ -54,7 +54,7 @@ Reference for AWSNetworkFirewallFlow table in Azure Monitor Logs.
 | Proto | string | The protocol used (e.g., TCP, UDP, ICMP). |
 | Psh | bool | Indicates whether the PSH flag is set in the TCP packet (true/false). |
 | Rst | bool | Indicates whether the RST flag is set in the TCP packet (true/false). |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcIp | string | The source IP address of the packet that triggered the event. |
 | SrcPort | string | The source port from which the packet originated. |
 | Syn | bool | Indicates whether the SYN flag is set in the TCP packet (true/false). |

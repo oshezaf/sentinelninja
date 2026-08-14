@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ApiManagementGatewayMCPLog &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="apimanagementgatewaymcplog">ApiManagementGatewayMCPLog</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ApiManagementGatewayMCPLog table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaymcplog">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
+<h2 id="schema">Schema (26 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaymcplog">Azure Monitor documentation</a></p>
+<p>| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ApiType | string | Field denotes the specific API type used for the request, like passthrough or mcp backend. |
+| AuthenticationMethod | string | Field denotes the specific authentication method used for the request (e.g. oauth2 | api_key | cert | none). |
+| ClientName | string | Field denotes the specific client name who is making the request. |
+| ClientVersion | string | Field denotes the specific client version who is making the request. |
+| CorrelationId | string | Unique id corresponding with the same field in ApiManagementGatewayLogs. |
+| Error | string | Field denotes error message if any error occurred during the request. |
+| ErrorType | string | Field denotes error type if any error occurred during the request. |
+| McpServerEndpoint | string | Field denotes the specific endpoint of the MCP server. |
+| Method | string | Field denotes the specific tools call method used for the request (e.g. tools/call, notification). |
+| OperationName | string | Field denotes the specific name or identifier of the operation being performed. |
+| ProtocolVersion | string | Field denotes the specific version of the MCP server. |
+| Region | string | The field indicates the geographical location or data center region within the Azure cloud infrastructure where a specific resource or service is deployed. |
+| ServerName | string | Field denotes the mcp server name handling the request. |
+| ServerVersion | string | Field denotes the mcp server version handling the request. |
+| SessionId | string | Field denotes id from AI conversation / agent chat session. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Date and time when request processing started. |
+| ToolCount | int | Field denotes the number of MCP tools discovered by the client. |
+| ToolName | string | Field denotes the name of the MCP tool being used. |
+| TransportType | string | Field denotes the specific transport type used for the request, like SSE or Streamable HTTP. |
+| Type | string | The name of the table |</p>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaymcplog">ApiManagementGatewayMCPLog Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<h2 id="resource-types">Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.apimanagement/service</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+
+</body>
+</html>

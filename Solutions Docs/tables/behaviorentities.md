@@ -6,15 +6,17 @@
 
 ---
 
-Reference for BehaviorEntities table in Azure Monitor Logs.
+Entities (file, process, device, user, and others) that are involved in a behavior in Microsoft Defender for Cloud Apps (not available for GCC) and User and Entity Behavior Analytics (UEBA)
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behaviorentities) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-behaviorentities-table) |
 
 ## Schema (42 columns)
 
@@ -23,18 +25,18 @@ Reference for BehaviorEntities table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountObjectId | string | Unique identifier for the account in Azure AD. |
 | AccountSid | string | Security Identifier (SID) of the account. |
 | AccountUpn | string | User principal name (UPN) of the account. |
-| ActionType | string | Type of activity that triggered the event. Associated with specific MITRE ATT&amp;CK techniques. |
+| ActionType | string | Type of activity that triggered the event. Associated with specific MITRE ATT&CK techniques. |
 | AdditionalFields | string | Additional information about the entity or event. |
 | Application | string | Application that performed the recorded action. |
 | ApplicationId | string | Unique identifier for the application. |
 | BehaviorId | string | Unique identifier for the behavior. |
-| Categories | string | Types of threat indicator or breach activity identified by the alert. Defined by the MITRE ATT&amp;CK Matrix for Enterprise. |
+| Categories | string | Types of threat indicator or breach activity identified by the alert. Defined by the MITRE ATT&CK Matrix for Enterprise. |
 | DataSources | string | Products or services that provided information for the behavior. |
 | DetailedEntityRole | string | The role of the entity in the behavior |
 | DetectionSource | string | Detection technology or sensor that identified the notable component or activity. |
@@ -59,7 +61,7 @@ Reference for BehaviorEntities table in Azure Monitor Logs.
 | ServiceSource | string | Product or service that provided the alert information. |
 | SHA1 | string | SHA-1 hash of the file. Empty unless EntityType is "File" or "Process". |
 | SHA256 | string | SHA-256 of the file. Empty unless EntityType is "File" or "Process". |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatFamily | string | Malware family that the suspicious or malicious file or process has been classified under. |
 | TimeGenerated | datetime | Date and time when the record was generated. |
@@ -70,6 +72,7 @@ Reference for BehaviorEntities table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [BehaviorEntities Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behaviorentities)
+- [BehaviorEntities Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-behaviorentities-table)
 
 ---
 

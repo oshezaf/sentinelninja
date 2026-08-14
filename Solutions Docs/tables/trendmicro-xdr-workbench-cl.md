@@ -20,6 +20,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (20 columns)
 
@@ -87,6 +88,14 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview-d7791cc7.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [TrendAIWorkbench_Complete](../parsers/trendaiworkbench-complete.md) | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |  |
 
 ---
 

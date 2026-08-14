@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrendAIXDRWORKBENCHV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="trendai_xdr_workbench_v2_cl">TrendAI_XDR_WORKBENCH_V2_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (56 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29%5CData%20Connectors%5CTrendAIVisionOneWorkbench_ccp/TrendAIVisionOneWorkbench_table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">accountCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">alertProvider_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Product that generated the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">alertStatus_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Alert status (e.g. new, in_progress, resolved).</td>
+</tr>
+<tr>
+  <td style="text-align:left">alertTriggerTimestamp_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudIdentityCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudWorkloadCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">containerCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">createdTime_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the alert was created.</td>
+</tr>
+<tr>
+  <td style="text-align:left">description_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Human-readable description of the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">desktopCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DomainName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted domain IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">emailAddressCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">entities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Impacted entities array.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileDirectory_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted file path IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileHashValue_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted file hash IOC (SHA1/SHA256/MD5).</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted file name IOC (populated by parser).</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostHostName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Impacted host name (populated by parser).</td>
+</tr>
+<tr>
+  <td style="text-align:left">impactScope_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">impactScope_Summary_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">incidentId_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">indicators</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Indicators array (IOC objects with type and value).</td>
+</tr>
+<tr>
+  <td style="text-align:left">indicators_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Serialized indicators array for legacy compatibility.</td>
+</tr>
+<tr>
+  <td style="text-align:left">investigationResult_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">investigationStatus_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current investigation status of the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted IP address IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MailboxPrimaryAddress_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Impacted mailbox email address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MalwareName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted malware/detection name IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">matchedRules</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Matched detection rules array.</td>
+</tr>
+<tr>
+  <td style="text-align:left">matchedRules_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">MG</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">model_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Detection model name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">modelId_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">modelId_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Detection model identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">modelType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">priorityScore_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Priority score (0-100).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessCommandLine_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted process command line IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RawData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Raw indicators JSON string for fallback parsing.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RegistryKey_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted registry key IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RegistryValue_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted registry value data IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RegistryValueName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted registry value name IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">schemaVersion_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">serverCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">severity_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Alert severity: low, medium, high, or critical.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) when the alert was created.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updatedTime_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the alert was last updated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">URL_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted URL IOC.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAccountName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted username from impacted account entity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAccountNTDomain_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Extracted NT domain from impacted account entity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">workbenchCompleteTimestamp_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">workbenchId_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique Workbench alert identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">workbenchLink_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Deep link to the Workbench alert in the Vision One console.</td>
+</tr>
+<tr>
+  <td style="text-align:left">workbenchName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of the Workbench alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">xdrCustomerID_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/trendaivisiononeworkbench.html">TrendAI Vision One™ - Workbench Alerts (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>In solution <a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/trendai-vision-one-ccf-trendai-vision-one-create-incident-for-workbench-alerts-2f668615-c372-4673-a5cd-773e4da715b9-1df6fda9.html">TrendAI Vision One - Create Incident for Workbench Alerts</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/trendai-vision-one-ccf-trendaivisiononeworkbenchoverview-7ffcf600.html">TrendAIVisionOneWorkbenchOverview</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/trendaiworkbench-complete.html">TrendAIWorkbench_Complete</a></td>
+  <td style="text-align:left"><a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

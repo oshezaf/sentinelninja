@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
 | **Categories** | Networking,Security - Threat Protection,Security - Network,Security - Threat Intelligence |
-| **Version** | 3.0.2 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-03-06 |
 | **Solution Folder** | [Infoblox SOC Insights](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights) |
@@ -71,16 +71,13 @@ The following **7 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md), [Infoblox SOC Insights (via Codeless Connector Framework)](../connectors/infobloxsocinsightsconnector.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

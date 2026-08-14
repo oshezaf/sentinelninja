@@ -107,17 +107,17 @@
 <blockquote>
 <p><strong>NOTE:</strong> This connector uses Codeless Connector Framework (CCF) to connect to the RSA ID Plus Cloud Admin APIs to pull logs into Microsoft Sentinel.</p>
 </blockquote>
-<p><strong>1. **STEP 1</strong> - Create Legacy Admin API Client in Cloud Admin Console.**</p>
+<p><strong>1. <strong>STEP 1</strong> - Create Legacy Admin API Client in Cloud Admin Console.</strong></p>
 <p>Follow steps mentioned in this <a href="https://community.rsa.com/s/article/Manage-Legacy-Clients-API-Keys-a89c9cbc#">page</a>.</p>
-<p><strong>2. **STEP 2</strong> - Generate the Base64URL encoded JWT Token.**</p>
+<p><strong>2. <strong>STEP 2</strong> - Generate the Base64URL encoded JWT Token.</strong></p>
 <p>Follow the steps mentioned in this <a href="https://community.rsa.com/s/article/Authentication-for-the-Cloud-Administration-APIs-a04e3fb9">page</a> under the header 'Legacy Administration API'.</p>
-<p><strong>3. **STEP 3</strong> - Configure the Cloud Admin API to start ingesting Admin event logs into Microsoft Sentinel.**</p>
+<p><strong>3. <strong>STEP 3</strong> - Configure the Cloud Admin API to start ingesting Admin event logs into Microsoft Sentinel.</strong></p>
 <p>Provide the required values below:</p>
 <ul>
 <li><strong>Admin API URL</strong>: https://<tenantName>.access.securid.com/AdminInterface/restapi/v1/adminlog/exportLogs</li>
 <li><strong>JWT Token</strong>: (password field)</li>
 </ul>
-<p><strong>4. **STEP 4</strong> - Click Connect**</p>
+<p><strong>4. <strong>STEP 4</strong> - Click Connect</strong></p>
 <p>Verify all the fields above were filled in correctly. Press Connect to start the connector.</p>
 <ul>
 <li>Click 'Connect' to establish connection</li>

@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**898 playbooks** across all Microsoft Sentinel solutions.
+**901 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -544,9 +544,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Infoblox-Get-IP-Space-Data](infoblox-infoblox-get-ip-space-data-9ff604c0.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-Get-Service-Name](infoblox-infoblox-get-service-name-0adc147e.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-IPAM-Lookup](infoblox-infoblox-ipam-lookup-794a7a4f.md) | 📦 [Infoblox](../solutions/infoblox.md) |
-| [Infoblox-SOC-Get-Insight-Details](infoblox-infoblox-soc-get-insight-details-7be7a13e.md) | 📦 [Infoblox](../solutions/infoblox.md) |
-| [Infoblox-SOC-Get-Open-Insights-API](infoblox-infoblox-soc-get-open-insights-api-5c2cae50.md) | 📦 [Infoblox](../solutions/infoblox.md) |
-| [Infoblox-SOC-Import-Indicators-TI](infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.md) | 📦 [Infoblox](../solutions/infoblox.md) |
+| [Infoblox-IQ-for-TD-Get-Insight-Details-API](infoblox-infoblox-iq-for-td-get-insight-details-api-1bdff011.md) | 📦 [Infoblox](../solutions/infoblox.md) |
+| [Infoblox-IQ-for-TD-Get-Insights-API](infoblox-infoblox-iq-for-td-get-insights-api-6d522794.md) | 📦 [Infoblox](../solutions/infoblox.md) |
+| [Infoblox-IQ-for-TD-Import-Indicators-TI](infoblox-infoblox-iq-for-td-import-indicators-ti-4737c54d.md) | 📦 [Infoblox](../solutions/infoblox.md) |
+| [Infoblox-IQ-for-TD-Take-Action-API](infoblox-infoblox-iq-for-td-take-action-api-5af3c01a.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-TIDE-Lookup](infoblox-infoblox-tide-lookup-c25e9a83.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-TIDE-Lookup-Comment-Enrichment](infoblox-infoblox-tide-lookup-comment-enrichment-2943be82.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-TIDE-Lookup-Via-Incident](infoblox-infoblox-tide-lookup-via-incident-90b154ca.md) | 📦 [Infoblox](../solutions/infoblox.md) |
@@ -879,8 +880,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [spur_alert](standalone-content-spur-alert-3028854a.md) | 📄 Standalone Content |
 | [spur_alert](standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone Content |
 | [SpyCloud Breach Information - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
+| [SpyCloud Conditional Access Playbook](spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [SpyCloud Malware Information - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Watachlist data - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
+| [SpyCloud_MDE_Automation](spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone Content |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone Content |
 | [StealthTalk - Alert to Microsoft Teams](stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |

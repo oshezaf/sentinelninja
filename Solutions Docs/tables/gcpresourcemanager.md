@@ -11,8 +11,8 @@ Reference for GCPResourceManager table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | GCP |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpresourcemanager) |
@@ -32,7 +32,7 @@ Reference for GCPResourceManager table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AuthenticationInfoPrincipalEmail | string | The email address of the authenticated principal making the request. |
 | AuthenticationInfoPrincipalSubject | string | The unique subject identifier for the principal (useful for federated identities). |
 | AuthenticationInfoServiceAccountKeyName | string | The resource name of the service account key used to authenticate the request. |
@@ -123,7 +123,7 @@ Reference for GCPResourceManager table in Azure Monitor Logs.
 | ServiceDataType | string | The type of service-specific data returned in the response. |
 | ServiceName | string | The name of the GCP service handling the request (e.g., cloudresourcemanager.googleapis.com). |
 | Severity | string | Log level indicating the severity of the event (e.g., INFO, ERROR). |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Status | string | The status of the request, including error codes and messages if the operation failed. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the log entry was received by logging. |

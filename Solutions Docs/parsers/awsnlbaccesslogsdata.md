@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AWSNLBAccessLogs`](../tables/awsnlbaccesslogs.md) | ✓ | ✓ | ? |
+| [`AWSNLBAccessLogs`](../tables/awsnlbaccesslogs.md) | ✓ | ✓ | ✓ |
 | [`AWSNLBAccessLogs_CL`](../tables/awsnlbaccesslogs-cl.md) | ? | ? | ? |
 
 ---

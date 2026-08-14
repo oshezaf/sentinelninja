@@ -1,6 +1,6 @@
 # Analytic Rules - W
 
-**19 analytic rules** starting with 'W'.
+**20 analytic rules** starting with 'W'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -32,6 +32,7 @@
 | [Windows Binaries Executed from Non-Default Directory](endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45-75e820c5.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Windows Binaries Lolbins Renamed](endpoint-threat-protection-essentials-windows-binaries-lolbins-renamed-cbf6ad48-fa5c-4bf7-b205-28dbadb91255-7714bcc6.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Windows host username encoded in base64 web request](standalone-content-windows-host-username-encoded-in-base64-web-request-6e715730-82c0-496c-983b-7a20c4590bd9-92229d72.md) | Medium | 📄 Standalone Content |
+| [WMI Spawning Suspicious Child Process (Living off the Land)](windows-security-events-wmi-spawning-suspicious-child-process-living-off-the-land-3c8e5f0b-1d4a-4b69-9c2e-7f0d3a5e8b1f-c2b2f4ac.md) | High | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Workspace deletion activity from an infected device](standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) | Medium | 📄 Standalone Content |
 
 ---

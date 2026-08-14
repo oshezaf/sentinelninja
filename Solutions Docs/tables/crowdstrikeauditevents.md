@@ -11,9 +11,12 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
-| **Basic Logs Eligible** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents) |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Schema (199 columns)
 
@@ -22,7 +25,7 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountId | string | Cloud account ID. |
 | AddedPrivileges | string | Privileges that were added to the account. |
 | AgentId | string | Unique identifier for the CrowdStrike agent. |
@@ -110,7 +113,7 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | MatchedTimestamp | datetime | Timestamp when the match was found. |
 | MD5String | string | MD5 hash of the file. |
 | Message | string | Message associated with the audit event. |
-| MitreAttack | string | JSON string containing MITRE ATT&amp;CK framework details. |
+| MitreAttack | string | JSON string containing MITRE ATT&CK framework details. |
 | MobileDetectionId | string | Unique identifier for the mobile detection. |
 | NetworkProfile | string | Network profile identifier. |
 | Nonce | string | A unique nonce value. |
@@ -189,7 +192,7 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | SourceEndpointName | string | Name of the source endpoint. |
 | SourceIp | string | Source IP address. |
 | SourceProducts | string | Products associated with the detection source. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SourceVendors | string | Vendors associated with the detection source. |
 | SpreadCount | string | Number of hosts the hash has been observed on. |
 | StartTime | datetime | Start time of the event. |
@@ -199,15 +202,15 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | StatusCode | string | HTTP status code of the response. |
 | StatusMessage | string | Status message for the report execution. |
 | Success | bool | Whether the API call was successful. |
-| Tactic | string | MITRE ATT&amp;CK tactic. |
-| TacticId | string | The MITRE ATT&amp;CK tactic ID associated with the detection. |
-| TacticIds | string | MITRE ATT&amp;CK tactic IDs associated with the detection. |
-| Tactics | string | MITRE ATT&amp;CK tactics associated with the detection. |
+| Tactic | string | MITRE ATT&CK tactic. |
+| TacticId | string | The MITRE ATT&CK tactic ID associated with the detection. |
+| TacticIds | string | MITRE ATT&CK tactic IDs associated with the detection. |
+| Tactics | string | MITRE ATT&CK tactics associated with the detection. |
 | Tags | string | JSON string containing resource tags. |
-| Technique | string | MITRE ATT&amp;CK technique. |
-| TechniqueId | string | The MITRE ATT&amp;CK technique ID associated with the detection. |
-| TechniqueIds | string | MITRE ATT&amp;CK technique IDs associated with the detection. |
-| Techniques | string | MITRE ATT&amp;CK techniques associated with the detection. |
+| Technique | string | MITRE ATT&CK technique. |
+| TechniqueId | string | The MITRE ATT&CK technique ID associated with the detection. |
+| TechniqueIds | string | MITRE ATT&CK technique IDs associated with the detection. |
+| Techniques | string | MITRE ATT&CK techniques associated with the detection. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
 | TraceId | string | Trace ID for request tracing. |

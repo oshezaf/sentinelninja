@@ -11,8 +11,8 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Office 365 |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) |
@@ -33,7 +33,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AADGroupId | string | Azure Active Directory group id |
@@ -152,7 +152,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | SourceFileName | string | The name of the file or folder accessed by the user |
 | SourceRecordId | string | Unique identifier of an audit record |
 | SourceRelativeUrl | string | The URL of the folder that contains the file accessed by the user |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SRPolicyId | string | Policy ID |
 | SRPolicyName | string | Policy name |
 | SRRuleMatchDetails | dynamic | Rule details |
@@ -269,7 +269,7 @@ This table is ingested by the following connectors:
 | [Office Policy Tampering](../content/microsoft-365-office-policy-tampering-fbd72eb8-087e-466b-bd54-1ca6ea08c6d3-dcc56d58.md) | `ClientIP has "."`<br>`ClientIP has "["`<br>`RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` |
 | [Office365 Sharepoint File transfer Folders above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-folders-above-threshold-8a547285-801c-4290-aa2e-5e7e20ca157d-1211cb69.md) | `EventSource == "SharePoint"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Operation has_any "FileDownloaded"` |
 | [Office365 Sharepoint File transfer above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-above-threshold-8b4f03e7-3460-4401-824d-e65a8dd464f0-55393788.md) | `EventSource == "SharePoint"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Operation has_any "FileDownloaded"` |
-| [Rare and potentially high-risk Office operations](../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` |
+| [Rare and potentially high-risk Office operations](../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"` |
 | [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-5dd76a87-9f87-4576-bab3-268b0e2b338b-ccd6f2dd.md) |  |
 | [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-4b11568b-3f5f-4ba1-80c8-7f1dc8390eb7-e94212cd.md) |  |
 
@@ -339,7 +339,7 @@ This table is ingested by the following connectors:
 | [Exes with double file extension and access summary](../content/microsoft-365-exes-with-double-file-extension-and-access-summary-d12580c2-1474-4125-a8a3-553f50d91215-647a7b68.md) | `OfficeObjectId has ".exe."`<br>`Operation in "FileAccessed,FileDownloaded"`<br>`RecordType == "SharePointFileOperation"` |
 | [External user added and removed in a short timeframe](../content/microsoft-365-external-user-added-and-removed-in-a-short-timeframe-119d9e1c-afcc-4d23-b239-cdb4e7bf851c-733c7514.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "MemberAdded,MemberRemoved"` |
 | [External user from a new organisation added to Teams](../content/microsoft-365-external-user-from-a-new-organisation-added-to-teams-6fce5baf-bfc2-4c56-a6b7-9c4733fc5a45-c611f8a9.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "MemberAdded"` |
-| [Files uploaded to teams and access summary](../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.md) | `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`<br>`UserId != "app@sharepoint"` |
+| [Files uploaded to teams and access summary](../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.md) | `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` |
 | [Mail redirect via ExO transport rule](../content/microsoft-365-mail-redirect-via-exo-transport-rule-9891684a-1e3a-4546-9403-3439513cbc70-09a65cff.md) | `OfficeWorkload == "Exchange"` |
 | [Multiple Teams deleted by a single user](../content/microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "TeamDeleted"` |
 | [Multiple users email forwarded to same destination](../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-a1551ae4-f61c-4bca-9c57-4d0d681db2e9-2e204a61.md) | `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` |
@@ -513,7 +513,7 @@ References by type: 1 connectors, 55 content items, 1 ASIM parsers, 1 other pars
 | `OfficeWorkload == "Exchange"`<br>`Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`ResultStatus in "Succeeded,True"` | - | 1 | - | - | **1** |
 | `ClientIP has "."`<br>`ClientIP has "["`<br>`RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` | - | 1 | - | - | **1** |
 | `Operation contains "download"`<br>`Operation contains "upload"` | - | 1 | - | - | **1** |
-| `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` | - | 1 | - | - | **1** |
+| `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "SharePoint"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileDownloaded"` | - | 1 | - | - | **1** |
@@ -528,7 +528,7 @@ References by type: 1 connectors, 55 content items, 1 ASIM parsers, 1 other pars
 | `ClientIP has "."`<br>`ClientIP has "["`<br>`OfficeWorkload == "Exchange"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"` | - | 1 | - | - | **1** |
 | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` | - | 1 | - | - | **1** |
 | `RecordType == "SharePointFileOperation"` | - | 1 | - | - | **1** |
-| `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`<br>`UserId != "app@sharepoint"` | - | 1 | - | - | **1** |
+| `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileUploaded,MemberAdded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | - | 1 | - | - | **1** |
@@ -688,13 +688,6 @@ References by type: 1 connectors, 55 content items, 1 ASIM parsers, 1 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!has Mac OS` | - | 2 | - | - | **2** |
-
-### UserId
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has_any NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)` | - | 1 | - | - | **1** |
-| `!= app@sharepoint` | - | 1 | - | - | **1** |
 
 ### UserType
 

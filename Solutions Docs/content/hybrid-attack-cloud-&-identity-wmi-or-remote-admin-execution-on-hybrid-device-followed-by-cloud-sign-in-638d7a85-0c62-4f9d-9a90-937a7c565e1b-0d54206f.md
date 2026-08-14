@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | ? |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ? |
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ✓ |
 
 ---
 

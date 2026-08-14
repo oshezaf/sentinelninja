@@ -6,7 +6,7 @@
 
 ---
 
-Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_babyshark.yml. Questions via Twitter: @janvonkirchheim.
+Original Sigma Rule: https://github.com/SigmaHQ/sigma/blob/master/rules-emerging-threats/2019/Malware/BabyShark/proc_creation_win_malware_babyshark.yml Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |
 |:----------|:------|

@@ -6,15 +6,17 @@
 
 ---
 
-Reference for DeviceInfo table in Azure Monitor Logs.
+Machine information, including OS information
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table) |
 
 ## Contents
 
@@ -24,14 +26,14 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (53 columns)
+## Schema (54 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AssetValue | string | Indicates the value of a device as assigned by the user. |
@@ -41,6 +43,7 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 | AzureVmSubscriptionId | string | Unique identifier of the Azure subscription associated with the device. |
 | ClientVersion | string | Version of the endpoint agent or sensor running on the machine. |
 | CloudPlatforms | string | Thse cloud platforms that the device belongs to-can be Azure, Amazon Web Services, Google Cloud Platform and Azure Arc. |
+| ConnectivityType | string | Indicates how the device connects to the network. |
 | DeviceCategory | string | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown. |
 | DeviceDynamicTags | string | Device tags added and removed dynamically based on dynamic rules. |
 | DeviceId | string | Unique identifier for the device in the service. |
@@ -78,7 +81,7 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.. |
 | RestrictedDeviceSecurityOperations | string | The response categories that have been turned off on a device if its security operations settings is set to restricted. If the device's security operations settings is set to full operations, the value is null. |
 | SensorHealthState | string | Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
@@ -89,6 +92,7 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo)
+- [DeviceInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table)
 
 ## Solutions (6)
 

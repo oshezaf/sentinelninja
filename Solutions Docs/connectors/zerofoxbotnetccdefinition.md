@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ZeroFoxThreatIntelligence_BotnetCC_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Botnet%20CC/ZeroFoxThreatIntelligence_BotnetCC_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_BotnetCC_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Botnet%20CC/ZeroFoxThreatIntelligence_BotnetCC_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---botnet-compromised-credentials) |
 
 Collects botnet compromised credentials data from the [ZeroFox](https://www.zerofox.com/threat-intelligence/) API into Microsoft Sentinel.
 

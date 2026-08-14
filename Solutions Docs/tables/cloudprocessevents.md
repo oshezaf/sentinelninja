@@ -6,14 +6,17 @@
 
 ---
 
-Reference for CloudProcessEvents table in Azure Monitor Logs.
+Cloud process events for various cloud platforms protected by the organization's Microsoft Defender for Containers
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudprocessevents-table) |
 
 ## Contents
 
@@ -22,14 +25,14 @@ Reference for CloudProcessEvents table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (29 columns)
+## Schema (30 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountName | string | User name of the account |
 | ActionType | string | Type of activity that triggered the event. See the in-portal schema reference for details. |
 | AdditionalFields | string | Additional information about the event in JSON array format |
@@ -53,7 +56,8 @@ Reference for CloudProcessEvents table in Azure Monitor Logs.
 | ProcessCurrentWorkingDirectory | string | Current working directory of the running process |
 | ProcessId | long | Process ID (PID) of the newly created process |
 | ProcessName | string | The name of the process |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| ReportId | string | Unique identifier for the event. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |
@@ -63,6 +67,7 @@ Reference for CloudProcessEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
+- [CloudProcessEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudprocessevents-table)
 
 ## Solutions (1)
 

@@ -16,10 +16,10 @@ The collection method for these connectors could not be automatically determined
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **53** |
+| Total Connectors | **52** |
 | Active | 39 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 13 |
+| Unpublished ⚠️ | 12 |
 
 ## Connectors Using This Method
 
@@ -51,7 +51,7 @@ The collection method for these connectors could not be automatically determined
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
-| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
+| [Infoblox IQ for Threat Defense Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
@@ -65,7 +65,6 @@ The collection method for these connectors could not be automatically determined
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [SenservaPro (Preview)](../connectors/senservapro.md) ⚠️ 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |

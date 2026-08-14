@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ SpyCloud Enterprise Protection CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spycloud-enterprise-protection-ccf">⚠️ SpyCloud Enterprise Protection CCF</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="SpyCloud Enterprise Protection CCF Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">SpyCloud</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://support.spycloud.com">https://support.spycloud.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence,Identity</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">SpyCloud - support@spycloud.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-06-09</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-06-09</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF">SpyCloud Enterprise Protection CCF</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://spycloud.com/">SpyCloud Enterprise Protection</a> solution for Microsoft Sentinel ingests SpyCloud breach watchlist and catalog data via the Codeless Connector Framework (CCF), including an optional Compass daily feed. The solution includes two built-in analytic rules, two KQL parsers, and two automation playbooks for Microsoft Defender for Endpoint and Azure AD / Entra ID Conditional Access response.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/logic-apps/">Azure Logic Apps</a></p>
+<p>c. <a href="https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint">Microsoft Defender for Endpoint</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>5 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/spycloudbreachcatalogv2-cl.html"><code>SpyCloudBreachCatalogV2_CL</code></a></td>
+  <td><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/spycloudbreachwatchlistv2-cl.html"><code>SpyCloudBreachWatchlistV2_CL</code></a></td>
+  <td><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/spycloud-conditionalaccesslogsv2-cl.html"><code>SpyCloud_ConditionalAccessLogsV2_CL</code></a></td>
+  <td><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/spycloud-mde-logsv2-cl.html"><code>Spycloud_MDE_LogsV2_CL</code></a></td>
+  <td><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/spycloud-compassv2-cl.html"><code>spycloud_compassV2_CL</code></a></td>
+  <td><a href="../connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/spycloud-enterprise-protection-ccf-spycloud-infostealer-malware-credential-exposure-ead4deed-9d48-4646-aee0-6b46c2dd1ae6-d71d624c.html">SpyCloud infostealer malware credential exposure</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/spycloudbreachwatchlistv2-cl.html"><code>SpyCloudBreachWatchlistV2_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/spycloud-enterprise-protection-ccf-spycloud-plaintext-credential-exposure-detected-a25eba0e-ff42-4c97-a379-d76bdb2aa1e3-4042bb68.html">SpyCloud plaintext credential exposure detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/spycloudbreachwatchlistv2-cl.html"><code>SpyCloudBreachWatchlistV2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.html">SpyCloud Conditional Access Playbook</a></td>
+  <td style="text-align:left">Spycloud Conditional access playbook</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.html">SpyCloud_MDE_Automation</a></td>
+  <td style="text-align:left">This playbook automates endpoint response actions in Microsoft Defender for Endpoint (MDE) when SpyC...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/get-spycloud-enriched-data.html">get_Spycloud_enriched_data</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/spycloudbreachcatalogv2-cl.html"><code>SpyCloudBreachCatalogV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/get-spycloud-compass-data.html">get_spycloud_compass_data</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/spycloud-compassv2-cl.html"><code>spycloud_compassV2_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>09-06-2026</td>
+  <td>Initial CCF-based release. SpyCloud Watchlist and Breach Catalog CCF data connector (Compass daily feed included), two built-in analytic rules (<strong>AR_Breached_Users_20</strong>, <strong>AR_malware_25</strong>), two KQL parsers (<strong>get_Spycloud_enriched_data</strong>, <strong>get_spycloud_compass_data</strong>), MDE Automation playbook, and Conditional Access playbook.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

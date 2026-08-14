@@ -19,7 +19,7 @@
 | **First Published** | 2026-05-20 |
 | **Last Updated** | 2026-07-27 |
 | **Solution Folder** | [Checkpoint Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security) · Popularity: ⚪ Very Low (5%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security) · Popularity: 🔵 Medium (73%) |
 
 The [Check Point Email Security (Harmony Email & Collaboration)](https://www.checkpoint.com/harmony/email-security/) Solution for Microsoft Sentinel enables you to ingest security events, anti-phishing exceptions, spam exceptions, and audit logs from Check Point's Email Security platform into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution provides visibility into advanced email threats including zero-day threats, phishing, account takeover, data leakage, and shadow IT discovery.
 

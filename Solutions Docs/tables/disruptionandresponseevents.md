@@ -6,27 +6,30 @@
 
 ---
 
-Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
+[Automatic attack disruption](automatic-attack-disruption.md) events in Microsoft Defender XDR
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-disruptionandresponseevents-table) |
 
-## Schema (42 columns)
+## Schema (44 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActionType | string | Type of disruption action taken |
 | AuthenticationProtocol | string | Authentication protocol that the compromised user used to sign in |
 | CompromisedAccountCount | int | Number of compromised accounts that are part of the policy |
-| DataSources | string | Products or services that provided information for the event |
+| DataSource | string | Products or services that provided information for the event |
 | DeviceId | string | Unique identifier for the device that reported the event |
 | DeviceName | string | Name of the device that reported the event |
 | DomainName | string | Domain name that the device that reported the event is joined to |
@@ -39,11 +42,13 @@ Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
 | IsPolicyOn | bool | Indicates the current state of the policy on the device at the time of the disruption event |
 | LogonId | long | Identifier for a logon session |
 | LogonType | string | Type of logon session the user attempted |
+| MachineGroup | string | Machine group of the machine. This group is used by role-based access control to determine access to the machine. |
 | PolicyHash | string | Unique hash of the policy |
 | PolicyId | string | Unique identifier for the policy |
 | PolicyName | string | Name of the policy |
 | PolicyVersion | string | Version of the policy |
 | Port | string | Port that the attacker attempted to access |
+| ReportId | string | Unique identifier for the event. |
 | ReportType | string | The nature and impact level of the reported event |
 | Service | string | Name of the service the attacker attempted to use |
 | SessionId | long | Unique number assigned to a user by a website's server for the duration of the visit or session |
@@ -53,7 +58,7 @@ Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
 | SourceDomainName | string | Domain name of the device where the attack originated from |
 | SourceIpAddress | string | IP address where the attacker communication originated from |
 | SourcePort | int | Port where the attacker communication originated from |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SourceUserDomainName | string | The domain name of the account conducting the malicious activity |
 | SourceUserName | string | The user name of the account conducting the malicious activity |
 | SourceUserSid | string | The security identifier of the account conducting the malicious activity |
@@ -69,6 +74,7 @@ Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DisruptionAndResponseEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents)
+- [DisruptionAndResponseEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-disruptionandresponseevents-table)
 
 ---
 

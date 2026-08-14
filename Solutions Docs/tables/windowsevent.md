@@ -11,8 +11,8 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent) |
@@ -35,7 +35,7 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Channel | string | The channel to which the event was logged. |
@@ -67,7 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [WindowsEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent)
 
-## Solutions (11)
+## Solutions (10)
 
 This table is used by the following solutions:
 
@@ -77,7 +77,6 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SAP LogServ](../solutions/sap-logserv.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
@@ -94,9 +93,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (24)
+## Content Items Using This Table (23)
 
-### Analytic Rules (14)
+### Analytic Rules (13)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -145,12 +144,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Caramel Tsunami Actor IOC - July 2021](../content/windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md) | `EventData has_any "reg add"`<br>`EventID == "4688"` |
 | [Chia_Crypto_Mining IOC - June 2021](../content/windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | `EventID == "4688"` |
-
-**Standalone Content:** `EventID == "4688"`
-
-| Analytic Rule |
-|:-------------|
-| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |
 
 ### Hunting Queries (10)
 
@@ -210,13 +203,13 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
 
-## Selection Criteria Summary (18 criteria, 21 total references)
+## Selection Criteria Summary (18 criteria, 20 total references)
 
-References by type: 1 connectors, 8 content items, 12 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 7 content items, 12 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 2 | 1 | - | **3** |
+| `EventID == "4688"` | - | 1 | 1 | - | **2** |
 | `EventID in "12,13,4657"` | - | 2 | - | - | **2** |
 | `Provider startswith "Microsoft"` | 1 | - | - | - | **1** |
 | `EventID == "1102"`<br>`Provider == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
@@ -234,7 +227,7 @@ References by type: 1 connectors, 8 content items, 12 ASIM parsers, 0 other pars
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **8** | **12** | **0** | **21** |
+| **Total** | **1** | **7** | **12** | **0** | **20** |
 
 ### EventData
 
@@ -246,7 +239,7 @@ References by type: 1 connectors, 8 content items, 12 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 5 | 1 | - | **6** |
+| `4688` | - | 4 | 1 | - | **5** |
 | `12` | - | 2 | 1 | - | **3** |
 | `13` | - | 2 | 1 | - | **3** |
 | `4657` | - | 2 | 1 | - | **3** |

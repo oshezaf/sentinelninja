@@ -30,13 +30,13 @@ This content item queries data from the following tables:
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ✗ | ✗ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ✓ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ✓ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ✓ |
 | [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 | [`Event`](../tables/event.md) | ✓ | ✓ | ✗ |
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ✗ |
 
 ---
 

@@ -1,6 +1,6 @@
 # Analytic Rules - P
 
-**224 analytic rules** starting with 'P'.
+**225 analytic rules** starting with 'P'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -179,6 +179,7 @@
 | [Power Platform - DLP policy updated or removed](microsoft-business-applications-power-platform-dlp-policy-updated-or-removed-1b2e6172-85c5-417a-90c3-7cc80cb787f5-a317faa0.md) | Low | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Power Platform - Possibly compromised user accesses Power Platform services](microsoft-business-applications-power-platform-possibly-compromised-user-accesses-power-platform-service-54d48840-1c64-4399-afee-ad39a069118d-23dcba32.md) | High | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Powershell Empire Cmdlets Executed in Command Line](attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md) | Medium | 📦 [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md) |
+| [PowerShell Encoded Command Execution (Living off the Land)](attacker-tools-threat-protection-essentials-powershell-encoded-command-execution-living-off-the-land-7b2f4d1a-9c3e-4f72-8b1d-3e6a9f2c4b8d-1e416822.md) | Medium | 📦 [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md) |
 | [Preferred Networks Deleted](veeam-preferred-networks-deleted-e06b913f-7698-4b2c-96e6-d47a9f4f5de8-3b2c2137.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Prestige ransomware IOCs Oct 2022](standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) | High | 📄 Standalone Content |
 | [Preview - TI map Domain entity to Cloud App Events](threat-intelligence-preview-ti-map-domain-entity-to-cloud-app-events-b97e118c-b7fa-42a6-84de-2e13443fbb8f-9a4d26f1.md) | Medium | 📦 [Threat Intelligence](../solutions/threat-intelligence.md) |
@@ -219,8 +220,8 @@
 | [PRODAFT USTA - Corporate credential compromised](prodaft-usta-account-takeover-prevention-prodaft-usta-corporate-credential-compromised-9ad6cf22-ffbb-4422-9933-9bbd0104f818-4df5a4e0.md) | High | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
 | [PRODAFT USTA - Non-expired payment card exposed](prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-non-expired-payment-card-exposed-674429c9-a858-436c-95b8-5808024ebd01-f3b34a4c.md) | High | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [PRODAFT USTA - Payment card exposed](prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-payment-card-exposed-bd550c7f-5455-48de-b23d-30fced82d02b-61f1004e.md) | Medium | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
-| [Progress MOVEIt File transfer above threshold](windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) ⚠️ | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
-| [Progress MOVEIt File transfer folder count above threshold](windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) ⚠️ | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| [Progress MOVEIt File transfer above threshold](windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| [Progress MOVEIt File transfer folder count above threshold](windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [ProofpointPOD - Binary file in attachment](proofpoint-on-demand-pod-email-security-proofpointpod-binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a-ae200d61.md) | Medium | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [ProofpointPOD - Email sender in TI list](proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-in-ti-list-35a0792a-1269-431e-ac93-7ae2980d4dde-f2f02f35.md) | Medium | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [ProofpointPOD - Email sender IP in TI list](proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-ip-in-ti-list-78979d32-e63f-4740-b206-cfb300c735e0-63420dc8.md) | Medium | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |

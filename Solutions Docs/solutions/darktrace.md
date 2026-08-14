@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.darktrace.com/contact/](https://www.darktrace.com/contact/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.1 |
 | **Author** | Darktrace - customers@darktrace.com |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-06-18 |
+| **Last Updated** | 2026-07-01 |
 | **Solution Folder** | [Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/darktrace1655286944672.darktrace_for_sentinel) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/darktrace1655286944672.darktrace_for_sentinel) · Popularity: 🔵 Medium (79%) |
 
 The [Darktrace](https://darktrace.com/) Microsoft Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats. 
 
@@ -31,7 +31,7 @@ The [Darktrace](https://darktrace.com/) Microsoft Sentinel Solution lets users c
 
 a. [Microsoft Sentinel Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-rest-api-template)
 
- For more details about this solution refer to https://www.darktrace.com/microsoft/sentinel/
+ For more details about this solution refer to [Darktrace Customer Portal](https://customerportal.darktrace.com/guides)
 
 ## Contents
 

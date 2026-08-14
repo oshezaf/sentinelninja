@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"` | ✓ | ✗ | ✓ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ✓ |

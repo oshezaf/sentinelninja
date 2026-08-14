@@ -36,15 +36,19 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -77,7 +81,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -117,7 +121,7 @@
 <tr>
   <td style="text-align:left">CertificatePolicyProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about certificate policy properties including <code>keyproperties</code>, <code>secretproperties</code>, <code>issuerproperties</code></td>
+  <td style="text-align:left">Information about certificate policy properties includingkeyproperties,secretproperties,issuerproperties</td>
 </tr>
 <tr>
   <td style="text-align:left">CertificateProperties</td>
@@ -277,17 +281,17 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">StorageAccountProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about storage account properties including <code>activekeyname</code>, <code>resourceid</code></td>
+  <td style="text-align:left">Information about storage account properties includingactivekeyname,resourceid</td>
 </tr>
 <tr>
   <td style="text-align:left">StorageSasDefinitionProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Information about storage sas definition properties including <code>sastype</code>, <code>validityperiod</code></td>
+  <td style="text-align:left">Information about storage sas definition properties includingsastype,validityperiod</td>
 </tr>
 <tr>
   <td style="text-align:left">SubnetId</td>
@@ -322,7 +326,7 @@
 <tr>
   <td style="text-align:left">VaultProperties</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Detailed vault properties containing <code>accesspolicy</code>, <code>iprule</code>, <code>virtualnetwork</code> etc.</td>
+  <td style="text-align:left">Detailed vault properties containingaccesspolicy,iprule,virtualnetworketc.</td>
 </tr>
 </tbody>
 </table>

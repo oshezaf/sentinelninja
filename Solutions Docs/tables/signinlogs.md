@@ -11,8 +11,8 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources, Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs) |
@@ -34,7 +34,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AADTenantId | string |  |
 | Agent | dynamic | The agentic property for sign in logs. Includes the agentType and the parentAppId when the type is AgenticInstance. |
 | AlternateSignInName | string | The identification that the user provided to sign in. It may be the userPrincipalName but it's also populated when a user signs in using other identifiers. |
@@ -100,7 +100,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | ResourceTenantId | string | The tenant identifier of the resource referenced in the sign in. |
 | ResultDescription | string | Provides the error message or the reason for failure for the corresponding sign-in activity. |
 | ResultSignature | string |  |
-| ResultType | string | Provides the 5-6 digit error code that's generated during a sign-in event. 0 indicates success; other values are failures. You can find more information using the Azure AD Error Codes documentation or <code>https://login.microsoftonline.com/error</code>. |
+| ResultType | string | Provides the 5-6 digit error code that's generated during a sign-in event. 0 indicates success; other values are failures. You can find more information using the Azure AD Error Codes documentation orhttps://login.microsoftonline.com/error. |
 | RiskDetail | string | The reason behind a specific state of a risky user, sign-in, or a risk event. Possible values: none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, or adminConfirmedSigninCompromised. The value none means that no action has been performed on the user or sign-in so far. Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned hidden. |
 | RiskEventTypes | string | This property is deprecated. |
 | RiskEventTypes_V2 | string | The list of risk event types associated with the sign-in. Possible values: unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, or generic. |
@@ -115,7 +115,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | SignInIdentifier | string | The identification that the user provided to sign in. It may be the userPrincipalName but it's also populated when a user signs in using other identifiers. |
 | SignInIdentifierType | string | The type of sign in identifier. Possible values are: userPrincipalName, phoneNumber, proxyAddress, qrCode, onPremisesUserPrincipalName. |
 | SourceAppClientId | string | The Source App's Client ID for Target Identities. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Status | dynamic | The sign-in status. Includes the error code and description of the error (in case of a sign-in failure). |
 | TimeGenerated | datetime |  |
 | TokenIssuerName | string | The name of the identity provider. For example, sts.microsoft.com. |
@@ -248,7 +248,7 @@ This table is ingested by the following connectors:
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) | `ResultType == "500121"` |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) | `AuthenticationRequirement == "multiFactorAuthentication"` |
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) |  |
-| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) |  |
+| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | `OperationName == "Add unverified domain"` |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `RiskState == "atRisk"`
 
@@ -299,7 +299,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Login attempts using Legacy Auth](../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.md) |  |
 | [Microsoft Entra ID signins from new locations](../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.md) |  |
-| [Risky Sign-in with new MFA method](../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.md) | `OperationName == "Update user"` |
+| [Risky Sign-in with new MFA method](../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.md) |  |
 | [Successful Signin From Non-Compliant Device](../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.md) | `ResultType == "0"` |
 | [User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.](../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.md) |  |
 | [User Login IP Address Teleportation](../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.md) | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` |
@@ -413,17 +413,17 @@ This table is ingested by the following connectors:
 |:-------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
-| Workbook |
-|:-------------|
-| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
-| Workbook |
-|:-------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
@@ -486,11 +486,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
-| Workbook |
-|:-------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
 
 **In solution [Teams](../solutions/teams.md):** `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"`
 
@@ -530,9 +530,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (24 criteria, 34 total references)
+## Selection Criteria Summary (22 criteria, 31 total references)
 
-References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 31 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -540,13 +540,12 @@ References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other pars
 | `AuthenticationRequirement == "multiFactorAuthentication"` | - | 3 | - | - | **3** |
 | `AppDisplayName == "Windows Sign In"` | - | 2 | - | - | **2** |
 | `ResultType == "50057"` | - | 2 | - | - | **2** |
-| `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | - | 2 | - | - | **2** |
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | - | 1 | - | - | **1** |
 | `NetworkLocationDetails !has "trustedNamedLocation"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `ResultType == "500121"` | - | 1 | - | - | **1** |
+| `OperationName == "Add unverified domain"` | - | 1 | - | - | **1** |
 | `RiskState == "atRisk"` | - | 1 | - | - | **1** |
 | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
-| `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` | - | 1 | - | - | **1** |
 | `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 1 | - | - | **1** |
 | `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered security info,User updated security info"` | - | 1 | - | - | **1** |
@@ -556,11 +555,10 @@ References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other pars
 | `RiskDetail != "none"` | - | 1 | - | - | **1** |
 | `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"` | - | 1 | - | - | **1** |
 | `AppDisplayName contains "Portal"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
 | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`ResultType != "0"` | - | 1 | - | - | **1** |
 | `AppDisplayName has_any "teams"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **34** | **0** | **0** | **34** |
+| **Total** | **0** | **31** | **0** | **0** | **31** |
 
 ### AppDisplayName
 
@@ -605,13 +603,7 @@ References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Update user` | - | 3 | - | - | **3** |
-| `Add member to role` | - | 2 | - | - | **2** |
-| `Add user` | - | 2 | - | - | **2** |
-| `Consent to application` | - | 2 | - | - | **2** |
-| `Reset user password` | - | 2 | - | - | **2** |
-| `Sign-in activity` | - | 2 | - | - | **2** |
-| `!= Consent to application` | - | 2 | - | - | **2** |
+| `Add unverified domain` | - | 1 | - | - | **1** |
 | `Set domain authentication` | - | 1 | - | - | **1** |
 | `Set federation settings on domain` | - | 1 | - | - | **1** |
 | `Admin deleted security info` | - | 1 | - | - | **1** |
@@ -621,16 +613,6 @@ References by type: 0 connectors, 34 content items, 0 ASIM parsers, 0 other pars
 | `User deleted security info` | - | 1 | - | - | **1** |
 | `User registered security info` | - | 1 | - | - | **1** |
 | `User updated security info` | - | 1 | - | - | **1** |
-| `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
-| `has_any Add user` | - | 1 | - | - | **1** |
-| `has_any Create user` | - | 1 | - | - | **1** |
-| `has_any Role assignment` | - | 1 | - | - | **1** |
-| `has_any Update user` | - | 1 | - | - | **1** |
-| `has_any directory write` | - | 1 | - | - | **1** |
-| `has_any policy update` | - | 1 | - | - | **1** |
-| `has_any role assignment` | - | 1 | - | - | **1** |
-| `has_any role update` | - | 1 | - | - | **1** |
 
 ### ResourceIdentity
 

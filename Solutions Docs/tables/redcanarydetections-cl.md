@@ -19,35 +19,30 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (23 columns)
+## Schema (18 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RedCanaryDetections_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary%5CData%20Connectors%5CRedCanary_ccf/RedCanary_table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| _ResourceId | string |
-| _SubscriptionId | string |
-| child_process_iocs_s | string |
-| Computer | string |
-| cross_process_iocs_s | string |
-| detection_details_s | string |
-| detection_headline_s | string |
-| detection_id_s | string |
-| detection_severity_s | string |
-| detection_url_s | string |
-| file_modification_iocs_s | string |
-| host_full_name_s | string |
-| host_name_s | string |
-| host_os_family_s | string |
-| host_os_version_s | string |
-| identities_s | string |
-| network_connection_iocs_s | string |
-| process_iocs_s | string |
-| RawData | string |
-| registry_modification_iocs_s | string |
-| tactics_s | string |
-| TimeGenerated | datetime |
-| Type | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| child_process_iocs_s | string | Serialized child process indicators associated with the Red Canary detection. |
+| cross_process_iocs_s | string | Serialized cross-process indicators associated with the Red Canary detection. |
+| detection_details_s | string | Detection details provided by Red Canary. |
+| detection_headline_s | string | Headline for the Red Canary detection. |
+| detection_id_s | string | Unique Red Canary detection identifier. |
+| detection_severity_s | string | Severity assigned to the Red Canary detection. |
+| detection_url_s | string | URL for the detection in Red Canary. |
+| file_modification_iocs_s | string | Serialized file modification indicators associated with the Red Canary detection. |
+| host_full_name_s | string | Fully qualified host name for the affected endpoint. |
+| host_name_s | string | Host name for the affected endpoint. |
+| host_os_family_s | string | Operating system family for the affected host. |
+| host_os_version_s | string | Operating system version for the affected host. |
+| identities_s | string | Serialized identities associated with the Red Canary detection. |
+| network_connection_iocs_s | string | Serialized network connection indicators associated with the Red Canary detection. |
+| process_iocs_s | string | Serialized process indicators associated with the Red Canary detection. |
+| registry_modification_iocs_s | string | Serialized registry modification indicators associated with the Red Canary detection. |
+| tactics_s | string | MITRE ATT&CK tactics associated with the detection. |
+| TimeGenerated | datetime | The timestamp when the detection was ingested into Microsoft Sentinel. |
 
 ## Schema References
 
@@ -67,7 +62,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) |  |
+| [Red Canary Threat Detection (via Codeless Connector Framework)](../connectors/redcanary-connectordefinition.md) |  |
 
 ---
 

@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **129** |
-| Active | 83 |
+| Total Connectors | **128** |
+| Active | 81 |
 | Deprecated 🚫 | 29 |
-| Unpublished ⚠️ | 17 |
+| Unpublished ⚠️ | 18 |
 
 ## Connectors Using This Method
 
@@ -100,7 +100,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶 | Netskope | 17 | [Netskopev2](../solutions/netskopev2.md) |
 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶 | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | [NordPass](../connectors/nordpass.md) | NordPass | 1 | [NordPass](../solutions/nordpass.md) |
-| [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔶 | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶 | Qualys | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
@@ -118,7 +117,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Transmit Security Connector](../connectors/transmitsecurity.md) ⚠️ 🔶 | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | Trend Micro | 2 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
-| [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
+| [Upwind Catalog Loader (Ingestion API)](../connectors/upwindcatalogloader.md) ⚠️ | Upwind | 1 | [Upwind](../solutions/upwind.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |

@@ -61,7 +61,7 @@ Install and configure the Linux agent to collect your Common Event Format (CEF) 
 **2. Configure Infoblox to send Syslog data to the Infoblox Cloud Data Connector to forward to the Syslog agent**
 
 Follow the steps below to configure the Infoblox CDC to send  data to Microsoft Sentinel via the Linux Syslog agent.
-1. Navigate to **Manage > Data Connector**.
+1. Navigate to **Integrations > Data Connectors**.
 2. Click the **Destination Configuration** tab at the top.
 3. Click **Create > Syslog**. 
  - **Name**: Give the new Destination a meaningful **name**, such as **Microsoft-Sentinel-Destination**.
@@ -80,7 +80,7 @@ Follow the steps below to configure the Infoblox CDC to send  data to Microsoft 
  - Expand the **Service Instance** section. 
     - **Service Instance**: Select your desired Service Instance for which the Data Connector service is enabled. 
  - Expand the **Source Configuration** section.  
-    - **Source**: Select **BloxOne Cloud Source**. 
+    - **Source**: Select **Infoblox Cloud Source**. 
     - Select all desired **log types** you wish to collect. Currently supported log types are:
       - Threat Defense Query/Response Log
       - Threat Defense Threat Feeds Hits Log

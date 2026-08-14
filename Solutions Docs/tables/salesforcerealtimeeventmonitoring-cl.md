@@ -19,7 +19,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (191 columns)
+## Schema (192 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesForceRealTimeEventMonitoringConnector_CCF/SalesforceRealTimeEventMonitoring_table.json)
 
@@ -180,6 +180,7 @@
 | RequestIdentifier | string | The unique ID of a single transaction. |
 | RowsProcessed | real | Total row count for the current operation. |
 | RowsReturned | real | The number of rows of data returned in the current batch. |
+| SalesforceDomain | string | Salesforce host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | SalesforceObjectId | string | The Salesforce record ID of the event store object. |
 | SalesforceResourceId | string | The ID of the connected app resource. |
 | SamlEntityUrl | string | The authentication URL of the SAML provider. |

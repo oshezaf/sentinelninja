@@ -16,13 +16,13 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Application |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-02-01 |
 | **Solution Folder** | [Teams](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4teams.sentinelforteams) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (54%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4teams.sentinelforteams) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟡 Low (15%) |
 
-Microsoft Sentinel solution for Teams provides Teams security logs visibility and threat protection for communication and data sharing in the Microsoft 365 Cloud via Microsoft Teams. In order to get the logs, you should connect to the Microsoft 365 connector and choose the Teams application.[Please refer to this guide](https://docs.microsoft.com/microsoftteams/teams-sentinel-guide). By connecting Teams activity logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process.[This article](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/protecting-your-teams-with-azure-sentinel/ba-p/1265761)focuses on collecting Teams activity logs in Microsoft Sentinel. 
+Microsoft Sentinel solution for Teams provides Teams security logs visibility and threat protection for communication and data sharing in the Microsoft 365 Cloud via Microsoft Teams. In order to get the logs, you should connect to the Microsoft 365 connector and choose the Teams application [Please refer to this guide](https://docs.microsoft.com/microsoftteams/teams-sentinel-guide). By connecting Teams activity logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process. [This article](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/protecting-your-teams-with-azure-sentinel/ba-p/1265761) focuses on collecting Teams activity logs in Microsoft Sentinel. 
 
 ## Contents
 
@@ -71,6 +71,8 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.2       | 07-08-2026                     | Repackage solution for type in workbook, maintemplate, createUIDefinition, playbook old schema version. |
+| 3.0.1       | 10-04-2025                     | Not permitted to use SNOW or SN as abbreviation for ServiceNow. |
 | 3.0.0       | 19-07-2023                     | Updated **Workbook** template to remove unused variables.   |
 
 ---

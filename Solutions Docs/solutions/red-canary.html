@@ -19,6 +19,8 @@
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/red_canary_logo.svg" alt="Red Canary Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -44,7 +46,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">Application</td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Red Canary - microsoft@redcanary.com</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
@@ -52,7 +62,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2022-03-04</td>
+  <td style="text-align:left">2026-05-29</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -60,20 +70,24 @@
 </tr>
 </tbody>
 </table>
+<p>The <a href="https://www.redcanary.com/">Red Canary</a> solution for Microsoft Sentinel enables Red Canary to publish threat detections into a Microsoft Sentinel custom table for alerting and incident creation.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Microsoft Sentinel Codeless Connector Framework</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API</a></p>
+<p>c. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data collection rules</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/redcanarydataconnector.html">Red Canary Threat Detection</a> ⚠️ 🔶</li>
+<li><a href="../connectors/redcanary-connectordefinition.html">Red Canary Threat Detection (via Codeless Connector Framework)</a> 🔶</li>
 </ul>
-<blockquote>
-<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
@@ -90,7 +104,7 @@
 <tbody>
 <tr>
   <td><a href="../tables/redcanarydetections-cl.html"><code>RedCanaryDetections_CL</code></a> 🔶</td>
-  <td><a href="../connectors/redcanarydataconnector.html">Red Canary Threat Detection</a></td>
+  <td><a href="../connectors/redcanary-connectordefinition.html">Red Canary Threat Detection (via Codeless Connector Framework)</a></td>
   <td>Analytics</td>
 </tr>
 </tbody>
@@ -99,22 +113,18 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>1 content item(s)</strong> (0 in solution, 1 discovered 🔍):</p>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Content Type</th>
-  <th style="text-align:right">Total</th>
-  <th style="text-align:right">In Solution</th>
-  <th style="text-align:right">Discovered</th>
+  <th style="text-align:left">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:right">1</td>
-  <td style="text-align:right">0</td>
-  <td style="text-align:right">1</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -130,16 +140,102 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.html">Red Canary Threat Detection</a> ⚠️</td>
+  <td style="text-align:left"><a href="../content/red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.html">Red Canary Threat Detection</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Execution, Exfiltration, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation</td>
   <td style="text-align:left"><a href="../tables/redcanarydetections-cl.html"><code>RedCanaryDetections_CL</code></a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
-<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/README.md">Red Canary/README.md</a></em></p>
 </blockquote>
+<h2 id="overview">Overview</h2>
+<p>The Red Canary solution for Microsoft Sentinel ingests Red Canary detections into the <code>RedCanaryDetections_CL</code> custom table and includes analytic content for creating Microsoft Sentinel incidents from those detections.</p>
+<p>The data connector uses the Microsoft Sentinel Codeless Connector Framework (CCF) push pattern. The connector page deploys the Data Collection Endpoint (DCE), Data Collection Rule (DCR), Microsoft Entra application, application secret, and DCR role assignment required for Red Canary to send detections through the Azure Monitor Logs Ingestion API.</p>
+<h2 id="solution-contents">Solution Contents</h2>
+<ul>
+<li>Data connector: <strong>Red Canary Threat Detection (via Codeless Connector Framework)</strong></li>
+<li>Table: <code>RedCanaryDetections_CL</code></li>
+<li>Stream: <code>Custom-RedCanaryDetections</code></li>
+<li>Analytic rule: <strong>Red Canary Threat Detection</strong></li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<ol>
+<li>Install the Red Canary solution from Microsoft Sentinel Content Hub.</li>
+<li>Open <strong>Microsoft Sentinel</strong> &gt; <strong>Data connectors</strong>.</li>
+<li>Select <strong>Red Canary Threat Detection (via Codeless Connector Framework)</strong>.</li>
+<li>Select <strong>Deploy Red Canary connector resources</strong>.</li>
+<li>Copy the generated connector values:<ul>
+<li>Tenant ID</li>
+<li>Entra App Registration Application ID</li>
+<li>Entra App Registration Secret</li>
+<li>Data Collection Endpoint URI</li>
+<li>Data Collection Rule Immutable ID</li>
+<li>Stream name: <code>Custom-RedCanaryDetections</code></li>
+</ul>
+</li>
+<li>Configure the Red Canary Microsoft Sentinel response action with those values.</li>
+<li>Create and enable the <strong>Red Canary Threat Detection</strong> analytic rule from the installed rule template.</li>
+</ol>
+<p>Red Canary sends detections to:</p>
+<pre><code class="language-text">{Data Collection Endpoint URI}/dataCollectionRules/{Data Collection Rule Immutable ID}/streams/Custom-RedCanaryDetections?api-version=2023-01-01
+</code></pre>
+<p>Use OAuth 2.0 client credentials with the generated Microsoft Entra application. For Azure public cloud, request a token with this scope:</p>
+<pre><code class="language-text">https://monitor.azure.com/.default
+</code></pre>
+<h2 id="payload">Payload</h2>
+<p>The request body is a JSON array of Red Canary detection records. The preferred payload matches the current Red Canary Automate payload shape:</p>
+<pre><code class="language-json">[
+  {
+    &quot;detection&quot;: {
+      &quot;id&quot;: &quot;12345&quot;,
+      &quot;url&quot;: &quot;https://example.my.redcanary.co/detections/12345&quot;,
+      &quot;headline&quot;: &quot;Suspicious activity affecting HOSTNAME&quot;,
+      &quot;details&quot;: &quot;Detection details from Red Canary.&quot;,
+      &quot;severity&quot;: &quot;High&quot;
+    },
+    &quot;host&quot;: {
+      &quot;name&quot;: &quot;HOSTNAME&quot;,
+      &quot;full_name&quot;: &quot;HOSTNAME.example.com&quot;,
+      &quot;os_family&quot;: &quot;Windows&quot;,
+      &quot;os_version&quot;: &quot;10.0&quot;
+    },
+    &quot;tactics&quot;: &quot;Execution, DefenseEvasion&quot;,
+    &quot;process_iocs&quot;: [],
+    &quot;child_process_iocs&quot;: [],
+    &quot;cross_process_iocs&quot;: [],
+    &quot;file_modification_iocs&quot;: [],
+    &quot;network_connection_iocs&quot;: [],
+    &quot;registry_modification_iocs&quot;: [],
+    &quot;identities&quot;: []
+  }
+]
+</code></pre>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>29-05-2026</td>
+  <td>Added Red Canary Threat Detection (via Codeless Connector Framework) <strong>Data Connector</strong> and refreshed the Red Canary Threat Detection <strong>Analytic Rule</strong>.</td>
+</tr>
+<tr>
+  <td>1.0.0</td>
+  <td>04-03-2022</td>
+  <td>Initial release with Red Canary <strong>Data Connector</strong> and Red Canary Threat Detection <strong>Analytic Rule</strong>.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

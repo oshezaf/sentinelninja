@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ZeroFoxThreatIntelligence_NationalIDs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/National%20Ids/ZeroFoxThreatIntelligence_NationalIDs_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_NationalIds_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/National%20Ids/ZeroFoxThreatIntelligence_NationalIds_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---national-ids) |
 
 Collects national ids data from the [ZeroFox](https://www.zerofox.com/threat-intelligence/) API into Microsoft Sentinel.
 

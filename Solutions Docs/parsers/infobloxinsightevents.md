@@ -13,8 +13,8 @@
 | Title | Parser for InfobloxInsightEvents |
 | Location | Solution |
 | Solution | [Infoblox](../solutions/infoblox.md) |
-| Version | 1.0.0 |
-| Last Updated | 2024-03-06 |
+| Version | 1.1.0 |
+| Last Updated | 2026-07-28 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Parsers/InfobloxInsightEvents.yaml) |
@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) |  | ? | ✓ | ? |
 
 ---
 

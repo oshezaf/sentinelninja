@@ -18,8 +18,8 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **46** |
-| Active | 44 |
+| Total Connectors | **47** |
+| Active | 45 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 2 |
 
@@ -31,7 +31,7 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 |:----------|:----------|:------:|:---------|
 | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
-| [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) ⚠️ | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
+| [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [Darktrace ActiveAI Security Platform Connector](../connectors/darktraceactiveaisecurityplatform.md) | Darktrace | 6 | [Darktrace](../solutions/darktrace.md) |
 | [DataBahn](../connectors/databahnpush.md) | DataBahn | 3 | [Databahn](../solutions/databahn.md) |
@@ -50,6 +50,7 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 | [OneTrust](../connectors/onetrustpush.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
 | [Orca Security Alerts (via Microsoft Entra ID)](../connectors/orcasecurityalertsccf.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
+| [Red Canary Threat Detection (via Codeless Connector Framework)](../connectors/redcanary-connectordefinition.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | SAP SE | 8 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) ➕ | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |

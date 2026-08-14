@@ -13,8 +13,8 @@
 | Title | Parser for InfobloxInsightAssets |
 | Location | Solution |
 | Solution | [Infoblox](../solutions/infoblox.md) |
-| Version | 1.0.0 |
-| Last Updated | 2024-03-06 |
+| Version | 1.1.0 |
+| Last Updated | 2026-07-28 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Parsers/InfobloxInsightAssets.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) |  | ? | ✓ | ? |
 
 ---
 

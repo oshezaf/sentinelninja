@@ -29,7 +29,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | ? | ✓ | ? |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | ✓ | ✗ | ? |
+| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | ✓ | ✗ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

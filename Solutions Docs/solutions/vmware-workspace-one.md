@@ -14,14 +14,14 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-07 |
-| **Last Updated** | 2026-06-01 |
+| **Last Updated** | 2026-07-24 |
 | **Solution Folder** | [VMware Workspace ONE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Workspace%20ONE) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmware-workspace-one) · Popularity: 🔵 Medium (65%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmware-workspace-one) · Popularity: 🔵 Medium (78%) |
 
-The VMware Workspace ONE solution for Microsoft Sentinel enables ingestion of enrolled device inventory and installed application details from Workspace ONE UEM into Microsoft Sentinel. For more information about Workspace ONE UEM and its APIs, see the official Omnissa documentation: https://docs.omnissa.com/bundle/Workspace-ONE-UEM-API-programming-guide
+The VMware Workspace ONE solution for Microsoft Sentinel enables ingestion of enrolled device inventory and installed application details from Workspace ONE UEM into Microsoft Sentinel. For more information about Workspace ONE UEM and its APIs, see the official Omnissa documentation: https://developer.omnissa.com/workspace-one-uem-apis/
 
 Underlying Microsoft Technologies used:
 - Microsoft Sentinel

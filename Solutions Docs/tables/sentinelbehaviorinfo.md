@@ -11,8 +11,10 @@ Reference for SentinelBehaviorInfo table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo) |
 
 ## Contents
@@ -23,21 +25,21 @@ Reference for SentinelBehaviorInfo table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (23 columns)
+## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AccountObjectId | string | Unique identifier for the account in Microsoft Entra ID. |
 | AccountUpn | string | User principal name (UPN) of the account. |
 | ActionType | string | Type of behavior. |
 | AdditionalFields | string | Additional information about the entity or event. |
-| AttackTechniques | string | MITRE ATT&amp;CK techniques associated with the activity that triggered the behavior. |
+| AttackTechniques | string | MITRE ATT&CK techniques associated with the activity that triggered the behavior. |
 | BehaviorId | string | Unique identifier for the behavior. |
 | Categories | string | Types of threat indicator or breach activity identified by the behavior. |
 | DataSources | string | Products or services that provided information for the behavior. |
@@ -45,8 +47,9 @@ Reference for SentinelBehaviorInfo table in Azure Monitor Logs.
 | DetectionSource | string | Detection technology or sensor that identified the notable component or activity. |
 | DeviceId | string | Unique identifier for the device in the service. |
 | EndTime | datetime | Date and time of the last activity related to the behavior. |
+| Insights | string | Insights related to the behavior. |
 | ServiceSource | string | Product or service that provided the behavior. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StartTime | datetime | Date and time of the first activity related to the behavior. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated. |

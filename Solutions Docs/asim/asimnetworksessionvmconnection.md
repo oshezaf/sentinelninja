@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VMConnection`](../tables/vmconnection.md) | ? | ✗ | ? |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | ✗ |
 
 ## Parameters
 

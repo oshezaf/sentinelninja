@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CheckPointEmailSecurity_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security/Data%20Connectors/CheckPointEmailSecurity_CCF/CheckPointEmailSecurity_DCR.json) |
 | **CCF Configuration** | [CheckPointEmailSecurity_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security/Data%20Connectors/CheckPointEmailSecurity_CCF/CheckPointEmailSecurity_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#check-point-email-security-via-codeless-connector-framework) |
 
 The [Check Point Email Security (Harmony Email Collaboration)](https://www.checkpoint.com/harmony/email-security/) data connector provides the capability to ingest security events and audit logs from Check Point's Email Security platform into Microsoft Sentinel through the REST API. The connector provides visibility into advanced email threats including zero-day threats, phishing, account takeover, data leakage, and shadow IT discovery. It ingests security events, anti-phishing exceptions, spam exceptions, and audit logs into Microsoft Sentinel, helping organizations maintain security and compliance visibility.
 

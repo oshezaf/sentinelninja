@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -84,7 +84,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">AADOperationType</td>
@@ -214,7 +214,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">TargetResources</td>
@@ -238,7 +238,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/auditlogs">AuditLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (23)</h2>
+<h2 id="solutions">Solutions (22)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
@@ -258,7 +258,6 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/ueba-essentials.html">UEBA Essentials</a></li>
@@ -282,7 +281,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (107)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (104)</h2>
 <h3 id="analytic-rules">Analytic Rules (75)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
@@ -528,7 +527,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.html">Possible SignIn from Azure Backdoor</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Add unverified domain&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-privileged-role-assigned-outside-pim-269435e3-1db8-4423-9dfc-9bf59997da1c-d87cbe19.html">Privileged Role Assigned Outside PIM</a></td>
@@ -544,7 +543,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName == &quot;Remove service principal&quot;</code><br><code>OperationName has_all &quot;Update application&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.html">Suspicious Sign In Followed by MFA Modification</a></td>
@@ -672,7 +671,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (17)</h3>
+<h3 id="hunting-queries">Hunting Queries (14)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -684,7 +683,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName == &quot;Update user&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-user-detection-added-to-privilege-groups-based-in-watchlist-8c5bc38a-438d-48fb-ae3f-7f356d3e5ba9-ddbfdf3a.html">User detection added to privilege groups based in Watchlist</a></td>
@@ -734,7 +733,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.html">Secret Added to Dormant Service Principal</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Add service principal credentials&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-service-principal-credential-change-followed-by-novel-sp-sign-in-872ac8db-7642-4907-bcb2-d7822ae6be9c-d99cf1bb.html">Service principal credential change followed by novel SP sign-in</a></td>
@@ -784,29 +783,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-conditional-access-policy-exclusion-added-a14106c1-af19-41fb-9fbd-6d9ef402537b-abbd9031.html">Conditional Access policy exclusion added</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Update conditional access policy&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-member-or-owner-added-to-a-role-assignable-group-within-24-hours-of-its-creation-17b75367-3b4e-4292-b985-30112acc2de0-f00086f1.html">Member or owner added to a role-assignable group within 24 hours of its creation</a></td>
-  <td style="text-align:left"><code>OperationName in &quot;Add group,Add member to group,Add owner to group&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-role-assignable-group-created-745c2179-a7db-4185-90c1-b33d78c5a6ac-c4a830ba.html">Role-assignable group created</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Add group&quot;</code></td>
-</tr>
-</tbody>
-</table>
 <h3 id="workbooks">Workbooks (15)</h3>
 <p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
 <table>
@@ -853,33 +829,29 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>OperationName in &quot;Add member to role,Add user,Consent to application,Reset user password,Update user&quot;</code><br><code>OperationName == &quot;Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>OperationName in &quot;Add member to role,Add user,Consent to application,Reset user password,Update user&quot;</code><br><code>OperationName == &quot;Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -943,7 +915,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-conditionalaccesssism-90abe712.html">ConditionalAccessSISM</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName in &quot;Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -990,18 +962,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>OperationName has_any &quot;Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user&quot;</code><br><code>OperationName has_any &quot;directory write,policy update,role assignment,role update&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1026,8 +996,8 @@
 <li><code>microsoft.azureadgraph/tenants</code></li>
 <li><code>microsoft.graph/tenants</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (48 criteria, 70 total references)</h2>
-<p>References by type: 0 connectors, 70 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (48 criteria, 71 total references)</h2>
+<p>References by type: 0 connectors, 71 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1043,10 +1013,10 @@
 <tr>
   <td style="text-align:left"><code>OperationName == &quot;Update conditional access policy&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>OperationName has &quot;Update a partner cross-tenant access setting&quot;</code></td>
@@ -1058,6 +1028,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>OperationName in &quot;Set domain authentication,Set federation settings on domain&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName == &quot;Update user&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -1105,14 +1083,6 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Update user&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>OperationName == &quot;Invite external user&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1138,6 +1108,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Identity != &quot;MS-PIM&quot;</code><br><code>Identity != &quot;MS-PIM-Fairfax&quot;</code><br><code>LoggedByService == &quot;Core Directory&quot;</code><br><code>OperationName == &quot;Add member to role&quot;</code><br><code>OperationName has &quot;Add member to role outside of PIM&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add user,Consent to application,Reset user password,Update user&quot;</code><br><code>OperationName == &quot;Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1305,14 +1283,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Add unverified domain&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>OperationName has &quot;Consent to application&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1322,6 +1292,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>OperationName == &quot;Update device&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName == &quot;Remove service principal&quot;</code><br><code>OperationName has_all &quot;Update application&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1377,31 +1355,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Add service principal credentials&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>OperationName == &quot;Add member to role&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OperationName in &quot;Add group,Add member to group,Add owner to group&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OperationName == &quot;Add group&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1417,7 +1371,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>OperationName in &quot;Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>AdditionalDetails contains &quot;fraud&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName has_any &quot;Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user&quot;</code><br><code>OperationName has_any &quot;directory write,policy update,role assignment,role update&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1427,10 +1397,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>70</strong></td>
+  <td style="text-align:center"><strong>71</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>70</strong></td>
+  <td style="text-align:center"><strong>71</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1690,6 +1660,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>Consent to application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Update conditional access policy</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">7</td>
@@ -1706,20 +1684,36 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Consent to application</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Add app role assignment to service principal</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>has Update a partner cross-tenant access setting</code></td>
@@ -1786,30 +1780,6 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add member to role</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Update user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Delete user</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1818,7 +1788,23 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add service principal credentials</code></td>
+  <td style="text-align:left"><code>Delete conditional access policy</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add conditional access policy</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update group</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1834,22 +1820,6 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add owner to group</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add unverified domain</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>has Add member to role outside of PIM</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1858,7 +1828,23 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add group</code></td>
+  <td style="text-align:left"><code>Reset user password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Sign-in activity</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Consent to application</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1914,23 +1900,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Delete conditional access policy</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add conditional access policy</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Update group</code></td>
+  <td style="text-align:left"><code>Add service principal credentials</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1962,6 +1932,22 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Add owner to group</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add unverified domain</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Add verified domain</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1986,6 +1972,22 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Remove service principal</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_all Update application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>has Add app role assignment to service principal</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1995,6 +1997,110 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has StsRefreshTokenValidFrom</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add member to restricted management administrative unit</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove member from group</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove member from restricted management administrative unit</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Add directory role member</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Add user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Create user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Role assignment</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Update user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any directory write</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any policy update</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any role assignment</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any role update</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

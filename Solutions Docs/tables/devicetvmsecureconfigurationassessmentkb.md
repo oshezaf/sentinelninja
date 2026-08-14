@@ -6,15 +6,17 @@
 
 ---
 
-Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Logs.
+Knowledge base of various security configurations used by Microsoft Defender Vulnerability Management to assess devices; includes mappings to various standards and benchmarks
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessmentkb) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Schema (19 columns)
@@ -24,7 +26,7 @@ Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Lo
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ConfigurationBenchmarks | dynamic | List of industry benchmarks which recommend the same or similar configuration. |
 | ConfigurationCategory | string | Category or grouping to which the configuration belongs. |
 | ConfigurationDescription | string | Description of the configuration. |
@@ -36,7 +38,7 @@ Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Lo
 | RelatedMitreTechniques | dynamic | Related techniques from Mitre knowledge base. |
 | RemediationOptions | string | Recommended actions to reduce or address any associated risks |
 | RiskDescription | string | Description of any associated risks. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Tags | dynamic | Labels representing various attributes, used to identify or categorize a security configuration. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated. |
@@ -48,6 +50,7 @@ Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Lo
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSecureConfigurationAssessmentKB Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessmentkb)
+- [DeviceTvmSecureConfigurationAssessmentKB Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table)
 
 ---
 

@@ -19,7 +19,7 @@
 | **First Published** | 2022-09-21 |
 | **Last Updated** | 2026-07-29 |
 | **Solution Folder** | [42Crunch API Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-42crunch-api-protection) · Popularity: 🟡 Low (28%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-42crunch-api-protection) · Popularity: 🟡 Low (20%) |
 
 The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by installing a microfirewall inline with the API server. Access logs from the microfirewall are emitted to Microsoft Sentinel allowing analysis and investigation of attacks.
 

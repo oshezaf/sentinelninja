@@ -19,6 +19,7 @@
 | **CCF Configuration** | [Darktrace_DataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Data%20Connectors/ccf/Darktrace_DataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#darktrace-activeai-security-platform-connector) |
 
 The Darktrace ActiveAI Security Platform Connector connector provides the capability to read raw event data from Darktrace in Microsoft Sentinel.
 

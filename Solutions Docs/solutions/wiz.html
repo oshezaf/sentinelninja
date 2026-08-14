@@ -51,7 +51,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -62,20 +62,23 @@
   <td style="text-align:left">2023-06-20</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-08-03</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz">Wiz</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel">Azure Marketplace</a> · Popularity: 🔵 Medium (52%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel">Azure Marketplace</a> · Popularity: 🔵 Medium (77%)</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://wiz.io/">Wiz</a> solution for Microsoft Sentinel enables you to ingest <a href="https://docs.wiz.io/wiz-docs/docs/issues">Wiz Issues</a>, <a href="https://docs.wiz.io/wiz-docs/docs/vulnerability-findings">Wiz Vulnerability Findings</a>, and <a href="https://docs.wiz.io/wiz-docs/docs/audit-log-settings">Wiz Audit Logs</a> into Microsoft Sentinel using the Wiz REST API.</p>
+<p>The <a href="https://wiz.io/">Wiz</a> solution for Microsoft Sentinel lets Wiz push <a href="https://docs.wiz.io/wiz-docs/docs/issues">Wiz Issues</a>, Wiz Detections, and <a href="https://docs.wiz.io/wiz-docs/docs/audit-log-settings">Wiz Audit Logs</a> into Microsoft Sentinel in real time. Wiz sends data to a Data Collection Endpoint (DCE) using the Wiz service principal; this solution grants that service principal the least-privilege RBAC it needs, and Wiz then creates the data collection rule and tables. There is no Azure Function to host and no workspace shared keys to manage.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<p>a. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
-<p>b. <a href="https://azure.microsoft.com/services/key-vault/#overview">Azure Key Vault</a></p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Data Collection Rules and the Logs Ingestion API</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>

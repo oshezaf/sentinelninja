@@ -11,8 +11,8 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauditeventlogs) |
@@ -28,17 +28,18 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (128 columns)
+## Schema (136 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauditeventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActingAppId | string | The ID of the application that initiated the activity reported, including a process, browser, or service. |
+| ActingApplicationEntityKey | string | The entity key associated with the acting application. |
 | ActingAppName | string | The name of the application that initiated the activity reported, including a service, a URL, or a SaaS application. |
 | ActingAppType | string | The type of acting application. |
 | ActingOriginalAppType | string | The acting application type as reported by the reporting device. |
@@ -47,17 +48,21 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the sign-in session of the Actor. |
 | ActorUserAadId | string | The Azure Active Directory ID of the actor. |
+| ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
+| ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | ActorUserIdType | string | The type of the ID stored in the ActorUserId field. |
 | ActorUsername | string | The Actor's username, including domain information when available. |
 | ActorUsernameType | string | The type of the Actor's username specified in ActionUsername field |
 | ActorUserSid | string | The Windows user ID (SIDs) of the actor. |
 | ActorUserType | string | The type of the Actor. |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -101,7 +106,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | OriginalObjectType | string | The object type as reported by the reporting device. |
 | RuleName | string | The name or ID of the rule associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the source device. |
 | SrcDeviceType | string | The type of the source device. |
 | SrcDomain | string | The domain of the source device. |
@@ -121,7 +126,9 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | SrcOriginalRiskLevel | string | The risk level associaeted with the identified Source as reported by the reporting device. |
 | SrcPortNumber | int | The Source IP port from which the connection originated. |
 | SrcRiskLevel | int | The risk level associated with the identified Source. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
 | TargetAppId | string | The ID of the application to which the event applies, including a process, browser, or service. |
+| TargetApplicationEntityKey | string | The entity key associated with the target application. |
 | TargetAppName | string | The name of the application to which event applies, including a service, a URL, or a SaaS application. |
 | TargetAppType | string | The type of the application authorizing on behalf of the Actor. |
 | TargetDescription | string | A descriptive text associated with the target device. |
@@ -145,6 +152,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | TargetOriginalRiskLevel | string | The risk level associated with the target, as reported by the reporting device. |
 | TargetPortNumber | int | The Target IP port from which the connection originated. |
 | TargetRiskLevel | int | The risk level associated with the target. |
+| TargetSystemEntityKey | string | The entity key associated with the target system. |
 | TargetUrl | string | A URL associated with the target application. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatCategory | string | The category of the threat or malware identified in audit activity. |
@@ -186,7 +194,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Workday User Activity](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
@@ -229,22 +237,30 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/auditeventnormalized`
 
-## Selection Criteria Summary (2 criteria, 3 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 1 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventVendor == "Workday"` | - | 2 | - | - | **2** |
+| `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Workday"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **2** | **0** | **0** | **3** |
+| **Total** | **2** | **2** | **0** | **0** | **4** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 |  | `Workday` | - | 2 | - | - | **2** |
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Workday` |  | 1 | - | - | - | **1** |
+
+### EventType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Notable` | 1 | - | - | - | **1** |
 
 ---
 

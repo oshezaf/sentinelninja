@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cayosoft Guardian Threat Alerts &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cayosoft-guardian-threat-alerts">Cayosoft Guardian Threat Alerts</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cayosoft-logo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>CayosoftGuardianConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Cayosoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/cayosoft-guardian.html">Cayosoft Guardian</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cayosoft%20Guardian/Data%20Connectors/CayosoftGuardian_connectorDefinition.json">CayosoftGuardian_connectorDefinition.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Cayosoft Guardian data connector automatically ingests threat alerts from Cayosoft Guardian into Microsoft Sentinel. Cayosoft Guardian writes threat alerts to the Windows Event Log as Event ID 2. The Azure Monitor Agent (AMA) collects these events by using Data Collection Rules (DCRs) and sends the parsed data to the custom Log Analytics table named <code>CayosoftThreatAlerts_CL</code>. After the data is ingested, Microsoft Sentinel can use it for monitoring, analytics, incident creation, investigation, and automated response across your hybrid identity environment.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/cayosoftthreatalerts-cl.html"><code>CayosoftThreatAlerts_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and write permissions are required for the Log Analytics workspace.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Cayosoft Guardian Server</strong>: Must be connected to Azure Arc or run as an Azure virtual machine, with the Azure Monitor Agent installed.</li>
+<li><strong>Data Collection Rules</strong>: Read and write permissions for Data Collection Rules are required to associate the Data Collection Rule with the Azure Arc-enabled server or Azure virtual machine that runs Cayosoft Guardian.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Prerequisites and Infrastructure Setup</strong></p>
+<p>Before configuring the integration, make sure the following requirements are met:</p>
+<ul>
+<li>You have a Microsoft Sentinel workspace.</li>
+<li>The Windows Server that hosts Cayosoft Guardian is connected to Azure Arc or runs as an Azure virtual machine.</li>
+<li>The Azure Monitor Agent (AMA) is installed on the Cayosoft Guardian server.</li>
+</ul>
+<p><strong>2. Deploy the Data Collection Rule (DCR)</strong></p>
+<p>Cayosoft Guardian streams threat alerts via the Azure Monitor Agent, which requires a Data Collection Rule (DCR) linked to your Arc-enabled server or Azure VM. This is a one-time deployment, separate from the solution install.</p>
+<ol>
+<li><p>Click the button below.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCayosoft%2520Guardian%2FData%2520Connectors%2FCayosoftGuardian_DCRTemplate.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
+</li>
+<li><p>Select your <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Region</strong>.</p>
+</li>
+<li><p>Enter your <strong>Workspace Name</strong> (the Microsoft Sentinel-enabled Log Analytics workspace) and <strong>Arc Machine Name</strong> (the exact name of the Arc-enabled server or Azure VM running Cayosoft Guardian).</p>
+</li>
+<li><p>Click <strong>Review + Create</strong>, then <strong>Create</strong>.</p>
+</li>
+</ol>
+<p><strong>3. Configure Cayosoft Guardian Logging</strong></p>
+<p>Enable the event log generation within the product:</p>
+<ol>
+<li>Open Cayosoft Guardian.</li>
+<li>Navigate to <strong>Settings</strong> &gt; <strong>Service Settings</strong> &gt; <strong>Windows Event Log Settings</strong>.</li>
+<li>Verify that <strong>Windows Event Log for Alerts</strong> is enabled. Cayosoft Guardian writes threat alerts to the Windows Event Log &gt; Applications and Services Logs &gt; Cayosoft Guardian Alerts</li>
+</ol>
+<p><strong>4. Install the Workbook</strong></p>
+<p>The Cayosoft Guardian solution includes a prebuilt workbook that visualizes threat alerts and incidents, including severity distribution, alerts by system type, alert trends over time, and recent incidents and alerts.</p>
+<ol>
+<li>In Microsoft Sentinel, go to <strong>Content hub</strong>.</li>
+<li>Search for <strong>Cayosoft Guardian</strong> and verify that the solution is installed. If it is not installed, install it.</li>
+<li>Go to <strong>Workbooks</strong> and select the <strong>Templates</strong> tab.</li>
+<li>Select <strong>Cayosoft Guardian - Incidents Dashboard</strong>, click <strong>Save</strong>, choose the Azure region where you want to save the workbook, and then click <strong>View saved workbook</strong>.</li>
+<li>The workbook is available under <strong>My workbooks</strong>. Optionally, pin it to an Azure dashboard for quick access.</li>
+</ol>
+<p><strong>5. Enable the Analytics Rules</strong></p>
+<p>The Cayosoft Guardian solution also includes scheduled analytics rule templates that convert Cayosoft Guardian threat alerts into Microsoft Sentinel incidents.</p>
+<ol>
+<li>In Microsoft Sentinel, go to <strong>Analytics</strong>.</li>
+<li>Select the <strong>Rule templates</strong> tab.</li>
+<li>Locate the Cayosoft Guardian analytics rule templates, for example:<ul>
+<li><strong>Cayosoft Guardian - Cloud Application Security Threats</strong></li>
+<li><strong>Cayosoft Guardian - Core Identity and Infrastructure Threats</strong></li>
+</ul>
+</li>
+<li>Click <strong>Create rule</strong>, review the schedule, entity mapping, and incident settings, and then click <strong>Review + Create</strong>.</li>
+<li>Verify that the rule appears as <strong>Enabled</strong> on the <strong>Active rules</strong> tab. The analytics rules generate the <code>SecurityIncident</code> records used by the workbook's <strong>Incidents &amp; recent alerts</strong> table.</li>
+</ol>
+<p><strong>6. Verify the Integration</strong></p>
+<p>After configuring the connector, verify that Microsoft Sentinel is receiving Cayosoft Guardian threat alert data:</p>
+<ol>
+<li>In Microsoft Sentinel, open the Log Analytics workspace connected to your Microsoft Sentinel instance.</li>
+<li>Open <strong>Logs</strong>.</li>
+<li>Run the following query:<code>CayosoftThreatAlerts_CL | sort by TimeGenerated desc | take 50 </code></li>
+<li>Confirm that new rows are available in the table.
+For detailed information, step-by-step guides, and known issues, please refer to the <a href='https://support.cayosoft.com/hc/en-us/articles/46659066589325-Threat-Alerts-Directory' target='_blank'>official documentation</a>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

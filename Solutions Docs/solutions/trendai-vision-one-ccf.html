@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ TrendAI Vision OneCCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="trendai-vision-one">⚠️ TrendAI Vision One(CCF)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TrendAI_Logo.svg" alt="TrendAI Vision One(CCF) Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">TrendAI</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://success.trendmicro.com/dcx/s/">https://success.trendmicro.com/dcx/s/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">TrendAI</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-08</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29">TrendAI Vision One(CCF)</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html">TrendAI Vision One</a> solution for Microsoft Sentinel provides two data connectors that ingest security data from the TrendAI Vision One platform using the Codeless Connector Framework (CCF):</p>
+<ul>
+<li><strong>Workbench Alerts</strong> – Security incidents, investigations, and alerts with IOC extraction</li>
+<li><strong>OAT Detections</strong> – MITRE ATT&amp;CK mapped detections with full process trees</li>
+</ul>
+<p>This solution also includes KQL parser functions, an analytic rule, and a workbook dashboard for Workbench Alerts.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/trendaivisiononeoat.html">TrendAI Vision One™ - OAT Detections (via Codeless Connector Framework)</a> 🔶</li>
+<li><a href="../connectors/trendaivisiononeworkbench.html">TrendAI Vision One™ - Workbench Alerts (via Codeless Connector Framework)</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/trendai-xdr-oat-v2-cl.html"><code>TrendAI_XDR_OAT_V2_CL</code></a> 🔶</td>
+  <td><a href="../connectors/trendaivisiononeoat.html">TrendAI Vision One™ - OAT Detections (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/trendai-xdr-workbench-v2-cl.html"><code>TrendAI_XDR_WORKBENCH_V2_CL</code></a> 🔶</td>
+  <td><a href="../connectors/trendaivisiononeworkbench.html">TrendAI Vision One™ - Workbench Alerts (via Codeless Connector Framework)</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/trendai-vision-one-ccf-trendai-vision-one-create-incident-for-workbench-alerts-2f668615-c372-4673-a5cd-773e4da715b9-1df6fda9.html">TrendAI Vision One - Create Incident for Workbench Alerts</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, CommandAndControl, Impact</td>
+  <td style="text-align:left"><a href="../tables/trendai-xdr-workbench-v2-cl.html"><code>TrendAI_XDR_WORKBENCH_V2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/trendai-vision-one-ccf-trendaivisiononeworkbenchoverview-7ffcf600.html">TrendAIVisionOneWorkbenchOverview</a></td>
+  <td style="text-align:left"><a href="../tables/trendai-xdr-workbench-v2-cl.html"><code>TrendAI_XDR_WORKBENCH_V2_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/trendaioat-complete.html">TrendAIOAT_Complete</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/trendai-xdr-oat-v2-cl.html"><code>TrendAI_XDR_OAT_V2_CL</code></a> <em>(read)</em><br><a href="../tables/trendmicro-xdr-oat-cl.html"><code>TrendMicro_XDR_OAT_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/trendaiworkbench-complete.html">TrendAIWorkbench_Complete</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/trendai-xdr-workbench-v2-cl.html"><code>TrendAI_XDR_WORKBENCH_V2_CL</code></a> <em>(read)</em><br><a href="../tables/trendmicro-xdr-workbench-cl.html"><code>TrendMicro_XDR_WORKBENCH_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29/README.md">TrendAI Vision One(CCF)/README.md</a></em></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>The TrendAI Vision One solution for Microsoft Sentinel provides data connectors that ingest security data from the TrendAI Vision One platform into Microsoft Sentinel using the Codeless Connector Framework (CCF).</p>
+<p>This solution includes two data connectors:</p>
+<table>
+<thead>
+<tr>
+  <th>Connector</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Workbench Alerts</strong></td>
+  <td>Ingests security alerts, incidents, and investigations from TrendAI Vision One Workbench</td>
+</tr>
+<tr>
+  <td><strong>OAT Detections</strong></td>
+  <td>Ingests Observed Attack Techniques (OAT) detections with MITRE ATT&amp;CK mappings</td>
+</tr>
+</tbody>
+</table>
+<p>Both connectors poll the TrendAI Vision One API every <strong>5 minutes</strong>, retrieving data from the last 5-minute window.</p>
+<hr />
+<h2 id="solution-contents">Solution Contents</h2>
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data Connectors</td>
+  <td>2 connectors (Workbench Alerts, OAT Detections)</td>
+</tr>
+<tr>
+  <td>Custom Tables</td>
+  <td><code>TrendAI_XDR_WORKBENCH_V2_CL</code>, <code>TrendAI_XDR_OAT_V2_CL</code></td>
+</tr>
+<tr>
+  <td>Parser Functions</td>
+  <td><code>TrendAIWorkbench_Complete</code>, <code>TrendAIOAT_Complete</code></td>
+</tr>
+<tr>
+  <td>Data Collection Rules</td>
+  <td>DCR-based ingestion-time transformations</td>
+</tr>
+<tr>
+  <td>Data Collection Endpoint</td>
+  <td>Shared DCE for both connectors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="1-microsoft-sentinel-workspace">1. Microsoft Sentinel Workspace</h3>
+<ul>
+<li>An active Microsoft Sentinel workspace</li>
+<li><strong>Permissions required:</strong><ul>
+<li>Read and Write permissions on the Log Analytics workspace</li>
+<li>Contributor or Owner role on the resource group</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-trendai-vision-one-api-token">2. TrendAI Vision One API Token</h3>
+<p>You need an API token from your TrendAI Vision One console with appropriate permissions.</p>
+<h4 id="steps-to-generate-api-token">Steps to Generate API Token:</h4>
+<ol>
+<li>Log in to the <a href="https://portal.xdr.trendmicro.com">TrendAI Vision One Console</a></li>
+<li>Navigate to <strong>Administration</strong> → <strong>API Keys</strong></li>
+<li>Click <strong>Add API Key</strong></li>
+<li>Configure the API key:<ul>
+<li><strong>Name:</strong> Microsoft Sentinel Integration (or your preferred name)</li>
+<li><strong>Role:</strong> Select a role with the following permissions:<ul>
+<li>Workbench (View)</li>
+<li>Observed Attack Techniques (View)</li>
+</ul>
+</li>
+<li><strong>Expiration:</strong> Set according to your security policy</li>
+</ul>
+</li>
+<li>Click <strong>Add</strong></li>
+<li><strong>Important:</strong> Copy and securely store the API token immediately. It will not be shown again.</li>
+</ol>
+<h3 id="3-identify-your-api-region">3. Identify Your API Region</h3>
+<p>Determine the API domain based on your TrendAI Vision One tenant region:</p>
+<table>
+<thead>
+<tr>
+  <th>Region</th>
+  <th>API Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>US</td>
+  <td><code>api.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>EU</td>
+  <td><code>api.eu.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>SG</td>
+  <td><code>api.sg.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>JP</td>
+  <td><code>api.xdr.trendmicro.co.jp</code></td>
+</tr>
+<tr>
+  <td>AU</td>
+  <td><code>api.au.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>IN</td>
+  <td><code>api.in.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>MEA</td>
+  <td><code>api.mea.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>UK</td>
+  <td><code>api.uk.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>CA</td>
+  <td><code>api.ca.xdr.trendmicro.com</code></td>
+</tr>
+<tr>
+  <td>ZA (South Africa)</td>
+  <td><code>api.za.xdr.trendmicro.com</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="installation-from-content-hub">Installation from Content Hub</h2>
+<h3 id="step-1-navigate-to-content-hub">Step 1: Navigate to Content Hub</h3>
+<ol>
+<li>Sign in to the <a href="https://portal.azure.com">Azure Portal</a></li>
+<li>Navigate to <strong>Microsoft Sentinel</strong></li>
+<li>Select your Sentinel workspace</li>
+<li>In the left menu, click <strong>Content hub</strong></li>
+</ol>
+<h3 id="step-2-find-and-install-the-solution">Step 2: Find and Install the Solution</h3>
+<ol>
+<li>In the Content Hub, search for <strong>&quot;TrendAI Vision One&quot;</strong></li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>05-08-2026</td>
+  <td>Initial release of TrendAI Vision One solution via Codeless Connector Framework (CCF). Includes Workbench Alerts and OAT Detections connectors with DCR-based ingestion-time transformations, dropdown selectors for API domain and third-party exclusion, TMV1-Filter pass-through support, KQL parsers, an analytic rule with MITRE ATT&amp;CK mappings, and a workbook dashboard. Fixed ARM template bracket escaping, added token rotation warning, optimized workbook queries, and removed the null alertRuleTemplateName field.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

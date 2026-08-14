@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [AkamaiDDOSProtection_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20DDOS%20Protection/Data%20Connectors/AkamaiDDOSProtection_CCF/AkamaiDDOSProtection_DCR.json) |
 | **CCF Configuration** | [AkamaiDDOSProtection_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20DDOS%20Protection/Data%20Connectors/AkamaiDDOSProtection_CCF/AkamaiDDOSProtection_PollerConfig.json) |
 | **CCF Capabilities** | `EdgeGrid`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#akamai-security-events-via-codeless-connector-framework) |
 
 The [Akamai SIEM Connector](https://techdocs.akamai.com/siem-integration/docs) ingests web application firewall (WAF) security events from the [Akamai SIEM Integration API](https://techdocs.akamai.com/siem-integration/reference/get-config) into Microsoft Sentinel. The connector collects detailed security event data including attack information, geographic context, and HTTP request/response metadata. Authentication uses Akamai EdgeGrid - provide your three EdgeGrid credentials (client_token, access_token, client_secret) plus the API hostname from your .edgerc file. The platform runtime computes a fresh HMAC-SHA-256 signed Authorization header on every poll request per the EdgeGrid specification.
 

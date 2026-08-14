@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -84,7 +84,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -679,7 +679,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">SRPolicyId</td>
@@ -966,7 +966,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.html">Rare and potentially high-risk Office operations</a></td>
-  <td style="text-align:left"><code>Operation in &quot;Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule&quot;</code><br><code>UserId has_any &quot;NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)&quot;</code></td>
+  <td style="text-align:left"><code>Operation in &quot;Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-5dd76a87-9f87-4576-bab3-268b0e2b338b-ccd6f2dd.html">SharePointFileOperation via devices with previously unseen user agents</a></td>
@@ -1156,7 +1156,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.html">Files uploaded to teams and access summary</a></td>
-  <td style="text-align:left"><code>Operation in &quot;FileAccessed,FileDownloaded,FileUploaded&quot;</code><br><code>RecordType == &quot;SharePointFileOperation&quot;</code><br><code>SourceRelativeUrl has &quot;Microsoft Teams Chat Files&quot;</code><br><code>UserId != &quot;app@sharepoint&quot;</code></td>
+  <td style="text-align:left"><code>Operation in &quot;FileAccessed,FileDownloaded,FileUploaded&quot;</code><br><code>RecordType == &quot;SharePointFileOperation&quot;</code><br><code>SourceRelativeUrl has &quot;Microsoft Teams Chat Files&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-365-mail-redirect-via-exo-transport-rule-9891684a-1e3a-4546-9403-3439513cbc70-09a65cff.html">Mail redirect via ExO transport rule</a></td>
@@ -1687,7 +1687,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Operation in &quot;Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule&quot;</code><br><code>UserId has_any &quot;NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)&quot;</code></td>
+  <td style="text-align:left"><code>Operation in &quot;Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1807,7 +1807,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Operation in &quot;FileAccessed,FileDownloaded,FileUploaded&quot;</code><br><code>RecordType == &quot;SharePointFileOperation&quot;</code><br><code>SourceRelativeUrl has &quot;Microsoft Teams Chat Files&quot;</code><br><code>UserId != &quot;app@sharepoint&quot;</code></td>
+  <td style="text-align:left"><code>Operation in &quot;FileAccessed,FileDownloaded,FileUploaded&quot;</code><br><code>RecordType == &quot;SharePointFileOperation&quot;</code><br><code>SourceRelativeUrl has &quot;Microsoft Teams Chat Files&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2735,37 +2735,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="userid">UserId</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>has_any NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>!= app@sharepoint</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>

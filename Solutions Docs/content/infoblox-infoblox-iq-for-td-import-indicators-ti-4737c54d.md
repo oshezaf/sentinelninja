@@ -1,0 +1,115 @@
+# Infoblox-IQ-for-TD-Import-Indicators-TI
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox IQ for TD Insight into the ThreatIntelligenceIndicator table. You must run the Infoblox-IQ-for-TD-Get-Insight-Details playbook on a IQ for TD Insight Incident before running this playbook.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Playbook |
+| **Solution** | [Infoblox](../solutions/infoblox.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Import%20Indicators%20TI/azuredeploy.json) |
+
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Domains | post | `/queryDataV2` | — |
+| Get_IPs | post | `/queryDataV2` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Threat_Intelligence_-_Upload_STIX_Objects_(Preview) | post | `/ThreatIntelligence/@{encodeURIComponent(parameters('WorkspaceID'))}/UploadStixObjects/` | — |
+| Threat_Intelligence_-_Upload_STIX_Objects_(Preview)_1 | post | `/ThreatIntelligence/@{encodeURIComponent(parameters('WorkspaceID'))}/UploadStixObjects/` | — |
+
+</details>
+
+## Additional Documentation
+
+> 📄 *Source: [Infoblox SOC Import Indicators TI/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Import%20Indicators%20TI/readme.md)*
+
+* [Summary](#Summary)
+* [Prerequisites](#Prerequisites)
+* [Deployment instructions](#Deployment-instructions)
+* [Post-Deployment instructions](#Post-Deployment-instructions)
+
+## Summary<a name="Summary"></a>
+
+This playbook imports each Indicator of a Microsoft Sentinel Incident triggered by an **Infoblox IQ for TD Insight** into the ```ThreatIntelligenceIndicator``` table you can use as **threat intelligence**.
+
+*You must run the **Infoblox-IQ-for-TD-Get-Insight-Details** playbook on the IQ for TD Insight Incident before running this playbook.*
+
+This playbook can be configured to run automatically when a IQ for TD Insight Incident occurs or run on demand.
+
+![Infoblox IQ for TD Import Indicators TI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Import%20Indicators%20TI/Images/InfobloxSOCImportIndicatorsTI.png)
+
+### Prerequisites<a name="Prerequisites"></a>
+
+1. Workspace Name
+2. Entra ID Application Secret
+3. Client ID
+4. Tenant ID
+
+### Deployment instructions<a name="Deployment-instructions"></a>
+
+1. To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.
+2. Fill in the required parameters:
+    * Playbook Name: Enter the playbook name here
+    * Workspace Name: Enter workspace name in which Incident is created
+    * Entra ID Application Secret: Enter value for Entra ID Application Secret
+    * Client ID: Enter value for Application (Client) ID
+    * Tenant ID: Enter value for Directory (Tenant) ID
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Import%20Indicators%20TI%2Fazuredeploy.json) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Import%20Indicators%20TI%2Fazuredeploy.json)
+
+### Post-Deployment instructions<a name="Post-Deployment-instructions"></a>
+
+#### a. Authorize connections
+
+Once deployment is complete, authorize each connection.
+
+1. Go to your logic app -> API connections -> Select azuremonitorlogs connection resource
+2. Go to General -> edit API connection
+3. Click Authorize
+4. Sign in
+5. Click Save
+6. Repeat steps for other connections
+
+#### b. Assign role to this playbook
+
+1. Go to Log Analytics Workspace → *select your workspace* → Access Control → Add
+2. Add role assignment
+3. Assignment type: Job function roles -> Add 'Microsoft Sentinel Contributor' as a Role
+4. Members: select managed identity for assigned access to and add your logic app as member
+5. Click on review+assign
+
+#### c. Configure playbook permissions (required for automation rules to run this playbook)
+
+1. Go to Microsoft Sentinel → *select your workspace* → Settings
+2. Select the Settings tab → Playbook permissions → Configure permissions
+3. Select the subscription containing this playbook
+4. Click Apply
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Playbooks](playbooks.md) · [Back to Infoblox](../solutions/infoblox.md)
+

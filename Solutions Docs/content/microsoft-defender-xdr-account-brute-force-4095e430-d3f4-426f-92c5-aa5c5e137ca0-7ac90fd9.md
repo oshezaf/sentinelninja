@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | `AccountName !endswith "$"`<br>`RemoteIPType == "Public"` | ✓ | ✗ | ? |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | `AccountName !endswith "$"`<br>`RemoteIPType == "Public"` | ✓ | ✗ | ✓ |
 
 ---
 

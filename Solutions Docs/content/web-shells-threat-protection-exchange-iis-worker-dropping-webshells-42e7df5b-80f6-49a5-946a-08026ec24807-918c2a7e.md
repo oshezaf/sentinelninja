@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath !endswith ".ini"`<br>`FolderPath !endswith ".js"`<br>`FolderPath !endswith ".json"`<br>`FolderPath !endswith ".log"`<br>`FolderPath !endswith ".tmp"`<br>`FolderPath !endswith ".vb"`<br>`FolderPath !endswith ".xml"`<br>`FolderPath has_any "\\wwwroot\\"`<br>`InitiatingProcessCommandLine contains "MSExchange"`<br>`InitiatingProcessFileName == "w3wp.exe"` | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath !endswith ".ini"`<br>`FolderPath !endswith ".js"`<br>`FolderPath !endswith ".json"`<br>`FolderPath !endswith ".log"`<br>`FolderPath !endswith ".tmp"`<br>`FolderPath !endswith ".vb"`<br>`FolderPath !endswith ".xml"`<br>`FolderPath has_any "\\wwwroot\\"`<br>`InitiatingProcessCommandLine contains "MSExchange"`<br>`InitiatingProcessFileName == "w3wp.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

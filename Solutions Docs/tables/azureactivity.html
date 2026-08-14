@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✗ No</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -85,7 +85,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -205,12 +205,12 @@
 <tr>
   <td style="text-align:left">Properties</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Set of &lt;Key Value&gt; pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead.</td>
+  <td style="text-align:left">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead.</td>
 </tr>
 <tr>
   <td style="text-align:left">Properties_d</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Set of &lt;Key Value&gt; pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.</td>
+  <td style="text-align:left">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.</td>
 </tr>
 <tr>
   <td style="text-align:left">Resource</td>
@@ -240,7 +240,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">SubscriptionId</td>
@@ -717,7 +717,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></p>
+<p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationName in &quot;Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info&quot;</code><br><code>OperationName has_any &quot;clusterrolebindings,rolebindings&quot;</code><br><code>OperationName has_any &quot;cronjobs,daemonsets&quot;</code><br><code>OperationName has_any &quot;cronjobs/create,daemonsets/create&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -1252,7 +1252,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>Caller contains &quot;@&quot;</code><br><code>OperationName in &quot;Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info&quot;</code><br><code>OperationName has_any &quot;clusterrolebindings,rolebindings&quot;</code><br><code>OperationName has_any &quot;cronjobs,daemonsets&quot;</code><br><code>OperationName has_any &quot;cronjobs/create,daemonsets/create&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Authorization/roleAssignments/delete&quot;</code><br><code>OperationNameValue contains &quot;WebApplicationFirewall&quot;</code><br><code>OperationNameValue contains &quot;azureFirewall&quot;</code><br><code>OperationNameValue contains &quot;firewallPolicies&quot;</code><br><code>OperationNameValue contains &quot;networkSecurityGroup&quot;</code><br><code>OperationNameValue contains &quot;roleAssignments&quot;</code><br><code>OperationNameValue contains &quot;routeTable&quot;</code><br><code>OperationNameValue contains &quot;routes/&quot;</code><br><code>OperationNameValue contains &quot;subnets&quot;</code><br><code>OperationNameValue contains &quot;virtualNetworkGateway&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1668,6 +1668,14 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Consent to application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Create role assignment</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1700,7 +1708,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ApplicationGatewayFirewall</code></td>
+  <td style="text-align:left"><code>Set domain authentication</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1708,7 +1716,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Consent to application</code></td>
+  <td style="text-align:left"><code>Set federation settings on domain</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ApplicationGatewayFirewall</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1804,6 +1820,166 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Add app role assignment to service principal</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add delegated permission grant</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add service principal credentials</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Admin deleted security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Admin registered security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Admin updated security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>GetBlob</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ListBlobs</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ListBlobsHierarchySegment</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ListContainersSegment</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User changed default security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User deleted security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User registered security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User updated security info</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any clusterrolebindings</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any rolebindings</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any cronjobs</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any daemonsets</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any cronjobs/create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any daemonsets/create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>!contains external</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1885,22 +2061,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>List Storage Account Keys</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Set domain authentication</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Set federation settings on domain</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

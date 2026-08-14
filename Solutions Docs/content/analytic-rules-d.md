@@ -1,6 +1,6 @@
 # Analytic Rules - D
 
-**130 analytic rules** starting with 'D'.
+**134 analytic rules** starting with 'D'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -133,6 +133,10 @@
 | [DNS events related to mining pools (ASIM DNS Schema)](standalone-content-dns-events-related-to-mining-pools-asim-dns-schema-c094384d-7ea7-4091-83be-18706ecca981-abae5162.md) | Low | 📄 Standalone Content |
 | [DNS events related to ToR proxies](windows-server-dns-dns-events-related-to-tor-proxies-a83ef0f4-dace-4767-bce3-ebd32599d2a0-144d141a.md) | Low | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [DNS events related to ToR proxies  (ASIM DNS Schema)](standalone-content-dns-events-related-to-tor-proxies-asim-dns-schema-3fe3c520-04f1-44b8-8398-782ed21435f8-67ce6a55.md) | Low | 📄 Standalone Content |
+| [DomainTools New Domain Discovery Indicators Ingested](domaintools-ccf-domaintools-new-domain-discovery-indicators-ingested-f8c223c1-1a28-4b28-8e9f-5e33b610916b-b02c3e11.md) | Medium | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) |
+| [DomainTools Newly Added Domains Feeds Ingested](domaintools-ccf-domaintools-newly-added-domains-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e34b610916b-f2a08b02.md) | Medium | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) |
+| [DomainTools Newly Observed Domains Feeds Ingested](domaintools-ccf-domaintools-newly-observed-domains-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e35b610916b-f546635e.md) | Medium | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) |
+| [DomainTools Newly Observed Hostnames Feeds Ingested](domaintools-ccf-domaintools-newly-observed-hostnames-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e36b610916b-a022e58d.md) | Medium | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) |
 | [Doppelpaymer Stop Services](microsoft-defender-xdr-doppelpaymer-stop-services-5bdc1504-880c-4b30-a39c-7c746535928d-6df3ea36.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [DopplePaymer Procdump](microsoft-defender-xdr-dopplepaymer-procdump-1be34fb9-f81b-47ae-84fb-465e6686d76c-cc25e831.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Dragos Notifications](dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md) | Medium | 📦 [Dragos](../solutions/dragos.md) |

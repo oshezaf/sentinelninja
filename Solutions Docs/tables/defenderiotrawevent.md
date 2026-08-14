@@ -1,0 +1,69 @@
+# DefenderIoTRawEvent
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+Reference for DefenderIoTRawEvent table in Azure Monitor Logs.
+
+| Attribute | Value |
+|:----------|:------|
+| **Category** | - |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/defenderiotrawevent) |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Parsers](#parsers-using-this-table)
+
+## Schema (15 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/defenderiotrawevent)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AgentVersion | string | The version of the agent. |
+| AssociatedResourceId | string | The associated Azure resource ID. |
+| AzureSubscriptionId | string | The Azure subscription ID. |
+| DeviceId | string | The device ID. |
+| EventDetails | dynamic | Additional raw event details. |
+| IoTRawEventId | string | The internal raw event ID. |
+| IsEmpty | bool | Property identifying if the raw event contains data. |
+| RawEventCategory | string | The category of the raw event - periodic or triggered. |
+| RawEventName | string | The name of the raw event. |
+| RawEventType | string | The type of the raw event - security, operational or diagnostic. |
+| TimeGenerated | datetime | The date and time the raw event was generated. |
+| TimeStamp | datetime | The date and time the raw event was first detected. |
+| Type | string | The name of the table |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [DefenderIoTRawEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/defenderiotrawevent)
+
+---
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimNetworkSessionMD4IoTSensor](../asim/asimnetworksessionmd4iotsensor.md) | NetworkSession | Microsoft Defender for IoT |  |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

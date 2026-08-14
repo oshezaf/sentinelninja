@@ -11,9 +11,10 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimprocesseventlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -27,18 +28,19 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (141 columns)
+## Schema (150 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimprocesseventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActingProcessCommandLine | string | The command line used to run the acting process. |
 | ActingProcessCreationTime | datetime | The date and time when the acting process was started. |
+| ActingProcessEntityKey | string | The entity key associated with the acting process. |
 | ActingProcessFileCompany | string | The company that created the acting process image file. |
 | ActingProcessFileDescription | string | The description embedded in the version information of the acting process image file. |
 | ActingProcessFileInternalName | string | The product internal file name from the version information of the acting process image file. |
@@ -63,16 +65,20 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the sign-in session of the Actor. |
+| ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
+| ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | ActorUserIdType | string | The type of the ID stored in the ActorUserId field. |
 | ActorUsername | string | The Actor's username, including domain information when available. |
 | ActorUsernameType | string | The type of the Actor's username specified in ActionUsername field |
 | ActorUserType | string | The type of the Actor. |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key and value pairs provided by the source which do not map to ASim. |
 | DvcAction | string | For reporting security systems, the action taken by the system. |
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. Possible values include "Windows" and "FQDN". |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -107,6 +113,7 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | EventType | string | Describes the operation reported by the record |
 | EventVendor | string | The vendor of the product generating the event. |
 | ParentProcessCreationTime | datetime | The date and time when the parent process was started. |
+| ParentProcessEntityKey | string | The entity key associated with the parent process. |
 | ParentProcessFileCompany | string | The company that created the parent process image file. |
 | ParentProcessFileDescription | string | The description from the version information of the parent process image file. |
 | ParentProcessFileProduct | string | The product name from the version information in the parent process image file. |
@@ -125,11 +132,12 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | ParentProcessTokenElevation | string | A token indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the parent process. |
 | RuleName | string | The name or ID of the rule by associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetOriginalUserType | string | The user type as reported by the reporting device. |
 | TargetProcessCommandLine | string | The command line used to run the target process. |
 | TargetProcessCreationTime | datetime | The date and time when the target process was started. |
 | TargetProcessCurrentDirectory | string | The current directory in which the target process is executed. |
+| TargetProcessEntityKey | string | The entity key associated with the target process. |
 | TargetProcessFileCompany | string | The company that created the target process image file. |
 | TargetProcessFileDescription | string | The description from the version information of the target process image file. |
 | TargetProcessFileInternalName | string | The product internal file name from the version information of the target process image file. |
@@ -153,6 +161,8 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | TargetProcessTokenElevation | string | A token indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the target process. |
 | TargetScope | string | The scope, such as Azure AD tenant, in which TargetUserId and TargetUsername are defined. |
 | TargetScopeId | string | The scope ID, such as Azure AD tenant ID, in which TargetUserId and TargetUsername are defined. |
+| TargetUserAdditionalIds | dynamic | Additional identifiers associated with the target user. |
+| TargetUserEntityKey | string | The entity key associated with the target user. |
 | TargetUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
 | TargetUserIdType | string | The type of the ID stored in the TargetUserId field. |
 | TargetUsername | string | The Target actor's username, including domain information when available. |

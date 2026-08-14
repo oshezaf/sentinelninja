@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CiscoETD_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD/Data%20Connectors/CiscoETD_ccp/CiscoETD_DCR.json) |
 | **CCF Configuration** | [CiscoETD_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD/Data%20Connectors/CiscoETD_ccp/CiscoETD_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `POST`, `MvExpand`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-email-threat-defense-etd) |
 
 The [Cisco Email Threat Defense (ETD)](https://docs.cmd.cisco.com/en/Content/secure-email-threat-defense-user-guide/homeUG.htm) data connector provides the capability to ingest [message events](https://docs.cmd.cisco.com/en/Content/secure-email-threat-defense-user-guide/Messages/messages.htm) from Cisco ETD into Microsoft Sentinel using the [Log Export API](https://developer.cisco.com/docs/message-search-api/log-export-api/).
 

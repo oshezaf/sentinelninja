@@ -6,16 +6,17 @@
 
 ---
 
-Reference for CloudAppEvents table in Azure Monitor Logs.
+Events involving accounts and objects in Office 365 and other cloud apps and services
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table) |
 
 ## Contents
 
@@ -32,7 +33,7 @@ Reference for CloudAppEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
 | AccountId | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers |
 | AccountObjectId | string | Unique identifier for the account in Azure AD |
@@ -65,7 +66,7 @@ Reference for CloudAppEvents table in Azure Monitor Logs.
 | RawEventData | dynamic | Raw event information from the source application or service in JSON format |
 | ReportId | string | Unique identifier for the event |
 | SessionData | dynamic | Session identifiers (if provided by the audit source) |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |
@@ -78,6 +79,7 @@ Reference for CloudAppEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudAppEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents)
+- [CloudAppEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table)
 
 ## Solutions (5)
 
@@ -99,7 +101,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (85)
+## Content Items Using This Table (84)
 
 ### Analytic Rules (9)
 
@@ -127,7 +129,7 @@ This table is ingested by the following connectors:
 | [TI Map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-3c95cde8.md) |  |
 | [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
 
-### Hunting Queries (73)
+### Hunting Queries (72)
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
 
@@ -153,11 +155,11 @@ This table is ingested by the following connectors:
 | [Admin Submissions by Submission Type (FP)](../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fp-de074419-2ec5-4c7f-a7f6-0a49178b314c-c5fac397.md) | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` |
 | [BEC - File sharing tactics - Dropbox](../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"`<br>`Application == "Dropbox"`<br>`ObjectType == "File"` |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.md) | `ActionType in "AddedToSecureLink,SecureLinkCreated"`<br>`Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"` |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
 | [File Malware Detection Trend](../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Anti Virus)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Safe Attachments)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.md) | `ActionType == "FileMalwareDetected"`<br>`UserAgent == "MS Scanner ATP"` |
-| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) |  |
+| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Malware detections by Workload Locations](../content/microsoft-defender-xdr-malware-detections-by-workload-locations-ef29d6b6-9192-46aa-b16a-082c2da2f78f-1fe5ecb9.md) | `ActionType == "FileMalwareDetected"` |
 | [Malware detections by Workload Type](../content/microsoft-defender-xdr-malware-detections-by-workload-type-af541ae2-9bb4-4737-a8ea-4fa261bc3866-14585ca9.md) | `ActionType == "FileMalwareDetected"` |
 | [Teams Admin submission of Malware and Phish daily trend](../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.md) | `ActionType == "AdminSubmissionSubmitted"` |
@@ -171,7 +173,7 @@ This table is ingested by the following connectors:
 | [Top accounts performing user submissions](../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.md) | `ActionType == "UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.md) | `ActionType in "AdminSubmission,UserSubmission"` |
-| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) |  |
+| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) |  |
 | [User Email Submission Trend (FN)](../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Admins](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.md) | `ActionType == "UserSubmission"` |
@@ -190,14 +192,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ATP policy status check](../content/microsoft-defender-xdr-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-99dce879.md) | `ActionType == "Set-AtpPolicyForO365"`<br>`Application == "Microsoft Exchange Online"` |
 | [Audit Email Preview-Download action](../content/microsoft-defender-xdr-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-334fb71d.md) |  |
-| [Display Name - Helpdesk theme impersonation attack detection](../content/github-only-display-name-helpdesk-theme-impersonation-attack-detection-edd48210-532e-4560-a8fe-065240cd2f20-3b00897a.md) | `ActionType == "TeamsImpersonationDetected"` |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Hunt for Admin email access](../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.md) | `ActionType == "AdminMailAccess"` |
 | [Hunt for TABL changes](../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.md) | `ActionType contains "TenantAllowBlockListItems"` |
-| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
-| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) |  |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) | `ActionType == "ChatCreated"` |
+| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
 | [Inbox rule changes which forward-redirect email](../content/microsoft-defender-xdr-inbox-rule-changes-which-forward-redirect-email-54569b06-47fc-41ae-9b00-f7d9b61337b6-8075b72d.md) | `ActionType contains "Set-InboxRule"` |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` |
 | [Mail item accessed](../content/microsoft-defender-xdr-mail-item-accessed-81ede5df-2ec3-40a5-9dff-1fe6a841079d-2af7c70a.md) |  |
@@ -231,15 +232,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"`
 
 | Workbook |
 |:-------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
 
-## Selection Criteria Summary (27 criteria, 66 total references)
+## Selection Criteria Summary (28 criteria, 68 total references)
 
-References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -249,12 +250,12 @@ References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other pars
 | `ActionType == "QuarantineReleaseMessage"` | - | 4 | - | - | **4** |
 | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` | - | 4 | - | - | **4** |
 | `ActionType == "MailItemsAccessed"` | - | 2 | - | - | **2** |
+| `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType contains "AdminSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "AdminSubmission,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "SubmissionNotification,UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` | - | 2 | - | - | **2** |
 | `ActionType == "Set-AtpPolicyForO365"`<br>`Application == "Microsoft Exchange Online"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 1 | - | - | **1** |
 | `ActionType == "AdminMailAccess"` | - | 1 | - | - | **1** |
 | `ActionType contains "TenantAllowBlockListItems"` | - | 1 | - | - | **1** |
 | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | - | 1 | - | - | **1** |
@@ -263,33 +264,33 @@ References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other pars
 | `ActionType in "AddedToSecureLink,SecureLinkCreated"`<br>`Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"` | - | 1 | - | - | **1** |
 | `ActionType contains "Set-InboxRule"` | - | 1 | - | - | **1** |
 | `ActionType == "FileMalwareDetected"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
+| `ActionType == "ChatCreated"` | - | 1 | - | - | **1** |
 | `ActionType in "AdminSubmissionTriage,UserSubmissionTriage"` | - | 1 | - | - | **1** |
 | `ActionType == "AirInvestigationData"` | - | 1 | - | - | **1** |
 | `ActionType contains "AdminSubmissionTriage"` | - | 1 | - | - | **1** |
+| `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | - | 1 | - | - | **1** |
 | `ActionType contains "UserSubmissionTriage"` | - | 1 | - | - | **1** |
-| `ActionType == "TeamsImpersonationDetected"` | - | 1 | - | - | **1** |
 | `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **66** | **0** | **0** | **66** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **68** | **0** | **0** | **68** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AdminSubmissionSubmitted` | - | 21 | - | - | **21** |
-| `UserSubmission` | - | 20 | - | - | **20** |
+| `UserSubmission` | - | 22 | - | - | **22** |
+| `AdminSubmissionSubmitted` | - | 20 | - | - | **20** |
 | `FileMalwareDetected` | - | 6 | - | - | **6** |
+| `AdminSubmission` | - | 5 | - | - | **5** |
 | `contains Submission` | - | 5 | - | - | **5** |
 | `QuarantineReleaseMessage` | - | 4 | - | - | **4** |
 | `MailItemsAccessed` | - | 3 | - | - | **3** |
-| `AdminSubmission` | - | 3 | - | - | **3** |
 | `contains AdminSubmission` | - | 3 | - | - | **3** |
 | `SubmissionNotification` | - | 3 | - | - | **3** |
 | `AttackSimUserSubmission` | - | 3 | - | - | **3** |
 | `contains UserSubmission` | - | 3 | - | - | **3** |
 | `Malware ZAP` | - | 2 | - | - | **2** |
 | `Phish ZAP` | - | 2 | - | - | **2** |
-| `Redelivery` | - | 2 | - | - | **2** |
 | `contains AdminSubmissionTriage` | - | 2 | - | - | **2** |
 | `contains UserSubmissionTriage` | - | 2 | - | - | **2** |
 | `Set-AtpPolicyForO365` | - | 1 | - | - | **1** |
@@ -302,13 +303,16 @@ References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other pars
 | `AddedToSecureLink` | - | 1 | - | - | **1** |
 | `SecureLinkCreated` | - | 1 | - | - | **1** |
 | `contains Set-InboxRule` | - | 1 | - | - | **1** |
+| `ChatCreated` | - | 1 | - | - | **1** |
 | `AdminSubmissionTriage` | - | 1 | - | - | **1** |
 | `UserSubmissionTriage` | - | 1 | - | - | **1** |
 | `AirInvestigationData` | - | 1 | - | - | **1** |
-| `TeamsImpersonationDetected` | - | 1 | - | - | **1** |
+| `MoveToDeletedItems` | - | 1 | - | - | **1** |
+| `MovedToDeletedItems` | - | 1 | - | - | **1** |
 | `New-InboxRule` | - | 1 | - | - | **1** |
 | `Set-InboxRule` | - | 1 | - | - | **1** |
 | `Set-Mailbox` | - | 1 | - | - | **1** |
+| `Redelivery` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
 
 ### Application

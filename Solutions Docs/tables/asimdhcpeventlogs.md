@@ -11,9 +11,10 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdhcpeventlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -26,16 +27,17 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (101 columns)
+## Schema (106 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdhcpeventlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DhcpCircuitId | string | The DHCP circuit ID, as defined by RFC3046. |
 | DhcpLeaseDuration | int | The length of the lease granted to a client, in seconds. |
@@ -51,6 +53,7 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 | DvcDescription | string | A descriptive text associated with the device. |
 | DvcDomain | string | The domain of the device on which the event occurred or which reported the event, depending on the schema |
 | DvcDomainType | string | The type of DvcDomain. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event, depending on the schema. |
 | DvcHostname | string | The hostname of the device on which the event occurred or which reported the event, depending on the schema. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event, depending on the schema. |
@@ -88,7 +91,7 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 | RequestedIpAddr | string | The IP address requested by the DHCP client, when available. |
 | RuleName | string | The name or ID of the rule by associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcDescription | string | A descriptive text associated with the device. |
 | SrcDeviceType | string | The type of the device. |
 | SrcDomain | string | The domain of the device. |
@@ -110,6 +113,9 @@ Reference for ASimDhcpEventLogs table in Azure Monitor Logs.
 | SrcOriginalUserType | string | The original source user type, if provided by the source. |
 | SrcPortNumber | int | The IP port on which the device communicated, if applicable. |
 | SrcRiskLevel | int | The risk level associated with the identified Source. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
+| SrcUserAdditionalIds | dynamic | Additional identifiers associated with the source user. |
+| SrcUserEntityKey | string | The entity key associated with the source user. |
 | SrcUserId | string | A machine-readable, alphanumeric, unique representation of the user. |
 | SrcUserIdType | string | The type of SrcUserId. |
 | SrcUsername | string | The user's username, including domain information when available. |

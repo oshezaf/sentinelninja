@@ -16,22 +16,18 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.signl4.com](https://www.signl4.com) |
 | **Categories** | DevOps,IT Operations |
-| **Version** | 2.0.3 |
+| **Version** | 3.0.1 |
 | **Author** | Ronald Czachara - ron@signl4.com |
 | **First Published** | 2021-12-10 |
-| **Last Updated** | 2026-06-05 |
+| **Last Updated** | 2026-07-09 |
 | **Solution Folder** | [SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/derdack.azure-sentinel-solution-signl4) · Popularity: ⚪ Very Low (1%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/derdack.azure-sentinel-solution-signl4) · Popularity: ⚪ Very Low (0%) |
 
 The SIGNL4 Mobile Alerting solution provides the capability to read security alerts into Microsoft Sentinel using the Microsoft Graph Security API. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Refer to [SIGNL4 documentation](https://www.signl4.com/) for more information. 
 
  ** Underlying Microsoft Technologies used: ** 
 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
-
- b. [API Microsoft Security Graph API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: N/A
 
 ## Contents
 

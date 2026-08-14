@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 71 |
-| **Solutions** | 19 |
+| **Playbooks using** | 73 |
+| **Solutions** | 20 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/office365/) |
 
 ## Playbooks Using This Connector
@@ -82,6 +82,8 @@
 | [Send Unhealthy Azure Arc Resource Alert](../content/standalone-content-send-unhealthy-azure-arc-resource-alert-d6360893.md) | 📄 Standalone | 1 | 1 |
 | [Send-AnalyticalRulesHealthNotifications](../content/standalone-content-send-analyticalruleshealthnotifications-837a2ed2.md) | 📄 Standalone | 1 | 1 |
 | [SendEmailonRSAIDPlusAlert](../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert-520ce6b8.md) | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) | 1 | 1 |
+| [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 1 |
+| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 1 |
 | [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 1 | 2 |
 | [Update-VIPUsers-Watchlist-from-AzureAD-Group](../content/standalone-content-update-vipusers-watchlist-from-azuread-group-e1b46577.md) | 📄 Standalone | 1 | 0 |
 | [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis-2ae966ed.md) | [VMRay](../solutions/vmray.md) | 1 | 1 |

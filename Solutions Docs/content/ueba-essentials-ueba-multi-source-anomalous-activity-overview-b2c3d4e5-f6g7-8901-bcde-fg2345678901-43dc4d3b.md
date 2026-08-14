@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Anomalies`](../tables/anomalies.md) | `AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"` | ✓ | ✓ | ? |
+| [`Anomalies`](../tables/anomalies.md) | `AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -11,9 +11,10 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsquerylogs) |
 
 ## Contents
@@ -29,7 +30,7 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalRecords | dynamic | Array of additional resource records. |
@@ -42,7 +43,7 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | OperationName | string | Name of the operation. |
 | PrivateResolverEndpointId | string | The ID of the resolver endpoint. Can be inbound, or outbound. |
 | QueryClass | string | Specifies the protocol family. For example, IN for Internet. |
-| QueryName | string | The domain name (contoso.com) or subdomain name (<code>www.contoso.com</code>) that was specified in the query. |
+| QueryName | string | The domain name (contoso.com) or subdomain name (www.contoso.com) that was specified in the query. |
 | QueryResponseTime | int | Response time for resolution of DNS query. |
 | QueryType | string | Either the DNS record type that was specified in the request, or ANY. |
 | Region | string | The region where the virtual network was created in. |
@@ -53,7 +54,7 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | ResponseCode | int | Response code that resolver returned in response to the DNS query. |
 | SourceIpAddress | string | The IP address of the instance that the query originated from. |
 | SourcePort | int | The port on the instance that the query originated from. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time (UTC) when the log was created. |
 | Transport | string | The protocol (UDP or TCP) used to submit the DNS query. |

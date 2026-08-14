@@ -6,16 +6,17 @@
 
 ---
 
-Reference for DeviceEvents table in Azure Monitor Logs.
+Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | MDE |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table) |
 
 ## Contents
 
@@ -32,7 +33,7 @@ Reference for DeviceEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountSid | string | Security identifier (SID) of the account. |
@@ -98,7 +99,7 @@ Reference for DeviceEvents table in Azure Monitor Logs.
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns. |
 | SHA1 | string | SHA-1 hash of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |
@@ -108,6 +109,7 @@ Reference for DeviceEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents)
+- [DeviceEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table)
 
 ## Solutions (9)
 
@@ -170,7 +172,7 @@ This table is ingested by the following connectors:
 | [C2-NamedPipe](../content/microsoft-defender-xdr-c2-namedpipe-7ce00cba-f76f-4026-ab7f-7e4f1b67bd18-5ae9733b.md) | `ActionType == "NamedPipeEvent"` |
 | [Deimos Component Execution](../content/microsoft-defender-xdr-deimos-component-execution-c25a8cd4-5b4a-45a8-9ba0-3b753a652f6b-a4a127b5.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` |
 | [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.md) |  |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) |  |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` |
 | [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.md) |  |
 | [SUNSPOT malware hashes](../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md) |  |
@@ -201,10 +203,10 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
+| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
 | [C2-NamedPipe](../content/microsoft-defender-xdr-c2-namedpipe-f78255b6-8f91-4cf3-a25c-e1144b7b5425-80263449.md) | `ActionType == "NamedPipeEvent"` |
 | [Deimos Component Execution](../content/microsoft-defender-xdr-deimos-component-execution-fe9edc77-1b6c-4f1e-a223-64b580b50187-8ca8263a.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) |  |
 | [LemonDuck Registration Function](../content/microsoft-defender-xdr-lemonduck-registration-function-147c4c0a-7241-4ce9-9b71-0aecb8a2b59f-ddd37db7.md) | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` |
 | [Scheduled Task Creation](../content/microsoft-defender-xdr-scheduled-task-creation-1ddee78f-7508-4f4a-9b6b-d2927724217d-545713ce.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` |
@@ -217,13 +219,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "FileCreated,UsbDriveMounted"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"`
 
 | Workbook |
 |:-------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"`
 
 | Workbook |
 |:-------------|
@@ -235,33 +237,31 @@ This table is ingested by the following connectors:
 |:-------------|
 | [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction-52743d4b.md) |
 
-## Selection Criteria Summary (13 criteria, 20 total references)
+## Selection Criteria Summary (13 criteria, 18 total references)
 
-References by type: 0 connectors, 20 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 18 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "NamedPipeEvent"` | - | 3 | - | - | **3** |
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 3 | - | - | **3** |
 | `ActionType == "PowerShellCommand"` | - | 2 | - | - | **2** |
 | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | - | 2 | - | - | **2** |
 | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 2 | - | - | **2** |
 | `ActionType contains "Office"` | - | 1 | - | - | **1** |
 | `ActionType in "CreateRemoteThreadApiCall,QueueUserApcRemoteApiCall,SetThreadContextRemoteApiCall"`<br>`InitiatingProcessCommandLine !contains "/dde"`<br>`InitiatingProcessCommandLine has_any ".doc"`<br>`InitiatingProcessCommandLine has_any ".docx"`<br>`InitiatingProcessFileName in "excel.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
 | `ActionType has "ExploitGuardNonMicrosoftSignedBlocked"`<br>`InitiatingProcessFileName has "svchost.exe"` | - | 1 | - | - | **1** |
-| `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | - | 1 | - | - | **1** |
+| `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | - | 1 | - | - | **1** |
 | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` | - | 1 | - | - | **1** |
 | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` | - | 1 | - | - | **1** |
-| `ActionType in "AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | - | 1 | - | - | **1** |
+| `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
 | `ActionType startswith "Asr"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **20** | **0** | **0** | **20** |
+| **Total** | **0** | **18** | **0** | **0** | **18** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 4 | - | - | **4** |
-| `UsbDriveMounted` | - | 4 | - | - | **4** |
 | `PowerShellCommand` | - | 3 | - | - | **3** |
 | `NamedPipeEvent` | - | 3 | - | - | **3** |
 | `UserAccountAddedToLocalGroup` | - | 2 | - | - | **2** |
@@ -274,8 +274,17 @@ References by type: 0 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `QueueUserApcRemoteApiCall` | - | 1 | - | - | **1** |
 | `SetThreadContextRemoteApiCall` | - | 1 | - | - | **1** |
 | `has ExploitGuardNonMicrosoftSignedBlocked` | - | 1 | - | - | **1** |
-| `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
 | `ScheduledTaskCreated` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
+| `UsbDriveMounted` | - | 1 | - | - | **1** |
 | `AntivirusDetection` | - | 1 | - | - | **1** |
 | `PnpDeviceConnected` | - | 1 | - | - | **1** |
 | `endswith Audited` | - | 1 | - | - | **1** |

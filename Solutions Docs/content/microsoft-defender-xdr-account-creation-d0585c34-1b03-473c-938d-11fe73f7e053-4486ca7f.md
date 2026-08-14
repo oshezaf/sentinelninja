@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "net.exe"`<br>`ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "/domain"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "net.exe"`<br>`ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "/domain"` | ✓ | ✗ | ✓ |
 
 ---
 

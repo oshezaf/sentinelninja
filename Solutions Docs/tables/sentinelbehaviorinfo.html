@@ -36,10 +36,18 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
@@ -56,7 +64,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#resource-types">Resource Types</a></li>
 </ul>
-<h2 id="schema">Schema (23 columns)</h2>
+<h2 id="schema">Schema (24 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -75,7 +83,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -148,6 +156,11 @@
   <td style="text-align:left">Date and time of the last activity related to the behavior.</td>
 </tr>
 <tr>
+  <td style="text-align:left">Insights</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Insights related to the behavior.</td>
+</tr>
+<tr>
   <td style="text-align:left">ServiceSource</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Product or service that provided the behavior.</td>
@@ -155,7 +168,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">StartTime</td>

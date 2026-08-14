@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 698 |
-| **Solutions** | 125 |
+| **Playbooks using** | 700 |
+| **Solutions** | 126 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
 
 ## Playbooks Using This Connector
@@ -402,8 +402,8 @@
 | [Infoblox-Block-Allow-IP-Domain-Incident-Based](../content/infoblox-infoblox-block-allow-ip-domain-incident-based-92e85e82.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
 | [Infoblox-DHCP-Lookup](../content/infoblox-infoblox-dhcp-lookup-385c2260.md) | [Infoblox](../solutions/infoblox.md) | 1 | 8 |
 | [Infoblox-IPAM-Lookup](../content/infoblox-infoblox-ipam-lookup-794a7a4f.md) | [Infoblox](../solutions/infoblox.md) | 1 | 9 |
-| [Infoblox-SOC-Get-Insight-Details](../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.md) | [Infoblox](../solutions/infoblox.md) | 1 | 2 |
-| [Infoblox-SOC-Import-Indicators-TI](../content/infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
+| [Infoblox-IQ-for-TD-Get-Insight-Details-API](../content/infoblox-infoblox-iq-for-td-get-insight-details-api-1bdff011.md) | [Infoblox](../solutions/infoblox.md) | 1 | 2 |
+| [Infoblox-IQ-for-TD-Import-Indicators-TI](../content/infoblox-infoblox-iq-for-td-import-indicators-ti-4737c54d.md) | [Infoblox](../solutions/infoblox.md) | 1 | 2 |
 | [Infoblox-TIDE-Lookup-Comment-Enrichment](../content/infoblox-infoblox-tide-lookup-comment-enrichment-2943be82.md) | [Infoblox](../solutions/infoblox.md) | 1 | 17 |
 | [Infoblox-TIDE-Lookup-Via-Incident](../content/infoblox-infoblox-tide-lookup-via-incident-90b154ca.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
 | [Infoblox-TimeRangeBased-DHCP-Lookup](../content/infoblox-infoblox-timerangebased-dhcp-lookup-7af6b4a9.md) | [Infoblox](../solutions/infoblox.md) | 1 | 9 |
@@ -605,7 +605,9 @@
 | [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 1 | 0 |
 | [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone | 1 | 0 |
 | [SpyCloud Breach Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 2 |
+| [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 4 |
 | [SpyCloud Malware Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 3 |
+| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 5 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 2 |
 | [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 1 | 0 |

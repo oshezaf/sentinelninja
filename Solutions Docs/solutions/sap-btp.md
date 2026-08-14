@@ -16,16 +16,16 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Application,Cloud Provider |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-04-04 |
-| **Last Updated** | 2026-06-16 |
+| **Last Updated** | 2026-07-24 |
 | **Solution Folder** | [SAP BTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sap.sap_btp_sentinel_solution) · Popularity: 🟡 Low (11%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sap.sap_btp_sentinel_solution) · Popularity: 🔵 Medium (62%) |
 
-SAP Business Technology Platform (BTP) is an infrastructure that allows SAP customers to build no-code/low-code custom apps integrating to SAP and third-party applications and datasets in order to achieve better business value by streamlining user's activities and interactions with the organization's business applications.
+SAP Business Technology Platform (BTP) is SAP's platform-as-a-service for building, extending, and integrating SAP and third-party applications. It brings together services such as Cloud Integration (CPI), Cloud Identity Services, Business Application Studio, and Build Work Zone that organizations rely on to run business-critical processes.
 
-The BTP Solution for Microsoft Sentinel will collect audits and activity logs from the BTP infrastructure and BTP based apps, and will detect threats, suspicious activities, illegitimate activities, and more.
+The SAP BTP Solution for Microsoft Sentinel ingests audit and activity events from the SAP BTP Audit Log Service across multiple subaccounts using a codeless data connector, and ships detections, hunting content, and a workbook to help security teams monitor BTP for identity abuse (privileged role changes, mass user deletion, IdP/trust tampering), integration threats (Cloud Integration artifact deployment, security-material and access-policy tampering, JDBC data source changes), developer-workspace risks (malware in BAS dev spaces, failed cross-tenant access), and audit coverage gaps (unaudited custom apps, audit log service unavailability).
 
 ## Contents
 

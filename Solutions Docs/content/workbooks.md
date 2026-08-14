@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**592 workbooks** across all Microsoft Sentinel solutions.
+**596 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -96,6 +96,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [AzureKeyVaultWorkbook](github-only-azurekeyvaultworkbook-81485e59.md) | 🔗 GitHub Only |
 | [AzureLogCoverage](github-only-azurelogcoverage-05245bb5.md) | 🔗 GitHub Only |
 | [AzureNetworkWatcher](github-only-azurenetworkwatcher-c62a6efc.md) | 🔗 GitHub Only |
+| [AzureNetworkWatcher-VnetFL](github-only-azurenetworkwatcher-vnetfl-08399aac.md) | 🔗 GitHub Only |
 | [AzureOpenAIMonitoring](github-only-azureopenaimonitoring-99c696c7.md) | 🔗 GitHub Only |
 | [AzureSecurityBenchmark](azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | 📦 [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md) |
 | [AzureSentinelCost](soc-handbook-azuresentinelcost-81caaf3b.md) | 📦 [SOC Handbook](../solutions/soc-handbook.md) |
@@ -223,6 +224,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [DNSSolutionWorkbook](dns-essentials-dnssolutionworkbook-9b8ac8e7.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
 | [DoDZeroTrustWorkbook](github-only-dodzerotrustworkbook-844294c8.md) | 🔗 GitHub Only |
 | [DomainRegistrationAnomaly](whisper-domainregistrationanomaly-54326c3f.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [DomainTools_workbook](domaintools-ccf-domaintools-workbook-f4481e81.md) | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) |
 | [Doppel](doppel-doppel-0def4b82.md) | 📦 [Doppel](../solutions/doppel.md) |
 | [DORACompliance](dora-compliance-doracompliance-21bcc12f.md) | 📦 [DORA Compliance](../solutions/dora-compliance.md) |
 | [DPDPCompliance](dpdp-compliance-dpdpcompliance-18571e87.md) | 📦 [DPDP Compliance](../solutions/dpdp-compliance.md) |
@@ -636,6 +638,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ThreatIntelligence](github-only-threatintelligence-250cda74.md) | 🔗 GitHub Only |
 | [ThreatIntelligenceNew](threat-intelligence-new-threatintelligencenew-535206c7.md) | 📦 [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Tomcat](tomcat-tomcat-588ba946.md) | 📦 [Tomcat](../solutions/tomcat.md) |
+| [TrendAIVisionOneWorkbenchOverview](trendai-vision-one-ccf-trendaivisiononeworkbenchoverview-7ffcf600.md) | 📦 [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
 | [TrendMicroApexOne](trend-micro-apex-one-trendmicroapexone-36972fb3.md) | 📦 [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) |
 | [TrendMicroCAS](trend-micro-cloud-app-security-trendmicrocas-43101d68.md) | 📦 [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [TrendMicroDeepSecurityAttackActivity](trend-micro-deep-security-trendmicrodeepsecurityattackactivity-4ac1a0a6.md) | 📦 [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) |
@@ -707,6 +710,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [WithSecureTopComputersByInfections](github-only-withsecuretopcomputersbyinfections-b9ae720b.md) | 🔗 GitHub Only |
 | [WizFindings](wiz-wizfindings-78285767.md) | 📦 [Wiz](../solutions/wiz.md) |
 | [Workbook-AzureSQLSecurity](azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [WorkbookContent](cayosoft-guardian-workbookcontent-32aebefa.md) | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [workbooksMetadata](microsoft-active-directory-tier-model-workbooksmetadata-743e7b34.md) ⚠️ | 📦 [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md) |
 | [workbooksMetadata](semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | 📦 [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [WorkbooksMetadata](whisper-workbooksmetadata-4425a2d3.md) ⚠️ | 📦 [Whisper](../solutions/whisper.md) |

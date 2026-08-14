@@ -42,7 +42,7 @@ This connector ingests data into the following tables:
 | [`ABAPAuditLog`](../tables/abapauditlog.md) |  | ✓ | ✓ | ✓ |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | ✓ | ✓ | ✓ |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`SAPLogServ_CL`](../tables/saplogserv-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`Syslog`](../tables/syslog.md) | `CollectorHostName == "SAPLogServ"` | ✓ | ✓ | ✓ |

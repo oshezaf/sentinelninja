@@ -11,9 +11,10 @@ Reference for CloudHsmServiceOperationAuditLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit, Azure Resources |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudhsmserviceoperationauditlogs) |
 
 ## Contents
@@ -29,24 +30,24 @@ Reference for CloudHsmServiceOperationAuditLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | CallerIpAddress | string | IP address of the client that made the request. |
-| ClientInfo | string | User agent information. |
+| ClientInfo | string | Client or user-agent information. |
 | ClientSdkPackageVersion | string | Version of the client SDK package. |
-| DurationMs | int | Time it took to service the request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time. |
-| MemberId | string | Member ID of HSM in the Cloud HSM cluster. |
-| Opcode | string | Operation code in HEX string format. |
-| OperationName | string | Name of the operation |
-| PoolType | string | Cloud HSM pool type. |
-| ResultDescription | string | More detailed description of the result. |
-| ResultSignature | string | Short signature of the result. |
+| ClusterType | string | Cluster type of the Cloud HSM resource. |
+| DurationMs | int | Time taken to service the request in milliseconds (excluding network latency). |
+| HsmInstance | string | HSM instance identifier within the Cloud HSM cluster. |
+| Opcode | string | Operation code for the request. |
+| OperationName | string | Name of the operation. |
+| ResultDescription | string | Detailed description of the result. |
+| ResultSignature | string | Short signature indicating the result. |
 | ResultType | string | Result of the request. |
-| Sku | dynamic | Information about the Cloud HSM SKU including family and name. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| Sku | dynamic | Cloud HSM SKU details including family and name. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Timestamp (UTC) when operation occurred. |
+| TimeGenerated | datetime | Timestamp (UTC) when the operation occurred. |
 | Type | string | The name of the table |
 
 ## Schema References

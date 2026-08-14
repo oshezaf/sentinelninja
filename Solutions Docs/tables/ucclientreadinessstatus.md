@@ -11,9 +11,10 @@ Reference for UCClientReadinessStatus table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | - |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucclientreadinessstatus) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -24,7 +25,7 @@ Reference for UCClientReadinessStatus table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AzureADDeviceId | string | A GUID corresponding to the AAD tenant to which the device belongs. |
 | AzureADTenantId | string | A GUID corresponding to this device's AAD device ID. |
 | DeviceName | string | The Device given name. |
@@ -41,7 +42,7 @@ Reference for UCClientReadinessStatus table in Azure Monitor Logs.
 | SetupReadinessReason | string | Reason why the device is not capable of taking target OS and version when setup ran. |
 | SetupReadinessStatus | string | Whether or not the device is capable of taking target OS and version when setup ran. |
 | SetupReadinessTime | datetime | The time the readiness generated this specific record when setup ran. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetOSBuild | string | The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo. |
 | TargetOSName | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |
 | TargetOSVersion | string | The version of Windows 10 as is organized on aka.ms/win10releaseinfo. |

@@ -1,6 +1,4 @@
-# ⚠️ ServiceNowCMDB
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# ServiceNowCMDB
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ServiceNow.svg" alt="ServiceNowCMDB Logo" width="75" height="75">
 
@@ -19,7 +17,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-08-03 |
+| **Last Updated** | 2026-08-05 |
 | **Solution Folder** | [ServiceNowCMDB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNowCMDB) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicenowcmdb) · Popularity: ⚪ Very Low (0%) |
 
 The [ServiceNow CMDB](https://www.servicenow.com/) Solution for Microsoft Sentinel enables you to ingest Configuration Management Database (CMDB) and Asset Management records from ServiceNow into Microsoft Sentinel using the Codeless Connector Platform (CCP). This connector retrieves records from the ServiceNow Table API for Asset Management (alm_asset), Configuration Items (cmdb_ci), Computer CIs (cmdb_ci_computer), Server CIs (cmdb_ci_server), and CI Relationships (cmdb_rel_ci), providing visibility into your IT asset inventory and configuration items.
 

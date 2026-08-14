@@ -6,14 +6,17 @@
 
 ---
 
-Reference for OAuthAppInfo table in Azure Monitor Logs.
+Microsoft 365-connected OAuth applications registered with Microsoft Entra ID and available in the Defender for Cloud Apps app governance capability
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oauthappinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-oauthappinfo-table) |
 
 ## Schema (21 columns)
 
@@ -22,7 +25,7 @@ Reference for OAuthAppInfo table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AddedOnTime | datetime | Date and time when the application was registered |
 | AppName | string | The application's display name as exposed by the associated service principal |
 | AppOrigin | string | Specifies whether the app is internal to the organization or registered in an external tenant |
@@ -37,7 +40,7 @@ Reference for OAuthAppInfo table in Azure Monitor Logs.
 | PrivilegeLevel | string | The privilege level of the app based on the highest classified permission granted to the app |
 | ReportId | string | Unique identifier for the record |
 | ServicePrincipalId | string | The unique identifier for the service principal instance of the application in the tenant |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |
@@ -48,6 +51,7 @@ Reference for OAuthAppInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [OAuthAppInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oauthappinfo)
+- [OAuthAppInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-oauthappinfo-table)
 
 ---
 

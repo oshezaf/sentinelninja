@@ -15,11 +15,11 @@
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
 | **Version** | 3.0.10 |
-| **Author** | Microsoft |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-26 |
 | **Last Updated** | 2026-05-29 |
 | **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (87%) |
 
 The Amazon Web Services solution for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS CloudTrail platform, VPC Flow Logs, AWS GuardDuty and AWS CloudWatch. 
 

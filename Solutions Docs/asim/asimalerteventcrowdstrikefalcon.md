@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✓ | ? |
+| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

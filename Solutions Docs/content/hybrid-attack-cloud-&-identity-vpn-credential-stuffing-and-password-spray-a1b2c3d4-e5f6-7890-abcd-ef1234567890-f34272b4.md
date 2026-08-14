@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ | ✓ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ✗ |
 | [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ✗ | ✓ | ✗ |
 

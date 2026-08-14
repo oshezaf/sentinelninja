@@ -7,7 +7,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 103 |
+| **Playbooks using** | 101 |
 | **Solutions** | 20 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
 
@@ -81,8 +81,6 @@
 | [Infoblox-Get-Host-Name](../content/infoblox-infoblox-get-host-name-3ad74de0.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
 | [Infoblox-Get-IP-Space-Data](../content/infoblox-infoblox-get-ip-space-data-9ff604c0.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
 | [Infoblox-Get-Service-Name](../content/infoblox-infoblox-get-service-name-0adc147e.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
-| [Infoblox-SOC-Get-Insight-Details](../content/infoblox-infoblox-soc-get-insight-details-7be7a13e.md) | [Infoblox](../solutions/infoblox.md) | 1 | 5 |
-| [Infoblox-SOC-Get-Open-Insights-API](../content/infoblox-infoblox-soc-get-open-insights-api-5c2cae50.md) | [Infoblox](../solutions/infoblox.md) | 1 | 0 |
 | [Infoblox-TIDE-Lookup](../content/infoblox-infoblox-tide-lookup-c25e9a83.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Ingest-Prisma](../content/standalone-content-ingest-prisma-05aee65e.md) | 📄 Standalone | 1 | 1 |
 | [IP Enrichment - Virus Total Report  - Incident Triggered](../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-1c22517c.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |

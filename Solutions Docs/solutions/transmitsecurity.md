@@ -21,9 +21,9 @@
 | **Version** | 3.0.2 |
 | **Author** | Transmit Security |
 | **First Published** | 2024-06-10 |
-| **Last Updated** | 2024-11-20 |
+| **Last Updated** | 2026-08-10 |
 | **Solution Folder** | [TransmitSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/transmitsecurity.microsoft-sentinel-solution-transmitsecurity) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/transmitsecurity.microsoft-sentinel-solution-transmitsecurity) · Popularity: 🟡 Low (40%) |
 
 The [Transmit Security] data connector provides the capability to ingest common Transmit Security API events into Microsoft Sentinel through the REST API. [Refer to API documentation for more information](https://developer.transmitsecurity.com/). The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 

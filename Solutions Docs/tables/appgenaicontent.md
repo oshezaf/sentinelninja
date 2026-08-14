@@ -11,8 +11,10 @@ Reference for AppGenAIContent table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Applications |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appgenaicontent) |
 
 ## Contents
@@ -28,7 +30,7 @@ Reference for AppGenAIContent table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AgentId | string | The unique identifier of the GenAI agent. |
@@ -44,7 +46,7 @@ Reference for AppGenAIContent table in Azure Monitor Logs.
 | ServiceInstanceId | string | A unique identifier for the instance of the service. This is the value of the 'service.instance.id' resource attribute. |
 | ServiceName | string | Logical name of the service. This is the value of the 'service.name' resource attribute. |
 | ServiceNamespace | string | A namespace for ServiceName. This is the value of the 'service.namespace' resource attribute. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SpanId | string | The identifier of the span this content is associated with. |
 | SystemInstructions | string | The system message or instructions provided to the GenAI model separately from the chat history. |
 | TenantId | string | The Log Analytics workspace ID |

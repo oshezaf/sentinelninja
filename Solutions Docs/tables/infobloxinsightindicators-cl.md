@@ -11,7 +11,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -22,41 +21,36 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (29 columns)
+## Schema (24 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightIndicators_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| action_s | string |
-| actor_s | string |
 | Computer | string |
-| confidence_s | string |
-| count_d | real |
-| feedName_s | string |
-| id_s | string |
-| indicator_s | string |
-| InfobloxInsightID_g | string |
-| InfobloxInsightLogType_s | string |
-| kind_s | string |
+| confidence_level | int |
+| description | string |
+| detected_at | string |
+| first_detected | string |
+| InfobloxInsightID | string |
+| InfobloxInsightLogType | string |
+| last_detected | string |
 | ManagementGroupName | string |
 | MG | string |
-| name_g | string |
-| properties_category_s | string |
-| properties_friendlyName_g | string |
-| properties_friendlyName_s | string |
-| properties_malwareName_s | string |
-| properties_objectGuid_g | string |
 | RawData | string |
 | SourceSystem | string |
+| status | dynamic |
 | TenantId | string |
-| threatLevelMax_s | string |
+| threat_actors | dynamic |
+| threat_indicator | string |
+| threat_level | int |
 | TimeGenerated | datetime |
-| timeMax_t | datetime |
-| timeMin_t | datetime |
+| total_events | int |
 | Type | string |
-| type_s | string |
+| unverified_assets | dynamic |
+| users | dynamic |
+| verified_assets | dynamic |
 
 ## Schema References
 
@@ -73,7 +67,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
 ### Workbooks (2)
 

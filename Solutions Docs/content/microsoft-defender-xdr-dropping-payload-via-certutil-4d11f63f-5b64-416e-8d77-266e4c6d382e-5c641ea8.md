@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

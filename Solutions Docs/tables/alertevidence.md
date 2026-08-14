@@ -6,16 +6,17 @@
 
 ---
 
-Reference for AlertEvidence table in Azure Monitor Logs.
+Files, IP addresses, URLs, users, or devices associated with alerts
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
 ## Contents
 
@@ -25,14 +26,14 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (44 columns)
+## Schema (47 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDomain | string | Domain of the account. |
 | AccountName | string | User name of the account. |
 | AccountObjectId | string | Unique identifier for the account in Azure Active Directory. |
@@ -42,7 +43,10 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 | AlertId | string | Unique identifier for the alert. |
 | Application | string | Application that performed the recorded action. |
 | ApplicationId | int | Unique identifier for the application. |
-| AttackTechniques | string | MITRE ATT&amp;CK techniques associated with the activity that triggered the alert. |
+| AttackTechniques | string | MITRE ATT&CK techniques associated with the activity that triggered the alert. |
+| AzureResourceId | string | Unique identifier of the cloud resource associated with the alert. |
+| AzureResourceType | string | Type of the cloud resource associated with the alert. |
+| AzureSubscriptionId | string | Unique identifier of the Azure subscription associated with the alert. |
 | Categories | string | List of categories that the information belongs to, in JSON array format. |
 | CloudPlatform | string | The cloud platform that the resource belongs to, can be Azure, Amazon Web Services, or Google Cloud Platform. |
 | CloudResource | string | Cloud resource name. |
@@ -69,7 +73,7 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 | Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert. |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated-use the SHA1 column when available. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatFamily | string | Malware family that the suspicious or malicious file or process has been classified under. |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
@@ -81,6 +85,7 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [AlertEvidence Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence)
+- [AlertEvidence Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table)
 
 ## Solutions (6)
 
@@ -117,8 +122,8 @@ This table is used by the following solutions:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) | `ActionType == "ChatCreated"` |
-| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
+| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
 | [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
@@ -131,13 +136,13 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Workbook |
-|:-------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "Automated Remediation"`
 
 | Workbook |
 |:-------------|
@@ -163,55 +168,23 @@ This table is used by the following solutions:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (6 criteria, 6 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`EntityType in "MailMessage,Url"`<br>`ServiceSource == "Microsoft Defender for Office 365"` | - | 1 | - | - | **1** |
 | `EntityType in "Device,User"` | - | 1 | - | - | **1** |
-| `ActionType == "ChatCreated"` | - | 1 | - | - | **1** |
-| `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **6** | **0** | **0** | **6** |
+| `ActionType == "Automated Remediation"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
-| `ChatCreated` | - | 1 | - | - | **1** |
-| `MoveToDeletedItems` | - | 1 | - | - | **1** |
-| `MovedToDeletedItems` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
-| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
-| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
-| `ClickBlocked` | - | 1 | - | - | **1** |
-| `Malware ZAP` | - | 1 | - | - | **1** |
-| `Phish ZAP` | - | 1 | - | - | **1** |
-| `Spam ZAP` | - | 1 | - | - | **1** |
-| `UserSubmission` | - | 1 | - | - | **1** |
 | `Automated Remediation` | - | 1 | - | - | **1** |
-| `contains Submission` | - | 1 | - | - | **1** |
-| `contains UserSubmission` | - | 1 | - | - | **1** |
-| `contains ZAP` | - | 1 | - | - | **1** |
-| `has Malware ZAP` | - | 1 | - | - | **1** |
-| `has Phish ZAP` | - | 1 | - | - | **1** |
-| `has Spam ZAP` | - | 1 | - | - | **1** |
-| `has ZAP` | - | 1 | - | - | **1** |
-| `has_any ClickAllowed` | - | 1 | - | - | **1** |
-| `has_any ClickBlocked` | - | 1 | - | - | **1** |
-| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
-| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
 
 ### EntityType
 

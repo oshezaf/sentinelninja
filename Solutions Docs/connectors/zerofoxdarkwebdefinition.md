@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ZeroFoxThreatIntelligence_DarkWeb_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_DarkWeb_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---dark-web) |
 
 Collects dark web data from the [ZeroFox](https://www.zerofox.com/threat-intelligence/) API into Microsoft Sentinel.
 

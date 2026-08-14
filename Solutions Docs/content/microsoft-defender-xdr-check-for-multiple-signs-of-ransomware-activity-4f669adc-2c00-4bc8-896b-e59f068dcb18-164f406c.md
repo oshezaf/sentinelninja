@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "cl"`<br>`ProcessCommandLine has "config"`<br>`ProcessCommandLine has "delete"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"`<br>`ProcessCommandLine has "wbadmin"`<br>`ProcessCommandLine has "wevtutil"`<br>`ProcessCommandLine has "wmic"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "cl"`<br>`ProcessCommandLine has "config"`<br>`ProcessCommandLine has "delete"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"`<br>`ProcessCommandLine has "wbadmin"`<br>`ProcessCommandLine has "wevtutil"`<br>`ProcessCommandLine has "wmic"` | ✓ | ✗ | ✓ |
 
 ---
 

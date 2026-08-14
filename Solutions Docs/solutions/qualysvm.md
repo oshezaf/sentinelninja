@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
-| **Version** | 3.0.9 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |
 | **Last Updated** | 2026-06-25 |
 | **Solution Folder** | [QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) · Popularity: 🔵 Medium (73%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) · Popularity: 🔵 Medium (76%) |
 
 The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
 

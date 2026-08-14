@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sentinel Data and Log Connector for Upwind &mdash; Solutions Analyzer</title>
+<title>⚠️ Upwind &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,10 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="sentinel-data-and-log-connector-for-upwind">Sentinel Data and Log Connector for Upwind</h1>
-<p><em>Solution: Upwind</em></p>
+<h1 id="upwind">⚠️ Upwind</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Upwind/Data%20Connectors/Logos/upwind.svg" alt="Upwind Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -44,15 +46,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">Security - Cloud Security</td>
+  <td style="text-align:left">Security - Cloud Security,IT Operations</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.2</td>
+  <td style="text-align:left">3.0.3</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">Upwind - hello@upwind.io</td>
+  <td style="text-align:left">Upwind - support@upwind.io</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
@@ -60,19 +62,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-06-09</td>
+  <td style="text-align:left">2026-07-23</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind">Upwind</a></td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader">Azure Marketplace</a> · Popularity: 🔵 Medium (58%)</td>
-</tr>
 </tbody>
 </table>
-<p>The <strong>Upwind Logs Loader</strong> solution ingests compute platform assets from the <a href="https://upwind.io">Upwind</a> cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
+<p>The <strong>Upwind Catalog Loader</strong> solution ingests inventory/catalog assets, vulnerability findings, threat detections, threat events, threat stories, and configuration findings from the <a href="https://upwind.io">Upwind</a> cloud security platform into Microsoft Sentinel custom tables using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API (DCE/DCR)</a></p>
@@ -86,7 +84,7 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/upwindlogsloader.html">Upwind Logs Loader (Ingestion API)</a></li>
+<li><a href="../connectors/upwindcatalogloader.html">Upwind Catalog Loader (Ingestion API)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
@@ -100,8 +98,8 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/upwindlogsassets-cl.html"><code>UpwindLogsAssets_CL</code></a></td>
-  <td><a href="../connectors/upwindlogsloader.html">Upwind Logs Loader (Ingestion API)</a></td>
+  <td><a href="../tables/upwindcatalogassets-cl.html"><code>UpwindCatalogAssets_CL</code></a></td>
+  <td><a href="../connectors/upwindcatalogloader.html">Upwind Catalog Loader (Ingestion API)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -111,102 +109,96 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind/README.md">Upwind/README.md</a></em></p>
 </blockquote>
 <h1 id="upwind-sentinel-connector">Upwind Sentinel Connector</h1>
-<p>Microsoft Sentinel data connector that ingests <strong>compute platform assets</strong> from the <a href="https://upwind.io">Upwind</a> cloud security platform into a custom Log Analytics table (<code>UpwindLogsAssets_CL</code>) using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
+<p>Microsoft Sentinel data connector that ingests data from <strong>six Upwind API endpoints</strong> — inventory/catalog assets (all categories), vulnerability findings, threat detections, threat events, threat stories, and configuration (posture) findings — from the <a href="https://upwind.io">Upwind</a> cloud security platform into six custom Log Analytics tables, using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
 <h2 id="what-it-does">What it does</h2>
 <ul>
 <li>Timer-triggered Azure Function (Python 3.11) that runs on a configurable CRON schedule (default: top of every hour)</li>
 <li>Authenticates to Upwind via OAuth2 <code>client_credentials</code> flow</li>
-<li>Pages through all compute platform assets from <code>/v2/organizations/{orgId}/inventory/catalog/assets/search</code></li>
-<li>Maps each asset to the <code>UpwindLogsAssets_CL</code> schema and ships records via the Azure Monitor Ingestion API</li>
+<li>Fetches all six datasets on every run, <strong>independently</strong> — if one Upwind endpoint fails or isn't entitled for your org, the others still complete</li>
+<li>Ships each dataset to its own DCR stream / custom table via the Azure Monitor Ingestion API</li>
 </ul>
+<table>
+<thead>
+<tr>
+  <th>Dataset</th>
+  <th>Upwind endpoint</th>
+  <th>Sync style</th>
+  <th>Destination table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Inventory / catalog assets (all categories)</td>
+  <td><code>POST /v2/organizations/{orgId}/inventory/catalog/assets/search</code></td>
+  <td>Full current-state snapshot</td>
+  <td><code>UpwindCatalogAssets_CL</code></td>
+</tr>
+<tr>
+  <td>Vulnerability findings</td>
+  <td><code>GET /v1/organizations/{orgId}/vulnerability-findings</code></td>
+  <td>Full current-state snapshot</td>
+  <td><code>UpwindVulnerabilityFindings_CL</code></td>
+</tr>
+<tr>
+  <td>Threat detections</td>
+  <td><code>GET /v1/organizations/{orgId}/threat-detections</code></td>
+  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td><code>UpwindThreatDetections_CL</code></td>
+</tr>
+<tr>
+  <td>Threat events</td>
+  <td><code>GET /v1/organizations/{orgId}/threat-events</code></td>
+  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td><code>UpwindThreatEvents_CL</code></td>
+</tr>
+<tr>
+  <td>Threat stories</td>
+  <td><code>POST /v2/organizations/{orgId}/threats/stories/search</code></td>
+  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td><code>UpwindThreatStories_CL</code></td>
+</tr>
+<tr>
+  <td>Configuration (posture) findings</td>
+  <td><code>POST /v2/organizations/{orgId}/configurations/findings/search</code></td>
+  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td><code>UpwindConfigurationFindings_CL</code></td>
+</tr>
+</tbody>
+</table>
+<p>The two full-snapshot datasets (inventory assets, vulnerability findings) represent Upwind's <em>current</em> state and are re-pulled in full on every run. The four time-windowed datasets pull everything seen/updated in the last <code>UpwindThreatLookbackMinutes</code> (default 90) — set that comfortably larger than <code>UpwindCatalogSchedule</code>'s interval so nothing is missed between runs; overlap just produces harmless duplicate rows.</p>
+<blockquote>
+<p><strong>Note:</strong> <code>title</code> and <code>type</code> are reserved/invalid column names for Log Analytics custom tables, so the four affected datasets (threat detections, threat events, threat stories, configuration findings) rename them to <code>title_text</code> and <code>event_type</code> before upload.</p>
+</blockquote>
 <h2 id="folder-structure">Folder structure</h2>
-<pre><code>UpwindLogsLoader/
+<pre><code>UpwindCatalogLoader/
 ├── SolutionMetadata.json
 ├── ReleaseNotes.md
 ├── Data/
-│   └── Solution_UpwindLogsLoader.json
+│   └── Solution_UpwindCatalogLoader.json
 ├── Package/
-│   ├── 3.0.0.zip                    &lt;- Sentinel content hub package
+│   ├── 1.0.0.zip                    &lt;- Sentinel content hub package
 │   ├── createUiDefinition.json
 │   ├── mainTemplate.json
 │   └── testParameters.json
-└── Data Connectors/
-    ├── azuredeploy_UpwindLogsLoader_API_FunctionApp.json  &lt;- ARM deploy template
-    ├── UpwindLogsLoader_API_FunctionApp.json              &lt;- Connector definition
-    ├── createUiDef.json                                   &lt;- Deployment wizard UI
-    ├── UpwindLogsLoader.zip      &lt;- Self-contained Function App package
-    ├── host.json
-    ├── requirements.txt
-    ├── Logos/
-    │   └── upwind.svg
-    └── UpwindLogsLoader/
-        ├── __init__.py
-        ├── config.py
-        ├── function.json
-        ├── upwind_catalog_client.py
-        └── upwind_client.py
+
+*[Content truncated...]*
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                 |
+|-------------|--------------------------------|------------------------------------------------------------------------------------|
+| 3.0.3       | 28-07-2026                     | Expanded ingestion from 1 to 6 Upwind API endpoints, fixed asset ingestion and deployment issues, enabled cross-resource-group Log Analytics support, and resolved custom-table schema conflicts by renaming reserved columns. |
+| 3.0.2       | 28-04-2026                     | Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment. |
+| 3.0.1       | 12-04-2026                     | Updated **SolutionMetadata** publisherId to align the solution package metadata with publisher validation requirements. |
+| 3.0.0       | 10-03-2026                     | Initial solution release.                                                          |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
 </code></pre>
-<h2 id="deployment">Deployment</h2>
-<p>Click the button below to deploy all required Azure resources (DCE, custom table, DCR, role assignment, storage, App Insights, Function App) in one step:</p>
-<p><a href="https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FUpwind%2FData%20Connectors%2Fazuredeploy_UpwindLogsLoader_API_FunctionApp.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FUpwind%2FData%20Connectors%2FcreateUiDef.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
-<h3 id="parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Parameter</th>
-  <th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>WorkspaceName</code></td>
-  <td>Name of your Log Analytics / Sentinel workspace</td>
-</tr>
-<tr>
-  <td><code>UpwindOrgId</code></td>
-  <td>Upwind Organization ID (Settings → Organization)</td>
-</tr>
-<tr>
-  <td><code>UpwindClientId</code></td>
-  <td>Upwind API Client ID (Settings → API Keys)</td>
-</tr>
-<tr>
-  <td><code>UpwindClientSecret</code></td>
-  <td>Upwind API Client Secret</td>
-</tr>
-</tbody>
-</table>
-<p><em>[Content truncated...]</em></p>
-<h2 id="release-notes">Release Notes</h2>
-<table>
-<thead>
-<tr>
-  <th><strong>Version</strong></th>
-  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-  <th><strong>Change History</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>3.0.2</td>
-  <td>28-04-2026</td>
-  <td>Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment.</td>
-</tr>
-<tr>
-  <td>3.0.1</td>
-  <td>12-04-2026</td>
-  <td>Updated <strong>SolutionMetadata</strong> publisherId to align the solution package metadata with publisher validation requirements.</td>
-</tr>
-<tr>
-  <td>3.0.0</td>
-  <td>10-03-2026</td>
-  <td>Initial solution release.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 
 </div>
 

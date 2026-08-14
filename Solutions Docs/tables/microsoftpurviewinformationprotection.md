@@ -11,8 +11,8 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit, Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftpurviewinformationprotection) |
@@ -32,7 +32,7 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActionSource | string | The source of the label action. |
 | ActionSourceDetail | string | More details about the source of the label action. |
 | AppAccessContext | dynamic | The application context for the user or service principal that performed the action. |
@@ -101,7 +101,7 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 | SensitivityLabelPolicyId | string | The identifier for the sensitivity labeling policy that was matched based on the content of the document. |
 | Severity | string | The severity of the auto label policy match. |
 | SharePointMetaData | dynamic | SharePoint auto labeling metadata. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetLocation | string | The location of the document with respect to the user' device. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time when the user performed the activity. |

@@ -14,7 +14,7 @@
 | Location | Solution |
 | Solution | [Box](../solutions/box.md) |
 | Version | 2.1.0 |
-| Last Updated | 2026-07-10 |
+| Last Updated | 2026-08-10 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Parsers/BoxEvents.yaml) |

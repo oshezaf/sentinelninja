@@ -105,12 +105,12 @@ When you click the "Add Connection" button in the portal, a configuration form w
 *Connection configuration*
 
 - **Connection alias** (required): e.g. Production
-- **The blob container URL you want to collect data from** (optional)
-- **The blob folder name in the container. Optional.** (optional)
+- **The blob container URL you want to collect data from** (optional): Enter the storage account and container URI
+- **The blob folder name in the container. Optional.** (optional): Optional folder path inside the container
 - **The blob container's storage account location** (optional): eastus
-- **The blob container's storage account resource group name** (optional)
-- **The blob container's storage account subscription id** (optional)
-- **The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.** (optional)
+- **The blob container's storage account resource group name** (optional): Storage account resource group name
+- **The blob container's storage account subscription id** (optional): Subscription ID that owns the storage account
+- **The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.** (optional): Existing Event Grid system topic name (optional)
 
 > 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 

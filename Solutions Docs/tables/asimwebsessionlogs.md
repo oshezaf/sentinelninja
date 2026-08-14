@@ -11,9 +11,10 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimwebsessionlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -27,18 +28,20 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (150 columns)
+## Schema (160 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimwebsessionlogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DstAppId | string | The ID of the destination application, as reported by the reporting device. |
+| DstApplicationEntityKey | string | The entity key associated with the destination application. |
 | DstAppName | string | The name of the destination application. |
 | DstAppType | string | The type of the destination application. |
 | DstBytes | long | The number of bytes sent from the destination to the source for the connection or session. If the event is aggregated, DstBytes is the sum over all aggregated sessions. |
@@ -63,6 +66,9 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | DstOriginalUserType | string | The original destination user type, if provided by the source. |
 | DstPackets | long | The number of packets sent from the destination to the source for the connection or session. The meaning of a packet is defined by the reporting device. If the event is aggregated, DstPackets is the sum over all aggregated sessions. |
 | DstPortNumber | int | The destination IP port. |
+| DstSystemEntityKey | string | The entity key associated with the destination system. |
+| DstUserAdditionalIds | dynamic | Additional identifiers associated with the destination user. |
+| DstUserEntityKey | string | The entity key associated with the destination user. |
 | DstUserId | string | A machine-readable, alphanumeric, unique representation of the destination user. |
 | DstUserIdType | string | The type of the ID stored in the DstUserId field. |
 | DstUsername | string | The destination username, including domain information when available. Use the simple form only if domain information isn't available. |
@@ -72,6 +78,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | DvcAction | string | The action taken on the web session. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. Possible values include 'Windows' and 'FQDN'. |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The hostname of the device on which the event occurred or which reported the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device on which the event occurred or which reported the event. |
@@ -129,8 +136,9 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | Rule | string | Either NetworkRuleName or NetworkRuleNumber. |
 | RuleName | string | The name or ID of the rule by which DvcAction was decided upon. Example: AnyAnyDrop. |
 | RuleNumber | int | The number of the rule by which DvcAction was decided upon. Example: 23. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
+| SrcApplicationEntityKey | string | The entity key associated with the source application. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |
 | SrcBytes | long | The number of bytes sent from the source to the destination for the connection or session. If the event is aggregated, SrcBytes is the sum over all aggregated sessions. |
@@ -158,6 +166,9 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | SrcProcessGuid | string | A generated unique identifier (GUID) of the source process. |
 | SrcProcessId | string | The process ID (PID) of the source process. |
 | SrcProcessName | string | The name of the source process. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
+| SrcUserAdditionalIds | dynamic | Additional identifiers associated with the source user. |
+| SrcUserEntityKey | string | The entity key associated with the source user. |
 | SrcUserId | string | A machine-readable, alphanumeric, unique representation of the source user. |
 | SrcUserIdType | string | The type of the ID stored in the SrcUserId field. |
 | SrcUsername | string | The source username, including domain information when available. |

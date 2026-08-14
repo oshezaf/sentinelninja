@@ -16,6 +16,7 @@
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [StealthTalkConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk/Data%20Connectors/StealthTalkConnector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#stealthtalk-anomalous-authentication) |
 
 The StealthTalk Anomalous Authentication connector ingests four classes of anomalous user-authentication events from the StealthTalk Enterprise messenger into a custom Log Analytics table via the Logs Ingestion API.
 

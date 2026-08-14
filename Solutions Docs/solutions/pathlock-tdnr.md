@@ -19,6 +19,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Pathlock Inc. - support@pathlock.com |
 | **First Published** | 2022-02-17 |
+| **Last Updated** | 2026-08-13 |
 | **Solution Folder** | [Pathlock_TDnR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pathlockinc1631410274035.pathlock_tdnr) · Popularity: ⚪ Very Low (0%) |
 

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.4 |
+| **Version** | 3.0.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
-| **Last Updated** | 2026-02-19 |
+| **Last Updated** | 2026-08-07 |
 | **Solution Folder** | [Endpoint Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) · Popularity: 🔵 Medium (51%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) · Popularity: 🔵 Medium (64%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
 The **Endpoint Threat Protection Essentials** solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  
@@ -62,25 +62,26 @@ This solution queries **6 table(s)** from its content items:
 |-------|----------------|
 | [`DeviceEvents`](../tables/deviceevents.md) | Analytics, Hunting |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Hunting |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Hunting |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Analytics, Hunting |
 | [`Event`](../tables/event.md) | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
 | [`WindowsEvent`](../tables/windowsevent.md) | Analytics, Hunting |
 
 ## Content Items
 
-This solution includes **29 content item(s)**:
+This solution includes **30 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
+| Analytic Rules | 15 |
 | Hunting Queries | 15 |
-| Analytic Rules | 14 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Base64 encoded Windows process command-lines](../content/endpoint-threat-protection-essentials-base64-encoded-windows-process-command-lines-ca67c83e-7fff-4127-a3e3-1af66d6d4cad-01f53023.md) | Medium | Execution, DefenseEvasion | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| [CertUtil Used for File Download (Living off the Land)](../content/endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.md) | High | CommandAndControl, DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Detecting Macro Invoking ShellBrowserWindow COM Objects](../content/endpoint-threat-protection-essentials-detecting-macro-invoking-shellbrowserwindow-com-objects-e7470b35-0128-4508-bfc9-e01cfb3c2eb7-54d0e1c8.md) | Medium | LateralMovement | [`Event`](../tables/event.md) |
 | [Dumping LSASS Process Into a File](../content/endpoint-threat-protection-essentials-dumping-lsass-process-into-a-file-a7b9df32-1367-402d-b385-882daf6e3020-8e3af60d.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
 | [Lateral Movement via DCOM](../content/endpoint-threat-protection-essentials-lateral-movement-via-dcom-50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f-eb377b6e.md) | Medium | LateralMovement | [`Event`](../tables/event.md) |
@@ -119,8 +120,9 @@ This solution includes **29 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                           |
 |-------------|--------------------------------|------------------------------------------------------------------------------|
-| 3.0.5       |     18-11-2024                 | Removed the broken URL in **Analytic Rule** and **Hunting query**                                      |
-| 3.0.4       |     10-06-2024                 | Added entityMappings and added missing AMA DC reference in **Analytical Rules** and **Hunting Queries**  |
+| 3.0.6       |     20-07-2026                 | Added **Analytic Rule** CertUtil Used for File Download.                     |
+| 3.0.5       |     18-11-2024                 | Removed the broken URL in **Analytic Rule** and **Hunting Query**            |
+| 3.0.4       |     10-06-2024                 | Added entityMappings and added missing AMA DC reference in **Analytical Rules** and **Hunting Queries**     |
 | 3.0.3       |     11-03-2024                 | Added few **Hunting Queries** to detect Endpoint Threats                     |
 | 3.0.2       |     21-02-2024                 | Tagged for dependent solutions for deployment                                |
 |             |                                | Added New rules to detect Suspicious PowerShell Commandlet Exceutions        | 

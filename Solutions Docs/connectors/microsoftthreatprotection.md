@@ -13,7 +13,7 @@
 | **Connector ID** | `MicrosoftThreatProtection` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| **Collection Method** | [Native](../methods/native.md) |
+| **Collection Method** | [Defender](../methods/defender.md) |
 | **Connector Definition Files** | [MicrosoftThreatProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Data%20Connectors/MicrosoftThreatProtection.JSON) |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-defender-xdr) |
 
@@ -49,23 +49,23 @@ This connector ingests data into the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ | ? |
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ? |
+| [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ | ✓ |
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ✓ |
 | [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
-| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ? |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ? |
-| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ? |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ✓ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ✓ |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ✓ |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ | ✓ |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
-| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ? |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ✓ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ✓ |
 
 ## Permissions
 

@@ -16,9 +16,9 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.digitalshadows.com/](https://www.digitalshadows.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Digital Shadows - support@digitalshadows.com |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-07-28 |
 | **Solution Folder** | [Digital Shadows](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/digitalshadows1662022995707.digitalshadows_searchlight_for_sentinel) · Popularity: 🔵 Medium (56%) |
 
@@ -28,7 +28,7 @@ The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingesti
  
  This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+  a. [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) 
 
  b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 

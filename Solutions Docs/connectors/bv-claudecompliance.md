@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [BlueVoyantAnthropicClaudeCompliance_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance/Data%20Connectors/BlueVoyantAnthropicClaudeCompliance_CCF/BlueVoyantAnthropicClaudeCompliance_DCR.json) |
 | **CCF Configuration** | [BlueVoyantAnthropicClaudeCompliance_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlueVoyant%20Anthropic%20ClaudeCompliance/Data%20Connectors/BlueVoyantAnthropicClaudeCompliance_CCF/BlueVoyantAnthropicClaudeCompliance_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#bv-claudecompliance-via-codeless-connector-framework) |
 
 ## BV-ClaudeCompliance (via Codeless Connector Framework)
 

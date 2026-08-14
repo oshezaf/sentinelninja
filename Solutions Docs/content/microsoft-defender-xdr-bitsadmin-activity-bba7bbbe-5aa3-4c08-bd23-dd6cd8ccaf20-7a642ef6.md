@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "/Upload"`<br>`ProcessCommandLine has_any "/Transfer"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "/Upload"`<br>`ProcessCommandLine has_any "/Transfer"` | ✓ | ✗ | ✓ |
 
 ---
 

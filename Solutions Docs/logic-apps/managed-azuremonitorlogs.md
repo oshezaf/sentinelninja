@@ -85,7 +85,7 @@
 | [Infoblox SOC Import Indicators TI](../content/infoblox-soc-insights-infoblox-soc-import-indicators-ti-0612a4f4.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | 1 | 2 |
 | [Infoblox-Config-Insights](../content/infoblox-infoblox-config-insights-43be35ed.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Infoblox-DHCP-Lookup](../content/infoblox-infoblox-dhcp-lookup-385c2260.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
-| [Infoblox-SOC-Import-Indicators-TI](../content/infoblox-infoblox-soc-import-indicators-ti-ed3ee6e8.md) | [Infoblox](../solutions/infoblox.md) | 1 | 2 |
+| [Infoblox-IQ-for-TD-Import-Indicators-TI](../content/infoblox-infoblox-iq-for-td-import-indicators-ti-4737c54d.md) | [Infoblox](../solutions/infoblox.md) | 1 | 2 |
 | [Infoblox-TIDE-Lookup](../content/infoblox-infoblox-tide-lookup-c25e9a83.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Infoblox-TimeRangeBased-DHCP-Lookup](../content/infoblox-infoblox-timerangebased-dhcp-lookup-7af6b4a9.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Ingestion Cost Alert Playbook](../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.md) | 📄 Standalone | 1 | 0 |

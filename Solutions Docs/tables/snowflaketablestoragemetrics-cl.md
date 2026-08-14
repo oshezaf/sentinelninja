@@ -17,7 +17,6 @@
 - [Schema](#schema)
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
@@ -41,14 +40,6 @@ Official Microsoft Learn documentation for field/column information:
 This table is used by the following solutions:
 
 - [Snowflake](../solutions/snowflake.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md) |  |
 
 ---
 

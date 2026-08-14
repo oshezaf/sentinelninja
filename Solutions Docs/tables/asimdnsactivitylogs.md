@@ -11,8 +11,8 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Normalized |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs) |
@@ -29,16 +29,17 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (140 columns)
+## Schema (147 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalEntities | dynamic | Additional entities associated with the event. |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
 | DnsFlags | string | The DNS request flags, as provided by the reporting device. The structure of the DNS flags information may vary between different reporting devices. |
 | DnsFlagsAuthenticated | bool | The DNS authenticated answer flag, which is related to DNSSEC, indicates in a response that all data included in the answer and authority sections of the response have been verified by the server according to the policies of that server. see RFC 3655 Section 6.1 for more information. |
@@ -82,11 +83,13 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | DstOriginalRiskLevel | string | The risk level associated with the destination device as reported by the reporting device. |
 | DstPortNumber | int | Destination Port number. |
 | DstRiskLevel | int | The risk level associated with the destination device. |
+| DstSystemEntityKey | string | The entity key associated with the destination system. |
 | Dvc | string | A unique identifier of the device reporting the event. The identifier can be either an IP Address, A hostname, or a device ID. |
 | DvcAction | string | The action taken by the the reporting device on the request, such as blocking it. |
 | DvcDescription | string | A descriptive text associated with the device. For example: Primary Domain Controller. |
 | DvcDomain | string | The domain of the device reporting the event. |
 | DvcDomainType | string | The type of DvcDomain. Possible values include "Windows" and "FQDN". |
+| DvcEntityKey | string | The entity key associated with the device. |
 | DvcFQDN | string | The fully qualified hostname, including domain information, of the device reporting the event. |
 | DvcHostname | string | The hostname of the device reporting the event. |
 | DvcId | string | The unique ID of the device reporting the event. |
@@ -122,7 +125,7 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | NetworkProtocolVersion | string | The version of the network protocol. Typically used to differentiate between IPv4 and Ipv6. |
 | RuleName | string | The name or ID of the rule by associated with the inspection results. |
 | RuleNumber | int | The number of the rule associated with the inspection results. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Src | string | A unique identifier of the source device. |
 | SrcDescription | string | The number of the rule associated with the inspection results. |
 | SrcDeviceType | string | The type of the source device. |
@@ -143,10 +146,14 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | SrcOriginalRiskLevel | string | The risk level associated with the source device as reported by the reporting device. |
 | SrcOriginalUserType | string | The original source user type, as provided by the source. |
 | SrcPortNumber | int | Source port of the DNS query. |
+| SrcProcessEntityKey | string | The entity key associated with the source process. |
 | SrcProcessGuid | string | A generated unique identifier (GUID) of the process that initiated the DNS request. |
 | SrcProcessId | string | The process ID (PID) of the process that initiated the DNS request. |
 | SrcProcessName | string | The name of the process that initiated the DNS request. |
 | SrcRiskLevel | int | The risk level associated with the source device. |
+| SrcSystemEntityKey | string | The entity key associated with the source system. |
+| SrcUserAdditionalIds | dynamic | Additional identifiers associated with the source user. |
+| SrcUserEntityKey | string | The entity key associated with the source user. |
 | SrcUserId | string | A machine-readable, alphanumeric, unique representation of the source user. |
 | SrcUserIdType | string | The type of the ID stored in the SrcUserId field. |
 | SrcUsername | string | The Source username, including domain information when available. |
@@ -245,18 +252,18 @@ References by type: 2 connectors, 0 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
 | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | 1 | - | - | - | **1** |
+| `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
 | **Total** | **2** | **0** | **0** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
 | `AzureVNet` |  | 1 | - | - | - | **1** |
 | `BIND` |  | 1 | - | - | - | **1** |
 | `SAP Web Dispatcher` |  | 1 | - | - | - | **1** |
+| `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
 
 ### EventResult
 

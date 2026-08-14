@@ -11,7 +11,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -29,28 +28,28 @@
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| cid_s | string |
-| cmac_s | string |
 | Computer | string |
-| count_d | real |
-| InfobloxInsightID_g | string |
-| InfobloxInsightID_s | string |
-| InfobloxInsightLogType_s | string |
-| location_s | string |
+| description | string |
+| device_name | string |
+| first_detected | string |
+| indicators | dynamic |
+| InfobloxInsightID | string |
+| InfobloxInsightLogType | string |
+| ip_address | dynamic |
+| is_risky | bool |
+| is_verified | bool |
+| last_detected | string |
+| locations | dynamic |
+| mac_address | dynamic |
 | ManagementGroupName | string |
 | MG | string |
-| osVersion_s | string |
-| qip_s | string |
 | RawData | string |
 | SourceSystem | string |
 | TenantId | string |
-| threatIndicatorDistinctCount_s | string |
-| threatLevelMax_s | string |
 | TimeGenerated | datetime |
-| timeMax_t | datetime |
-| timeMin_t | datetime |
+| total_events | int |
 | Type | string |
-| user_s | string |
+| users | dynamic |
 
 ## Schema References
 
@@ -67,7 +66,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
 ### Workbooks (2)
 

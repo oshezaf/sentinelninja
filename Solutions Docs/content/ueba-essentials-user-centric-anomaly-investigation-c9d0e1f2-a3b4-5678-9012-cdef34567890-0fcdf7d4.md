@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Anomalies`](../tables/anomalies.md) | `UserPrincipalName == "myuser@mydomain.com"` | ✓ | ✓ | ? |
+| [`Anomalies`](../tables/anomalies.md) | `UserPrincipalName == "myuser@mydomain.com"` | ✓ | ✓ | ✓ |
 
 ---
 

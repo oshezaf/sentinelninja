@@ -6,15 +6,17 @@
 
 ---
 
-Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
+Security events that occur post-delivery, after Microsoft 365 delivers the emails to the recipient mailbox
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Defender |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailpostdeliveryevents-table) |
 
 ## Contents
 
@@ -31,7 +33,7 @@ Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | Action | string | Action taken on the entity |
 | ActionResult | string | Result of the action |
 | ActionTrigger | string | Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or String Delivery |
@@ -44,7 +46,7 @@ Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 | RecipientEmailAddress | string | Recipient email address or email address of the recipient after distribution list expansion |
 | ReportId | string | Unique identifier for the event |
 | SenderFromAddress | string | Sender email address in the FROM header, which is visible to email recipients on their email clients |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatTypes | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
@@ -55,6 +57,7 @@ Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailPostDeliveryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents)
+- [EmailPostDeliveryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailpostdeliveryevents-table)
 
 ## Solutions (1)
 

@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`AlertInfo`](../tables/alertinfo.md) | `Title contains "Email messages containing malicious URL removed after delivery"` | ✓ | ✗ | ? |
+| [`AlertInfo`](../tables/alertinfo.md) | `Title contains "Email messages containing malicious URL removed after delivery"` | ✓ | ✗ | ✓ |
 
 ---
 

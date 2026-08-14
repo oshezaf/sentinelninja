@@ -45,7 +45,7 @@
 | [RecordedFuture Threat Hunting IP All Actors](recorded-future-recordedfuture-threat-hunting-ip-all-actors-e31bc14e-2b4c-42a4-af34-5bfd7d768aea-57f811e9.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture Threat Hunting Url All Actors](recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b-8b23fa82.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [Recovery Token Deleted](veeam-recovery-token-deleted-9f37ded4-f27a-4ef6-b5e6-de6430070808-4cb5b9b4.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
-| [Red Canary Threat Detection](red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.md) ⚠️ | High | 📦 [Red Canary](../solutions/red-canary.md) |
+| [Red Canary Threat Detection](red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.md) | High | 📦 [Red Canary](../solutions/red-canary.md) |
 | [Red Sift - Email with URL to previously unseen domain](red-sift-red-sift-email-with-url-to-previously-unseen-domain-8972b513-12a2-4b46-8263-3f091d88a8bc-3eb79665.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
 | [Red Sift - Login from previously unseen IP address](red-sift-red-sift-login-from-previously-unseen-ip-address-c3d4e5f6-a7b8-9012-cdef-123456789012-17a3cf45.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
 | [Red Sift - MFA disabled on account](red-sift-red-sift-mfa-disabled-on-account-16f26d2c-6296-490b-af4f-b30bcf1c4461-c60400fe.md) | High | 📦 [Red Sift](../solutions/red-sift.md) |

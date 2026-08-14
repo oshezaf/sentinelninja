@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-07-06 |
 | **Last Updated** | 2026-07-20 |
 | **Solution Folder** | [AtlassianOrganizationAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianOrganizationAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianorganizationaudit) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianorganizationaudit) · Popularity: 🟡 Low (49%) |
 
 The Atlassian Organization Audit solution for Microsoft Sentinel enables ingestion of organization audit events from Atlassian Cloud into Microsoft Sentinel through the Codeless Connector Framework (CCF). It provides comprehensive security monitoring and compliance auditing across Atlassian Cloud products including Jira, Confluence, Bitbucket, Trello, Opsgenie, Statuspage, and Loom. Audit events cover user management, authentication activity, group changes, product access modifications, administrative actions, and policy changes. For more information about the Atlassian Organization Events API, see the official Atlassian documentation: https://developer.atlassian.com/cloud/admin/organization/rest/
 
@@ -54,6 +54,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |---|---|---|
+| 3.0.1       | 12-08-2026                     | Updated DCR transformKql to derive TimeGenerated from the event time with fallback to now(), and reduced poller timeout to 30 seconds. |
 | 3.0.0 | 06-07-2026 | First version of the Atlassian Organization Audit CCF Connector. <br/> Added Atlassian organization audit events ingestion support using CCF pollers, DCR, and parsers. |
 
 ---

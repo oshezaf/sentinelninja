@@ -6,23 +6,26 @@
 
 ---
 
-Reference for IdentityAccountInfo table in Azure Monitor Logs.
+Account information from various sources, including Microsoft Entra ID. This table also includes information and link to the identity that owns the account.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table) |
 
-## Schema (51 columns)
+## Schema (52 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountId | string | Internal identifier for the account. |
 | AccountStatus | string | The status of the account. |
 | AccountUpn | string | User principal name (UPN) of the account. |
@@ -30,7 +33,7 @@ Reference for IdentityAccountInfo table in Azure Monitor Logs.
 | Address | string | Address of the account user. |
 | AssignedRoles | dynamic | Role identifiers assigned to the account. |
 | AuthenticationMethod | string | Authentication method used to allow the account user to sign in. |
-| AuthenticationSourceAcccountId | string | Identifier of the federating account, if authentication method is Federated. |
+| AuthenticationSourceAccountId | string | Identifier of the federating account, if authentication method is Federated. |
 | City | string | City where the account user is located. |
 | Country | string | Country or region where the account user is located. |
 | CreatedDateTime | datetime | Date and time when the user account was created. |
@@ -64,7 +67,8 @@ Reference for IdentityAccountInfo table in Azure Monitor Logs.
 | SourceProviderInstanceDisplayName | string | Display name of the source application or service of the account. |
 | SourceProviderInstanceId | string | Identifier of the source application or service of the account. |
 | SourceProviderRiskLevel | dynamic | Risk level of the account as it appears in the source provider. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceProviderRiskLevelDetails | string | Additional details about the risk level of the account as it appears in the source provider. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Surname | string | Surname, family name, or last name of the account user. |
 | Tags | dynamic | Tags assigned to the account by Defender for Identity. |
 | TenantId | string | The Log Analytics workspace ID |
@@ -78,6 +82,7 @@ Reference for IdentityAccountInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityAccountInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo)
+- [IdentityAccountInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table)
 
 ---
 

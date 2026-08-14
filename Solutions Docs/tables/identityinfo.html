@@ -21,7 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
-<p>Reference for IdentityInfo table in Azure Monitor Logs.</p>
+<p>Account information from various sources, including Microsoft Entra ID</p>
 <table>
 <thead>
 <tr>
@@ -36,19 +36,27 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -78,7 +86,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountCloudSID</td>
@@ -293,7 +301,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">State</td>
@@ -361,6 +369,7 @@
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo">IdentityInfo Schema Reference (Azure Monitor)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table">IdentityInfo Schema Reference (Defender XDR)</a></li>
 </ul>
 <h2 id="solutions">Solutions (19)</h2>
 <p>This table is used by the following solutions:</p>
@@ -386,7 +395,7 @@
 <li><a href="../solutions/edcrule.html">eDCRule</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (52)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (41)</h2>
 <h3 id="analytic-rules">Analytic Rules (13)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
@@ -517,7 +526,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (30)</h3>
+<h3 id="hunting-queries">Hunting Queries (19)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -663,50 +672,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-hard-coded-credentials-in-tools-or-configuration-fdc8a7ec-586d-4021-a78a-d27544986178-72f83c28.html">AI Agents - Hard-coded credentials in Tools or Configuration</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-instructions-changed-on-previously-published-agent-662eae7f-494f-41a8-bfef-23dd80361795-0e3ddc5d.html">AI Agents - Instructions changed on previously published agent</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-mcp-tool-configured-a4e48491-6ed6-4064-bac2-385ef0e41afe-23c69432.html">AI Agents - MCP Tool Configured</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-missing-tools-in-instructions-4bfbe654-d961-4712-b2a3-f1fd7eaa9da3-521dd75d.html">AI Agents - Missing Tools in Instructions</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-newly-observed-mcp-server-on-existing-agent-d6ab015a-0a76-47f4-959f-54f49edff3f3-e81d92fe.html">AI Agents - Newly observed MCP server on existing agent</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-organization-wide-shared-8a53cf8e-04b1-4de6-95f2-916cc7c2b805-ad09cc30.html">AI Agents - Organization-wide Shared</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-47ea3b0e-bedd-4fde-bda9-86aa76684a9b-ab0c6f59.html">AI Agents - Orphaned Agents with Disabled Owners</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-owner-added-to-mcp-enabled-agent-c35b5a60-71ee-448c-935d-f60f4a4c7f2b-e01a6f5e.html">AI Agents - Owner added to MCP-enabled agent</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-published-agents-with-short-instructions-2f1f88de-d79f-44bf-96d0-52fd9cbf49c4-ffe6a11f.html">AI Agents - Published Agents with Short Instructions</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-published-agents-without-instructions-d51077dc-2a79-45e2-a036-503d74c85111-be5d96d1.html">AI Agents - Published Agents without Instructions</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-ai-agents-sharing-expanded-to-organization-wide-dbdba9cc-d7a0-434d-9c3d-82d2203a79fd-db1de9a8.html">AI Agents - Sharing expanded to organization-wide</a></td>
-  <td style="text-align:left"></td>
-</tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.html">User not covered under display name impersonation</a></td>
   <td style="text-align:left"></td>

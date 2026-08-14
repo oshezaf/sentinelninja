@@ -1,4 +1,4 @@
-# Red Sift Solution for Microsoft Sentinel
+# Red Sift OnDMARC Integration for Microsoft Sentinel
 
 *Solution: Red Sift*
 
@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Red Sift - support@redsift.com |
 | **First Published** | 2026-04-10 |
-| **Last Updated** | 2026-06-04 |
+| **Last Updated** | 2026-08-11 |
 | **Solution Folder** | [Red Sift](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/redsift.redsift-sentinel-events) · Popularity: ⚪ Very Low (0%) |
 

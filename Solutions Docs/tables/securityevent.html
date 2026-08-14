@@ -36,11 +36,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -89,7 +89,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">_ResourceId</td>
@@ -959,7 +959,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">Status</td>
@@ -1169,7 +1169,7 @@
 <tr>
   <td style="text-align:left">TransmittedServices</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user - most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <a href="https://msdn.microsoft.com/library/cc246072.aspx" data-linktype="external">https://msdn.microsoft.com/library/cc246072.aspx</a>.</td>
+  <td style="text-align:left">The list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user - most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, seehttps://msdn.microsoft.com/library/cc246072.aspx.</td>
 </tr>
 <tr>
   <td style="text-align:left">Type</td>
@@ -1184,7 +1184,7 @@
 <tr>
   <td style="text-align:left">UserParameters</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">If you change any setting using Active Directory Users and Computers management console in Dial-in tab of user's account properties, then you will see &lt;value changed, but not displayed&gt; in this field. For local accounts, this field is not applicable and always has &lt;value not set&gt; value.</td>
+  <td style="text-align:left">If you change any setting using Active Directory Users and Computers management console in Dial-in tab of user's account properties, then you will see &lt;value changed, but not displayed&gt; in this field. For local accounts, this field is not applicable and always has <value not set> value.</td>
 </tr>
 <tr>
   <td style="text-align:left">UserPrincipalName</td>
@@ -1228,7 +1228,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent">SecurityEvent Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (33)</h2>
+<h2 id="solutions">Solutions (32)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -1256,7 +1256,6 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
@@ -1306,8 +1305,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (166)</h2>
-<h3 id="analytic-rules">Analytic Rules (70)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (168)</h2>
+<h3 id="analytic-rules">Analytic Rules (72)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1317,6 +1316,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/attacker-tools-threat-protection-essentials-powershell-encoded-command-execution-living-off-the-land-7b2f4d1a-9c3e-4f72-8b1d-3e6a9f2c4b8d-1e416822.html">PowerShell Encoded Command Execution (Living off the Land)</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.html">Powershell Empire Cmdlets Executed in Command Line</a></td>
   <td style="text-align:left"></td>
@@ -1375,6 +1378,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-base64-encoded-windows-process-command-lines-ca67c83e-7fff-4127-a3e3-1af66d6d4cad-01f53023.html">Base64 encoded Windows process command-lines</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-certutil-used-for-file-download-living-off-the-land-4a9d3c2e-7f1b-4e58-9a0c-2d5b8e3f1a7c-5f9dd5d1.html">CertUtil Used for File Download (Living off the Land)</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-malware-in-the-recycle-bin-75bf9902-0789-47c1-a5d8-f57046aa72df-2b92e7a9.html">Malware in the recycle bin</a></td>
@@ -1717,6 +1724,10 @@
   <td style="text-align:left"><a href="../content/windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.html">Starting or Stopping HealthService to Avoid Detection</a></td>
   <td style="text-align:left"><code>EventID in &quot;4624,4656&quot;</code></td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../content/windows-security-events-wmi-spawning-suspicious-child-process-living-off-the-land-3c8e5f0b-1d4a-4b69-9c2e-7f0d3a5e8b1f-c2b2f4ac.html">WMI Spawning Suspicious Child Process (Living off the Land)</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
+</tr>
 </tbody>
 </table>
 <p><strong>In solution <a href="../solutions/zinc-open-source.html">Zinc Open Source</a>:</strong></p>
@@ -1730,21 +1741,6 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.html">Silk Typhoon New UM Service Child Process</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -2472,8 +2468,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (97 criteria, 135 total references)</h2>
-<p>References by type: 1 connectors, 128 content items, 5 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (97 criteria, 138 total references)</h2>
+<p>References by type: 1 connectors, 131 content items, 5 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2489,10 +2485,10 @@
 <tr>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">15</td>
+  <td style="text-align:center">18</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>16</strong></td>
+  <td style="text-align:center"><strong>19</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>EventID in &quot;9208,9211,9212&quot;</code><br><code>EventSourceName == &quot;Semperis-DSP-Security&quot;</code></td>
@@ -3265,10 +3261,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>128</strong></td>
+  <td style="text-align:center"><strong>131</strong></td>
   <td style="text-align:center"><strong>5</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>135</strong></td>
+  <td style="text-align:center"><strong>138</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3910,10 +3906,10 @@
 <tr>
   <td style="text-align:left"><code>4688</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">42</td>
+  <td style="text-align:center">45</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>43</strong></td>
+  <td style="text-align:center"><strong>46</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>4624</code></td>

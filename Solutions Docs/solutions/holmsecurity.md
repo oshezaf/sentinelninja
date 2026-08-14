@@ -23,7 +23,7 @@
 | **First Published** | 2022-07-18 |
 | **Last Updated** | 2026-05-19 |
 | **Solution Folder** | [HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/holmsecurityswedenab1639511288603.holmsecurity_sc_sentinel) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/holmsecurityswedenab1639511288603.holmsecurity_sc_sentinel) · Popularity: 🔵 Medium (54%) |
 
 The [Holm Security](https://www.holmsecurity.com/) solution for Microsoft Sentinel provides the capability to ingest network and web asset data from the [Holm Security Vulnerability Management Platform (VMP)](https://www.holmsecurity.com/) into Microsoft Sentinel through the [REST API](https://se-api.holmsecurity.com/docs/v2/).
 

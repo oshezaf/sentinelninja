@@ -39,8 +39,12 @@
   <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✗ No</td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
@@ -65,7 +69,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (170 columns)</h2>
+<h2 id="schema">Schema (169 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -76,183 +80,853 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">action_id_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">action_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">action_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ActivityId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">AdHocOrScheduledJob_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">application_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">audit_schema_version_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">avg_cpu_percent_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">avg_mean_time_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">backendHostname_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Caller_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">callerId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">CallerIPAddress</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">calls_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">client_ip_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">clientInfo_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">clientIP_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">clientIpAddress_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">clientPort_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">code_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">collectionName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_destinationIP_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_destinationPortRange_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_None_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_protocols_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_sourceIP_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">conditions_sourcePortRange_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">count_executions_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">cpu_time_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">database_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">database_principal_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabaseName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">db_id_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">direction_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">dop_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">duration_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">duration_milliseconds_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">BigInt</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ElasticPoolName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">endTime_t</td>
+  <td style="text-align:left">DateTime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Environment_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">error_code_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">error_message_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">errorLevel_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">event_class_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">event_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">event_subclass_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">event_time_t</td>
+  <td style="text-align:left">DateTime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">EventName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">execution_type_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">executionInfo_endTime_t</td>
+  <td style="text-align:left">DateTime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">executionInfo_exitCode_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">executionInfo_startTime_t</td>
+  <td style="text-align:left">DateTime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">host_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">httpMethod_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">httpStatus_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">httpStatusCode_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">httpStatusCode_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">httpVersion_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">id_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">identity_claim_appid_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">identity_claim_ipaddr_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">instanceId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">interval_end_time_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">interval_start_time_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ip_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">is_column_permission_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">isAccessPolicyMatch_b</td>
+  <td style="text-align:left">Bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobDurationInSecs_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobFailureCode_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">jobId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobOperation_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobOperationSubType_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobStartDateTime_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobStatus_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">JobUniqueId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">log_bytes_used_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">logical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">logical_io_writes_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">LogicalServerName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">macAddress_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">matchedConnections_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_cpu_time_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_dop_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_duration_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_log_bytes_used_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_logical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_logical_io_writes_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_num_physical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_physical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_query_max_used_memory_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_rowcount_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">max_time_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">mean_time_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">min_time_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">msg_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">num_physical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">object_id_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">object_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationVersion</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">partitionKey_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">physical_io_reads_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">plan_id_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">policy_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">policyMode_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">primaryIPv4Address_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">priority_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_enabledForDeployment_b</td>
+  <td style="text-align:left">Bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_enabledForDiskEncryption_b</td>
+  <td style="text-align:left">Bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_enabledForTemplateDeployment_b</td>
+  <td style="text-align:left">Bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_sku_Family_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_sku_Name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">properties_tenantId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">query_hash_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">query_id_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">query_max_used_memory_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">query_plan_hash_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">query_time_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">querytext_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">receivedBytes_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Region_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">requestCharge_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">requestQuery_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">requestResourceId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">requestResourceType_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">requestUri_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">reserved_storage_mb_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Resource</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_actionName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_location_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_originRunId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_resourceGroupName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_runId_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_subscriptionId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_triggerName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_workflowId_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_workflowName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceGroup</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceProvider</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceType</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">response_rows_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resultCode_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resultDescription_ChildJobs_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resultDescription_ErrorJobs_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">resultMessage_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">rootCauseAnalysis_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">routingRuleName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">rowcount_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RunbookName_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RunOn_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">schema_name_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">sentBytes_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">sequence_group_id_g</td>
+  <td style="text-align:left">Guid</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">sequence_number_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">server_principal_sid_s</td>
+  <td style="text-align:left">String</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">session_id_d</td>
+  <td style="text-align:left">Double</td>
+  <td style="text-align:left"></td>
+</tr>
 </tbody>
 </table>
-<p>| ... | ... | ...</td></p>
-<td style="text-align: left;">...</td>
-<td style="text-align: left;">... |
-| _ResourceId | String | A unique identifier for the resource that the record is associated with |
-| abc | def | 123</td>
-<td style="text-align: left;">...</td>
-<td style="text-align: left;">456 |
-| action_id_s | String |  |
-| action_name_s | String |  |
-| action_s | String |  |
-| ActivityId_g | Guid |  |
-| AdHocOrScheduledJob_s | String |  |
-| application_name_s | String |  |
-| audit_schema_version_d | Double |  |
-| avg_cpu_percent_s | String |  |
-| avg_mean_time_s | String |  |
-| backendHostname_s | String |  |
-| Caller_s | String |  |
-| callerId_s | String |  |
-| CallerIPAddress | String |  |
-| calls_s | String |  |
-| Category | String |  |
-| client_ip_s | String |  |
-| clientInfo_s | String |  |
-| clientIP_s | String |  |
-| clientIpAddress_s | String |  |
-| clientPort_d | Double |  |
-| code_s | String |  |
-| collectionName_s | String |  |
-| conditions_destinationIP_s | String |  |
-| conditions_destinationPortRange_s | String |  |
-| conditions_None_s | String |  |
-| conditions_protocols_s | String |  |
-| conditions_sourceIP_s | String |  |
-| conditions_sourcePortRange_s | String |  |
-| CorrelationId | String |  |
-| count_executions_d | Double |  |
-| cpu_time_d | Double |  |
-| database_name_s | String |  |
-| database_principal_name_s | String |  |
-| DatabaseName_s | String |  |
-| db_id_s | String |  |
-| direction_s | String |  |
-| dop_d | Double |  |
-| duration_d | Double |  |
-| duration_milliseconds_d | Double |  |
-| DurationMs | BigInt |  |
-| ElasticPoolName_s | String |  |
-| endTime_t | DateTime |  |
-| Environment_s | String |  |
-| error_code_s | String |  |
-| error_message_s | String |  |
-| errorLevel_s | String |  |
-| event_class_s | String |  |
-| event_s | String |  |
-| event_subclass_s | String |  |
-| event_time_t | DateTime |  |
-| EventName_s | String |  |
-| execution_type_d | Double |  |
-| executionInfo_endTime_t | DateTime |  |
-| executionInfo_exitCode_d | Double |  |
-| executionInfo_startTime_t | DateTime |  |
-| host_s | String |  |
-| httpMethod_s | String |  |
-| httpStatus_d | Double |  |
-| httpStatusCode_d | Double |  |
-| httpStatusCode_s | String |  |
-| httpVersion_s | String |  |
-| id_s | String |  |
-| identity_claim_appid_g | Guid |  |
-| identity_claim_ipaddr_s | String |  |
-| instanceId_s | String |  |
-| interval_end_time_d | Double |  |
-| interval_start_time_d | Double |  |
-| ip_s | String |  |
-| is_column_permission_s | String |  |
-| isAccessPolicyMatch_b | Bool |  |
-| JobDurationInSecs_s | String |  |
-| JobFailureCode_s | String |  |
-| JobId_g | Guid |  |
-| jobId_s | String |  |
-| JobOperation_s | String |  |
-| JobOperationSubType_s | String |  |
-| JobStartDateTime_s | String |  |
-| JobStatus_s | String |  |
-| JobUniqueId_g | Guid |  |
-| Level | String |  |
-| log_bytes_used_d | Double |  |
-| logical_io_reads_d | Double |  |
-| logical_io_writes_d | Double |  |
-| LogicalServerName_s | String |  |
-| macAddress_s | String |  |
-| matchedConnections_d | Double |  |
-| max_cpu_time_d | Double |  |
-| max_dop_d | Double |  |
-| max_duration_d | Double |  |
-| max_log_bytes_used_d | Double |  |
-| max_logical_io_reads_d | Double |  |
-| max_logical_io_writes_d | Double |  |
-| max_num_physical_io_reads_d | Double |  |
-| max_physical_io_reads_d | Double |  |
-| max_query_max_used_memory_d | Double |  |
-| max_rowcount_d | Double |  |
-| max_time_s | String |  |
-| mean_time_s | String |  |
-| Message | String |  |
-| min_time_s | String |  |
-| msg_s | String |  |
-| num_physical_io_reads_d | Double |  |
-| object_id_d | Double |  |
-| object_name_s | String |  |
-| OperationName | String |  |
-| OperationVersion | String |  |
-| partitionKey_s | String |  |
-| physical_io_reads_d | Double |  |
-| plan_id_d | Double |  |
-| policy_s | String |  |
-| policyMode_s | String |  |
-| primaryIPv4Address_s | String |  |
-| priority_d | Double |  |
-| properties_enabledForDeployment_b | Bool |  |
-| properties_enabledForDiskEncryption_b | Bool |  |
-| properties_enabledForTemplateDeployment_b | Bool |  |
-| properties_s | String |  |
-| properties_sku_Family_s | String |  |
-| properties_sku_Name_s | String |  |
-| properties_tenantId_g | Guid |  |
-| query_hash_s | String |  |
-| query_id_d | Double |  |
-| query_max_used_memory_d | Double |  |
-| query_plan_hash_s | String |  |
-| query_time_d | Double |  |
-| querytext_s | String |  |
-| receivedBytes_d | Double |  |
-| Region_s | String |  |
-| requestCharge_s | String |  |
-| requestQuery_s | String |  |
-| requestResourceId_s | String |  |
-| requestResourceType_s | String |  |
-| requestUri_s | String |  |
-| reserved_storage_mb_s | String |  |
-| Resource | String |  |
-| resource_actionName_s | String |  |
-| resource_location_s | String |  |
-| resource_originRunId_s | String |  |
-| resource_resourceGroupName_s | String |  |
-| resource_runId_s | String |  |
-| resource_subscriptionId_g | Guid |  |
-| resource_triggerName_s | String |  |
-| resource_workflowId_g | Guid |  |
-| resource_workflowName_s | String |  |
-| ResourceGroup | String |  |
-| ResourceProvider | String |  |
-| ResourceType | String |  |
-| response_rows_d | Double |  |
-| resultCode_s | String |  |
-| ResultDescription | String |  |
-| resultDescription_ChildJobs_s | String |  |
-| resultDescription_ErrorJobs_s | String |  |
-| resultMessage_s | String |  |
-| ResultSignature | String |  |
-| ResultType | String |  |
-| rootCauseAnalysis_s | String |  |
-| routingRuleName_s | String |  |
-| rowcount_d | Double |  |
-| ruleName_s | String |  |
-| RunbookName_s | String |  |
-| RunOn_s | String |  |
-| schema_name_s | String |  |
-| sentBytes_d | Double |  |
-| sequence_group_id_g | Guid |  |
-| sequence_number_d | Double |  |
-| server_principal_sid_s | String |  |
-| session_id_d | Double |  |
-
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
@@ -1204,79 +1878,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SERVICEBUS&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.EVENTHUB&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category in &quot;cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceType == &quot;AZUREFIREWALLS&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category in &quot;NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category in &quot;AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement&quot;</code><br><code>Category contains &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code><br><code>ResourceType == &quot;SERVERS/DATABASES&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Category == &quot;DDoSMitigationReports&quot;</code><br><code>ResourceType == &quot;PUBLICIPADDRESSES&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.DATALAKESTORE&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SEARCH&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceType in &quot;APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS&quot;</code><br><code>action_s == &quot;Blocked&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1292,7 +1902,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code></td>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.EVENTHUB&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.SEARCH&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1301,6 +1919,62 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.STREAMANALYTICS&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category in &quot;cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceProvider == &quot;MICROSOFT.DATALAKESTORE&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceType in &quot;APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS&quot;</code><br><code>action_s == &quot;Blocked&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category in &quot;AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement&quot;</code><br><code>Category contains &quot;SQLSecurityAuditEvents&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.SQL&quot;</code><br><code>ResourceType == &quot;SERVERS/DATABASES&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceType == &quot;AZUREFIREWALLS&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category == &quot;DDoSMitigationReports&quot;</code><br><code>ResourceType == &quot;PUBLICIPADDRESSES&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Category in &quot;NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -2008,7 +2682,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.EVENTHUB</code></td>
+  <td style="text-align:left"><code>MICROSOFT.BATCH</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -2016,7 +2690,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.DATALAKESTORE</code></td>
+  <td style="text-align:left"><code>MICROSOFT.EVENTHUB</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -2032,7 +2706,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.BATCH</code></td>
+  <td style="text-align:left"><code>MICROSOFT.STREAMANALYTICS</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -2040,7 +2714,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.STREAMANALYTICS</code></td>
+  <td style="text-align:left"><code>MICROSOFT.DATALAKESTORE</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -2079,6 +2753,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>APPLICATIONGATEWAYS</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>AZUREFIREWALLS</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">7</td>
@@ -2095,28 +2777,12 @@
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>APPLICATIONGATEWAYS</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">7</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>8</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>VAULTS</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">8</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>8</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>SERVERS/DATABASES</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>CDNWEBAPPLICATIONFIREWALLPOLICIES</code></td>
@@ -2128,6 +2794,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>FRONTDOORS</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SERVERS/DATABASES</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>

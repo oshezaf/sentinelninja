@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-01 |
 | **Last Updated** | 2026-06-10 |
 | **Solution Folder** | [ZeroFoxAlerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFoxAlerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: ⚪ Very Low (1%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: 🔵 Medium (69%) |
 
 The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) into Microsoft Sentinel using the ZeroFox API. 
 

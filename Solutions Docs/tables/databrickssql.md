@@ -1,0 +1,73 @@
+# DatabricksSQL
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+Reference for DatabricksSQL table in Azure Monitor Logs.
+
+| Attribute | Value |
+|:----------|:------|
+| **Category** | - |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssql) |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
+
+## Schema (21 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssql)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActionName | string | The action of the request. |
+| Category | string | The service that logged the request. |
+| Identity | string | Information about the user that makes the requests. |
+| LogId | string | The unique identifier for the log message that can be used to deduplicate them. |
+| OperationName | string | The action, such as login, logout, read, write, etc. |
+| OperationVersion | string | The schema version of the Databricks operation-based diagnostic log format. |
+| RequestId | string | The unique request ID. |
+| RequestParams | string | Parameter key-value pairs used in the event. |
+| Response | string | The HTTP response to the request, including error message (if applicable), result, and statusCode. |
+| ServiceName | string | The service of the source request. |
+| SessionId | string | Session ID of the action. |
+| SourceIPAddress | string | The IP address of the source request. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp of the action (UTC). |
+| Type | string | The name of the table |
+| UserAgent | string | The browser or API client used to make the request. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [DatabricksSQL Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickssql)
+
+---
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.databricks/workspaces`
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

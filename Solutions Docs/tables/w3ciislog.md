@@ -11,8 +11,8 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | IT & Management Tools, Virtual Machines |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog) |
@@ -34,7 +34,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage. |
@@ -57,7 +57,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | IsActive | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | LastReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | MaliciousIP | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
-| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-&lt;workspace ID&gt;. |
+| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>. |
 | RemoteIPCountry | string | Country/region of the IP address of the client. |
 | RemoteIPLatitude | real | Latitude of the client IP address. |
 | RemoteIPLongitude | real | Longitude of the client IP address. |
@@ -69,7 +69,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | scWin32Status | string | Windows status code. |
 | Severity | int | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
 | sIP | string | IP address of the server on which the log file entry was generated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | sPort | int | Server port number that is configured for the service. |
 | sSiteName | string | Name of the IIS site. |
 | StorageAccount | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |

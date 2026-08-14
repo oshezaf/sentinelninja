@@ -21,7 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
-<p>Reference for DeviceFileEvents table in Azure Monitor Logs.</p>
+<p>File creation, modification, and other file system events</p>
 <table>
 <thead>
 <tr>
@@ -36,19 +36,27 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +88,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">ActionType</td>
@@ -375,7 +383,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">TenantId</td>
@@ -398,6 +406,7 @@
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents">DeviceFileEvents Schema Reference (Azure Monitor)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table">DeviceFileEvents Schema Reference (Defender XDR)</a></li>
 </ul>
 <h2 id="solutions">Solutions (15)</h2>
 <p>This table is used by the following solutions:</p>
@@ -452,7 +461,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.html">Ingress Tool Transfer - Certutil</a></td>
@@ -486,7 +495,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.html">Files Copied to USB Drives</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
@@ -616,7 +625,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.html">Files Copied to USB Drives</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.html">PrintNightmare CVE-2021-1675 usage Detection</a></td>
@@ -687,16 +696,18 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -745,18 +756,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AntivirusDetection,FileCreated,UsbDriveMounted&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -793,8 +802,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (12 criteria, 13 total references)</h2>
-<p>References by type: 0 connectors, 12 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 16 total references)</h2>
+<p>References by type: 0 connectors, 15 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -808,6 +817,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -817,6 +834,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;FileRenamed&quot;</code><br><code>InitiatingProcessFileName in &quot;excel.exe,outlook.exe,powerpnt.exe,winword.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -888,7 +913,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AntivirusDetection,FileCreated,UsbDriveMounted&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -906,10 +931,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>12</strong></td>
+  <td style="text-align:center"><strong>15</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>13</strong></td>
+  <td style="text-align:center"><strong>16</strong></td>
 </tr>
 </tbody>
 </table>
@@ -929,10 +954,10 @@
 <tr>
   <td style="text-align:left"><code>FileCreated</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
+  <td style="text-align:center">8</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>FileRenamed</code></td>
@@ -943,71 +968,23 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>UsbDriveMounted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>FileModified</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add member to role</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>InteractiveLogon</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>RemoteInteractiveLogon</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Reset user password</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceAccess</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Sign-in</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Update user</code></td>
+  <td style="text-align:left"><code>AntivirusDetection</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

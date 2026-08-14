@@ -60,18 +60,19 @@ This table is used by the following solutions:
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 
-## Connectors (2)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Infoblox SOC Insights (via Codeless Connector Framework)](../connectors/infobloxsocinsightsconnector.md) |  |
+| [Infoblox IQ for Threat Defense Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) |  |
 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) |  |
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (6)
 
 ### Analytic Rules (2)
 
@@ -79,7 +80,7 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Infoblox - SOC Insight Detected - API Source](../content/infoblox-infoblox-soc-insight-detected-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05c34879.md) |  |
+| [Infoblox - IQ for TD Detected Insights - API Source](../content/infoblox-infoblox-iq-for-td-detected-insights-api-source-a5e2df87-f0c9-4540-8715-96e71b608986-05b6cca0.md) |  |
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
 

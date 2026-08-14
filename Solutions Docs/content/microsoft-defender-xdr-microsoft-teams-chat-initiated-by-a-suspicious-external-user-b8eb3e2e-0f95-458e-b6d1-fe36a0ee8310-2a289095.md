@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertInfo`](../tables/alertinfo.md) | `Title == "Microsoft Teams chat initiated by a suspicious external user"` | ✓ | ✗ | ? |
+| [`AlertInfo`](../tables/alertinfo.md) | `Title == "Microsoft Teams chat initiated by a suspicious external user"` | ✓ | ✗ | ✓ |
 
 ---
 

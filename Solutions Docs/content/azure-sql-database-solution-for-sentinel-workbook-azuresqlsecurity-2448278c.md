@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Succeeded"`<br>`Caller has "@"` | ✗ | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ✗ | ✗ | ✗ |
-| [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) | `AlertType startswith "SQL."`<br>`AlertType startswith "SQl."` | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 

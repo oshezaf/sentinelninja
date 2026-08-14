@@ -18,21 +18,20 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.wiz.io/](https://support.wiz.io/) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
+| **Last Updated** | 2026-08-03 |
 | **Solution Folder** | [Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🔵 Medium (52%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🔵 Medium (77%) |
 
-The [Wiz](https://wiz.io/) solution for Microsoft Sentinel enables you to ingest [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), [Wiz Vulnerability Findings](https://docs.wiz.io/wiz-docs/docs/vulnerability-findings), and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel using the Wiz REST API.
+The [Wiz](https://wiz.io/) solution for Microsoft Sentinel lets Wiz push [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), Wiz Detections, and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel in real time. Wiz sends data to a Data Collection Endpoint (DCE) using the Wiz service principal; this solution grants that service principal the least-privilege RBAC it needs, and Wiz then creates the data collection rule and tables. There is no Azure Function to host and no workspace shared keys to manage.
 
 **Underlying Microsoft Technologies used:**
 
 This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-a. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-b. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/#overview) 
+a. [Data Collection Rules and the Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) 
 
 ## Contents
 

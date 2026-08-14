@@ -1,4 +1,4 @@
-# Zimperium MTD for Sentinel
+# Zimperium MTD for Microsoft Sentinel
 
 *Solution: Zimperium Mobile Threat Defense*
 
@@ -19,9 +19,9 @@
 | **Version** | 3.1.0 |
 | **Author** | Zimperium |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-06-11 |
+| **Last Updated** | 2026-08-11 |
 | **Solution Folder** | [Zimperium Mobile Threat Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zimperiuminc.zimperium_mobile_threat_defense_mss) · Popularity: 🟡 Low (35%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zimperiuminc.zimperium_mobile_threat_defense_mss) · Popularity: ⚪ Very Low (0%) |
 
 The [Zimperium](https://www.zimperium.com/) Mobile Threat Defense solution gives you the ability to connect the [Zimperium Mobile Threat Defense](https://www.zimperium.com/mtd-maturity-model/) log with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.
 

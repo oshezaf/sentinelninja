@@ -11,9 +11,10 @@ Reference for CassandraLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | - |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cassandralogs) |
 
 ## Contents
@@ -29,7 +30,7 @@ Reference for CassandraLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AddressIp | string | IP address of the node that generated the logging event. |
@@ -72,12 +73,12 @@ Reference for CassandraLogs table in Azure Monitor Logs.
 | PermGenAfter | long | Permanent Generation space after garbage collection (in bytes). Permanent generation stores classes metadata (renamed to Metaspace in Java 8). |
 | PermGenBefore | long | Permanent Generation space before garbage collection (in bytes). Permanent generation stores classes metadata (renamed to Metaspace in Java 8). |
 | RequestedColumns | int | The number of columns requested. |
-| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION &lt;SessionId&gt; to find details of the query's activity. |
+| SessionId | string | Unique string identifying what query was running when this log was emitted. Use SHOW SESSION <SessionId> to find details of the query's activity. |
 | SliceEnd | string | The end of the the column slice inclusive. |
 | SliceStart | string | The start of the column slice inclusive. |
 | SourceFile | string | File name where the logging request was issued. |
 | SourceLine | int | Line number where the logging request was issued. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SSTableName | string | SSTable name. |
 | SurvivorSpaceAfter | long | Survivor space after garbage collection (in bytes). Survivor space stores the objects that have survived the garbage collection of the Eden space. |
 | SurvivorSpaceBefore | long | Survivor space before garbage collection (in bytes). Survivor space stores the objects that have survived the garbage collection of the Eden space. |

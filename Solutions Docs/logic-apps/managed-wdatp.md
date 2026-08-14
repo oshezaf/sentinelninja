@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 29 |
-| **Solutions** | 2 |
+| **Playbooks using** | 30 |
+| **Solutions** | 3 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/wdatp/) |
 
 ## Playbooks Using This Connector
@@ -38,6 +38,7 @@
 | [Restrict MDE App Execution - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-app-execution-incident-triggered-09245ecb.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 1 |
 | [Run MDE Antivirus - Alert Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus-alert-triggered-635881f3.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 2 |
 | [Run MDE Antivirus - Incident Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus-incident-triggered-51837a88.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 2 |
+| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 2 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 2 |
 | [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 1 | 1 |

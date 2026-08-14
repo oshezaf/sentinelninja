@@ -11,8 +11,8 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator) |
@@ -34,7 +34,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | Action | string | Action to take on indicator match. |
 | Active | bool | Indicates whether indicator is active. |
 | ActivityGroupNames | string | Activity groups associated with indicator. |
@@ -87,7 +87,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | NetworkSourceIP | string | The network source IP address observable. |
 | NetworkSourcePort | int | The network source port observable. |
 | PassiveOnly | bool | Indicates whether the indicator should trigger an event that is visible to a user. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Tags | string | Free form tags. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatSeverity | int | Indicator severity rating from 0 to 5. Higher value indicates greater severity. |
@@ -104,7 +104,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelligenceIndicator Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator)
 
-## Solutions (23)
+## Solutions (24)
 
 This table is used by the following solutions:
 
@@ -115,6 +115,7 @@ This table is used by the following solutions:
 - [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [GitLab](../solutions/gitlab.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
+- [Infoblox](../solutions/infoblox.md)
 - [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -146,7 +147,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (92)
+## Content Items Using This Table (93)
 
 ### Analytic Rules (72)
 
@@ -279,7 +280,7 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (15)
+### Workbooks (16)
 
 **In solution [CofenseIntelligence](../solutions/cofenseintelligence.md):** `SourceSystem == "Cofense Intelligence"`
 
@@ -298,6 +299,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) |  |
+
+**In solution [Infoblox](../solutions/infoblox.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -375,10 +382,10 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
+| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **4** | **1** | **0** | **0** | **5** |
 
@@ -386,12 +393,12 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
 | `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `!startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ---

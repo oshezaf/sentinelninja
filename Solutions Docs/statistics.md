@@ -40,26 +40,26 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **564** | 463 | 101 |
-| With Connectors | **373** | 301 | 72 |
-| With Content | **445** | 373 | 72 |
+| Solutions | **562** | 466 | 96 |
+| With Connectors | **379** | 304 | 75 |
+| With Content | **448** | 377 | 71 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
-| Microsoft | **251** | 228 | 23 |
-| Partner | **281** | 221 | 60 |
+| Microsoft | **253** | 230 | 23 |
+| Partner | **284** | 222 | 62 |
 | Community | **14** | 11 | 3 |
-| Unknown | **18** | 3 | 15 |
-| **Total** | **564** | **463** | **101** |
+| Unknown | **11** | 3 | 8 |
+| **Total** | **562** | **466** | **96** |
 
 ### Other Metrics
 
 | Metric | Count |
 |:-------|------:|
-| Unique Connectors | 538 |
-| Tables Used | 1052 |
+| Unique Connectors | 545 |
+| Tables Used | 1059 |
 
 ## Connectors
 
@@ -69,36 +69,37 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **538** | 446 | 45 | 47 |
-| Discovered 🔍 | **134** | 0 | 110 | 24 |
-| **Total** | **672** | **446** | **155** | **71** |
+| In Solutions | **545** | 448 | 45 | 52 |
+| Discovered 🔍 | **133** | 0 | 110 | 23 |
+| **Total** | **678** | **448** | **155** | **75** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| Microsoft | **273** | 163 | 97 | 13 |
-| Partner | **373** | 271 | 50 | 52 |
+| Microsoft | **275** | 164 | 97 | 14 |
+| Partner | **377** | 272 | 50 | 55 |
 | Community | **22** | 10 | 8 | 4 |
 | Unknown | **4** | 2 | 0 | 2 |
-| **Total** | **672** | **446** | **155** | **71** |
+| **Total** | **678** | **448** | **155** | **75** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **211** | 183 | 1 | 27 |
-| [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **129** | 83 | 29 | 17 |
-| [REST Pull API](methods/rest-pull-api.md) | **53** | 39 | 1 | 13 |
-| [CCF Push](methods/ccf-push.md) | **46** | 44 | 0 | 2 |
-| [Native](methods/native.md) | **18** | 16 | 1 | 1 |
+| [CCF](methods/ccf.md) | **217** | 185 | 1 | 31 |
+| [AMA](methods/ama.md) | **167** | 37 | 122 | 8 |
+| [Azure Function](methods/azure-function.md) | **128** | 81 | 29 | 18 |
+| [REST Pull API](methods/rest-pull-api.md) | **52** | 39 | 1 | 12 |
+| [CCF Push](methods/ccf-push.md) | **47** | 45 | 0 | 2 |
+| [Native](methods/native.md) | **17** | 15 | 1 | 1 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **15** | 15 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
+| [Defender](methods/defender.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **672** | **446** | **155** | **71** |
+| **Total** | **678** | **448** | **155** | **75** |
 
 ### Collection Methods by Support Tier
 
@@ -106,43 +107,44 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 80 / 1 / 6 / **87** | 103 / 0 / 17 / **120** | 0 / 0 / 4 / **4** | - |
-| [AMA](methods/ama.md) | 16 / 73 / 2 / **91** | 16 / 41 / 4 / **61** | 4 / 8 / 0 / **12** | 0 / 0 / 2 / **2** |
-| [Azure Function](methods/azure-function.md) | 13 / 22 / 2 / **37** | 69 / 7 / 15 / **91** | 1 / 0 / 0 / **1** | - |
-| [REST Pull API](methods/rest-pull-api.md) | 2 / 0 / 2 / **4** | 31 / 1 / 11 / **43** | 4 / 0 / 0 / **4** | 2 / 0 / 0 / **2** |
-| [CCF Push](methods/ccf-push.md) | 2 / 0 / 0 / **2** | 42 / 0 / 2 / **44** | - | - |
-| [Native](methods/native.md) | 16 / 1 / 1 / **18** | - | - | - |
+| [CCF](methods/ccf.md) | 81 / 1 / 7 / **89** | 104 / 0 / 20 / **124** | 0 / 0 / 4 / **4** | - |
+| [AMA](methods/ama.md) | 16 / 73 / 2 / **91** | 17 / 41 / 4 / **62** | 4 / 8 / 0 / **12** | 0 / 0 / 2 / **2** |
+| [Azure Function](methods/azure-function.md) | 13 / 22 / 2 / **37** | 67 / 7 / 16 / **90** | 1 / 0 / 0 / **1** | - |
+| [REST Pull API](methods/rest-pull-api.md) | 2 / 0 / 2 / **4** | 31 / 1 / 10 / **42** | 4 / 0 / 0 / **4** | 2 / 0 / 0 / **2** |
+| [CCF Push](methods/ccf-push.md) | 2 / 0 / 0 / **2** | 43 / 0 / 2 / **45** | - | - |
+| [Native](methods/native.md) | 15 / 1 / 1 / **17** | - | - | - |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
 | [Unknown](methods/unknown.md) | 15 / 0 / 0 / **15** | - | - | - |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 / 0 / 0 / **1** | 9 / 1 / 3 / **13** | 1 / 0 / 0 / **1** | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 1 / 0 / 0 / **1** | - | - |
+| [Defender](methods/defender.md) | 1 / 0 / 0 / **1** | - | - | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
-| **Total** | 163 / 97 / 13 / **273** | 271 / 50 / 52 / **373** | 10 / 8 / 4 / **22** | 2 / 0 / 2 / **4** |
+| **Total** | 164 / 97 / 14 / **275** | 272 / 50 / 55 / **377** | 10 / 8 / 4 / **22** | 2 / 0 / 2 / **4** |
 
 ### CCF Capabilities
 
 | Metric | Count |
 |:-------|------:|
-| CCF Connectors (polling) | 211 |
-| CCF Push Connectors | 46 |
+| CCF Connectors (polling) | 217 |
+| CCF Push Connectors | 47 |
 | CCF Legacy Connectors | 0 |
-| **Total CCF** | **257** |
-| With config file | 236 |
-| With capabilities detected | 250 |
+| **Total CCF** | **264** |
+| With config file | 243 |
+| With capabilities detected | 257 |
 
 **Connector Kind** (non-default kinds; REST Pull API polling is the default):
 
 | Kind | Count |
 |:-----|------:|
-| REST Pull API Polling *(default)* | 162 |
-| Push | 46 |
+| REST Pull API Polling *(default)* | 167 |
+| Push | 47 |
 | GCP | 16 |
 | AmazonWebServicesS3 | 14 |
 | StorageAccountBlobContainer | 4 |
 | AliCloudSlsV1 | 2 |
+| PurviewAudit | 2 |
 | EdgeGrid | 1 |
 | None | 1 |
-| PurviewAudit | 1 |
 | OCI | 1 |
 | Oracle | 1 |
 | WebSocket | 1 |
@@ -151,18 +153,18 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Auth Type | Count |
 |:----------|------:|
-| APIKey | 84 |
+| APIKey | 89 |
 | OAuth2 | 38 |
 | JwtToken | 26 |
 | Basic | 17 |
 | ServicePrincipal | 4 |
-| *(none detected)* | 81 |
+| *(none detected)* | 83 |
 
 **Request Features:**
 
 | Feature | Count |
 |:--------|------:|
-| Paging | 135 |
+| Paging | 139 |
 | POST | 27 |
 | Nested | 15 |
 | MvExpand | 2 |
@@ -173,21 +175,21 @@ API-based connectors use one of two APIs to send data to the workspace:
 
 | Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| [Log Ingestion API](methods/log-ingestion-api.md) | **104** | 100 | 0 | 4 |
-| [HTTP Data Collector API](methods/http-data-collector-api.md) | **123** | 69 | 30 | 24 |
+| [Log Ingestion API](methods/log-ingestion-api.md) | **105** | 100 | 0 | 5 |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | **121** | 68 | 30 | 23 |
 | [Undetermined](methods/undetermined.md) | **3** | 1 | 0 | 2 |
-| **Total** | **252** | **186** | **31** | **35** |
+| **Total** | **251** | **185** | **31** | **35** |
 
 **By Collection Method:**
 
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
-| [Azure Function](methods/azure-function.md) | 47 | 71 | 3 | **121** |
-| [REST Pull API](methods/rest-pull-api.md) | 1 | 52 | - | **53** |
-| [CCF Push](methods/ccf-push.md) | 46 | - | - | **46** |
+| [Azure Function](methods/azure-function.md) | 47 | 70 | 3 | **120** |
+| [REST Pull API](methods/rest-pull-api.md) | 1 | 51 | - | **52** |
+| [CCF Push](methods/ccf-push.md) | 47 | - | - | **47** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
 | [CCF](methods/ccf.md) | 10 | - | - | **10** |
-| **Total** | **104** | **123** | **3** | **230** |
+| **Total** | **105** | **121** | **3** | **229** |
 
 ### Custom Log V1 (CLv1) 🔶
 
@@ -195,38 +197,38 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 | Metric | Count |
 |:-------|------:|
-| CLv1 Connectors | **144** |
-| Active | 85 |
+| CLv1 Connectors | **145** |
+| Active | 84 |
 | Deprecated 🚫 | 31 |
-| Unpublished ⚠️ | 28 |
+| Unpublished ⚠️ | 30 |
 
 **By Collection Method:**
 
 | Collection Method | CLv1 Connectors |
 |:-----------------|----------------:|
-| [Azure Function](methods/azure-function.md) | 64 |
-| [REST Pull API](methods/rest-pull-api.md) | 41 |
+| [Azure Function](methods/azure-function.md) | 63 |
+| [REST Pull API](methods/rest-pull-api.md) | 40 |
+| [CCF](methods/ccf.md) | 16 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 14 |
-| [CCF](methods/ccf.md) | 14 |
 | [AMA](methods/ama.md) | 7 |
-| [CCF Push](methods/ccf-push.md) | 3 |
+| [CCF Push](methods/ccf-push.md) | 4 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 |
-| **Total** | **144** |
+| **Total** | **145** |
 
 **By Ingestion API:**
 
 | Ingestion API | CLv1 Connectors |
 |:-------------|----------------:|
-| [Log Ingestion API](methods/log-ingestion-api.md) | 4 |
-| [HTTP Data Collector API](methods/http-data-collector-api.md) | 103 |
-| *(no API)* | 34 |
-| **Total** | **144** |
+| [Log Ingestion API](methods/log-ingestion-api.md) | 5 |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | 101 |
+| *(no API)* | 36 |
+| **Total** | **145** |
 
 ## Tables
 
 ### Overview
 
-**2130 tables** documented across all discovery sources. **1884 tables** have schema information.
+**2145 tables** documented across all discovery sources. **1946 tables** have schema information.
 
 ### Discovery Sources
 
@@ -234,15 +236,17 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
-| Connector | 1052 | 1052 |
-| Content | 241 | 853 |
-| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 711 | 898 |
-| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 0 | 0 |
-| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 13 | 540 |
-| [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 49 | 761 |
-| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 0 | 117 |
-| Schema | 64 | 1884 |
-| **Total** | **2130** | |
+| Connector | 1059 | 1059 |
+| Content | 255 | 871 |
+| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 731 | 919 |
+| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 20 | 64 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 18 | 540 |
+| [Azure Monitor Logs Table Feature Support](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 919 |
+| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 104 |
+| Schema | 62 | 1946 |
+| **Total** | **2145** | |
+
+*21 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
 ### Schema Sources
 
@@ -250,25 +254,25 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Schema Source | Tables |
 |:-------------|-------:|
-| Azure Monitor docs | 898 |
+| Azure Monitor docs | 940 |
 | DCR | 18 |
-| KQL validation | 767 |
-| Connector definition | 201 |
-| **Total unique tables with schema** | **1884** |
+| KQL validation | 772 |
+| Connector definition | 216 |
+| **Total unique tables with schema** | **1946** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**471** of 2130 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**467** of 2145 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
 | Category | CLv1 Tables |
 |:---------|------------:|
 | Uncategorized | 444 |
-| Internal | 21 |
+| Internal | 17 |
 | GCP | 5 |
 | Various | 1 |
-| **Total** | **471** |
+| **Total** | **467** |
 
 ## Content
 
@@ -276,17 +280,17 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,990** | 5,125 | 98 | 510 | 489 | 1,278 |
+| **Content Items** | **7,011** | 5,145 | 95 | 514 | 492 | 1,279 |
 
 ### Content Items by Type
 
 | Type | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-----|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,403 | 2,214 | 19 | 279 | 158 | 12 |
-| Hunting Queries | 2,464 | 1,286 | 11 | 71 | 134 | 1,033 |
-| Playbooks | 898 | 633 | 38 | 73 | 190 | 37 |
-| Workbooks | 592 | 391 | 11 | 49 | 0 | 190 |
-| Parsers* | 559 | 540 | 19 | 38 | 0 | 0 |
+| Analytic Rules | 2,415 | 2,229 | 16 | 282 | 158 | 12 |
+| Hunting Queries | 2,467 | 1,286 | 11 | 70 | 137 | 1,033 |
+| Playbooks | 901 | 636 | 38 | 74 | 190 | 37 |
+| Workbooks | 596 | 394 | 11 | 48 | 0 | 191 |
+| Parsers* | 558 | 539 | 19 | 40 | 0 | 0 |
 | Watchlists | 49 | 43 | 0 | 0 | 0 | 6 |
 | Summary Rules | 25 | 18 | 0 | 0 | 7 | 0 |
 
@@ -298,27 +302,27 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 
 | Metric | Count |
 |:-------|------:|
-| Playbooks using Logic App connectors / built-ins | 898 |
-| Total connector / built-in usages (rows) | 2,384 |
+| Playbooks using Logic App connectors / built-ins | 901 |
+| Total connector / built-in usages (rows) | 2,388 |
 | Unique managed/custom connector types | 148 |
 | &nbsp;&nbsp;Managed (Microsoft-published) | 96 |
 | &nbsp;&nbsp;Custom | 56 |
 | Unique built-in action types | 3 |
-| Total built-in action invocations | 1,325 |
+| Total built-in action invocations | 1,344 |
 
 **Top managed connectors by playbook usage**
 
 | Connector | Playbooks |
 |:----------|----------:|
-| [`azuresentinel`](logic-apps/managed-azuresentinel.md) | 698 |
+| [`azuresentinel`](logic-apps/managed-azuresentinel.md) | 700 |
 | [`keyvault`](logic-apps/managed-keyvault.md) | 161 |
 | [`azuremonitorlogs`](logic-apps/managed-azuremonitorlogs.md) | 107 |
 | [`teams`](logic-apps/managed-teams.md) | 104 |
-| [`azureloganalyticsdatacollector`](logic-apps/managed-azureloganalyticsdatacollector.md) | 103 |
-| [`office365`](logic-apps/managed-office365.md) | 71 |
+| [`azureloganalyticsdatacollector`](logic-apps/managed-azureloganalyticsdatacollector.md) | 101 |
+| [`office365`](logic-apps/managed-office365.md) | 73 |
 | [`microsoftsentinel`](logic-apps/managed-microsoftsentinel.md) | 34 |
+| [`wdatp`](logic-apps/managed-wdatp.md) | 30 |
 | [`azuread`](logic-apps/managed-azuread.md) | 29 |
-| [`wdatp`](logic-apps/managed-wdatp.md) | 29 |
 | [`riskiqpassivetotal`](logic-apps/managed-riskiqpassivetotal.md) | 27 |
 | [`hyasinsight`](logic-apps/managed-hyasinsight.md) | 25 |
 | [`virustotal`](logic-apps/managed-virustotal.md) | 16 |
@@ -330,7 +334,7 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 
 | Action type | Playbooks | Action invocations |
 |:------------|----------:|-------------------:|
-| [`http`](logic-apps/builtin-http.md) | 398 | 1066 |
+| [`http`](logic-apps/builtin-http.md) | 400 | 1085 |
 | [`workflow`](logic-apps/builtin-workflow.md) | 63 | 123 |
 | [`function`](logic-apps/builtin-function.md) | 55 | 136 |
 
@@ -339,10 +343,10 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 | Category | Count |
 |:---------|------:|
 | Legacy Parsers | 35 |
-| Solution Parsers (in Solution JSON) | 541 |
+| Solution Parsers (in Solution JSON) | 540 |
 | Discovered Parsers 🔍 | 21 |
-| **Total Parsers** | **597** |
-| Solutions with Parsers | 176 |
+| **Total Parsers** | **596** |
+| Solutions with Parsers | 178 |
 
 ## ASIM Parsers
 
@@ -362,7 +366,7 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 | **Products** | 104 |
 | **Source Parser Pairs*** | 97 |
 | **Schemas Covered** | 12 |
-| **Tables Used** | 91 |
+| **Tables Used** | 92 |
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 

@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-10 |
-| **Last Updated** | 2026-02-13 |
+| **Last Updated** | 2026-06-30 |
 | **Solution Folder** | [TacitRed-Defender-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-tacitred-defender-ti) · Popularity: ⚪ Very Low (0%) |
 

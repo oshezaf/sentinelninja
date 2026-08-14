@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrendAIXDROATV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="trendai_xdr_oat_v2_cl">TrendAI_XDR_OAT_V2_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (155 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29%5CData%20Connectors%5CTrendAIVisionOneOAT_ccp/TrendAIVisionOneOAT_table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_act_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_actResult_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_aggregatedCount_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_app_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_appGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_aptRelated_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_cat_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_channel_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_clientFlag_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_detectionType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_deviceDirection_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_deviceGUID_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_deviceMacAddress_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dhost_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dmac_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_domainName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dpt_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Destination port.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dst_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Destination IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dstGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dstZone_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_dvchost_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_endpointGuid_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_endpointHostName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Endpoint host name from the detail object.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_endpointIp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_endpointMacAddress_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventId_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventId_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">OAT event name / technique name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventSourceType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventSubId_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventSubName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_eventTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_fileExt_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_fileHash_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_fileName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_filePath_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_filePathName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_fileSize_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_filterRiskLevel_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Risk level: low, medium, high, or critical.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_firstAct_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_firstActResult_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_firstSeen_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_fullPath_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_hostName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_hostSeverity_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_interestedGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_interestedHost_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_interestedIp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_lastSeen_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_logonUser_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_malDst_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_malName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_malSubType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_malType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_malTypeGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_mDevice_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectAppName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectCmd_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line of the object process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectContentName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileCreation_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileHashSha1_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileHashSha256_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileModifiedTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFilePath_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFileSize_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectFirstSeen_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectIps_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectLastSeen_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectLaunchTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectRawDataStr_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectRunAsLocalAccount_b</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectSigner_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectSignerValid_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectSubTrueType_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectTrueType_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectUser_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_objectUserDomain_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_osName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_osType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_osVer_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentCmd_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line of the parent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFileCreation_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFileHashSha1_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFileHashSha256_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFileModifiedTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFilePath_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentFileSize_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentLaunchTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parent process name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentSigner_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentSignerValid_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentTrueType_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentUser_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_parentUserDomain_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_pAttackPhase_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MITRE ATT&amp;CK attack phase.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_pComp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_peerGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_peerHost_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_peerIp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_plang_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_pname_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processCmd_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line of the triggering process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFileCreation_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFileHashSha1_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFileHashSha256_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA256 hash of the triggering process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFileModifiedTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFilePath_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processFileSize_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processLaunchTime_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the triggering process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processPid_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">PID of the triggering process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processSigner_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processSignerValid_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processTrueType_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processUser_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_processUserDomain_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_proto_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Network protocol.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_remarks_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_rt_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_rtHour_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_ruleId_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_ruleName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_scanType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_secondAct_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_secondActResult_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_senderIp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_severity_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_shost_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_smac_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_spt_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Source port.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_src_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_srcFirstSeen_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_srcGroup_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_srcLastSeen_d</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_srcZone_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_tags_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_threatType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_timezone_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_userDomain_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detail_uuid_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">detectionTime_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the detection was made.</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint_guid_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Endpoint agent GUID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint_ips_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP addresses of the endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint_name_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Endpoint host name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">entityName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the entity involved.</td>
+</tr>
+<tr>
+  <td style="text-align:left">entityType_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of entity involved (e.g. endpoint).</td>
+</tr>
+<tr>
+  <td style="text-align:left">filters_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">OAT filter details serialized as string.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RawData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full detail object serialized as string for fallback parsing.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) when the detection occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">xdrCustomerId_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/trendaivisiononeoat.html">TrendAI Vision One™ - OAT Detections (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/trendaioat-complete.html">TrendAIOAT_Complete</a></td>
+  <td style="text-align:left"><a href="../solutions/trendai-vision-one-ccf.html">TrendAI Vision One(CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

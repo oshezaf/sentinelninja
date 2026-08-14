@@ -11,8 +11,10 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Virtual Desktop |
-| **Basic Logs Eligible** | ✗ No |
+| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdautoscaleevaluationpooled) |
 
 ## Contents
@@ -28,7 +30,7 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActiveSessionHostCount | int | Number of session hosts accepting user connections. |
@@ -47,7 +49,7 @@ Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor Logs.
 | ScalingReasonMessage | string | The actions Autoscale decided to perform and why it took those actions. |
 | SessionCount | int | Number of user sessions, only the user sessions from session hosts which considered active by Autoscale are included. |
 | SessionOccupancyPercent | real | Percent of session host capacity occupied by user sessions. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) this event was generated. |
 | TotalSessionHostCount | int | Number of session hosts in the host pool. |

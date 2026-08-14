@@ -21,7 +21,7 @@
 | **First Published** | 2026-06-01 |
 | **Last Updated** | 2026-07-22 |
 | **Solution Folder** | [Whisper](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Whisper) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/whisper-security.azure-sentinel-solution-whisper) · Popularity: 🟡 Low (39%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/whisper-security.azure-sentinel-solution-whisper) · Popularity: 🔵 Medium (58%) |
 
 The **Whisper Security** solution for Microsoft Sentinel brings the Whisper internet-scale infrastructure knowledge graph (7+ billion nodes, 39+ billion edges, 40+ threat feeds) into Microsoft Sentinel's detection and response workflows. It provides real-time threat intelligence enrichment, infrastructure context, WHOIS/BGP history, and ASN reputation polling.
 

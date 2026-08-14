@@ -1,6 +1,6 @@
-# ⚠️ Citrix Analytics CCF
+# Citrix SPA Sentinel App
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: Citrix Analytics CCF*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix_logo.svg" alt="Citrix Analytics CCF Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Citrix Systems, Inc. |
 | **First Published** | 2026-01-21 |
+| **Last Updated** | 2026-07-08 |
 | **Solution Folder** | [Citrix Analytics CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20CCF) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.azure-sentinel-solution-citrix-analytics-ccf) · Popularity: 🟡 Low (41%) |
 
 [Citrix Analytics](https://www.citrix.com/solutions/analytics/) Solution for Microsoft Sentinel helps you to export data analyzed for the events(SPA, Security) from Citrix Analytics into Microsoft Sentinel environment. You can create custom dashboards, analyze data from other sources along with that from Citrix Analytics and create custom workflows using Logic Apps to monitor and mitigate the events. 
 For more details about this solution refer to https://docs.citrix.com/en-us/security-analytics/siem-integration/azure-sentinel-integration.html 

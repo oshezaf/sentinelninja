@@ -36,15 +36,19 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -52,7 +56,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (32 columns)</h2>
+<h2 id="schema">Schema (34 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dynamiceventcollection">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -71,7 +75,7 @@
 <tr>
   <td style="text-align:left">_IsBillable</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountSid</td>
@@ -129,6 +133,11 @@
   <td style="text-align:left">User principal name (UPN) of the account that ran the process responsible for the event. In Active Directory, a UPN is the name of a system user in an email address format (for example: john.doe@domain.com)</td>
 </tr>
 <tr>
+  <td style="text-align:left">InitiatingProcessCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the process that initiated the event was started.</td>
+</tr>
+<tr>
   <td style="text-align:left">InitiatingProcessFolderPath</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Folder containing the process (image file) that initiated the event.</td>
@@ -147,6 +156,11 @@
   <td style="text-align:left">InitiatingProcessMD5</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">MD5 hash of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InitiatingProcessParentCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the parent of the process responsible for the event was started.</td>
 </tr>
 <tr>
   <td style="text-align:left">InitiatingProcessParentFileName</td>
@@ -206,7 +220,7 @@
 <tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">TenantId</td>

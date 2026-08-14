@@ -19,7 +19,7 @@
 | **First Published** | 2026-06-24 |
 | **Last Updated** | 2026-07-24 |
 | **Solution Folder** | [Akamai DDOS Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20DDOS%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-akamaiddosprotection) · Popularity: 🔵 Medium (66%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-akamaiddosprotection) · Popularity: 🔵 Medium (76%) |
 
 The [Akamai](https://www.akamai.com/) DDOS Protection Solution for Microsoft Sentinel enables you to ingest DDoS protection and web application firewall (WAF) security events from the Akamai SIEM Integration API into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution provides visibility into attack data, geographic context, and HTTP request/response metadata for security monitoring, threat detection, and investigation.
 

@@ -11,8 +11,8 @@ Reference for AWSRoute53Resolver table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsroute53resolver) |
@@ -32,7 +32,7 @@ Reference for AWSRoute53Resolver table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountId | string | The AWS account ID that owns the VPC which sent the query. |
 | Answers | dynamic | Array of DNS response records, including resolved IP addresses and other query-related information. |
 | FirewallDomainListId | string | ID of the domain list that matched the query domain. |
@@ -44,7 +44,7 @@ Reference for AWSRoute53Resolver table in Azure Monitor Logs.
 | QueryType | string | The DNS record type requested (e.g. A, AAAA, MX). |
 | Rcode | string | Textual DNS response code (e.g. NOERROR, NXDOMAIN). |
 | Region | string | AWS region where the log was generated. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SrcAddr | string | The source IP address of the instance that made the query. |
 | SrcIds | dynamic | Identifiers related to the source instance where the DNS query originated from or passed through. |
 | SrcPort | string | The source port on the instance that made the query. |

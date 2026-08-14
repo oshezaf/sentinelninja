@@ -18,18 +18,18 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **123** |
-| Active | 69 |
+| Total Connectors | **121** |
+| Active | 68 |
 | Deprecated 🚫 | 30 |
-| Unpublished ⚠️ | 41 |
+| Unpublished ⚠️ | 40 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 71 |
-| [REST Pull API](../methods/rest-pull-api.md) | 52 |
-| **Total** | **123** |
+| [Azure Function](../methods/azure-function.md) | 70 |
+| [REST Pull API](../methods/rest-pull-api.md) | 51 |
+| **Total** | **121** |
 
 ## Connectors Using This API
 
@@ -80,7 +80,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
-| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | [REST Pull API](../methods/rest-pull-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
+| [Infoblox IQ for Threat Defense Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | [REST Pull API](../methods/rest-pull-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
@@ -94,7 +94,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 17 | [Netskopev2](../solutions/netskopev2.md) |
 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
-| [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
@@ -102,7 +101,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶 | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rubrik, Inc | 4 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶 | [Azure Function](../methods/azure-function.md) | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |

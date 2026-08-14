@@ -11,9 +11,10 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Azure Resources |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/lasummarylogs) |
 
 ## Contents
@@ -29,7 +30,7 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | BinSize | int | The time ranges summarization is performed in minutes. For example, when bin is 60, summarization is performed every 60 minutes. |
@@ -39,7 +40,7 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 | ResultsRecordCount | long | The number of records returned in aggregation. |
 | RuleLastModifiedTime | datetime | The time the rule last modified. Can be used to reason changes in results, duration, etc. |
 | RuleName | string | The rule name. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Status | string | The bin execution status. Can be Started, Succeeded or Failed. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The bin execution start time (UTC). It represents the time bin processing started, and decoupled from bin time range. For example, TimeGenerated can be 2023-01-01T3:05:10.123Z when processing hourly bin between 2:00 - 3:00. |

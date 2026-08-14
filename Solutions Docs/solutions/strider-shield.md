@@ -1,6 +1,6 @@
-# Strider Shield for Microsoft Sentinel
+# ⚠️ Strider Shield
 
-*Solution: Strider Shield*
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/StriderShield.svg" alt="Strider Shield Logo" width="75" height="75">
 
@@ -19,9 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Ioannis Bakomichalis - ioannis.bakomichalis@nviso.eu |
 | **First Published** | 2026-04-28 |
-| **Last Updated** | 2026-06-04 |
 | **Solution Folder** | [Strider Shield](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nvisocvba1591630627500.nviso-strider-shield-azure-sentinel-solution) · Popularity: 🟡 Low (25%) |
 
 The [Strider Shield](https://www.striderintel.com/shield/) Data Connector delivers curated intelligence on state-sponsored actors by ingesting Strider Shield data into Microsoft Sentinel.
 

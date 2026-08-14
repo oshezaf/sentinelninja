@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Automation (SOAR),Security - Network |
-| **Version** | 3.0.9 |
+| **Version** | 3.0.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-09 |
 | **Last Updated** | 2026-01-14 |

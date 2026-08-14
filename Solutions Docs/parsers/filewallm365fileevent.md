@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for File events |
 | Location | Solution |
-| Solution | [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) ⚠️ |
+| Solution | [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-01-01 |
 | Category | Microsoft Sentinel Parser |

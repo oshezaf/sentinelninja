@@ -1,4 +1,4 @@
-# [Recommended] Infoblox SOC Insight Data Connector via AMA
+# [Recommended] Infoblox IQ for Threat Defense Insight Data Connector via AMA
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="75" height="75">
 
@@ -15,13 +15,12 @@
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md), [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [InfobloxSOCInsightsDataConnector_AMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxSOCInsights/InfobloxSOCInsightsDataConnector_AMA.json) |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#infoblox-soc-insight-data-connector-via-ama) |
 
-The Infoblox SOC Insight Data Connector allows you to easily connect your Infoblox BloxOne SOC Insight data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log. 
-
+The Infoblox IQ for Threat Defense Insight Data Connector allows you to easily connect your Infoblox IQ for Threat Defense Insight data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log. 
 
 
-This data connector ingests Infoblox SOC Insight CDC logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector.**
+
+This data connector ingests Infoblox IQ for Threat Defense Insight CDC logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector.**
 
 ## Tables Ingested
 
@@ -29,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "BloxOne-InsightsNotification-Log"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "BloxOne-InsightsNotification-Log,BloxOne-InsightsNotification-V2-Log"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -50,20 +49,18 @@ This connector ingests data into the following tables:
 In order to use the playbooks as part of this solution, find your **Workspace ID** and **Workspace Primary Key** below for your convenience.
 - **Workspace ID**: `WorkspaceId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Workspace Key**: `PrimaryKey`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 
 **2. Parsers**
 
 >This data connector depends on a parser based on a Kusto Function to work as expected called [**InfobloxCDC_SOCInsights**](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights/Parsers/InfobloxCDC_SOCInsights.yaml) which is deployed with the Microsoft Sentinel Solution.
 
-**3. SOC Insights**
+**3. Infoblox IQ for Threat Defense**
 
->This data connector assumes you have access to Infoblox BloxOne Threat Defense SOC Insights. You can find more information about SOC Insights [**here**](https://docs.infoblox.com/space/BloxOneThreatDefense/501514252/SOC+Insights).
+>This data connector assumes you have access to Infoblox IQ for Threat Defense. You can find more information about it [**here**](https://docs.infoblox.com/space/BloxOneThreatDefense/2448392230/Infoblox+IQ+for+Threat+Defense).
 
 **4. Infoblox Cloud Data Connector**
 
->This data connector assumes an Infoblox Data Connector host has already been created and configured in the Infoblox Cloud Services Portal (CSP). As the [**Infoblox Data Connector**](https://docs.infoblox.com/display/BloxOneThreatDefense/Deploying+the+Data+Connector+Solution) is a feature of BloxOne Threat Defense, access to an appropriate BloxOne Threat Defense subscription is required. See this [**quick-start guide**](https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-data-connector.pdf) for more information and licensing requirements.
+>This data connector assumes an Infoblox Data Connector host has already been created and configured in the Infoblox Cloud Services Portal (CSP). As the [**Infoblox Data Connector**](https://docs.infoblox.com/display/BloxOneThreatDefense/Deploying+the+Data+Connector+Solution) is a feature of Infoblox Threat Defense, access to an appropriate Infoblox Threat Defense subscription is required. See this [**quick-start guide**](https://www.infoblox.com/wp-content/uploads/infoblox-deployment-guide-data-connector.pdf) for more information and licensing requirements.
 **Follow the steps below to configure this data connector**
 
 **A. Configure the Common Event Format (CEF) via AMA data connector**
@@ -80,10 +77,10 @@ In order to use the playbooks as part of this solution, find your **Workspace ID
 
 4. Run the command provided in the **Common Event Format (CEF) via AMA** data connector page to configure the CEF collector on the machine.
 
-  **B. Within the Infoblox Cloud Services Portal, configure Infoblox BloxOne to send CEF Syslog data to the Infoblox Cloud Data Connector to forward to the Syslog agent**
+  **B. Within the Infoblox Cloud Services Portal, configure Infoblox to send CEF Syslog data to the Infoblox Cloud Data Connector to forward to the Syslog agent**
 
-  Follow the steps below to configure the Infoblox CDC to send BloxOne data to Microsoft Sentinel via the Linux Syslog agent.
-1. Navigate to **Manage > Data Connector**.
+  Follow the steps below to configure the Infoblox CDC to send data to Microsoft Sentinel via the Linux Syslog agent.
+1. Navigate to **Integrations > Data Connectors**.
 2. Click the **Destination Configuration** tab at the top.
 3. Click **Create > Syslog**. 
  - **Name**: Give the new Destination a meaningful **name**, such as **Microsoft-Sentinel-Destination**.
@@ -102,8 +99,8 @@ In order to use the playbooks as part of this solution, find your **Workspace ID
  - Expand the **Service Instance** section. 
     - **Service Instance**: Select your desired Service Instance for which the Data Connector service is enabled. 
  - Expand the **Source Configuration** section.  
-    - **Source**: Select **BloxOne Cloud Source**. 
-    - Select the **Internal Notifications** Log Type.
+    - **Source**: Select **Infoblox Cloud Source**. 
+    - Select the **IQ for Threat Defense** Log Type.
  - Expand the **Destination Configuration** section.  
     - Select the **Destination** you just created. 
  - Click **Save & Close**. 

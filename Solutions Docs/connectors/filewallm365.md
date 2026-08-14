@@ -1,6 +1,4 @@
-# ⚠️ Filewall for Microsoft 365
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Filewall for Microsoft 365
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/filewall-logo.svg" alt="" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **DCR Definition Files** | [FilewallM365_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Filewall%20for%20Microsoft%20365/Data%20Connectors/FilewallM365Logs_CCP/FilewallM365_DCR.json) |
 | **CCF Configuration** | [FilewallM365_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Filewall%20for%20Microsoft%20365/Data%20Connectors/FilewallM365Logs_CCP/FilewallM365_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#filewall-for-microsoft-365) |
 
 Ingest events from Filewall into Microsoft Sentinel (Exchange, SharePoint, OneDrive and Teams).
 

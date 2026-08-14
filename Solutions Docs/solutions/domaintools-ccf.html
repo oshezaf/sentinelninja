@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ DomainTools CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="domaintools-ccf">⚠️ DomainTools CCF</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DomainTools.svg" alt="DomainTools CCF Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">DomainTools</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.domaintools.com/support/">https://www.domaintools.com/support/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">DomainTools - memberservices@domaintools.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2025-11-30</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools%20CCF">DomainTools CCF</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.domaintools.com/products/threat-intelligence-feeds/">Domaintools Threat Intelligence Feeds</a> solution for Microsoft Sentinel contains CCF-based data connector that ingests domain-related threat intelligence from Domain tools including Newly Observed Domains (NOD), Newly Observed Hostnames (NOH), Newly Active Domains (NAD), and Domain Discovery. The solution also provides an analytic rule that automatically creates incidents when new domains are ingested, enabling security teams to quickly detect and investigate potentially malicious domains. In addition, a workbook is included to visualize domain activity, ingestion trends, and correlations with security telemetry, helping SOC analysts improve threat detection and response.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/domaintoolsccfdefinition.html">DomainTools Threat Intelligence Domain Feed</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+  <td><a href="../connectors/domaintoolsccfdefinition.html">DomainTools Threat Intelligence Domain Feed</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/domaintools-ccf-domaintools-new-domain-discovery-indicators-ingested-f8c223c1-1a28-4b28-8e9f-5e33b610916b-b02c3e11.html">DomainTools New Domain Discovery Indicators Ingested</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/domaintools-ccf-domaintools-newly-added-domains-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e34b610916b-f2a08b02.html">DomainTools Newly Added Domains Feeds Ingested</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/domaintools-ccf-domaintools-newly-observed-domains-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e35b610916b-f546635e.html">DomainTools Newly Observed Domains Feeds Ingested</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/domaintools-ccf-domaintools-newly-observed-hostnames-feeds-ingested-f8c223c1-1a28-4b28-8e9f-5e36b610916b-a022e58d.html">DomainTools Newly Observed Hostnames Feeds Ingested</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/domaintools-ccf-domaintools-workbook-f4481e81.html">DomainTools_workbook</a></td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/domaintoolsthreatinteldomains.html">DomainToolsThreatIntelDomains</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/domaintoolsthreatinteldomains-cl.html"><code>DomainToolsThreatIntelDomains_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>10-11-2025</td>
+  <td>Includes all CCF connector definitions and configurations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

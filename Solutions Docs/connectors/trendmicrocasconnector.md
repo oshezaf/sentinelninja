@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [TrendMicroCAS_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security/Data%20Connectors/TrendMicroCAS_CCF/TrendMicroCAS_DCR.json) |
 | **CCF Configuration** | [TrendMicroCAS_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security/Data%20Connectors/TrendMicroCAS_CCF/TrendMicroCAS_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#trend-micro-cloud-app-security-via-codeless-connector-framework) |
 
 The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/products/user-protection/sps/email-and-collaboration/cloud-app-security.html) data connector provides the capability to retrieve security event logs of the services that Cloud App Security protects into Microsoft Sentinel through the SIEM API. The connector provides the ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. It supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parse the received security event data into custom columns so that queries don't need to parse it again, thus resulting in better performance.
 

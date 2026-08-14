@@ -11,9 +11,10 @@ Reference for SentinelAlibabaCloudWAFLogs table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelalibabacloudwaflogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -24,7 +25,7 @@ Reference for SentinelAlibabaCloudWAFLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountAction | string | The action that is performed on the client request after an account security rule is triggered. The value is fixed as block |
 | AccountRuleId | string | The ID of the account security rule that is triggered |
 | AccountTest | bool | The protection mode that is used for the client request after an account security rule is triggered. true: observation mode, false: prevention mode |
@@ -88,7 +89,7 @@ Reference for SentinelAlibabaCloudWAFLogs table in Azure Monitor Logs.
 | SceneTest | bool | The protection mode that is used for the client request after a rule created for scenario-specific configuration is triggered. true: observation mode, false: prevention mode |
 | ServerPort | int | The requested destination port |
 | ServerProtocol | string | The protocol and version that is used by the origin server to respond to the request forwarded by WAF |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SslCipher | string | The cipher suite that is used in the client request |
 | SslProtocol | string | The SSL or TLS protocol and version that are used in the client request |
 | Status | int | The HTTP status code that is returned by WAF to the client |

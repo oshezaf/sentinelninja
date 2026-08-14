@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine endswith "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"`<br>`InitiatingProcessParentFileName has "spoolsv.exe"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine endswith "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"`<br>`InitiatingProcessParentFileName has "spoolsv.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

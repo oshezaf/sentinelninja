@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.10 |
+| **Version** | 3.0.13 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Last Updated** | 2026-02-25 |
+| **Last Updated** | 2026-08-07 |
 | **Solution Folder** | [Windows Security Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securityevents) · Rating: ★★★☆☆ 3.0/5 (4 ratings) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securityevents) · Rating: ★★★☆☆ 3.0/5 (4 ratings) · Popularity: 🟢 High (95%) |
 
 The Windows Security Events solution for Microsoft Sentinel allows you to ingest Security events from your Windows machines using the Windows Agent into Microsoft Sentinel. This solution includes two (2) data connectors to help ingest the logs.
 
@@ -46,22 +46,23 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | - | Analytics |
 | [`Event`](../tables/event.md) | - | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | [Security Events via Legacy Agent](../connectors/securityevents.md), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) | Analytics, Hunting, Workbooks |
 | [`WindowsEvent`](../tables/windowsevent.md) | - | Hunting |
 
 ## Content Items
 
-This solution includes **72 content item(s)**:
+This solution includes **73 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Hunting Queries | 50 |
-| Analytic Rules | 20 |
+| Analytic Rules | 21 |
 | Workbooks | 2 |
 
 ### Analytic Rules
@@ -88,6 +89,7 @@ This solution includes **72 content item(s)**:
 | [Sdelete deployed via GPO and run recursively](../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.md) | Medium | Impact | [`SecurityEvent`](../tables/securityevent.md) |
 | [SecurityEvent - Multiple authentication failures followed by a success](../content/windows-security-events-securityevent-multiple-authentication-failures-followed-by-a-success-cf3ede88-a429-493b-9108-3e46d3c741f7-2bfab486.md) | Low | CredentialAccess | [`SecurityEvent`](../tables/securityevent.md) |
 | [Starting or Stopping HealthService to Avoid Detection](../content/windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.md) | Medium | DefenseEvasion | [`SecurityEvent`](../tables/securityevent.md) |
+| [WMI Spawning Suspicious Child Process (Living off the Land)](../content/windows-security-events-wmi-spawning-suspicious-child-process-living-off-the-land-3c8e5f0b-1d4a-4b69-9c2e-7f0d3a5e8b1f-c2b2f4ac.md) | High | Execution, LateralMovement, Persistence | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 
 ### Hunting Queries
 
@@ -155,6 +157,7 @@ This solution includes **72 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                         |
 |-------------|--------------------------------|--------------------------------------------------------------------------------------------|
+| 3.0.13      | 20-07-2026                     | Added **Analytic Rule** WMI Spawning Suspicious Child Process |
 | 3.0.12      | 18-02-2026                     | Removed external blog reference text from "Remote Scheduled Task Creation or Update using ATSVC Named Pipe" and " Scheduled Task Creation or Update from User Writable Directory" **hunting query** description | 
 | 3.0.11      | 28-01-2026                     | Updated **Analytic Rule** to fix the link from the description &  Update **Analytic Rule** NonDCActiveDirectoryReplication - to reduce false positive results |
 | 3.0.10      | 12-01-2026                     | Update **Analytic Rule** NonDCActiveDirectoryReplication - fix swapped fields   |

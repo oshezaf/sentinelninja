@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-26 |
-| **Last Updated** | 2026-04-07 |
+| **Last Updated** | 2026-08-12 |
 | **Solution Folder** | [Trellix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-trellix) · Popularity: 🔵 Medium (66%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-trellix) · Popularity: 🟡 Low (30%) |
 
 The [Trellix](https://www.trellix.com/products/epo/) solution for Microsoft Sentinel enables you to ingest Trellix ePO events into Microsoft Sentinel.
   
@@ -67,6 +67,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.0.2       | 08-07-2026                     | Remove unsupported template attributes from table definition     |
 | 3.0.1       | 03-04-2026                     | Move **Trellix solution** to GA, remove preview state. |
 | 3.0.0       | 26-02-2026                     | Introduce the Trellix solution with a **CCF Data Connector** and parser       |
 

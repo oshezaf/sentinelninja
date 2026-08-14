@@ -19,6 +19,7 @@
 | **CCF Configuration** | [42CrunchAPIProtection_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection_PollerConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#42crunch-api-protection-push-connector-via-codeless-connector-framework) |
 
 Connects the 42Crunch API protection to Microsoft Sentinel via the Azure Monitor DCE/DCR REST API interface. The integration uses Docker containers (API Firewall and Log Forwarder) to forward API traffic logs to Microsoft Sentinel for threat detection and analysis.
 

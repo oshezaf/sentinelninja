@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-12 |
-| **Last Updated** | 2026-04-07 |
+| **Last Updated** | 2026-08-13 |
 | **Solution Folder** | [Alibaba Cloud Networking](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud-networking) · Popularity: 🟡 Low (39%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud-networking) · Popularity: 🔵 Medium (54%) |
 
 The Microsoft Sentinel solution for Alibaba Cloud Networking enables seamless integration of Alibaba Cloud network data into Sentinel. It empowers security teams to monitor network activity, detect threats, and investigate incidents across Alibaba Cloud environments—enhancing visibility and security posture in multi-cloud deployments.
 
@@ -43,6 +43,7 @@ This solution uses **3 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 								|
 |-------------|--------------------------------|----------------------------------------------------------------------------------------------------| 
+| 3.0.2       | 12-08-2026                     | CCF data connector going to GA                                                                     |
 | 3.0.1       | 05-04-2026                     | Fix added all data types to graph queries (line charts on the UX)                                  |
 | 3.0.0       | 16-03-2026                     | Added Public Preview Alibaba Cloud Networking CCF connector. to support ApiGW, VPC and firewall data   	        |
 

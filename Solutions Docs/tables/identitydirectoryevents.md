@@ -6,15 +6,17 @@
 
 ---
 
-Reference for IdentityDirectoryEvents table in Azure Monitor Logs.
+Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitydirectoryevents-table) |
 
 ## Contents
 
@@ -31,7 +33,7 @@ Reference for IdentityDirectoryEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name of the account user displayed in the address book |
 | AccountDomain | string | Domain of the account |
 | AccountName | string | User name of the account |
@@ -51,7 +53,7 @@ Reference for IdentityDirectoryEvents table in Azure Monitor Logs.
 | Port | string | TCP port used during communication |
 | Protocol | string | Protocol used during the communication |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetAccountDisplayName | string | Display name of the account that the recorded action was applied to |
 | TargetAccountUpn | string | User principal name (UPN) of the account that the recorded action was applied to |
 | TargetDeviceName | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
@@ -64,6 +66,7 @@ Reference for IdentityDirectoryEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityDirectoryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents)
+- [IdentityDirectoryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitydirectoryevents-table)
 
 ## Solutions (2)
 
@@ -94,11 +97,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"`
 
@@ -106,21 +109,24 @@ This table is ingested by the following connectors:
 |:-------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "SAM Account Name changed"` | - | 1 | - | - | **1** |
+| `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
 | `ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `SAM Account Name changed` | - | 1 | - | - | **1** |
+| `LogonFailed` | - | 1 | - | - | **1** |
+| `LogonSuccess` | - | 1 | - | - | **1** |
 | `DirectoryRoleMembershipChanged` | - | 1 | - | - | **1** |
 | `GroupMembershipChanged` | - | 1 | - | - | **1** |
 | `PrivilegeEscalation` | - | 1 | - | - | **1** |

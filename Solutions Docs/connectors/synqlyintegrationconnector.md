@@ -30,15 +30,15 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ✓ |
-| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | ? |
-| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | ? |
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | ✓ |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ | ✓ |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ | ? |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ | ✓ |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ | ✓ |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ | ? |
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ | ? |
-| [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | ✓ | ✓ | ? |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ | ? |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | ✓ | ✓ | ✓ |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

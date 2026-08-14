@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.prodaft.com](https://www.prodaft.com) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | PRODAFT - integration@prodaft.com |
 | **First Published** | 2026-07-06 |
-| **Last Updated** | 2026-07-24 |
+| **Last Updated** | 2026-08-06 |
 | **Solution Folder** | [PRODAFT USTA - Account Takeover Prevention](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-atp) · Popularity: 🔵 Medium (68%) |
 
@@ -154,6 +154,7 @@ ingestion and retains only password strength signals (score and length).
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------|
+| 3.0.2       | 03-08-2026                     | Updated the backfill **Playbook** (v1.2) to create the `PRODAFTUstaCompromisedCredentials_CL` table when it does not exist yet, so the backfill can run before the **Data Connector** has ingested its first record; adds a `TableRetentionDays` parameter. Also builds the **Data Connector** paging `nextPageUrl` with the ARM `uri()` function instead of `concat()` so the template passes the ARM-TTK *URIs Should Be Properly Constructed* validation, and tolerates a trailing slash on the USTA base URL. |
 | 3.0.1       | 27-07-2026                     | Updated the backfill **Playbook** to self-provision its Data Collection Endpoint (DCE) and Data Collection Rule (DCR) and to grant its managed identity the *Monitoring Metrics Publisher* role on the DCR. Removes the manual ingestion-endpoint URI and DCR immutable-ID setup previously required to run the backfill. |
 | 3.0.0       | 06-07-2026                     | Initial Solution Release. Codeless (CCF) data connector for compromised-credential tickets with ingestion-time password redaction (only strength signals are stored). Two **Analytic Rules** (corporate credential compromised; compromised credential used in a successful Entra ID sign-in), one **Hunting Query**, an overview **Workbook**, a query-time dedup **Parser**, and an on-demand backfill **Playbook** (Logs Ingestion API via managed identity) for loading historical data. |
 

@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.1</td>
+  <td style="text-align:left">3.0.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-07-24</td>
+  <td style="text-align:left">2026-08-06</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -315,6 +315,11 @@ builds only the deprecated templateSpec format, so the Content Hub packaging for
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>03-08-2026</td>
+  <td>Updated the backfill <strong>Playbook</strong> (v1.2) to create the <code>PRODAFTUstaCompromisedCredentials_CL</code> table when it does not exist yet, so the backfill can run before the <strong>Data Connector</strong> has ingested its first record; adds a <code>TableRetentionDays</code> parameter. Also builds the <strong>Data Connector</strong> paging <code>nextPageUrl</code> with the ARM <code>uri()</code> function instead of <code>concat()</code> so the template passes the ARM-TTK <em>URIs Should Be Properly Constructed</em> validation, and tolerates a trailing slash on the USTA base URL.</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>27-07-2026</td>

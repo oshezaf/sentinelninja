@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CoreAzureBackup`](../tables/coreazurebackup.md) | `State == "Deleted"` | ✓ | ✗ | ? |
+| [`CoreAzureBackup`](../tables/coreazurebackup.md) | `State == "Deleted"` | ✓ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 
 ---

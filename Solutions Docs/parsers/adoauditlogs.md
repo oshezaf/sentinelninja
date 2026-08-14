@@ -28,7 +28,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | ✓ | ✓ | ✓ |
-| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | ? |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | ✓ |
 
 ---
 

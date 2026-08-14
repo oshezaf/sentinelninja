@@ -641,7 +641,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Parsers Using This Table (2)
+## Parsers Using This Table (3)
 
 ### ASIM Parsers (2)
 
@@ -649,6 +649,12 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessCreateTrendMicroVisionOne](../asim/asimprocesscreatetrendmicrovisionone.md) | ProcessEvent | Trend Micro Vision One |  |
 | [ASimRegistryEventTrendMicroVisionOne](../asim/asimregistryeventtrendmicrovisionone.md) | RegistryEvent | Trend Micro Vision One |  |
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [TrendAIOAT_Complete](../parsers/trendaioat-complete.md) | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |  |
 
 ---
 

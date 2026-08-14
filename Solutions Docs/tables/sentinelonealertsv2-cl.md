@@ -19,12 +19,13 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (20 columns)
+## Schema (21 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne%5CData%20Connectors%5CSentinelOneV2_ccf/table_SentinelOneAlertsV2.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
+| AlertDescription | string | Description of the alert. |
 | AlertId | string | Unique identifier of the unified alert. |
 | AlertName | string | Human-readable alert name. |
 | AnalystVerdict | string | Analyst verdict assigned to the alert. |

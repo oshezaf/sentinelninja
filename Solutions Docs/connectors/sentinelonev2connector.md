@@ -18,7 +18,7 @@
 | **DCR Definition Files** | [SentinelOneV2_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOneV2_ccf/SentinelOneV2_DCR.json) |
 | **CCF Configuration** | [SentinelOneV2_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOneV2_ccf/SentinelOneV2_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sentinelone-via-codeless-connector-framework) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sentinelone-v2-via-codeless-connector-framework) |
 
 The SentinelOne V2 data connector ingests Activities, Agents, Groups and Threats logs from the SentinelOne REST API, and security alerts from the SentinelOne Unified Alert Management (UAM) GraphQL API, into Microsoft Sentinel. It is built on the Microsoft Sentinel Codeless Connector Platform and uses DCR-based ingestion-time transformations. See: [SentinelOne UAM GraphQL API](https://usea1-partners.sentinelone.net/soc-docs/en/unified-alert-management-graphql-api.html)
 

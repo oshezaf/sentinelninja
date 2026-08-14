@@ -6,16 +6,17 @@
 
 ---
 
-Reference for EmailEvents table in Azure Monitor Logs.
+Microsoft 365 email events, including email delivery and blocking events
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Defender |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table) |
 
 ## Contents
 
@@ -32,7 +33,7 @@ Reference for EmailEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AttachmentCount | int | Number of attachments in the email. |
 | AuthenticationDetails | string | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth). |
@@ -74,7 +75,7 @@ Reference for EmailEvents table in Azure Monitor Logs.
 | SenderMailFromAddress | string | Sender email address in the MAIL from header, also known as the envelope sender or the Return-Path address. |
 | SenderMailFromDomain | string | Sender domain in the MAIL from header, also known as the envelope sender or the Return-Path address. |
 | SenderObjectId | string | Sender email address in the from header, which is visible to email recipients on their email clients. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | Subject | string | Email subject field. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatClassification | string | Indicates the threat classification of the mail |
@@ -92,6 +93,7 @@ Reference for EmailEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents)
+- [EmailEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table)
 
 ## Solutions (10)
 
@@ -161,7 +163,7 @@ This table is ingested by the following connectors:
 | [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md) |  |
 | [Bad email percentage of Inbound emails](../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.md) | `EmailDirection == "Inbound"` |
 | [Bulk Emails by Sender Bulk Complaint level](../content/microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.md) | `EmailDirection == "Inbound"` |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
 | [CompAuth Failure Trend](../content/microsoft-defender-xdr-compauth-failure-trend-eb560458-d96f-4c68-acbb-14b3c706ebe7-1841f166.md) |  |
 | [DKIM Failure Trend](../content/microsoft-defender-xdr-dkim-failure-trend-14d47b2a-62b3-4c7b-819c-699e264c581d-01837526.md) |  |
 | [DMARC Failure Trend](../content/microsoft-defender-xdr-dmarc-failure-trend-62d6a2e6-4583-4538-a476-a5b3c672657b-ff4453e5.md) |  |
@@ -179,7 +181,7 @@ This table is ingested by the following connectors:
 | [Impersonation Detections Trend](../content/microsoft-defender-xdr-impersonation-detections-trend-416cd270-6327-441a-9304-940c832cf361-79ee8cd4.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-15a17150-811d-4829-a3d6-489139c9ff5e-b3543837.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology Trend](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-trend-418e8859-b22a-4fd4-b273-5433e054cdc7-b6bf2fd7.md) |  |
-| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
+| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) |  |
 | [Malware Detections Trend](../content/microsoft-defender-xdr-malware-detections-trend-e1dbe1d2-785a-4ecd-a1c0-233fc0e990bc-43903146.md) | `ThreatTypes has "Malware"` |
 | [Malware Detections by Detection technology](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-15d255f7-57a6-4b23-bd89-376930d3a305-149bc998.md) | `DetectionMethods has "Malware"` |
 | [Malware Detections by Detection technology Trend](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-trend-db79eb5a-785a-400a-a7ef-7285dde8e116-0c62c2fd.md) |  |
@@ -224,7 +226,7 @@ This table is ingested by the following connectors:
 | [Total Emails with Admin Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-admin-overrides-block-bd6aae91-6233-430b-a5af-15c6406a7770-72f52ec6.md) | `OrgLevelAction == "Block"` |
 | [Total Emails with User Overrides (Allow)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-allow-e6b3edc5-ec6f-44ae-9bb4-60c9ea49154e-7cec0f95.md) | `UserLevelAction == "Allow"` |
 | [Total Emails with User Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-block-74e076da-58e8-436d-b7bc-68888dbb6091-e2ae9087.md) | `UserLevelAction == "Block"` |
-| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
+| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-12798858-1916-4b59-a85e-8a7a4f7b43cf-ab8f972e.md) | `EmailDirection == "Inbound"` |
 | [User Email Submissions (FN) - Top Inbound P2 Senders domains](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-domains-385aca1d-2135-40c6-af8e-030c9e086cf5-8ef092ad.md) | `EmailDirection == "Inbound"` |
 | [Zero-day Malware Detections Trend](../content/microsoft-defender-xdr-zero-day-malware-detections-trend-a370ad6f-e7fa-4740-ab9e-cb5560e3599f-205be975.md) |  |
@@ -294,13 +296,13 @@ This table is ingested by the following connectors:
 
 ### Workbooks (6)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"`
 
 | Workbook |
 |:-------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "UserSubmission"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"`
 
 | Workbook |
 |:-------------|
@@ -324,11 +326,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+| Workbook |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
 ## Selection Criteria Summary (53 criteria, 90 total references)
 
@@ -343,7 +345,6 @@ References by type: 0 connectors, 90 content items, 0 ASIM parsers, 0 other pars
 | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | - | 3 | - | - | **3** |
 | `DeliveryAction !has "Blocked"` | - | 2 | - | - | **2** |
 | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 2 | - | - | **2** |
 | `DeliveryLocation != "Quarantine"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`UserLevelAction != "Block"` | - | 2 | - | - | **2** |
 | `EmailDirection in "Inbound,Outbound"` | - | 2 | - | - | **2** |
 | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` | - | 2 | - | - | **2** |
@@ -357,11 +358,13 @@ References by type: 0 connectors, 90 content items, 0 ASIM parsers, 0 other pars
 | `DetectionMethods has "Impersonation"` | - | 2 | - | - | **2** |
 | `DetectionMethods contains "impersonation"`<br>`DetectionMethods contains "spoof"` | - | 2 | - | - | **2** |
 | `DetectionMethods has "Spoof"` | - | 2 | - | - | **2** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 2 | - | - | **2** |
 | `EmailDirection == "Outbound"` | - | 1 | - | - | **1** |
 | `DetectionMethods has "spoof"` | - | 1 | - | - | **1** |
 | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | - | 1 | - | - | **1** |
 | `DeliveryLocation in "Inbox/folder,Junk folder"` | - | 1 | - | - | **1** |
 | `DetectionMethods contains "spoof"` | - | 1 | - | - | **1** |
+| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 1 | - | - | **1** |
 | `DeliveryAction == "Delivered"`<br>`LatestDeliveryLocation == "Quarantine"` | - | 1 | - | - | **1** |
 | `LatestDeliveryLocation == "Inbox/folder"` | - | 1 | - | - | **1** |
 | `EmailDirection == "Inbound"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` | - | 1 | - | - | **1** |
@@ -386,28 +389,43 @@ References by type: 0 connectors, 90 content items, 0 ASIM parsers, 0 other pars
 | `DetectionMethods has "Spam"` | - | 1 | - | - | **1** |
 | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` | - | 1 | - | - | **1** |
 | `ActionType == "ClickAllowed"`<br>`EmailDirection == "Inbound"`<br>`ThreatTypes has_any "Malware"` | - | 1 | - | - | **1** |
-| `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | - | 1 | - | - | **1** |
-| `ActionType == "UserSubmission"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | - | 1 | - | - | **1** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"` | - | 1 | - | - | **1** |
 | **Total** | **0** | **90** | **0** | **0** | **90** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `UserSubmission` | - | 3 | - | - | **3** |
-| `AdminSubmission` | - | 2 | - | - | **2** |
+| `Add member to role` | - | 3 | - | - | **3** |
+| `Add user` | - | 3 | - | - | **3** |
+| `InteractiveLogon` | - | 3 | - | - | **3** |
+| `RemoteInteractiveLogon` | - | 3 | - | - | **3** |
+| `Reset user password` | - | 3 | - | - | **3** |
+| `ResourceAccess` | - | 3 | - | - | **3** |
+| `Sign-in` | - | 3 | - | - | **3** |
+| `Update user` | - | 3 | - | - | **3** |
+| `AdminSubmissionSubmitted` | - | 2 | - | - | **2** |
 | `Malware ZAP` | - | 2 | - | - | **2** |
 | `Phish ZAP` | - | 2 | - | - | **2** |
+| `Redelivery` | - | 2 | - | - | **2** |
 | `ClickAllowed` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
+| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
+| `ClickBlocked` | - | 1 | - | - | **1** |
+| `Spam ZAP` | - | 1 | - | - | **1** |
+| `UserSubmission` | - | 1 | - | - | **1** |
+| `Automated Remediation` | - | 1 | - | - | **1** |
+| `contains Submission` | - | 1 | - | - | **1** |
+| `contains UserSubmission` | - | 1 | - | - | **1** |
+| `contains ZAP` | - | 1 | - | - | **1** |
+| `has Malware ZAP` | - | 1 | - | - | **1** |
+| `has Phish ZAP` | - | 1 | - | - | **1** |
+| `has Spam ZAP` | - | 1 | - | - | **1** |
+| `has ZAP` | - | 1 | - | - | **1** |
+| `has_any ClickAllowed` | - | 1 | - | - | **1** |
+| `has_any ClickBlocked` | - | 1 | - | - | **1** |
+| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
+| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
 
 ### ConfidenceLevel
 

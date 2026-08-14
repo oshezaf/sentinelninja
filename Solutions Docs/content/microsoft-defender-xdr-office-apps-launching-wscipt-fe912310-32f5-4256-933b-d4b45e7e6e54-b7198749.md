@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"`<br>`ProcessCommandLine has ".jse"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"`<br>`ProcessCommandLine has ".jse"` | ✓ | ✗ | ✓ |
 
 ---
 

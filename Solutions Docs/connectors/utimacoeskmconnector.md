@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [UtimacoESKM_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Utimaco%20Enterprise%20Secure%20Key%20Manager/Data%20Connectors/sentinel-connectors/UtimacoESKM_CCF/UtimacoESKM_DCR.json) |
 | **CCF Configuration** | [UtimacoESKM_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Utimaco%20Enterprise%20Secure%20Key%20Manager/Data%20Connectors/sentinel-connectors/UtimacoESKM_CCF/UtimacoESKM_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#utimaco-enterprise-secure-key-manager-eskm) |
 
 The Utimaco ESKM connector ingests KMIP server logs from Utimaco Enterprise Secure Key Manager (ESKM) into Microsoft Sentinel.
 

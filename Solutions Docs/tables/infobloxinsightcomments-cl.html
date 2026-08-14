@@ -22,7 +22,7 @@
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <blockquote>
-<p><strong>Internal Use Table:</strong> This table is created and used internally by the following solutions: <a href="../solutions/infoblox.html">Infoblox</a>, <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a>. It is written to by playbooks for solution-specific data storage.</p>
+<p><strong>Internal Use Table:</strong> This table is created and used internally by the <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a> solution. It is written to by playbooks for solution-specific data storage.</p>
 </blockquote>
 <table>
 <thead>
@@ -37,10 +37,6 @@
   <td style="text-align:left">Internal</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
 </tr>
@@ -48,100 +44,26 @@
 </table>
 <h2 id="contents">Contents</h2>
 <ul>
-<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (15 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightComments_CL.json">KQL validation test schema</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">commentsChanger_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">dateChanged_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">InfobloxInsightID_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">InfobloxInsightLogType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ManagementGroupName</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">newComment_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">status_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-</tr>
-</tbody>
-</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
 </ul>
-<h2 id="solutions">Solutions (2)</h2>
+<h2 id="solutions">Solutions (1)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
-<li><a href="../solutions/infoblox.html">Infoblox</a></li>
 <li><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
 <h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a>:</strong></p>
-<table>
+<table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
@@ -155,8 +77,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
-<h3 id="other-parsers">Other Parsers (2)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
 <table>
 <thead>
 <tr>
@@ -166,11 +88,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td style="text-align:left"><a href="../parsers/infobloxinsightcomments.html">InfobloxInsightComments</a></td>
-  <td style="text-align:left"><a href="../solutions/infoblox.html">Infoblox</a></td>
-  <td style="text-align:left"></td>
-</tr>
 <tr>
   <td style="text-align:left"><a href="../parsers/infobloxinsightcomments.html">InfobloxInsightComments</a></td>
   <td style="text-align:left"><a href="../solutions/infoblox-soc-insights.html">Infoblox SOC Insights</a></td>

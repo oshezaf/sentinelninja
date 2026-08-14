@@ -11,8 +11,8 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit, Security |
-| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
-| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity) |
@@ -33,7 +33,7 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ClientIp | string | The IP address of the device that was used when the activity was logged. |
 | CorrelationId | string | A unique value used to associate related rows. |
 | CrmOrganizationUniqueName | string | Unique name of the organization. |
@@ -54,7 +54,7 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | ServiceContextIdType | string | Application defined token to define context use. |
 | ServiceName | string | Name of the Service generating the log. |
 | SourceRecordId | string | Unique identifier of an audit record. |
-| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SystemUserId | string | Unique identifier of the user GUID in the organization. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in (UTC) when the user performed the activity. |
@@ -105,7 +105,7 @@ This table is ingested by the following connectors:
 | [Dataverse - Bulk record ownership re-assignment or sharing](../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.md) | `Message in "Assign,GrantAccess,ModifyAccess"` |
 | [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md) |  |
 | [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) |  |
-| [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md) | `Message == "UserSignIn"`<br>`UserId != "Unknown"`<br>`UserId !endswith "@onmicrosoft.com"` |
+| [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md) | `Message == "UserSignIn"` |
 | [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md) |  |
 | [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md) | `Message == "UserSignIn"` |
 | [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md) |  |
@@ -116,7 +116,7 @@ This table is ingested by the following connectors:
 | [Dataverse - New Dataverse application user activity type](../content/microsoft-business-applications-dataverse-new-dataverse-application-user-activity-type-5c768e7d-7e5e-4d57-80d4-3f50c96fbf70-4573a9e7.md) |  |
 | [Dataverse - New non-interactive identity granted access](../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.md) |  |
 | [Dataverse - New sign-in from an unauthorized domain](../content/microsoft-business-applications-dataverse-new-sign-in-from-an-unauthorized-domain-4c1c9aee-8e44-4bb9-bd53-f3e7d6761282-361ae9c5.md) | `Message == "UserSignIn"` |
-| [Dataverse - New user agent type that was not used before](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.md) | `UserAgent has_any "Gecko"`<br>`UserId has_any "@onmicrosoft.com"` |
+| [Dataverse - New user agent type that was not used before](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.md) | `UserAgent has_any "Gecko"` |
 | [Dataverse - New user agent type that was not used with Office 365](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.md) |  |
 | [Dataverse - Organization settings modified](../content/microsoft-business-applications-dataverse-organization-settings-modified-a6f6b734-3db8-4259-a988-69e0b8eac0c2-7b2f4c63.md) | `EntityName == "organization"`<br>`Message == "Update"` |
 | [Dataverse - Removal of blocked file extensions](../content/microsoft-business-applications-dataverse-removal-of-blocked-file-extensions-1b1061be-2595-4492-af6d-1c8a5fc9576d-1471a08b.md) | `EntityName == "organization"`<br>`Message == "Update"` |
@@ -127,7 +127,7 @@ This table is ingested by the following connectors:
 | [Dataverse - TI map IP to DataverseActivity](../content/microsoft-business-applications-dataverse-ti-map-ip-to-dataverseactivity-56d5aa0c-d871-4167-ba13-61c2f0fd17bf-cc32474f.md) |  |
 | [Dataverse - TI map URL to DataverseActivity](../content/microsoft-business-applications-dataverse-ti-map-url-to-dataverseactivity-d88a0e22-3b6a-40c2-af28-c064b44d03b7-bcfd5ea3.md) | `Fields has "http"`<br>`Message in "Create,Update"` |
 | [Dataverse - Terminated employee exfiltration to USB drive](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.md) |  |
-| [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md) | `UserId !endswith "@microsoft.com"`<br>`UserId !endswith "@onmicrosoft.com"` |
+| [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md) |  |
 | [Dataverse - User bulk retrieval outside normal activity](../content/microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.md) | `Message == "RetrieveMultiple"` |
 
 ### Hunting Queries (7)
@@ -152,28 +152,26 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Dynamics365Activity](../content/microsoft-business-applications-dynamics365activity-1015284f.md) |
 
-## Selection Criteria Summary (15 criteria, 18 total references)
+## Selection Criteria Summary (13 criteria, 17 total references)
 
-References by type: 0 connectors, 18 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 17 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Message == "UserSignIn"` | - | 3 | - | - | **3** |
+| `Message == "UserSignIn"` | - | 4 | - | - | **4** |
 | `EntityName == "organization"`<br>`Message == "Update"` | - | 2 | - | - | **2** |
 | `Message in "DeleteAuditData,DeleteRecordChangeHistory"` | - | 1 | - | - | **1** |
 | `Message in "Update,UpdateAuditSettings"` | - | 1 | - | - | **1** |
 | `Message in "Assign,GrantAccess,ModifyAccess"` | - | 1 | - | - | **1** |
-| `Message == "UserSignIn"`<br>`UserId != "Unknown"`<br>`UserId !endswith "@onmicrosoft.com"` | - | 1 | - | - | **1** |
 | `Message == "BulkDelete"` | - | 1 | - | - | **1** |
 | `Message == "Update"` | - | 1 | - | - | **1** |
-| `UserAgent has_any "Gecko"`<br>`UserId has_any "@onmicrosoft.com"` | - | 1 | - | - | **1** |
+| `UserAgent has_any "Gecko"` | - | 1 | - | - | **1** |
 | `EntityName == "sharepointsite"`<br>`Message in "Create,Update"` | - | 1 | - | - | **1** |
 | `Message == "ExecutePowerBISql"` | - | 1 | - | - | **1** |
 | `Fields has "http"`<br>`Message in "Create,Update"` | - | 1 | - | - | **1** |
-| `UserId !endswith "@microsoft.com"`<br>`UserId !endswith "@onmicrosoft.com"` | - | 1 | - | - | **1** |
 | `Message == "RetrieveMultiple"` | - | 1 | - | - | **1** |
 | `Message in "Delete,SendEmail"`<br>`Message contains "ExportToExcel"`<br>`Message contains "Retrieve"`<br>`OriginalObjectId startswith "GrantAccess"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **18** | **0** | **0** | **18** |
+| **Total** | **0** | **17** | **0** | **0** | **17** |
 
 ### EntityName
 
@@ -220,15 +218,6 @@ References by type: 0 connectors, 18 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has_any Gecko` | - | 1 | - | - | **1** |
-
-### UserId
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!endswith @onmicrosoft.com` | - | 2 | - | - | **2** |
-| `!= Unknown` | - | 1 | - | - | **1** |
-| `has_any @onmicrosoft.com` | - | 1 | - | - | **1** |
-| `!endswith @microsoft.com` | - | 1 | - | - | **1** |
 
 ---
 

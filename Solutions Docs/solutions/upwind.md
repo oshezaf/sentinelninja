@@ -1,6 +1,6 @@
-# Sentinel Data and Log Connector for Upwind
+# ⚠️ Upwind
 
-*Solution: Upwind*
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Upwind/Data%20Connectors/Logos/upwind.svg" alt="Upwind Logo" width="75" height="75">
 
@@ -15,15 +15,14 @@
 | **Publisher** | Upwind |
 | **Support Tier** | Partner |
 | **Support Link** | [https://upwind.io](https://upwind.io) |
-| **Categories** | Security - Cloud Security |
-| **Version** | 3.0.2 |
-| **Author** | Upwind - hello@upwind.io |
+| **Categories** | Security - Cloud Security,IT Operations |
+| **Version** | 3.0.3 |
+| **Author** | Upwind - support@upwind.io |
 | **First Published** | 2026-03-10 |
-| **Last Updated** | 2026-06-09 |
+| **Last Updated** | 2026-07-23 |
 | **Solution Folder** | [Upwind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader) · Popularity: 🔵 Medium (58%) |
 
-The **Upwind Logs Loader** solution ingests compute platform assets from the [Upwind](https://upwind.io) cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
+The **Upwind Catalog Loader** solution ingests inventory/catalog assets, vulnerability findings, threat detections, threat events, threat stories, and configuration findings from the [Upwind](https://upwind.io) cloud security platform into Microsoft Sentinel custom tables using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 
   **Underlying Microsoft Technologies used:**
 
@@ -45,7 +44,7 @@ The **Upwind Logs Loader** solution ingests compute platform assets from the [Up
 
 This solution provides **1 data connector(s)**:
 
-- [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md)
+- [Upwind Catalog Loader (Ingestion API)](../connectors/upwindcatalogloader.md)
 
 ## Tables Used
 
@@ -53,7 +52,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`UpwindLogsAssets_CL`](../tables/upwindlogsassets-cl.md) | [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | - |
+| [`UpwindCatalogAssets_CL`](../tables/upwindcatalogassets-cl.md) | [Upwind Catalog Loader (Ingestion API)](../connectors/upwindcatalogloader.md) | - |
 
 ## Additional Documentation
 
@@ -61,59 +60,41 @@ This solution uses **1 table(s)**:
 
 # Upwind Sentinel Connector
 
-Microsoft Sentinel data connector that ingests **compute platform assets** from the [Upwind](https://upwind.io) cloud security platform into a custom Log Analytics table (`UpwindLogsAssets_CL`) using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
+Microsoft Sentinel data connector that ingests data from **six Upwind API endpoints** — inventory/catalog assets (all categories), vulnerability findings, threat detections, threat events, threat stories, and configuration (posture) findings — from the [Upwind](https://upwind.io) cloud security platform into six custom Log Analytics tables, using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 
 ## What it does
 
 - Timer-triggered Azure Function (Python 3.11) that runs on a configurable CRON schedule (default: top of every hour)
 - Authenticates to Upwind via OAuth2 `client_credentials` flow
-- Pages through all compute platform assets from `/v2/organizations/{orgId}/inventory/catalog/assets/search`
-- Maps each asset to the `UpwindLogsAssets_CL` schema and ships records via the Azure Monitor Ingestion API
+- Fetches all six datasets on every run, **independently** — if one Upwind endpoint fails or isn't entitled for your org, the others still complete
+- Ships each dataset to its own DCR stream / custom table via the Azure Monitor Ingestion API
+
+| Dataset | Upwind endpoint | Sync style | Destination table |
+|---|---|---|---|
+| Inventory / catalog assets (all categories) | `POST /v2/organizations/{orgId}/inventory/catalog/assets/search` | Full current-state snapshot | `UpwindCatalogAssets_CL` |
+| Vulnerability findings | `GET /v1/organizations/{orgId}/vulnerability-findings` | Full current-state snapshot | `UpwindVulnerabilityFindings_CL` |
+| Threat detections | `GET /v1/organizations/{orgId}/threat-detections` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatDetections_CL` |
+| Threat events | `GET /v1/organizations/{orgId}/threat-events` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatEvents_CL` |
+| Threat stories | `POST /v2/organizations/{orgId}/threats/stories/search` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatStories_CL` |
+| Configuration (posture) findings | `POST /v2/organizations/{orgId}/configurations/findings/search` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindConfigurationFindings_CL` |
+
+The two full-snapshot datasets (inventory assets, vulnerability findings) represent Upwind's *current* state and are re-pulled in full on every run. The four time-windowed datasets pull everything seen/updated in the last `UpwindThreatLookbackMinutes` (default 90) — set that comfortably larger than `UpwindCatalogSchedule`'s interval so nothing is missed between runs; overlap just produces harmless duplicate rows.
+
+> **Note:** `title` and `type` are reserved/invalid column names for Log Analytics custom tables, so the four affected datasets (threat detections, threat events, threat stories, configuration findings) rename them to `title_text` and `event_type` before upload.
 
 ## Folder structure
 
 ```
-UpwindLogsLoader/
+UpwindCatalogLoader/
 ├── SolutionMetadata.json
 ├── ReleaseNotes.md
 ├── Data/
-│   └── Solution_UpwindLogsLoader.json
+│   └── Solution_UpwindCatalogLoader.json
 ├── Package/
-│   ├── 3.0.0.zip                    <- Sentinel content hub package
+│   ├── 1.0.0.zip                    <- Sentinel content hub package
 │   ├── createUiDefinition.json
 │   ├── mainTemplate.json
 │   └── testParameters.json
-└── Data Connectors/
-    ├── azuredeploy_UpwindLogsLoader_API_FunctionApp.json  <- ARM deploy template
-    ├── UpwindLogsLoader_API_FunctionApp.json              <- Connector definition
-    ├── createUiDef.json                                   <- Deployment wizard UI
-    ├── UpwindLogsLoader.zip      <- Self-contained Function App package
-    ├── host.json
-    ├── requirements.txt
-    ├── Logos/
-    │   └── upwind.svg
-    └── UpwindLogsLoader/
-        ├── __init__.py
-        ├── config.py
-        ├── function.json
-        ├── upwind_catalog_client.py
-        └── upwind_client.py
-```
-
-## Deployment
-
-Click the button below to deploy all required Azure resources (DCE, custom table, DCR, role assignment, storage, App Insights, Function App) in one step:
-
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FUpwind%2FData%20Connectors%2Fazuredeploy_UpwindLogsLoader_API_FunctionApp.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FUpwind%2FData%20Connectors%2FcreateUiDef.json)
-
-### Parameters
-
-| Parameter                        | Description                                                     |
-|----------------------------------|-----------------------------------------------------------------|
-| `WorkspaceName`                  | Name of your Log Analytics / Sentinel workspace                 |
-| `UpwindOrgId`                    | Upwind Organization ID (Settings → Organization)                |
-| `UpwindClientId`                 | Upwind API Client ID (Settings → API Keys)                      |
-| `UpwindClientSecret`             | Upwind API Client Secret                                        |
 
 *[Content truncated...]*
 
@@ -121,6 +102,7 @@ Click the button below to deploy all required Azure resources (DCE, custom table
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                 |
 |-------------|--------------------------------|------------------------------------------------------------------------------------|
+| 3.0.3       | 28-07-2026                     | Expanded ingestion from 1 to 6 Upwind API endpoints, fixed asset ingestion and deployment issues, enabled cross-resource-group Log Analytics support, and resolved custom-table schema conflicts by renaming reserved columns. |
 | 3.0.2       | 28-04-2026                     | Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment. |
 | 3.0.1       | 12-04-2026                     | Updated **SolutionMetadata** publisherId to align the solution package metadata with publisher validation requirements. |
 | 3.0.0       | 10-03-2026                     | Initial solution release.                                                          |

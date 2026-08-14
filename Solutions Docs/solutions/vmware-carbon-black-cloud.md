@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.8 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-04-17 |
+| **Last Updated** | 2026-08-05 |
 | **Solution Folder** | [VMware Carbon Black Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwarecarbonblack) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟡 Low (23%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwarecarbonblack) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (58%) |
 
 The [VMware Carbon Black Cloud](https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud) solution for Microsoft Sentinel allows ingesting Carbon Black [Audit](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#audit-log-events), [Notification](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#notifications) and [Event](https://developer.carbonblack.com/reference/carbon-black-cloud/platform/deprecated/data-forwarder-config-api/) logs into Microsoft Sentinel.
 

@@ -27,7 +27,7 @@ This parser reads from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | ? | ✓ | ? |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | ✓ | ✗ | ? |
+| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | ✓ | ✗ | ✓ |
 
 ---
 
