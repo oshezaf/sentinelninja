@@ -1080,32 +1080,32 @@ References by type: 30 connectors, 340 content items, 22 ASIM parsers, 59 other 
 | `ProcessName == "ERAServer"` | 1 | 3 | - | 2 | **6** |
 | `ProcessName == "gw-audit"` | - | 6 | - | - | **6** |
 | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` | - | 5 | - | 1 | **6** |
-| `Facility == "local5"` | 1 | 3 | - | 1 | **5** |
-| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | 2 | 1 | - | 2 | **5** |
-| `ProcessName == "SymantecServer"` | 1 | 3 | - | 1 | **5** |
 | `Facility == "local7"` | 1 | 3 | - | 1 | **5** |
+| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | 2 | 1 | - | 2 | **5** |
+| `Facility == "local5"` | 1 | 3 | - | 1 | **5** |
+| `ProcessName == "SymantecServer"` | 1 | 3 | - | 1 | **5** |
 | `ProcessName == "box_Firewall_Activity"` | 1 | 1 | - | 2 | **4** |
 | `SyslogMessage has "purity.alert"` | - | 2 | - | 2 | **4** |
 | `CollectorHostName == "SAPLogServ"`<br>`SourceSystem == "HANADB"` | - | 4 | - | - | **4** |
 | `Computer == "datasource"`<br>`Facility == "local0"` | - | 3 | - | 1 | **4** |
 | `SyslogMessage has_all "<Provider Name="` | - | - | 4 | - | **4** |
 | `Facility != "cron"` | 3 | - | - | - | **3** |
-| `ProcessName contains "Exabeam"` | 1 | - | - | 2 | **3** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | 1 | - | - | 2 | **3** |
+| `ProcessName contains "Exabeam"` | 1 | - | - | 2 | **3** |
 | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | - | 2 | - | 1 | **3** |
-| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | 1 | - | - | 1 | **2** |
+| `ProcessName == "openvpn"` | 1 | - | - | 1 | **2** |
 | `ProcessName == "SyslogAlertForwarderNSP"` | 1 | - | - | 1 | **2** |
 | `SyslogMessage has_all "Alert"` | 1 | - | - | 1 | **2** |
 | `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` | 1 | - | - | 1 | **2** |
 | `SyslogMessage has "Stealthwatch"` | 1 | - | - | 1 | **2** |
-| `ProcessName == "openvpn"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | 1 | - | - | 1 | **2** |
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
 | `SyslogMessage has "%FW-6-LOG_SUMMARY:"` | - | 1 | - | 1 | **2** |
 | `SyslogMessage startswith "DHCPACK"` | - | 1 | - | 1 | **2** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
-| `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | 1 | - | - | - | **1** |
 | `CollectorHostName == "SAPLogServ"` | 1 | - | - | - | **1** |
 | `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
+| `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | 1 | - | - | - | **1** |
 | `SyslogMessage contains "found an infected file"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransomware incident detected"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransom Protect mechanism blocked"` | - | 1 | - | - | **1** |
@@ -1186,23 +1186,23 @@ References by type: 30 connectors, 340 content items, 22 ASIM parsers, 59 other 
 | `local7` | `GitLab-Audit-Logs` | 1 | 5 | - | 1 | **7** |
 |  | `contains squid` | - | 7 | - | - | **7** |
 |  | `ERAServer` | 1 | 3 | - | 2 | **6** |
+| `local7` |  | 1 | 3 | - | 1 | **5** |
 | `local5` |  | 1 | 3 | - | 1 | **5** |
 |  | `SymantecServer` | 1 | 3 | - | 1 | **5** |
-| `local7` |  | 1 | 3 | - | 1 | **5** |
+|  | `sshd` | 1 | 1 | 1 | 1 | **4** |
 |  | `box_Firewall_Activity` | 1 | 1 | - | 2 | **4** |
 | `local7` | `GitLab-Application-Logs` | 1 | 2 | - | 1 | **4** |
-|  | `sshd` | 1 | 1 | 1 | 1 | **4** |
 | `!= cron` |  | 3 | - | - | - | **3** |
 |  | `contains Exabeam` | 1 | - | - | 2 | **3** |
 | `authpriv` |  | - | 3 | - | - | **3** |
-| `local7` | `GitLab-Access-Logs` | 1 | - | - | 1 | **2** |
+|  | `openvpn` | 1 | - | - | 1 | **2** |
 |  | `SyslogAlertForwarderNSP` | 1 | - | - | 1 | **2** |
 |  | `RT_FLOW` | 1 | - | - | 1 | **2** |
 |  | `RT_IDS` | 1 | - | - | 1 | **2** |
 |  | `!= sshd` | 1 | - | - | 1 | **2** |
 |  | `!= RT_IDS` | 1 | - | - | 1 | **2** |
 |  | `!= RT_FLOW` | 1 | - | - | 1 | **2** |
-|  | `openvpn` | 1 | - | - | 1 | **2** |
+| `local7` | `GitLab-Access-Logs` | 1 | - | - | 1 | **2** |
 |  | `has sftp` | - | 2 | - | - | **2** |
 | `contains auth` | `!= sudo` | - | 2 | - | - | **2** |
 | `auth` |  | - | 2 | - | - | **2** |
@@ -1278,6 +1278,8 @@ References by type: 30 connectors, 340 content items, 22 ASIM parsers, 59 other 
 | `contains ScriptControl` | 1 | - | - | 2 | **3** |
 | `contains Threat` | 1 | - | - | 2 | **3** |
 | `has predefined_alarm_id` | - | 2 | - | 1 | **3** |
+| `has_all Alert` | 1 | - | - | 1 | **2** |
+| `has Stealthwatch` | 1 | - | - | 1 | **2** |
 | `contains SYSTEM_MSG` | 1 | - | - | 1 | **2** |
 | `contains %LOG_LOCAL` | 1 | - | - | 1 | **2** |
 | `contains HTTP` | 1 | - | - | 1 | **2** |
@@ -1286,8 +1288,6 @@ References by type: 30 connectors, 340 content items, 22 ASIM parsers, 59 other 
 | `has_any PATCH` | 1 | - | - | 1 | **2** |
 | `has_any POST` | 1 | - | - | 1 | **2** |
 | `has_any PUT` | 1 | - | - | 1 | **2** |
-| `has_all Alert` | 1 | - | - | 1 | **2** |
-| `has Stealthwatch` | 1 | - | - | 1 | **2** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |

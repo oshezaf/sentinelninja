@@ -244,8 +244,8 @@ References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parse
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventVendor == "Workday"` | - | 2 | - | - | **2** |
-| `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Workday"` | 1 | - | - | - | **1** |
+| `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | **Total** | **2** | **2** | **0** | **0** | **4** |
 
 ### EventProduct / EventVendor
@@ -253,8 +253,8 @@ References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parse
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 |  | `Workday` | - | 2 | - | - | **2** |
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Workday` |  | 1 | - | - | - | **1** |
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 
 ### EventType
 
