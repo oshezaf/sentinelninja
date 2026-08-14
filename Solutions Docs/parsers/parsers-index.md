@@ -632,7 +632,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [SophosXGFirewall](sophosxgfirewall.md) | 📦 [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | Syslog |
 | [SQLServer_Parser](sqlserver-parser.md) | 📂 *Legacy* | Event |
 | [SquidProxy](squidproxy.md) | 📦 [SquidProxy](../solutions/squidproxy.md) | SquidProxy_CL |
-| [StealthBits StealthDefend Parser](stealthbits-stealthdefend-parser.md) | 📂 *Legacy* | CommonSecurityLog |
+| [StealthDefend](stealthdefend.md) | 📂 *Legacy* | CommonSecurityLog |
 | [StealthwatchEvent](stealthwatchevent.md) | 📦 [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | Syslog |
 | [SymantecDLP](symantecdlp.md) | 📦 [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | CommonSecurityLog |
 | [SymantecEndpointProtection](symantecendpointprotection.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | Syslog |

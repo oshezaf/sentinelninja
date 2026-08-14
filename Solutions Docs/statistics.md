@@ -40,19 +40,19 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **562** | 466 | 96 |
-| With Connectors | **379** | 304 | 75 |
-| With Content | **448** | 377 | 71 |
+| Solutions | **562** | 485 | 77 |
+| With Connectors | **379** | 323 | 56 |
+| With Content | **448** | 392 | 56 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
-| Microsoft | **253** | 230 | 23 |
-| Partner | **284** | 222 | 62 |
+| Microsoft | **253** | 241 | 12 |
+| Partner | **284** | 230 | 54 |
 | Community | **14** | 11 | 3 |
 | Unknown | **11** | 3 | 8 |
-| **Total** | **562** | **466** | **96** |
+| **Total** | **562** | **485** | **77** |
 
 ### Other Metrics
 
@@ -69,25 +69,25 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **545** | 448 | 45 | 52 |
+| In Solutions | **545** | 449 | 45 | 51 |
 | Discovered 🔍 | **133** | 0 | 110 | 23 |
-| **Total** | **678** | **448** | **155** | **75** |
+| **Total** | **678** | **449** | **155** | **74** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| Microsoft | **275** | 164 | 97 | 14 |
+| Microsoft | **275** | 165 | 97 | 13 |
 | Partner | **377** | 272 | 50 | 55 |
 | Community | **22** | 10 | 8 | 4 |
 | Unknown | **4** | 2 | 0 | 2 |
-| **Total** | **678** | **448** | **155** | **75** |
+| **Total** | **678** | **449** | **155** | **74** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **217** | 185 | 1 | 31 |
+| [CCF](methods/ccf.md) | **217** | 186 | 1 | 30 |
 | [AMA](methods/ama.md) | **167** | 37 | 122 | 8 |
 | [Azure Function](methods/azure-function.md) | **128** | 81 | 29 | 18 |
 | [REST Pull API](methods/rest-pull-api.md) | **52** | 39 | 1 | 12 |
@@ -99,7 +99,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [Defender](methods/defender.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **678** | **448** | **155** | **75** |
+| **Total** | **678** | **449** | **155** | **74** |
 
 ### Collection Methods by Support Tier
 
@@ -107,7 +107,7 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 81 / 1 / 7 / **89** | 104 / 0 / 20 / **124** | 0 / 0 / 4 / **4** | - |
+| [CCF](methods/ccf.md) | 82 / 1 / 6 / **89** | 104 / 0 / 20 / **124** | 0 / 0 / 4 / **4** | - |
 | [AMA](methods/ama.md) | 16 / 73 / 2 / **91** | 17 / 41 / 4 / **62** | 4 / 8 / 0 / **12** | 0 / 0 / 2 / **2** |
 | [Azure Function](methods/azure-function.md) | 13 / 22 / 2 / **37** | 67 / 7 / 16 / **90** | 1 / 0 / 0 / **1** | - |
 | [REST Pull API](methods/rest-pull-api.md) | 2 / 0 / 2 / **4** | 31 / 1 / 10 / **42** | 4 / 0 / 0 / **4** | 2 / 0 / 0 / **2** |
@@ -119,7 +119,7 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 1 / 0 / 0 / **1** | - | - |
 | [Defender](methods/defender.md) | 1 / 0 / 0 / **1** | - | - | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
-| **Total** | 164 / 97 / 14 / **275** | 272 / 50 / 55 / **377** | 10 / 8 / 4 / **22** | 2 / 0 / 2 / **4** |
+| **Total** | 165 / 97 / 13 / **275** | 272 / 50 / 55 / **377** | 10 / 8 / 4 / **22** | 2 / 0 / 2 / **4** |
 
 ### CCF Capabilities
 
@@ -228,7 +228,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 ### Overview
 
-**2145 tables** documented across all discovery sources. **1946 tables** have schema information.
+**2148 tables** documented across all discovery sources. **1946 tables** have schema information.
 
 ### Discovery Sources
 
@@ -237,14 +237,14 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 1059 | 1059 |
-| Content | 255 | 871 |
-| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 731 | 919 |
-| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 20 | 64 |
+| Content | 288 | 916 |
+| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 709 | 919 |
+| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 16 | 64 |
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 18 | 540 |
 | [Azure Monitor Logs Table Feature Support](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 919 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 104 |
-| Schema | 62 | 1946 |
-| **Total** | **2145** | |
+| Schema | 58 | 1946 |
+| **Total** | **2148** | |
 
 *21 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
@@ -262,17 +262,17 @@ Tables with schema information, by schema source. A single table may have schema
 
 ### Custom Log V1 (CLv1) 🔶
 
-**467** of 2145 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**470** of 2148 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
 | Category | CLv1 Tables |
 |:---------|------------:|
-| Uncategorized | 444 |
+| Uncategorized | 447 |
 | Internal | 17 |
 | GCP | 5 |
 | Various | 1 |
-| **Total** | **467** |
+| **Total** | **470** |
 
 ## Content
 

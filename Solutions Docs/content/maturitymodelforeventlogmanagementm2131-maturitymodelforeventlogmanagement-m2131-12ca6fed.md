@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | ✗ | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | ✗ | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ✗ |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
@@ -35,11 +35,11 @@ This content item queries data from the following tables:
 | [`ConfigurationData`](../tables/configurationdata.md) | `ConfigDataType == "Registry"` | ✓ | ✗ | ✗ |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ | ✗ |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ✓ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | ✓ | ✗ | ✓ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ✓ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | ✗ |
@@ -50,7 +50,7 @@ This content item queries data from the following tables:
 | [`IntuneDevices`](../tables/intunedevices.md) |  | ✓ | ✗ | ✓ |
 | [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md) |  | ✓ | ✗ | ✓ |
 | [`KubeEvents_CL`](../tables/kubeevents-cl.md) |  | ? | ✓ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`RecordType == "ExchangeAdmin"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ✗ |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |

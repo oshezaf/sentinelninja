@@ -84,15 +84,21 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Azure Key Vault](../solutions/azure-key-vault.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) |  |
 
 ---
 

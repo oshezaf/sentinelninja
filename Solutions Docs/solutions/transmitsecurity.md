@@ -1,8 +1,6 @@
-# ⚠️ Transmit Security Data Connector for Microsoft Sentinel
+# Transmit Security Data Connector for Microsoft Sentinel
 
 *Solution: TransmitSecurity*
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Logos/Transmit_Security_Logo.svg" alt="TransmitSecurity Logo" width="75" height="75">
 

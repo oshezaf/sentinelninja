@@ -17,7 +17,7 @@
 | **Version** | 3.5.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-07-24 |
+| **Last Updated** | 2026-08-14 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (92%) |
 

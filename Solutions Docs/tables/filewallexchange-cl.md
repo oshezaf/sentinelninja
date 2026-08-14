@@ -66,7 +66,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (1)
 
@@ -76,13 +76,19 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Filewall - Blocked emails](../content/filewall-for-microsoft-365-filewall-blocked-emails-9b784b65-2d16-4c9f-9f59-2a5d4c659f42-395f5a5b.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [FilewallM365Overview](../content/filewall-for-microsoft-365-filewallm365overview-90daf6a7.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [FilewallM365Overview](../content/github-only-filewallm365overview-0b6e3b68.md) |  |
 
 ## Parsers Using This Table (1)
 

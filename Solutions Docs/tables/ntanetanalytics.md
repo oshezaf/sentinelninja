@@ -22,6 +22,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 - [Schema](#schema)
 - [Schema References](#schema-references)
 - [Additional Information](#additional-information)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (93 columns)
@@ -135,6 +136,16 @@ Official Microsoft Learn documentation for field/column information:
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema) - NSG and VNet flow log schema and data aggregation
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:** `FlowDirection == "Inbound"`<br>`FlowType == "MaliciousFlow"`<br>`SubType == "FlowLog"`
+
+| Workbook |
+|:-------------|
+| [AzureNetworkWatcher-VnetFL](../content/github-only-azurenetworkwatcher-vnetfl-08399aac.md) |
 
 ## Parsers Using This Table (1)
 

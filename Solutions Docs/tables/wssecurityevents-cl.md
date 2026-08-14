@@ -67,9 +67,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [WithSecureElementsCCF](../solutions/withsecureelementsccf.md):**
 
@@ -82,6 +82,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections-63577228.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [WithSecureTopComputersByInfections](../content/github-only-withsecuretopcomputersbyinfections-b9ae720b.md) |  |
 
 ---
 

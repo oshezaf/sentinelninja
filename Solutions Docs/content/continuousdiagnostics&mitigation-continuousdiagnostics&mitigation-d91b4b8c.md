@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationName contains "PIM"` | ✗ | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ | ✓ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | ✗ | ✗ | ✗ |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
@@ -37,7 +37,7 @@ This content item queries data from the following tables:
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ✓ | ✓ | ✓ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OperationName contains "PIM"` | ✓ | ✗ | ✓ |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"` | ✓ | ✗ | ✓ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) | `AnalyzeResult in "Failed,Passed"` | ✓ | ✗ | ✗ |

@@ -1,8 +1,6 @@
-# ⚠️ Palo Alto Prisma Cloud CSPM Solution
+# Palo Alto Prisma Cloud CSPM Solution
 
 *Solution: PaloAltoPrismaCloud*
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAltoPrismaCloud/logo/Palo-alto-logo.png" alt="PaloAltoPrismaCloud Logo" width="75" height="75">
 

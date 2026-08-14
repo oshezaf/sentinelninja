@@ -116,7 +116,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (18)
 
 ### Analytic Rules (1)
 
@@ -126,7 +126,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md) |  |
 
-### Hunting Queries (2)
+### Hunting Queries (10)
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `CallerIpAddress startswith "10."`<br>`CallerIpAddress startswith "127."`<br>`CallerIpAddress startswith "169.254."`<br>`CallerIpAddress startswith "172."`<br>`CallerIpAddress startswith "192.168."`<br>`StatusCode in "200,206"`<br>`UserAgentHeader contains "rubrik"`
 
@@ -135,7 +135,20 @@ This table is ingested by the following connectors:
 | [Azure Storage Access via AccountKey or SAS Token from First-Seen External IP](../content/hybrid-attack-cloud-&-identity-azure-storage-access-via-accountkey-or-sas-token-from-first-seen-external-fed80b62-1836-4e06-a01f-7ec467d46e24-57922c5a.md) |
 | [Azure Storage Bulk Download via AccountKey or SAS Token from External IP](../content/hybrid-attack-cloud-&-identity-azure-storage-bulk-download-via-accountkey-or-sas-token-from-external-ip-eea3dc6d-7abd-465e-b8e8-5176c205bb8e-ef5da964.md) |
 
-### Workbooks (4)
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Azure Storage File Create and Delete](../content/github-only-azure-storage-file-create-and-delete-276731f6-ae09-4469-9fa0-c0791a5a0d8d-9afbf5e4.md) |  |
+| [Azure Storage File Create, Access, Delete](../content/github-only-azure-storage-file-create,-access,-delete-25568c62-414b-4577-acee-5cba9494c232-3fab8ab2.md) |  |
+| [Azure Storage Mass File Deletion](../content/github-only-azure-storage-mass-file-deletion-85e16874-72aa-4ebe-b36e-e45f8ba50f79-194e0a08.md) |  |
+| [Azure Storage file upload from VPS Providers](../content/github-only-azure-storage-file-upload-from-vps-providers-85e16874-72aa-4ebe-b36e-e45f8ba50f79-c966139b.md) |  |
+| [Detect Enumeration Activity Using Unique Identifiers and Session Aggregation](../content/github-only-detect-enumeration-activity-using-unique-identifiers-and-session-aggregation-b7b409df-af7b-4feb-9cc9-109beed37512-8a565627.md) | `Uri !endswith "favicon.ico"` |
+| [Storage Alert Correlation with CommonSecurityLogs and StorageLogs](../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.md) |  |
+| [Storage File Seen on Endpoint](../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.md) |  |
+| [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) |  |
+
+### Workbooks (7)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -161,6 +174,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -175,15 +196,16 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.storage/storageaccounts`
 
-## Selection Criteria Summary (2 criteria, 3 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `CallerIpAddress startswith "10."`<br>`CallerIpAddress startswith "127."`<br>`CallerIpAddress startswith "169.254."`<br>`CallerIpAddress startswith "172."`<br>`CallerIpAddress startswith "192.168."`<br>`StatusCode in "200,206"`<br>`UserAgentHeader contains "rubrik"` | - | 2 | - | - | **2** |
+| `Uri !endswith "favicon.ico"` | - | 1 | - | - | **1** |
 | `StatusCode in "200,206"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
+| **Total** | **0** | **4** | **0** | **0** | **4** |
 
 ### CallerIpAddress
 
@@ -201,6 +223,12 @@ References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `200` | - | 3 | - | - | **3** |
 | `206` | - | 3 | - | - | **3** |
+
+### Uri
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!endswith favicon.ico` | - | 1 | - | - | **1** |
 
 ### UserAgentHeader
 

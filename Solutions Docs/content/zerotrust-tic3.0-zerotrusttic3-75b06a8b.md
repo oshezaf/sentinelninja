@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationNameValue startswith "Microsoft.Logic"` | ✗ | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue startswith "Microsoft.Logic"` | ✗ | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ✗ |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
@@ -30,13 +30,13 @@ This content item queries data from the following tables:
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | ✓ |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ | ✗ |
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ✓ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ✓ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ✗ |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | `AlertName contains "mal"`<br>`Entities contains "Fail"`<br>`Entities contains "inbound"`<br>`Entities contains "outbound"`<br>`ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ✓ |

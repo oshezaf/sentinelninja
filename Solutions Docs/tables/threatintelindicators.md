@@ -117,7 +117,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (104)
+## Content Items Using This Table (109)
 
 ### Analytic Rules (71)
 
@@ -217,7 +217,7 @@ This table is ingested by the following connectors:
 | [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
 | [TI Map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-aba81a50.md) |  |
 
-### Hunting Queries (16)
+### Hunting Queries (17)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -260,7 +260,13 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
-### Workbooks (17)
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
+
+### Workbooks (21)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -349,6 +355,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
+
 ## Parsers Using This Table (3)
 
 ### Other Parsers (3)
@@ -380,8 +395,8 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
+| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
@@ -405,8 +420,8 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
 | `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
-| `MISP` | 1 | - | - | - | **1** |
 | `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `MISP` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
 
 ---

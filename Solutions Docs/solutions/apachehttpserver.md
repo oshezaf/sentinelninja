@@ -21,7 +21,7 @@
 | **First Published** | 2021-10-27 |
 | **Last Updated** | 2026-07-30 |
 | **Solution Folder** | [ApacheHTTPServer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachehttpserver) · Popularity: 🔵 Medium (50%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachehttpserver) · Popularity: 🔵 Medium (54%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Apache HTTP Server solution provides the capability to ingest [Apache HTTP Server](http://httpd.apache.org/) events into Microsoft Sentinel. Refer to [Apache Logs documentation](https://httpd.apache.org/docs/2.4/logs.html) for more information.

@@ -19,9 +19,9 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **217** |
-| Active | 185 |
+| Active | 186 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 31 |
+| Unpublished ⚠️ | 30 |
 
 ## Connectors Using This Method
 
@@ -92,7 +92,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [D3 Smart SOAR Incidents](../connectors/d3soarconnectordefinition.md) | D3 Security | 1 | [D3SmartSOAR](../solutions/d3smartsoar.md) |
 | [Datadog Audit Logs (via Codeless Connector Framework)](../connectors/datadogauditlogsconnector.md) ⚠️ | Microsoft | 1 | [Datadog](../solutions/datadog.md) |
 | [DomainTools Threat Intelligence Domain Feed](../connectors/domaintoolsccfdefinition.md) ⚠️ | DomainTools | 1 | [DomainTools CCF](../solutions/domaintools-ccf.md) |
-| [Dragon Copilot](../connectors/dragoncopilotnative.md) ⚠️ | Microsoft | 1 | [DragonCopilot](../solutions/dragoncopilot.md) |
+| [Dragon Copilot](../connectors/dragoncopilotnative.md) | Microsoft | 1 | [DragonCopilot](../solutions/dragoncopilot.md) |
 | [Druva Events Connector](../connectors/druvaeventccpdefinition.md) | Microsoft | 3 | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |

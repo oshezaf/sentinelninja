@@ -21,7 +21,7 @@
 | **First Published** | 2026-01-06 |
 | **Last Updated** | 2026-07-16 |
 | **Solution Folder** | [Filewall for Microsoft 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Filewall%20for%20Microsoft%20365) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/odix.azure-sentinel-solution-filewallm365) · Popularity: 🔵 Medium (79%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/odix.azure-sentinel-solution-filewallm365) · Popularity: 🔵 Medium (75%) |
 
 Filewall for Microsoft 365 solution installs a Codeless (CCF/CLv2) connector that ingests Filewall activity logs for Exchange, SharePoint, OneDrive and Teams into custom tables. It also installs parsers, analytics rules and a workbook for visibility.
 

@@ -1,8 +1,6 @@
-# ⚠️ Google Cloud Platform DNS Solution
+# Google Cloud Platform DNS Solution
 
 *Solution: GoogleCloudPlatformDNS*
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformDNS Logo" width="75" height="75">
 

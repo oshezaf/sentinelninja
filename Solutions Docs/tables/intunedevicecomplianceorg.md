@@ -17,6 +17,12 @@ Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevicecomplianceorg) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevicecomplianceorg)
@@ -59,6 +65,17 @@ Official Microsoft Learn documentation for field/column information:
 - [IntuneDeviceComplianceOrg Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/intunedevicecomplianceorg)
 
 ---
+
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

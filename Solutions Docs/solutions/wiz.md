@@ -1,8 +1,6 @@
-# ⚠️ Wiz for Microsoft Sentinel
+# Wiz for Microsoft Sentinel
 
 *Solution: Wiz*
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="Wiz Logo" width="75" height="75">
 
@@ -23,7 +21,7 @@
 | **First Published** | 2023-06-20 |
 | **Last Updated** | 2026-08-03 |
 | **Solution Folder** | [Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🟢 High (80%) |
 
 The [Wiz](https://wiz.io/) solution for Microsoft Sentinel lets Wiz push [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), Wiz Detections, and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel in real time. Wiz sends data to a Data Collection Endpoint (DCE) using the Wiz service principal; this solution grants that service principal the least-privilege RBAC it needs, and Wiz then creates the data collection rule and tables. There is no Azure Function to host and no workspace shared keys to manage.
 

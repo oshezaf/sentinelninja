@@ -16,6 +16,29 @@ This summary rule aggregates web session logs from Palo Alto PAN-OS devices, pro
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Summary rules/WebSession/PaloAltoPANOSWebSessionIPSummary.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity == "THREAT"`<br>`DeviceEventClassID == "url"`<br>`DeviceProduct == "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [CefAma](../connectors/cefama.md) | [Common Event Format](../solutions/common-event-format.md) |
+| [PaloAltoNetworks](../connectors/paloaltonetworks.md) | [PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md) |
+| [PaloAltoNetworksAma](../connectors/paloaltonetworksama.md) | [PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md) |
+| [VirtualMetricDirectorProxy](../connectors/virtualmetricdirectorproxy.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelConnector](../connectors/virtualmetricmssentinelconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelDataLakeConnector](../connectors/virtualmetricmssentineldatalakeconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+
+**Solutions:** [Common Event Format](../solutions/common-event-format.md), [PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md), [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

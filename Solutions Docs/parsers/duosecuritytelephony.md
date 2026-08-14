@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DuoSecurityTelephony_CL`](../tables/duosecuritytelephony-cl.md) | ? | ? | ? |
+| [`DuoSecurityTelephony_CL`](../tables/duosecuritytelephony-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

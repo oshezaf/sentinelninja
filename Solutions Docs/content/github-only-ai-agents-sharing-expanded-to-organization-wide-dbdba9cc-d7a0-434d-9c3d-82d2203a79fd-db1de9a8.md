@@ -15,6 +15,15 @@ Identifies existing AI agents that were restricted in the baseline snapshot and 
 | **ID** | `dbdba9cc-d7a0-434d-9c3d-82d2203a79fd` |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AI%20Agents/AgentsInfoSharingExpandedToOrgWide.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AgentsInfo`](../tables/agentsinfo.md) | ✓ | ✗ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ✓ |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

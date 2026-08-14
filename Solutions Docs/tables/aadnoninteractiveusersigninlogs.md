@@ -125,7 +125,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AADNonInteractiveUserSignInLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs)
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -139,6 +139,7 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [eDCRule](../solutions/edcrule.md)
@@ -153,9 +154,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (27)
+## Content Items Using This Table (42)
 
-### Analytic Rules (13)
+### Analytic Rules (15)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -205,7 +206,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Entra ID] Suspicious Continuous OAuth Token Usage](../content/edcrule-[entra-id]-suspicious-continuous-oauth-token-usage-67802748-435b-4f80-9f61-b9a9ac6ea15c-abe74de3.md) |  |
 
-### Hunting Queries (6)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Authentication Attempt from New Country](../content/standalone-content-authentication-attempt-from-new-country-ef895ada-e8e8-4cf0-9313-b1ab67fab69f-340ffa85.md) |  |
+| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
+
+### Hunting Queries (8)
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
 
@@ -218,7 +226,14 @@ This table is ingested by the following connectors:
 | [Suspicious sign-in followed by cloud network exposure writes](../content/hybrid-attack-cloud-&-identity-suspicious-sign-in-followed-by-cloud-network-exposure-writes-ae4f0362-8ba1-43db-9899-4d05e0890133-1c5c2934.md) |  |
 | [VPN Credential Stuffing and Password Spray](../content/hybrid-attack-cloud-&-identity-vpn-credential-stuffing-and-password-spray-a1b2c3d4-e5f6-7890-abcd-ef1234567890-f34272b4.md) |  |
 
-### Workbooks (8)
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Short-window IP failure burst followed by successful sign-in](../content/standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.md) |  |
+| [Short-window sign-in mismatch between interactive and non-interactive activity](../content/standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.md) |  |
+
+### Workbooks (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -267,6 +282,22 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AADNonInteractiveUserSignInLogs](../content/github-only-aadnoninteractiveusersigninlogs-dbe045a9.md) | `ResultType != "0"` |
+| [AzureActiveDirectorySignins](../content/github-only-azureactivedirectorysignins-f7e08e18.md) |  |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [AzureOpenAIMonitoring](../content/github-only-azureopenaimonitoring-99c696c7.md) | `AppDisplayName == "Azure OpenAI Studio"`<br>`OperationName in "Analyze Image,Analyze Text,ChatCompletions_Create,Creates a completion for the chat message"` |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
+| [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

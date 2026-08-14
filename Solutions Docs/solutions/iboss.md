@@ -1,8 +1,6 @@
-# ⚠️ iboss Connector for Microsoft Sentinel
+# iboss Connector for Microsoft Sentinel
 
 *Solution: iboss*
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/iboss/Workbooks/Images/Logo/iboss_full-logo_2020_vector_black.svg" alt="iboss Logo" width="75" height="75">
 

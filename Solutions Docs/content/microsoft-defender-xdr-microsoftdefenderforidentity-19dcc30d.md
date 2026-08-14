@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | `ActionType in "LogonFailed,LogonSuccess"` | ✓ | ✗ | ✓ |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ✓ |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `LogonType in "Credentials validation,Resource access"` | ✓ | ✗ | ✓ |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ✓ |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType in "LogonFailed,LogonSuccess"` | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 
 ---

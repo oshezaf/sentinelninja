@@ -21,7 +21,7 @@
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2026-06-18 |
 | **Solution Folder** | [ZoomReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zoomreports) · Popularity: 🔵 Medium (54%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zoomreports) · Popularity: 🟡 Low (44%) |
 
 The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports' events into Microsoft Sentinel through the [Zoom Report REST API](https://developers.zoom.us/docs/api/)
   

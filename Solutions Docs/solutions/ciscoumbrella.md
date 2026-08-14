@@ -19,7 +19,7 @@
 | **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-01 |
-| **Last Updated** | 2026-07-07 |
+| **Last Updated** | 2026-08-14 |
 | **Solution Folder** | [CiscoUmbrella](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoumbrella) · Popularity: 🔵 Medium (75%) |
 

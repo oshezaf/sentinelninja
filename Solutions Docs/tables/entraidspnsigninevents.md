@@ -16,6 +16,12 @@ Microsoft Entra service principal and managed identity sign-ins
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidspnsigninevents-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/entraidspnsigninevents)
@@ -58,6 +64,16 @@ Official Microsoft Learn documentation for field/column information:
 - [EntraIdSpnSignInEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidspnsigninevents-table)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Hunting Queries (1)
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [AddedCredentialFromContryXAndSigninFromCountryY](../content/github-only-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-5872c09f.md) |  |
 
 ---
 
