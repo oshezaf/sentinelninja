@@ -18,7 +18,7 @@ Detects when admin user is deleted.
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1531 |
-| **Required Connectors** | [CiscoDuoSecurity](../connectors/ciscoduosecurity.md) |
+| **Required Connectors** | [CiscoDuoActivityConnectorDefinition](../connectors/ciscoduoactivityconnectordefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Analytic%20Rules/CiscoDuoAdminDeleted.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`DuoActivity_CL`](../tables/duoactivity-cl.md) | ? | ✓ | ? |
 
 ---
 

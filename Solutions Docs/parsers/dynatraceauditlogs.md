@@ -13,8 +13,8 @@
 | Title | Parser for DynatraceAuditLogs |
 | Location | Solution |
 | Solution | [Dynatrace](../solutions/dynatrace.md) |
-| Version | 2.0.1 |
-| Last Updated | 2026-04-28 |
+| Version | 3.0.0 |
+| Last Updated | 2026-06-30 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Parsers/DynatraceAuditLogs.yaml) |
@@ -26,6 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ✓ | ✓ | ✓ |
 
 ---

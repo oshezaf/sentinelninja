@@ -9,9 +9,9 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 

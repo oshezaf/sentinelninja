@@ -67,7 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelIndicators Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators)
 
-## Solutions (22)
+## Solutions (26)
 
 This table is used by the following solutions:
 
@@ -78,15 +78,19 @@ This table is used by the following solutions:
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Datalake2Sentinel](../solutions/datalake2sentinel.md)
+- [Datazag](../solutions/datazag.md)
+- [Feedly](../solutions/feedly.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [HoneyLabs](../solutions/honeylabs.md)
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Infoblox](../solutions/infoblox.md)
 - [JoeSandbox](../solutions/joesandbox.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MISP2Sentinel](../solutions/misp2sentinel.md)
+- [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [ReversingLabs](../solutions/reversinglabs.md)
 - [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
@@ -94,7 +98,7 @@ This table is used by the following solutions:
 - [ThreatConnect](../solutions/threatconnect.md)
 - [VMRay](../solutions/vmray.md)
 
-## Connectors (14)
+## Connectors (16)
 
 This table is ingested by the following connectors:
 
@@ -103,6 +107,7 @@ This table is ingested by the following connectors:
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` |
 | [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) | `SourceSystem == "Cyjax-IOCs"` |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) |  |
+| [Feedly IoC](../connectors/feedlyccpdefinition.md) | `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` |
 | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | `SourceSystem == "GreyNoise"` |
 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
 | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) |  |
@@ -110,6 +115,7 @@ This table is ingested by the following connectors:
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | `SourceSystem == "MISP"` |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
+| [PRODAFT USTA - IoC Threat Intelligence](../connectors/prodaftustaiocuploadindicators.md) | `SourceSystem startswith "PRODAFT USTA"` |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |
@@ -117,9 +123,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (109)
+## Content Items Using This Table (127)
 
-### Analytic Rules (71)
+### Analytic Rules (79)
+
+**In solution [Datazag](../solutions/datazag.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Datazag - impersonation domain resolved in DNS](../content/datazag-datazag-impersonation-domain-resolved-in-dns-8f3c1a4e-6b52-4d19-9c07-2a5e8d0f7b41-8e84ed00.md) |  |
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
@@ -138,6 +150,15 @@ This table is ingested by the following connectors:
 | [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md) | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
 
+**In solution [HoneyLabs](../solutions/honeylabs.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [HoneyLabs TI Map IP Entity to CommonSecurityLog](../content/honeylabs-honeylabs-ti-map-ip-entity-to-commonsecuritylog-c7061f05-d0ed-40e1-862e-bc52e454e3a1-fbc903ca.md) |  |
+| [HoneyLabs TI Map IP Entity to Network Session (ASIM)](../content/honeylabs-honeylabs-ti-map-ip-entity-to-network-session-asim-5d3a1c77-2b40-4e6c-9f2d-71c0a8e4b912-19be299e.md) |  |
+| [HoneyLabs TI Map IP Entity to SigninLogs](../content/honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.md) |  |
+| [HoneyLabs TI Map URL Entity to CommonSecurityLog](../content/honeylabs-honeylabs-ti-map-url-entity-to-commonsecuritylog-afe2a5ff-f4fe-4dee-8b6b-fd28d29d6738-cbc43643.md) |  |
+
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Analytic Rule | Selection Criteria |
@@ -150,6 +171,14 @@ This table is ingested by the following connectors:
 | [Lumen TI IPAddress in SigninLogs](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-signinlogs-1425aea5-a9e5-4288-886e-934b90664a91-470061c8.md) |  |
 | [Lumen TI IPAddress in WindowsEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-windowsevents-4776281c-6c49-46ac-8444-4dd8ba2f4565-915cc28f.md) |  |
 | [Lumen TI domain in DnsEvents](../content/lumen-defender-threat-feed-lumen-ti-domain-in-dnsevents-29bf5bcd-6795-4c79-a91f-aaef5a618bab-3483c267.md) |  |
+
+**In solution [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [PRODAFT USTA - TI map Domain to DnsEvents](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-domain-to-dnsevents-c6f85aff-4ef0-4fde-b90e-e0ba1a9c3df6-268dc5e6.md) |  |
+| [PRODAFT USTA - TI map File Hash to CommonSecurityLog](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-file-hash-to-commonsecuritylog-9c2cef4e-c3a3-4be9-8923-a2f820d4face-8e66187e.md) |  |
+| [PRODAFT USTA - TI map URL to Syslog](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-url-to-syslog-99ae4d06-d352-4926-a1d7-9c28e25b1313-5b2b22cc.md) |  |
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 
@@ -217,7 +246,13 @@ This table is ingested by the following connectors:
 | [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
 | [TI Map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-aba81a50.md) |  |
 
-### Hunting Queries (17)
+### Hunting Queries (22)
+
+**In solution [Datazag](../solutions/datazag.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Datazag - retro-hunt historical DNS against impersonation indicators](../content/datazag-datazag-retro-hunt-historical-dns-against-impersonation-indicators-2d7b90c5-41ae-4f83-a6d2-9b1c5e3407fa-3796d418.md) |  |
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -227,6 +262,15 @@ This table is ingested by the following connectors:
 | [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.md) | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md) | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.md) | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
+
+**In solution [HoneyLabs](../solutions/honeylabs.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Contact from a source probing a specific CVE](../content/honeylabs-contact-from-a-source-probing-a-specific-cve-6a2f9b58-c31d-4e07-9d84-3f5b1c7e2a90-2596cdb1.md) |  |
+| [HoneyLabs high-confidence indicator seen for the first time](../content/honeylabs-honeylabs-high-confidence-indicator-seen-for-the-first-time-9f1c2a44-7d18-4f5b-9c33-2a6e5b8d1c07-5a2fb41f.md) |  |
+| [One HoneyLabs indicator contacting several internal hosts](../content/honeylabs-one-honeylabs-indicator-contacting-several-internal-hosts-b7e4d013-9a26-4c8f-bb51-6d3c0f9e2a18-917fcada.md) |  |
+| [Outbound contact with a HoneyLabs malware loader or C2 URL](../content/honeylabs-outbound-contact-with-a-honeylabs-malware-loader-or-c2-url-3c8b6e21-45af-4d90-8b17-9e2f7c1a4d55-dc1020f3.md) |  |
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
 
@@ -266,7 +310,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
 
-### Workbooks (21)
+### Workbooks (23)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -310,6 +354,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |  |
 
+**In solution [HoneyLabs](../solutions/honeylabs.md):** `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem startswith "HoneyLabs"`
+
+| Workbook |
+|:-------------|
+| [HoneyLabsThreatIntelligence](../content/honeylabs-honeylabsthreatintelligence-d37080fe.md) |
+
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `ObservableKey == "ipv4-addr:value"`
 
 | Workbook |
@@ -321,6 +371,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
+
+**In solution [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md):** `SourceSystem startswith "PRODAFT USTA"`
+
+| Workbook |
+|:-------------|
+| [PRODAFTUstaIoCOverview](../content/prodaft-usta-ioc-threat-intelligence-prodaftustaiocoverview-c05c3e08.md) |
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 
@@ -364,12 +420,13 @@ This table is ingested by the following connectors:
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
 
-## Parsers Using This Table (3)
+## Parsers Using This Table (4)
 
-### Other Parsers (3)
+### Other Parsers (4)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
+| [Cyble Threat Intelligence Parser](../parsers/cyble-threat-intelligence-parser.md) | *(Legacy)* |  |
 | [CyjaxCorrelate](../parsers/cyjaxcorrelate.md) | [Cyjax](../solutions/cyjax.md) |  |
 | [CyjaxThreatIndicator](../parsers/cyjaxthreatindicator.md) | [Cyjax](../solutions/cyjax.md) |  |
 | [ThreatIntelIndicatorsv2](../parsers/threatintelindicatorsv2.md) | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |  |
@@ -380,9 +437,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/threatintelligence`
 
-## Selection Criteria Summary (14 criteria, 28 total references)
+## Selection Criteria Summary (17 criteria, 32 total references)
 
-References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -391,24 +448,27 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
 | `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
+| `SourceSystem startswith "PRODAFT USTA"` | 1 | 1 | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
+| `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
+| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
-| **Total** | **6** | **22** | **0** | **0** | **28** |
+| `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem startswith "HoneyLabs"` | - | 1 | - | - | **1** |
+| **Total** | **8** | **24** | **0** | **0** | **32** |
 
 ### ObservableKey
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ipv4-addr:value` | 2 | 7 | - | - | **9** |
-| `domain-name:value` | 2 | 5 | - | - | **7** |
-| `url:value` | - | 5 | - | - | **5** |
+| `ipv4-addr:value` | 3 | 8 | - | - | **11** |
+| `domain-name:value` | 3 | 5 | - | - | **8** |
+| `url:value` | 1 | 5 | - | - | **6** |
 | `contains file:hashes` | - | 3 | - | - | **3** |
 | `contains file:hashes.` | - | 1 | - | - | **1** |
 | `contains network-traffic` | - | 1 | - | - | **1** |
@@ -420,9 +480,12 @@ References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other pars
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
 | `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
-| `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
+| `startswith PRODAFT USTA` | 1 | 1 | - | - | **2** |
+| `Feedly` | 1 | - | - | - | **1** |
 | `Cyjax-IOCs` | 1 | - | - | - | **1** |
 | `MISP` | 1 | - | - | - | **1** |
+| `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
+| `startswith HoneyLabs` | - | 1 | - | - | **1** |
 
 ---
 

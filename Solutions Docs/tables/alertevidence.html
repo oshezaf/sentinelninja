@@ -102,7 +102,7 @@
 <tr>
   <td style="text-align:left">AccountObjectId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the account in Azure Active Directory.</td>
+  <td style="text-align:left">Unique identifier for the account in Microsoft Entra ID.</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountSid</td>
@@ -334,7 +334,7 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (25)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (27)</h2>
 <h3 id="analytic-rules">Analytic Rules (2)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code><br><code>EntityType in &quot;MailMessage,Url&quot;</code><br><code>ServiceSource == &quot;Microsoft Defender for Office 365&quot;</code></p>
 <table>
@@ -362,7 +362,20 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (16)</h3>
+<h3 id="hunting-queries">Hunting Queries (18)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;Automated Remediation&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-investigation-outcomes-by-day-8c86aaf1-46c1-4eee-8953-60f163e83253-e79d9423.html">Automated Investigation Outcomes by Day</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Standalone Content:</strong></p>
 <table>
 <thead>
@@ -387,6 +400,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-automated-investigation-outcomes-by-day-e13d7b0c-1cfa-41dd-a5cf-45d598055cef-3d082410.html">Automated Investigation Outcomes by Day</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
   <td style="text-align:left"></td>
@@ -480,7 +497,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;Automated Remediation&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,TeamsImpersonationDetected,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;ClickAllowed&quot;</code><br><code>ActionType has &quot;ClickBlocked&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -508,18 +525,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -562,8 +577,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (6 criteria, 8 total references)</h2>
-<p>References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 11 total references)</h2>
+<p>References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -578,6 +593,14 @@
 <tbody>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -617,7 +640,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,TeamsImpersonationDetected,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;ClickAllowed&quot;</code><br><code>ActionType has &quot;ClickBlocked&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -627,10 +658,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>11</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>11</strong></td>
 </tr>
 </tbody>
 </table>
@@ -647,6 +678,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><code>Automated Remediation</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
 <tr>
   <td style="text-align:left"><code>ChatCreated</code></td>
   <td style="text-align:center">-</td>
@@ -680,7 +719,271 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Automated Remediation</code></td>
+  <td style="text-align:left"><code>AdminSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AdminSubmissionSubmitted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AttackSimUserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CallParticipantDetail</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CallReported</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ClickAllowed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ClickBlocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ClickBlockedByTenantPolicy</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Malware ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Phish ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Spam ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>TeamsImpersonationDetected</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>UserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Submission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains UserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ClickAllowed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ClickBlocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Malware ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Phish ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Spam ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ClickAllowed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ClickBlocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any UrlErrorPage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any UrlScanInProgress</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>InteractiveLogon</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>RemoteInteractiveLogon</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Reset user password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ResourceAccess</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Sign-in</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update user</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`StealthTalkAnomalousAuth_CL`](../tables/stealthtalkanomalousauth-cl.md) |  | ? | ✓ | ? |
+| [`StealthTalkAnomalousAuth_CL`](../tables/stealthtalkanomalousauth-cl.md) |  | ✗ | ✓ | ✗ |
 
 ---
 

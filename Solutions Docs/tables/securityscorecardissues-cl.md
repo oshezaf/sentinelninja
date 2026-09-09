@@ -18,6 +18,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (25 columns)
 
@@ -69,7 +70,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) |  |
+| [[DEPRECATED] SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) |  |
 
 ---
 
@@ -82,6 +83,14 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityScorecardWorkbook](../content/securityscorecard-cybersecurity-ratings-securityscorecardworkbook-305a0f99.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [SecurityScorecardIssue](../parsers/securityscorecardissue.md) | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |  |
 
 ---
 

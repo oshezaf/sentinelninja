@@ -95,7 +95,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (35)
+## Content Items Using This Table (36)
 
 ### Analytic Rules (13)
 
@@ -178,7 +178,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [User Accounts - Successful Sign in Spikes](../content/github-only-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-277cd450.md) |  |
 
-### Workbooks (13)
+### Workbooks (14)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
@@ -219,6 +219,7 @@ This table is used by the following solutions:
 | [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [FirewallLogOptimization](../content/github-only-firewalllogoptimization-99415fb7.md) |  |
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 | [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |

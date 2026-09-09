@@ -1,6 +1,6 @@
 # Analytic Rules - D
 
-**134 analytic rules** starting with 'D'.
+**135 analytic rules** starting with 'D'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -56,11 +56,12 @@
 | [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md) | Medium | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dataverse - User bulk retrieval outside normal activity](microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.md) | Low | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Datawiza - massive errors detected](datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) | Medium | 📦 [Datawiza](../solutions/datawiza.md) |
+| [Datazag - impersonation domain resolved in DNS](datazag-datazag-impersonation-domain-resolved-in-dns-8f3c1a4e-6b52-4d19-9c07-2a5e8d0f7b41-8e84ed00.md) | High | 📦 [Datazag](../solutions/datazag.md) |
 | [DCOM Lateral Movement](falconfriday-dcom-lateral-movement-d58035ff-0bac-4c61-a7f4-f58939ff9764-9dd841b7.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [DDoS attack detected](azure-firewall-ddos-attack-detected-c3ffdbe6-2e62-4984-9e80-933ed90b2f6a-59acf5f9.md) | High | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [DDoS Attack IP Addresses - Percent Threshold](azure-ddos-protection-ddos-attack-ip-addresses-percent-threshold-402a42ad-f31c-48d1-8f80-0200846b7f25-45798bda.md) | Medium | 📦 [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
 | [DDoS Attack IP Addresses - PPS Threshold](azure-ddos-protection-ddos-attack-ip-addresses-pps-threshold-6e76fd9d-8104-41eb-bad3-26054a3ad5f0-19898f82.md) | Medium | 📦 [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
-| [Defender Alert Evidence](vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Defender Alert Evidence](vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) ⚠️ | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Deimos Component Execution](microsoft-defender-xdr-deimos-component-execution-c25a8cd4-5b4a-45a8-9ba0-3b753a652f6b-a4a127b5.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Deleted a Custom Field Mapping profile](soc-prime-ccf-deleted-a-custom-field-mapping-profile-a1b2c3d4-e5f6-4078-9012-3456789abcde-7649773b.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Deleted a Tenant](soc-prime-ccf-deleted-a-tenant-7d4a2b91-8e5c-4f2a-9d6b-3c1f0e4a5d8b-a3de424c.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,27 +19,22 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (17 columns)
+## Schema (12 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_rpz_feeds_records_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| class_s | string |
-| Computer | string |
-| detected_t | datetime |
-| expiration_t | datetime |
-| feed_name_s | string |
-| indicator_s | string |
-| ManagementGroupName | string |
-| MG | string |
-| property_s | string |
-| RawData | string |
-| SourceSystem | string |
-| task_id_g | string |
+| class | string |
+| detected | datetime |
+| expiration | datetime |
+| feed_name | string |
+| indicator | string |
+| property | string |
+| task_id | string |
 | TenantId | string |
-| threat_level_d | real |
+| threat_level | real |
 | TimeGenerated | datetime |
 | Type | string |
 

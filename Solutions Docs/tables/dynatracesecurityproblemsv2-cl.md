@@ -8,9 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -64,7 +64,7 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md) |  |
-| [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) |  |
+| [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) |  |
 
 ---
 

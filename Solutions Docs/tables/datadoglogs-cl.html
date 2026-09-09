@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DatadogLogsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="datadoglogs_cl">DatadogLogs_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (37 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datadog%5CData%20Connectors%5CDatadogConnector/table_DatadogLogs.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Attributes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Full attributes object of the Datadog log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsAccountId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">AWS account identifier associated with the log</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">AWS metadata associated with the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsInvokedFunctionArn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ARN of the AWS Lambda function invoked by the integration</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsLogGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">AWS CloudWatch log group</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsLogStream</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">AWS CloudWatch log stream</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsS3Bucket</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">S3 bucket containing the source log</td>
+</tr>
+<tr>
+  <td style="text-align:left">AwsS3Key</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">S3 object key containing the source log</td>
+</tr>
+<tr>
+  <td style="text-align:left">BytesWritten</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of bytes written during the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source IP address of the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientPort</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Source port of the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Destination IP address of the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationPort</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Destination port of the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the Datadog log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp reported by Datadog for the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource type of the event (always 'log')</td>
+</tr>
+<tr>
+  <td style="text-align:left">Host</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host that generated the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">LambdaArn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ARN of the AWS Lambda function that generated the log</td>
+</tr>
+<tr>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source-specific log level</td>
+</tr>
+<tr>
+  <td style="text-align:left">LogAttributeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source-specific identifier in the log attributes</td>
+</tr>
+<tr>
+  <td style="text-align:left">LogAttributes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Custom attributes associated with the Datadog log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">LogAttributeTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Source timestamp from the log attributes</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log message</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network metadata associated with the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkInterface</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">AWS network interface associated with the flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkProtocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP protocol number of the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">PacketCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of packets in the network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">Service</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application or service that generated the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status or severity associated with the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tags associated with the log event</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Action applied to the VPC network flow</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Amazon VPC flow metadata</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcIntervalEnd</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of the VPC flow interval</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcIntervalStart</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of the VPC flow interval</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the VPC flow log record</td>
+</tr>
+<tr>
+  <td style="text-align:left">VpcVersion</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Version of the VPC flow log format</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/datadog.html">Datadog</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

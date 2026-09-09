@@ -55,7 +55,11 @@ This connector ingests data into the following tables:
 
 **1. Configuration of the Cisco Cloud Security Logs Collection**
 > **NOTE:**
-> This connector has been updated to support [Cisco Cloud Security log schema version 15.](https://securitydocs.cisco.com/docs/csa/olh/121214.dita)
+> This connector has been updated to support [Cisco Cloud Security log schema version 16.](https://securitydocs.cisco.com/docs/csa/olh/121214.dita)
+> **NOTE:**
+> You must enable optional headers in the Cisco dashboard for this connector to work.
+> **NOTE:**
+> This connector supports both Cisco-managed and customer-managed Amazon S3 buckets.
 [See documentation](https://securitydocs.cisco.com/docs/csa/olh/121193.dita) and follow the instructions to set up logging and obtain the necessary credentials and information.
 Once you have set up the Cisco-managed S3 Bucket, you will be given three pieces of information: Data Path, Access Key, and Secret Key.
 > **WARNING:**

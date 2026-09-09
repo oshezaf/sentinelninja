@@ -1,0 +1,161 @@
+# CrowdStrikeHostsV2_CL
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Category** | Crowdstrike |
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
+## Schema (95 columns)
+
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection%5CData%20Connectors%5CCrowdStrikeAPI_ccp/CrowdStrikeAPI_CrowdStrikeHostsV2_table.json)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AgentLoadFlags | string | Flags indicating the load status of the CrowdStrike agent. |
+| AgentLocalTime | string | Local time of the system where the agent is installed. |
+| AgentVersion | string | Version of the installed CrowdStrike agent. |
+| BaseImageVersion | string | Version of the base operating system image. |
+| BiosManufacturer | string | Manufacturer of the system BIOS. |
+| BiosVersion | string | Version of the system BIOS. |
+| BuildNumber | string | Operating system build number. |
+| ChassisType | string | Type of system chassis (numerical identifier). |
+| ChassisTypeDesc | string | Description of the system chassis type. |
+| Cid | string | Cid the CrowdStrike platform. |
+| ConfigIdBase | string | Base configuration ID for the CrowdStrike agent. |
+| ConfigIdBuild | string | Build configuration ID for the CrowdStrike agent. |
+| ConfigIdPlatform | string | Platform-specific configuration ID for the CrowdStrike agent. |
+| ConnectionIp | string | IP address used by the host to connect to CrowdStrike cloud. |
+| ConnectionMacAddress | string | MAC address of the network interface used for CrowdStrike connection. |
+| CpuSignature | string | Unique identifier for the CPU architecture and features. |
+| CpuVendor | string | Manufacturer of the CPU. |
+| CrowdStrikeDomain | string | CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
+| DefaultGatewayIp | string | IP address of the default network gateway. |
+| DeploymentType | string | Type of CrowdStrike agent deployment on the host. |
+| DetectionSuppressionStatus | string | Status of detection suppression rules applied to the host. |
+| DeviceId | string | Unique identifier for the device in CrowdStrike platform. |
+| DevicePolicies | dynamic | List of security policies applied to the device. |
+| Email | string | Email address associated with the host or primary user. |
+| ExternalIp | string | External IP address of the host. |
+| FilesystemContainmentStatus | string | Status of filesystem containment feature for the host. |
+| FirstLoginTimestamp | string | Timestamp of the first user login on the host. |
+| FirstLoginUser | string | Username of the first user to log in on the host. |
+| FirstSeen | string | Timestamp when the host was first seen by CrowdStrike. |
+| GroupHash | string | Hash identifier for the host's group membership. |
+| Groups | dynamic | List of security groups the host belongs to. |
+| HostHiddenStatus | string | Indicates if the host is hidden from normal visibility. |
+| Hostname | string | Network hostname of the system. |
+| HostUtcOffset | string | UTC time offset for the host's timezone. |
+| InstanceId | string | Cloud instance identifier (if applicable). |
+| InternetExposure | string | Level of internet exposure for the host. |
+| K8sClusterGitVersion | string | Git version of the Kubernetes cluster deployment. |
+| K8sClusterId | string | Unique identifier for the Kubernetes cluster. |
+| K8sClusterVersion | string | Version of the Kubernetes cluster. |
+| KernelVersion | string | Version of the operating system kernel. |
+| LastLoginTimestamp | string | Timestamp of the most recent user login. |
+| LastLoginUid | string | User ID of the last user to log in. |
+| LastLoginUser | string | Username of the last user to log in. |
+| LastLoginUserSid | string | Security identifier (SID) of the last user to log in. |
+| LastReboot | string | Timestamp of the last system reboot. |
+| LastSeen | string | Timestamp when the host was last seen active by CrowdStrike. |
+| LinuxSensorMode | string | Operating mode of the CrowdStrike sensor on Linux systems. |
+| LocalIp | string | Local/Internal IP address of the host. |
+| MacAddress | string | Primary MAC address of the host. |
+| MachineDomain | string | Domain name the machine is joined to. |
+| MajorVersion | string | Major version number of the operating system. |
+| ManagedApps | dynamic | List of applications managed by CrowdStrike on the host. |
+| Meta | dynamic | Additional metadata about the host. |
+| MigrationCompletedTime | string | Timestamp when agent migration was completed. |
+| MinorVersion | string | Minor version number of the operating system. |
+| ModifiedTimestamp | string | Timestamp when the host record was last modified. |
+| Notes | dynamic | Custom notes or annotations about the host. |
+| OsBuild | string | Build number of the operating system. |
+| OsProductName | string | Product name of the operating system. |
+| OsVersion | string | Version string of the operating system. |
+| Ou | dynamic | Organizational Unit information for the host. |
+| PlatformId | string | Unique identifier for the platform type. |
+| PlatformName | string | Name of the platform. |
+| PodAnnotations | dynamic | Kubernetes pod annotations associated with the host. |
+| PodHostIp4 | string | IPv4 address of the Kubernetes pod host. |
+| PodHostIp6 | string | IPv6 address of the Kubernetes pod host. |
+| PodHostname | string | Hostname of the Kubernetes pod. |
+| PodId | string | Unique identifier for the Kubernetes pod. |
+| PodIp4 | string | IPv4 address assigned to the Kubernetes pod. |
+| PodIp6 | string | IPv6 address assigned to the Kubernetes pod. |
+| PodLabels | dynamic | Labels assigned to the Kubernetes pod. |
+| PodName | string | Name of the Kubernetes pod. |
+| PodNamespace | string | Kubernetes namespace where the pod is deployed. |
+| PodServiceAccountName | string | Name of the Kubernetes service account used by the pod. |
+| PointerSize | string | Memory pointer size of the system architecture (32/64 bit). |
+| Policies | dynamic | List of all security policies applied to the host. |
+| ProductType | string | Type of product or system (numerical identifier). |
+| ProductTypeDesc | string | Description of the product or system type. |
+| ProvisionStatus | string | Current provisioning status of the host. |
+| ReducedFunctionalityMode | string | Indicates if the host is running in reduced functionality mode. |
+| ReleaseGroup | string | Group identifier for software release management. |
+| RtrState | string | State of Real Time Response functionality. |
+| SerialNumber | string | System serial number from BIOS/hardware. |
+| ServicePackMajor | string | Major version of installed service pack. |
+| ServicePackMinor | string | Minor version of installed service pack. |
+| ServiceProvider | string | Cloud service provider hosting the system. |
+| ServiceProviderAccountId | string | Account identifier from the cloud service provider. |
+| SiteName | string | Name of the site where the host is located. |
+| SlowChangingModifiedTimestamp | string | Timestamp for slow-changing modifications to the host record. |
+| Status | string | Current operational status of the host. |
+| SystemManufacturer | string | Manufacturer of the system hardware. |
+| SystemProductName | string | Product name or model of the system. |
+| Tags | dynamic | Custom tags assigned to the host. |
+| TimeGenerated | datetime |  |
+| ZoneGroup | string | Zone group assigned to the host. |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) |  |
+
+---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrike](../parsers/crowdstrike.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

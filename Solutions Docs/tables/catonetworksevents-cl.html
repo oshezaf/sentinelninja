@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatoNetworksEventsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="catonetworksevents_cl">CatoNetworksEvents_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (399 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks%5CData%20Connectors%5CCatoNetworks_PUSH_CCP/CatoNetworks_table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">access_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">access_point_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">access_point_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">account_id</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">account_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">action</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">actions_taken</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">active_auth_browser</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">activity_resource_id</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">activity_title</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">actor_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ad_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ai_app_risk_level</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ai_proxy_rule_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ai_reason</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">alerts</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">always_on_configuration</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">analyst_verdict</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">anti_tamper_bypass_duration_sec</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">anti_tamper_bypass_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">anti_tamper_bypass_result</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">app_activity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">app_activity_category</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">app_activity_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">app_stack</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_risk</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">atp_feed_reasons</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">audit_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">auth_browser_fallback_reason</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">auth_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">authentication_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">baseline_average</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">baseline_std</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_cato_asn</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_cato_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_error_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_peer_asn</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_peer_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_peer_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_route_cidr</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bgp_suberror_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">browser_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">browser_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bypass_duration_sec</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">bypass_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">bypass_reason</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">categories</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">cato_app</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">changes</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">classification</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_cert_expires</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_cert_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_class</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_connection_mode</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_key_exchange_algorithm</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">client_vlan</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborator_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborator_origin</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborator_tenant</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborators</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">confidence_level</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">configured_auth_browser</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">configured_host_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">congestion_algorithm</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connect_on_boot</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connection_origin</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connector_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connector_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connector_status</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">connector_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">container_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">correlation_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cpu_core_id</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">created_at</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">criticality</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_category_id</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_category_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_categories</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_classifiers</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">department</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_country</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_country_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_domain</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_endpoint_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_group_id</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_group_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_is_site_or_vpn</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_pid</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_port</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_process_cmdline</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_process_parent_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_process_parent_pid</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_process_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_site_id</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">dest_site_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">detection_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">detection_stage</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">detectors</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_categories</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_certificate</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_compliance_state</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_crowdstrike_risk_score</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_manufacturer</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_model</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_os_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_posture_profile</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">device_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">directory_host_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">directory_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">directory_sync_result</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">directory_sync_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">disinfect_result</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">display_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dlp_fail_mode</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dlp_profiles</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dlp_scan_types</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dns_answer</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dns_protection_category</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dns_query</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dns_record_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dns_reply_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">domain_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">duration_ms</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">dynamic_control_ids</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dynamic_control_names</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">dynamic_control_scope</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">dynamic_control_threat_categories</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">egress_pop_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">egress_site_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">email_subject</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">engagement_outcome_action</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">engine_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">epp_engine_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">epp_profile</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_count</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_message</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_sub_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">failure_reason</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_hash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_operation</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_size</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_topic</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_topic_category</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">file_type</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">final_object_status</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">flow_id</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">flows</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">flows_cardinality</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">full_path_url</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">guard_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">guard_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">guard_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">guest_user</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">host_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">host_mac</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">http_request_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">http_response_code</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">incident_aggregation</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">incident_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">indication</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">indicator</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">initial_object_status</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">inspection_mode</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">interaction_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">interaction_intent</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">interaction_sub_topic</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">interaction_topic</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">internal_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">internalId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">investigation_time_window</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">invocation_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ip_protocol</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_acknowledged</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_admin</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_admin_activity</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_cloud_app</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_compliant</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_encrypted</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_managed</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_muted</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_public</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_sanctioned_app</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_sinkhole</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">ISP_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">job_title</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">key_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">labels</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">last_modified_at</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">last_seen_at</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">last_turn_role</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">link_health_is_congested</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">link_health_jitter</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">link_health_latency</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">link_health_pkt_loss</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">link_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">logged_in_user</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">login_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">matched_count</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">matched_counts</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">matched_data_types</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">md5</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">message_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">metric</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">metric_units</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">metric_value</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">mitre_attack_subtechniques</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">mitre_attack_tactics</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">mitre_attack_techniques</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">nat_error</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">network_access</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">network_rule</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">notification_api_error</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">notification_description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">object_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">object_module</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">object_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">object_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">office_mode</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">os_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">os_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">out_of_band_access</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">outpost_environment_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">owner</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">pac_file</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parent_connector_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">pop_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">precedence</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processes_count</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">producer</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">projects</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">prompt_action</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">provider_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">public_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">qos_priority</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">qos_reported_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">quarantine_folder_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">quarantine_uuid</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">raw_data</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">rbi_profile</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">recommended_actions</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">reference_url</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">referer_url</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">region_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">registration_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_size</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_type</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">response_size</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">retention_label</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">risk_level</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">role</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rule_expiration_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">rule_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rule_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">secondary_socket_serial</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">sensitivity_display_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_key_exchange_algorithm</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_vlan</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">service_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">session_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">severity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">sharing_scope</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">sign_in_event_types</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">signal_source</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">signature_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">site_web_proxy_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">site_web_proxy_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">site_web_proxy_rule_action</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">site_web_proxy_rule_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">site_web_proxy_rule_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_interface</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_interface_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_mac_address</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_new_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_old_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_reset</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_role</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_serial</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">socket_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">split_tunnel_configuration</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_city</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_country</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_country_code</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_endpoint_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_is_site_or_vpn</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_isp_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_pid</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_port</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_process_cmdline</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_process_parent_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_process_parent_pid</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_process_path</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_site_connection_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_site_id</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">src_site_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">static_host</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">status</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">story_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">subnet_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">subscription_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">targets_cardinality</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">tcp_acceleration</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">tenant_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tenant_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tenant_restriction_rule_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_confidence</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_reference</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_score</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_verdict</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">throttled_event_aggregation_start_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">throttled_event_sub_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ticket</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">time_str</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_certificate_error</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_error_description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_error_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_inspection</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_rule_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tls_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">total_tokens</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">traffic_direction</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">transaction_size</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">translated_client_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">translated_server_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">trigger</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">trust_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">trusted_networks</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tunnel_ip_protocol</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tunnel_protocol</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">upgrade_end_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">upgrade_initiated_by</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">upgrade_start_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">url</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_agent</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_awareness_method</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_id</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_justification</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_origin</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_reference_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_risk_level</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_collaborator_id</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_device_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_device_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_event_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_location</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_org_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_policy_description</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_policy_id</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_policy_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_site_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_start_time</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_user_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vendor_version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">verdict_elaboration</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">visible_device_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vpn_lan_access</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vpn_user_email</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_authentication_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_bssid</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_channel</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_event_reason_code</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_event_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_event_type_code</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_event_vendor_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_protocol</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_radio_band</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_security</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_signal_strength</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_ssid</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">wifi_time_since_assoc_ms</td>
+  <td style="text-align:left">long</td>
+</tr>
+<tr>
+  <td style="text-align:left">windows_domain_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">xff</td>
+  <td style="text-align:left">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/catonetworks.html">CatoNetworks</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/catonetworkseventspush.html">Cato Networks Events (Push)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

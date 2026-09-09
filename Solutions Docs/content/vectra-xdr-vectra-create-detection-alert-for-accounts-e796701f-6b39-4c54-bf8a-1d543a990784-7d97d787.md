@@ -21,6 +21,8 @@ This analytic rule is looking for new attacker behaviors observed by the Vectra 
 | **Required Connectors** | [VectraXDR](../connectors/vectraxdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Analytic%20Rules/Detection_Account.yaml) |
 
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 ## Tables Used
 
 This content item queries data from the following tables:

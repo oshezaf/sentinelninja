@@ -18,6 +18,12 @@ Account information from various sources, including Microsoft Entra ID. This tab
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (52 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityaccountinfo)
@@ -85,6 +91,16 @@ Official Microsoft Learn documentation for field/column information:
 - [IdentityAccountInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityaccountinfo-table)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ---
 

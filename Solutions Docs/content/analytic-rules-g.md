@@ -1,6 +1,6 @@
 # Analytic Rules - G
 
-**133 analytic rules** starting with 'G'.
+**137 analytic rules** starting with 'G'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -100,11 +100,15 @@
 | [GSA - TI Domain Entity](global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI IP Entity](global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI URL Entity](global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
+| [GTI - Actively Exploited Vulnerability Detected](google-threat-intelligence-gti-actively-exploited-vulnerability-detected-4d284d59-1ce5-4ea7-8e97-52256b95aa10-94bf90c8.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - CISA Known Exploited Vulnerability Detected](google-threat-intelligence-gti-cisa-known-exploited-vulnerability-detected-650429cd-afc6-41a5-90e7-6e4a85b2335d-fc7f9c79.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - Critical CVSS Score Vulnerability Detected](google-threat-intelligence-gti-critical-cvss-score-vulnerability-detected-3794141b-9bd3-41ae-8303-79f97692998b-97483940.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI - Data Leak Alert Detected](google-threat-intelligence-gti-data-leak-alert-detected-d4e5f6a7-b8c9-0123-defa-234567890124-c47c0531.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI - High and Critical Priority Alerts](google-threat-intelligence-gti-high-and-critical-priority-alerts-b2c3d4e5-f6a7-8901-bcde-f12345678902-eac20a8f.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI - High Relevance Alert Detected](google-threat-intelligence-gti-high-relevance-alert-detected-f6a7b8c9-d0e1-2345-fabc-456789012345-8fc2e3f3.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI - Initial Access Broker Alert Detected](google-threat-intelligence-gti-initial-access-broker-alert-detected-c3d4e5f6-a7b8-9012-cdef-123456789013-8ea823e9.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI - Insider Threat Alert Detected](google-threat-intelligence-gti-insider-threat-alert-detected-e5f6a7b8-c9d0-1234-efab-345678901234-1ae6bfc8.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GTI - Zero-Day Vulnerability Detected](google-threat-intelligence-gti-zero-day-vulnerability-detected-ebd03de8-0cee-4923-b510-45337e0aed84-9ad9b257.md) | High | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GTI Relevance System Alert - Incident by Alert ID](google-threat-intelligence-gti-relevance-system-alert-incident-by-alert-id-a1b2c3d4-e5f6-7890-abcd-ef1234567891-4ca388b2.md) | Medium | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Guardian- Additional check JSON Policy Violation Detection](aishield-ai-security-monitoring-guardian-additional-check-json-policy-violation-detection-9ff28525-3c6f-47ba-806b-ffd913406989-011e6a7c.md) | Informational | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [Guardian- Ban Topic Policy Violation Detection](aishield-ai-security-monitoring-guardian-ban-topic-policy-violation-detection-97a76b2d-02ea-4ae5-b0c4-79e834036481-104a0831.md) | Medium | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |

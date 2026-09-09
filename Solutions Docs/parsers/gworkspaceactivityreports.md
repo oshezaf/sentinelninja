@@ -13,8 +13,8 @@
 | Title | Parser for GWorkspaceActivityReports |
 | Location | Solution |
 | Solution | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-09-04 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports/Parsers/GWorkspaceActivityReports.yaml) |
@@ -46,6 +46,7 @@ This parser reads from the following tables:
 | [`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) 🔶 | ? | ✓ | ? |
 | [`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) 🔶 | ? | ✓ | ? |
 | [`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) 🔶 | ? | ✓ | ? |
+| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✓ | ✓ |
 | [`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

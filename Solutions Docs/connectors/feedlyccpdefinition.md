@@ -18,18 +18,17 @@
 | **DCR Definition Files** | [Feedly_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_CCF/Feedly_DCR.json) |
 | **CCF Configuration** | [Feedly_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_CCF/Feedly_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#feedly-ioc) |
 
-The [Feedly](https://feedly.com/) IoC data connector provides the capability to ingest Indicators of Compromise (IoCs) from Feedly API into Microsoft Sentinel.
+The [Feedly](https://feedly.com/) IoC data connector ingests Indicators of Compromise from the Feedly API into the native [ThreatIntelIndicators](https://learn.microsoft.com/azure/azure-monitor/reference/tables/threatintelindicators) table in Microsoft Sentinel. Indicators are tagged with `SourceSystem == "Feedly"` so they participate in Microsoft Sentinel threat-intelligence matching, analytics, and hunting the same way as other TIP integrations (for example Recorded Future via the Upload Indicators API).
 
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` | ✓ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -48,7 +47,8 @@ This connector ingests data into the following tables:
 **1. Connect to Feedly to start collecting IoCs in Microsoft Sentinel**
 
 1) Go to https://feedly.com/i/team/api and generate a new API token for the connector.
-2) In Sentinel, in the connector page - provide your Feedly API Key and Stream IDs. Then click "Connect".
+2) In Microsoft Sentinel, provide your Feedly API Key and Stream IDs, then click Connect.
+3) Indicators are written to the native ThreatIntelIndicators table with SourceSystem Feedly. Query them with: ThreatIntelIndicators | where SourceSystem == "Feedly"
 - **Feedly API Key**: (password field)
 - **Feedly Stream IDs**: streamId1,streamId2,streamId3
 - Click 'Connect' to establish connection

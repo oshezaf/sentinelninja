@@ -47,7 +47,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (61 columns)</h2>
+<h2 id="schema">Schema (57 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/datasecurityevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -94,11 +94,6 @@
   <td style="text-align:left">Details of the Communications Compliance policy matches for this event; in JSON array format</td>
 </tr>
 <tr>
-  <td style="text-align:left">CloudAppAlertId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the alert in Microsoft Defender for Cloud Apps</td>
-</tr>
-<tr>
   <td style="text-align:left">Department</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Name of the department that the account user belongs to</td>
@@ -116,7 +111,7 @@
 <tr>
   <td style="text-align:left">DeviceName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Fully qualified domain name(FQDN) of the device</td>
+  <td style="text-align:left">Fully qualified domain name (FQDN) of the device</td>
 </tr>
 <tr>
   <td style="text-align:left">DeviceSourceLocationType</td>
@@ -136,17 +131,7 @@
 <tr>
   <td style="text-align:left">DlpPolicyRuleMatchInfo</td>
   <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Details of the data loss prevention (DLP)  rules that matched with this event; in JSON array format</td>
-</tr>
-<tr>
-  <td style="text-align:left">EmailAttachmentCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of email attachments</td>
-</tr>
-<tr>
-  <td style="text-align:left">EmailAttachmentInfo</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Details of email attachments; in JSON array format</td>
+  <td style="text-align:left">Details of the data loss prevention (DLP) rules that matched with this event; in JSON array format</td>
 </tr>
 <tr>
   <td style="text-align:left">EmailSubject</td>
@@ -229,6 +214,11 @@
   <td style="text-align:left">Unique identifier for the physical access point</td>
 </tr>
 <tr>
+  <td style="text-align:left">PhysicalAccessPointInfo</td>
+  <td style="text-align:left">object</td>
+  <td style="text-align:left">Information about the physical access in the event, including the physical access point's unique identifier, name, status, and the tag assigned to the asset</td>
+</tr>
+<tr>
   <td style="text-align:left">PhysicalAccessPointName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Name of the physical access point</td>
@@ -259,6 +249,11 @@
   <td style="text-align:left">Email address of the recipient, or email address of the recipient after distribution list expansion</td>
 </tr>
 <tr>
+  <td style="text-align:left">RemovableMediaInfo</td>
+  <td style="text-align:left">object</td>
+  <td style="text-align:left">List of any removable media involved in the behavior, including the serial number of the removable media device, the manufacturer of the removable media device, and the model of the removable device</td>
+</tr>
+<tr>
   <td style="text-align:left">RemovableMediaManufacturer</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Manufacturer name of the removable device</td>
@@ -272,6 +267,21 @@
   <td style="text-align:left">RemovableMediaSerialNumber</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Serial number of the removable device</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskyAIUsageAccessedResourceInfo</td>
+  <td style="text-align:left">object</td>
+  <td style="text-align:left">Details of the resources accessed or referenced by the application involved in the risky AI usage event</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskyAIUsageAppCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details of the category of the application involved in the risky AI usage event</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskyAIUsageSensitivityLabelsInfo</td>
+  <td style="text-align:left">object</td>
+  <td style="text-align:left">Information regarding the sensitivity labels of entities involved in the risky AI usage event</td>
 </tr>
 <tr>
   <td style="text-align:left">SensitiveInfoTypeInfo</td>
@@ -309,21 +319,6 @@
   <td style="text-align:left">The URL of the folder that contains the file accessed by the user</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceUrlDomain</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Domain where the device and email signals originated</td>
-</tr>
-<tr>
-  <td style="text-align:left">TargetFilePath</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Target file path of endpoint activities</td>
-</tr>
-<tr>
-  <td style="text-align:left">TargetUrlDomain</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Domain where the content was shared with or the user has browsed to</td>
-</tr>
-<tr>
   <td style="text-align:left">TeamsChannelName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Name of the Teams channel</td>
@@ -344,24 +339,9 @@
   <td style="text-align:left">Date and time when the event was recorded</td>
 </tr>
 <tr>
-  <td style="text-align:left">UnallowedUrlDomains</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Websites or service URLs involved in this event that is configured as Unallowed in Insider Risk Management global settings</td>
-</tr>
-<tr>
-  <td style="text-align:left">UrlDomainInfo</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details about the websites or service URLs involved in the event</td>
-</tr>
-<tr>
   <td style="text-align:left">UserAlternateEmails</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Alternate emails or aliases of the user</td>
-</tr>
-<tr>
-  <td style="text-align:left">Workload</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Microsoft 365 service where the event occurred</td>
 </tr>
 </tbody>
 </table>

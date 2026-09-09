@@ -18,7 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`DuoActivity_CL`](../tables/duoactivity-cl.md) | ? | ✓ | ? |
+| [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) | ? | ✓ | ? |
+| [`DuoTelephony_CL`](../tables/duotelephony-cl.md) | ? | ✓ | ? |
 
 ---
 

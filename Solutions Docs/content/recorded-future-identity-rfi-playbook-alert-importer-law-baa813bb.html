@@ -67,22 +67,22 @@
   <td style="text-align:center">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
   <td style="text-align:left">Managed</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../logic-apps/custom-rfi-customconnector-0-2-0.html"><code>RFI-CustomConnector-0-2-0</code></a></td>
   <td style="text-align:left">Custom</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">4</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
@@ -132,50 +132,6 @@
 </tr>
 </tbody>
 </table>
-<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Create_table_if_missing</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Check_if_table_exists</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/queryDataV2</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
 <h4 id="rfi-customconnector-0-2-0"><a href="../logic-apps/custom-rfi-customconnector-0-2-0.html"><code>RFI-CustomConnector-0-2-0</code></a> (Custom)</h4>
 <table>
 <thead>
@@ -200,12 +156,6 @@
   <td style="text-align:left">—</td>
 </tr>
 <tr>
-  <td style="text-align:left">Playbook_Alerts_-_Update_Playbook_Alert-_If_user_found</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/playbook-alerts/update</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
   <td style="text-align:left">Playbook_Alerts_-<em>Update_Playbook_Alert</em>-_If_user_not_found</td>
   <td style="text-align:left">put</td>
   <td style="text-align:left"><code>/playbook-alerts/update</code></td>
@@ -215,6 +165,25 @@
   <td style="text-align:left">Playbook_Alerts_-_Search_for_novel_identity_exposures</td>
   <td style="text-align:left">post</td>
   <td style="text-align:left"><code>/playbook-alerts/search</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrImmutableId')}/streams/@{parameters('StreamName')}?api-version=2023-01-01</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>

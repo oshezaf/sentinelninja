@@ -1,4 +1,6 @@
-# Dynatrace Audit Logs V1
+# 🚫 [Deprecated] Dynatrace Audit Logs V1
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="" width="75" height="75">
 
@@ -20,6 +22,10 @@
 
 This connector uses the [Dynatrace Audit Logs REST API](https://docs.dynatrace.com/docs/dynatrace-api/environment-api/audit-logs) to ingest tenant audit logs into Microsoft Sentinel Log Analytics
 
+
+
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: This connector is deprecated and will be removed in a future version. Please use the <b>Dynatrace Audit Logs V2</b> connector instead.</p>
+
 ## Tables Ingested
 
 This connector ingests data into the following tables:
@@ -27,6 +33,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

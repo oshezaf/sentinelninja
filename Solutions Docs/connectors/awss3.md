@@ -25,7 +25,7 @@ This connector allows you to ingest AWS service logs, collected in AWS S3 bucket
 
 * AWS GuardDuty
 
-* AWSCloudWatch
+* AWS CloudWatch
 
 
 

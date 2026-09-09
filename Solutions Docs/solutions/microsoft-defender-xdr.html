@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.16</td>
+  <td style="text-align:left">3.0.18</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-12</td>
+  <td style="text-align:left">2026-09-07</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -91,7 +91,7 @@
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>28 table(s)</strong>:</p>
+<p>This solution uses <strong>29 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -202,6 +202,11 @@
   <td>Hunting</td>
 </tr>
 <tr>
+  <td><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+  <td>-</td>
+  <td>Hunting, Workbooks</td>
+</tr>
+<tr>
   <td><a href="../tables/identitydirectoryevents.html"><code>IdentityDirectoryEvents</code></a></td>
   <td><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
   <td>Hunting, Workbooks</td>
@@ -219,17 +224,17 @@
 <tr>
   <td><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
   <td>-</td>
-  <td>Hunting</td>
+  <td>Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/messagepostdeliveryevents.html"><code>MessagePostDeliveryEvents</code></a></td>
   <td>-</td>
-  <td>Hunting</td>
+  <td>Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
   <td>-</td>
-  <td>Hunting</td>
+  <td>Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
@@ -282,7 +287,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>377 content item(s)</strong> (374 in solution, 3 discovered 🔍):</p>
+<p>This solution includes <strong>449 content item(s)</strong> (431 in solution, 18 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -295,9 +300,9 @@
 <tbody>
 <tr>
   <td style="text-align:left">Hunting Queries</td>
-  <td style="text-align:right">333</td>
-  <td style="text-align:right">331</td>
-  <td style="text-align:right">2</td>
+  <td style="text-align:right">405</td>
+  <td style="text-align:right">388</td>
+  <td style="text-align:right">17</td>
 </tr>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
@@ -688,9 +693,34 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-investigation-outcomes-by-day-8c86aaf1-46c1-4eee-8953-60f163e83253-e79d9423.html">Automated Investigation Outcomes by Day</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a><br><em>Internal use:</em><br><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-remediation-delivery-to-action-latency-3027abf0-a965-42bd-babe-79f34bbd9e7a-300c89ab.html">Automated Remediation Delivery to Action Latency</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-remediation-efficiency-over-time-ca968fd4-2778-4bca-9da3-2dd1f1b38746-6c84cc07.html">Automated Remediation Efficiency Over Time</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-remediation-manual-versus-automatic-approval-2a3fe5b0-9a99-467a-b5f9-57825530b22b-56951449.html">Automated Remediation Manual versus Automatic Approval</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.html">Automated email notifications and suspicious sign-in activity</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-cb7629af-4872-427a-9042-ce848c2f49e7-1444eb9c.html">Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.html">BEC - File sharing tactics - Dropbox</a></td>
@@ -714,6 +744,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-f9fdc910.html">Blocked Clicks Trend</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-blocked-url-clicks-by-workload-22811654-25ac-43d6-ba63-699ec29dd6af-804a4494.html">Blocked URL Clicks by Workload</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
 </tr>
@@ -831,6 +866,11 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-detect-suspicious-mshta-usage-81f02314-2ff5-45cb-a35d-0deb546a0104-6bc93255.html">Detect Suspicious Mshta Usage</a></td>
   <td style="text-align:left">Execution</td>
   <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-detect-teams-it-helpdesk-impersonation-msg-phishing-&amp;-vishing-7c4dad1a-ac02-476b-898d-192d8ef20afb-dc496711.html">Detect Teams IT Helpdesk Impersonation Msg Phishing &amp; Vishing</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-detections-by-detection-methods-1c51e10e-7f77-40bc-bd37-6aa55cdf94d6-21b75b24.html">Detections by detection methods</a></td>
@@ -968,6 +1008,11 @@
   <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-external-microsoft-teams-sender-domain-risk-4f859dbb-68cf-48d3-812b-7dd19f11e495-4ba4ef5a.html">External Microsoft Teams Sender Domain Risk</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-external-malicious-teams-messages-sent-from-internal-senders-9cb4a6eb-c7ae-44ac-b12b-c16ec63da385-04ef94f1.html">External malicious Teams messages sent from internal senders</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
@@ -976,6 +1021,31 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detections-over-time-sharepoint,-onedrive-and-teams-5dcb4965-db9c-4fee-a7b1-c178998ce5e8-59e67e97.html">File Malware Detections Over Time (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detections-by-location-sharepoint,-onedrive-and-teams-f72e4cc0-1cb9-413a-8f56-f0363c205d1c-d5b90258.html">File Malware Detections by Location (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detections-by-workload-sharepoint,-onedrive-and-teams-6f0595a9-724e-4b19-8a9c-8a50d0ac2eef-8510c840.html">File Malware Detections by Workload (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-top-families-by-microsoft-defender-detonation-sharepoint,-onedrive-a-2c96d709-274b-45b8-b53a-545124ac8d8a-9f819c41.html">File Malware Top Families by Microsoft Defender Detonation (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-top-families-by-sharepoint-antivirus-sharepoint,-onedrive-and-teams-57d825ee-1546-48af-b2d3-644731d21ad3-4c73c23b.html">File Malware Top Families by SharePoint Antivirus (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.html">File Malware by Top Malware Families (Anti Virus)</a></td>
@@ -988,6 +1058,11 @@
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-scanning-coverage-sharepoint,-onedrive-and-teams-f9caad74-cd5a-4559-949a-6cd0f3376ff6-35225b40.html">File Scanning Coverage (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.html">Files Copied to USB Drives</a></td>
   <td style="text-align:left">Exfiltration</td>
   <td style="text-align:left"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a><br><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
@@ -996,6 +1071,16 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.html">Files share contents and suspicious sign-in activity</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-first-contact-external-email-senders-6ad2dbb3-40de-4e39-a3b0-5c8be4e37b7b-90de2f63.html">First-Contact External Email Senders</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-first-contact-external-teams-senders-3c9780f9-1784-48b3-b82e-d1e334c08ed2-a20b6816.html">First-Contact External Teams Senders</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.html">Good emails from senders with bad patterns</a></td>
@@ -1093,6 +1178,16 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-impersonation-and-spoof-detections-by-sender-country-04f08949-c44a-4c02-9d3c-ba40186ea6b2-e33aeb7c.html">Impersonation and Spoof Detections by Sender Country</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbound-sender-domains-failing-email-authentication-80067390-3954-4276-bbca-8d4be1df0591-11e13d6f.html">Inbound Sender Domains Failing Email Authentication</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbound-teams-messages-by-sender-domains-f304b75a-a2a0-45fb-814c-40b6e08211f0-46960408.html">Inbound Teams messages by sender domains</a></td>
   <td style="text-align:left">DefenseEvasion</td>
   <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
@@ -1133,6 +1228,11 @@
   <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-largest-malicious-email-campaigns-by-cluster-a92a3921-1a71-4a4d-8382-873b689ff7d8-e7aa84b7.html">Largest Malicious Email Campaigns by Cluster</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-lemonduck-registration-function-147c4c0a-7241-4ce9-9b71-0aecb8a2b59f-ddd37db7.html">LemonDuck Registration Function</a></td>
   <td style="text-align:left">Execution, Persistence, LateralMovement, CommandAndControl</td>
   <td style="text-align:left"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
@@ -1151,6 +1251,11 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-local-time-to-utc-time-conversion-712ffdd8-ddce-4372-85dd-063029b418cf-7ff7492c.html">Local time to UTC time conversion</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-low-reputation-url-domains-shared-in-microsoft-teams-d917a922-45ea-46df-a186-5ecc1772644d-c27e2ec4.html">Low-Reputation URL Domains Shared in Microsoft Teams</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
@@ -1213,6 +1318,11 @@
   <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.html">Malicious Email Campaigns by Recipient URL Clicks</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-bb5decee.html">Malicious Emails with QR code Urls</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
@@ -1248,7 +1358,17 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-files-shared-in-microsoft-teams-b2ec7e00-f8a5-450a-81d9-ddb884162595-85958595.html">Malicious files shared in Microsoft Teams</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-mails-by-sender-ips-a8ccbf35-4c6d-4a8f-8c42-04fd9b000a27-b1c02a72.html">Malicious mails by sender IPs</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detection-ip-and-geo-position-b232adb3-059b-4351-9e4b-78a3c15175e5-89c0653d.html">Malware Detection IP and Geo Position</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
@@ -1268,7 +1388,22 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-sender-country-eee98563-fd77-4d6a-a1aa-e0e4952b5cf3-493fdaec.html">Malware Detections by Sender Country</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-threat-classification-f9ec4d6a-4112-4f4a-bbe9-71eb6f65ce3d-49b16805.html">Malware Detections by Threat Classification</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-delivery-location-b3a4b803-06f6-46d8-9220-b3a53e85ce4f-d52dc5b0.html">Malware Detections by delivery location</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-url-detections-trend-effba60e-0a4a-4558-bbf6-4e099607d82e-fc497634.html">Malware URL Detections Trend</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
@@ -1293,6 +1428,31 @@
   <td style="text-align:left"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-call-and-message-submissions-over-time-ef13dc37-6205-4cea-b969-2b6e0d8ab509-700dac99.html">Microsoft Teams Call and Message Submissions Over Time</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-calls-and-impersonation-style-calls-by-hour-of-day-55e28f8e-cc6d-4cc9-af24-398a6e2a721d-0ccfd1ef.html">Microsoft Teams Calls and Impersonation-Style Calls by Hour of Day</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-external-versus-internal-thread-exposure-9ddbd09d-6119-4e78-bf15-911c4113d608-4d05ab15.html">Microsoft Teams External versus Internal Thread Exposure</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-impersonation-identities-by-fake-display-name-7614cfa2-0fa4-446c-9f03-f0980d67ee20-ff94d9e6.html">Microsoft Teams Impersonation Identities by Fake Display Name</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-senders-triggering-url-safety-tips-23a9ae26-cede-4e3b-8cf0-0d0da7a6930a-bb725a0c.html">Microsoft Teams Senders Triggering URL Safety Tips</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310-2a289095.html">Microsoft Teams chat initiated by a suspicious external user</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/alertinfo.html"><code>AlertInfo</code></a></td>
@@ -1301,6 +1461,11 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.html">MosaicLoader</a></td>
   <td style="text-align:left">CommandAndControl</td>
   <td style="text-align:left"><a href="../tables/deviceregistryevents.html"><code>DeviceRegistryEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-new-external-sender-domains-carrying-threats-41614487-ccca-458e-81eb-dffbeba0b703-c952afbd.html">New External Sender Domains Carrying Threats</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-979994c7.html">New TABL Items</a></td>
@@ -1333,6 +1498,11 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detection-ip-and-geo-position-22dd5345-f620-41b2-b319-a1b3cfa9cb8e-8614738a.html">Phish Detection IP and Geo Position</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-high-by-delivery-location-76c77c8a-bd2a-489a-af52-97291211e4e4-3e94b5c1.html">Phish Detections (High) by delivery location</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
@@ -1358,7 +1528,27 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-sender-country-7d041b6d-973b-48aa-886d-d234047511f2-6f48091d.html">Phish Detections by Sender Country</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-threat-classification-b54359db-ca8c-4a11-98b7-0f320b870cbd-abba028e.html">Phish Detections by Threat Classification</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-delivery-location-trend-b20e56b8-e335-43d9-b7b3-43c034c43aea-304b06c0.html">Phish Detections by delivery location trend</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phishing-detected-by-llm-content-analysis-945a8419-d3ec-41ba-a4b3-c37303bd9458-1ac856d6.html">Phishing Detected by LLM Content Analysis</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phishing-url-detections-trend-4bce2a7c-31fb-46e9-8487-ce611bd98004-078f5796.html">Phishing URL Detections Trend</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
@@ -1443,6 +1633,11 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-qr-code-url-detections-trend-88035c0e-0e2d-4805-a249-34d54a88c3fe-2b93ffea.html">QR Code URL Detections Trend</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-63ecff0f-3a86-468b-8c9e-a7a88fe33ebb-060f18ee.html">Qakbot Campaign Self Deletion</a></td>
   <td style="text-align:left">DefenseEvasion</td>
   <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
@@ -1458,6 +1653,11 @@
   <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-malware-reason-c38282e0-5748-467d-95fc-4202b904dbc7-ecc42b9f.html">Quarantine Malware Reason</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-phish-reason-36cf7ce5-7264-46d9-9f47-57b59049b44f-2c7a4748.html">Quarantine Phish Reason</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
@@ -1471,6 +1671,11 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.html">Quarantine Release Email Details</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-percentage-60cf8dc6-b3f7-4bd9-b877-3ed9c9443750-f3d8d2ab.html">Quarantine Release Percentage</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-spam-reason-bde9d9fc-e166-4628-91f7-fb86ace93af0-47e9e0b8.html">Quarantine Spam Reason</a></td>
@@ -1523,6 +1728,11 @@
   <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-reported-microsoft-teams-calls-225da6aa-6b34-448d-ab0b-72219d52bd44-184ac4aa.html">Reported Microsoft Teams Calls</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-e5e2a978.html">Risky sign-in attempt from a non-managed device</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/entraidsigninevents.html"><code>EntraIdSignInEvents</code></a></td>
@@ -1558,6 +1768,16 @@
   <td style="text-align:left"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-secops-mailbox-override-count-293d6bbe-97b6-458e-8670-929e9f1756d2-bb02a216.html">SecOps Mailbox Override Count</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-secops-mailbox-overrides-by-threat-type-b5ac7138-d807-450e-9f67-dbdac948f651-abebfb90.html">SecOps Mailbox Overrides by Threat Type</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-sender-recipient-contact-establishment-b2beec6a-2c1c-4319-a191-e70c2ee42857-9e7a5fbe.html">Sender recipient contact establishment</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
@@ -1589,6 +1809,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detections-by-detection-technology-16cfa413-238f-4355-9f8a-4b97ce7572ac-c675f0ec.html">Spam Detections by Detection technology</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detections-by-sender-country-fd9d2289-a2c3-4634-8a87-abe4a7db896f-72c94991.html">Spam Detections by Sender Country</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
@@ -1683,6 +1908,16 @@
   <td style="text-align:left"><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-microsoft-teams-callers-by-impersonation-style-identity-37f3d0f5-8ac3-46a3-9b27-a4fd082b6348-8657cfbc.html">Suspicious Microsoft Teams Callers by Impersonation-Style Identity</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-a0443864-5206-4030-9eb0-a70a7718dbb0-c6ff5a77.html">Suspicious Microsoft Teams Sender Domains Without a Threat Verdict</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.html">Suspicious Spoolsv Child Process</a></td>
   <td style="text-align:left">PrivilegeEscalation, Execution</td>
   <td style="text-align:left"><a href="../tables/deviceimageloadevents.html"><code>DeviceImageLoadEvents</code></a></td>
@@ -1716,6 +1951,11 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-user-submissions-grading-verdicts-20c9d89a-ad65-48f4-ba14-605715af640a-11968695.html">Teams Admin-User Submissions Grading Verdicts</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-file-protection-summary-1be71088-f71c-43cc-9adc-9e5fd7a3a8c4-5ba280b0.html">Teams File Protection Summary</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-malware-zap-4684afc7-3d05-4ec1-8fb0-342707d0ac5d-cc928c54.html">Teams Malware ZAP</a></td>
@@ -1885,7 +2125,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fp-4c786e9a-b570-47bc-877f-7f3da87a4673-70144cae.html">Top 10 sender domains - Admin email submissions (FP)</a></td>
@@ -1928,8 +2168,38 @@
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-20-malicious-urls-by-clicks-13e20569-a96c-48c4-b0d7-3c2058d24245-81e3a858.html">Top 20 Malicious URLs by Clicks</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-attacked-users-by-malware-threat-classification-a52f16af-5632-420d-ae90-b1b8bd742af0-2b96c5bd.html">Top Attacked Users by Malware Threat Classification</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-attacked-users-by-phish-threat-classification-ccaec93a-7231-4483-9d36-78106f0a8a1a-c91a0add.html">Top Attacked Users by Phish Threat Classification</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-clicks-on-malicious-urls-d31069b5-44a5-4a5d-96fa-68db27074023-defdb46e.html">Top Clicks on Malicious URLs</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-f9442d20-eff8-4751-9a75-6451aeace687-a1d5fba8.html">Top Domains Outbound with Emails with Threats Inbound (Partner BEC)</a></td>
   <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-external-domains-receiving-auto-forwarded-email-mailbox-rule-and-smtp-370583ef-40d1-4d8e-a2e2-16095704f357-060fab5e.html">Top External Domains Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-external-recipients-receiving-auto-forwarded-email-mailbox-rule-and-smtp-01d676ef-29fb-4974-9db1-763660d577fa-72a0a00a.html">Top External Recipients Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
@@ -1953,7 +2223,42 @@
   <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-file-owners-holding-malware-sharepoint,-onedrive-and-teams-c8b12c34-4571-4d37-ae85-fafb02f8bc24-1bea7010.html">Top File Owners Holding Malware (SharePoint, OneDrive and Teams)</a></td>
+  <td style="text-align:left">InitialAccess, LateralMovement</td>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-internal-users-auto-forwarding-email-externally-mailbox-rule-and-smtp-7d5d4ac0-e3db-4ddc-9fd3-9894c7de2c5c-302a522a.html">Top Internal Users Auto-forwarding Email Externally (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left">Collection, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-malware-families-0d16e85e-82ec-460a-bf48-e90164464f7c-4786cd56.html">Top Malware Families</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-microsoft-teams-senders-removed-by-zero-hour-auto-purge-2f28771a-8849-4172-a6d0-1398e902b2d7-82c0b6f3.html">Top Microsoft Teams Senders Removed by Zero-Hour Auto Purge</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messagepostdeliveryevents.html"><code>MessagePostDeliveryEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-recipients-receiving-threats-delivered-by-override-95f7ab0b-3025-487e-9523-1b68152f4b91-602a088d.html">Top Recipients Receiving Threats Delivered by Override</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-recipients-targeted-by-impersonation-or-bec-14d4474b-10d0-4d03-9938-98c8ef92f15a-104e9929.html">Top Recipients Targeted by Impersonation or BEC</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-reporters-of-microsoft-teams-calls-and-messages-2324aae0-6628-4842-aa36-ae5bf13f3400-f503aebc.html">Top Reporters of Microsoft Teams Calls and Messages</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-sender-domains-delivering-threats-via-override-d3427b51-d7b9-4610-a871-5738e59cfa93-e1c0f5fa.html">Top Sender Domains Delivering Threats via Override</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
@@ -2004,6 +2309,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.html">Top accounts performing user submissions</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-fp-2bf1fded-7eb8-4cff-9e1d-efd204cac3f6-2a2f1b21.html">Top accounts performing user submissions (FP)</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
@@ -2093,9 +2403,24 @@
   <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-click-through-by-workload-07e1f2f5-3662-4e8b-8f52-5273d220976b-6c706bb4.html">URL Click-Through by Workload</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-clicks-by-action-4620ece3-dceb-4151-8621-5a56351c97cd-71c178c3.html">URL Clicks by Action</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-domains-triggering-microsoft-teams-safety-tips-cbe5f6bc-bf97-434d-a12b-6f137a7effb1-ccda78ee.html">URL Domains Triggering Microsoft Teams Safety Tips</a> ⚠️</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-threat-protection-summary-a0d5391b-a44c-433c-8e08-7137f6e4a23c-5ead00e4.html">URL Threat Protection Summary</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-click-count-by-click-action-3f007cdc-86bf-4657-9015-05101a3e54f5-9ff7257a.html">URL click count by click action</a></td>
@@ -2134,6 +2459,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.html">User Email Submission Trend (FN)</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fp-97f0d020-be70-4732-b5d7-abcfeecc459c-9d7646cc.html">User Email Submission Trend (FP)</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
@@ -2178,12 +2508,47 @@
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-p2-senders-37511ce4-f88e-4e2d-b505-27411af1a226-60212493.html">User Email Submissions (FP) - Top Inbound P2 Senders</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-subjects-3f252bcb-71a8-4c04-bed9-4dd53419ecb6-bb2077e5.html">User Email Submissions (FP) - Top Inbound Subjects</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-intra-org-p2-senders-6b26701a-a1c7-4782-a662-f44cdca5bb5f-ab52681b.html">User Email Submissions (FP) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-p2-sender-domains-97f19cad-130a-47b3-a3bb-cbc2e66845f0-45db855d.html">User Email Submissions (FP) - Top P2 Sender Domains</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.html">User Email Submissions accuracy vs Admin review verdict</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-phish-fp-4ae87c11-4030-42cb-b87d-993198ca40e0-e1152402.html">User Submissions by Detection Method - Phish (FP)</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-spam-fp-05d933db-f605-48d5-a177-af64be537cf4-20a4c5b9.html">User Submissions by Detection Method - Spam (FP)</a></td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-submission-state-fp-2f8a0226-b3f3-4a31-b32b-2dd15d644625-77c67bc7.html">User Submissions by Submission State (FP)</a></td>
   <td style="text-align:left">InitialAccess</td>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
@@ -2268,7 +2633,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
-  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a><br><em>Internal use:</em><br><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a><br><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a><br><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a><br><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><a href="../tables/messagepostdeliveryevents.html"><code>MessagePostDeliveryEvents</code></a><br><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a><br><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a><br><em>Internal use:</em><br><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -2302,6 +2667,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.18</td>
+  <td>03-09-2026</td>
+  <td>Added 57 new <strong>Hunting Queries</strong> for Microsoft Defender for Office 365 email and collaboration protection. Updated the <strong>Workbook</strong> Microsoft Defender for Office 365 Detections and Insights to version 4.0.0, adding Microsoft Teams collaboration and file malware coverage, and additional Advanced Hunting data types.</td>
+</tr>
+<tr>
+  <td>3.0.17</td>
+  <td>12-08-2026</td>
+  <td>Updated <strong>Analytic Rule</strong> AnomalousVoulmeOfFileDeletion.yaml to add <code>AzureActiveDirectory</code> connector with <code>SigninLogs</code> data type. Fixed deploy button URLs in <strong>Playbook</strong> AttackSimulatorTrainingNonReporters readme to include the correct 'master' branch path.</td>
+</tr>
 <tr>
   <td>3.0.16</td>
   <td>12-08-2026</td>

@@ -36,9 +36,9 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | AdditionalInformation | string | Contains AffectedEntities, MessageCode and entityCount. |
 | Audience | string | The audience for which the accessToken was requested for. |
 | CallerIPAddress | string | Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
-| CallerObjectId | string | Azure Active Directory ObjectId of the caller. |
+| CallerObjectId | string | Microsoft Entra ID ObjectId of the caller. |
 | Category | string | Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational. |
-| Claims | string | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
+| Claims | string | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Microsoft Entra ID configuration. |
 | CorrelationId | string | The ID for the correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | long | Duration of the operation in milliseconds. |
 | EndTime | datetime | Specifies the date and time that the workflow job ended (UTC) |
@@ -59,7 +59,7 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StartTime | datetime | Specifies the date and time that the workflow job was started (UTC) |
-| SubmittedBy | string | Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
+| SubmittedBy | string | Workflow events only. The Microsoft Entra ID objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
 | SubmittedTime | datetime | Specifies the date and time that the workflow job was submitted (UTC) |
 | TasksCount | int | Workflow only. Number of tasks the Workflow triggers. |
 | TenantId | string | The Log Analytics workspace ID |

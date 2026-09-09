@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Agari - support@agari.com |
 | **First Published** | 2026-05-14 |
 | **Last Updated** | 2026-05-22 |
 | **Solution Folder** | [Agari](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-agari) · Popularity: 🟢 High (85%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-agari) · Popularity: 🔵 Medium (79%) |
 
 Agari Phishing Defense and Brand Protection Solution for Microsoft Sentinel makes it easy to connect Agari email threat data to the Microsoft Sentinel SOAR, improving visibility into email threats, accelerating incident response, and driving SOC efficiency. The Agari Data Connector included in the solution supports every Agari product: [Agari Brand Protection](https://www.agari.com/insights/solution-briefs/agari-brand-protection/), [Agari Phishing Defense](https://www.agari.com/products/phishing-defense/), and [Agari Phishing Response](https://www.agari.com/products/phishing-response/). Leveraging Agari data to enrich and share threat intelligence across multiple applications helps safeguard your entire infrastructure against email threats. For more details about this solution refer to [https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/](https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/)
 
@@ -49,13 +49,12 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **8 table(s)**:
+This solution uses **7 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AgariAPDPolicyLog_CL`](../tables/agariapdpolicylog-cl.md) | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | - |
 | [`AgariAPDTCLog_CL`](../tables/agariapdtclog-cl.md) | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | - |
-| [`AgariAPRInvestigationsLog_CL`](../tables/agariaprinvestigationslog-cl.md) | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | - |
 | [`AgariBPAlertsLog_CL`](../tables/agaribpalertslog-cl.md) | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | - |
 | [`AgariBPThreatFeedSubs_CL`](../tables/agaribpthreatfeedsubs-cl.md) | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | - |
 | [`agari_apdpolicy_log_CL`](../tables/agari-apdpolicy-log-cl.md) 🔶 | [Agari Phishing Defense and Brand Protection](../connectors/agari.md) | - |
@@ -69,6 +68,7 @@ This solution uses **8 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.0.1       | 20-08-2026                     | Promoted CCF Data Connector to GA. Changed DCR Name. Removed unused endpoint.                           |
 | 3.0.0       | 14-05-2026                     | Created a Data Connector for Agari CCF Container.            |
 
 ---

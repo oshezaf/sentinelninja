@@ -27,8 +27,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ? | ✓ | ? |
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ? | ✓ | ? |
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ✗ | ✓ | ✗ |
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

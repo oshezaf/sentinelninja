@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 55 |
-| **Solutions** | 15 |
+| **Playbooks using** | 57 |
+| **Solutions** | 16 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
 
 ## Playbooks Using This Connector
@@ -41,6 +41,8 @@
 | [Fortinet_ResponseOnIP](../content/github-only-fortinet-responseonip-67a4dec0.md) | 🔗 GitHub Only | 0 | 2 |
 | [Fortinet_ResponseOnURL](../content/github-only-fortinet-responseonurl-e52c2a3b.md) | 🔗 GitHub Only | 0 | 2 |
 | [Get-NamedLocations](../content/github-only-get-namedlocations-55f4a188.md) | 🔗 GitHub Only | 0 | 1 |
+| [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 1 |
+| [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 1 |
 | [Illumio Containment Switch Playbook](../content/illumiosaas-illumio-containment-switch-playbook-bc5f9e5e.md) | [IllumioSaaS](../solutions/illumiosaas.md) | 0 | 7 |
 | [Illumio Get Ven Details Playbook](../content/illumiosaas-illumio-get-ven-details-playbook-0befa2c0.md) | [IllumioSaaS](../solutions/illumiosaas.md) | 0 | 1 |
 | [Illumio Workload Quarantine Playbook](../content/illumiosaas-illumio-workload-quarantine-playbook-da89ba0e.md) | [IllumioSaaS](../solutions/illumiosaas.md) | 0 | 1 |

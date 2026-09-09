@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ PRODAFT USTA - IoC Threat Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="prodaft-usta---ioc-threat-intelligence">⚠️ PRODAFT USTA - IoC Threat Intelligence</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaIoC.svg" alt="PRODAFT USTA - IoC Threat Intelligence Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">PRODAFT</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.prodaft.com">https://www.prodaft.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">PRODAFT - integration@prodaft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-08</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence">PRODAFT USTA - IoC Threat Intelligence</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>PRODAFT USTA - IoC Threat Intelligence</strong> solution ingests indicators of compromise (malicious URLs, malware hashes, and phishing sites) from the PRODAFT USTA platform into Microsoft Sentinel <strong>Threat Intelligence</strong> as STIX 2.1 indicators via the Upload STIX Objects API. Ingestion is performed by import playbooks (one per IoC feed) using a system-assigned managed identity; resolved <code>ip_addresses</code> on a record are added to the same indicator as <code>ipv4-addr</code>/<code>ipv6-addr</code> observables; indicators appear in the Threat Intelligence blade and the <code>ThreatIntelIndicators</code> table under a per-feed <code>SourceSystem</code> (<code>PRODAFT USTA - Malicious URLs</code>, <code>PRODAFT USTA - Malware Hashes</code>, <code>PRODAFT USTA - Phishing Sites</code>), so <code>SourceSystem startswith 'PRODAFT USTA'</code> selects them all. Includes three TI-map analytic rules that match ingested indicators against your logs, an overview workbook, and an on-demand backfill playbook for loading historical indicators.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
+  <td><a href="../connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td><a href="../connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
+  <td>Analytics, Playbooks, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-domain-to-dnsevents-c6f85aff-4ef0-4fde-b90e-e0ba1a9c3df6-268dc5e6.html">PRODAFT USTA - TI map Domain to DnsEvents</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-file-hash-to-commonsecuritylog-9c2cef4e-c3a3-4be9-8923-a2f820d4face-8e66187e.html">PRODAFT USTA - TI map File Hash to CommonSecurityLog</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-url-to-syslog-99ae4d06-d352-4926-a1d7-9c28e25b1313-5b2b22cc.html">PRODAFT USTA - TI map URL to Syslog</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaftustaiocoverview-c05c3e08.html">PRODAFTUstaIoCOverview</a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malicious-urls-4dfc7c81.html">PRODAFT USTA - Backfill Malicious URLs</a></td>
+  <td style="text-align:left">On-demand historical backfill for the PRODAFT USTA malicious-URL IoC feed. Pages the feed from Backf...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malware-hashes-3f720674.html">PRODAFT USTA - Backfill Malware Hashes</a></td>
+  <td style="text-align:left">On-demand historical backfill for the PRODAFT USTA malware-hash IoC feed. Pages the feed from Backfi...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-phishing-sites-a323edfb.html">PRODAFT USTA - Backfill Phishing Sites</a></td>
+  <td style="text-align:left">On-demand historical backfill for the PRODAFT USTA phishing-site IoC feed. Pages the feed from Backf...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malicious-urls-b406db8c.html">PRODAFT USTA - Import Malicious URLs</a></td>
+  <td style="text-align:left">Polls the PRODAFT USTA malicious-URL IoC feed hourly, maps each record to a STIX 2.1 indicator, and ...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malware-hashes-3fd88ec8.html">PRODAFT USTA - Import Malware Hashes</a></td>
+  <td style="text-align:left">Polls the PRODAFT USTA malware-hash IoC feed hourly, maps each record to a STIX 2.1 file indicator (...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-phishing-sites-9a061ecc.html">PRODAFT USTA - Import Phishing Sites</a></td>
+  <td style="text-align:left">Polls the PRODAFT USTA phishing-site IoC feed hourly, maps each record to a STIX 2.1 indicator, and ...</td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence/README.md">PRODAFT USTA - IoC Threat Intelligence/README.md</a></em></p>
+</blockquote>
+<p>Ingests <strong>indicators of compromise</strong> — malicious URLs, malware hashes, and phishing sites —
+from the PRODAFT USTA Security Intelligence API into Microsoft Sentinel <strong>Threat
+Intelligence</strong> as STIX 2.1 indicators. Unlike the other PRODAFT USTA solutions (which land
+data in custom <code>_CL</code> tables via a codeless connector), this solution pushes indicators to
+Sentinel's <strong>Upload STIX Objects API</strong>, so they appear in the <strong>Threat Intelligence blade</strong>
+and the built-in <code>ThreatIntelIndicators</code> table. Each feed uploads under its own
+<code>SourceSystem</code> — <code>PRODAFT USTA - Malicious URLs</code>, <code>PRODAFT USTA - Malware Hashes</code> and
+<code>PRODAFT USTA - Phishing Sites</code> — so <code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code> selects every
+USTA indicator while each feed stays individually filterable in the Threat Intelligence blade.</p>
+<h2 id="contents">Contents</h2>
+<table>
+<thead>
+<tr>
+  <th>Content</th>
+  <th>Items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data connector</td>
+  <td><code>PRODAFTUstaIoC_UploadIndicatorsAPI</code> — a documentation/health card; ingestion is performed by the playbooks below</td>
+</tr>
+<tr>
+  <td>Import playbooks</td>
+  <td><code>PRODAFTUstaIoC-ImportMaliciousUrls</code>, <code>PRODAFTUstaIoC-ImportMalwareHashes</code>, <code>PRODAFTUstaIoC-ImportPhishingSites</code> — hourly, one per feed</td>
+</tr>
+<tr>
+  <td>Backfill playbooks</td>
+  <td><code>PRODAFTUstaIoC-BackfillMaliciousUrls</code>, <code>PRODAFTUstaIoC-BackfillMalwareHashes</code>, <code>PRODAFTUstaIoC-BackfillPhishingSites</code> — on-demand historical load, one per feed (default 90 days)</td>
+</tr>
+<tr>
+  <td>Analytic rules</td>
+  <td>TI map URL → Syslog; TI map Domain → DnsEvents; TI map File Hash → CommonSecurityLog</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td><code>PRODAFTUstaIoCOverview</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-it-works">How it works</h2>
+<p>Each import playbook is a Logic App that, every hour:</p>
+<ol>
+<li>Reads its own ingestion watermark — <code>max(Created)</code> for this feed's <code>SourceSystem</code> in
+<code>ThreatIntelIndicators</code>, minus a 5-minute overlap — and fetches everything created since,
+following the API's <code>next</code> link until the page set is exhausted. <code>LookBackHours</code> (default 2)
+is only the fallback for the first run, when no watermark exists yet. Because the watermark
+advances only after a <strong>successful</strong> upload, a failed run retries the same window rather
+than skipping indicators.</li>
+<li>Maps each record to a <strong>STIX 2.1 indicator</strong> — <code>is_domain</code> chooses a <code>domain-name</code> vs
+<code>url</code> pattern; malware hashes become a <code>file:hashes</code> pattern (MD5/SHA-1/SHA-256); vendor
+<code>tags</code> become STIX <code>labels</code>; indicators are marked <code>TLP:AMBER</code>. When the record carries
+<code>ip_addresses</code>, each address is appended to the <strong>same</strong> indicator's pattern as its own
+observation expression — <code>ipv4-addr:value</code> or <code>ipv6-addr:value</code>, picked per address — so the
+URL/hash and its resolved IPs travel as one indicator sharing one validity window.</li>
+<li>Uploads batches (≤100) to Microsoft Sentinel via the <strong>Upload STIX Objects</strong> action using the Logic
+App's <strong>system-assigned managed identity</strong>.</li>
+</ol>
+<p>STIX ids are <strong>deterministic</strong> (the USTA record id for URLs/hashes; a stable UUID derived
+from the integer id for phishing sites), so overlapping re-uploads <strong>update</strong></p>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<h1 id="prodaft-usta---ioc-threat-intelligence-release-notes">PRODAFT USTA - IoC Threat Intelligence — Release Notes</h1>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>08-07-2026</td>
+  <td>Initial Solution Release. Ingests PRODAFT USTA indicators of compromise (malicious URLs, malware hashes, phishing sites) into Microsoft Sentinel Threat Intelligence as STIX 2.1 indicators via the Upload STIX Objects API. Records that carry resolved <code>ip_addresses</code> also contribute <code>ipv4-addr</code>/<code>ipv6-addr</code> observables to the same indicator. Three <strong>import Playbooks</strong> (one per IoC feed, hourly, managed-identity), three on-demand <strong>backfill Playbooks</strong> (one per feed, 90 days by default), a <strong>Data Connector</strong> card, three <strong>Analytic Rules</strong> (TI-map URL/Domain/File-hash against the <code>ThreatIntelIndicators</code> table), and an overview <strong>Workbook</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

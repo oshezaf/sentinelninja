@@ -1,6 +1,6 @@
 # Analytic Rules - B
 
-**143 analytic rules** starting with 'B'.
+**144 analytic rules** starting with 'B'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -141,6 +141,7 @@
 | [BloodHound Attack Path Finding - WriteOwner Privileges on Tier Zero Objects](bloodhound-enterprise-bloodhound-attack-path-finding-writeowner-privileges-on-tier-zero-objects-924e60be-38af-4a33-98d4-45f2b1643094-657df7c6.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [BloodHound Attack Path Finding - WriteOwnerLimitedRights Privileges on Tier Zero Objects](bloodhound-enterprise-bloodhound-attack-path-finding-writeownerlimitedrights-privileges-on-tier-zero-obj-645b0f09-f318-41c3-860d-6c0fb595af2b-78aae00a.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [BloodHound Attack Path Finding - WriteServicePrincipalName Privileges on Tier Zero Objects](bloodhound-enterprise-bloodhound-attack-path-finding-writeserviceprincipalname-privileges-on-tier-zero-o-b58af025-1b74-436a-8517-b230864cbbb6-1cebd838.md) | Medium | 📦 [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BOLA Finding with API Traffic Anomaly](stratosecure-bola-finding-with-api-traffic-anomaly-3c5be96e-2eeb-439a-9856-1c23aa72cfdd-0c6799d9.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Box - Abmormal user activity](box-box-abmormal-user-activity-1139230c-cf10-45db-b616-fed0d1415c05-d050017d.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - Executable file in folder](box-box-executable-file-in-folder-b91ec98d-5747-45c8-b2f6-a07bf47068f0-524e216a.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - File containing sensitive data](box-box-file-containing-sensitive-data-266746ae-5eaf-4068-a980-5d630f435c46-bb951f6a.md) | Medium | 📦 [Box](../solutions/box.md) |

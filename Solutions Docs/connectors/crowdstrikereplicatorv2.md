@@ -31,14 +31,14 @@ This connector ingests data into the following tables:
 | [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
+| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) |  | ? | ✓ | ? |
+| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
 | [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) |  | ? | ✓ | ? |
 
@@ -81,7 +81,7 @@ Use this method for automated deployment of the Crowdstrike Falcon Data Replicat
 
 1. Click the **Deploy to Azure** button below. 
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy-gov) 			
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinel-CrowdstrikeReplicatorV2-azuredeploy-gov) 			
 2. Provide the required details such as Microsoft Sentinel Workspace, CrowdStrike AWS credentials, Azure AD Application details and ingestion configurations 
 > **NOTE:** Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group. It is recommended to create a new Resource Group for deployment of function app and associated resources.
 3. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 

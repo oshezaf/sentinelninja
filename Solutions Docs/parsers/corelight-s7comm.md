@@ -13,8 +13,8 @@
 | Title | Corelight S7comm Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.0 |
-| Last Updated | 2024-12-09 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_s7comm.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_s7comm_CL`](../tables/corelight-v2-s7comm-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_s7comm_CL`](../tables/corelight-v3-s7comm-cl.md) | ? | ✓ | ? |
 
 ---
 

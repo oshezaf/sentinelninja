@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**104 products** with 97 source parser pairs covering 12 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**105 products** with 98 source parser pairs covering 12 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -51,6 +51,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Google SecOps](#google-secops) | 1 | 1 | 1 |
 | [Google Threat Intelligence](#google-threat-intelligence) | 1 | 1 | 1 |
 | [Google Workspace](#google-workspace) | 3 | 2 | 3 |
+| [Halcyon](#halcyon) | 1 | 1 | 1 |
 | [Illumio](#illumio) | 1 | 1 | 1 |
 | [Illumio Core](#illumio-core) | 1 | 1 | 1 |
 | [Illumio SaaS Core](#illumio-saas-core) | 1 | 1 | 1 |
@@ -613,6 +614,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimAuthenticationGoogleWorkspaceLogins](asimauthenticationgoogleworkspacelogins.md)<br>vim: [vimAuthenticationGoogleWorkspaceLogins](vimauthenticationgoogleworkspacelogins.md) | Authentication | [GoogleWorkspaceReports](../tables/googleworkspacereports.md) | 0.1.0 |
 | ASim: [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md)<br>vim: [vimFileEventGoogleWorkspace](vimfileeventgoogleworkspace.md) | FileEvent | [GWorkspace_ReportsAPI_drive_CL](../tables/gworkspace-reportsapi-drive-cl.md) | 0.1.0 |
 
+## Halcyon
+
+**Schemas:** Dns
+
+**Tables:** [HalcyonEventsV2_CL](../tables/halcyoneventsv2-cl.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimDnsHalcyon](asimdnshalcyon.md)<br>vim: [vimDnsHalcyon](vimdnshalcyon.md) | Dns | [HalcyonEventsV2_CL](../tables/halcyoneventsv2-cl.md) | 0.1.0 |
+
 ## Illumio
 
 **Schemas:** Authentication
@@ -998,7 +1011,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimProcessEventNative](asimprocesseventnative.md)<br>vim: [vimProcessEventNative](vimprocesseventnative.md) | ProcessEvent | [ASimProcessEventLogs](../tables/asimprocesseventlogs.md) | 0.1.0 |
 | ASim: [ASimRegistryEventNative](asimregistryeventnative.md)<br>vim: [vimRegistryEventNative](vimregistryeventnative.md) | RegistryEvent | [ASimRegistryEventLogs](../tables/asimregistryeventlogs.md) | 0.1.0 |
 | ASim: [ASimUserManagementNative](asimusermanagementnative.md)<br>vim: [vimUserManagementNative](vimusermanagementnative.md) | UserManagement | [ASimUserManagementActivityLogs](../tables/asimusermanagementactivitylogs.md) | 0.1.0 |
-| ASim: [ASimWebSessionNative](asimwebsessionnative.md)<br>vim: [vimWebSessionNative](vimwebsessionnative.md) | WebSession | [ASimWebSessionLogs](../tables/asimwebsessionlogs.md) | 0.1 |
+| ASim: [ASimWebSessionNative](asimwebsessionnative.md)<br>vim: [vimWebSessionNative](vimwebsessionnative.md) | WebSession | [ASimWebSessionLogs](../tables/asimwebsessionlogs.md) | 0.1.1 |
 
 ## Netskope Security Cloud
 
@@ -1024,7 +1037,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuthenticationOktaSSO](asimauthenticationoktasso.md)<br>vim: [vimAuthenticationOktaSSO](vimauthenticationoktasso.md) | Authentication | [Okta_CL](../tables/okta-cl.md) | 0.4.0 |
 | ASim: [ASimAuthenticationOktaSystemLogs](asimauthenticationoktasystemlogs.md)<br>vim: [vimAuthenticationOktaSystemLogs](vimauthenticationoktasystemlogs.md) | Authentication | [OktaSystemLogs](../tables/oktasystemlogs.md) | 0.1.0 |
-| ASim: [ASimAuthenticationOktaV2](asimauthenticationoktav2.md)<br>vim: [vimAuthenticationOktaV2](vimauthenticationoktav2.md) | Authentication | [OktaV2_CL](../tables/oktav2-cl.md) | 0.4.0 |
+| ASim: [ASimAuthenticationOktaV2](asimauthenticationoktav2.md)<br>vim: [vimAuthenticationOktaV2](vimauthenticationoktav2.md) | Authentication | [OktaV2_CL](../tables/oktav2-cl.md) | 0.4.1 |
 
 ## OpenSSH
 
@@ -1159,7 +1172,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md)<br>vim: [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.1.1 |
+| ASim: [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md)<br>vim: [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.1.2 |
 | ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.3.0 |
 | ASim: [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md)<br>vim: [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.2 |
 | ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2 |

@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.4 |
+| **Version** | 3.0.5 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
-| **Last Updated** | 2026-08-06 |
+| **Last Updated** | 2026-08-26 |
 | **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-cyberint-ioc) · Popularity: 🔵 Medium (60%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-cyberint-ioc) · Popularity: 🔵 Medium (71%) |
 
 Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline critical IOC and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Cyberint and Microsoft Sentinel customers can easily pull logs based on Cyberint's findings into Microsoft Sentinel platform.
 
@@ -43,6 +43,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
 | ----------- | ------------------------------ | ------------------------ |
+| 3.0.5       | 21-08-2026                     | Fixed ARM template expression escaping in the data connector polling config (stray `]`) that caused the **Connect** deployment to fail with a template language expression parse error.<br>Fixed feed polling request body to send strict JSON (double-quoted): the Argos API now rejects single-quoted bodies with 422 Unprocessable Entity. |
 | 3.0.4       | 02-06-2026                     | Updated support contact information and documentation links. |
 | 3.0.2       | 03-04-2026                     | Fixed table schema definition causing connector creation failure.<br>Fixed apiEndpoint URL construction (removed duplicate https:// prefix).<br>Added Customer Name configuration field.<br>Improved connector UI with field descriptions, placeholders, and password masking for API Token.<br>Updated connector description and prerequisites text. |
 | 3.0.1       | 12-09-2025                     | Replaces the variable reference for graphQueriesTableName with the explicit table name **'iocsent_CL'** |

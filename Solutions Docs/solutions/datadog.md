@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Application |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-08-06 |
 | **Solution Folder** | [Datadog](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datadog) |
 
-The [Datadog](https://www.datadoghq.com/) solution for Microsoft Sentinel enables you to ingest [Datadog Audit Trail](https://docs.datadoghq.com/account_management/audit_trail/) events through the Datadog Audit API. These events provide visibility into administrative activity, configuration changes, access, and security-relevant actions in the Datadog platform.
+The [Datadog](https://www.datadoghq.com/) solution for Microsoft Sentinel enables you to ingest Datadog audit events, indexed logs, and security signals through the [Datadog API](https://docs.datadoghq.com/api/latest/). These data types provide visibility into administrative activity, application and infrastructure telemetry, and Datadog Security Monitoring detections.
 
 **Underlying Microsoft Technologies used:**
 
@@ -35,21 +35,24 @@ b. [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-mo
 
 This solution provides **1 data connector(s)**:
 
-- [Datadog Audit Logs (via Codeless Connector Framework)](../connectors/datadogauditlogsconnector.md)
+- [Datadog Logs (via Codeless Connector Framework)](../connectors/datadogconnector.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DatadogAuditV2_CL`](../tables/datadogauditv2-cl.md) | [Datadog Audit Logs (via Codeless Connector Framework)](../connectors/datadogauditlogsconnector.md) | - |
+| [`DatadogAuditLogs_CL`](../tables/datadogauditlogs-cl.md) | [Datadog Logs (via Codeless Connector Framework)](../connectors/datadogconnector.md) | - |
+| [`DatadogLogs_CL`](../tables/datadoglogs-cl.md) | [Datadog Logs (via Codeless Connector Framework)](../connectors/datadogconnector.md) | - |
+| [`DatadogSecurityLogs_CL`](../tables/datadogsecuritylogs-cl.md) | [Datadog Logs (via Codeless Connector Framework)](../connectors/datadogconnector.md) | - |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
-| 3.0.0       | 06-08-2026                     | Initial Solution Release. Added the Datadog Audit Logs CCF Data Connector. |
+| 3.1.0       | 12-08-2026                     | Replaced the audit-only Datadog CCF **Data Connector** with the combined Datadog connector for audit events, indexed logs, and security signals. |
+| 3.0.0       | 06-08-2026                     | Initial Solution Release. Added the Datadog Audit Logs CCF **Data Connector**. |
 
 ---
 

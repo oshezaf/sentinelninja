@@ -19,7 +19,7 @@
 | **First Published** | 2026-06-15 |
 | **Last Updated** | 2026-07-29 |
 | **Solution Folder** | [Hybrid Attack - Cloud & Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hybrid%20Attack%20-%20Cloud%20%26%20Identity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-hybridattackcloudidentity) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-hybridattackcloudidentity) · Popularity: 🟡 Low (44%) |
 
 This solution includes hunting queries for hybrid attack scenarios spanning on-premises, cloud, and identity environments. The queries are designed to detect multi-stage attack techniques that leverage both cloud and identity signals. By correlating activities across different domains, these hunting queries help security analysts identify complex attack patterns that may go unnoticed when looking at individual data sources in isolation.
 

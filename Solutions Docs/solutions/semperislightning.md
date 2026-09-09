@@ -16,14 +16,14 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.semperis.com/support/](https://www.semperis.com/support/) |
 | **Categories** | Security - Cloud Security,Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Semperis |
 | **First Published** | 2026-03-01 |
-| **Last Updated** | 2026-03-23 |
+| **Last Updated** | 2026-08-20 |
 | **Solution Folder** | [SemperisLightning](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning) · Popularity: 🟡 Low (20%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning) · Popularity: ⚪ Very Low (0%) |
 
-This custom data connector uses a Function App to pull Semperis Lightning data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API.
+This solution includes two data connectors for Semperis Lightning: a Function App connector that pulls data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API, and a Codeless Connector Framework (CCF) connector that deploys REST API pollers to ingest data directly, with support for onboarding multiple Semperis Lightning environments independently.
 
 ## Contents
 
@@ -33,22 +33,30 @@ This custom data connector uses a Function App to pull Semperis Lightning data a
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
+- [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md)
 - [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md)
 
 ## Tables Used
 
-This solution uses **7 table(s)**:
+This solution uses **14 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`LightningAttackPathLinksV2_CL`](../tables/lightningattackpathlinksv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningAttackPathLinks_CL`](../tables/lightningattackpathlinks-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningAttackPathsV2_CL`](../tables/lightningattackpathsv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningAttackPaths_CL`](../tables/lightningattackpaths-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningIOEResultsV2_CL`](../tables/lightningioeresultsv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningIOEResults_CL`](../tables/lightningioeresults-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningIOEsMetadataV2_CL`](../tables/lightningioesmetadatav2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningIOEsMetadata_CL`](../tables/lightningioesmetadata-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningIndicatorExecutionsV2_CL`](../tables/lightningindicatorexecutionsv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningIndicatorExecutions_CL`](../tables/lightningindicatorexecutions-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningTier0AttackersV2_CL`](../tables/lightningtier0attackersv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningTier0Attackers_CL`](../tables/lightningtier0attackers-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
+| [`LightningTier0NodesV2_CL`](../tables/lightningtier0nodesv2-cl.md) | [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | - |
 | [`LightningTier0Nodes_CL`](../tables/lightningtier0nodes-cl.md) | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | - |
 
 ## Additional Documentation
@@ -155,6 +163,7 @@ By default, the connector ingests data every 1 hour. You can modify the schedule
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                          |
 |-------------|--------------------------------|-------------------------------------------------------------|
+| 3.1.0       | 01-09-2026                     | Added a Codeless Connector Framework (CCF) data connector alongside the existing Function App connector, letting customers use either or both to ingest Semperis Lightning data. |
 | 3.0.0       | 23-03-2026                     | Initial Solution Release. Added Semperis Lightning Connector            |
 
 ---

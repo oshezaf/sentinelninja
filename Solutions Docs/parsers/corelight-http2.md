@@ -13,8 +13,8 @@
 | Title | corelight_http2 parser for Corelight |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.0.1 |
-| Last Updated | 2025-11-06 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_http2.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_http2_CL`](../tables/corelight-v3-http2-cl.md) | ? | ✓ | ? |
 
 ---
 

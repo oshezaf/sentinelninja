@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | DomainTools Threat Intel Domain Parser |
 | Location | Solution |
-| Solution | [DomainTools CCF](../solutions/domaintools-ccf.md) ⚠️ |
+| Solution | [DomainTools CCF](../solutions/domaintools-ccf.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-01-19 |
 | Category | Microsoft Sentinel Parser |

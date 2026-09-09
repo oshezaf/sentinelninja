@@ -22,10 +22,9 @@ Reference for CrowdStrikeHosts table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
-## Schema (96 columns)
+## Schema (97 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikehosts)
 
@@ -50,6 +49,7 @@ Reference for CrowdStrikeHosts table in Azure Monitor Logs.
 | ConnectionMacAddress | string | MAC address of the network interface used for CrowdStrike connection. |
 | CpuSignature | string | Unique identifier for the CPU architecture and features. |
 | CpuVendor | string | Manufacturer of the CPU. |
+| CrowdStrikeDomain | string | CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | DefaultGatewayIp | string | IP address of the default network gateway. |
 | DeploymentType | string | Type of CrowdStrike agent deployment on the host. |
 | DetectionSuppressionStatus | string | Status of detection suppression rules applied to the host. |
@@ -134,21 +134,17 @@ Official Microsoft Learn documentation for field/column information:
 
 - [CrowdStrikeHosts Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikehosts)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) |  |
-
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrike](../parsers/crowdstrike.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

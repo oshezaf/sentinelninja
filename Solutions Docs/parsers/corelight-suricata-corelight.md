@@ -13,8 +13,8 @@
 | Title | Corelight Suricata Corelight Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2025-02-03 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_suricata_corelight.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_suricata_corelight_CL`](../tables/corelight-v3-suricata-corelight-cl.md) | ? | ✓ | ? |
 
 ---
 

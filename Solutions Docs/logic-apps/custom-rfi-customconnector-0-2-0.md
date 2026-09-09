@@ -16,7 +16,7 @@
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
 | [RFI-Playbook-Alert-Importer](../content/recorded-future-identity-rfi-playbook-alert-importer-f012ff91.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 3 |
-| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 5 |
+| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 4 |
 | [RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 5 |
 
 ---

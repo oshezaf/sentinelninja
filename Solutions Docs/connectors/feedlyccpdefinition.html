@@ -62,22 +62,19 @@
   <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#feedly-ioc">View on Learn</a></td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://feedly.com/">Feedly</a> IoC data connector provides the capability to ingest Indicators of Compromise (IoCs) from Feedly API into Microsoft Sentinel.</p>
+<p>The <a href="https://feedly.com/">Feedly</a> IoC data connector ingests Indicators of Compromise from the Feedly API into the native <a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables/threatintelindicators">ThreatIntelIndicators</a> table in Microsoft Sentinel. Indicators are tagged with <code>SourceSystem == &quot;Feedly&quot;</code> so they participate in Microsoft Sentinel threat-intelligence matching, analytics, and hunting the same way as other TIP integrations (for example Recorded Future via the Upload Indicators API).</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
   <th style="text-align:center">Transformations</th>
   <th style="text-align:center">Ingestion API</th>
   <th style="text-align:center">Lake-Only</th>
@@ -85,8 +82,9 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/feedly-indicators-cl.html"><code>feedly_indicators_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:left"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value,url:value&quot;</code><br><code>SourceSystem == &quot;Feedly&quot;</code></td>
+  <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
 </tr>
@@ -111,7 +109,8 @@
 <p><strong>1. Connect to Feedly to start collecting IoCs in Microsoft Sentinel</strong></p>
 <ol>
 <li>Go to https://feedly.com/i/team/api and generate a new API token for the connector.</li>
-<li>In Sentinel, in the connector page - provide your Feedly API Key and Stream IDs. Then click &quot;Connect&quot;.</li>
+<li>In Microsoft Sentinel, provide your Feedly API Key and Stream IDs, then click Connect.</li>
+<li>Indicators are written to the native ThreatIntelIndicators table with SourceSystem Feedly. Query them with: ThreatIntelIndicators | where SourceSystem == &quot;Feedly&quot;</li>
 </ol>
 <ul>
 <li><strong>Feedly API Key</strong>: (password field)</li>

@@ -6,17 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
-
 ## Schema (48 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RecordedFutureIdentity_PlaybookAlertResults_CL.json)
@@ -78,23 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Recorded Future Identity](../solutions/recorded-future-identity.md)
-
 ---
-
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**In solution [Recorded Future Identity](../solutions/recorded-future-identity.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Recorded Future Identity - Credential Exposure Detected](../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) |  |
 
 ---
 

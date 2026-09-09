@@ -18,7 +18,7 @@ Dynatrace has detected an ongoing attack in your environment.
 | **Kind** | Scheduled |
 | **Tactics** | Execution, Impact, InitialAccess, PrivilegeEscalation |
 | **Techniques** | T1059, T1565, T1190, T1068 |
-| **Required Connectors** | [DynatraceAttacks](../connectors/dynatraceattacks.md) |
+| **Required Connectors** | [DynatraceAttacks](../connectors/dynatraceattacks.md), [DynatraceAttacksCCPDefinition](../connectors/dynatraceattacksccpdefinition.md), [DTAttacksV3CCPDefinition](../connectors/dtattacksv3ccpdefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Analytic%20Rules/DynatraceApplicationSecurity_AttackDetection.yaml) |
 
 ## Tables Used
@@ -28,6 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ✗ | ✓ | ✗ |
 
 ---

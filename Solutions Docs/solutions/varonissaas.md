@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
 | **Categories** | Security - Network |
-| **Version** | 3.1.1 |
+| **Version** | 3.2.0 |
 | **Author** | Varonis |
 | **First Published** | 2023-11-10 |
-| **Last Updated** | 2025-12-19 |
+| **Last Updated** | 2026-09-08 |
 | **Solution Folder** | [VaronisSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varonis.microsoft-sentinel-solution-varonissaas) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varonis.microsoft-sentinel-solution-varonissaas) · Popularity: 🟢 High (80%) |
 
 The Varonis SaaS integration allows you to retrieve Varonis DatAlert alerts, create incident and pull activities related to the alerts for conducting investigations.
 
@@ -44,11 +44,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) 🔶 | [Varonis SaaS (Push)](../connectors/varonissaasalertspush.md), [[Deprecated] Varonis SaaS](../connectors/varonissaas.md) | Analytics, Workbooks |
+| [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md) 🔶 | [Varonis SaaS (Push)](../connectors/varonissaasalertspush.md) | Analytics, Workbooks |
+| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) 🔶 | [[Deprecated] Varonis SaaS](../connectors/varonissaas.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -66,16 +67,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Varonis - High severity alerts detected](../content/varonissaas-varonis-high-severity-alerts-detected-7d2c9a41-5b8e-4f36-9c1a-2e6b8d4f7a13-4e1d4d3c.md) | High | Collection, Exfiltration | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
-| [Varonis - Informational alerts detected](../content/varonissaas-varonis-informational-alerts-detected-e5a7c93b-8d14-42f6-b7c0-3a9e1f6d5b28-0b3681bb.md) | Informational | Collection, Exfiltration | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
-| [Varonis - Low severity alerts detected](../content/varonissaas-varonis-low-severity-alerts-detected-9b1f3e7a-6c42-4d18-a5e9-2b7f8c0d4e61-3ed08cd4.md) | Low | Collection, Exfiltration | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
-| [Varonis - Medium severity alerts detected](../content/varonissaas-varonis-medium-severity-alerts-detected-c4e8b16f-3a92-4d75-8e21-6f9c0b5d2a84-b5ee29f4.md) | Medium | Collection, Exfiltration | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
+| [Varonis - High severity alerts detected](../content/varonissaas-varonis-high-severity-alerts-detected-7d2c9a41-5b8e-4f36-9c1a-2e6b8d4f7a13-4e1d4d3c.md) | High | Collection, Exfiltration | [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md) |
+| [Varonis - Informational alerts detected](../content/varonissaas-varonis-informational-alerts-detected-e5a7c93b-8d14-42f6-b7c0-3a9e1f6d5b28-0b3681bb.md) | Informational | Collection, Exfiltration | [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md) |
+| [Varonis - Low severity alerts detected](../content/varonissaas-varonis-low-severity-alerts-detected-9b1f3e7a-6c42-4d18-a5e9-2b7f8c0d4e61-3ed08cd4.md) | Low | Collection, Exfiltration | [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md) |
+| [Varonis - Medium severity alerts detected](../content/varonissaas-varonis-medium-severity-alerts-detected-c4e8b16f-3a92-4d75-8e21-6f9c0b5d2a84-b5ee29f4.md) | Medium | Collection, Exfiltration | [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md) | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
+| [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md) | [`VaronisAlertsV2_CL`](../tables/varonisalertsv2-cl.md)<br>[`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
 
 ## Additional Documentation
 
@@ -141,6 +142,7 @@ STEP 2 - Deploy the connector and the associated Azure Function.
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.0       | 20-08-2026                     | CCF Push data connector now ingests into the dedicated **VaronisAlertsV2_CL** table to avoid schema conflicts with the legacy Azure Function connector's table |
 | 3.1.1       | 29-07-2026                     | Mark Azure Function data connector as Deprecated |
 | 3.1.0       | 21-04-2026                     | Add CCF Push data connector                 |
 | 3.0.3       | 25-11-2025                     | Add Informational severity level support    |

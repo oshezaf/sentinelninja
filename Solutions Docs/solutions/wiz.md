@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.wiz.io/](https://support.wiz.io/) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
 | **Last Updated** | 2026-08-03 |
 | **Solution Folder** | [Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wizinc1627338511749.wizinc1627338511749_wiz_mss-sentinel) · Popularity: 🟢 High (83%) |
 
 The [Wiz](https://wiz.io/) solution for Microsoft Sentinel lets Wiz push [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), Wiz Detections, and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel in real time. Wiz sends data to a Data Collection Endpoint (DCE) using the Wiz service principal; this solution grants that service principal the least-privilege RBAC it needs, and Wiz then creates the data collection rule and tables. There is no Azure Function to host and no workspace shared keys to manage.
 
@@ -86,6 +86,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.2       | 18-08-2026                     | Updated the **Connector** STEP 1 instructions to use a tenant-specific Application (client) ID, so setup works for any Wiz tenant. Clarified that the command output is the service principal object ID. |
 | 3.0.1       | 26-06-2026                     | Added a new push-based **Connector** (DCR + RBAC grant): Wiz pushes data to `WizIssuesV3_CL`, `WizDetectionsV3_CL`, and `WizAuditLogsV3_CL` (Issues, Detections, Audit Logs), with no Azure Function to host. **Workbook** updated to the new tables and columns. The legacy Azure Function connector remains available for existing deployments. |
 | 3.0.0       | 15-07-2024                     | Updated the queries on the **Workbook** and **Connector** to match with the new table names we offer  |
 | 2.0.0       | 07-09-2023                     | Updated **Workbook** query in Maintemplate  |

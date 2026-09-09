@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Automation (SOAR) |
-| **Version** | 3.0.5 |
+| **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
+| **Last Updated** | 2026-08-27 |
 | **Solution Folder** | [CiscoASA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoasa) · Rating: ★★☆☆☆ 1.5/5 (2 ratings) · Popularity: 🔵 Medium (74%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoasa) · Rating: ★★☆☆☆ 1.5/5 (2 ratings) · Popularity: 🟢 High (82%) |
 
 The [Cisco ASA](https://www.cisco.com/c/en_in/products/security/adaptive-security-appliance-asa-software/index.html) solution for Microsoft Sentinel enables you to ingest [Cisco ASA logs](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog/messages-listed-by-severity-level.html) into Microsoft Sentinel. 
 
@@ -64,18 +65,19 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **6 content item(s)**:
+This solution includes **7 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
+| Analytic Rules | 3 |
 | Playbooks | 3 |
-| Analytic Rules | 2 |
 | Workbooks | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
+| [Cisco ASA - Possible Data Exfiltration Detection](../content/ciscoasa-cisco-asa-possible-data-exfiltration-detection-f3a8c2d0-7b41-4e9a-9f6a-2d8a1c4e5b72-6a33c590.md) | Medium | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco ASA - average attack detection rate increase](../content/ciscoasa-cisco-asa-average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1-4b63ae5b.md) | Low | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Cisco ASA - threat detection message fired](../content/ciscoasa-cisco-asa-threat-detection-message-fired-795edf2d-cf3e-45b5-8452-fe6c9e6a582e-a934f81d.md) | Medium | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
@@ -97,6 +99,7 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                           |
 |-------------|--------------------------------|------------------------------------------------------------------------------|
+| 3.0.8       | 22-08-2026                     | Added new detection rule for Possible Data Exfilteration  			  				  |
 | 3.0.7       | 01-09-2025                     | Updates to the `template_CiscoAsaAma.json` file to reflect the general availability of the Cisco ASA/FTD via AMA connector  					  				  |
 | 3.0.6       | 10-07-2025                     | Preview tag removed from Connector title  					  				  |
 | 3.0.5       | 25-04-2025                     | Removed Legacy **Data Connector**   					  					  |

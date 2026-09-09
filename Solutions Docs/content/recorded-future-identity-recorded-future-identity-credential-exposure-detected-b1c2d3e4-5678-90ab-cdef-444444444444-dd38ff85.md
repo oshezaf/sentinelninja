@@ -17,6 +17,7 @@ Creates incidents when Recorded Future Identity detects compromised credentials 
 | **Status** | Available |
 | **Kind** | NRT |
 | **Tactics** | CredentialAccess |
+| **Required Connectors** | [RecordedFutureIdentityAlertImporter](../connectors/recordedfutureidentityalertimporter.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Analytic%20Rules/IncidentCreation/RecordedFutureIdentityExposure.yaml) |
 
 ## Tables Used
@@ -25,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureIdentity_PlaybookAlertResults_CL`](../tables/recordedfutureidentity-playbookalertresults-cl.md) | ? | ✓ | ? |
+| [`RFI_PlaybookAlertResults_V2_CL`](../tables/rfi-playbookalertresults-v2-cl.md) | ? | ✓ | ? |
 
 ---
 

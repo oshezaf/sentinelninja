@@ -1,6 +1,4 @@
-# ⚠️ Upwind Catalog Loader (Ingestion API)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Upwind Catalog Loader (Ingestion API)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Upwind/Data%20Connectors/Logos/upwind.svg" alt="" width="75" height="75">
 

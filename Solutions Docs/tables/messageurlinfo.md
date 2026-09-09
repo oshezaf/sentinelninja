@@ -58,32 +58,48 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (22)
 
-### Hunting Queries (13)
+### Hunting Queries (21)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [External Microsoft Teams Sender Domain Risk](../content/microsoft-defender-xdr-external-microsoft-teams-sender-domain-risk-4f859dbb-68cf-48d3-812b-7dd19f11e495-4ba4ef5a.md) |  |
 | [Hunt for malicious messages using External Threat Intelligence](../content/microsoft-defender-xdr-hunt-for-malicious-messages-using-external-threat-intelligence-28c79831-120c-4028-8a2b-4e4ae3082148-7fefb5f5.md) |  |
+| [Low-Reputation URL Domains Shared in Microsoft Teams](../content/microsoft-defender-xdr-low-reputation-url-domains-shared-in-microsoft-teams-d917a922-45ea-46df-a186-5ecc1772644d-c27e2ec4.md) |  |
 | [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) |  |
+| [Suspicious Microsoft Teams Sender Domains Without a Threat Verdict](../content/microsoft-defender-xdr-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-a0443864-5206-4030-9eb0-a70a7718dbb0-c6ff5a77.md) |  |
 | [Teams Message with URL listed on OpenPhish](../content/microsoft-defender-xdr-teams-message-with-url-listed-on-openphish-45d955e0-0e34-4ce7-833d-c14b43d69677-620b3f77.md) |  |
 | [Teams messages with suspicious URL domains](../content/microsoft-defender-xdr-teams-messages-with-suspicious-url-domains-5515296b-8f4c-42f1-a5ad-0574fbf99f23-5b0d7b3b.md) |  |
 | [Teams users clicking on suspicious URL domains](../content/microsoft-defender-xdr-teams-users-clicking-on-suspicious-url-domains-b1fa5bb7-9c4e-4d4f-826a-afc1fbe8c2cf-e1beec3a.md) |  |
+| [URL Domains Triggering Microsoft Teams Safety Tips](../content/microsoft-defender-xdr-url-domains-triggering-microsoft-teams-safety-tips-cbe5f6bc-bf97-434d-a12b-6f137a7effb1-ccda78ee.md) |  |
 
 **GitHub Only:**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [External Microsoft Teams Sender Domain Risk](../content/github-only-external-microsoft-teams-sender-domain-risk-91dffff3-b1f9-48bd-b0de-a8940b32e265-789c413b.md) |  |
 | [Hunt for malicious messages using External Threat Intelligence](../content/github-only-hunt-for-malicious-messages-using-external-threat-intelligence-4dcb872f-9b39-4b95-8f30-3664f9f70dc2-9728c854.md) |  |
+| [Low-Reputation URL Domains Shared in Microsoft Teams](../content/github-only-low-reputation-url-domains-shared-in-microsoft-teams-8ed7068a-0b5f-43a0-87c5-1d99bef03531-e82af905.md) |  |
 | [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |
 | [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
 | [Rare Domains in External Teams Messages](../content/github-only-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-2a1cecc7.md) |  |
+| [Suspicious Microsoft Teams Sender Domains Without a Threat Verdict](../content/github-only-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-bb9fd713-fc62-4380-930f-91490bbbeb78-4029fd61.md) |  |
 | [Teams Message with URL listed on OpenPhish](../content/github-only-teams-message-with-url-listed-on-openphish-0d0a865b-7ed4-4e32-8b57-24cbf6b301b9-1080ff94.md) |  |
 | [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
 | [Teams messages with suspicious URL domains](../content/github-only-teams-messages-with-suspicious-url-domains-3dc84945-5805-4807-80ea-b849d1198e7f-c7642c54.md) |  |
 | [Teams users clicking on suspicious URL domains](../content/github-only-teams-users-clicking-on-suspicious-url-domains-0d70619d-b6a5-4958-8721-3f4001dc0472-b14aff9e.md) |  |
+| [URL Domains Triggering Microsoft Teams Safety Tips](../content/github-only-url-domains-triggering-microsoft-teams-safety-tips-9a0669b6-abc4-4006-ac14-13bf798c999e-3171a56d.md) |  |
+
+### Workbooks (1)
+
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
 
 ---
 

@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.1password.com/](https://support.1password.com/) |
 | **Categories** | Security - Others,Identity |
-| **Version** | 3.0.4 |
+| **Version** | 3.0.5 |
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |
-| **Last Updated** | 2026-07-31 |
+| **Last Updated** | 2026-09-07 |
 | **Solution Folder** | [1Password](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1password1617200969773.azure-sentinel-solution-1password) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/1password1617200969773.azure-sentinel-solution-1password) · Popularity: 🟢 High (93%) |
 
 The [1Password](https://www.1password.com) solution for Microsoft Sentinel enables you to ingest sign-in attempts, item usage, and audit events from your 1Password Business account using the [1Password Events Reporting API](https://developer.1password.com/docs/events-api). This allows you to monitor and investigate events in 1Password in Microsoft Sentinel along with the other applications and services your organization uses.
 
@@ -172,6 +172,7 @@ The 1Password Solution for Microsoft Sentinel is comprised of following Azure re
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
 |-------------|--------------------------------|----------------------------------------|
+| 3.0.5       | 06-08-2026                     | Reverted CCP **Data Connector** polling to time-window based (NextPageToken) requests to stop the duplicate ingestion introduced in 3.0.3, where each event was re-ingested on every poll for approximately one hour. |
 | 3.0.4       | 23-07-2026                     | Updated CCP **Data Connector** to use 1Password Events API **v2** endpoints (signinattempts, auditevents, itemusages) and added v2 fields (account_uuid, actor_type, actor_account_uuid, user_type, user_account_uuid) to the **OnePasswordEventLogs_CL** table. |
 | 3.0.3       | 06-07-2026                     | Fixed CCP **Data Connector** to use cursor-based (PersistentToken) polling so late-synced item usage events (e.g. reveal, secure-copy) are no longer dropped. |
 | 3.0.2       | 21-10-2024                     | Added new CCP **Data Connector**.               | 

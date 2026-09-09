@@ -14,16 +14,16 @@
 |:------------------------|:------|
 | **Publisher** | NordStellar |
 | **Support Tier** | Partner |
-| **Support Link** | [https://nordstellar.com](https://nordstellar.com) |
+| **Support Link** | [https://nordlayer.com/intelligence/](https://nordlayer.com/intelligence/) |
 | **Categories** | Security - Threat Intelligence,Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Nord Security Inc. - support@nordstellar.com |
 | **First Published** | 2026-05-27 |
-| **Last Updated** | 2026-06-05 |
+| **Last Updated** | 2026-08-26 |
 | **Solution Folder** | [NordStellar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar) · Popularity: ⚪ Very Low (5%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar) · Popularity: 🟡 Low (35%) |
 
-The [NordStellar](https://nordstellar.com) solution for Microsoft Sentinel pushes real-time threat intelligence and exposure events from NordStellar's Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules into a unified `NordStellar_CL` table using the Codeless Connector Framework (CCF) Push pattern.
+The [NordStellar](https://nordlayer.com/intelligence/) solution for Microsoft Sentinel pushes real-time threat intelligence and exposure events from NordStellar's Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules into a unified `NordStellar_CL` table using the Codeless Connector Framework (CCF) Push pattern.
 
 **Underlying Microsoft Technologies used:**
 
@@ -53,6 +53,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                                                                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 3.0.1       | 19-08-2026                     | Set `TimeGenerated` to ingestion time so historical events are not dropped; original event timestamp preserved in new `EventTime` column. Fixed `AssetType`/`AssetValue` mapping for `CONSUMER_CREDENTIAL` events. |
 | 3.0.0       | 27-05-2026                     | Initial release of the NordStellar (Push) connector built on the Codeless Connector Framework. Adds a unified `NordStellar_CL` table, a Data Collection Rule with KQL transform, OAuth 2.0 client-credentials authentication, and support for all NordStellar event types across the Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules. |
 
 ---

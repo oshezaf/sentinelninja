@@ -119,21 +119,21 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ASimAgentEventLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs)
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [OpenAI](../solutions/openai.md)
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
-**Selection Criteria:** `EventProduct == "OpenAI API Platform"`<br>`EventType == "ChatCompletion"`<br>`EventVendor == "OpenAI"`
-
-| Connector |
-|:----------|
-| [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) |
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [OpenAI (via Codeless Connector Framework)](../connectors/openaiconnector.md) | `EventProduct == "OpenAI API Platform"`<br>`EventType == "ChatCompletion"`<br>`EventVendor == "OpenAI"` |
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
 

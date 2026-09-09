@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**193 analytic rules** starting with 'S'.
+**199 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -53,11 +53,13 @@
 | [SAP LogServ - HANA DB - Audit Trail Policy Changes](sap-logserv-sap-logserv-hana-db-audit-trail-policy-changes-e8394afb-82a7-4718-8d31-cc57ad352fa8-98541953.md) | High | 📦 [SAP LogServ](../solutions/sap-logserv.md) |
 | [SAP LogServ - HANA DB - Deactivation of Audit Trail](sap-logserv-sap-logserv-hana-db-deactivation-of-audit-trail-8fb9fb88-693f-4906-8be2-4bb9771418fc-6f2dd94f.md) | High | 📦 [SAP LogServ](../solutions/sap-logserv.md) |
 | [SAP LogServ - HANA DB - User Admin actions](sap-logserv-sap-logserv-hana-db-user-admin-actions-a9e4b02a-5a8c-4c59-9836-a204d1028632-72af1011.md) | High | 📦 [SAP LogServ](../solutions/sap-logserv.md) |
+| [SAST Auth Finding Correlated with Brute Force](stratosecure-sast-auth-finding-correlated-with-brute-force-4ae9f294-410d-4c11-9072-0d8fcf5162d8-94b377e7.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Scale-Out Backup Repository Deleted](veeam-scale-out-backup-repository-deleted-4dc85727-573c-4722-8173-026e2a1d20db-db3c6213.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Scale-Out Backup Repository Settings Updated](veeam-scale-out-backup-repository-settings-updated-12006091-95a7-4f21-b474-f74b0480a138-3b450059.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
 | [Scheduled Task Hide](windows-security-events-scheduled-task-hide-6dd2629c-534b-4275-8201-d7968b4fa77e-3293d2af.md) | High | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Sdelete deployed via GPO and run recursively](windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.md) | Medium | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Sdelete deployed via GPO and run recursively (ASIM Version)](standalone-content-sdelete-deployed-via-gpo-and-run-recursively-asim-version-30c8b802-ace1-4408-bc29-4c5c5afb49e1-8cd2db20.md) | Medium | 📄 Standalone Content |
+| [Secret Exposure with Anomalous SPN Sign-In](stratosecure-secret-exposure-with-anomalous-spn-sign-in-a91e677a-46b5-428e-8a7d-29a2bb33bb6f-212cab8f.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Security Event log cleared](endpoint-threat-protection-essentials-security-event-log-cleared-80da0a8f-cfe1-4cd0-a895-8bc1771a720e-2f5b4cb9.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Security Service Registry ACL Modification](standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) | High | 📄 Standalone Content |
 | [SecurityBridge: A critical event occured](securitybridge-app-securitybridge-a-critical-event-occured-8c5c766a-ce9b-4112-b6ed-1b8fe33733b7-ee97d2e0.md) | Medium | 📦 [SecurityBridge App](../solutions/securitybridge-app.md) |
@@ -146,6 +148,9 @@
 | [Sonrai Ticket Risk Accepted](sonraisecurity-sonrai-ticket-risk-accepted-080191e8-271d-4ae6-85ce-c7bcd4b06b40-ec666763.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sonrai Ticket Snoozed](sonraisecurity-sonrai-ticket-snoozed-10e6c454-5cad-4f86-81ce-800235cb050a-186cfa44.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sonrai Ticket Updated](sonraisecurity-sonrai-ticket-updated-af9b8eb1-a8ef-40aa-92a4-1fc73a1479c7-12412c0f.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
+| [Speculus - Network traffic to or from high-risk IP indicator](speculus-threat-intelligence-speculus-network-traffic-to-or-from-high-risk-ip-indicator-a7c3f9e2-4d18-4b6a-9f0c-2e5d8b1a6c43-75ea8385.md) | High | 📦 [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
+| [Speculus - Sign-in attempt from high-risk IP indicator](speculus-threat-intelligence-speculus-sign-in-attempt-from-high-risk-ip-indicator-e1b8d4a6-9c27-45f3-8a1e-7f2c0d9b5e64-a9174920.md) | High | 📦 [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
+| [Speculus - Threat intelligence feed outage](speculus-threat-intelligence-speculus-threat-intelligence-feed-outage-c4f2a8d1-6e39-4c07-b5a2-1d8e3f7c9a25-431c164c.md) | Informational | 📦 [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
 | [SpyCloud Enterprise Breach Detection](spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Enterprise Malware Detection](spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud infostealer malware credential exposure](spycloud-enterprise-protection-ccf-spycloud-infostealer-malware-credential-exposure-ead4deed-9d48-4646-aee0-6b46c2dd1ae6-d71d624c.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
@@ -206,6 +211,7 @@
 | [Suspicious Sign In by Entra ID Connect Sync Account](standalone-content-suspicious-sign-in-by-entra-id-connect-sync-account-2cd8b3d5-c9e0-4be3-80f7-0469d511c3f6-48c21081.md) | Medium | 📄 Standalone Content |
 | [Suspicious Sign In Followed by MFA Modification](microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious VM Instance Creation Activity Detected](github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) | Medium | 🔗 GitHub Only |
+| [Synqly Alert Event](synqlyintegrationconnector-synqly-alert-event-3192085a-e97e-440f-acb7-9227622949a4-4f23c61f.md) | Medium | 📦 [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [Syntax errors stateful anomaly on database](azure-sql-database-solution-for-sentinel-syntax-errors-stateful-anomaly-on-database-c815008d-f4d1-4645-b13b-8b4bc188d5de-75deac2f.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 
 ---

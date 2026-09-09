@@ -38,7 +38,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Dynatrace Problems V1](../connectors/dynatraceproblems.md) |  |
+| [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md) |  |
 
 ---
 

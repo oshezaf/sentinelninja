@@ -47,8 +47,9 @@ The following connectors provide data for this parser:
 | Connector | Solution |
 |:----------|:---------|
 | [GoogleWorkspaceCCPDefinition](../connectors/googleworkspaceccpdefinition.md) | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GoogleWorkspaceReportsAPI](../connectors/googleworkspacereportsapi.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
 
-**Solutions:** [GoogleWorkspaceReports](../solutions/googleworkspacereports.md)
+**Solutions:** [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md)
 
 ## References
 

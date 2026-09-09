@@ -29,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`StriderShieldEmailAddresses_CL`](../tables/stridershieldemailaddresses-cl.md) | ✓ | ✓ | ✓ |
+| [`StriderShieldEmailAddresses_CL`](../tables/stridershieldemailaddresses-cl.md) | ? | ✓ | ? |
 | [`StriderShieldEmailDomains_CL`](../tables/stridershieldemaildomains-cl.md) | ? | ✓ | ? |
 | [`StriderShieldRiskSignalsDefinitions_CL`](../tables/stridershieldrisksignalsdefinitions-cl.md) | ? | ✓ | ? |
 | [`StriderShieldRiskSignals_CL`](../tables/stridershieldrisksignals-cl.md) | ? | ✓ | ? |

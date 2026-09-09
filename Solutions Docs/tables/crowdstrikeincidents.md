@@ -18,7 +18,7 @@ Reference for CrowdStrikeIncidents table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeincidents) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
-## Schema (34 columns)
+## Schema (35 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeincidents)
 
@@ -30,6 +30,7 @@ Reference for CrowdStrikeIncidents table in Azure Monitor Logs.
 | AssignedToName | string | Name of the user assigned to handle the incident. |
 | Cid | string | Customer ID in the CrowdStrike platform. |
 | Created | datetime | Timestamp when the incident was created. |
+| CrowdStrikeDomain | string | CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | Description | string | Detailed description of the incident. |
 | EmailState | string | Current state of email notifications for the incident. |
 | End | datetime | Timestamp when the incident was closed or resolved. |

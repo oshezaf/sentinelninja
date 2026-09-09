@@ -1,4 +1,4 @@
-# GraphApiAuditEvents
+# GraphAPIAuditEvents
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -52,7 +52,7 @@ Microsoft Entra ID API requests made to Microsoft Graph API for resources in the
 
 Official Microsoft Learn documentation for field/column information:
 
-- [GraphApiAuditEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-graphapiauditevents-table)
+- [GraphAPIAuditEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-graphapiauditevents-table)
 
 ---
 

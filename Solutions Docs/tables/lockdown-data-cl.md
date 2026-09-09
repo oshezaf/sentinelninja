@@ -65,14 +65,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
+| [VectraRUXSecurityDashboard](../content/vectra-xdr-vectraruxsecuritydashboard-3f089ed1.md) |  |
 | [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) |  |
 
 ## Parsers Using This Table (1)

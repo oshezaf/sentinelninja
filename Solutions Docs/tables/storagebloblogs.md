@@ -27,7 +27,7 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (55 columns)
+## Schema (59 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagebloblogs)
 
@@ -47,9 +47,11 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 | ClientRequestId | string | The x-ms-client-request-id header value of the request. |
 | ConditionsUsed | string | A semicolon-separated list of key-value pairs that represent a condition. |
 | ContentLengthHeader | long | The value of the Content-Length header for the request sent to the storage service. |
+| CopyDestinationArmId | string | The ARM resource ID of the destination for a copy request. |
 | CorrelationId | string | The ID that is used to correlate logs across resources. |
 | DestinationUri | string | Records the destination URI for operations. |
 | DurationMs | real | The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester. |
+| EncryptionKeyTypeOfBlob | string | Type used to encrypt a blob during create/write operations. |
 | Etag | string | The ETag identifier for the returned object, in quotes. |
 | LastModifiedTime | datetime | The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects. |
 | Location | string | The location of storage account. |
@@ -70,6 +72,7 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 | RequesterUpn | string | The User Principal Names of requestor. |
 | RequestHeaderSize | long | The size of the request header expressed in bytes. If a request is unsuccessful, this value might be empty. |
 | RequestMd5 | string | The value of either the Content-MD5 header or the x-ms-content-md5 header in the request. The MD5 hash value specified in this field represents the content in the request. |
+| RequestRegion | string | The source region of a request. |
 | ResponseBodySize | long | The size of the response packets written by the storage service, in bytes. If a request is unsuccessful, this value may be empty. |
 | ResponseHeaderSize | long | The size of the response header expressed in bytes. If a request is unsuccessful, this value might be empty. |
 | ResponseMd5 | string | The value of the MD5 hash calculated by the storage service. |
@@ -85,6 +88,7 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The Universal Time Coordinated (UTC) time when the request was received by storage. |
 | TlsVersion | string | The TLS version used in the connection of request. |
+| TrafficClassification | string | The designation for origin of the incoming traffic. |
 | Type | string | The name of the table |
 | Uri | string | Uniform resource identifier that is requested. |
 | UserAgentHeader | string | The User-Agent header value, in quotes. |

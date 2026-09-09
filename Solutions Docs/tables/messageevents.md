@@ -84,21 +84,26 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (47)
+## Content Items Using This Table (60)
 
-### Hunting Queries (47)
+### Hunting Queries (59)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Expanding recipients into separate rows](../content/microsoft-defender-xdr-expanding-recipients-into-separate-rows-18fee342-8209-4270-9198-711646867e71-6a409deb.md) |  |
+| [External Microsoft Teams Sender Domain Risk](../content/microsoft-defender-xdr-external-microsoft-teams-sender-domain-risk-4f859dbb-68cf-48d3-812b-7dd19f11e495-4ba4ef5a.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [External malicious Teams messages sent from internal senders](../content/microsoft-defender-xdr-external-malicious-teams-messages-sent-from-internal-senders-9cb4a6eb-c7ae-44ac-b12b-c16ec63da385-04ef94f1.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"`<br>`ThreatTypes has_any "Phish"` |
+| [First-Contact External Teams Senders](../content/microsoft-defender-xdr-first-contact-external-teams-senders-3c9780f9-1784-48b3-b82e-d1e334c08ed2-a20b6816.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Inbound Teams messages by sender domains](../content/microsoft-defender-xdr-inbound-teams-messages-by-sender-domains-f304b75a-a2a0-45fb-814c-40b6e08211f0-46960408.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"` |
 | [Malicious Teams messages by URL detection methods](../content/microsoft-defender-xdr-malicious-teams-messages-by-url-detection-methods-b3470167-2608-44a2-bd2f-8ebad88a27d5-1e9e7e62.md) |  |
 | [Malicious Teams messages received from external senders](../content/microsoft-defender-xdr-malicious-teams-messages-received-from-external-senders-3cb281a9-34e5-4864-8303-6c07e096818b-7bf50244.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes has_any "Phish"` |
+| [Microsoft Teams External versus Internal Thread Exposure](../content/microsoft-defender-xdr-microsoft-teams-external-versus-internal-thread-exposure-9ddbd09d-6119-4e78-bf15-911c4113d608-4d05ab15.md) |  |
+| [Microsoft Teams Senders Triggering URL Safety Tips](../content/microsoft-defender-xdr-microsoft-teams-senders-triggering-url-safety-tips-23a9ae26-cede-4e3b-8cf0-0d0da7a6930a-bb725a0c.md) | `SafetyTip == "URLMessageWarning"` |
 | [Possible partner impersonation in external Team messages](../content/microsoft-defender-xdr-possible-partner-impersonation-in-external-team-messages-f094e9f1-2d55-450d-af1a-0fdcd290f8c4-38f8b481.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`SenderDisplayName contains "@contoso.com"` |
 | [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) |  |
+| [Suspicious Microsoft Teams Sender Domains Without a Threat Verdict](../content/microsoft-defender-xdr-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-a0443864-5206-4030-9eb0-a70a7718dbb0-c6ff5a77.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Suspicious Teams Display Name](../content/microsoft-defender-xdr-suspicious-teams-display-name-02bdbd93-02b7-40e4-9468-d501463e57af-e0e082e9.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Teams communication from suspicious external users](../content/microsoft-defender-xdr-teams-communication-from-suspicious-external-users-c3a6f568-8200-4f2f-88b8-a4df5eb54ba9-dc8df746.md) | `SenderDisplayName contains "desk"`<br>`SenderDisplayName contains "help"`<br>`SenderDisplayName contains "home"`<br>`SenderDisplayName contains "it"`<br>`SenderDisplayName contains "support"`<br>`SenderDisplayName contains "working"` |
 | [Teams communication to suspicious external users](../content/microsoft-defender-xdr-teams-communication-to-suspicious-external-users-12eeae9e-8f0a-4b8c-b437-31c998f15af8-dd66d010.md) | `RecipientDetails contains "desk"`<br>`RecipientDetails contains "help"`<br>`RecipientDetails contains "home"`<br>`RecipientDetails contains "it"`<br>`RecipientDetails contains "support"`<br>`RecipientDetails contains "working"` |
@@ -112,13 +117,16 @@ This table is used by the following solutions:
 | [Top External malicious Senders](../content/microsoft-defender-xdr-top-external-malicious-senders-74b581fc-e8cb-4b50-9d82-7b91d3a88a08-a3bfa117.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Top domains outbound sending Malicious Teams messages inbound](../content/microsoft-defender-xdr-top-domains-outbound-sending-malicious-teams-messages-inbound-ab2f1fd6-1023-425e-a429-ff74db5709be-6fb6bb25.md) | `IsExternalThread == "1"`<br>`IsOwnedThread in "0,1"` |
 | [Total number of MDO Teams protection detections daily](../content/microsoft-defender-xdr-total-number-of-mdo-teams-protection-detections-daily-75ade06c-7326-4e0d-9dfb-27e05043525b-3af53022.md) |  |
+| [URL Domains Triggering Microsoft Teams Safety Tips](../content/microsoft-defender-xdr-url-domains-triggering-microsoft-teams-safety-tips-cbe5f6bc-bf97-434d-a12b-6f137a7effb1-ccda78ee.md) |  |
 
 **GitHub Only:**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Expanding recipients into separate rows](../content/github-only-expanding-recipients-into-separate-rows-70ba5995-866f-4a23-bacc-40b82056893b-5712515b.md) |  |
+| [External Microsoft Teams Sender Domain Risk](../content/github-only-external-microsoft-teams-sender-domain-risk-91dffff3-b1f9-48bd-b0de-a8940b32e265-789c413b.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [External malicious Teams messages sent from internal senders](../content/github-only-external-malicious-teams-messages-sent-from-internal-senders-aee866e2-dc92-4563-a387-b9e5710246c0-8f0914c9.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"`<br>`ThreatTypes has_any "Phish"` |
+| [First-Contact External Teams Senders](../content/github-only-first-contact-external-teams-senders-667772be-deff-4c7e-9da6-ada1780cc45c-cf50c728.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) |  |
 | [Hunt for RMM tool execution following Teams messages](../content/github-only-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-2774ed0b.md) |  |
 | [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
@@ -126,10 +134,13 @@ This table is used by the following solutions:
 | [Inbound Teams messages by sender domains](../content/github-only-inbound-teams-messages-by-sender-domains-15688e35-9957-427f-a8fb-95b7883120b3-03e22b4c.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"` |
 | [Malicious Teams messages by URL detection methods](../content/github-only-malicious-teams-messages-by-url-detection-methods-97c8d961-add7-4b58-80ef-75cc40d9d919-1e93e7c4.md) |  |
 | [Malicious Teams messages received from external senders](../content/github-only-malicious-teams-messages-received-from-external-senders-ac842e4d-0c7d-4980-b09d-c761f3de0a79-96ae5af4.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes has_any "Phish"` |
+| [Microsoft Teams External versus Internal Thread Exposure](../content/github-only-microsoft-teams-external-versus-internal-thread-exposure-b26c8461-8c9e-47ff-8b61-fe0f1fb8eea4-b8ddd236.md) |  |
+| [Microsoft Teams Senders Triggering URL Safety Tips](../content/github-only-microsoft-teams-senders-triggering-url-safety-tips-f5279911-c49c-4fbe-8b5c-be61e28263a2-c22e2e9f.md) | `SafetyTip == "URLMessageWarning"` |
 | [Possible partner impersonation in external Team messages](../content/github-only-possible-partner-impersonation-in-external-team-messages-39cf1ec6-d460-4760-8a87-7d10577f6205-c19eb4ea.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`SenderDisplayName contains "@contoso.com"` |
 | [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |
 | [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
 | [Rare Domains in External Teams Messages](../content/github-only-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-2a1cecc7.md) |  |
+| [Suspicious Microsoft Teams Sender Domains Without a Threat Verdict](../content/github-only-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-bb9fd713-fc62-4380-930f-91490bbbeb78-4029fd61.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Suspicious Teams Display Name](../content/github-only-suspicious-teams-display-name-97e1c837-2cef-4f43-a87f-11f16e33ee8d-3da96512.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
 | [Teams communication from suspicious external users](../content/github-only-teams-communication-from-suspicious-external-users-1fbd2430-2dfe-421a-82b3-eabec5a0b38e-f12376df.md) | `SenderDisplayName contains "desk"`<br>`SenderDisplayName contains "help"`<br>`SenderDisplayName contains "home"`<br>`SenderDisplayName contains "it"`<br>`SenderDisplayName contains "support"`<br>`SenderDisplayName contains "working"` |
@@ -144,38 +155,48 @@ This table is used by the following solutions:
 | [Top External malicious Senders](../content/github-only-top-external-malicious-senders-164a77d1-3952-451f-ba30-b4a43804fd8a-516b86e4.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` |
 | [Top domains outbound sending Malicious Teams messages inbound](../content/github-only-top-domains-outbound-sending-malicious-teams-messages-inbound-af2b5dbd-4b66-47b4-9936-abfecb246ba1-47111b49.md) | `IsExternalThread == "1"`<br>`IsOwnedThread in "0,1"` |
 | [Total number of MDO Teams protection detections daily](../content/github-only-total-number-of-mdo-teams-protection-detections-daily-c7896b13-ae4e-4164-a0a4-fbd43ae85dd4-3317a1c8.md) |  |
+| [URL Domains Triggering Microsoft Teams Safety Tips](../content/github-only-url-domains-triggering-microsoft-teams-safety-tips-9a0669b6-abc4-4006-ac14-13bf798c999e-3171a56d.md) |  |
 
-## Selection Criteria Summary (12 criteria, 30 total references)
+### Workbooks (1)
 
-References by type: 0 connectors, 30 content items, 0 ASIM parsers, 0 other parsers.
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
+
+## Selection Criteria Summary (13 criteria, 38 total references)
+
+References by type: 0 connectors, 38 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` | - | 6 | - | - | **6** |
+| `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` | - | 12 | - | - | **12** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes has "Phish"` | - | 4 | - | - | **4** |
 | `SenderDisplayName contains "desk"`<br>`SenderDisplayName contains "help"`<br>`SenderDisplayName contains "home"`<br>`SenderDisplayName contains "it"`<br>`SenderDisplayName contains "support"`<br>`SenderDisplayName contains "working"` | - | 2 | - | - | **2** |
 | `RecipientDetails contains "desk"`<br>`RecipientDetails contains "help"`<br>`RecipientDetails contains "home"`<br>`RecipientDetails contains "it"`<br>`RecipientDetails contains "support"`<br>`RecipientDetails contains "working"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"`<br>`ThreatTypes has_any "Phish"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes has_any "Phish"` | - | 2 | - | - | **2** |
+| `SafetyTip == "URLMessageWarning"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`SenderDisplayName contains "@contoso.com"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread in "0,1"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes contains "Malware"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes contains "Phish"` | - | 2 | - | - | **2** |
 | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes contains "Spam"` | - | 2 | - | - | **2** |
-| **Total** | **0** | **30** | **0** | **0** | **30** |
+| **Total** | **0** | **38** | **0** | **0** | **38** |
 
 ### IsExternalThread
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `1` | - | 26 | - | - | **26** |
+| `1` | - | 32 | - | - | **32** |
 
 ### IsOwnedThread
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `0` | - | 22 | - | - | **22** |
+| `0` | - | 28 | - | - | **28** |
 | `1` | - | 6 | - | - | **6** |
 
 ### RecipientDetails
@@ -188,6 +209,12 @@ References by type: 0 connectors, 30 content items, 0 ASIM parsers, 0 other pars
 | `contains it` | - | 2 | - | - | **2** |
 | `contains support` | - | 2 | - | - | **2** |
 | `contains working` | - | 2 | - | - | **2** |
+
+### SafetyTip
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `URLMessageWarning` | - | 2 | - | - | **2** |
 
 ### SenderDisplayName
 

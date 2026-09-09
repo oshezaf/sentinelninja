@@ -138,7 +138,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (177)
+## Content Items Using This Table (178)
 
 ### Analytic Rules (56)
 
@@ -351,7 +351,7 @@ This table is used by the following solutions:
 | [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) | `AlertName has_any "Access from  a suspicious IP to a storage file share"` |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `AlertName == "Unfamiliar sign-in properties"` |
 
-### Workbooks (72)
+### Workbooks (73)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -593,6 +593,7 @@ This table is used by the following solutions:
 | [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
 | [MicrosoftCloudAppSecurity](../content/github-only-microsoftcloudappsecurity-2887ca06.md) | `AlertType contains "DISCOVERY"`<br>`ProductName == "Microsoft Cloud App Security"` |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `DisplayName has "Playbooks health"` |
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |

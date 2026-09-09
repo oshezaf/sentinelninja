@@ -26,9 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WizAuditLogsV3_CL`](../tables/wizauditlogsv3-cl.md) | ? | ✓ | ? |
-| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ? | ✓ | ? |
-| [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) | ? | ✓ | ? |
+| [`WizAuditLogsV3_CL`](../tables/wizauditlogsv3-cl.md) | ✗ | ✓ | ✗ |
+| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ✓ | ✓ | ✓ |
+| [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -48,12 +48,15 @@ This connector ingests data into the following tables:
 
 **1. STEP 1 - Get the Wiz service principal object ID**
 
-ARM cannot resolve a Microsoft Entra object, so you supply the Wiz service principal **object ID**. In Azure Cloud Shell (no local install required; creating the service principal needs permission to register enterprise applications in Microsoft Entra ID) run the line below — it prints the object ID, creating the service principal first if it does not yet exist in your tenant:
+ARM cannot resolve a Microsoft Entra object, so you supply the Wiz service principal **object ID**. This app registration is unique to your Wiz tenant — find your **Application (client) ID** on the Microsoft Sentinel integration setup screen in Wiz (**Settings > Integrations > Add > Microsoft Sentinel**), then substitute it for `WIZ_APP_ID_HERE` below. In Azure Cloud Shell (no local install required; creating the service principal needs permission to register enterprise applications in Microsoft Entra ID) run the line below. It prints the **service principal object ID** — copy that value into the deployment parameter. It creates the service principal first if it does not yet exist in your tenant:
 
 ```bash
-az ad sp show --id ae69b94b-e367-4660-9b35-cfb4b5966728 --query id -o tsv 2>/dev/null \
-  || az ad sp create --id ae69b94b-e367-4660-9b35-cfb4b5966728 --query id -o tsv
+WIZ_APP_ID="WIZ_APP_ID_HERE"  # Application (client) ID from the Wiz Microsoft Sentinel integration setup screen
+az ad sp show --id "$WIZ_APP_ID" --query id -o tsv 2>/dev/null \
+  || az ad sp create --id "$WIZ_APP_ID" --query id -o tsv
 ```
+
+If the command fails, rerun it without `2>/dev/null` to see the full error.
 
 **2. STEP 2 - Grant Wiz the RBAC**
 

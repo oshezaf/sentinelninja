@@ -8,9 +8,9 @@
 
 Watchlists are reference data tables that you can import into Microsoft Sentinel and use in queries and analytic rules. They are useful for storing lists of high-value assets, VIP users, known malicious indicators, or approved IP addresses for allowlisting. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists)
 
-**49 watchlists** across all Microsoft Sentinel solutions.
+**57 watchlists** across all Microsoft Sentinel solutions.
 
-**Jump to:** [A](#a) | [C](#c) | [D](#d) | [E](#e) | [H](#h) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v)
+**Jump to:** [A](#a) | [C](#c) | [D](#d) | [E](#e) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
 
@@ -19,6 +19,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | Name | Source |
 |:-----|:-------|
 | [action_results_lookup](veeam-action-results-lookup-9b42431b.md) | 📦 [Veeam](../solutions/veeam.md) |
+| [AuditCalendar](stratosecure-auditcalendar-1fc1cbeb.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Azure-Public-IPs](github-only-azure-public-ips-f7e1960c.md) | 🔗 GitHub Only |
 
 ## C
@@ -33,6 +34,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | [CorelightGeoCountries](corelight-corelightgeocountries-d522c9b2.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CorelightInferencesDesc](corelight-corelightinferencesdesc-51fd4d81.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [coveware_settings](veeam-coveware-settings-ad36cea4.md) | 📦 [Veeam](../solutions/veeam.md) |
+| [CriticalRepos](stratosecure-criticalrepos-99a932ee.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 
 ## D
 
@@ -52,12 +54,20 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | [ExchangeServicesMonitoring](microsoft-exchange-security-exchange-on-premises-exchangeservicesmonitoring-0009df44.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [ExchangeVIP](microsoft-exchange-security-exchange-on-premises-exchangevip-ea783afe.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [ExchOnlineVIP](microsoft-exchange-security-exchange-online-exchonlinevip-20613a40.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
+| [ExemptedFindings](stratosecure-exemptedfindings-e8c04f81.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 
 ## H
 
 | Name | Source |
 |:-----|:-------|
 | [HighlySensitivePasswords](lastpass-enterprise-activity-monitoring-highlysensitivepasswords-c680e56f.md) | 📦 [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
+| [HighValueAssets](stratosecure-highvalueassets-a9c8ff62.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+
+## I
+
+| Name | Source |
+|:-----|:-------|
+| [InternetFacingApps](stratosecure-internetfacingapps-ddfad963.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 
 ## J
 
@@ -92,6 +102,12 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 |:-----|:-------|
 | [operation_names_lookup](veeam-operation-names-lookup-03d7d042.md) | 📦 [Veeam](../solutions/veeam.md) |
 
+## P
+
+| Name | Source |
+|:-----|:-------|
+| [PCIApplications](stratosecure-pciapplications-2561747a.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+
 ## R
 
 | Name | Source |
@@ -102,6 +118,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 
 | Name | Source |
 |:-----|:-------|
+| [SecurityChampions](stratosecure-securitychampions-d81eff06.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [session_states_lookup](veeam-session-states-lookup-9c8ee9ff.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [SOCcontacts](soc-process-framework-soccontacts-3893f7fa.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [SOCDepartmental](soc-process-framework-socdepartmental-0a699ff5.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
@@ -122,6 +139,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 |:-----|:-------|
 | [TeamCymruScoutDomainData](team-cymru-scout-teamcymruscoutdomaindata-17b10d52.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [TeamCymruScoutIPData](team-cymru-scout-teamcymruscoutipdata-71f47feb.md) | 📦 [Team Cymru Scout](../solutions/team-cymru-scout.md) |
+| [TrustedScanners](stratosecure-trustedscanners-6caade23.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 
 ## U
 

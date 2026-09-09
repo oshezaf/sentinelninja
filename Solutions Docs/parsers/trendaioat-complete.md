@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | Location | Solution |
-| Solution | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) ⚠️ |
+| Solution | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
 | Version | 1.0.0 |
 | Last Updated | 2025-01-01 |
 | Category | TrendAI |

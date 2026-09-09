@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uniqkey Security Events for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="uniqkey-security-events-for-microsoft-sentinel">Uniqkey Security Events for Microsoft Sentinel</h1>
+<p><em>Solution: Uniqkey</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Uniqkey.svg" alt="Uniqkey Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Uniqkey</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://uniqkey.eu/">https://uniqkey.eu/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Identity,Security - Others</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Uniqkey - support@uniqkey.eu</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-08-25</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-09-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Uniqkey">Uniqkey</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/uniqkey.azure-sentinel-solution-uniqkey">Azure Marketplace</a> · Popularity: 🟢 High (84%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://uniqkey.eu/">Uniqkey</a> solution for Microsoft Sentinel enables ingestion of security and audit events from the Uniqkey business password management platform. Events cover authentication, credential access, credential management, sharing, policy management, threat detection and other administrative activity, giving security teams visibility into password and access hygiene across the organization.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/uniqkeyeventsconnector.html">Uniqkey Security Events</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+  <td><a href="../connectors/uniqkeyeventsconnector.html">Uniqkey Security Events</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">9</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-credential-export-from-newly-created-account-3939f01f-9563-4cd3-8423-97a82e82719b-b28cfe72.html">Uniqkey - Credential export from newly created account</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-data-export-activity-f3125212-6871-4adc-8335-98c9a920639b-db21e42a.html">Uniqkey - Data export activity</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-departing-employee-credential-export-cee6bbae-e1ee-4b65-9782-6afce5c330e6-11608d54.html">Uniqkey - Departing employee credential export</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-event-ingestion-stopped-97857198-99f2-48dd-b036-461d85a29570-a62b1ae0.html">Uniqkey - Event ingestion stopped</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-excessive-credential-access-755c7adb-1015-4be3-9e56-55e72009c088-2335297d.html">Uniqkey - Excessive credential access</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-platform-threat-detection-712f5770-a5a9-4623-8adc-26cda17294a5-7bbf43e3.html">Uniqkey - Platform threat detection</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-security-policy-change-ac008972-e70f-4040-96ad-bdce1c642839-f3b70987.html">Uniqkey - Security policy change</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-self-granted-privilege-or-access-change-4b1fefb3-419a-4bbe-8a74-ef8288a8d8d0-f1096525.html">Uniqkey - Self-granted privilege or access change</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-sign-in-from-unfamiliar-ip-address-6909c70c-fb52-47a3-9eb9-3b8109b0b32a-8f4a6773.html">Uniqkey - Sign-in from unfamiliar IP address</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/uniqkey-uniqkey-bb86defa.html">Uniqkey</a></td>
+  <td style="text-align:left"><a href="../tables/uniqkeyevents-cl.html"><code>UniqkeyEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Uniqkey/README.md">Uniqkey/README.md</a></em></p>
+</blockquote>
+<p>This solution ingests security and audit events from the Uniqkey business password management platform into Microsoft Sentinel using the Codeless Connector Framework (CCF).</p>
+<h2 id="contents">Contents</h2>
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Path</th>
+  <th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Connector definition</td>
+  <td><code>Data Connectors/UniqkeyAuditLogs_ccf/Uniqkey_ConnectorDefinition.json</code></td>
+  <td>Connector page UI in the Sentinel portal</td>
+</tr>
+<tr>
+  <td>Poller config</td>
+  <td><code>Data Connectors/UniqkeyAuditLogs_ccf/Uniqkey_PollerConfig.json</code></td>
+  <td>REST API polling (bearer auth, cursor paging, time windows)</td>
+</tr>
+<tr>
+  <td>Data collection rule</td>
+  <td><code>Data Connectors/UniqkeyAuditLogs_ccf/Uniqkey_DCR.json</code></td>
+  <td>Raw event to <code>UniqkeyEvents_CL</code> schema transformation</td>
+</tr>
+<tr>
+  <td>Table schema</td>
+  <td><code>Data Connectors/UniqkeyAuditLogs_ccf/Uniqkey_Table.json</code></td>
+  <td>Custom table <code>UniqkeyEvents_CL</code></td>
+</tr>
+<tr>
+  <td>Packaging manifest</td>
+  <td><code>Data/Solution_Uniqkey.json</code></td>
+  <td>Input for the V3 packaging tool</td>
+</tr>
+<tr>
+  <td>Analytic rules</td>
+  <td><code>Analytic Rules/*.yaml</code></td>
+  <td>9 scheduled detections (anomalous sign-in, export/exfiltration patterns, insider privilege escalation, policy changes, platform threat detections, ingestion health)</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td><code>Workbooks/Uniqkey.json</code></td>
+  <td>Uniqkey Security Events dashboard (volume, sign-in map, client systems, top users, exports, threat detections)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="open-items-before-pr-submission">Open items before PR submission</h2>
+<ul>
+<li>[x] <strong>API endpoint</strong>: the poller points at the production endpoint <code>https://siem-integration.production.uniqkey.eu</code>.</li>
+<li>[x] <strong>Logo</strong>: <code>Logos/Uniqkey.svg</code> added and embedded in the connector definition.</li>
+<li>[x] <strong>Instruction steps</strong>: token generation path (Settings &gt; Integrations &gt; SIEM) documented in the connector definition.</li>
+<li>[x] <strong>SolutionMetadata publisherId</strong>: <code>publisherId: &quot;uniqkey&quot;</code> matches the Commercial Marketplace publisher ID registered in Partner Center. Support email confirmed as support@uniqkey.eu.</li>
+<li>[ ] <strong>ASIM</strong>: obtain the official EventVendor/EventProduct designation from Microsoft and add an <code>ASimAuthentication</code> parser under <code>Parsers/</code>.</li>
+<li>[x] <strong>Analytic rule action names</strong>: the rules &quot;Departing employee credential export&quot; and &quot;Credential export from newly created account&quot; filter on the exact action-type GUIDs from the Uniqkey audit-log catalog (Const.cs, verified 25-08-2026), with a name-based fallback. Re-verify against live sample data during the test deployment, including that the account_management event's target employee id matches the exporting actor's id.</li>
+<li>[ ] <strong>Workbook preview images</strong>: <code>Workbooks/Images/Preview/UniqkeyEvents{Black,White}.png</code> at the repository root are generated placeholders. Replace them with real screenshots (dark and light theme) of the deployed workbook.</li>
+<li>[ ] <strong>Content</strong>: consider adding Hunting Queries to raise solution quality further (see https://aka.ms/SentinelSolutionQuality). Note: failed sign-ins are not audited by Uniqkey, so do not build authentication-failure detections on <code>Outcome</code>.</li>
+</ul>
+<h2 id="build-amp-validate">Build &amp; validate</h2>
+<pre><code class="language-powershell">pwsh .script/local-validation/build-and-validate.ps1 -SolutionName &quot;Uniqkey&quot;
+</code></pre>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>25-08-2026</td>
+  <td>Initial release of the Uniqkey solution with a CCF data connector for Uniqkey security events</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

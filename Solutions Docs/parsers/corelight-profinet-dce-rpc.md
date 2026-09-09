@@ -13,8 +13,8 @@
 | Title | corelight_profinet_dce_rpc parser for Corelight |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-09-25 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_profinet_dce_rpc.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_profinet_dce_rpc_CL`](../tables/corelight-v2-profinet-dce-rpc-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_profinet_dce_rpc_CL`](../tables/corelight-v3-profinet-dce-rpc-cl.md) | ? | ✓ | ? |
 
 ---
 

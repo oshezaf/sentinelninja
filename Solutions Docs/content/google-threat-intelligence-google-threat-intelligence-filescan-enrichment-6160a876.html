@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Threat Intelligence - FileScan Enrichment &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="google-threat-intelligence---filescan-enrichment">Google Threat Intelligence - FileScan Enrichment</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook accepts a blob path posted from an Azure Workbook, retrieves the file from Azure Blob Storage, submits it to Google Threat Intelligence (VirusTotal) for scanning (handling both standard and large files &gt;32 MB), polls until analysis is complete, ingests the result into GTI_FileScan_CL via DCE/DCR, and returns a verdict with threat assessment details.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTIFileScanEnrichment/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>4</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azureblob"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Blob_Metadata</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('StorageAccountName')))}/files/@{encodeURIComponent(encodeURIComponent(concat('/', triggerBody()?['containerName'], '/', triggerBody()?['blobPath'])))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Blob_Content</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('StorageAccountName')))}/files/@{encodeURIComponent(encodeURIComponent(concat('/', triggerBody()?['containerName'], '/', triggerBody()?['blobPath'])))}/content</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Upload_Large_File_Via_Function</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('FunctionAppResourceName'), '/functions/GTIUploadLargeFile')]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Submit_File</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{variables('GTIBaseUrl')}/api/v3/private/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Analysis</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('GTIBaseUrl')}/api/v3/private/analyses/@{variables('AnalysisId')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_File_Report</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('GTIBaseUrl')}/api/v3/private/files/@{body('Get_Analysis')?['meta']?['file_info']?['sha256']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Ingest_File_Scan_Result</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('DCEIngestionEndpoint')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTIFileScanEnrichment/readme.md">GTIFileScanEnrichment/readme.md</a></em></p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<p>This playbook is triggered via HTTP request from the Google Threat Intelligence Workbook and accepts a container name and blob path pointing to a file in Azure Blob Storage. It retrieves the file (uploading it through the shared GTIFileUpload Function App if larger than 32 MB), submits it to Google Threat Intelligence (VirusTotal) for scanning, and polls the analysis until it completes. The resulting file report, including the GTI threat verdict, severity, and contributing factors, is ingested into the GTI_FileScan_CL table via a Data Collection Endpoint/Rule, giving analysts an on-demand file reputation and threat assessment view directly in the workbook.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Deploy the GTIFileUpload_FunctionAppConnector (Solutions/Google Threat Intelligence/Playbooks/CustomConnector/GTIFileUpload_FunctionAppConnector) before deploying this playbook, since files larger than 32 MB are uploaded to GTI by that Function App rather than by this Logic App.</li>
+<li>Obtain a Google Threat Intelligence (VirusTotal) API key and store it in Azure Key Vault as a secret (default secret name: 'GTIApiKey').</li>
+<li>Create or identify an Azure Key Vault, and confirm enabledForTemplateDeployment is set to true.</li>
+<li>Ensure you have a Log Analytics Workspace configured for Microsoft Sentinel where the GTI_FileScan_CL table will be created.</li>
+<li>Identify the Azure Storage Account that contains the files to be scanned; this playbook is bound to a single storage account at deploy time.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Enter the playbook name here (default: GTIFileScanEnrichment).</li>
+<li>KeyVaultName: Name of the Azure Key Vault that contains the GTI API key secret.</li>
+<li>KeyVaultSecretName: Name of the secret in Key Vault that holds the GTI (VirusTotal) API key (default: GTIApiKey).</li>
+<li>WorkspaceName: Name of the Log Analytics workspace where the GTI_FileScan_CL table resides.</li>
+<li>StorageAccountName: Name of the Azure Storage Account containing the files to be scanned.</li>
+<li>FunctionAppName: Name of the shared GTIFileUpload Azure Function App used to upload files larger than 32MB to GTI (default: gtifileupload).</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIFileScanEnrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIFileScanEnrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<p>Once deployment is complete, authorize the connections that require sign-in.</p>
+<ol>
+<li>Go to your logic app → API connections → Select the keyvault connection resource.</li>
+<li>Go to General → edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+</ol>
+<p>Note: the azureblob connection authenticates via the Logic App's Managed Identity rather than OAuth sign-in, so it does not need to be authorized here; see step c below instead.</p>
+<h4 id="b-grant-the-key-vault-role-to-the-managed-identity">b. Grant the Key Vault role to the managed identity</h4>
+<ol>
+<li>Go to logic app → <em>your logic app</em> → identity → System assigned Managed identity and copy Object (principal) ID.</li>
+<li>Go to key vaults → <em>your key vault</em> → Access control (IAM) → Add role assignment.</li>
+<li>Select the 'Key Vault Secrets User' role and assign it to the copied Object ID.</li>
+</ol>
+<h4 id="c-grant-the-storage-account-role-to-the-managed-identity">c. Grant the Storage Account role to the managed identity</h4>
+<ol>
+<li>Go to Storage accounts → <em>your storage account</em> → Access control (IAM) → Add role assignment.</li>
+<li>Select the 'Storage Blob Data Reader' role and assign it to the Logic App's managed identity Object ID (copied in step b). This is required for the azureblob (Managed Identity) connection to read blob content.</li>
+<li>The 'Monitoring Metrics Publisher' role on the Data Collection Rule is assigned automatically by this template, so no action is needed for DCR ingestion.</li>
+</ol>
+<h4 id="d-wire-up-the-trigger">d. Wire Up the Trigger</h4>
+<p>Configure the Google Threat Intelligence Workbook to call this playbook.</p>
+<ol>
+<li>Go to Logic App → <em>your Logic App</em> → Logic app designer.</li>
+<li>Copy the HTTP POST URL from the trigger.</li>
+<li>Configure the Google Threat Intelligence Workbook's FileScan tab to call this URL, passing containerName, blobPath, and storageAccountName (matching the StorageAccountName parameter above) for each file to be scanned.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/google-threat-intelligence.html">Back to Google Threat Intelligence</a></p>
+
+</div>
+
+</body>
+</html>

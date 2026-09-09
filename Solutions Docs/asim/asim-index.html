@@ -20,7 +20,7 @@
 <p>📚 <strong>Learn more:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions for Microsoft Sentinel</a></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>13 schemas</strong> with 195 source parsers and 15 unifying parsers. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>13 schemas</strong> with 196 source parsers and 15 unifying parsers. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p>* <em>Each unifying parser is available as a parameter-less <code>ASim</code> parser and a filtering <code>im</code>/<code>vim</code> parser; both are listed on the parser's page.</em></p>
 <h2 id="schemas">Schemas</h2>
 <ul>
@@ -30,7 +30,7 @@
 <li><a href="#auditevent">AuditEvent</a> (20 source, 1 unifying)</li>
 <li><a href="#authentication">Authentication</a> (40 source, 1 unifying)</li>
 <li><a href="#dhcpevent">DhcpEvent</a> (2 source, 1 unifying)</li>
-<li><a href="#dns">Dns</a> (15 source, 1 unifying)</li>
+<li><a href="#dns">Dns</a> (16 source, 1 unifying)</li>
 <li><a href="#fileevent">FileEvent</a> (17 source, 1 unifying)</li>
 <li><a href="#networksession">NetworkSession</a> (38 source, 1 unifying)</li>
 <li><a href="#processevent">ProcessEvent</a> (17 source, 3 unifying)</li>
@@ -125,7 +125,7 @@
 <tr>
   <td style="text-align:left"><a href="asimalerteventcrowdstrikefalcon.html">CrowdStrikeFalcon</a></td>
   <td style="text-align:left">CrowdStrike Falcon</td>
-  <td style="text-align:left"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+  <td style="text-align:left"></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCrowdStrikeFalcon.md">0.1.0</a></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@
 <tr>
   <td style="text-align:left"><a href="asimauthenticationgoogleworkspacelogins.html">GoogleWorkspaceLogins</a></td>
   <td style="text-align:left">Google Workspace</td>
-  <td style="text-align:left"><a href="../solutions/googleworkspacereports.html">GoogleWorkspaceReports</a></td>
+  <td style="text-align:left"><a href="../solutions/googleworkspacereports.html">GoogleWorkspaceReports (legacy connector)</a></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationGoogleWorkspaceLogins.md">0.1.0</a></td>
 </tr>
 <tr>
@@ -519,7 +519,7 @@
   <td style="text-align:left"><a href="asimauthenticationoktav2.html">OktaV2</a></td>
   <td style="text-align:left">Okta</td>
   <td style="text-align:left"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaV2.md">0.4.0</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaV2.md">0.4.1</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimauthenticationpaloaltocortexdatalake.html">PaloAltoCortexDataLake</a></td>
@@ -674,12 +674,12 @@
 <tr>
   <td style="text-align:left"><a href="asimdns.html">ASimDns</a></td>
   <td style="text-align:left"><code>_ASim_Dns</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md">0.5.2</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md">0.5.3</a></td>
 </tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
-<p><a href="asim-products-index.md#azure-firewall">Azure Firewall</a>, <a href="asim-products-index.md#cisco-umbrella">Cisco Umbrella</a>, <a href="asim-products-index.md#corelight-zeek">Corelight Zeek</a>, <a href="asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a>, <a href="asim-products-index.md#gcp-cloud-dns">GCP Cloud DNS</a>, <a href="asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a>, <a href="asim-products-index.md#infoblox-nios">Infoblox NIOS</a>, <a href="asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a>, <a href="asim-products-index.md#ms-dns-events">MS DNS Events</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a>, <a href="asim-products-index.md#zscaler-zia-dns">Zscaler ZIA DNS</a></p>
+<p><a href="asim-products-index.md#azure-firewall">Azure Firewall</a>, <a href="asim-products-index.md#cisco-umbrella">Cisco Umbrella</a>, <a href="asim-products-index.md#corelight-zeek">Corelight Zeek</a>, <a href="asim-products-index.md#fortinet-fortigate">Fortinet FortiGate</a>, <a href="asim-products-index.md#gcp-cloud-dns">GCP Cloud DNS</a>, <a href="asim-products-index.md#halcyon">Halcyon</a>, <a href="asim-products-index.md#infoblox-bloxone">Infoblox BloxOne</a>, <a href="asim-products-index.md#infoblox-nios">Infoblox NIOS</a>, <a href="asim-products-index.md#microsoft-windows-events-sysmon">Microsoft Windows Events Sysmon</a>, <a href="asim-products-index.md#ms-dns-events">MS DNS Events</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#vectra-ai-streams">Vectra AI Streams</a>, <a href="asim-products-index.md#zscaler-zia-dns">Zscaler ZIA DNS</a></p>
 <h3 id="source-parsers">Source Parsers</h3>
 <table>
 <thead>
@@ -706,7 +706,7 @@
 <tr>
   <td style="text-align:left"><a href="asimdnscorelightzeek.html">CorelightZeek</a></td>
   <td style="text-align:left">Corelight Zeek</td>
-  <td style="text-align:left"><a href="../solutions/corelight.html">Corelight</a></td>
+  <td style="text-align:left"></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md">0.5.0</a></td>
 </tr>
 <tr>
@@ -720,6 +720,12 @@
   <td style="text-align:left">GCP Cloud DNS</td>
   <td style="text-align:left"><a href="../solutions/googlecloudplatformdns.html">GoogleCloudPlatformDNS (legacy connector)</a></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsGcp.md">0.4</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="asimdnshalcyon.html">Halcyon</a></td>
+  <td style="text-align:left">Halcyon</td>
+  <td style="text-align:left"><a href="../solutions/halcyon.html">Halcyon</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsHalcyon.md">0.1.0</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimdnsinfobloxbloxone.html">InfobloxBloxOne</a></td>
@@ -1038,7 +1044,7 @@
 <tr>
   <td style="text-align:left"><a href="asimnetworksessioncorelightzeek.html">CorelightZeek</a></td>
   <td style="text-align:left">Corelight Zeek</td>
-  <td style="text-align:left"><a href="../solutions/corelight.html">Corelight</a></td>
+  <td style="text-align:left"></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCorelightZeek.md">0.2</a></td>
 </tr>
 <tr>
@@ -1196,17 +1202,17 @@
 <tr>
   <td style="text-align:left"><a href="asimprocessevent.html">ASimProcessEvent</a></td>
   <td style="text-align:left"><code>_ASim_ProcessEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md">0.1.2</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md">0.1.3</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimprocesseventcreate.html">ASimProcessEventCreate</a></td>
   <td style="text-align:left"><code>_ASim_ProcessEvent_Create</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreate.md">0.1.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreate.md">0.1.2</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimprocesseventterminate.html">ASimProcessEventTerminate</a></td>
   <td style="text-align:left"><code>_ASim_ProcessEvent_Terminate</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminate.md">0.1.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminate.md">0.1.2</a></td>
 </tr>
 </tbody>
 </table>
@@ -1233,7 +1239,7 @@
   <td style="text-align:left"><a href="asimprocesscreatemicrosoftsecurityevents.html">ProcessCreateMicrosoftSecurityEvents</a></td>
   <td style="text-align:left">Security Events</td>
   <td style="text-align:left"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftSecurityEvents.md">0.1.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftSecurityEvents.md">0.1.2</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimprocesscreatemicrosoftwindowsevents.html">ProcessCreateMicrosoftWindowsEvents</a></td>
@@ -1599,7 +1605,7 @@
   <td style="text-align:left"><a href="asimwebsessionnative.html">Native</a></td>
   <td style="text-align:left">Native</td>
   <td style="text-align:left"><a href="../solutions/synqlyintegrationconnector.html">SynqlyIntegrationConnector</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionNative.md">0.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionNative.md">0.1.1</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimwebsessionpaloaltocef.html">PaloAltoCEF</a></td>

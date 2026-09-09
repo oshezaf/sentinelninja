@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,IT Operations |
-| **Version** | 3.2.0 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |
-| **Last Updated** | 2026-07-07 |
+| **Last Updated** | 2026-08-19 |
 | **Solution Folder** | [Mulesoft](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mulesoft) · Popularity: 🟢 High (85%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mulesoft) · Popularity: 🟢 High (80%) |
 
 The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration) solution provides the capability to ingest logs from Cloudhub applications into Microsoft Sentinel. This solution includes two data connector options: an Azure Function-based connector using the Cloudhub API, and a push-based CCF connector that receives logs directly via Log4j HTTP appender as recommended by MuleSoft.
 
@@ -84,7 +84,8 @@ This solution includes **1 content item(s)**:
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                              |
-|-------------|-------------------------------|-------------------------------------------------|
+|-------------|--------------------------------|---------------------------------------------------|
+| 3.2.1       | 17-08-2026                    | Promoted MuleSoft CloudHub Alerts CCF connector from Public Preview to GA. |
 | 3.2.0       | 02-07-2026                    | Fixed Data Connectors Count issue on UI. |
 | 3.1.0       | 17-06-2026                    | Added MuleSoft CloudHub `Alerts` CCF Connector & `Logs` CCF Push Connector for real-time log streaming via Log4j HTTP appender.<br> Updated Definition file by removing empty instructions. |
 | 3.0.2       | 09-09-2024                    | Updated the python runtime version to 3.11         |

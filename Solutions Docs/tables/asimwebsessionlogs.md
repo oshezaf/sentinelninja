@@ -216,8 +216,8 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
-| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -246,19 +246,31 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/websessionlogs`
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
+| `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,HTTPSession"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **0** | **1** | **0** | **1** |
+| **Total** | **2** | **0** | **1** | **0** | **3** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
+| `AzureVNet` |  | 1 | - | - | - | **1** |
+| `BIND` |  | 1 | - | - | - | **1** |
+| `SAP Web Dispatcher` |  | 1 | - | - | - | **1** |
 
 ### EventType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Notable` | 1 | - | - | - | **1** |
 | `EndpointNetworkSession` | - | - | 1 | - | **1** |
 | `HTTPSession` | - | - | 1 | - | **1** |
 

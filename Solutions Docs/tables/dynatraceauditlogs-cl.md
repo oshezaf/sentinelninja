@@ -38,7 +38,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) |  |
+| [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) |  |
 
 ---
 

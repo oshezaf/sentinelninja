@@ -7,16 +7,16 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 161 |
-| **Solutions** | 26 |
+| **Playbooks using** | 165 |
+| **Solutions** | 27 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 1 | 2 |
+| [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 1 | 1 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 1 | 1 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 1 | 2 |
@@ -104,6 +104,12 @@
 | [Get-AD4IoTDeviceCVEs - Incident](../content/standalone-content-get-ad4iotdevicecves-incident-10996598.md) | 📄 Standalone | 1 | 1 |
 | [Get-MachineData-EDR-SOAR-ActionsOnMachine](../content/github-only-playbookname-be84dc69.md) | 🔗 GitHub Only | 1 | 1 |
 | [Get-MDATPVulnerabilities](../content/github-only-playbookname-5513287e.md) | 🔗 GitHub Only | 1 | 1 |
+| [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - URLScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - Vulnerability Enrichment](../content/google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Ingest Microsoft Defender XDR insights into Dynatrace](../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.md) | [Intel471](../solutions/intel471.md) | 1 | 2 |
@@ -147,24 +153,22 @@
 | [Tanium-SCCMClientHealth](../content/tanium-tanium-sccmclienthealth-010e4c0b.md) | [Tanium](../solutions/tanium.md) | 1 | 1 |
 | [Tanium-UnquarantineHosts](../content/tanium-tanium-unquarantinehosts-45d6fcd0.md) | [Tanium](../solutions/tanium.md) | 1 | 1 |
 | [Update-Watchlist-With-NamedLocations](../content/github-only-update-watchlist-with-namedlocations-b93db1a5.md) | 🔗 GitHub Only | 0 | 1 |
+| [Vectra Add Note To Detections](../content/vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
+| [Vectra Add Tag To Detections](../content/vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
 | [Vectra Add Tag To Entity Selected Detections](../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
 | [Vectra Assign Dynamic User To Entity](../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Assign Static User To Entity](../content/vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 4 |
 | [Vectra Close Detections](../content/vectra-xdr-vectra-close-detections-93f91aea.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
-| [Vectra Decorate Incident Based On Tag](../content/vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Decorate Incident Based On Tags And Notify](../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
+| [Vectra Close Detections On Incident Close](../content/vectra-xdr-vectra-close-detections-on-incident-close-02648c3f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
 | [Vectra Dynamic Assign Member To Group](../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Dynamic Resolve Assignment](../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Generate Access Token](../content/vectra-xdr-vectra-generate-access-token-569f7428.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
-| [Vectra Mark Detections As Fixed](../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 3 |
 | [Vectra Open Closed Detections](../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
-| [Vectra Operate On Entity Source IP](../content/vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
+| [Vectra Set Detection Status](../content/vectra-xdr-vectra-set-detection-status-dd76d3f7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 4 |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Whisper Security - Batch Indicator Enrichment](../content/whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
 | [Whisper Security - Check ASN Reputation](../content/whisper-whisper-security-check-asn-reputation-f2a79814.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |

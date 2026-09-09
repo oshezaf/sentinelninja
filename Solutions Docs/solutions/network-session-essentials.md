@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.11 |
+| **Version** | 3.0.12 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-11 |
-| **Last Updated** | 2026-03-27 |
+| **Last Updated** | 2026-09-07 |
 | **Solution Folder** | [Network Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession) · Popularity: 🔵 Medium (65%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession) · Popularity: 🔵 Medium (74%) |
 | **Pre-requisites** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), zscaler1579058425289.zscaler_internet_access_mss, [IllumioSaaS](illumiosaas.md) |
 
 [Network Session Essentials](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions) is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
@@ -30,7 +30,7 @@ For details on the required solutions, see the [Pre-requisites](#pre-requisites)
 
 **Recommendation :-**
 
-It is highly recommended to use the **Summarize data** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
+It is highly recommended to use the **Summarize Data for Network Session Essentials using log ingestion API** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries. **NOTE: This solution includes the playbook SummarizeData_NSE, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeData_NSE_Logingestionapi playbook instead.**
 
 **Additional Information**
 
@@ -99,10 +99,19 @@ This solution depends on **16 other solution(s)**:
 
 ## Tables Used
 
-This solution queries **10 table(s)** from its content items:
+This solution queries **19 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`NetworkCustomAnalyticsV1_CL`](../tables/networkcustomanalyticsv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_countryV1_CL`](../tables/networkcustomanalytics-countryv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_ipV1_CL`](../tables/networkcustomanalytics-ipv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_protocolV1_CL`](../tables/networkcustomanalytics-protocolv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_ruleV1_CL`](../tables/networkcustomanalytics-rulev1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_sourceInfoV1_CL`](../tables/networkcustomanalytics-sourceinfov1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_source_portV1_CL`](../tables/networkcustomanalytics-source-portv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_threatV1_CL`](../tables/networkcustomanalytics-threatv1-cl.md) | Playbooks |
+| [`NetworkCustomAnalytics_threat_iocV1_CL`](../tables/networkcustomanalytics-threat-iocv1-cl.md) | Playbooks |
 | [`NetworkSummary_Country_CL`](../tables/networksummary-country-cl.md) | Workbooks |
 | [`NetworkSummary_IP_CL`](../tables/networksummary-ip-cl.md) | Workbooks |
 | [`NetworkSummary_Protocol_CL`](../tables/networksummary-protocol-cl.md) | Analytics, Hunting, Workbooks |
@@ -134,7 +143,7 @@ The following **11 table(s)** are used internally by this solution's content ite
 
 ## Content Items
 
-This solution includes **38 content item(s)**:
+This solution includes **39 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
@@ -142,7 +151,7 @@ This solution includes **38 content item(s)**:
 | Analytic Rules | 9 |
 | Hunting Queries | 7 |
 | Workbooks | 2 |
-| Playbooks | 1 |
+| Playbooks | 2 |
 | Watchlists | 1 |
 
 ### Analytic Rules
@@ -182,7 +191,8 @@ This solution includes **38 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Summarize Data for Network Session Essentials](../content/network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.md) | This playbook summarizes data for Network Session Essentials and lands it into custom tables. | *Internal use:*<br>[`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) *(read/write)* |
+| [Summarize Data for Network Session Essentials using log ingestion API](../content/network-session-essentials-summarize-data-for-network-session-essentials-using-log-ingestion-api-a5a818a0.md) | This playbook summarizes data for Network Session Essentials and lands it into custom tables. | [`NetworkCustomAnalyticsV1_CL`](../tables/networkcustomanalyticsv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_countryV1_CL`](../tables/networkcustomanalytics-countryv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_ipV1_CL`](../tables/networkcustomanalytics-ipv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_protocolV1_CL`](../tables/networkcustomanalytics-protocolv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_ruleV1_CL`](../tables/networkcustomanalytics-rulev1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_sourceInfoV1_CL`](../tables/networkcustomanalytics-sourceinfov1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_source_portV1_CL`](../tables/networkcustomanalytics-source-portv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_threatV1_CL`](../tables/networkcustomanalytics-threatv1-cl.md) *(read)*<br>[`NetworkCustomAnalytics_threat_iocV1_CL`](../tables/networkcustomanalytics-threat-iocv1-cl.md) *(read)* |
+| [[Deprecated] Summarize Data for Network Session Essentials](../content/network-session-essentials-[deprecated]-summarize-data-for-network-session-essentials-7add1212.md) | This playbook summarizes data for Network Session Essentials and lands it into custom tables. **NOTE... | *Internal use:*<br>[`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) *(read/write)*<br>[`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) *(read/write)* |
 
 ### Watchlists
 
@@ -217,6 +227,7 @@ This solution includes **38 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                    |
 |-------------|--------------------------------|-----------------------------------------------------------------------|
+| 3.0.12      | 02-09-2026                     | Added **Summarize Data for Network Session Essentials using log ingestion API** Playbook |
 | 3.0.11      | 24-03-2026                     | Bump solution version and Updated links to remove review.learn.                                 |
 | 3.0.10      | 14-02-2026                     | Updated links to remove review.learn.                                 |
 | 3.0.9       | 06-02-2026                     | Updated the relevant techniques in the **hunting queries**.	       |

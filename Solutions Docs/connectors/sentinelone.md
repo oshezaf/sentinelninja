@@ -31,7 +31,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ? | ✓ | ? |
+| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ✓ | ✓ | ✓ |
 | [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ✓ | ✓ | ✓ |
@@ -88,7 +88,7 @@ Use this method for automated deployment of the SentinelOne Audit data connector
 
 1. Click the **Deploy to Azure** button below. 
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-SentinelOneAPI-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-SentinelOneAPI-azuredeploy-gov)
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-SentinelOneAPI-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinel-SentinelOneAPI-azuredeploy-gov)
 2. Select the preferred **Subscription**, **Resource Group** and **Location**. 
 > **NOTE:** Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group.
 3. Enter the **SentinelOneAPIToken**, **SentinelOneUrl** `(https://<SOneInstanceDomain>.sentinelone.net)` and deploy. 

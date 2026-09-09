@@ -6,7 +6,7 @@
 
 ---
 
-This rule makes use of the series decompose anomaly method to detect clients with a high NXDomain response count, which could be indicative of a DGA (cycling through possible C2 domains where most C2s are not live). An alert is generated when new IP address DNS activity is identified as an outlier when compared to the baseline, indicating a recurring pattern. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema.
+'This rule makes use of the series decompose anomaly method to detect clients with a high NXDomain response count, which could be indicative of a DGA (cycling through possible C2 domains where most C2s are not live). An alert is generated when new IP address DNS activity is identified as an outlier when compared to the baseline, indicating a recurring pattern. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema. The rule also
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,10 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ✓ |
+| [`DNS_Summarized_Logs_ipV1_CL`](../tables/dns-summarized-logs-ipv1-cl.md) 🔶 | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfoV1_CL`](../tables/dns-summarized-logs-sourceinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

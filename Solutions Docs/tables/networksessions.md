@@ -73,11 +73,11 @@ Reference for NetworkSessions table in Azure Monitor Logs.
 | EventResourceId | string | The resource ID of the device generating the message. |
 | EventResult | string | The result reported for the activity. Empty value when not applicable. |
 | EventResultDetails | string | Reason for the result reported in EventResult |
-| EventSchemaVersion | string | Azure Sentinel Schema Version. |
+| EventSchemaVersion | string | Microsoft Sentinel Schema Version. |
 | EventSeverity | string | If the activity reported has a security impact, denotes the severity of the impact. |
 | EventStartTime | datetime | The time in which the event stated. |
 | EventSubType | string | Additional description of type if applicable. |
-| EventTimeIngested | datetime | The time the event was ingested to Azure Sentinel. Will be added by Azure Sentinel. |
+| EventTimeIngested | datetime | The time the event was ingested to Microsoft Sentinel. Will be added by Microsoft Sentinel. |
 | EventType | string | Type of event being collected. |
 | EventUid | string | Unique identifier used by Sentinel to mark a row. |
 | EventVendor | string | The vendor of the product generating the event. |

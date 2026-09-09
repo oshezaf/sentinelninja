@@ -19,8 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-02-06 |
+| **Last Updated** | 2026-08-25 |
 | **Solution Folder** | [AWS_AccessLogs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_AccessLogs) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awsaccesslogs) · Popularity: 🔵 Medium (70%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awsaccesslogs) · Popularity: 🟡 Low (48%) |
 
 The AWS S3 Server Access Logs connector for Microsoft Sentinel allows you to track and analyze access requests to your S3 buckets. It helps you monitor who is accessing your data, what actions they are performing, and any issues that arise.
 

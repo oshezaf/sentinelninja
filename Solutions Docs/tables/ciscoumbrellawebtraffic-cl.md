@@ -19,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (56 columns)
+## Schema (57 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella%5CData%20Connectors%5CCiscoUmbrella_CCP/CiscoUmbrellaWebTraffic_table.json)
 
@@ -57,6 +57,7 @@
 | IdentityTypes | string | The type of identities that were associated with the request. Examples: Roaming Computer, Network. |
 | InternalClientIp | string | The internal IP address of the computer making the request. |
 | IsolateAction | string | The remote browser isolation state associated with the request. |
+| IsolationProfileId | string | The ID of the isolation profile applied to the web request. |
 | MspOrganizationId | string | The Secure Access parent organization ID. |
 | OrganizationId | string | The Secure Access organization ID. |
 | PolicyIdentityLabel | string | The identity that made the request. |

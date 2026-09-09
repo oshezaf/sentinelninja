@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.3</td>
+  <td style="text-align:left">3.0.4</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -58,12 +58,16 @@
   <td style="text-align:left">2023-06-29</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-09-07</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials">Web Session Essentials</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain">Azure Marketplace</a> · Popularity: 🟡 Low (47%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -74,7 +78,8 @@
 <p>Web Session Essentials is a <a href="https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
 <p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
 <p><strong>Recommendation :-</strong></p>
-<p>It is highly recommended to use the <strong>SummarizeWebSessionData</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
+<p>It is highly recommended to use the <strong>SummarizeWebSessionData</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.
+<strong>NOTE: This solution includes the playbook SummarizeWebSessionData, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeWebSessionData_logingestion playbook instead.</strong></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
@@ -112,7 +117,7 @@
 <li><a href="../connectors/vectrastreamama.html">[Recommended] Vectra AI Stream via AMA</a> <em>(dependency on <a href="vectra-ai-stream.html">Vectra AI Stream</a>)</em></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<p>This solution queries <strong>5 table(s)</strong> from its content items:</p>
 <table>
 <thead>
 <tr>
@@ -124,6 +129,22 @@
 <tr>
   <td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
   <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/websession-summarized-dstipv1-cl.html"><code>WebSession_Summarized_DstIPV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/websession-summarized-srcipv1-cl.html"><code>WebSession_Summarized_SrcIPV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/websession-summarized-srcinfov1-cl.html"><code>WebSession_Summarized_SrcInfoV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/websession-summarized-threatinfov1-cl.html"><code>WebSession_Summarized_ThreatInfoV1_CL</code></a></td>
+  <td>Playbooks</td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +189,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>26 content item(s)</strong>:</p>
+<p>This solution includes <strong>27 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -186,11 +207,11 @@
   <td style="text-align:left">9</td>
 </tr>
 <tr>
-  <td style="text-align:left">Workbooks</td>
-  <td style="text-align:left">1</td>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">2</td>
 </tr>
 <tr>
-  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
 </tr>
 </tbody>
@@ -381,7 +402,12 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/web-session-essentials-summarize-web-session-data-ea664ad8.html">Summarize Web Session Data</a></td>
+  <td style="text-align:left"><a href="../content/web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.html">Summarize Web Session Data using Log Ingestion API</a></td>
+  <td style="text-align:left">The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the...</td>
+  <td style="text-align:left"><a href="../tables/websession-summarized-dstipv1-cl.html"><code>WebSession_Summarized_DstIPV1_CL</code></a> <em>(read)</em><br><a href="../tables/websession-summarized-srcipv1-cl.html"><code>WebSession_Summarized_SrcIPV1_CL</code></a> <em>(read)</em><br><a href="../tables/websession-summarized-srcinfov1-cl.html"><code>WebSession_Summarized_SrcInfoV1_CL</code></a> <em>(read)</em><br><a href="../tables/websession-summarized-threatinfov1-cl.html"><code>WebSession_Summarized_ThreatInfoV1_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/web-session-essentials-%5Bdeprecated%5D-summarize-web-session-data-eff20266.html">[Deprecated] Summarize Web Session Data</a></td>
   <td style="text-align:left">The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the...</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/websession-summarized-dstip-cl.html"><code>WebSession_Summarized_DstIP_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-srcip-cl.html"><code>WebSession_Summarized_SrcIP_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-srcinfo-cl.html"><code>WebSession_Summarized_SrcInfo_CL</code></a> <em>(read/write)</em><br><a href="../tables/websession-summarized-threatinfo-cl.html"><code>WebSession_Summarized_ThreatInfo_CL</code></a> <em>(read/write)</em></td>
 </tr>
@@ -397,6 +423,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.4</td>
+  <td>02-09-2026</td>
+  <td>Added Summarize Web Session Data using Log Ingestion API <strong>Playbook</strong></td>
+</tr>
 <tr>
   <td>3.0.3</td>
   <td>06-06-2024</td>

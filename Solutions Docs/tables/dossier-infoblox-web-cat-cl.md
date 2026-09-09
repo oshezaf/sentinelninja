@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -27,23 +26,23 @@
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| Computer | string |
-| data_results_s | string |
-| ManagementGroupName | string |
-| MG | string |
-| params_source_s | string |
-| params_target_s | string |
-| params_type_s | string |
-| RawData | string |
-| SourceSystem | string |
-| status_message_for_dossier_s | string |
-| status_s | string |
-| task_id_g | string |
+| data | dynamic |
+| data_info | string |
+| data_reason | string |
+| data_results | dynamic |
+| params | dynamic |
+| params_source | string |
+| params_target | string |
+| params_type | string |
+| RowData | dynamic |
+| status | string |
+| status_message_for_dossier | string |
+| task_id | string |
 | TenantId | string |
-| time_d | real |
+| time_value | real |
 | TimeGenerated | datetime |
 | Type | string |
-| v_s | string |
+| v_value | string |
 
 ## Schema References
 

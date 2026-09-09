@@ -18,7 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DNS_Summarized_Logs_ipV1_CL`](../tables/dns-summarized-logs-ipv1-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfoV1_CL`](../tables/dns-summarized-logs-sourceinfov1-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ✗ |

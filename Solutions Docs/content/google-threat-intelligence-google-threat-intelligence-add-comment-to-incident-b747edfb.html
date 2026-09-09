@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Threat Intelligence - Add Comment To Incident &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="google-threat-intelligence---add-comment-to-incident">Google Threat Intelligence - Add Comment To Incident</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Utility sub-playbook called by GTIURLScanIncidentEnrichment and GTIURLScanEntityEnrichment. Receives the incident ARM ID, a pre-formatted HTML comment (with GTI URL scan assessment table), and the calling playbook name. Fetches the current incident comment count, enforces a 99-comment limit and a 30 000-character-per-comment limit, posts the comment (or a truncation notice / limit-reached warning that references the GTI_URLScan_CL custom table), and returns a structured HTTP response to the call</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTIAddCommentToIncident/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>1</strong> Logic App connector / built-in action:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Comment</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Limit_Warning</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTIAddCommentToIncident/readme.md">GTIAddCommentToIncident/readme.md</a></em></p>
+</blockquote>
+<h1 id="google-threat-intelligence-add-comment-to-incident">Google Threat Intelligence Add Comment To Incident</h1>
+<h2 id="summary">Summary</h2>
+<p>This playbook is triggered via HTTP request and is designed to be used as a sub-playbook by other GTI playbooks, such as GTIURLScanIncidentEnrichment and GTIURLScanEntityEnrichment. It receives the incident ARM ID, the raw GTI URL scan response object, the scanned URL, and the calling playbook's name. It fetches the current incident comment count, formats the scan results (verdict, severity, threat score, contributing factors, URL details, and context) into an HTML table, enforces a 99-comment and 30,000-character-per-comment limit, and posts the resulting comment to the Microsoft Sentinel incident.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>This playbook is intended to be called as a sub-playbook by other GTI playbooks.</li>
+<li>Ensure the parent playbook(s) (GTIURLScanIncidentEnrichment, GTIURLScanEntityEnrichment, etc.) are deployed and configured.</li>
+<li>Ensure you have appropriate permissions to add comments to Microsoft Sentinel incidents.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Enter the playbook name here (default: GTIAddCommentToIncident).</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIAddCommentToIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIAddCommentToIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<p>Once deployment is complete, authorize the Microsoft Sentinel connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select Microsoft Sentinel connection resource.</li>
+<li>Go to General → edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+</ol>
+<h4 id="b-configure-parent-playbooks">b. Configure Parent Playbooks</h4>
+<p>Configure the parent GTI playbooks (GTIURLScanIncidentEnrichment, GTIURLScanEntityEnrichment, etc.) to call this sub-playbook using its HTTP trigger URL.</p>
+<ol>
+<li>Go to Logic App → <em>your Logic App</em> → Logic app designer.</li>
+<li>Copy the HTTP POST URL from the trigger.</li>
+<li>Update each parent playbook's &quot;Call comment sub-playbook&quot; action to pass <code>incidentArmId</code>, <code>scanResponse</code>, <code>urlScanned</code>, and <code>playbookName</code> to this URL.</li>
+</ol>
+<h4 id="c-verify-permissions">c. Verify Permissions</h4>
+<p>Ensure the playbook has appropriate permissions to add comments to incidents.</p>
+<ol>
+<li>Verify the managed identity has Microsoft Sentinel Responder role or equivalent permissions.</li>
+<li>Test the playbook by triggering it from a parent playbook with sample enrichment data.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/google-threat-intelligence.html">Back to Google Threat Intelligence</a></p>
+
+</div>
+
+</body>
+</html>

@@ -86,7 +86,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (14)
 
 ### Hunting Queries (10)
 
@@ -99,13 +99,13 @@ This table is ingested by the following connectors:
 | [MultipleLdaps](../content/github-only-multipleldaps-13476066-24d0-4b19-8fd5-28fe42ab35f6-3119160b.md) | `ActionType == "LDAP query"` |
 | [MultipleSensitiveLdaps](../content/github-only-multiplesensitiveldaps-36582cd7-ddd2-43bc-be79-293a61c42cbe-4ebd792d.md) | `ActionType == "LDAP query"` |
 | [PasswordSearch](../content/github-only-passwordsearch-ba3da496-7559-4288-834e-8de26a90eb6e-d2a90c36.md) | `ActionType == "LDAP query"` |
-| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) | `ActionType == "LDAP query"` |
+| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) |  |
 | [SensitiveLdaps](../content/github-only-sensitiveldaps-86d343dd-1b7c-496f-adba-be52469574d6-2e1f5877.md) | `ActionType == "LDAP query"` |
 | [VulnComputers](../content/github-only-vulncomputers-ab8b5893-0c82-4a8c-ae19-43669b3d1eba-ede06b6b.md) | `ActionType == "LDAP query"` |
 | [c2-lookup-from-nonbrowser[Nobelium] (1)](../content/github-only-c2-lookup-from-nonbrowser[nobelium]-1-58899f81-6ad4-4f42-9003-5e315c43585e-46ad1ee8.md) | `ActionType == "DNS query"`<br>`QueryTarget has "appsync-api"`<br>`QueryTarget has "avsvmcloud.com"` |
 | [c2-lookup-response[Nobelium] (1)](../content/github-only-c2-lookup-response[nobelium]-1-10a55c6e-8cce-4c6a-891c-99ead1771446-c97085fc.md) | `ActionType == "DNS query"`<br>`QueryTarget has "appsync-api"`<br>`QueryTarget has "avsvmcloud.com"` |
 
-### Workbooks (3)
+### Workbooks (4)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
 
@@ -118,24 +118,25 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 | [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |
 
-## Selection Criteria Summary (3 criteria, 9 total references)
+## Selection Criteria Summary (3 criteria, 8 total references)
 
-References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "LDAP query"` | - | 6 | - | - | **6** |
+| `ActionType == "LDAP query"` | - | 5 | - | - | **5** |
 | `ActionType == "DNS query"`<br>`QueryTarget has "appsync-api"`<br>`QueryTarget has "avsvmcloud.com"` | - | 2 | - | - | **2** |
 | `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **9** | **0** | **0** | **9** |
+| **Total** | **0** | **8** | **0** | **0** | **8** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `LDAP query` | - | 6 | - | - | **6** |
+| `LDAP query` | - | 5 | - | - | **5** |
 | `DNS query` | - | 2 | - | - | **2** |
 | `LogonFailed` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |

@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.11</td>
+  <td style="text-align:left">3.0.12</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-03-27</td>
+  <td style="text-align:left">2026-09-07</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession">Azure Marketplace</a> · Popularity: 🔵 Medium (65%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession">Azure Marketplace</a> · Popularity: 🔵 Medium (74%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -79,7 +79,7 @@
 <p><a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">Network Session Essentials</a> is a <a href="https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions">domain solution</a> and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the <a href="https://aka.ms/AboutASIM">ASIM</a>.</p>
 <p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
 <p><strong>Recommendation :-</strong></p>
-<p>It is highly recommended to use the <strong>Summarize data</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
+<p>It is highly recommended to use the <strong>Summarize Data for Network Session Essentials using log ingestion API</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries. <strong>NOTE: This solution includes the playbook SummarizeData_NSE, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeData_NSE_Logingestionapi playbook instead.</strong></p>
 <p><strong>Additional Information</strong></p>
 <ul>
 <li>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions overview</a> - Uses ASIM Network Session schema for cross-product threat detection</li>
@@ -181,7 +181,7 @@
 <li><a href="../connectors/windowsfirewallama.html">Windows Firewall Events via AMA</a> <em>(dependency on <a href="windows-firewall.html">Windows Firewall</a>)</em></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>10 table(s)</strong> from its content items:</p>
+<p>This solution queries <strong>19 table(s)</strong> from its content items:</p>
 <table>
 <thead>
 <tr>
@@ -190,6 +190,42 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a></td>
+  <td>Playbooks</td>
+</tr>
 <tr>
   <td><a href="../tables/networksummary-country-cl.html"><code>NetworkSummary_Country_CL</code></a></td>
   <td>Workbooks</td>
@@ -289,7 +325,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>38 content item(s)</strong>:</p>
+<p>This solution includes <strong>39 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -316,7 +352,7 @@
 </tr>
 <tr>
   <td style="text-align:left">Playbooks</td>
-  <td style="text-align:left">1</td>
+  <td style="text-align:left">2</td>
 </tr>
 <tr>
   <td style="text-align:left">Watchlists</td>
@@ -468,8 +504,13 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.html">Summarize Data for Network Session Essentials</a></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-summarize-data-for-network-session-essentials-using-log-ingestion-api-a5a818a0.html">Summarize Data for Network Session Essentials using log ingestion API</a></td>
   <td style="text-align:left">This playbook summarizes data for Network Session Essentials and lands it into custom tables.</td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/network-session-essentials-%5Bdeprecated%5D-summarize-data-for-network-session-essentials-7add1212.html">[Deprecated] Summarize Data for Network Session Essentials</a></td>
+  <td style="text-align:left">This playbook summarizes data for Network Session Essentials and lands it into custom tables. **NOTE...</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a> <em>(read/write)</em></td>
 </tr>
 </tbody>
@@ -603,6 +644,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.12</td>
+  <td>02-09-2026</td>
+  <td>Added <strong>Summarize Data for Network Session Essentials using log ingestion API</strong> Playbook</td>
+</tr>
 <tr>
   <td>3.0.11</td>
   <td>24-03-2026</td>

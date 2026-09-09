@@ -1,4 +1,6 @@
-# SecurityScorecard Issue
+# 🚫 [DEPRECATED] SecurityScorecard Issue
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityScorecard-Cybersecurity-Ratings.svg" alt="" width="75" height="75">
 
@@ -18,7 +20,11 @@
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
-SecurityScorecard is the leader in cybersecurity risk ratings. The [SecurityScorecard](https://www.SecurityScorecard.com/) Issues data connector provides the ability for Sentinel to import SecurityScorecard issue data as logs. SecurityScorecard provides ratings for over 12 million companies and domains using countless data points from across the internet. Maintain full awareness of any company's security posture and be able to receive timely updates when new cybersecurity issues are discovered.
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated. Consider moving to the <strong>SecurityScorecard Issues (via Codeless Connector Framework)</strong> CCF data connector available in the solution, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
+
+
+
+SecurityScorecard is the leader in cybersecurity risk ratings. The [SecurityScorecard](https://www.SecurityScorecard.com/) Issues data connector provides the ability for Microsoft Sentinel to import SecurityScorecard issue data as logs. SecurityScorecard provides ratings for over 12 million companies and domains using countless data points from across the internet. Maintain full awareness of any company's security posture and be able to receive timely updates when new cybersecurity issues are discovered.
 
 ## Tables Ingested
 

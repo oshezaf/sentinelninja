@@ -1,6 +1,6 @@
 # Analytic Rules - I
 
-**49 analytic rules** starting with 'I'.
+**52 analytic rules** starting with 'I'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -22,6 +22,9 @@
 | [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-a-813ccf3b-0321-4622-b0bc-63518fd14454-4eaea7cb.md) | Medium | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
 | [Identify Mango Sandstorm powershell commands](standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md) | High | 📄 Standalone Content |
 | [Identify SysAid Server web shell creation](web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |
+| [Idira - High-Risk Actions Outside Business Hours](cyberarkaudit-idira-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-69d24d43.md) | High | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [Idira - Multiple Failed Actions Followed by Success (15m)](cyberarkaudit-idira-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-6009c78d.md) | Medium | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [Idira - Sensitive Safe/Permission/Entitlement Changes (with customData)](cyberarkaudit-idira-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-a246971b.md) | Low | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [Illegal Function Codes for ICS traffic (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-illegal-function-codes-for-ics-traffic-microsoft-defender-for-io-70be4a31-9d2b-433b-bdc7-da8928988069-a9b23f60.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Illumio Enforcement Change Analytic Rule](illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a-d2fd3adb.md) | Medium | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illumio Firewall Tampering Analytic Rule](illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6-c6814f6c.md) | Medium | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |

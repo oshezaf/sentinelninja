@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
@@ -54,7 +50,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (31 columns)</h2>
+<h2 id="schema">Schema (28 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_threat_actor_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -69,103 +65,91 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">data</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_actor_description</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_actor_description_s</td>
+  <td style="text-align:left">data_actor_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_actor_id_s</td>
+  <td style="text-align:left">data_actor_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_actor_name_s</td>
+  <td style="text-align:left">data_customer_first_dns_query</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_customer_last_dns_query</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_display_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_customer_first_dns_query_s</td>
+  <td style="text-align:left">data_external_references</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_ikb_first_classified_malicious</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_ikb_submitted</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_purpose</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_related_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_reports</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">data_ttp</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">params</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">params_source</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_customer_last_dns_query_s</td>
+  <td style="text-align:left">params_target</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_display_name_s</td>
+  <td style="text-align:left">params_type</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_external_references_s</td>
+  <td style="text-align:left">RowData</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">status</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_ikb_first_classified_malicious_s</td>
+  <td style="text-align:left">status_message_for_dossier</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_ikb_submitted_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_infoblox_references_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_page_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_purpose_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_related_count_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_ttp_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ManagementGroupName</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">params_source_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">params_target_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">params_type_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">status_message_for_dossier_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">status_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">task_id_g</td>
+  <td style="text-align:left">task_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -173,7 +157,7 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">time_d</td>
+  <td style="text-align:left">time_value</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
@@ -185,7 +169,7 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">v_s</td>
+  <td style="text-align:left">v_value</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>

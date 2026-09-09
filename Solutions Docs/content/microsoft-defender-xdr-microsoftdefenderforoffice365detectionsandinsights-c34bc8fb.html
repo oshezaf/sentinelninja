@@ -56,35 +56,63 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,TeamsImpersonationDetected,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;ClickAllowed&quot;</code><br><code>ActionType has &quot;ClickBlocked&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType startswith &quot;AdminSubmission&quot;</code><br><code>ActionType startswith &quot;UserSubmission&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code><br><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>DeliveryAction != &quot;Delivered&quot;</code><br><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
-  <td style="text-align:left"><code>Action == &quot;Quarantine release&quot;</code><br><code>ActionResult == &quot;Success&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/filemaliciouscontentinfo.html"><code>FileMaliciousContentInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/messagepostdeliveryevents.html"><code>MessagePostDeliveryEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/messageurlinfo.html"><code>MessageUrlInfo</code></a></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>

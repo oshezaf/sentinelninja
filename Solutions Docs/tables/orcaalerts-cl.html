@@ -51,7 +51,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (25 columns)</h2>
+<h2 id="schema">Schema (46 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts%5CData%20Connectors%5COrcaSecurityAlertsCCF/OrcaSecurityAlerts_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -62,7 +62,19 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">account_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">account_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">account_tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_category</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -78,12 +90,28 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">alert_ui_link</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_category</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">asset_hostname</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">asset_labels</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
   <td style="text-align:left">asset_name</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_regions</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">asset_state</td>
@@ -99,6 +127,22 @@
 </tr>
 <tr>
   <td style="text-align:left">asset_unique_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_vendor_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">asset_vpcs</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">business_units</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloud_provider</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -118,6 +162,14 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">created_at</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
   <td style="text-align:left">cve_list</td>
   <td style="text-align:left">dynamic</td>
 </tr>
@@ -134,6 +186,18 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">last_seen</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">last_updated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_cvss_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
   <td style="text-align:left">orca_score</td>
   <td style="text-align:left">real</td>
 </tr>
@@ -142,8 +206,28 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">related_compliances</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_group_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">risk_level</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rule_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rule_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">security_domains</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">source</td>

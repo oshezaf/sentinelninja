@@ -21,6 +21,8 @@ Reference for ApiManagementGatewayLogs table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
 ## Schema (59 columns)
@@ -95,7 +97,23 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ApiManagementGatewayLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/apimanagementgatewaylogs)
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [StratoSecure](../solutions/stratosecure.md)
+
 ---
+
+## Content Items Using This Table (1)
+
+### Analytic Rules (1)
+
+**In solution [StratoSecure](../solutions/stratosecure.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [BOLA Finding with API Traffic Anomaly](../content/stratosecure-bola-finding-with-api-traffic-anomaly-3c5be96e-2eeb-439a-9856-1c23aa72cfdd-0c6799d9.md) |  |
 
 ## Resource Types
 

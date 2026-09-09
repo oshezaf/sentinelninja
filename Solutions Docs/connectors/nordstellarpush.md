@@ -21,7 +21,7 @@
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#nordstellar-push) |
 
-The [NordStellar](https://nordstellar.com) connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified `NordStellar_CL` table with common columns (`EventId`, `EventType`, `Module`, `RiskLevel`, `AssetType`, `AssetValue`, `Tags`) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic `Details` column.
+The [NordStellar](https://nordlayer.com/intelligence/) connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified `NordStellar_CL` table with common columns (`EventTime`, `EventId`, `EventType`, `Module`, `RiskLevel`, `AssetType`, `AssetValue`, `Tags`) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic `Details` column.
 
 
 
@@ -111,7 +111,7 @@ Each element wraps the original webhook event in a thin envelope:
 ]
 ```
 
-The DCR's KQL transform promotes `id`, `type`, `module`, `risk_level`, `asset.type`/`source_type`, `asset.value`/`asset_value`, `tags`, and the appropriate timestamp (`date_added` for leaked-data/dark-web/domain-permutation, `detected_at` for attack-surface) into typed columns. Everything else is preserved in the dynamic `Details` column.
+The DCR's KQL transform promotes `id`, `type`, `module`, `risk_level`, `asset.type`/`source_type`, `asset.value`/`asset_value`, and `tags` into typed columns. `TimeGenerated` is set to the ingestion time so historical events are never dropped by retention checks, while the original event timestamp (`detected_at` for attack-surface/domain-permutation, `date_added` otherwise) is preserved in `EventTime`. Everything else is preserved in the dynamic `Details` column.
 
 **3. Verify data ingestion**
 

@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
 | **Categories** | Networking,Security - Threat Intelligence,Security - Threat Protection,Security - Network |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.2 |
 | **Author** | Infoblox |
 | **First Published** | 2024-07-15 |
-| **Last Updated** | 2026-08-14 |
+| **Last Updated** | 2026-09-04 |
 | **Solution Folder** | [Infoblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infoblox.infoblox-app-for-microsoft-sentinel) · Popularity: ⚪ Very Low (2%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/infoblox.infoblox-app-for-microsoft-sentinel) · Popularity: 🟢 High (80%) |
 
 The Infoblox Solution for Microsoft Sentinel is designed to enhance the capabilities of Security Operations Centers (SOC) by integrating actionable intelligence and contextual network data derived from DNS data into Microsoft Sentinel. This integration provides SOC analysts with the tools they need to quickly identify and respond to potential threats such as malware and data exfiltration, improving overall security posture. With seamless configuration and intuitive dashboards, the solution ensures that critical security events are monitored and correlated, offering actionable insights that streamline threat detection and response. 
 SOC analysts will benefit from the app’s ability to provide contextual network data, including user and device attribution, through various lookups and visualizations. By leveraging unique DNS-based threat intelligence, audit logs and other data sources, analysts can conduct faster and more effective investigations. The solution’s functionalities, such as IQ for TD Insights Overview and DNS Events, empower analysts to reduce alert fatigue by focusing on correlated events, ultimately leading to improved efficiency and protection against emerging threats.
@@ -61,22 +61,22 @@ This solution uses **24 table(s)**:
 | [`Service_Name_Info_CL`](../tables/service-name-info-cl.md) 🔶 | - | Workbooks |
 | [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Workbooks |
-| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) 🔶 | - | Workbooks |
-| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) 🔶 | - | Workbooks |
-| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) 🔶 | - | Workbooks |
-| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) 🔶 | - | Workbooks |
-| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) 🔶 | - | Workbooks |
-| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) 🔶 | - | Workbooks |
-| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) 🔶 | - | Workbooks |
-| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) 🔶 | - | Workbooks |
-| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) 🔶 | - | Workbooks |
-| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) 🔶 | - | Workbooks |
-| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) 🔶 | - | Workbooks |
-| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) 🔶 | - | Workbooks |
-| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) 🔶 | - | Workbooks |
-| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) 🔶 | - | Workbooks |
-| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) 🔶 | - | Workbooks |
-| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) 🔶 | - | Workbooks |
+| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) | - | Workbooks |
+| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) | - | Workbooks |
+| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) | - | Workbooks |
+| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) | - | Workbooks |
+| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) | - | Workbooks |
+| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) | - | Workbooks |
+| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) | - | Workbooks |
+| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) | - | Workbooks |
+| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) | - | Workbooks |
+| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) | - | Workbooks |
+| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) | - | Workbooks |
+| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) | - | Workbooks |
+| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) | - | Workbooks |
+| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) | - | Workbooks |
+| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) | - | Workbooks |
+| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -158,6 +158,8 @@ This solution includes **27 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.2       |   01-09-2026                   | Migrated Dossier data ingestion in InfobloxCloudDataConnector to the Log Ingestion API (DCE/DCR) and updated the Data Connector UI page. |
+| 3.1.1       | 26-08-2026                     | Protected Infoblox API keys using secure workflow parameters and secured HTTP action inputs and outputs. |
 | 3.1.0       |   17-07-2026                   | Updated playbooks, parsers, workbooks and analytic rule from SOC insight v1 to Infoblox for IQ for Threat Defense (SOC insight v2). |
 | 3.0.2       |   19-06-2025                   | Added flags for Asset, Indicator, Event and Comment in InfobloxSOCGetInsightDetails playbook. Updated Workbook, Parser and Analytic rule.<br> Migrated checkpoint from file share to azure tables.           |
 | 3.0.1       |   07-11-2024                   | Bug fix in Infoblox_Workbook **Workbook**   |

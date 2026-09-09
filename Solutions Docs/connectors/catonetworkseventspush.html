@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Cato Networks Events Push &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cato-networks-events">⚠️ Cato Networks Events (Push)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/catonetworks.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>CatoNetworksEventsPush</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Cato Networks</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/catonetworks.html">CatoNetworks</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks/Data%20Connectors/CatoNetworks_PUSH_CCP/CatoNetworks_ConnectorDefinition.json">CatoNetworks_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks/Data%20Connectors/CatoNetworks_PUSH_CCP/CatoNetworks_DCR.json">CatoNetworks_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks/Data%20Connectors/CatoNetworks_PUSH_CCP/CatoNetworks_dataConnector.json">CatoNetworks_dataConnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.catonetworks.com/">Cato Networks</a> connector pushes security and networking telemetry from the Cato Management Application into Microsoft Sentinel in near real time, using the Codeless Connector Framework (CCF) Push pattern. Data lands in a custom Log Analytics table, ready for hunting, analytics, and visualization. See the <a href="https://knowledge.catonetworks.com/docs/cato-event-schema">Cato Event Schema</a> for the fields carried on each record.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/catonetworksevents-cl.html"><code>CatoNetworksEvents_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role.</li>
+<li><strong>Cato Management Application</strong>: An administrator account on the Cato Management Application with permission to create a Microsoft Sentinel data-out connector.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
+<p>This connector enables the Cato Cloud to push events directly to Microsoft Sentinel via the Azure Monitor Logs Ingestion API.</p>
+<h4 id="automated-configuration-and-secure-data-ingestion-with-entra-application">Automated Configuration and Secure Data Ingestion with Entra Application</h4>
+<p>Clicking on &quot;Deploy&quot; will trigger the creation of a Log Analytics table and a Data Collection Rule (DCR).
+It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.</p>
+<h4 id="one-connector-per-workspace">One connector per workspace</h4>
+<p>The Data Collection Rule and the <code>CatoNetworksEvents_CL</code> table are named from this workspace, so deploying the connector again in the same Log Analytics workspace reuses them rather than creating a second set. A workspace holds one Cato connector.</p>
+<p>Events from more than one Cato account can be sent to the same connector; they share the table and are distinguished by <code>account_id</code> and <code>account_name</code>. To keep feeds in separate tables, with their own retention or access control, use a separate Log Analytics workspace for each.
+Deploy Cato Networks connector resources</p>
+<p><strong>2. Configure the connector in the Cato Management Application</strong></p>
+<p>In the Cato Management Application, go to Resources &gt; Integrations &gt; Configured Integrations, click New, select Microsoft Sentinel, and enter the values below. For full setup instructions, see <a href="https://knowledge.catonetworks.com/docs/integrating-cato-events-with-microsoft-sentinel">Integrating Cato Events with Microsoft Sentinel</a>.</p>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Application ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint Uri</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Events Stream Name</strong>: <code>Custom-CatoNetworksEvents</code></li>
+</ul>
+<p><strong>3. Keeping the schema up to date</strong></p>
+<p>Cato periodically adds fields to its event schema. Because upgrading this solution leaves your connector's existing custom table and Data Collection Rule unchanged, new fields must be applied separately using the dedicated schema update template.</p>
+<h4 id="apply-the-current-schema">Apply the current schema</h4>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcatonetworks%2Fcato-sentinel-ccf%2Fmain%2FupdateTemplate.json">Deploy the schema update</a></p>
+<p>Select the subscription and the resource group holding this workspace, then enter the workspace name. That is the only value you supply.</p>
+<p>Your ingestion URL, Entra application and client secret are unchanged, and nothing has to be re-entered in the Cato Management Application. Ingestion continues throughout.</p>
+<p>Allow up to 30 minutes for new fields to start arriving. Events are still accepted during that window and the new fields are simply empty, so confirm with a query rather than assuming a failure.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

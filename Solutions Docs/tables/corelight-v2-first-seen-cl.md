@@ -6,12 +6,6 @@
 
 ---
 
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Parsers](#parsers-using-this-table)
-
 ## Schema (11 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_first_seen_CL.json)
@@ -37,14 +31,6 @@ Official Microsoft Learn documentation for field/column information:
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
 ---
-
-## Parsers Using This Table (1)
-
-### Other Parsers (1)
-
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [corelight_first_seen](../parsers/corelight-first-seen.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

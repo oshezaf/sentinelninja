@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dynatrace Audit Logs V1 &mdash; Solutions Analyzer</title>
+<title>🚫 Deprecated Dynatrace Audit Logs V1 &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,10 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="dynatrace-audit-logs-v1">Dynatrace Audit Logs V1</h1>
+<h1 id="deprecated-dynatrace-audit-logs-v1">🚫 [Deprecated] Dynatrace Audit Logs V1</h1>
+<blockquote>
+<p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+</blockquote>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -60,6 +63,8 @@
 </tbody>
 </table>
 <p>This connector uses the <a href="https://docs.dynatrace.com/docs/dynatrace-api/environment-api/audit-logs">Dynatrace Audit Logs REST API</a> to ingest tenant audit logs into Microsoft Sentinel Log Analytics</p>
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: This connector is deprecated and will be removed in a future version. Please use the <b>Dynatrace Audit Logs V2</b> connector instead.</p>
+
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -77,6 +82,12 @@
   <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/dynatraceauditlogsv3-cl.html"><code>DynatraceAuditLogsV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/dynatraceauditlogs-cl.html"><code>DynatraceAuditLogs_CL</code></a></td>

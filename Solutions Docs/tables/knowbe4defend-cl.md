@@ -68,16 +68,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Analytic Rules (4)
-
-**In solution [Egress Defend](../solutions/egress-defend.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.md) |  |
-| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.md) |  |
+### Analytic Rules (2)
 
 **In solution [KnowBe4 Defend](../solutions/knowbe4-defend.md):**
 
@@ -94,13 +87,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dangerous emails with links clicked](../content/knowbe4-defend-dangerous-emails-with-links-clicked-40a3d172-79ec-4e46-95bd-21114ee0f863-eb38a85c.md) |  |
 
-### Workbooks (2)
-
-**In solution [Egress Defend](../solutions/egress-defend.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DefendMetrics](../content/egress-defend-defendmetrics-35b2f8e1.md) |  |
+### Workbooks (1)
 
 **In solution [KnowBe4 Defend](../solutions/knowbe4-defend.md):**
 

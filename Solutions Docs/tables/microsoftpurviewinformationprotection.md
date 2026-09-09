@@ -137,9 +137,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (5)
 
-### Workbooks (4)
+### Workbooks (5)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `LabelName !in "General"`
 
@@ -159,11 +159,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
-**GitHub Only:** `Operation == "SensitivityLabelApplied"`
+**GitHub Only:**
 
-| Workbook |
-|:-------------|
-| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) | `Operation == "SensitivityLabelApplied"` |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 
 ## Selection Criteria Summary (1 criteria, 2 total references)
 

@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Version** | 3.5.0 |
+| **Version** | 3.5.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
-| **Last Updated** | 2026-08-10 |
+| **Last Updated** | 2026-08-27 |
 | **Solution Folder** | [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github) · Rating: ★★☆☆☆ 2.3/5 (3 ratings) · Popularity: 🔵 Medium (79%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github) · Rating: ★★☆☆☆ 2.3/5 (3 ratings) · Popularity: 🟢 High (83%) |
 
 The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to easily ingest events and logs from GitHub to Microsoft Sentinel using GitHub audit log API and  webhooks. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
  
@@ -136,6 +136,7 @@ This solution includes **29 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.5.1       | 13-08-2026                     | Added source storage subscription and resource group details to the Azure Storage data connector request for authorization validation. |
 | 3.5.0       | 30-07-2026                     | Promoted the GitHub Azure Storage Audit Logs data connector to GA, add multi-stream support, and updated its generated configuration with advanced Event Grid filters. |
 | 3.4.0       | 25-06-2026                     | Added all api.request fields and created V3 table for AzStorage connector         |
 | 3.3.1       | 17-06-2026                     | Added SAS related instruction.          |

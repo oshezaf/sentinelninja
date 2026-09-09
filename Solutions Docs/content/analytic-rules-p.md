@@ -1,6 +1,6 @@
 # Analytic Rules - P
 
-**225 analytic rules** starting with 'P'.
+**229 analytic rules** starting with 'P'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -123,6 +123,7 @@
 | [Pathlock TDnR - User-Profile Assignment Changes](pathlock-tdnr-pathlock-tdnr-user-profile-assignment-changes-2a3b4c5d-6e7f-4a0b-8c1d-2e3f4a5b6c75-13848f86.md) | High | 📦 [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Pathlock TDnR - User-Role Assignment Changes](pathlock-tdnr-pathlock-tdnr-user-role-assignment-changes-2a3b4c5d-6e7f-4a0b-8c1d-2e3f4a5b6c76-32b460f3.md) | High | 📦 [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Pathlock TDnR - Vendor Change Documents](pathlock-tdnr-pathlock-tdnr-vendor-change-documents-2a3b4c5d-6e7f-4a0b-8c1d-2e3f4a5b6c13-0d35f78e.md) | Medium | 📦 [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
+| [PCI App with Open Findings Before Audit Window](stratosecure-pci-app-with-open-findings-before-audit-window-0457b577-3864-42c9-9779-1c9441d86429-d2e42cfd.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [PE file dropped in Color Profile Folder](standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md) | Medium | 📄 Standalone Content |
 | [Phishing link click observed in Network Traffic](standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md) | Medium | 📄 Standalone Content |
 | [PIM Elevation Request Rejected](microsoft-entra-id-pim-elevation-request-rejected-7d7e20f8-3384-4b71-811c-f5e950e8306c-aad39230.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -220,6 +221,9 @@
 | [PRODAFT USTA - Corporate credential compromised](prodaft-usta-account-takeover-prevention-prodaft-usta-corporate-credential-compromised-9ad6cf22-ffbb-4422-9933-9bbd0104f818-4df5a4e0.md) | High | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
 | [PRODAFT USTA - Non-expired payment card exposed](prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-non-expired-payment-card-exposed-674429c9-a858-436c-95b8-5808024ebd01-f3b34a4c.md) | High | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [PRODAFT USTA - Payment card exposed](prodaft-usta-payment-card-fraud-intelligence-prodaft-usta-payment-card-exposed-bd550c7f-5455-48de-b23d-30fced82d02b-61f1004e.md) | Medium | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
+| [PRODAFT USTA - TI map Domain to DnsEvents](prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-domain-to-dnsevents-c6f85aff-4ef0-4fde-b90e-e0ba1a9c3df6-268dc5e6.md) | Medium | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - TI map File Hash to CommonSecurityLog](prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-file-hash-to-commonsecuritylog-9c2cef4e-c3a3-4be9-8923-a2f820d4face-8e66187e.md) | Medium | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - TI map URL to Syslog](prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-url-to-syslog-99ae4d06-d352-4926-a1d7-9c28e25b1313-5b2b22cc.md) | Medium | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
 | [Progress MOVEIt File transfer above threshold](windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md) | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Progress MOVEIt File transfer folder count above threshold](windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md) | Medium | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [ProofpointPOD - Binary file in attachment](proofpoint-on-demand-pod-email-security-proofpointpod-binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a-ae200d61.md) | Medium | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |

@@ -48,6 +48,7 @@ This content item queries data from the following tables:
 | [`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) |  | ✓ | ✓ | ✓ |
 | [`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---

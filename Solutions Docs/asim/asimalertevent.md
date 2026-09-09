@@ -31,7 +31,7 @@ This union parser includes parsers for the following products:
 |:--------|:--------------|:----------|
 | Bitdefender | [_ASim_AlertEvent_BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | [GravityZone](../solutions/gravityzone.md) |
 | Cisco Secure Endpoint | [_ASim_AlertEvent_CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
-| CrowdStrike Falcon | [_ASim_AlertEvent_CrowdStrikeFalcon](asimalerteventcrowdstrikefalcon.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| CrowdStrike Falcon | [_ASim_AlertEvent_CrowdStrikeFalcon](asimalerteventcrowdstrikefalcon.md) |  |
 | Google SecOps | [_ASim_AlertEvent_GoogleSecOps](asimalerteventgooglesecops.md) | [GoogleSecOps](../solutions/googlesecops.md) |
 | Google Threat Intelligence | [_ASim_AlertEvent_GoogleThreatIntelligence](asimalerteventgooglethreatintelligence.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |

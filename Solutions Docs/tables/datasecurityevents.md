@@ -16,7 +16,7 @@ Information about user activities that violate user-defined or default policies 
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-datasecurityevents-table) |
 
-## Schema (61 columns)
+## Schema (57 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/datasecurityevents)
 
@@ -29,17 +29,14 @@ Information about user activities that violate user-defined or default policies 
 | ActivityId | guid | Unique identifier of the activity log |
 | ApplicationNames | string | List of application names used or related to the event |
 | CcPolicyMatchInfo | dynamic | Details of the Communications Compliance policy matches for this event; in JSON array format |
-| CloudAppAlertId | string | Unique identifier for the alert in Microsoft Defender for Cloud Apps |
 | Department | string | Name of the department that the account user belongs to |
 | DeviceDestinationLocationType | int | Indicates the type of location where the endpoint signals connected to; values can be: 0 (Unknown), 1 (Local), 2 (Remote), 3 (Removable), 4 (Cloud), 5 (File share) |
 | DeviceId | string | Unique identifier for the device in Microsoft Defender for Endpoint |
-| DeviceName | string | Fully qualified domain name(FQDN) of the device |
+| DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | DeviceSourceLocationType | int | Indicates the type of location where the endpoint signals originated from; values can be: 0 (Unknown), 1 (Local), 2 (Remote), 3 (Removable), 4 (Cloud), 5 (File share) |
 | DlpPolicyEnforcementMode | int | Indicates the Data Loss Prevention policy that was enforced; value can be: 0 (None), 1 (Audit), 2 (Warn), 3 (Warn and bypass), 4 (Block), 5 (Allow) |
 | DlpPolicyMatchInfo | string | Information around the list of data loss prevention (DLP) policies matching this event |
-| DlpPolicyRuleMatchInfo | dynamic | Details of the data loss prevention (DLP)  rules that matched with this event; in JSON array format |
-| EmailAttachmentCount | int | Number of email attachments |
-| EmailAttachmentInfo | dynamic | Details of email attachments; in JSON array format |
+| DlpPolicyRuleMatchInfo | dynamic | Details of the data loss prevention (DLP) rules that matched with this event; in JSON array format |
 | EmailSubject | string | Subject of the email |
 | ExternalUrlDomains | string | Websites or service URLs involved in this event that is classified as External in Insider Risk Management global settings |
 | FileRenameInfo | string | Details of the file (file name and extension) before this event |
@@ -56,15 +53,20 @@ Information about user activities that violate user-defined or default policies 
 | ObjectType | string | Type of object, such as a file or a folder, that the recorded action was applied to |
 | Operation | string | Name of the admin activity |
 | PhysicalAccessPointId | string | Unique identifier for the physical access point |
+| PhysicalAccessPointInfo | object | Information about the physical access in the event, including the physical access point's unique identifier, name, status, and the tag assigned to the asset |
 | PhysicalAccessPointName | string | Name of the physical access point |
 | PhysicalAccessStatus | string | Status of physical access, whether it succeeded or failed |
 | PhysicalAssetTag | string | Tag assigned to the asset as configured in Microsoft Insider Risk Management global settings |
 | PreviousSensitivityLabelId | string | The previous Microsoft Information Protection sensitivity label ID associated with the item in case of activities where the sensitivity label was changed |
 | PrinterName | string | List of printers involved in the behavior |
 | RecipientEmailAddress | string | Email address of the recipient, or email address of the recipient after distribution list expansion |
+| RemovableMediaInfo | object | List of any removable media involved in the behavior, including the serial number of the removable media device, the manufacturer of the removable media device, and the model of the removable device |
 | RemovableMediaManufacturer | string | Manufacturer name of the removable device |
 | RemovableMediaModel | string | Model name of the removable device |
 | RemovableMediaSerialNumber | string | Serial number of the removable device |
+| RiskyAIUsageAccessedResourceInfo | object | Details of the resources accessed or referenced by the application involved in the risky AI usage event |
+| RiskyAIUsageAppCategory | string | Details of the category of the application involved in the risky AI usage event |
+| RiskyAIUsageSensitivityLabelsInfo | object | Information regarding the sensitivity labels of entities involved in the risky AI usage event |
 | SensitiveInfoTypeInfo | dynamic | Details of Data Loss Prevention sensitive info types detected in the impacted asset |
 | SensitivityLabelId | string | The current Microsoft Information Protection sensitivity label ID associated with the item |
 | SequenceCorrelationId | string | Details of the sequence activity |
@@ -72,17 +74,11 @@ Information about user activities that violate user-defined or default policies 
 | SiteUrl | string | The URL of the site where the file or folder accessed by the user is located |
 | SourceCodeInfo | string | Details of the source code repository involved in the event |
 | SourceRelativeUrl | string | The URL of the folder that contains the file accessed by the user |
-| SourceUrlDomain | string | Domain where the device and email signals originated |
-| TargetFilePath | string | Target file path of endpoint activities |
-| TargetUrlDomain | string | Domain where the content was shared with or the user has browsed to |
 | TeamsChannelName | string | Name of the Teams channel |
 | TeamsChannelType | string | Type of the Teams channel |
 | TeamsTeamName | string | Name of the Teams team |
 | Timestamp | datetime | Date and time when the event was recorded |
-| UnallowedUrlDomains | string | Websites or service URLs involved in this event that is configured as Unallowed in Insider Risk Management global settings |
-| UrlDomainInfo | string | Details about the websites or service URLs involved in the event |
 | UserAlternateEmails | string | Alternate emails or aliases of the user |
-| Workload | string | The Microsoft 365 service where the event occurred |
 
 ## Schema References
 

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectra RUX Security Data Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="vectra-rux-security-data-connector">Vectra RUX Security Data Connector (via Codeless Connector Framework)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Vectra_RUX.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>VectraRUXConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Vectra AI</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraCCFConnector/VectraRUX_ConnectorDefinition.json">VectraRUX_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraCCFConnector/VectraRUX_DCR.json">VectraRUX_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraCCFConnector/VectraRUX_PollingConfig.json">VectraRUX_PollingConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>OAuth2</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.vectra.ai/">Vectra RUX</a> data connector enables you to ingest security data from the Vectra AI platform into Microsoft Sentinel through the REST API using the Codeless Connector Framework (CCF). This connector supports 3 data streams using OAuth2 client credentials:</p>
+<ul>
+<li><p><strong>Detections</strong>: Security detections, filtered by triaged status.</p>
+</li>
+<li><p><strong>Lockdown</strong>: Entity isolation and containment status. Live state captured every 5 minutes.</p>
+</li>
+<li><p><strong>Entities</strong>: Host and account entities with scoring, assignment, and enrichment data, incrementally ingested ordered by last modification time.</p>
+</li>
+</ul>
+<p>The connector is built on the Microsoft Sentinel Codeless Connector Platform and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> for optimized query performance.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/detections-data-ccf-cl.html"><code>Detections_Data_CCF_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/entities-data-ccf-cl.html"><code>Entities_Data_CCF_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/lockdown-data-ccf-cl.html"><code>Lockdown_Data_CCF_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Vectra RUX API access</strong>: Access to Vectra RUX API with appropriate permissions for each data stream is required.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Configure Vectra RUX Connection</strong></p>
+<p>Connect to Vectra RUX and select data stream</p>
+<h2 id="vectra-rux-data-connector-configuration">Vectra RUX Data Connector Configuration</h2>
+<p>Configure your Vectra RUX connection and select the data stream you want to collect. Each stream provides different types of security data from your Vectra AI platform.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Alias</strong></li>
+<li><strong>Stream Type</strong></li>
+<li><strong>API Base URL</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Vectra RUX Data Stream Connection</strong></p>
+<p><em>Configure Vectra RUX API connection and select data stream</em></p>
+<p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Base Configuration</em></p>
+<h3 id="base-api-configuration">Base API Configuration</h3>
+<ul>
+<li><strong>Connection Alias</strong> (optional): Production Vectra</li>
+<li><strong>Vectra API Base URL</strong> (optional): https://tenant.region.portal.vectra.ai
+<em>OAuth2 Credentials</em></li>
+</ul>
+<h3 id="oauth2-client-credentials">OAuth2 Client Credentials</h3>
+<ul>
+<li><strong>Client ID</strong> (optional): Enter OAuth2 Client ID</li>
+<li><strong>Client Secret</strong> (optional): Enter OAuth2 Client Secret
+<em>Data Stream Selection</em></li>
+</ul>
+<h3 id="data-stream-configuration">Data Stream Configuration</h3>
+<ul>
+<li><strong>Data Stream</strong> (required): Select from available options<ul>
+<li>Detections - Security detections</li>
+<li>Entities - Host and account entities with scoring and assignment data</li>
+<li>Lockdown - Security lockdown and containment actions</li>
+</ul>
+</li>
+<li><strong>Detections Starting Checkpoint — Enter 'Vectra' as text for adding Lockdown or Entities data</strong> (required): Paste next_checkpoint from GET /api/v3.5/events/detections?limit=1&amp;ordering=-event_timestamp</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p>ℹ️ <strong>Note</strong>: After adding a connection, the Detections stream polls every 5 minutes using a persistent checkpoint cursor (<code>PersistentToken</code>) — position-based, not time-based. The cursor survives pod restarts and long pagination runs; no events will be silently skipped due to clock drift or slow pages. <strong>First poll seeding</strong>: Provide the <code>detectionsStartingCheckpoint</code> value when creating the connection to start ingestion at your current event position rather than from the beginning of history.</p>
+<p>ℹ️ <strong>Troubleshooting Rate Limits (HTTP 429 Errors) when adding connections</strong>:</p>
+<ul>
+<li><strong>Root Cause</strong>: Vectra RUX limits API requests to prevent abuse</li>
+<li><strong>Solution</strong>: Create a separate API client in Vectra for each data stream connection</li>
+<li><strong>Verification</strong>: Check that each connector instance uses different <code>clientId</code> credentials</li>
+<li><strong>Deployment Strategy</strong>: Stagger connection creation by at least one minute when adding multiple streams simultaneously to prevent OAuth2 request collisions</li>
+</ul>
+<p><strong>2. Monitor and Validate Data Collection</strong></p>
+<p>Monitor data ingestion and validate connectivity</p>
+<h3 id="post-configuration-steps">Post-Configuration Steps</h3>
+<ol>
+<li><p><strong>Monitor Connection Status</strong>: Check the connector status in the Data connectors page.</p>
+</li>
+<li><p><strong>Validate Data Flow</strong>: Use the sample queries provided to verify data is being collected.</p>
+</li>
+<li><p><strong>Review Connector Health (Optional)</strong>: The <code>SentinelHealth</code> table provides per-poll-cycle status for each data stream, including failure reasons for authentication, network, and ingestion errors. It is not enabled by default.</p>
+<p><strong>To enable</strong>: Go to <strong>Microsoft Sentinel → Settings → Settings tab → Health and Audit</strong> and toggle on health monitoring for data connectors. See <a href="https://learn.microsoft.com/en-us/azure/sentinel/enable-monitoring">Enable health monitoring for Microsoft Sentinel</a> for full instructions.</p>
+<p><strong>Once enabled</strong>, run the following query to check connector poll status:</p>
+<p><code>SentinelHealth | where TimeGenerated &gt; ago(24h) | where SentinelResourceType == &quot;Data connector&quot; | project TimeGenerated, SentinelResourceName, Status, Description, Reason | order by TimeGenerated desc</code></p>
+</li>
+</ol>
+<h3 id="stream-specific-notes">Stream-Specific Notes</h3>
+<ul>
+<li><strong>Detections</strong>: Filters out triaged detections by default (<code>include_triaged=false</code>).</li>
+</ul>
+<p>ℹ️ <strong>PersistentToken Checkpoint Mode (Detections)</strong></p>
+<p>The Detections poller uses <code>PersistentToken</code> — the <code>next_checkpoint</code> value returned by the Vectra API is stored by CCF and passed back as <code>from=&lt;checkpoint&gt;</code> on the next poll cycle. This is position-based (monotonic <code>id</code>-based), not time-based, so slow pagination or pod restarts cannot cause silent data gaps.</p>
+<p><strong>Cold-start behaviour</strong>: On the very first poll after deployment, CCF sends <code>from=&lt;detectionsStartingCheckpoint&gt;</code> as the starting cursor. Ingestion begins at this cursor position, ensuring no historical backlog is ingested. Once the first poll completes, PersistentToken persists the returned <code>next_checkpoint</code> and all subsequent polls use the stored value automatically.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

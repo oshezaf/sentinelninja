@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.1.2 |
+| **Version** | 3.1.3 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-03-18 |
-| **Last Updated** | 2026-08-05 |
+| **Last Updated** | 2026-08-25 |
 | **Solution Folder** | [Check Point Cyberint Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-cyberint-solutions-alerts) · Popularity: 🔵 Medium (59%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-cyberint-solutions-alerts) · Popularity: 🔵 Medium (70%) |
 
 Check Point provides Microsoft Sentinel integration to streamline critical Alerts and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Check Point Exposure Management and Microsoft Sentinel customers can easily pull logs based on Check Point Exposure Management findings into Microsoft Sentinel platform.<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of Check Point Exposure Management Alerts Connector (via Codeless Connector Platform). This connector is build on the Codeless Connector Platform (CCP), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCP-based data connectors also support <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
 
@@ -157,6 +157,7 @@ This solution integrates **Check Point Exposure Management** with **Microsoft Se
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
 | ----------- |--------------------------------| ------------------------ |
+| 3.1.3       | 21-08-2026                     | Fixed ARM template expression escaping in nested content templates (stray `]` in dcrConfig and playbook expressions) that caused data connector **Connect** deployment to fail with a template language expression parse error.<br>Fixed alerts polling request body to send strict JSON (double-quoted): the Argos API now rejects single-quoted bodies with 422 Unprocessable Entity.<br>Fixed connection template parameter defaults: placeholder values (e.g. `"severity"`) leaked into the API request body when optional connector fields were left empty, failing the connectivity check with 422 (invalid severity enum). Optional filters now default to empty and are omitted from the request. |
 | 3.1.2       | 02-06-2026                     | Updated support contact information and documentation links. |
 | 3.1.0       | 10-03-2026                     | Update **Data Connector**, add bi-directional sync playbooks, analytic rule (ingestion anomaly), workbook (alert overview & sync health), and automation rules. |
 | 3.0.0       | 17-06-2025                     | Initial Solution release. |

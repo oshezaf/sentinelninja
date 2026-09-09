@@ -18,10 +18,10 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **47** |
-| Active | 45 |
+| Total Connectors | **51** |
+| Active | 47 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 2 |
+| Unpublished ⚠️ | 4 |
 
 ## Connectors Using This Method
 
@@ -31,6 +31,8 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 |:----------|:----------|:------:|:---------|
 | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Airlock Digital (Push)](../connectors/airlockdigitalpush.md) | Airlock Digital | 3 | [AirlockDigital](../solutions/airlockdigital.md) |
+| [Cato Networks Events (Push)](../connectors/catonetworkseventspush.md) ⚠️ | Cato Networks | 1 | [CatoNetworks](../solutions/catonetworks.md) |
 | [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [Darktrace ActiveAI Security Platform Connector](../connectors/darktraceactiveaisecurityplatform.md) | Darktrace | 6 | [Darktrace](../solutions/darktrace.md) |
@@ -52,10 +54,12 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Red Canary Threat Detection (via Codeless Connector Framework)](../connectors/redcanary-connectordefinition.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
+| [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md) 🔶 | Rubrik | 4 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | SAP SE | 8 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) ➕ | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
-| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | Synqly | 10 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
+| [StratoSecure Security Platform](../connectors/stratosecurepush.md) ⚠️ | Soluciones Etech Corp | 5 | [StratoSecure](../solutions/stratosecure.md) |
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | Synqly | 13 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
 | [Varonis SaaS (Push)](../connectors/varonissaasalertspush.md) 🔶 | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |

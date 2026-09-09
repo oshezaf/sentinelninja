@@ -6,20 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
-- [Parsers](#parsers-using-this-table)
-
 ## Schema (21 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_smb_mapping_CL.json)
@@ -54,49 +40,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Corelight](../solutions/corelight.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
-
 ---
-
-## Content Items Using This Table (4)
-
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight - Multiple Remote SMB Connections from single client](../content/corelight-corelight-multiple-remote-smb-connections-from-single-client-69736969-6ae0-48cd-a05a-743f7372ee84-4142e974.md) |  |
-
-### Workbooks (3)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight](../content/corelight-corelight-90dad195.md) |  |
-| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
-| [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
-
-## Parsers Using This Table (1)
-
-### Other Parsers (1)
-
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [corelight_smb_mapping](../parsers/corelight-smb-mapping.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

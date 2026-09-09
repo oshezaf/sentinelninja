@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BV_ClaudeCompliance_ComplianceActivities_CL`](../tables/bv-claudecompliance-complianceactivities-cl.md) | ? | ✓ | ? |
+| [`BV_ClaudeCompliance_ComplianceActivities_CL`](../tables/bv-claudecompliance-complianceactivities-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

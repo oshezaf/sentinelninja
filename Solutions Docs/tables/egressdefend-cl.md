@@ -108,14 +108,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [KnowBe4DefendMetrics](../content/knowbe4-defend-knowbe4defendmetrics-2e05a83a.md) |  |
 
-## Parsers Using This Table (2)
+## Parsers Using This Table (3)
 
-### Other Parsers (2)
+### Other Parsers (3)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [DefendAuditData](../parsers/defendauditdata.md) | [Egress Defend](../solutions/egress-defend.md) ⚠️ |  |
 | [DefendAuditData](../parsers/defendauditdata.md) | [Egress Defend](../solutions/egress-defend.md) |  |
+| [DefendAuditData_v4](../parsers/defendauditdata-v4.md) | [Egress Defend](../solutions/egress-defend.md) |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

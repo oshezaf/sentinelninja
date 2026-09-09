@@ -7,15 +7,14 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 15 |
-| **Solutions** | 8 |
+| **Playbooks using** | 16 |
+| **Solutions** | 9 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureblob/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 1 | 5 |
 | [AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-blob-storage-add-domains-to-zscaler-url-category-dffe258e.md) | 📄 Standalone | 1 | 0 |
 | [Delete Cohesity incident blobs](../content/cohesitysecurity-delete-cohesity-incident-blobs-99d9e0eb.md) | [CohesitySecurity](../solutions/cohesitysecurity.md) | 1 | 2 |
 | [Get Threat PCAP - Palo Alto PAN-OS XML API](../content/paloalto-pan-os-get-threat-pcap-palo-alto-pan-os-xml-api-eb78018c.md) | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) | 1 | 1 |
@@ -23,6 +22,8 @@
 | [Get-AD4IoTDeviceCVEs - Alert](../content/standalone-content-get-ad4iotdevicecves-alert-065964fb.md) | 📄 Standalone | 1 | 2 |
 | [Get-AD4IoTDeviceCVEs - Incident](../content/iototthreatmonitoringwithdefenderforiot-get-ad4iotdevicecves-incident-60ab2386.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 2 |
 | [Get-AD4IoTDeviceCVEs - Incident](../content/standalone-content-get-ad4iotdevicecves-incident-10996598.md) | 📄 Standalone | 1 | 2 |
+| [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 2 |
+| [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 2 |
 | [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.md) | [Intel471](../solutions/intel471.md) | 1 | 5 |
 | [Move-LogAnalytics-to-Storage](../content/github-only-move-loganalytics-to-storage-0edd3195.md) | 🔗 GitHub Only | 1 | 1 |
 | [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid-c760c473.md) | [QualysVM](../solutions/qualysvm.md) | 1 | 2 |

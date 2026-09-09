@@ -1,0 +1,546 @@
+# Corelight_v3_corelight_metrics_disk_CL
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
+## Schema (472 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v3_corelight_metrics_disk_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| io_data_all_active | real |
+| io_data_all_time | real |
+| io_data_all_time_per_second | real |
+| io_data_all_time_weighted | real |
+| io_data_all_time_weighted_per_second | real |
+| io_data_read_bytes | real |
+| io_data_read_bytes_per_second | real |
+| io_data_read_completed | real |
+| io_data_read_completed_per_second | real |
+| io_data_read_merged | real |
+| io_data_read_merged_per_second | real |
+| io_data_read_time | real |
+| io_data_read_time_per_second | real |
+| io_data_write_bytes | real |
+| io_data_write_bytes_per_second | real |
+| io_data_write_completed | real |
+| io_data_write_completed_per_second | real |
+| io_data_write_merged | real |
+| io_data_write_merged_per_second | real |
+| io_data_write_time | real |
+| io_data_write_time_per_second | real |
+| io_dm_0_all_active | real |
+| io_dm_0_all_time | real |
+| io_dm_0_all_time_per_second | real |
+| io_dm_0_all_time_weighted | real |
+| io_dm_0_all_time_weighted_per_second | real |
+| io_dm_0_read_bytes | real |
+| io_dm_0_read_bytes_per_second | real |
+| io_dm_0_read_completed | real |
+| io_dm_0_read_completed_per_second | real |
+| io_dm_0_read_merged | real |
+| io_dm_0_read_merged_per_second | real |
+| io_dm_0_read_time | real |
+| io_dm_0_read_time_per_second | real |
+| io_dm_0_write_bytes | real |
+| io_dm_0_write_bytes_per_second | real |
+| io_dm_0_write_completed | real |
+| io_dm_0_write_completed_per_second | real |
+| io_dm_0_write_merged | real |
+| io_dm_0_write_merged_per_second | real |
+| io_dm_0_write_time | real |
+| io_dm_0_write_time_per_second | real |
+| io_dm_10_all_active | real |
+| io_dm_10_all_time | real |
+| io_dm_10_all_time_per_second | real |
+| io_dm_10_all_time_weighted | real |
+| io_dm_10_all_time_weighted_per_second | real |
+| io_dm_10_read_bytes | real |
+| io_dm_10_read_bytes_per_second | real |
+| io_dm_10_read_completed | real |
+| io_dm_10_read_completed_per_second | real |
+| io_dm_10_read_merged | real |
+| io_dm_10_read_merged_per_second | real |
+| io_dm_10_read_time | real |
+| io_dm_10_read_time_per_second | real |
+| io_dm_10_write_bytes | real |
+| io_dm_10_write_bytes_per_second | real |
+| io_dm_10_write_completed | real |
+| io_dm_10_write_completed_per_second | real |
+| io_dm_10_write_merged | real |
+| io_dm_10_write_merged_per_second | real |
+| io_dm_10_write_time | real |
+| io_dm_10_write_time_per_second | real |
+| io_dm_11_all_active | real |
+| io_dm_11_all_time | real |
+| io_dm_11_all_time_per_second | real |
+| io_dm_11_all_time_weighted | real |
+| io_dm_11_all_time_weighted_per_second | real |
+| io_dm_11_read_bytes | real |
+| io_dm_11_read_bytes_per_second | real |
+| io_dm_11_read_completed | real |
+| io_dm_11_read_completed_per_second | real |
+| io_dm_11_read_merged | real |
+| io_dm_11_read_merged_per_second | real |
+| io_dm_11_read_time | real |
+| io_dm_11_read_time_per_second | real |
+| io_dm_11_write_bytes | real |
+| io_dm_11_write_bytes_per_second | real |
+| io_dm_11_write_completed | real |
+| io_dm_11_write_completed_per_second | real |
+| io_dm_11_write_merged | real |
+| io_dm_11_write_merged_per_second | real |
+| io_dm_11_write_time | real |
+| io_dm_11_write_time_per_second | real |
+| io_dm_12_all_active | real |
+| io_dm_12_all_time | real |
+| io_dm_12_all_time_per_second | real |
+| io_dm_12_all_time_weighted | real |
+| io_dm_12_all_time_weighted_per_second | real |
+| io_dm_12_read_bytes | real |
+| io_dm_12_read_bytes_per_second | real |
+| io_dm_12_read_completed | real |
+| io_dm_12_read_completed_per_second | real |
+| io_dm_12_read_merged | real |
+| io_dm_12_read_merged_per_second | real |
+| io_dm_12_read_time | real |
+| io_dm_12_read_time_per_second | real |
+| io_dm_12_write_bytes | real |
+| io_dm_12_write_bytes_per_second | real |
+| io_dm_12_write_completed | real |
+| io_dm_12_write_completed_per_second | real |
+| io_dm_12_write_merged | real |
+| io_dm_12_write_merged_per_second | real |
+| io_dm_12_write_time | real |
+| io_dm_12_write_time_per_second | real |
+| io_dm_13_all_active | real |
+| io_dm_13_all_time | real |
+| io_dm_13_all_time_per_second | real |
+| io_dm_13_all_time_weighted | real |
+| io_dm_13_all_time_weighted_per_second | real |
+| io_dm_13_read_bytes | real |
+| io_dm_13_read_bytes_per_second | real |
+| io_dm_13_read_completed | real |
+| io_dm_13_read_completed_per_second | real |
+| io_dm_13_read_merged | real |
+| io_dm_13_read_merged_per_second | real |
+| io_dm_13_read_time | real |
+| io_dm_13_read_time_per_second | real |
+| io_dm_13_write_bytes | real |
+| io_dm_13_write_bytes_per_second | real |
+| io_dm_13_write_completed | real |
+| io_dm_13_write_completed_per_second | real |
+| io_dm_13_write_merged | real |
+| io_dm_13_write_merged_per_second | real |
+| io_dm_13_write_time | real |
+| io_dm_13_write_time_per_second | real |
+| io_dm_14_all_active | real |
+| io_dm_14_all_time | real |
+| io_dm_14_all_time_per_second | real |
+| io_dm_14_all_time_weighted | real |
+| io_dm_14_all_time_weighted_per_second | real |
+| io_dm_14_read_bytes | real |
+| io_dm_14_read_bytes_per_second | real |
+| io_dm_14_read_completed | real |
+| io_dm_14_read_completed_per_second | real |
+| io_dm_14_read_merged | real |
+| io_dm_14_read_merged_per_second | real |
+| io_dm_14_read_time | real |
+| io_dm_14_read_time_per_second | real |
+| io_dm_14_write_bytes | real |
+| io_dm_14_write_bytes_per_second | real |
+| io_dm_14_write_completed | real |
+| io_dm_14_write_completed_per_second | real |
+| io_dm_14_write_merged | real |
+| io_dm_14_write_merged_per_second | real |
+| io_dm_14_write_time | real |
+| io_dm_14_write_time_per_second | real |
+| io_dm_15_all_active | real |
+| io_dm_15_all_time | real |
+| io_dm_15_all_time_per_second | real |
+| io_dm_15_all_time_weighted | real |
+| io_dm_15_all_time_weighted_per_second | real |
+| io_dm_15_read_bytes | real |
+| io_dm_15_read_bytes_per_second | real |
+| io_dm_15_read_completed | real |
+| io_dm_15_read_completed_per_second | real |
+| io_dm_15_read_merged | real |
+| io_dm_15_read_merged_per_second | real |
+| io_dm_15_read_time | real |
+| io_dm_15_read_time_per_second | real |
+| io_dm_15_write_bytes | real |
+| io_dm_15_write_bytes_per_second | real |
+| io_dm_15_write_completed | real |
+| io_dm_15_write_completed_per_second | real |
+| io_dm_15_write_merged | real |
+| io_dm_15_write_merged_per_second | real |
+| io_dm_15_write_time | real |
+| io_dm_15_write_time_per_second | real |
+| io_dm_16_all_active | real |
+| io_dm_16_all_time | real |
+| io_dm_16_all_time_per_second | real |
+| io_dm_16_all_time_weighted | real |
+| io_dm_16_all_time_weighted_per_second | real |
+| io_dm_16_read_bytes | real |
+| io_dm_16_read_bytes_per_second | real |
+| io_dm_16_read_completed | real |
+| io_dm_16_read_completed_per_second | real |
+| io_dm_16_read_merged | real |
+| io_dm_16_read_merged_per_second | real |
+| io_dm_16_read_time | real |
+| io_dm_16_read_time_per_second | real |
+| io_dm_16_write_bytes | real |
+| io_dm_16_write_bytes_per_second | real |
+| io_dm_16_write_completed | real |
+| io_dm_16_write_completed_per_second | real |
+| io_dm_16_write_merged | real |
+| io_dm_16_write_merged_per_second | real |
+| io_dm_16_write_time | real |
+| io_dm_16_write_time_per_second | real |
+| io_dm_1_all_active | real |
+| io_dm_1_all_time | real |
+| io_dm_1_all_time_per_second | real |
+| io_dm_1_all_time_weighted | real |
+| io_dm_1_all_time_weighted_per_second | real |
+| io_dm_1_read_bytes | real |
+| io_dm_1_read_bytes_per_second | real |
+| io_dm_1_read_completed | real |
+| io_dm_1_read_completed_per_second | real |
+| io_dm_1_read_merged | real |
+| io_dm_1_read_merged_per_second | real |
+| io_dm_1_read_time | real |
+| io_dm_1_read_time_per_second | real |
+| io_dm_1_write_bytes | real |
+| io_dm_1_write_bytes_per_second | real |
+| io_dm_1_write_completed | real |
+| io_dm_1_write_completed_per_second | real |
+| io_dm_1_write_merged | real |
+| io_dm_1_write_merged_per_second | real |
+| io_dm_1_write_time | real |
+| io_dm_1_write_time_per_second | real |
+| io_dm_2_all_active | real |
+| io_dm_2_all_time | real |
+| io_dm_2_all_time_per_second | real |
+| io_dm_2_all_time_weighted | real |
+| io_dm_2_all_time_weighted_per_second | real |
+| io_dm_2_read_bytes | real |
+| io_dm_2_read_bytes_per_second | real |
+| io_dm_2_read_completed | real |
+| io_dm_2_read_completed_per_second | real |
+| io_dm_2_read_merged | real |
+| io_dm_2_read_merged_per_second | real |
+| io_dm_2_read_time | real |
+| io_dm_2_read_time_per_second | real |
+| io_dm_2_write_bytes | real |
+| io_dm_2_write_bytes_per_second | real |
+| io_dm_2_write_completed | real |
+| io_dm_2_write_completed_per_second | real |
+| io_dm_2_write_merged | real |
+| io_dm_2_write_merged_per_second | real |
+| io_dm_2_write_time | real |
+| io_dm_2_write_time_per_second | real |
+| io_dm_3_all_active | real |
+| io_dm_3_all_time | real |
+| io_dm_3_all_time_per_second | real |
+| io_dm_3_all_time_weighted | real |
+| io_dm_3_all_time_weighted_per_second | real |
+| io_dm_3_read_bytes | real |
+| io_dm_3_read_bytes_per_second | real |
+| io_dm_3_read_completed | real |
+| io_dm_3_read_completed_per_second | real |
+| io_dm_3_read_merged | real |
+| io_dm_3_read_merged_per_second | real |
+| io_dm_3_read_time | real |
+| io_dm_3_read_time_per_second | real |
+| io_dm_3_write_bytes | real |
+| io_dm_3_write_bytes_per_second | real |
+| io_dm_3_write_completed | real |
+| io_dm_3_write_completed_per_second | real |
+| io_dm_3_write_merged | real |
+| io_dm_3_write_merged_per_second | real |
+| io_dm_3_write_time | real |
+| io_dm_3_write_time_per_second | real |
+| io_dm_4_all_active | real |
+| io_dm_4_all_time | real |
+| io_dm_4_all_time_per_second | real |
+| io_dm_4_all_time_weighted | real |
+| io_dm_4_all_time_weighted_per_second | real |
+| io_dm_4_read_bytes | real |
+| io_dm_4_read_bytes_per_second | real |
+| io_dm_4_read_completed | real |
+| io_dm_4_read_completed_per_second | real |
+| io_dm_4_read_merged | real |
+| io_dm_4_read_merged_per_second | real |
+| io_dm_4_read_time | real |
+| io_dm_4_read_time_per_second | real |
+| io_dm_4_write_bytes | real |
+| io_dm_4_write_bytes_per_second | real |
+| io_dm_4_write_completed | real |
+| io_dm_4_write_completed_per_second | real |
+| io_dm_4_write_merged | real |
+| io_dm_4_write_merged_per_second | real |
+| io_dm_4_write_time | real |
+| io_dm_4_write_time_per_second | real |
+| io_dm_5_all_active | real |
+| io_dm_5_all_time | real |
+| io_dm_5_all_time_per_second | real |
+| io_dm_5_all_time_weighted | real |
+| io_dm_5_all_time_weighted_per_second | real |
+| io_dm_5_read_bytes | real |
+| io_dm_5_read_bytes_per_second | real |
+| io_dm_5_read_completed | real |
+| io_dm_5_read_completed_per_second | real |
+| io_dm_5_read_merged | real |
+| io_dm_5_read_merged_per_second | real |
+| io_dm_5_read_time | real |
+| io_dm_5_read_time_per_second | real |
+| io_dm_5_write_bytes | real |
+| io_dm_5_write_bytes_per_second | real |
+| io_dm_5_write_completed | real |
+| io_dm_5_write_completed_per_second | real |
+| io_dm_5_write_merged | real |
+| io_dm_5_write_merged_per_second | real |
+| io_dm_5_write_time | real |
+| io_dm_5_write_time_per_second | real |
+| io_dm_6_all_active | real |
+| io_dm_6_all_time | real |
+| io_dm_6_all_time_per_second | real |
+| io_dm_6_all_time_weighted | real |
+| io_dm_6_all_time_weighted_per_second | real |
+| io_dm_6_read_bytes | real |
+| io_dm_6_read_bytes_per_second | real |
+| io_dm_6_read_completed | real |
+| io_dm_6_read_completed_per_second | real |
+| io_dm_6_read_merged | real |
+| io_dm_6_read_merged_per_second | real |
+| io_dm_6_read_time | real |
+| io_dm_6_read_time_per_second | real |
+| io_dm_6_write_bytes | real |
+| io_dm_6_write_bytes_per_second | real |
+| io_dm_6_write_completed | real |
+| io_dm_6_write_completed_per_second | real |
+| io_dm_6_write_merged | real |
+| io_dm_6_write_merged_per_second | real |
+| io_dm_6_write_time | real |
+| io_dm_6_write_time_per_second | real |
+| io_dm_7_all_active | real |
+| io_dm_7_all_time | real |
+| io_dm_7_all_time_per_second | real |
+| io_dm_7_all_time_weighted | real |
+| io_dm_7_all_time_weighted_per_second | real |
+| io_dm_7_read_bytes | real |
+| io_dm_7_read_bytes_per_second | real |
+| io_dm_7_read_completed | real |
+| io_dm_7_read_completed_per_second | real |
+| io_dm_7_read_merged | real |
+| io_dm_7_read_merged_per_second | real |
+| io_dm_7_read_time | real |
+| io_dm_7_read_time_per_second | real |
+| io_dm_7_write_bytes | real |
+| io_dm_7_write_bytes_per_second | real |
+| io_dm_7_write_completed | real |
+| io_dm_7_write_completed_per_second | real |
+| io_dm_7_write_merged | real |
+| io_dm_7_write_merged_per_second | real |
+| io_dm_7_write_time | real |
+| io_dm_7_write_time_per_second | real |
+| io_dm_8_all_active | real |
+| io_dm_8_all_time | real |
+| io_dm_8_all_time_per_second | real |
+| io_dm_8_all_time_weighted | real |
+| io_dm_8_all_time_weighted_per_second | real |
+| io_dm_8_read_bytes | real |
+| io_dm_8_read_bytes_per_second | real |
+| io_dm_8_read_completed | real |
+| io_dm_8_read_completed_per_second | real |
+| io_dm_8_read_merged | real |
+| io_dm_8_read_merged_per_second | real |
+| io_dm_8_read_time | real |
+| io_dm_8_read_time_per_second | real |
+| io_dm_8_write_bytes | real |
+| io_dm_8_write_bytes_per_second | real |
+| io_dm_8_write_completed | real |
+| io_dm_8_write_completed_per_second | real |
+| io_dm_8_write_merged | real |
+| io_dm_8_write_merged_per_second | real |
+| io_dm_8_write_time | real |
+| io_dm_8_write_time_per_second | real |
+| io_dm_9_all_active | real |
+| io_dm_9_all_time | real |
+| io_dm_9_all_time_per_second | real |
+| io_dm_9_all_time_weighted | real |
+| io_dm_9_all_time_weighted_per_second | real |
+| io_dm_9_read_bytes | real |
+| io_dm_9_read_bytes_per_second | real |
+| io_dm_9_read_completed | real |
+| io_dm_9_read_completed_per_second | real |
+| io_dm_9_read_merged | real |
+| io_dm_9_read_merged_per_second | real |
+| io_dm_9_read_time | real |
+| io_dm_9_read_time_per_second | real |
+| io_dm_9_write_bytes | real |
+| io_dm_9_write_bytes_per_second | real |
+| io_dm_9_write_completed | real |
+| io_dm_9_write_completed_per_second | real |
+| io_dm_9_write_merged | real |
+| io_dm_9_write_merged_per_second | real |
+| io_dm_9_write_time | real |
+| io_dm_9_write_time_per_second | real |
+| io_os_all_active | real |
+| io_os_all_time | real |
+| io_os_all_time_per_second | real |
+| io_os_all_time_weighted | real |
+| io_os_all_time_weighted_per_second | real |
+| io_os_read_bytes | real |
+| io_os_read_bytes_per_second | real |
+| io_os_read_completed | real |
+| io_os_read_completed_per_second | real |
+| io_os_read_merged | real |
+| io_os_read_merged_per_second | real |
+| io_os_read_time | real |
+| io_os_read_time_per_second | real |
+| io_os_write_bytes | real |
+| io_os_write_bytes_per_second | real |
+| io_os_write_completed | real |
+| io_os_write_completed_per_second | real |
+| io_os_write_merged | real |
+| io_os_write_merged_per_second | real |
+| io_os_write_time | real |
+| io_os_write_time_per_second | real |
+| io_sda_all_active | real |
+| io_sda_all_time | real |
+| io_sda_all_time_per_second | real |
+| io_sda_all_time_weighted | real |
+| io_sda_all_time_weighted_per_second | real |
+| io_sda_read_bytes | real |
+| io_sda_read_bytes_per_second | real |
+| io_sda_read_completed | real |
+| io_sda_read_completed_per_second | real |
+| io_sda_read_merged | real |
+| io_sda_read_merged_per_second | real |
+| io_sda_read_time | real |
+| io_sda_read_time_per_second | real |
+| io_sda_write_bytes | real |
+| io_sda_write_bytes_per_second | real |
+| io_sda_write_completed | real |
+| io_sda_write_completed_per_second | real |
+| io_sda_write_merged | real |
+| io_sda_write_merged_per_second | real |
+| io_sda_write_time | real |
+| io_sda_write_time_per_second | real |
+| io_sdb_all_active | real |
+| io_sdb_all_time | real |
+| io_sdb_all_time_per_second | real |
+| io_sdb_all_time_weighted | real |
+| io_sdb_all_time_weighted_per_second | real |
+| io_sdb_read_bytes | real |
+| io_sdb_read_bytes_per_second | real |
+| io_sdb_read_completed | real |
+| io_sdb_read_completed_per_second | real |
+| io_sdb_read_merged | real |
+| io_sdb_read_merged_per_second | real |
+| io_sdb_read_time | real |
+| io_sdb_read_time_per_second | real |
+| io_sdb_write_bytes | real |
+| io_sdb_write_bytes_per_second | real |
+| io_sdb_write_completed | real |
+| io_sdb_write_completed_per_second | real |
+| io_sdb_write_merged | real |
+| io_sdb_write_merged_per_second | real |
+| io_sdb_write_time | real |
+| io_sdb_write_time_per_second | real |
+| io_sr0_all_active | real |
+| io_sr0_all_time | real |
+| io_sr0_all_time_per_second | real |
+| io_sr0_all_time_weighted | real |
+| io_sr0_all_time_weighted_per_second | real |
+| io_sr0_read_bytes | real |
+| io_sr0_read_bytes_per_second | real |
+| io_sr0_read_completed | real |
+| io_sr0_read_completed_per_second | real |
+| io_sr0_read_merged | real |
+| io_sr0_read_merged_per_second | real |
+| io_sr0_read_time | real |
+| io_sr0_read_time_per_second | real |
+| io_sr0_write_bytes | real |
+| io_sr0_write_bytes_per_second | real |
+| io_sr0_write_completed | real |
+| io_sr0_write_completed_per_second | real |
+| io_sr0_write_merged | real |
+| io_sr0_write_merged_per_second | real |
+| io_sr0_write_time | real |
+| io_sr0_write_time_per_second | real |
+| path | string |
+| system_name | string |
+| TimeGenerated | datetime |
+| timestamp | string |
+| ts | datetime |
+| Type | string |
+| usage_data | real |
+| usage_os | real |
+| version | string |
+| write_ts | datetime |
+
+## Schema References
+
+Official Microsoft Learn documentation for field/column information:
+
+- [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Corelight](../solutions/corelight.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
+
+---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Corelight](../solutions/corelight.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight_Operations](../content/corelight-corelight-operations-90113242.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_corelight_metrics_disk](../parsers/corelight-corelight-metrics-disk.md) | [Corelight](../solutions/corelight.md) |  |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

@@ -18,7 +18,7 @@ Detect application & infrastructure problems in your environment
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation |
 | **Techniques** | T1140, T1059, T1565, T1659, T1210, T1554, T1548 |
-| **Required Connectors** | [DynatraceProblems](../connectors/dynatraceproblems.md) |
+| **Required Connectors** | [DynatraceProblems](../connectors/dynatraceproblems.md), [DynatraceProblemsCCPDefinition](../connectors/dynatraceproblemsccpdefinition.md), [DTProblemsV3CCPDefinition](../connectors/dtproblemsv3ccpdefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Analytic%20Rules/Dynatrace_ProblemDetection.yaml) |
 
 ## Tables Used
@@ -27,7 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`DynatraceProblemsV3_CL`](../tables/dynatraceproblemsv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | ✗ | ✓ | ✗ |
 
 ---

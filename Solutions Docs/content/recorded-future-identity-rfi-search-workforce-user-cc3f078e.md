@@ -14,25 +14,26 @@ This playbook searches the Recorded Future Identity Intelligence Module for comp
 | **Solution** | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/RFI-search-workforce-user/azuredeploy.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`RFI_CredentialDumps_V2_CL`](../tables/rfi-credentialdumps-v2-cl.md) | ? | ✓ | ? |
+
 ## Logic App Connectors
 
 This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
 | [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
 | [`recordedfutureidenti`](../logic-apps/managed-recordedfutureidenti.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 | [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
-
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Data_-_Save_new_Credential_dump_exposures_into_Log_Analytics_Custom_Log | post | `/api/logs` | — |
-| Send_Data_-_Save_new_Malware_log_exposures_into_Log_Analytics_Custom_Log | post | `/api/logs` | — |
 
 #### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
@@ -46,6 +47,13 @@ This playbook uses **4** Logic App connectors / built-in actions:
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Credential_Search_-_Search_credential_data_for_one_or_more_domains | post | `/credentials/search` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_new_Credential_dump_exposures_into_Log_Analytics_Custom_Log | POST | `@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrCredentialDumpsImmutableId')}/streams/@{parameters('StreamCredentialDumpsName')}?api-version=2023-01-01` | — |
+| Send_Data_-_Save_new_Malware_log_exposures_into_Log_Analytics_Custom_Log | POST | `@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrMalwareLogsImmutableId')}/streams/@{parameters('StreamMalwareLogsName')}?api-version=2023-01-01` | — |
 
 #### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
 

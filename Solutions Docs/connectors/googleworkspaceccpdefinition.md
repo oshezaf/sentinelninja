@@ -20,7 +20,7 @@
 | **CCF Capabilities** | `OAuth2`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#google-workspace-activities-via-codeless-connector-framework) |
 
-The [Google Workspace](https://workspace.google.com/) Activities data connector provides the capability to ingest Activity Events from [Google Workspace API](https://developers.google.com/admin-sdk/reports/reference/rest/v1/activities/list) into Microsoft Sentinel.
+The [Google Workspace](https://workspace.google.com/) Activities data connector provides the capability to ingest Activity Events, including Gmail audit events, from the [Google Workspace API](https://developers.google.com/admin-sdk/reports/reference/rest/v1/activities/list) into Microsoft Sentinel.
 
 ## Tables Ingested
 

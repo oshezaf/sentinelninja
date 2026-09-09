@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,60 +19,65 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (48 columns)
+## Schema (53 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_whois_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| Computer | string |
-| data_info_s | string |
-| data_reason_s | string |
-| data_response_ip_response_country_s | string |
-| data_response_ip_response_handle_s | string |
-| data_response_ip_response_last_changed_t | datetime |
-| data_response_ip_response_name_s | string |
-| data_response_ip_response_net_range_s | string |
-| data_response_ip_response_net_type_s | string |
-| data_response_ip_response_parent_s | string |
-| data_response_ip_response_registration_t | datetime |
-| data_response_ip_response_source_registery_s | string |
-| data_response_nameservers_s | string |
-| data_response_parsed_whois_created_date_t | datetime |
-| data_response_parsed_whois_domain_s | string |
-| data_response_parsed_whois_expired_date_t | datetime |
-| data_response_parsed_whois_name_servers_s | string |
-| data_response_parsed_whois_other_properties_registry_domain_id_s | string |
-| data_response_parsed_whois_registrar_abuse_contact_email_s | string |
-| data_response_parsed_whois_registrar_abuse_contact_phone_s | string |
-| data_response_parsed_whois_registrar_iana_id_s | string |
-| data_response_parsed_whois_registrar_name_s | string |
-| data_response_parsed_whois_statuses_s | string |
-| data_response_parsed_whois_updated_date_t | datetime |
-| data_response_registrant_s | string |
-| data_response_registration_created_t | datetime |
-| data_response_registration_expires_t | datetime |
-| data_response_registration_registrar_s | string |
-| data_response_registration_statuses_s | string |
-| data_response_registration_updated_t | datetime |
-| data_response_whois_date_s | string |
-| data_response_whois_record_s | string |
-| ManagementGroupName | string |
-| MG | string |
-| params_source_s | string |
-| params_target_s | string |
-| params_type_s | string |
-| RawData | string |
-| SourceSystem | string |
-| status_message_for_dossier_s | string |
-| status_s | string |
-| task_id_g | string |
+| data | dynamic |
+| data_response | dynamic |
+| data_response_ip_response | dynamic |
+| data_response_ip_response_country | string |
+| data_response_ip_response_handle | string |
+| data_response_ip_response_last_changed | datetime |
+| data_response_ip_response_name | string |
+| data_response_ip_response_net_range | string |
+| data_response_ip_response_net_type | string |
+| data_response_ip_response_parent | string |
+| data_response_ip_response_registration | datetime |
+| data_response_ip_response_source_registery | string |
+| data_response_nameservers | dynamic |
+| data_response_parsed_whois | dynamic |
+| data_response_parsed_whois_contacts | string |
+| data_response_parsed_whois_created_date | datetime |
+| data_response_parsed_whois_domain | string |
+| data_response_parsed_whois_expired_date | datetime |
+| data_response_parsed_whois_name_servers | dynamic |
+| data_response_parsed_whois_other_props | dynamic |
+| data_response_parsed_whois_other_props_registry_domain_id | string |
+| data_response_parsed_whois_registrar | dynamic |
+| data_response_parsed_whois_registrar_abuse_contact_email | string |
+| data_response_parsed_whois_registrar_abuse_contact_phone | string |
+| data_response_parsed_whois_registrar_iana_id | string |
+| data_response_parsed_whois_registrar_name | string |
+| data_response_parsed_whois_statuses | dynamic |
+| data_response_parsed_whois_updated_date | datetime |
+| data_response_raw | string |
+| data_response_registrant | string |
+| data_response_registration | dynamic |
+| data_response_registration_created | datetime |
+| data_response_registration_expires | datetime |
+| data_response_registration_registrar | string |
+| data_response_registration_statuses | dynamic |
+| data_response_registration_updated | datetime |
+| data_response_whois | dynamic |
+| data_response_whois_date | datetime |
+| data_response_whois_record | string |
+| params | dynamic |
+| params_source | string |
+| params_target | string |
+| params_type | string |
+| RowData | dynamic |
+| status | string |
+| status_message_for_dossier | string |
+| task_id | string |
 | TenantId | string |
-| time_d | real |
+| time_value | real |
 | TimeGenerated | datetime |
 | Type | string |
-| v_s | string |
+| v_value | string |
 
 ## Schema References
 

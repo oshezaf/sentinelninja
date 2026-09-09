@@ -8,11 +8,18 @@
 
 Summary rules aggregate and summarize data over time, creating pre-computed results that improve query performance. They are useful for creating dashboards with historical trends or analyzing large volumes of data efficiently. [Learn more](https://learn.microsoft.com/azure/sentinel/summary-rules)
 
-**25 summary rules** across all Microsoft Sentinel solutions.
+**27 summary rules** across all Microsoft Sentinel solutions.
 
-**Jump to:** [F](#f) | [N](#n) | [P](#p) | [Z](#z)
+**Jump to:** [C](#c) | [F](#f) | [N](#n) | [P](#p) | [Z](#z)
 
 > **Source:** 📦 Solution | 📄 Standalone | 🔗 GitHub Only
+
+## C
+
+| Name | Source |
+|:-----|:-------|
+| [Consolidate_DynatraceRuntimeVulnerabilities](dynatrace-consolidate-dynatraceruntimevulnerabilities-2f1d8c6e-7b3a-4e91-9c2f-5a6b8d4e1c70-5198d2ae.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
+| [Consolidate_DynatraceRuntimeVulnerabilities](dynatrace-consolidate-dynatraceruntimevulnerabilities-2f1d8c6e-7b3a-4e91-9c2f-5a6b8d4e1c70-5198d2ae.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 
 ## F
 

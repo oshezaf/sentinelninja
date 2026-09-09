@@ -1,6 +1,6 @@
 # Analytic Rules - U
 
-**70 analytic rules** starting with 'U'.
+**80 analytic rules** starting with 'U'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -24,6 +24,7 @@
 | [Ubiquiti - Unusual DNS connection](ubiquiti-unifi-ubiquiti-unusual-dns-connection-14a23ded-7fb9-48ee-ba39-859517a49b51-9aaba436.md) | Medium | 📦 [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
 | [Ubiquiti - Unusual FTP connection to external server](ubiquiti-unifi-ubiquiti-unusual-ftp-connection-to-external-server-fd200125-9d57-4838-85ca-6430c63e4e5d-50cb0928.md) | Medium | 📦 [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
 | [Ubiquiti - Unusual traffic](ubiquiti-unifi-ubiquiti-unusual-traffic-31e868c0-91d3-40eb-accc-3fa73aa96f8e-8875bc63.md) | Medium | 📦 [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
+| [Unauthenticated API Endpoint with Sensitive Data](stratosecure-unauthenticated-api-endpoint-with-sensitive-data-479bc6ef-ecb3-496f-9a2a-38c9635d77d3-46d961ff.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Unauthorized device in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-device-in-the-network-microsoft-defender-for-iot-f4c71e55-6192-47ca-92e2-0856ae502a46-c1fb4a17.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized PLC changes (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
@@ -51,6 +52,15 @@
 | [UniFi Site Manager: System log shipping disabled](unifi-site-manager-ccf-unifi-site-manager-system-log-shipping-disabled-f32950bc-6553-4c03-2686-a9c29ef318e8-3d860f6a.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | [UniFi Site Manager: WAN uptime below 99%](unifi-site-manager-ccf-unifi-site-manager-wan-uptime-below-99-2bb29f25-833a-5544-4a8e-9bf6c4d8da56-c45d8533.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | [UniFi Site Manager: WiFi quality degraded (high TX retry)](unifi-site-manager-ccf-unifi-site-manager-wifi-quality-degraded-high-tx-retry-f5130582-9e0e-cb47-af0b-dcd8b261fa04-e554dfe0.md) | Low | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [Uniqkey - Credential export from newly created account](uniqkey-uniqkey-credential-export-from-newly-created-account-3939f01f-9563-4cd3-8423-97a82e82719b-b28cfe72.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Data export activity](uniqkey-uniqkey-data-export-activity-f3125212-6871-4adc-8335-98c9a920639b-db21e42a.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Departing employee credential export](uniqkey-uniqkey-departing-employee-credential-export-cee6bbae-e1ee-4b65-9782-6afce5c330e6-11608d54.md) | High | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Event ingestion stopped](uniqkey-uniqkey-event-ingestion-stopped-97857198-99f2-48dd-b036-461d85a29570-a62b1ae0.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Excessive credential access](uniqkey-uniqkey-excessive-credential-access-755c7adb-1015-4be3-9e56-55e72009c088-2335297d.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Platform threat detection](uniqkey-uniqkey-platform-threat-detection-712f5770-a5a9-4623-8adc-26cda17294a5-7bbf43e3.md) | High | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Security policy change](uniqkey-uniqkey-security-policy-change-ac008972-e70f-4040-96ad-bdce1c642839-f3b70987.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Self-granted privilege or access change](uniqkey-uniqkey-self-granted-privilege-or-access-change-4b1fefb3-419a-4bbe-8a74-ef8288a8d8d0-f1096525.md) | Medium | 📦 [Uniqkey](../solutions/uniqkey.md) |
+| [Uniqkey - Sign-in from unfamiliar IP address](uniqkey-uniqkey-sign-in-from-unfamiliar-ip-address-6909c70c-fb52-47a3-9eb9-3b8109b0b32a-8f4a6773.md) | Low | 📦 [Uniqkey](../solutions/uniqkey.md) |
 | [Unused IaaS Policy](authomize-unused-iaas-policy-e0ae5f9e-865b-41f5-98bb-c04113888e85-86fba83d.md) | High | 📦 [Authomize](../solutions/authomize.md) |
 | [Unusual Anomaly](github-only-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-77d2d4f7.md) | Medium | 🔗 GitHub Only |
 | [Unusual identity creation using exchange powershell](standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) | High | 📄 Standalone Content |

@@ -44,7 +44,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (38 columns)</h2>
+<h2 id="schema">Schema (40 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella%5CData%20Connectors%5CCiscoUmbrella_CCP/CiscoUmbrellaCloudFirewall_table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -121,6 +121,11 @@
   <td style="text-align:left">The destination port number of the user-generated traffic towards the CDFW.</td>
 </tr>
 <tr>
+  <td style="text-align:left">DestinationSgtOriginId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The origin ID of the destination Security Group Tag (SGT).</td>
+</tr>
+<tr>
   <td style="text-align:left">Direction</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The direction of the packet. It is destined either towards the internet or to the customer's network.</td>
@@ -149,6 +154,11 @@
   <td style="text-align:left">Fqdns</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The fully qualified domain names (FQDNs) that match the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FwBlockReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The reason the firewall blocked the traffic.</td>
 </tr>
 <tr>
   <td style="text-align:left">FwEventId</td>

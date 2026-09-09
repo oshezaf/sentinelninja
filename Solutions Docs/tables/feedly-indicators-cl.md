@@ -13,13 +13,6 @@
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-
 ## Schema (14 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/feedly_indicators_CL.json)
@@ -46,20 +39,6 @@
 Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
-
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Feedly](../solutions/feedly.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Feedly IoC](../connectors/feedlyccpdefinition.md) |  |
 
 ---
 

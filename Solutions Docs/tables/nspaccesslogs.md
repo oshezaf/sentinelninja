@@ -34,7 +34,7 @@ Reference for NSPAccessLogs table in Azure Monitor Logs.
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AccessRuleVersion | string | Access rule version of the NSP profile to which PaaS resource is associated. |
-| AppId | string | Unique GUID representing the app ID of resource in the Azure Active Directory. |
+| AppId | string | Unique GUID representing the app ID of resource in the Microsoft Entra ID. |
 | Category | string | NSP access log categories. |
 | Count | int | Total number of aggregated events. |
 | DestinationEmailAddress | string | Email address of destination receiver. It be must specified if available. |
@@ -56,7 +56,7 @@ Reference for NSPAccessLogs table in Azure Monitor Logs.
 | RuleType | string | Indicates where the rule is defined: NSP or PaaS resource. |
 | ServiceFqdn | string | Fully Qualified Domain Name (FQDN) of PaaS resource emitting NSP access logs. |
 | ServiceResourceId | string | Resource ID of PaaS resource emitting NSP access logs. |
-| SourceAppId | string | Unique GUID representing the app ID of source in the Azure Active Directory. |
+| SourceAppId | string | Unique GUID representing the app ID of source in the Microsoft Entra ID. |
 | SourceIpAddress | string | IP address of source making inbound connection, when available. |
 | SourceParameters | string | List of optional source properties in key-value pair format. For example: [ {Param1}: {value1}, {Param2}: {value2}, ...]. |
 | SourcePerimeterGuids | string | List of perimeter GUIDs of source resource. It should be specified only if allowed based on perimeter GUID. |

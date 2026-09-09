@@ -1,6 +1,6 @@
-# ⚠️ Akamai Guardicore
+# Akamai Guardicore Sentinel Integration
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: Akamai Guardicore*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/akamai-guardicore.svg" alt="Akamai Guardicore Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Akamai Guardicore - specialist@akamai.com |
 | **First Published** | 2025-04-23 |
+| **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Akamai Guardicore](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akamai-technologies.akamai_guardicore_sentinel) · Popularity: ⚪ Very Low (7%) |
 
 The [Akamai Guardicore](https://www.akamai.com/products/akamai-guardicore-segmentation) solution for Microsoft Sentinel imports Agents, Assets, Applications, Policy Rules, and incident-related connection enrichment data from a Guardicore Centra instance. The data is ingested via the Codeless Connector Framework (CCF) and Data Collection Rules, with no Azure Function App dependency.
 

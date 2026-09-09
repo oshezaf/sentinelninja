@@ -76,7 +76,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (39)
+## Content Items Using This Table (46)
 
 ### Analytic Rules (6)
 
@@ -106,14 +106,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
 
-### Hunting Queries (27)
+### Hunting Queries (33)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.md) |  |
 | [Message with URL listed on OpenPhish delivered into Inbox](../content/microsoft-defender-xdr-message-with-url-listed-on-openphish-delivered-into-inbox-a8c66aec-2000-45d8-8481-36aaa17f1033-65f2779d.md) |  |
 | [Potential OAuth phishing email delivered into Inbox](../content/microsoft-defender-xdr-potential-oauth-phishing-email-delivered-into-inbox-08113d6f-3c95-45ba-94df-4fdd7f35d944-29c878e2.md) |  |
+| [QR Code URL Detections Trend](../content/microsoft-defender-xdr-qr-code-url-detections-trend-88035c0e-0e2d-4805-a249-34d54a88c3fe-2b93ffea.md) |  |
+| [URL Threat Protection Summary](../content/microsoft-defender-xdr-url-threat-protection-summary-a0d5391b-a44c-433c-8e08-7137f6e4a23c-5ead00e4.md) |  |
 
 **Standalone Content:**
 
@@ -136,6 +139,7 @@ This table is ingested by the following connectors:
 | [Hunt for malicious URLs using external IOC source](../content/microsoft-defender-xdr-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-96846dc9.md) |  |
 | [Hunt for malicious URLs using external IOC source](../content/github-only-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-931ce69c.md) |  |
 | [IcedId email delivery](../content/github-only-icedid-email-delivery-1d8393fe-e363-40c1-8efb-66cf1ad68a05-ca86f7e1.md) |  |
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/github-only-malicious-email-campaigns-by-recipient-url-clicks-28ce9655-f35f-4733-af43-8266b39a87f1-21f63c9c.md) |  |
 | [Malicious Emails with QR code Urls](../content/microsoft-defender-xdr-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-bb5decee.md) | `UrlLocation == "QRCode"` |
 | [Malicious Emails with QR code Urls](../content/github-only-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-7d618408.md) | `UrlLocation == "QRCode"` |
 | [Message with URL listed on OpenPhish delivered into Inbox](../content/github-only-message-with-url-listed-on-openphish-delivered-into-inbox-d16f57cb-6a39-4e90-ae25-8902c68232ab-86361001.md) |  |
@@ -145,12 +149,14 @@ This table is ingested by the following connectors:
 | [Potential OAuth phishing email delivered into Inbox](../content/github-only-potential-oauth-phishing-email-delivered-into-inbox-7dca78d0-5354-4e20-80c0-4f770450feb6-024787e9.md) |  |
 | [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |
 | [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
+| [QR Code URL Detections Trend](../content/github-only-qr-code-url-detections-trend-aa121105-95a2-4424-84d7-1c5c47e5d44b-9e50e3ad.md) |  |
 | [StrRAT-Email-Delivery](../content/github-only-strrat-email-delivery-3661b3e6-be67-41af-a0c1-fa7c012f1233-960d2bad.md) | `UrlDomain has_any "metroscaffingltg.co.uk"` |
 | [Suspicious Google Doc Links](../content/github-only-suspicious-google-doc-links-5b94411c-9311-48cd-8f7f-e35b42174e2d-c2534098.md) | `Url startswith "https://docs.google.com/document/"` |
+| [URL Threat Protection Summary](../content/github-only-url-threat-protection-summary-074959c6-2e9d-4f11-b9c8-971b7387aa99-861ded8c.md) |  |
 | [URLs by location](../content/microsoft-defender-xdr-urls-by-location-ab006655-d723-4844-9d5d-91cb3b020555-d023be7f.md) |  |
 | [URLs by location](../content/github-only-urls-by-location-ab006655-d723-4844-9d5d-91cb3b020555-4d086c26.md) |  |
 
-### Workbooks (6)
+### Workbooks (7)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -158,11 +164,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
 
 **In solution [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md):**
 
@@ -181,11 +187,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365](../content/github-only-microsoftdefenderforoffice365-a5892291.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
-## Selection Criteria Summary (5 criteria, 6 total references)
+## Selection Criteria Summary (4 criteria, 5 total references)
 
-References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -193,32 +200,7 @@ References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parse
 | `Url startswith "https://docs.google.com/document/"` | - | 1 | - | - | **1** |
 | `UrlDomain has_any "metroscaffingltg.co.uk"` | - | 1 | - | - | **1** |
 | `Url contains "@"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **6** | **0** | **0** | **6** |
-
-### ActionType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
-| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
-| `ClickBlocked` | - | 1 | - | - | **1** |
-| `Malware ZAP` | - | 1 | - | - | **1** |
-| `Phish ZAP` | - | 1 | - | - | **1** |
-| `Spam ZAP` | - | 1 | - | - | **1** |
-| `UserSubmission` | - | 1 | - | - | **1** |
-| `Automated Remediation` | - | 1 | - | - | **1** |
-| `contains Submission` | - | 1 | - | - | **1** |
-| `contains UserSubmission` | - | 1 | - | - | **1** |
-| `contains ZAP` | - | 1 | - | - | **1** |
-| `has Malware ZAP` | - | 1 | - | - | **1** |
-| `has Phish ZAP` | - | 1 | - | - | **1** |
-| `has Spam ZAP` | - | 1 | - | - | **1** |
-| `has ZAP` | - | 1 | - | - | **1** |
-| `has_any ClickAllowed` | - | 1 | - | - | **1** |
-| `has_any ClickBlocked` | - | 1 | - | - | **1** |
-| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
-| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
+| **Total** | **0** | **5** | **0** | **0** | **5** |
 
 ### Url
 

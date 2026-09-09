@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.1.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-03-23</td>
+  <td style="text-align:left">2026-08-20</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning">Azure Marketplace</a> · Popularity: 🟡 Low (20%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
-<p>This custom data connector uses a Function App to pull Semperis Lightning data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API.</p>
+<p>This solution includes two data connectors for Semperis Lightning: a Function App connector that pulls data and uploads it into the selected Log Analytics workspace via the Azure Log Ingestion API, and a Codeless Connector Framework (CCF) connector that deploys REST API pollers to ingest data directly, with support for onboarding multiple Semperis Lightning environments independently.</p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -80,12 +80,13 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
+<li><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>7 table(s)</strong>:</p>
+<p>This solution uses <strong>14 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -96,8 +97,18 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/lightningattackpathlinksv2-cl.html"><code>LightningAttackPathLinksV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/lightningattackpathlinks-cl.html"><code>LightningAttackPathLinks_CL</code></a></td>
   <td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/lightningattackpathsv2-cl.html"><code>LightningAttackPathsV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -106,8 +117,18 @@
   <td>-</td>
 </tr>
 <tr>
+  <td><a href="../tables/lightningioeresultsv2-cl.html"><code>LightningIOEResultsV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/lightningioeresults-cl.html"><code>LightningIOEResults_CL</code></a></td>
   <td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/lightningioesmetadatav2-cl.html"><code>LightningIOEsMetadataV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -116,13 +137,28 @@
   <td>-</td>
 </tr>
 <tr>
+  <td><a href="../tables/lightningindicatorexecutionsv2-cl.html"><code>LightningIndicatorExecutionsV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/lightningindicatorexecutions-cl.html"><code>LightningIndicatorExecutions_CL</code></a></td>
   <td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
   <td>-</td>
 </tr>
 <tr>
+  <td><a href="../tables/lightningtier0attackersv2-cl.html"><code>LightningTier0AttackersV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/lightningtier0attackers-cl.html"><code>LightningTier0Attackers_CL</code></a></td>
   <td><a href="../connectors/semperislightninglogsazurefunctions.html">Semperis Lightning Logs</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/lightningtier0nodesv2-cl.html"><code>LightningTier0NodesV2_CL</code></a></td>
+  <td><a href="../connectors/semperislightningccfconnector.html">Semperis Lightning (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -253,6 +289,11 @@ az deployment group create \
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>01-09-2026</td>
+  <td>Added a Codeless Connector Framework (CCF) data connector alongside the existing Function App connector, letting customers use either or both to ingest Semperis Lightning data.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>23-03-2026</td>

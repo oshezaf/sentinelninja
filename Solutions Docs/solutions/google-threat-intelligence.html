@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.2.3</td>
+  <td style="text-align:left">3.3.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-06-30</td>
+  <td style="text-align:left">2026-09-01</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google">Azure Marketplace</a> · Popularity: 🔵 Medium (79%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google">Azure Marketplace</a> · Popularity: 🔵 Medium (61%)</td>
 </tr>
 </tbody>
 </table>
@@ -81,12 +81,13 @@
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
+<li><a href="../connectors/gtivulnerabilitiesconnector.html">Google Threat Intelligence Vulnerabilities (CCF)</a></li>
 <li><a href="../connectors/googlethreatintelligencerelevancesystemalertsapi.html">Google Threat Intelligence Relevance System Alerts</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -96,6 +97,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/gti-filescan-cl.html"><code>GTI_FileScan_CL</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/gti-urlscan-cl.html"><code>GTI_URLScan_CL</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+  <td><a href="../connectors/gtivulnerabilitiesconnector.html">Google Threat Intelligence Vulnerabilities (CCF)</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
 <tr>
   <td><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
   <td><a href="../connectors/googlethreatintelligencerelevancesystemalertsapi.html">Google Threat Intelligence Relevance System Alerts</a></td>
@@ -122,7 +138,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>23 content item(s)</strong>:</p>
+<p>This solution includes <strong>36 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -132,12 +148,12 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:left">10</td>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">15</td>
 </tr>
 <tr>
-  <td style="text-align:left">Playbooks</td>
-  <td style="text-align:left">8</td>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">14</td>
 </tr>
 <tr>
   <td style="text-align:left">Hunting Queries</td>
@@ -145,6 +161,10 @@
 </tr>
 <tr>
   <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
 </tr>
 </tbody>
@@ -160,6 +180,24 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-actively-exploited-vulnerability-detected-4d284d59-1ce5-4ea7-8e97-52256b95aa10-94bf90c8.html">GTI - Actively Exploited Vulnerability Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, Impact</td>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-cisa-known-exploited-vulnerability-detected-650429cd-afc6-41a5-90e7-6e4a85b2335d-fc7f9c79.html">GTI - CISA Known Exploited Vulnerability Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, Impact</td>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-critical-cvss-score-vulnerability-detected-3794141b-9bd3-41ae-8303-79f97692998b-97483940.html">GTI - Critical CVSS Score Vulnerability Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, PrivilegeEscalation, Impact</td>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-data-leak-alert-detected-d4e5f6a7-b8c9-0123-defa-234567890124-c47c0531.html">GTI - Data Leak Alert Detected</a></td>
   <td style="text-align:left">High</td>
@@ -189,6 +227,12 @@
   <td style="text-align:left">High</td>
   <td style="text-align:left">PrivilegeEscalation, Exfiltration, CredentialAccess, Impact</td>
   <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-zero-day-vulnerability-detected-ebd03de8-0cee-4923-b510-45337e0aed84-9ad9b257.html">GTI - Zero-Day Vulnerability Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, PrivilegeEscalation, Impact</td>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-relevance-system-alert-incident-by-alert-id-a1b2c3d4-e5f6-7890-abcd-ef1234567891-4ca388b2.html">GTI Relevance System Alert - Incident by Alert ID</a></td>
@@ -254,6 +298,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-googlethreatintelligence-81b272e5.html">GoogleThreatIntelligence</a></td>
+  <td style="text-align:left"><a href="../tables/gti-filescan-cl.html"><code>GTI_FileScan_CL</code></a><br><a href="../tables/gti-urlscan-cl.html"><code>GTI_URLScan_CL</code></a><br><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+</tr>
+</tbody>
+</table>
 <h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
@@ -265,6 +324,11 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-add-comment-to-incident-b747edfb.html">Google Threat Intelligence - Add Comment To Incident</a></td>
+  <td style="text-align:left">Utility sub-playbook called by GTIURLScanIncidentEnrichment and GTIURLScanEntityEnrichment. Receives...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-domain-enrichment-4dd0e649.html">Google Threat Intelligence - Domain Enrichment</a></td>
   <td style="text-align:left">This playbook will enrich Domain entities.</td>
   <td style="text-align:left">-</td>
@@ -272,6 +336,16 @@
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-filehash-enrichment-2c6963ed.html">Google Threat Intelligence - FileHash Enrichment</a></td>
   <td style="text-align:left">This playbook will enrich FileHash entities.</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.html">Google Threat Intelligence - FileScan Blob Enrichment</a></td>
+  <td style="text-align:left">This playbook monitors an Azure Blob Storage container and automatically submits newly added or modi...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.html">Google Threat Intelligence - FileScan Enrichment</a></td>
+  <td style="text-align:left">This playbook accepts a blob path posted from an Azure Workbook, retrieves the file from Azure Blob ...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -304,6 +378,26 @@
   <td style="text-align:left">This playbook will enrich URL entities.</td>
   <td style="text-align:left">-</td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.html">Google Threat Intelligence - URLScan Enrichment</a></td>
+  <td style="text-align:left">Accepts a URL via HTTP POST, optionally with a custom user_agent and storage_region, submits it to t...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.html">Google Threat Intelligence - URLScan Entity Enrichment</a></td>
+  <td style="text-align:left">Triggered by a Microsoft Sentinel URL entity, submits the URL to the GTI private API, polls analysis...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.html">Google Threat Intelligence - URLScan Incident Enrichment</a></td>
+  <td style="text-align:left">Triggered by a Microsoft Sentinel incident, extracts URL entities, submits each to the GTI private A...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.html">Google Threat Intelligence - Vulnerability Enrichment</a></td>
+  <td style="text-align:left">Retrieves vulnerability intelligence from Google Threat Intelligence for a given CVE ID and returns ...</td>
+  <td style="text-align:left">-</td>
+</tr>
 </tbody>
 </table>
 <h3 id="parsers">Parsers</h3>
@@ -320,6 +414,11 @@
   <td style="text-align:left"><a href="../parsers/gtirelevancesystemalerts.html">GTIRelevanceSystemAlerts</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left"><a href="../tables/relevancesystemalerts-cl.html"><code>RelevanceSystemAlerts_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/gtivulnerabilities.html">GTIVulnerabilities</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -338,6 +437,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.3.0</td>
+  <td>23-07-2026</td>
+  <td>- Added <strong>Data Connector</strong> <em>GTI Vulnerabilities</em> (Codeless Connector Framework, Log Ingestion API). <br/>- Added <strong>Parser</strong> <em>GTIVulnerabilities</em>, <strong>Analytics Rules</strong>, <strong>Playbooks</strong> and <strong>Workbook</strong> <em>Google Threat Intelligence</em>.</td>
+</tr>
 <tr>
   <td>3.2.3</td>
   <td>04-06-2026</td>

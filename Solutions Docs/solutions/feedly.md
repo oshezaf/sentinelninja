@@ -1,4 +1,4 @@
-# Feedly Solution For Microsoft Sentinel
+# Feedly Threat Intelligence Solution For Microsoft Sentinel
 
 *Solution: Feedly*
 
@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedly.com/i/support/contactUs](https://feedly.com/i/support/contactUs) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.4 |
+| **Version** | 3.0.5 |
 | **Author** | Feedly ml@feedly.com |
 | **First Published** | 2023-08-01 |
-| **Last Updated** | 2026-03-02 |
+| **Last Updated** | 2026-09-09 |
 | **Solution Folder** | [Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly) · Popularity: 🟡 Low (24%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly) · Popularity: ⚪ Very Low (0%) |
 
 The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Microsoft Sentinel provides a simple way to ingest Indicators of Compromise from your Feedly streams into Microsoft Sentinel.
 
@@ -29,26 +29,21 @@ The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Micro
 
 This solution provides **1 data connector(s)**:
 
-- [Feedly IoC](../connectors/feedlyccpdefinition.md) 🔶
+- [Feedly IoC](../connectors/feedlyccpdefinition.md)
 
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+## Internal Tables
 
-
-## Tables Used
-
-This solution uses **1 table(s)**:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | [Feedly IoC](../connectors/feedlyccpdefinition.md) | - |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Feedly IoC](../connectors/feedlyccpdefinition.md) | - |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                              |
 |-------------|--------------------------------|-----------------------------------------------------------------|
+| 3.0.5       | 28-08-2026                     | Ingest Feedly IoCs into native **ThreatIntelIndicators** (SourceSystem=Feedly) |
 | 3.0.4       | 16-02-2026                     | Migrate to CCF connector |
 | 3.0.3       | 28-11-2023                     | Added missing python packages to the  **Data Connector**        |
 | 3.0.2       | 10-11-2023                     | Fixed the app service plan                                      | 

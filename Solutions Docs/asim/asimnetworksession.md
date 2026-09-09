@@ -44,7 +44,7 @@ This union parser includes parsers for the following products:
 | Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Cisco Meraki | [_ASim_NetworkSession_CiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
-| Corelight Zeek | [_ASim_NetworkSession_CorelightZeek](asimnetworksessioncorelightzeek.md) | [Corelight](../solutions/corelight.md) |
+| Corelight Zeek | [_ASim_NetworkSession_CorelightZeek](asimnetworksessioncorelightzeek.md) |  |
 | CrowdStrike Falcon Endpoint Protection | [_ASim_NetworkSession_CrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[CrowdStrike Falcon Endpoint Protection (legacy connector)](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | ForcePointFirewall | [_ASim_NetworkSession_ForcePointFirewall](asimnetworksessionforcepointfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Fortinet FortiGate | [_ASim_NetworkSession_FortinetFortiGate](asimnetworksessionfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |

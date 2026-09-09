@@ -82,9 +82,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/salesforcerealtimeeventmonitoring-cl.html"><code>SalesForceRealTimeEventMonitoring_CL</code></a></td>
-  <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
@@ -106,8 +106,10 @@
 </blockquote>
 <p><strong>1. Connect to Salesforce Event Monitoring to start collecting real-time event monitoring logs in Microsoft Sentinel</strong></p>
 <p>Follow <a href="https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&amp;type=5">Create a Connected App in Salesforce for OAuth</a> and <a href="https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&amp;type=5">Configure a Connected App for the OAuth 2.0 Client Credentials Flow</a> to create a Connected App with access to the Salesforce Event Monitoring API. Through those instructions, you should get the Consumer Key and Consumer Secret.
-For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.</p>
-<p>ℹ️ <strong>Required Add-on subscription:</strong> Your Salesforce account should include Salesforce Shield or Salesforce Event Monitoring add-on subscriptions for this connector to work.
+For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
+<strong>Required Add-on subscription:</strong> Your Salesforce account should include Salesforce Shield or Salesforce Event Monitoring add-on subscriptions for this connector to work.</p>
+<p><strong>2. Manage Salesforce Connections</strong></p>
+<p>Add, view, and delete Salesforce connections
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
 <p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
@@ -128,6 +130,15 @@ For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, a
 <p><em>Base Configuration</em></p>
 <ul>
 <li><strong>Connection Alias</strong> (required): Production or Sandbox</li>
+<li><strong>Query interval (in minutes)</strong> (required): Select from available options<ul>
+<li>5</li>
+<li>10</li>
+<li>15</li>
+<li>20</li>
+<li>30</li>
+<li>... and 1 more options</li>
+</ul>
+</li>
 <li><strong>Salesforce Base URL</strong> (required): Example: https://your-domain.my.salesforce.com</li>
 <li><strong>Data Types</strong> (required): Select from available options<ul>
 <li>ApiAnomalyEventStore</li>

@@ -21,16 +21,260 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
+<p>Reference for DragonCopilot table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dragoncopilot">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
+<h2 id="schema">Schema (39 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dragoncopilot">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AccessMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">How the resource was accessed (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ArtifactType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Artifact category (ClinicalData / Session records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthenticationMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">How the caller authenticated (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source client IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeniedPolicy</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Policy that denied access, if applicable (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">DisconnectReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reason a session ended (Session records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EhrType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">EHR system type when HostType=Ehr (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EnvironmentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Dragon Copilot environment GUID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ErrorType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Classification of any failure (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">FeedbackType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User feedback category (ClinicalData records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">GenerationSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of generated content (ClinicalData records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">HostType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Desktop / Ehr / Mobile / Web (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Audit record GUID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IntentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Intent category (ClinicalData records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Issuer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Token issuer (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ModifiedProperties</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Array of {Name, OldValue, NewValue} for changed attributes (Admin update operations).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Object identifier (resource GUID).</td>
+</tr>
+<tr>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Operation name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Tenant (organization) GUID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PreviousValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Previous value when an attribute changed (Access / Session records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProductType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Physician / Nursing / Radiology (Admin records, product-scoped operations).</td>
+</tr>
+<tr>
+  <td style="text-align:left">PromptType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Prompt category (ClinicalData records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">RecordType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">454=Admin, 468=Access, 469=ClinicalData, 470=Session.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RecordTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Friendly name for RecordType.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Succeeded / Failed / PartiallySucceeded.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Session classification (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">SofState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SMART-on-FHIR state (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time the record was generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UpdateAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Update action performed (ClinicalData records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP User-Agent string (Access records).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">UPN or identifier of the user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Microsoft Entra Object ID (raw GUID).</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">0=Regular, 2=Admin, 4=System, 5=Application, 6=ServicePrincipal, 10=Guest.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workload</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Workload name (always DragonCopilot).</td>
+</tr>
+</tbody>
+</table>
 <h2 id="schema-references">Schema References</h2>
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dragoncopilot">DragonCopilot Schema Reference (Azure Monitor)</a></li>
 </ul>
 <h2 id="solutions">Solutions (1)</h2>
 <p>This table is used by the following solutions:</p>
@@ -39,7 +283,7 @@
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
   <th style="text-align:left">Connector</th>

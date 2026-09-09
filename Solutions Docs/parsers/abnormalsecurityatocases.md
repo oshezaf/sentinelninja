@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) 🔶 | ? | ✓ | ? |
+| [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

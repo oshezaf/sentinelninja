@@ -85,9 +85,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (7)
 
-### Analytic Rules (2)
+### Analytic Rules (4)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 
@@ -95,22 +95,30 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Vectra Create Detection Alert for Accounts](../content/vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) |  |
 | [Vectra Create Detection Alert for Hosts](../content/vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) |  |
+| [Vectra RUX - Create Incident for Escalated Account Detection or Unresolved Priority Account](../content/vectra-xdr-vectra-rux-create-incident-for-escalated-account-detection-or-unresolved-priority-account-231904f5-b670-4223-9bec-2e9aeca9cf5a-a40173c6.md) |  |
+| [Vectra RUX - Create Incident for Escalated Host Detection or Unresolved Priority Host](../content/vectra-xdr-vectra-rux-create-incident-for-escalated-host-detection-or-unresolved-priority-host-231904f5-b670-4223-9bec-2e9aeca9cf5b-344720ca.md) |  |
 
-### Workbooks (1)
+### Workbooks (3)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
+| [VectraRUXDetectionTimeline](../content/vectra-xdr-vectraruxdetectiontimeline-0e8c0b9f.md) |  |
+| [VectraRUXSecurityDashboard](../content/vectra-xdr-vectraruxsecuritydashboard-3f089ed1.md) |  |
 | [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (3)
 
-### Other Parsers (1)
+### Other Parsers (3)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [VectraDetections](../parsers/vectradetections.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
+| [VectraDetections](../parsers/vectradetections.md) | [Vectra XDR](../solutions/vectra-xdr.md) ⚠️ |  |
+| [VectraDetectionsCombined](../parsers/vectradetectionscombined.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
+| [VectraRUXDetections](../parsers/vectraruxdetections.md) | [Vectra XDR](../solutions/vectra-xdr.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,28 +19,23 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (19 columns)
+## Schema (14 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_nameserver_matches_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| Computer | string |
-| domain_s | string |
-| ManagementGroupName | string |
-| MG | string |
-| ns_reputation_confidence_s | string |
-| ns_reputation_label_s | string |
-| ns_reputation_malicious_counts_s | string |
-| ns_reputation_popular_s | string |
-| ns_reputation_rare_s | string |
-| ns_reputation_raw_score_s | string |
-| ns_reputation_score_s | string |
-| ns_reputation_total_counts_s | string |
-| RawData | string |
-| SourceSystem | string |
-| task_id_g | string |
+| domain | string |
+| ns_reputation_confidence | string |
+| ns_reputation_label | string |
+| ns_reputation_malicious_counts | string |
+| ns_reputation_popular | string |
+| ns_reputation_rare | string |
+| ns_reputation_raw_score | string |
+| ns_reputation_score | string |
+| ns_reputation_total_counts | string |
+| task_id | string |
 | TenantId | string |
 | TimeGenerated | datetime |
 | Type | string |

@@ -1,4 +1,6 @@
-# Dynatrace Runtime Vulnerabilities V1
+# 🚫 [Deprecated] Dynatrace Runtime Vulnerabilities V1
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/dynatrace.svg" alt="" width="75" height="75">
 
@@ -20,13 +22,18 @@
 
 This connector uses the [Dynatrace Security Problem REST API](https://docs.dynatrace.com/docs/dynatrace-api/environment-api/application-security/vulnerabilities/get-vulnerabilities) to ingest detected runtime vulnerabilities into Microsoft Sentinel Log Analytics.
 
+
+
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: This connector is deprecated and will be removed in a future version. Please use the <b>Dynatrace Runtime Vulnerabilities V2</b> connector instead.</p>
+
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,33 +19,31 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (21 columns)
+## Schema (19 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_inforank_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| Computer | string |
-| data_domain_s | string |
-| data_interval_s | string |
-| data_message_s | string |
-| data_rank_d | real |
-| ManagementGroupName | string |
-| MG | string |
-| params_source_s | string |
-| params_target_s | string |
-| params_type_s | string |
-| RawData | string |
-| SourceSystem | string |
-| status_message_for_dossier_s | string |
-| status_s | string |
-| task_id_g | string |
+| data | dynamic |
+| data_domain | string |
+| data_interval | string |
+| data_message | string |
+| data_rank | real |
+| params | dynamic |
+| params_source | string |
+| params_target | string |
+| params_type | string |
+| RowData | dynamic |
+| status | string |
+| status_message_for_dossier | string |
+| task_id | string |
 | TenantId | string |
-| time_d | real |
+| time_value | real |
 | TimeGenerated | datetime |
 | Type | string |
-| v_s | string |
+| v_value | string |
 
 ## Schema References
 

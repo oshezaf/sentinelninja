@@ -1228,7 +1228,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent">SecurityEvent Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (33)</h2>
+<h2 id="solutions">Solutions (34)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -1243,6 +1243,7 @@
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
 <li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
+<li><a href="../solutions/intel471.html">Intel471</a></li>
 <li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
@@ -1306,7 +1307,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (240)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (264)</h2>
 <h3 id="analytic-rules">Analytic Rules (107)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
@@ -1897,7 +1898,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (91)</h3>
+<h3 id="hunting-queries">Hunting Queries (114)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -2021,6 +2022,109 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.html">Kerberoast burst followed by cloud sign-in</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/intel471.html">Intel471</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-anydesk-execution-from-abnormal-folder-potential-malicious-use-of-rmm-tool-93f71607-f35d-4aa6-aec9-c2f8a62cbd8a-161d718c.html">AnyDesk Execution from Abnormal Folder - Potential Malicious Use of RMM Tool</a></td>
+  <td style="text-align:left"><code>Activity has &quot;Process&quot;</code><br><code>NewProcessName endswith &quot;AnyDesk.exe&quot;</code><br><code>NewProcessName has_any &quot;\\AppData\\&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-autorun-or-asep-registry-key-modification-8289e2ad-bc74-4ae3-bfaa-cdeb4335135c-ce67e3af.html">Autorun or ASEP Registry Key Modification</a></td>
+  <td style="text-align:left"><code>NewValue contains &quot;\\ProgramData\\Package Cache\\&quot;</code><br><code>NewValue has_any &quot;\\Windows\\System32\\ctfmon.exe&quot;</code><br><code>ObjectName has_any &quot;\\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders&quot;</code><br><code>ObjectName has_any &quot;\\software\\Microsoft\\Windows\\CurrentVersion\\Run&quot;</code><br><code>ObjectValueName has_any &quot;\\Microsoft Visual Studio\\Installer\\&quot;</code><br><code>ParentProcessName has_any &quot;Program Files (x86)\\Microsoft\\Edge\\Application&quot;</code><br><code>ParentProcessName has_any &quot;vc_redist.x86.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-browser-spawning-suspicious-applications-potential-exploit-or-social-engineering-59d4df2f-014b-47c0-8008-688d1b41682a-e54c6b2b.html">Browser Spawning Suspicious Applications - Potential Exploit or Social Engineering</a></td>
+  <td style="text-align:left"><code>NewProcessName has_any &quot;\\cmd.exe&quot;</code><br><code>ParentProcessName has_any &quot;\\chrome.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-creating-a-shadow-copy-262d9692-6d36-4b10-9fc5-159930cff604-8a85c79b.html">Creating a Shadow Copy</a></td>
+  <td style="text-align:left"><code>CommandLine contains &quot;shadow&quot;</code><br><code>CommandLine has &quot;Checkpoint-Computer&quot;</code><br><code>CommandLine has &quot;create&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-dump-lsass-via-renamed-procdump-3e8f06d3-4946-4c4a-85b0-cd2804d3401b-0416a344.html">Dump LSASS via Renamed procdump</a></td>
+  <td style="text-align:left"><code>CommandLine has &quot;lsass&quot;</code><br><code>CommandLine has_any &quot;-ma&quot;</code><br><code>NewProcessName endswith &quot;.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-execution-bat-script-to-unpack-payload-606cd1ac-622d-4645-9553-2b04df7407d8-950627ff.html">Execution BAT Script to Unpack Payload</a></td>
+  <td style="text-align:left"><code>CommandLine contains &quot;.bat&quot;</code><br><code>CommandLine contains &quot;/c&quot;</code><br><code>CommandLine contains &quot;cmd.exe&quot;</code><br><code>CommandLine has_any &quot;AppData&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-file-created-in-startup-folder-8fedb48c-396b-4cd5-9483-69d7fc3eecee-4e25a558.html">File Created In Startup Folder</a></td>
+  <td style="text-align:left"><code>EventData has_any &quot;0x2&quot;</code><br><code>EventID == &quot;4663&quot;</code><br><code>Process endswith &quot;SearchProtocolHost.exe&quot;</code><br><code>SubjectUserName !endswith &quot;$&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-java-spawning-child-process-by-unique-child-process-name-potential-exploitation-activity-668a47ab-f437-4a63-90a5-912b118dc264-681d3492.html">Java Spawning Child Process by Unique Child Process Name - Potential Exploitation Activity</a></td>
+  <td style="text-align:left"><code>ParentProcessName contains &quot;java&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-meshagent-suspicious-child-process-potential-malicious-rmm-tool-usage-749f7e2c-5eeb-407d-a5ef-cfcecbe5d810-328fa902.html">MeshAgent Suspicious Child Process - Potential Malicious RMM Tool Usage</a></td>
+  <td style="text-align:left"><code>CommandLine has_any &quot;-kvm1&quot;</code><br><code>NewProcessName has &quot;meshagent.exe&quot;</code><br><code>NewProcessName has_any &quot;cmd.exe&quot;</code><br><code>ParentProcessName has &quot;meshagent.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-methods-for-downloading-files-with-powershell-c7b320fb-ac67-45b0-92c4-b0f1e10b4e46-7e879de3.html">Methods for Downloading Files with PowerShell</a></td>
+  <td style="text-align:left"><code>CommandLine has_any &quot;Invoke-WebRequest&quot;</code><br><code>NewProcessName has_any &quot;powershell.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-netsupport-manager-execution-from-abnormal-folder-potential-malicious-use-of-rmm-tool-3f329a8c-0102-4a61-8cf3-63948aab5ef4-6c1c722f.html">NetSupport Manager Execution from Abnormal Folder - Potential Malicious Use of RMM Tool</a></td>
+  <td style="text-align:left"><code>NewProcessName endswith &quot;client32.exe&quot;</code><br><code>NewProcessName has_any &quot;Program Files (x86)\\NetSupport&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-potential-maldoc-execution-chain-observed-02909982-664b-4858-b703-429cbe031fef-56427fe3.html">Potential Maldoc Execution Chain Observed</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-powershell-encoded-command-execution-3a5a21fd-5a82-45dc-ad37-3fb95f475e11-6ac23a16.html">PowerShell Encoded Command Execution</a></td>
+  <td style="text-align:left"><code>ParentProcessName endswith &quot;gc_worker.exe&quot;</code><br><code>ParentProcessName has &quot;Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-powershell-history-modification-or-deletion-ccdd03de-8fbf-436b-99ba-00dfee83d42f-d9d9dd15.html">Powershell History Modification or Deletion</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-python-executing-from-non-standard-directory-eebb7f80-07f3-4d37-aab7-51c1ad31f1b3-68e3e917.html">Python Executing from Non-Standard Directory</a></td>
+  <td style="text-align:left"><code>NewProcessName matchesregex &quot;.*python(?:[23](?:\\.\\d+)?w?)?&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-remote-atera-agent-download-command-line-bb771c73-e7ab-4705-92a2-ce322b33621d-edbcfef4.html">Remote Atera Agent Download - Command Line</a></td>
+  <td style="text-align:left"><code>CommandLine has &quot;GetAgent&quot;</code><br><code>CommandLine has &quot;atera.com&quot;</code><br><code>CommandLine has &quot;integratorLogin&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-scheduled-task-executing-from-abnormal-location-09a380b3-45e5-408c-b14c-3787fa48d783-6e2e7d8a.html">Scheduled Task Executing from Abnormal Location</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4698&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-shadow-copies-deletion-using-operating-systems-utilities-2e3e9910-70c1-4822-804a-ee9919b0c419-360a835c.html">Shadow Copies Deletion Using Operating Systems Utilities</a></td>
+  <td style="text-align:left"><code>CommandLine contains &quot;delete&quot;</code><br><code>CommandLine contains &quot;shadow&quot;</code><br><code>CommandLine has_any &quot;wmic&quot;</code><br><code>NewProcessName has_any &quot;powershell.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-suspect-child-process-to-iis-worker-process-w3wp.exe-potential-exploitation-667c9f6c-8e41-4309-80a8-55fc3c5769bf-621120ec.html">Suspect Child Process to IIS Worker Process (w3wp.exe) - Potential Exploitation</a></td>
+  <td style="text-align:left"><code>NewProcessName has_any &quot;cmd.exe&quot;</code><br><code>ParentProcessName endswith &quot;w3wp.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-suspicious-child-process-for-java-potential-exploitation-activity-46c5b8dd-465c-4a51-b127-7561bbca02ff-7bc4c67b.html">Suspicious Child Process for Java - Potential Exploitation Activity</a></td>
+  <td style="text-align:left"><code>ParentProcessName endswith &quot;java.exe&quot;</code><br><code>Process has_any &quot;schtasks.exe&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-user-added-to-default-privileged-windows-security-groups-b6365ad5-0ccd-4426-97bc-b9484eb9579f-47292d99.html">User Added to Default Privileged Windows Security Groups</a></td>
+  <td style="text-align:left"><code>CommandLine has_any &quot;Administrators&quot;</code><br><code>CommandLine has_any &quot;group&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-wmic-windows-internal-discovery-and-enumeration-bc0fd59c-4217-46a7-a167-764727118567-da809ef8.html">WMIC Windows Internal Discovery and Enumeration</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-wevtutil-cleared-log-7ceada06-54e2-4b44-9dca-b4e8d4ba401d-80b0d977.html">Wevtutil Cleared Log</a></td>
+  <td style="text-align:left"><code>NewProcessName endswith &quot;wevtutil.exe&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -2366,7 +2470,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (42)</h3>
+<h3 id="workbooks">Workbooks (43)</h3>
 <p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>Account !contains &quot;ANONYMOUS LOGON&quot;</code><br><code>AuthenticationPackageName == &quot;NTLM&quot;</code><br><code>EventID in &quot;2889,3000,4624,4768,4769,4776&quot;</code><br><code>LmPackageName == &quot;NTLM V1&quot;</code><br><code>PackageName contains &quot;WDigest&quot;</code></p>
 <table>
 <thead>
@@ -2698,6 +2802,7 @@
 | <a href="../content/github-only-windowsauditchecker-d8c63df2.html">WindowsAuditChecker</a> | <code>EventID in &quot;4624,4625,4768,4769,4771&quot;</code> |
 | <a href="../content/github-only-windowsfirewall-e0440cb8.html">WindowsFirewall</a> | <code>AccountType == &quot;User&quot;</code><br><code>EventID in &quot;4624,4625&quot;</code><br><code>LogonType == &quot;10&quot;</code> |
 | <a href="../content/github-only-windowsfirewallviaama-c6e9060b.html">WindowsFirewallViaAMA</a> | <code>AccountType == &quot;User&quot;</code><br><code>EventID in &quot;4624,4625&quot;</code><br><code>LogonType == &quot;10&quot;</code> |
+| <a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a> | <code>NewUacValue != &quot;-&quot;</code> |
 | <a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a> |  |</p>
 <h2 id="parsers-using-this-table">Parsers Using This Table (7)</h2>
 <h3 id="asim-parsers">ASIM Parsers (6)</h3>
@@ -2774,8 +2879,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (112 criteria, 161 total references)</h2>
-<p>References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (132 criteria, 181 total references)</h2>
+<p>References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -3309,6 +3414,166 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Activity has &quot;Process&quot;</code><br><code>NewProcessName endswith &quot;AnyDesk.exe&quot;</code><br><code>NewProcessName has_any &quot;\\AppData\\&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewValue contains &quot;\\ProgramData\\Package Cache\\&quot;</code><br><code>NewValue has_any &quot;\\Windows\\System32\\ctfmon.exe&quot;</code><br><code>ObjectName has_any &quot;\\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders&quot;</code><br><code>ObjectName has_any &quot;\\software\\Microsoft\\Windows\\CurrentVersion\\Run&quot;</code><br><code>ObjectValueName has_any &quot;\\Microsoft Visual Studio\\Installer\\&quot;</code><br><code>ParentProcessName has_any &quot;Program Files (x86)\\Microsoft\\Edge\\Application&quot;</code><br><code>ParentProcessName has_any &quot;vc_redist.x86.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewProcessName has_any &quot;\\cmd.exe&quot;</code><br><code>ParentProcessName has_any &quot;\\chrome.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine contains &quot;shadow&quot;</code><br><code>CommandLine has &quot;Checkpoint-Computer&quot;</code><br><code>CommandLine has &quot;create&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine has &quot;lsass&quot;</code><br><code>CommandLine has_any &quot;-ma&quot;</code><br><code>NewProcessName endswith &quot;.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine contains &quot;.bat&quot;</code><br><code>CommandLine contains &quot;/c&quot;</code><br><code>CommandLine contains &quot;cmd.exe&quot;</code><br><code>CommandLine has_any &quot;AppData&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventData has_any &quot;0x2&quot;</code><br><code>EventID == &quot;4663&quot;</code><br><code>Process endswith &quot;SearchProtocolHost.exe&quot;</code><br><code>SubjectUserName !endswith &quot;$&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ParentProcessName contains &quot;java&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine has_any &quot;-kvm1&quot;</code><br><code>NewProcessName has &quot;meshagent.exe&quot;</code><br><code>NewProcessName has_any &quot;cmd.exe&quot;</code><br><code>ParentProcessName has &quot;meshagent.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine has_any &quot;Invoke-WebRequest&quot;</code><br><code>NewProcessName has_any &quot;powershell.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewProcessName endswith &quot;client32.exe&quot;</code><br><code>NewProcessName has_any &quot;Program Files (x86)\\NetSupport&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ParentProcessName endswith &quot;gc_worker.exe&quot;</code><br><code>ParentProcessName has &quot;Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewProcessName matchesregex &quot;.*python(?:[23](?:\\.\\d+)?w?)?&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine has &quot;GetAgent&quot;</code><br><code>CommandLine has &quot;atera.com&quot;</code><br><code>CommandLine has &quot;integratorLogin&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID == &quot;4698&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine contains &quot;delete&quot;</code><br><code>CommandLine contains &quot;shadow&quot;</code><br><code>CommandLine has_any &quot;wmic&quot;</code><br><code>NewProcessName has_any &quot;powershell.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewProcessName has_any &quot;cmd.exe&quot;</code><br><code>ParentProcessName endswith &quot;w3wp.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ParentProcessName endswith &quot;java.exe&quot;</code><br><code>Process has_any &quot;schtasks.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CommandLine has_any &quot;Administrators&quot;</code><br><code>CommandLine has_any &quot;group&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NewProcessName endswith &quot;wevtutil.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code><br><code>ParentProcessName endswith &quot;wmiprvse.exe&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -3687,10 +3952,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>154</strong></td>
+  <td style="text-align:center"><strong>174</strong></td>
   <td style="text-align:center"><strong>5</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>161</strong></td>
+  <td style="text-align:center"><strong>181</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3833,6 +4098,14 @@
   <td style="text-align:center"><strong>10</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has Process</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>5058 - Key file operation.</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -3927,6 +4200,14 @@
 <tbody>
 <tr>
   <td style="text-align:left"><code>has_all advfirewall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains shadow</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -4103,6 +4384,142 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any explorer</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Checkpoint-Computer</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has lsass</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any -ma</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains .bat</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains /c</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains cmd.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any AppData</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any -kvm1</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Invoke-WebRequest</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has GetAgent</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has atera.com</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has integratorLogin</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any wmic</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Administrators</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any group</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -4330,6 +4747,14 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
+<tr>
+  <td style="text-align:left"><code>has_any 0x2</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
 </tbody>
 </table>
 <h3 id="eventid">EventID</h3>
@@ -4404,10 +4829,10 @@
 <tr>
   <td style="text-align:left"><code>4663</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">6</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>4657</code></td>
@@ -4458,6 +4883,14 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>4698</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>5145</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
@@ -4499,14 +4932,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>4768</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>4698</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -5493,6 +5918,22 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>has_any cmd.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any powershell.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>C:\\Windows\\System32\\schtasks.exe</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -5541,7 +5982,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any cmd.exe</code></td>
+  <td style="text-align:left"><code>has_any winword.exe</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -5549,7 +5990,63 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any winword.exe</code></td>
+  <td style="text-align:left"><code>endswith AnyDesk.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\AppData\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\cmd.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith .exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has meshagent.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith client32.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Program Files (x86)\\NetSupport</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith wevtutil.exe</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -5675,6 +6172,22 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
+<tr>
+  <td style="text-align:left"><code>contains \\ProgramData\\Package Cache\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\Windows\\System32\\ctfmon.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
 </tbody>
 </table>
 <h3 id="objectname">ObjectName</h3>
@@ -5716,6 +6229,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>endswith lsass.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\software\\Microsoft\\Windows\\CurrentVersion\\Run</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -5799,6 +6328,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><code>has_any \\Microsoft Visual Studio\\Installer\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
 <tr>
   <td style="text-align:left"><code>CrashDumpEnabled</code></td>
   <td style="text-align:center">-</td>
@@ -5887,6 +6424,78 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has explorer.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Program Files (x86)\\Microsoft\\Edge\\Application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any vc_redist.x86.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any \\chrome.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains java</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has meshagent.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith gc_worker.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith w3wp.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith java.exe</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6014,6 +6623,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any wscript.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith SearchProtocolHost.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any schtasks.exe</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6169,15 +6794,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>!= SYSTEM</code></td>
+  <td style="text-align:left"><code>!endswith $</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!endswith $</code></td>
+  <td style="text-align:left"><code>!= SYSTEM</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>

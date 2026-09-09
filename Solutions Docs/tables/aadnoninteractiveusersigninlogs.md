@@ -26,7 +26,7 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (86 columns)
+## Schema (87 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs)
 
@@ -38,9 +38,9 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 | Agent | string | Details of agentic sign-in. |
 | AlternateSignInName | string | Provides the on-premises UPN of the user sign-ing into Azure AD.e.g. Phone number sign-in. |
 | AppDisplayName | string | App name displayed in the Azure portal. |
-| AppId | string | Unique GUID representing the app ID in the Azure Active Directory. |
+| AppId | string | Unique GUID representing the app ID in the Microsoft Entra ID. |
 | AppliedEventListeners | dynamic | Detailed information about the applied event listeners or listeners that are triggered by the corresponding events in an authentication activity. It's called appliedEventListeners in ALP and MSGraph, but use Authentication Events to match name on UX. |
-| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Azure Active Directory. |
+| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Microsoft Entra ID. |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in. |
 | AuthenticationDetails | string | A record of each step of authentication undertaken in the sign-in. |
 | AuthenticationMethodsUsed | string | List of authentication methods used. |
@@ -99,6 +99,7 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 | RiskLevelAggregated | string | Aggregated risk level. |
 | RiskLevelDuringSignIn | string | Risk level during sign-in. |
 | RiskState | string | Risky user state. |
+| RootActorID | string | The root actor virtual ID associated with the sign-in. |
 | ServicePrincipalId | string | ID of the service principal who initiated the sign-in. |
 | SessionId | string | Id of the session that was generated during the signIn. |
 | SessionLifetimePolicies | string | Policies and settings that applied to the sign-in that enforced or revoked a session lifetime. |
@@ -125,7 +126,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AADNonInteractiveUserSignInLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs)
 
-## Solutions (14)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -135,6 +136,7 @@ This table is used by the following solutions:
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [HoneyLabs](../solutions/honeylabs.md)
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
@@ -154,9 +156,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (42)
+## Content Items Using This Table (44)
 
-### Analytic Rules (15)
+### Analytic Rules (16)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -171,6 +173,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Microsoft Entra ID Rare UserAgent App Sign-in](../content/falconfriday-microsoft-entra-id-rare-useragent-app-sign-in-87d5cd18-211d-4fd4-9b86-65d23fed87ea-f1fc55a9.md) |  |
 | [Microsoft Entra ID UserAgent OS Missmatch](../content/falconfriday-microsoft-entra-id-useragent-os-missmatch-6a638d80-f6b2-473b-9087-3cac78a84b40-e6a7d745.md) |  |
+
+**In solution [HoneyLabs](../solutions/honeylabs.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [HoneyLabs TI Map IP Entity to SigninLogs](../content/honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.md) |  |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -233,7 +241,7 @@ This table is ingested by the following connectors:
 | [Short-window IP failure burst followed by successful sign-in](../content/standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.md) |  |
 | [Short-window sign-in mismatch between interactive and non-interactive activity](../content/standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.md) |  |
 
-### Workbooks (19)
+### Workbooks (20)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -295,6 +303,7 @@ This table is ingested by the following connectors:
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |

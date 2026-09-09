@@ -7,7 +7,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 34 |
+| **Playbooks using** | 35 |
 | **Solutions** | 12 |
 | **Microsoft Learn** | — |
 
@@ -15,6 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [Add Host To Watchlist - Alert Trigger](../content/watchlists-utilities-add-host-to-watchlist-alert-trigger-fc569050.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 0 | 7 |
 | [Add Host To Watchlist - Incident Trigger](../content/watchlists-utilities-add-host-to-watchlist-incident-trigger-6dc249a3.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 0 | 5 |
 | [Add IP To Watchlist - Alert Trigger](../content/watchlists-utilities-add-ip-to-watchlist-alert-trigger-2c3064f7.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 0 | 4 |

@@ -79,7 +79,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (50)
+## Content Items Using This Table (62)
 
 ### Analytic Rules (3)
 
@@ -101,18 +101,24 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md) |  |
 
-### Hunting Queries (46)
+### Hunting Queries (58)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [Blocked URL Clicks by Workload](../content/microsoft-defender-xdr-blocked-url-clicks-by-workload-22811654-25ac-43d6-ba63-699ec29dd6af-804a4494.md) | `Workload in "Copilot,Email,Office,Teams"` |
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.md) |  |
 | [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) |  |
 | [Teams URL clicks actions summarized by URLs clicked on](../content/microsoft-defender-xdr-teams-url-clicks-actions-summarized-by-urls-clicked-on-161b163c-0805-46fd-abda-2fe5f0a5185e-7bcc6c0b.md) | `Workload == "Teams"` |
 | [Teams URL clicks through actions on Phish or Malware URLs summarized by URLs](../content/microsoft-defender-xdr-teams-url-clicks-through-actions-on-phish-or-malware-urls-summarized-by-urls-68aaf2af-83ac-4f9e-9680-4050700b93f9-071f451c.md) | `ThreatTypes in "Malware,Phish"` |
 | [Teams blocked URL clicks daily trend](../content/microsoft-defender-xdr-teams-blocked-url-clicks-daily-trend-71117505-5a71-431e-8605-8896960affe5-fa61dd17.md) |  |
 | [Top 10 Users clicking on malicious URLs in Teams](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-in-teams-b3b507e9-9f92-4751-8463-fc77394fed91-9d43f369.md) | `ThreatTypes in "Malware,Phish"` |
+| [Top 20 Malicious URLs by Clicks](../content/microsoft-defender-xdr-top-20-malicious-urls-by-clicks-13e20569-a96c-48c4-b0d7-3c2058d24245-81e3a858.md) |  |
+| [Top Clicks on Malicious URLs](../content/microsoft-defender-xdr-top-clicks-on-malicious-urls-d31069b5-44a5-4a5d-96fa-68db27074023-defdb46e.md) |  |
 | [Top malicious URLs clicked by users in Teams](../content/microsoft-defender-xdr-top-malicious-urls-clicked-by-users-in-teams-6610945e-9496-4ef4-9bc4-a511a3f2a477-af2d72cc.md) |  |
+| [URL Click-Through by Workload](../content/microsoft-defender-xdr-url-click-through-by-workload-07e1f2f5-3662-4e8b-8f52-5273d220976b-6c706bb4.md) | `IsClickedThrough != "0"` |
+| [URL Threat Protection Summary](../content/microsoft-defender-xdr-url-threat-protection-summary-a0d5391b-a44c-433c-8e08-7137f6e4a23c-5ead00e4.md) |  |
 
 **GitHub Only:**
 
@@ -120,12 +126,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Blocked Clicks Trend](../content/microsoft-defender-xdr-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-f9fdc910.md) |  |
 | [Blocked Clicks Trend](../content/github-only-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-573356d8.md) |  |
+| [Blocked URL Clicks by Workload](../content/github-only-blocked-url-clicks-by-workload-41831d30-f03e-44a9-bd27-f713033393b7-d14ae3a8.md) | `Workload in "Copilot,Email,Office,Teams"` |
 | [End user malicious clicks](../content/microsoft-defender-xdr-end-user-malicious-clicks-d24e9c4a-b72a-4a85-89cd-83760ae61155-9c8f1743.md) | `ThreatTypes contains "Phish"` |
 | [End user malicious clicks](../content/github-only-end-user-malicious-clicks-d24e9c4a-b72a-4a85-89cd-83760ae61155-918ddf10.md) | `ThreatTypes contains "Phish"` |
 | [MDO_URLClickedinEmail](../content/microsoft-defender-xdr-mdo-urlclickedinemail-2c6e7f75-d83c-4344-afdc-83335fe550e6-75ab3207.md) |  |
 | [MDO_URLClickedinEmail](../content/github-only-mdo-urlclickedinemail-2c6e7f75-d83c-4344-afdc-83335fe550e6-a83ff208.md) |  |
 | [Malicious Clicks allowed (click-through)](../content/microsoft-defender-xdr-malicious-clicks-allowed-click-through-ba4f7e56-a2f8-4a30-b848-200fdc7fc3a2-d64cdc32.md) | `IsClickedThrough == "1"` |
 | [Malicious Clicks allowed (click-through)](../content/github-only-malicious-clicks-allowed-click-through-ba4f7e56-a2f8-4a30-b848-200fdc7fc3a2-5f966755.md) | `IsClickedThrough == "1"` |
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/github-only-malicious-email-campaigns-by-recipient-url-clicks-28ce9655-f35f-4733-af43-8266b39a87f1-21f63c9c.md) |  |
 | [Malicious URL Clicks by workload](../content/microsoft-defender-xdr-malicious-url-clicks-by-workload-c2b4ef3a-216d-4506-8b35-6a1b0f2a3bf7-d5719131.md) |  |
 | [Malicious URL Clicks by workload](../content/github-only-malicious-url-clicks-by-workload-c2b4ef3a-216d-4506-8b35-6a1b0f2a3bf7-4350a288.md) |  |
 | [Possible device code phishing attempts](../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.md) |  |
@@ -134,20 +142,24 @@ This table is ingested by the following connectors:
 | [Teams URL clicks actions summarized by URLs clicked on](../content/github-only-teams-url-clicks-actions-summarized-by-urls-clicked-on-f2031075-0834-4c87-81fe-1e369ffbc277-70c41fe0.md) | `Workload == "Teams"` |
 | [Teams URL clicks through actions on Phish or Malware URLs summarized by URLs](../content/github-only-teams-url-clicks-through-actions-on-phish-or-malware-urls-summarized-by-urls-8ccb7460-16a4-4cff-9ce7-0eaea2c3d480-22bdbb10.md) | `ThreatTypes in "Malware,Phish"` |
 | [Teams blocked URL clicks daily trend](../content/github-only-teams-blocked-url-clicks-daily-trend-6d740b56-08b9-441c-ba12-32621225408d-5e8fe15d.md) |  |
-| [Top 10 Users clicking on Malicious URLs (Malware)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-malware-5a84e13a-bb17-4124-9564-d74cdb84c124-a53e7a94.md) | `ThreatTypes == "Malware"` |
-| [Top 10 Users clicking on Malicious URLs (Malware)](../content/github-only-top-10-users-clicking-on-malicious-urls-malware-5a84e13a-bb17-4124-9564-d74cdb84c124-7f05f661.md) | `ThreatTypes == "Malware"` |
+| [Top 10 Users clicking on Malicious URLs (Malware)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-malware-5a84e13a-bb17-4124-9564-d74cdb84c124-a53e7a94.md) | `ThreatTypes has "Malware"` |
+| [Top 10 Users clicking on Malicious URLs (Malware)](../content/github-only-top-10-users-clicking-on-malicious-urls-malware-5a84e13a-bb17-4124-9564-d74cdb84c124-7f05f661.md) | `ThreatTypes has "Malware"` |
 | [Top 10 Users clicking on Malicious URLs (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-malware+phish+spam-7d7a3d3f-22db-4cdf-ba67-c57215777a3c-614dd301.md) | `ThreatTypes has_any "Malware"` |
 | [Top 10 Users clicking on Malicious URLs (Malware+Phish+Spam)](../content/github-only-top-10-users-clicking-on-malicious-urls-malware+phish+spam-7d7a3d3f-22db-4cdf-ba67-c57215777a3c-3f763ab6.md) | `ThreatTypes has_any "Malware"` |
-| [Top 10 Users clicking on Malicious URLs (Phish)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-phish-a937905e-ee5c-406c-ab86-8e2581240112-e5164406.md) | `ThreatTypes == "Phish"` |
-| [Top 10 Users clicking on Malicious URLs (Phish)](../content/github-only-top-10-users-clicking-on-malicious-urls-phish-a937905e-ee5c-406c-ab86-8e2581240112-456d1f03.md) | `ThreatTypes == "Phish"` |
-| [Top 10 Users clicking on Malicious URLs (Spam)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-spam-3a2fdf32-ebe7-4f65-a1c3-fc7faf23ae90-97cba5f5.md) | `ThreatTypes == "Spam"` |
-| [Top 10 Users clicking on Malicious URLs (Spam)](../content/github-only-top-10-users-clicking-on-malicious-urls-spam-3a2fdf32-ebe7-4f65-a1c3-fc7faf23ae90-86ab4240.md) | `ThreatTypes == "Spam"` |
+| [Top 10 Users clicking on Malicious URLs (Phish)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-phish-a937905e-ee5c-406c-ab86-8e2581240112-e5164406.md) | `ThreatTypes has "Phish"` |
+| [Top 10 Users clicking on Malicious URLs (Phish)](../content/github-only-top-10-users-clicking-on-malicious-urls-phish-a937905e-ee5c-406c-ab86-8e2581240112-456d1f03.md) | `ThreatTypes has "Phish"` |
+| [Top 10 Users clicking on Malicious URLs (Spam)](../content/microsoft-defender-xdr-top-10-users-clicking-on-malicious-urls-spam-3a2fdf32-ebe7-4f65-a1c3-fc7faf23ae90-97cba5f5.md) | `ThreatTypes has "Spam"` |
+| [Top 10 Users clicking on Malicious URLs (Spam)](../content/github-only-top-10-users-clicking-on-malicious-urls-spam-3a2fdf32-ebe7-4f65-a1c3-fc7faf23ae90-86ab4240.md) | `ThreatTypes has "Spam"` |
 | [Top 10 Users clicking on malicious URLs in Teams](../content/github-only-top-10-users-clicking-on-malicious-urls-in-teams-2186afac-1cde-441d-9825-0dbfd5f59d05-e5b5acce.md) | `ThreatTypes in "Malware,Phish"` |
+| [Top 20 Malicious URLs by Clicks](../content/github-only-top-20-malicious-urls-by-clicks-188a0e9a-d775-4ad2-b7a0-64df26c0b931-0afe0da2.md) |  |
+| [Top Clicks on Malicious URLs](../content/github-only-top-clicks-on-malicious-urls-b47707bf-1155-4d75-864f-079343f7cf7f-11f262cc.md) |  |
 | [Top malicious URLs clicked by users in Teams](../content/github-only-top-malicious-urls-clicked-by-users-in-teams-1676c486-4f27-4c88-b36f-6110a182d6de-5dfa8b5b.md) |  |
 | [URL Click attempts by threat type](../content/microsoft-defender-xdr-url-click-attempts-by-threat-type-3eef362d-3aee-4950-9208-4afa6f7afbe9-0804ea5b.md) |  |
 | [URL Click attempts by threat type](../content/github-only-url-click-attempts-by-threat-type-3eef362d-3aee-4950-9208-4afa6f7afbe9-90a9331f.md) |  |
+| [URL Click-Through by Workload](../content/github-only-url-click-through-by-workload-f9cc3c34-3424-42c6-878b-9f67808b086f-6820490a.md) | `IsClickedThrough != "0"` |
 | [URL Clicks by Action](../content/microsoft-defender-xdr-url-clicks-by-action-4620ece3-dceb-4151-8621-5a56351c97cd-71c178c3.md) |  |
 | [URL Clicks by Action](../content/github-only-url-clicks-by-action-4620ece3-dceb-4151-8621-5a56351c97cd-787f39e3.md) |  |
+| [URL Threat Protection Summary](../content/github-only-url-threat-protection-summary-074959c6-2e9d-4f11-b9c8-971b7387aa99-861ded8c.md) |  |
 | [URL click count by click action](../content/microsoft-defender-xdr-url-click-count-by-click-action-3f007cdc-86bf-4657-9015-05101a3e54f5-9ff7257a.md) |  |
 | [URL click count by click action](../content/github-only-url-click-count-by-click-action-3f007cdc-86bf-4657-9015-05101a3e54f5-5416c190.md) |  |
 | [URL clicks actions by URL](../content/microsoft-defender-xdr-url-clicks-actions-by-url-bc46e331-3cb0-483d-9c90-989d2a59457f-bd855644.md) |  |
@@ -167,45 +179,51 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
 
-## Selection Criteria Summary (9 criteria, 22 total references)
+## Selection Criteria Summary (10 criteria, 26 total references)
 
-References by type: 0 connectors, 22 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 26 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ThreatTypes has "Phish"` | - | 6 | - | - | **6** |
 | `ThreatTypes in "Malware,Phish"` | - | 4 | - | - | **4** |
-| `ThreatTypes has "Phish"` | - | 4 | - | - | **4** |
 | `ThreatTypes has_any "Malware"` | - | 2 | - | - | **2** |
 | `Workload == "Teams"` | - | 2 | - | - | **2** |
 | `IsClickedThrough == "1"` | - | 2 | - | - | **2** |
-| `ThreatTypes == "Malware"` | - | 2 | - | - | **2** |
-| `ThreatTypes == "Phish"` | - | 2 | - | - | **2** |
-| `ThreatTypes == "Spam"` | - | 2 | - | - | **2** |
+| `ThreatTypes has "Malware"` | - | 2 | - | - | **2** |
+| `ThreatTypes has "Spam"` | - | 2 | - | - | **2** |
+| `Workload in "Copilot,Email,Office,Teams"` | - | 2 | - | - | **2** |
 | `ThreatTypes contains "Phish"` | - | 2 | - | - | **2** |
-| **Total** | **0** | **22** | **0** | **0** | **22** |
+| `IsClickedThrough != "0"` | - | 2 | - | - | **2** |
+| **Total** | **0** | **26** | **0** | **0** | **26** |
 
 ### IsClickedThrough
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `1` | - | 2 | - | - | **2** |
+| `!= 0` | - | 2 | - | - | **2** |
 
 ### ThreatTypes
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Malware` | - | 6 | - | - | **6** |
-| `Phish` | - | 6 | - | - | **6** |
-| `has Phish` | - | 4 | - | - | **4** |
+| `has Phish` | - | 6 | - | - | **6** |
+| `Malware` | - | 4 | - | - | **4** |
+| `Phish` | - | 4 | - | - | **4** |
 | `has_any Malware` | - | 2 | - | - | **2** |
-| `Spam` | - | 2 | - | - | **2** |
+| `has Malware` | - | 2 | - | - | **2** |
+| `has Spam` | - | 2 | - | - | **2** |
 | `contains Phish` | - | 2 | - | - | **2** |
 
 ### Workload
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Teams` | - | 2 | - | - | **2** |
+| `Teams` | - | 4 | - | - | **4** |
+| `Copilot` | - | 2 | - | - | **2** |
+| `Email` | - | 2 | - | - | **2** |
+| `Office` | - | 2 | - | - | **2** |
 
 ---
 

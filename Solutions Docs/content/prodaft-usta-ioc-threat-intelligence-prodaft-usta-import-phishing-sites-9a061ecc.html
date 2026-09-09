@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRODAFT USTA - Import Phishing Sites &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="prodaft-usta---import-phishing-sites">PRODAFT USTA - Import Phishing Sites</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Polls the PRODAFT USTA phishing-site IoC feed hourly, maps each record to a STIX 2.1 indicator, and uploads it to Microsoft Sentinel Threat Intelligence via the Upload STIX Objects API. This feed has no expiry, so a validity window (default 365 days, one year) is synthesized from each site's created date. Indicators appear in the Threat Intelligence blade and the ThreatIntelIndicators table with SourceSystem 'PRODAFT USTA - Phishing Sites'. Each run starts its fetch window from a watermark - the</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/prodaft-usta-ioc-threat-intelligence.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence/Playbooks/PRODAFTUstaIoC-ImportPhishingSites/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td style="text-align:left"><code>SourceSystem == &quot;PRODAFT USTA - Phishing Sites&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Import_Watermark</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Upload_STIX_Objects</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/ThreatIntelligence/@{encodeURIComponent(uriComponent(parameters('WorkspaceID')))}/UploadStixObjects/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Fetch_USTA_Page</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@variables('NextUrl')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence/Playbooks/PRODAFTUstaIoC-ImportPhishingSites/readme.md">PRODAFTUstaIoC-ImportPhishingSites/readme.md</a></em></p>
+</blockquote>
+<h1 id="prodaftustaioc-importphishingsites">PRODAFTUstaIoC-ImportPhishingSites</h1>
+<p>Hourly import playbook for the <strong>phishing-sites</strong> USTA IoC feed. Each run resumes from a
+<strong>watermark</strong> — the newest already-imported indicator's <code>created</code> time — maps each new record
+to a STIX 2.1 indicator, and uploads them to Microsoft Sentinel Threat Intelligence (Upload
+STIX Objects API) using its <strong>system-assigned managed identity</strong>. The feed has no expiry, so a
+validity window (<code>ValidityDays</code>, default 365 — one year) is synthesized from each site's <code>created</code> date.
+Indicators appear in the Threat Intelligence blade / <code>ThreatIntelIndicators</code> table with
+<code>SourceSystem == &quot;PRODAFT USTA - Phishing Sites&quot;</code>.</p>
+<h2 id="how-the-fetch-window-works">How the fetch window works</h2>
+<p>At the start of every run the playbook queries the <code>ThreatIntelIndicators</code> table for
+<code>max(Created)</code> of <code>SourceSystem == &quot;PRODAFT USTA - Phishing Sites&quot;</code> and uses that (minus a
+5-minute safety overlap) as the <code>start=</code> of the fetch. Because a record only lands in that
+table after a <strong>successful</strong> upload, a failed run does not advance the watermark: the next run
+re-reads the same value and retries the missed window, so <strong>no indicators are skipped on
+failure</strong>. If the table has no such indicators yet (first run), it falls back to <code>LookBackHours</code>.
+The watermark query runs through the <strong>Azure Monitor Logs</strong> connection (managed-identity auth) using the
+same managed identity, but it needs <strong>Log Analytics Reader</strong> on the workspace <em>in addition to</em> the <strong>Microsoft Sentinel
+Contributor</strong> role used for the upload. Microsoft Sentinel Contributor is not sufficient on its own: it grants
+<code>Microsoft.OperationalInsights/workspaces/*/read</code>, and an Azure RBAC wildcard of that shape does not
+cover the bare <code>Microsoft.OperationalInsights/workspaces/read</code> action this connection performs, so the
+query fails with <code>AuthorizationFailed</code>.</p>
+<h2 id="resolved-ip-addresses">Resolved IP addresses</h2>
+<p>When a record carries <code>ip_addresses</code>, every address is appended to the <strong>same</strong> indicator's
+pattern as its own observation expression — <code>ipv4-addr:value</code> or <code>ipv6-addr:value</code>, chosen per
+address — so the indicator covers the URL/hash and its resolved IPs under one validity window.
+Only the <strong>first 10</strong> addresses of a record are included; any beyond that are dropped.</p>
+<p>Microsoft Sentinel expands a multi-observation pattern into one <code>ObservableKey</code>/<code>ObservableValue</code> row per
+observable, so those IPs are independently matchable. Note that CDN-fronted hosts resolve to
+shared edge addresses, which can produce false positives if you match on IP alone.</p>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Required</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>PlaybookName</code></td>
+  <td>no</td>
+  <td><code>PRODAFTUstaIoC-ImportPhishingSites</code></td>
+  <td>Logic App name.</td>
+</tr>
+<tr>
+  <td><code>UstaBaseUrl</code></td>
+  <td>no</td>
+  <td><code>https://usta.prodaft.com</code></td>
+  <td>USTA API base URL.</td>
+</tr>
+<tr>
+  <td><code>UstaApiKey</code></td>
+  <td><strong>yes</strong></td>
+  <td>—</td>
+  <td>USTA long-lived API key (secured).</td>
+</tr>
+<tr>
+  <td><code>WorkspaceName</code></td>
+  <td><strong>yes</strong></td>
+  <td>—</td>
+  <td>Name of the Microsoft Sentinel (Log Analytics) workspace that indicators are uploaded to.</td>
+</tr>
+<tr>
+  <td><code>WorkspaceResourceGroup</code></td>
+  <td>no</td>
+  <td>resource group of the deployment</td>
+  <td>Resource group of the workspace, if it differs from where the playbook is deployed.</td>
+</tr>
+<tr>
+  <td><code>LookBackHours</code></td>
+  <td>no</td>
+  <td><code>2</code></td>
+  <td>First-run / fallback look-back window (hours), used only until the first indicator is imported (empty watermark). Afterwards each run resumes from the import watermark.</td>
+</tr>
+<tr>
+  <td><code>ValidityDays</code></td>
+  <td>no</td>
+  <td><code>365</code></td>
+  <td>Validity window (days) applied from each site's <code>created</code> date, since the feed has no expiry.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deploy-from-the-portal">Deploy — from the portal</h2>
+<ol>
+<li><strong>Microsoft Sentinel → Content hub → PRODAFT USTA - IoC Threat Intelligence → Manage → Playbook templates</strong>, select <strong>PRODAFT USTA - Import Phishing Sites</strong>, choose <strong>Create playbook</strong>, and supply <code>UstaApiKey</code> and <code>WorkspaceName</code>. (Or <strong>Automation → Create → Playbook</strong>, then deploy this <code>azuredeploy.json</code>.)</li>
+<li>The playbook is created with a <strong>system-assigned managed identity</strong> automatically.</li>
+<li><strong>Grant two roles</strong> on the <strong>Log Analytics workspace → Access control (IAM) → Add → Add role assignment</strong> → <strong>Members: Managed identity</strong> → pick this Logic App by name → <strong>Review + assign</strong>. Assign both <strong>Microsoft Sentinel Contributor</strong> (for the Upload STIX Objects call) and <strong>Log Analytics Reader</strong> (for the watermark query — Microsoft Sentinel Contributor on its own returns <code>AuthorizationFailed</code>). <strong>Open IAM on the workspace itself, not on the Logic App</strong> — granting the role while the playbook's own blade is open scopes it to the Logic App (<code>.../Microsoft.Logic/workflows/...</code>), which looks correct in the portal but gives the identity no access to the workspace.</li>
+<li>It now runs hourly. To run immediately, open the Logic App → <strong>Run Trigger → Recurrence</strong>.</li>
+</ol>
+<h2 id="deploy-via-azure-cli">Deploy — via Azure CLI (run from this folder)</h2>
+<pre><code class="language-bash"># ---- configuration ----
+SUB=&quot;&lt;subscription-id&gt;&quot;
+RG=&quot;&lt;resource-group&gt;&quot;                 # resource group of the Microsoft Sentinel workspace
+WS=&quot;&lt;workspace-name&gt;&quot;                  # Log Analytics workspace name
+USTA_API_KEY=&quot;&lt;usta-api-key&gt;&quot;
+PLAYBOOK=&quot;PRODAFTUstaIoC-ImportPhishingSites&quot;
+
+az account set --subscription &quot;$SUB&quot;
+
+
+*[Content truncated...]*
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Playbooks](playbooks.md) · [Back to PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md)
+
+</code></pre>
+
+</div>
+
+</body>
+</html>

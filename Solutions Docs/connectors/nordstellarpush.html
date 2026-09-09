@@ -71,7 +71,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://nordstellar.com">NordStellar</a> connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified <code>NordStellar_CL</code> table with common columns (<code>EventId</code>, <code>EventType</code>, <code>Module</code>, <code>RiskLevel</code>, <code>AssetType</code>, <code>AssetValue</code>, <code>Tags</code>) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic <code>Details</code> column.</p>
+<p>The <a href="https://nordlayer.com/intelligence/">NordStellar</a> connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified <code>NordStellar_CL</code> table with common columns (<code>EventTime</code>, <code>EventId</code>, <code>EventType</code>, <code>Module</code>, <code>RiskLevel</code>, <code>AssetType</code>, <code>AssetValue</code>, <code>Tags</code>) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic <code>Details</code> column.</p>
 <p><strong>Supported event types:</strong></p>
 <ul>
 <li><p><strong>Leaked Data</strong> (<code>module: LEAKED_DATA</code>): <code>DATA_BREACH</code>, <code>COMBO_LIST</code>, <code>MALWARE_INFECTION</code>, <code>CONSUMER_CREDENTIAL</code></p>
@@ -177,7 +177,7 @@ Deploy NordStellar Push connector resources</p>
   }
 ]
 </code></pre>
-<p>The DCR's KQL transform promotes <code>id</code>, <code>type</code>, <code>module</code>, <code>risk_level</code>, <code>asset.type</code>/<code>source_type</code>, <code>asset.value</code>/<code>asset_value</code>, <code>tags</code>, and the appropriate timestamp (<code>date_added</code> for leaked-data/dark-web/domain-permutation, <code>detected_at</code> for attack-surface) into typed columns. Everything else is preserved in the dynamic <code>Details</code> column.</p>
+<p>The DCR's KQL transform promotes <code>id</code>, <code>type</code>, <code>module</code>, <code>risk_level</code>, <code>asset.type</code>/<code>source_type</code>, <code>asset.value</code>/<code>asset_value</code>, and <code>tags</code> into typed columns. <code>TimeGenerated</code> is set to the ingestion time so historical events are never dropped by retention checks, while the original event timestamp (<code>detected_at</code> for attack-surface/domain-permutation, <code>date_added</code> otherwise) is preserved in <code>EventTime</code>. Everything else is preserved in the dynamic <code>Details</code> column.</p>
 <p><strong>3. Verify data ingestion</strong></p>
 <p>Confirm events are flowing from NordStellar to Sentinel.
 Wait 5-10 minutes after enabling the integration, then run this KQL query in your Microsoft Sentinel workspace:</p>

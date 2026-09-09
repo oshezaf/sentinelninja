@@ -1,6 +1,6 @@
-# ⚠️ Check Point EM ThreatCloud Intelligence Feed
+# Check Point EM ThreatCloud Intelligence Feed Connector for Microsoft Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: Check Point EM ThreatCloud Intelligence Feed*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" alt="Check Point EM ThreatCloud Intelligence Feed Logo" width="75" height="75">
 
@@ -16,10 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2026-04-26 |
+| **Last Updated** | 2026-08-26 |
 | **Solution Folder** | [Check Point EM ThreatCloud Intelligence Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-em-threatcloud-feed) · Popularity: ⚪ Very Low (4%) |
 
 Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline premium IOC ingestion and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. The ThreatCloud Intelligence Feed connector incrementally pulls high-fidelity indicators — IPs, domains, URLs, and file hashes — enriched with confidence, severity, malicious classification, kill-chain stage, blocking and uniqueness flags, malware types, and CVE/campaign associations.
 
@@ -114,6 +116,7 @@ Two supported paths:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |---|---|---|
+| 3.0.1 | 05-08-2026 | Shortened solution/offer ID to meet Partner Center Offer ID limits (50 chars, no dots). |
 | 3.0.0 | 02-06-2026 | Initial Solution release. |
 
 ---

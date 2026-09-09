@@ -198,7 +198,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event">Event Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (19)</h2>
+<h2 id="solutions">Solutions (20)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/alc-webctrl.html">ALC-WebCTRL</a></li>
@@ -210,6 +210,7 @@
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
 <li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
 <li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
+<li><a href="../solutions/intel471.html">Intel471</a></li>
 <li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
@@ -250,7 +251,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (66)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (67)</h2>
 <h3 id="analytic-rules">Analytic Rules (30)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>EventID == &quot;3&quot;</code><br><code>Source == &quot;Microsoft-Windows-Sysmon&quot;</code></p>
 <table>
@@ -452,7 +453,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (18)</h3>
+<h3 id="hunting-queries">Hunting Queries (19)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -485,6 +486,19 @@
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-rundll32-lolbins-and-lolscripts-c2074fce-b5ba-4c0a-9332-d08b8fc43c53-1b1739b4.html">Rundll32 (LOLBins and LOLScripts)</a></td>
   <td style="text-align:left"><code>EventID == &quot;1&quot;</code><br><code>Source == &quot;Microsoft-Windows-Sysmon&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/intel471.html">Intel471</a>:</strong> <code>EventID == &quot;7045&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-anydesk-service-installation-potentially-malicious-rmm-tool-installation-4103b086-f093-4084-9125-15b9a6c872b8-59829fcb.html">AnyDesk Service Installation - Potentially Malicious RMM Tool Installation</a></td>
 </tr>
 </tbody>
 </table>
@@ -865,8 +879,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.azurestackhci/clusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (32 criteria, 60 total references)</h2>
-<p>References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (33 criteria, 61 total references)</h2>
+<p>References by type: 4 connectors, 44 content items, 6 ASIM parsers, 7 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -952,14 +966,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventLog == &quot;Application&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>EventLevel in &quot;1,2,3&quot;</code><br><code>Source == &quot;ALCWebCTRL&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -969,6 +975,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>EventLog in &quot;Application,MSExchange Management,System&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventLog == &quot;Application&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1025,6 +1039,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ParameterXml in &quot;&lt;Param&gt;WinDefend&lt;/Param&gt;,&lt;Param&gt;sgrmbroker&lt;/Param&gt;&quot;</code><br><code>Source == &quot;Microsoft-Windows-SENSE&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID == &quot;7045&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1138,10 +1160,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>4</strong></td>
-  <td style="text-align:center"><strong>43</strong></td>
+  <td style="text-align:center"><strong>44</strong></td>
   <td style="text-align:center"><strong>6</strong></td>
   <td style="text-align:center"><strong>7</strong></td>
-  <td style="text-align:center"><strong>60</strong></td>
+  <td style="text-align:center"><strong>61</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1247,6 +1269,14 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>7045</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>22</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1333,14 +1363,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>7045</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>23</code></td>

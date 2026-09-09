@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summarize Data for DNS Essentials Solution using Log Ingestion API &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="summarize-data-for-dns-essentials-solution-using-log-ingestion-api">Summarize Data for DNS Essentials Solution using Log Ingestion API</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook summarizes data for DNS Essentials Solution and ingests into custom tables.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/dns-essentials.html">DNS Essentials</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials/Playbooks/SummarizeData_DNSEssentials_Logingestionapi/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>2</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_-_IP</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_-_SourceInfo</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_Data_-_IP</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('IPIngestionEndpoint')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Data</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('SourceInfoIngestionEndpoint')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials/Playbooks/SummarizeData_DNSEssentials_Logingestionapi/readme.md">SummarizeData_DNSEssentials_Logingestionapi/readme.md</a></em></p>
+</blockquote>
+<h1 id="dns-essentials-summarization-capability">DNS Essentials Summarization Capability</h1>
+<p>This Logic App ingests summarized DNS data into custom Log Analytics tables by using the Logs Ingestion API. Enabling this playbook incurs additional cost.</p>
+<h2 id="summary">Summary</h2>
+<p>The playbook improves DNS Essentials solution performance by creating two tables containing analytics based on the ASIM DNS schema:</p>
+<ul>
+<li><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></li>
+<li><code>DNS_Summarized_Logs_ipV1_CL</code></li>
+</ul>
+<p>The V1 table names avoid conflicts with existing classic tables. The playbook uses a data collection endpoint (DCE), data collection rule (DCR), and its managed identity to ingest summarized data.</p>
+<h2 id="deployment-instructions">Deployment Instructions</h2>
+<ol>
+<li>Deploy the playbook by selecting the applicable button:</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2F6b56bc665b5d452ecd4819f5168149016fff0a5e%2FSolutions%2FDNS%2520Essentials%2FPlaybooks%2FSummarizeData_DNSEssentials_Logingestionapi%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2F6b56bc665b5d452ecd4819f5168149016fff0a5e%2FSolutions%2FDNS%2520Essentials%2FPlaybooks%2FSummarizeData_DNSEssentials_Logingestionapi%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
+<ol start="2">
+<li>Deploy the playbook to a resource group in the same Azure region as the Log Analytics workspace.</li>
+<li>Provide the required parameters:<ul>
+<li><strong>Playbook Name</strong>: The default is <code>SummarizeDNSData_DNS_logingestion</code>.</li>
+<li><strong>Log Analytics Name</strong>: The Log Analytics workspace that contains the DNS data.</li>
+<li><strong>Resource Group Name</strong> and <strong>Subscription ID</strong>: The workspace resource group and subscription.</li>
+</ul>
+</li>
+</ol>
+<p>The deployment creates the DCE, DCR, V1 custom tables, and grants the playbook managed identity the Monitoring Metrics Publisher role on the DCR.</p>
+<h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
+<p>Authorize the Azure Monitor Logs API connection if prompted:</p>
+<ol>
+<li>Open the Azure Monitor Logs API connection.</li>
+<li>Select <strong>Edit API connection</strong>.</li>
+<li>Select <strong>Authorize</strong>, sign in, and then save the connection.</li>
+</ol>
+<p>The Logs Ingestion API uses the playbook's managed identity. No Azure Log Analytics Data Collector connection or workspace key is required.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/dns-essentials.html">Back to DNS Essentials</a></p>
+
+</div>
+
+</body>
+</html>

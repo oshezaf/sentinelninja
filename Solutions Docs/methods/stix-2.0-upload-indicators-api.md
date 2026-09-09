@@ -10,8 +10,8 @@
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **2** |
-| Active | 2 |
+| Total Connectors | **1** |
+| Active | 1 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 0 |
 
@@ -19,8 +19,8 @@
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 2 |
-| **Total** | **2** |
+| [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 1 |
+| **Total** | **1** |
 
 ## Connectors Using This API
 
@@ -29,7 +29,6 @@
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | CrowdStrike | 2 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Infoblox | 2 | [Infoblox](../solutions/infoblox.md) |
 
 ---
 

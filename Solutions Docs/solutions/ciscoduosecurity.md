@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://duo.com/support](https://duo.com/support) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.2 |
 | **Author** | CiscoDuoSecurity - support@duosecurity.com |
 | **First Published** | 2022-01-07 |
-| **Last Updated** | 2026-03-02 |
+| **Last Updated** | 2026-08-20 |
 | **Solution Folder** | [CiscoDuoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-duo-microsoft-sentinel) · Popularity: 🟢 High (86%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-duo-microsoft-sentinel) · Popularity: 🟢 High (85%) |
 
 The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authentication logs](https://duo.com/docs/adminapi#authentication-logs), [activity logs](https://duo.com/docs/adminapi#activity-logs), [administrator logs](https://duo.com/docs/adminapi#administrator-logs), [telephony logs](https://duo.com/docs/adminapi#telephony-logs), [offline enrolment logs](https://duo.com/docs/adminapi#offline-enrollment-logs) and [Trust Monitor events](https://duo.com/docs/adminapi#trust-monitor) into Microsoft Sentinel using the Cisco Duo Admin API. Refer to [API documentation](https://duo.com/docs/adminapi) for more information.
   
@@ -45,20 +45,28 @@ The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authen
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **3 data connector(s)** (plus 1 discovered⚠️):
 
-- [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶
+- [Cisco Duo Activity Logs](../connectors/ciscoduoactivityconnectordefinition.md)
+- [Cisco Duo Authentication](../connectors/ciscoduoauthconnectordefinition.md)
+- [Cisco Duo Security](../connectors/ciscoduosecurity.md) ⚠️ 🔶
+- [Cisco Duo Telephony Logs](../connectors/ciscoduotelephonyconnectordefinition.md)
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | Analytics, Hunting, Workbooks |
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | - |
+| [`DuoActivity_CL`](../tables/duoactivity-cl.md) | [Cisco Duo Activity Logs](../connectors/ciscoduoactivityconnectordefinition.md) | Analytics, Hunting, Workbooks |
+| [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) | [Cisco Duo Authentication](../connectors/ciscoduoauthconnectordefinition.md) | Analytics, Hunting, Workbooks |
+| [`DuoTelephony_CL`](../tables/duotelephony-cl.md) | [Cisco Duo Telephony Logs](../connectors/ciscoduotelephonyconnectordefinition.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -78,37 +86,37 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco Duo - AD sync failed](../content/ciscoduosecurity-cisco-duo-ad-sync-failed-398dd1cd-3251-49d8-b927-5b93bae4a094-3833d11f.md) | Medium | Impact | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Admin password reset](../content/ciscoduosecurity-cisco-duo-admin-password-reset-413e49a5-b107-4698-8428-46b89308bd22-f14125a1.md) | High | Persistence | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Admin user created](../content/ciscoduosecurity-cisco-duo-admin-user-created-0724cb01-4866-483d-a149-eb400fe1daa8-d441e737.md) | Medium | Persistence, PrivilegeEscalation | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Admin user deleted](../content/ciscoduosecurity-cisco-duo-admin-user-deleted-6424c623-31a5-4892-be33-452586fd4075-2896e5e9.md) | Medium | Impact | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Authentication device new location](../content/ciscoduosecurity-cisco-duo-authentication-device-new-location-01df3abe-3dc7-40e2-8aa7-f00b402df6f0-135f49d0.md) | Medium | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Multiple admin 2FA failures](../content/ciscoduosecurity-cisco-duo-multiple-admin-2fa-failures-e46c5588-e643-4a60-a008-5ba9a4c84328-28722368.md) | High | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Multiple user login failures](../content/ciscoduosecurity-cisco-duo-multiple-user-login-failures-034f62b6-df51-49f3-831f-1e4cfd3c40d2-1fac9a53.md) | High | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Multiple users deleted](../content/ciscoduosecurity-cisco-duo-multiple-users-deleted-6e4f9031-91d3-4fa1-8baf-624935f04ad8-9c38fc40.md) | Medium | Impact | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - New access device](../content/ciscoduosecurity-cisco-duo-new-access-device-f05271b6-26a5-49cf-ad73-4a202fba6eb6-3865b761.md) | Medium | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Unexpected authentication factor](../content/ciscoduosecurity-cisco-duo-unexpected-authentication-factor-16c91a2c-17ad-4985-a9ad-4a4f1cb11830-872c74c5.md) | Medium | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
+| [Cisco Duo - AD sync failed](../content/ciscoduosecurity-cisco-duo-ad-sync-failed-398dd1cd-3251-49d8-b927-5b93bae4a094-3833d11f.md) | Medium | Impact | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Admin password reset](../content/ciscoduosecurity-cisco-duo-admin-password-reset-413e49a5-b107-4698-8428-46b89308bd22-f14125a1.md) | High | Persistence | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Admin user created](../content/ciscoduosecurity-cisco-duo-admin-user-created-0724cb01-4866-483d-a149-eb400fe1daa8-d441e737.md) | Medium | Persistence, PrivilegeEscalation | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Admin user deleted](../content/ciscoduosecurity-cisco-duo-admin-user-deleted-6424c623-31a5-4892-be33-452586fd4075-2896e5e9.md) | Medium | Impact | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Authentication device new location](../content/ciscoduosecurity-cisco-duo-authentication-device-new-location-01df3abe-3dc7-40e2-8aa7-f00b402df6f0-135f49d0.md) | Medium | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Multiple admin 2FA failures](../content/ciscoduosecurity-cisco-duo-multiple-admin-2fa-failures-e46c5588-e643-4a60-a008-5ba9a4c84328-28722368.md) | High | InitialAccess | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Multiple user login failures](../content/ciscoduosecurity-cisco-duo-multiple-user-login-failures-034f62b6-df51-49f3-831f-1e4cfd3c40d2-1fac9a53.md) | High | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Multiple users deleted](../content/ciscoduosecurity-cisco-duo-multiple-users-deleted-6e4f9031-91d3-4fa1-8baf-624935f04ad8-9c38fc40.md) | Medium | Impact | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - New access device](../content/ciscoduosecurity-cisco-duo-new-access-device-f05271b6-26a5-49cf-ad73-4a202fba6eb6-3865b761.md) | Medium | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Unexpected authentication factor](../content/ciscoduosecurity-cisco-duo-unexpected-authentication-factor-16c91a2c-17ad-4985-a9ad-4a4f1cb11830-872c74c5.md) | Medium | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-421bbeed-ad5b-4acd-9f0b-6b609da33914-7964a3f0.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-385b0938-3922-48ab-a57a-cb8650ab71a3-c63cf47e.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Authentication error reasons](../content/ciscoduosecurity-cisco-duo-authentication-error-reasons-5653900e-4b21-408d-84da-e4db3da891bb-1505cec4.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Authentication errors](../content/ciscoduosecurity-cisco-duo-authentication-errors-b8c43652-1b79-4b18-a348-a719bafad6d3-cbc3376b.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Delete actions](../content/ciscoduosecurity-cisco-duo-delete-actions-c6386cad-2dd2-436c-a938-bc66dda6c01a-bde0b753.md) | Impact | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Deleted users](../content/ciscoduosecurity-cisco-duo-deleted-users-5d0b00fd-1dc0-4e1b-ae09-5cec3b4fadf6-3ae6a644.md) | Impact | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Devices with unsecure settings](../content/ciscoduosecurity-cisco-duo-devices-with-unsecure-settings-c308e737-e620-4c89-ab1e-a186e901b087-1c514be4.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Devices with vulnerable OS](../content/ciscoduosecurity-cisco-duo-devices-with-vulnerable-os-9de62fee-f601-43c9-8757-2098e59fedeb-7e9fbaa0.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - Fraud authentications](../content/ciscoduosecurity-cisco-duo-fraud-authentications-b8f46142-cebc-435d-9943-2ed74e1eaba7-32d790d4.md) | InitialAccess | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
-| [Cisco Duo - New users](../content/ciscoduosecurity-cisco-duo-new-users-72c81132-bc09-4a2f-9c32-02e2e9ee7978-ebad122b.md) | InitialAccess, Persistence | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
+| [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-421bbeed-ad5b-4acd-9f0b-6b609da33914-7964a3f0.md) | InitialAccess | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Admin failure authentications](../content/ciscoduosecurity-cisco-duo-admin-failure-authentications-385b0938-3922-48ab-a57a-cb8650ab71a3-c63cf47e.md) | InitialAccess | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Authentication error reasons](../content/ciscoduosecurity-cisco-duo-authentication-error-reasons-5653900e-4b21-408d-84da-e4db3da891bb-1505cec4.md) | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Authentication errors](../content/ciscoduosecurity-cisco-duo-authentication-errors-b8c43652-1b79-4b18-a348-a719bafad6d3-cbc3376b.md) | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Delete actions](../content/ciscoduosecurity-cisco-duo-delete-actions-c6386cad-2dd2-436c-a938-bc66dda6c01a-bde0b753.md) | Impact | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Deleted users](../content/ciscoduosecurity-cisco-duo-deleted-users-5d0b00fd-1dc0-4e1b-ae09-5cec3b4fadf6-3ae6a644.md) | Impact | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
+| [Cisco Duo - Devices with unsecure settings](../content/ciscoduosecurity-cisco-duo-devices-with-unsecure-settings-c308e737-e620-4c89-ab1e-a186e901b087-1c514be4.md) | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Devices with vulnerable OS](../content/ciscoduosecurity-cisco-duo-devices-with-vulnerable-os-9de62fee-f601-43c9-8757-2098e59fedeb-d8570d35.md) | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - Fraud authentications](../content/ciscoduosecurity-cisco-duo-fraud-authentications-b8f46142-cebc-435d-9943-2ed74e1eaba7-32d790d4.md) | InitialAccess | [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) |
+| [Cisco Duo - New users](../content/ciscoduosecurity-cisco-duo-new-users-72c81132-bc09-4a2f-9c32-02e2e9ee7978-ebad122b.md) | InitialAccess, Persistence | [`DuoActivity_CL`](../tables/duoactivity-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoDuo](../content/ciscoduosecurity-ciscoduo-c9e00bc9.md) | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) |
+| [CiscoDuo](../content/ciscoduosecurity-ciscoduo-c9e00bc9.md) | [`DuoActivity_CL`](../tables/duoactivity-cl.md)<br>[`DuoAuthentication_CL`](../tables/duoauthentication-cl.md)<br>[`DuoTelephony_CL`](../tables/duotelephony-cl.md) |
 
 ### Parsers
 
@@ -120,6 +128,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+|  3.1.2      |  12-08-2026                    | Added CCF data connectors for Cisco Duo authentication, activity, and telephony logs. Updated analytics, hunting queries, and the workbook to use the CCF tables. Excluded the deprecated Azure Functions connector from the generated solution package. |
 |  3.1.1      |  17-02-2026                    | Bumped solution version to **3.1.1**. Updated ARM template apiVersions to meet ARM-TTK "< 2 years old" requirements. |
 |  3.1.0      |  03-02-2026                    | Python runtime compatibility fix (breaking for connector deployments running on Python 3.11). Fixed solution installation via Azure portal by deriving deployment **location** from selected workspace (prevents empty location). |
 |  3.0.4      |  26-09-2025                    | Updated support **Microsoft** to **Partner**                   |

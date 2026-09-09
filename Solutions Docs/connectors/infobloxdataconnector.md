@@ -15,7 +15,7 @@
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md) |
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Infoblox_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxCloudDataConnector/Infoblox_API_FunctionApp.json) |
-| **Ingestion API** | [STIX 2.0 Upload Indicators API](../methods/stix-2.0-upload-indicators-api.md) — *Connector code references STIX 2.0 Upload Indicators API endpoint (matched 'sentinelus.azure-api.net')* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) \| [STIX 2.0 Upload Indicators API](../methods/stix-2.0-upload-indicators-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Connector code references STIX 2.0 Upload Indicators API endpoint (matched 'sentinelus.azure-api.net')* |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#infoblox-data-connector-via-rest-api) |
 
 The Infoblox Data Connector allows you to easily connect your Infoblox TIDE data and Dossier data with Microsoft Sentinel. By connecting your data to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
@@ -58,25 +58,25 @@ This connector ingests data into the following tables:
  3. Under **Manage**, select **App registrations > New registration**.
  4. Enter a display **Name** for your application.
  5. Select **Register** to complete the initial app registration.
- 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the **Application (client) ID** and **Tenant ID**. The client ID and Tenant ID is required as configuration parameters for the execution of the TriggersSync playbook. 
+ 6. When registration finishes, the Azure portal displays the app registration's Overview pane. You see the **Application (client) ID** and **Tenant ID**. The client ID and Tenant ID are required as the **AzureClientId** and **AzureTenantId** configuration parameters, used by the connector's Function Apps to authenticate to the Log Ingestion API (for Dossier data) and to the Microsoft Sentinel Threat Intelligence Indicators API (for TIDE data). 
 
 > **Reference link:** [https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
 
 **STEP 2 - Add a client secret for application in Microsoft Entra ID**
 
- Sometimes called an application password, a client secret is a string value required for the execution of TriggersSync playbook. Follow the steps in this section to create a new Client Secret:
+ Sometimes called an application password, a client secret is a string value required by the connector to authenticate to the Log Ingestion API and the Microsoft Sentinel Threat Intelligence Indicators API. Follow the steps in this section to create a new Client Secret:
  1. In the Azure portal, in **App registrations**, select your application.
  2. Select **Certificates & secrets > Client secrets > New client secret**.
  3. Add a description for your client secret.
  4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.
  5. Select **Add**. 
- 6. *Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.* The secret value is required as configuration parameter for the execution of TriggersSync playbook. 
+ 6. *Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.* The secret value is required as the **AzureClientSecret** configuration parameter. 
 
 > **Reference link:** [https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)
 
 **STEP 3 - Assign role of Contributor to application in Microsoft Entra ID**
 
- Follow the steps in this section to assign the role:
+ This role is required so the connector's Function Apps can create Threat Intelligence Indicators from TIDE data via the Microsoft Sentinel Threat Intelligence Indicators API. Follow the steps in this section to assign the role:
  1. In the Azure portal, Go to **Resource Group** and select your resource group.
  2. Go to **Access control (IAM)** from left panel.
  3. Click on **Add**, and then select **Add role assignment**.
@@ -87,18 +87,21 @@ This connector ingests data into the following tables:
 
 > **Reference link:** [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal)
 
-**STEP 4 - Steps to generate the Infoblox API Credentials**
+**STEP 4 - Find the Object ID of the app registration**
+
+ This connector ingests Dossier and TIDE data into Sentinel via the Log Ingestion API, which requires the app registration (the same one created in Step 1) to have the **Monitoring Metrics Publisher** role on every Data Collection Rule the connector creates. This role assignment is granted **automatically** by the ARM template at deployment time - you do not need to assign it by hand - but the template needs the app's **Object ID** (the Enterprise Application / Service Principal object ID, not the Application/Client ID) as a deployment parameter to do so.
+
+ 1. In the Azure portal, search for and select **Microsoft Entra ID**.
+ 2. Under **Manage**, select **Enterprise applications**.
+ 3. Search for the app registration you created in Step 1 and select it.
+ 4. Copy the **Object ID** shown on the Overview pane - this is the value to enter as **AzureEntraObjectID** during deployment.
+
+> **Note:** If this value is missing or incorrect at deployment time, the role assignment silently fails to grant access and Dossier/TIDE data will not appear in the workspace, even though the Function Apps run without error.
+
+**STEP 5 - Steps to generate the Infoblox API Credentials**
 
  Follow these instructions to generate Infoblox API Key.
  In the [Infoblox Cloud Services Portal](https://csp.infoblox.com/atlas/app/welcome), generate an API Key and copy it somewhere safe to use in the next step. You can find instructions on how to create API keys [**here**](https://docs.infoblox.com/space/BloxOneThreatDefense/230394187/How+Do+I+Create+an+API+Key%3F).
-
-**STEP 5 - Steps to deploy the connector and the associated Azure Function**
-
->**IMPORTANT:** Before deploying the Infoblox data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the Infoblox API Authorization Credentials
-- **Workspace ID**: `WorkspaceId`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Primary Key**: `PrimaryKey`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 
 **6. Azure Resource Manager (ARM) Template**
 
@@ -109,19 +112,24 @@ Use this method for automated deployment of the Infoblox Data connector.
 	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-infoblox-azuredeploy)
 2. Select the preferred **Subscription**, **Resource Group** and **Location**. 
 3. Enter the below information : 
+		Workspace ID 
+		Workspace (Log Analytics workspace resource name) 
+		Data Collection Endpoint/Rule Location (Default: Resource Group location, must match the workspace region) 
 		Azure Tenant Id 
 		Azure Client Id 
 		Azure Client Secret 
+		Azure Entra Object ID (from Step 4) 
 		Infoblox API Token 
 		Infoblox Base URL 
-		Workspace ID 
-		Workspace Key 
-		Log Level (Default: INFO) 
-		Confidence 
-		Threat Level 
+		Historical Data Cutoff Date 
+		Log Level (Default: Info) 
+		Confidence (Default: 80) 
+		Threat Level (Default: 80) 
 		App Insights Workspace Resource ID 
 4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 
 5. Click **Purchase** to deploy.
+
+> **Note:** The Data Collection Endpoint/Data Collection Rules and the Monitoring Metrics Publisher role assignment on them are created and wired up automatically by this template - no manual DCR or role-assignment steps are required after deployment.
 
 ---
 

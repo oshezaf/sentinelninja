@@ -12,6 +12,8 @@
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Workbooks/VectraXDR.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 ## Tables Used
 
 This content item queries data from the following tables:
@@ -22,6 +24,7 @@ This content item queries data from the following tables:
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Health_Data_CL`](../tables/health-data-cl.md) |  | ✓ | ✓ | ✓ |
+| [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) |  | ? | ✓ | ? |
 | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---

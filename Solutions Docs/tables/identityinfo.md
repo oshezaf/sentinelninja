@@ -38,9 +38,9 @@ Account information from various sources, including Microsoft Entra ID
 | AccountDisplayName | string | The user account display name |
 | AccountDomain | string | Domain name of the user account |
 | AccountName | string | User name of the account |
-| AccountObjectId | string | The Azure Active Directory object ID for the account |
+| AccountObjectId | string | The Microsoft Entra ID object ID for the account |
 | AccountSID | string | The on premises security identifier of the account |
-| AccountTenantId | string | The Azure Active Directory Tenant ID of the account |
+| AccountTenantId | string | The Microsoft Entra ID Tenant ID of the account |
 | AccountUPN | string | User principal name of the account |
 | AdditionalMailAddresses | dynamic | Additional email addresses of the user |
 | Applications | string | All known applications this user account accessed |
@@ -123,7 +123,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (77)
+## Content Items Using This Table (78)
 
 ### Analytic Rules (19)
 
@@ -277,7 +277,7 @@ This table is used by the following solutions:
 | [User not covered under display name impersonation](../content/github-only-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-492381f4.md) |  |
 | [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
 
-### Workbooks (14)
+### Workbooks (15)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -339,6 +339,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |

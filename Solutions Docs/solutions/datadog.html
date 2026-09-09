@@ -50,7 +50,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.1.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -66,7 +66,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.datadoghq.com/">Datadog</a> solution for Microsoft Sentinel enables you to ingest <a href="https://docs.datadoghq.com/account_management/audit_trail/">Datadog Audit Trail</a> events through the Datadog Audit API. These events provide visibility into administrative activity, configuration changes, access, and security-relevant actions in the Datadog platform.</p>
+<p>The <a href="https://www.datadoghq.com/">Datadog</a> solution for Microsoft Sentinel enables you to ingest Datadog audit events, indexed logs, and security signals through the <a href="https://docs.datadoghq.com/api/latest/">Datadog API</a>. These data types provide visibility into administrative activity, application and infrastructure telemetry, and Datadog Security Monitoring detections.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
@@ -74,10 +74,10 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/datadogauditlogsconnector.html">Datadog Audit Logs (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -88,8 +88,18 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/datadogauditv2-cl.html"><code>DatadogAuditV2_CL</code></a></td>
-  <td><a href="../connectors/datadogauditlogsconnector.html">Datadog Audit Logs (via Codeless Connector Framework)</a></td>
+  <td><a href="../tables/datadogauditlogs-cl.html"><code>DatadogAuditLogs_CL</code></a></td>
+  <td><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/datadoglogs-cl.html"><code>DatadogLogs_CL</code></a></td>
+  <td><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/datadogsecuritylogs-cl.html"><code>DatadogSecurityLogs_CL</code></a></td>
+  <td><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -105,9 +115,14 @@
 </thead>
 <tbody>
 <tr>
+  <td>3.1.0</td>
+  <td>12-08-2026</td>
+  <td>Replaced the audit-only Datadog CCF <strong>Data Connector</strong> with the combined Datadog connector for audit events, indexed logs, and security signals.</td>
+</tr>
+<tr>
   <td>3.0.0</td>
   <td>06-08-2026</td>
-  <td>Initial Solution Release. Added the Datadog Audit Logs CCF Data Connector.</td>
+  <td>Initial Solution Release. Added the Datadog Audit Logs CCF <strong>Data Connector</strong>.</td>
 </tr>
 </tbody>
 </table>

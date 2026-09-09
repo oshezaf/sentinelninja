@@ -41,7 +41,7 @@ Reference for Watchlist table in Azure Monitor Logs.
 | CreatedBy | dynamic | The JSON object with the user who created the Watchlist or Watchlist item, including: Object ID, email and name. |
 | CreatedTimeUTC | datetime | The time (UTC) when the Watchlist or Watchlist item was first created. |
 | DefaultDuration | string | The JSON object describing the default duration to live that each item of a Watchlist should inherit on creation. The default duration has this format : P(n)Y(n)M(n)DT(n)H(n)M(n)S, where P, Y, M, DT, H, M and S are invariant. For example, P3Y6M4DT12H30M9S represents a duration of three years, six months, four days, twelve hours, thirty minutes, and nine seconds. |
-| EntityMapping | dynamic | The JSON object with Azure Sentinel entity mapping to input columns. |
+| EntityMapping | dynamic | The JSON object with Microsoft Sentinel entity mapping to input columns. |
 | LastUpdatedTimeUTC | datetime | The time (UTC) when Watchlist or Watchlist item was last updated. |
 | Notes | string | The notes provided by user. |
 | Provider | string | The input provider of the Watchlist. |

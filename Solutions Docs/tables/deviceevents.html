@@ -442,13 +442,14 @@
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents">DeviceEvents Schema Reference (Azure Monitor)</a></li>
 <li><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table">DeviceEvents Schema Reference (Defender XDR)</a></li>
 </ul>
-<h2 id="solutions">Solutions (10)</h2>
+<h2 id="solutions">Solutions (11)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a></li>
 <li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
 <li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
+<li><a href="../solutions/intel471.html">Intel471</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
@@ -473,7 +474,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (108)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (111)</h2>
 <h3 id="analytic-rules">Analytic Rules (21)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == &quot;PowerShellCommand&quot;</code></p>
 <table>
@@ -634,7 +635,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (76)</h3>
+<h3 id="hunting-queries">Hunting Queries (77)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong> <code>ActionType == &quot;PowerShellCommand&quot;</code></p>
 <table>
 <thead>
@@ -645,6 +646,21 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/endpoint-threat-protection-essentials-suspicious-powershell-commandlet-execution-8f424a4c-0487-45a3-92b8-00a7a8745b69-41451793.html">Suspicious Powershell Commandlet Execution</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/intel471.html">Intel471</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-powershell-encoded-command-execution-3a5a21fd-5a82-45dc-ad37-3fb95f475e11-6ac23a16.html">PowerShell Encoded Command Execution</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -772,7 +788,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;PowerShellCommand&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-c2-namedpipe-ec3f7141-383e-4f32-b698-ba2ee1852c9c-d8d0259c.html">C2-NamedPipe</a></td>
@@ -992,7 +1008,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (11)</h3>
+<h3 id="workbooks">Workbooks (13)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
@@ -1062,7 +1078,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code><br><code>ActionType startswith &quot;Asr&quot;</code></td>
+  <td style="text-align:left"><code>ActionType startswith &quot;Asr&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
@@ -1073,21 +1089,29 @@
   <td style="text-align:left"><code>ActionType in &quot;AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted&quot;</code><br><code>ActionType endswith &quot;Audited&quot;</code><br><code>ActionType endswith &quot;Blocked&quot;</code><br><code>ActionType startswith &quot;Asr&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.html">MicrosoftSecurityLicenseUtilization</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;RemoteInteractiveLogon&quot;</code><br><code>ActionType == &quot;LdapSearch&quot;</code><br><code>ActionType contains &quot;ExploitGuardNonMicrosoftSignedBlocked&quot;</code></td>
+  <td style="text-align:left"><code>ActionType contains &quot;ExploitGuardNonMicrosoftSignedBlocked&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;KerberosServiceTicketRequested&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code><br><code>ActionType startswith &quot;Asr&quot;</code></td>
+  <td style="text-align:left"><code>ActionType startswith &quot;Asr&quot;</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (44 criteria, 68 total references)</h2>
-<p>References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (44 criteria, 67 total references)</h2>
+<p>References by type: 0 connectors, 67 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1103,10 +1127,10 @@
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;PowerShellCommand&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;NamedPipeEvent&quot;</code></td>
@@ -1455,10 +1479,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>68</strong></td>
+  <td style="text-align:center"><strong>67</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>68</strong></td>
+  <td style="text-align:center"><strong>67</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1517,10 +1541,10 @@
 <tr>
   <td style="text-align:left"><code>PowerShellCommand</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">8</td>
+  <td style="text-align:center">7</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>startswith Asr</code></td>

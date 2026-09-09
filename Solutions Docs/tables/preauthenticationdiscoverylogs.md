@@ -10,7 +10,7 @@ Reference for PreAuthenticationDiscoveryLogs table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | - |
+| **Category** | Audit, Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |

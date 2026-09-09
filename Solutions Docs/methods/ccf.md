@@ -18,9 +18,9 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **217** |
-| Active | 186 |
-| Deprecated 🚫 | 1 |
+| Total Connectors | **239** |
+| Active | 204 |
+| Deprecated 🚫 | 5 |
 | Unpublished ⚠️ | 30 |
 
 ## Connectors Using This Method
@@ -31,8 +31,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 |:----------|:----------|:------:|:---------|
 | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | Dragos | 1 | [Dragos](../solutions/dragos.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
-| [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | Microsoft | 3 | [AirlockDigital](../solutions/airlockdigital.md) |
-| [Akamai Guardicore](../connectors/akamaiguardicore.md) ⚠️ | Akamai | 4 | [Akamai Guardicore](../solutions/akamai-guardicore.md) |
+| [Airlock Digital (Poll - SaaS)](../connectors/airlockdigitalsaas.md) | Airlock Digital | 2 | [AirlockDigital](../solutions/airlockdigital.md) |
+| [Airlock Digital (Poll)](../connectors/airlockdigitalpoll.md) | Airlock Digital | 2 | [AirlockDigital](../solutions/airlockdigital.md) |
+| [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) ⚠️ | Microsoft | 3 | [AirlockDigital](../solutions/airlockdigital.md) |
+| [Akamai Guardicore](../connectors/akamaiguardicore.md) | Akamai | 4 | [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Akamai Security Events (via Codeless Connector Framework)](../connectors/akamaisiemconnector.md) | Akamai | 1 | [Akamai DDOS Protection](../solutions/akamai-ddos-protection.md) |
 | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](../connectors/alicloudactiontrailccpdefinition.md) | Microsoft | 1 | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | Microsoft | 3 | [Alibaba Cloud Networking](../solutions/alibaba-cloud-networking.md) |
@@ -61,9 +63,12 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Check Point CloudGuard CNAPP Connector for Microsoft Sentinel](../connectors/cloudguardccpdefinition.md) | CheckPoint | 1 | [Check Point CloudGuard CNAPP](../solutions/check-point-cloudguard-cnapp.md) |
 | [Check Point Cyberint Alerts Connector (via Codeless Connector Platform)](../connectors/checkpointcyberintalerts.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Cyberint IOC Connector](../connectors/checkpointcyberintioc.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint IOC](../solutions/check-point-cyberint-ioc.md) |
-| [Check Point EM ThreatCloud Intelligence Feed Connector](../connectors/checkpointemiocintelligence.md) ⚠️ | Check Point | 1 | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) |
+| [Check Point EM ThreatCloud Intelligence Feed Connector](../connectors/checkpointemiocintelligence.md) | Check Point | 1 | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) |
 | [Check Point Email Security (via Codeless Connector Framework)](../connectors/checkpointemailsecconnector.md) | Microsoft | 4 | [Checkpoint Email Security](../solutions/checkpoint-email-security.md) |
 | [CheckpointHEC_CL On Demand Email Security (via Codeless Connector Platform)](../connectors/checkpointhecconnectordefinition.md) ⚠️ | Checkpoint | 1 | [CheckPoint Harmony Email and Collaboration](../solutions/checkpoint-harmony-email-and-collaboration.md) |
+| [Cisco Duo Activity Logs](../connectors/ciscoduoactivityconnectordefinition.md) | Cisco Systems, Inc. | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
+| [Cisco Duo Authentication](../connectors/ciscoduoauthconnectordefinition.md) | Cisco Systems, Inc. | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
+| [Cisco Duo Telephony Logs](../connectors/ciscoduotelephonyconnectordefinition.md) | Cisco Systems, Inc. | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | [Cisco Email Threat Defense (ETD)](../connectors/ciscoetdconnectordefinition.md) | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | Microsoft | 7 | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
@@ -72,12 +77,12 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Citrix DaaS Audit & Sessions (via Codeless Connector Framework)](../connectors/citrixdaasactionsconnector.md) | Microsoft | 2 | [Citrix DaaS](../solutions/citrix-daas.md) |
 | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Microsoft | 1 | [Cloudflare](../solutions/cloudflare.md) |
 | [Commvault Security IQ (via Codeless Connector Framework)](../connectors/commvaultsecurityiqconnector.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
+| [ContraForce Events](../connectors/contraforceevents.md) | ContraForce | 1 | [ContraForce](../solutions/contraforce.md) |
 | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) | DEFEND Ltd. | 1 | [Cortex XDR](../solutions/cortex-xdr.md) |
 | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 5 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | Microsoft | 10 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CTM360 CyberBlindSpot (Serverless)](../connectors/ctm360cbsconnectordefinition.md) | CTM360 | 6 | [CTM360](../solutions/ctm360.md) |
 | [CTM360 HackerView (Serverless)](../connectors/ctm360hackerviewconnectordefinition.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
-| [CyberArk Audit](../connectors/cyberarkauditccpdefinition.md) | Microsoft | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArk EPM](../connectors/cyberarkepmccpdefinition.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts (via Codeless Connector Framework)](../connectors/cybersixgillalertsccfconnector.md) | Microsoft | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cyble Vision Alerts](../connectors/cyblevisionalerts.md) | Cyble | 1 | [Cyble Vision](../solutions/cyble-vision.md) |
@@ -90,28 +95,29 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [CYFIRMA Vulnerabilities Intelligence](../connectors/cyfirmavulnerabilitiesinteldc.md) | Microsoft | 1 | [Cyfirma Vulnerabilities Intel](../solutions/cyfirma-vulnerabilities-intel.md) |
 | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) 🔶 | Cyren | 1 | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | [D3 Smart SOAR Incidents](../connectors/d3soarconnectordefinition.md) | D3 Security | 1 | [D3SmartSOAR](../solutions/d3smartsoar.md) |
-| [Datadog Audit Logs (via Codeless Connector Framework)](../connectors/datadogauditlogsconnector.md) ⚠️ | Microsoft | 1 | [Datadog](../solutions/datadog.md) |
-| [DomainTools Threat Intelligence Domain Feed](../connectors/domaintoolsccfdefinition.md) ⚠️ | DomainTools | 1 | [DomainTools CCF](../solutions/domaintools-ccf.md) |
+| [Datadog Logs (via Codeless Connector Framework)](../connectors/datadogconnector.md) ⚠️ | Microsoft | 3 | [Datadog](../solutions/datadog.md) |
+| [DomainTools Threat Intelligence Domain Feed](../connectors/domaintoolsccfdefinition.md) | DomainTools | 1 | [DomainTools CCF](../solutions/domaintools-ccf.md) |
 | [Dragon Copilot](../connectors/dragoncopilotnative.md) | Microsoft | 1 | [DragonCopilot](../solutions/dragoncopilot.md) |
 | [Druva Events Connector](../connectors/druvaeventccpdefinition.md) | Microsoft | 3 | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
-| [Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
-| [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |
+| [Dynatrace Attacks V3](../connectors/dtattacksv3ccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
-| [Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |
+| [Dynatrace Audit Logs V3](../connectors/dtauditlogsv3ccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
-| [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |
+| [Dynatrace Problems V3](../connectors/dtproblemsv3ccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
+| [Dynatrace Runtime Vulnerabilities V3](../connectors/dtrunvulnv3ccpdefinition.md) | Dynatrace | 2 | [Dynatrace](../solutions/dynatrace.md) |
 | [Egress Defend](../connectors/egressdefendpolling.md) ⚠️ 🔶 | Egress Software Technologies | 2 | [Egress Defend](../solutions/egress-defend.md) |
+| [Egress Defend v2](../connectors/egressdefendaudit.md) ⚠️ 🔶 | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
 | [Egress Iris Connector](../connectors/egresssiempolling.md) 🔶 | Egress Software Technologies | 3 | [Egress Iris](../solutions/egress-iris.md) |
 | [Elastic Agent (via Codeless Connector Framework)](../connectors/elasticagentconnector.md) | Microsoft | 1 | [ElasticAgent](../solutions/elasticagent.md) |
 | [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md) | Ermes Cyber Security S.p.A. | 1 | [Ermes Browser Security](../solutions/ermes-browser-security.md) |
 | [ESET Connect Data Connector (via Codeless Connector Framework)](../connectors/esetconnectconnector.md) | ESET | 3 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
-| [Feedly IoC](../connectors/feedlyccpdefinition.md) 🔶 | Feedly | 1 | [Feedly](../solutions/feedly.md) |
+| [Feedly IoC](../connectors/feedlyccpdefinition.md) | Feedly | 1 | [Feedly](../solutions/feedly.md) |
 | [Field Effect MDR Data Connector (via Codeless Connector Framework)](../connectors/fieldeffectccf.md) ⚠️ | Field Effect | 1 | [FieldEffectMDR](../solutions/fieldeffectmdr.md) |
 | [Filewall for Microsoft 365](../connectors/filewallm365.md) | Filewall | 2 | [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
-| [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | Microsoft | 5 | [Agari](../solutions/agari.md) |
+| [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | Microsoft | 4 | [Agari](../solutions/agari.md) |
 | [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md) | Microsoft | 1 | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
 | [GCP Cloud SQL (via Codeless Connector Framework)](../connectors/gcpcloudsqlccfdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformSQL](../solutions/googlecloudplatformsql.md) |
 | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) ➕ | Microsoft | 1 | [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
@@ -131,9 +137,11 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Google Cloud Platform NAT (via Codeless Connector Framework)](../connectors/gcpnatlogsccpdefinition.md) | Microsoft | 2 | [GoogleCloudPlatformNAT](../solutions/googlecloudplatformnat.md) |
 | [Google Cloud Platform Resource Manager (via Codeless Connector Framework)](../connectors/gcpresourcemanagerlogsccfdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformResourceManager](../solutions/googlecloudplatformresourcemanager.md) |
 | [Google Kubernetes Engine (via Codeless Connector Framework)](../connectors/gkeccpdefinition.md) | Microsoft | 6 | [Google Kubernetes Engine](../solutions/google-kubernetes-engine.md) |
+| [Google Threat Intelligence Vulnerabilities (CCF)](../connectors/gtivulnerabilitiesconnector.md) | Google | 1 | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md) | Microsoft | 1 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | [Holm Security Data Connector](../connectors/holmsecurityccf.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [Hubspot (via Codeless Connector Framework)](../connectors/hubspotdefinition.md) ⚠️ | Community | 2 | [Hubspot](../solutions/hubspot.md) |
+| [Idira Audit](../connectors/cyberarkauditccpdefinition.md) | Microsoft | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [Illumio Insights](../connectors/illumioinsightsdefinition.md) | Microsoft | 1 | [Illumio Insight](../solutions/illumio-insight.md) |
 | [Illumio Insights Graph](../connectors/sentinelillumioinsightsgraphccp.md) | Illumio | 1 | [Illumio Insight](../solutions/illumio-insight.md) |
 | [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md) | Illumio | 1 | [Illumio Insight](../solutions/illumio-insight.md) |
@@ -180,15 +188,22 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) | Microsoft | 1 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Microsoft | 1 | [QualysVM](../solutions/qualysvm.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) | Microsoft | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
+| [Recorded Future Identity - Credential Exposure Importer](../connectors/recordedfutureidentityv3.md) ⚠️ | Recorded Future | 3 | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
+| [Recorded Future Identity - Playbook Alert Importer](../connectors/recordedfutureidentityalertimporter.md) | Recorded Future | 1 | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RSA ID Plus Admin Logs Connector](../connectors/rsaidplus-adminglogs-connector.md) | RSA | 1 | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) |
 | [Rubrik Security Cloud Protection Status (using Codeless Connector Framework)](../connectors/rubrikprotectionstatus.md) | Rubrik, Inc | 1 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | [SailPoint IdentityNow (via Codeless Connector Framework)](../connectors/sailpointidentitynowconnector.md) | Microsoft | 1 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | Microsoft | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| [Salesforce Marketing Cloud (via Codeless Connector Framework)](../connectors/salesforcemktcloudconnector.md) | Microsoft | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceeventlogconnector.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SAP BTP](../connectors/sapbtpauditevents.md) | Microsoft | 1 | [SAP BTP](../solutions/sap-btp.md) |
 | [SAP Enterprise Threat Detection, cloud edition](../connectors/sapetdalerts.md) | SAP | 2 | [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) | SAP | 1 | [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md) |
+| [SecurityScorecard Factors (via Codeless Connector Framework)](../connectors/securityscorecardfactorccpdefinition.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| [SecurityScorecard Issues (via Codeless Connector Framework)](../connectors/securityscorecardissueccpdefinition.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| [SecurityScorecard Ratings (via Codeless Connector Framework)](../connectors/securityscorecardratingsccpdefinition.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| [Semperis Lightning (via Codeless Connector Framework)](../connectors/semperislightningccfconnector.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
 | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | Microsoft | 5 | [SentinelOne](../solutions/sentinelone.md) |
 | [SentinelOne V2 (via Codeless Connector Framework)](../connectors/sentinelonev2connector.md) | Microsoft | 5 | [SentinelOne](../solutions/sentinelone.md) |
 | [Seraphic Web Security](../connectors/seraphicwebsecurity.md) | Seraphic | 1 | [SeraphicSecurity](../solutions/seraphicsecurity.md) |
@@ -198,6 +213,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Snowflake (via Codeless Connector Framework)](../connectors/snowflakeconnector.md) | Microsoft | 10 | [Snowflake](../solutions/snowflake.md) |
 | [SOC Prime Platform Audit Logs Data Connector](../connectors/socprimeauditlogsdataconnector.md) | Microsoft | 1 | [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) | Microsoft | 2 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
+| [Speculus Threat Intelligence](../connectors/speculusthreatintel.md) ⚠️ | Speculus | 1 | [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
 | [SpyCloud Enterprise Protection Connector](../connectors/spycloudenterpriseprotectionccf.md) ⚠️ | SpyCloud | 5 | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [Strider Shield](../connectors/stridershieldccf.md) ⚠️ | NVISO | 5 | [Strider Shield](../solutions/strider-shield.md) |
 | [StyxView Alerts (via Codeless Connector Platform)](../connectors/styxviewendpointconnectordefinition.md) ⚠️ | Styx Intelligence | 1 | [Styx Intelligence](../solutions/styx-intelligence.md) |
@@ -205,25 +221,27 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Tailscale Premium (CCF)](../connectors/tailscalepremiumccf.md) ⚠️ | Community | 9 | [Tailscale (CCF)](../solutions/tailscale-ccf.md) |
 | [Tailscale Standard (CCF)](../connectors/tailscaleccf.md) ⚠️ | Community | 7 | [Tailscale (CCF)](../solutions/tailscale-ccf.md) |
 | [TheHive (via Codeless Connector Framework)](../connectors/thehiveconnector.md) | TheHive | 1 | [TheHive](../solutions/thehive.md) |
+| [Thinkst Canary](../connectors/thinkstcanary.md) ⚠️ | Thinkst Engineering | 1 | [ThinkstCanary](../solutions/thinkstcanary.md) |
 | [Transmit Security Data Connector (via Codeless Connector Framework)](../connectors/transmitsecurityconnectordefinition.md) | Transmit Security | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
 | [Trellix Endpoint Security (via Codeless Connector Framework)](../connectors/trellixconnector.md) | Microsoft | 1 | [Trellix](../solutions/trellix.md) |
 | [Trend Micro Cloud App Security (via Codeless Connector Framework)](../connectors/trendmicrocasconnector.md) | Microsoft | 1 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
-| [TrendAI Vision One™ - OAT Detections (via Codeless Connector Framework)](../connectors/trendaivisiononeoat.md) ⚠️ 🔶 | TrendAI | 1 | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
-| [TrendAI Vision One™ - Workbench Alerts (via Codeless Connector Framework)](../connectors/trendaivisiononeworkbench.md) ⚠️ 🔶 | TrendAI | 1 | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
+| [TrendAI Vision One™ - OAT Detections (via Codeless Connector Framework)](../connectors/trendaivisiononeoat.md) 🔶 | TrendAI | 1 | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
+| [TrendAI Vision One™ - Workbench Alerts (via Codeless Connector Framework)](../connectors/trendaivisiononeworkbench.md) 🔶 | TrendAI | 1 | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
 | [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Events](../connectors/tropicoeventsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [UniFi Site Manager (CCF)](../connectors/unifisitemanagerconnector.md) ⚠️ | Community | 4 | [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [Uniqkey Security Events](../connectors/uniqkeyeventsconnector.md) | Uniqkey | 1 | [Uniqkey](../solutions/uniqkey.md) |
 | [Utimaco Enterprise Secure Key Manager (ESKM)](../connectors/utimacoeskmconnector.md) | Utimaco | 1 | [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) 🔶 | Data443 Risk Mitigation, Inc. | 1 | [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
 | [Valimail Enforce Configuration Events](../connectors/valimailenforceeventsconnector.md) | Valimail | 1 | [ValimailEnforce](../solutions/valimailenforce.md) |
-| [Veeam Data Connector (via Codeless Connector Framework)](../connectors/veeamconnector.md) | Microsoft | 6 | [Veeam](../solutions/veeam.md) |
+| [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Vectra AI | 3 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [VersasecCms](../connectors/versaseccmsccpdefinition.md) | Versasec AB | 2 | [VersasecCMS](../solutions/versaseccms.md) |
 | [Visa Threat Intelligence](../connectors/visathreatintelligenceccp.md) ⚠️ | Microsoft | 1 | [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | Microsoft | 7 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | [VMware Workspace ONE (via Codeless Connector Framework)](../connectors/vmwareworkspaceoneconnector.md) | Microsoft | 2 | [VMware Workspace ONE](../solutions/vmware-workspace-one.md) |
 | [WithSecure Elements (CCF)](../connectors/withsecureelementsccf.md) | WithSecure | 1 | [WithSecureElementsCCF](../solutions/withsecureelementsccf.md) |
-| [Workday User Activity](../connectors/workdayccpdefinition.md) | Microsoft | 1 | [Workday](../solutions/workday.md) |
+| [Workday User Activity (via Codeless Connector Framework)](../connectors/workdayccpdefinition.md) | Microsoft | 1 | [Workday](../solutions/workday.md) |
 | [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) ⚠️ | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |
 | [ZeroFox Enterprise - Advanced Dark Web](../connectors/zerofoxadvanceddarkwebdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
@@ -250,6 +268,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
+| 🚫 [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Dynatrace | 3 | [Dynatrace](../solutions/dynatrace.md) |
+| 🚫 [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Dynatrace | 3 | [Dynatrace](../solutions/dynatrace.md) |
+| 🚫 [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Dynatrace | 3 | [Dynatrace](../solutions/dynatrace.md) |
+| 🚫 [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Dynatrace | 3 | [Dynatrace](../solutions/dynatrace.md) |
 | 🚫 [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | GitHub | 3 | [GitHub](../solutions/github.md) |
 
 ---

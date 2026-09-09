@@ -21,7 +21,7 @@
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#synqly-integration-connector) |
 
-The [Synqly](https://synqly.com) connector provides the capability to push security events from Synqly integrations into Microsoft Sentinel using the Azure Logs Ingestion API. Events are automatically normalized to ASIM (Advanced Security Information Model) tables for use with Microsoft Sentinel analytics, workbooks, and hunting queries.
+The [Synqly](https://synqly.com) connector provides the capability to push security events and asset entities from Synqly integrations into Microsoft Sentinel using the Azure Logs Ingestion API. Records are automatically normalized to ASIM (Advanced Security Information Model) tables for use with Microsoft Sentinel analytics, workbooks, and hunting queries.
 
 ## Tables Ingested
 
@@ -29,6 +29,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`ASimAgentEventLogs`](../tables/asimagenteventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimAlertEventLogs`](../tables/asimalerteventlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimAssetEntityLogs`](../tables/asimassetentitylogs.md) | ✓ | ✓ | ✓ |
 | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ✓ |
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | ✓ |
 | [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | ✓ |
@@ -57,7 +60,7 @@ This connector ingests data into the following tables:
 
 **1. Create ARM Resources and Provide the Required Permissions**
 
-This connector enables push-based ingestion of security events from Synqly integrations into Microsoft Sentinel. Events are automatically normalized to ASIM (Advanced Security Information Model) tables.
+This connector enables push-based ingestion of security events and asset entities from Synqly integrations into Microsoft Sentinel. Records are automatically normalized to ASIM (Advanced Security Information Model) tables.
 #### Deploy Connector Resources
 Clicking "Deploy" creates a Data Collection Rule (DCR), Data Collection Endpoint (DCE), and Entra application with the necessary permissions to securely send data to Microsoft Sentinel.
 Deploy Synqly Integration connector resources
@@ -73,8 +76,8 @@ See [Synqly documentation](https://docs.synqly.com/guides/provider-configuration
 
 **3. Push your logs into the workspace**
 
-Provide these parameters to your Synqly integration. The Synqly service will automatically handle the technical details of data ingestion, including formatting events to one of the 10 supported ASIM schemas (Authentication, AuditEvent, Dhcp, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement, WebSession).
-**Important**: Events with unsupported schema types are silently dropped by Azure. If expected data is not appearing, verify with your Synqly integration provider that events are being sent with one of the supported schema types listed above.
+Provide these parameters to your Synqly integration. Synqly formats each record for one of 13 supported ASIM schema types: 12 event schemas (AgentEvent, AlertEvent, AuditEvent, Authentication, DhcpEvent, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement, and WebSession) and the Asset entity schema (EntitySchema=Asset).
+**Important**: Records with unsupported schema types are silently dropped by Azure. If expected data is not appearing, verify with your Synqly integration provider that records use one of the supported schema types listed above.
 - **Tenant ID (Directory ID)**: `TenantId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Entra App Registration Application ID**: `ApplicationId`
@@ -86,6 +89,11 @@ Provide these parameters to your Synqly integration. The Synqly service will aut
 - **Data Collection Rule Immutable ID**: `DataCollectionRuleId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Stream Name**: `Custom-SynqlyASIM`
+
+**4. Promote Alert Events to Microsoft Sentinel alerts (Optional)**
+
+The solution includes the Synqly Alert Event analytics rule template. Alert Events remain logs until you create and enable a rule from it.
+Go to **Microsoft Sentinel > Analytics > Rule templates**, find **Synqly Alert Event**, and select **Create rule**. Use the defaults or customize the rule for your environment. [Learn more](https://learn.microsoft.com/en-us/azure/sentinel/create-analytics-rule-from-template).
 
 ---
 

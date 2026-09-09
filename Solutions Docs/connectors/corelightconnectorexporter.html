@@ -43,19 +43,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+  <td style="text-align:left"><a href="../methods/unknown-custom-log.html">Unknown (Custom Log)</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Data%20Connectors/CorelightConnectorExporter.json">CorelightConnectorExporter.json</a></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Data%20Connectors/CorelightExporter/CorelightConnectorExporter.json">CorelightConnectorExporter.json</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
@@ -63,7 +55,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://corelight.com/">Corelight</a> data connector enables incident responders and threat hunters who use Microsoft Sentinel to work faster and more effectively. The data connector enables ingestion of events from <a href="https://zeek.org/">Zeek</a> and <a href="https://suricata-ids.org/">Suricata</a> via Corelight Sensors into Microsoft Sentinel.</p>
+<p>The <a href="https://corelight.com/">Corelight</a> data connector enables incident responders and threat hunters who use Microsoft Sentinel to work faster and more effectively. The data connector enables ingestion of events from <a href="https://zeek.org/">Zeek</a> and <a href="https://suricata.io/">Suricata</a> via Corelight Sensors into Microsoft Sentinel using the Azure Monitor Logs Ingestion API. Events are sent by the Corelight Sensor to a Data Collection Endpoint (DCE) and routed into dedicated <code>Corelight_v3_*_CL</code> tables by per-log-type Data Collection Rules (DCRs).</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -77,649 +69,1429 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-cl.html"><code>Corelight_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-amqp-cl.html"><code>Corelight_v3_amqp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-bacnet-cl.html"><code>Corelight_v2_bacnet_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-analyzer-cl.html"><code>Corelight_v3_analyzer_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-capture-loss-cl.html"><code>Corelight_v2_capture_loss_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-anomaly-cl.html"><code>Corelight_v3_anomaly_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-cip-cl.html"><code>Corelight_v2_cip_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-asset-classification-cl.html"><code>Corelight_v3_asset_classification_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-conn-cl.html"><code>Corelight_v2_conn_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bacnet-cl.html"><code>Corelight_v3_bacnet_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-conn-long-cl.html"><code>Corelight_v2_conn_long_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bacnet-device-control-cl.html"><code>Corelight_v3_bacnet_device_control_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-conn-red-cl.html"><code>Corelight_v2_conn_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bacnet-discovery-cl.html"><code>Corelight_v3_bacnet_discovery_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-corelight-burst-cl.html"><code>Corelight_v2_corelight_burst_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bacnet-property-cl.html"><code>Corelight_v3_bacnet_property_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-corelight-overall-capture-loss-cl.html"><code>Corelight_v2_corelight_overall_capture_loss_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-broker-cl.html"><code>Corelight_v3_broker_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-corelight-profiling-cl.html"><code>Corelight_v2_corelight_profiling_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-ip-header-cl.html"><code>Corelight_v3_bsap_ip_header_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-datared-cl.html"><code>Corelight_v2_datared_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-ip-rdb-cl.html"><code>Corelight_v3_bsap_ip_rdb_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dce-rpc-cl.html"><code>Corelight_v2_dce_rpc_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-ip-unknown-cl.html"><code>Corelight_v3_bsap_ip_unknown_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dga-cl.html"><code>Corelight_v2_dga_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-serial-header-cl.html"><code>Corelight_v3_bsap_serial_header_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dhcp-cl.html"><code>Corelight_v2_dhcp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-serial-rdb-cl.html"><code>Corelight_v3_bsap_serial_rdb_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dnp3-cl.html"><code>Corelight_v2_dnp3_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-serial-rdb-ext-cl.html"><code>Corelight_v3_bsap_serial_rdb_ext_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dns-cl.html"><code>Corelight_v2_dns_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-bsap-serial-unknown-cl.html"><code>Corelight_v3_bsap_serial_unknown_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dns-red-cl.html"><code>Corelight_v2_dns_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-capture-loss-cl.html"><code>Corelight_v3_capture_loss_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-dpd-cl.html"><code>Corelight_v2_dpd_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-cip-cl.html"><code>Corelight_v3_cip_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-encrypted-dns-cl.html"><code>Corelight_v2_encrypted_dns_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-cip-identity-cl.html"><code>Corelight_v3_cip_identity_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-enip-cl.html"><code>Corelight_v2_enip_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-cip-io-cl.html"><code>Corelight_v3_cip_io_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-enip-debug-cl.html"><code>Corelight_v2_enip_debug_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-cluster-cl.html"><code>Corelight_v3_cluster_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-enip-list-identity-cl.html"><code>Corelight_v2_enip_list_identity_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-config-cl.html"><code>Corelight_v3_config_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-etc-viz-cl.html"><code>Corelight_v2_etc_viz_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-conn-cl.html"><code>Corelight_v3_conn_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-files-cl.html"><code>Corelight_v2_files_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-conn-agg-cl.html"><code>Corelight_v3_conn_agg_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-files-red-cl.html"><code>Corelight_v2_files_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-conn-long-cl.html"><code>Corelight_v3_conn_long_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ftp-cl.html"><code>Corelight_v2_ftp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-conn-red-cl.html"><code>Corelight_v3_conn_red_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-generic-dns-tunnels-cl.html"><code>Corelight_v2_generic_dns_tunnels_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-admin-shares-cl.html"><code>Corelight_v3_corelight_ad_admin_shares_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-generic-icmp-tunnels-cl.html"><code>Corelight_v2_generic_icmp_tunnels_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ew-servers-services-cl.html"><code>Corelight_v3_corelight_ad_ew_servers_services_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-http2-cl.html"><code>Corelight_v2_http2_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-exe-files-cl.html"><code>Corelight_v3_corelight_ad_exe_files_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-http-cl.html"><code>Corelight_v2_http_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ftp-connections-cl.html"><code>Corelight_v3_corelight_ad_ftp_connections_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-http-red-cl.html"><code>Corelight_v2_http_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-http-user-agents-cl.html"><code>Corelight_v3_corelight_ad_http_user_agents_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-icmp-specific-tunnels-cl.html"><code>Corelight_v2_icmp_specific_tunnels_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ns-servers-services-cl.html"><code>Corelight_v3_corelight_ad_ns_servers_services_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-intel-cl.html"><code>Corelight_v2_intel_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ntlm-auth-cl.html"><code>Corelight_v3_corelight_ad_ntlm_auth_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ipsec-cl.html"><code>Corelight_v2_ipsec_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-rdp-cl.html"><code>Corelight_v3_corelight_ad_rdp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-irc-cl.html"><code>Corelight_v2_irc_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ssh-clients-cl.html"><code>Corelight_v3_corelight_ad_ssh_clients_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-iso-cotp-cl.html"><code>Corelight_v2_iso_cotp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-ad-ssh-connections-cl.html"><code>Corelight_v3_corelight_ad_ssh_connections_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-kerberos-cl.html"><code>Corelight_v2_kerberos_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-burst-cl.html"><code>Corelight_v3_corelight_burst_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-certs-cl.html"><code>Corelight_v2_known_certs_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-license-capacity-cl.html"><code>Corelight_v3_corelight_license_capacity_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-devices-cl.html"><code>Corelight_v2_known_devices_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-metrics-disk-cl.html"><code>Corelight_v3_corelight_metrics_disk_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-domains-cl.html"><code>Corelight_v2_known_domains_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-metrics-iface-cl.html"><code>Corelight_v3_corelight_metrics_iface_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-hosts-cl.html"><code>Corelight_v2_known_hosts_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-metrics-memory-cl.html"><code>Corelight_v3_corelight_metrics_memory_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-names-cl.html"><code>Corelight_v2_known_names_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-metrics-system-cl.html"><code>Corelight_v3_corelight_metrics_system_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-remotes-cl.html"><code>Corelight_v2_known_remotes_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-metrics-zeek-doctor-cl.html"><code>Corelight_v3_corelight_metrics_zeek_doctor_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-services-cl.html"><code>Corelight_v2_known_services_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-overall-capture-loss-cl.html"><code>Corelight_v3_corelight_overall_capture_loss_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-known-users-cl.html"><code>Corelight_v2_known_users_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-pipeline-test-cl.html"><code>Corelight_v3_corelight_pipeline_test_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-local-subnets-cl.html"><code>Corelight_v2_local_subnets_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-corelight-profiling-cl.html"><code>Corelight_v3_corelight_profiling_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-local-subnets-dj-cl.html"><code>Corelight_v2_local_subnets_dj_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-cotp-cl.html"><code>Corelight_v3_cotp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-local-subnets-graphs-cl.html"><code>Corelight_v2_local_subnets_graphs_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-datared-cl.html"><code>Corelight_v3_datared_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-log4shell-cl.html"><code>Corelight_v2_log4shell_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dce-rpc-cl.html"><code>Corelight_v3_dce_rpc_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-modbus-cl.html"><code>Corelight_v2_modbus_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dga-cl.html"><code>Corelight_v3_dga_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-mqtt-connect-cl.html"><code>Corelight_v2_mqtt_connect_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dhcp-cl.html"><code>Corelight_v3_dhcp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-mqtt-publish-cl.html"><code>Corelight_v2_mqtt_publish_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dnp3-cl.html"><code>Corelight_v3_dnp3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-mqtt-subscribe-cl.html"><code>Corelight_v2_mqtt_subscribe_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dnp3-control-cl.html"><code>Corelight_v3_dnp3_control_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-mysql-cl.html"><code>Corelight_v2_mysql_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dnp3-objects-cl.html"><code>Corelight_v3_dnp3_objects_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-notice-cl.html"><code>Corelight_v2_notice_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dns-cl.html"><code>Corelight_v3_dns_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ntlm-cl.html"><code>Corelight_v2_ntlm_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dns-agg-cl.html"><code>Corelight_v3_dns_agg_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ntp-cl.html"><code>Corelight_v2_ntp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dns-red-cl.html"><code>Corelight_v3_dns_red_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ocsp-cl.html"><code>Corelight_v2_ocsp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-dpd-cl.html"><code>Corelight_v3_dpd_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-openflow-cl.html"><code>Corelight_v2_openflow_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-aoe-info-cl.html"><code>Corelight_v3_ecat_aoe_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-packet-filter-cl.html"><code>Corelight_v2_packet_filter_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-arp-info-cl.html"><code>Corelight_v3_ecat_arp_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-pe-cl.html"><code>Corelight_v2_pe_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-coe-info-cl.html"><code>Corelight_v3_ecat_coe_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-profinet-cl.html"><code>Corelight_v2_profinet_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-dev-info-cl.html"><code>Corelight_v3_ecat_dev_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-profinet-dce-rpc-cl.html"><code>Corelight_v2_profinet_dce_rpc_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-foe-info-cl.html"><code>Corelight_v3_ecat_foe_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-profinet-debug-cl.html"><code>Corelight_v2_profinet_debug_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-log-address-cl.html"><code>Corelight_v3_ecat_log_address_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-radius-cl.html"><code>Corelight_v2_radius_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-registers-cl.html"><code>Corelight_v3_ecat_registers_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-rdp-cl.html"><code>Corelight_v2_rdp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ecat-soe-info-cl.html"><code>Corelight_v3_ecat_soe_info_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-reporter-cl.html"><code>Corelight_v2_reporter_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-encrypted-dns-cl.html"><code>Corelight_v3_encrypted_dns_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-rfb-cl.html"><code>Corelight_v2_rfb_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-enip-cl.html"><code>Corelight_v3_enip_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-s7comm-cl.html"><code>Corelight_v2_s7comm_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-enip-debug-cl.html"><code>Corelight_v3_enip_debug_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-signatures-cl.html"><code>Corelight_v2_signatures_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-enip-list-identity-cl.html"><code>Corelight_v3_enip_list_identity_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-sip-cl.html"><code>Corelight_v2_sip_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-etc-viz-cl.html"><code>Corelight_v3_etc_viz_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smartpcap-cl.html"><code>Corelight_v2_smartpcap_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-files-cl.html"><code>Corelight_v3_files_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smartpcap-stats-cl.html"><code>Corelight_v2_smartpcap_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-files-agg-cl.html"><code>Corelight_v3_files_agg_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smb-files-cl.html"><code>Corelight_v2_smb_files_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-files-red-cl.html"><code>Corelight_v3_files_red_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smb-mapping-cl.html"><code>Corelight_v2_smb_mapping_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-first-seen-cl.html"><code>Corelight_v3_first_seen_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smtp-cl.html"><code>Corelight_v2_smtp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ftp-cl.html"><code>Corelight_v3_ftp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-smtp-links-cl.html"><code>Corelight_v2_smtp_links_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-gena-cl.html"><code>Corelight_v3_gena_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-snmp-cl.html"><code>Corelight_v2_snmp_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-generic-dns-tunnels-cl.html"><code>Corelight_v3_generic_dns_tunnels_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-socks-cl.html"><code>Corelight_v2_socks_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-generic-icmp-tunnels-cl.html"><code>Corelight_v3_generic_icmp_tunnels_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-software-cl.html"><code>Corelight_v2_software_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-genisys-cl.html"><code>Corelight_v3_genisys_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-specific-dns-tunnels-cl.html"><code>Corelight_v2_specific_dns_tunnels_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-http2-cl.html"><code>Corelight_v3_http2_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ssh-cl.html"><code>Corelight_v2_ssh_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-http-cl.html"><code>Corelight_v3_http_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ssl-cl.html"><code>Corelight_v2_ssl_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-http-agg-cl.html"><code>Corelight_v3_http_agg_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-ssl-red-cl.html"><code>Corelight_v2_ssl_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-http-red-cl.html"><code>Corelight_v3_http_red_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-stats-cl.html"><code>Corelight_v2_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-icmp-specific-tunnels-cl.html"><code>Corelight_v3_icmp_specific_tunnels_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-stepping-cl.html"><code>Corelight_v2_stepping_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-intel-cl.html"><code>Corelight_v3_intel_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-stun-cl.html"><code>Corelight_v2_stun_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ipsec-cl.html"><code>Corelight_v3_ipsec_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-stun-nat-cl.html"><code>Corelight_v2_stun_nat_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-irc-cl.html"><code>Corelight_v3_irc_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-suricata-corelight-cl.html"><code>Corelight_v2_suricata_corelight_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-iso-cotp-cl.html"><code>Corelight_v3_iso_cotp_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-suricata-eve-cl.html"><code>Corelight_v2_suricata_eve_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-kerberos-cl.html"><code>Corelight_v3_kerberos_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-suricata-stats-cl.html"><code>Corelight_v2_suricata_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-certs-cl.html"><code>Corelight_v3_known_certs_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-suricata-zeek-stats-cl.html"><code>Corelight_v2_suricata_zeek_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-devices-cl.html"><code>Corelight_v3_known_devices_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-syslog-cl.html"><code>Corelight_v2_syslog_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-domains-cl.html"><code>Corelight_v3_known_domains_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-tds-cl.html"><code>Corelight_v2_tds_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-hosts-cl.html"><code>Corelight_v3_known_hosts_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-tds-rpc-cl.html"><code>Corelight_v2_tds_rpc_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-names-cl.html"><code>Corelight_v3_known_names_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-tds-sql-batch-cl.html"><code>Corelight_v2_tds_sql_batch_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-remotes-cl.html"><code>Corelight_v3_known_remotes_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-traceroute-cl.html"><code>Corelight_v2_traceroute_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-services-cl.html"><code>Corelight_v3_known_services_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-tunnel-cl.html"><code>Corelight_v2_tunnel_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-known-users-cl.html"><code>Corelight_v3_known_users_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-unknown-smartpcap-cl.html"><code>Corelight_v2_unknown_smartpcap_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ldap-cl.html"><code>Corelight_v3_ldap_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-util-stats-cl.html"><code>Corelight_v2_util_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ldap-search-cl.html"><code>Corelight_v3_ldap_search_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-vpn-cl.html"><code>Corelight_v2_vpn_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-loaded-scripts-cl.html"><code>Corelight_v3_loaded_scripts_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-weird-cl.html"><code>Corelight_v2_weird_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-local-subnets-cl.html"><code>Corelight_v3_local_subnets_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-weird-red-cl.html"><code>Corelight_v2_weird_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-local-subnets-dj-cl.html"><code>Corelight_v3_local_subnets_dj_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-weird-stats-cl.html"><code>Corelight_v2_weird_stats_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-local-subnets-graphs-cl.html"><code>Corelight_v3_local_subnets_graphs_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-wireguard-cl.html"><code>Corelight_v2_wireguard_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-local-subnets-neighbor-cl.html"><code>Corelight_v3_local_subnets_neighbor_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-x509-cl.html"><code>Corelight_v2_x509_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-log4shell-cl.html"><code>Corelight_v3_log4shell_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-x509-red-cl.html"><code>Corelight_v2_x509_red_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-logschema-cl.html"><code>Corelight_v3_logschema_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/corelight-v2-zeek-doctor-cl.html"><code>Corelight_v2_zeek_doctor_CL</code></a> 🔶</td>
+  <td style="text-align:left"><a href="../tables/corelight-v3-modbus-cl.html"><code>Corelight_v3_modbus_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-modbus-detailed-cl.html"><code>Corelight_v3_modbus_detailed_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-modbus-mask-write-register-cl.html"><code>Corelight_v3_modbus_mask_write_register_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-modbus-read-device-identificatio-cl.html"><code>Corelight_v3_modbus_read_device_identificatio_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-modbus-read-write-multiple-regis-cl.html"><code>Corelight_v3_modbus_read_write_multiple_regis_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-mqtt-connect-cl.html"><code>Corelight_v3_mqtt_connect_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-mqtt-publish-cl.html"><code>Corelight_v3_mqtt_publish_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-mqtt-subscribe-cl.html"><code>Corelight_v3_mqtt_subscribe_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-mysql-cl.html"><code>Corelight_v3_mysql_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-net-perf-cl.html"><code>Corelight_v3_net_perf_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-netcontrol-cl.html"><code>Corelight_v3_netcontrol_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-netcontrol-drop-cl.html"><code>Corelight_v3_netcontrol_drop_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-netcontrol-shunt-cl.html"><code>Corelight_v3_netcontrol_shunt_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-notice-cl.html"><code>Corelight_v3_notice_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-notice-alarm-cl.html"><code>Corelight_v3_notice_alarm_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ntlm-cl.html"><code>Corelight_v3_ntlm_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ntp-cl.html"><code>Corelight_v3_ntp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ocsp-cl.html"><code>Corelight_v3_ocsp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-bef-attr-operand-bpaths-cl.html"><code>Corelight_v3_opcua_bef_attr_operand_bpaths_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-bef-smpl-attr-bpaths-cl.html"><code>Corelight_v3_opcua_bef_smpl_attr_bpaths_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-bef-where-clause-cl.html"><code>Corelight_v3_opcua_bef_where_clause_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-bef-where-clause-elements-cl.html"><code>Corelight_v3_opcua_bef_where_clause_elements_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-cl.html"><code>Corelight_v3_opcua_binary_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-activate-session-cl.html"><code>Corelight_v3_opcua_binary_activate_session_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-activate-session-cl-cl.html"><code>Corelight_v3_opcua_binary_activate_session_cl_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-activate-session-lo-cl.html"><code>Corelight_v3_opcua_binary_activate_session_lo_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-aggregate-filter-cl.html"><code>Corelight_v3_opcua_binary_aggregate_filter_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-browse-cl.html"><code>Corelight_v3_opcua_binary_browse_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-browse-description-cl.html"><code>Corelight_v3_opcua_binary_browse_description_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-browse-request-cont-cl.html"><code>Corelight_v3_opcua_binary_browse_request_cont_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-browse-response-ref-cl.html"><code>Corelight_v3_opcua_binary_browse_response_ref_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-browse-result-cl.html"><code>Corelight_v3_opcua_binary_browse_result_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-close-session-cl.html"><code>Corelight_v3_opcua_binary_close_session_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-cm-create-item-cl.html"><code>Corelight_v3_opcua_binary_cm_create_item_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-cm-items-cl.html"><code>Corelight_v3_opcua_binary_cm_items_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-create-session-cl.html"><code>Corelight_v3_opcua_binary_create_session_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-create-session-disc-cl.html"><code>Corelight_v3_opcua_binary_create_session_disc_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-create-session-endp-cl.html"><code>Corelight_v3_opcua_binary_create_session_endp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-create-session-user-cl.html"><code>Corelight_v3_opcua_binary_create_session_user_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-create-subscription-cl.html"><code>Corelight_v3_opcua_binary_create_subscription_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-data-change-filter-cl.html"><code>Corelight_v3_opcua_binary_data_change_filter_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-diag-info-detail-cl.html"><code>Corelight_v3_opcua_binary_diag_info_detail_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-cl.html"><code>Corelight_v3_opcua_binary_event_filter_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-attrib-cl.html"><code>Corelight_v3_opcua_binary_event_filter_attrib_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-elemen-cl.html"><code>Corelight_v3_opcua_binary_event_filter_elemen_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-litera-cl.html"><code>Corelight_v3_opcua_binary_event_filter_litera_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-select-cl.html"><code>Corelight_v3_opcua_binary_event_filter_select_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-event-filter-simple-cl.html"><code>Corelight_v3_opcua_binary_event_filter_simple_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-descr-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_descr_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-disco-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_disco_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-local-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_local_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-profi-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_profi_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-get-endpoints-user-cl.html"><code>Corelight_v3_opcua_binary_get_endpoints_user_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-opensecure-channel-cl.html"><code>Corelight_v3_opcua_binary_opensecure_channel_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-read-cl.html"><code>Corelight_v3_opcua_binary_read_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-read-nodes-to-read-cl.html"><code>Corelight_v3_opcua_binary_read_nodes_to_read_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-read-results-cl.html"><code>Corelight_v3_opcua_binary_read_results_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-status-code-detail-cl.html"><code>Corelight_v3_opcua_binary_status_code_detail_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-variant-array-dims-cl.html"><code>Corelight_v3_opcua_binary_variant_array_dims_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-variant-data-cl.html"><code>Corelight_v3_opcua_binary_variant_data_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-variant-data-value-cl.html"><code>Corelight_v3_opcua_binary_variant_data_value_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-variant-extension-o-cl.html"><code>Corelight_v3_opcua_binary_variant_extension_o_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-variant-metadata-cl.html"><code>Corelight_v3_opcua_binary_variant_metadata_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-opcua-binary-write-cl.html"><code>Corelight_v3_opcua_binary_write_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-openflow-cl.html"><code>Corelight_v3_openflow_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-packet-filter-cl.html"><code>Corelight_v3_packet_filter_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-pe-cl.html"><code>Corelight_v3_pe_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-postgresql-cl.html"><code>Corelight_v3_postgresql_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-print-cl.html"><code>Corelight_v3_print_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-profinet-cl.html"><code>Corelight_v3_profinet_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-profinet-dce-rpc-cl.html"><code>Corelight_v3_profinet_dce_rpc_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-profinet-debug-cl.html"><code>Corelight_v3_profinet_debug_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-quic-cl.html"><code>Corelight_v3_quic_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-radius-cl.html"><code>Corelight_v3_radius_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-rdp-cl.html"><code>Corelight_v3_rdp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-redis-cl.html"><code>Corelight_v3_redis_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-reporter-cl.html"><code>Corelight_v3_reporter_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-rfb-cl.html"><code>Corelight_v3_rfb_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-s7comm-cl.html"><code>Corelight_v3_s7comm_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-s7comm-known-devices-cl.html"><code>Corelight_v3_s7comm_known_devices_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-s7comm-plus-cl.html"><code>Corelight_v3_s7comm_plus_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-s7comm-read-szl-cl.html"><code>Corelight_v3_s7comm_read_szl_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-s7comm-upload-download-cl.html"><code>Corelight_v3_s7comm_upload_download_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-signatures-cl.html"><code>Corelight_v3_signatures_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-sip-cl.html"><code>Corelight_v3_sip_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smartpcap-cl.html"><code>Corelight_v3_smartpcap_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smartpcap-stats-cl.html"><code>Corelight_v3_smartpcap_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smb-files-cl.html"><code>Corelight_v3_smb_files_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smb-mapping-cl.html"><code>Corelight_v3_smb_mapping_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smtp-cl.html"><code>Corelight_v3_smtp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-smtp-links-cl.html"><code>Corelight_v3_smtp_links_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-snmp-cl.html"><code>Corelight_v3_snmp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-socks-cl.html"><code>Corelight_v3_socks_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-software-cl.html"><code>Corelight_v3_software_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-specific-dns-tunnels-cl.html"><code>Corelight_v3_specific_dns_tunnels_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ssdp-cl.html"><code>Corelight_v3_ssdp_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ssh-cl.html"><code>Corelight_v3_ssh_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ssl-cl.html"><code>Corelight_v3_ssl_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ssl-agg-cl.html"><code>Corelight_v3_ssl_agg_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-ssl-red-cl.html"><code>Corelight_v3_ssl_red_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-stats-cl.html"><code>Corelight_v3_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-stepping-cl.html"><code>Corelight_v3_stepping_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-stun-cl.html"><code>Corelight_v3_stun_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-stun-nat-cl.html"><code>Corelight_v3_stun_nat_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-suricata-corelight-cl.html"><code>Corelight_v3_suricata_corelight_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-suricata-eve-cl.html"><code>Corelight_v3_suricata_eve_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-suricata-stats-cl.html"><code>Corelight_v3_suricata_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-suricata-zeek-stats-cl.html"><code>Corelight_v3_suricata_zeek_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-syslog-cl.html"><code>Corelight_v3_syslog_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-tds-cl.html"><code>Corelight_v3_tds_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-tds-rpc-cl.html"><code>Corelight_v3_tds_rpc_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-tds-sql-batch-cl.html"><code>Corelight_v3_tds_sql_batch_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-telemetry-cl.html"><code>Corelight_v3_telemetry_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-telnet-cl.html"><code>Corelight_v3_telnet_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-traceroute-cl.html"><code>Corelight_v3_traceroute_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-tunnel-cl.html"><code>Corelight_v3_tunnel_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-unknown-smartpcap-cl.html"><code>Corelight_v3_unknown_smartpcap_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-util-stats-cl.html"><code>Corelight_v3_util_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-vpn-cl.html"><code>Corelight_v3_vpn_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-websocket-cl.html"><code>Corelight_v3_websocket_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-weird-cl.html"><code>Corelight_v3_weird_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-weird-agg-cl.html"><code>Corelight_v3_weird_agg_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-weird-red-cl.html"><code>Corelight_v3_weird_red_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-weird-stats-cl.html"><code>Corelight_v3_weird_stats_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-wireguard-cl.html"><code>Corelight_v3_wireguard_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-x509-cl.html"><code>Corelight_v3_x509_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-x509-red-cl.html"><code>Corelight_v3_x509_red_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-yara-corelight-cl.html"><code>Corelight_v3_yara_corelight_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-yara-error-corelight-cl.html"><code>Corelight_v3_yara_error_corelight_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/corelight-v3-zeek-doctor-cl.html"><code>Corelight_v3_zeek_doctor_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
@@ -733,7 +1505,13 @@
 <p><strong>Resource Provider Permissions:</strong></p>
 <ul>
 <li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+<li><strong>Data Collection Rules</strong> (Subscription): read and write permissions to Data Collection Rules and Data Collection Endpoints are required. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">See the documentation to learn more about the Logs Ingestion API</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra ID application</strong>: Permission to register an application in Microsoft Entra ID and create a client secret. Typically requires the Application Developer role or higher.</li>
+<li><strong>Azure role assignment</strong>: Permission to assign the <strong>Monitoring Metrics Publisher</strong> role on the deployed Data Collection Rules. Typically requires the Owner or User Access Administrator role on the target resource group.</li>
+<li><strong>Corelight Sensor access</strong>: Administrative access to the Corelight Sensor (or Fleet Manager) to configure the Microsoft Sentinel export.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
@@ -742,27 +1520,373 @@
 <blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-Corelight-parser"><strong>Corelight</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
 </blockquote>
-<p><strong>1. Get the files</strong></p>
-<p>Contact your TAM, SE, or info@corelight.com to get the files needed for the Microsoft Sentinel integration.</p>
-<p><strong>2. Replay sample data.</strong></p>
-<p>Replay sample data to create the needed tables in your Log Analytics workspace.</p>
+<p><strong>1. Deploy the Corelight data collection resources</strong></p>
+<p>Deploy the ARM template that creates the Data Collection Endpoint (DCE), the <code>Corelight_v3_*_CL</code> tables, and one Data Collection Rule (DCR) per Corelight log type in your workspace.</p>
+<p>Use the button below to deploy the connector resources into the same subscription and resource group as your Microsoft Sentinel workspace.</p>
+<p><a href="https://aka.ms/sentinel-CorelightExporter-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p>When prompted, supply:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>workspace</code></td>
+  <td>The <strong>name</strong> of your Log Analytics workspace (not the ID). Maximum <strong>18 characters</strong> -- see the note below</td>
+</tr>
+<tr>
+  <td><code>workspace-location</code></td>
+  <td>The Azure region of the workspace</td>
+</tr>
+<tr>
+  <td><code>resourceId</code></td>
+  <td>The full resource ID of the workspace</td>
+</tr>
+</tbody>
+</table>
+<p>The deployment creates:</p>
 <ul>
-<li><strong>Send sample data (only needed once per Log Analytics workspace)</strong>: <code>./send_samples.py --workspace-id {0} --workspace-key {1}</code></li>
+<li>One Data Collection Endpoint named <code>dce-corelight-&lt;workspace&gt;</code></li>
+<li>One custom table per Corelight log type, named <code>Corelight_v3_&lt;log_type&gt;_CL</code></li>
+<li>One Data Collection Rule per log type, named <code>dcr-corelight-&lt;workspace&gt;-&lt;log_type&gt;</code>, each tagged with <code>corelight-log-type</code></li>
 </ul>
-<p><strong>3. Install custom exporter.</strong></p>
-<p>Install the custom exporter or the logstash container.</p>
-<p><strong>4. Configure the Corelight Sensor to send logs to the Azure Log Analytics Agent.</strong></p>
-<p>Using the following values, configure your Corelight Sensor to use the Microsoft Sentinel exporter. Alternatively, you can configure the logstash container with these values and configure your sensor to send JSON over TCP to that container on the appropriate port.</p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> The workspace name must be <strong>18 characters or fewer</strong>. Each Data Collection Rule is named <code>dcr-corelight-&lt;workspace&gt;-&lt;log_type&gt;</code> and Azure limits resource names to 64 characters. The longest Corelight log type is 32 characters, so a longer workspace name makes some rule names exceed the limit and the deployment fails preflight validation with <code>'Name' must be between 1 and 64 characters</code>. If your workspace name is longer, deploy Microsoft Sentinel on a workspace with a shorter name.</p>
+</blockquote>
+<blockquote>
+<p><strong>NOTE:</strong> The deployment can take several minutes to complete because a large number of tables and rules are created. Wait for it to finish before continuing.</p>
+</blockquote>
+<p><strong>2. Register a Microsoft Entra ID application</strong></p>
+<p>The Corelight Sensor authenticates to the Logs Ingestion API with a Microsoft Entra ID application. Create the application and a client secret, then record the values.</p>
+<h4 id="create-the-application">Create the application</h4>
+<ol>
+<li>In the Azure portal, go to <strong>Microsoft Entra ID</strong> &gt; <strong>App registrations</strong> &gt; <strong>New registration</strong>.</li>
+<li>Enter a name, for example <code>Corelight Sentinel Connector</code>.</li>
+<li>Under <strong>Supported account types</strong>, select <strong>Accounts in this organizational directory only</strong>.</li>
+<li>Leave <strong>Redirect URI</strong> empty and select <strong>Register</strong>.</li>
+<li>On the application <strong>Overview</strong> page, copy the <strong>Application (client) ID</strong> and the <strong>Directory (tenant) ID</strong>.</li>
+</ol>
+<h4 id="create-a-client-secret">Create a client secret</h4>
+<ol>
+<li>On the application page, go to <strong>Certificates &amp; secrets</strong> &gt; <strong>Client secrets</strong> &gt; <strong>New client secret</strong>.</li>
+<li>Enter a description, choose an expiry, and select <strong>Add</strong>.</li>
+<li>Copy the secret <strong>Value</strong> immediately. It is shown only once and cannot be retrieved later.</li>
+</ol>
+<p>You now have the <strong>Tenant ID</strong>, <strong>Client ID</strong>, and <strong>Client Secret</strong> required by the Corelight Sensor.</p>
+<p>For more information, see <a href="https://learn.microsoft.com/entra/identity-platform/quickstart-register-app">Register an application with Microsoft Entra ID</a>.</p>
+<p><strong>3. Grant the application permission to send data</strong></p>
+<p>Assign the <strong>Monitoring Metrics Publisher</strong> role so the application can publish to the Data Collection Rules created in step 1.</p>
+<p>Assign the role once at the <strong>resource group</strong> scope so it covers every Corelight Data Collection Rule in a single assignment.</p>
+<ol>
+<li>Go to the resource group that contains the deployed DCE and DCRs.</li>
+<li>Select <strong>Access control (IAM)</strong> &gt; <strong>Add</strong> &gt; <strong>Add role assignment</strong>.</li>
+<li>On the <strong>Role</strong> tab, search for and select <strong>Monitoring Metrics Publisher</strong>.</li>
+<li>On the <strong>Members</strong> tab, choose <strong>User, group, or service principal</strong>, then select the application you registered in step 2.</li>
+<li>Select <strong>Review + assign</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Role assignments can take a few minutes to take effect. If the sensor reports authorization errors immediately after assignment, wait and retry.</p>
+</blockquote>
+<p><strong>4. Collect the values needed by the Corelight exporter</strong></p>
+<p>The Corelight exporter discovers the Data Collection Rules by tag. Collect the Data Collection Endpoint URI, the subscription ID, and confirm the DCR tag and stream name pattern.</p>
+<h4 id="data-collection-endpoint-uri">Data Collection Endpoint URI</h4>
+<ol>
+<li>Go to <strong>Monitor</strong> &gt; <strong>Settings</strong> &gt; <strong>Data Collection Endpoints</strong>.</li>
+<li>Select <code>dce-corelight-&lt;workspace&gt;</code>.</li>
+<li>On the <strong>Overview</strong> page, copy the <strong>Logs ingestion</strong> URI. It has the form <code>https://dce-corelight-&lt;workspace&gt;-&lt;suffix&gt;.&lt;region&gt;.ingest.monitor.azure.com</code>.</li>
+</ol>
+<h4 id="subscription-id">Subscription ID</h4>
+<p>Copy the ID of the subscription that contains the deployed Data Collection Endpoint and Data Collection Rules.</p>
+<ol>
+<li>In the Azure portal, search for and open <strong>Subscriptions</strong>.</li>
+<li>Select the subscription that contains the deployed resources.</li>
+<li>On the <strong>Overview</strong> page, copy the <strong>Subscription ID</strong>.</li>
+</ol>
+<h4 id="data-collection-rule-log-type-tag">Data Collection Rule log type tag</h4>
+<p>The deployment tags every Corelight Data Collection Rule with the log type it accepts. The exporter uses this tag to select the correct DCR for each log, so no immutable ID has to be entered manually.</p>
+<table>
+<thead>
+<tr>
+  <th>Tag</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>corelight-log-type</code></td>
+  <td>The Corelight log type, for example <code>conn</code>, <code>dns</code>, <code>http</code></td>
+</tr>
+<tr>
+  <td><code>solution</code></td>
+  <td><code>Corelight</code></td>
+</tr>
+</tbody>
+</table>
+<p>To review the deployed rules and their log types in the portal, go to <strong>Monitor</strong> &gt; <strong>Settings</strong> &gt; <strong>Data Collection Rules</strong> and look for rules named <code>dcr-corelight-&lt;workspace&gt;-&lt;log_type&gt;</code>.</p>
+<p>You can also list them with the Azure CLI. Run the commands from <strong>Azure Cloud Shell</strong> in the portal, as described in the section below.</p>
+<pre><code class="language-bash">az monitor data-collection rule list \
+  --resource-group &lt;resource-group&gt; \
+  --query &quot;[?tags.solution=='Corelight'].{logType:tags.\&quot;corelight-log-type\&quot;, name:name}&quot; \
+  --output table
+</code></pre>
+<h4 id="running-the-azure-cli-commands-from-the-azure-portal">Running the Azure CLI commands from the Azure portal</h4>
+<p>The Azure CLI commands in this connector can be run directly in the portal using Azure Cloud Shell, with no local installation required.</p>
+<ol>
+<li><p>In the Azure portal, select the <strong>Cloud Shell</strong> icon (<code>&gt;_</code>) in the top toolbar, or go to <a href="https://shell.azure.com">https://shell.azure.com</a>.</p>
+</li>
+<li><p>When prompted to choose an environment, select <strong>Bash</strong>. The commands below are written for Bash.</p>
+</li>
+<li><p>If this is your first time using Cloud Shell, follow the prompt to create or select a storage account.</p>
+</li>
+<li><p>Confirm you are in the correct subscription, and switch if needed:</p>
+<pre><code class="language-bash">az account show --output table
+az account set --subscription &quot;&lt;subscription-name-or-id&gt;&quot;
+</code></pre>
+</li>
+<li><p>Add the Data Collection Rule commands, which ship in a CLI extension:</p>
+<pre><code class="language-bash">az extension add --name monitor-control-service
+</code></pre>
+</li>
+<li><p>Paste the command you want to run, replacing <code>&lt;resource-group&gt;</code>, <code>&lt;workspace&gt;</code>, and <code>&lt;log_type&gt;</code> with your own values.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> The <code>az monitor data-collection rule</code> commands require the <code>monitor-control-service</code> extension. If you run them without it, Cloud Shell offers to install the extension automatically the first time.</p>
+</blockquote>
+<h4 id="stream-names">Stream names</h4>
+<p>Each DCR declares a single stream, named after its destination table:</p>
+<pre><code>Custom-&lt;table_name&gt;
+</code></pre>
+<p>For most log types the table name follows the pattern <code>Corelight_v3_&lt;log_type&gt;_CL</code>. For example, the <code>conn</code> log type uses the stream <code>Custom-Corelight_v3_conn_CL</code> and lands in the table <code>Corelight_v3_conn_CL</code>. This is why the exporter <strong>Stream Name</strong> template is set to <code>Custom-Corelight_v3_$LOG_CL</code> in the next step.</p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> A small number of log types with long names have a shortened table name, because Log Analytics limits table name length. For those log types the stream name is <strong>not</strong> <code>Custom-Corelight_v3_&lt;log_type&gt;_CL</code>, and the <code>$LOG</code> template does not resolve to the correct stream. See the list in step 5.</p>
+</blockquote>
+<p>To read the stream name directly from a rule, use the portal under <strong>Monitor</strong> &gt; <strong>Settings</strong> &gt; <strong>Data Collection Rules</strong> &gt; select the rule &gt; <strong>JSON View</strong>, or run:</p>
+<pre><code class="language-bash">az monitor data-collection rule show \
+  --resource-group &lt;resource-group&gt; \
+  --name dcr-corelight-&lt;workspace&gt;-&lt;log_type&gt; \
+  --query &quot;keys(streamDeclarations)&quot; \
+  --output tsv
+</code></pre>
+<h4 id="data-collection-rule-immutable-ids">Data Collection Rule immutable IDs (reference only)</h4>
+<p>The exporter resolves rules through the <code>corelight-log-type</code> tag, so immutable IDs are not required for configuration. If you need one for troubleshooting or for a direct Logs Ingestion API call, read it in the portal under <strong>Monitor</strong> &gt; <strong>Settings</strong> &gt; <strong>Data Collection Rules</strong> &gt; select the rule &gt; <strong>JSON View</strong> &gt; <code>immutableId</code>, or run:</p>
+<pre><code class="language-bash">az monitor data-collection rule show \
+  --resource-group &lt;resource-group&gt; \
+  --name dcr-corelight-&lt;workspace&gt;-conn \
+  --query immutableId \
+  --output tsv
+</code></pre>
+<p><strong>5. Configure the Azure Sentinel exporter on the Corelight Sensor</strong></p>
+<p>Create an Azure Sentinel exporter on the Corelight Sensor or in Fleet Manager, using the values collected in the previous steps. The exporter is configured on the Corelight platform and is documented by Corelight.
+<strong>Configure the exporter on the Corelight platform (expandable)</strong></p>
+<p><strong>Corelight documentation</strong></p>
+<p>The exporter is created and managed on the Corelight platform, using the sensor web interface or Fleet Manager. Follow Corelight's own documentation for the exporter creation steps, the supported sensor and Fleet Manager versions, enabling the dynamic exporter option, and uploading a private CA bundle if your deployment requires one:</p>
+<p><strong><a href="https://docs.corelight.cloud/sensor/export/azure-sentinel-dynamic-exporter.html">Corelight documentation: Azure Sentinel dynamic exporter</a></strong></p>
+<p><strong>Before you begin</strong></p>
 <ul>
-<li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
+<li><p>Steps 1 to 4 of this connector are complete, and you have the Data Collection Endpoint URI, subscription ID, and application credentials.</p>
 </li>
-<li><strong>Primary Workspace Key</strong>: <code>PrimaryKey</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
+<li><p>The sensor or Fleet Manager can reach the Data Collection Endpoint over outbound HTTPS on port 443. If outbound traffic must traverse a proxy, have the proxy URL ready.</p>
+</li>
+<li><p>Your sensor runs a version that supports the Azure Sentinel dynamic exporter, and the dynamic exporter option is enabled. Corelight's documentation lists the required versions and the setting to enable.</p>
+<p><strong>Values to enter in the exporter</strong></p>
+<p>Enter these values when creating the Azure Sentinel exporter. Leave any setting not listed here at its Corelight default unless Corelight advises otherwise.</p>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+  <th>Corelight exporter setting</th>
+  <th>Value to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Tenant ID</td>
+  <td>Step 2, application <strong>Directory (tenant) ID</strong></td>
+</tr>
+<tr>
+  <td>Client ID</td>
+  <td>Step 2, application <strong>Application (client) ID</strong></td>
+</tr>
+<tr>
+  <td>Client Secret</td>
+  <td>Step 2, client secret <strong>Value</strong></td>
+</tr>
+<tr>
+  <td>Subscription ID</td>
+  <td>Step 4, the subscription containing the DCE and DCRs</td>
+</tr>
+<tr>
+  <td>Data Collection Endpoint</td>
+  <td>Step 4, the <strong>Logs ingestion</strong> URI</td>
+</tr>
+<tr>
+  <td>DCR Log Type Tag</td>
+  <td><code>corelight-log-type</code></td>
+</tr>
+<tr>
+  <td>Stream Name</td>
+  <td><code>Custom-Corelight_v3_$LOG_CL</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>IMPORTANT:</strong> The exporter ships with the default stream name template <code>Custom-Corelight_v2_$LOG_CL</code>. This solution creates <code>v3</code> tables, so the template must be changed to <code>Custom-Corelight_v3_$LOG_CL</code>. Leaving the default in place sends events to streams that do not exist and the data is rejected.</p>
+</blockquote>
+<p>Use the exporter's log type filter to control which Zeek logs are exported. Enable only the log types you intend to ingest.</p>
+<blockquote>
+<p><strong>NOTE:</strong> Ingesting a large number of log types increases Microsoft Sentinel data ingestion cost. Review the <a href="https://azure.microsoft.com/pricing/details/microsoft-sentinel/">Microsoft Sentinel pricing</a> page before enabling the full set.</p>
+</blockquote>
+<p><strong>Log types not covered by the stream name template</strong></p>
+<p>26 log types have a shortened table name because of the Log Analytics table name length limit, so <code>Custom-Corelight_v3_$LOG_CL</code> does not resolve to their stream. To ingest any of these, set the stream name explicitly from the value below rather than relying on the template.</p>
+<table>
+<thead>
+<tr>
+  <th>Log type</th>
+  <th>Stream name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>modbus_read_device_identification</code></td>
+  <td><code>Custom-Corelight_v3_modbus_read_device_identificatio_CL</code></td>
+</tr>
+<tr>
+  <td><code>modbus_read_write_multiple_registers</code></td>
+  <td><code>Custom-Corelight_v3_modbus_read_write_multiple_regis_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_activate_session_client_software_cert</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_activate_session_cl_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_activate_session_locale_id</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_activate_session_lo_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_browse_request_continuation_point</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_browse_request_cont_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_browse_response_references</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_browse_response_ref_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_create_monitored_items</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_cm_items_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_create_monitored_items_create_item</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_cm_create_item_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_create_session_discovery</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_create_session_disc_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_create_session_endpoints</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_create_session_endp_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_create_session_user_token</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_create_session_user_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_attribute_operand</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_event_filter_attrib_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_attribute_operand_browse_paths</code></td>
+  <td><code>Custom-Corelight_v3_opcua_bef_attr_operand_bpaths_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_element_operand</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_event_filter_elemen_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_literal_operand</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_event_filter_litera_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_select_clause</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_event_filter_select_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_simple_attribute_operand</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_event_filter_simple_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_simple_attribute_operand_browse_paths</code></td>
+  <td><code>Custom-Corelight_v3_opcua_bef_smpl_attr_bpaths_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_where_clause</code></td>
+  <td><code>Custom-Corelight_v3_opcua_bef_where_clause_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_event_filter_where_clause_elements</code></td>
+  <td><code>Custom-Corelight_v3_opcua_bef_where_clause_elements_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_get_endpoints_description</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_get_endpoints_descr_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_get_endpoints_discovery</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_get_endpoints_disco_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_get_endpoints_locale_id</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_get_endpoints_local_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_get_endpoints_profile_uri</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_get_endpoints_profi_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_get_endpoints_user_token</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_get_endpoints_user_CL</code></td>
+</tr>
+<tr>
+  <td><code>opcua_binary_variant_extension_object</code></td>
+  <td><code>Custom-Corelight_v3_opcua_binary_variant_extension_o_CL</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Getting help</strong></p>
+<ul>
+<li>For questions about the exporter itself, sensor or Fleet Manager configuration, supported versions, CA bundles, or exporter errors reported by the sensor, contact your Corelight TAM or SE, or Corelight support at <a href="mailto:info@corelight.com">info@corelight.com</a>.</li>
+<li>If the exporter reports success but no data reaches the workspace, the issue is usually on the Azure side. Confirm the role assignment from step 3, the Data Collection Endpoint URI, and the stream name, then continue to step 6.</li>
+</ul>
+<p><strong>6. Verify data ingestion</strong></p>
+<p>Confirm that events from the Corelight Sensor are arriving in your workspace.</p>
+<p>Allow 5 to 15 minutes after configuring the exporter for the first events to appear, then run the following queries in <strong>Logs</strong>.</p>
+<p>Check which Corelight tables are receiving data:</p>
+<pre><code class="language-kusto">union withsource=TableName Corelight_v3_*_CL
+| summarize EventCount = count(), LastReceived = max(TimeGenerated) by TableName
+| sort by LastReceived desc
+</code></pre>
+<p>Check connection events specifically:</p>
+<pre><code class="language-kusto">Corelight_v3_conn_CL
+| take 10
+</code></pre>
+<p>Confirm connectivity:</p>
+<pre><code class="language-kusto">Corelight_v3_conn_CL
+| summarize LastLogReceived = max(TimeGenerated)
+| project IsConnected = LastLogReceived &gt; ago(30m)
+</code></pre>
+<p>If no data appears, check the following on the Azure side:</p>
+<ul>
+<li>The <strong>Monitoring Metrics Publisher</strong> role assignment from step 3 exists at the resource group scope and has taken effect. Role assignments can take several minutes to propagate.</li>
+<li>The <strong>Data Collection Endpoint</strong> value in the exporter matches the <strong>Logs ingestion</strong> URI from step 4.</li>
+<li>The exporter <strong>Stream Name</strong> template is <code>Custom-Corelight_v3_$LOG_CL</code> and not the <code>v2</code> default, and any log type listed in step 5 as having a shortened stream name is configured with its explicit stream name.</li>
+<li>The <strong>DCR Log Type Tag</strong> is <code>corelight-log-type</code>, and the rules for the log types you enabled exist in the resource group.</li>
+</ul>
+<p>If the values above are correct and the sensor still reports export errors, contact Corelight support as described in step 5.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

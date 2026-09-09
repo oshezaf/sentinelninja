@@ -81,34 +81,34 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/crowdstrikealerts.html"><code>CrowdStrikeAlerts</code></a></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikealertsv2-cl.html"><code>CrowdStrikeAlertsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/crowdstrikecases.html"><code>CrowdStrikeCases</code></a></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikecasesv2-cl.html"><code>CrowdStrikeCasesV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/crowdstrikedetections.html"><code>CrowdStrikeDetections</code></a></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikedetectionsv2-cl.html"><code>CrowdStrikeDetectionsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/crowdstrikehosts.html"><code>CrowdStrikeHosts</code></a></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikehostsv2-cl.html"><code>CrowdStrikeHostsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/crowdstrikevulnerabilities.html"><code>CrowdStrikeVulnerabilities</code></a></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikevulnerabilitiesv2-cl.html"><code>CrowdStrikeVulnerabilitiesV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -122,14 +122,21 @@
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
-<li><strong>Crowdstrike OAuth2 API Client and Scopes</strong>: <strong>Alerts</strong>, <strong>API Integrations</strong>, <strong>App Logs</strong>, <strong>Cases</strong>, <strong>Correlation Rules</strong>, <strong>Detections</strong>, <strong>Hosts</strong>, <strong>Assets</strong>, <strong>Incidents</strong>, <strong>Quarantined Files</strong>, <strong>Vulnerabilities</strong> are required for REST API. <a href="https://falcon.us-2.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis">See the documentation to learn more about API</a>.</li>
+<li><strong>Crowdstrike OAuth2 API Client and Scopes</strong>: #### Required API Scopes
+In your CrowdStrike Falcon console, go to <strong>Support and resources &gt; API clients and keys</strong>, select your API client, and enable the following scopes with <strong>Read</strong> access: <strong>Alerts</strong>, <strong>Cases</strong>, <strong>Detections</strong>, <strong>Hosts</strong>, <strong>Spotlight Vulnerabilities</strong>. <a href="https://falcon.us-2.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis">See the documentation to learn more about API</a>.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>1. Connect CrowdStrike to Microsoft Sentinel</strong></p>
-<p>ℹ️ <strong>Important Notice:</strong> The Incidents API is fully decommissioned. Use the new Cases data type instead.
+<p><strong>1. Connect CrowdStrike to Microsoft Sentinel</strong>
+Retrieve API URL and Client Credentials
+Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.
+Obtain your Client ID and Client Secret from the API credentials section in your CrowdStrike account.
+For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md">Connector Tutorial</a>.
+<strong>Solution version 3.4.0 and later uses the CrowdStrike V2 tables. Please use updated parser for any existing queries. Refer to the release notes of the solution <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/ReleaseNotes.md">here</a></strong></p>
+<p><strong>2. Manage CrowdStrike Connections</strong></p>
+<p>Add, view, and manage CrowdStrike API connections
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
 <p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
@@ -146,14 +153,18 @@
 <p><strong>Configure CrowdStrike API Connection</strong></p>
 <p><em>Connect to CrowdStrike to ingest security data</em></p>
 <p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
-<h4 id="required-api-scopes">Required API Scopes</h4>
-<p>In your CrowdStrike Falcon console, go to <strong>Support and resources &gt; API clients and keys</strong>, select your API client, and enable the following scopes with <strong>Read</strong> access: <strong>Alerts</strong>, <strong>Cases</strong>, <strong>Detections</strong>, <strong>Hosts</strong>, <strong>Spotlight Vulnerabilities</strong>.</p>
-<h4 id="1-retrieve-api-url-and-client-credentials">1. Retrieve API URL and Client Credentials</h4>
-<p>Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.
-Obtain your Client ID and Client Secret from the API credentials section in your CrowdStrike account.</p>
-<p>For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md">Connector Tutorial</a>.</p>
 <ul>
 <li><p><strong>Connection Alias</strong> (required): Production or Sandbox</p>
+</li>
+<li><p><strong>Query interval (in minutes)</strong> (required): Select from available options</p>
+<ul>
+<li>5</li>
+<li>10</li>
+<li>15</li>
+<li>20</li>
+<li>30</li>
+<li>... and 1 more options</li>
+</ul>
 </li>
 <li><p><strong>Base API URL</strong> (required): https://api.us-2.crowdstrike.com</p>
 </li>
@@ -175,7 +186,7 @@ Obtain your Client ID and Client Secret from the API credentials section in your
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>2. Querying Detections (after successful connection)</strong>
+<p><strong>3. Querying Detections (after successful connection)</strong>
 Once logs are ingesting, the <strong>CrowdStrikeDetections</strong> table contains individual alert records grouped by <code>aggregate_id</code>. To view true detection-level behavior, use the following KQL query to aggregate alerts by their detection group:</p>
 <pre><code>CrowdStrikeDetections
 | summarize
@@ -361,29 +372,30 @@ Client Secret: [Your secure client secret]
 <li>Run sample queries to check for data in each table:</li>
 </ol>
 <pre><code class="language-kql">// Check CrowdStrike Alerts
-CrowdStrikeAlerts
+CrowdStrikeAlertsV2_CL
 | take 10
 
 // Check Crowdstrike Cases
-CrowdStrikeCases
+CrowdStrikeCasesV2_CL
 | take 10
 
 // Check CrowdStrike Detections  
-CrowdStrikeDetections
+CrowdStrikeDetectionsV2_CL
 | take 10
 
 // Check CrowdStrike Incidents
-CrowdStrikeIncidents
+CrowdStrikeIncidentsV2_CL
 | take 10
 
 // Check CrowdStrike Hosts
-CrowdStrikeHosts
+CrowdStrikeHostsV2_CL
 | take 10
 
 // Check CrowdStrike Vulnerabilities
-CrowdStrikeVulnerabilities
+CrowdStrikeVulnerabilitiesV2_CL
 | take 10
 </code></pre>
+<p><strong>It is highly recommended to use parser (CrowdStrikeApi) instead of individual tables for queries</strong></p>
 <h3 id="2-monitor-connector-health"><strong>2. Monitor Connector Health</strong></h3>
 <ul>
 <li>Check the connector status regularly in the <strong>Data Connectors</strong> page.</li>

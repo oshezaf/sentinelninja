@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
 
 ---
 

@@ -35,7 +35,7 @@ Reference for AZMSApplicationMetricLogs table in Azure Monitor Logs.
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActivityId | string | Internal ID, used to identify the specified activity. |
 | AuthId | string | Authentication ID configured for Event Hub. |
-| AuthType | string | Type of authentication (Azure Active Directory or SAS Policy). |
+| AuthType | string | Type of authentication (Microsoft Entra ID or SAS Policy). |
 | EntityName | string | Entity name. |
 | EntityType | string | Entity type. |
 | NamespaceName | string | Namespace name. |

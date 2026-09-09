@@ -35,8 +35,8 @@ Reference for AZMSRunTimeAuditLogs table in Azure Monitor Logs.
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ActivityId | string | A randomly generated UUID that ensures uniqueness for the audit activity. |
 | ActivityName | string | Runtime operation name. |
-| AuthKey | string | Azure Active Directory application ID or SAS policy name that's used to authenticate to a resource. |
-| AuthType | string | Type of authentication (Azure Active Directory or SAS Policy). |
+| AuthKey | string | Microsoft Entra ID application ID or SAS policy name that's used to authenticate to a resource. |
+| AuthType | string | Type of authentication (Microsoft Entra ID or SAS Policy). |
 | ClientIp | string | IP address of the client application. |
 | Count | int | Total number of operations performed during the aggregated period of 1 minute. |
 | NetworkType | string | Type of the network access: Public or Private. |

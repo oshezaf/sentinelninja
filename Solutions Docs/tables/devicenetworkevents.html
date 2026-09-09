@@ -715,7 +715,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.html">File Copy and Execution</a></td>
-  <td style="text-align:left"><code>LocalPort == &quot;445&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code><br><code>LocalPort == &quot;445&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.html">File footprint (1)</a></td>
@@ -1003,7 +1003,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.html">Roasting</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType == &quot;LDAP query&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-rundll-suspicious-network-connection-d0831db3-009f-40bb-9f82-c66b1f9674cd-46ab6288.html">RunDLL Suspicious Network Connection</a></td>
@@ -1216,7 +1216,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code><br><code>InitiatingProcessFileName has_any &quot;umworkerprocess.exe&quot;</code><br><code>InitiatingProcessSHA256 == &quot;256&quot;</code></td>
+  <td style="text-align:left"><code>InitiatingProcessFileName has_any &quot;umworkerprocess.exe&quot;</code><br><code>InitiatingProcessSHA256 == &quot;256&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
@@ -1250,8 +1250,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (96 criteria, 113 total references)</h2>
-<p>References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (98 criteria, 114 total references)</h2>
+<p>References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1306,14 +1306,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>InitiatingProcessCommandLine has &quot;rundll32.exe&quot;</code><br><code>InitiatingProcessFileName == &quot;rundll32.exe&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>LocalPort == &quot;445&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1449,7 +1441,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActionType == &quot;LDAP query&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>InitiatingProcessId !in &quot;0,4&quot;</code><br><code>RemotePort == &quot;445&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code><br><code>LocalPort == &quot;445&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1466,6 +1474,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>InitiatingProcessFileName == &quot;cmd.exe&quot;</code><br><code>InitiatingProcessParentFileName == &quot;excel.exe&quot;</code><br><code>RemoteUrl endswith &quot;.kr&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>LocalPort == &quot;445&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2035,10 +2051,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>112</strong></td>
+  <td style="text-align:center"><strong>113</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>113</strong></td>
+  <td style="text-align:center"><strong>114</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2097,6 +2113,30 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SmartScreenUrlWarning</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>LDAP query</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>FileCreated</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>FileModified</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

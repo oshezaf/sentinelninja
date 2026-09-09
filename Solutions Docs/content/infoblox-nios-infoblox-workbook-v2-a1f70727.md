@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage startswith "DHCPACK"` | ✓ | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -19,9 +19,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **121** |
-| Active | 68 |
-| Deprecated 🚫 | 30 |
-| Unpublished ⚠️ | 40 |
+| Active | 61 |
+| Deprecated 🚫 | 33 |
+| Unpublished ⚠️ | 44 |
 
 ### By Collection Method
 
@@ -44,25 +44,25 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [API Protection](../connectors/42crunchapiprotection.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Armorblox](../connectors/armorblox.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
-| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
+| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
 | [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Authomize | 1 | [Authomize](../solutions/authomize.md) |
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
-| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
+| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | [Azure Function](../methods/azure-function.md) | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [blacklens.io](../connectors/blacklens-io.md) | [REST Pull API](../methods/rest-pull-api.md) | snapSEC GmbH | 1 | [Blacklens](../solutions/blacklens.md) |
 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | [Azure Function](../methods/azure-function.md) | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
-| [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | [Azure Function](../methods/azure-function.md) | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
+| [Cisco Duo Security](../connectors/ciscoduosecurity.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | [Cisco ETD](../connectors/ciscoetd.md) 🔶 | [Azure Function](../methods/azure-function.md) | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | [Cognni](../connectors/cognnisentineldataconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cognni | 1 | [Cognni](../solutions/cognni.md) |
 | [Cohesity](../connectors/cohesitydataconnector.md) | [Azure Function](../methods/azure-function.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cribl | 4 | [Cribl](../solutions/cribl.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
+| [Cybereinforce Threat Enforcement (CTE)](../connectors/cybereinforce-cte.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | Cybeurope | 1 | [Cybereinforce](../solutions/cybereinforce.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
@@ -105,9 +105,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶 | [Azure Function](../methods/azure-function.md) | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | [REST Pull API](../methods/rest-pull-api.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
-| [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [SenservaPro (Preview)](../connectors/senservapro.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
 | [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |
 | [SINEC Security Guard](../connectors/ssg.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | Siemens AG | 1 | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
@@ -143,7 +140,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
-| 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | [Azure Function](../methods/azure-function.md) | Google | 22 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | [Azure Function](../methods/azure-function.md) | Google | 23 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | 🚫 [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | [Azure Function](../methods/azure-function.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | 🚫 [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | [REST Pull API](../methods/rest-pull-api.md) | IONIX | 1 | [IONIX](../solutions/ionix.md) |
 | 🚫 [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | [Azure Function](../methods/azure-function.md) | Lookout | 1 | [Lookout](../solutions/lookout.md) |
@@ -155,6 +152,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | [Azure Function](../methods/azure-function.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
 | 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | [Azure Function](../methods/azure-function.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) | [Azure Function](../methods/azure-function.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | [Azure Function](../methods/azure-function.md) | SentinelOne | 7 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | [Azure Function](../methods/azure-function.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | [Azure Function](../methods/azure-function.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |

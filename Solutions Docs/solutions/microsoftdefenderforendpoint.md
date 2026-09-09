@@ -19,7 +19,7 @@
 | **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-08-25 |
 | **Solution Folder** | [MicrosoftDefenderForEndpoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftDefenderForEndpoint) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderendpoint) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (98%) |
 

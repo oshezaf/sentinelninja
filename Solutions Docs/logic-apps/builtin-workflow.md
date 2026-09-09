@@ -8,7 +8,7 @@
 |:----------|:------|
 | **Type** | Built-in |
 | **Playbooks using** | 63 |
-| **Solutions** | 12 |
+| **Solutions** | 13 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
 
 ## Playbooks Using This Connector
@@ -34,6 +34,8 @@
 | [Enrichment IP - F5 BIG-IP](../content/standalone-content-enrichment-ip-f5-big-ip-6acfa6fd.md) | 📄 Standalone | 0 | 1 |
 | [Four Playbook templates - F5BigIP](../content/standalone-content-four-playbook-templates-f5bigip-225fa1ac.md) | 📄 Standalone | 0 | 5 |
 | [Get-AlertEntitiesEnrichment](../content/github-only-get-alertentitiesenrichment-6987da42.md) | 🔗 GitHub Only | 0 | 1 |
+| [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 2 |
+| [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 2 |
 | [Infoblox-TIDE-Lookup-Via-Incident](../content/infoblox-infoblox-tide-lookup-via-incident-90b154ca.md) | [Infoblox](../solutions/infoblox.md) | 0 | 4 |
 | [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint-crowdstrike-8e772c42.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | 0 | 1 |
 | [MTI Threat Actor Lookup](../content/standalone-content-mti-threat-actor-lookup-b10467aa.md) | 📄 Standalone | 0 | 1 |
@@ -50,23 +52,21 @@
 | [Rubrik Update Anomaly Status Via Incident](../content/rubriksecuritycloud-rubrik-update-anomaly-status-via-incident-31d4f8cc.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 1 |
 | [Rubrik User Intelligence Analysis](../content/rubriksecuritycloud-rubrik-user-intelligence-analysis-4de09304.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 2 |
 | [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 2 |
+| [Vectra Add Note To Detections](../content/vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
+| [Vectra Add Tag To Detections](../content/vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Add Tag To Entity Selected Detections](../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Assign Dynamic User To Entity](../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 5 |
 | [Vectra Assign Static User To Entity](../content/vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 4 |
 | [Vectra Close Detections](../content/vectra-xdr-vectra-close-detections-93f91aea.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
-| [Vectra Decorate Incident Based On Tag](../content/vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Decorate Incident Based On Tags And Notify](../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
+| [Vectra Close Detections On Incident Close](../content/vectra-xdr-vectra-close-detections-on-incident-close-02648c3f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Dynamic Assign Member To Group](../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
-| [Vectra Dynamic Resolve Assignment](../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 5 |
-| [Vectra Mark Detections As Fixed](../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Open Closed Detections](../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
-| [Vectra Operate On Entity Source IP](../content/vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
+| [Vectra Set Detection Status](../content/vectra-xdr-vectra-set-detection-status-dd76d3f7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 4 |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Zscaler OAuth2 Blacklist URL](../content/zscaler-internet-access-zscaler-oauth2-blacklist-url-27279293.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
 | [Zscaler OAuth2 Block IP](../content/zscaler-internet-access-zscaler-oauth2-block-ip-e0e0e694.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |

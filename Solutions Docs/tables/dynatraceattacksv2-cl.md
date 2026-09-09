@@ -59,7 +59,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Dynatrace Attacks V1](../connectors/dynatraceattacks.md) |  |
+| [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md) |  |
 | [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md) |  |
 
 ---

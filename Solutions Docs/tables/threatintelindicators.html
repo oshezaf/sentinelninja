@@ -218,7 +218,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators">ThreatIntelIndicators Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (22)</h2>
+<h2 id="solutions">Solutions (26)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></li>
@@ -228,15 +228,19 @@
 <li><a href="../solutions/dns-essentials.html">DNS Essentials</a></li>
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
 <li><a href="../solutions/datalake2sentinel.html">Datalake2Sentinel</a></li>
+<li><a href="../solutions/datazag.html">Datazag</a></li>
+<li><a href="../solutions/feedly.html">Feedly</a></li>
 <li><a href="../solutions/global-secure-access.html">Global Secure Access</a></li>
 <li><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></li>
 <li><a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></li>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
+<li><a href="../solutions/honeylabs.html">HoneyLabs</a></li>
 <li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/infoblox.html">Infoblox</a></li>
 <li><a href="../solutions/joesandbox.html">JoeSandbox</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/misp2sentinel.html">MISP2Sentinel</a></li>
+<li><a href="../solutions/prodaft-usta-ioc-threat-intelligence.html">PRODAFT USTA - IoC Threat Intelligence</a></li>
 <li><a href="../solutions/recorded-future.html">Recorded Future</a></li>
 <li><a href="../solutions/reversinglabs.html">ReversingLabs</a></li>
 <li><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></li>
@@ -244,7 +248,7 @@
 <li><a href="../solutions/threatconnect.html">ThreatConnect</a></li>
 <li><a href="../solutions/vmray.html">VMRay</a></li>
 </ul>
-<h2 id="connectors">Connectors (14)</h2>
+<h2 id="connectors">Connectors (16)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -265,6 +269,10 @@
 <tr>
   <td style="text-align:left"><a href="../connectors/datalake2sentinelconnector.html">Datalake2Sentinel</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/feedlyccpdefinition.html">Feedly IoC</a></td>
+  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value,url:value&quot;</code><br><code>SourceSystem == &quot;Feedly&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
@@ -295,6 +303,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../connectors/threatintelligence.html">Threat Intelligence Platforms</a></td>
   <td style="text-align:left"></td>
 </tr>
@@ -313,8 +325,23 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (109)</h2>
-<h3 id="analytic-rules">Analytic Rules (71)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (127)</h2>
+<h3 id="analytic-rules">Analytic Rules (79)</h3>
+<p><strong>In solution <a href="../solutions/datazag.html">Datazag</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/datazag-datazag-impersonation-domain-resolved-in-dns-8f3c1a4e-6b52-4d19-9c07-2a5e8d0f7b41-8e84ed00.html">Datazag - impersonation domain resolved in DNS</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/global-secure-access.html">Global Secure Access</a>:</strong></p>
 <table>
 <thead>
@@ -365,6 +392,33 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/honeylabs.html">HoneyLabs</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-ti-map-ip-entity-to-commonsecuritylog-c7061f05-d0ed-40e1-862e-bc52e454e3a1-fbc903ca.html">HoneyLabs TI Map IP Entity to CommonSecurityLog</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-ti-map-ip-entity-to-network-session-asim-5d3a1c77-2b40-4e6c-9f2d-71c0a8e4b912-19be299e.html">HoneyLabs TI Map IP Entity to Network Session (ASIM)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.html">HoneyLabs TI Map IP Entity to SigninLogs</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-ti-map-url-entity-to-commonsecuritylog-afe2a5ff-f4fe-4dee-8b6b-fd28d29d6738-cbc43643.html">HoneyLabs TI Map URL Entity to CommonSecurityLog</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
 <table>
 <thead>
@@ -404,6 +458,29 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-ti-domain-in-dnsevents-29bf5bcd-6795-4c79-a91f-aaef5a618bab-3483c267.html">Lumen TI domain in DnsEvents</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/prodaft-usta-ioc-threat-intelligence.html">PRODAFT USTA - IoC Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-domain-to-dnsevents-c6f85aff-4ef0-4fde-b90e-e0ba1a9c3df6-268dc5e6.html">PRODAFT USTA - TI map Domain to DnsEvents</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-file-hash-to-commonsecuritylog-9c2cef4e-c3a3-4be9-8923-a2f820d4face-8e66187e.html">PRODAFT USTA - TI map File Hash to CommonSecurityLog</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-url-to-syslog-99ae4d06-d352-4926-a1d7-9c28e25b1313-5b2b22cc.html">PRODAFT USTA - TI map URL to Syslog</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -654,7 +731,22 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (17)</h3>
+<h3 id="hunting-queries">Hunting Queries (22)</h3>
+<p><strong>In solution <a href="../solutions/datazag.html">Datazag</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/datazag-datazag-retro-hunt-historical-dns-against-impersonation-indicators-2d7b90c5-41ae-4f83-a6d2-9b1c5e3407fa-3796d418.html">Datazag - retro-hunt historical DNS against impersonation indicators</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a>:</strong></p>
 <table>
 <thead>
@@ -679,6 +771,33 @@
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.html">Google Threat Intelligence - Threat Hunting Url</a></td>
   <td style="text-align:left"><code>ObservableKey == &quot;url:value&quot;</code><br><code>SourceSystem == &quot;Google Threat Intelligence&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/honeylabs.html">HoneyLabs</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-contact-from-a-source-probing-a-specific-cve-6a2f9b58-c31d-4e07-9d84-3f5b1c7e2a90-2596cdb1.html">Contact from a source probing a specific CVE</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-high-confidence-indicator-seen-for-the-first-time-9f1c2a44-7d18-4f5b-9c33-2a6e5b8d1c07-5a2fb41f.html">HoneyLabs high-confidence indicator seen for the first time</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-one-honeylabs-indicator-contacting-several-internal-hosts-b7e4d013-9a26-4c8f-bb51-6d3c0f9e2a18-917fcada.html">One HoneyLabs indicator contacting several internal hosts</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-outbound-contact-with-a-honeylabs-malware-loader-or-c2-url-3c8b6e21-45af-4d90-8b17-9e2f7c1a4d55-dc1020f3.html">Outbound contact with a HoneyLabs malware loader or C2 URL</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -789,7 +908,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (21)</h3>
+<h3 id="workbooks">Workbooks (23)</h3>
 <p><strong>In solution <a href="../solutions/ciscomeraki.html">CiscoMeraki</a>:</strong></p>
 <table>
 <thead>
@@ -891,6 +1010,19 @@
 </tr>
 </tbody>
 </table>
+<p><strong>In solution <a href="../solutions/honeylabs.html">HoneyLabs</a>:</strong> <code>ObservableKey == &quot;ipv4-addr:value&quot;</code><br><code>SourceSystem startswith &quot;HoneyLabs&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabsthreatintelligence-d37080fe.html">HoneyLabsThreatIntelligence</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong> <code>ObservableKey == &quot;ipv4-addr:value&quot;</code></p>
 <table>
 <thead>
@@ -916,6 +1048,19 @@
 <tr>
   <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
   <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/prodaft-usta-ioc-threat-intelligence.html">PRODAFT USTA - IoC Threat Intelligence</a>:</strong> <code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/prodaft-usta-ioc-threat-intelligence-prodaftustaiocoverview-c05c3e08.html">PRODAFTUstaIoCOverview</a></td>
 </tr>
 </tbody>
 </table>
@@ -1033,8 +1178,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (3)</h2>
-<h3 id="other-parsers">Other Parsers (3)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (4)</h2>
+<h3 id="other-parsers">Other Parsers (4)</h3>
 <table>
 <thead>
 <tr>
@@ -1044,6 +1189,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/cyble-threat-intelligence-parser.html">Cyble Threat Intelligence Parser</a></td>
+  <td style="text-align:left"><em>(Legacy)</em></td>
+  <td style="text-align:left"></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../parsers/cyjaxcorrelate.html">CyjaxCorrelate</a></td>
   <td style="text-align:left"><a href="../solutions/cyjax.html">Cyjax</a></td>
@@ -1066,8 +1216,8 @@
 <ul>
 <li><code>microsoft.securityinsights/threatintelligence</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 28 total references)</h2>
-<p>References by type: 6 connectors, 22 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (17 criteria, 32 total references)</h2>
+<p>References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1121,6 +1271,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ObservableKey == &quot;domain-name:value&quot;</code><br><code>SourceSystem == &quot;Google Threat Intelligence&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1153,7 +1311,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;CrowdStrike Falcon Adversary Intelligence&quot;</code></td>
+  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value,url:value&quot;</code><br><code>SourceSystem == &quot;Feedly&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1177,6 +1335,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SourceSystem == &quot;CrowdStrike Falcon Adversary Intelligence&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ObservableKey contains &quot;file:hashes&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1193,12 +1359,20 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ObservableKey == &quot;ipv4-addr:value&quot;</code><br><code>SourceSystem startswith &quot;HoneyLabs&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
-  <td style="text-align:center"><strong>22</strong></td>
+  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>24</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>28</strong></td>
+  <td style="text-align:center"><strong>32</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1217,27 +1391,27 @@
 <tbody>
 <tr>
   <td style="text-align:left"><code>ipv4-addr:value</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">8</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>9</strong></td>
+  <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>domain-name:value</code></td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
   <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>url:value</code></td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains file:hashes</code></td>
@@ -1303,7 +1477,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CrowdStrike Falcon Adversary Intelligence</code></td>
+  <td style="text-align:left"><code>startswith PRODAFT USTA</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Feedly</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1322,6 +1504,22 @@
   <td style="text-align:left"><code>MISP</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CrowdStrike Falcon Adversary Intelligence</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith HoneyLabs</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>

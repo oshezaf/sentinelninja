@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ 🔍 Recorded Future Identity - Credential Exposure Importer &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="recorded-future-identity---credential-exposure-importer">⚠️ 🔍 Recorded Future Identity - Credential Exposure Importer</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>RecordedFutureIdentityV3</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Recorded Future</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/recorded-future-identity.html">Recorded Future Identity</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Data%20Connectors/azuredeploy-v3.json">azuredeploy-v3.json</a></td>
+</tr>
+</tbody>
+</table>
+<p>Imports Recorded Future Identity credential exposure data into Microsoft Sentinel. Writes malware log exposures to <code>RFI_MalwareLogs_V2_CL</code>, credential dump exposures to <code>RFI_CredentialDumps_V2_CL</code>, and user lookup results to <code>RFI_UsersLookupResults_V2_CL</code>. For full installation details, see the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/readme.md">readme</a>.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/rfi-credentialdumps-v2-cl.html"><code>RFI_CredentialDumps_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/rfi-malwarelogs-v2-cl.html"><code>RFI_MalwareLogs_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/rfi-userslookupresults-v2-cl.html"><code>RFI_UsersLookupResults_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Azure Subscription</strong>: Monitoring Contributor and Log Analytics Contributor permissions required to deploy the Data Connectors infrastructure. Owner or Role Based Access Control Administrator required to deploy playbooks with automatic role assignment.</li>
+<li><strong>Recorded Future API Token</strong>: A Recorded Future Identity API token is required to authorize the RFI Custom Connector used by the playbooks.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Step 1 — Deploy Data Connectors infrastructure</strong></p>
+<p>Deploys the shared Data Collection Endpoint (DCE), Data Collection Rules (DCRs), Log Analytics tables (<code>RFI_MalwareLogs_V2_CL</code>, <code>RFI_CredentialDumps_V2_CL</code>, <code>RFI_UsersLookupResults_V2_CL</code>), and this connector definition tile. Deploy this into the same resource group as your Log Analytics Workspace.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Recorded%2520Future%2520Identity/Data%2520Connectors/azuredeploy-v3.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><strong>2. Step 2 — Deploy RFI-CustomConnector</strong></p>
+<p>The custom connector handles authentication towards the Recorded Future API. Deploy it once — it is shared by the playbooks.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Recorded%2520Future%2520Identity/Playbooks/v3.0/RFI-CustomConnector-0-1-0/azuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><strong>3. Step 3 — Deploy playbooks</strong></p>
+<p>Deploy one or more of the search/lookup playbooks depending on your use case. See the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/readme.md">readme</a> for full deployment instructions, parameters, and post-deployment configuration.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

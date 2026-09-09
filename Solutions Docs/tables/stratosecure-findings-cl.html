@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StratoSecureFindingsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stratosecure_findings_cl">StratoSecure_Findings_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (20 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Data%20Connectors/StratoSecure_PUSH_CCP/StratoSecure_DCR.json">Data Collection Rule definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ApplicationId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">AppSecScore</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">CweId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">FilePath</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">FindingFingerprint</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">FindingId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">FixStatus</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">LineNumber</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">OwaspCategory</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Repository</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScanId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">SeverityInt</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">SlaBreached</td>
+  <td style="text-align:left">boolean</td>
+</tr>
+<tr>
+  <td style="text-align:left">SlaDeadline</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">StraTenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">Title</td>
+  <td style="text-align:left">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/stratosecure.html">StratoSecure</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (5)</h2>
+<h3 id="analytic-rules">Analytic Rules (3)</h3>
+<p><strong>In solution <a href="../solutions/stratosecure.html">StratoSecure</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-bola-finding-with-api-traffic-anomaly-3c5be96e-2eeb-439a-9856-1c23aa72cfdd-0c6799d9.html">BOLA Finding with API Traffic Anomaly</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-sast-auth-finding-correlated-with-brute-force-4ae9f294-410d-4c11-9072-0d8fcf5162d8-94b377e7.html">SAST Auth Finding Correlated with Brute Force</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-secret-exposure-with-anomalous-spn-sign-in-a91e677a-46b5-428e-8a7d-29a2bb33bb6f-212cab8f.html">Secret Exposure with Anomalous SPN Sign-In</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (2)</h3>
+<p><strong>In solution <a href="../solutions/stratosecure.html">StratoSecure</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-executive-6e0b8ef2.html">StratoSecure_Executive</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-soc-464ce49d.html">StratoSecure_SOC</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

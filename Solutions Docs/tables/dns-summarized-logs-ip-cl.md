@@ -20,6 +20,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (7 columns)
 
@@ -77,6 +78,14 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DNSEssentialsCustomParser](../parsers/dnsessentialscustomparser.md) | [DNS Essentials](../solutions/dns-essentials.md) |  |
 
 ---
 

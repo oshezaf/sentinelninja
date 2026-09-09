@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.commvault.com/support](https://www.commvault.com/support) |
 | **Categories** | Security - Automation (SOAR) |
-| **Version** | 3.0.6 |
+| **Version** | 3.0.7 |
 | **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |
-| **Last Updated** | 2026-08-05 |
+| **Last Updated** | 2026-09-03 |
 | **Solution Folder** | [Commvault Security IQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/commvault.microsoft-sentinel-solution-commvaultsecurityiq) · Popularity: 🔵 Medium (71%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/commvault.microsoft-sentinel-solution-commvaultsecurityiq) · Popularity: 🔵 Medium (72%) |
 
 This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
 
@@ -126,6 +126,7 @@ The included response playbooks have separate prerequisites: they use an Azure K
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------|
+| 3.0.7 | 27-08-2026 | Fixed the CCF poller's Unix timestamp formatting for the `fromTime` and `toTime` query parameters. |
 | 3.0.6 | 04-08-2026 | Updated the CCF connector and solution documentation. |
 | 3.0.5 | 27-07-2026 | Added **Commvault Security IQ (via Codeless Connector Framework)** data connector, introduced **CommvaultAlertsCCF_CL** custom table and Data Collection Rule (DCR), updated analytics rule to detect client anomalies using **AnomalyType**, enhanced connector UI with sample queries and configuration guidance, and updated solution documentation for CCF-based deployment. |
 | 3.0.4 | 05-03-2025 | Migrate to new data ingestion model via DCR & DCE setup |

@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
@@ -54,7 +50,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (58 columns)</h2>
+<h2 id="schema">Schema (64 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_atp_threat_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -69,187 +65,203 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">batch_id_g</td>
+  <td style="text-align:left">batch_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">class_s</td>
+  <td style="text-align:left">class</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">confidence_d</td>
+  <td style="text-align:left">confidence</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
-  <td style="text-align:left">confidence_score_d</td>
+  <td style="text-align:left">confidence_score</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
-  <td style="text-align:left">confidence_score_rating_s</td>
+  <td style="text-align:left">confidence_score_rating</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">confidence_score_vector_s</td>
+  <td style="text-align:left">confidence_score_vector</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">detected_t</td>
+  <td style="text-align:left">detected</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">dga_s</td>
+  <td style="text-align:left">dga</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">domain_s</td>
+  <td style="text-align:left">domain</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">email_s</td>
+  <td style="text-align:left">email</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">expiration_t</td>
+  <td style="text-align:left">expiration</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_attack_chain_s</td>
+  <td style="text-align:left">extended</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">extended_ais_consent</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_cyberint_guid_g</td>
+  <td style="text-align:left">extended_attack_chain</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_email_id_s</td>
+  <td style="text-align:left">extended_comments</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_extended_s</td>
+  <td style="text-align:left">extended_confidence_score</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_from_email_s</td>
+  <td style="text-align:left">extended_cyberint_guid</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_no_whitelist_s</td>
+  <td style="text-align:left">extended_email_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_notes_s</td>
+  <td style="text-align:left">extended_extended</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_processor_s</td>
+  <td style="text-align:left">extended_from_email</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_protocol_s</td>
+  <td style="text-align:left">extended_no_whitelist</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_provider_s</td>
+  <td style="text-align:left">extended_notes</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_reason_s</td>
+  <td style="text-align:left">extended_processor</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_references_s</td>
+  <td style="text-align:left">extended_protocol</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_registration_date_s</td>
+  <td style="text-align:left">extended_provider</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_subject_line_s</td>
+  <td style="text-align:left">extended_reason</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_submitter_s</td>
+  <td style="text-align:left">extended_references</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">extended_url_hash_g</td>
+  <td style="text-align:left">extended_risk_score</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">full_origin_s</td>
+  <td style="text-align:left">extended_sample_sha256</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">full_profile_s</td>
+  <td style="text-align:left">extended_subject_line</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">host_s</td>
+  <td style="text-align:left">extended_submitter</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">id_g</td>
+  <td style="text-align:left">extended_surbl_list</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">imported_t</td>
+  <td style="text-align:left">extended_threat_score</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">full_profile</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">hash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">hash_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">host</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">id_value</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">imported</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">ip_s</td>
+  <td style="text-align:left">ip</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">origin</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">MG</td>
+  <td style="text-align:left">profile</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">profile_s</td>
+  <td style="text-align:left">property</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">property_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">received_t</td>
+  <td style="text-align:left">received</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">risk_score_d</td>
+  <td style="text-align:left">risk_score</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
-  <td style="text-align:left">risk_score_rating_s</td>
+  <td style="text-align:left">risk_score_rating</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">risk_score_vector_s</td>
+  <td style="text-align:left">risk_score_vector</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">RowData</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">target</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">target_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">task_id_g</td>
+  <td style="text-align:left">task_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -257,19 +269,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">threat_level_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">threat_score_d</td>
-  <td style="text-align:left">real</td>
-</tr>
-<tr>
-  <td style="text-align:left">threat_score_rating_s</td>
+  <td style="text-align:left">threat_label</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">threat_score_vector_s</td>
+  <td style="text-align:left">threat_level</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_score_rating</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threat_score_vector</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -277,7 +293,11 @@
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">tld_s</td>
+  <td style="text-align:left">tld</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">tlp</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -285,15 +305,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">type_s</td>
+  <td style="text-align:left">type_value</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">up_s</td>
+  <td style="text-align:left">up</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">url_s</td>
+  <td style="text-align:left">url</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>

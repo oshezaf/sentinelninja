@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTIVulnerabilitiesCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="gti_vulnerabilities_cl">GTI_Vulnerabilities_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
+</ul>
+<h2 id="schema">Schema (166 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GTI_Vulnerabilities_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_attack_tactics</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_attack_techniques</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_behash</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_compressed_parents</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_contacted_domains</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_contacted_ips</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_contacted_urls</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_crowdsourced_ids_results</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_crowdsourced_yara_results</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_dropped_files_path</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_dropped_files_sha256</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_embedded_domains</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_embedded_ips</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_embedded_urls</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_execution_parents</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_file_types</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_filecondis_dhash</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_itw_urls</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_memory_pattern_urls</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_mutexes_created</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_parent_contacted_domains</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_popular_threat_category</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_popular_threat_name</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_registry_keys_opened</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_registry_keys_set</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_sandbox_verdicts</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_suggested_threat_label</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_tlshhash</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_aggregations_files_vhash</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_alt_names</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_alt_names_details</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_analysis</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_autogenerated_tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_available_mitigation</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_capabilities</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cisa_known_exploited</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cisa_known_exploited_added_date</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cisa_known_exploited_due_date</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cisa_known_exploited_ransomware_use</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_collection_links</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_collection_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_attack_techniques</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_domains</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_files</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_iocs</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_ip_addresses</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_subscribers</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_counters_urls</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cpes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_creation_date</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cve_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv2_0</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv2_0_base_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv2_0_temporal_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv2_0_vector</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_base_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_temporal_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_translated</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_translated_base_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_translated_temporal_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_translated_vector</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv3_x_vector</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_automatable</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_provider_urgency</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_recovery</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_response_effort</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_safety</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_supplemental_value_density</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_threat</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_threat_exploit_maturity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cvss_cvssv4_x_vector</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cwe</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cwe_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_cwe_title</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_date_of_disclosure</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_days_to_patch</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_days_to_report</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_description</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_detection_names</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_domains_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_epss</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_epss_percentile</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_epss_score</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_executive_summary</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploit_availability</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_consequence</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_exploit_release_date</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_first_exploitation</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_state</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_tech_details_release_date</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_exploitation_vectors</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_field_sources</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_files_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_first_seen_details</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_ip_addresses_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_last_modification_date</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_last_seen_details</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_malware_roles</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_mati_genids_dict</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_mati_genids_dict_cve_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_mati_genids_dict_mve_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_mati_genids_dict_report_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_merged_actors</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_motivations</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_mve_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_name</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_operating_systems</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_origin</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_predicted_risk_rating</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_priority</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_private</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_recent_activity_relative_change</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_recent_activity_summary</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_references_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_risk_factors</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_risk_rating</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_source_regions_hierarchy</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_sources</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_status</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_subscribers_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_files_detections</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_files_detections_avg</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_files_detections_max</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_files_detections_min</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_first_submission_date</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_first_submission_date_avg</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_first_submission_date_max</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_first_submission_date_min</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_last_submission_date</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_last_submission_date_avg</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_last_submission_date_max</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_summary_stats_last_submission_date_min</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_tags</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_tags_details</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_targeted_industries</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_targeted_industries_tree</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_targeted_regions</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_targeted_regions_hierarchy</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_top_icon_md5</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_urls_count</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_vendor_fix_references</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_version_history</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attr_workarounds</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">attributes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">context_attr_role</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">context_attr_shared_with_me</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
+  <td style="text-align:left">context_attributes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">links</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">links_self</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">VulnType</td>
+  <td style="text-align:left">string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/gtivulnerabilitiesconnector.html">Google Threat Intelligence Vulnerabilities (CCF)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (5)</h2>
+<h3 id="analytic-rules">Analytic Rules (4)</h3>
+<p><strong>In solution <a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-actively-exploited-vulnerability-detected-4d284d59-1ce5-4ea7-8e97-52256b95aa10-94bf90c8.html">GTI - Actively Exploited Vulnerability Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-cisa-known-exploited-vulnerability-detected-650429cd-afc6-41a5-90e7-6e4a85b2335d-fc7f9c79.html">GTI - CISA Known Exploited Vulnerability Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-critical-cvss-score-vulnerability-detected-3794141b-9bd3-41ae-8303-79f97692998b-97483940.html">GTI - Critical CVSS Score Vulnerability Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-gti-zero-day-vulnerability-detected-ebd03de8-0cee-4923-b510-45337e0aed84-9ad9b257.html">GTI - Zero-Day Vulnerability Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/google-threat-intelligence-googlethreatintelligence-81b272e5.html">GoogleThreatIntelligence</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/gtivulnerabilities.html">GTIVulnerabilities</a></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -13,8 +13,8 @@
 | Title | Corelight Connection Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.1 |
-| Last Updated | 2024-08-09 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_conn.yaml) |
@@ -25,9 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_conn_CL`](../tables/corelight-v3-conn-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_conn_long_CL`](../tables/corelight-v3-conn-long-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_conn_red_CL`](../tables/corelight-v3-conn-red-cl.md) | ? | ✓ | ? |
 
 ---
 

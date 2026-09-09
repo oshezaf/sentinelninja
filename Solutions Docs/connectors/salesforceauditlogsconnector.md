@@ -28,8 +28,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | ✓ | ✗ | ✓ |
-| [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | ✓ | ✗ | ✓ |
+| [`SalesforceAuditTrailV2_CL`](../tables/salesforceaudittrailv2-cl.md) | ? | ✓ | ? |
+| [`SalesforceLoginHistoryV2_CL`](../tables/salesforceloginhistoryv2-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 
@@ -47,6 +49,11 @@ This connector ingests data into the following tables:
 
 Follow [Create a Connected App in Salesforce for OAuth](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) and [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&type=5) to create a Connected App with access to the Salesforce Service Cloud API. Through those instructions, you should get the Consumer Key and Consumer Secret.
  For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
+**Solution version 3.6.0 and later uses the Salesforce Audit logs V2 tables. Please use updated parser for any existing queries. Refer to the release notes of the solution [here](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/ReleaseNotes.md)**
+
+**2. Manage Salesforce Connections**
+
+Add, view, and delete Salesforce connections
 **Connector Management Interface**
 
 This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
@@ -72,6 +79,13 @@ When you click the "Add Connection" button in the portal, a configuration form w
 *Base Configuration*
 
 - **Connection Alias** (required): Production or Sandbox
+- **Query interval (in minutes)** (required): Select from available options
+  - 5
+  - 10
+  - 15
+  - 20
+  - 30
+  - ... and 1 more options
 - **Salesforce Base URL** (required): Example: https://your-domain.my.salesforce.com
 - **Data Types** (required): Select from available options
   - Setup Audit Trail - Administrative changes and configurations

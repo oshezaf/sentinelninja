@@ -13,8 +13,8 @@
 | Title | corelight_tds_rpc parser for Corelight |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-09-25 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_tds_rpc.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_tds_rpc_CL`](../tables/corelight-v2-tds-rpc-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_tds_rpc_CL`](../tables/corelight-v3-tds-rpc-cl.md) | ? | ✓ | ? |
 
 ---
 

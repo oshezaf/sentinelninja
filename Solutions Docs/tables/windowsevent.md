@@ -94,7 +94,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (55)
+## Content Items Using This Table (56)
 
 ### Analytic Rules (39)
 
@@ -223,7 +223,7 @@ This table is ingested by the following connectors:
 | [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) | `EventID == "4688"` |
 | [Possible command injection attempts against Azure Integration Runtimes](../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.md) |  |
 
-### Workbooks (2)
+### Workbooks (3)
 
 **GitHub Only:**
 
@@ -231,6 +231,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `EventID in "4738,4769"` |
 
 ## Parsers Using This Table (13)
 

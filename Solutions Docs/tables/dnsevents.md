@@ -66,7 +66,7 @@ Official Microsoft Learn documentation for field/column information:
 - [DnsEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsevents)
 - [DnsEvents Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/dns-ama-fields)
 
-## Solutions (15)
+## Solutions (16)
 
 This table is used by the following solutions:
 
@@ -77,6 +77,7 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -96,9 +97,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (42)
+## Content Items Using This Table (44)
 
-### Analytic Rules (16)
+### Analytic Rules (17)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -117,6 +118,12 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen TI domain in DnsEvents](../content/lumen-defender-threat-feed-lumen-ti-domain-in-dnsevents-29bf5bcd-6795-4c79-a91f-aaef5a618bab-3483c267.md) |  |
+
+**In solution [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [PRODAFT USTA - TI map Domain to DnsEvents](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-ti-map-domain-to-dnsevents-c6f85aff-4ef0-4fde-b90e-e0ba1a9c3df6-268dc5e6.md) |  |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -188,7 +195,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [RareDNSLookupWithDataTransfer](../content/standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) |  |
 
-### Workbooks (16)
+### Workbooks (17)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -240,6 +247,7 @@ This table is ingested by the following connectors:
 | [Dns](../content/github-only-dns-ff664046.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `ResultCode == "0"` |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `IPAddresses != "127.0.0.1"` |

@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-07-23 |
-| **Last Updated** | 2026-07-30 |
+| **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Citrix DaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20DaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-citrixdaas) · Popularity: 🔵 Medium (73%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-citrixdaas) · Popularity: 🟢 High (84%) |
 
 The Citrix DaaS solution for Microsoft Sentinel provides the capability to ingest configuration audit logs and session activity from [Citrix DaaS](https://www.citrix.com/products/citrix-daas/) (Citrix Virtual Apps and Desktops service) into Microsoft Sentinel using the [Citrix CVAD Manage REST APIs](https://developer.cloud.com/citrixworkspace/citrix-daas/citrix-virtual-apps-and-desktops-service-apis/docs/overview). It provides audit trails for security investigations, compliance monitoring, and operational troubleshooting. Multiple Citrix tenants can be connected from a single data connector, with each record tagged with its Citrix Customer ID for multi-tenant differentiation.
 
@@ -50,6 +50,8 @@ This solution uses **2 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                    |
 |-------------|--------------------------------|-------------------------------------------------------|
+| 3.1.0       | 28-08-2026                     | Promoted the Citrix DaaS Audit & Sessions CCF **Data Connector** to general availability. |
+| 3.0.1       | 14-08-2026                     | Updated authentication configuration for the Citrix DaaS Audit & Sessions CCF **Data Connector**. |
 | 3.0.0       | 23-07-2026                     | Initial release of the **Citrix DaaS** solution with the Citrix DaaS Audit & Sessions CCF **Data Connector**. |
 
 ---

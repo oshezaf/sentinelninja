@@ -6,20 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
-- [Parsers](#parsers-using-this-table)
-
 ## Schema (46 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_conn_long_CL.json)
@@ -79,60 +65,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Corelight](../solutions/corelight.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
-
 ---
-
-## Content Items Using This Table (7)
-
-### Analytic Rules (2)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight - Forced External Outbound SMB](../content/corelight-corelight-forced-external-outbound-smb-73f23aa2-5cc4-4507-940b-75c9092e9e01-7d9f3286.md) |  |
-| [Corelight - Network Service Scanning Multiple IP Addresses](../content/corelight-corelight-network-service-scanning-multiple-ip-addresses-599570d4-06f8-4939-8e29-95cd003f1abd-442ae0cd.md) |  |
-
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight - External Facing Services](../content/corelight-corelight-external-facing-services-3e42a796-9a4c-4ebf-a0e0-5282947986b5-c93e035f.md) |  |
-
-### Workbooks (4)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight](../content/corelight-corelight-90dad195.md) |  |
-| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
-| [Corelight_Data_Insights](../content/corelight-corelight-data-insights-e22362fc.md) |  |
-| [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
-
-## Parsers Using This Table (2)
-
-### Other Parsers (2)
-
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [corelight_conn](../parsers/corelight-conn.md) | [Corelight](../solutions/corelight.md) |  |
-| [corelight_conn_long](../parsers/corelight-conn-long.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

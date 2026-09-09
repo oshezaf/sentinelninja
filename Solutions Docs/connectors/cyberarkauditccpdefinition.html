@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberArk Audit &mdash; Solutions Analyzer</title>
+<title>Idira Audit &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="cyberark-audit">CyberArk Audit</h1>
+<h1 id="idira-audit">Idira Audit</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -65,13 +65,9 @@
   <td style="text-align:left"><strong>Ingestion API</strong></td>
   <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyberark-audit">View on Learn</a></td>
-</tr>
 </tbody>
 </table>
-<p>The <a href="https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm">CyberArk Audit</a> data connector enables Microsoft Sentinel to ingest security event logs and other events from the CyberArk Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.</p>
+<p>The <a href="https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm">Idira Audit</a> data connector enables Microsoft Sentinel to ingest security event logs and other events from the Idira Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -102,17 +98,17 @@
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
-<li><strong>CyberArk Audit Service Platform</strong>: Access to perform required configurations in CyberArk Audit platform</li>
+<li><strong>Idira Audit Service Platform</strong>: Access to perform required configurations in Idira Audit platform</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>1. Connect to CyberArk Audit API to start collecting event logs in Microsoft Sentinel</strong></p>
-<p>Follow the steps below to integrate Microsoft Sentinel with CyberArk Audit and enable centralized monitoring of system and user activities within Microsoft Sentinel. You can also refer to the <a href="https://docs.cyberark.com/admin-space/latest/en/content/siem-integration/siem-export-ms-sentinel.htm?tocpath=Integrations%7CExport%20Audit%20activities%20to%20a%20SIEM%20application%7C_____2#CreateandconfigureaSIEMintegration">CyberArk Audit documentation</a> and follow till Step 5.</p>
+<p><strong>1. Connect to Idira Audit API to start collecting event logs in Microsoft Sentinel</strong></p>
+<p>Follow the steps below to integrate Microsoft Sentinel with Idira Audit and enable centralized monitoring of system and user activities within Microsoft Sentinel. You can also refer to the <a href="https://docs.cyberark.com/admin-space/latest/en/content/siem-integration/siem-export-ms-sentinel.htm?tocpath=Integrations%7CExport%20Audit%20activities%20to%20a%20SIEM%20application%7C_____2#CreateandconfigureaSIEMintegration">Idira Audit documentation</a> and follow till Step 5.</p>
 <h1 id="step1-create-new-siem-integration">Step1: Create new SIEM integration</h1>
 <ol>
-<li>On CyberArk portal, go to <code>Administration</code>.</li>
+<li>On Idira portal, go to <code>Administration</code>.</li>
 <li>Select <code>My environment</code> &gt; <code>Integrations</code> &gt; <code>Export to SIEM</code>.</li>
 <li>In the SIEM integrations page, select <code>Create</code> &gt; <code>Create SIEM integration</code></li>
 <li>In the <code>Create a SIEM integration</code> page, select the <code>Identity Administration</code> link to create an OAuth server web in Identity Administration.</li>
@@ -121,7 +117,7 @@
 <ol>
 <li>On <code>Identity Administration</code> page, from the left menu select <code>Apps &amp; Widgets</code> &gt; <code>Web Apps</code></li>
 <li>Select <code>Add Web Apps</code> and create an <code>OAuth2 server</code> type web app from the <code>Custom</code> tab.</li>
-<li>Enter <code>CyberArkAuditforMicrosoftSentinel</code> in the <code>ApplicationID</code> and <code>Name</code> fields.</li>
+<li>Enter <code>IdiraAuditforMicrosoftSentinel</code> in the <code>ApplicationID</code> and <code>Name</code> fields.</li>
 <li>In the <code>Tokens</code> tab, ensure that the value in the <code>Token Type</code> field is <code>jwtR256</code> and only the <code>Client Creds</code> authorization method is selected.</li>
 <li>Click <code>Add</code> in the <code>Scope</code> tab and enter <code>isp.audit.events:read</code>.</li>
 <li>In the <code>Advanced</code> tab, copy and paste the following script and then click Save.</li>
@@ -138,11 +134,11 @@
 <li>In the <code>Account</code> section, enter the <code>Login name</code> and <code>Display name</code> as <code>MicrosoftSentinel</code>. Add a new password or generate the password automatically.</li>
 <li>Select <code>OAuth confidential client</code>.</li>
 <li>In the <code>Application Settings</code> tab, click <code>Add</code>.</li>
-<li>Select the <code>CyberArkAuditforMicrosoftSentinel</code> application. This is the name you created in the web service.</li>
+<li>Select the <code>IdiraAuditforMicrosoftSentinel</code> application. This is the name you created in the web service.</li>
 </ol>
 <h1 id="step-4-grant-web-app-permissions-to-the-service-user">Step 4: Grant web app permissions to the service user</h1>
 <ol>
-<li>Go to the <code>CyberArkAuditforMicrosoftSentinel</code> web app you created.</li>
+<li>Go to the <code>IdiraAuditforMicrosoftSentinel</code> web app you created.</li>
 <li>In the <code>Permissions</code> tab, click <code>Add</code> to find your user <code>MicrosoftSentinel</code> and then click <code>Add</code>.</li>
 <li>Set the following permissions for the user:<ul>
 <li>Grant</li>
@@ -160,7 +156,7 @@
 <li>Enter the name as <code>Microsoft Sentinel Integration</code> and optionally add a description.</li>
 <li>Click <code>Apply</code>.</li>
 </ol>
-<h1 id="step-6-connect-cyberark-audit-service-with-microsoft-sentinel-data-connector">Step 6: Connect CyberArk Audit Service with Microsoft Sentinel Data Connector</h1>
+<h1 id="step-6-connect-idira-audit-service-with-microsoft-sentinel-data-connector">Step 6: Connect Idira Audit Service with Microsoft Sentinel Data Connector</h1>
 <ul>
 <li><strong>OAuth2 Server App Name</strong>: e.g. AuditforMicrosoftSentinel</li>
 <li><strong>Audit API Key</strong>: (password field)</li>
@@ -177,7 +173,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> Copy all the details you captured in the previous steps and connect with the CyberArk Audit service.</p>
+<p><strong>Note:</strong> Copy all the details you captured in the previous steps and connect with the Idira Audit service.</p>
 </blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>

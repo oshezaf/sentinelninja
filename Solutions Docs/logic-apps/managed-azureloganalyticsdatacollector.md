@@ -7,14 +7,25 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 101 |
-| **Solutions** | 20 |
+| **Playbooks using** | 104 |
+| **Solutions** | 21 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [[Deprecated] FileHash Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-[deprecated]-filehash-enrichment-virus-total-report-alert-triggered-b9ad6b97.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] FileHash Enrichment - Virus Total Report - Incident Triggered](../content/virustotal-[deprecated]-filehash-enrichment-virus-total-report-incident-triggered-6d5d0cbf.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] IP Enrichment - Virus Total Report  - Incident Triggered](../content/virustotal-[deprecated]-ip-enrichment-virus-total-report-incident-triggered-87c5cd22.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] IP Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-[deprecated]-ip-enrichment-virus-total-report-alert-triggered-0491fa54.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] Summarize Data for DNS Essentials Solution](../content/dns-essentials-[deprecated]-summarize-data-for-dns-essentials-solution-6ff0b741.md) | [DNS Essentials](../solutions/dns-essentials.md) | 1 | 2 |
+| [[Deprecated] Summarize Data for Network Session Essentials](../content/network-session-essentials-[deprecated]-summarize-data-for-network-session-essentials-7add1212.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 1 | 9 |
+| [[Deprecated] Summarize Web Session Data](../content/web-session-essentials-[deprecated]-summarize-web-session-data-eff20266.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 1 | 4 |
+| [[Deprecated] URL Enrichment - Virus Total Domain Report - Alert Triggered](../content/virustotal-[deprecated]-url-enrichment-virus-total-domain-report-alert-triggered-1cb6ad32.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] URL Enrichment - Virus Total Domain Report - Incident Triggered](../content/virustotal-[deprecated]-url-enrichment-virus-total-domain-report-incident-triggered-310ec6f8.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] URL Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-[deprecated]-url-enrichment-virus-total-report-alert-triggered-d7cf3a74.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
+| [[Deprecated] URL Enrichment - Virus Total Report - Incident Triggered](../content/virustotal-[deprecated]-url-enrichment-virus-total-report-incident-triggered-0a69c2a9.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
 | [AS-CrowdstrikeAlerts-Integration](../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.md) | 📄 Standalone | 1 | 1 |
 | [AS-Datadog-Events-Integration](../content/standalone-content-as-datadog-events-integration-d8009708.md) | 📄 Standalone | 1 | 1 |
 | [AS-Edgescan-Integration-Assets](../content/standalone-content-as-edgescan-integration-assets-0475596f.md) | 📄 Standalone | 1 | 1 |
@@ -37,8 +48,6 @@
 | [Cyjax Ad Hoc Enrichment](../content/cyjax-cyjax-ad-hoc-enrichment-a45ef0b4.md) | [Cyjax](../solutions/cyjax.md) | 1 | 1 |
 | [Cyjax Data Breaches](../content/cyjax-cyjax-data-breaches-9a3f7092.md) | [Cyjax](../solutions/cyjax.md) | 1 | 1 |
 | [Cyjax Domain Monitor](../content/cyjax-cyjax-domain-monitor-66e866eb.md) | [Cyjax](../solutions/cyjax.md) | 1 | 1 |
-| [FileHash Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-filehash-enrichment-virus-total-report-alert-triggered-cb0a6f29.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
-| [FileHash Enrichment - Virus Total Report - Incident Triggered](../content/virustotal-filehash-enrichment-virus-total-report-incident-triggered-4f1b5957.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
 | [Get-AlertEntitiesEnrichment](../content/github-only-get-alertentitiesenrichment-6987da42.md) | 🔗 GitHub Only | 0 | 1 |
 | [Get-MDEFileActivityWithin30Mins](../content/github-only-playbookname-a2821ba6.md) | 🔗 GitHub Only | 1 | 1 |
 | [Get-MDEProcessActivityWithin30Mins](../content/github-only-playbookname-934fe008.md) | 🔗 GitHub Only | 1 | 1 |
@@ -83,8 +92,6 @@
 | [Infoblox-Get-Service-Name](../content/infoblox-infoblox-get-service-name-0adc147e.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Infoblox-TIDE-Lookup](../content/infoblox-infoblox-tide-lookup-c25e9a83.md) | [Infoblox](../solutions/infoblox.md) | 1 | 1 |
 | [Ingest-Prisma](../content/standalone-content-ingest-prisma-05aee65e.md) | 📄 Standalone | 1 | 1 |
-| [IP Enrichment - Virus Total Report  - Incident Triggered](../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-1c22517c.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
-| [IP Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-ip-enrichment-virus-total-report-alert-triggered-8db8d703.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
 | [OktaEvents-to-Sentinel](../content/standalone-content-oktaevents-to-sentinel-f59de14f.md) | 📄 Standalone | 1 | 1 |
 | [Put CanaryTokens webhook alerts to Custom Logs table](../content/standalone-content-put-canarytokens-webhook-alerts-to-custom-logs-table-17b0c929.md) | 📄 Standalone | 1 | 1 |
 | [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
@@ -94,27 +101,23 @@
 | [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [ReversingLabs-CheckQuota](../content/reversinglabs-reversinglabs-checkquota-9c8101f9.md) | [ReversingLabs](../solutions/reversinglabs.md) | 1 | 7 |
-| [RFI-lookup-and-save-user](../content/recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 0 |
-| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 2 |
 | [RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 1 |
-| [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 1 |
-| [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 2 |
 | [Rubrik File Object Context Analysis](../content/rubriksecuritycloud-rubrik-file-object-context-analysis-30d5a377.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 1 | 2 |
 | [Rubrik Retrieve User Intelligence Information](../content/rubriksecuritycloud-rubrik-retrieve-user-intelligence-information-063a46dd.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 1 | 2 |
 | [Search for Breaches - ShadowByte Aria](../content/shadowbyte-aria-search-for-breaches-shadowbyte-aria-1984dbe7.md) | [ShadowByte Aria](../solutions/shadowbyte-aria.md) | 1 | 1 |
 | [Send-UrlReport](../content/standalone-content-send-urlreport-38d22282.md) | 📄 Standalone | 1 | 1 |
 | [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](../content/slashnext-siem-slashnext-security-events-for-microsoft-sentinel-get-customer-incidents-and-log-a81ddf6c.md) | [SlashNext SIEM](../solutions/slashnext-siem.md) | 0 | 3 |
 | [SpyCloud Watachlist data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 2 |
-| [Summarize Data for DNS Essentials Solution](../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.md) | [DNS Essentials](../solutions/dns-essentials.md) | 1 | 2 |
-| [Summarize Data for Network Session Essentials](../content/network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 1 | 9 |
-| [Summarize Web Session Data](../content/web-session-essentials-summarize-web-session-data-ea664ad8.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 1 | 4 |
+| [StratoSecure - Assign Owner](../content/stratosecure-stratosecure-assign-owner-9b875cc8.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Close Incident in Sentinel](../content/stratosecure-stratosecure-close-incident-in-sentinel-24d00b3a.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Create Azure DevOps Work Item](../content/stratosecure-stratosecure-create-azure-devops-work-item-eeb39a49.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Create Exception / Accept Risk](../content/stratosecure-stratosecure-create-exception-accept-risk-7a9eba6c.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Create Jira Ticket](../content/stratosecure-stratosecure-create-jira-ticket-cccd8afb.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Escalate to Owner via Email](../content/stratosecure-stratosecure-escalate-to-owner-via-email-36e9ee8f.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
+| [StratoSecure - Notify Microsoft Teams](../content/stratosecure-stratosecure-notify-microsoft-teams-bf1e8e3f.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
 | [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 6 |
 | [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 21 |
 | [Thinkst Canary Microsoft Sentinel Alert Integration](../content/standalone-content-thinkst-canary-microsoft-sentinel-alert-integration-37f6f36b.md) | 📄 Standalone | 1 | 0 |
-| [URL Enrichment - Virus Total Domain Report - Alert Triggered](../content/virustotal-url-enrichment-virus-total-domain-report-alert-triggered-9a5688ac.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
-| [URL Enrichment - Virus Total Domain Report - Incident Triggered](../content/virustotal-url-enrichment-virus-total-domain-report-incident-triggered-54a7a026.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
-| [URL Enrichment - Virus Total Report - Alert Triggered](../content/virustotal-url-enrichment-virus-total-report-alert-triggered-c62db7db.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
-| [URL Enrichment - Virus Total Report - Incident Triggered](../content/virustotal-url-enrichment-virus-total-report-incident-triggered-3d66ea5b.md) | [VirusTotal](../solutions/virustotal.md) | 1 | 2 |
 | [Vaikora to Microsoft Defender for Cloud](../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) | 1 | 1 |
 
 ---

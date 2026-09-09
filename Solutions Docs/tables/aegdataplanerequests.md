@@ -33,7 +33,7 @@ Reference for AegDataPlaneRequests table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| Authentication | string | The type of secret used for authentication when issuing requests. Key - request uses the SAS key, SASToken - request uses a SAS token generated from SAS key, AADAccessToken - Azure Active Directory issued JSON Web Token (JWT) token, Unknown - None of the above authentication types. OPTIONS requests will have Unknown authentication type. |
+| Authentication | string | The type of secret used for authentication when issuing requests. Key - request uses the SAS key, SASToken - request uses a SAS token generated from SAS key, AADAccessToken - Microsoft Entra ID issued JSON Web Token (JWT) token, Unknown - None of the above authentication types. OPTIONS requests will have Unknown authentication type. |
 | ClientIpAddress | string | The IP address of the client issuing the request. |
 | NetworkAccess | string | The type of network used by the client issuing the request. Allowed values are: PublicAccess - when connecting via public IP, PrivateAccess - when connecting via private link |
 | OperationName | string | The name of the operation. |

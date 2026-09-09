@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Networking |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-06-29 |
+| **Last Updated** | 2026-09-07 |
 | **Solution Folder** | [Web Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain) · Popularity: 🟡 Low (47%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [PaloAlto-PAN-OS](paloalto-pan-os.md), [SquidProxy](squidproxy.md), [Vectra AI Stream](vectra-ai-stream.md), zscaler1579058425289.zscaler_internet_access_mss |
 
 Web Session Essentials is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
@@ -28,6 +29,7 @@ For details on the required solutions, see the [Pre-requisites](#pre-requisites)
 **Recommendation :-**
 
 It is highly recommended to use the **SummarizeWebSessionData** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
+ **NOTE: This solution includes the playbook SummarizeWebSessionData, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeWebSessionData_logingestion playbook instead.**
 
 ## Contents
 
@@ -58,11 +60,15 @@ This solution depends on **3 other solution(s)**:
 
 ## Tables Used
 
-This solution queries **1 table(s)** from its content items:
+This solution queries **5 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
+| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) | Playbooks |
+| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) | Playbooks |
+| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) | Playbooks |
+| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) | Playbooks |
 
 ### Internal Tables
 
@@ -80,14 +86,14 @@ The following **7 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **26 content item(s)**:
+This solution includes **27 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 15 |
 | Hunting Queries | 9 |
+| Playbooks | 2 |
 | Workbooks | 1 |
-| Playbooks | 1 |
 
 ### Analytic Rules
 
@@ -133,12 +139,14 @@ This solution includes **26 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Summarize Web Session Data](../content/web-session-essentials-summarize-web-session-data-ea664ad8.md) | The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the... | *Internal use:*<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) *(read/write)*<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) *(read/write)* |
+| [Summarize Web Session Data using Log Ingestion API](../content/web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.md) | The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the... | [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) *(read)*<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) *(read)* |
+| [[Deprecated] Summarize Web Session Data](../content/web-session-essentials-[deprecated]-summarize-web-session-data-eff20266.md) | The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the... | *Internal use:*<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) *(read/write)*<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) *(read/write)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                            |
 |-------------|--------------------------------|-----------------------------------------------|
+| 3.0.4       | 02-09-2026                     | Added Summarize Web Session Data using Log Ingestion API **Playbook** |
 | 3.0.3       | 06-06-2024                     | Updated Entity Mapping **Analytic Rule** CommandInURL.yaml 	                       |
 | 3.0.2       | 31-01-2024                     | Updated the solution to fix **Analytic Rules** deployment issue     |
 | 3.0.1       | 02-01-2024                     | Tagged for dependent Solutions for deployment |

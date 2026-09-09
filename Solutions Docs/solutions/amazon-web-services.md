@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 3.0.10 |
+| **Version** | 3.0.12 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-26 |
-| **Last Updated** | 2026-05-29 |
+| **Last Updated** | 2026-09-04 |
 | **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (92%) |
 
 The Amazon Web Services solution for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS CloudTrail platform, VPC Flow Logs, AWS GuardDuty and AWS CloudWatch. 
 
@@ -58,11 +58,11 @@ This solution uses **5 table(s)**:
 
 ## Content Items
 
-This solution includes **100 content item(s)**:
+This solution includes **99 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 62 |
+| Analytic Rules | 61 |
 | Hunting Queries | 36 |
 | Workbooks | 2 |
 
@@ -72,13 +72,11 @@ This solution includes **100 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [AWSCloudTrail - AWS GuardDuty detector disabled or suspended](../content/amazon-web-services-awscloudtrail-aws-guardduty-detector-disabled-or-suspended-9da99021-d318-4711-a78a-6dea76129b3a-d8d5ec35.md) | High | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Amazon ECR image scanning disabled](../content/amazon-web-services-awscloudtrail-amazon-ecr-image-scanning-disabled-19602494-94af-43c8-90ba-eb0e14999612-fa0ab87d.md) | Medium | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [AWSCloudTrail - Changes made to AWS CloudTrail logs](../content/amazon-web-services-awscloudtrail-changes-made-to-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-3031541f.md) | Low | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Changes to AWS Elastic Load Balancer security groups](../content/amazon-web-services-awscloudtrail-changes-to-aws-elastic-load-balancer-security-groups-c7bfadd4-34a6-4fa5-82f8-3691a32261e8-aab1fbbd.md) | Low | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Changes to AWS Security Group ingress and egress settings](../content/amazon-web-services-awscloudtrail-changes-to-aws-security-group-ingress-and-egress-settings-4f19d4e3-ec5f-4abc-9e61-819eb131758c-134ac8d9.md) | Low | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Changes to Amazon VPC settings](../content/amazon-web-services-awscloudtrail-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-d3c8d22d.md) | Low | PrivilegeEscalation, DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Changes to internet facing AWS RDS Database instances](../content/amazon-web-services-awscloudtrail-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-351ba1e8.md) | Low | Persistence, PrivilegeEscalation, DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - CloudFormation policy created then used for privilege escalation](../content/amazon-web-services-awscloudtrail-cloudformation-policy-created-then-used-for-privilege-escalation-efdc3cff-f006-426f-97fd-4657862f7b9a-85f1c49c.md) | High | DefenseEvasion, PrivilegeEscalation, Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [AWSCloudTrail - Config Service Resource Deletion Attempts](../content/amazon-web-services-awscloudtrail-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-bafeee07.md) | Low | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Created CRUD S3 policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-created-crud-s3-policy-and-then-privilege-escalation-467cbe7e-e6d4-4f4e-8e44-84dd01932c32-4a7cb6c9.md) | Medium | DefenseEvasion, PrivilegeEscalation, Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Creating keys with encrypt policy without MFA](../content/amazon-web-services-awscloudtrail-creating-keys-with-encrypt-policy-without-mfa-454133a7-5427-4a7c-bdc4-0adfa84dda16-f1115dc2.md) | Medium | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Creation of Access Key for IAM User](../content/amazon-web-services-awscloudtrail-creation-of-access-key-for-iam-user-9a6554e6-63d9-4f94-9b32-64d1d40628f2-977d1674.md) | Medium | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
@@ -93,6 +91,7 @@ This solution includes **100 content item(s)**:
 | [AWSCloudTrail - Creation of new CRUD IAM policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-new-crud-iam-policy-and-then-privilege-escalation-8a607285-d95c-473d-8aab-59920de63af6-e678eb90.md) | Medium | DefenseEvasion, PrivilegeEscalation, Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - EC2 Startup Shell Script Changed](../content/amazon-web-services-awscloudtrail-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-8756a070.md) | Medium | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - ECR image scan findings high or critical](../content/amazon-web-services-awscloudtrail-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-e7a0ac8a.md) | High | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [AWSCloudTrail - Failed Attempts to Change AWS CloudTrail Logs](../content/amazon-web-services-awscloudtrail-failed-attempts-to-change-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-f556ccb1.md) | Low | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Full Admin policy created and then attached to Roles, Users or Groups](../content/amazon-web-services-awscloudtrail-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-3b82a1fc.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Login to AWS Management Console without MFA](../content/amazon-web-services-awscloudtrail-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-6d8cebff.md) | Low | DefenseEvasion, PrivilegeEscalation, Persistence, InitialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Monitor AWS Credential abuse or hijacking](../content/amazon-web-services-awscloudtrail-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-cefae132.md) | Low | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
@@ -123,12 +122,12 @@ This solution includes **100 content item(s)**:
 | [AWSCloudTrail - SAML update identity provider](../content/amazon-web-services-awscloudtrail-saml-update-identity-provider-bce1dcba-4948-414d-8838-6385afb9d496-6cc6eb28.md) | High | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - SSM document is publicly exposed](../content/amazon-web-services-awscloudtrail-ssm-document-is-publicly-exposed-75647b58-bcc8-4eb5-9658-46698d3fa153-e013c5b0.md) | Medium | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Successful API executed from a Tor exit node](../content/amazon-web-services-awscloudtrail-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-282e80e5.md) | High | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [AWSCloudTrail - Successful Tampering with AWS CloudTrail Logs](../content/amazon-web-services-awscloudtrail-successful-tampering-with-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-61f830c8.md) | High | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Successful brute force attack on S3 Bucket](../content/amazon-web-services-awscloudtrail-successful-brute-force-attack-on-s3-bucket-31b9e94b-0df6-4a3d-a297-3457b53c5d86-5bb93808.md) | High | CredentialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Suspicious AWS CLI Command Execution](../content/amazon-web-services-awscloudtrail-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-79c3e5c0.md) | Medium | Reconnaissance | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Suspicious AWS EC2 Compute Resource Deployments](../content/amazon-web-services-awscloudtrail-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9de0bbd4.md) | Medium | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Suspicious command sent to EC2](../content/amazon-web-services-awscloudtrail-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-5905ef82.md) | High | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Suspicious overly permissive KMS key policy created](../content/amazon-web-services-awscloudtrail-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-4de725d8.md) | High | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [AWSCloudTrail - Tampering to AWS CloudTrail logs](../content/amazon-web-services-awscloudtrail-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4959dd40.md) | High | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Unauthorized EC2 Instance Setup Attempt](../content/amazon-web-services-awscloudtrail-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-89175481.md) | Medium | ResourceDevelopment | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - User IAM Enumeration](../content/amazon-web-services-awscloudtrail-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-52b30ca2.md) | Medium | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSGuardDuty - GuardDuty Alert](../content/amazon-web-services-awsguardduty-guardduty-alert-bf0cde21-0c41-48f6-a40c-6b5bd71fa106-e00c6b5a.md) | Medium | - | [`AWSGuardDuty`](../tables/awsguardduty.md) |
@@ -185,6 +184,8 @@ This solution includes **100 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.12      | 26-08-2026                     | Updated **Analytic Rules** AWS_LogTampering.yaml (successful log-tampering, High) and AWS_ClearStopChangeTrailLogs.yaml (failed log-tampering attempts, Low) with expanded event coverage and tiered severity; removed duplicate **Analytic Rule** AWS_ConfigServiceResourceDeletion.yaml; refreshed the Data Connectors section in the solution UI (createUiDefinition) |
+| 3.0.11      | 11-08-2026                     | Fixed the AWS WAF Data Connector last-data-received query by removing an invalid test filter. |
 | 3.0.10      | 19-05-2026                     | Added non-analytics tier queries to Amazon Web Services S3 **Data Connector** to support Basic/Auxiliary plan tables. |
 | 3.0.9       | 18-05-2026                     | Update AWS **Hunting Queries** and **Workbooks** for Quality     |
 | 3.0.8       | 13-01-2026                     | Updated non-functional links from **Analytic rules** and **Hunting query** |

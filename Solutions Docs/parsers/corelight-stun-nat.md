@@ -13,8 +13,8 @@
 | Title | corelight_stun_nat parser for Corelight |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-09-25 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_stun_nat.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_stun_nat_CL`](../tables/corelight-v2-stun-nat-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_stun_nat_CL`](../tables/corelight-v3-stun-nat-cl.md) | ? | ✓ | ? |
 
 ---
 

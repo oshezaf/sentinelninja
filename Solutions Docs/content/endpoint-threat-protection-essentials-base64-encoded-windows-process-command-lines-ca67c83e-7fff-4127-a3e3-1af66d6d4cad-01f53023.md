@@ -18,7 +18,7 @@ Identifies instances of a base64-encoded PE file header seen in the process comm
 | **Kind** | Scheduled |
 | **Tactics** | Execution, DefenseEvasion |
 | **Techniques** | T1059, T1027, T1140 |
-| **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
+| **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Analytic%20Rules/base64_encoded_pefile.yaml) |
 
 ## Tables Used

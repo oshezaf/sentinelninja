@@ -36,8 +36,8 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AADTenantId | string | The AADTenantId GUID that's associated with the logs |
 | Agent | string | Details of agentic sign-in. |
-| AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
-| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Azure Active Directory |
+| AppId | string | Unique GUID representing the app ID in the Microsoft Entra ID |
+| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Microsoft Entra ID |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | Category | string | Category of the sign-in event |

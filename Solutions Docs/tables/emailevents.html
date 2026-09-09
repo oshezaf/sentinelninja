@@ -394,7 +394,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (290)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (367)</h2>
 <h3 id="analytic-rules">Analytic Rules (10)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong> <code>EmailDirection == &quot;Outbound&quot;</code></p>
 <table>
@@ -478,7 +478,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (271)</h3>
+<h3 id="hunting-queries">Hunting Queries (347)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -504,8 +504,16 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-remediation-delivery-to-action-latency-3027abf0-a965-42bd-babe-79f34bbd9e7a-300c89ab.html">Automated Remediation Delivery to Action Latency</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.html">Automated email notifications and suspicious sign-in activity</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-cb7629af-4872-427a-9042-ce848c2f49e7-1444eb9c.html">Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.html">Bad email percentage of Inbound emails</a></td>
@@ -513,11 +521,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.html">Bulk Emails by Sender Bulk Complaint level</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-compauth-failure-trend-eb560458-d96f-4c68-acbb-14b3c706ebe7-1841f166.html">CompAuth Failure Trend</a></td>
@@ -541,23 +549,23 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-10-domains-sending-spam-6fe463ca-4cd3-4d97-a099-6b736f28a128-bdb32e31.html">Email Top 10 Domains sending Spam</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-10-targeted-users-spam-9e4b7553-1113-4d40-bb6b-7daca7d7d255-448bdc2d.html">Email Top 10 Targeted Users (Spam)</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-15-domains-sending-spam-with-additional-details-c03e13ee-0e7a-4d05-b3f4-790b01bb30a5-d9218166.html">Email Top 15 Domains sending Spam with Additional Details</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-15-targeted-users-spam-with-additional-details-86f2b124-8caf-4b53-845a-87de3ffccbdf-22e01ae8.html">Email Top 15 Targeted Users (Spam) with Additional Details</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-domains-sending-malware-a2a7bede-cf55-47ed-9aeb-7b4c97079f4f-512f33b8.html">Email Top Domains sending Malware</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-top-domains-sending-phish-0b197e26-7899-47ff-9be9-f7ba6dc949ea-f793c65e.html">Email Top Domains sending Phish</a></td>
@@ -570,6 +578,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.html">Files share contents and suspicious sign-in activity</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-first-contact-external-email-senders-6ad2dbb3-40de-4e39-a3b0-5c8be4e37b7b-90de2f63.html">First-Contact External Email Senders</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.html">Hunt for email bombing attacks</a></td>
@@ -588,36 +600,76 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-impersonation-and-spoof-detections-by-sender-country-04f08949-c44a-4c02-9d3c-ba40186ea6b2-e33aeb7c.html">Impersonation and Spoof Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>DetectionMethods has &quot;Spoof&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbound-sender-domains-failing-email-authentication-80067390-3954-4276-bbca-8d4be1df0591-11e13d6f.html">Inbound Sender Domains Failing Email Authentication</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-largest-malicious-email-campaigns-by-cluster-a92a3921-1a71-4a4d-8382-873b689ff7d8-e7aa84b7.html">Largest Malicious Email Campaigns by Cluster</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.html">Malicious Email Campaigns by Recipient URL Clicks</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detection-ip-and-geo-position-b232adb3-059b-4351-9e4b-78a3c15175e5-89c0653d.html">Malware Detection IP and Geo Position</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-trend-e1dbe1d2-785a-4ecd-a1c0-233fc0e990bc-43903146.html">Malware Detections Trend</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-detection-technology-15d255f7-57a6-4b23-bd89-376930d3a305-149bc998.html">Malware Detections by Detection technology</a></td>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-detection-technology-trend-db79eb5a-785a-400a-a7ef-7285dde8e116-0c62c2fd.html">Malware Detections by Detection technology Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-sender-country-eee98563-fd77-4d6a-a1aa-e0e4952b5cf3-493fdaec.html">Malware Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-threat-classification-f9ec4d6a-4112-4f4a-bbe9-71eb6f65ce3d-49b16805.html">Malware Detections by Threat Classification</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-delivery-location-b3a4b803-06f6-46d8-9220-b3a53e85ce4f-d52dc5b0.html">Malware Detections by delivery location</a></td>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-url-detections-trend-effba60e-0a4a-4558-bbf6-4e099607d82e-fc497634.html">Malware URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-message-from-an-accepted-domain-with-dmarc-temperror-4c021477-38f0-409e-869b-11056fcd47f1-d9274983.html">Message from an Accepted Domain with DMARC TempError</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-new-external-sender-domains-carrying-threats-41614487-ccca-458e-81eb-dffbeba0b703-c952afbd.html">New External Sender Domains Carrying Threats</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detection-ip-and-geo-position-22dd5345-f620-41b2-b319-a1b3cfa9cb8e-8614738a.html">Phish Detection IP and Geo Position</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-high-by-delivery-location-76c77c8a-bd2a-489a-af52-97291211e4e4-3e94b5c1.html">Phish Detections (High) by delivery location</a></td>
-  <td style="text-align:left"><code>ConfidenceLevel has_any &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-normal-by-delivery-location-4d86021c-cad7-489b-a8c8-dddecb87a2ef-ba0f6a21.html">Phish Detections (Normal) by delivery location</a></td>
-  <td style="text-align:left"><code>ConfidenceLevel has_any &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-trend-fbe7a9d2-507e-4974-9e9a-d1cba3907f67-9ce7f42d.html">Phish Detections Trend</a></td>
@@ -625,15 +677,39 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-detection-technology-4c30fab1-db4f-4a64-b66b-51478e43a477-bb67d7c0.html">Phish Detections by Detection technology</a></td>
-  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-detection-technology-trend-dd6efecd-7fe5-41b1-a122-8e0a15de9451-12c632c4.html">Phish Detections by Detection technology Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-sender-country-7d041b6d-973b-48aa-886d-d234047511f2-6f48091d.html">Phish Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-threat-classification-b54359db-ca8c-4a11-98b7-0f320b870cbd-abba028e.html">Phish Detections by Threat Classification</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phish-detections-by-delivery-location-trend-b20e56b8-e335-43d9-b7b3-43c034c43aea-304b06c0.html">Phish Detections by delivery location trend</a></td>
   <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phishing-detected-by-llm-content-analysis-945a8419-d3ec-41ba-a4b3-c37303bd9458-1ac856d6.html">Phishing Detected by LLM Content Analysis</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-phishing-url-detections-trend-4bce2a7c-31fb-46e9-8487-ce611bd98004-078f5796.html">Phishing URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-qr-code-url-detections-trend-88035c0e-0e2d-4805-a249-34d54a88c3fe-2b93ffea.html">QR Code URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Url&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-malware-reason-c38282e0-5748-467d-95fc-4202b904dbc7-ecc42b9f.html">Quarantine Malware Reason</a></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-phish-reason-36cf7ce5-7264-46d9-9f47-57b59049b44f-2c7a4748.html">Quarantine Phish Reason</a></td>
@@ -641,6 +717,10 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-phish-reason-trend-79bed402-09bc-453b-ab92-8b1411e683fa-9b772a7d.html">Quarantine Phish Reason trend</a></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-percentage-60cf8dc6-b3f7-4bd9-b877-3ed9c9443750-f3d8d2ab.html">Quarantine Release Percentage</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
@@ -649,7 +729,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.html">Quarantine Spam Reason trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-releases-by-detection-types-23e6d66b-511a-43fd-9863-6924da60319a-0411faf3.html">Quarantine releases by Detection Types</a></td>
@@ -658,6 +738,14 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spf-failure-trend-79755078-7be8-4f13-a8e7-1ce87cb7d5c0-c89e8f51.html">SPF Failure Trend</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-secops-mailbox-override-count-293d6bbe-97b6-458e-8670-929e9f1756d2-bb02a216.html">SecOps Mailbox Override Count</a></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy == &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-secops-mailbox-overrides-by-threat-type-b5ac7138-d807-450e-9f67-dbdac948f651-abebfb90.html">SecOps Mailbox Overrides by Threat Type</a></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy == &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detections-high-by-delivery-location-45c47684-6650-44b6-81c0-951522d0c435-82785140.html">Spam Detections (High) by delivery location</a></td>
@@ -669,7 +757,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detections-by-detection-technology-16cfa413-238f-4355-9f8a-4b97ce7572ac-c675f0ec.html">Spam Detections by Detection technology</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detections-by-sender-country-fd9d2289-a2c3-4634-8a87-abe4a7db896f-72c94991.html">Spam Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-and-phish-allowed-to-inbox-by-admin-overrides-02e237ed-f7b5-49dd-92e6-1b340d5e37fb-84bc507a.html">Spam and Phish allowed to inbox by Admin Overrides</a></td>
@@ -685,15 +777,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detection-by-delivery-location-7e93ce37-0cc5-4aa9-b30a-07772affa481-8260769b.html">Spam detection by delivery location</a></td>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detection-technologies-f290d544-c499-4b23-8a7e-c4cbb7ab6316-9fee5e01.html">Spam detection technologies</a></td>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spam-detection-trend-ae690d6f-0ea5-4617-95cf-1ed9a5fcb329-5bd812f5.html">Spam detection trend</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-spoof-detections-trend-09b263e1-9c73-4585-a55c-bc209e148e14-7f536fde.html">Spoof Detections Trend</a></td>
@@ -712,36 +804,76 @@
   <td style="text-align:left"><code>DetectionMethods has &quot;spoof&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-microsoft-teams-callers-by-impersonation-style-identity-37f3d0f5-8ac3-46a3-9b27-a4fd082b6348-8657cfbc.html">Suspicious Microsoft Teams Callers by Impersonation-Style Identity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-external-senders-spam-86c7d21b-2081-419d-bc2e-7bc909d61eef-cc6c9e75.html">Top 10 External Senders (Spam)</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-domains-sending-bulk-email-147131b3-8b57-4c50-b981-5a951ed82272-a450386e.html">Top 10 domains sending Bulk email</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-attacked-users-by-malware-threat-classification-a52f16af-5632-420d-ae90-b1b8bd742af0-2b96c5bd.html">Top Attacked Users by Malware Threat Classification</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-attacked-users-by-phish-threat-classification-ccaec93a-7231-4483-9d36-78106f0a8a1a-c91a0add.html">Top Attacked Users by Phish Threat Classification</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-f9442d20-eff8-4751-9a75-6451aeace687-a1d5fba8.html">Top Domains Outbound with Emails with Threats Inbound (Partner BEC)</a></td>
   <td style="text-align:left"><code>EmailDirection in &quot;Inbound,Outbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-external-domains-receiving-auto-forwarded-email-mailbox-rule-and-smtp-370583ef-40d1-4d8e-a2e2-16095704f357-060fab5e.html">Top External Domains Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-external-recipients-receiving-auto-forwarded-email-mailbox-rule-and-smtp-01d676ef-29fb-4974-9db1-763660d577fa-72a0a00a.html">Top External Recipients Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-internal-users-auto-forwarding-email-externally-mailbox-rule-and-smtp-7d5d4ac0-e3db-4ddc-9fd3-9894c7de2c5c-302a522a.html">Top Internal Users Auto-forwarding Email Externally (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-malware-families-0d16e85e-82ec-460a-bf48-e90164464f7c-4786cd56.html">Top Malware Families</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-recipients-receiving-threats-delivered-by-override-95f7ab0b-3025-487e-9523-1b68152f4b91-602a088d.html">Top Recipients Receiving Threats Delivered by Override</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-recipients-targeted-by-impersonation-or-bec-14d4474b-10d0-4d03-9938-98c8ef92f15a-104e9929.html">Top Recipients Targeted by Impersonation or BEC</a></td>
+  <td style="text-align:left"><code>DeliveryLocation has &quot;Inbox&quot;</code><br><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-sender-domains-delivering-threats-via-override-d3427b51-d7b9-4610-a871-5738e59cfa93-e1c0f5fa.html">Top Sender Domains Delivering Threats via Override</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-spoof-dmarc-detections-by-sender-domain-p1-p2-23b646e8-b885-4cde-a9ab-1e35fa5e37a7-dacbea0f.html">Top Spoof DMARC detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-spoof-external-domain-detections-by-sender-domain-p1-p2-3dbaa9c1-5e69-40a9-bacb-8cbdb4a0e6cb-d618b7cb.html">Top Spoof external domain detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-spoof-intra-org-detections-by-sender-domain-p1-p2-ba97d6b9-f82e-4917-9c07-4c0028bbd32d-d66e5db5.html">Top Spoof intra-org detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-users-receiving-malware-c6bbcac2-a6b8-4537-a32a-6f1367e6aa44-6b839b20.html">Top Users receiving Malware</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-users-receiving-phish-87846aad-624c-4e18-b963-81bedd7123a2-f8f93dee.html">Top Users receiving Phish</a></td>
@@ -753,7 +885,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-emails-with-admin-overrides-allow-8f8fd7c8-277a-48c3-ad67-c80b3037c5af-b3b2f80d.html">Total Emails with Admin Overrides (Allow)</a></td>
-  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-emails-with-admin-overrides-block-bd6aae91-6233-430b-a5af-15c6406a7770-72f52ec6.html">Total Emails with Admin Overrides (Block)</a></td>
@@ -780,12 +912,32 @@
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-p2-senders-37511ce4-f88e-4e2d-b505-27411af1a226-60212493.html">User Email Submissions (FP) - Top Inbound P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-subjects-3f252bcb-71a8-4c04-bed9-4dd53419ecb6-bb2077e5.html">User Email Submissions (FP) - Top Inbound Subjects</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-intra-org-p2-senders-6b26701a-a1c7-4782-a662-f44cdca5bb5f-ab52681b.html">User Email Submissions (FP) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Intra-org&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-phish-fp-4ae87c11-4030-42cb-b87d-993198ca40e0-e1152402.html">User Submissions by Detection Method - Phish (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-spam-fp-05d933db-f605-48d5-a177-af64be537cf4-20a4c5b9.html">User Submissions by Detection Method - Spam (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-zero-day-malware-detections-trend-a370ad6f-e7fa-4740-ab9e-cb5560e3599f-205be975.html">Zero-day Malware Detections Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-zero-day-phish-detections-trend-80f357a6-6bb4-4b2b-a88c-265fccafc794-6ffd9b22.html">Zero-day Phish Detections Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -828,8 +980,16 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-automated-remediation-delivery-to-action-latency-094266b5-c2ef-4818-8558-cfacdb267d23-c182d097.html">Automated Remediation Delivery to Action Latency</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-automated-email-notifications-and-suspicious-sign-in-activity-a7acfaf4-e03e-409d-a16e-dcde33f7dba3-fb7feb7d.html">Automated email notifications and suspicious sign-in activity</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-d05eb85d-16e6-4bb9-a669-78da03ec6417-390a90d6.html">Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-bad-email-percentage-of-inbound-emails-2a662ac9-81de-4073-9374-45e3ebd5ae90-4e51cebe.html">Bad email percentage of Inbound emails</a></td>
@@ -841,11 +1001,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-bulk-emails-by-sender-bulk-complaint-level-46837704-62cb-4e37-ae25-eecced47c0f4-a91c459c.html">Bulk Emails by Sender Bulk Complaint level</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-cc3c8c2c.html">Campaign with suspicious keywords</a></td>
@@ -893,23 +1053,23 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-10-domains-sending-spam-d5f1f876-9172-4e92-bfae-7ab0f94c9417-8e215db1.html">Email Top 10 Domains sending Spam</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-10-targeted-users-spam-22ae82b3-a362-4fc6-801d-d7fed7442d46-fab34598.html">Email Top 10 Targeted Users (Spam)</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-15-domains-sending-spam-with-additional-details-279a8fce-0c34-437a-a6ba-eff7be3b36a8-655f81ab.html">Email Top 15 Domains sending Spam with Additional Details</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-15-targeted-users-spam-with-additional-details-3e33ce02-b74e-49cc-899d-0a1eb3128ee3-281c6adc.html">Email Top 15 Targeted Users (Spam) with Additional Details</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-domains-sending-malware-c7274e0c-af01-43a3-ad63-6a679191cc7f-95cef54a.html">Email Top Domains sending Malware</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-email-top-domains-sending-phish-0b014a34-413b-43ae-9d80-b617fad1fd5b-c6fd9b9d.html">Email Top Domains sending Phish</a></td>
@@ -976,6 +1136,10 @@
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>Subject startswith &quot;RE:&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-first-contact-external-email-senders-a7373b95-2471-4169-9bca-412d6c41334d-631a8c3e.html">First-Contact External Email Senders</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.html">Good emails from senders with bad patterns</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
@@ -1036,12 +1200,24 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-impersonation-and-spoof-detections-by-sender-country-0863f418-5681-4532-a097-033f6332d353-09417c72.html">Impersonation and Spoof Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>DetectionMethods has &quot;Spoof&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-inbound-sender-domains-failing-email-authentication-5722f6ce-0ac1-4783-9e15-3f7e390abe01-1091eea7.html">Inbound Sender Domains Failing Email Authentication</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbound-emails-with-qr-code-urls-f6354c94-3a95-4235-8530-414f016a7bf6-b653a9db.html">Inbound emails with QR code URLs</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-inbound-emails-with-qr-code-urls-f6354c94-3a95-4235-8530-414f016a7bf6-5f2f3855.html">Inbound emails with QR code URLs</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-largest-malicious-email-campaigns-by-cluster-cb73a6da-421d-4596-92e5-0984e02ece9e-bdb796a6.html">Largest Malicious Email Campaigns by Cluster</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-lemonduck-email-subjects-735d4b69-7613-4d86-afb1-7ce64ee7dffb-98ffe4fd.html">LemonDuck-email-subjects</a></td>
@@ -1124,6 +1300,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-malicious-email-campaigns-by-recipient-url-clicks-28ce9655-f35f-4733-af43-8266b39a87f1-21f63c9c.html">Malicious Email Campaigns by Recipient URL Clicks</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-bb5decee.html">Malicious Emails with QR code Urls</a></td>
   <td style="text-align:left"></td>
 </tr>
@@ -1156,23 +1336,43 @@
   <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-detection-ip-and-geo-position-ecd834a7-cd3e-4932-afa3-25465fe41401-3cddfe76.html">Malware Detection IP and Geo Position</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-malware-detections-trend-0e4fd08d-0c0d-41c6-847d-1674e30a9e31-d62b638e.html">Malware Detections Trend</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-malware-detections-by-detection-technology-642057a3-e5af-46ce-a5f4-8968a5537dba-3997aa7e.html">Malware Detections by Detection technology</a></td>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-malware-detections-by-detection-technology-trend-14f54d33-81dd-4316-a617-2262cac86f37-34b0982c.html">Malware Detections by Detection technology Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-detections-by-sender-country-2e1c439b-9bbf-4d1a-a8c1-2a9f9149f3e5-4e6d52e4.html">Malware Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-detections-by-threat-classification-c4776c7c-a8f4-4643-82db-134b771584b6-cea0c8e6.html">Malware Detections by Threat Classification</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-malware-detections-by-delivery-location-cb99e25d-bcd9-435b-ad29-de08638b0f78-57e45210.html">Malware Detections by delivery location</a></td>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-url-detections-trend-7a25af1f-c757-490e-909d-f803b94ed8d2-789e7331.html">Malware URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-message-from-an-accepted-domain-with-dmarc-temperror-a256f4ea-deec-4fcd-bdf3-63987638eed9-30ec3593.html">Message from an Accepted Domain with DMARC TempError</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-new-external-sender-domains-carrying-threats-12f223d9-ff72-4a6d-b60b-c59eacfaa89e-b8d1da4a.html">New External Sender Domains Carrying Threats</a></td>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
@@ -1192,12 +1392,16 @@
   <td style="text-align:left"><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-phish-detection-ip-and-geo-position-06852891-b7b4-4e23-a97d-2ca4bb5c7ee9-f643f857.html">Phish Detection IP and Geo Position</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-high-by-delivery-location-1617b8b1-df75-4b28-8379-29930c0f46fc-b91b53b1.html">Phish Detections (High) by delivery location</a></td>
-  <td style="text-align:left"><code>ConfidenceLevel has_any &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-normal-by-delivery-location-bfdb25dd-1cc0-46da-9545-9aa92d53e2c8-95456087.html">Phish Detections (Normal) by delivery location</a></td>
-  <td style="text-align:left"><code>ConfidenceLevel has_any &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-trend-1b6a8564-bfe2-40f7-873a-7713f7b0c1d0-248c42a0.html">Phish Detections Trend</a></td>
@@ -1205,11 +1409,19 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-by-detection-technology-c3a1fa22-8ccf-409e-80a5-78aa545bf77d-54d99e0b.html">Phish Detections by Detection technology</a></td>
-  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-by-detection-technology-trend-7319bdef-2040-48dc-9b20-b3f138fee71c-0bfbaa8b.html">Phish Detections by Detection technology Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-phish-detections-by-sender-country-b47d1de3-041a-406b-9d99-ffc7749b00f2-7e20ba46.html">Phish Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-phish-detections-by-threat-classification-a636bbbd-c6d0-4319-ae10-a06e809ba18f-6ddca0bc.html">Phish Detections by Threat Classification</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-phish-detections-by-delivery-location-trend-fbe8abde-83b3-4e16-af08-f8f7db9a9028-bf97d1f9.html">Phish Detections by delivery location trend</a></td>
@@ -1220,6 +1432,14 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-phishing-detected-by-llm-content-analysis-cf9cbcb0-5b9d-4054-8342-c47168ea50c6-d6848e2f.html">Phishing Detected by LLM Content Analysis</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-phishing-url-detections-trend-53278c60-3354-4452-a032-d2e239bed34b-e0e4db20.html">Phishing URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.html">Punycode lookalikes</a></td>
   <td style="text-align:left"></td>
 </tr>
@@ -1228,12 +1448,20 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-qr-code-url-detections-trend-aa121105-95a2-4424-84d7-1c5c47e5d44b-9e50e3ad.html">QR Code URL Detections Trend</a></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Url&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-quarantine-malware-reason-2d730733-6a56-470f-aa2c-f583611ffb50-a3d80b17.html">Quarantine Malware Reason</a></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-quarantine-phish-reason-5caf3813-c628-48e2-be65-71b95be7ff85-c2eed69d.html">Quarantine Phish Reason</a></td>
   <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-quarantine-phish-reason-trend-6f7df1b7-5613-45e5-9b82-3ec95d86e0e8-3da95a95.html">Quarantine Phish Reason trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.html">Quarantine Release Email Details</a></td>
@@ -1244,12 +1472,16 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-quarantine-release-percentage-5fb333a4-39bb-474b-ab37-9efdca8e9182-3c13105d.html">Quarantine Release Percentage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-quarantine-spam-reason-35b21933-9d3e-4919-b545-2ada20d26e8e-cde3bdbd.html">Quarantine Spam Reason</a></td>
   <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-quarantine-spam-reason-trend-014ffc5c-0ba5-49f9-989c-3833e0d1c2b8-f2b54296.html">Quarantine Spam Reason trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-c85b108a.html">Quarantine releases by Detection Types</a></td>
@@ -1276,6 +1508,14 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-secops-mailbox-override-count-d4a0f7f4-1c9b-4c2f-9644-2c53cfd7af0f-4b4a40a2.html">SecOps Mailbox Override Count</a></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy == &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-secops-mailbox-overrides-by-threat-type-d234d85d-1dd5-433b-a984-0fd764f25363-90ccb384.html">SecOps Mailbox Overrides by Threat Type</a></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy == &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-sender-recipient-contact-establishment-b2beec6a-2c1c-4319-a191-e70c2ee42857-9e7a5fbe.html">Sender recipient contact establishment</a></td>
   <td style="text-align:left"><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelAction != &quot;Block&quot;</code><br><code>SenderDisplayName contains &quot;Microsoft&quot;</code><br><code>UserLevelAction != &quot;Block&quot;</code></td>
 </tr>
@@ -1293,7 +1533,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spam-detections-by-detection-technology-f977d3e3-a97f-4568-b621-bd589732b8f2-f8061a3b.html">Spam Detections by Detection technology</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-spam-detections-by-sender-country-bdd60985-c235-4c74-af19-a3d77360f527-232f5efa.html">Spam Detections by Sender Country</a></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spam-and-phish-allowed-to-inbox-by-admin-overrides-0e37c1a4-86cd-4641-a514-28a431824369-1d798a77.html">Spam and Phish allowed to inbox by Admin Overrides</a></td>
@@ -1309,15 +1553,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spam-detection-by-delivery-location-5b6fcbad-675f-4d10-bfc7-054e3453f712-7ed7a6d9.html">Spam detection by delivery location</a></td>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spam-detection-technologies-366ce22d-74c1-4acd-8050-f5c6061eb6d1-d82a75c0.html">Spam detection technologies</a></td>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spam-detection-trend-2b373bca-b491-4b2f-906e-6f42eeab01a1-9f3ed605.html">Spam detection trend</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-spoof-detections-trend-61c73b2b-4c62-4015-8677-f569d1e83b57-4baf9594.html">Spoof Detections Trend</a></td>
@@ -1360,6 +1604,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-suspicious-microsoft-teams-callers-by-impersonation-style-identity-f905bb00-9c5f-4889-bc39-7d0765521228-65047600.html">Suspicious Microsoft Teams Callers by Impersonation-Style Identity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-suspiciousurlclicked-50835f49-7e5b-4852-a05a-f5aab2f40dd1-f0ca5f3b.html">SuspiciousUrlClicked</a></td>
   <td style="text-align:left"><code>SenderFromDomain != &quot;corporatedomain.com&quot;</code></td>
 </tr>
@@ -1377,27 +1625,27 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-6e78546a.html">Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-eb6fcdee.html">Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-7df27ceb.html">Top 10 External Senders (Malware)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-e1121ff9.html">Top 10 External Senders (Malware)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-01861b5b.html">Top 10 External Senders (Phish)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-a2f5f3c7.html">Top 10 External Senders (Phish)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-external-senders-spam-6f606826-b995-4a8d-8c2c-ee08e3d1194a-395cb836.html">Top 10 External Senders (Spam)</a></td>
@@ -1413,11 +1661,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-7217646a.html">Top 10 Targeted Users (Malware+Phish+Spam)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-a2be0cf5.html">Top 10 Targeted Users (Malware+Phish+Spam)</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-url-domains-attacking-organization-27ee28e7-423b-48c9-a410-cbc6c8e21d25-23e12672.html">Top 10 URL domains attacking organization</a></td>
@@ -1429,7 +1677,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-10-domains-sending-bulk-email-fc3e5da4-9a8d-4f2f-b714-7118bc00b5d8-14fb5548.html">Top 10 domains sending Bulk email</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-sender-domains-admin-email-submissions-fn-138681b2-442b-46cb-b086-fbe9e407aa2c-3382c095.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-of-most-attacked-users-e3b7b5c1-0e50-4dfb-b73a-c226636eaf58-d90b786a.html">Top 10% of most attacked users</a></td>
@@ -1456,28 +1708,60 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-top-attacked-users-by-malware-threat-classification-177b756b-03f1-4107-a547-92872ba32c47-d9dad7c3.html">Top Attacked Users by Malware Threat Classification</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-attacked-users-by-phish-threat-classification-6a5923be-81e4-496b-9ce3-f009a5f20737-f40e78d2.html">Top Attacked Users by Phish Threat Classification</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-195d52f8-7669-444a-9021-f30c140cb9ac-a523687a.html">Top Domains Outbound with Emails with Threats Inbound (Partner BEC)</a></td>
   <td style="text-align:left"><code>EmailDirection in &quot;Inbound,Outbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-top-external-domains-receiving-auto-forwarded-email-mailbox-rule-and-smtp-a5736802-3a1c-40aa-8e8f-7fbdaa52ae65-d9f0fb6d.html">Top External Domains Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-external-recipients-receiving-auto-forwarded-email-mailbox-rule-and-smtp-db98ab11-e0c2-4ece-9b31-1131bbdd7647-8f91ce31.html">Top External Recipients Receiving Auto-forwarded Email (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-internal-users-auto-forwarding-email-externally-mailbox-rule-and-smtp-af562a0f-9a03-4575-b408-b8e87d71e78f-9171df55.html">Top Internal Users Auto-forwarding Email Externally (Mailbox Rule and SMTP)</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-top-malware-families-43c7c926-0bd4-41a5-a959-753db79ae470-cf7ef9a6.html">Top Malware Families</a></td>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-recipients-receiving-threats-delivered-by-override-6b92522d-8e82-4fd2-ae70-3f1bc4846909-a46757b9.html">Top Recipients Receiving Threats Delivered by Override</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-recipients-targeted-by-impersonation-or-bec-7a8e34a4-3fbf-4ab6-a9d9-aa57c9267327-8fe65658.html">Top Recipients Targeted by Impersonation or BEC</a></td>
+  <td style="text-align:left"><code>DeliveryLocation has &quot;Inbox&quot;</code><br><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-sender-domains-delivering-threats-via-override-8c2aeb94-ecd0-4b14-ad8c-a6e2986f6b50-c12d7ff2.html">Top Sender Domains Delivering Threats via Override</a></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-spoof-dmarc-detections-by-sender-domain-p1-p2-633f848f-bb17-4813-81b4-098d277b00f7-a113ad18.html">Top Spoof DMARC detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-spoof-external-domain-detections-by-sender-domain-p1-p2-09e1ca5e-cc4c-4b89-b585-448cfc1a6579-7563d05b.html">Top Spoof external domain detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-spoof-intra-org-detections-by-sender-domain-p1-p2-11c4556a-0d77-47ba-9564-0818065c270d-d130a7a3.html">Top Spoof intra-org detections by Sender domain (P1/P2)</a></td>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-users-receiving-malware-1c423f0d-57d6-41dc-869f-79899a2dae77-78c7d40d.html">Top Users receiving Malware</a></td>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-top-users-receiving-phish-da24d001-6a74-4a48-89a7-c99ec1f45d32-8bc8f715.html">Top Users receiving Phish</a></td>
@@ -1521,7 +1805,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-total-emails-with-admin-overrides-allow-85000725-df05-479e-8cfd-78310b659714-2183ce6d.html">Total Emails with Admin Overrides (Allow)</a></td>
-  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-total-emails-with-admin-overrides-block-89a0a2aa-69c8-4586-95f5-7d003901adec-48d4dc98.html">Total Emails with Admin Overrides (Block)</a></td>
@@ -1548,6 +1832,26 @@
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-inbound-p2-senders-e1973a95-fd22-4669-8758-dba8f9828c8f-19aa7fe2.html">User Email Submissions (FP) - Top Inbound P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-inbound-subjects-b2c772f0-f6b2-406f-9a80-756b596f0b57-edd7e061.html">User Email Submissions (FP) - Top Inbound Subjects</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-intra-org-p2-senders-2e5e39ae-99f9-4ba0-b5c4-9e76919a0f53-5e9ac908.html">User Email Submissions (FP) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Intra-org&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-submissions-by-detection-method-phish-fp-5990abd3-7e11-4441-947b-17e60c69f28f-03c0b9f7.html">User Submissions by Detection Method - Phish (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-submissions-by-detection-method-spam-fp-91a1a3f0-1386-4c70-9c66-215f59b2af28-57f593cc.html">User Submissions by Detection Method - Spam (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.html">User clicks on malicious inbound emails</a></td>
   <td style="text-align:left"><code>ActionType == &quot;ClickAllowed&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
 </tr>
@@ -1565,11 +1869,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-zero-day-malware-detections-trend-63941b4c-4995-442b-97b0-ff640efd46c8-39a2558c.html">Zero-day Malware Detections Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-zero-day-phish-detections-trend-f22c98fd-40c2-4823-a5d7-5f5830911125-8d9a51b0.html">Zero-day Phish Detections Trend</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-detect-archive-exfiltration-to-competitor-8baad907-3b15-4f26-be09-dbba3d32fc3f-deef7303.html">detect-archive-exfiltration-to-competitor</a></td>
@@ -1605,7 +1909,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (9)</h3>
+<h3 id="workbooks">Workbooks (10)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>DeliveryAction == &quot;Junked&quot;</code><br><code>DetectionMethods contains &quot;spam&quot;</code></p>
 <table>
 <thead>
@@ -1619,7 +1923,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code><br><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>DeliveryAction != &quot;Delivered&quot;</code><br><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -1704,6 +2008,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.html">MicrosoftSecurityLicenseUtilization</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
   <td style="text-align:left"></td>
 </tr>
@@ -1713,8 +2021,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (59 criteria, 178 total references)</h2>
-<p>References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (69 criteria, 260 total references)</h2>
+<p>References by type: 0 connectors, 260 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1730,10 +2038,10 @@
 <tr>
   <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">22</td>
+  <td style="text-align:center">28</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>22</strong></td>
+  <td style="text-align:center"><strong>28</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
@@ -1744,7 +2052,31 @@
   <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">10</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>10</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">10</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>10</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">9</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>9</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">8</td>
   <td style="text-align:center">-</td>
@@ -1752,7 +2084,31 @@
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DetectionMethods has_any &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
@@ -1761,6 +2117,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">6</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>6</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">6</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>6</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
@@ -1816,7 +2188,7 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy == &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1824,7 +2196,7 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1840,7 +2212,7 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1848,7 +2220,7 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ConfidenceLevel has_any &quot;Phish&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1856,7 +2228,23 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1888,6 +2276,14 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>DeliveryAction !has &quot;Blocked&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1897,14 +2293,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>DetectionMethods contains &quot;spoof&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1928,7 +2316,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromDomain !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1936,7 +2324,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1944,7 +2332,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>SenderFromAddress !contains &quot;.yourdomain.com&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1952,7 +2340,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Malware&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>ThreatTypes has_any &quot;Malware&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1984,31 +2372,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Malware&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OrgLevelAction == &quot;Allow&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Failed,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2040,7 +2404,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Malware&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2048,7 +2412,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeliveryLocation == &quot;Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2064,7 +2428,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation in &quot;Dropped,Failed,Inbox/folder,Junk folder,Quarantine&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2072,7 +2436,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DetectionMethods has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>DetectionMethods has &quot;Spoof&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2080,7 +2444,39 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Inbound&quot;</code><br><code>ThreatTypes has &quot;Spam&quot;</code></td>
+  <td style="text-align:left"><code>DeliveryLocation has &quot;Inbox&quot;</code><br><code>DetectionMethods has &quot;Impersonation&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>EmailDirection == &quot;Intra-org&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Phish&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code><br><code>DetectionMethods has &quot;Spam&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DetectionMethods has &quot;Url&quot;</code><br><code>EmailDirection == &quot;Inbound&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2094,14 +2490,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>EmailDirection == &quot;Outbound&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>DetectionMethods has &quot;spoof&quot;</code></td>
@@ -2184,7 +2572,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code><br><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>DeliveryAction != &quot;Delivered&quot;</code><br><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></td>
+  <td style="text-align:left"><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>OrgLevelPolicy !in &quot;Phishing simulation,SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2202,10 +2590,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>178</strong></td>
+  <td style="text-align:center"><strong>260</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>178</strong></td>
+  <td style="text-align:center"><strong>260</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2223,36 +2611,20 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>AdminSubmissionSubmitted</code></td>
+  <td style="text-align:left"><code>UserSubmission</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">10</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>10</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Malware ZAP</code></td>
+  <td style="text-align:left"><code>Automated Remediation</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Phish ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Redelivery</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>ClickAllowed</code></td>
@@ -2372,14 +2744,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
-<tr>
-  <td style="text-align:left"><code>has_any Phish</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
 </tbody>
 </table>
 <h3 id="deliveryaction">DeliveryAction</h3>
@@ -2398,10 +2762,10 @@
 <tr>
   <td style="text-align:left"><code>Delivered</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">23</td>
+  <td style="text-align:center">22</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>23</strong></td>
+  <td style="text-align:center"><strong>22</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>!has Blocked</code></td>
@@ -2427,14 +2791,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
-<tr>
-  <td style="text-align:left"><code>!= Delivered</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
 </tbody>
 </table>
 <h3 id="deliverylocation">DeliveryLocation</h3>
@@ -2453,10 +2809,10 @@
 <tr>
   <td style="text-align:left"><code>Quarantine</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">12</td>
+  <td style="text-align:center">18</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>12</strong></td>
+  <td style="text-align:center"><strong>18</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Inbox/folder</code></td>
@@ -2498,6 +2854,14 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
+<tr>
+  <td style="text-align:left"><code>has Inbox</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
 </tbody>
 </table>
 <h3 id="detectionmethods">DetectionMethods</h3>
@@ -2514,6 +2878,38 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>has Phish</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">16</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>16</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Malware</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">12</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>12</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Spam</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">12</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>12</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Impersonation</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>contains spoof</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">6</td>
@@ -2522,55 +2918,15 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Phish</code></td>
+  <td style="text-align:left"><code>has Spoof</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>6</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Spam</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Malware</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Phish</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Impersonation</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains impersonation</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Spoof</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -2587,6 +2943,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has URL Detonation</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Url</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2627,26 +2991,26 @@
 <tr>
   <td style="text-align:left"><code>Inbound</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">89</td>
+  <td style="text-align:center">131</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>89</strong></td>
+  <td style="text-align:center"><strong>131</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Outbound</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">15</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>15</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Intra-org</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2742,20 +3106,20 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>Allow</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">9</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>9</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>!= Block</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">8</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>8</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Allow</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Block</code></td>
@@ -2781,20 +3145,28 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>!= SecOps Mailbox</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">21</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>21</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>!= Phishing simulation</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">19</td>
+  <td style="text-align:center">108</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>19</strong></td>
+  <td style="text-align:center"><strong>108</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= SecOps Mailbox</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">108</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>108</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SecOps Mailbox</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3056,18 +3428,18 @@
 <tr>
   <td style="text-align:left"><code>has Malware</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">19</td>
+  <td style="text-align:center">25</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>19</strong></td>
+  <td style="text-align:center"><strong>25</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>has Phish</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">19</td>
+  <td style="text-align:center">25</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>19</strong></td>
+  <td style="text-align:center"><strong>25</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>has Spam</code></td>
@@ -3080,10 +3452,10 @@
 <tr>
   <td style="text-align:left"><code>has_any Malware</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
+  <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Malware</code></td>

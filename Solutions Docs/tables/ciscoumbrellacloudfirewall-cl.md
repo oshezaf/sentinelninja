@@ -19,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (38 columns)
+## Schema (40 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella%5CData%20Connectors%5CCiscoUmbrella_CCP/CiscoUmbrellaCloudFirewall_table.json)
 
@@ -38,12 +38,14 @@
 | DestinationIp | string | The destination IP address of the user-generated traffic towards the CDFW. |
 | DestinationListIds | string | The destination list IDs that Secure Access applied in the rule. |
 | DestinationPort | string | The destination port number of the user-generated traffic towards the CDFW. |
+| DestinationSgtOriginId | string | The origin ID of the destination Security Group Tag (SGT). |
 | Direction | string | The direction of the packet. It is destined either towards the internet or to the customer's network. |
 | Egress | string | TRUE indicates that the egress IP was a reserved IP. |
 | EgressIp | string | The public IP address assigned to a session as it exits the Secure Access ZTA infrastructure en route to the destination application. |
 | EventCorrelationId | string | A unique identifier generated for each network request, the Event Correlation ID stitches together all related events across various security services (Firewall, SWG, ZTNA) to provide a unified, end-to-end view of a single traffic flow. |
 | FirstPacketTimestamp | string | The timestamp when the first packet of the session was received in UTC in seconds. Populated only for traffic handled by Cisco Secure Firewall. |
 | Fqdns | string | The fully qualified domain names (FQDNs) that match the request. |
+| FwBlockReason | string | The reason the firewall blocked the traffic. |
 | FwEventId | string | The ID of the firewall event. Populated only for traffic handled by Cisco Secure Firewall. |
 | Identities | string | The names of the network tunnel. |
 | IdentityType | string | The type of identity that made the request. Should always be CDFW Tunnel Device. |

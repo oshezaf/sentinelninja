@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **15** |
-| Active | 11 |
+| Active | 12 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 3 |
+| Unpublished ⚠️ | 2 |
 
 ## Connectors Using This Method
 
@@ -30,7 +30,7 @@ The collection method for these connectors could not be automatically determined
 | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) ⚠️ | Cofense | 2 | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
 | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) ⚠️ 🔶 | Cofense | 3 | [CofenseTriage](../solutions/cofensetriage.md) |
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | CrowdStrike | 2 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) ⚠️ | Cyjax | 2 | [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) | Cyjax | 2 | [Cyjax](../solutions/cyjax.md) |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | 2 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
 | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | GreyNoise, Inc. and BlueCycle LLC | 2 | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |

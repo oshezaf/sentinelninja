@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**596 workbooks** across all Microsoft Sentinel solutions.
+**610 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -40,6 +40,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ADXvsLA](github-only-adxvsla-0ddedeb5.md) | 🔗 GitHub Only |
 | [AIA-Darktrace](ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | 📦 [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md) |
 | [AIA-Darktrace](github-only-aia-darktrace-8b7a67eb.md) | 🔗 GitHub Only |
+| [AirlockDigital](airlockdigital-airlockdigital-f4806f05.md) | 📦 [AirlockDigital](../solutions/airlockdigital.md) |
 | [AIShield](aishield-ai-security-monitoring-aishield-af815b41.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [AIVectraDetectWorkbook](vectra-ai-detect-aivectradetectworkbook-74fce2d7.md) | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | [AIVectraDetectWorkbook](github-only-aivectradetectworkbook-9ff09f08.md) | 🔗 GitHub Only |
@@ -197,6 +198,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CyberArkEPM](cyberarkepm-cyberarkepm-34ce07fb.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPV](cyberark-privilege-access-manager-pam-events-cyberarkepv-316d29f3.md) | 📦 [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md) |
 | [CyberArkEPV](github-only-cyberarkepv-5bdbbd59.md) | 🔗 GitHub Only |
+| [CybereinforceCTE](cybereinforce-cybereinforcecte-804db96b.md) | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
 | [CyberpionOverviewWorkbook](github-only-cyberpionoverviewworkbook-1f91ecaf.md) | 🔗 GitHub Only |
 | [CybersecurityMaturityModelCertification_CMMCV2](cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) | 📦 [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md) |
 | [CybleVisionAlertsWorkbook](cyble-vision-cyblevisionalertsworkbook-ccdef358.md) | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
@@ -264,6 +266,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [F5Networks](github-only-f5networks-1dca2cd9.md) | 🔗 GitHub Only |
 | [FilewallM365Overview](filewall-for-microsoft-365-filewallm365overview-90daf6a7.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
 | [FilewallM365Overview](github-only-filewallm365overview-0b6e3b68.md) | 🔗 GitHub Only |
+| [FirewallLogOptimization](github-only-firewalllogoptimization-99415fb7.md) | 🔗 GitHub Only |
 | [FlareSystemsFireworkOverview](flare-flaresystemsfireworkoverview-4ffe81de.md) | 📦 [Flare](../solutions/flare.md) |
 | [ForcepointCASB](forcepoint-casb-forcepointcasb-d5d7df21.md) | 📦 [Forcepoint CASB](../solutions/forcepoint-casb.md) |
 | [ForcepointCASB](github-only-forcepointcasb-e6afece9.md) | 🔗 GitHub Only |
@@ -293,6 +296,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [GitHub](github-github-87916f66.md) | 📦 [GitHub](../solutions/github.md) |
 | [GitHubAdvancedSecurity](github-githubadvancedsecurity-62e1aa58.md) | 📦 [GitHub](../solutions/github.md) |
 | [GitHubSecurityWorkbook](github-only-githubsecurityworkbook-dfa4681c.md) | 🔗 GitHub Only |
+| [GoogleThreatIntelligence](google-threat-intelligence-googlethreatintelligence-81b272e5.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GoogleWorkspace](googleworkspacereports-googleworkspace-6948e392.md) | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | [GreyNoiseOverview](greynoisethreatintelligence-greynoiseoverview-879c7a2d.md) | 📦 [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
 | [GSAM365EnrichedEvents](global-secure-access-gsam365enrichedevents-b8162378.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
@@ -307,6 +311,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [HIPAACompliance](hipaa-compliance-hipaacompliance-3850f8c8.md) | 📦 [HIPAA Compliance](../solutions/hipaa-compliance.md) |
+| [HoneyLabsThreatIntelligence](honeylabs-honeylabsthreatintelligence-d37080fe.md) | 📦 [HoneyLabs](../solutions/honeylabs.md) |
 | [HybridAttack-Cloud&Identity](hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) | 📦 [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md) |
 
 ## I
@@ -424,6 +429,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [MicrosoftPowerBIActivityWorkbook](microsoft-powerbi-microsoftpowerbiactivityworkbook-657a784e.md) | 📦 [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [MicrosoftPurview](microsoft-purview-microsoftpurview-c44ab5ce.md) | 📦 [Microsoft Purview](../solutions/microsoft-purview.md) |
 | [MicrosoftPurviewInformationProtection](github-only-microsoftpurviewinformationprotection-87c9682e.md) | 🔗 GitHub Only |
+| [MicrosoftSecurityLicenseUtilization](github-only-microsoftsecuritylicenseutilization-8b43f00a.md) | 🔗 GitHub Only |
 | [MicrosoftSentinelCostEUR](github-only-microsoftsentinelcosteur-f339a745.md) | 🔗 GitHub Only |
 | [MicrosoftSentinelCostGBP](github-only-microsoftsentinelcostgbp-451ae793.md) | 🔗 GitHub Only |
 | [MicrosoftSentinelDeploymentandMigrationTracker](github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | 🔗 GitHub Only |
@@ -523,6 +529,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [PrancerSentinelAnalytics](github-only-prancersentinelanalytics-43012f16.md) | 🔗 GitHub Only |
 | [PreventWorkbook](egress-iris-preventworkbook-e3444c6a.md) | 📦 [Egress Iris](../solutions/egress-iris.md) |
 | [PRODAFTUstaATPOverview](prodaft-usta-account-takeover-prevention-prodaftustaatpoverview-23fe73af.md) | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
+| [PRODAFTUstaIoCOverview](prodaft-usta-ioc-threat-intelligence-prodaftustaiocoverview-c05c3e08.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
 | [PRODAFTUstaPCFIOverview](prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfioverview-314477da.md) | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [ProofpointPOD](proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [ProofpointPOD](github-only-proofpointpod-64db84d0.md) | 🔗 GitHub Only |
@@ -605,6 +612,9 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [SOXITCompliance](sox-it-compliance-soxitcompliance-6426e0a3.md) | 📦 [SOX IT Compliance](../solutions/sox-it-compliance.md) |
 | [SquadraTechnologiesSecRMM](github-only-squadratechnologiessecrmm-3e33bcf1.md) | 🔗 GitHub Only |
 | [StealthTalkAnomalousAuthMonitor](stealthtalk-stealthtalkanomalousauthmonitor-66e563fa.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StratoSecure_APIInventory](stratosecure-stratosecure-apiinventory-1e864274.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure_Executive](stratosecure-stratosecure-executive-6e0b8ef2.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure_SOC](stratosecure-stratosecure-soc-464ce49d.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [SummaryRulesWorkbook](github-only-summaryrulesworkbook-d89cc3ca.md) | 🔗 GitHub Only |
 | [SymantecEndpointProtection](symantec-endpoint-protection-symantecendpointprotection-1ac479ae.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
 | [SymantecProxySG](symantecproxysg-symantecproxysg-dd9ed98f.md) | 📦 [SymantecProxySG](../solutions/symantecproxysg.md) |
@@ -657,6 +667,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [UnifiSG](github-only-unifisg-96910283.md) | 🔗 GitHub Only |
 | [UnifiSGNetflow](github-only-unifisgnetflow-8a035168.md) | 🔗 GitHub Only |
 | [UnifiSiteManager](unifi-site-manager-ccf-unifisitemanager-eafe5588.md) | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [Uniqkey](uniqkey-uniqkey-bb86defa.md) | 📦 [Uniqkey](../solutions/uniqkey.md) |
 | [UpdateSOCMaturityScore](soc-process-framework-updatesocmaturityscore-d96c410d.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [usecasemapper](github-only-usecasemapper-b5a50530.md) | 🔗 GitHub Only |
 | [User_Analytics_Workbook](github-only-user-analytics-workbook-b95f3e5a.md) | 🔗 GitHub Only |
@@ -673,7 +684,9 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [vArmour_AppContoller_Workbook](varmour-application-controller-varmour-appcontoller-workbook-89c75f45.md) | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
 | [VaronisSaaS](varonissaas-varonissaas-5667e619.md) | 📦 [VaronisSaaS](../solutions/varonissaas.md) |
 | [vCenter](vmware-vcenter-vcenter-167665a0.md) | 📦 [VMware vCenter](../solutions/vmware-vcenter.md) |
-| [VectraXDR](vectra-xdr-vectraxdr-67eeec96.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [VectraRUXDetectionTimeline](vectra-xdr-vectraruxdetectiontimeline-0e8c0b9f.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [VectraRUXSecurityDashboard](vectra-xdr-vectraruxsecuritydashboard-3f089ed1.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [VectraXDR](vectra-xdr-vectraxdr-67eeec96.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [VeeamDataPlatformMonitoring](veeam-veeamdataplatformmonitoring-a61e8871.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [VeeamDataPlatformMonitoring](github-only-veeamdataplatformmonitoring-93349d26.md) | 🔗 GitHub Only |
 | [VeeamSecurityActivites](github-only-veeamsecurityactivites-4f8fb3e5.md) | 🔗 GitHub Only |
@@ -711,6 +724,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [WizFindings](wiz-wizfindings-78285767.md) | 📦 [Wiz](../solutions/wiz.md) |
 | [Workbook-AzureSQLSecurity](azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [WorkbookContent](cayosoft-guardian-workbookcontent-32aebefa.md) | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
+| [WorkbooksMetadata](cybereinforce-workbooksmetadata-59dcf03e.md) ⚠️ | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
 | [workbooksMetadata](microsoft-active-directory-tier-model-workbooksmetadata-743e7b34.md) ⚠️ | 📦 [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md) |
 | [workbooksMetadata](semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | 📦 [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [WorkbooksMetadata](whisper-workbooksmetadata-4425a2d3.md) ⚠️ | 📦 [Whisper](../solutions/whisper.md) |

@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Compliance |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-02-24 |
-| **Last Updated** | 2026-01-22 |
+| **Last Updated** | 2026-08-31 |
 | **Solution Folder** | [NISTSP80053](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NISTSP80053) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-nistsp80053) · Popularity: 🔵 Medium (62%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-nistsp80053) · Popularity: 🔵 Medium (70%) |
 
 This solution enables Compliance Teams, Architects, SecOps Analysts, and Consultants to gain situational awareness for cloud workload security posture. This workbook is designed to augment staffing through automation, visibility, assessment, monitoring and remediation. The Microsoft Sentinel: NIST SP 800-53 R4 solution demonstrates best practice guidance, but Microsoft does not guarantee nor imply compliance. All requirements, validations, and controls are governed by the 💡[National Institute of Standards and Technology (NIST)](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/archive/2015-01-22). This workbook provides visibility and situational awareness for security capabilities delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user and some panels may require additional configurations for operation. Recommendations do not imply coverage of respective controls as they are often one of several courses of action for approaching requirements which is unique to each customer. Recommendations should be considered a starting point for planning full or partial coverage of respective requirements. This workbook does not address all controls within the framework. It should be considered a supplemental tool to gain visibility of technical controls within cloud, multi-cloud, and hybrid networks. For the full listing of respective controls, see the💡[Microsoft Cloud Service Trust Portal](https://servicetrust.microsoft.com/)
 
@@ -128,7 +128,7 @@ This Solution enables Compliance Teams, Architects, SecOps Analysts, and Consult
 You can deploy the solution by clicking on the buttons below:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNISTSP80053%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNISTSP80053%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNISTSP80053%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovernbutton"/></a>
 
 ![Workbook Overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NISTSP80053/Workbooks/Images/NISTSP80053Black.png?raw=true)
 
@@ -148,6 +148,7 @@ This solution is designed to augment staffing through automation, machine learni
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                            |
 |-------------|--------------------------------|-----------------------------------------------------------------------------------------------|
+| 3.0.4       | 31-08-2026                     | Fixed gov deploy to azure button and repackage                      |
 | 3.0.3       | 19-01-2026                     | EOP rebrand (updated minor link and link title changes)                      |
 | 3.0.2       | 23-09-2025                     | Updated the workbook with new links and fixed broken metrics.   |
 | 3.0.1       | 31-01-2024                     | Updated the solution to fix Analytic Rules deployment issue     |

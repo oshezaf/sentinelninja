@@ -35,9 +35,9 @@ Reference for CIEventsAudit table in Azure Monitor Logs.
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Audience | string | The audience for which the accessToken was requested for. |
 | CallerIPAddress | string | Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
-| CallerObjectId | string | Azure Active Directory ObjectId of the caller. |
+| CallerObjectId | string | Microsoft Entra ID ObjectId of the caller. |
 | Category | string | Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational. |
-| Claims | string | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
+| Claims | string | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Microsoft Entra ID configuration. |
 | CorrelationId | string | The ID for the correlated events. Can be used to identify correlated events between multiple tables. |
 | DurationMs | long | Duration of the operation in milliseconds. |
 | EventType | string | Always ApiEvent, marking the log event as API event. |

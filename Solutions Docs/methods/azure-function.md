@@ -19,8 +19,8 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **128** |
-| Active | 81 |
-| Deprecated 🚫 | 29 |
+| Active | 78 |
+| Deprecated 🚫 | 32 |
 | Unpublished ⚠️ | 18 |
 
 ## Connectors Using This Method
@@ -41,17 +41,17 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
-| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) ⚠️ | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
-| [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
+| [Cisco Duo Security](../connectors/ciscoduosecurity.md) ⚠️ 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | [Cisco ETD](../connectors/ciscoetd.md) 🔶 | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [Cohesity](../connectors/cohesitydataconnector.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
-| [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArkAudit](../connectors/cyberarkaudit.md) ⚠️ | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
@@ -105,9 +105,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶 | Rubrik, Inc | 4 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶 | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
-| [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
 | [SlashNext Function App](../connectors/slashnextfunctionapp.md) ⚠️ | SlashNext | ? | [SlashNext](../solutions/slashnext.md) |
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
@@ -117,7 +114,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Transmit Security Connector](../connectors/transmitsecurity.md) ⚠️ 🔶 | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | Trend Micro | 2 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
-| [Upwind Catalog Loader (Ingestion API)](../connectors/upwindcatalogloader.md) ⚠️ | Upwind | 1 | [Upwind](../solutions/upwind.md) |
+| [Upwind Catalog Loader (Ingestion API)](../connectors/upwindcatalogloader.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
@@ -143,7 +140,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | Google | 1 | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) | Google | 1 | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
-| 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Google | 22 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| 🚫 [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Google | 23 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | 🚫 [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | 🚫 [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Lookout | 1 | [Lookout](../solutions/lookout.md) |
 | 🚫 [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
@@ -154,6 +151,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
 | 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
+| 🚫 [[DEPRECATED] SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | SentinelOne | 7 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |

@@ -22,11 +22,9 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (110 columns)
+## Schema (111 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections)
 
@@ -52,6 +50,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | Confidence | int | Confidence score of the detection (0-100). |
 | CrawledTimestamp | datetime | Timestamp when the detection data was last crawled. |
 | CreatedTimestamp | datetime | Timestamp when the detection was first created. |
+| CrowdStrikeDomain | string | CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | DateUpdated | string | Date when the detection record was last updated. |
 | Description | string | Description of the detection. |
 | DetectionContext | dynamic | Additional context information about the detection. |
@@ -149,29 +148,23 @@ Official Microsoft Learn documentation for field/column information:
 
 - [CrowdStrikeDetections Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) |  |
-
 ---
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventCrowdStrikeFalcon](../asim/asimalerteventcrowdstrikefalcon.md) | AlertEvent | CrowdStrike Falcon |  |
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrike](../parsers/crowdstrike.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.4</td>
+  <td style="text-align:left">3.0.6</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,12 +59,16 @@
   <td style="text-align:left">2023-01-14</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-09-07</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials">DNS Essentials</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns-domain">Azure Marketplace</a> · Popularity: 🟡 Low (43%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns-domain">Azure Marketplace</a> · Popularity: 🔵 Medium (65%)</td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +93,8 @@
 <li>Logic app for data summarization</li>
 </ol>
 <p><strong>Recommendation :-</strong></p>
-<p>It is highly recommended to use the <strong>Summarize Data for DNS Essentials Solution</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.</p>
+<p>It is highly recommended to use the <strong>Summarize Data for DNS Essentials Solution</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries.
+<strong>NOTE: This solution includes the playbook SummarizeData_DNSEssentials, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeDNSData_DNS_logingestion playbook instead. It ingests data into the new tables - DNS_Summarized_Logs_sourceInfoV1_CL and DNS_Summarized_Logs_ipV1_CL</strong></p>
 <p><strong>Additional Information</strong></p>
 <ul>
 <li>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions overview</a> - Uses ASIM DNS schema for cross-product threat detection</li>
@@ -98,13 +103,33 @@
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#internal-tables">Internal Tables</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
-<h2 id="internal-tables">Internal Tables</h2>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>2 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a></td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a></td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
 <p>The following <strong>5 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
@@ -124,7 +149,7 @@
 </tr>
 <tr>
   <td><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
@@ -137,7 +162,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>21 content item(s)</strong>:</p>
+<p>This solution includes <strong>23 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -155,11 +180,15 @@
   <td style="text-align:left">9</td>
 </tr>
 <tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">2</td>
+</tr>
+<tr>
   <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
 </tr>
 <tr>
-  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">Parsers</td>
   <td style="text-align:left">1</td>
 </tr>
 </tbody>
@@ -179,7 +208,7 @@
   <td style="text-align:left"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-anomaly-based-asim-dn-cf687598-5a2c-46f8-81c8-06b15ed489b1-e7ae2b7d.html">Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-static-threshold-base-5b8344eb-fa28-4ac3-bcff-bc19d5d63089-d16106dc.html">Detect DNS queries reporting multiple errors from different clients - Static threshold based (ASIM DNS Solution)</a></td>
@@ -191,7 +220,7 @@
   <td style="text-align:left"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-anomaly-based-asim-dns-solution-02f23312-1a33-4390-8b80-f7cd4df4dea0-980141b9.html">Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-static-threshold-based-asim-dns-solution-4ab8b09e-3c23-4974-afbe-7e653779eb2b-b0da6e00.html">Detect excessive NXDOMAIN DNS queries - Static threshold based (ASIM DNS Solution)</a></td>
@@ -209,7 +238,7 @@
   <td style="text-align:left"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-anomaly-based--01191239-274e-43c9-b154-3a042692af06-1a7b8167.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-static-thresho-89ba52fa-96a7-4653-829a-ca49bb13336c-71c9371c.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Static threshold based (ASIM DNS Solution)</a></td>
@@ -249,7 +278,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-connection-to-unpopular-website-detected-asim-dns-solution-83e70a34-d96f-419d-815b-43d1499e88ed-193019cc.html">Connection to Unpopular Website Detected (ASIM DNS Solution)</a></td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-increase-in-dns-requests-by-client-than-the-daily-average-count-asim-dns-solution-b31b5d70-4c75-4a5f-8af7-6a83f6eb372c-150365d8.html">Increase in DNS Requests by client than the daily average count (ASIM DNS Solution)</a></td>
@@ -289,7 +318,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-%5Banomaly%5D-anomalous-increase-in-dns-activity-by-clients-asim-dns-solution-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95-eb2b2313.html">[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)</a></td>
   <td style="text-align:left">CommandAndControl, Exfiltration</td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -304,7 +333,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.html">DNSSolutionWorkbook</a></td>
-  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -319,9 +348,31 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.html">Summarize Data for DNS Essentials Solution</a></td>
+  <td style="text-align:left"><a href="../content/dns-essentials-summarize-data-for-dns-essentials-solution-using-log-ingestion-api-1b0fa700.html">Summarize Data for DNS Essentials Solution using Log Ingestion API</a></td>
   <td style="text-align:left">This playbook summarizes data for DNS Essentials Solution and ingests into custom tables.</td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a> <em>(read)</em><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-%5Bdeprecated%5D-summarize-data-for-dns-essentials-solution-6ff0b741.html">[Deprecated] Summarize Data for DNS Essentials Solution</a></td>
+  <td style="text-align:left">This playbook summarizes data for DNS Essentials Solution and ingests into custom tables. NOTE: It u...</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a> <em>(read/write)</em><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a> <em>(read/write)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/dnsessentialscustomparser.html">DNSEssentialsCustomParser</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/dns-summarized-logs-ipv1-cl.html"><code>DNS_Summarized_Logs_ipV1_CL</code></a> <em>(read)</em><br><a href="../tables/dns-summarized-logs-sourceinfov1-cl.html"><code>DNS_Summarized_Logs_sourceInfoV1_CL</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/dns-summarized-logs-ip-cl.html"><code>DNS_Summarized_Logs_ip_CL</code></a> <em>(read)</em><br><a href="../tables/dns-summarized-logs-sourceinfo-cl.html"><code>DNS_Summarized_Logs_sourceInfo_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -335,6 +386,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.6</td>
+  <td>09-09-2026</td>
+  <td>Added  DNSEssentialsCustomParser to parse and normalize the tables used in dependent Security Content.</td>
+</tr>
+<tr>
+  <td>3.0.5</td>
+  <td>02-09-2026</td>
+  <td>Added a DNS summarization playbook that uses the Azure Monitor Logs Ingestion API and creates two new V1 summary tables: DNS_Summarized_Logs_ipV1_CL and DNS_Summarized_Logs_sourceInfoV1_CL, avoiding conflicts with existing tables</td>
+</tr>
 <tr>
   <td>3.0.4</td>
   <td>02-07-2025</td>
@@ -352,13 +413,8 @@
 </tr>
 <tr>
   <td>3.0.1</td>
-  <td>31-01-2023</td>
+  <td>31-01-2024</td>
   <td>Updated the solution to fix <strong>Analytic Rules</strong> deployment issue.</td>
-</tr>
-<tr>
-  <td>3.0.2</td>
-  <td>12-03-2024</td>
-  <td>Added new <strong>Analytic rule</strong> and repackaged solution.</td>
 </tr>
 </tbody>
 </table>

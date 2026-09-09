@@ -32,7 +32,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">CyberArk Support</td>
+  <td style="text-align:left">Idira Support</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Tier</strong></td>
@@ -48,11 +48,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.0</td>
+  <td style="text-align:left">3.2.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">CyberArk Business Development - BizDevTech@cyberark.com</td>
+  <td style="text-align:left">Idira Business Development - BizDevTech@cyberark.com</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_audit_sentinel">Azure Marketplace</a> · Popularity: 🟢 High (86%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_audit_sentinel">Azure Marketplace</a> · Popularity: 🟢 High (85%)</td>
 </tr>
 </tbody>
 </table>
-<p>The integration between CyberArk Audit and Microsoft Sentinel aims to seamlessly connect the robust audit capabilities of CyberArk with the advanced security analytics and threat detection features of Microsoft Sentinel</p>
+<p>The integration between Idira Audit and Microsoft Sentinel aims to seamlessly connect the robust audit capabilities of Idira with the advanced security analytics and threat detection features of Microsoft Sentinel</p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -80,11 +80,14 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/cyberarkaudit.html">CyberArkAudit</a></li>
-<li><a href="../connectors/cyberarkauditccpdefinition.html">CyberArk Audit</a></li>
+<li><a href="../connectors/cyberarkaudit.html">CyberArkAudit</a> ⚠️</li>
+<li><a href="../connectors/cyberarkauditccpdefinition.html">Idira Audit</a></li>
 </ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
@@ -98,7 +101,7 @@
 <tbody>
 <tr>
   <td><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
-  <td><a href="../connectors/cyberarkauditccpdefinition.html">CyberArk Audit</a>, <a href="../connectors/cyberarkaudit.html">CyberArkAudit</a></td>
+  <td><a href="../connectors/cyberarkaudit.html">CyberArkAudit</a>, <a href="../connectors/cyberarkauditccpdefinition.html">Idira Audit</a></td>
   <td>Analytics</td>
 </tr>
 </tbody>
@@ -131,19 +134,19 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/cyberarkaudit-cyberark-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-f02b1466.html">CyberArk - High-Risk Actions Outside Business Hours</a></td>
+  <td style="text-align:left"><a href="../content/cyberarkaudit-idira-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-69d24d43.html">Idira - High-Risk Actions Outside Business Hours</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">DefenseEvasion</td>
   <td style="text-align:left"><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/cyberarkaudit-cyberark-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-7585ad5d.html">CyberArk - Multiple Failed Actions Followed by Success (15m)</a></td>
+  <td style="text-align:left"><a href="../content/cyberarkaudit-idira-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-6009c78d.html">Idira - Multiple Failed Actions Followed by Success (15m)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CredentialAccess</td>
   <td style="text-align:left"><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/cyberarkaudit-cyberark-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-5cd42d25.html">CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)</a></td>
+  <td style="text-align:left"><a href="../content/cyberarkaudit-idira-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-a246971b.html">Idira - Sensitive Safe/Permission/Entitlement Changes (with customData)</a></td>
   <td style="text-align:left">Low</td>
   <td style="text-align:left">PrivilegeEscalation</td>
   <td style="text-align:left"><a href="../tables/cyberark-auditevents-cl.html"><code>CyberArk_AuditEvents_CL</code></a></td>
@@ -160,6 +163,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.1</td>
+  <td>02-09-2026</td>
+  <td>Security Patch: Remove logResponseContent attribute from Polling Config</td>
+</tr>
+<tr>
+  <td>3.2.0</td>
+  <td>06-07-2026</td>
+  <td>Rebrand to Idira and remove deprecated Azure Functions Data Connector</td>
+</tr>
 <tr>
   <td>3.1.1</td>
   <td>16-04-2026</td>

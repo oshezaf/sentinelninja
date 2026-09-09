@@ -43,7 +43,7 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| HTTP_-_Unisolate_Machine | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_-_Host')?['additionalData']?['MdatpDeviceId']}/unisolate` | — |
+| HTTP_-_Unisolate_Machine | POST | `https://api.securitycenter.microsoft.com/api/machines/@{encodeURIComponent(items('For_each_-_Host')?['additionalData']?['MdatpDeviceId'])}/unisolate` | — |
 | HTTP_-_Authenticate | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]` | — |
 
 </details>

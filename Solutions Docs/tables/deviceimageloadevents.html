@@ -369,7 +369,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -498,7 +498,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType == &quot;PowerShellCommand&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-detect-powershell-v2-downgrade-70c41ff4-b95a-43a3-8fb5-794ed69be100-f267821b.html">Detect PowerShell v2 Downgrade</a></td>
@@ -538,7 +538,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.html">regsvr32-rundll32-abnormal-image-loads</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileRenamed&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-555df071.html">regsvr32-rundll32-image-loads-abnormal-extension</a></td>
@@ -581,8 +581,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (5 criteria, 7 total references)</h2>
-<p>References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 10 total references)</h2>
+<p>References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -612,6 +612,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>InitiatingProcessSHA1 !in &quot;&lt;Legit_SHA1_1&gt;,&lt;Legit_SHA1_2&gt;&quot;</code><br><code>InitiatingProcessVersionInfoCompanyName !in &quot;Microsoft Corporation,Google LLC,Google Inc,Cisco Systems, Inc.,Intel Corporation&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -620,7 +628,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileRenamed&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>InitiatingProcessFileName == &quot;powershell.exe&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;PowerShellCommand&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -638,10 +662,57 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>10</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="actiontype">ActionType</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>FileCreated</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>FileModified</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>FileRenamed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>PowerShellCommand</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>

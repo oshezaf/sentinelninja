@@ -43,7 +43,7 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Get_Dynatrace_Attack_Details | GET | `https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}` | — |
+| Get_Dynatrace_Attack_Details | GET | `https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['AttackIdentifier'])}` | — |
 
 </details>
 

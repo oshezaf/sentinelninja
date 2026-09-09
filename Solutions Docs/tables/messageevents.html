@@ -277,8 +277,8 @@
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (47)</h2>
-<h3 id="hunting-queries">Hunting Queries (47)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (60)</h2>
+<h3 id="hunting-queries">Hunting Queries (59)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -293,8 +293,16 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-external-microsoft-teams-sender-domain-risk-4f859dbb-68cf-48d3-812b-7dd19f11e495-4ba4ef5a.html">External Microsoft Teams Sender Domain Risk</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-external-malicious-teams-messages-sent-from-internal-senders-9cb4a6eb-c7ae-44ac-b12b-c16ec63da385-04ef94f1.html">External malicious Teams messages sent from internal senders</a></td>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;1&quot;</code><br><code>ThreatTypes has_any &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-first-contact-external-teams-senders-3c9780f9-1784-48b3-b82e-d1e334c08ed2-a20b6816.html">First-Contact External Teams Senders</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbound-teams-messages-by-sender-domains-f304b75a-a2a0-45fb-814c-40b6e08211f0-46960408.html">Inbound Teams messages by sender domains</a></td>
@@ -309,12 +317,24 @@
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>ThreatTypes has_any &quot;Phish&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-external-versus-internal-thread-exposure-9ddbd09d-6119-4e78-bf15-911c4113d608-4d05ab15.html">Microsoft Teams External versus Internal Thread Exposure</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-senders-triggering-url-safety-tips-23a9ae26-cede-4e3b-8cf0-0d0da7a6930a-bb725a0c.html">Microsoft Teams Senders Triggering URL Safety Tips</a></td>
+  <td style="text-align:left"><code>SafetyTip == &quot;URLMessageWarning&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-possible-partner-impersonation-in-external-team-messages-f094e9f1-2d55-450d-af1a-0fdcd290f8c4-38f8b481.html">Possible partner impersonation in external Team messages</a></td>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>SenderDisplayName contains &quot;@contoso.com&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.html">Rare Domains in External Teams Messages</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-a0443864-5206-4030-9eb0-a70a7718dbb0-c6ff5a77.html">Suspicious Microsoft Teams Sender Domains Without a Threat Verdict</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-teams-display-name-02bdbd93-02b7-40e4-9468-d501463e57af-e0e082e9.html">Suspicious Teams Display Name</a></td>
@@ -368,6 +388,10 @@
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-number-of-mdo-teams-protection-detections-daily-75ade06c-7326-4e0d-9dfb-27e05043525b-3af53022.html">Total number of MDO Teams protection detections daily</a></td>
   <td style="text-align:left"></td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-domains-triggering-microsoft-teams-safety-tips-cbe5f6bc-bf97-434d-a12b-6f137a7effb1-ccda78ee.html">URL Domains Triggering Microsoft Teams Safety Tips</a></td>
+  <td style="text-align:left"></td>
+</tr>
 </tbody>
 </table>
 <p><strong>GitHub Only:</strong></p>
@@ -384,8 +408,16 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-external-microsoft-teams-sender-domain-risk-91dffff3-b1f9-48bd-b0de-a8940b32e265-789c413b.html">External Microsoft Teams Sender Domain Risk</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-external-malicious-teams-messages-sent-from-internal-senders-aee866e2-dc92-4563-a387-b9e5710246c0-8f0914c9.html">External malicious Teams messages sent from internal senders</a></td>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;1&quot;</code><br><code>ThreatTypes has_any &quot;Phish&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-first-contact-external-teams-senders-667772be-deff-4c7e-9da6-ada1780cc45c-cf50c728.html">First-Contact External Teams Senders</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.html">Hunt for RMM tool execution following Teams messages</a></td>
@@ -416,6 +448,14 @@
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>ThreatTypes has_any &quot;Phish&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-teams-external-versus-internal-thread-exposure-b26c8461-8c9e-47ff-8b61-fe0f1fb8eea4-b8ddd236.html">Microsoft Teams External versus Internal Thread Exposure</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-teams-senders-triggering-url-safety-tips-f5279911-c49c-4fbe-8b5c-be61e28263a2-c22e2e9f.html">Microsoft Teams Senders Triggering URL Safety Tips</a></td>
+  <td style="text-align:left"><code>SafetyTip == &quot;URLMessageWarning&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-possible-partner-impersonation-in-external-team-messages-39cf1ec6-d460-4760-8a87-7d10577f6205-c19eb4ea.html">Possible partner impersonation in external Team messages</a></td>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>SenderDisplayName contains &quot;@contoso.com&quot;</code></td>
 </tr>
@@ -430,6 +470,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/github-only-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-2a1cecc7.html">Rare Domains in External Teams Messages</a></td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-suspicious-microsoft-teams-sender-domains-without-a-threat-verdict-bb9fd713-fc62-4380-930f-91490bbbeb78-4029fd61.html">Suspicious Microsoft Teams Sender Domains Without a Threat Verdict</a></td>
+  <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-suspicious-teams-display-name-97e1c837-2cef-4f43-a87f-11f16e33ee8d-3da96512.html">Suspicious Teams Display Name</a></td>
@@ -487,10 +531,30 @@
   <td style="text-align:left"><a href="../content/github-only-total-number-of-mdo-teams-protection-detections-daily-c7896b13-ae4e-4164-a0a4-fbd43ae85dd4-3317a1c8.html">Total number of MDO Teams protection detections daily</a></td>
   <td style="text-align:left"></td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-url-domains-triggering-microsoft-teams-safety-tips-9a0669b6-abc4-4006-ac14-13bf798c999e-3171a56d.html">URL Domains Triggering Microsoft Teams Safety Tips</a></td>
+  <td style="text-align:left"></td>
+</tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (12 criteria, 30 total references)</h2>
-<p>References by type: 0 connectors, 30 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (13 criteria, 38 total references)</h2>
+<p>References by type: 0 connectors, 38 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -506,10 +570,10 @@
 <tr>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
+  <td style="text-align:center">12</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>12</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>ThreatTypes has &quot;Phish&quot;</code></td>
@@ -560,6 +624,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SafetyTip == &quot;URLMessageWarning&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>IsExternalThread == &quot;1&quot;</code><br><code>IsOwnedThread == &quot;0&quot;</code><br><code>SenderDisplayName contains &quot;@contoso.com&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -602,10 +674,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>30</strong></td>
+  <td style="text-align:center"><strong>38</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>30</strong></td>
+  <td style="text-align:center"><strong>38</strong></td>
 </tr>
 </tbody>
 </table>
@@ -625,10 +697,10 @@
 <tr>
   <td style="text-align:left"><code>1</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">26</td>
+  <td style="text-align:center">32</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>26</strong></td>
+  <td style="text-align:center"><strong>32</strong></td>
 </tr>
 </tbody>
 </table>
@@ -648,10 +720,10 @@
 <tr>
   <td style="text-align:left"><code>0</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">22</td>
+  <td style="text-align:center">28</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>22</strong></td>
+  <td style="text-align:center"><strong>28</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>1</code></td>
@@ -718,6 +790,29 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>contains working</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="safetytip">SafetyTip</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>URLMessageWarning</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>

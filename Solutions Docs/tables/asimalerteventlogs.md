@@ -22,6 +22,9 @@ Reference for ASimAlertEventLogs table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
 ## Schema (107 columns)
@@ -144,7 +147,31 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ASimAlertEventLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimalerteventlogs)
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
+
 ---
+
+## Content Items Using This Table (1)
+
+### Analytic Rules (1)
+
+**In solution [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Synqly Alert Event](../content/synqlyintegrationconnector-synqly-alert-event-3192085a-e97e-440f-acb7-9227622949a4-4f23c61f.md) |  |
 
 ## Resource Types
 

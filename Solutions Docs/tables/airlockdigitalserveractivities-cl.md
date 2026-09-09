@@ -16,6 +16,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (7 columns)
 
@@ -43,15 +44,26 @@ This table is used by the following solutions:
 
 - [AirlockDigital](../solutions/airlockdigital.md)
 
-## Connectors (1)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) |  |
+| [Airlock Digital (Poll)](../connectors/airlockdigitalpoll.md) |  |
+| [Airlock Digital (Push)](../connectors/airlockdigitalpush.md) |  |
+| [Airlock Digital (Poll - SaaS)](../connectors/airlockdigitalsaas.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ASimAuditEventAirlockDigital](../parsers/asimauditeventairlockdigital.md) | [AirlockDigital](../solutions/airlockdigital.md) |  |
 
 ---
 

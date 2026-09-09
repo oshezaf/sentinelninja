@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.1</td>
+  <td style="text-align:left">3.0.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -56,6 +56,10 @@
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
   <td style="text-align:left">2022-07-31</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-09-07</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +71,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.virustotal.com/gui/">VirusTotal</a> solution for Microsoft Sentinel contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from VirusTotal. Enriched information can help drive focused investigations in Security Operations.</p>
+<p>The <a href="https://www.virustotal.com/gui/">VirusTotal</a> solution for Microsoft Sentinel contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from VirusTotal. Enriched information can help drive focused investigations in Security Operations. <strong>NOTE: This solution includes a few playbooks that use the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the logingestionapi playbooks instead.</strong></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -106,7 +110,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>9 content item(s)</strong>:</p>
+<p>This solution includes <strong>17 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -117,7 +121,7 @@
 <tbody>
 <tr>
   <td style="text-align:left">Playbooks</td>
-  <td style="text-align:left">9</td>
+  <td style="text-align:left">17</td>
 </tr>
 </tbody>
 </table>
@@ -132,24 +136,24 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-filehash-enrichment-virus-total-report-alert-triggered-cb0a6f29.html">FileHash Enrichment - Virus Total Report - Alert Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-filehash-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8cbea41.html">FileHash Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API</a></td>
   <td style="text-align:left">This playbook will take each File Hash entity and query VirusTotal for file report (https://develope...</td>
-  <td style="text-align:left"><a href="../tables/vtfilereport-cl.html"><code>VTFileReport_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-filehash-enrichment-virus-total-report-incident-triggered-4f1b5957.html">FileHash Enrichment - Virus Total Report - Incident Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-filehash-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-a87c73a6.html">FileHash Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API</a></td>
   <td style="text-align:left">This playbook will take each File Hash entity and query VirusTotal for file report (https://develope...</td>
-  <td style="text-align:left"><a href="../tables/vtfilereport-cl.html"><code>VTFileReport_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-1c22517c.html">IP Enrichment - Virus Total Report  - Incident Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-7d47e0b2.html">IP Enrichment - Virus Total Report  - Incident Triggered using Log Ingestion API</a></td>
   <td style="text-align:left">This playbook will take each IP entity and query VirusTotal for IP Address Report (https://developer...</td>
-  <td style="text-align:left"><a href="../tables/vtipreport-cl.html"><code>VTIPReport_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-ip-enrichment-virus-total-report-alert-triggered-8db8d703.html">IP Enrichment - Virus Total Report - Alert Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-ip-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8973213.html">IP Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API</a></td>
   <td style="text-align:left">This playbook will take each IP entity and query VirusTotal for IP Address Report (https://developer...</td>
-  <td style="text-align:left"><a href="../tables/vtipreport-cl.html"><code>VTIPReport_CL</code></a> <em>(write)</em></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/virustotal-ip-enrichment-virus-total-report-entity-trigger-6bf78945.html">IP Enrichment - Virus Total Report - Entity Trigger</a></td>
@@ -157,22 +161,62 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-alert-triggered-9a5688ac.html">URL Enrichment - Virus Total Domain Report - Alert Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-alert-triggered-using-log-ingestion-api-4c5e4687.html">URL Enrichment - Virus Total Domain Report - Alert Triggered using Log Ingestion API</a></td>
+  <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for Domain info (https://developers.vir...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-incident-triggered-using-log-ingestion-api-bc339f3d.html">URL Enrichment - Virus Total Domain Report - Incident Triggered using Log Ingestion API</a></td>
+  <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for Domain Report (https://developers.v...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-4c819672.html">URL Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API</a></td>
+  <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for info (https://developers.virustotal...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-781e576b.html">URL Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API</a></td>
+  <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for info (https://developers.virustotal...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-filehash-enrichment-virus-total-report-alert-triggered-b9ad6b97.html">[Deprecated] FileHash Enrichment - Virus Total Report - Alert Triggered</a></td>
+  <td style="text-align:left">This playbook will take each File Hash entity and query VirusTotal for file report (https://develope...</td>
+  <td style="text-align:left"><a href="../tables/vtfilereport-cl.html"><code>VTFileReport_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-filehash-enrichment-virus-total-report-incident-triggered-6d5d0cbf.html">[Deprecated] FileHash Enrichment - Virus Total Report - Incident Triggered</a></td>
+  <td style="text-align:left">This playbook will take each File Hash entity and query VirusTotal for file report (https://develope...</td>
+  <td style="text-align:left"><a href="../tables/vtfilereport-cl.html"><code>VTFileReport_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-ip-enrichment-virus-total-report-incident-triggered-87c5cd22.html">[Deprecated] IP Enrichment - Virus Total Report  - Incident Triggered</a></td>
+  <td style="text-align:left">This playbook will take each IP entity and query VirusTotal for IP Address Report (https://developer...</td>
+  <td style="text-align:left"><a href="../tables/vtipreport-cl.html"><code>VTIPReport_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-ip-enrichment-virus-total-report-alert-triggered-0491fa54.html">[Deprecated] IP Enrichment - Virus Total Report - Alert Triggered</a></td>
+  <td style="text-align:left">This playbook will take each IP entity and query VirusTotal for IP Address Report (https://developer...</td>
+  <td style="text-align:left"><a href="../tables/vtipreport-cl.html"><code>VTIPReport_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-url-enrichment-virus-total-domain-report-alert-triggered-1cb6ad32.html">[Deprecated] URL Enrichment - Virus Total Domain Report - Alert Triggered</a></td>
   <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for Domain info (https://developers.vir...</td>
   <td style="text-align:left"><a href="../tables/vtdomainreport-cl.html"><code>VTDomainReport_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-domain-report-incident-triggered-54a7a026.html">URL Enrichment - Virus Total Domain Report - Incident Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-url-enrichment-virus-total-domain-report-incident-triggered-310ec6f8.html">[Deprecated] URL Enrichment - Virus Total Domain Report - Incident Triggered</a></td>
   <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for Domain Report (https://developers.v...</td>
   <td style="text-align:left"><a href="../tables/vtdomainreport-cl.html"><code>VTDomainReport_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-report-alert-triggered-c62db7db.html">URL Enrichment - Virus Total Report - Alert Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-url-enrichment-virus-total-report-alert-triggered-d7cf3a74.html">[Deprecated] URL Enrichment - Virus Total Report - Alert Triggered</a></td>
   <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for info (https://developers.virustotal...</td>
   <td style="text-align:left"><a href="../tables/vturlreport-cl.html"><code>VTURLReport_CL</code></a> <em>(write)</em></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/virustotal-url-enrichment-virus-total-report-incident-triggered-3d66ea5b.html">URL Enrichment - Virus Total Report - Incident Triggered</a></td>
+  <td style="text-align:left"><a href="../content/virustotal-%5Bdeprecated%5D-url-enrichment-virus-total-report-incident-triggered-0a69c2a9.html">[Deprecated] URL Enrichment - Virus Total Report - Incident Triggered</a></td>
   <td style="text-align:left">This playbook will take each URL entity and query VirusTotal for info (https://developers.virustotal...</td>
   <td style="text-align:left"><a href="../tables/vturlreport-cl.html"><code>VTURLReport_CL</code></a> <em>(write)</em></td>
 </tr>
@@ -188,6 +232,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>04-09-2026</td>
+  <td>Added playbooks for using the log ingestion API to send data.</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>02-06-2025</td>

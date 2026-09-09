@@ -34,7 +34,7 @@ Machine information, including OS information
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
-| AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
+| AadDeviceId | string | Unique identifier for the device in Microsoft Entra ID. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AssetValue | string | Indicates the value of a device as assigned by the user. |
 | AwsResourceName | string | Unique identifier of the AWS resource associated with the device. |
@@ -57,11 +57,11 @@ Machine information, including OS information
 | GcpFullResourceName | string | Unique identifier of the AWS resource associated with the device. |
 | HardwareUuid | string | Universally Unique Identifier (UUID) of the device's hardware. |
 | HostDeviceId | string | Device ID of the device running Windows Subsystem for Linux. |
-| IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
+| IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Microsoft Entra ID. |
 | IsExcluded | bool | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences. |
 | IsInternetFacing | bool | Indicates whether the device is internet-facing. |
 | IsTransient | bool | Indicates whether this device is classified as short-lived or transient based on the frequency of appearance of the device on the network. |
-| JoinType | string | The device's Azure Active Directory join type. |
+| JoinType | string | The device's Microsoft Entra ID join type. |
 | LoggedOnUsers | dynamic | List of all users that are logged on the machine at the time of the event in JSON array format. |
 | MachineGroup | string | Machine group used to determine access to the machine and apply group-specific settings. |
 | MergedDeviceIds | string | Previous device IDs that have been assigned to the same device. |
@@ -116,7 +116,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (47)
+## Content Items Using This Table (48)
 
 ### Analytic Rules (10)
 
@@ -205,7 +205,7 @@ This table is ingested by the following connectors:
 | [detect-suspicious-rdp-connections](../content/github-only-detect-suspicious-rdp-connections-f2458594-5671-493d-9c08-aee4bf783a1d-e5b62958.md) |  |
 | [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
 
-### Workbooks (9)
+### Workbooks (10)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 
@@ -230,8 +230,9 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |

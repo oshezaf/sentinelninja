@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
 | **Categories** | Security - Others,IT Operations,DevOps,Migration,Security - Threat Protection,Security - Vulnerability Management |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Dynatrace - microsoftalliances@dynatrace.com |
 | **First Published** | 2022-10-18 |
 | **Last Updated** | 2026-05-08 |
 | **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: 🔵 Medium (62%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: ⚪ Very Low (8%) |
 
 Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
 Integrating Dynatrace with Microsoft Sentinel enables DevSecOps teams to detect, prioritize, triage, and remediate attacks rapidly. DevSecOps teams benefit from the high-accuracy threat signals Dynatrace surfaces. It helps them avoid time-consuming investigation activities, freeing them up for more critical tasks.
@@ -51,31 +51,40 @@ b. [Azure Logic Apps](https://learn.microsoft.com/azure/logic-apps/logic-apps-ov
 
 ## Data Connectors
 
-This solution provides **8 data connector(s)**:
+This solution provides **12 data connector(s)**:
 
+- [Dynatrace Attacks V3](../connectors/dtattacksv3ccpdefinition.md)
+- [Dynatrace Audit Logs V3](../connectors/dtauditlogsv3ccpdefinition.md)
+- [Dynatrace Problems V3](../connectors/dtproblemsv3ccpdefinition.md)
 - [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md)
-- [Dynatrace Attacks V1](../connectors/dynatraceattacks.md)
+- [Dynatrace Runtime Vulnerabilities V3](../connectors/dtrunvulnv3ccpdefinition.md)
+- [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md)
 - [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md)
-- [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md)
+- [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md)
 - [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md)
-- [Dynatrace Problems V1](../connectors/dynatraceproblems.md)
+- [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md)
 - [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md)
-- [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md)
+- [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md)
 
 ## Tables Used
 
-This solution uses **8 table(s)**:
+This solution uses **13 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md), [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
-| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md), [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md) | Workbooks |
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Workbooks |
-| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | [Dynatrace Problems V1](../connectors/dynatraceproblems.md), [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
-| [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md), [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
+| [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md), [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
+| [`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md) | [Dynatrace Attacks V3](../connectors/dtattacksv3ccpdefinition.md), [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [[Deprecated] Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
+| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md), [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Workbooks |
+| [`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) | [Dynatrace Audit Logs V3](../connectors/dtauditlogsv3ccpdefinition.md), [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Workbooks |
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | [[Deprecated] Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Workbooks |
+| [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md), [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
+| [`DynatraceProblemsV3_CL`](../tables/dynatraceproblemsv3-cl.md) | [Dynatrace Problems V3](../connectors/dtproblemsv3ccpdefinition.md), [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [[Deprecated] Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
+| [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md), [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
+| [`DynatraceSecurityProblemsV3Raw_CL`](../tables/dynatracesecurityproblemsv3raw-cl.md) | [Dynatrace Runtime Vulnerabilities V3](../connectors/dtrunvulnv3ccpdefinition.md) | Summary Rule |
+| [`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md) | [Dynatrace Runtime Vulnerabilities V3](../connectors/dtrunvulnv3ccpdefinition.md), [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
+| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -87,55 +96,65 @@ The following **1 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **16 content item(s)**:
+This solution includes **19 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 6 |
+| Playbooks | 7 |
 | Analytic Rules | 5 |
 | Parsers | 4 |
+| Summary Rule | 2 |
 | Workbooks | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dynatrace - Problem detection](../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md)<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) |
-| [Dynatrace Application Security - Attack detection](../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md)<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) |
-| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-code-level-runtime-vulnerability-detection-305093b4-0fa2-57bc-bced-caea782a6e9c-7ce892bd.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
-| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-non-critical-runtime-vulnerability-detection-ff0af873-a2f2-4233-8412-0ef4e00b0156-12214a98.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
-| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-third-party-runtime-vulnerability-detection-af99b078-124b-543a-9a50-66ef87c09f6a-ea28978d.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace - Problem detection](../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md)<br>[`DynatraceProblemsV3_CL`](../tables/dynatraceproblemsv3-cl.md)<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) |
+| [Dynatrace Application Security - Attack detection](../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md)<br>[`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md)<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) |
+| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-code-level-runtime-vulnerability-detection-305093b4-0fa2-57bc-bced-caea782a6e9c-7ce892bd.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-non-critical-runtime-vulnerability-detection-ff0af873-a2f2-4233-8412-0ef4e00b0156-12214a98.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/dynatrace-dynatrace-application-security-third-party-runtime-vulnerability-detection-af99b078-124b-543a-9a50-66ef87c09f6a-ea28978d.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md)<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md)<br>[`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md)<br>[`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md)<br>[`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md)<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)<br>[`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md)<br>[`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md)<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md)<br>[`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md)<br>[`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md)<br>[`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md)<br>[`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md)<br>[`DynatraceProblemsV3_CL`](../tables/dynatraceproblemsv3-cl.md)<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)<br>[`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md)<br>[`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | This playbook will add an attacker's source IP address to Microsoft Sentinel Threat Intelligence as ... | - |
 | [Enrich Dynatrace Application Security Attack Incident](../content/dynatrace-enrich-dynatrace-application-security-attack-incident-f7a6fb98.md) | This playbook will enriche Dynatrace Application Security Attack Incidents with additional informati... | - |
 | [Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights-92196b5f.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Defender XDR ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
 | [Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts-55a24730.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Sentinel Secu... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
 | [Ingest Microsoft Defender XDR insights into Dynatrace](../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.md) | This playbook will ingest Microsoft Defender XDR insights into Dynatrace. | - |
 | [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.md) | This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace. | - |
-| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i... | - |
+| [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | NOTE: This playbook is deprecated and will be removed in a future version. The Microsoft Graph Secur... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DynatraceAttacks](../parsers/dynatraceattacks.md) | - | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) *(read)*<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) *(read)* |
-| [DynatraceAuditLogs](../parsers/dynatraceauditlogs.md) | - | [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) *(read)*<br>[`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) *(read)* |
-| [DynatraceProblems](../parsers/dynatraceproblems.md) | - | [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) *(read)*<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) *(read)* |
-| [DynatraceSecurityProblems](../parsers/dynatracesecurityproblems.md) | - | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) *(read)*<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) *(read)* |
+| [DynatraceAttacks](../parsers/dynatraceattacks.md) | - | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) *(read)*<br>[`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md) *(read)*<br>[`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) *(read)* |
+| [DynatraceAuditLogs](../parsers/dynatraceauditlogs.md) | - | [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) *(read)*<br>[`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) *(read)*<br>[`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) *(read)* |
+| [DynatraceProblems](../parsers/dynatraceproblems.md) | - | [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) *(read)*<br>[`DynatraceProblemsV3_CL`](../tables/dynatraceproblemsv3-cl.md) *(read)*<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) *(read)* |
+| [DynatraceSecurityProblems](../parsers/dynatracesecurityproblems.md) | - | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) *(read)*<br>[`DynatraceSecurityProblemsV3_CL`](../tables/dynatracesecurityproblemsv3-cl.md) *(read)*<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) *(read)* |
+
+### Summary Rule
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [Consolidate_DynatraceRuntimeVulnerabilities](../content/dynatrace-consolidate-dynatraceruntimevulnerabilities-2f1d8c6e-7b3a-4e91-9c2f-5a6b8d4e1c70-5198d2ae.md) | Collapses raw Dynatrace runtime vulnerability events into one current-state row per vulnerability, a... | [`DynatraceSecurityProblemsV3Raw_CL`](../tables/dynatracesecurityproblemsv3raw-cl.md) *(read)* |
+| [Consolidate_DynatraceRuntimeVulnerabilities](../content/dynatrace-consolidate-dynatraceruntimevulnerabilities-2f1d8c6e-7b3a-4e91-9c2f-5a6b8d4e1c70-5198d2ae.md) | Collapses raw Dynatrace runtime vulnerability events into one current-state row per vulnerability, a... | [`DynatraceSecurityProblemsV3Raw_CL`](../tables/dynatracesecurityproblemsv3raw-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.4       | 30-06-2026                     | Added V3 data connectors (DynatraceRuntimeVulnerabilitiesV3, DynatraceAttacksV3, DynatraceAuditLogsV3, DynatraceProblemsV3) using the Dynatrace Grail DQL Storage Query API with platform token authentication. Updated parsers (v3.0.0) to union V1, V2, and V3 sources. Added STIX 2.1 threat intelligence playbook (replaces deprecated tiIndicators playbook). Fixed TimeGenerated in DynatraceRuntimeVulnerabilitiesV3 DCR to use source event timestamp. Fixed AttackIdentifier casing in playbooks. Marked V1 connectors as deprecated. |
 | 3.0.3       | 28-04-2026                     | Fixed timestamp type mismatch in **Parsers** (DynatraceAttacks, DynatraceAuditLogs, DynatraceProblems, DynatraceSecurityProblems): V1 Unix epoch millisecond fields now converted to datetime, resolving duplicate typed columns in query results. Marked **Add_DynatraceApplicationSecurityAttackSourceIpThreatIntelligence** playbook as deprecated due to the deprecation of the Microsoft Graph Security tiIndicators API and its connector in Logic Apps. |
 | 3.0.2       | 02-04-2026                     | Added DCR based connectors.                 |
 | 3.0.1       | 18-01-2024                     | Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR, Updated user-agent strings used when calling Dynatrace REST API's, Added new Entity Mappings to **Analytic Rules**                                    Aligned Playbook, Data Connector & Workbook version numbers with rest of solution.           |

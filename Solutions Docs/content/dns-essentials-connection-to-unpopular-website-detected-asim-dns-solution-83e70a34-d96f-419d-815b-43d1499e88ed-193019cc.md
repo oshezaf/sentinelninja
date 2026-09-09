@@ -6,7 +6,7 @@
 
 ---
 
-This query lists DNS queries not found in the top 1 million queries in the past 14 days. Please note: To enhance performance, this query uses summarized data if available.
+This query lists DNS queries not found in the top 1 million queries in the past 14 days. Please note: To enhance performance, this query uses summarized data if available. The Hunting query also depends on the "**DNSEssentialsCustomParser**" Parser, so please make sure it is installed and configured before you use this Hunting query.
 
 | Attribute | Value |
 |:----------|:------|
@@ -23,7 +23,10 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`DNS_Summarized_Logs_ipV1_CL`](../tables/dns-summarized-logs-ipv1-cl.md) 🔶 | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfoV1_CL`](../tables/dns-summarized-logs-sourceinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

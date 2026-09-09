@@ -241,7 +241,7 @@ This table is ingested by the following connectors:
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) | `InitiatingProcessFileName has "curl"` |
 | [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
-| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `LocalPort == "445"` |
+| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"`<br>`LocalPort == "445"` |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
 | [Firewall Policy Design Assistant](../content/github-only-firewall-policy-design-assistant-7323d9ca-ebf9-42da-a57b-015969fbd660-4982c548.md) | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"`<br>`RemoteIPType != "Loopback"` |
 | [Flash-CVE-2018-4848](../content/github-only-flash-cve-2018-4848-8e32bc35-72e6-4bc9-b3bb-2ee346c8acf0-300d8c2d.md) | `InitiatingProcessFileName == "cmd.exe"`<br>`InitiatingProcessParentFileName == "excel.exe"`<br>`RemoteUrl endswith ".kr"` |
@@ -313,7 +313,7 @@ This table is ingested by the following connectors:
 | [Remote Management and Monitoring tool - parsec.app - Network Connection](../content/github-only-remote-management-and-monitoring-tool-parsec.app-network-connection-070b55d3-eb84-4312-a116-1af9965cd6e4-b89bf545.md) | `InitiatingProcessVersionInfoCompanyName has "parsec"`<br>`RemoteUrl has_any "kessel-ws.parsec.app"` |
 | [Remote Management and Montioring tool - Action1 - Network Connection](../content/github-only-remote-management-and-montioring-tool-action1-network-connection-7da76b41-8c1d-4602-91c6-5d99738d38f4-2b2041fc.md) | `InitiatingProcessVersionInfoCompanyName has "Action1"`<br>`InitiatingProcessVersionInfoProductName has "Action1"`<br>`RemoteUrl has "server.action1.com"` |
 | [Remote Management and Montioring tool - Addigy - Network Connection](../content/github-only-remote-management-and-montioring-tool-addigy-network-connection-4f0b3b8d-bde4-4cce-9ff7-1f0c0a7085af-dd1e9d14.md) | `InitiatingProcessFileName has_any "go-agent"`<br>`RemoteUrl has_any "prod.addigy.com"` |
-| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) |  |
+| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) | `ActionType == "LDAP query"` |
 | [RunDLL Suspicious Network Connection](../content/github-only-rundll-suspicious-network-connection-d0831db3-009f-40bb-9f82-c66b1f9674cd-46ab6288.md) | `InitiatingProcessCommandLine has ",GlobalOut"`<br>`InitiatingProcessFileName == "rundll32.exe"` |
 | [SMB shares discovery](../content/github-only-smb-shares-discovery-a3dc6ecb-d910-467b-844e-a3b87744c4c9-a86d4bee.md) | `InitiatingProcessId !in "0,4"`<br>`RemotePort == "445"` |
 | [SolarWinds -CVE-2021-35211](../content/github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) | `ActionType == "ConnectionSuccess"`<br>`Protocol == "Tcp"`<br>`RemotePort == "443"` |
@@ -382,7 +382,7 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"`<br>`InitiatingProcessFileName has_any "umworkerprocess.exe"`<br>`InitiatingProcessSHA256 == "256"` |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `InitiatingProcessFileName has_any "umworkerprocess.exe"`<br>`InitiatingProcessSHA256 == "256"` |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
@@ -395,9 +395,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
 
-## Selection Criteria Summary (96 criteria, 113 total references)
+## Selection Criteria Summary (98 criteria, 114 total references)
 
-References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -407,7 +407,6 @@ References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other par
 | `ActionType == "ConnectionFailed"` | - | 2 | 1 | - | **3** |
 | `ActionType == "ConnectionSuccess"` | - | 2 | - | - | **2** |
 | `InitiatingProcessCommandLine has "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"` | - | 2 | - | - | **2** |
-| `LocalPort == "445"` | - | 2 | - | - | **2** |
 | `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine == "\"`<br>`InitiatingProcessFileName in "InstallUtil.exe,RegAsm.exe,RegSvcs.exe"`<br>`InitiatingProcessParentFileName endswith "powershell.exe"`<br>`InitiatingProcessParentFileName endswith "powershell_ise.exe"`<br>`InitiatingProcessParentFileName endswith "pwsh.exe"` | - | 1 | - | - | **1** |
 | `RemoteUrl == "pandorasong.com"` | - | 1 | - | - | **1** |
@@ -424,9 +423,12 @@ References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other par
 | `RemotePort == "53"` | - | 1 | - | - | **1** |
 | `RemotePort in "443,80"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"`<br>`InitiatingProcessAccountName contains "Matt"`<br>`InitiatingProcessFileName in "chrome.exe,msedge.exe"`<br>`RemoteUrl contains "facebook"` | - | 1 | - | - | **1** |
+| `ActionType == "LDAP query"` | - | 1 | - | - | **1** |
 | `InitiatingProcessId !in "0,4"`<br>`RemotePort == "445"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified"`<br>`LocalPort == "445"` | - | 1 | - | - | **1** |
 | `ActionType == "NetworkSignatureInspected"`<br>`AdditionalFields contains ".jsp?cmd="` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "cmd.exe"`<br>`InitiatingProcessParentFileName == "excel.exe"`<br>`RemoteUrl endswith ".kr"` | - | 1 | - | - | **1** |
+| `LocalPort == "445"` | - | 1 | - | - | **1** |
 | `ActionType == "ConnectionSuccess"`<br>`Protocol == "Tcp"`<br>`RemotePort == "443"` | - | 1 | - | - | **1** |
 | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"`<br>`RemoteIPType != "Loopback"` | - | 1 | - | - | **1** |
 | `RemotePort == "22"` | - | 1 | - | - | **1** |
@@ -497,7 +499,7 @@ References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine endswith "(@($env:COMPUTERNAME,$env:USERNAME,(get-wmiobject Win32_ComputerSystemProduct).UUID,(random))-join"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
 | `RemoteUrl has_any "trycloudflare"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine endswith "-OutFile tim.EXE"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **112** | **1** | **0** | **113** |
+| **Total** | **0** | **113** | **1** | **0** | **114** |
 
 ### ActionType
 
@@ -509,6 +511,9 @@ References by type: 0 connectors, 112 content items, 1 ASIM parsers, 0 other par
 | `InboundConnectionAccepted` | - | 2 | - | - | **2** |
 | `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
 | `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
+| `LDAP query` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
+| `FileModified` | - | 1 | - | - | **1** |
 | `NetworkSignatureInspected` | - | 1 | - | - | **1** |
 | `ConnectionFound` | - | 1 | - | - | **1** |
 | `ConnectionRequest` | - | 1 | - | - | **1** |

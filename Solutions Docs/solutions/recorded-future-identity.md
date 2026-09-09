@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
 | **Categories** | Security - Threat Protection,Identity |
-| **Version** | 3.1.3 |
+| **Version** | 3.2.0 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2022-09-06 |
-| **Last Updated** | 2026-04-28 |
+| **Last Updated** | 2026-08-14 |
 | **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_identity_solution) · Rating: ★★★★★ 4.7/5 (229 ratings) · Popularity: ⚪ Very Low (0%) |
 
@@ -54,17 +54,23 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Recorded Future Identity - Playbook Alert Importer](../connectors/recordedfutureidentityalertimporter.md)
+- [Recorded Future Identity - Credential Exposure Importer](../connectors/recordedfutureidentityv3.md) ⚠️
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 
-This solution queries **1 table(s)** from its content items:
+This solution uses **4 table(s)**:
 
-| Table | Used By Content |
-|-------|----------------|
-| [`RecordedFutureIdentity_PlaybookAlertResults_CL`](../tables/recordedfutureidentity-playbookalertresults-cl.md) | Analytics |
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`RFI_CredentialDumps_V2_CL`](../tables/rfi-credentialdumps-v2-cl.md) | [Recorded Future Identity - Credential Exposure Importer](../connectors/recordedfutureidentityv3.md) | Playbooks |
+| [`RFI_MalwareLogs_V2_CL`](../tables/rfi-malwarelogs-v2-cl.md) | [Recorded Future Identity - Credential Exposure Importer](../connectors/recordedfutureidentityv3.md) | Playbooks |
+| [`RFI_PlaybookAlertResults_V2_CL`](../tables/rfi-playbookalertresults-v2-cl.md) | [Recorded Future Identity - Playbook Alert Importer](../connectors/recordedfutureidentityalertimporter.md) | Analytics |
+| [`RFI_UsersLookupResults_V2_CL`](../tables/rfi-userslookupresults-v2-cl.md) | [Recorded Future Identity - Credential Exposure Importer](../connectors/recordedfutureidentityv3.md) | - |
 
 ## Content Items
 
@@ -79,7 +85,7 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Recorded Future Identity - Credential Exposure Detected](../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) | High | CredentialAccess | [`RecordedFutureIdentity_PlaybookAlertResults_CL`](../tables/recordedfutureidentity-playbookalertresults-cl.md) |
+| [Recorded Future Identity - Credential Exposure Detected](../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) | High | CredentialAccess | [`RFI_PlaybookAlertResults_V2_CL`](../tables/rfi-playbookalertresults-v2-cl.md) |
 
 ### Playbooks
 
@@ -91,8 +97,8 @@ This solution includes **9 content item(s)**:
 | [RFI-add-EntraID-security-group-user](../content/recorded-future-identity-rfi-add-entraid-security-group-user-d16ad1d4.md) | This playbook adds a compromised user to an EntraID security group. Triage and remediation should be... | - |
 | [RFI-confirm-EntraID-risky-user](../content/recorded-future-identity-rfi-confirm-entraid-risky-user-4f682c27.md) | This playbook confirms compromise of users deemed 'high risk' by EntraID. | - |
 | [RFI-lookup-and-save-user](../content/recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | - |
-| [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu... | - |
-| [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us... | - |
+| [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu... | [`RFI_MalwareLogs_V2_CL`](../tables/rfi-malwarelogs-v2-cl.md) *(read)* |
+| [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us... | [`RFI_CredentialDumps_V2_CL`](../tables/rfi-credentialdumps-v2-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -155,6 +161,7 @@ These playbooks and actions are designed to meet the following use cases:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.0       | 21-07-2026                     | Breaking change: updated data imports to use DCE/DCR instead of deprecated Data Collector API. See readme.md for migration instructions. |
 | 3.1.3       | 06-03-2026                     | Deprecated `RFI-Playbook-Alert-Importer-LAW-Sentinel` in preparation for Microsoft Defender Portal. Added Analytic Rule that will handle incident creation.|
 | 3.1.2       | 29-04-2025                     | Removed `Get Risky User` action from **Playbooks** due to Recorded Future can act as a authority on compromise.|
 | 3.1.1       | 02-04-2025                     | Updated documentation, restructured solution and added correct paths for **Playbooks**.|

@@ -1,6 +1,6 @@
-# ⚠️ TrendAI Vision One(CCF)
+# TrendAI Vision One™ for Microsoft Sentinel (CCF)
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: TrendAI Vision One(CCF)*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TrendAI_Logo.svg" alt="TrendAI Vision One(CCF) Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | TrendAI |
 | **First Published** | 2026-07-08 |
+| **Last Updated** | 2026-08-24 |
 | **Solution Folder** | [TrendAI Vision One(CCF)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.azure-sentinel-solution-trendai-vision-one) · Popularity: 🟢 High (87%) |
 
 The [TrendAI Vision One](https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html) solution for Microsoft Sentinel provides two data connectors that ingest security data from the TrendAI Vision One platform using the Codeless Connector Framework (CCF):
 

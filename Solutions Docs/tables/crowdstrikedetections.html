@@ -64,11 +64,9 @@
 <ul>
 <li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
-<li><a href="#solutions">Solutions</a></li>
-<li><a href="#connectors">Connectors</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (110 columns)</h2>
+<h2 id="schema">Schema (111 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -178,6 +176,11 @@
   <td style="text-align:left">CreatedTimestamp</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left">Timestamp when the detection was first created.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated.</td>
 </tr>
 <tr>
   <td style="text-align:left">DateUpdated</td>
@@ -636,29 +639,8 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections">CrowdStrikeDetections Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (1)</h2>
-<p>This table is used by the following solutions:</p>
-<ul>
-<li><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></li>
-</ul>
-<h2 id="connectors">Connectors (1)</h2>
-<p>This table is ingested by the following connectors:</p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <hr />
-<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h2 id="parsers-using-this-table">Parsers Using This Table (2)</h2>
 <h3 id="asim-parsers">ASIM Parsers (1)</h3>
 <table>
 <thead>
@@ -678,6 +660,26 @@
 </tr>
 </tbody>
 </table>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/crowdstrike.html">CrowdStrike</a></td>
+  <td style="text-align:left"><a href="../solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a> ⚠️</td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.</p>
+</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>

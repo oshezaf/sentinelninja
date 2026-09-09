@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Netskope |
 | **First Published** | 2026-06-17 |
 | **Last Updated** | 2026-06-17 |
@@ -159,6 +159,7 @@ In the Netskope admin console, create a **Log Streaming** configuration that str
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                  |
 |-------------|--------------------------------|-----------------------------------------------------|
+| 3.0.1       | 13-08-2026                     | Added source storage subscription and resource group details to the data connector request for authorization validation. |
 | 3.0.0       | 17-06-2026                     | Initial solution release. Netskope Alerts & Events CCF (Blob Storage) connector, custom table `NetskopeAlertEvents_CL`, parser, 1 workbook, and 3 analytic rules. |
 
 ---

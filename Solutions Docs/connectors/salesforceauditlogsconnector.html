@@ -81,19 +81,22 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/salesforceaudittrail.html"><code>SalesforceAuditTrail</code></a></td>
+  <td style="text-align:left"><a href="../tables/salesforceaudittrailv2-cl.html"><code>SalesforceAuditTrailV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/salesforceloginhistory.html"><code>SalesforceLoginHistory</code></a></td>
+  <td style="text-align:left"><a href="../tables/salesforceloginhistoryv2-cl.html"><code>SalesforceLoginHistoryV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
 <h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong></p>
 <ul>
@@ -110,6 +113,9 @@
 <p><strong>1. Connect Salesforce to Microsoft Sentinel</strong></p>
 <p>Follow <a href="https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&amp;type=5">Create a Connected App in Salesforce for OAuth</a> and <a href="https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&amp;type=5">Configure a Connected App for the OAuth 2.0 Client Credentials Flow</a> to create a Connected App with access to the Salesforce Service Cloud API. Through those instructions, you should get the Consumer Key and Consumer Secret.
 For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
+<strong>Solution version 3.6.0 and later uses the Salesforce Audit logs V2 tables. Please use updated parser for any existing queries. Refer to the release notes of the solution <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/ReleaseNotes.md">here</a></strong></p>
+<p><strong>2. Manage Salesforce Connections</strong></p>
+<p>Add, view, and delete Salesforce connections
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
 <p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
@@ -130,6 +136,15 @@ For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, a
 <p><em>Base Configuration</em></p>
 <ul>
 <li><strong>Connection Alias</strong> (required): Production or Sandbox</li>
+<li><strong>Query interval (in minutes)</strong> (required): Select from available options<ul>
+<li>5</li>
+<li>10</li>
+<li>15</li>
+<li>20</li>
+<li>30</li>
+<li>... and 1 more options</li>
+</ul>
+</li>
 <li><strong>Salesforce Base URL</strong> (required): Example: https://your-domain.my.salesforce.com</li>
 <li><strong>Data Types</strong> (required): Select from available options<ul>
 <li>Setup Audit Trail - Administrative changes and configurations</li>

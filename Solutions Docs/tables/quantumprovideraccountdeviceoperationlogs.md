@@ -10,12 +10,18 @@ Reference for QuantumProviderAccountDeviceOperationLogs table in Azure Monitor L
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | - |
-| **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
+| **Category** | Azure Resources |
+| **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/quantumprovideraccountdeviceoperationlogs) |
+
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Resource Types](#resource-types)
 
 ## Schema (19 columns)
 
@@ -50,6 +56,12 @@ Official Microsoft Learn documentation for field/column information:
 - [QuantumProviderAccountDeviceOperationLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/quantumprovideraccountdeviceoperationlogs)
 
 ---
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.quantum/provideraccounts`
 
 ---
 

@@ -22,6 +22,8 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Resource Types](#resource-types)
 
 ## Schema (69 columns)
@@ -34,7 +36,7 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| AADTenantId | string | The Azure Active Directory tenant identifier associated with the asset or entity. |
+| AADTenantId | string | The Microsoft Entra ID tenant identifier associated with the asset or entity. |
 | AdditionalAssetOwners | dynamic | A dynamic collection of additional owners or co-owners associated with the asset. |
 | AdditionalFields | dynamic | Additional information about the entity that is not captured by other fields in the schema. |
 | AssetClassificationLastScanDateTime | datetime | The timestamp (UTC) of when the asset was last scanned for data classification. |
@@ -105,6 +107,20 @@ Reference for ASimAssetEntityLogs table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [ASimAssetEntityLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs)
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
 

@@ -38,7 +38,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) |  |
+| [[Deprecated] Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) |  |
 
 ---
 

@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ✓ | ✓ | ✓ |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
@@ -48,8 +48,8 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
+| [SalesforceEventLogConnector](../connectors/salesforceeventlogconnector.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SalesforceServiceCloud](../connectors/salesforceservicecloud.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
-| [SalesforceServiceCloudCCPDefinition](../connectors/salesforceservicecloudccpdefinition.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 
 **Solutions:** [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md)
 

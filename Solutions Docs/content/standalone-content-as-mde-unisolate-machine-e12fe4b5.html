@@ -134,7 +134,7 @@
 <tr>
   <td style="text-align:left">HTTP_-_Unisolate_Machine</td>
   <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_-_Host')?['additionalData']?['MdatpDeviceId']}/unisolate</code></td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/@{encodeURIComponent(items('For_each_-_Host')?['additionalData']?['MdatpDeviceId'])}/unisolate</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>

@@ -1,6 +1,6 @@
 # Analytic Rules - C
 
-**374 analytic rules** starting with 'C'.
+**395 analytic rules** starting with 'C'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -15,6 +15,7 @@
 | Name | Severity | Source |
 |:-----|:---------|:-------|
 | [C2-NamedPipe](microsoft-defender-xdr-c2-namedpipe-7ce00cba-f76f-4026-ab7f-7e4f1b67bd18-5ae9733b.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Canary alerts to incidents](thinkstcanary-canary-alerts-to-incidents-06360572-94a7-42a4-add7-58fb933b2353-988d1059.md) | High | 📦 [ThinkstCanary](../solutions/thinkstcanary.md) |
 | [Caramel Tsunami Actor IOC - July 2021](windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md) | High | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Cayosoft Guardian - Cloud Application Security Threats](cayosoft-guardian-cayosoft-guardian-cloud-application-security-threats-e6f6c71c-f1fd-473b-9129-249db5d7462c-429092f9.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [Cayosoft Guardian - Core Identity and Infrastructure Threats](cayosoft-guardian-cayosoft-guardian-core-identity-and-infrastructure-threats-4720d7a5-6845-4ce4-aa45-79334e1a1176-0f15a2e7.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
@@ -31,6 +32,7 @@
 | [Chia_Crypto_Mining IOC - June 2021](windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | Low | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Cisco - firewall block but success logon to Microsoft Entra ID](standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md) | Medium | 📄 Standalone Content |
 | [Cisco ASA - average attack detection rate increase](ciscoasa-cisco-asa-average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1-4b63ae5b.md) | Low | 📦 [CiscoASA](../solutions/ciscoasa.md) |
+| [Cisco ASA - Possible Data Exfiltration Detection](ciscoasa-cisco-asa-possible-data-exfiltration-detection-f3a8c2d0-7b41-4e9a-9f6a-2d8a1c4e5b72-6a33c590.md) | Medium | 📦 [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco ASA - threat detection message fired](ciscoasa-cisco-asa-threat-detection-message-fired-795edf2d-cf3e-45b5-8452-fe6c9e6a582e-a934f81d.md) | Medium | 📦 [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco Cloud Security - Connection to non-corporate private network](ciscoumbrella-cisco-cloud-security-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-dc2431a8.md) | Medium | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security - Connection to Unpopular Website Detected](ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.md) | Medium | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) |
@@ -185,6 +187,9 @@
 | [Configuration Backup Job Failed](veeam-configuration-backup-job-failed-18833d01-703a-438d-8ac6-84faa82e9b52-9600efc4.md) | Medium | 📦 [Veeam](../solutions/veeam.md) |
 | [Configuration Backup Job Settings Updated](veeam-configuration-backup-job-settings-updated-90039769-0c32-442b-bb12-5b61224a77a0-b9b9d248.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Connection to Backup Repository Lost](veeam-connection-to-backup-repository-lost-8777f9e1-db58-4078-a381-4e47a3a2ee01-9b8e30ae.md) | High | 📦 [Veeam](../solutions/veeam.md) |
+| [ContraForce - Destructive workspace action](contraforce-contraforce-destructive-workspace-action-c5e9a1d7-4b2f-4e6c-8a9d-7f3b1c5e2a84-fe7a9bff.md) | High | 📦 [ContraForce](../solutions/contraforce.md) |
+| [ContraForce - Machine credential activity](contraforce-contraforce-machine-credential-activity-8a2c6e94-1b5d-4f7a-b3e8-2c9d4f6a1e52-dd3f34e0.md) | Medium | 📦 [ContraForce](../solutions/contraforce.md) |
+| [ContraForce - Privileged access change](contraforce-contraforce-privileged-access-change-3f4bd2a1-7c58-4a83-9c2e-6d1f0a8b5c31-aef16169.md) | Medium | 📦 [ContraForce](../solutions/contraforce.md) |
 | [Contrast ADR - DLP SQL Injection Correlation](contrastadr-contrast-adr-dlp-sql-injection-correlation-1aac7737-d52f-483d-b225-6a27c1b29a9e-b5944c4e.md) | High | 📦 [ContrastADR](../solutions/contrastadr.md) |
 | [Contrast ADR - EDR Alert Correlation](contrastadr-contrast-adr-edr-alert-correlation-c1c6ba64-134e-403b-b9a6-1bebc90809a4-f21fd8c4.md) | Medium | 📦 [ContrastADR](../solutions/contrastadr.md) |
 | [Contrast ADR - Exploited Attack Event](contrastadr-contrast-adr-exploited-attack-event-ae4f67a6-0713-4a26-ae61-284e67b408c1-a0cf1f50.md) | High | 📦 [ContrastADR](../solutions/contrastadr.md) |
@@ -227,6 +232,7 @@
 | [Credential Record Updated](veeam-credential-record-updated-860e201a-deea-4129-8646-fcf8bdd976b0-56a92981.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [CreepyDrive request URL sequence](standalone-content-creepydrive-request-url-sequence-eda260eb-f4a1-4379-ad98-452604da9b3e-76fc0da4.md) | High | 📄 Standalone Content |
 | [CreepyDrive URLs](standalone-content-creepydrive-urls-b6d03b88-4d27-49a2-9c1c-29f1ad2842dc-e6d3f7ae.md) | High | 📄 Standalone Content |
+| [Critical Finding Overdue on Internet-Facing App](stratosecure-critical-finding-overdue-on-internet-facing-app-88c4b680-db1c-46b9-8ca4-4165c3abf63f-2f80a140.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [Critical Risks](ridgesecurity-critical-risks-1eebfaf3-40e1-4bc2-9f42-049b7b8ceb60-11ad44c8.md) | High | 📦 [RidgeSecurity](../solutions/ridgesecurity.md) |
 | [Critical Severity Incident](morphisec-critical-severity-incident-4f1c9e6e-8b6b-4d2a-9f3e-123456789abc-ecbf5667.md) | High | 📦 [Morphisec](../solutions/morphisec.md) |
 | [Critical Threat Detected](vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0-a9660dac.md) | Medium | 📦 [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
@@ -240,12 +246,27 @@
 | [Cross-tenant Access Settings Organization Inbound Direct Settings Changed](microsoft-entra-id-cross-tenant-access-settings-organization-inbound-direct-settings-changed-276d5190-38de-4eb2-9933-b3b72f4a5737-f3d5c408.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Cross-tenant Access Settings Organization Outbound Collaboration Settings Changed](microsoft-entra-id-cross-tenant-access-settings-organization-outbound-collaboration-settings-changed-229f71ba-d83b-42a5-b83b-11a641049ed1-42360945.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Cross-tenant Access Settings Organization Outbound Direct Settings Changed](microsoft-entra-id-cross-tenant-access-settings-organization-outbound-direct-settings-changed-0101e08d-99cd-4a97-a9e0-27649c4369ad-74ca33b7.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [CTE - Admin Login Detected](cybereinforce-cte-admin-login-detected-65bc5f1d-d29d-4729-a5a6-d9614b0900e0-a0407281.md) | Informational | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Blocked URL Attempted](cybereinforce-cte-blocked-url-attempted-1747715b-1a94-411a-a2b5-d8c40422767c-daec9935.md) | Low | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Compromised Device Suspected (High-Volume IOC Blocks)](cybereinforce-cte-compromised-device-suspected-high-volume-ioc-blocks-59246163-4cc0-4e96-a0f0-f098a83cf425-605d3699.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - CTI Blocked URL Attempted](cybereinforce-cte-cti-blocked-url-attempted-49da5494-b6b9-42c0-9b9b-b7b219dc8173-545b345e.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Device Enrolled but On Hold](cybereinforce-cte-device-enrolled-but-on-hold-21818920-85eb-4955-a7cc-f62c731f32ac-bc8c5e8e.md) | Low | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Device License Capacity Critical (99%)](cybereinforce-cte-device-license-capacity-critical-99-7f4af730-5c89-4f7a-aa7a-933b6e9309b5-efe7ad1d.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Device License Capacity High (95%)](cybereinforce-cte-device-license-capacity-high-95-5e644219-6067-4849-85df-7458aa575aea-a0382acc.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Device Repeatedly Blocked Across Multiple Days](cybereinforce-cte-device-repeatedly-blocked-across-multiple-days-8fbb095d-3a35-483b-b264-25b858a52f4d-b3a5afbb.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Enrollment Token Generated](cybereinforce-cte-enrollment-token-generated-0be1ebaf-36f8-49a6-a3b6-56491ccfda7f-28b4c99f.md) | Informational | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - License Expiring Critically (7 Days)](cybereinforce-cte-license-expiring-critically-7-days-c32e5873-00b7-45fc-9a7e-43e9d0018978-3272c8d4.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - License Expiring Soon (30 Days)](cybereinforce-cte-license-expiring-soon-30-days-ec305a18-2520-443d-9f54-18dea3637a15-925ca5a4.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Possible Company-Wide C2 Campaign (Multiple Devices, Same Destination)](cybereinforce-cte-possible-company-wide-c2-campaign-multiple-devices,-same-destination-ec08477d-87a1-498d-8f34-72b8ec8f3758-e8b03e43.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Risky Device (Multiple IOC URL Hits)](cybereinforce-cte-risky-device-multiple-ioc-url-hits-e1c0f32d-a57b-42ae-8038-b869bca54fef-caf87ce1.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Rule Capacity Critical (95%)](cybereinforce-cte-rule-capacity-critical-95-bd06aa7c-8aef-40f3-bf32-a70b5d48f79e-935bddf8.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Rule Capacity High (90%)](cybereinforce-cte-rule-capacity-high-90-b3eb26f4-affb-4a61-8b54-8780d234008e-606f6071.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Security Rule Changed (Created/Updated/Deleted)](cybereinforce-cte-security-rule-changed-created-updated-deleted-cf7ad1f5-7325-4bda-83d4-957ec943c457-0e7f1e65.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Stale Device (No Heartbeat in 30 Days)](cybereinforce-cte-stale-device-no-heartbeat-in-30-days-a6d51bc1-bf51-47d1-9885-b81762cd6306-5451b5f0.md) | Medium | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
+| [CTE - Sudden Block Spike Detected](cybereinforce-cte-sudden-block-spike-detected-fbbf3418-f1d8-4bd5-b7da-137a70af6bce-e493a628.md) | High | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
 | [CTERA Mass Access Denied Detection Analytic](ctera-ctera-mass-access-denied-detection-analytic-88341fc3-38e1-46db-8bb1-6c052e749991-0ac24cd2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Deletions Detection Analytic](ctera-ctera-mass-deletions-detection-analytic-5365f294-0c67-432a-bacf-b1282a3b6c46-6fc626fe.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Permissions Changes Detection Analytic](ctera-ctera-mass-permissions-changes-detection-analytic-90502ac9-19a2-41f0-ba81-e352de90b61b-15e26af2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
-| [CyberArk - High-Risk Actions Outside Business Hours](cyberarkaudit-cyberark-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-f02b1466.md) | High | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [CyberArk - Multiple Failed Actions Followed by Success (15m)](cyberarkaudit-cyberark-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-7585ad5d.md) | Medium | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)](cyberarkaudit-cyberark-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-5cd42d25.md) | Low | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM - Attack attempt not blocked](cyberarkepm-cyberarkepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2c52bf85.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - MSBuild usage as LOLBin](cyberarkepm-cyberarkepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-c30da3a6.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Multiple attack types](cyberarkepm-cyberarkepm-multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b-c13c5274.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |

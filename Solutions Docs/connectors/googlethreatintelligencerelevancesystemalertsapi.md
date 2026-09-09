@@ -18,7 +18,7 @@
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#google-threat-intelligence-relevance-system-alerts) |
 
-The [Google Threat Intelligence (virustotal)](https://www.virustotal.com) data connector ingests GTI Relevance System Alerts into Microsoft Sentinel. The connector polls the GTI Relevance System Alerts API on a configurable schedule and stores Relevance System Alerts data in the RelevanceSystemAlerts_CL custom table, enabling security analysts to investigate threats, correlate incidents, and respond to intelligence-driven alerts within the Sentinel workspace.
+The [Google Threat Intelligence (virustotal)](https://www.virustotal.com) data connector ingests GTI Relevance System Alerts into Microsoft Sentinel. The connector polls the GTI Relevance System Alerts API on a configurable schedule and stores Relevance System Alerts data in the RelevanceSystemAlerts_CL custom table, enabling security analysts to investigate threats, correlate incidents, and respond to intelligence-driven alerts within the Microsoft Sentinel workspace.
 
 ## Tables Ingested
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) | ? | ✓ | ? |
+| [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -94,7 +94,7 @@ Use this method for automated deployment of the GTI Relevance System Alerts conn
 
 1. Click the **Deploy to Azure** button below. 
 
-	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy-gov)
+	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://aka.ms/sentinel-GTIRelevanceSystemAlerts-azuredeploy-gov)
 2. Select the preferred **Subscription**, **Resource Group**, and **Location**. 
 3. Enter the below information: 
 

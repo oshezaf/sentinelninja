@@ -97,7 +97,9 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [VectraAudits](../parsers/vectraaudits.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
+| [VectraAudits](../parsers/vectraaudits.md) | [Vectra XDR](../solutions/vectra-xdr.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

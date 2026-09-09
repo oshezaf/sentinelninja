@@ -35,7 +35,7 @@ Events involving accounts and objects in Office 365 and other cloud apps and ser
 | _BilledSize | real | The record size in bytes |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
-| AccountId | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers |
+| AccountId | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Microsoft Entra object ID, user principal name, or other identifiers |
 | AccountObjectId | string | Unique identifier for the account in Azure AD |
 | AccountType | string | Type of user account, indicating its general role and access levels, such as Regular, System, Admin, Application |
 | ActionType | string | Type of activity that triggered the event |
@@ -102,7 +102,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (184)
+## Content Items Using This Table (216)
 
 ### Analytic Rules (10)
 
@@ -136,7 +136,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Mass Download & copy to USB device by single user](../content/standalone-content-mass-download-&-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.md) |  |
 
-### Hunting Queries (167)
+### Hunting Queries (199)
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
 
@@ -162,35 +162,51 @@ This table is ingested by the following connectors:
 | [Admin Submissions by Submission Type (FP)](../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fp-de074419-2ec5-4c7f-a7f6-0a49178b314c-c5fac397.md) | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` |
 | [BEC - File sharing tactics - Dropbox](../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"`<br>`Application == "Dropbox"`<br>`ObjectType == "File"` |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.md) | `ActionType in "AddedToSecureLink,SecureLinkCreated"`<br>`Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"` |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Detect Teams IT Helpdesk Impersonation Msg Phishing & Vishing](../content/microsoft-defender-xdr-detect-teams-it-helpdesk-impersonation-msg-phishing-&-vishing-7c4dad1a-ac02-476b-898d-192d8ef20afb-dc496711.md) | `ActionType == "ChatCreated"`<br>`Application == "Microsoft Teams"` |
 | [File Malware Detection Trend](../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Anti Virus)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.md) | `ActionType == "FileMalwareDetected"` |
 | [File Malware by Top Malware Families (Safe Attachments)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.md) | `ActionType == "FileMalwareDetected"`<br>`UserAgent == "MS Scanner ATP"` |
 | [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Malware detections by Workload Locations](../content/microsoft-defender-xdr-malware-detections-by-workload-locations-ef29d6b6-9192-46aa-b16a-082c2da2f78f-1fe5ecb9.md) | `ActionType == "FileMalwareDetected"` |
 | [Malware detections by Workload Type](../content/microsoft-defender-xdr-malware-detections-by-workload-type-af541ae2-9bb4-4737-a8ea-4fa261bc3866-14585ca9.md) | `ActionType == "FileMalwareDetected"` |
+| [Microsoft Teams Call and Message Submissions Over Time](../content/microsoft-defender-xdr-microsoft-teams-call-and-message-submissions-over-time-ef13dc37-6205-4cea-b969-2b6e0d8ab509-700dac99.md) | `ActionType in "AdminSubmission,UserSubmission"` |
+| [Microsoft Teams Calls and Impersonation-Style Calls by Hour of Day](../content/microsoft-defender-xdr-microsoft-teams-calls-and-impersonation-style-calls-by-hour-of-day-55e28f8e-cc6d-4cc9-af24-398a6e2a721d-0ccfd1ef.md) | `ActionType == "CallParticipantDetail"` |
+| [Microsoft Teams Impersonation Identities by Fake Display Name](../content/microsoft-defender-xdr-microsoft-teams-impersonation-identities-by-fake-display-name-7614cfa2-0fa4-446c-9f03-f0980d67ee20-ff94d9e6.md) | `ActionType == "TeamsImpersonationDetected"` |
+| [Reported Microsoft Teams Calls](../content/microsoft-defender-xdr-reported-microsoft-teams-calls-225da6aa-6b34-448d-ab0b-72219d52bd44-184ac4aa.md) | `ActionType in "AdminSubmission,UserSubmission"` |
+| [Suspicious Microsoft Teams Callers by Impersonation-Style Identity](../content/microsoft-defender-xdr-suspicious-microsoft-teams-callers-by-impersonation-style-identity-37f3d0f5-8ac3-46a3-9b27-a4fd082b6348-8657cfbc.md) | `ActionType == "CallParticipantDetail"` |
 | [Teams Admin submission of Malware and Phish daily trend](../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Teams Admin submission of No Threats daily trend](../content/microsoft-defender-xdr-teams-admin-submission-of-no-threats-daily-trend-b2a6440b-6ebd-4d86-aa33-cfe11f9defcf-321ed5ca.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Teams Admin-User Submissions Grading Verdicts](../content/microsoft-defender-xdr-teams-admin-user-submissions-grading-verdicts-20c9d89a-ad65-48f4-ba14-605715af640a-11968695.md) | `ActionType in "AdminSubmissionTriage,UserSubmissionTriage"` |
 | [Top 10 Detection Overrides - Admin Email Submissions (FN)](../content/microsoft-defender-xdr-top-10-detection-overrides-admin-email-submissions-fn-72f939fe-c77b-4c25-91b4-3f784c9c58c3-3cb89584.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top 10 sender domains - Admin email submissions (FN)](../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top 10 sender domains - Admin email submissions (FP)](../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fp-4c786e9a-b570-47bc-877f-7f3da87a4673-70144cae.md) | `ActionType == "AdminSubmissionSubmitted"` |
+| [Top Reporters of Microsoft Teams Calls and Messages](../content/microsoft-defender-xdr-top-reporters-of-microsoft-teams-calls-and-messages-2324aae0-6628-4842-aa36-ae5bf13f3400-f503aebc.md) | `ActionType == "UserSubmission"` |
 | [Top accounts performing admin submissions (FN)](../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fn-d236f728-8b0f-4b4f-acf7-e4707993b841-6d85f0eb.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing admin submissions (FP)](../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fp-8b0bae20-687f-47ca-bc2e-8dabbed9cbae-ce0b898d.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing user submissions](../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.md) | `ActionType == "UserSubmission"` |
+| [Top accounts performing user submissions (FP)](../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-fp-2bf1fded-7eb8-4cff-9e1d-efd204cac3f6-2a2f1b21.md) | `ActionType == "UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) |  |
 | [User Email Submission Trend (FN)](../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
+| [User Email Submission Trend (FP)](../content/microsoft-defender-xdr-user-email-submission-trend-fp-97f0d020-be70-4732-b5d7-abcfeecc459c-9d7646cc.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Admins](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Users](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-users-0a9385bc-2ef9-4b0e-8834-12f796b08ca8-531a183e.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Intra-Org P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-p2-senders-b78eddd9-ebe5-42ab-95b4-928a782b52b5-886ff278.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Intra-Org Subjects](../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-subjects-cbf3abc0-2b2d-4852-ab7a-9f7a1231997e-735b38b9.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) by Submission Type](../content/microsoft-defender-xdr-user-email-submissions-fn-by-submission-type-289283e9-9f63-488c-8d62-fe9c598f3cd5-fe9e0c5a.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
 | [User Email Submissions (FN-FP) by Grading verdict](../content/microsoft-defender-xdr-user-email-submissions-fn-fp-by-grading-verdict-abdca3e6-c198-404a-b95c-f09ddfed2027-d1a3df7e.md) | `ActionType contains "UserSubmissionTriage"` |
+| [User Email Submissions (FP) - Top Inbound P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-p2-senders-37511ce4-f88e-4e2d-b505-27411af1a226-60212493.md) |  |
+| [User Email Submissions (FP) - Top Inbound Subjects](../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-subjects-3f252bcb-71a8-4c04-bed9-4dd53419ecb6-bb2077e5.md) |  |
+| [User Email Submissions (FP) - Top Intra-Org P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fp-top-intra-org-p2-senders-6b26701a-a1c7-4782-a662-f44cdca5bb5f-ab52681b.md) |  |
+| [User Email Submissions (FP) - Top P2 Sender Domains](../content/microsoft-defender-xdr-user-email-submissions-fp-top-p2-sender-domains-97f19cad-130a-47b3-a3bb-cbc2e66845f0-45db855d.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions accuracy vs Admin review verdict](../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.md) | `ActionType in "SubmissionNotification,UserSubmission"` |
 | [User Email Submissions by Admin review status (Mark and Notify)](../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.md) | `ActionType in "SubmissionNotification,UserSubmission"` |
+| [User Submissions by Detection Method - Phish (FP)](../content/microsoft-defender-xdr-user-submissions-by-detection-method-phish-fp-4ae87c11-4030-42cb-b87d-993198ca40e0-e1152402.md) |  |
+| [User Submissions by Detection Method - Spam (FP)](../content/microsoft-defender-xdr-user-submissions-by-detection-method-spam-fp-05d933db-f605-48d5-a177-af64be537cf4-20a4c5b9.md) |  |
+| [User Submissions by Submission State (FP)](../content/microsoft-defender-xdr-user-submissions-by-submission-state-fp-2f8a0226-b3f3-4a31-b32b-2dd15d644625-77c67bc7.md) | `ActionType == "UserSubmission"` |
 | [User email submissions (FN) from Junk Folder](../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.md) | `ActionType == "UserSubmission"` |
 
 **GitHub Only:**
@@ -219,10 +235,11 @@ This table is ingested by the following connectors:
 | [Audit Email Preview-Download action](../content/github-only-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-137ebb20.md) |  |
 | [BEC - File sharing tactics - Dropbox](../content/github-only-bec-file-sharing-tactics-dropbox-6e056084-8951-460d-93f9-525880062de9-871269e7.md) | `ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox`<br>`added them to shared file/folder"`<br>`Application == "Dropbox"`<br>`ObjectType == "File"` |
 | [BEC - File sharing tactics - OneDrive or SharePoint](../content/github-only-bec-file-sharing-tactics-onedrive-or-sharepoint-cf8d2c27-8310-4b13-b135-1ba59ae0a3a2-fbbd5245.md) | `ActionType in "AddedToSecureLink,SecureLinkCreated"`<br>`Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"` |
-| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
 | [Changes to Blocked Teams Domains](../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.md) | `ActionType == "TeamsAdminAction"` |
 | [Changes to Blocked Teams Domains (NRT)](../content/github-only-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-f9fcf37d.md) | `ActionType == "TeamsAdminAction"` |
 | [CredentialsAddAfterAdminConsentedToApp[Nobelium]](../content/github-only-credentialsaddafteradminconsentedtoapp[nobelium]-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.md) | `ActionType in "Add service principal credentials.,Consent to application.,Update application - Certificates`<br>`secrets management"`<br>`Application == "Office 365"` |
+| [Display Name - Detect Teams IT Helpdesk Impersonation Msg Phishing & Vishing](../content/github-only-display-name-detect-teams-it-helpdesk-impersonation-msg-phishing-&-vishing-d9fee5bc-e4f8-4ae2-a729-dc399a419cce-1028ae30.md) | `ActionType == "ChatCreated"`<br>`Application == "Microsoft Teams"` |
 | [Display Name - Helpdesk theme impersonation attack detection](../content/github-only-display-name-helpdesk-theme-impersonation-attack-detection-edd48210-532e-4560-a8fe-065240cd2f20-3b00897a.md) | `ActionType == "TeamsImpersonationDetected"` |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
 | [Email containing malware accessed on a unmanaged device](../content/github-only-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-2e5f8871.md) |  |
@@ -254,6 +271,9 @@ This table is ingested by the following connectors:
 | [MailPermissionsAddedToApplication[Nobelium]](../content/github-only-mailpermissionsaddedtoapplication[nobelium]-2c80af05-53c1-4a77-82e7-a649e8e32506-d90582ab.md) | `ActionType in "Add delegated permission grant.,Consent to application."` |
 | [Malware detections by Workload Locations](../content/github-only-malware-detections-by-workload-locations-bb6afb85-8e80-4c98-b73b-c2c821528a1c-7bfc3456.md) | `ActionType == "FileMalwareDetected"` |
 | [Malware detections by Workload Type](../content/github-only-malware-detections-by-workload-type-094a9823-e053-4b36-8678-cd70f048db91-571968ce.md) | `ActionType == "FileMalwareDetected"` |
+| [Microsoft Teams Call and Message Submissions Over Time](../content/github-only-microsoft-teams-call-and-message-submissions-over-time-6dcfd16d-d9f0-45d1-a9d3-cb08fbf8465b-87f19948.md) | `ActionType in "AdminSubmission,UserSubmission"` |
+| [Microsoft Teams Calls and Impersonation-Style Calls by Hour of Day](../content/github-only-microsoft-teams-calls-and-impersonation-style-calls-by-hour-of-day-cdfc54c4-ea78-4008-9b50-da7e886bd8e2-4dd2b1c9.md) | `ActionType == "CallParticipantDetail"` |
+| [Microsoft Teams Impersonation Identities by Fake Display Name](../content/github-only-microsoft-teams-impersonation-identities-by-fake-display-name-588c9935-c17b-4681-9bb1-ede0da2667bd-40636372.md) | `ActionType == "TeamsImpersonationDetected"` |
 | [Multiple Entra ID Admin Removals](../content/github-only-multiple-entra-id-admin-removals-7ffb31ee-f164-4613-a9a7-4d04d0dba5d7-8058f067.md) | `ActionType in "Remove eligible member from role.,Remove member from role."`<br>`ApplicationId == "11161"` |
 | [New TABL Items](../content/microsoft-defender-xdr-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-979994c7.md) | `ActionType == "New-TenantAllowBlockListItems"` |
 | [New TABL Items](../content/github-only-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-0701ce38.md) | `ActionType == "New-TenantAllowBlockListItems"` |
@@ -270,11 +290,13 @@ This table is ingested by the following connectors:
 | [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Quarantine release trend](../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.md) | `ActionType == "QuarantineReleaseMessage"` |
 | [Quarantine release trend](../content/github-only-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1a59411f.md) | `ActionType == "QuarantineReleaseMessage"` |
+| [Reported Microsoft Teams Calls](../content/github-only-reported-microsoft-teams-calls-27cb923c-8d66-4caa-b52b-bce52e51d585-3a07133b.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-ce2b03f8-92a4-4ec7-b55b-e9fa562fafa4-dede1503.md) | `ActionType == "Add registered owner to device."` |
 | [Risky Sign-in with ElevateAccess](../content/github-only-risky-sign-in-with-elevateaccess-158b565b-411b-4dec-81de-2d2bcaf0c34c-455b10c6.md) |  |
 | [Risky Sign-in with new MFA method](../content/github-only-risky-sign-in-with-new-mfa-method-0f57238b-e764-4246-b101-f78bf8c942a7-1eead4d6.md) | `ActionType == "Update user."` |
 | [ServicePrincipalAddedToRole [Nobelium]](../content/github-only-serviceprincipaladdedtorole-[nobelium]-ca7c93e0-49d3-44ff-b07e-ae117ba13c9a-529dc696.md) | `ActionType == "Add member to role."`<br>`Application == "Office 365"` |
 | [Status of submissions](../content/github-only-status-of-submissions-1c390fd7-2668-4445-9b7d-055f3851be5f-c0279593.md) | `ActionType in "AdminSubmission,UserSubmission"` |
+| [Suspicious Microsoft Teams Callers by Impersonation-Style Identity](../content/github-only-suspicious-microsoft-teams-callers-by-impersonation-style-identity-f905bb00-9c5f-4889-bc39-7d0765521228-65047600.md) | `ActionType == "CallParticipantDetail"` |
 | [Suspicious sign-in attempts from QR code phishing campaigns](../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.md) | `ActionType == "MailItemsAccessed"` |
 | [Suspicious sign-in attempts from QR code phishing campaigns](../content/github-only-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-57676ddf.md) | `ActionType == "MailItemsAccessed"` |
 | [Teams Admin submission of Malware and Phish daily trend](../content/github-only-teams-admin-submission-of-malware-and-phish-daily-trend-13db68a8-bce1-4929-b8db-2589ee552e75-1ded940b.md) | `ActionType == "AdminSubmissionSubmitted"` |
@@ -295,6 +317,7 @@ This table is ingested by the following connectors:
 | [Top 10 senders of  Admin Teams message submissions FN](../content/github-only-top-10-senders-of-admin-teams-message-submissions-fn-49071a21-fbb6-472f-932f-5b6ca1a25883-10055242.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top 10 senders of  Admin Teams message submissions FP](../content/microsoft-defender-xdr-top-10-senders-of-admin-teams-message-submissions-fp-f82f3d63-b7f2-494d-8254-612405702dd4-4652dba3.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top 10 senders of  Admin Teams message submissions FP](../content/github-only-top-10-senders-of-admin-teams-message-submissions-fp-f82f3d63-b7f2-494d-8254-612405702dd4-5337068d.md) | `ActionType == "AdminSubmissionSubmitted"` |
+| [Top Reporters of Microsoft Teams Calls and Messages](../content/github-only-top-reporters-of-microsoft-teams-calls-and-messages-d9ca4ab6-de3f-4c24-aaef-00d41332caf4-62e80e5e.md) | `ActionType == "UserSubmission"` |
 | [Top accounts performing Teams admin submissions FN or FP](../content/microsoft-defender-xdr-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-83e0c9bf.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing Teams admin submissions FN or FP](../content/github-only-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-25958bf1.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing Teams user submissions FN or FP](../content/microsoft-defender-xdr-top-accounts-performing-teams-user-submissions-fn-or-fp-9ffbd78f-c87c-4fd2-96ec-fd46e27bbd21-dfe1925c.md) | `ActionType == "UserSubmission"` |
@@ -302,20 +325,29 @@ This table is ingested by the following connectors:
 | [Top accounts performing admin submissions (FN)](../content/github-only-top-accounts-performing-admin-submissions-fn-220448c8-f9cd-4a91-bde0-1f30d8c81936-dde98ae9.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing admin submissions (FP)](../content/github-only-top-accounts-performing-admin-submissions-fp-f458535d-f977-4392-90ce-663fcf4ac703-340e4946.md) | `ActionType == "AdminSubmissionSubmitted"` |
 | [Top accounts performing user submissions](../content/github-only-top-accounts-performing-user-submissions-dda13716-d906-45c5-877d-4df46ceb39e6-7a8cfc3e.md) | `ActionType == "UserSubmission"` |
+| [Top accounts performing user submissions (FP)](../content/github-only-top-accounts-performing-user-submissions-fp-fa0ce1b0-59fa-4fea-87e8-6752951cec3f-b73e8391.md) | `ActionType == "UserSubmission"` |
 | [Total Submissions by Submission State](../content/github-only-total-submissions-by-submission-state-47e8ea7f-a7eb-4fe3-a96b-efe01155d9d3-5774f28b.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total Submissions by Submission Type](../content/github-only-total-submissions-by-submission-type-9fd55150-611d-400c-a27f-b18f33c18a41-31b1705c.md) | `ActionType in "AdminSubmission,UserSubmission"` |
 | [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` |
 | [Unusual volume of file deletion by user.](../content/github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.md) |  |
 | [UpdateStsRefreshToken[Solorigate]](../content/github-only-updatestsrefreshtoken[solorigate]-634dfbd6-0a42-40da-854e-2161cf137f14-89e3d513.md) | `ActionType == "Update StsRefreshTokenValidFrom Timestamp."`<br>`RawEventData !has "Directorysync"` |
 | [User Email Submission Trend (FN)](../content/github-only-user-email-submission-trend-fn-395047c1-254e-43fb-ad6e-ae74c8e0a873-b9601c69.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
+| [User Email Submission Trend (FP)](../content/github-only-user-email-submission-trend-fp-98ed7471-ce5e-4d48-b9f9-dae4cf045b3e-f278cb32.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Admins](../content/github-only-user-email-submissions-fn-top-detection-overrides-by-admins-a52e4273-cf3c-4125-b03d-41b99f64197f-ab3590ca.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Detection Overrides by Users](../content/github-only-user-email-submissions-fn-top-detection-overrides-by-users-764c0e82-33af-4694-a552-b2de24d1d477-9f86bf12.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Intra-Org P2 Senders](../content/github-only-user-email-submissions-fn-top-intra-org-p2-senders-2adae71b-42b9-47b8-9cb7-ccea9fece3e2-2614f9df.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) - Top Intra-Org Subjects](../content/github-only-user-email-submissions-fn-top-intra-org-subjects-02949291-cc6c-48ff-bc99-bb3736a3c967-4bd51866.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions (FN) by Submission Type](../content/github-only-user-email-submissions-fn-by-submission-type-0b2cbdf4-12e4-46e9-a8f6-99e559583cd7-7f30a082.md) | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` |
 | [User Email Submissions (FN-FP) by Grading verdict](../content/github-only-user-email-submissions-fn-fp-by-grading-verdict-3b9e6da0-3504-463f-80d3-31fe3f0261ff-1d5052d0.md) | `ActionType contains "UserSubmissionTriage"` |
+| [User Email Submissions (FP) - Top Inbound P2 Senders](../content/github-only-user-email-submissions-fp-top-inbound-p2-senders-e1973a95-fd22-4669-8758-dba8f9828c8f-19aa7fe2.md) |  |
+| [User Email Submissions (FP) - Top Inbound Subjects](../content/github-only-user-email-submissions-fp-top-inbound-subjects-b2c772f0-f6b2-406f-9a80-756b596f0b57-edd7e061.md) |  |
+| [User Email Submissions (FP) - Top Intra-Org P2 Senders](../content/github-only-user-email-submissions-fp-top-intra-org-p2-senders-2e5e39ae-99f9-4ba0-b5c4-9e76919a0f53-5e9ac908.md) |  |
+| [User Email Submissions (FP) - Top P2 Sender Domains](../content/github-only-user-email-submissions-fp-top-p2-sender-domains-d090ed89-3c2b-4bd7-9b87-d8a5f552e174-9d172a45.md) | `ActionType == "UserSubmission"` |
 | [User Email Submissions accuracy vs Admin review verdict](../content/github-only-user-email-submissions-accuracy-vs-admin-review-verdict-0d03314a-ecbe-47f0-b411-2a9471f26b46-7034a4a0.md) | `ActionType in "SubmissionNotification,UserSubmission"` |
 | [User Email Submissions by Admin review status (Mark and Notify)](../content/github-only-user-email-submissions-by-admin-review-status-mark-and-notify-6923a80a-e3df-4d81-a90d-63fc5b7f0bb5-8e95120c.md) | `ActionType in "SubmissionNotification,UserSubmission"` |
+| [User Submissions by Detection Method - Phish (FP)](../content/github-only-user-submissions-by-detection-method-phish-fp-5990abd3-7e11-4441-947b-17e60c69f28f-03c0b9f7.md) |  |
+| [User Submissions by Detection Method - Spam (FP)](../content/github-only-user-submissions-by-detection-method-spam-fp-91a1a3f0-1386-4c70-9c66-215f59b2af28-57f593cc.md) |  |
+| [User Submissions by Submission State (FP)](../content/github-only-user-submissions-by-submission-state-fp-f8637343-8fbc-48de-b31a-ed4bb68b60f2-3565ccc5.md) | `ActionType == "UserSubmission"` |
 | [User email submissions (FN) from Junk Folder](../content/github-only-user-email-submissions-fn-from-junk-folder-a1eb19d6-9d86-425c-bd1d-86495c2ca714-e5bed1d6.md) | `ActionType == "UserSubmission"` |
 | [User reported submissions](../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.md) | `ActionType == "UserSubmission"` |
 | [User reported submissions](../content/github-only-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-b5232da7.md) | `ActionType == "UserSubmission"` |
@@ -334,7 +366,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"`
 
 | Workbook |
 |:-------------|
@@ -349,24 +381,27 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "Add service principal."` |
 
-## Selection Criteria Summary (42 criteria, 152 total references)
+## Selection Criteria Summary (45 criteria, 176 total references)
 
-References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "UserSubmission"` | - | 34 | - | - | **34** |
 | `ActionType == "AdminSubmissionSubmitted"` | - | 30 | - | - | **30** |
-| `ActionType == "UserSubmission"` | - | 24 | - | - | **24** |
+| `ActionType in "AdminSubmission,UserSubmission"` | - | 9 | - | - | **9** |
 | `ActionType == "MailItemsAccessed"` | - | 8 | - | - | **8** |
 | `ActionType == "FileMalwareDetected"` | - | 8 | - | - | **8** |
 | `ActionType == "QuarantineReleaseMessage"` | - | 8 | - | - | **8** |
 | `ActionType == "AdminSubmissionSubmitted"`<br>`ActionType contains "Submission"` | - | 8 | - | - | **8** |
-| `ActionType in "AdminSubmission,UserSubmission"` | - | 5 | - | - | **5** |
 | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 4 | - | - | **4** |
+| `ActionType == "CallParticipantDetail"` | - | 4 | - | - | **4** |
 | `ActionType contains "AdminSubmission"` | - | 4 | - | - | **4** |
 | `ActionType in "SubmissionNotification,UserSubmission"` | - | 4 | - | - | **4** |
 | `ActionType in "AttackSimUserSubmission,UserSubmission"`<br>`ActionType contains "UserSubmission"` | - | 4 | - | - | **4** |
+| `ActionType == "TeamsImpersonationDetected"` | - | 3 | - | - | **3** |
 | `ActionType == "Set-AtpPolicyForO365"`<br>`Application == "Microsoft Exchange Online"` | - | 2 | - | - | **2** |
+| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 2 | - | - | **2** |
 | `ActionType == "AdminMailAccess"` | - | 2 | - | - | **2** |
 | `ActionType contains "TenantAllowBlockListItems"` | - | 2 | - | - | **2** |
 | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | - | 2 | - | - | **2** |
@@ -377,6 +412,7 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 | `ActionType == "FileMalwareDetected"`<br>`UserAgent == "MS Scanner ATP"` | - | 2 | - | - | **2** |
 | `ActionType in "AdminSubmissionTriage,UserSubmissionTriage"` | - | 2 | - | - | **2** |
 | `ActionType == "AirInvestigationData"` | - | 2 | - | - | **2** |
+| `ActionType == "ChatCreated"`<br>`Application == "Microsoft Teams"` | - | 2 | - | - | **2** |
 | `ActionType contains "AdminSubmissionTriage"` | - | 2 | - | - | **2** |
 | `ActionType contains "UserSubmissionTriage"` | - | 2 | - | - | **2** |
 | `ActionType == "TeamsAdminAction"` | - | 2 | - | - | **2** |
@@ -394,33 +430,35 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 | `ActionType == "Update user."` | - | 1 | - | - | **1** |
 | `ActionType in "Add service principal credentials.,Update application - Certificates`<br>`secrets management"`<br>`Application == "Office 365"` | - | 1 | - | - | **1** |
 | `ActionType == "Add member to role."`<br>`Application == "Office 365"` | - | 1 | - | - | **1** |
-| `ActionType == "TeamsImpersonationDetected"` | - | 1 | - | - | **1** |
 | `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`UserAgent == "MS Scanner ATP"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **152** | **0** | **0** | **152** |
+| `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **176** | **0** | **0** | **176** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `UserSubmission` | - | 44 | - | - | **44** |
-| `AdminSubmissionSubmitted` | - | 39 | - | - | **39** |
+| `UserSubmission` | - | 58 | - | - | **58** |
+| `AdminSubmissionSubmitted` | - | 41 | - | - | **41** |
+| `AdminSubmission` | - | 16 | - | - | **16** |
 | `MailItemsAccessed` | - | 11 | - | - | **11** |
-| `AdminSubmission` | - | 11 | - | - | **11** |
-| `FileMalwareDetected` | - | 11 | - | - | **11** |
+| `FileMalwareDetected` | - | 10 | - | - | **10** |
 | `contains Submission` | - | 9 | - | - | **9** |
 | `QuarantineReleaseMessage` | - | 8 | - | - | **8** |
+| `Malware ZAP` | - | 7 | - | - | **7** |
+| `Phish ZAP` | - | 7 | - | - | **7** |
+| `CallParticipantDetail` | - | 5 | - | - | **5** |
 | `contains AdminSubmission` | - | 5 | - | - | **5** |
 | `SubmissionNotification` | - | 5 | - | - | **5** |
 | `AttackSimUserSubmission` | - | 5 | - | - | **5** |
 | `contains UserSubmission` | - | 5 | - | - | **5** |
-| `Malware ZAP` | - | 4 | - | - | **4** |
-| `Phish ZAP` | - | 4 | - | - | **4** |
 | `Add service principal credentials.` | - | 4 | - | - | **4** |
+| `TeamsImpersonationDetected` | - | 3 | - | - | **3** |
 | `contains AdminSubmissionTriage` | - | 3 | - | - | **3** |
 | `contains UserSubmissionTriage` | - | 3 | - | - | **3** |
 | `Update application - Certificates` | - | 3 | - | - | **3** |
 | `Set-AtpPolicyForO365` | - | 2 | - | - | **2** |
+| `Redelivery` | - | 2 | - | - | **2** |
 | `AdminMailAccess` | - | 2 | - | - | **2** |
 | `contains TenantAllowBlockListItems` | - | 2 | - | - | **2** |
 | `contains ZAP` | - | 2 | - | - | **2** |
@@ -433,6 +471,7 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 | `AdminSubmissionTriage` | - | 2 | - | - | **2** |
 | `UserSubmissionTriage` | - | 2 | - | - | **2** |
 | `AirInvestigationData` | - | 2 | - | - | **2** |
+| `ChatCreated` | - | 2 | - | - | **2** |
 | `Consent to application.` | - | 2 | - | - | **2** |
 | `TeamsAdminAction` | - | 2 | - | - | **2** |
 | `Add owner to policy.` | - | 1 | - | - | **1** |
@@ -456,12 +495,12 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 | `Add registered owner to device.` | - | 1 | - | - | **1** |
 | `Update user.` | - | 1 | - | - | **1** |
 | `Add member to role.` | - | 1 | - | - | **1** |
-| `TeamsImpersonationDetected` | - | 1 | - | - | **1** |
 | `New-InboxRule` | - | 1 | - | - | **1** |
 | `Set-InboxRule` | - | 1 | - | - | **1** |
 | `Set-Mailbox` | - | 1 | - | - | **1** |
-| `Redelivery` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
+| `startswith AdminSubmission` | - | 1 | - | - | **1** |
+| `startswith UserSubmission` | - | 1 | - | - | **1** |
 
 ### Application
 
@@ -472,6 +511,7 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 | `Dropbox` | - | 2 | - | - | **2** |
 | `Microsoft OneDrive for Business` | - | 2 | - | - | **2** |
 | `Microsoft SharePoint Online` | - | 2 | - | - | **2** |
+| `Microsoft Teams` | - | 2 | - | - | **2** |
 | `has Exchange` | - | 1 | - | - | **1** |
 
 ### ApplicationId
@@ -498,7 +538,7 @@ References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `MS Scanner ATP` | - | 3 | - | - | **3** |
+| `MS Scanner ATP` | - | 2 | - | - | **2** |
 
 ---
 

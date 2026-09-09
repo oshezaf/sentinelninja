@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `NetworkLocationDetails == "[]"`<br>`OperationName in "Register device,User registered security info"`<br>`RiskLevelDuringSignIn == "high"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Register device,User registered security info"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `NetworkLocationDetails == "[]"`<br>`RiskLevelDuringSignIn == "high"` | ✓ | ✗ | ✓ |
 
 ## Associated Connectors
 

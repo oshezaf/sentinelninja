@@ -121,7 +121,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (290)
+## Content Items Using This Table (367)
 
 ### Analytic Rules (10)
 
@@ -155,7 +155,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
 
-### Hunting Queries (271)
+### Hunting Queries (347)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -167,77 +167,115 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [Automated Remediation Delivery to Action Latency](../content/microsoft-defender-xdr-automated-remediation-delivery-to-action-latency-3027abf0-a965-42bd-babe-79f34bbd9e7a-300c89ab.md) | `ActionType == "Automated Remediation"` |
 | [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md) |  |
+| [Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)](../content/microsoft-defender-xdr-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-cb7629af-4872-427a-9042-ce848c2f49e7-1444eb9c.md) | `EmailDirection == "Outbound"` |
 | [Bad email percentage of Inbound emails](../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.md) | `EmailDirection == "Inbound"` |
-| [Bulk Emails by Sender Bulk Complaint level](../content/microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.md) | `EmailDirection == "Inbound"` |
-| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Bulk Emails by Sender Bulk Complaint level](../content/microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md) |  |
 | [CompAuth Failure Trend](../content/microsoft-defender-xdr-compauth-failure-trend-eb560458-d96f-4c68-acbb-14b3c706ebe7-1841f166.md) |  |
 | [DKIM Failure Trend](../content/microsoft-defender-xdr-dkim-failure-trend-14d47b2a-62b3-4c7b-819c-699e264c581d-01837526.md) |  |
 | [DMARC Failure Trend](../content/microsoft-defender-xdr-dmarc-failure-trend-62d6a2e6-4583-4538-a476-a5b3c672657b-ff4453e5.md) |  |
 | [Determine Successfully Delivered Phishing Emails by top IP Addresses](../content/microsoft-defender-xdr-determine-successfully-delivered-phishing-emails-by-top-ip-addresses-cdac93ef-56c0-45bf-9e7f-9cbf0ad06567-4ea19d0e.md) | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
 | [Determine Successfully Delivered Phishing Emails to Inbox/Junk folder.](../content/microsoft-defender-xdr-determine-successfully-delivered-phishing-emails-to-inbox-junk-folder.-cdac93ef-56c0-45bf-9e7f-9cbf0ad06123-2bab1379.md) | `DeliveryLocation in "Inbox/folder,Junk folder"` |
-| [Email Top 10 Domains sending Spam](../content/microsoft-defender-xdr-email-top-10-domains-sending-spam-6fe463ca-4cd3-4d97-a099-6b736f28a128-bdb32e31.md) | `ThreatTypes has "Spam"` |
-| [Email Top 10 Targeted Users (Spam)](../content/microsoft-defender-xdr-email-top-10-targeted-users-spam-9e4b7553-1113-4d40-bb6b-7daca7d7d255-448bdc2d.md) | `ThreatTypes has "Spam"` |
-| [Email Top 15 Domains sending Spam with Additional Details](../content/microsoft-defender-xdr-email-top-15-domains-sending-spam-with-additional-details-c03e13ee-0e7a-4d05-b3f4-790b01bb30a5-d9218166.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` |
-| [Email Top 15 Targeted Users (Spam) with Additional Details](../content/microsoft-defender-xdr-email-top-15-targeted-users-spam-with-additional-details-86f2b124-8caf-4b53-845a-87de3ffccbdf-22e01ae8.md) | `ThreatTypes has "Spam"` |
-| [Email Top Domains sending Malware](../content/microsoft-defender-xdr-email-top-domains-sending-malware-a2a7bede-cf55-47ed-9aeb-7b4c97079f4f-512f33b8.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"` |
+| [Email Top 10 Domains sending Spam](../content/microsoft-defender-xdr-email-top-10-domains-sending-spam-6fe463ca-4cd3-4d97-a099-6b736f28a128-bdb32e31.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 10 Targeted Users (Spam)](../content/microsoft-defender-xdr-email-top-10-targeted-users-spam-9e4b7553-1113-4d40-bb6b-7daca7d7d255-448bdc2d.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 15 Domains sending Spam with Additional Details](../content/microsoft-defender-xdr-email-top-15-domains-sending-spam-with-additional-details-c03e13ee-0e7a-4d05-b3f4-790b01bb30a5-d9218166.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 15 Targeted Users (Spam) with Additional Details](../content/microsoft-defender-xdr-email-top-15-targeted-users-spam-with-additional-details-86f2b124-8caf-4b53-845a-87de3ffccbdf-22e01ae8.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top Domains sending Malware](../content/microsoft-defender-xdr-email-top-domains-sending-malware-a2a7bede-cf55-47ed-9aeb-7b4c97079f4f-512f33b8.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
 | [Email Top Domains sending Phish](../content/microsoft-defender-xdr-email-top-domains-sending-phish-0b197e26-7899-47ff-9be9-f7ba6dc949ea-f793c65e.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Email bombing attacks](../content/microsoft-defender-xdr-email-bombing-attacks-c1cac5ad-7aaa-40de-89aa-954f5a33a578-84420089.md) | `DeliveryAction == "Delivered"` |
 | [Files share contents and suspicious sign-in activity](../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.md) |  |
+| [First-Contact External Email Senders](../content/microsoft-defender-xdr-first-contact-external-email-senders-6ad2dbb3-40de-4e39-a3b0-5c8be4e37b7b-90de2f63.md) | `EmailDirection == "Inbound"` |
 | [Hunt for email bombing attacks](../content/microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.md) | `EmailDirection == "Inbound"` |
 | [Impersonation Detections Trend](../content/microsoft-defender-xdr-impersonation-detections-trend-416cd270-6327-441a-9304-940c832cf361-79ee8cd4.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-15a17150-811d-4829-a3d6-489139c9ff5e-b3543837.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology Trend](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-trend-418e8859-b22a-4fd4-b273-5433e054cdc7-b6bf2fd7.md) |  |
+| [Impersonation and Spoof Detections by Sender Country](../content/microsoft-defender-xdr-impersonation-and-spoof-detections-by-sender-country-04f08949-c44a-4c02-9d3c-ba40186ea6b2-e33aeb7c.md) | `DetectionMethods has "Impersonation"`<br>`DetectionMethods has "Spoof"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Inbound Sender Domains Failing Email Authentication](../content/microsoft-defender-xdr-inbound-sender-domains-failing-email-authentication-80067390-3954-4276-bbca-8d4be1df0591-11e13d6f.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Largest Malicious Email Campaigns by Cluster](../content/microsoft-defender-xdr-largest-malicious-email-campaigns-by-cluster-a92a3921-1a71-4a4d-8382-873b689ff7d8-e7aa84b7.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
 | [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) |  |
-| [Malware Detections Trend](../content/microsoft-defender-xdr-malware-detections-trend-e1dbe1d2-785a-4ecd-a1c0-233fc0e990bc-43903146.md) | `ThreatTypes has "Malware"` |
-| [Malware Detections by Detection technology](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-15d255f7-57a6-4b23-bd89-376930d3a305-149bc998.md) | `DetectionMethods has "Malware"` |
-| [Malware Detections by Detection technology Trend](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-trend-db79eb5a-785a-400a-a7ef-7285dde8e116-0c62c2fd.md) |  |
-| [Malware Detections by delivery location](../content/microsoft-defender-xdr-malware-detections-by-delivery-location-b3a4b803-06f6-46d8-9220-b3a53e85ce4f-d52dc5b0.md) | `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` |
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Malware Detection IP and Geo Position](../content/microsoft-defender-xdr-malware-detection-ip-and-geo-position-b232adb3-059b-4351-9e4b-78a3c15175e5-89c0653d.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections Trend](../content/microsoft-defender-xdr-malware-detections-trend-e1dbe1d2-785a-4ecd-a1c0-233fc0e990bc-43903146.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by Detection technology](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-15d255f7-57a6-4b23-bd89-376930d3a305-149bc998.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware Detections by Detection technology Trend](../content/microsoft-defender-xdr-malware-detections-by-detection-technology-trend-db79eb5a-785a-400a-a7ef-7285dde8e116-0c62c2fd.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware Detections by Sender Country](../content/microsoft-defender-xdr-malware-detections-by-sender-country-eee98563-fd77-4d6a-a1aa-e0e4952b5cf3-493fdaec.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by Threat Classification](../content/microsoft-defender-xdr-malware-detections-by-threat-classification-f9ec4d6a-4112-4f4a-bbe9-71eb6f65ce3d-49b16805.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by delivery location](../content/microsoft-defender-xdr-malware-detections-by-delivery-location-b3a4b803-06f6-46d8-9220-b3a53e85ce4f-d52dc5b0.md) | `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware URL Detections Trend](../content/microsoft-defender-xdr-malware-url-detections-trend-effba60e-0a4a-4558-bbf6-4e099607d82e-fc497634.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Message from an Accepted Domain with DMARC TempError](../content/microsoft-defender-xdr-message-from-an-accepted-domain-with-dmarc-temperror-4c021477-38f0-409e-869b-11056fcd47f1-d9274983.md) | `EmailDirection == "Inbound"` |
-| [Phish Detections (High) by delivery location](../content/microsoft-defender-xdr-phish-detections-high-by-delivery-location-76c77c8a-bd2a-489a-af52-97291211e4e4-3e94b5c1.md) | `ConfidenceLevel has_any "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
-| [Phish Detections (Normal) by delivery location](../content/microsoft-defender-xdr-phish-detections-normal-by-delivery-location-4d86021c-cad7-489b-a8c8-dddecb87a2ef-ba0f6a21.md) | `ConfidenceLevel has_any "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [New External Sender Domains Carrying Threats](../content/microsoft-defender-xdr-new-external-sender-domains-carrying-threats-41614487-ccca-458e-81eb-dffbeba0b703-c952afbd.md) | `EmailDirection == "Inbound"` |
+| [Phish Detection IP and Geo Position](../content/microsoft-defender-xdr-phish-detection-ip-and-geo-position-22dd5345-f620-41b2-b319-a1b3cfa9cb8e-8614738a.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phish Detections (High) by delivery location](../content/microsoft-defender-xdr-phish-detections-high-by-delivery-location-76c77c8a-bd2a-489a-af52-97291211e4e4-3e94b5c1.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections (Normal) by delivery location](../content/microsoft-defender-xdr-phish-detections-normal-by-delivery-location-4d86021c-cad7-489b-a8c8-dddecb87a2ef-ba0f6a21.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Phish Detections Trend](../content/microsoft-defender-xdr-phish-detections-trend-fbe7a9d2-507e-4974-9e9a-d1cba3907f67-9ce7f42d.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
-| [Phish Detections by Detection technology](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-4c30fab1-db4f-4a64-b66b-51478e43a477-bb67d7c0.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
-| [Phish Detections by Detection technology Trend](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-trend-dd6efecd-7fe5-41b1-a122-8e0a15de9451-12c632c4.md) |  |
+| [Phish Detections by Detection technology](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-4c30fab1-db4f-4a64-b66b-51478e43a477-bb67d7c0.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections by Detection technology Trend](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-trend-dd6efecd-7fe5-41b1-a122-8e0a15de9451-12c632c4.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections by Sender Country](../content/microsoft-defender-xdr-phish-detections-by-sender-country-7d041b6d-973b-48aa-886d-d234047511f2-6f48091d.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phish Detections by Threat Classification](../content/microsoft-defender-xdr-phish-detections-by-threat-classification-b54359db-ca8c-4a11-98b7-0f320b870cbd-abba028e.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Phish Detections by delivery location trend](../content/microsoft-defender-xdr-phish-detections-by-delivery-location-trend-b20e56b8-e335-43d9-b7b3-43c034c43aea-304b06c0.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phishing Detected by LLM Content Analysis](../content/microsoft-defender-xdr-phishing-detected-by-llm-content-analysis-945a8419-d3ec-41ba-a4b3-c37303bd9458-1ac856d6.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phishing URL Detections Trend](../content/microsoft-defender-xdr-phishing-url-detections-trend-4bce2a7c-31fb-46e9-8487-ce611bd98004-078f5796.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [QR Code URL Detections Trend](../content/microsoft-defender-xdr-qr-code-url-detections-trend-88035c0e-0e2d-4805-a249-34d54a88c3fe-2b93ffea.md) | `DetectionMethods has "Url"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Quarantine Malware Reason](../content/microsoft-defender-xdr-quarantine-malware-reason-c38282e0-5748-467d-95fc-4202b904dbc7-ecc42b9f.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` |
 | [Quarantine Phish Reason](../content/microsoft-defender-xdr-quarantine-phish-reason-36cf7ce5-7264-46d9-9f47-57b59049b44f-2c7a4748.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Quarantine Phish Reason trend](../content/microsoft-defender-xdr-quarantine-phish-reason-trend-79bed402-09bc-453b-ab92-8b1411e683fa-9b772a7d.md) |  |
+| [Quarantine Phish Reason trend](../content/microsoft-defender-xdr-quarantine-phish-reason-trend-79bed402-09bc-453b-ab92-8b1411e683fa-9b772a7d.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
+| [Quarantine Release Percentage](../content/microsoft-defender-xdr-quarantine-release-percentage-60cf8dc6-b3f7-4bd9-b877-3ed9c9443750-f3d8d2ab.md) |  |
 | [Quarantine Spam Reason](../content/microsoft-defender-xdr-quarantine-spam-reason-bde9d9fc-e166-4628-91f7-fb86ace93af0-47e9e0b8.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
-| [Quarantine Spam Reason trend](../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.md) |  |
+| [Quarantine Spam Reason trend](../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
 | [Quarantine releases by Detection Types](../content/microsoft-defender-xdr-quarantine-releases-by-detection-types-23e6d66b-511a-43fd-9863-6924da60319a-0411faf3.md) |  |
 | [SPF Failure Trend](../content/microsoft-defender-xdr-spf-failure-trend-79755078-7be8-4f13-a8e7-1ce87cb7d5c0-c89e8f51.md) |  |
+| [SecOps Mailbox Override Count](../content/microsoft-defender-xdr-secops-mailbox-override-count-293d6bbe-97b6-458e-8670-929e9f1756d2-bb02a216.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy == "SecOps Mailbox"` |
+| [SecOps Mailbox Overrides by Threat Type](../content/microsoft-defender-xdr-secops-mailbox-overrides-by-threat-type-b5ac7138-d807-450e-9f67-dbdac948f651-abebfb90.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy == "SecOps Mailbox"` |
 | [Spam Detections (High) by delivery location](../content/microsoft-defender-xdr-spam-detections-high-by-delivery-location-45c47684-6650-44b6-81c0-951522d0c435-82785140.md) | `ConfidenceLevel has_any "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Spam Detections (Normal) by delivery location](../content/microsoft-defender-xdr-spam-detections-normal-by-delivery-location-99e1246e-c1a9-4794-8e96-eb906c73c529-4b13c7ce.md) | `ConfidenceLevel has_any "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
-| [Spam Detections by Detection technology](../content/microsoft-defender-xdr-spam-detections-by-detection-technology-16cfa413-238f-4355-9f8a-4b97ce7572ac-c675f0ec.md) |  |
+| [Spam Detections by Detection technology](../content/microsoft-defender-xdr-spam-detections-by-detection-technology-16cfa413-238f-4355-9f8a-4b97ce7572ac-c675f0ec.md) | `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam Detections by Sender Country](../content/microsoft-defender-xdr-spam-detections-by-sender-country-fd9d2289-a2c3-4634-8a87-abe4a7db896f-72c94991.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
 | [Spam and Phish allowed to inbox by Admin Overrides](../content/microsoft-defender-xdr-spam-and-phish-allowed-to-inbox-by-admin-overrides-02e237ed-f7b5-49dd-92e6-1b340d5e37fb-84bc507a.md) |  |
 | [Spam and Phish allowed to inbox by User Overrides](../content/microsoft-defender-xdr-spam-and-phish-allowed-to-inbox-by-user-overrides-b1f797d1-6ea4-4f8f-b663-6c8a1c1018e9-d96be501.md) |  |
 | [Spam detection by IP and its location](../content/microsoft-defender-xdr-spam-detection-by-ip-and-its-location-316f8777-09fd-480b-a726-21f521fa990f-34018dfd.md) |  |
-| [Spam detection by delivery location](../content/microsoft-defender-xdr-spam-detection-by-delivery-location-7e93ce37-0cc5-4aa9-b30a-07772affa481-8260769b.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
-| [Spam detection technologies](../content/microsoft-defender-xdr-spam-detection-technologies-f290d544-c499-4b23-8a7e-c4cbb7ab6316-9fee5e01.md) | `DetectionMethods has "Spam"` |
-| [Spam detection trend](../content/microsoft-defender-xdr-spam-detection-trend-ae690d6f-0ea5-4617-95cf-1ed9a5fcb329-5bd812f5.md) | `ThreatTypes has "Spam"` |
+| [Spam detection by delivery location](../content/microsoft-defender-xdr-spam-detection-by-delivery-location-7e93ce37-0cc5-4aa9-b30a-07772affa481-8260769b.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam detection technologies](../content/microsoft-defender-xdr-spam-detection-technologies-f290d544-c499-4b23-8a7e-c4cbb7ab6316-9fee5e01.md) | `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam detection trend](../content/microsoft-defender-xdr-spam-detection-trend-ae690d6f-0ea5-4617-95cf-1ed9a5fcb329-5bd812f5.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
 | [Spoof Detections Trend](../content/microsoft-defender-xdr-spoof-detections-trend-09b263e1-9c73-4585-a55c-bc209e148e14-7f536fde.md) | `DetectionMethods has "Spoof"` |
 | [Spoof Detections by Detection Technology](../content/microsoft-defender-xdr-spoof-detections-by-detection-technology-53139a92-eb64-46d2-be97-e752a71e7021-49e840ae.md) | `DetectionMethods has "Spoof"` |
 | [Spoof Detections by Detection Technology Trend](../content/microsoft-defender-xdr-spoof-detections-by-detection-technology-trend-1dce39ec-8a64-4e49-9d6e-926ee6f04c39-579ed4a9.md) |  |
 | [Spoofing attempts from Specific Domains](../content/microsoft-defender-xdr-spoofing-attempts-from-specific-domains-cdac93ef-56c0-45bf-9e7f-9cbf0ad034234-76a0c095.md) | `DetectionMethods has "spoof"` |
+| [Suspicious Microsoft Teams Callers by Impersonation-Style Identity](../content/microsoft-defender-xdr-suspicious-microsoft-teams-callers-by-impersonation-style-identity-37f3d0f5-8ac3-46a3-9b27-a4fd082b6348-8657cfbc.md) |  |
 | [Top 10 External Senders (Spam)](../content/microsoft-defender-xdr-top-10-external-senders-spam-86c7d21b-2081-419d-bc2e-7bc909d61eef-cc6c9e75.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` |
-| [Top 10 domains sending Bulk email](../content/microsoft-defender-xdr-top-10-domains-sending-bulk-email-147131b3-8b57-4c50-b981-5a951ed82272-a450386e.md) | `EmailDirection == "Inbound"` |
+| [Top 10 domains sending Bulk email](../content/microsoft-defender-xdr-top-10-domains-sending-bulk-email-147131b3-8b57-4c50-b981-5a951ed82272-a450386e.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top 10 sender domains - Admin email submissions (FN)](../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.md) |  |
+| [Top Attacked Users by Malware Threat Classification](../content/microsoft-defender-xdr-top-attacked-users-by-malware-threat-classification-a52f16af-5632-420d-ae90-b1b8bd742af0-2b96c5bd.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Top Attacked Users by Phish Threat Classification](../content/microsoft-defender-xdr-top-attacked-users-by-phish-threat-classification-ccaec93a-7231-4483-9d36-78106f0a8a1a-c91a0add.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Top Domains Outbound with Emails with Threats Inbound (Partner BEC)](../content/microsoft-defender-xdr-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-f9442d20-eff8-4751-9a75-6451aeace687-a1d5fba8.md) | `EmailDirection in "Inbound,Outbound"` |
-| [Top Malware Families](../content/microsoft-defender-xdr-top-malware-families-0d16e85e-82ec-460a-bf48-e90164464f7c-4786cd56.md) | `ThreatTypes has "Malware"` |
-| [Top Spoof DMARC detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-dmarc-detections-by-sender-domain-p1-p2-23b646e8-b885-4cde-a9ab-1e35fa5e37a7-dacbea0f.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Spoof external domain detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-external-domain-detections-by-sender-domain-p1-p2-3dbaa9c1-5e69-40a9-bacb-8cbdb4a0e6cb-d618b7cb.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Spoof intra-org detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-intra-org-detections-by-sender-domain-p1-p2-ba97d6b9-f82e-4917-9c07-4c0028bbd32d-d66e5db5.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Users receiving Malware](../content/microsoft-defender-xdr-top-users-receiving-malware-c6bbcac2-a6b8-4537-a32a-6f1367e6aa44-6b839b20.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"` |
+| [Top External Domains Receiving Auto-forwarded Email (Mailbox Rule and SMTP)](../content/microsoft-defender-xdr-top-external-domains-receiving-auto-forwarded-email-mailbox-rule-and-smtp-370583ef-40d1-4d8e-a2e2-16095704f357-060fab5e.md) | `EmailDirection == "Outbound"` |
+| [Top External Recipients Receiving Auto-forwarded Email (Mailbox Rule and SMTP)](../content/microsoft-defender-xdr-top-external-recipients-receiving-auto-forwarded-email-mailbox-rule-and-smtp-01d676ef-29fb-4974-9db1-763660d577fa-72a0a00a.md) | `EmailDirection == "Outbound"` |
+| [Top Internal Users Auto-forwarding Email Externally (Mailbox Rule and SMTP)](../content/microsoft-defender-xdr-top-internal-users-auto-forwarding-email-externally-mailbox-rule-and-smtp-7d5d4ac0-e3db-4ddc-9fd3-9894c7de2c5c-302a522a.md) | `EmailDirection == "Outbound"` |
+| [Top Malware Families](../content/microsoft-defender-xdr-top-malware-families-0d16e85e-82ec-460a-bf48-e90164464f7c-4786cd56.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Top Recipients Receiving Threats Delivered by Override](../content/microsoft-defender-xdr-top-recipients-receiving-threats-delivered-by-override-95f7ab0b-3025-487e-9523-1b68152f4b91-602a088d.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top Recipients Targeted by Impersonation or BEC](../content/microsoft-defender-xdr-top-recipients-targeted-by-impersonation-or-bec-14d4474b-10d0-4d03-9938-98c8ef92f15a-104e9929.md) | `DeliveryLocation has "Inbox"`<br>`DetectionMethods has "Impersonation"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Top Sender Domains Delivering Threats via Override](../content/microsoft-defender-xdr-top-sender-domains-delivering-threats-via-override-d3427b51-d7b9-4610-a871-5738e59cfa93-e1c0f5fa.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top Spoof DMARC detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-dmarc-detections-by-sender-domain-p1-p2-23b646e8-b885-4cde-a9ab-1e35fa5e37a7-dacbea0f.md) | `EmailDirection == "Inbound"` |
+| [Top Spoof external domain detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-external-domain-detections-by-sender-domain-p1-p2-3dbaa9c1-5e69-40a9-bacb-8cbdb4a0e6cb-d618b7cb.md) | `EmailDirection == "Inbound"` |
+| [Top Spoof intra-org detections by Sender domain (P1/P2)](../content/microsoft-defender-xdr-top-spoof-intra-org-detections-by-sender-domain-p1-p2-ba97d6b9-f82e-4917-9c07-4c0028bbd32d-d66e5db5.md) | `EmailDirection == "Inbound"` |
+| [Top Users receiving Malware](../content/microsoft-defender-xdr-top-users-receiving-malware-c6bbcac2-a6b8-4537-a32a-6f1367e6aa44-6b839b20.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
 | [Top Users receiving Phish](../content/microsoft-defender-xdr-top-users-receiving-phish-87846aad-624c-4e18-b963-81bedd7123a2-f8f93dee.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Top outbound recipient domains sending inbound emails with threats](../content/microsoft-defender-xdr-top-outbound-recipient-domains-sending-inbound-emails-with-threats-38d6e2fb-a804-4170-8d32-d251ecd6bcd2-b8b1fe75.md) | `EmailDirection in "Inbound,Outbound"` |
-| [Total Emails with Admin Overrides (Allow)](../content/microsoft-defender-xdr-total-emails-with-admin-overrides-allow-8f8fd7c8-277a-48c3-ad67-c80b3037c5af-b3b2f80d.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Total Emails with Admin Overrides (Allow)](../content/microsoft-defender-xdr-total-emails-with-admin-overrides-allow-8f8fd7c8-277a-48c3-ad67-c80b3037c5af-b3b2f80d.md) | `OrgLevelAction == "Allow"` |
 | [Total Emails with Admin Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-admin-overrides-block-bd6aae91-6233-430b-a5af-15c6406a7770-72f52ec6.md) | `OrgLevelAction == "Block"` |
 | [Total Emails with User Overrides (Allow)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-allow-e6b3edc5-ec6f-44ae-9bb4-60c9ea49154e-7cec0f95.md) | `UserLevelAction == "Allow"` |
 | [Total Emails with User Overrides (Block)](../content/microsoft-defender-xdr-total-emails-with-user-overrides-block-74e076da-58e8-436d-b7bc-68888dbb6091-e2ae9087.md) | `UserLevelAction == "Block"` |
 | [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-12798858-1916-4b59-a85e-8a7a4f7b43cf-ab8f972e.md) | `EmailDirection == "Inbound"` |
 | [User Email Submissions (FN) - Top Inbound P2 Senders domains](../content/microsoft-defender-xdr-user-email-submissions-fn-top-inbound-p2-senders-domains-385aca1d-2135-40c6-af8e-030c9e086cf5-8ef092ad.md) | `EmailDirection == "Inbound"` |
-| [Zero-day Malware Detections Trend](../content/microsoft-defender-xdr-zero-day-malware-detections-trend-a370ad6f-e7fa-4740-ab9e-cb5560e3599f-205be975.md) |  |
-| [Zero-day Phish Detections Trend](../content/microsoft-defender-xdr-zero-day-phish-detections-trend-80f357a6-6bb4-4b2b-a88c-265fccafc794-6ffd9b22.md) |  |
+| [User Email Submissions (FP) - Top Inbound P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-p2-senders-37511ce4-f88e-4e2d-b505-27411af1a226-60212493.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Inbound"` |
+| [User Email Submissions (FP) - Top Inbound Subjects](../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-subjects-3f252bcb-71a8-4c04-bed9-4dd53419ecb6-bb2077e5.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Inbound"` |
+| [User Email Submissions (FP) - Top Intra-Org P2 Senders](../content/microsoft-defender-xdr-user-email-submissions-fp-top-intra-org-p2-senders-6b26701a-a1c7-4782-a662-f44cdca5bb5f-ab52681b.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Intra-org"` |
+| [User Submissions by Detection Method - Phish (FP)](../content/microsoft-defender-xdr-user-submissions-by-detection-method-phish-fp-4ae87c11-4030-42cb-b87d-993198ca40e0-e1152402.md) | `ActionType == "UserSubmission"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
+| [User Submissions by Detection Method - Spam (FP)](../content/microsoft-defender-xdr-user-submissions-by-detection-method-spam-fp-05d933db-f605-48d5-a177-af64be537cf4-20a4c5b9.md) | `ActionType == "UserSubmission"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
+| [Zero-day Malware Detections Trend](../content/microsoft-defender-xdr-zero-day-malware-detections-trend-a370ad6f-e7fa-4740-ab9e-cb5560e3599f-205be975.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Zero-day Phish Detections Trend](../content/microsoft-defender-xdr-zero-day-phish-detections-trend-80f357a6-6bb4-4b2b-a88c-265fccafc794-6ffd9b22.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 
 **Standalone Content:** `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`
 
@@ -253,11 +291,13 @@ This table is ingested by the following connectors:
 | [Attacked more than x times average](../content/github-only-attacked-more-than-x-times-average-de480ca4-4095-4fef-b3e7-2a3f17f24e78-9911d615.md) |  |
 | [Authentication failures by time and authentication type](../content/microsoft-defender-xdr-authentication-failures-by-time-and-authentication-type-7fbf7687-5ded-4c39-9fe9-f4f6aa6fc422-a410ff8f.md) |  |
 | [Authentication failures by time and authentication type](../content/github-only-authentication-failures-by-time-and-authentication-type-7fbf7687-5ded-4c39-9fe9-f4f6aa6fc422-95e66c70.md) |  |
+| [Automated Remediation Delivery to Action Latency](../content/github-only-automated-remediation-delivery-to-action-latency-094266b5-c2ef-4818-8558-cfacdb267d23-c182d097.md) | `ActionType == "Automated Remediation"` |
 | [Automated email notifications and suspicious sign-in activity](../content/github-only-automated-email-notifications-and-suspicious-sign-in-activity-a7acfaf4-e03e-409d-a16e-dcde33f7dba3-fb7feb7d.md) |  |
+| [Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)](../content/github-only-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-d05eb85d-16e6-4bb9-a669-78da03ec6417-390a90d6.md) | `EmailDirection == "Outbound"` |
 | [Bad email percentage of Inbound emails](../content/github-only-bad-email-percentage-of-inbound-emails-2a662ac9-81de-4073-9374-45e3ebd5ae90-4e51cebe.md) | `EmailDirection == "Inbound"` |
 | [Bazacall Emails](../content/github-only-bazacall-emails-54f12c74-fb8e-4871-a13f-4da835b319a7-e43dc686.md) |  |
-| [Bulk Emails by Sender Bulk Complaint level](../content/github-only-bulk-emails-by-sender-bulk-complaint-level-46837704-62cb-4e37-ae25-eecced47c0f4-a91c459c.md) | `EmailDirection == "Inbound"` |
-| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` |
+| [Bulk Emails by Sender Bulk Complaint level](../content/github-only-bulk-emails-by-sender-bulk-complaint-level-46837704-62cb-4e37-ae25-eecced47c0f4-a91c459c.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
 | [Campaign with suspicious keywords](../content/microsoft-defender-xdr-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-cc3c8c2c.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
 | [Campaign with suspicious keywords](../content/github-only-campaign-with-suspicious-keywords-9b086a51-e396-4718-90d7-f7b3646e6581-52297bd3.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
 | [CompAuth Failure Trend](../content/github-only-compauth-failure-trend-9d5d0ba9-e1b3-4dbb-9beb-e0f4c7fb6524-191fcbde.md) |  |
@@ -269,11 +309,11 @@ This table is ingested by the following connectors:
 | [Detections by detection methods](../content/github-only-detections-by-detection-methods-1c51e10e-7f77-40bc-bd37-6aa55cdf94d6-ae7a80cf.md) |  |
 | [Display Name - Spoof and Impersonation](../content/microsoft-defender-xdr-display-name-spoof-and-impersonation-6a570927-8638-4a6f-ac09-72a7d51ffa3c-d274f21b.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` |
 | [Display Name - Spoof and Impersonation](../content/github-only-display-name-spoof-and-impersonation-6a570927-8638-4a6f-ac09-72a7d51ffa3c-0d93c34a.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` |
-| [Email Top 10 Domains sending Spam](../content/github-only-email-top-10-domains-sending-spam-d5f1f876-9172-4e92-bfae-7ab0f94c9417-8e215db1.md) | `ThreatTypes has "Spam"` |
-| [Email Top 10 Targeted Users (Spam)](../content/github-only-email-top-10-targeted-users-spam-22ae82b3-a362-4fc6-801d-d7fed7442d46-fab34598.md) | `ThreatTypes has "Spam"` |
-| [Email Top 15 Domains sending Spam with Additional Details](../content/github-only-email-top-15-domains-sending-spam-with-additional-details-279a8fce-0c34-437a-a6ba-eff7be3b36a8-655f81ab.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` |
-| [Email Top 15 Targeted Users (Spam) with Additional Details](../content/github-only-email-top-15-targeted-users-spam-with-additional-details-3e33ce02-b74e-49cc-899d-0a1eb3128ee3-281c6adc.md) | `ThreatTypes has "Spam"` |
-| [Email Top Domains sending Malware](../content/github-only-email-top-domains-sending-malware-c7274e0c-af01-43a3-ad63-6a679191cc7f-95cef54a.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"` |
+| [Email Top 10 Domains sending Spam](../content/github-only-email-top-10-domains-sending-spam-d5f1f876-9172-4e92-bfae-7ab0f94c9417-8e215db1.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 10 Targeted Users (Spam)](../content/github-only-email-top-10-targeted-users-spam-22ae82b3-a362-4fc6-801d-d7fed7442d46-fab34598.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 15 Domains sending Spam with Additional Details](../content/github-only-email-top-15-domains-sending-spam-with-additional-details-279a8fce-0c34-437a-a6ba-eff7be3b36a8-655f81ab.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top 15 Targeted Users (Spam) with Additional Details](../content/github-only-email-top-15-targeted-users-spam-with-additional-details-3e33ce02-b74e-49cc-899d-0a1eb3128ee3-281c6adc.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
+| [Email Top Domains sending Malware](../content/github-only-email-top-domains-sending-malware-c7274e0c-af01-43a3-ad63-6a679191cc7f-95cef54a.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
 | [Email Top Domains sending Phish](../content/github-only-email-top-domains-sending-phish-0b014a34-413b-43ae-9d80-b617fad1fd5b-c6fd9b9d.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Email bombing attacks](../content/github-only-email-bombing-attacks-8d6ecda2-1cc1-49f8-a208-de0e5b42a61b-b811fd22.md) | `DeliveryAction == "Delivered"` |
 | [Email containing malware sent by an internal sender](../content/microsoft-defender-xdr-email-containing-malware-sent-by-an-internal-sender-07c85687-6dee-4266-9345-1e34de85d989-56ad4103.md) | `EmailDirection in "Intra-org,Outbound"`<br>`SenderFromAddress !startswith "microsoftexchange"`<br>`SenderFromAddress !startswith "postmaster@"`<br>`ThreatTypes == "Malware"` |
@@ -290,6 +330,7 @@ This table is ingested by the following connectors:
 | [Emails with QR codes from non-prevalent sender](../content/github-only-emails-with-qr-codes-from-non-prevalent-sender-f708c866-073a-4107-a60b-ba6f86e54caa-c490e415.md) |  |
 | [Empty Sender Phish Delivered to Inbox](../content/github-only-empty-sender-phish-delivered-to-inbox-c853b6d9-b33b-4172-8b18-e95e8d902e31-bd60bae8.md) | `DeliveryAction != "Blocked"`<br>`EmailDirection == "Inbound"`<br>`SenderIPv4 startswith "27.121.5."`<br>`SenderMailFromAddress == "<>"` |
 | [Fake Replies](../content/github-only-fake-replies-8c4da386-7a95-4927-b24c-a13137294e0c-73dfc95c.md) | `EmailDirection == "Inbound"`<br>`Subject startswith "RE:"` |
+| [First-Contact External Email Senders](../content/github-only-first-contact-external-email-senders-a7373b95-2471-4169-9bca-412d6c41334d-631a8c3e.md) | `EmailDirection == "Inbound"` |
 | [Good emails from senders with bad patterns](../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.md) | `EmailDirection == "Inbound"` |
 | [Good emails from senders with bad patterns](../content/github-only-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-9962c0bd.md) | `EmailDirection == "Inbound"` |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) |  |
@@ -305,8 +346,11 @@ This table is ingested by the following connectors:
 | [Impersonation Detections Trend](../content/github-only-impersonation-detections-trend-761e4ddd-6b87-4c00-b033-55c3d0e4fe2e-c2c7f3b2.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology](../content/github-only-impersonation-detections-by-detection-technology-7017c313-c778-4a23-a15a-9e2f277b216e-784b62f3.md) | `DetectionMethods has "Impersonation"` |
 | [Impersonation Detections by Detection Technology Trend](../content/github-only-impersonation-detections-by-detection-technology-trend-b0fb6dca-bd73-4852-8670-3235e56ffe4d-581d6f39.md) |  |
+| [Impersonation and Spoof Detections by Sender Country](../content/github-only-impersonation-and-spoof-detections-by-sender-country-0863f418-5681-4532-a097-033f6332d353-09417c72.md) | `DetectionMethods has "Impersonation"`<br>`DetectionMethods has "Spoof"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Inbound Sender Domains Failing Email Authentication](../content/github-only-inbound-sender-domains-failing-email-authentication-5722f6ce-0ac1-4783-9e15-3f7e390abe01-1091eea7.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
 | [Inbound emails with QR code URLs](../content/microsoft-defender-xdr-inbound-emails-with-qr-code-urls-f6354c94-3a95-4235-8530-414f016a7bf6-b653a9db.md) | `EmailDirection == "Inbound"` |
 | [Inbound emails with QR code URLs](../content/github-only-inbound-emails-with-qr-code-urls-f6354c94-3a95-4235-8530-414f016a7bf6-5f2f3855.md) | `EmailDirection == "Inbound"` |
+| [Largest Malicious Email Campaigns by Cluster](../content/github-only-largest-malicious-email-campaigns-by-cluster-cb73a6da-421d-4596-92e5-0984e02ece9e-bdb796a6.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
 | [LemonDuck-email-subjects](../content/github-only-lemonduck-email-subjects-735d4b69-7613-4d86-afb1-7ce64ee7dffb-98ffe4fd.md) | `Subject in "COVID-19 nCov Special info WHO,HALTH ADVISORY:CORONA VIRUS,The Truth of COVID-19,This is your order?,WTF,What the fcuk,broken file,farewell letter,good bye"` |
 | [Listing Email Remediation Actions via Explorer](../content/microsoft-defender-xdr-listing-email-remediation-actions-via-explorer-99713387-9d61-49eb-8edc-f51153d8bb01-83aba0f4.md) | `LatestDeliveryAction in "Hard delete,Moved to deleted items,Moved to junk folder,Soft delete"` |
 | [Listing Email Remediation Actions via Explorer](../content/github-only-listing-email-remediation-actions-via-explorer-99713387-9d61-49eb-8edc-f51153d8bb01-cce62a2a.md) | `LatestDeliveryAction in "Hard delete,Moved to deleted items,Moved to junk folder,Soft delete"` |
@@ -327,6 +371,7 @@ This table is ingested by the following connectors:
 | [Mail reply to new domain](../content/github-only-mail-reply-to-new-domain-da7b973a-0045-4fd6-9161-269369336d24-ce5ec272.md) | `DeliveryLocation != "Quarantine"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`UserLevelAction != "Block"` |
 | [Mailflow by directionality](../content/microsoft-defender-xdr-mailflow-by-directionality-6b478186-da3b-4d71-beaa-aa5b42908499-591b76c4.md) |  |
 | [Mailflow by directionality](../content/github-only-mailflow-by-directionality-6b478186-da3b-4d71-beaa-aa5b42908499-022417b4.md) |  |
+| [Malicious Email Campaigns by Recipient URL Clicks](../content/github-only-malicious-email-campaigns-by-recipient-url-clicks-28ce9655-f35f-4733-af43-8266b39a87f1-21f63c9c.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
 | [Malicious Emails with QR code Urls](../content/microsoft-defender-xdr-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-bb5decee.md) |  |
 | [Malicious Emails with QR code Urls](../content/github-only-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-7d618408.md) |  |
 | [Malicious email senders](../content/microsoft-defender-xdr-malicious-email-senders-63c799bc-7567-4e4d-97be-e143fcfaa333-61f140c0.md) | `LatestDeliveryLocation == "Inbox/folder"` |
@@ -335,47 +380,63 @@ This table is ingested by the following connectors:
 | [Malicious emails detected per day](../content/github-only-malicious-emails-detected-per-day-da932998-81dd-4be4-963c-f4890cb4192e-3682bf70.md) |  |
 | [Malicious mails by sender IPs](../content/microsoft-defender-xdr-malicious-mails-by-sender-ips-a8ccbf35-4c6d-4a8f-8c42-04fd9b000a27-b1c02a72.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
 | [Malicious mails by sender IPs](../content/github-only-malicious-mails-by-sender-ips-a8ccbf35-4c6d-4a8f-8c42-04fd9b000a27-3c3ab91e.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
-| [Malware Detections Trend](../content/github-only-malware-detections-trend-0e4fd08d-0c0d-41c6-847d-1674e30a9e31-d62b638e.md) | `ThreatTypes has "Malware"` |
-| [Malware Detections by Detection technology](../content/github-only-malware-detections-by-detection-technology-642057a3-e5af-46ce-a5f4-8968a5537dba-3997aa7e.md) | `DetectionMethods has "Malware"` |
-| [Malware Detections by Detection technology Trend](../content/github-only-malware-detections-by-detection-technology-trend-14f54d33-81dd-4316-a617-2262cac86f37-34b0982c.md) |  |
-| [Malware Detections by delivery location](../content/github-only-malware-detections-by-delivery-location-cb99e25d-bcd9-435b-ad29-de08638b0f78-57e45210.md) | `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` |
+| [Malware Detection IP and Geo Position](../content/github-only-malware-detection-ip-and-geo-position-ecd834a7-cd3e-4932-afa3-25465fe41401-3cddfe76.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections Trend](../content/github-only-malware-detections-trend-0e4fd08d-0c0d-41c6-847d-1674e30a9e31-d62b638e.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by Detection technology](../content/github-only-malware-detections-by-detection-technology-642057a3-e5af-46ce-a5f4-8968a5537dba-3997aa7e.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware Detections by Detection technology Trend](../content/github-only-malware-detections-by-detection-technology-trend-14f54d33-81dd-4316-a617-2262cac86f37-34b0982c.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware Detections by Sender Country](../content/github-only-malware-detections-by-sender-country-2e1c439b-9bbf-4d1a-a8c1-2a9f9149f3e5-4e6d52e4.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by Threat Classification](../content/github-only-malware-detections-by-threat-classification-c4776c7c-a8f4-4643-82db-134b771584b6-cea0c8e6.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Malware Detections by delivery location](../content/github-only-malware-detections-by-delivery-location-cb99e25d-bcd9-435b-ad29-de08638b0f78-57e45210.md) | `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Malware URL Detections Trend](../content/github-only-malware-url-detections-trend-7a25af1f-c757-490e-909d-f803b94ed8d2-789e7331.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Message from an Accepted Domain with DMARC TempError](../content/github-only-message-from-an-accepted-domain-with-dmarc-temperror-a256f4ea-deec-4fcd-bdf3-63987638eed9-30ec3593.md) | `EmailDirection == "Inbound"` |
+| [New External Sender Domains Carrying Threats](../content/github-only-new-external-sender-domains-carrying-threats-12f223d9-ff72-4a6d-b60b-c59eacfaa89e-b8d1da4a.md) | `EmailDirection == "Inbound"` |
 | [Personalized campaigns based on the first few keywords](../content/microsoft-defender-xdr-personalized-campaigns-based-on-the-first-few-keywords-dc7e1eb5-16f5-4ad5-96a1-794970f4b310-f89f40bb.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
 | [Personalized campaigns based on the first few keywords](../content/github-only-personalized-campaigns-based-on-the-first-few-keywords-dc7e1eb5-16f5-4ad5-96a1-794970f4b310-07b10791.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
 | [Personalized campaigns based on the last few keywords](../content/microsoft-defender-xdr-personalized-campaigns-based-on-the-last-few-keywords-54d3455d-27e0-4ceb-99f9-375abd620151-91a07d51.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
 | [Personalized campaigns based on the last few keywords](../content/github-only-personalized-campaigns-based-on-the-last-few-keywords-54d3455d-27e0-4ceb-99f9-375abd620151-4411f7a0.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` |
-| [Phish Detections (High) by delivery location](../content/github-only-phish-detections-high-by-delivery-location-1617b8b1-df75-4b28-8379-29930c0f46fc-b91b53b1.md) | `ConfidenceLevel has_any "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
-| [Phish Detections (Normal) by delivery location](../content/github-only-phish-detections-normal-by-delivery-location-bfdb25dd-1cc0-46da-9545-9aa92d53e2c8-95456087.md) | `ConfidenceLevel has_any "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detection IP and Geo Position](../content/github-only-phish-detection-ip-and-geo-position-06852891-b7b4-4e23-a97d-2ca4bb5c7ee9-f643f857.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phish Detections (High) by delivery location](../content/github-only-phish-detections-high-by-delivery-location-1617b8b1-df75-4b28-8379-29930c0f46fc-b91b53b1.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections (Normal) by delivery location](../content/github-only-phish-detections-normal-by-delivery-location-bfdb25dd-1cc0-46da-9545-9aa92d53e2c8-95456087.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Phish Detections Trend](../content/github-only-phish-detections-trend-1b6a8564-bfe2-40f7-873a-7713f7b0c1d0-248c42a0.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
-| [Phish Detections by Detection technology](../content/github-only-phish-detections-by-detection-technology-c3a1fa22-8ccf-409e-80a5-78aa545bf77d-54d99e0b.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
-| [Phish Detections by Detection technology Trend](../content/github-only-phish-detections-by-detection-technology-trend-7319bdef-2040-48dc-9b20-b3f138fee71c-0bfbaa8b.md) |  |
+| [Phish Detections by Detection technology](../content/github-only-phish-detections-by-detection-technology-c3a1fa22-8ccf-409e-80a5-78aa545bf77d-54d99e0b.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections by Detection technology Trend](../content/github-only-phish-detections-by-detection-technology-trend-7319bdef-2040-48dc-9b20-b3f138fee71c-0bfbaa8b.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Phish Detections by Sender Country](../content/github-only-phish-detections-by-sender-country-b47d1de3-041a-406b-9d99-ffc7749b00f2-7e20ba46.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phish Detections by Threat Classification](../content/github-only-phish-detections-by-threat-classification-a636bbbd-c6d0-4319-ae10-a06e809ba18f-6ddca0bc.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Phish Detections by delivery location trend](../content/github-only-phish-detections-by-delivery-location-trend-fbe8abde-83b3-4e16-af08-f8f7db9a9028-bf97d1f9.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Phish and Malware received by user vs total amount of email](../content/github-only-phish-and-malware-received-by-user-vs-total-amount-of-email-229ec9f6-05cc-483d-b3dc-35f47575a5aa-db330956.md) |  |
+| [Phishing Detected by LLM Content Analysis](../content/github-only-phishing-detected-by-llm-content-analysis-cf9cbcb0-5b9d-4054-8342-c47168ea50c6-d6848e2f.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
+| [Phishing URL Detections Trend](../content/github-only-phishing-url-detections-trend-53278c60-3354-4452-a032-d2e239bed34b-e0e4db20.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |
 | [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
+| [QR Code URL Detections Trend](../content/github-only-qr-code-url-detections-trend-aa121105-95a2-4424-84d7-1c5c47e5d44b-9e50e3ad.md) | `DetectionMethods has "Url"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Quarantine Malware Reason](../content/github-only-quarantine-malware-reason-2d730733-6a56-470f-aa2c-f583611ffb50-a3d80b17.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` |
 | [Quarantine Phish Reason](../content/github-only-quarantine-phish-reason-5caf3813-c628-48e2-be65-71b95be7ff85-c2eed69d.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Quarantine Phish Reason trend](../content/github-only-quarantine-phish-reason-trend-6f7df1b7-5613-45e5-9b82-3ec95d86e0e8-3da95a95.md) |  |
+| [Quarantine Phish Reason trend](../content/github-only-quarantine-phish-reason-trend-6f7df1b7-5613-45e5-9b82-3ec95d86e0e8-3da95a95.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
 | [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) |  |
 | [Quarantine Release Email Details](../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.md) |  |
+| [Quarantine Release Percentage](../content/github-only-quarantine-release-percentage-5fb333a4-39bb-474b-ab37-9efdca8e9182-3c13105d.md) |  |
 | [Quarantine Spam Reason](../content/github-only-quarantine-spam-reason-35b21933-9d3e-4919-b545-2ada20d26e8e-cde3bdbd.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
-| [Quarantine Spam Reason trend](../content/github-only-quarantine-spam-reason-trend-014ffc5c-0ba5-49f9-989c-3833e0d1c2b8-f2b54296.md) |  |
+| [Quarantine Spam Reason trend](../content/github-only-quarantine-spam-reason-trend-014ffc5c-0ba5-49f9-989c-3833e0d1c2b8-f2b54296.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
 | [Quarantine releases by Detection Types](../content/github-only-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-c85b108a.md) |  |
 | [SPF Failure Trend](../content/github-only-spf-failure-trend-1c76c9d2-a8f3-4a22-be48-0d3454326cca-a510f994.md) |  |
 | [Safe Attachments detections](../content/microsoft-defender-xdr-safe-attachments-detections-16eda414-1550-4cdc-8512-0769901d3f05-5b330159.md) |  |
 | [Safe Attachments detections](../content/github-only-safe-attachments-detections-16eda414-1550-4cdc-8512-0769901d3f05-9ff76efc.md) |  |
 | [SafeLinks URL detections](../content/microsoft-defender-xdr-safelinks-url-detections-492f1ea1-37c3-410a-a2f2-4e4eae2ff7f9-bb043a0c.md) |  |
 | [SafeLinks URL detections](../content/github-only-safelinks-url-detections-492f1ea1-37c3-410a-a2f2-4e4eae2ff7f9-5ec2e4d1.md) |  |
+| [SecOps Mailbox Override Count](../content/github-only-secops-mailbox-override-count-d4a0f7f4-1c9b-4c2f-9644-2c53cfd7af0f-4b4a40a2.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy == "SecOps Mailbox"` |
+| [SecOps Mailbox Overrides by Threat Type](../content/github-only-secops-mailbox-overrides-by-threat-type-d234d85d-1dd5-433b-a984-0fd764f25363-90ccb384.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy == "SecOps Mailbox"` |
 | [Sender recipient contact establishment](../content/microsoft-defender-xdr-sender-recipient-contact-establishment-b2beec6a-2c1c-4319-a191-e70c2ee42857-9e7a5fbe.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` |
 | [Sender recipient contact establishment](../content/github-only-sender-recipient-contact-establishment-b2beec6a-2c1c-4319-a191-e70c2ee42857-61c47d38.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` |
 | [Spam Detections (High) by delivery location](../content/github-only-spam-detections-high-by-delivery-location-42b9d582-8519-4217-a6b3-996326e55257-b87dc151.md) | `ConfidenceLevel has_any "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [Spam Detections (Normal) by delivery location](../content/github-only-spam-detections-normal-by-delivery-location-3f314fd9-332a-4d41-93f1-e9fca59e9bb0-8d8edf8d.md) | `ConfidenceLevel has_any "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
-| [Spam Detections by Detection technology](../content/github-only-spam-detections-by-detection-technology-f977d3e3-a97f-4568-b621-bd589732b8f2-f8061a3b.md) |  |
+| [Spam Detections by Detection technology](../content/github-only-spam-detections-by-detection-technology-f977d3e3-a97f-4568-b621-bd589732b8f2-f8061a3b.md) | `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam Detections by Sender Country](../content/github-only-spam-detections-by-sender-country-bdd60985-c235-4c74-af19-a3d77360f527-232f5efa.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
 | [Spam and Phish allowed to inbox by Admin Overrides](../content/github-only-spam-and-phish-allowed-to-inbox-by-admin-overrides-0e37c1a4-86cd-4641-a514-28a431824369-1d798a77.md) |  |
 | [Spam and Phish allowed to inbox by User Overrides](../content/github-only-spam-and-phish-allowed-to-inbox-by-user-overrides-1ff2e300-32fa-4aa1-95b2-46106043a23c-c35e81eb.md) |  |
 | [Spam detection by IP and its location](../content/github-only-spam-detection-by-ip-and-its-location-fc2a1197-7ad5-43e3-83f1-0ecd5ada41ca-865df397.md) |  |
-| [Spam detection by delivery location](../content/github-only-spam-detection-by-delivery-location-5b6fcbad-675f-4d10-bfc7-054e3453f712-7ed7a6d9.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
-| [Spam detection technologies](../content/github-only-spam-detection-technologies-366ce22d-74c1-4acd-8050-f5c6061eb6d1-d82a75c0.md) | `DetectionMethods has "Spam"` |
-| [Spam detection trend](../content/github-only-spam-detection-trend-2b373bca-b491-4b2f-906e-6f42eeab01a1-9f3ed605.md) | `ThreatTypes has "Spam"` |
+| [Spam detection by delivery location](../content/github-only-spam-detection-by-delivery-location-5b6fcbad-675f-4d10-bfc7-054e3453f712-7ed7a6d9.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam detection technologies](../content/github-only-spam-detection-technologies-366ce22d-74c1-4acd-8050-f5c6061eb6d1-d82a75c0.md) | `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Spam detection trend](../content/github-only-spam-detection-trend-2b373bca-b491-4b2f-906e-6f42eeab01a1-9f3ed605.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` |
 | [Spoof Detections Trend](../content/github-only-spoof-detections-trend-61c73b2b-4c62-4015-8677-f569d1e83b57-4baf9594.md) | `DetectionMethods has "Spoof"` |
 | [Spoof Detections by Detection Technology](../content/github-only-spoof-detections-by-detection-technology-0d62d79a-38ef-43d5-a884-347024638250-0296446b.md) | `DetectionMethods has "Spoof"` |
 | [Spoof Detections by Detection Technology Trend](../content/github-only-spoof-detections-by-detection-technology-trend-0f47b36b-0d8e-4a55-b9a7-3dfa4ad5b744-437c10a0.md) |  |
@@ -386,36 +447,46 @@ This table is ingested by the following connectors:
 | [Spoof attempts with auth failure](../content/microsoft-defender-xdr-spoof-attempts-with-auth-failure-5971f2e7-1bb2-4170-aa7a-577ed8a45c72-0d3eee89.md) | `DetectionMethods contains "spoof"` |
 | [Spoof attempts with auth failure](../content/github-only-spoof-attempts-with-auth-failure-5971f2e7-1bb2-4170-aa7a-577ed8a45c72-270aac52.md) | `DetectionMethods contains "spoof"` |
 | [Suspicious Google Doc Links](../content/github-only-suspicious-google-doc-links-5b94411c-9311-48cd-8f7f-e35b42174e2d-c2534098.md) |  |
+| [Suspicious Microsoft Teams Callers by Impersonation-Style Identity](../content/github-only-suspicious-microsoft-teams-callers-by-impersonation-style-identity-f905bb00-9c5f-4889-bc39-7d0765521228-65047600.md) |  |
 | [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-50835f49-7e5b-4852-a05a-f5aab2f40dd1-f0ca5f3b.md) | `SenderFromDomain != "corporatedomain.com"` |
 | [Threat actor Phosphorus masquerading as conference organizers](../content/github-only-threat-actor-phosphorus-masquerading-as-conference-organizers-95510f90-597c-407e-bbe6-0e0319b456b0-36e22458.md) |  |
 | [Threat actor Phosphorus masquerading as conference organizers (1)](../content/github-only-threat-actor-phosphorus-masquerading-as-conference-organizers-1-32f927f2-b1f3-441b-8885-bd66404e091d-87d2199f.md) | `DeliveryAction == "Delivered"` |
 | [Threat actor Phosphorus masquerading as conference organizers (2)](../content/github-only-threat-actor-phosphorus-masquerading-as-conference-organizers-2-ffdd9edf-3959-415f-bac2-7e108bc1f70d-e53d8ff5.md) | `DeliveryAction == "Delivered"` |
-| [Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-6e78546a.md) | `EmailDirection == "Inbound"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` |
-| [Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)](../content/github-only-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-eb6fcdee.md) | `EmailDirection == "Inbound"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` |
-| [Top 10 External Senders (Malware)](../content/microsoft-defender-xdr-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-7df27ceb.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` |
-| [Top 10 External Senders (Malware)](../content/github-only-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-e1121ff9.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` |
-| [Top 10 External Senders (Phish)](../content/microsoft-defender-xdr-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-01861b5b.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` |
-| [Top 10 External Senders (Phish)](../content/github-only-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-a2f5f3c7.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` |
+| [Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-6e78546a.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` |
+| [Top 10 Domains sending Malicious Emails (Malware+Phish+Spam)](../content/github-only-top-10-domains-sending-malicious-emails-malware+phish+spam-af183f01-6d98-4fca-8ca4-63577b78a26e-eb6fcdee.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` |
+| [Top 10 External Senders (Malware)](../content/microsoft-defender-xdr-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-7df27ceb.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` |
+| [Top 10 External Senders (Malware)](../content/github-only-top-10-external-senders-malware-530ef5e4-7ee4-4d70-a8e2-a06459605c02-e1121ff9.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` |
+| [Top 10 External Senders (Phish)](../content/microsoft-defender-xdr-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-01861b5b.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` |
+| [Top 10 External Senders (Phish)](../content/github-only-top-10-external-senders-phish-db9789ab-0636-4ea6-b779-1b72b4b64aac-a2f5f3c7.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` |
 | [Top 10 External Senders (Spam)](../content/microsoft-defender-xdr-top-10-external-senders-spam-6f606826-b995-4a8d-8c2c-ee08e3d1194a-395cb836.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` |
 | [Top 10 External Senders (Spam)](../content/github-only-top-10-external-senders-spam-debd82cc-2507-4c93-bd0a-a58926fc6d3a-5414ec98.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` |
 | [Top 10 External Senders (Spam)](../content/github-only-top-10-external-senders-spam-6f606826-b995-4a8d-8c2c-ee08e3d1194a-5d8c672a.md) | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` |
-| [Top 10 Targeted Users (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-7217646a.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"`<br>`ThreatTypes has "Spam"` |
-| [Top 10 Targeted Users (Malware+Phish+Spam)](../content/github-only-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-a2be0cf5.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"`<br>`ThreatTypes has "Spam"` |
+| [Top 10 Targeted Users (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-7217646a.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has_any "Malware"` |
+| [Top 10 Targeted Users (Malware+Phish+Spam)](../content/github-only-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-a2be0cf5.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has_any "Malware"` |
 | [Top 10 URL domains attacking organization](../content/microsoft-defender-xdr-top-10-url-domains-attacking-organization-27ee28e7-423b-48c9-a410-cbc6c8e21d25-23e12672.md) |  |
 | [Top 10 URL domains attacking organization](../content/github-only-top-10-url-domains-attacking-organization-27ee28e7-423b-48c9-a410-cbc6c8e21d25-2072b8a3.md) |  |
-| [Top 10 domains sending Bulk email](../content/github-only-top-10-domains-sending-bulk-email-fc3e5da4-9a8d-4f2f-b714-7118bc00b5d8-14fb5548.md) | `EmailDirection == "Inbound"` |
+| [Top 10 domains sending Bulk email](../content/github-only-top-10-domains-sending-bulk-email-fc3e5da4-9a8d-4f2f-b714-7118bc00b5d8-14fb5548.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top 10 sender domains - Admin email submissions (FN)](../content/github-only-top-10-sender-domains-admin-email-submissions-fn-138681b2-442b-46cb-b086-fbe9e407aa2c-3382c095.md) |  |
 | [Top 10% of most attacked users](../content/microsoft-defender-xdr-top-10-of-most-attacked-users-e3b7b5c1-0e50-4dfb-b73a-c226636eaf58-d90b786a.md) |  |
 | [Top 10% of most attacked users](../content/github-only-top-10-of-most-attacked-users-e3b7b5c1-0e50-4dfb-b73a-c226636eaf58-d479d8be.md) |  |
 | [Top 100 malicious email senders](../content/microsoft-defender-xdr-top-100-malicious-email-senders-12225f50-9d41-4b78-8269-cc127d98654c-68a99898.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
 | [Top 100 malicious email senders](../content/github-only-top-100-malicious-email-senders-12225f50-9d41-4b78-8269-cc127d98654c-34835876.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
 | [Top 100 senders](../content/microsoft-defender-xdr-top-100-senders-cadf6e78-2a9a-4fb5-b788-30a592d699d3-c5aa90ea.md) |  |
 | [Top 100 senders](../content/github-only-top-100-senders-cadf6e78-2a9a-4fb5-b788-30a592d699d3-24e95921.md) |  |
+| [Top Attacked Users by Malware Threat Classification](../content/github-only-top-attacked-users-by-malware-threat-classification-177b756b-03f1-4107-a547-92872ba32c47-d9dad7c3.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Top Attacked Users by Phish Threat Classification](../content/github-only-top-attacked-users-by-phish-threat-classification-6a5923be-81e4-496b-9ce3-f009a5f20737-f40e78d2.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Top Domains Outbound with Emails with Threats Inbound (Partner BEC)](../content/github-only-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-195d52f8-7669-444a-9021-f30c140cb9ac-a523687a.md) | `EmailDirection in "Inbound,Outbound"` |
-| [Top Malware Families](../content/github-only-top-malware-families-43c7c926-0bd4-41a5-a959-753db79ae470-cf7ef9a6.md) | `ThreatTypes has "Malware"` |
-| [Top Spoof DMARC detections by Sender domain (P1/P2)](../content/github-only-top-spoof-dmarc-detections-by-sender-domain-p1-p2-633f848f-bb17-4813-81b4-098d277b00f7-a113ad18.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Spoof external domain detections by Sender domain (P1/P2)](../content/github-only-top-spoof-external-domain-detections-by-sender-domain-p1-p2-09e1ca5e-cc4c-4b89-b585-448cfc1a6579-7563d05b.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Spoof intra-org detections by Sender domain (P1/P2)](../content/github-only-top-spoof-intra-org-detections-by-sender-domain-p1-p2-11c4556a-0d77-47ba-9564-0818065c270d-d130a7a3.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` |
-| [Top Users receiving Malware](../content/github-only-top-users-receiving-malware-1c423f0d-57d6-41dc-869f-79899a2dae77-78c7d40d.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"` |
+| [Top External Domains Receiving Auto-forwarded Email (Mailbox Rule and SMTP)](../content/github-only-top-external-domains-receiving-auto-forwarded-email-mailbox-rule-and-smtp-a5736802-3a1c-40aa-8e8f-7fbdaa52ae65-d9f0fb6d.md) | `EmailDirection == "Outbound"` |
+| [Top External Recipients Receiving Auto-forwarded Email (Mailbox Rule and SMTP)](../content/github-only-top-external-recipients-receiving-auto-forwarded-email-mailbox-rule-and-smtp-db98ab11-e0c2-4ece-9b31-1131bbdd7647-8f91ce31.md) | `EmailDirection == "Outbound"` |
+| [Top Internal Users Auto-forwarding Email Externally (Mailbox Rule and SMTP)](../content/github-only-top-internal-users-auto-forwarding-email-externally-mailbox-rule-and-smtp-af562a0f-9a03-4575-b408-b8e87d71e78f-9171df55.md) | `EmailDirection == "Outbound"` |
+| [Top Malware Families](../content/github-only-top-malware-families-43c7c926-0bd4-41a5-a959-753db79ae470-cf7ef9a6.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
+| [Top Recipients Receiving Threats Delivered by Override](../content/github-only-top-recipients-receiving-threats-delivered-by-override-6b92522d-8e82-4fd2-ae70-3f1bc4846909-a46757b9.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top Recipients Targeted by Impersonation or BEC](../content/github-only-top-recipients-targeted-by-impersonation-or-bec-7a8e34a4-3fbf-4ab6-a9d9-aa57c9267327-8fe65658.md) | `DeliveryLocation has "Inbox"`<br>`DetectionMethods has "Impersonation"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` |
+| [Top Sender Domains Delivering Threats via Override](../content/github-only-top-sender-domains-delivering-threats-via-override-8c2aeb94-ecd0-4b14-ad8c-a6e2986f6b50-c12d7ff2.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Top Spoof DMARC detections by Sender domain (P1/P2)](../content/github-only-top-spoof-dmarc-detections-by-sender-domain-p1-p2-633f848f-bb17-4813-81b4-098d277b00f7-a113ad18.md) | `EmailDirection == "Inbound"` |
+| [Top Spoof external domain detections by Sender domain (P1/P2)](../content/github-only-top-spoof-external-domain-detections-by-sender-domain-p1-p2-09e1ca5e-cc4c-4b89-b585-448cfc1a6579-7563d05b.md) | `EmailDirection == "Inbound"` |
+| [Top Spoof intra-org detections by Sender domain (P1/P2)](../content/github-only-top-spoof-intra-org-detections-by-sender-domain-p1-p2-11c4556a-0d77-47ba-9564-0818065c270d-d130a7a3.md) | `EmailDirection == "Inbound"` |
+| [Top Users receiving Malware](../content/github-only-top-users-receiving-malware-1c423f0d-57d6-41dc-869f-79899a2dae77-78c7d40d.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` |
 | [Top Users receiving Phish](../content/github-only-top-users-receiving-phish-da24d001-6a74-4a48-89a7-c99ec1f45d32-8bc8f715.md) | `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` |
 | [Top external malicious senders](../content/microsoft-defender-xdr-top-external-malicious-senders-9d6c8c17-06b0-4044-b18e-35eb3dfc5cf2-77fcee60.md) | `EmailDirection == "Inbound"` |
 | [Top external malicious senders](../content/github-only-top-external-malicious-senders-9d6c8c17-06b0-4044-b18e-35eb3dfc5cf2-47f3e60b.md) | `EmailDirection == "Inbound"` |
@@ -426,19 +497,24 @@ This table is ingested by the following connectors:
 | [Top policies performing user overrides](../content/github-only-top-policies-performing-user-overrides-fe2cb53e-4eb3-4676-87c1-f80d2813f542-34466751.md) | `UserLevelAction == "Allow"` |
 | [Top targeted users](../content/microsoft-defender-xdr-top-targeted-users-a1664330-810a-473b-b354-acbaa751a294-26d74c53.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
 | [Top targeted users](../content/github-only-top-targeted-users-a1664330-810a-473b-b354-acbaa751a294-d63c88f7.md) | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` |
-| [Total Emails with Admin Overrides (Allow)](../content/github-only-total-emails-with-admin-overrides-allow-85000725-df05-479e-8cfd-78310b659714-2183ce6d.md) | `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Total Emails with Admin Overrides (Allow)](../content/github-only-total-emails-with-admin-overrides-allow-85000725-df05-479e-8cfd-78310b659714-2183ce6d.md) | `OrgLevelAction == "Allow"` |
 | [Total Emails with Admin Overrides (Block)](../content/github-only-total-emails-with-admin-overrides-block-89a0a2aa-69c8-4586-95f5-7d003901adec-48d4dc98.md) | `OrgLevelAction == "Block"` |
 | [Total Emails with User Overrides (Allow)](../content/github-only-total-emails-with-user-overrides-allow-d7f4b1d0-018f-4033-8618-523bde350d23-aff9a197.md) | `UserLevelAction == "Allow"` |
 | [Total Emails with User Overrides (Block)](../content/github-only-total-emails-with-user-overrides-block-295ac28c-919c-48b9-8a38-a0f792f2b92b-1285a66e.md) | `UserLevelAction == "Block"` |
 | [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) |  |
 | [User Email Submissions (FN) - Top Inbound P2 Senders](../content/github-only-user-email-submissions-fn-top-inbound-p2-senders-4e8ea1c2-723d-4f72-bac6-82c464b6731e-3639f0c9.md) | `EmailDirection == "Inbound"` |
 | [User Email Submissions (FN) - Top Inbound P2 Senders domains](../content/github-only-user-email-submissions-fn-top-inbound-p2-senders-domains-d7822efc-9a33-4120-8c60-661396764af1-59e33131.md) | `EmailDirection == "Inbound"` |
+| [User Email Submissions (FP) - Top Inbound P2 Senders](../content/github-only-user-email-submissions-fp-top-inbound-p2-senders-e1973a95-fd22-4669-8758-dba8f9828c8f-19aa7fe2.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Inbound"` |
+| [User Email Submissions (FP) - Top Inbound Subjects](../content/github-only-user-email-submissions-fp-top-inbound-subjects-b2c772f0-f6b2-406f-9a80-756b596f0b57-edd7e061.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Inbound"` |
+| [User Email Submissions (FP) - Top Intra-Org P2 Senders](../content/github-only-user-email-submissions-fp-top-intra-org-p2-senders-2e5e39ae-99f9-4ba0-b5c4-9e76919a0f53-5e9ac908.md) | `ActionType == "UserSubmission"`<br>`EmailDirection == "Intra-org"` |
+| [User Submissions by Detection Method - Phish (FP)](../content/github-only-user-submissions-by-detection-method-phish-fp-5990abd3-7e11-4441-947b-17e60c69f28f-03c0b9f7.md) | `ActionType == "UserSubmission"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` |
+| [User Submissions by Detection Method - Spam (FP)](../content/github-only-user-submissions-by-detection-method-spam-fp-91a1a3f0-1386-4c70-9c66-215f59b2af28-57f593cc.md) | `ActionType == "UserSubmission"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` |
 | [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md) | `ActionType == "ClickAllowed"`<br>`EmailDirection == "Inbound"`<br>`ThreatTypes has_any "Malware"` |
 | [User clicks on malicious inbound emails](../content/github-only-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a7f025a9.md) | `ActionType == "ClickAllowed"`<br>`EmailDirection == "Inbound"`<br>`ThreatTypes has_any "Malware"` |
 | [Zero day threats](../content/microsoft-defender-xdr-zero-day-threats-95b0c7ed-2853-4343-80a9-ab076cf31e51-9681a016.md) | `DetectionMethods has "File Detonation"`<br>`DetectionMethods has "URL Detonation"` |
 | [Zero day threats](../content/github-only-zero-day-threats-95b0c7ed-2853-4343-80a9-ab076cf31e51-3783f529.md) | `DetectionMethods has "File Detonation"`<br>`DetectionMethods has "URL Detonation"` |
-| [Zero-day Malware Detections Trend](../content/github-only-zero-day-malware-detections-trend-63941b4c-4995-442b-97b0-ff640efd46c8-39a2558c.md) |  |
-| [Zero-day Phish Detections Trend](../content/github-only-zero-day-phish-detections-trend-f22c98fd-40c2-4823-a5d7-5f5830911125-8d9a51b0.md) |  |
+| [Zero-day Malware Detections Trend](../content/github-only-zero-day-malware-detections-trend-63941b4c-4995-442b-97b0-ff640efd46c8-39a2558c.md) | `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
+| [Zero-day Phish Detections Trend](../content/github-only-zero-day-phish-detections-trend-f22c98fd-40c2-4823-a5d7-5f5830911125-8d9a51b0.md) | `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` |
 | [detect-archive-exfiltration-to-competitor](../content/github-only-detect-archive-exfiltration-to-competitor-8baad907-3b15-4f26-be09-dbba3d32fc3f-deef7303.md) |  |
 | [insider-threat-detection-queries (10)](../content/github-only-insider-threat-detection-queries-10-5c01cfbf-c3b6-4840-bc3a-bffc810f5d03-ad0f2bf5.md) |  |
 | [jar-attachments](../content/github-only-jar-attachments-3a45afa5-e955-4bff-8876-a42934f3533f-48b6c703.md) |  |
@@ -448,7 +524,7 @@ This table is ingested by the following connectors:
 | [referral-phish-emails](../content/github-only-referral-phish-emails-cdc4da1c-64a1-4941-be59-1f5cc85481ab-e25e3cfa.md) |  |
 | [snip3-aviation-targeting-emails](../content/github-only-snip3-aviation-targeting-emails-cfffcab3-d4c7-4aad-b80d-5f415ef5ac66-78cdc8cb.md) | `EmailDirection == "Inbound"`<br>`SenderIPv4 == "192.145.239.18"` |
 
-### Workbooks (9)
+### Workbooks (10)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"`
 
@@ -456,7 +532,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"`
 
 | Workbook |
 |:-------------|
@@ -491,62 +567,73 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365](../content/github-only-microsoftdefenderforoffice365-a5892291.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
 
-## Selection Criteria Summary (59 criteria, 178 total references)
+## Selection Criteria Summary (69 criteria, 260 total references)
 
-References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 260 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EmailDirection == "Inbound"` | - | 22 | - | - | **22** |
+| `EmailDirection == "Inbound"` | - | 28 | - | - | **28** |
 | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"` | - | 11 | - | - | **11** |
-| `ThreatTypes has "Spam"` | - | 8 | - | - | **8** |
-| `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` | - | 6 | - | - | **6** |
+| `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` | - | 10 | - | - | **10** |
+| `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` | - | 10 | - | - | **10** |
+| `EmailDirection == "Outbound"` | - | 9 | - | - | **9** |
+| `DetectionMethods has "Malware"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 8 | - | - | **8** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 8 | - | - | **8** |
+| `DetectionMethods has "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 8 | - | - | **8** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` | - | 8 | - | - | **8** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` | - | 6 | - | - | **6** |
 | `ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | - | 6 | - | - | **6** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Malware"` | - | 6 | - | - | **6** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` | - | 6 | - | - | **6** |
 | `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Spam"` | - | 4 | - | - | **4** |
 | `DeliveryAction == "Delivered"` | - | 4 | - | - | **4** |
 | `DeliveryLocation != "Quarantine"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`UserLevelAction != "Block"` | - | 4 | - | - | **4** |
 | `EmailDirection in "Inbound,Outbound"` | - | 4 | - | - | **4** |
 | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` | - | 4 | - | - | **4** |
 | `ConfidenceLevel has_any "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 4 | - | - | **4** |
-| `ThreatTypes has "Malware"` | - | 4 | - | - | **4** |
-| `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"` | - | 4 | - | - | **4** |
+| `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy == "SecOps Mailbox"` | - | 4 | - | - | **4** |
+| `OrgLevelAction == "Allow"` | - | 4 | - | - | **4** |
 | `UserLevelAction == "Allow"` | - | 4 | - | - | **4** |
-| `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` | - | 4 | - | - | **4** |
-| `ConfidenceLevel has_any "Phish"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 4 | - | - | **4** |
-| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` | - | 4 | - | - | **4** |
+| `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 4 | - | - | **4** |
+| `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` | - | 4 | - | - | **4** |
+| `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | - | 4 | - | - | **4** |
+| `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 4 | - | - | **4** |
+| `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Spam"` | - | 4 | - | - | **4** |
 | `DetectionMethods has "Impersonation"` | - | 4 | - | - | **4** |
 | `DetectionMethods contains "impersonation"`<br>`DetectionMethods contains "spoof"` | - | 4 | - | - | **4** |
 | `DetectionMethods has "Spoof"` | - | 4 | - | - | **4** |
+| `ActionType == "UserSubmission"`<br>`EmailDirection == "Inbound"` | - | 4 | - | - | **4** |
 | `DeliveryAction !has "Blocked"` | - | 2 | - | - | **2** |
 | `DetectionMethods contains "spoof"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 2 | - | - | **2** |
 | `DeliveryAction == "Delivered"`<br>`LatestDeliveryLocation == "Quarantine"` | - | 2 | - | - | **2** |
 | `LatestDeliveryLocation == "Inbox/folder"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Inbound"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Inbound"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Inbound"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"`<br>`ThreatTypes has "Spam"` | - | 2 | - | - | **2** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromDomain !contains ".yourdomain.com"`<br>`ThreatTypes has_any "Malware"` | - | 2 | - | - | **2** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Malware"` | - | 2 | - | - | **2** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`SenderFromAddress !contains ".yourdomain.com"`<br>`ThreatTypes has "Phish"` | - | 2 | - | - | **2** |
+| `EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has_any "Malware"` | - | 2 | - | - | **2** |
 | `DeliveryLocation in "Inbox/folder,Junk folder,Quarantine"` | - | 2 | - | - | **2** |
 | `DetectionMethods has "File Detonation"`<br>`DetectionMethods has "URL Detonation"` | - | 2 | - | - | **2** |
 | `EmailDirection in "Intra-org,Outbound"`<br>`SenderFromAddress !startswith "microsoftexchange"`<br>`SenderFromAddress !startswith "postmaster@"`<br>`ThreatTypes == "Malware"` | - | 2 | - | - | **2** |
-| `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
-| `DetectionMethods has "Malware"` | - | 2 | - | - | **2** |
-| `OrgLevelAction == "Allow"` | - | 2 | - | - | **2** |
-| `OrgLevelAction == "Allow"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 2 | - | - | **2** |
+| `DeliveryLocation in "Failed,Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 2 | - | - | **2** |
 | `OrgLevelAction == "Block"` | - | 2 | - | - | **2** |
 | `UserLevelAction == "Block"` | - | 2 | - | - | **2** |
 | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 2 | - | - | **2** |
-| `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
-| `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
+| `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Malware"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
+| `ActionType == "Automated Remediation"` | - | 2 | - | - | **2** |
 | `LatestDeliveryAction in "Hard delete,Moved to deleted items,Moved to junk folder,Soft delete"` | - | 2 | - | - | **2** |
-| `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
-| `DetectionMethods has "Spam"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` | - | 2 | - | - | **2** |
+| `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 2 | - | - | **2** |
+| `DetectionMethods has "Impersonation"`<br>`DetectionMethods has "Spoof"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` | - | 2 | - | - | **2** |
+| `DeliveryLocation has "Inbox"`<br>`DetectionMethods has "Impersonation"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"` | - | 2 | - | - | **2** |
+| `ActionType == "UserSubmission"`<br>`EmailDirection == "Intra-org"` | - | 2 | - | - | **2** |
+| `ActionType == "UserSubmission"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
+| `ActionType == "UserSubmission"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | - | 2 | - | - | **2** |
+| `DetectionMethods has "Url"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | - | 2 | - | - | **2** |
 | `ActionType == "ClickAllowed"`<br>`EmailDirection == "Inbound"`<br>`ThreatTypes has_any "Malware"` | - | 2 | - | - | **2** |
-| `EmailDirection == "Outbound"` | - | 1 | - | - | **1** |
 | `DetectionMethods has "spoof"` | - | 1 | - | - | **1** |
 | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | - | 1 | - | - | **1** |
 | `DeliveryLocation in "Inbox/folder,Junk folder"` | - | 1 | - | - | **1** |
@@ -557,18 +644,16 @@ References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other par
 | `DeliveryAction != "Blocked"`<br>`EmailDirection == "Inbound"`<br>`SenderIPv4 startswith "27.121.5."`<br>`SenderMailFromAddress == "<>"` | - | 1 | - | - | **1** |
 | `Subject in "COVID-19 nCov Special info WHO,HALTH ADVISORY:CORONA VIRUS,The Truth of COVID-19,This is your order?,WTF,What the fcuk,broken file,farewell letter,good bye"` | - | 1 | - | - | **1** |
 | `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"`<br>`DeliveryAction == "Delivered"`<br>`DeliveryAction != "Delivered"`<br>`OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"` | - | 1 | - | - | **1** |
+| `OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **178** | **0** | **0** | **178** |
+| **Total** | **0** | **260** | **0** | **0** | **260** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AdminSubmissionSubmitted` | - | 3 | - | - | **3** |
-| `Malware ZAP` | - | 3 | - | - | **3** |
-| `Phish ZAP` | - | 3 | - | - | **3** |
-| `Redelivery` | - | 3 | - | - | **3** |
+| `UserSubmission` | - | 10 | - | - | **10** |
+| `Automated Remediation` | - | 2 | - | - | **2** |
 | `ClickAllowed` | - | 2 | - | - | **2** |
 | `Add member to role` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
@@ -590,43 +675,42 @@ References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has_any Spam` | - | 4 | - | - | **4** |
-| `has_any Phish` | - | 4 | - | - | **4** |
 
 ### DeliveryAction
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Delivered` | - | 23 | - | - | **23** |
+| `Delivered` | - | 22 | - | - | **22** |
 | `!has Blocked` | - | 2 | - | - | **2** |
 | `!= Blocked` | - | 1 | - | - | **1** |
 | `Junked` | - | 1 | - | - | **1** |
-| `!= Delivered` | - | 1 | - | - | **1** |
 
 ### DeliveryLocation
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Quarantine` | - | 12 | - | - | **12** |
+| `Quarantine` | - | 18 | - | - | **18** |
 | `Inbox/folder` | - | 7 | - | - | **7** |
 | `Junk folder` | - | 7 | - | - | **7** |
 | `Failed` | - | 6 | - | - | **6** |
 | `!= Quarantine` | - | 4 | - | - | **4** |
 | `Dropped` | - | 4 | - | - | **4** |
+| `has Inbox` | - | 2 | - | - | **2** |
 
 ### DetectionMethods
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Phish` | - | 16 | - | - | **16** |
+| `has Malware` | - | 12 | - | - | **12** |
+| `has Spam` | - | 12 | - | - | **12** |
+| `has Impersonation` | - | 8 | - | - | **8** |
 | `contains spoof` | - | 6 | - | - | **6** |
-| `has_any Phish` | - | 6 | - | - | **6** |
-| `has Spam` | - | 6 | - | - | **6** |
-| `has Malware` | - | 4 | - | - | **4** |
-| `has Phish` | - | 4 | - | - | **4** |
-| `has Impersonation` | - | 4 | - | - | **4** |
+| `has Spoof` | - | 6 | - | - | **6** |
 | `contains impersonation` | - | 4 | - | - | **4** |
-| `has Spoof` | - | 4 | - | - | **4** |
 | `has File Detonation` | - | 2 | - | - | **2** |
 | `has URL Detonation` | - | 2 | - | - | **2** |
+| `has Url` | - | 2 | - | - | **2** |
 | `has spoof` | - | 1 | - | - | **1** |
 | `contains spam` | - | 1 | - | - | **1** |
 
@@ -634,9 +718,9 @@ References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Inbound` | - | 89 | - | - | **89** |
-| `Outbound` | - | 7 | - | - | **7** |
-| `Intra-org` | - | 2 | - | - | **2** |
+| `Inbound` | - | 131 | - | - | **131** |
+| `Outbound` | - | 15 | - | - | **15** |
+| `Intra-org` | - | 4 | - | - | **4** |
 
 ### LatestDeliveryAction
 
@@ -658,16 +742,17 @@ References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Allow` | - | 9 | - | - | **9** |
 | `!= Block` | - | 8 | - | - | **8** |
-| `Allow` | - | 5 | - | - | **5** |
 | `Block` | - | 3 | - | - | **3** |
 
 ### OrgLevelPolicy
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= SecOps Mailbox` | - | 21 | - | - | **21** |
-| `!= Phishing simulation` | - | 19 | - | - | **19** |
+| `!= Phishing simulation` | - | 108 | - | - | **108** |
+| `!= SecOps Mailbox` | - | 108 | - | - | **108** |
+| `SecOps Mailbox` | - | 4 | - | - | **4** |
 
 ### SenderDisplayName
 
@@ -722,10 +807,10 @@ References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has Malware` | - | 19 | - | - | **19** |
-| `has Phish` | - | 19 | - | - | **19** |
+| `has Malware` | - | 25 | - | - | **25** |
+| `has Phish` | - | 25 | - | - | **25** |
 | `has Spam` | - | 16 | - | - | **16** |
-| `has_any Malware` | - | 4 | - | - | **4** |
+| `has_any Malware` | - | 6 | - | - | **6** |
 | `Malware` | - | 2 | - | - | **2** |
 
 ### UserLevelAction

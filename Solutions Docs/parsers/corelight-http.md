@@ -13,8 +13,8 @@
 | Title | Corelight HTTP Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.3 |
-| Last Updated | 2026-03-19 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_http.yaml) |
@@ -25,9 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_http2_CL`](../tables/corelight-v3-http2-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_http_CL`](../tables/corelight-v3-http-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_http_red_CL`](../tables/corelight-v3-http-red-cl.md) | ? | ✓ | ? |
 
 ---
 

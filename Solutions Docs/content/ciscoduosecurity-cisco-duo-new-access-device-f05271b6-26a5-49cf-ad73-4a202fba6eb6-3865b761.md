@@ -18,7 +18,7 @@ Detects new access device.
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1078 |
-| **Required Connectors** | [CiscoDuoSecurity](../connectors/ciscoduosecurity.md) |
+| **Required Connectors** | [CiscoDuoAuthConnectorDefinition](../connectors/ciscoduoauthconnectordefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Analytic%20Rules/CiscoDuoNewAccessDevice.yaml) |
 
 ## Tables Used
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`DuoAuthentication_CL`](../tables/duoauthentication-cl.md) | ? | ✓ | ? |
 
 ---
 

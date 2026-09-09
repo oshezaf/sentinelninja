@@ -27,7 +27,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 - [Parsers](#parsers-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (95 columns)
+## Schema (97 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 
@@ -39,10 +39,10 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | Agent | dynamic | The agentic property for sign in logs. Includes the agentType and the parentAppId when the type is AgenticInstance. |
 | AlternateSignInName | string | The identification that the user provided to sign in. It may be the userPrincipalName but it's also populated when a user signs in using other identifiers. |
 | AppDisplayName | string | The application name displayed in the Azure Portal. |
-| AppId | string | The application identifier in Azure Active Directory. |
+| AppId | string | The application identifier in Microsoft Entra ID. |
 | AppliedConditionalAccessPolicies | string |  |
 | AppliedEventListeners | dynamic | Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, that were triggered by the corresponding events in the sign-in event. |
-| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Azure Active Directory. |
+| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Microsoft Entra ID. |
 | AuthenticationAppDeviceDetails | string | Details of the app and device state used during the most recent authentication step using an authentication app. |
 | AuthenticationAppPolicyEvaluationDetails | string | The details of the policies applied and enforced related to the authentication app during the latest signIn step. |
 | AuthenticationContextClassReferences | string | Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in. |
@@ -57,6 +57,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | Category | string |  |
 | ClientAppUsed | string | The legacy client used for sign-in activity. For example: Browser, Exchange ActiveSync, Modern clients, IMAP, MAPI, SMTP, or POP. |
 | ClientCredentialType | string | The type of client credential used. Examples include client assertion, client secret, etc. |
+| ClientSessionId | string | ID of the client session associated with the signIn. |
 | ConditionalAccessAudiences | string | The audiences targeted by the conditional access policy. |
 | ConditionalAccessPolicies | dynamic | A list of conditional access policies that are triggered by the corresponding sign-in activity. |
 | ConditionalAccessStatus | string | The status of the conditional access policy triggered. Possible values: success, failure, or notApplied. |
@@ -108,6 +109,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | RiskLevelAggregated | string | The aggregated risk level. Possible values: none, low, medium, high, or hidden. The value hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned hidden. |
 | RiskLevelDuringSignIn | string | The risk level during sign-in. Possible values: none, low, medium, high, or hidden. The value hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned hidden. |
 | RiskState | string | The risk state of a risky user, sign-in, or a risk event. Possible values: none, confirmedSafe, remediated, dismissed, atRisk, or confirmedCompromised. |
+| RootActorID | string | The root actor virtual ID associated with the sign-in. |
 | ServicePrincipalId | string | The application identifier used for sign-in. This field is populated when you are signing in using an application. |
 | ServicePrincipalName | string | The application name used for sign-in. This field is populated when you are signing in using an application. |
 | SessionId | string | Id of the session that was generated during the signIn. |
@@ -135,7 +137,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SigninLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 
-## Solutions (37)
+## Solutions (39)
 
 This table is used by the following solutions:
 
@@ -152,6 +154,7 @@ This table is used by the following solutions:
 - [GitLab](../solutions/gitlab.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [HoneyLabs](../solutions/honeylabs.md)
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
@@ -167,6 +170,7 @@ This table is used by the following solutions:
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Standalone Content](../solutions/standalone-content.md)
+- [StratoSecure](../solutions/stratosecure.md)
 - [Teams](../solutions/teams.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -187,9 +191,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (169)
+## Content Items Using This Table (173)
 
-### Analytic Rules (45)
+### Analytic Rules (47)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -211,6 +215,12 @@ This table is ingested by the following connectors:
 | Analytic Rule |
 |:-------------|
 | [GitLab - SSO - Sign-Ins Burst](../content/gitlab-gitlab-sso-sign-ins-burst-57b1634b-531d-4eab-a456-8b855887428f-5a07493b.md) |
+
+**In solution [HoneyLabs](../solutions/honeylabs.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [HoneyLabs TI Map IP Entity to SigninLogs](../content/honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.md) |  |
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 
@@ -249,7 +259,7 @@ This table is ingested by the following connectors:
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) | `ResultType == "500121"` |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) | `AuthenticationRequirement == "multiFactorAuthentication"` |
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) |  |
-| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | `OperationName == "Add unverified domain"` |
+| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `RiskState == "atRisk"`
 
@@ -271,6 +281,12 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a-98f6165b.md) |  |
+
+**In solution [StratoSecure](../solutions/stratosecure.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [SAST Auth Finding Correlated with Brute Force](../content/stratosecure-sast-auth-finding-correlated-with-brute-force-4ae9f294-410d-4c11-9072-0d8fcf5162d8-94b377e7.md) |  |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -308,10 +324,10 @@ This table is ingested by the following connectors:
 | [New country signIn with correct password](../content/standalone-content-new-country-signin-with-correct-password-7808c05a-3afd-4d13-998a-a59e2297693f-319c8619.md) | `ResultType != "0"` |
 | [Privileged User Logon from new ASN](../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.md) | `ResultType == "0"` |
 | [Risky user signin observed in non-Microsoft network device](../content/standalone-content-risky-user-signin-observed-in-non-microsoft-network-device-042f2801-a375-4cfd-bd29-041fc7ed88a0-a75f8abe.md) | `ResultType == "0"`<br>`RiskState == "atRisk"` |
-| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) | `OperationName == "Delete user"` |
-| [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) | `OperationName == "Update Application"` |
+| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) |  |
+| [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) |  |
 
-### Hunting Queries (79)
+### Hunting Queries (80)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -338,8 +354,8 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) | `OperationName in "Set domain authentication,Set federation settings on domain"` |
-| [MFA Method Added on Risky Account](../content/hybrid-attack-cloud-&-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.md) | `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered security info,User updated security info"` |
+| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) |  |
+| [MFA Method Added on Risky Account](../content/hybrid-attack-cloud-&-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.md) |  |
 | [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
 | [Novel sign-in context followed by IAM reconnaissance burst](../content/hybrid-attack-cloud-&-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.md) |  |
 | [Risky Successful Sign-in to VPN or Network Access Application](../content/hybrid-attack-cloud-&-identity-risky-successful-sign-in-to-vpn-or-network-access-application-482a1615-5bc6-4b23-b2c5-97a4c3179240-5cf359b4.md) |  |
@@ -409,6 +425,7 @@ This table is ingested by the following connectors:
 | [Anomalous non-interactive token issuance after interactive sign-in (AiTM pattern)](../content/standalone-content-anomalous-non-interactive-token-issuance-after-interactive-sign-in-aitm-pattern-2a2c676e-885f-43d9-90cb-2c035772e31c-8b8b5297.md) |  |
 | [Anomalous sign-in location by user account and authenticating application](../content/standalone-content-anomalous-sign-in-location-by-user-account-and-authenticating-application-8159c663-6724-41b8-9ae8-b328aa8d0c4c-2d3b97c6.md) |  |
 | [Anomalous sign-in location by user account and authenticating application - with sign-in details](../content/standalone-content-anomalous-sign-in-location-by-user-account-and-authenticating-application-with-sign-i-7f6e8f14-62fa-4ce6-a490-c07f1d9888ba-4c892312.md) |  |
+| [Break-glass account sign-in detected](../content/standalone-content-break-glass-account-sign-in-detected-1685c69b-d03b-4e71-8171-879d6fefad2d-81b84672.md) |  |
 | [Bulk role assignments performed by the same actor in a short window](../content/standalone-content-bulk-role-assignments-performed-by-the-same-actor-in-a-short-window-8d2cc40f-f0e0-49bf-8983-164f7be3975d-39bbfebc.md) | `OperationName == "Add member to role."` |
 | [Device code authentication from unseen autonomous system](../content/standalone-content-device-code-authentication-from-unseen-autonomous-system-562647c0-5edb-4a47-afa2-fa662efa89bf-e5288b77.md) | `AuthenticationDetails has "deviceCode"`<br>`ResultType == "0"` |
 | [Disabled accounts using Squid proxy](../content/standalone-content-disabled-accounts-using-squid-proxy-959fe0f0-7ac0-467c-944f-5b8c6fdc9e72-ec4ae627.md) |  |
@@ -421,15 +438,15 @@ This table is ingested by the following connectors:
 | [Login attempt by Blocked MFA user](../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.md) |  |
 | [Login spike with increase failure rate](../content/standalone-content-login-spike-with-increase-failure-rate-528c1708-a67e-4e2f-b76d-d5e5e88a22aa-3bf718cc.md) | `ResultType in "0,50057,50074,50126,51004"` |
 | [MFA Spamming](../content/standalone-content-mfa-spamming-7f87c43a-6aff-44fe-907f-651986cbf956-1ec9d2a3.md) | `AuthenticationRequirement == "multiFactorAuthentication"` |
-| [MFA method registered from an IP address not seen in user sign-in history](../content/standalone-content-mfa-method-registered-from-an-ip-address-not-seen-in-user-sign-in-history-3d36b19f-cd62-4522-8869-23cdd9cc0c9f-5f452383.md) | `OperationName == "User registered security info"` |
+| [MFA method registered from an IP address not seen in user sign-in history](../content/standalone-content-mfa-method-registered-from-an-ip-address-not-seen-in-user-sign-in-history-3d36b19f-cd62-4522-8869-23cdd9cc0c9f-5f452383.md) |  |
 | [Microsoft Entra ID sign-in burst from multiple locations](../content/standalone-content-microsoft-entra-id-sign-in-burst-from-multiple-locations-745a22ec-fed8-49b9-9f62-4570b7709da4-246c7446.md) |  |
-| [Privileged Entra ID account sign-in via legacy authentication protocol](../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) | `OperationName in "Add member to role,Add member to role."` |
+| [Privileged Entra ID account sign-in via legacy authentication protocol](../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) |  |
 | [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
 | [Same User - Successful logon for a given App and failure on another App within 1m and low distribution](../content/standalone-content-same-user-successful-logon-for-a-given-app-and-failure-on-another-app-within-1m-and-l-bc17381e-07ee-48a2-931f-06a3d9e149c9-2d59aad0.md) |  |
 | [Short-window IP failure burst followed by successful sign-in](../content/standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.md) |  |
 | [Short-window sign-in mismatch between interactive and non-interactive activity](../content/standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.md) |  |
 | [Sign-in from new country followed by sensitive operation within one hour](../content/standalone-content-sign-in-from-new-country-followed-by-sensitive-operation-within-one-hour-271f4bf9-e387-48ef-a537-654bd53ca8e8-d3920a50.md) |  |
-| [Sign-in from unseen IP within 60 minutes of MFA disabled for account](../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.md) | `OperationName in "Disable Strong Authentication,User deleted security info"` |
+| [Sign-in from unseen IP within 60 minutes of MFA disabled for account](../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.md) |  |
 | [Signin Logs with expanded Conditional Access Policies](../content/standalone-content-signin-logs-with-expanded-conditional-access-policies-4eb6d052-9873-4092-b989-66eae780e203-95b234ca.md) |  |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
@@ -441,23 +458,23 @@ This table is ingested by the following connectors:
 | [Administrators Authenticating to Another Microsoft Entra ID Tenant](../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.md) | `ResultType == "0"`<br>`RiskLevelAggregated != "none"` |
 | [Anomolous Sign Ins Based on Time](../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.md) |  |
 | [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
-| [Dormant User Update MFA and Logs In](../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) | `OperationName == "User registered security info"` |
+| [Dormant User Update MFA and Logs In](../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) |  |
 | [Dormant User Update MFA and Logs In - UEBA](../content/github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.md) |  |
-| [High Risk Sign In Around Authentication Method Added or Device Registration](../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) | `NetworkLocationDetails == "[]"`<br>`OperationName in "Register device,User registered security info"`<br>`RiskLevelDuringSignIn == "high"` |
+| [High Risk Sign In Around Authentication Method Added or Device Registration](../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) | `NetworkLocationDetails == "[]"`<br>`RiskLevelDuringSignIn == "high"` |
 | [Low & slow password attempts with volatile IP addresses](../content/github-only-low-&-slow-password-attempts-with-volatile-ip-addresses-3d217bb4-9cc2-4aba-838a-48e606e910e6-6761ead7.md) | `ResultType == "0"` |
 | [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |  |
 | [Privileged Accounts Locked Out](../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) | `ResultType == "50053"` |
-| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) | `OperationName == "Add registered owner to device"` |
+| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) |  |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.md) | `ResultType in "0,50057"` |
 | [Smart Lockouts](../content/github-only-smart-lockouts-02e86bf2-172c-4444-ae8e-e94c5ce2bea3-cf06fb78.md) | `ResultType == "50053"` |
 | [Spike in failed sign-in events](../content/github-only-spike-in-failed-sign-in-events-51f4faf9-c3b1-4e9f-9c90-5d6afd191552-ac3569e5.md) |  |
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) | `AppDisplayName !in "Office 365 Exchange Online,Skype for Business Online,Office 365 SharePoint Online"` |
-| [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) | `ConditionalAccessStatus == "success"`<br>`OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` |
+| [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) | `ConditionalAccessStatus == "success"` |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `AppDisplayName == "Azure Portal"`<br>`OperationName has_any "Add member to role"` |
 | [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) | `OperationName in "PutBlob,PutRange"` |
 | [Users Authenticating to Other Microsoft Entra ID Tenants](../content/github-only-users-authenticating-to-other-microsoft-entra-id-tenants-9b4a1f38-2fae-44dd-9e85-685a2e4b9bb5-c7672be4.md) | `ResultType == "0"`<br>`RiskLevelAggregated != "none"` |
 
-### Workbooks (45)
+### Workbooks (46)
 
 **In solution [1Password](../solutions/1password.md):**
 
@@ -477,29 +494,29 @@ This table is ingested by the following connectors:
 |:-------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `OperationName contains "PIM"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+| Workbook |
+|:-------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `AuthenticationRequirement == "multiFactorAuthentication"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `AuthenticationRequirement == "multiFactorAuthentication"`<br>`OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`
 
 | Workbook |
 |:-------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
+| Workbook |
+|:-------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+| Workbook |
+|:-------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
@@ -531,7 +548,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`
 
 | Workbook |
 |:-------------|
@@ -544,29 +561,29 @@ This table is ingested by the following connectors:
 | [AzureActiveDirectorySignins](../content/microsoft-entra-id-azureactivedirectorysignins-97204667.md) |  |
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `AppDisplayName contains "Portal"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `AppDisplayName contains "Portal"`<br>`OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"`
 
 | Workbook |
 |:-------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| Workbook |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):** `AppDisplayName == "Windows Sign In"`
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `AppDisplayName == "Windows Sign In"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"`
 
 | Workbook |
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
-| Workbook |
-|:-------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
 
 **In solution [Teams](../solutions/teams.md):** `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"`
 
@@ -586,7 +603,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md) |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `AppDisplayName has_any "teams"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `AppDisplayName has_any "teams"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`
 
 | Workbook |
 |:-------------|
@@ -601,23 +618,24 @@ This table is ingested by the following connectors:
 | [AzureActiveDirectorySignins](../content/github-only-azureactivedirectorysignins-f7e08e18.md) |  |
 | [AzureAuditActivityAndSignin](../content/github-only-azureauditactivityandsignin-17768883.md) |  |
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) | `OperationName in "Add conditional access policy,Add member to group,Delete conditional access policy,Update conditional access policy"`<br>`OperationName contains "group"` |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`ConditionalAccessStatus == "notApplied"`<br>`NetworkLocationDetails == "[]"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`ConditionalAccessStatus == "notApplied"`<br>`NetworkLocationDetails == "[]"`<br>`OperationName in "Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create access package"`<br>`OperationName contains "permanent"`<br>`OperationName has "User requests access package assignment"`<br>`OperationName has "application"` |
 | [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `ClientAppUsed !in "Browser,Mobile Apps`<br>`Desktop clients"`<br>`ResultType == "0"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `AppDisplayName == "Windows Sign In"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `AppDisplayName == "Windows Sign In"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"`<br>`TokenIssuerType == "AzureAD"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `TokenIssuerType == "AzureAD"` |
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `ResultType == "0"`<br>`ResultType != "0"` |
 | [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) | `ResultType == "0"`<br>`ResultType != "0"` |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`AuthenticationRequirement != "multiFactorAuthentication"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`ConditionalAccessStatus == "notApplied"`<br>`NetworkLocationDetails == "[]"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`AuthenticationRequirement != "multiFactorAuthentication"`<br>`OperationName in "Add member to role completed (PIM activation),Invite external user,Redeem external user invite,User changed default security info,User deleted security info,User registered all required security info,User registered security info"`<br>`OperationName !in "Microsoft.SecurityInsights/Incidents/investigations/write,Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`ConditionalAccessStatus == "notApplied"`<br>`NetworkLocationDetails == "[]"`<br>`OperationName in "Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create access package"`<br>`OperationName contains "permanent"`<br>`OperationName has "User requests access package assignment"`<br>`OperationName has "application"` |
 
 ## Parsers Using This Table (1)
 
@@ -633,36 +651,31 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (51 criteria, 69 total references)
+## Selection Criteria Summary (46 criteria, 62 total references)
 
-References by type: 0 connectors, 69 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 62 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ResultType == "0"` | - | 10 | - | - | **10** |
-| `AuthenticationRequirement == "multiFactorAuthentication"` | - | 4 | - | - | **4** |
-| `AppDisplayName == "Windows Sign In"` | - | 2 | - | - | **2** |
+| `AuthenticationRequirement == "multiFactorAuthentication"` | - | 3 | - | - | **3** |
 | `ResultType in "0,50057"` | - | 2 | - | - | **2** |
 | `ResultType == "50057"` | - | 2 | - | - | **2** |
 | `ResultType == "0"`<br>`RiskLevelAggregated != "none"` | - | 2 | - | - | **2** |
-| `OperationName == "User registered security info"` | - | 2 | - | - | **2** |
 | `ResultType == "50053"` | - | 2 | - | - | **2** |
+| `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | - | 2 | - | - | **2** |
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | - | 1 | - | - | **1** |
 | `NetworkLocationDetails !has "trustedNamedLocation"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
+| `AppDisplayName == "Windows Sign In"` | - | 1 | - | - | **1** |
 | `ResultType == "500121"` | - | 1 | - | - | **1** |
-| `OperationName == "Add unverified domain"` | - | 1 | - | - | **1** |
 | `RiskState == "atRisk"` | - | 1 | - | - | **1** |
 | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
-| `OperationName == "Update Application"` | - | 1 | - | - | **1** |
 | `ResultType in "0,50125,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`RiskState == "atRisk"` | - | 1 | - | - | **1** |
-| `OperationName == "Delete user"` | - | 1 | - | - | **1** |
 | `AuthenticationRequirement == "singleFactorAuthentication"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `ResultType != "0"` | - | 1 | - | - | **1** |
 | `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` | - | 1 | - | - | **1** |
-| `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 1 | - | - | **1** |
-| `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered security info,User updated security info"` | - | 1 | - | - | **1** |
 | `ResultType in "50125,50140,70043,70044"` | - | 1 | - | - | **1** |
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `AuthenticationRequirement == "singleFactorAuthentication"`<br>`ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
@@ -670,27 +683,27 @@ References by type: 0 connectors, 69 content items, 0 ASIM parsers, 0 other pars
 | `OperationName in "PutBlob,PutRange"` | - | 1 | - | - | **1** |
 | `OperationName == "Add member to role."` | - | 1 | - | - | **1** |
 | `AuthenticationDetails has "deviceCode"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
-| `NetworkLocationDetails == "[]"`<br>`OperationName in "Register device,User registered security info"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
-| `OperationName in "Disable Strong Authentication,User deleted security info"` | - | 1 | - | - | **1** |
-| `ConditionalAccessStatus == "success"`<br>`OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add member to role."` | - | 1 | - | - | **1** |
+| `NetworkLocationDetails == "[]"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
+| `ConditionalAccessStatus == "success"` | - | 1 | - | - | **1** |
 | `AppDisplayName !in "Office 365 Exchange Online,Skype for Business Online,Office 365 SharePoint Online"` | - | 1 | - | - | **1** |
 | `AppDisplayName == "Azure Portal"`<br>`OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
 | `OperationName == "Sign-in activity"` | - | 1 | - | - | **1** |
 | `OperationName == "Add user"` | - | 1 | - | - | **1** |
 | `ResultType in "0,50057,50074,50126,51004"` | - | 1 | - | - | **1** |
-| `OperationName == "Add registered owner to device"` | - | 1 | - | - | **1** |
 | `AppDisplayName contains "Azure Portal"`<br>`ResultType in "50020,50126"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | - | 1 | - | - | **1** |
+| `OperationName contains "PIM"` | - | 1 | - | - | **1** |
+| `AuthenticationRequirement == "multiFactorAuthentication"`<br>`OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | - | 1 | - | - | **1** |
 | `OperationName in "Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info"`<br>`OperationName has_any "clusterrolebindings,rolebindings"`<br>`OperationName has_any "cronjobs,daemonsets"`<br>`OperationName has_any "cronjobs/create,daemonsets/create"` | - | 1 | - | - | **1** |
-| `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"` | - | 1 | - | - | **1** |
+| `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | - | 1 | - | - | **1** |
 | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
-| `AppDisplayName contains "Portal"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
+| `AppDisplayName contains "Portal"`<br>`OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | - | 1 | - | - | **1** |
+| `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"` | - | 1 | - | - | **1** |
+| `AppDisplayName == "Windows Sign In"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
 | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`ResultType != "0"` | - | 1 | - | - | **1** |
-| `AppDisplayName has_any "teams"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **69** | **0** | **0** | **69** |
+| `AppDisplayName has_any "teams"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **62** | **0** | **0** | **62** |
 
 ### AppDisplayName
 
@@ -746,56 +759,67 @@ References by type: 0 connectors, 69 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `User registered security info` | - | 5 | - | - | **5** |
-| `User deleted security info` | - | 3 | - | - | **3** |
-| `Update user` | - | 2 | - | - | **2** |
+| `Update user` | - | 8 | - | - | **8** |
+| `Add user` | - | 8 | - | - | **8** |
+| `Add member to role` | - | 7 | - | - | **7** |
+| `Reset user password` | - | 7 | - | - | **7** |
+| `contains PIM` | - | 5 | - | - | **5** |
+| `Consent to application` | - | 5 | - | - | **5** |
+| `Sign-in activity` | - | 4 | - | - | **4** |
+| `AzureFirewallIDSLog` | - | 3 | - | - | **3** |
+| `NetworkSecurityGroupEvents` | - | 3 | - | - | **3** |
+| `contains Delete` | - | 3 | - | - | **3** |
+| `!= Consent to application` | - | 3 | - | - | **3** |
+| `contains delete` | - | 2 | - | - | **2** |
+| `contains remove` | - | 2 | - | - | **2** |
+| `contains Create` | - | 2 | - | - | **2** |
+| `contains Remove` | - | 2 | - | - | **2** |
+| `contains Update` | - | 2 | - | - | **2** |
 | `Set domain authentication` | - | 2 | - | - | **2** |
 | `Set federation settings on domain` | - | 2 | - | - | **2** |
-| `Admin deleted security info` | - | 2 | - | - | **2** |
-| `Admin registered security info` | - | 2 | - | - | **2** |
-| `Admin updated security info` | - | 2 | - | - | **2** |
-| `User changed default security info` | - | 2 | - | - | **2** |
-| `User updated security info` | - | 2 | - | - | **2** |
-| `Add member to role.` | - | 2 | - | - | **2** |
-| `Add member to role` | - | 2 | - | - | **2** |
-| `has_any Add member to role` | - | 2 | - | - | **2** |
-| `Add user` | - | 2 | - | - | **2** |
-| `Add unverified domain` | - | 1 | - | - | **1** |
-| `Update Application` | - | 1 | - | - | **1** |
-| `Delete user` | - | 1 | - | - | **1** |
+| `ApplicationGatewayFirewall` | - | 2 | - | - | **2** |
 | `PutBlob` | - | 1 | - | - | **1** |
 | `PutRange` | - | 1 | - | - | **1** |
-| `Register device` | - | 1 | - | - | **1** |
-| `Disable Strong Authentication` | - | 1 | - | - | **1** |
-| `has_any Download group members` | - | 1 | - | - | **1** |
-| `has_any Download groups` | - | 1 | - | - | **1** |
-| `has_any Download user registeration details` | - | 1 | - | - | **1** |
-| `has_any Download users` | - | 1 | - | - | **1** |
-| `Sign-in activity` | - | 1 | - | - | **1** |
-| `Add registered owner to device` | - | 1 | - | - | **1** |
-| `AzureFirewallIDSLog` | - | 1 | - | - | **1** |
-| `NetworkSecurityGroupEvents` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `contains PIM` | - | 1 | - | - | **1** |
+| `Add member to role.` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
 | `contains create` | - | 1 | - | - | **1** |
-| `contains delete` | - | 1 | - | - | **1** |
 | `contains lockbox` | - | 1 | - | - | **1** |
-| `contains remove` | - | 1 | - | - | **1** |
 | `contains update` | - | 1 | - | - | **1** |
+| `contains Add` | - | 1 | - | - | **1** |
+| `contains Audit` | - | 1 | - | - | **1** |
+| `contains Change` | - | 1 | - | - | **1** |
+| `contains Log` | - | 1 | - | - | **1** |
+| `contains Monitor` | - | 1 | - | - | **1** |
+| `contains Write` | - | 1 | - | - | **1** |
+| `contains reset` | - | 1 | - | - | **1** |
 | `Add app role assignment to service principal` | - | 1 | - | - | **1** |
 | `Add delegated permission grant` | - | 1 | - | - | **1** |
 | `Add service principal credentials` | - | 1 | - | - | **1** |
-| `Consent to application` | - | 1 | - | - | **1** |
+| `Admin deleted security info` | - | 1 | - | - | **1** |
+| `Admin registered security info` | - | 1 | - | - | **1** |
+| `Admin updated security info` | - | 1 | - | - | **1** |
 | `GetBlob` | - | 1 | - | - | **1** |
 | `ListBlobs` | - | 1 | - | - | **1** |
 | `ListBlobsHierarchySegment` | - | 1 | - | - | **1** |
 | `ListContainersSegment` | - | 1 | - | - | **1** |
+| `User changed default security info` | - | 1 | - | - | **1** |
+| `User deleted security info` | - | 1 | - | - | **1** |
+| `User registered security info` | - | 1 | - | - | **1** |
+| `User updated security info` | - | 1 | - | - | **1** |
 | `has_any clusterrolebindings` | - | 1 | - | - | **1** |
 | `has_any rolebindings` | - | 1 | - | - | **1** |
 | `has_any cronjobs` | - | 1 | - | - | **1** |
 | `has_any daemonsets` | - | 1 | - | - | **1** |
 | `has_any cronjobs/create` | - | 1 | - | - | **1** |
 | `has_any daemonsets/create` | - | 1 | - | - | **1** |
+| `!contains external` | - | 1 | - | - | **1** |
+| `!contains invite` | - | 1 | - | - | **1** |
+| `!contains licnense` | - | 1 | - | - | **1** |
+| `contains group` | - | 1 | - | - | **1** |
+| `contains member` | - | 1 | - | - | **1** |
+| `contains principal` | - | 1 | - | - | **1** |
+| `contains role` | - | 1 | - | - | **1** |
+| `contains user` | - | 1 | - | - | **1** |
 | `Add conditional access policy` | - | 1 | - | - | **1** |
 | `Add member to group` | - | 1 | - | - | **1** |
 | `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |
@@ -804,15 +828,19 @@ References by type: 0 connectors, 69 content items, 0 ASIM parsers, 0 other pars
 | `Remove member from restricted management administrative unit` | - | 1 | - | - | **1** |
 | `Update conditional access policy` | - | 1 | - | - | **1** |
 | `Update group` | - | 1 | - | - | **1** |
-| `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add user` | - | 1 | - | - | **1** |
-| `has_any Create user` | - | 1 | - | - | **1** |
-| `has_any Role assignment` | - | 1 | - | - | **1** |
-| `has_any Update user` | - | 1 | - | - | **1** |
-| `has_any directory write` | - | 1 | - | - | **1** |
-| `has_any policy update` | - | 1 | - | - | **1** |
-| `has_any role assignment` | - | 1 | - | - | **1** |
-| `has_any role update` | - | 1 | - | - | **1** |
+| `Create Deployment` | - | 1 | - | - | **1** |
+| `Create or Update Virtual Machine` | - | 1 | - | - | **1** |
+| `Create role assignment` | - | 1 | - | - | **1** |
+| `List Storage Account Keys` | - | 1 | - | - | **1** |
+| `contains delet` | - | 1 | - | - | **1** |
+| `has Create` | - | 1 | - | - | **1** |
+| `has_any Create` | - | 1 | - | - | **1** |
+| `has_any Update` | - | 1 | - | - | **1** |
+| `has_any Ip` | - | 1 | - | - | **1** |
+| `has_any Security Rule` | - | 1 | - | - | **1** |
+| `Disable Strong Authentication` | - | 1 | - | - | **1** |
+| `contains password` | - | 1 | - | - | **1** |
+| `AzureFirewallThreatIntelLog` | - | 1 | - | - | **1** |
 
 ### ResourceIdentity
 

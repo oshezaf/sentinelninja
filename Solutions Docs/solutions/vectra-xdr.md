@@ -1,8 +1,8 @@
-# Vectra XDR for Microsoft Sentinel
+# Vectra RUX for Microsoft Sentinel
 
 *Solution: Vectra XDR*
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra XDR Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Vectra_RUX.svg" alt="Vectra XDR Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vectra.ai/support](https://www.vectra.ai/support) |
 | **Categories** | Security - Network,Security - Cloud Security |
-| **Version** | 3.3.0 |
+| **Version** | 3.3.1 |
 | **Author** | TME - tme@vetcra.ai |
 | **First Published** | 2023-07-04 |
-| **Last Updated** | 2024-08-01 |
+| **Last Updated** | 2026-08-19 |
 | **Solution Folder** | [Vectra XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.vectra-xdr-for-microsoft-sentinel) · Popularity: 🟡 Low (24%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.vectra-xdr-for-microsoft-sentinel) · Popularity: 🔵 Medium (70%) |
 
 Vectra AI is the leader in AI-driven threat detection and response for hybrid and multi-cloud enterprises. Vectra AI's cloud-native platform - powered by our patented Attack Signal Intelligence- provide security teams with unified threat visibility, context and control across public cloud, SaaS, identity and data center networks in a prioritized feed. Vectra AI-driven Attack Signal IntelligenceTM, empowers SOC analysts to rapidly prioritize, investigate and respond to the most urgent cyber-attacks in their hybrid cloud environment. Organizations worldwide rely on Vectra AI's cloud-native platform and MDR services to see and stop attacks from becoming breaches. The Vectra AI App enables the security operations team to consume the industry's richest threat signals spanning public cloud, SaaS, identity and data center networks inside of Microsoft Sentinel. For more information, visit www.vectra.ai.
 
@@ -37,21 +37,25 @@ Vectra AI is the leader in AI-driven threat detection and response for hybrid an
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
+- [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md)
 - [Vectra XDR](../connectors/vectraxdr.md)
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Analytics, Workbooks |
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics |
+| [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) | [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Workbooks |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
 | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 | [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) | [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Workbooks |
 | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 
 ### Internal Tables
@@ -62,76 +66,85 @@ The following **3 table(s)** are used internally by this solution's content item
 |-------|-------------------|----------------|
 | [`AlertEvidence`](../tables/alertevidence.md) | - | Analytics |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Playbooks |
-| [`SecurityIncident`](../tables/securityincident.md) | - | Playbooks |
+| [`SecurityIncident`](../tables/securityincident.md) | - | Playbooks, Workbooks |
 
 ## Content Items
 
-This solution includes **33 content item(s)**:
+This solution includes **39 content item(s)** (26 in solution, 13 discovered 🔍):
 
-| Content Type | Count |
-|:-------------|:------|
-| Playbooks | 20 |
-| Analytic Rules | 7 |
-| Parsers | 5 |
-| Workbooks | 1 |
+| Content Type | Total | In Solution | Discovered |
+|:-------------|------:|------------:|-----------:|
+| Playbooks | 19 | 19 | - |
+| Analytic Rules | 9 | 2 | 7 |
+| Parsers | 8 | 3 | 5 |
+| Workbooks | 3 | 2 | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) | High | Persistence | *Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
-| [Vectra Create Detection Alert for Accounts](../content/vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
-| [Vectra Create Detection Alert for Hosts](../content/vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
-| [Vectra Create Incident Based on Priority for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-accounts-af6f2812-0187-4cc9-822a-952f8b5b6b7e-99cb4b20.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
-| [Vectra Create Incident Based on Priority for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
-| [Vectra Create Incident Based on Tag for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
-| [Vectra Create Incident Based on Tag for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-hosts-8b7a1a64-8ef2-4000-b8c9-9bca3b93aace-08413d75.md) | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
+| [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) ⚠️ | High | Persistence | *Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
+| [Vectra Create Detection Alert for Accounts](../content/vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) ⚠️ | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
+| [Vectra Create Detection Alert for Hosts](../content/vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) ⚠️ | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
+| [Vectra Create Incident Based on Priority for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-accounts-af6f2812-0187-4cc9-822a-952f8b5b6b7e-99cb4b20.md) ⚠️ | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
+| [Vectra Create Incident Based on Priority for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) ⚠️ | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
+| [Vectra Create Incident Based on Tag for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) ⚠️ | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
+| [Vectra Create Incident Based on Tag for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-hosts-8b7a1a64-8ef2-4000-b8c9-9bca3b93aace-08413d75.md) ⚠️ | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
+| [Vectra RUX - Create Incident for Escalated Account Detection or Unresolved Priority Account](../content/vectra-xdr-vectra-rux-create-incident-for-escalated-account-detection-or-unresolved-priority-account-231904f5-b670-4223-9bec-2e9aeca9cf5a-a40173c6.md) | High | Discovery, LateralMovement, CredentialAccess, Exfiltration, CommandAndControl, Persistence | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md) |
+| [Vectra RUX - Create Incident for Escalated Host Detection or Unresolved Priority Host](../content/vectra-xdr-vectra-rux-create-incident-for-escalated-host-detection-or-unresolved-priority-host-231904f5-b670-4223-9bec-2e9aeca9cf5b-344720ca.md) | High | Discovery, LateralMovement, CredentialAccess, Exfiltration, CommandAndControl, Persistence | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |
+| [VectraRUXDetectionTimeline](../content/vectra-xdr-vectraruxdetectiontimeline-0e8c0b9f.md) | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [VectraRUXSecurityDashboard](../content/vectra-xdr-vectraruxsecuritydashboard-3f089ed1.md) | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md)<br>[`Entities_Data_CL`](../tables/entities-data-cl.md)<br>[`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) ⚠️ | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
+| [Vectra Add Note To Detections](../content/vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | This playbook extracts notes from incident comments and adds them to each detection listed in the in... | - |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | This playbook extracts notes from incident comments and adds them to Vectra Entity if comment added ... | - |
+| [Vectra Add Tag To Detections](../content/vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | This playbook extracts tags from incident comments and adds them to each detection listed in the inc... | - |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | This playbook extracts tags from incident comments and adds them to the entity if comment found with... | - |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | This playbook enables user to add tags to all detections associated with a Vectra Entity. Tags can b... | - |
 | [Vectra Add Tag To Entity Selected Detections](../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | This playbook enables users to add tags to selected detections associated with an entity. Users can ... | - |
 | [Vectra Assign Dynamic User To Entity](../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | This playbook will assign a user selected by user from teams adpative card to an entity in Vectra wh... | - |
 | [Vectra Assign Static User To Entity](../content/vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.md) | This playbook will assign a predefined user to an entity in Vectra when the status of an incident ch... | - |
 | [Vectra Close Detections](../content/vectra-xdr-vectra-close-detections-93f91aea.md) | This playbook enables user to close detections associated with a Vectra Entity with reason as Remedi... | - |
-| [Vectra Decorate Incident Based On Tag](../content/vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.md) | This playbook will add pre-defined or user customizable comment to an incident generated based on ta... | - |
-| [Vectra Decorate Incident Based On Tags And Notify](../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | This playbook will add pre-defined or user customizable comment to an incident generated based on ta... | - |
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | This playbook enables user to download pcap file of any detections associated with a Vectra Entity t... | - |
+| [Vectra Close Detections On Incident Close](../content/vectra-xdr-vectra-close-detections-on-incident-close-02648c3f.md) | This playbook is triggered when a Microsoft Sentinel incident is closed. It reads Vectra detection_i... | - |
+| [Vectra Detection Timeline Link](../content/vectra-xdr-vectra-detection-timeline-link-32404588.md) | This playbook will trigger when a Vectra RUX incident is created. It queries the Detections data to ... | - |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | This playbook enables user to download pcap file of any detections associated with a Vectra Entity t... | - |
 | [Vectra Dynamic Assign Member To Group](../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | This playbook allows users to filter the group list by providing a group type and a description. Fro... | - |
-| [Vectra Dynamic Resolve Assignment](../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | When an incident is closed, This playbook will prompt the operator to select an outcome from a prede... | - |
 | [Vectra Generate Access Token](../content/vectra-xdr-vectra-generate-access-token-569f7428.md) | This playbook will generate access token and refresh token for another playbooks. | - |
 | [Vectra Incident Timeline Update](../content/vectra-xdr-vectra-incident-timeline-update-0d305064.md) | This playbook will update the incident timeline by keeping most recent alerts and adding most recent... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)*<br>[`SecurityIncident`](../tables/securityincident.md) *(read)* |
-| [Vectra Mark Detections As Fixed](../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | This playbook will mark active detection as fixed associated with an entity based on choice of user ... | - |
 | [Vectra Open Closed Detections](../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | This playbook enables user to close opened detections associated with a Vectra Entity. User can add ... | - |
-| [Vectra Operate On Entity Source IP](../content/vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.md) | This Playbook will extract the ip from entities associated with an incident on which playbook is tri... | - |
+| [Vectra Set Detection Status](../content/vectra-xdr-vectra-set-detection-status-dd76d3f7.md) | This playbook updates the status of all detections listed in an incident's custom details based on t... | - |
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | This playbook will take input of group id and members from user via MS teams and assign members to t... | - |
-| [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | This playbook resolves the assignment for an entity in Vectra and adds a note for the assignment whe... | - |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | This playbook runs hourly to identify entities with Medium severity incidents, checks for user-defin... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VectraAudits](../parsers/vectraaudits.md) | - | [`Audits_Data_CL`](../tables/audits-data-cl.md) *(read)* |
-| [VectraDetections](../parsers/vectradetections.md) | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
-| [VectraEntityScoring](../parsers/vectraentityscoring.md) | - | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) *(read)* |
-| [VectraHealth](../parsers/vectrahealth.md) | - | [`Health_Data_CL`](../tables/health-data-cl.md) *(read)* |
-| [VectraLockdown](../parsers/vectralockdown.md) | - | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) *(read)* |
+| [VectraAudits](../parsers/vectraaudits.md) ⚠️ | - | [`Audits_Data_CL`](../tables/audits-data-cl.md) *(read)* |
+| [VectraDetections](../parsers/vectradetections.md) ⚠️ | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
+| [VectraDetectionsCombined](../parsers/vectradetectionscombined.md) | - | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) *(read)*<br>[`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
+| [VectraEntities](../parsers/vectraentities.md) | - | [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) *(read)*<br>[`Entities_Data_CL`](../tables/entities-data-cl.md) *(read)* |
+| [VectraEntityScoring](../parsers/vectraentityscoring.md) ⚠️ | - | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) *(read)* |
+| [VectraHealth](../parsers/vectrahealth.md) ⚠️ | - | [`Health_Data_CL`](../tables/health-data-cl.md) *(read)* |
+| [VectraLockdown](../parsers/vectralockdown.md) | - | [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) *(read)*<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) *(read)* |
+| [VectraRUXDetections](../parsers/vectraruxdetections.md) ⚠️ | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                             |
 |-------------|--------------------------------|----------------------------------------------------------------|
+| 3.3.1       | 17-06-2026                     | Added Playbooks, Workbooks, Anlaytic rules, Migrated function app based data connector to CCF based data connector |
 | 3.3.0       | 29-10-2025                     | Added Playbooks, Vectra API version update and Log ingestion API support |
 | 3.2.0       | 01-08-2024                     | Added Playbooks, Analytic rules and updated Data Connector and Workbook |
 | 3.1.1       | 03-04-2024                     | Repackaged for parser issue fix on reinstall                   |

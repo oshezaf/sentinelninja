@@ -36,8 +36,8 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AADTenantId | string | ID of the AAD tenant. |
 | Agent | string | Details of agentic sign-in. |
-| AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
-| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Azure Active Directory |
+| AppId | string | Unique GUID representing the app ID in the Microsoft Entra ID |
+| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Microsoft Entra ID |
 | AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
 | AutonomousSystemNumber | string | Autonomous System Number for the network. |
@@ -85,7 +85,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AADServicePrincipalSignInLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs)
 
-## Solutions (7)
+## Solutions (8)
 
 This table is used by the following solutions:
 
@@ -96,6 +96,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [Standalone Content](../solutions/standalone-content.md)
+- [StratoSecure](../solutions/stratosecure.md)
 
 ## Connectors (1)
 
@@ -107,9 +108,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (22)
+## Content Items Using This Table (23)
 
-### Analytic Rules (3)
+### Analytic Rules (4)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -117,11 +118,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"`
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
-| Analytic Rule |
-|:-------------|
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
+
+**In solution [StratoSecure](../solutions/stratosecure.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Secret Exposure with Anomalous SPN Sign-In](../content/stratosecure-secret-exposure-with-anomalous-spn-sign-in-a91e677a-46b5-428e-8a7d-29a2bb33bb6f-212cab8f.md) |  |
 
 **Standalone Content:** `ResultType != "50126"`
 
@@ -139,7 +146,7 @@ This table is ingested by the following connectors:
 | [Key Vault secret harvest followed by novel SPN sign-in from non-1P IP](../content/hybrid-attack-cloud-&-identity-key-vault-secret-harvest-followed-by-novel-spn-sign-in-from-non-1p-ip-2b0d36b0-ec89-4bc3-8e7b-c2984c6e8f5d-c75e5795.md) |  |
 | [Novel SPN sign-in followed by Azure RBAC write](../content/hybrid-attack-cloud-&-identity-novel-spn-sign-in-followed-by-azure-rbac-write-4ad6abf5-d8a4-4f1d-a39f-8d8eb1dfc7e2-837d745f.md) |  |
 | [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
-| [Secret Added to Dormant Service Principal](../content/hybrid-attack-cloud-&-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.md) | `OperationName == "Add service principal credentials"` |
+| [Secret Added to Dormant Service Principal](../content/hybrid-attack-cloud-&-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.md) |  |
 | [Service principal Conditional Access anomaly](../content/hybrid-attack-cloud-&-identity-service-principal-conditional-access-anomaly-92076c80-49fd-4af0-9f9d-ea9dd1fa85c6-58eb67f7.md) | `ConditionalAccessStatus in "failure,notApplied"`<br>`ResultType in "0,Success"` |
 | [Service principal credential change followed by novel SP sign-in](../content/hybrid-attack-cloud-&-identity-service-principal-credential-change-followed-by-novel-sp-sign-in-872ac8db-7642-4907-bcb2-d7822ae6be9c-d99cf1bb.md) |  |
 
@@ -149,11 +156,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Workload identity sign-in from a country not in 14-day baseline](../content/standalone-content-workload-identity-sign-in-from-a-country-not-in-14-day-baseline-e366bd25-400c-433f-b984-c5b8aece15f2-42cfd1d8.md) |
 
-**GitHub Only:** `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"`
+**GitHub Only:**
 
-| Hunting Query |
-|:-------------|
-| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
 
 ### Workbooks (10)
 
@@ -205,19 +212,16 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
-## Selection Criteria Summary (6 criteria, 6 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
 | `ResultType != "50126"` | - | 1 | - | - | **1** |
-| `OperationName == "Add service principal credentials"` | - | 1 | - | - | **1** |
 | `ConditionalAccessStatus in "failure,notApplied"`<br>`ResultType in "0,Success"` | - | 1 | - | - | **1** |
-| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
 | `ResultType == "0"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **6** | **0** | **0** | **6** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ConditionalAccessStatus
 
@@ -225,15 +229,6 @@ References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `failure` | - | 1 | - | - | **1** |
 | `notApplied` | - | 1 | - | - | **1** |
-
-### OperationName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Add service principal credentials` | - | 2 | - | - | **2** |
-| `Remove service principal` | - | 1 | - | - | **1** |
-| `has_all Update application` | - | 1 | - | - | **1** |
-| `Update application - Certificates` | - | 1 | - | - | **1** |
 
 ### ResultType
 

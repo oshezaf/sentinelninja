@@ -29,12 +29,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CitrixAnalytics_CVAD_Events_V1_CL`](../tables/citrixanalytics-cvad-events-v1-cl.md) | ? | ✓ | ? |
-| [`CitrixAnalytics_SPA_Events_V1_CL`](../tables/citrixanalytics-spa-events-v1-cl.md) | ? | ✓ | ? |
-| [`CitrixAnalytics_indicatorEventDetails_V1_CL`](../tables/citrixanalytics-indicatoreventdetails-v1-cl.md) | ? | ✓ | ? |
-| [`CitrixAnalytics_indicatorSummary_V1_CL`](../tables/citrixanalytics-indicatorsummary-v1-cl.md) | ? | ✓ | ? |
-| [`CitrixAnalytics_riskScoreChange_V1_CL`](../tables/citrixanalytics-riskscorechange-v1-cl.md) | ? | ✓ | ? |
-| [`CitrixAnalytics_userProfile_V1_CL`](../tables/citrixanalytics-userprofile-v1-cl.md) | ? | ✓ | ? |
+| [`CitrixAnalytics_CVAD_Events_V1_CL`](../tables/citrixanalytics-cvad-events-v1-cl.md) | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_SPA_Events_V1_CL`](../tables/citrixanalytics-spa-events-v1-cl.md) | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_indicatorEventDetails_V1_CL`](../tables/citrixanalytics-indicatoreventdetails-v1-cl.md) | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_indicatorSummary_V1_CL`](../tables/citrixanalytics-indicatorsummary-v1-cl.md) | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_riskScoreChange_V1_CL`](../tables/citrixanalytics-riskscorechange-v1-cl.md) | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_userProfile_V1_CL`](../tables/citrixanalytics-userprofile-v1-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

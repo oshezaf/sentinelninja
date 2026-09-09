@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ StratoSecure Security Platform &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stratosecure-security-platform">⚠️ StratoSecure Security Platform</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/StratoSecure/Logos/stratosecure.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>StratoSecurePush</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Soluciones Etech Corp</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/stratosecure.html">StratoSecure</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Data%20Connectors/StratoSecure_PUSH_CCP/StratoSecure_connectorDefinition.json">StratoSecure_connectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Data%20Connectors/StratoSecure_PUSH_CCP/StratoSecure_DCR.json">StratoSecure_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Data%20Connectors/StratoSecure_PUSH_CCP/StratoSecure_dataConnector.json">StratoSecure_dataConnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The StratoSecure Security Platform connector ingests ASPM findings, API inventory, remediation, scan summary and exception data pushed from the StratoSecure platform into Microsoft Sentinel via the Logs Ingestion API.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-apiinventory-cl.html"><code>StratoSecure_ApiInventory_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-exception-cl.html"><code>StratoSecure_Exception_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-remediation-cl.html"><code>StratoSecure_Remediation_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-scansummary-cl.html"><code>StratoSecure_ScanSummary_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
+<p>This connector enables your StratoSecure platform to push ASPM findings, API inventory, remediation, scan summary and exception data directly to Microsoft Sentinel via the Azure Monitor Ingestion API.</p>
+<h4 id="automated-configuration-and-secure-data-ingestion-with-entra-application">Automated Configuration and Secure Data Ingestion with Entra Application</h4>
+<p>Clicking on &quot;Deploy&quot; will trigger the creation of Log Analytics tables and a Data Collection Rule (DCR).
+It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
+Deploy StratoSecure connector resources</p>
+<p><strong>2. Configure Your StratoSecure Platform</strong></p>
+<p>Use the following parameters to configure your StratoSecure platform to push data to the workspace.</p>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Application ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Entra App Registration Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint Uri</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Findings Stream Name</strong>: <code>Custom-StratoSecure_Findings_CL</code></li>
+<li><strong>API Inventory Stream Name</strong>: <code>Custom-StratoSecure_ApiInventory_CL</code></li>
+<li><strong>Exception Stream Name</strong>: <code>Custom-StratoSecure_Exception_CL</code></li>
+<li><strong>Remediation Stream Name</strong>: <code>Custom-StratoSecure_Remediation_CL</code></li>
+<li><strong>Scan Summary Stream Name</strong>: <code>Custom-StratoSecure_ScanSummary_CL</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

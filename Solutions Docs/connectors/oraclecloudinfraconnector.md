@@ -94,7 +94,7 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 When you click the "Add stream" button in the portal, a configuration form will open. You'll need to provide:
 
 - **Stream OCID** (required): Provide the OCI Stream OCID (E.g. ocid1.stream.oc1..xxxxxxEXAMPLExxxxxx)
-- **Public Message Endpoint of the stream (Service Endpoint Base URL)** (required): Provide the Service Endpoint Base URL: (https://cell-1.streaming.ap-hyderabad-1.oci.oraclecloud.com)
+- **Public Message Endpoint of the stream (Service Endpoint Base URL)** (required): Provide the Service Endpoint Base URL: (cell-1.streaming.ap-hyderabad-1.oci.oraclecloud.com)
 - **Cursor Type** (required): Select from available options
   - Individual Cursor
   - Group Cursor (preview)

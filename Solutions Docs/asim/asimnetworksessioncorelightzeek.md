@@ -31,23 +31,13 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_CL`](../tables/corelight-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_CL`](../tables/corelight-cl.md) | ? | ? | ? |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
-
-## Associated Connectors
-
-The following connectors provide data for this parser:
-
-| Connector | Solution |
-|:----------|:---------|
-| [CorelightConnectorExporter](../connectors/corelightconnectorexporter.md) | [Corelight](../solutions/corelight.md) |
-
-**Solutions:** [Corelight](../solutions/corelight.md)
 
 ## References
 

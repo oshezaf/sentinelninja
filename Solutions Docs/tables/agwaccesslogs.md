@@ -25,7 +25,7 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (48 columns)
+## Schema (51 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwaccesslogs)
 
@@ -35,6 +35,9 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdvancedRoutingConditionSetName | string | The advanced routing condition set associated with the given request log. |
+| AdvancedRoutingMapName | string | The advanced routing map associated with the given request log. |
+| AdvancedRoutingRulePriority | string | The priority of the advanced routing rule associated with the given request log. |
 | BackendPoolName | string | The backend pool associated with the given request log. |
 | BackendSettingName | string | The backend setting name associated with the given request log. |
 | BackendSslCipher | string | Cipher suite used for TLS communication with the backend server. |

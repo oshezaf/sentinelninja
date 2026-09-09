@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ? | ✓ | ? |
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ? | ✓ | ? |
+| [`TrendMicroCASV2_CL`](../tables/trendmicrocasv2-cl.md) | ✗ | ✓ | ✗ |
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 400 |
-| **Solutions** | 68 |
+| **Playbooks using** | 434 |
+| **Solutions** | 78 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -17,15 +17,15 @@
 |:---------|:---------|------------:|--------:|
 | [2S-MISP-Forwarder](../content/standalone-content-2s-misp-forwarder-5acdf96c.md) | 📄 Standalone | 0 | 1 |
 | [2S-MISP-Orchestrator](../content/standalone-content-2s-misp-orchestrator-036fcfa3.md) | 📄 Standalone | 0 | 9 |
-| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 0 | 1 |
+| [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [AD4IoT-AutoAlertStatusSync](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 0 | 1 |
 | [AD4IoT-CVEAutoWorkflow](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-cveautoworkflow-d92bf631.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 0 | 1 |
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [Add IP Entity To Named Location](../content/standalone-content-add-ip-entity-to-named-location-93d6bf5a.md) | 📄 Standalone | 0 | 3 |
 | [Add IP Entity To Network Security Group](../content/standalone-content-add-ip-entity-to-network-security-group-6470a74d.md) | 📄 Standalone | 0 | 2 |
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 0 | 3 |
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
-| [Affected-Key-Credentials-Scanner](../content/standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone | 0 | 1 |
+| [Affected Key Credentials Scanner](../content/standalone-content-affected-key-credentials-scanner-c9647a7d.md) | 📄 Standalone | 0 | 1 |
 | [Akamai Guardicore Incident-Enrichment — one-click bootstrap](../content/akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 9 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 0 | 2 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 0 | 5 |
@@ -147,6 +147,8 @@
 | [Fetch IP Details From Entrust - Entity](../content/entrust-identity-as-service-fetch-ip-details-from-entrust-entity-2644ec86.md) | [Entrust identity as Service](../solutions/entrust-identity-as-service.md) | 0 | 2 |
 | [Fetch User Details From Entrust](../content/entrust-identity-as-service-fetch-user-details-from-entrust-fe32694a.md) | [Entrust identity as Service](../solutions/entrust-identity-as-service.md) | 0 | 5 |
 | [Fetch User Details From Entrust - Entity](../content/entrust-identity-as-service-fetch-user-details-from-entrust-entity-7af1dfb0.md) | [Entrust identity as Service](../solutions/entrust-identity-as-service.md) | 0 | 5 |
+| [FileHash Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](../content/virustotal-filehash-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8cbea41.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
+| [FileHash Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API](../content/virustotal-filehash-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-a87c73a6.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
 | [Four Playbook templates - F5BigIP](../content/standalone-content-four-playbook-templates-f5bigip-225fa1ac.md) | 📄 Standalone | 0 | 7 |
 | [Get-AD4IoTDeviceCVEs - Alert](../content/standalone-content-get-ad4iotdevicecves-alert-065964fb.md) | 📄 Standalone | 0 | 1 |
 | [Get-AD4IoTDeviceCVEs - Incident](../content/iototthreatmonitoringwithdefenderforiot-get-ad4iotdevicecves-incident-60ab2386.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 0 | 1 |
@@ -190,6 +192,12 @@
 | [GIBTIA_Suspicious_ip_open_proxy](../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
 | [GIBTIA_Suspicious_ip_socks_proxy](../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
 | [GIBTIA_Suspicious_ip_tor_node](../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
+| [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - URLScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - Vulnerability Enrichment](../content/google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 2 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 0 | 1 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 0 | 2 |
 | [Guardicore-EnrichmentRunner](../content/akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 8 |
@@ -198,6 +206,7 @@
 | [Guardicore-ProcessIncidentEnrichment](../content/akamai-guardicore-guardicore-processincidentenrichment-185057ea.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 1 |
 | [Guardicore-ThreatIntel](../content/standalone-content-guardicore-threatintel-3c2ad2d1.md) | 📄 Standalone | 0 | 1 |
 | [HaveIBeenPwnedEmail](../content/standalone-content-haveibeenpwnedemail-c80f9114.md) | 📄 Standalone | 0 | 1 |
+| [HoneyLabs-EnrichIncident-IP](../content/honeylabs-honeylabs-enrichincident-ip-e06c1d7f.md) | [HoneyLabs](../solutions/honeylabs.md) | 0 | 1 |
 | [Illusive-SentinelIncident-Enrichment](../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.md) | [Illusive Active Defense](../solutions/illusive-active-defense.md) | 0 | 5 |
 | [Illusive-SentinelIncident-Response](../content/illusive-active-defense-illusive-sentinelincident-response-793f8fd5.md) | [Illusive Active Defense](../solutions/illusive-active-defense.md) | 0 | 33 |
 | [Incident Assignment Shifts](../content/sentinelsoaressentials-incident-assignment-shifts-da9095cc.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) | 0 | 1 |
@@ -233,6 +242,8 @@
 | [Ingest Microsoft Defender XDR insights into Dynatrace](../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.md) | [Intel471](../solutions/intel471.md) | 0 | 1 |
+| [IP Enrichment - Virus Total Report  - Incident Triggered using Log Ingestion API](../content/virustotal-ip-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-7d47e0b2.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
+| [IP Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](../content/virustotal-ip-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8973213.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
 | [IronNet_UpdateIronDefenseAlerts](../content/ironnet-irondefense-ironnet-updateirondefensealerts-20819590.md) | [IronNet IronDefense](../solutions/ironnet-irondefense.md) | 0 | 11 |
 | [IronNet_UpdateSentinelIncidents](../content/ironnet-irondefense-ironnet-updatesentinelincidents-cc18ec68.md) | [IronNet IronDefense](../solutions/ironnet-irondefense.md) | 0 | 3 |
 | [IronNet_Validate_IronNet_API](../content/ironnet-irondefense-ironnet-validate-ironnet-api-1e64f62c.md) | [IronNet IronDefense](../solutions/ironnet-irondefense.md) | 0 | 9 |
@@ -277,6 +288,12 @@
 | [Open-ServiceDeskPlusOnDemand-Ticket](../content/standalone-content-open-servicedeskplusondemand-ticket-cea26c5c.md) | 📄 Standalone | 0 | 1 |
 | [Post Message Slack Via Webhook](../content/standalone-content-post-message-slack-via-webhook-e50cb593.md) | 📄 Standalone | 0 | 1 |
 | [Post-Tags-And-Comments-To-Your-IntSights-Account](../content/standalone-content-post-tags-and-comments-to-your-intsights-account-771a2367.md) | 📄 Standalone | 0 | 2 |
+| [PRODAFT USTA - Backfill Malicious URLs](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malicious-urls-4dfc7c81.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
+| [PRODAFT USTA - Backfill Malware Hashes](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malware-hashes-3f720674.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
+| [PRODAFT USTA - Backfill Phishing Sites](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-phishing-sites-a323edfb.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
+| [PRODAFT USTA - Import Malicious URLs](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malicious-urls-b406db8c.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
+| [PRODAFT USTA - Import Malware Hashes](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malware-hashes-3fd88ec8.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
+| [PRODAFT USTA - Import Phishing Sites](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-phishing-sites-9a061ecc.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 0 | 1 |
 | [PRODAFTUstaATP-Backfill](../content/prodaft-usta-account-takeover-prevention-prodaftustaatp-backfill-6bdc69a2.md) | [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) | 0 | 2 |
 | [PRODAFTUstaPCFI-Backfill](../content/prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfi-backfill-5ae17346.md) | [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) | 0 | 2 |
 | [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-pure-storage-flashblade-file-system-snapshot-2cf3736e.md) | [Pure Storage](../solutions/pure-storage.md) | 0 | 4 |
@@ -310,6 +327,10 @@
 | [Revoke Entra ID  Sign-in session using entity trigger](../content/microsoft-entra-id-revoke-entra-id-sign-in-session-using-entity-trigger-6211e7fd.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 0 | 1 |
 | [Revoke Entra ID SignIn Sessions - incident trigger](../content/microsoft-entra-id-revoke-entra-id-signin-sessions-incident-trigger-e0f6ae42.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 0 | 1 |
 | [Revoke-Entra ID SignInSessions alert trigger](../content/microsoft-entra-id-revoke-entra-id-signinsessions-alert-trigger-c72ead46.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 0 | 1 |
+| [RFI-lookup-and-save-user](../content/recorded-future-identity-rfi-lookup-and-save-user-ec7fa68f.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 1 |
+| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 1 |
+| [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 1 |
+| [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 2 |
 | [Rubrik Advanced Threat Hunt](../content/rubriksecuritycloud-rubrik-advanced-threat-hunt-f99aa45a.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 2 |
 | [Rubrik Anomaly Analysis](../content/rubriksecuritycloud-rubrik-anomaly-analysis-bb96264b.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 9 |
 | [Rubrik Anomaly Generate Downloadable Link](../content/rubriksecuritycloud-rubrik-anomaly-generate-downloadable-link-81d9c2dd.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 2 |
@@ -337,6 +358,7 @@
 | [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment-6996dff4.md) | [SlashNext](../solutions/slashnext.md) | 0 | 4 |
 | [SOCRadar-Alarm-Import](../content/socradar-socradar-alarm-import-08438e78.md) | [SOCRadar](../solutions/socradar.md) | 0 | 6 |
 | [SOCRadar-Alarm-Sync](../content/socradar-socradar-alarm-sync-1ffe3246.md) | [SOCRadar](../solutions/socradar.md) | 0 | 4 |
+| [Speculus Incident Enrichment - Playbook](../content/speculus-threat-intelligence-speculus-incident-enrichment-playbook-9d6bf654.md) | [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) | 0 | 1 |
 | [Spur IP Enrichment](../content/spur-spur-ip-enrichment-199e693a.md) | [Spur](../solutions/spur.md) | 0 | 2 |
 | [Spur IP Enrichment](../content/spur-spur-ip-enrichment-9f8c24e8.md) | [Spur](../solutions/spur.md) | 0 | 2 |
 | [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 0 | 1 |
@@ -344,6 +366,15 @@
 | [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 7 |
 | [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 4 |
 | [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 0 | 1 |
+| [StratoSecure - Assign Owner](../content/stratosecure-stratosecure-assign-owner-9b875cc8.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [StratoSecure - Create Azure DevOps Work Item](../content/stratosecure-stratosecure-create-azure-devops-work-item-eeb39a49.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [StratoSecure - Create Exception / Accept Risk](../content/stratosecure-stratosecure-create-exception-accept-risk-7a9eba6c.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [StratoSecure - Create Jira Ticket](../content/stratosecure-stratosecure-create-jira-ticket-cccd8afb.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [StratoSecure - Escalate to Owner via Email](../content/stratosecure-stratosecure-escalate-to-owner-via-email-36e9ee8f.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [StratoSecure - Notify Microsoft Teams](../content/stratosecure-stratosecure-notify-microsoft-teams-bf1e8e3f.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
+| [Summarize Data for DNS Essentials Solution using Log Ingestion API](../content/dns-essentials-summarize-data-for-dns-essentials-solution-using-log-ingestion-api-1b0fa700.md) | [DNS Essentials](../solutions/dns-essentials.md) | 0 | 2 |
+| [Summarize Data for Network Session Essentials using log ingestion API](../content/network-session-essentials-summarize-data-for-network-session-essentials-using-log-ingestion-api-a5a818a0.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 0 | 9 |
+| [Summarize Web Session Data using Log Ingestion API](../content/web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 0 | 4 |
 | [Sync - Incident Comment To M365D On Update](../content/standalone-content-sync-incident-comment-to-m365d-on-update-c5a6b476.md) | 📄 Standalone | 0 | 1 |
 | [Sync Jira from Sentinel - Create incident](../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 0 | 1 |
 | [Sync Jira to Sentinel - Assigned User](../content/atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 0 | 1 |
@@ -365,29 +396,32 @@
 | [Update-NamedLocations-TOR](../content/github-only-playbookname-f38224c8.md) | 🔗 GitHub Only | 0 | 4 |
 | [Update-VIPUsers-Watchlist-from-AzureAD-Group](../content/standalone-content-update-vipusers-watchlist-from-azuread-group-e1b46577.md) | 📄 Standalone | 0 | 4 |
 | [Update-Watchlist-With-NamedLocations](../content/github-only-update-watchlist-with-namedlocations-b93db1a5.md) | 🔗 GitHub Only | 0 | 2 |
+| [URL Enrichment - Virus Total Domain Report - Alert Triggered using Log Ingestion API](../content/virustotal-url-enrichment-virus-total-domain-report-alert-triggered-using-log-ingestion-api-4c5e4687.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
+| [URL Enrichment - Virus Total Domain Report - Incident Triggered using Log Ingestion API](../content/virustotal-url-enrichment-virus-total-domain-report-incident-triggered-using-log-ingestion-api-bc339f3d.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
+| [URL Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](../content/virustotal-url-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-4c819672.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
+| [URL Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API](../content/virustotal-url-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-781e576b.md) | [VirusTotal](../solutions/virustotal.md) | 0 | 2 |
 | [UserEnrichment.template](../content/github-only-userenrichment.template-384b9ce8.md) | 🔗 GitHub Only | 0 | 16 |
 | [Vaikora AI Agent Signals to CrowdStrike](../content/vaikora-crowdstrike-threatintelligence-vaikora-ai-agent-signals-to-crowdstrike-1c0c6d82.md) | [Vaikora-CrowdStrike-ThreatIntelligence](../solutions/vaikora-crowdstrike-threatintelligence.md) | 0 | 3 |
 | [Vaikora AI Agent Signals to SentinelOne](../content/vaikora-sentinelone-threatintelligence-vaikora-ai-agent-signals-to-sentinelone-f649433d.md) | [Vaikora-SentinelOne-ThreatIntelligence](../solutions/vaikora-sentinelone-threatintelligence.md) | 0 | 4 |
 | [Vaikora for O365 - Quarantine Incident Responder](../content/vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.md) | [Vaikora-O365](../solutions/vaikora-o365.md) | 0 | 1 |
 | [Vaikora to Microsoft Defender for Cloud](../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) | 0 | 1 |
+| [Vectra Add Note To Detections](../content/vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
+| [Vectra Add Tag To Detections](../content/vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Add Tag To Entity Selected Detections](../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Assign Dynamic User To Entity](../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 5 |
 | [Vectra Assign Static User To Entity](../content/vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 4 |
 | [Vectra Close Detections](../content/vectra-xdr-vectra-close-detections-93f91aea.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
-| [Vectra Decorate Incident Based On Tag](../content/vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Decorate Incident Based On Tags And Notify](../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
+| [Vectra Close Detections On Incident Close](../content/vectra-xdr-vectra-close-detections-on-incident-close-02648c3f.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
+| [Vectra Detection Timeline Link](../content/vectra-xdr-vectra-detection-timeline-link-32404588.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Dynamic Assign Member To Group](../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
-| [Vectra Dynamic Resolve Assignment](../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 5 |
 | [Vectra Generate Access Token](../content/vectra-xdr-vectra-generate-access-token-569f7428.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 5 |
-| [Vectra Mark Detections As Fixed](../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
 | [Vectra Open Closed Detections](../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
-| [Vectra Operate On Entity Source IP](../content/vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
+| [Vectra Set Detection Status](../content/vectra-xdr-vectra-set-detection-status-dd76d3f7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 1 |
-| [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 4 |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Veeam-ChangeCollectionTime](../content/veeam-veeam-changecollectiontime-6e10e57b.md) | [Veeam](../solutions/veeam.md) | 0 | 2 |
 | [Veeam-SetupConnections](../content/veeam-veeam-setupconnections-e3e98b5f.md) | [Veeam](../solutions/veeam.md) | 0 | 22 |

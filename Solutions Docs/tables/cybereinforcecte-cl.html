@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CybereinforceCTECL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cybereinforcecte_cl">CybereinforceCTE_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (10 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CybereinforceCTE_CL.json">KQL validation test schema</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Actor</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Details</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Source</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">guid</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/cybereinforce.html">Cybereinforce</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/cybereinforce-cte.html">Cybereinforce Threat Enforcement (CTE)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (19)</h2>
+<h3 id="analytic-rules">Analytic Rules (18)</h3>
+<p><strong>In solution <a href="../solutions/cybereinforce.html">Cybereinforce</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-admin-login-detected-65bc5f1d-d29d-4729-a5a6-d9614b0900e0-a0407281.html">CTE - Admin Login Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-blocked-url-attempted-1747715b-1a94-411a-a2b5-d8c40422767c-daec9935.html">CTE - Blocked URL Attempted</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-cti-blocked-url-attempted-49da5494-b6b9-42c0-9b9b-b7b219dc8173-545b345e.html">CTE - CTI Blocked URL Attempted</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-compromised-device-suspected-high-volume-ioc-blocks-59246163-4cc0-4e96-a0f0-f098a83cf425-605d3699.html">CTE - Compromised Device Suspected (High-Volume IOC Blocks)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-device-enrolled-but-on-hold-21818920-85eb-4955-a7cc-f62c731f32ac-bc8c5e8e.html">CTE - Device Enrolled but On Hold</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-device-license-capacity-critical-99-7f4af730-5c89-4f7a-aa7a-933b6e9309b5-efe7ad1d.html">CTE - Device License Capacity Critical (99%)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-device-license-capacity-high-95-5e644219-6067-4849-85df-7458aa575aea-a0382acc.html">CTE - Device License Capacity High (95%)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-device-repeatedly-blocked-across-multiple-days-8fbb095d-3a35-483b-b264-25b858a52f4d-b3a5afbb.html">CTE - Device Repeatedly Blocked Across Multiple Days</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-enrollment-token-generated-0be1ebaf-36f8-49a6-a3b6-56491ccfda7f-28b4c99f.html">CTE - Enrollment Token Generated</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-license-expiring-critically-7-days-c32e5873-00b7-45fc-9a7e-43e9d0018978-3272c8d4.html">CTE - License Expiring Critically (7 Days)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-license-expiring-soon-30-days-ec305a18-2520-443d-9f54-18dea3637a15-925ca5a4.html">CTE - License Expiring Soon (30 Days)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-possible-company-wide-c2-campaign-multiple-devices,-same-destination-ec08477d-87a1-498d-8f34-72b8ec8f3758-e8b03e43.html">CTE - Possible Company-Wide C2 Campaign (Multiple Devices, Same Destination)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-risky-device-multiple-ioc-url-hits-e1c0f32d-a57b-42ae-8038-b869bca54fef-caf87ce1.html">CTE - Risky Device (Multiple IOC URL Hits)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-rule-capacity-critical-95-bd06aa7c-8aef-40f3-bf32-a70b5d48f79e-935bddf8.html">CTE - Rule Capacity Critical (95%)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-rule-capacity-high-90-b3eb26f4-affb-4a61-8b54-8780d234008e-606f6071.html">CTE - Rule Capacity High (90%)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-security-rule-changed-created-updated-deleted-cf7ad1f5-7325-4bda-83d4-957ec943c457-0e7f1e65.html">CTE - Security Rule Changed (Created/Updated/Deleted)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-stale-device-no-heartbeat-in-30-days-a6d51bc1-bf51-47d1-9885-b81762cd6306-5451b5f0.html">CTE - Stale Device (No Heartbeat in 30 Days)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cte-sudden-block-spike-detected-fbbf3418-f1d8-4bd5-b7da-137a70af6bce-e493a628.html">CTE - Sudden Block Spike Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>In solution <a href="../solutions/cybereinforce.html">Cybereinforce</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/cybereinforce-cybereinforcecte-804db96b.html">CybereinforceCTE</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

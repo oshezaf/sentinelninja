@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.5.2</td>
+  <td style="text-align:left">3.5.3</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-02-19</td>
+  <td style="text-align:left">2026-09-03</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel">Azure Marketplace</a> · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (47%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel">Azure Marketplace</a> · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (71%)</td>
 </tr>
 </tbody>
 </table>
@@ -84,10 +84,11 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/rubrikprotectionstatus.html">Rubrik Security Cloud Protection Status (using Codeless Connector Framework)</a></li>
 <li><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a> 🔶</li>
+<li><a href="../connectors/rubriksecurityeventspush.html">Rubrik Security Cloud Security Events (Push)</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
@@ -110,22 +111,22 @@
 </tr>
 <tr>
   <td><a href="../tables/rubrik-anomaly-data-cl.html"><code>Rubrik_Anomaly_Data_CL</code></a> 🔶</td>
-  <td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+  <td><a href="../connectors/rubriksecurityeventspush.html">Rubrik Security Cloud Security Events (Push)</a>, <a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
   <td>Analytics</td>
 </tr>
 <tr>
   <td><a href="../tables/rubrik-events-data-cl.html"><code>Rubrik_Events_Data_CL</code></a> 🔶</td>
-  <td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+  <td><a href="../connectors/rubriksecurityeventspush.html">Rubrik Security Cloud Security Events (Push)</a>, <a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
   <td>Analytics</td>
 </tr>
 <tr>
   <td><a href="../tables/rubrik-ransomware-data-cl.html"><code>Rubrik_Ransomware_Data_CL</code></a> 🔶</td>
-  <td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+  <td><a href="../connectors/rubriksecurityeventspush.html">Rubrik Security Cloud Security Events (Push)</a>, <a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
   <td>-</td>
 </tr>
 <tr>
   <td><a href="../tables/rubrik-threathunt-data-cl.html"><code>Rubrik_ThreatHunt_Data_CL</code></a> 🔶</td>
-  <td><a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
+  <td><a href="../connectors/rubriksecurityeventspush.html">Rubrik Security Cloud Security Events (Push)</a>, <a href="../connectors/rubriksecuritycloudazurefunctions.html">Rubrik Security Cloud data connector</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -285,6 +286,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.5.3</td>
+  <td>03-09-2026</td>
+  <td>Added RubrikCCFConnector to ingest Anomaly, Ransomware, ThreatHunt and other events data along with audit logs via webhook.</td>
+</tr>
 <tr>
   <td>3.5.2</td>
   <td>16-07-2026</td>

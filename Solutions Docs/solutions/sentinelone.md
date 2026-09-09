@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-26 |
-| **Last Updated** | 2026-08-12 |
+| **Last Updated** | 2026-09-02 |
 | **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (86%) |
 
 The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bring SentinelOne events to your Microsoft Sentinel Workspace to inform and to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. 
  
@@ -137,6 +137,8 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.3       | 25-08-2026                     | Fixed the SentinelOne parser to restore ActivityType and CCF records while preserving SentinelOne V2 alerts |
+| 3.1.2       | 17-08-2026                     | Fix V2 parser type mismatch and fallback.   |
 | 3.1.1       | 10-08-2026                     | Advanced **SentinelOne V2 (via Codeless Connector Framework)** **Data Connector** from Public Preview to Global Availability and added the **AlertDescription** field to the alerts stream |
 | 3.1.0       | 01-07-2026                     | Added new **SentinelOne V2 (via Codeless Connector Framework)** **Data Connector** (ingests alerts via the GraphQL API) |
 | 3.0.10      | 03-06-2026                     | Updated CCP **Data Connector** to support multiple instances (multi-connection) for MSSP scenarios |

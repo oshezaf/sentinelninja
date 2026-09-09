@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ PRODAFT USTA - IoC Threat Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="prodaft-usta---ioc-threat-intelligence">⚠️ PRODAFT USTA - IoC Threat Intelligence</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaIoC.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>PRODAFTUstaIoCUploadIndicators</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">PRODAFT</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/prodaft-usta-ioc-threat-intelligence.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function-ti-upload-api-unknown.html">Azure Function (TI Upload API)|Unknown</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence/Data%20Connectors/PRODAFTUstaIoC_UploadIndicatorsAPI.json">PRODAFTUstaIoC_UploadIndicatorsAPI.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/stix-2.1-upload-indicators-api.html">STIX 2.1 Upload Indicators API</a> — <em>Connector definition filename suffix '_UploadIndicatorsAPI' indicates STIX 2.1 Upload Indicators API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The PRODAFT USTA IoC Threat Intelligence connector ingests indicators of compromise (malicious URLs, malware hashes, and phishing sites) from the PRODAFT USTA platform into Microsoft Sentinel's Threat Intelligence as STIX indicators via the Upload STIX Objects API. Ingestion is performed by the import playbooks shipped with this solution (one per IoC feed); where a record carries resolved <code>ip_addresses</code>, those addresses are added to the same indicator's pattern as <code>ipv4-addr</code>/<code>ipv6-addr</code> observables; indicators appear in the Threat Intelligence blade and in the <code>ThreatIntelIndicators</code> table under a per-feed <code>SourceSystem</code> — <code>PRODAFT USTA - Malicious URLs</code>, <code>PRODAFT USTA - Malware Hashes</code> and <code>PRODAFT USTA - Phishing Sites</code> — so <code>SourceSystem startswith 'PRODAFT USTA'</code> selects every USTA indicator. After installing the solution, deploy and authorize the import playbooks by following the guidance in the Manage solution view.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Workspace role assignments for the playbooks</strong>: Every import and backfill playbook uses a system-assigned managed identity, which needs the <strong>Microsoft Sentinel Contributor</strong> role on the workspace to call the Upload STIX Objects API. The three <strong>import</strong> playbooks additionally read their ingestion watermark from the <code>ThreatIntelIndicators</code> table and therefore also need <strong>Log Analytics Reader</strong> on the workspace — Microsoft Sentinel Contributor does not cover the <code>Microsoft.OperationalInsights/workspaces/read</code> action that read performs.</li>
+<li><strong>PRODAFT USTA API key</strong>: A long-lived PRODAFT USTA API key with access to the Security Intelligence IoC endpoints is required.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Install the core Threat Intelligence solution</strong></p>
+<p>This connector lands indicators in the <code>ThreatIntelIndicators</code> table and the Threat Intelligence blade. Install the Microsoft <strong>Threat Intelligence</strong> solution from the Content hub first, so the blade and the source-agnostic TI-map analytic rules are available.</p>
+<p><strong>2. Deploy the PRODAFT USTA import playbooks</strong></p>
+<p>This solution ships three hourly import playbooks — <strong>PRODAFTUstaIoC-ImportMaliciousUrls</strong>, <strong>PRODAFTUstaIoC-ImportMalwareHashes</strong>, and <strong>PRODAFTUstaIoC-ImportPhishingSites</strong> — plus a matching on-demand backfill playbook per feed (<strong>PRODAFTUstaIoC-BackfillMaliciousUrls</strong>, <strong>-BackfillMalwareHashes</strong>, <strong>-BackfillPhishingSites</strong>) for loading history. Deploy them from the Manage solution view (or the Automation blade), supplying your USTA base URL, USTA API key, and the name of your Microsoft Sentinel workspace.</p>
+<p><strong>3. Authorize the playbooks' managed identity</strong></p>
+<p>Each playbook uses a system-assigned managed identity. On the <strong>Log Analytics workspace</strong> → Access control (IAM) → Add role assignment — open IAM on the workspace, <strong>not</strong> on the Logic App, or the assignment is scoped to the playbook and grants no workspace access — grant that identity <strong>Microsoft Sentinel Contributor</strong> (needed by every playbook, for the Upload STIX Objects call) and, for the three <strong>import</strong> playbooks, also <strong>Log Analytics Reader</strong> (needed for the watermark query — without it the run fails with <code>AuthorizationFailed</code> on <code>Microsoft.OperationalInsights/workspaces/read</code>). Once granted, the playbooks poll USTA hourly and push new indicators; the connector shows <strong>Connected</strong> after the first indicators arrive.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

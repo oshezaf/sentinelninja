@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Compliance |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-06 |
 | **Last Updated** | 2026-01-14 |
 | **Solution Folder** | [CybersecurityMaturityModelCertification(CMMC)2.0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cmmcv2) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cmmcv2) · Popularity: 🔵 Medium (53%) |
 
 The Microsoft Sentinel Cybersecurity Maturity Model Certification (CMMC) 2.0 solution provides a mechanism for viewing log queries aligned to CMMC 2.0 requirements across the Microsoft portfolio. This solution enables governance and compliance teams to design, build, monitor, and respond to CMMC 2.0 requirements across 25+ Microsoft products. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings. This solution enables Security Architects, Engineers, SecOps Analysts, Managers, and IT Pros to gain situational awareness visibility for the security posture of cloud workloads. There are also recommendations for selecting, designing, deploying, and configuring Microsoft offerings for alignment with respective security best practice.
 
@@ -117,9 +117,9 @@ Welcome to the Microsoft Sentinel: Cybersecurity Maturity Model Certification (C
 You can deploy the solution by clicking on the buttons below:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersecurityMaturityModelCertification(CMMC)2.0%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersecurityMaturityModelCertification(CMMC)2.0%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersecurityMaturityModelCertification(CMMC)2.0%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovernbutton"/></a>
 
-![Workbook Overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification(CMMC)2.0/Workbooks/Images/CybersecurityMaturityModelCertification(CMMC)Black1.png?raw=true)
+![Workbook Overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification(CMMC)2.0/Workbooks/Images/CybersecurityMaturityModelCertification(CMMC)Workbook.png?raw=true)
 
 ## [Recommended Microsoft Sentinel Roles](https://docs.microsoft.com/azure/sentinel/roles) / [Recommended Microsoft Defender for Cloud Roles](https://docs.microsoft.com/azure/defender-for-cloud/permissions#roles-and-allowed-actions)
 | <strong> Roles </strong> | <strong> Rights </strong> | 

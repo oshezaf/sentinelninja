@@ -22,9 +22,9 @@ This query visualises total emails with Spam detections over time by various Spa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DetectionMethods has "Spam"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | ✓ | ✗ | ✓ |
 
 ---
 

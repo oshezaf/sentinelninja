@@ -136,6 +136,7 @@ This table collects data from the following Azure resource types:
 - `microsoft.dbformysql/flexibleservers`
 - `microsoft.dbforpostgresql/flexibleservers`
 - `microsoft.devcenter/devcenters`
+- `microsoft.horizondb/clusters`
 - `microsoft.compute/virtualmachines`
 - `microsoft.machinelearningservices/workspaces`
 - `microsoft.media/mediaservices`

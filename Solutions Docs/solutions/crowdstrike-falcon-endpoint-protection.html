@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.3.9</td>
+  <td style="text-align:left">3.4.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-07-27</td>
+  <td style="text-align:left">2026-08-26</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (86%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (90%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -199,27 +199,27 @@
   <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/crowdstrikealerts.html"><code>CrowdStrikeAlerts</code></a></td>
+  <td><a href="../tables/crowdstrikealertsv2-cl.html"><code>CrowdStrikeAlertsV2_CL</code></a></td>
   <td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/crowdstrikecases.html"><code>CrowdStrikeCases</code></a></td>
+  <td><a href="../tables/crowdstrikecasesv2-cl.html"><code>CrowdStrikeCasesV2_CL</code></a></td>
   <td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/crowdstrikedetections.html"><code>CrowdStrikeDetections</code></a></td>
+  <td><a href="../tables/crowdstrikedetectionsv2-cl.html"><code>CrowdStrikeDetectionsV2_CL</code></a></td>
   <td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/crowdstrikehosts.html"><code>CrowdStrikeHosts</code></a></td>
+  <td><a href="../tables/crowdstrikehostsv2-cl.html"><code>CrowdStrikeHostsV2_CL</code></a></td>
   <td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/crowdstrikevulnerabilities.html"><code>CrowdStrikeVulnerabilities</code></a></td>
+  <td><a href="../tables/crowdstrikevulnerabilitiesv2-cl.html"><code>CrowdStrikeVulnerabilitiesV2_CL</code></a></td>
   <td><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
@@ -299,7 +299,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>10 content item(s)</strong> (9 in solution, 1 discovered 🔍):</p>
+<p>This solution includes <strong>11 content item(s)</strong> (9 in solution, 2 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -312,9 +312,9 @@
 <tbody>
 <tr>
   <td style="text-align:left">Parsers</td>
-  <td style="text-align:right">4</td>
+  <td style="text-align:right">5</td>
   <td style="text-align:right">3</td>
-  <td style="text-align:right">1</td>
+  <td style="text-align:right">2</td>
 </tr>
 <tr>
   <td style="text-align:left">Playbooks</td>
@@ -413,6 +413,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/crowdstrikeapi.html">CrowdStrikeApi</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../parsers/crowdstrikefalconeventstream.html">CrowdStrikeFalconEventStream</a></td>
   <td style="text-align:left">-</td>
@@ -527,6 +532,16 @@ https://developer.crowdstrike.com/api-reference/overview/</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.4.1</td>
+  <td>25-08-2026</td>
+  <td>Fixed the broken <strong>Deploy to Azure Gov</strong> badge image across <strong>Data Connector</strong> and <strong>Playbook</strong> docs</td>
+</tr>
+<tr>
+  <td>3.4.0</td>
+  <td>13-08-2026</td>
+  <td>Updated <strong>Crowdstrike API connector</strong> by adding V2 tables and a new parser</td>
+</tr>
 <tr>
   <td>3.3.9</td>
   <td>24-07-2026</td>

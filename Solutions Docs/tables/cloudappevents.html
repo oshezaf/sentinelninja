@@ -97,7 +97,7 @@
 <tr>
   <td style="text-align:left">AccountId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers</td>
+  <td style="text-align:left">An identifier for the account as found by Microsoft Cloud App Security. Could be Microsoft Entra object ID, user principal name, or other identifiers</td>
 </tr>
 <tr>
   <td style="text-align:left">AccountObjectId</td>
@@ -319,7 +319,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (184)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (216)</h2>
 <h3 id="analytic-rules">Analytic Rules (10)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
@@ -405,7 +405,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (167)</h3>
+<h3 id="hunting-queries">Hunting Queries (199)</h3>
 <p><strong>In solution <a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a>:</strong></p>
 <table>
 <thead>
@@ -488,7 +488,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-detect-teams-it-helpdesk-impersonation-msg-phishing-&amp;-vishing-7c4dad1a-ac02-476b-898d-192d8ef20afb-dc496711.html">Detect Teams IT Helpdesk Impersonation Msg Phishing &amp; Vishing</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code><br><code>Application == &quot;Microsoft Teams&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
@@ -515,6 +519,26 @@
   <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-call-and-message-submissions-over-time-ef13dc37-6205-4cea-b969-2b6e0d8ab509-700dac99.html">Microsoft Teams Call and Message Submissions Over Time</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-calls-and-impersonation-style-calls-by-hour-of-day-55e28f8e-cc6d-4cc9-af24-398a6e2a721d-0ccfd1ef.html">Microsoft Teams Calls and Impersonation-Style Calls by Hour of Day</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CallParticipantDetail&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-impersonation-identities-by-fake-display-name-7614cfa2-0fa4-446c-9f03-f0980d67ee20-ff94d9e6.html">Microsoft Teams Impersonation Identities by Fake Display Name</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsImpersonationDetected&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-reported-microsoft-teams-calls-225da6aa-6b34-448d-ab0b-72219d52bd44-184ac4aa.html">Reported Microsoft Teams Calls</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-microsoft-teams-callers-by-impersonation-style-identity-37f3d0f5-8ac3-46a3-9b27-a4fd082b6348-8657cfbc.html">Suspicious Microsoft Teams Callers by Impersonation-Style Identity</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CallParticipantDetail&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.html">Teams Admin submission of Malware and Phish daily trend</a></td>
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
@@ -539,6 +563,10 @@
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-reporters-of-microsoft-teams-calls-and-messages-2324aae0-6628-4842-aa36-ae5bf13f3400-f503aebc.html">Top Reporters of Microsoft Teams Calls and Messages</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fn-d236f728-8b0f-4b4f-acf7-e4707993b841-6d85f0eb.html">Top accounts performing admin submissions (FN)</a></td>
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
@@ -548,6 +576,10 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.html">Top accounts performing user submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-fp-2bf1fded-7eb8-4cff-9e1d-efd204cac3f6-2a2f1b21.html">Top accounts performing user submissions (FP)</a></td>
   <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
@@ -569,6 +601,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.html">User Email Submission Trend (FN)</a></td>
   <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fp-97f0d020-be70-4732-b5d7-abcfeecc459c-9d7646cc.html">User Email Submission Trend (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.html">User Email Submissions (FN) - Top Detection Overrides by Admins</a></td>
@@ -595,12 +631,40 @@
   <td style="text-align:left"><code>ActionType contains &quot;UserSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-p2-senders-37511ce4-f88e-4e2d-b505-27411af1a226-60212493.html">User Email Submissions (FP) - Top Inbound P2 Senders</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-inbound-subjects-3f252bcb-71a8-4c04-bed9-4dd53419ecb6-bb2077e5.html">User Email Submissions (FP) - Top Inbound Subjects</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-intra-org-p2-senders-6b26701a-a1c7-4782-a662-f44cdca5bb5f-ab52681b.html">User Email Submissions (FP) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fp-top-p2-sender-domains-97f19cad-130a-47b3-a3bb-cbc2e66845f0-45db855d.html">User Email Submissions (FP) - Top P2 Sender Domains</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.html">User Email Submissions accuracy vs Admin review verdict</a></td>
   <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
   <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-phish-fp-4ae87c11-4030-42cb-b87d-993198ca40e0-e1152402.html">User Submissions by Detection Method - Phish (FP)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-detection-method-spam-fp-05d933db-f605-48d5-a177-af64be537cf4-20a4c5b9.html">User Submissions by Detection Method - Spam (FP)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-submissions-by-submission-state-fp-2f8a0226-b3f3-4a31-b32b-2dd15d644625-77c67bc7.html">User Submissions by Submission State (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.html">User email submissions (FN) from Junk Folder</a></td>
@@ -707,7 +771,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.html">Changes to Blocked Teams Domains</a></td>
@@ -720,6 +784,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/github-only-credentialsaddafteradminconsentedtoapp%5Bnobelium%5D-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.html">CredentialsAddAfterAdminConsentedToApp[Nobelium]</a></td>
   <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Consent to application.,Update application - Certificates</code><br><code>secrets management&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-display-name-detect-teams-it-helpdesk-impersonation-msg-phishing-&amp;-vishing-d9fee5bc-e4f8-4ae2-a729-dc399a419cce-1028ae30.html">Display Name - Detect Teams IT Helpdesk Impersonation Msg Phishing &amp; Vishing</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code><br><code>Application == &quot;Microsoft Teams&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-display-name-helpdesk-theme-impersonation-attack-detection-edd48210-532e-4560-a8fe-065240cd2f20-3b00897a.html">Display Name - Helpdesk theme impersonation attack detection</a></td>
@@ -846,6 +914,18 @@
   <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-teams-call-and-message-submissions-over-time-6dcfd16d-d9f0-45d1-a9d3-cb08fbf8465b-87f19948.html">Microsoft Teams Call and Message Submissions Over Time</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-teams-calls-and-impersonation-style-calls-by-hour-of-day-cdfc54c4-ea78-4008-9b50-da7e886bd8e2-4dd2b1c9.html">Microsoft Teams Calls and Impersonation-Style Calls by Hour of Day</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CallParticipantDetail&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-teams-impersonation-identities-by-fake-display-name-588c9935-c17b-4681-9bb1-ede0da2667bd-40636372.html">Microsoft Teams Impersonation Identities by Fake Display Name</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsImpersonationDetected&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-multiple-entra-id-admin-removals-7ffb31ee-f164-4613-a9a7-4d04d0dba5d7-8058f067.html">Multiple Entra ID Admin Removals</a></td>
   <td style="text-align:left"><code>ActionType in &quot;Remove eligible member from role.,Remove member from role.&quot;</code><br><code>ApplicationId == &quot;11161&quot;</code></td>
 </tr>
@@ -910,6 +990,10 @@
   <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-reported-microsoft-teams-calls-27cb923c-8d66-4caa-b52b-bce52e51d585-3a07133b.html">Reported Microsoft Teams Calls</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-risky-sign-in-with-device-registration-ce2b03f8-92a4-4ec7-b55b-e9fa562fafa4-dede1503.html">Risky Sign-in with Device Registration</a></td>
   <td style="text-align:left"><code>ActionType == &quot;Add registered owner to device.&quot;</code></td>
 </tr>
@@ -928,6 +1012,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/github-only-status-of-submissions-1c390fd7-2668-4445-9b7d-055f3851be5f-c0279593.html">Status of submissions</a></td>
   <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-suspicious-microsoft-teams-callers-by-impersonation-style-identity-f905bb00-9c5f-4889-bc39-7d0765521228-65047600.html">Suspicious Microsoft Teams Callers by Impersonation-Style Identity</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CallParticipantDetail&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.html">Suspicious sign-in attempts from QR code phishing campaigns</a></td>
@@ -1010,6 +1098,10 @@
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-top-reporters-of-microsoft-teams-calls-and-messages-d9ca4ab6-de3f-4c24-aaef-00d41332caf4-62e80e5e.html">Top Reporters of Microsoft Teams Calls and Messages</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-83e0c9bf.html">Top accounts performing Teams admin submissions FN or FP</a></td>
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
@@ -1038,6 +1130,10 @@
   <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-user-submissions-fp-fa0ce1b0-59fa-4fea-87e8-6752951cec3f-b73e8391.html">Top accounts performing user submissions (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-total-submissions-by-submission-state-47e8ea7f-a7eb-4fe3-a96b-efe01155d9d3-5774f28b.html">Total Submissions by Submission State</a></td>
   <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
 </tr>
@@ -1060,6 +1156,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/github-only-user-email-submission-trend-fn-395047c1-254e-43fb-ad6e-ae74c8e0a873-b9601c69.html">User Email Submission Trend (FN)</a></td>
   <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submission-trend-fp-98ed7471-ce5e-4d48-b9f9-dae4cf045b3e-f278cb32.html">User Email Submission Trend (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-top-detection-overrides-by-admins-a52e4273-cf3c-4125-b03d-41b99f64197f-ab3590ca.html">User Email Submissions (FN) - Top Detection Overrides by Admins</a></td>
@@ -1086,12 +1186,40 @@
   <td style="text-align:left"><code>ActionType contains &quot;UserSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-inbound-p2-senders-e1973a95-fd22-4669-8758-dba8f9828c8f-19aa7fe2.html">User Email Submissions (FP) - Top Inbound P2 Senders</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-inbound-subjects-b2c772f0-f6b2-406f-9a80-756b596f0b57-edd7e061.html">User Email Submissions (FP) - Top Inbound Subjects</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-intra-org-p2-senders-2e5e39ae-99f9-4ba0-b5c4-9e76919a0f53-5e9ac908.html">User Email Submissions (FP) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fp-top-p2-sender-domains-d090ed89-3c2b-4bd7-9b87-d8a5f552e174-9d172a45.html">User Email Submissions (FP) - Top P2 Sender Domains</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-user-email-submissions-accuracy-vs-admin-review-verdict-0d03314a-ecbe-47f0-b411-2a9471f26b46-7034a4a0.html">User Email Submissions accuracy vs Admin review verdict</a></td>
   <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-user-email-submissions-by-admin-review-status-mark-and-notify-6923a80a-e3df-4d81-a90d-63fc5b7f0bb5-8e95120c.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
   <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-submissions-by-detection-method-phish-fp-5990abd3-7e11-4441-947b-17e60c69f28f-03c0b9f7.html">User Submissions by Detection Method - Phish (FP)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-submissions-by-detection-method-spam-fp-91a1a3f0-1386-4c70-9c66-215f59b2af28-57f593cc.html">User Submissions by Detection Method - Spam (FP)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-submissions-by-submission-state-fp-f8637343-8fbc-48de-b31a-ed4bb68b60f2-3565ccc5.html">User Submissions by Submission State (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-from-junk-folder-a1eb19d6-9d86-425c-bd1d-86495c2ca714-e5bed1d6.html">User email submissions (FN) from Junk Folder</a></td>
@@ -1136,7 +1264,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType startswith &quot;AdminSubmission&quot;</code><br><code>ActionType startswith &quot;UserSubmission&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -1176,8 +1304,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (42 criteria, 152 total references)</h2>
-<p>References by type: 0 connectors, 152 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (45 criteria, 176 total references)</h2>
+<p>References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1191,6 +1319,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">34</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>34</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">30</td>
@@ -1199,12 +1335,12 @@
   <td style="text-align:center"><strong>30</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">24</td>
+  <td style="text-align:center">9</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>24</strong></td>
+  <td style="text-align:center"><strong>9</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
@@ -1239,15 +1375,15 @@
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission&quot;</code></td>
+  <td style="text-align:left"><code>ActionType == &quot;CallParticipantDetail&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
@@ -1279,7 +1415,23 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsImpersonationDetected&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ActionType == &quot;Set-AtpPolicyForO365&quot;</code><br><code>Application == &quot;Microsoft Exchange Online&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1360,6 +1512,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;AirInvestigationData&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code><br><code>Application == &quot;Microsoft Teams&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1503,14 +1663,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType == &quot;TeamsImpersonationDetected&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ActionType in &quot;MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1519,7 +1671,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Redelivery,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType startswith &quot;AdminSubmission&quot;</code><br><code>ActionType startswith &quot;UserSubmission&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1529,10 +1681,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>152</strong></td>
+  <td style="text-align:center"><strong>176</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>152</strong></td>
+  <td style="text-align:center"><strong>176</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1552,18 +1704,26 @@
 <tr>
   <td style="text-align:left"><code>UserSubmission</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">44</td>
+  <td style="text-align:center">58</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>44</strong></td>
+  <td style="text-align:center"><strong>58</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>AdminSubmissionSubmitted</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">39</td>
+  <td style="text-align:center">41</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>39</strong></td>
+  <td style="text-align:center"><strong>41</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AdminSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">16</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>16</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>MailItemsAccessed</code></td>
@@ -1574,20 +1734,12 @@
   <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AdminSubmission</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">11</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>11</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>FileMalwareDetected</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">11</td>
+  <td style="text-align:center">10</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>11</strong></td>
+  <td style="text-align:center"><strong>10</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains Submission</code></td>
@@ -1604,6 +1756,30 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Malware ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Phish ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>CallParticipantDetail</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains AdminSubmission</code></td>
@@ -1638,28 +1814,20 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Malware ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Phish ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Add service principal credentials.</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>TeamsImpersonationDetected</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>contains AdminSubmissionTriage</code></td>
@@ -1687,6 +1855,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Set-AtpPolicyForO365</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Redelivery</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1783,6 +1959,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>AirInvestigationData</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ChatCreated</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1974,14 +2158,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>TeamsImpersonationDetected</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>New-InboxRule</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2006,7 +2182,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Redelivery</code></td>
+  <td style="text-align:left"><code>Spam ZAP</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2014,7 +2190,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Spam ZAP</code></td>
+  <td style="text-align:left"><code>startswith AdminSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith UserSubmission</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2070,6 +2254,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Microsoft SharePoint Online</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Microsoft Teams</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2187,10 +2379,10 @@
 <tr>
   <td style="text-align:left"><code>MS Scanner ATP</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>

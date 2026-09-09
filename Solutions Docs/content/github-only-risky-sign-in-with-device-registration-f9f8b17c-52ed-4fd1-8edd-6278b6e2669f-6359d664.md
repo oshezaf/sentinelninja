@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Add registered owner to device"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add registered owner to device"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ## Associated Connectors
 

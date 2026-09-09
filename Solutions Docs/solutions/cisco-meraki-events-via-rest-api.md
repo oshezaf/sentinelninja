@@ -14,10 +14,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.1.0 |
+| **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-07-12 |
-| **Last Updated** | 2026-07-14 |
+| **Last Updated** | 2026-08-31 |
 | **Solution Folder** | [Cisco Meraki Events via REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Meraki%20Events%20via%20REST%20API) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomerakinativepoller) · Popularity: 🔵 Medium (78%) |
 
@@ -69,6 +69,8 @@ This solution uses **7 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.0       | 28-08-2026                     | Promoted the updated Cisco Meraki CCF REST API data connector introduced in version 3.1.0 to General Availability (GA). |
+| 3.1.1       | 24-08-2026                     | Standardized all CCF Connector data types to use checkpointed `t0`/`t1` time windowing (UnixTimestamp), aligning the newer Organizations, Organization Networks, Network Clients, and Air Marshal Events data types with the existing ASIM log endpoints to prevent duplicate ingestion. <br/> Updated the polling interval and `t0`/`t1` time window configuration of the **CCF Connector** data types to fix duplicate ingestion.|
 | 3.1.0       | 06-07-2026                     | Added four new data types to the **CCP Connector**: Organizations, Organization Networks, Network Clients, and Wireless Air Marshal Events. |
 | 3.0.2       | 10-01-2025                     | Transitioned the **CCP Connector** to General Availability (GA).    |
 | 3.0.1       | 30-09-2024                     | Cisco Meraki via REST API configuration Changes pagination fix     |

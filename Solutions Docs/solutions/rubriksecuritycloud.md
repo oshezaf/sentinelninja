@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.rubrik.com](https://support.rubrik.com) |
 | **Categories** | Security - Others |
-| **Version** | 3.5.2 |
+| **Version** | 3.5.3 |
 | **Author** | Ben Meadowcroft - ben.meadowcroft@rubrik.com |
 | **First Published** | 2022-07-19 |
-| **Last Updated** | 2026-02-19 |
+| **Last Updated** | 2026-09-03 |
 | **Solution Folder** | [RubrikSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (47%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (71%) |
 
 The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
 
@@ -41,10 +41,11 @@ b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **3 data connector(s)**:
 
 - [Rubrik Security Cloud Protection Status (using Codeless Connector Framework)](../connectors/rubrikprotectionstatus.md)
 - [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶
+- [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -56,10 +57,10 @@ This solution uses **5 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`RubrikProtectionStatus_CL`](../tables/rubrikprotectionstatus-cl.md) | [Rubrik Security Cloud Protection Status (using Codeless Connector Framework)](../connectors/rubrikprotectionstatus.md) | - |
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
-| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
-| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md), [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md), [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
+| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md), [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
+| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md), [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -106,6 +107,7 @@ This solution includes **19 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.5.3       | 03-09-2026                     | Added RubrikCCFConnector to ingest Anomaly, Ransomware, ThreatHunt and other events data along with audit logs via webhook. |
 | 3.5.2       | 16-07-2026                     | Added RubrikSecurityCloud CCF (Codeless Connector Framework) Data Connector for ingesting Rubrik Protection Status data into Microsoft Sentinel. Enables backup compliance monitoring, ransomware recovery assessment, and incident correlation with protection status for Azure VMs. Update python package version to resolve vulnerability |
 | 3.5.1       | 05-11-2025                     | Updated API Host Name default value in playbooks and custom connector |
 | 3.5.0       | 25-07-2025                     | Added RubrikTurboThreatHunt and RubrikAdvanceThreatHunt playbooks. RubrikThreatMonitoring and RubrikCriticalAnomaly Analytic Rules also added.

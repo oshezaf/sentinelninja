@@ -90,7 +90,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (11)
 
 ### Analytic Rules (1)
 
@@ -123,7 +123,7 @@ This table is ingested by the following connectors:
 | [Device Logons from Unknown IPs](../content/github-only-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-62ddb799.md) | `ISP != "INTERNAL_NETWORK"` |
 | [logon-attempts-after-malicious-email](../content/github-only-logon-attempts-after-malicious-email-44a5c680-d2ac-4bed-8210-c3aafea47308-4a967afa.md) |  |
 
-### Workbooks (3)
+### Workbooks (4)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `LogonType in "Credentials validation,Resource access"`
 
@@ -136,6 +136,7 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `ActionType in "LogonFailed,LogonSuccess,TicketRequested"` |
 | [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `LogonType in "Credentials validation,Resource access"` |
 
 ## Selection Criteria Summary (5 criteria, 7 total references)

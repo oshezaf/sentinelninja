@@ -6,7 +6,7 @@
 
 ---
 
-This rule makes use of the series decompose anomaly method to generate an alert when multiple clients report errors for the same DNS query. This rule monitors DNS traffic over a period of 14 days to detect possible similar C2 communication originating from different clients. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema.
+'This rule makes use of the series decompose anomaly method to generate an alert when multiple clients report errors for the same DNS query. This rule monitors DNS traffic over a period of 14 days to detect possible similar C2 communication originating from different clients. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema. The rule also depends on the "**DNSEssentialsCustomParser**" Parser, so please make sure it is insta
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,10 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ✓ |
+| [`DNS_Summarized_Logs_ipV1_CL`](../tables/dns-summarized-logs-ipv1-cl.md) 🔶 | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfoV1_CL`](../tables/dns-summarized-logs-sourceinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

@@ -71,7 +71,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://synqly.com">Synqly</a> connector provides the capability to push security events from Synqly integrations into Microsoft Sentinel using the Azure Logs Ingestion API. Events are automatically normalized to ASIM (Advanced Security Information Model) tables for use with Microsoft Sentinel analytics, workbooks, and hunting queries.</p>
+<p>The <a href="https://synqly.com">Synqly</a> connector provides the capability to push security events and asset entities from Synqly integrations into Microsoft Sentinel using the Azure Logs Ingestion API. Records are automatically normalized to ASIM (Advanced Security Information Model) tables for use with Microsoft Sentinel analytics, workbooks, and hunting queries.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -84,6 +84,24 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimagenteventlogs.html"><code>ASimAgentEventLogs</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimalerteventlogs.html"><code>ASimAlertEventLogs</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/asimassetentitylogs.html"><code>ASimAssetEntityLogs</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
   <td style="text-align:center">✓</td>
@@ -164,7 +182,7 @@
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
-<p>This connector enables push-based ingestion of security events from Synqly integrations into Microsoft Sentinel. Events are automatically normalized to ASIM (Advanced Security Information Model) tables.</p>
+<p>This connector enables push-based ingestion of security events and asset entities from Synqly integrations into Microsoft Sentinel. Records are automatically normalized to ASIM (Advanced Security Information Model) tables.</p>
 <h4 id="deploy-connector-resources">Deploy Connector Resources</h4>
 <p>Clicking &quot;Deploy&quot; creates a Data Collection Rule (DCR), Data Collection Endpoint (DCE), and Entra application with the necessary permissions to securely send data to Microsoft Sentinel.
 Deploy Synqly Integration connector resources</p>
@@ -174,8 +192,8 @@ Deploy Synqly Integration connector resources</p>
 <p><strong>SIEM Connector (Read/Write)</strong>: Assign <strong>Microsoft Sentinel Contributor</strong> role to the Entra application via the Azure UI in your Log Analytics workspace.</p>
 <p>See <a href="https://docs.synqly.com/guides/provider-configuration/microsoft-sentinel-siem-setup">Synqly documentation</a> for detailed setup guides.</p>
 <p><strong>3. Push your logs into the workspace</strong></p>
-<p>Provide these parameters to your Synqly integration. The Synqly service will automatically handle the technical details of data ingestion, including formatting events to one of the 10 supported ASIM schemas (Authentication, AuditEvent, Dhcp, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement, WebSession).
-<strong>Important</strong>: Events with unsupported schema types are silently dropped by Azure. If expected data is not appearing, verify with your Synqly integration provider that events are being sent with one of the supported schema types listed above.</p>
+<p>Provide these parameters to your Synqly integration. Synqly formats each record for one of 13 supported ASIM schema types: 12 event schemas (AgentEvent, AlertEvent, AuditEvent, Authentication, DhcpEvent, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement, and WebSession) and the Asset entity schema (EntitySchema=Asset).
+<strong>Important</strong>: Records with unsupported schema types are silently dropped by Azure. If expected data is not appearing, verify with your Synqly integration provider that records use one of the supported schema types listed above.</p>
 <ul>
 <li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
 <p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
@@ -199,6 +217,9 @@ Deploy Synqly Integration connector resources</p>
 </li>
 <li><strong>Stream Name</strong>: <code>Custom-SynqlyASIM</code></li>
 </ul>
+<p><strong>4. Promote Alert Events to Microsoft Sentinel alerts (Optional)</strong></p>
+<p>The solution includes the Synqly Alert Event analytics rule template. Alert Events remain logs until you create and enable a rule from it.
+Go to <strong>Microsoft Sentinel &gt; Analytics &gt; Rule templates</strong>, find <strong>Synqly Alert Event</strong>, and select <strong>Create rule</strong>. Use the defaults or customize the rule for your environment. <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-analytics-rule-from-template">Learn more</a>.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

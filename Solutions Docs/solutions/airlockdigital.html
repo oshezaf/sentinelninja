@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Airlock Digital &mdash; Solutions Analyzer</title>
+<title>Airlock Digital for Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,9 +15,9 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="airlock-digital">Airlock Digital</h1>
+<h1 id="airlock-digital-for-microsoft-sentinel">Airlock Digital for Microsoft Sentinel</h1>
 <p><em>Solution: AirlockDigital</em></p>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="AirlockDigital Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AirlockDigital.svg" alt="AirlockDigital Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -32,15 +32,15 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Microsoft Corporation</td>
+  <td style="text-align:left">Airlock Digital</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left">Partner</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+  <td style="text-align:left"><a href="https://www.airlockdigital.com/">https://www.airlockdigital.com/</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
@@ -48,19 +48,19 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.1</td>
+  <td style="text-align:left">3.2.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+  <td style="text-align:left">Airlock Digital - support@airlockdigital.com</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
-  <td style="text-align:left">2026-05-20</td>
+  <td style="text-align:left">2026-08-04</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-07-30</td>
+  <td style="text-align:left">2026-08-26</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,21 +68,38 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-airlockdigital">Azure Marketplace</a> · Popularity: 🔵 Medium (75%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/airlockdigitalptyltd1783575912163.azure-sentinel-solution-airlockdigital">Azure Marketplace</a> · Popularity: 🔵 Medium (69%)</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.airlockdigital.com/">Airlock Digital</a> Solution for Microsoft Sentinel enables you to ingest Airlock Digital application control and execution logs into Microsoft Sentinel using the Codeless Connector Platform (CCP). This solution provides visibility into file executions, server activities, and security event summaries from your Airlock Digital server.</p>
+<p>The <a href="https://www.airlockdigital.com/">Airlock Digital</a> solution for Microsoft Sentinel ingests application control and execution logs from Airlock Digital using the Codeless Connector Platform (CCP), giving visibility into file executions, server activity, and policy changes.</p>
+<p>The solution provides three data connectors so you can choose the one that matches your deployment:</p>
+<p>a. <strong>Airlock Digital (Push)</strong> -- for self-hosted servers and Airlock Digital SaaS running v7.0 or higher. Airlock's external logging feature streams execution history, server activity, and policy change events into Microsoft Sentinel in near real time, authenticating with a Microsoft Entra application. This is the recommended connector.</p>
+<p>b. <strong>Airlock Digital (Poll)</strong> -- for self-hosted servers older than v7.0 that do not support push-based logging. Periodically pulls execution history and server activity from the Airlock REST API using a user API key.</p>
+<p>c. <strong>Airlock Digital (Poll - SaaS)</strong> -- for the Airlock Digital hosted SaaS offering, authenticating with a user API key together with your directory and tenant identifiers.</p>
+<p>The solution also installs ASIM parsers that normalize Airlock data into the Process Event and Audit Event schemas, plus a workbook summarizing application control activity.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform (CCP)</a></p>
-<h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<h2 id="contents">Contents</h2>
 <ul>
-<li><a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a></li>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
 </ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>3 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a> ⚠️</li>
+<li><a href="../connectors/airlockdigitalpoll.html">Airlock Digital (Poll)</a></li>
+<li><a href="../connectors/airlockdigitalpush.html">Airlock Digital (Push)</a></li>
+<li><a href="../connectors/airlockdigitalsaas.html">Airlock Digital (Poll - SaaS)</a></li>
+</ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>3 table(s)</strong>:</p>
+<p>This solution uses <strong>5 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +111,7 @@
 <tbody>
 <tr>
   <td><a href="../tables/airlockdigitalexecutionhistories-cl.html"><code>AirlockDigitalExecutionHistories_CL</code></a></td>
-  <td><a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a></td>
+  <td><a href="../connectors/airlockdigitalsaas.html">Airlock Digital (Poll - SaaS)</a>, <a href="../connectors/airlockdigitalpoll.html">Airlock Digital (Poll)</a>, <a href="../connectors/airlockdigitalpush.html">Airlock Digital (Push)</a>, <a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -103,9 +120,81 @@
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/airlockdigitalserveractivities-cl.html"><code>AirlockDigitalServerActivities_CL</code></a></td>
-  <td><a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a></td>
+  <td><a href="../tables/airlockdigitalpolicychanges-cl.html"><code>AirlockDigitalPolicyChanges_CL</code></a></td>
+  <td><a href="../connectors/airlockdigitalpush.html">Airlock Digital (Push)</a></td>
   <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/airlockdigitalserveractivities-cl.html"><code>AirlockDigitalServerActivities_CL</code></a></td>
+  <td><a href="../connectors/airlockdigitalsaas.html">Airlock Digital (Poll - SaaS)</a>, <a href="../connectors/airlockdigitalpoll.html">Airlock Digital (Poll)</a>, <a href="../connectors/airlockdigitalpush.html">Airlock Digital (Push)</a>, <a href="../connectors/airlockdigitalconnector.html">Airlock Digital connector (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/operation.html"><code>Operation</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/airlockdigital-airlockdigital-f4806f05.html">AirlockDigital</a></td>
+  <td style="text-align:left"><a href="../tables/operation.html"><code>Operation</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimauditeventairlockdigital.html">ASimAuditEventAirlockDigital</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/airlockdigitalserveractivities-cl.html"><code>AirlockDigitalServerActivities_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimauditeventairlockdigitalpolicychange.html">ASimAuditEventAirlockDigitalPolicyChange</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/airlockdigitalpolicychanges-cl.html"><code>AirlockDigitalPolicyChanges_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimprocesseventairlockdigital.html">ASimProcessEventAirlockDigital</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/airlockdigitalexecutionhistories-cl.html"><code>AirlockDigitalExecutionHistories_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -119,6 +208,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.0</td>
+  <td>05-08-2026</td>
+  <td>Solution now published by Airlock Digital.<br/>Updated <strong>Data Connector</strong> <em>Airlock Digital (Poll)</em>.<br/>Added new <strong>Data Connectors</strong> <em>Airlock Digital (Push)</em> and <em>Airlock Digital (Poll - SaaS)</em>.<br/>Added new <strong>Parsers</strong> and <strong>Workbook</strong>.</td>
+</tr>
 <tr>
   <td>3.1.1</td>
   <td>28-07-2026</td>

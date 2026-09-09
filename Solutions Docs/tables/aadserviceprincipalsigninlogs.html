@@ -99,12 +99,12 @@
 <tr>
   <td style="text-align:left">AppId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique GUID representing the app ID in the Azure Active Directory</td>
+  <td style="text-align:left">Unique GUID representing the app ID in the Microsoft Entra ID</td>
 </tr>
 <tr>
   <td style="text-align:left">AppOwnerTenantId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The tenant identifier of the owenr of the application in Azure Active Directory</td>
+  <td style="text-align:left">The tenant identifier of the owenr of the application in Microsoft Entra ID</td>
 </tr>
 <tr>
   <td style="text-align:left">AuthenticationContextClassReferences</td>
@@ -313,7 +313,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs">AADServicePrincipalSignInLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (7)</h2>
+<h2 id="solutions">Solutions (8)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
@@ -323,6 +323,7 @@
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
 <li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
+<li><a href="../solutions/stratosecure.html">StratoSecure</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -341,8 +342,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (22)</h2>
-<h3 id="analytic-rules">Analytic Rules (3)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (23)</h2>
+<h3 id="analytic-rules">Analytic Rules (4)</h3>
 <p><strong>In solution <a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a>:</strong></p>
 <table>
 <thead>
@@ -358,16 +359,33 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong> <code>OperationName == &quot;Remove service principal&quot;</code><br><code>OperationName has_all &quot;Update application&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/stratosecure.html">StratoSecure</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-secret-exposure-with-anomalous-spn-sign-in-a91e677a-46b5-428e-8a7d-29a2bb33bb6f-212cab8f.html">Secret Exposure with Anomalous SPN Sign-In</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -412,7 +430,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-secret-added-to-dormant-service-principal-e2294d1a-ae7d-4212-94c8-6ceff148993a-229ee773.html">Secret Added to Dormant Service Principal</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Add service principal credentials&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-service-principal-conditional-access-anomaly-92076c80-49fd-4af0-9f9d-ea9dd1fa85c6-58eb67f7.html">Service principal Conditional Access anomaly</a></td>
@@ -437,16 +455,18 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong> <code>OperationName in &quot;Add service principal credentials,Update application - Certificates</code><br><code>secrets management&quot;</code></p>
+<p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.html">Dormant Service Principal Update Creds and Logs In</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -577,8 +597,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (6 criteria, 6 total references)</h2>
-<p>References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (3 criteria, 3 total references)</h2>
+<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -592,14 +612,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Remove service principal&quot;</code><br><code>OperationName has_all &quot;Update application&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ResultType != &quot;50126&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -608,23 +620,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Add service principal credentials&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ConditionalAccessStatus in &quot;failure,notApplied&quot;</code><br><code>ResultType in &quot;0,Success&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OperationName in &quot;Add service principal credentials,Update application - Certificates</code><br><code>secrets management&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -642,10 +638,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -672,53 +668,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>notApplied</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="operationname">OperationName</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>Add service principal credentials</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Remove service principal</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_all Update application</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Update application - Certificates</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

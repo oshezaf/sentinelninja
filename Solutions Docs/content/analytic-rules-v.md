@@ -1,6 +1,6 @@
 # Analytic Rules - V
 
-**94 analytic rules** starting with 'V'.
+**96 analytic rules** starting with 'V'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -41,13 +41,15 @@
 | [Vectra AI Detect - Suspected Compromised Account](vectra-ai-detect-vectra-ai-detect-suspected-compromised-account-321f9dbd-64b7-4541-81dc-08cf7732ccb0-540085a2.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | [Vectra AI Detect - Suspected Compromised Host](vectra-ai-detect-vectra-ai-detect-suspected-compromised-host-60eb6cf0-3fa1-44c1-b1fe-220fbee23d63-39ca3d55.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | [Vectra AI Detect - Suspicious Behaviors by Category](vectra-ai-detect-vectra-ai-detect-suspicious-behaviors-by-category-6cb75f65-231f-46c4-a0b3-50ff21ee6ed3-81fb48ba.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
-| [Vectra Create Detection Alert for Accounts](vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Create Detection Alert for Hosts](vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Create Incident Based on Priority for Accounts](vectra-xdr-vectra-create-incident-based-on-priority-for-accounts-af6f2812-0187-4cc9-822a-952f8b5b6b7e-99cb4b20.md) | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Create Incident Based on Priority for Hosts](vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Create Incident Based on Tag for Accounts](vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Create Incident Based on Tag for Hosts](vectra-xdr-vectra-create-incident-based-on-tag-for-hosts-8b7a1a64-8ef2-4000-b8c9-9bca3b93aace-08413d75.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Detection Alert for Accounts](vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) ⚠️ | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Detection Alert for Hosts](vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) ⚠️ | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Incident Based on Priority for Accounts](vectra-xdr-vectra-create-incident-based-on-priority-for-accounts-af6f2812-0187-4cc9-822a-952f8b5b6b7e-99cb4b20.md) ⚠️ | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Incident Based on Priority for Hosts](vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) ⚠️ | Medium | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Incident Based on Tag for Accounts](vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) ⚠️ | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Create Incident Based on Tag for Hosts](vectra-xdr-vectra-create-incident-based-on-tag-for-hosts-8b7a1a64-8ef2-4000-b8c9-9bca3b93aace-08413d75.md) ⚠️ | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Host's Behaviors](vectra-ai-detect-vectra-host's-behaviors-33e3b6da-2660-4cd7-9032-11be76db88d2-080b319b.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
+| [Vectra RUX - Create Incident for Escalated Account Detection or Unresolved Priority Account](vectra-xdr-vectra-rux-create-incident-for-escalated-account-detection-or-unresolved-priority-account-231904f5-b670-4223-9bec-2e9aeca9cf5a-a40173c6.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra RUX - Create Incident for Escalated Host Detection or Unresolved Priority Host](vectra-xdr-vectra-rux-create-incident-for-escalated-host-detection-or-unresolved-priority-host-231904f5-b670-4223-9bec-2e9aeca9cf5b-344720ca.md) | High | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam ONE Application with No Recent Data Backup Sessions](veeam-veeam-one-application-with-no-recent-data-backup-sessions-73e36985-d65d-4852-b3cc-5e8f4b64b39c-18d04ddc.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam ONE Backup Copy RPO](veeam-veeam-one-backup-copy-rpo-7fb6d1b6-48e4-442b-ba4d-1b5fb5fa379b-100c041e.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam ONE Backup Server Security and Compliance State](veeam-veeam-one-backup-server-security-and-compliance-state-7ad4b9ff-8089-4b70-b98e-a2ca995611e9-2f1962bd.md) | Medium | 📦 [Veeam](../solutions/veeam.md) |
@@ -108,6 +110,8 @@
 | [Vulerabilities](ridgesecurity-vulerabilities-d096643d-6789-4c74-8893-dd3fc8a94069-d1a748f6.md) | High | 📦 [RidgeSecurity](../solutions/ridgesecurity.md) |
 | [Vulnerable Machines related to log4j CVE-2021-44228](apache-log4j-vulnerability-detection-vulnerable-machines-related-to-log4j-cve-2021-44228-3d71fc38-f249-454e-8479-0a358382ef9a-5fca98f8.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Vulnerable Machines related to OMIGOD CVE-2021-38647](standalone-content-vulnerable-machines-related-to-omigod-cve-2021-38647-4d94d4a9-dc96-450a-9dea-4d4d4594199b-99c76b14.md) | High | 📄 Standalone Content |
+
+> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

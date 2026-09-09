@@ -206,8 +206,8 @@ You must provide your cluster id and security token.</p>
   <td>Unhandled exception during the message receive/process loop that is unexpected. This includes errors such request not matching WebSocket, other configuration, or timeout categories. This excludes <code>OperationCanceledException</code> exception where the cancellation is not reported.</td>
 </tr>
 <tr>
-  <td><code>WS40007</code></td>
-  <td>WebSocket window timeout exceeded. The connection remained open longer than the configured <code>request.timeoutInSeconds</code> without completing.</td>
+  <td><code>HMS30001</code></td>
+  <td>WebSocket window timeout exceeded. The connection remained open longer than the configured <code>request.timeoutInSeconds</code> without completing. The <code>request.timeoutInSeconds</code> value is capped at 12 minutes, which is the default setting.</td>
 </tr>
 <tr>
   <td><code>WS40009</code></td>

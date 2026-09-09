@@ -55,10 +55,11 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Operation Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation)
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
+- [AirlockDigital](../solutions/airlockdigital.md)
 - [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
@@ -74,7 +75,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (28)
 
 ### Analytic Rules (1)
 
@@ -93,7 +94,13 @@ This table is used by the following solutions:
 | [Permutations on logon attempts by UserPrincipalNames indicating potential brute force](../content/standalone-content-permutations-on-logon-attempts-by-userprincipalnames-indicating-potential-brute-force-472e83d6-ccec-47b8-b1cd-75500f936981-b5d1e233.md) |  |
 | [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) |  |
 
-### Workbooks (23)
+### Workbooks (25)
+
+**In solution [AirlockDigital](../solutions/airlockdigital.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AirlockDigital](../content/airlockdigital-airlockdigital-f4806f05.md) |  |
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
 
@@ -172,6 +179,7 @@ This table is used by the following solutions:
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [ExchangeOnline](../content/github-only-exchangeonline-663577e1.md) |  |
 | [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [Office365](../content/github-only-office365-fa05d9ea.md) |  |
 | [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |

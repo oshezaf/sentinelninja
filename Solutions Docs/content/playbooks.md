@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**901 playbooks** across all Microsoft Sentinel solutions.
+**933 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -29,8 +29,18 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [<PlaybookName>](github-only-playbookname-4f698749.md) | 🔗 GitHub Only |
 | [<PlaybookName>](github-only-playbookname-22eeb63a.md) | 🔗 GitHub Only |
 | [<PlaybookName>](github-only-playbookname-f38224c8.md) | 🔗 GitHub Only |
-| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | 📦 [Intel471](../solutions/intel471.md) |
+| [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
+| [[Deprecated] FileHash Enrichment - Virus Total Report - Alert Triggered](virustotal-[deprecated]-filehash-enrichment-virus-total-report-alert-triggered-b9ad6b97.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] FileHash Enrichment - Virus Total Report - Incident Triggered](virustotal-[deprecated]-filehash-enrichment-virus-total-report-incident-triggered-6d5d0cbf.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] IP Enrichment - Virus Total Report  - Incident Triggered](virustotal-[deprecated]-ip-enrichment-virus-total-report-incident-triggered-87c5cd22.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] IP Enrichment - Virus Total Report - Alert Triggered](virustotal-[deprecated]-ip-enrichment-virus-total-report-alert-triggered-0491fa54.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] Summarize Data for DNS Essentials Solution](dns-essentials-[deprecated]-summarize-data-for-dns-essentials-solution-6ff0b741.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
+| [[Deprecated] Summarize Data for Network Session Essentials](network-session-essentials-[deprecated]-summarize-data-for-network-session-essentials-7add1212.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
+| [[Deprecated] Summarize Web Session Data](web-session-essentials-[deprecated]-summarize-web-session-data-eff20266.md) | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
+| [[Deprecated] URL Enrichment - Virus Total Domain Report - Alert Triggered](virustotal-[deprecated]-url-enrichment-virus-total-domain-report-alert-triggered-1cb6ad32.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] URL Enrichment - Virus Total Domain Report - Incident Triggered](virustotal-[deprecated]-url-enrichment-virus-total-domain-report-incident-triggered-310ec6f8.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] URL Enrichment - Virus Total Report - Alert Triggered](virustotal-[deprecated]-url-enrichment-virus-total-report-alert-triggered-d7cf3a74.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [[Deprecated] URL Enrichment - Virus Total Report - Incident Triggered](virustotal-[deprecated]-url-enrichment-virus-total-report-incident-triggered-0a69c2a9.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 
 ## A
 
@@ -52,6 +62,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [AD4IoT-SendEmailtoIoTOwner](iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Add Asset to Protection - Zero Networks Segment](zeronetworks-add-asset-to-protection-zero-networks-segment-16e37e2a.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](zeronetworks-add-block-outbound-rule-zero-networks-acccess-orchestrator-7ca46c7d.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 | [Add Host To Watchlist - Alert Trigger](watchlists-utilities-add-host-to-watchlist-alert-trigger-fc569050.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Add Host To Watchlist - Incident Trigger](watchlists-utilities-add-host-to-watchlist-incident-trigger-6dc249a3.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Add IP Entity To Named Location](standalone-content-add-ip-entity-to-named-location-93d6bf5a.md) | 📄 Standalone Content |
@@ -65,7 +76,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Add User To Watchlist - Incident Trigger](watchlists-utilities-add-user-to-watchlist-incident-trigger-d70c4774.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Advanced ServiceNow Teams Integration Playbook](teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | 📦 [Teams](../solutions/teams.md) |
 | [ADX-health-playbook](github-only-adx-health-playbook-8c510171.md) | 🔗 GitHub Only |
-| [Affected-Key-Credentials-Scanner](standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone Content |
+| [Affected Key Credentials Scanner](standalone-content-affected-key-credentials-scanner-c9647a7d.md) | 📄 Standalone Content |
 | [aggregate-ServiceNow-tickets](standalone-content-aggregate-servicenow-tickets-d4e8dc05.md) | 📄 Standalone Content |
 | [AI-Commandline-Analysis](github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only |
 | [Akamai Guardicore Incident-Enrichment — one-click bootstrap](akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
@@ -373,8 +384,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Fetch User Details From Entrust](entrust-identity-as-service-fetch-user-details-from-entrust-fe32694a.md) | 📦 [Entrust identity as Service](../solutions/entrust-identity-as-service.md) |
 | [Fetch User Details From Entrust - Entity](entrust-identity-as-service-fetch-user-details-from-entrust-entity-7af1dfb0.md) | 📦 [Entrust identity as Service](../solutions/entrust-identity-as-service.md) |
 | [FileHash Enrichment - Palo Alto Wildfire](standalone-content-filehash-enrichment-palo-alto-wildfire-4039c565.md) | 📄 Standalone Content |
-| [FileHash Enrichment - Virus Total Report - Alert Triggered](virustotal-filehash-enrichment-virus-total-report-alert-triggered-cb0a6f29.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [FileHash Enrichment - Virus Total Report - Incident Triggered](virustotal-filehash-enrichment-virus-total-report-incident-triggered-4f1b5957.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [FileHash Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](virustotal-filehash-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8cbea41.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [FileHash Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API](virustotal-filehash-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-a87c73a6.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [Forescout-DNS_Sniff_Event_Playbook](forescouthostpropertymonitor-forescout-dns-sniff-event-playbook-171772ed.md) | 📦 [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Fortinet-FortiGate-IPEnrichment](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-ipenrichment-6c7428bc.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockIP](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockip-4d2b4811.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
@@ -452,14 +463,21 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Google Directory - Enrich Incident With User Info](googledirectory-google-directory-enrich-incident-with-user-info-b9764ee5.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
 | [Google Directory - Sign Out User](googledirectory-google-directory-sign-out-user-d3f73d66.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
 | [Google Directory - Suspend User](googledirectory-google-directory-suspend-user-ed8afb0c.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
+| [Google Threat Intelligence - Add Comment To Incident](google-threat-intelligence-google-threat-intelligence-add-comment-to-incident-b747edfb.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - Domain Enrichment](google-threat-intelligence-google-threat-intelligence-domain-enrichment-4dd0e649.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - FileHash Enrichment](google-threat-intelligence-google-threat-intelligence-filehash-enrichment-2c6963ed.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - FileScan Blob Enrichment](google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - FileScan Enrichment](google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IOC Enrichment](google-threat-intelligence-google-threat-intelligence-ioc-enrichment-6804cb8a.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IOC Enrichment](google-threat-intelligence-google-threat-intelligence-ioc-enrichment-37b5ea42.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IoC Stream](google-threat-intelligence-google-threat-intelligence-ioc-stream-01fc772a.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IP Enrichment](google-threat-intelligence-google-threat-intelligence-ip-enrichment-e58dcaa4.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - Threat List](google-threat-intelligence-google-threat-intelligence-threat-list-c6635a88.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - URL Enrichment](google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - URLScan Enrichment](google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - URLScan Entity Enrichment](google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - URLScan Incident Enrichment](google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - Vulnerability Enrichment](google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GreyNoise-IP-CommunityEnrichment](standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone Content |
 | [GreyNoise-IP-Enrichment](standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone Content |
 | [Guardicore-EnrichmentRunner](akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
@@ -473,6 +491,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | Name | Source |
 |:-----|:-------|
 | [HaveIBeenPwnedEmail](standalone-content-haveibeenpwnedemail-c80f9114.md) | 📄 Standalone Content |
+| [HoneyLabs-EnrichIncident-IP](honeylabs-honeylabs-enrichincident-ip-e06c1d7f.md) | 📦 [HoneyLabs](../solutions/honeylabs.md) |
 | [HTTP Trigger Entity Analyzer](sentinelsoaressentials-http-trigger-entity-analyzer-01f80a11.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [HYASInsight Enrich Incident By C2 Attribution](hyas-hyasinsight-enrich-incident-by-c2-attribution-fb15e86f.md) | 📦 [HYAS](../solutions/hyas.md) |
 | [HYASInsight Enrich Incident By C2 Attribution](hyas-hyasinsight-enrich-incident-by-c2-attribution-df8726f9.md) | 📦 [HYAS](../solutions/hyas.md) |
@@ -561,8 +580,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [IP Address Breach Data - SpyCloud Enterprise](spycloud-enterprise-protection-ip-address-breach-data-spycloud-enterprise-4dc87c3d.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [IP Address Enrichment - Cisco Meraki](ciscomeraki-ip-address-enrichment-cisco-meraki-af9705f2.md) | 📦 [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [IP Enrichment - DomainTools Parsed Whois](domaintools-ip-enrichment-domaintools-parsed-whois-4d83f33b.md) | 📦 [DomainTools](../solutions/domaintools.md) |
-| [IP Enrichment - Virus Total Report  - Incident Triggered](virustotal-ip-enrichment-virus-total-report-incident-triggered-1c22517c.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [IP Enrichment - Virus Total Report - Alert Triggered](virustotal-ip-enrichment-virus-total-report-alert-triggered-8db8d703.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [IP Enrichment - Virus Total Report  - Incident Triggered using Log Ingestion API](virustotal-ip-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-7d47e0b2.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [IP Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](virustotal-ip-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-d8973213.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [IP Enrichment - Virus Total Report - Entity Trigger](virustotal-ip-enrichment-virus-total-report-entity-trigger-6bf78945.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [IronNet_UpdateIronDefenseAlerts](ironnet-irondefense-ironnet-updateirondefensealerts-20819590.md) ⚠️ | 📦 [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
 | [IronNet_UpdateSentinelIncidents](ironnet-irondefense-ironnet-updatesentinelincidents-cc18ec68.md) ⚠️ | 📦 [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
@@ -688,6 +707,12 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Post-Message-Slack](sentinelsoaressentials-post-message-slack-8c72ad08.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post-Message-Teams](sentinelsoaressentials-post-message-teams-e5dff2d7.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post-Tags-And-Comments-To-Your-IntSights-Account](standalone-content-post-tags-and-comments-to-your-intsights-account-771a2367.md) | 📄 Standalone Content |
+| [PRODAFT USTA - Backfill Malicious URLs](prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malicious-urls-4dfc7c81.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - Backfill Malware Hashes](prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-malware-hashes-3f720674.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - Backfill Phishing Sites](prodaft-usta-ioc-threat-intelligence-prodaft-usta-backfill-phishing-sites-a323edfb.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - Import Malicious URLs](prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malicious-urls-b406db8c.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - Import Malware Hashes](prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malware-hashes-3fd88ec8.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - Import Phishing Sites](prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-phishing-sites-9a061ecc.md) | 📦 [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
 | [PRODAFTUstaATP-Backfill](prodaft-usta-account-takeover-prevention-prodaftustaatp-backfill-6bdc69a2.md) | 📦 [PRODAFT USTA - Account Takeover Prevention](../solutions/prodaft-usta-account-takeover-prevention.md) |
 | [PRODAFTUstaPCFI-Backfill](prodaft-usta-payment-card-fraud-intelligence-prodaftustapcfi-backfill-5ae17346.md) | 📦 [PRODAFT USTA - Payment Card Fraud Intelligence](../solutions/prodaft-usta-payment-card-fraud-intelligence.md) |
 | [Prompt Okta user](okta-single-sign-on-prompt-okta-user-beec822e.md) | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
@@ -875,6 +900,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [SpectraAnalyze-EnrichNetworkEntities](reversinglabs-spectraanalyze-enrichnetworkentities-e8e8b530.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraIntelligence-EnrichFileHash](reversinglabs-spectraintelligence-enrichfilehash-dbcd2082.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraIntelligence-EnrichNetworkEntities](reversinglabs-spectraintelligence-enrichnetworkentities-d024cb1e.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
+| [Speculus Incident Enrichment - Playbook](speculus-threat-intelligence-speculus-incident-enrichment-playbook-9d6bf654.md) | 📦 [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
 | [Spur IP Enrichment](spur-spur-ip-enrichment-199e693a.md) | 📦 [Spur](../solutions/spur.md) |
 | [Spur IP Enrichment](spur-spur-ip-enrichment-9f8c24e8.md) | 📦 [Spur](../solutions/spur.md) |
 | [spur_alert](standalone-content-spur-alert-3028854a.md) | 📄 Standalone Content |
@@ -887,9 +913,16 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone Content |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone Content |
 | [StealthTalk - Alert to Microsoft Teams](stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |
-| [Summarize Data for DNS Essentials Solution](dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
-| [Summarize Data for Network Session Essentials](network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
-| [Summarize Web Session Data](web-session-essentials-summarize-web-session-data-ea664ad8.md) | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
+| [StratoSecure - Assign Owner](stratosecure-stratosecure-assign-owner-9b875cc8.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Close Incident in Sentinel](stratosecure-stratosecure-close-incident-in-sentinel-24d00b3a.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Create Azure DevOps Work Item](stratosecure-stratosecure-create-azure-devops-work-item-eeb39a49.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Create Exception / Accept Risk](stratosecure-stratosecure-create-exception-accept-risk-7a9eba6c.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Create Jira Ticket](stratosecure-stratosecure-create-jira-ticket-cccd8afb.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Escalate to Owner via Email](stratosecure-stratosecure-escalate-to-owner-via-email-36e9ee8f.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [StratoSecure - Notify Microsoft Teams](stratosecure-stratosecure-notify-microsoft-teams-bf1e8e3f.md) | 📦 [StratoSecure](../solutions/stratosecure.md) |
+| [Summarize Data for DNS Essentials Solution using Log Ingestion API](dns-essentials-summarize-data-for-dns-essentials-solution-using-log-ingestion-api-1b0fa700.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
+| [Summarize Data for Network Session Essentials using log ingestion API](network-session-essentials-summarize-data-for-network-session-essentials-using-log-ingestion-api-a5a818a0.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
+| [Summarize Web Session Data using Log Ingestion API](web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.md) | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
 | [Sync - Incident Comment To M365D On Update](standalone-content-sync-incident-comment-to-m365d-on-update-c5a6b476.md) | 📄 Standalone Content |
 | [Sync Jira from Sentinel - Create incident](atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Sync Jira to Sentinel - Assigned User](atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
@@ -939,10 +972,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Update-VIPUsers-Watchlist-from-AzureAD-Group](standalone-content-update-vipusers-watchlist-from-azuread-group-e1b46577.md) | 📄 Standalone Content |
 | [Update-Watchlist-With-NamedLocations](github-only-update-watchlist-with-namedlocations-b93db1a5.md) | 🔗 GitHub Only |
 | [URL Enrichment - Cisco Meraki](ciscomeraki-url-enrichment-cisco-meraki-b58e2089.md) | 📦 [CiscoMeraki](../solutions/ciscomeraki.md) |
-| [URL Enrichment - Virus Total Domain Report - Alert Triggered](virustotal-url-enrichment-virus-total-domain-report-alert-triggered-9a5688ac.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [URL Enrichment - Virus Total Domain Report - Incident Triggered](virustotal-url-enrichment-virus-total-domain-report-incident-triggered-54a7a026.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [URL Enrichment - Virus Total Report - Alert Triggered](virustotal-url-enrichment-virus-total-report-alert-triggered-c62db7db.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
-| [URL Enrichment - Virus Total Report - Incident Triggered](virustotal-url-enrichment-virus-total-report-incident-triggered-3d66ea5b.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [URL Enrichment - Virus Total Domain Report - Alert Triggered using Log Ingestion API](virustotal-url-enrichment-virus-total-domain-report-alert-triggered-using-log-ingestion-api-4c5e4687.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [URL Enrichment - Virus Total Domain Report - Incident Triggered using Log Ingestion API](virustotal-url-enrichment-virus-total-domain-report-incident-triggered-using-log-ingestion-api-bc339f3d.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [URL Enrichment - Virus Total Report - Alert Triggered using Log Ingestion API](virustotal-url-enrichment-virus-total-report-alert-triggered-using-log-ingestion-api-4c819672.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
+| [URL Enrichment - Virus Total Report - Incident Triggered using Log Ingestion API](virustotal-url-enrichment-virus-total-report-incident-triggered-using-log-ingestion-api-781e576b.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [URL Trigger Entity Analyzer](sentinelsoaressentials-url-trigger-entity-analyzer-b0247848.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [URLhaus-CheckHashAndEnrichIncident](urlhaus-urlhaus-checkhashandenrichincident-a6191f77.md) | 📦 [URLhaus](../solutions/urlhaus.md) |
 | [URLhaus-CheckHostAndEnrichIncident](urlhaus-urlhaus-checkhostandenrichincident-20c27ae9.md) | 📦 [URLhaus](../solutions/urlhaus.md) |
@@ -959,25 +992,24 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Vaikora AI Agent Signals to SentinelOne](vaikora-sentinelone-threatintelligence-vaikora-ai-agent-signals-to-sentinelone-f649433d.md) | 📦 [Vaikora-SentinelOne-ThreatIntelligence](../solutions/vaikora-sentinelone-threatintelligence.md) |
 | [Vaikora for O365 - Quarantine Incident Responder](vaikora-o365-vaikora-for-o365-quarantine-incident-responder-2f2e4431.md) | 📦 [Vaikora-O365](../solutions/vaikora-o365.md) |
 | [Vaikora to Microsoft Defender for Cloud](vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
+| [Vectra Add Note To Detections](vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Note To Entity](vectra-xdr-vectra-add-note-to-entity-869bea53.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Add Tag To Detections](vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity](vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity All Detections](vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity Selected Detections](vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Assign Dynamic User To Entity](vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Assign Static User To Entity](vectra-xdr-vectra-assign-static-user-to-entity-7a45c54f.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Close Detections](vectra-xdr-vectra-close-detections-93f91aea.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Decorate Incident Based On Tag](vectra-xdr-vectra-decorate-incident-based-on-tag-6f33b0fb.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Decorate Incident Based On Tags And Notify](vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Download Pcap File To Storage](vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Close Detections On Incident Close](vectra-xdr-vectra-close-detections-on-incident-close-02648c3f.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Detection Timeline Link](vectra-xdr-vectra-detection-timeline-link-32404588.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Download Pcap File To Storage](vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Dynamic Assign Member To Group](vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Dynamic Resolve Assignment](vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Generate Access Token](vectra-xdr-vectra-generate-access-token-569f7428.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Incident Timeline Update](vectra-xdr-vectra-incident-timeline-update-0d305064.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Mark Detections As Fixed](vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Open Closed Detections](vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Operate On Entity Source IP](vectra-xdr-vectra-operate-on-entity-source-ip-af0a8898.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
+| [Vectra Set Detection Status](vectra-xdr-vectra-set-detection-status-dd76d3f7.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Static Assign Member To Group](vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
-| [Vectra Static Resolve Assignment](vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Update Incident Based on Tag And Notify](vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam-ChangeCollectionTime](veeam-veeam-changecollectiontime-6e10e57b.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam-CollectConfigurationBackups](veeam-veeam-collectconfigurationbackups-9c233254.md) | 📦 [Veeam](../solutions/veeam.md) |

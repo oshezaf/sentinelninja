@@ -111,7 +111,7 @@ Official Microsoft Learn documentation for field/column information:
 - [DeviceEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents)
 - [DeviceEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table)
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -119,6 +119,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [FalconFriday](../solutions/falconfriday.md)
+- [Intel471](../solutions/intel471.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
@@ -136,7 +137,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (108)
+## Content Items Using This Table (111)
 
 ### Analytic Rules (21)
 
@@ -196,13 +197,19 @@ This table is ingested by the following connectors:
 | [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
 | [Windows host username encoded in base64 web request](../content/standalone-content-windows-host-username-encoded-in-base64-web-request-6e715730-82c0-496c-983b-7a20c4590bd9-92229d72.md) |  |
 
-### Hunting Queries (76)
+### Hunting Queries (77)
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):** `ActionType == "PowerShellCommand"`
 
 | Hunting Query |
 |:-------------|
 | [Suspicious Powershell Commandlet Execution](../content/endpoint-threat-protection-essentials-suspicious-powershell-commandlet-execution-8f424a4c-0487-45a3-92b8-00a7a8745b69-41451793.md) |
+
+**In solution [Intel471](../solutions/intel471.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [PowerShell Encoded Command Execution](../content/intel471-powershell-encoded-command-execution-3a5a21fd-5a82-45dc-ad37-3fb95f475e11-6ac23a16.md) |  |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
@@ -243,7 +250,7 @@ This table is ingested by the following connectors:
 | [AV Detections with USB Disk Drive](../content/github-only-av-detections-with-usb-disk-drive-12198f2f-c53b-4617-8df8-120c66cbb373-fe2a71b5.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"` |
 | [Antivirus detections](../content/github-only-antivirus-detections-aa9ad4ae-a19a-4262-b151-8a723227bc4e-450dbcb7.md) | `ActionType == "AntivirusDetection"` |
 | [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [C2-NamedPipe](../content/github-only-c2-namedpipe-ec3f7141-383e-4f32-b698-ba2ee1852c9c-d8d0259c.md) | `ActionType == "NamedPipeEvent"` |
 | [Create account (1)](../content/github-only-create-account-1-eba83f84-b844-4fc9-96f4-cb51b0b20c1d-dd413b60.md) | `AccountName != "administrator"`<br>`AccountName endswith "or"`<br>`AccountName startswith "ad"`<br>`ActionType == "UserAccountCreated"` |
 | [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) | `ActionType in "DNS query,DnsQueryResponse"` |
@@ -299,7 +306,7 @@ This table is ingested by the following connectors:
 | [scheduled task creation](../content/github-only-scheduled-task-creation-34208765-264e-4abe-805b-f645925fbadb-b5b47dbc.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` |
 | [snip3-detectsanboxie-function-call](../content/github-only-snip3-detectsanboxie-function-call-32664c67-34d7-4c7a-88cd-c48b55b7ef91-c112772e.md) | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` |
 
-### Workbooks (11)
+### Workbooks (13)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -330,20 +337,22 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AttackSurfaceReduction](../content/github-only-attacksurfacereduction-31c2d611.md) | `ActionType startswith "Asr"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`ActionType startswith "Asr"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType startswith "Asr"` |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` |
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"`<br>`ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`ActionType startswith "Asr"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `ActionType == "KerberosServiceTicketRequested"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType startswith "Asr"` |
 
-## Selection Criteria Summary (44 criteria, 68 total references)
+## Selection Criteria Summary (44 criteria, 67 total references)
 
-References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 67 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "PowerShellCommand"` | - | 5 | - | - | **5** |
+| `ActionType == "PowerShellCommand"` | - | 4 | - | - | **4** |
 | `ActionType == "NamedPipeEvent"` | - | 4 | - | - | **4** |
 | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | - | 3 | - | - | **3** |
 | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 3 | - | - | **3** |
@@ -387,7 +396,7 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **68** | **0** | **0** | **68** |
+| **Total** | **0** | **67** | **0** | **0** | **67** |
 
 ### AccountName
 
@@ -401,7 +410,7 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `PowerShellCommand` | - | 8 | - | - | **8** |
+| `PowerShellCommand` | - | 7 | - | - | **7** |
 | `startswith Asr` | - | 5 | - | - | **5** |
 | `NamedPipeEvent` | - | 4 | - | - | **4** |
 | `FileCreated` | - | 4 | - | - | **4** |

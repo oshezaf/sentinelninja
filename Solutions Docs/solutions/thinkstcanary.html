@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ ThinkstCanary &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="thinkstcanary">⚠️ ThinkstCanary</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThinkstCanary.svg" alt="ThinkstCanary Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Thinkst Applied Research</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://help.canary.tools/">https://help.canary.tools/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Thinkst Applied Research - support@canary.tools</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-08-18</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-08-18</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThinkstCanary">ThinkstCanary</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Thinkst Canary solution for Microsoft Sentinel ingests Canary and Canarytoken incidents through the Codeless Connector Framework and provides normalized parsers, detections and response automation.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/thinkstcanary.html">Thinkst Canary</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/thinkstcanaryincidents-cl.html"><code>ThinkstCanaryIncidents_CL</code></a></td>
+  <td><a href="../connectors/thinkstcanary.html">Thinkst Canary</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/thinkstcanary-canary-alerts-to-incidents-06360572-94a7-42a4-add7-58fb933b2353-988d1059.html">Canary alerts to incidents</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">LateralMovement, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/thinkstcanaryincidents-cl.html"><code>ThinkstCanaryIncidents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>18-08-2026</td>
+  <td>Initial CCF connector and analytic rule for ingesting and detecting Thinkst Canary and Canarytoken incidents.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

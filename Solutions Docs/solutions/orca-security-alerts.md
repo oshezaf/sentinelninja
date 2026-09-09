@@ -14,12 +14,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://orca.security/about/contact/](https://orca.security/about/contact/) |
 | **Categories** | Security - Threat Protection,Security - Cloud Security |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Orca Security |
 | **First Published** | 2022-05-10 |
-| **Last Updated** | 2026-08-07 |
+| **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Orca Security Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/orcasecurityinc1621870991703.orca_security_alerts_mss) · Popularity: 🔵 Medium (78%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/orcasecurityinc1621870991703.orca_security_alerts_mss) · Popularity: 🟡 Low (47%) |
 
 The [Orca Security Alerts](https://orca.security/) solution for Microsoft Sentinel enables you to ingest Orca Security Alerts into Microsoft Sentinel. Orca Security enables the detection and prioritization of cloud security risks through their agentless cloud security and compliance solution for AWS, Azure, Google Cloud, and Kubernetes.
 
@@ -72,6 +72,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------|
+| 3.0.1       | 11-08-2026                     | Extended the **OrcaAlerts_CL** table schema and DCR stream declaration of the Microsoft Entra ID based data connector with additional Orca alert fields (account, asset, rule and tag attributes, including **custom_tags**). Existing columns are unchanged. |
 | 3.0.0       | 23-06-2026                     | Added Orca Security Alerts data connector using Microsoft Entra ID authentication (Push CCF connector with DCR/DCE and the Azure Monitor Logs Ingestion API). Updated the connector logo. The legacy Shared Key based connector is retained for backward compatibility and both connectors ingest into the same **OrcaAlerts_CL** table. |
 
 ---

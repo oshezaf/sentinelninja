@@ -63,7 +63,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Event Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event)
 
-## Solutions (19)
+## Solutions (20)
 
 This table is used by the following solutions:
 
@@ -76,6 +76,7 @@ This table is used by the following solutions:
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
+- [Intel471](../solutions/intel471.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
@@ -100,7 +101,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (66)
+## Content Items Using This Table (67)
 
 ### Analytic Rules (30)
 
@@ -174,7 +175,7 @@ This table is ingested by the following connectors:
 | [Silk Typhoon Suspicious UM Service Error](../content/standalone-content-silk-typhoon-suspicious-um-service-error-0625fcce-6d52-491e-8c68-1d9b801d25b9-6787e2f2.md) | `EventLevelName == "error"`<br>`EventLog == "Application"`<br>`RenderedDescription !contains "System.OutOfMemoryException"`<br>`RenderedDescription contains "MSExchange Unified Messaging"`<br>`RenderedDescription contains "TextFormattingRunProperties"`<br>`RenderedDescription contains "umworkerprocess"`<br>`RenderedDescription startswith "An unhandled exception occurred in a UM worker process"`<br>`RenderedDescription startswith "The Microsoft Exchange Unified Messaging service"`<br>`RenderedDescription startswith "Watson report"`<br>`Source startswith "MSExchange"` |
 | [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) |  |
 
-### Hunting Queries (18)
+### Hunting Queries (19)
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 
@@ -186,6 +187,12 @@ This table is ingested by the following connectors:
 | [Potential Microsoft Security Services Tampering](../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.md) | `ParameterXml in "<Param>WinDefend</Param>,<Param>sgrmbroker</Param>"`<br>`Source == "Microsoft-Windows-SENSE"` |
 | [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md) | `Source == "Microsoft-Windows-Sysmon"` |
 | [Rundll32 (LOLBins and LOLScripts)](../content/endpoint-threat-protection-essentials-rundll32-lolbins-and-lolscripts-c2074fce-b5ba-4c0a-9332-d08b8fc43c53-1b1739b4.md) | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` |
+
+**In solution [Intel471](../solutions/intel471.md):** `EventID == "7045"`
+
+| Hunting Query |
+|:-------------|
+| [AnyDesk Service Installation - Potentially Malicious RMM Tool Installation](../content/intel471-anydesk-service-installation-potentially-malicious-rmm-tool-installation-4103b086-f093-4084-9125-15b9a6c872b8-59829fcb.md) |
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):** `Source == "Microsoft-Windows-Sysmon"`
 
@@ -327,9 +334,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.azurestackhci/clusters`
 
-## Selection Criteria Summary (32 criteria, 60 total references)
+## Selection Criteria Summary (33 criteria, 61 total references)
 
-References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other parsers.
+References by type: 4 connectors, 44 content items, 6 ASIM parsers, 7 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -342,9 +349,9 @@ References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`RenderedDescription has_any "Downloaded"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
 | `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
-| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
+| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
@@ -352,6 +359,7 @@ References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other pars
 | `EventID in "1,7"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
 | `EventLevelName == "error"`<br>`EventLog == "Application"`<br>`RenderedDescription !contains "System.OutOfMemoryException"`<br>`RenderedDescription contains "MSExchange Unified Messaging"`<br>`RenderedDescription contains "TextFormattingRunProperties"`<br>`RenderedDescription contains "umworkerprocess"`<br>`RenderedDescription startswith "An unhandled exception occurred in a UM worker process"`<br>`RenderedDescription startswith "The Microsoft Exchange Unified Messaging service"`<br>`RenderedDescription startswith "Watson report"`<br>`Source startswith "MSExchange"` | - | 1 | - | - | **1** |
 | `ParameterXml in "<Param>WinDefend</Param>,<Param>sgrmbroker</Param>"`<br>`Source == "Microsoft-Windows-SENSE"` | - | 1 | - | - | **1** |
+| `EventID == "7045"` | - | 1 | - | - | **1** |
 | `EventID == "1"`<br>`EventLog has "shutdown.exe"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
 | `EventID == "33205"`<br>`EventLog == "Application"`<br>`RenderedDescription has_all "database_name:AdfsConfigurationV4"`<br>`Source == "MSSQL$MICROSOFT##WID"` | - | 1 | - | - | **1** |
 | `RenderedDescription contains "Hello"` | - | 1 | - | - | **1** |
@@ -365,7 +373,7 @@ References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other pars
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,255,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
-| **Total** | **4** | **43** | **6** | **7** | **60** |
+| **Total** | **4** | **44** | **6** | **7** | **61** |
 
 ### EventID
 
@@ -382,6 +390,7 @@ References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other pars
 | `5` | - | - | 1 | 4 | **5** |
 | `12` | - | - | 1 | 4 | **5** |
 | `14` | - | - | 1 | 4 | **5** |
+| `7045` | - | 4 | - | - | **4** |
 | `22` | - | - | 1 | 3 | **4** |
 | `15` | - | - | - | 4 | **4** |
 | `16` | - | - | - | 4 | **4** |
@@ -393,7 +402,6 @@ References by type: 4 connectors, 43 content items, 6 ASIM parsers, 7 other pars
 | `4` | - | - | - | 4 | **4** |
 | `8` | - | - | - | 4 | **4** |
 | `9` | - | - | - | 4 | **4** |
-| `7045` | - | 3 | - | - | **3** |
 | `23` | - | - | 1 | 2 | **3** |
 | `0` | - | 2 | - | - | **2** |
 | `33205` | - | 1 | - | - | **1** |

@@ -1,4 +1,4 @@
-# CyberArk Audit
+# Idira Audit
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75">
 
@@ -19,9 +19,8 @@
 | **CCF Configuration** | [CyberArkAudit_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST`, `Nested` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyberark-audit) |
 
-The [CyberArk Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm) data connector enables Microsoft Sentinel to ingest security event logs and other events from the CyberArk Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.
+The [Idira Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm) data connector enables Microsoft Sentinel to ingest security event logs and other events from the Idira Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.
 
 ## Tables Ingested
 
@@ -39,24 +38,24 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **CyberArk Audit Service Platform**: Access to perform required configurations in CyberArk Audit platform
+- **Idira Audit Service Platform**: Access to perform required configurations in Idira Audit platform
 
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-**1. Connect to CyberArk Audit API to start collecting event logs in Microsoft Sentinel**
+**1. Connect to Idira Audit API to start collecting event logs in Microsoft Sentinel**
 
-Follow the steps below to integrate Microsoft Sentinel with CyberArk Audit and enable centralized monitoring of system and user activities within Microsoft Sentinel. You can also refer to the [CyberArk Audit documentation](https://docs.cyberark.com/admin-space/latest/en/content/siem-integration/siem-export-ms-sentinel.htm?tocpath=Integrations%7CExport%20Audit%20activities%20to%20a%20SIEM%20application%7C_____2#CreateandconfigureaSIEMintegration) and follow till Step 5.
+Follow the steps below to integrate Microsoft Sentinel with Idira Audit and enable centralized monitoring of system and user activities within Microsoft Sentinel. You can also refer to the [Idira Audit documentation](https://docs.cyberark.com/admin-space/latest/en/content/siem-integration/siem-export-ms-sentinel.htm?tocpath=Integrations%7CExport%20Audit%20activities%20to%20a%20SIEM%20application%7C_____2#CreateandconfigureaSIEMintegration) and follow till Step 5.
 # Step1: Create new SIEM integration
-1. On CyberArk portal, go to `Administration`.
+1. On Idira portal, go to `Administration`.
 2. Select `My environment` > `Integrations` > `Export to SIEM`.
 3. In the SIEM integrations page, select `Create` > `Create SIEM integration`
 4. In the `Create a SIEM integration` page, select the `Identity Administration` link to create an OAuth server web in Identity Administration.
 # Step 2: Create an OAuth2 server web app in Identity Administration
 1. On `Identity Administration` page, from the left menu select `Apps & Widgets` > `Web Apps`
 2. Select `Add Web Apps` and create an `OAuth2 server` type web app from the `Custom` tab.
-3. Enter `CyberArkAuditforMicrosoftSentinel` in the `ApplicationID` and `Name` fields.
+3. Enter `IdiraAuditforMicrosoftSentinel` in the `ApplicationID` and `Name` fields.
 4. In the `Tokens` tab, ensure that the value in the `Token Type` field is `jwtR256` and only the `Client Creds` authorization method is selected.
 5. Click `Add` in the `Scope` tab and enter `isp.audit.events:read`.
 6. In the `Advanced` tab, copy and paste the following script and then click Save.
@@ -70,9 +69,9 @@ Follow the steps below to integrate Microsoft Sentinel with CyberArk Audit and e
 2. In the `Account` section, enter the `Login name` and `Display name` as `MicrosoftSentinel`. Add a new password or generate the password automatically.
 3. Select `OAuth confidential client`.
 4. In the `Application Settings` tab, click `Add`.
-5. Select the `CyberArkAuditforMicrosoftSentinel` application. This is the name you created in the web service.
+5. Select the `IdiraAuditforMicrosoftSentinel` application. This is the name you created in the web service.
 # Step 4: Grant web app permissions to the service user
-1. Go to the `CyberArkAuditforMicrosoftSentinel` web app you created.
+1. Go to the `IdiraAuditforMicrosoftSentinel` web app you created.
 2. In the `Permissions` tab, click `Add` to find your user `MicrosoftSentinel` and then click `Add`.
 3. Set the following permissions for the user:
    - Grant
@@ -85,8 +84,8 @@ Follow the steps below to integrate Microsoft Sentinel with CyberArk Audit and e
 3. Select `Create` > `Create SIEM integration`.
 4. Enter the name as `Microsoft Sentinel Integration` and optionally add a description.
 5. Click `Apply`.
-# Step 6: Connect CyberArk Audit Service with Microsoft Sentinel Data Connector
-> **Note:** Copy all the details you captured in the previous steps and connect with the CyberArk Audit service.
+# Step 6: Connect Idira Audit Service with Microsoft Sentinel Data Connector
+> **Note:** Copy all the details you captured in the previous steps and connect with the Idira Audit service.
 - **OAuth2 Server App Name**: e.g. AuditforMicrosoftSentinel
 - **Audit API Key**: (password field)
 - **Identity Endpoint**: e.g. kln9281.id.cyberark.cloud

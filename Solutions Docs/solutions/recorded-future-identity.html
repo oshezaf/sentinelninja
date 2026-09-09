@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.3</td>
+  <td style="text-align:left">3.2.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-04-28</td>
+  <td style="text-align:left">2026-08-14</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -104,21 +104,44 @@ There are many ways organizations can utilize Recorded Future Identity Intellige
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p><strong>This solution does not include data connectors.</strong></p>
-<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/recordedfutureidentityalertimporter.html">Recorded Future Identity - Playbook Alert Importer</a></li>
+<li><a href="../connectors/recordedfutureidentityv3.html">Recorded Future Identity - Credential Exposure Importer</a> ⚠️</li>
+</ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>1 table(s)</strong> from its content items:</p>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
   <th>Table</th>
+  <th>Used By Connectors</th>
   <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/recordedfutureidentity-playbookalertresults-cl.html"><code>RecordedFutureIdentity_PlaybookAlertResults_CL</code></a></td>
+  <td><a href="../tables/rfi-credentialdumps-v2-cl.html"><code>RFI_CredentialDumps_V2_CL</code></a></td>
+  <td><a href="../connectors/recordedfutureidentityv3.html">Recorded Future Identity - Credential Exposure Importer</a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/rfi-malwarelogs-v2-cl.html"><code>RFI_MalwareLogs_V2_CL</code></a></td>
+  <td><a href="../connectors/recordedfutureidentityv3.html">Recorded Future Identity - Credential Exposure Importer</a></td>
+  <td>Playbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/rfi-playbookalertresults-v2-cl.html"><code>RFI_PlaybookAlertResults_V2_CL</code></a></td>
+  <td><a href="../connectors/recordedfutureidentityalertimporter.html">Recorded Future Identity - Playbook Alert Importer</a></td>
   <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/rfi-userslookupresults-v2-cl.html"><code>RFI_UsersLookupResults_V2_CL</code></a></td>
+  <td><a href="../connectors/recordedfutureidentityv3.html">Recorded Future Identity - Credential Exposure Importer</a></td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -157,7 +180,7 @@ There are many ways organizations can utilize Recorded Future Identity Intellige
   <td style="text-align:left"><a href="../content/recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.html">Recorded Future Identity - Credential Exposure Detected</a></td>
   <td style="text-align:left">High</td>
   <td style="text-align:left">CredentialAccess</td>
-  <td style="text-align:left"><a href="../tables/recordedfutureidentity-playbookalertresults-cl.html"><code>RecordedFutureIdentity_PlaybookAlertResults_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/rfi-playbookalertresults-v2-cl.html"><code>RFI_PlaybookAlertResults_V2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -204,12 +227,12 @@ There are many ways organizations can utilize Recorded Future Identity Intellige
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-identity-rfi-search-external-user-b3c5c779.html">RFI-search-external-user</a></td>
   <td style="text-align:left">This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu...</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/rfi-malwarelogs-v2-cl.html"><code>RFI_MalwareLogs_V2_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.html">RFI-search-workforce-user</a></td>
   <td style="text-align:left">This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us...</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/rfi-credentialdumps-v2-cl.html"><code>RFI_CredentialDumps_V2_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -266,6 +289,11 @@ There are many ways organizations can utilize Recorded Future Identity Intellige
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.0</td>
+  <td>21-07-2026</td>
+  <td>Breaking change: updated data imports to use DCE/DCR instead of deprecated Data Collector API. See readme.md for migration instructions.</td>
+</tr>
 <tr>
   <td>3.1.3</td>
   <td>06-03-2026</td>

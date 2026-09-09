@@ -21,10 +21,9 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 
 - [Schema](#schema)
 - [Schema References](#schema-references)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
-## Schema (18 columns)
+## Schema (19 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail)
 
@@ -43,6 +42,7 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | DelegateUser | string | The user who delegated the change. |
 | Display | string | A user-friendly display name for the change. |
 | Id | string | The unique identifier for the audit trail entry. |
+| SalesforceDomain | string | Salesforce host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | Section | string | The section of the Salesforce setup that was changed. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
@@ -55,21 +55,15 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SalesforceAuditTrail Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail)
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) |  |
-
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [SalesforceAuditLogs](../parsers/salesforceauditlogs.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |  |
 
 ---
 

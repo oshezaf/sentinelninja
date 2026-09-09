@@ -44,11 +44,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">Security,Security - Network,Security - Vulnerability Management</td>
+  <td style="text-align:left">Security - Others,Security - Network,Security - Vulnerability Management</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">2.0.0</td>
+  <td style="text-align:left">3.0.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securityscorecardinc1667844176331.ssc-rating-sentinel">Azure Marketplace</a> · Popularity: 🟡 Low (31%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securityscorecardinc1667844176331.ssc-rating-sentinel">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
-<p>This package includes three data connectors and an associated workbook for the SecurityScorecard offering within Microsoft Sentinel. These connectors are able to import 11 company scores from SecurityScorecard (overall score and 10 factor scores) as well as new issue events.</p>
+<p>This package includes three Codeless Connector Framework (CCF) data connectors, three KQL parsers, and an associated workbook for the SecurityScorecard offering within Microsoft Sentinel. The CCF connectors ingest 11 company scores from SecurityScorecard (overall score and 10 factor scores) as well as new issue events without requiring an Azure Function deployment. The legacy Function App connectors are retained but marked Deprecated.</p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -80,17 +80,20 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>3 data connector(s)</strong>:</p>
+<p>This solution provides <strong>6 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/securityscorecardfactorazurefunctions.html">SecurityScorecard Factor</a> 🔶</li>
-<li><a href="../connectors/securityscorecardissueazurefunctions.html">SecurityScorecard Issue</a> 🔶</li>
-<li><a href="../connectors/securityscorecardratingsazurefunctions.html">SecurityScorecard Cybersecurity Ratings</a> 🔶</li>
+<li><a href="../connectors/securityscorecardfactorazurefunctions.html">[DEPRECATED] SecurityScorecard Factor</a> 🔶</li>
+<li><a href="../connectors/securityscorecardfactorccpdefinition.html">SecurityScorecard Factors (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/securityscorecardissueazurefunctions.html">[DEPRECATED] SecurityScorecard Issue</a> 🔶</li>
+<li><a href="../connectors/securityscorecardissueccpdefinition.html">SecurityScorecard Issues (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/securityscorecardratingsazurefunctions.html">[DEPRECATED] SecurityScorecard Cybersecurity Ratings</a> 🔶</li>
+<li><a href="../connectors/securityscorecardratingsccpdefinition.html">SecurityScorecard Ratings (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>3 table(s)</strong>:</p>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -101,18 +104,33 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/securityscorecardfactorhistory-cl.html"><code>SecurityScorecardFactorHistory_CL</code></a></td>
+  <td><a href="../connectors/securityscorecardfactorccpdefinition.html">SecurityScorecard Factors (via Codeless Connector Framework)</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
   <td><a href="../tables/securityscorecardfactor-cl.html"><code>SecurityScorecardFactor_CL</code></a> 🔶</td>
-  <td><a href="../connectors/securityscorecardfactorazurefunctions.html">SecurityScorecard Factor</a></td>
+  <td><a href="../connectors/securityscorecardfactorazurefunctions.html">[DEPRECATED] SecurityScorecard Factor</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/securityscorecardissueshistory-cl.html"><code>SecurityScorecardIssuesHistory_CL</code></a></td>
+  <td><a href="../connectors/securityscorecardissueccpdefinition.html">SecurityScorecard Issues (via Codeless Connector Framework)</a></td>
   <td>Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/securityscorecardissues-cl.html"><code>SecurityScorecardIssues_CL</code></a> 🔶</td>
-  <td><a href="../connectors/securityscorecardissueazurefunctions.html">SecurityScorecard Issue</a></td>
+  <td><a href="../connectors/securityscorecardissueazurefunctions.html">[DEPRECATED] SecurityScorecard Issue</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/securityscorecardratingshistory-cl.html"><code>SecurityScorecardRatingsHistory_CL</code></a></td>
+  <td><a href="../connectors/securityscorecardratingsccpdefinition.html">SecurityScorecard Ratings (via Codeless Connector Framework)</a></td>
   <td>Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/securityscorecardratings-cl.html"><code>SecurityScorecardRatings_CL</code></a> 🔶</td>
-  <td><a href="../connectors/securityscorecardratingsazurefunctions.html">SecurityScorecard Cybersecurity Ratings</a></td>
+  <td><a href="../connectors/securityscorecardratingsazurefunctions.html">[DEPRECATED] SecurityScorecard Cybersecurity Ratings</a></td>
   <td>Workbooks</td>
 </tr>
 </tbody>
@@ -121,7 +139,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -130,6 +148,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">3</td>
+</tr>
 <tr>
   <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
@@ -147,7 +169,56 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/securityscorecard-cybersecurity-ratings-securityscorecardworkbook-305a0f99.html">SecurityScorecardWorkbook</a></td>
-  <td style="text-align:left"><a href="../tables/securityscorecardfactor-cl.html"><code>SecurityScorecardFactor_CL</code></a><br><a href="../tables/securityscorecardissues-cl.html"><code>SecurityScorecardIssues_CL</code></a><br><a href="../tables/securityscorecardratings-cl.html"><code>SecurityScorecardRatings_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/securityscorecardfactorhistory-cl.html"><code>SecurityScorecardFactorHistory_CL</code></a><br><a href="../tables/securityscorecardfactor-cl.html"><code>SecurityScorecardFactor_CL</code></a><br><a href="../tables/securityscorecardissueshistory-cl.html"><code>SecurityScorecardIssuesHistory_CL</code></a><br><a href="../tables/securityscorecardissues-cl.html"><code>SecurityScorecardIssues_CL</code></a><br><a href="../tables/securityscorecardratingshistory-cl.html"><code>SecurityScorecardRatingsHistory_CL</code></a><br><a href="../tables/securityscorecardratings-cl.html"><code>SecurityScorecardRatings_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/securityscorecardfactor.html">SecurityScorecardFactor</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/securityscorecardfactorhistory-cl.html"><code>SecurityScorecardFactorHistory_CL</code></a> <em>(read)</em><br><a href="../tables/securityscorecardfactor-cl.html"><code>SecurityScorecardFactor_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/securityscorecardissue.html">SecurityScorecardIssue</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/securityscorecardissueshistory-cl.html"><code>SecurityScorecardIssuesHistory_CL</code></a> <em>(read)</em><br><a href="../tables/securityscorecardissues-cl.html"><code>SecurityScorecardIssues_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/securityscorecardratings.html">SecurityScorecardRatings</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/securityscorecardratingshistory-cl.html"><code>SecurityScorecardRatingsHistory_CL</code></a> <em>(read)</em><br><a href="../tables/securityscorecardratings-cl.html"><code>SecurityScorecardRatings_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>07-08-2026</td>
+  <td>Migrated the Ratings, Factor, and Issue <strong>Data Connectors</strong> to the <strong>Codeless Connector Framework (CCF)</strong>, removing the need for an Azure Function App deployment. <br> Added multi-instance support: each connector uses a DataConnectorsGrid and ContextPane, so one independently-managed connection can be created per SecurityScorecard portfolio, scoped server-side by Portfolio ID. <br> Added an optional own-company &quot;My Scorecard&quot; domain to ingest your own organization's scores alongside portfolio companies. <br> Ingest real dated score, factor, and issue history, enriched with company industry. <br> Marked the legacy Python Function App <strong>Data Connectors</strong> as deprecated. They are retained in the solution, not removed, so existing deployments continue to work. <br> Added <strong>Parsers</strong> that unify legacy (<code>*_CL</code>) and CCF (<code>*History_CL</code>) data for backward compatibility. <br> Updated the <strong>Workbook</strong> to query through the new parsers.</td>
+</tr>
+<tr>
+  <td>2.0.0</td>
+  <td>01-10-2022</td>
+  <td>Solution release with three Azure Function App data connectors (Ratings, Factor, Issue) and the SecurityScorecard workbook.</td>
 </tr>
 </tbody>
 </table>

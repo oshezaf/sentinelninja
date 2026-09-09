@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feedly Solution For Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>Feedly Threat Intelligence Solution For Microsoft Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="feedly-solution-for-microsoft-sentinel">Feedly Solution For Microsoft Sentinel</h1>
+<h1 id="feedly-threat-intelligence-solution-for-microsoft-sentinel">Feedly Threat Intelligence Solution For Microsoft Sentinel</h1>
 <p><em>Solution: Feedly</em></p>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Feedly.svg" alt="Feedly Logo" width="75" height="75">
 
@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.4</td>
+  <td style="text-align:left">3.0.5</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-03-02</td>
+  <td style="text-align:left">2026-09-09</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly">Azure Marketplace</a> · Popularity: 🟡 Low (24%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -76,13 +76,10 @@
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/feedlyccpdefinition.html">Feedly IoC</a> 🔶</li>
+<li><a href="../connectors/feedlyccpdefinition.html">Feedly IoC</a></li>
 </ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
-<h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<h2 id="internal-tables">Internal Tables</h2>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -93,15 +90,12 @@
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/feedly-indicators-cl.html"><code>feedly_indicators_CL</code></a> 🔶</td>
+  <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
   <td><a href="../connectors/feedlyccpdefinition.html">Feedly IoC</a></td>
   <td>-</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -112,6 +106,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.5</td>
+  <td>28-08-2026</td>
+  <td>Ingest Feedly IoCs into native <strong>ThreatIntelIndicators</strong> (SourceSystem=Feedly)</td>
+</tr>
 <tr>
   <td>3.0.4</td>
   <td>16-02-2026</td>

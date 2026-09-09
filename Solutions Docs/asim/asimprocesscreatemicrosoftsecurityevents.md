@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Security Events |
-| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftSecurityEvents.md)) |
-| **Last Updated** | Feb 23, 2022 |
+| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateMicrosoftSecurityEvents.md)) |
+| **Last Updated** | Aug 27, 2026 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventCreate](asimprocesseventcreate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessCreateMicrosoftSecurityEvents.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessCreateMicrosoftSecurityEvents.yaml) |
 

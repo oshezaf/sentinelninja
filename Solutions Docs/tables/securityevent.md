@@ -269,7 +269,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityEvent Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent)
 
-## Solutions (33)
+## Solutions (34)
 
 This table is used by the following solutions:
 
@@ -285,6 +285,7 @@ This table is used by the following solutions:
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
+- [Intel471](../solutions/intel471.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -323,7 +324,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (240)
+## Content Items Using This Table (264)
 
 ### Analytic Rules (107)
 
@@ -509,7 +510,7 @@ This table is ingested by the following connectors:
 | [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) |  |
 | [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) |  |
 
-### Hunting Queries (91)
+### Hunting Queries (114)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -551,6 +552,34 @@ This table is ingested by the following connectors:
 | Hunting Query |
 |:-------------|
 | [Kerberoast burst followed by cloud sign-in](../content/hybrid-attack-cloud-&-identity-kerberoast-burst-followed-by-cloud-sign-in-7f7c6e58-8f74-4c0c-913a-b2dfc96f7e21-23f0cd2d.md) |
+
+**In solution [Intel471](../solutions/intel471.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [AnyDesk Execution from Abnormal Folder - Potential Malicious Use of RMM Tool](../content/intel471-anydesk-execution-from-abnormal-folder-potential-malicious-use-of-rmm-tool-93f71607-f35d-4aa6-aec9-c2f8a62cbd8a-161d718c.md) | `Activity has "Process"`<br>`NewProcessName endswith "AnyDesk.exe"`<br>`NewProcessName has_any "\\AppData\\"` |
+| [Autorun or ASEP Registry Key Modification](../content/intel471-autorun-or-asep-registry-key-modification-8289e2ad-bc74-4ae3-bfaa-cdeb4335135c-ce67e3af.md) | `NewValue contains "\\ProgramData\\Package Cache\\"`<br>`NewValue has_any "\\Windows\\System32\\ctfmon.exe"`<br>`ObjectName has_any "\\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders"`<br>`ObjectName has_any "\\software\\Microsoft\\Windows\\CurrentVersion\\Run"`<br>`ObjectValueName has_any "\\Microsoft Visual Studio\\Installer\\"`<br>`ParentProcessName has_any "Program Files (x86)\\Microsoft\\Edge\\Application"`<br>`ParentProcessName has_any "vc_redist.x86.exe"` |
+| [Browser Spawning Suspicious Applications - Potential Exploit or Social Engineering](../content/intel471-browser-spawning-suspicious-applications-potential-exploit-or-social-engineering-59d4df2f-014b-47c0-8008-688d1b41682a-e54c6b2b.md) | `NewProcessName has_any "\\cmd.exe"`<br>`ParentProcessName has_any "\\chrome.exe"` |
+| [Creating a Shadow Copy](../content/intel471-creating-a-shadow-copy-262d9692-6d36-4b10-9fc5-159930cff604-8a85c79b.md) | `CommandLine contains "shadow"`<br>`CommandLine has "Checkpoint-Computer"`<br>`CommandLine has "create"` |
+| [Dump LSASS via Renamed procdump](../content/intel471-dump-lsass-via-renamed-procdump-3e8f06d3-4946-4c4a-85b0-cd2804d3401b-0416a344.md) | `CommandLine has "lsass"`<br>`CommandLine has_any "-ma"`<br>`NewProcessName endswith ".exe"` |
+| [Execution BAT Script to Unpack Payload](../content/intel471-execution-bat-script-to-unpack-payload-606cd1ac-622d-4645-9553-2b04df7407d8-950627ff.md) | `CommandLine contains ".bat"`<br>`CommandLine contains "/c"`<br>`CommandLine contains "cmd.exe"`<br>`CommandLine has_any "AppData"` |
+| [File Created In Startup Folder](../content/intel471-file-created-in-startup-folder-8fedb48c-396b-4cd5-9483-69d7fc3eecee-4e25a558.md) | `EventData has_any "0x2"`<br>`EventID == "4663"`<br>`Process endswith "SearchProtocolHost.exe"`<br>`SubjectUserName !endswith "$"` |
+| [Java Spawning Child Process by Unique Child Process Name - Potential Exploitation Activity](../content/intel471-java-spawning-child-process-by-unique-child-process-name-potential-exploitation-activity-668a47ab-f437-4a63-90a5-912b118dc264-681d3492.md) | `ParentProcessName contains "java"` |
+| [MeshAgent Suspicious Child Process - Potential Malicious RMM Tool Usage](../content/intel471-meshagent-suspicious-child-process-potential-malicious-rmm-tool-usage-749f7e2c-5eeb-407d-a5ef-cfcecbe5d810-328fa902.md) | `CommandLine has_any "-kvm1"`<br>`NewProcessName has "meshagent.exe"`<br>`NewProcessName has_any "cmd.exe"`<br>`ParentProcessName has "meshagent.exe"` |
+| [Methods for Downloading Files with PowerShell](../content/intel471-methods-for-downloading-files-with-powershell-c7b320fb-ac67-45b0-92c4-b0f1e10b4e46-7e879de3.md) | `CommandLine has_any "Invoke-WebRequest"`<br>`NewProcessName has_any "powershell.exe"` |
+| [NetSupport Manager Execution from Abnormal Folder - Potential Malicious Use of RMM Tool](../content/intel471-netsupport-manager-execution-from-abnormal-folder-potential-malicious-use-of-rmm-tool-3f329a8c-0102-4a61-8cf3-63948aab5ef4-6c1c722f.md) | `NewProcessName endswith "client32.exe"`<br>`NewProcessName has_any "Program Files (x86)\\NetSupport"` |
+| [Potential Maldoc Execution Chain Observed](../content/intel471-potential-maldoc-execution-chain-observed-02909982-664b-4858-b703-429cbe031fef-56427fe3.md) |  |
+| [PowerShell Encoded Command Execution](../content/intel471-powershell-encoded-command-execution-3a5a21fd-5a82-45dc-ad37-3fb95f475e11-6ac23a16.md) | `ParentProcessName endswith "gc_worker.exe"`<br>`ParentProcessName has "Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows"` |
+| [Powershell History Modification or Deletion](../content/intel471-powershell-history-modification-or-deletion-ccdd03de-8fbf-436b-99ba-00dfee83d42f-d9d9dd15.md) |  |
+| [Python Executing from Non-Standard Directory](../content/intel471-python-executing-from-non-standard-directory-eebb7f80-07f3-4d37-aab7-51c1ad31f1b3-68e3e917.md) | `NewProcessName matchesregex ".*python(?:[23](?:\\.\\d+)?w?)?"` |
+| [Remote Atera Agent Download - Command Line](../content/intel471-remote-atera-agent-download-command-line-bb771c73-e7ab-4705-92a2-ce322b33621d-edbcfef4.md) | `CommandLine has "GetAgent"`<br>`CommandLine has "atera.com"`<br>`CommandLine has "integratorLogin"` |
+| [Scheduled Task Executing from Abnormal Location](../content/intel471-scheduled-task-executing-from-abnormal-location-09a380b3-45e5-408c-b14c-3787fa48d783-6e2e7d8a.md) | `EventID == "4698"` |
+| [Shadow Copies Deletion Using Operating Systems Utilities](../content/intel471-shadow-copies-deletion-using-operating-systems-utilities-2e3e9910-70c1-4822-804a-ee9919b0c419-360a835c.md) | `CommandLine contains "delete"`<br>`CommandLine contains "shadow"`<br>`CommandLine has_any "wmic"`<br>`NewProcessName has_any "powershell.exe"` |
+| [Suspect Child Process to IIS Worker Process (w3wp.exe) - Potential Exploitation](../content/intel471-suspect-child-process-to-iis-worker-process-w3wp.exe-potential-exploitation-667c9f6c-8e41-4309-80a8-55fc3c5769bf-621120ec.md) | `NewProcessName has_any "cmd.exe"`<br>`ParentProcessName endswith "w3wp.exe"` |
+| [Suspicious Child Process for Java - Potential Exploitation Activity](../content/intel471-suspicious-child-process-for-java-potential-exploitation-activity-46c5b8dd-465c-4a51-b127-7561bbca02ff-7bc4c67b.md) | `ParentProcessName endswith "java.exe"`<br>`Process has_any "schtasks.exe"` |
+| [User Added to Default Privileged Windows Security Groups](../content/intel471-user-added-to-default-privileged-windows-security-groups-b6365ad5-0ccd-4426-97bc-b9484eb9579f-47292d99.md) | `CommandLine has_any "Administrators"`<br>`CommandLine has_any "group"` |
+| [WMIC Windows Internal Discovery and Enumeration](../content/intel471-wmic-windows-internal-discovery-and-enumeration-bc0fd59c-4217-46a7-a167-764727118567-da809ef8.md) |  |
+| [Wevtutil Cleared Log](../content/intel471-wevtutil-cleared-log-7ceada06-54e2-4b44-9dca-b4e8d4ba401d-80b0d977.md) | `NewProcessName endswith "wevtutil.exe"` |
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 
@@ -652,7 +681,7 @@ This table is ingested by the following connectors:
 | [Suspicious command line tokens in LolBins or LolScripts](../content/github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.md) | `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` |
 | [Users Opening and Reading the Local Device Identity Key](../content/github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.md) | `Activity == "5058 - Key file operation."` |
 
-### Workbooks (42)
+### Workbooks (43)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"`
 
@@ -785,6 +814,7 @@ etsetupsvc.dll"`<br>`NewProcessName has "SolarWinds"`<br>`ObjectName contains "<
 | [WindowsAuditChecker](../content/github-only-windowsauditchecker-d8c63df2.md) | `EventID in "4624,4625,4768,4769,4771"` |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` |
 | [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `NewUacValue != "-"` |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (7)
@@ -817,9 +847,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (112 criteria, 161 total references)
+## Selection Criteria Summary (132 criteria, 181 total references)
 
-References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -888,6 +918,26 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` | - | 1 | - | - | **1** |
 | `EventID in "4698,4702"` | - | 1 | - | - | **1** |
 | `EventID == "4769"` | - | 1 | - | - | **1** |
+| `Activity has "Process"`<br>`NewProcessName endswith "AnyDesk.exe"`<br>`NewProcessName has_any "\\AppData\\"` | - | 1 | - | - | **1** |
+| `NewValue contains "\\ProgramData\\Package Cache\\"`<br>`NewValue has_any "\\Windows\\System32\\ctfmon.exe"`<br>`ObjectName has_any "\\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders"`<br>`ObjectName has_any "\\software\\Microsoft\\Windows\\CurrentVersion\\Run"`<br>`ObjectValueName has_any "\\Microsoft Visual Studio\\Installer\\"`<br>`ParentProcessName has_any "Program Files (x86)\\Microsoft\\Edge\\Application"`<br>`ParentProcessName has_any "vc_redist.x86.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName has_any "\\cmd.exe"`<br>`ParentProcessName has_any "\\chrome.exe"` | - | 1 | - | - | **1** |
+| `CommandLine contains "shadow"`<br>`CommandLine has "Checkpoint-Computer"`<br>`CommandLine has "create"` | - | 1 | - | - | **1** |
+| `CommandLine has "lsass"`<br>`CommandLine has_any "-ma"`<br>`NewProcessName endswith ".exe"` | - | 1 | - | - | **1** |
+| `CommandLine contains ".bat"`<br>`CommandLine contains "/c"`<br>`CommandLine contains "cmd.exe"`<br>`CommandLine has_any "AppData"` | - | 1 | - | - | **1** |
+| `EventData has_any "0x2"`<br>`EventID == "4663"`<br>`Process endswith "SearchProtocolHost.exe"`<br>`SubjectUserName !endswith "$"` | - | 1 | - | - | **1** |
+| `ParentProcessName contains "java"` | - | 1 | - | - | **1** |
+| `CommandLine has_any "-kvm1"`<br>`NewProcessName has "meshagent.exe"`<br>`NewProcessName has_any "cmd.exe"`<br>`ParentProcessName has "meshagent.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has_any "Invoke-WebRequest"`<br>`NewProcessName has_any "powershell.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName endswith "client32.exe"`<br>`NewProcessName has_any "Program Files (x86)\\NetSupport"` | - | 1 | - | - | **1** |
+| `ParentProcessName endswith "gc_worker.exe"`<br>`ParentProcessName has "Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows"` | - | 1 | - | - | **1** |
+| `NewProcessName matchesregex ".*python(?:[23](?:\\.\\d+)?w?)?"` | - | 1 | - | - | **1** |
+| `CommandLine has "GetAgent"`<br>`CommandLine has "atera.com"`<br>`CommandLine has "integratorLogin"` | - | 1 | - | - | **1** |
+| `EventID == "4698"` | - | 1 | - | - | **1** |
+| `CommandLine contains "delete"`<br>`CommandLine contains "shadow"`<br>`CommandLine has_any "wmic"`<br>`NewProcessName has_any "powershell.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName has_any "cmd.exe"`<br>`ParentProcessName endswith "w3wp.exe"` | - | 1 | - | - | **1** |
+| `ParentProcessName endswith "java.exe"`<br>`Process has_any "schtasks.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has_any "Administrators"`<br>`CommandLine has_any "group"` | - | 1 | - | - | **1** |
+| `NewProcessName endswith "wevtutil.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4688"`<br>`ParentProcessName endswith "wmiprvse.exe"` | - | 1 | - | - | **1** |
 | `EventID == "4657"`<br>`ObjectValueName == "CrashDumpEnabled"` | - | 1 | - | - | **1** |
 | `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | - | 1 | - | - | **1** |
@@ -935,7 +985,7 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **154** | **5** | **1** | **161** |
+| **Total** | **1** | **174** | **5** | **1** | **181** |
 
 ### AccessMask
 
@@ -966,6 +1016,7 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has modified` | - | 10 | - | - | **10** |
+| `has Process` | - | 1 | - | - | **1** |
 | `5058 - Key file operation.` | - | 1 | - | - | **1** |
 | `has privileged` | - | 1 | - | - | **1** |
 | `has_any An account failed to log on` | - | 1 | - | - | **1** |
@@ -988,6 +1039,7 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has_all advfirewall` | - | 2 | - | - | **2** |
+| `contains shadow` | - | 2 | - | - | **2** |
 | `has /s` | - | 2 | - | - | **2** |
 | `has SysAidServer` | - | 1 | - | - | **1** |
 | `contains TVqQAAMAAAAEAAA` | - | 1 | - | - | **1** |
@@ -1010,6 +1062,23 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `has cmd.exe` | - | 1 | - | - | **1** |
 | `has_any .dll` | - | 1 | - | - | **1** |
 | `has_any explorer` | - | 1 | - | - | **1** |
+| `has Checkpoint-Computer` | - | 1 | - | - | **1** |
+| `has create` | - | 1 | - | - | **1** |
+| `has lsass` | - | 1 | - | - | **1** |
+| `has_any -ma` | - | 1 | - | - | **1** |
+| `contains .bat` | - | 1 | - | - | **1** |
+| `contains /c` | - | 1 | - | - | **1** |
+| `contains cmd.exe` | - | 1 | - | - | **1** |
+| `has_any AppData` | - | 1 | - | - | **1** |
+| `has_any -kvm1` | - | 1 | - | - | **1** |
+| `has_any Invoke-WebRequest` | - | 1 | - | - | **1** |
+| `has GetAgent` | - | 1 | - | - | **1** |
+| `has atera.com` | - | 1 | - | - | **1** |
+| `has integratorLogin` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `has_any wmic` | - | 1 | - | - | **1** |
+| `has_any Administrators` | - | 1 | - | - | **1** |
+| `has_any group` | - | 1 | - | - | **1** |
 | `has powershell` | - | 1 | - | - | **1** |
 | `has_any cdn.discordapp.com` | - | 1 | - | - | **1** |
 | `has Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin` | - | 1 | - | - | **1** |
@@ -1047,6 +1116,7 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `has CN=Partitions,CN=Configuration` | - | 1 | - | - | **1** |
 | `has CN=System` | - | 1 | - | - | **1** |
 | `contains <Data Name=\` | - | 1 | - | - | **1** |
+| `has_any 0x2` | - | 1 | - | - | **1** |
 
 ### EventID
 
@@ -1059,20 +1129,20 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `9208` | 1 | 8 | - | 1 | **10** |
 | `9211` | 1 | 8 | - | 1 | **10** |
 | `9212` | 1 | 8 | - | 1 | **10** |
-| `4663` | - | 5 | 2 | - | **7** |
+| `4663` | - | 6 | 2 | - | **8** |
 | `4657` | - | 6 | 1 | - | **7** |
 | `4720` | - | 7 | - | - | **7** |
 | `4648` | - | 5 | - | - | **5** |
 | `5137` | - | 5 | - | - | **5** |
 | `4656` | - | 5 | - | - | **5** |
 | `4732` | - | 5 | - | - | **5** |
+| `4698` | - | 4 | - | - | **4** |
 | `5145` | - | 4 | - | - | **4** |
 | `1` | - | 4 | - | - | **4** |
 | `4728` | - | 4 | - | - | **4** |
 | `4756` | - | 4 | - | - | **4** |
 | `4726` | - | 4 | - | - | **4** |
 | `4768` | - | 3 | - | - | **3** |
-| `4698` | - | 3 | - | - | **3** |
 | `4702` | - | 3 | - | - | **3** |
 | `1102` | - | 3 | - | - | **3** |
 | `4769` | - | 3 | - | - | **3** |
@@ -1211,14 +1281,23 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any cmd.exe` | - | 3 | - | - | **3** |
+| `has_any powershell.exe` | - | 2 | - | - | **2** |
 | `C:\\Windows\\System32\\schtasks.exe` | - | 2 | - | - | **2** |
 | `has C:\\Windows\\` | - | 1 | - | - | **1** |
 | `has_any Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}` | - | 1 | - | - | **1** |
 | `has_any arp.exe` | - | 1 | - | - | **1** |
 | `endswith werfault.exe` | - | 1 | - | - | **1** |
 | `endswith powershell.exe` | - | 1 | - | - | **1** |
-| `has_any cmd.exe` | - | 1 | - | - | **1** |
 | `has_any winword.exe` | - | 1 | - | - | **1** |
+| `endswith AnyDesk.exe` | - | 1 | - | - | **1** |
+| `has_any \\AppData\\` | - | 1 | - | - | **1** |
+| `has_any \\cmd.exe` | - | 1 | - | - | **1** |
+| `endswith .exe` | - | 1 | - | - | **1** |
+| `has meshagent.exe` | - | 1 | - | - | **1** |
+| `endswith client32.exe` | - | 1 | - | - | **1** |
+| `has_any Program Files (x86)\\NetSupport` | - | 1 | - | - | **1** |
+| `endswith wevtutil.exe` | - | 1 | - | - | **1** |
 | `!endswith conhost.exe` | - | 1 | - | - | **1** |
 | `!has :\\Windows\\System32` | - | 1 | - | - | **1** |
 | `!has :\\Windows\\Syswow64` | - | 1 | - | - | **1** |
@@ -1237,6 +1316,8 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `contains mshtml,` | - | 1 | - | - | **1** |
 | `contains vbscript` | - | 1 | - | - | **1** |
 | `contains window.close` | - | 1 | - | - | **1** |
+| `contains \\ProgramData\\Package Cache\\` | - | 1 | - | - | **1** |
+| `has_any \\Windows\\System32\\ctfmon.exe` | - | 1 | - | - | **1** |
 
 ### ObjectName
 
@@ -1246,6 +1327,8 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `!has \\Run` | - | 1 | - | - | **1** |
 | `has \\CurrentVersion` | - | 1 | - | - | **1** |
 | `endswith lsass.exe` | - | 1 | - | - | **1** |
+| `has_any \\software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders` | - | 1 | - | - | **1** |
+| `has_any \\software\\Microsoft\\Windows\\CurrentVersion\\Run` | - | 1 | - | - | **1** |
 | `has_any xlsx` | - | 1 | - | - | **1** |
 
 ### ObjectServer
@@ -1265,6 +1348,7 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any \\Microsoft Visual Studio\\Installer\\` | - | 1 | - | - | **1** |
 | `CrashDumpEnabled` | - | 1 | - | - | **1** |
 
 ### PackageName
@@ -1283,6 +1367,15 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `endswith svchost.exe` | - | 1 | - | - | **1** |
 | `has services.exe` | - | 1 | - | - | **1** |
 | `has explorer.exe` | - | 1 | - | - | **1** |
+| `has_any Program Files (x86)\\Microsoft\\Edge\\Application` | - | 1 | - | - | **1** |
+| `has_any vc_redist.x86.exe` | - | 1 | - | - | **1** |
+| `has_any \\chrome.exe` | - | 1 | - | - | **1** |
+| `contains java` | - | 1 | - | - | **1** |
+| `has meshagent.exe` | - | 1 | - | - | **1** |
+| `endswith gc_worker.exe` | - | 1 | - | - | **1** |
+| `has Plugins\\Microsoft.GuestConfiguration.ConfigurationforWindows` | - | 1 | - | - | **1** |
+| `endswith w3wp.exe` | - | 1 | - | - | **1** |
+| `endswith java.exe` | - | 1 | - | - | **1** |
 | `endswith wmiprvse.exe` | - | 1 | - | - | **1** |
 
 ### Process
@@ -1302,6 +1395,8 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 | `auditpol.exe` | - | 1 | - | - | **1** |
 | `has powershell.exe` | - | 1 | - | - | **1** |
 | `has_any wscript.exe` | - | 1 | - | - | **1** |
+| `endswith SearchProtocolHost.exe` | - | 1 | - | - | **1** |
+| `has_any schtasks.exe` | - | 1 | - | - | **1** |
 | `cmd.exe` | - | 1 | - | - | **1** |
 | `powershell_ise.exe` | - | 1 | - | - | **1** |
 
@@ -1333,8 +1428,8 @@ References by type: 1 connectors, 154 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!endswith $` | - | 3 | - | - | **3** |
 | `!= SYSTEM` | - | 2 | - | - | **2** |
-| `!endswith $` | - | 2 | - | - | **2** |
 | `!has $` | - | 1 | - | - | **1** |
 
 ### SubjectUserSid

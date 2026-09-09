@@ -20,7 +20,7 @@
 | **CCF Capabilities** | `StorageAccountBlobContainer`, `ServicePrincipal` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cloudflare-using-blob-container-via-codeless-connector-framework) |
 
- The Cloudflare data connector provides the capability to ingest Cloudflare logs into Microsoft Sentinel using the Cloudflare Logpush and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/)for more information.
+The Cloudflare data connector provides the capability to ingest Cloudflare logs into Microsoft Sentinel using the Cloudflare Logpush and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
 
 ## Tables Ingested
 

@@ -158,6 +158,46 @@
 </table>
 </details>
 
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTIEnrichment/GTI-EnrichIncident/readme.md">GTIEnrichment/GTI-EnrichIncident/readme.md</a></em></p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<p>This playbook triggers automatically when a Microsoft Sentinel incident is created. It retrieves the IP address, file hash, URL, and DNS resolution (domain) entities related to the incident, then queries the Google Threat Intelligence (GTI) API for each entity to pull its reputation, threat score, severity, and verdict. The results are formatted into HTML summaries and posted back onto the incident as comments, giving analysts GTI threat context for every IOC without leaving Sentinel.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Deploy the GTICustomConnector custom connector before deploying this playbook.</li>
+<li>Register for a Google Threat Intelligence account to obtain an API key, and configure it on the GTICustomConnector API connection.</li>
+<li>Ensure you have a Log Analytics Workspace configured for Microsoft Sentinel.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
+<ol>
+<li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Enter the playbook name here (default: GTI-IOCEnrichmentIncident).</li>
+<li>ConnectorName: Name of the deployed Google Threat Intelligence custom connector (API connection) used for the enrichment lookups (default: GoogleThreatIntelligence-CustomConnector).</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIEnrichment%2FGTI-EnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTIEnrichment%2FGTI-EnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select Microsoft Sentinel connection resource.</li>
+<li>Go to General → edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+<li>Repeat steps for the Google Threat Intelligence connection.</li>
+</ol>
+<h4 id="b-attach-to-automation-rule-or-manual-trigger">b. Attach to Automation Rule or Manual Trigger</h4>
+<p>This playbook fires on the Microsoft Sentinel incident-creation trigger, so it can run automatically or be invoked manually:</p>
+<ol>
+<li><strong>For Automatic Enrichment</strong>: Create an automation rule in Microsoft Sentinel that runs when an incident is created, and add this playbook (GTI-IOCEnrichmentIncident) as its action.</li>
+<li><strong>For Manual Enrichment</strong>: Open the incident in Microsoft Sentinel, select &quot;Run playbook&quot;, and choose GTI-IOCEnrichmentIncident from the list.</li>
+<li>Once triggered, the playbook iterates over all entities associated with the incident, adding enrichment comments to the incident.</li>
+</ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/google-threat-intelligence.html">Back to Google Threat Intelligence</a></p>

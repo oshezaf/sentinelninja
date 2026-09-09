@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContraForce Events for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="contraforce-events-for-microsoft-sentinel">ContraForce Events for Microsoft Sentinel</h1>
+<p><em>Solution: ContraForce</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/contraforce.svg" alt="ContraForce Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">ContraForce</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.contraforce.com/">https://www.contraforce.com/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Others</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">ContraForce - support@contraforce.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-08-07</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-09-04</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContraForce">ContraForce</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/contraforce1580881495588.azure-sentinel-solution-contraforce">Azure Marketplace</a> · Popularity: 🟡 Low (13%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.contraforce.com">ContraForce</a> solution for Microsoft Sentinel ingests security service delivery events from your ContraForce workspace: incident detections from every connected security platform, administrative access changes (role and member changes), machine credential activity, and destructive workspace actions. The packaged analytic rules create Microsoft Sentinel incidents for privileged access changes, machine credential activity, and destructive workspace actions, so you can monitor the security operations ContraForce performs on your workspace from inside your own Microsoft Sentinel.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/contraforceevents.html">ContraForce Events</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/contraforceevents-cl.html"><code>ContraForceEvents_CL</code></a></td>
+  <td><a href="../connectors/contraforceevents.html">ContraForce Events</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/contraforce-contraforce-destructive-workspace-action-c5e9a1d7-4b2f-4e6c-8a9d-7f3b1c5e2a84-fe7a9bff.html">ContraForce - Destructive workspace action</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/contraforceevents-cl.html"><code>ContraForceEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/contraforce-contraforce-machine-credential-activity-8a2c6e94-1b5d-4f7a-b3e8-2c9d4f6a1e52-dd3f34e0.html">ContraForce - Machine credential activity</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/contraforceevents-cl.html"><code>ContraForceEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/contraforce-contraforce-privileged-access-change-3f4bd2a1-7c58-4a83-9c2e-6d1f0a8b5c31-aef16169.html">ContraForce - Privileged access change</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/contraforceevents-cl.html"><code>ContraForceEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>07-08-2026</td>
+  <td>Initial solution release: ContraForce Events CCF data connector and three <strong>Analytic rules</strong> (privileged access change, machine credential activity, destructive workspace action).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

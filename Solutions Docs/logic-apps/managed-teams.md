@@ -7,7 +7,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 104 |
+| **Playbooks using** | 102 |
 | **Solutions** | 33 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/teams/) |
 
@@ -101,20 +101,18 @@
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 1 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 1 |
 | [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 1 | 2 |
+| [Vectra Add Note To Detections](../content/vectra-xdr-vectra-add-note-to-detections-75ffaae4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
+| [Vectra Add Tag To Detections](../content/vectra-xdr-vectra-add-tag-to-detections-931b37a6.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Add Tag To Entity Selected Detections](../content/vectra-xdr-vectra-add-tag-to-entity-selected-detections-14d6204d.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
 | [Vectra Assign Dynamic User To Entity](../content/vectra-xdr-vectra-assign-dynamic-user-to-entity-1c4eabc7.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
 | [Vectra Close Detections](../content/vectra-xdr-vectra-close-detections-93f91aea.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Decorate Incident Based On Tags And Notify](../content/vectra-xdr-vectra-decorate-incident-based-on-tags-and-notify-e0c12729.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
-| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-96b40386.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
+| [Vectra Download Pcap File To Storage](../content/vectra-xdr-vectra-download-pcap-file-to-storage-4e1ff012.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Dynamic Assign Member To Group](../content/vectra-xdr-vectra-dynamic-assign-member-to-group-28ef2228.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
-| [Vectra Dynamic Resolve Assignment](../content/vectra-xdr-vectra-dynamic-resolve-assignment-7ce95614.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 2 |
-| [Vectra Mark Detections As Fixed](../content/vectra-xdr-vectra-mark-detections-as-fixed-149edbb4.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Open Closed Detections](../content/vectra-xdr-vectra-open-closed-detections-ee2e20d2.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
 | [Vectra Static Assign Member To Group](../content/vectra-xdr-vectra-static-assign-member-to-group-5834c791.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 0 |
-| [Vectra Static Resolve Assignment](../content/vectra-xdr-vectra-static-resolve-assignment-8f6c1288.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 1 | 1 |
 | [Watchlists - Inform Subscription Owner](../content/watchlists-utilities-watchlists-inform-subscription-owner-4de3a082.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 1 |
 | [workflow](../content/sap-workflow-3298b428.md) | [SAP](../solutions/sap.md) | 0 | 10 |

@@ -18,7 +18,7 @@ This query looks for users performing file deletion activities. Spikes in file d
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1485 |
-| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Analytic%20Rules/Impact/AnomalousVoulmeOfFileDeletion.yaml) |
 
 ## Tables Used

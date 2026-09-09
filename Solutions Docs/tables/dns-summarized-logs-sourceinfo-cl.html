@@ -52,6 +52,7 @@
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (8 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DNS_Summarized_Logs_sourceInfo_CL.json">KQL validation test schema</a></p>
@@ -108,7 +109,51 @@
 <li><a href="../solutions/dns-essentials.html">DNS Essentials</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (7)</h2>
+<h3 id="analytic-rules">Analytic Rules (3)</h3>
+<p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients-anomaly-based-asim-dn-cf687598-5a2c-46f8-81c8-06b15ed489b1-e7ae2b7d.html">Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-detect-excessive-nxdomain-dns-queries-anomaly-based-asim-dns-solution-02f23312-1a33-4390-8b80-f7cd4df4dea0-980141b9.html">Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-potential-dga-domain-generation-algorithm-detected-via-repetitive-failures-anomaly-based--01191239-274e-43c9-b154-3a042692af06-1a7b8167.html">Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (2)</h3>
+<p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-connection-to-unpopular-website-detected-asim-dns-solution-83e70a34-d96f-419d-815b-43d1499e88ed-193019cc.html">Connection to Unpopular Website Detected (ASIM DNS Solution)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/dns-essentials-%5Banomaly%5D-anomalous-increase-in-dns-activity-by-clients-asim-dns-solution-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95-eb2b2313.html">[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
 <table>
@@ -121,6 +166,24 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.html">DNSSolutionWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="other-parsers">Other Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/dnsessentialscustomparser.html">DNSEssentialsCustomParser</a></td>
+  <td style="text-align:left"><a href="../solutions/dns-essentials.html">DNS Essentials</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

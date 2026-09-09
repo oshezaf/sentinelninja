@@ -1,0 +1,34 @@
+# Low-Reputation URL Domains Shared in Microsoft Teams
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This query lists URL domains shared in Microsoft Teams that use top level domains commonly abused for phishing and malware, ranked by message reach.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | GitHub Only |
+| **ID** | `8ed7068a-0b5f-43a0-87c5-1d99bef03531` |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1566 |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Low-Reputation%20URL%20Domains%20Shared%20in%20Microsoft%20Teams.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) | ✓ | ✗ | ✓ |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md)
+

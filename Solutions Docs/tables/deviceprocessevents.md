@@ -145,7 +145,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (370)
+## Content Items Using This Table (371)
 
 ### Analytic Rules (51)
 
@@ -522,7 +522,7 @@ This table is ingested by the following connectors:
 | [detect-exploitation-of-cve-2018-8653](../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.md) | `InitiatingProcessCommandLine contains "WinHttpAutoProxySvc"`<br>`InitiatingProcessFileName == "svchost.exe"` |
 | [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
 | [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
-| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
+| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) | `ActionType == "FileCreated"` |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
@@ -594,7 +594,7 @@ This table is ingested by the following connectors:
 | [wdigest-caching](../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.md) | `ProcessCommandLine has "1"`<br>`ProcessCommandLine has "UseLogonCredential"`<br>`ProcessCommandLine has "WDigest"`<br>`ProcessCommandLine has "dword"` |
 | [wifikeys](../content/github-only-wifikeys-ad5c7f75-95e0-4eb9-93e5-b1793ef405d6-88c8943c.md) | `ProcessCommandLine has "key=clear"`<br>`ProcessCommandLine startswith "netsh"` |
 
-### Workbooks (7)
+### Workbooks (8)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):** `ProcessCommandLine has "Set-MpPreference"`
 
@@ -626,7 +626,8 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -636,9 +637,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (199 criteria, 255 total references)
+## Selection Criteria Summary (200 criteria, 256 total references)
 
-References by type: 0 connectors, 255 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 256 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -735,6 +736,7 @@ References by type: 0 connectors, 255 content items, 0 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine contains "WinHttpAutoProxySvc"`<br>`InitiatingProcessFileName == "svchost.exe"` | - | 1 | - | - | **1** |
 | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
+| `ActionType == "FileCreated"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine contains "%temp%"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"` | - | 1 | - | - | **1** |
@@ -841,7 +843,7 @@ References by type: 0 connectors, 255 content items, 0 ASIM parsers, 0 other par
 | `InitiatingProcessFileName in "cmd.exe,powershell.exe"`<br>`InitiatingProcessParentFileName startswith "tomcat"`<br>`ProcessCommandLine has_any "cmd.exe"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "Set-MpPreference"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **255** | **0** | **0** | **255** |
+| **Total** | **0** | **256** | **0** | **0** | **256** |
 
 ### AccountName
 
@@ -854,10 +856,10 @@ References by type: 0 connectors, 255 content items, 0 ASIM parsers, 0 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `InboundConnectionAccepted` | - | 2 | - | - | **2** |
+| `FileCreated` | - | 2 | - | - | **2** |
 | `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `!= ListeningConnectionCreated` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
-| `FileCreated` | - | 1 | - | - | **1** |
 | `FileModified` | - | 1 | - | - | **1** |
 | `NamedPipeEvent` | - | 1 | - | - | **1** |
 | `RegistryKeyCreated` | - | 1 | - | - | **1** |

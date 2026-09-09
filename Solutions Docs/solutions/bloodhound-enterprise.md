@@ -1,6 +1,4 @@
-# ⚠️ BloodHound Enterprise
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# BloodHound Enterprise
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="BloodHound Enterprise Logo" width="75" height="75">
 
@@ -19,8 +17,9 @@
 | **Version** | 3.2.2 |
 | **Author** | SpecterOps - support@specterops.io |
 | **First Published** | 2023-05-04 |
-| **Last Updated** | 2021-05-04 |
+| **Last Updated** | 2026-08-18 |
 | **Solution Folder** | [BloodHound Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azurehoundenterprise.bloodhoundenterprise-mssentinel) · Popularity: 🔵 Medium (76%) |
 
 The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound Enterprise posture and attack paths into Microsoft Sentinel. Use the dashboards to track the Active Directory and Azure attack paths of your environment. Create alerts to detect when new attack paths emerge or new the exposure increases.
 

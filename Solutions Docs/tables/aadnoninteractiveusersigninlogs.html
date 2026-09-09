@@ -65,7 +65,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (86 columns)</h2>
+<h2 id="schema">Schema (87 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -109,7 +109,7 @@
 <tr>
   <td style="text-align:left">AppId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique GUID representing the app ID in the Azure Active Directory.</td>
+  <td style="text-align:left">Unique GUID representing the app ID in the Microsoft Entra ID.</td>
 </tr>
 <tr>
   <td style="text-align:left">AppliedEventListeners</td>
@@ -119,7 +119,7 @@
 <tr>
   <td style="text-align:left">AppOwnerTenantId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The tenant identifier of the owenr of the application in Azure Active Directory.</td>
+  <td style="text-align:left">The tenant identifier of the owenr of the application in Microsoft Entra ID.</td>
 </tr>
 <tr>
   <td style="text-align:left">AuthenticationContextClassReferences</td>
@@ -412,6 +412,11 @@
   <td style="text-align:left">Risky user state.</td>
 </tr>
 <tr>
+  <td style="text-align:left">RootActorID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The root actor virtual ID associated with the sign-in.</td>
+</tr>
+<tr>
   <td style="text-align:left">ServicePrincipalId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">ID of the service principal who initiated the sign-in.</td>
@@ -513,7 +518,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs">AADNonInteractiveUserSignInLogs Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (14)</h2>
+<h2 id="solutions">Solutions (15)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -522,6 +527,7 @@
 <li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
 <li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
+<li><a href="../solutions/honeylabs.html">HoneyLabs</a></li>
 <li><a href="../solutions/hybrid-attack-cloud-&amp;-identity.html">Hybrid Attack - Cloud &amp; Identity</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
@@ -548,8 +554,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (42)</h2>
-<h3 id="analytic-rules">Analytic Rules (15)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (44)</h2>
+<h3 id="analytic-rules">Analytic Rules (16)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -584,6 +590,21 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/falconfriday-microsoft-entra-id-useragent-os-missmatch-6a638d80-f6b2-473b-9087-3cac78a84b40-e6a7d745.html">Microsoft Entra ID UserAgent OS Missmatch</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/honeylabs.html">HoneyLabs</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.html">HoneyLabs TI Map IP Entity to SigninLogs</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -753,7 +774,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (19)</h3>
+<h3 id="workbooks">Workbooks (20)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -913,6 +934,10 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.html">MicrosoftSecurityLicenseUtilization</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>

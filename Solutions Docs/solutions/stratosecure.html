@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ StratoSecure &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stratosecure">⚠️ StratoSecure</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/StratoSecure/Logos/stratosecure.svg" alt="StratoSecure Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Soluciones Etech Corp</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://stratocode.io/support">https://stratocode.io/support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Vulnerability Management,Application,Finance</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Soluciones Etech Corp - support@stratocode.io</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-06-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-06-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure">StratoSecure</a></td>
+</tr>
+</tbody>
+</table>
+<p>Hybrid ASPM solution correlating code-level SAST/SCA findings with Microsoft Defender for Cloud runtime evidence. Delivers regulatory compliance evidence (PCI-DSS 4.0, CNBV, SBP) and PR quality gates for banking security teams.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>9 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/apimanagementgatewaylogs.html"><code>ApiManagementGatewayLogs</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td>-</td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-apiinventory-cl.html"><code>StratoSecure_ApiInventory_CL</code></a></td>
+  <td><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-exception-cl.html"><code>StratoSecure_Exception_CL</code></a></td>
+  <td><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+  <td><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a></td>
+  <td>-</td>
+  <td>Playbooks (writes)</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-remediation-cl.html"><code>StratoSecure_Remediation_CL</code></a></td>
+  <td><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/stratosecure-scansummary-cl.html"><code>StratoSecure_ScanSummary_CL</code></a></td>
+  <td><a href="../connectors/stratosecurepush.html">StratoSecure Security Platform</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>24 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Watchlists</td>
+  <td style="text-align:left">8</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">7</td>
+</tr>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-bola-finding-with-api-traffic-anomaly-3c5be96e-2eeb-439a-9856-1c23aa72cfdd-0c6799d9.html">BOLA Finding with API Traffic Anomaly</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Discovery</td>
+  <td style="text-align:left"><a href="../tables/apimanagementgatewaylogs.html"><code>ApiManagementGatewayLogs</code></a><br><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-critical-finding-overdue-on-internet-facing-app-88c4b680-db1c-46b9-8ca4-4165c3abf63f-2f80a140.html">Critical Finding Overdue on Internet-Facing App</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-pci-app-with-open-findings-before-audit-window-0457b577-3864-42c9-9779-1c9441d86429-d2e42cfd.html">PCI App with Open Findings Before Audit Window</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-sast-auth-finding-correlated-with-brute-force-4ae9f294-410d-4c11-9072-0d8fcf5162d8-94b377e7.html">SAST Auth Finding Correlated with Brute Force</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a><br><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-secret-exposure-with-anomalous-spn-sign-in-a91e677a-46b5-428e-8a7d-29a2bb33bb6f-212cab8f.html">Secret Exposure with Anomalous SPN Sign-In</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a><br><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-unauthenticated-api-endpoint-with-sensitive-data-479bc6ef-ecb3-496f-9a2a-38c9635d77d3-46d961ff.html">Unauthenticated API Endpoint with Sensitive Data</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-apiinventory-cl.html"><code>StratoSecure_ApiInventory_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-apiinventory-1e864274.html">StratoSecure_APIInventory</a></td>
+  <td style="text-align:left"><a href="../tables/stratosecure-apiinventory-cl.html"><code>StratoSecure_ApiInventory_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-executive-6e0b8ef2.html">StratoSecure_Executive</a></td>
+  <td style="text-align:left"><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-soc-464ce49d.html">StratoSecure_SOC</a></td>
+  <td style="text-align:left"><a href="../tables/stratosecure-findings-cl.html"><code>StratoSecure_Findings_CL</code></a><br><em>Internal use:</em><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-assign-owner-9b875cc8.html">StratoSecure - Assign Owner</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is created from a StratoSecure finding, this playbook calls the S...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-close-incident-in-sentinel-24d00b3a.html">StratoSecure - Close Incident in Sentinel</a></td>
+  <td style="text-align:left">When a StratoSecure finding is resolved or accepted, this playbook closes the corresponding Microsof...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-create-azure-devops-work-item-eeb39a49.html">StratoSecure - Create Azure DevOps Work Item</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is created from a StratoSecure finding, this playbook creates an ...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-create-exception-accept-risk-7a9eba6c.html">StratoSecure - Create Exception / Accept Risk</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is triaged as accepted risk, this playbook calls the StratoSecure...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-create-jira-ticket-cccd8afb.html">StratoSecure - Create Jira Ticket</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is created from a StratoSecure finding, this playbook opens a Jir...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-escalate-to-owner-via-email-36e9ee8f.html">StratoSecure - Escalate to Owner via Email</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident from a StratoSecure finding remains unacknowledged, this playbook...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-stratosecure-notify-microsoft-teams-bf1e8e3f.html">StratoSecure - Notify Microsoft Teams</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is created from a StratoSecure finding, this playbook posts an ad...</td>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a> <em>(write)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="watchlists">Watchlists</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-auditcalendar-1fc1cbeb.html">AuditCalendar</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-criticalrepos-99a932ee.html">CriticalRepos</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-exemptedfindings-e8c04f81.html">ExemptedFindings</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-highvalueassets-a9c8ff62.html">HighValueAssets</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-internetfacingapps-ddfad963.html">InternetFacingApps</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-pciapplications-2561747a.html">PCIApplications</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-securitychampions-d81eff06.html">SecurityChampions</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stratosecure-trustedscanners-6caade23.html">TrustedScanners</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>01-06-2026</td>
+  <td>Initial release. 6 analytic rules (SAST/SCA/API/Compliance correlation), 3 workbooks (Executive, SOC, API Inventory), 7 playbooks (Jira, ADO, Teams, Assign, Exception, Close, Escalate), 8 watchlists, 5 custom DCR tables. Compliance evidence for PCI-DSS 4.0, CNBV Art.115Bis4, SBP Acuerdo 011-2018. PR quality gates for GitHub and Azure DevOps. BYO Azure OpenAI support.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

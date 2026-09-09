@@ -13,8 +13,8 @@
 | Title | Corelight SSL Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.1 |
-| Last Updated | 2024-12-09 |
+| Version | 2.0.0 |
+| Last Updated | 2026-08-17 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_ssl.yaml) |
@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v3_ssl_CL`](../tables/corelight-v3-ssl-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_ssl_red_CL`](../tables/corelight-v3-ssl-red-cl.md) | ? | ✓ | ? |
 
 ---
 

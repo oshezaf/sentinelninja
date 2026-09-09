@@ -60,7 +60,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (199 columns)</h2>
+<h2 id="schema">Schema (200 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -195,6 +195,11 @@
   <td style="text-align:left">ContextTimeStamp</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left">Context timestamp of the IDP detection event (Unix epoch).</td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrikeDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated.</td>
 </tr>
 <tr>
   <td style="text-align:left">CurrentPrivileges</td>

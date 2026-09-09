@@ -19,6 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-12 |
+| **Last Updated** | 2026-08-19 |
 | **Solution Folder** | [Azure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Storage) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurestorageaccount) · Popularity: 🟢 High (98%) |
 

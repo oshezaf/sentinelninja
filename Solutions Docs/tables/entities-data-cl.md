@@ -19,6 +19,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (35 columns)
 
@@ -84,7 +85,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (5)
 
 ### Analytic Rules (4)
 
@@ -96,6 +97,22 @@ This table is ingested by the following connectors:
 | [Vectra Create Incident Based on Priority for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) |  |
 | [Vectra Create Incident Based on Tag for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) |  |
 | [Vectra Create Incident Based on Tag for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-hosts-8b7a1a64-8ef2-4000-b8c9-9bca3b93aace-08413d75.md) |  |
+
+### Workbooks (1)
+
+**In solution [Vectra XDR](../solutions/vectra-xdr.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [VectraRUXSecurityDashboard](../content/vectra-xdr-vectraruxsecuritydashboard-3f089ed1.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [VectraEntities](../parsers/vectraentities.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
 
 ---
 

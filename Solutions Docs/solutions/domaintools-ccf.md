@@ -1,6 +1,6 @@
-# ⚠️ DomainTools CCF
+# DomainTools Real-Time Threat Feeds for Microsoft Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: DomainTools CCF*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DomainTools.svg" alt="DomainTools CCF Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | DomainTools - memberservices@domaintools.com |
 | **First Published** | 2025-11-30 |
+| **Last Updated** | 2026-09-04 |
 | **Solution Folder** | [DomainTools CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools%20CCF) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/domaintoolsllc1729780431855.azure-sentinel-solution-domaintools-threatintel) · Popularity: ⚪ Very Low (0%) |
 
 The [Domaintools Threat Intelligence Feeds](https://www.domaintools.com/products/threat-intelligence-feeds/) solution for Microsoft Sentinel contains CCF-based data connector that ingests domain-related threat intelligence from Domain tools including Newly Observed Domains (NOD), Newly Observed Hostnames (NOH), Newly Active Domains (NAD), and Domain Discovery. The solution also provides an analytic rule that automatically creates incidents when new domains are ingested, enabling security teams to quickly detect and investigate potentially malicious domains. In addition, a workbook is included to visualize domain activity, ingestion trends, and correlations with security telemetry, helping SOC analysts improve threat detection and response.
 
@@ -76,9 +78,9 @@ This solution includes **6 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
-|-------------|--------------------------------|--------------------|
-| 3.0.0       | 10-11-2025                     | Includes all CCF connector definitions and configurations. |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                              |
+|-------------|----------------|---------------------------------------------------------------------------------|
+| 3.0.0       | 02-09-2026     | Includes all CCF connector definitions and configurations. <br> Updated publisherId to address an issue identified during Microsoft Marketplace submission.|
 
 ---
 

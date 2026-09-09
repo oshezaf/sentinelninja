@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Cyjax Threat Indicator |
 | Location | Solution |
-| Solution | [Cyjax](../solutions/cyjax.md) ⚠️ |
+| Solution | [Cyjax](../solutions/cyjax.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-02-28 |
 | Category | Microsoft Sentinel Custom Parser |

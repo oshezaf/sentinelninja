@@ -7,16 +7,15 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 12 |
-| **Solutions** | 8 |
+| **Playbooks using** | 11 |
+| **Solutions** | 7 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/microsoftgraphsecurity/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 3 |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 1 | 1 |
+| [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 3 |
 | [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence-f3279435.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 1 |
 | [Block_IPs_on_MDATP_Using_GraphSecurity](../content/standalone-content-block-ips-on-mdatp-using-graphsecurity-819877d5.md) | 📄 Standalone | 1 | 1 |
 | [C19ImportToSentinel](../content/github-only-c19importtosentinel-cc38013f.md) | 🔗 GitHub Only | 1 | 1 |

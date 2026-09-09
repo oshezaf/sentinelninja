@@ -111,7 +111,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (27)
 
 ### Analytic Rules (3)
 
@@ -169,7 +169,7 @@ This table is ingested by the following connectors:
 | [wadhrama-credential-dump](../content/github-only-wadhrama-credential-dump-8348d279-c95f-4dbe-b952-65048dc06559-6f945582.md) | `RegistryKey has "sethc"`<br>`RegistryKey has "utilman"` |
 | [wdigest-caching](../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.md) | `RegistryKey contains "wdigest"`<br>`RegistryValueData == "1"`<br>`RegistryValueName == "UseLogonCredential"` |
 
-### Workbooks (4)
+### Workbooks (5)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -189,6 +189,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `ActionType in "RegistryKeyCreated,RegistryKeyDeleted,RegistryValueDeleted,RegistryValueSet"` |
 
 ## Parsers Using This Table (1)
 

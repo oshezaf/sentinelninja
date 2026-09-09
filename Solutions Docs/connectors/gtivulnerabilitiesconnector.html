@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Threat Intelligence Vulnerabilities CCF &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="google-threat-intelligence-vulnerabilities">Google Threat Intelligence Vulnerabilities (CCF)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleThreatIntelligence.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>GTIVulnerabilitiesConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Google</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIVulnerabilities_ccf/GTIVulnerabilities_ConnectorDefinition.json">GTIVulnerabilities_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIVulnerabilities_ccf/GTIVulnerabilities_DCR.json">GTIVulnerabilities_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIVulnerabilities_ccf/GTIVulnerabilities_PollerConfig.json">GTIVulnerabilities_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Google Threat Intelligence (GTI) Vulnerabilities</strong> data connector ingests Vulnerability collection objects from the <a href="https://gtidocs.virustotal.com/reference/list-vulnerabilities">Google Threat Intelligence (VirusTotal) Collections API</a> into Microsoft Sentinel using the <strong>Codeless Connector Framework (CCF)</strong> — no Azure Function or agent to deploy.</p>
+<p>The connector authenticates with your GTI API key (sent in the <code>x-apikey</code> header), always scopes the query to <code>collection_type:vulnerability</code>, sorts by <strong>last modification date ascending</strong> (firstly-modified objects first), and polls on a rolling time window so each cycle only retrieves vulnerabilities modified since the previous poll. An optional free-form filter can be supplied to refine the search (for example <code>risk_rating:Critical</code>, <code>cvss_3x_base_score:4+</code>).</p>
+<p>Ingested data lands in the <strong>GTI_Vulnerabilities_CL</strong> table and supports DCR-based <a href="https://learn.microsoft.com/azure/azure-monitor/logs/ingestion-time-transformations">ingestion-time transformations</a> so enriched fields (risk rating, CVSS scores, exploitation state) are available for fast querying.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/gti-vulnerabilities-cl.html"><code>GTI_Vulnerabilities_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions required</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Google Threat Intelligence / VirusTotal account</strong>: An active Google Threat Intelligence (VirusTotal) account is required. The vulnerabilities feed is part of the GTI Collections API and requires a subscription/privileges that include vulnerability collections.</li>
+<li><strong>Google Threat Intelligence API Key</strong>: A valid GTI / VirusTotal API key with access to the Collections API. The key is sent in the 'x-apikey' request header. Treat it as a secret — it is stored as a securestring and never displayed after entry.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Prerequisites</strong></p>
+<p>Before you connect, make sure the following are in place.</p>
+<h2 id="before-you-begin">Before you begin</h2>
+<ol>
+<li><strong>Permissions on this workspace</strong> — you need <strong>read</strong> and <strong>write</strong> permissions on the Microsoft Sentinel workspace to create the data connection.</li>
+<li><strong>A Google Threat Intelligence (VirusTotal) account</strong> with access to the <strong>Collections API</strong> and to <strong>vulnerability</strong> collections. If you do not see vulnerability data, confirm your subscription/privileges with your GTI administrator.</li>
+<li><strong>A GTI API key</strong> — see the next step to generate it. The key is sent in the <code>x-apikey</code> header on every request.</li>
+</ol>
+<p><strong>1. Generate your Google Threat Intelligence API key</strong></p>
+<p>Obtain the API key the connector uses to authenticate.</p>
+<h3 id="get-your-api-key">Get your API key</h3>
+<ol>
+<li>Sign in to your account at <a href="https://www.virustotal.com">https://www.virustotal.com</a> (or your Google Threat Intelligence portal).</li>
+<li>Click your avatar in the top-right corner and select <strong>API key</strong>, or go directly to the <a href="https://www.virustotal.com/gui/my-apikey">API key page</a>.</li>
+<li>Copy the <strong>API key</strong> shown on that page. This single value is all the connector needs.</li>
+</ol>
+<blockquote>
+<p>The same key is documented in the GTI reference under <a href="https://gtidocs.virustotal.com/reference/list-vulnerabilities">List vulnerabilities</a>.</p>
+</blockquote>
+<p>ℹ️ Keep your API key secret. Anyone with the key can query the GTI API as you and consume your quota. If a key is exposed, regenerate it from the API key page and update the connector. The connector stores the key as a securestring — it is not displayed again after you connect.</p>
+<p>ℹ️ API quota &amp; rate limits: GTI/VirusTotal enforces per-minute and daily request quotas tied to your subscription tier. The connector requests up to 40 objects per page and throttles itself (~4 requests/second). If you hit HTTP 429 (rate limit) errors, choose a longer Polling interval below and/or narrow the result set with the Vulnerability filter.</p>
+<p><strong>2. Connect Google Threat Intelligence Vulnerabilities to Microsoft Sentinel</strong></p>
+<p>Provide the values below and select Connect. The connector always scopes the query to <code>collection_type:vulnerability</code> and sorts by last-modification-date ascending (firstly-modified objects first).</p>
+<h3 id="connection-settings">Connection settings</h3>
+<ul>
+<li><strong>GTI API Key</strong>: (password field)</li>
+</ul>
+<p>ℹ️ Required. The API key copied from the GTI / VirusTotal API key page. It is sent in the 'x-apikey' header on every request.</p>
+<ul>
+<li><strong>Vulnerability filter (optional)</strong>: e.g. risk_rating:Critical cvss_3x_base_score:4+</li>
+</ul>
+<p>ℹ️ Optional. A GTI search expression appended to the mandatory 'collection_type:vulnerability' filter to narrow ingestion. Examples: 'risk_rating:Critical', 'cvss_3x_base_score:4+', 'exploitation_state:Confirmed'. Leave blank to ingest all vulnerability objects. Separate multiple conditions with spaces.</p>
+<ul>
+<li><strong>Polling interval</strong> (select)<ul>
+<li>Every 10 minutes</li>
+<li>Every 15 minutes</li>
+<li>Every 30 minutes</li>
+<li>Every hour</li>
+<li>Every 2 hours</li>
+<li>... and 3 more options</li>
+</ul>
+</li>
+</ul>
+<p>ℹ️ Required. How often Sentinel queries the GTI API. Each poll uses a rolling time window equal to this interval, so no vulnerabilities are skipped or double-counted. Choose a longer interval if you are rate-limited or only need periodic updates.</p>
+<ul>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<p><strong>3. Verify data is flowing</strong></p>
+<p>After connecting, confirm vulnerabilities are being ingested.</p>
+<h3 id="validate-the-connection">Validate the connection</h3>
+<p>Data can take up to ~30 minutes to appear after the first successful poll. Once it does:</p>
+<ol>
+<li><p>On this page, the <strong>GTI_Vulnerabilities_CL</strong> data type shows a recent <strong>Last data received</strong> timestamp and the status turns green.</p>
+</li>
+<li><p>Run this query in <strong>Logs</strong> to confirm rows are arriving:</p>
+<p><code>GTI_Vulnerabilities_CL | summarize Count = count(), Latest = max(TimeGenerated)</code></p>
+</li>
+<li><p>Inspect a sample of the enriched fields:</p>
+<p><code>GTI_Vulnerabilities_CL | project TimeGenerated, Name, RiskRating, ExploitationState, Cvss3xBaseScore | sort by TimeGenerated desc | take 20</code></p>
+</li>
+</ol>
+<p><strong>Optional — connector health:</strong> enable <strong>Microsoft Sentinel → Settings → Health and Audit</strong> to log per-poll status. Then run:</p>
+<p><code>SentinelHealth | where TimeGenerated &gt; ago(24h) | where SentinelResourceType == &quot;Data connector&quot; | project TimeGenerated, SentinelResourceName, Status, Description, Reason | order by TimeGenerated desc</code></p>
+<p>ℹ️ No data after 30+ minutes? Check that: (1) the API key is valid and not rate-limited (HTTP 401/429), (2) your account has access to vulnerability collections, and (3) any Vulnerability filter you entered is not so narrow that it matches no objects. Disconnect and reconnect to retry after correcting the value.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

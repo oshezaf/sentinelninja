@@ -46,7 +46,7 @@ Reference for ASimRegistryEventLogs table in Azure Monitor Logs.
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the login session of the Actor. |
-| ActorUserAadId | string | The Azure Active Directory ID of the actor. |
+| ActorUserAadId | string | The Microsoft Entra object ID of the actor. |
 | ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
 | ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A unique ID of the Actor. |

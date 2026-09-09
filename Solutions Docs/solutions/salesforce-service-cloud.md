@@ -14,14 +14,14 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider |
-| **Version** | 3.5.1 |
+| **Version** | 3.7.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-08-14 |
+| **Last Updated** | 2026-09-03 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (91%) |
 
-The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.
+The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events and Salesforce Marketing Cloud audit and security events into Microsoft Sentinel.
   
   **Underlying Microsoft Technologies used:** 
 
@@ -37,12 +37,13 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **4 data connector(s)** (plus 1 discovered⚠️):
 
 - [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md)
 - [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md)
+- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceeventlogconnector.md)
+- [Salesforce Marketing Cloud (via Codeless Connector Framework)](../connectors/salesforcemktcloudconnector.md)
 - [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
-- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -51,15 +52,17 @@ This solution provides **3 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SalesForceRealTimeEventMonitoring_CL`](../tables/salesforcerealtimeeventmonitoring-cl.md) | [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md) | - |
-| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
-| [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
+| [`SalesforceAuditTrailV2_CL`](../tables/salesforceaudittrailv2-cl.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
+| [`SalesforceLoginHistoryV2_CL`](../tables/salesforceloginhistoryv2-cl.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
+| [`SalesforceMarketingCloudAuditEvents_CL`](../tables/salesforcemarketingcloudauditevents-cl.md) | [Salesforce Marketing Cloud (via Codeless Connector Framework)](../connectors/salesforcemktcloudconnector.md) | - |
+| [`SalesforceMarketingCloudSecurityEvents_CL`](../tables/salesforcemarketingcloudsecurityevents-cl.md) | [Salesforce Marketing Cloud (via Codeless Connector Framework)](../connectors/salesforcemktcloudconnector.md) | - |
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceeventlogconnector.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 
 ### Internal Tables
@@ -75,13 +78,13 @@ The following **1 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 3 |
+| Parsers | 2 |
 | Workbooks | 1 |
-| Parsers | 1 |
 
 ### Analytic Rules
 
@@ -101,12 +104,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
+| [SalesforceAuditLogs](../parsers/salesforceauditlogs.md) | - | [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) *(read)*<br>[`SalesforceAuditTrailV2_CL`](../tables/salesforceaudittrailv2-cl.md) *(read)*<br>[`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) *(read)*<br>[`SalesforceLoginHistoryV2_CL`](../tables/salesforceloginhistoryv2-cl.md) *(read)* |
 | [SalesforceServiceCloud](../parsers/salesforceservicecloud.md) | - | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) *(read)*<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) *(read)*<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.7.0       | 01-09-2026                     | Added the Salesforce Marketing Cloud CCF connector with audit and security event ingestion, custom tables, DCR transformations, and parser aliases. |
+| 3.6.1       | 26-08-2026                     | Corrected the Salesforce Service Cloud parser metadata version |
+| 3.6.0       | 18-08-2026                     | Added Salesforce Audit Logs parser and table definitions, and updated Salesforce connector configurations. |
 | 3.5.1       | 13-08-2026                     | Updated **Salesforce RTEM connector** to include the API URL in ingested events and promote the connector to GA |
 | 3.5.0       | 23-07-2026                     | Marked Salesforce Audit Logs connector as GA and made poller resource names unique per connection. |
 | 3.4.2       | 22-07-2026                     | Updated **SalesforceRTEM connector** to use SELECT FIELDS(STANDARD) with corresponding DCR updates. |

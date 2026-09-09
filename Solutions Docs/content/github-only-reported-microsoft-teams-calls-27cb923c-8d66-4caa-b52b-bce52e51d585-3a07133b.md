@@ -1,0 +1,34 @@
+# Reported Microsoft Teams Calls
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This query lists Microsoft Teams calls that users reported to Microsoft, with the reporting user, to surface suspected voice phishing.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | GitHub Only |
+| **ID** | `27cb923c-8d66-4caa-b52b-bce52e51d585` |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1566 |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Reported%20Microsoft%20Teams%20Calls.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmission,UserSubmission"` | ✓ | ✗ | ✓ |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md)
+

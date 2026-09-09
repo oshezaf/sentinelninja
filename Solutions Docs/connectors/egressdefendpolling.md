@@ -17,6 +17,7 @@
 | **Used in Solutions** | [Egress Defend](../solutions/egress-defend.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DefendAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend/Data%20Connectors/DefendAPIConnector.json) |
+| **CCF Configuration** | [EgressDefendAudit_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend/Data%20Connectors/EgressDefendAuditLogs_ccp/EgressDefendAudit_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 

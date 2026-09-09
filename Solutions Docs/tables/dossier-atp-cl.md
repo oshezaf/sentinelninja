@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,35 +19,41 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (23 columns)
+## Schema (29 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_atp_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| Computer | string |
-| data_attack_chain_collection_s | string |
-| data_attack_chain_credential_access_s | string |
-| data_attack_chain_defense_evasion_s | string |
-| data_attack_chain_execution_s | string |
-| data_attack_chain_initial_access_s | string |
-| data_record_count_d | real |
-| ManagementGroupName | string |
-| MG | string |
-| params_source_s | string |
-| params_target_s | string |
-| params_type_s | string |
-| RawData | string |
-| SourceSystem | string |
-| status_message_for_dossier_s | string |
-| status_s | string |
-| task_id_g | string |
+| data | dynamic |
+| data_attack_chain | dynamic |
+| data_attack_chain_collection | dynamic |
+| data_attack_chain_command_and_control | dynamic |
+| data_attack_chain_credential_access | dynamic |
+| data_attack_chain_defense_evasion | dynamic |
+| data_attack_chain_discovery | string |
+| data_attack_chain_execution | dynamic |
+| data_attack_chain_exfiltration | dynamic |
+| data_attack_chain_impact | string |
+| data_attack_chain_initial_access | dynamic |
+| data_attack_chain_lateral_movement | string |
+| data_attack_chain_persistence | string |
+| data_attack_chain_privilege_escalation | string |
+| data_record_count | real |
+| params | dynamic |
+| params_source | string |
+| params_target | string |
+| params_type | string |
+| RowData | dynamic |
+| status | string |
+| status_message_for_dossier | string |
+| task_id | string |
 | TenantId | string |
-| time_d | real |
+| time_value | real |
 | TimeGenerated | datetime |
 | Type | string |
-| v_s | string |
+| v_value | string |
 
 ## Schema References
 

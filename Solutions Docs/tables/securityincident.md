@@ -46,7 +46,7 @@ Reference for SecurityIncident table in Azure Monitor Logs.
 | FirstModifiedTime | datetime | Timestamp (UTC) of when the incident was first modified |
 | IncidentName | string | The resource name of the incident |
 | IncidentNumber | int | The sequential number of the incident |
-| IncidentUrl | string | The URI to open the incident in Azure Sentinel portal |
+| IncidentUrl | string | The URI to open the incident in Microsoft Sentinel portal |
 | Labels | dynamic | The labels added to the incident |
 | LastActivityTime | datetime | Timestamp (UTC) of when the last activity in the incident occurred |
 | LastModifiedTime | datetime | Timestamp (UTC) of when the incident was last modified |
@@ -70,7 +70,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SecurityIncident Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityincident)
 
-## Solutions (36)
+## Solutions (37)
 
 This table is used by the following solutions:
 
@@ -103,6 +103,7 @@ This table is used by the following solutions:
 - [SOCRadar](../solutions/socradar.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [Standalone Content](../solutions/standalone-content.md)
+- [StratoSecure](../solutions/stratosecure.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -113,7 +114,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (72)
+## Content Items Using This Table (74)
 
 ### Analytic Rules (3)
 
@@ -138,7 +139,7 @@ This table is used by the following solutions:
 |:-------------|
 | [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |
 
-### Workbooks (60)
+### Workbooks (62)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -310,6 +311,12 @@ This table is used by the following solutions:
 | [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.md) | `Owner == "Unassigned"`<br>`Owner != "Unassigned"`<br>`Tasks != "[]"` |
 | [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.md) | `ModifiedBy !in "Alert Grouping,Fusion,Incident created from alert"` |
 
+**In solution [StratoSecure](../solutions/stratosecure.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [StratoSecure_SOC](../content/stratosecure-stratosecure-soc-464ce49d.md) |  |
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
 | Workbook | Selection Criteria |
@@ -339,6 +346,12 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [UnifiSiteManager](../content/unifi-site-manager-ccf-unifisitemanager-eafe5588.md) |
+
+**In solution [Vectra XDR](../solutions/vectra-xdr.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [VectraRUXDetectionTimeline](../content/vectra-xdr-vectraruxdetectiontimeline-0e8c0b9f.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `AdditionalData contains "Microsoft Defender for Endpoint"`
 

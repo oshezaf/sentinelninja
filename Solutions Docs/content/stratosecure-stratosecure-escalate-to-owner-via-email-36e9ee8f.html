@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StratoSecure - Escalate to Owner via Email &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stratosecure---escalate-to-owner-via-email">StratoSecure - Escalate to Owner via Email</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>When a Microsoft Sentinel incident from a StratoSecure finding remains unacknowledged, this playbook sends an escalation email via Azure Communication Services and writes an audit record to StratoSecure_PlaybookRuns_CL. Human approval is always required before the action executes.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/stratosecure.html">StratoSecure</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Playbooks/StratoSecure-EscalateOwner/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/stratosecure-playbookruns-cl.html"><code>StratoSecure_PlaybookRuns_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Action_AuditLog</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Action_SendEscalationEmail</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[variables('HttpEndpoint')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StratoSecure/Playbooks/StratoSecure-EscalateOwner/readme.md">StratoSecure-EscalateOwner/readme.md</a></em></p>
+</blockquote>
+<h1 id="stratosecure-escalate-owner">StratoSecure — Escalate Owner</h1>
+<p>Sends an escalation email via Azure Communication Services when a StratoSecure finding remains unresolved past SLA. Writes an audit record to <code>StratoSecure_PlaybookRuns_CL</code> regardless of email outcome.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Microsoft Sentinel workspace</li>
+<li>Azure Communication Services resource with a verified sender domain</li>
+<li>StratoSecure Platform API key (generated at client.stratocode.io)</li>
+</ul>
+<h2 id="post-deployment-steps">Post-Deployment Steps</h2>
+<ol>
+<li>Grant the Logic App system-assigned managed identity the <strong>Microsoft Sentinel Responder</strong> role on the Sentinel workspace.</li>
+<li>Grant the managed identity the <strong>Azure Communication Services Contributor</strong> role (or use <code>AcsAccessKey</code> parameter instead).</li>
+<li>Set the <code>EscalationEmail</code> parameter to your SOC lead address.</li>
+</ol>
+<h2 id="parameters">Parameters</h2>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>string</td>
+  <td>Logic App resource name</td>
+</tr>
+<tr>
+  <td>AcsEndpointHostname</td>
+  <td>string</td>
+  <td>ACS resource hostname (without https://)</td>
+</tr>
+<tr>
+  <td>AcsManagedIdentityEnabled</td>
+  <td>string</td>
+  <td>true to use managed identity; false to use access key</td>
+</tr>
+<tr>
+  <td>AcsAccessKey</td>
+  <td>securestring</td>
+  <td>ACS access key (required only when managed identity is disabled)</td>
+</tr>
+<tr>
+  <td>SenderEmail</td>
+  <td>string</td>
+  <td>Verified sender address in ACS</td>
+</tr>
+<tr>
+  <td>EscalationEmail</td>
+  <td>string</td>
+  <td>Recipient email for escalation notifications</td>
+</tr>
+<tr>
+  <td>LogAnalyticsWorkspaceId</td>
+  <td>string</td>
+  <td>Workspace ID for audit logging</td>
+</tr>
+<tr>
+  <td>LogAnalyticsWorkspaceKey</td>
+  <td>securestring</td>
+  <td>Workspace primary key for audit logging</td>
+</tr>
+<tr>
+  <td>RequireApproval</td>
+  <td>bool</td>
+  <td>When true, actions execute only after approval condition evaluates (default: true)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/stratosecure.html">Back to StratoSecure</a></p>
+
+</div>
+
+</body>
+</html>

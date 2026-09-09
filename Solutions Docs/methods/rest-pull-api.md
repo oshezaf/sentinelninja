@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **52** |
-| Active | 39 |
+| Active | 36 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 12 |
+| Unpublished ⚠️ | 15 |
 
 ## Connectors Using This Method
 
@@ -30,16 +30,16 @@ The collection method for these connectors could not be automatically determined
 | [AIShield](../connectors/boschaishield.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
-| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
+| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) ⚠️ 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
 | [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
-| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
+| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) ⚠️ 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
 | [blacklens.io](../connectors/blacklens-io.md) | snapSEC GmbH | 1 | [Blacklens](../solutions/blacklens.md) |
 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) ⚠️ 🔶 | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | [Cognni](../connectors/cognnisentineldataconnector.md) 🔶 | Cognni | 1 | [Cognni](../solutions/cognni.md) |
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | Cribl | 4 | [Cribl](../solutions/cribl.md) |
+| [Cybereinforce Threat Enforcement (CTE)](../connectors/cybereinforce-cte.md) ⚠️ | Cybeurope | 1 | [Cybereinforce](../solutions/cybereinforce.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |

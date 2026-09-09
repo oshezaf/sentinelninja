@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GzSecurityEvents_CL`](../tables/gzsecurityevents-cl.md) | ✗ | ✓ | ✗ |
+| [`GzSecurityEvents_CL`](../tables/gzsecurityevents-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -13,8 +13,8 @@
 | Title | Parser for DynatraceAttacks |
 | Location | Solution |
 | Solution | [Dynatrace](../solutions/dynatrace.md) |
-| Version | 2.0.1 |
-| Last Updated | 2026-04-28 |
+| Version | 3.0.0 |
+| Last Updated | 2026-06-30 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Parsers/DynatraceAttacks.yaml) |
@@ -26,6 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAttacksV3_CL`](../tables/dynatraceattacksv3-cl.md) | ? | ✓ | ? |
 | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ✗ | ✓ | ✗ |
 
 ---

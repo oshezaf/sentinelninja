@@ -10,8 +10,8 @@
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **8** |
-| Active | 7 |
+| Total Connectors | **9** |
+| Active | 8 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 1 |
 
@@ -20,7 +20,8 @@
 | Collection Method | Count |
 |:-----------------|------:|
 | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 8 |
-| **Total** | **8** |
+| [Azure Function (TI Upload API)\|Unknown](../methods/azure-function-ti-upload-api-unknown.md) | 1 |
+| **Total** | **9** |
 
 ## Connectors Using This API
 
@@ -28,13 +29,14 @@
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) ⚠️ | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Cyjax | 2 | [Cyjax](../solutions/cyjax.md) |
+| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Cyjax | 2 | [Cyjax](../solutions/cyjax.md) |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Orange Cyberdefense | 2 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
 | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | GreyNoise, Inc. and BlueCycle LLC | 2 | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
 | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Joe Security LLC | 2 | [JoeSandbox](../solutions/joesandbox.md) |
 | [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Lumen Technologies, Inc. | 2 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Lumen Technologies, Inc. | 2 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | MISP project & cudeso.be | 2 | [MISP2Sentinel](../solutions/misp2sentinel.md) |
+| [PRODAFT USTA - IoC Threat Intelligence](../connectors/prodaftustaiocuploadindicators.md) ⚠️ | [Azure Function (TI Upload API)\|Unknown](../methods/azure-function-ti-upload-api-unknown.md) | PRODAFT | 2 | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
 | [VMRayThreatIntelligence](../connectors/vmray.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | VMRay | 2 | [VMRay](../solutions/vmray.md) |
 
 ---

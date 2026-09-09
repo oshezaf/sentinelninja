@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.5.1</td>
+  <td style="text-align:left">3.7.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-14</td>
+  <td style="text-align:left">2026-09-03</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,11 +67,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud">Azure Marketplace</a> · Popularity: 🟢 High (92%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud">Azure Marketplace</a> · Popularity: 🟢 High (91%)</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.salesforce.com/in/products/service-cloud/overview/">Salesforce Service Cloud</a> solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.</p>
+<p>The <a href="https://www.salesforce.com/in/products/service-cloud/overview/">Salesforce Service Cloud</a> solution for Microsoft Sentinel enables you to ingest Service Cloud events and Salesforce Marketing Cloud audit and security events into Microsoft Sentinel.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
@@ -82,12 +82,13 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>3 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<p>This solution provides <strong>4 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
 <li><a href="../connectors/salesforcertemconnector.html">SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/salesforceeventlogconnector.html">Salesforce Service Cloud (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/salesforcemktcloudconnector.html">Salesforce Marketing Cloud (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a> ⚠️ 🔶</li>
-<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
@@ -96,7 +97,7 @@
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>6 table(s)</strong>:</p>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -112,13 +113,23 @@
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/salesforceaudittrail.html"><code>SalesforceAuditTrail</code></a></td>
+  <td><a href="../tables/salesforceaudittrailv2-cl.html"><code>SalesforceAuditTrailV2_CL</code></a></td>
   <td><a href="../connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
-  <td><a href="../tables/salesforceloginhistory.html"><code>SalesforceLoginHistory</code></a></td>
+  <td><a href="../tables/salesforceloginhistoryv2-cl.html"><code>SalesforceLoginHistoryV2_CL</code></a></td>
   <td><a href="../connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/salesforcemarketingcloudauditevents-cl.html"><code>SalesforceMarketingCloudAuditEvents_CL</code></a></td>
+  <td><a href="../connectors/salesforcemktcloudconnector.html">Salesforce Marketing Cloud (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/salesforcemarketingcloudsecurityevents-cl.html"><code>SalesforceMarketingCloudSecurityEvents_CL</code></a></td>
+  <td><a href="../connectors/salesforcemktcloudconnector.html">Salesforce Marketing Cloud (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 <tr>
@@ -128,7 +139,7 @@
 </tr>
 <tr>
   <td><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a></td>
-  <td><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
+  <td><a href="../connectors/salesforceeventlogconnector.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 <tr>
@@ -160,7 +171,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<p>This solution includes <strong>6 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -174,11 +185,11 @@
   <td style="text-align:left">3</td>
 </tr>
 <tr>
-  <td style="text-align:left">Workbooks</td>
-  <td style="text-align:left">1</td>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
 </tr>
 <tr>
-  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">Workbooks</td>
   <td style="text-align:left">1</td>
 </tr>
 </tbody>
@@ -240,6 +251,11 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../parsers/salesforceauditlogs.html">SalesforceAuditLogs</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/salesforceaudittrail.html"><code>SalesforceAuditTrail</code></a> <em>(read)</em><br><a href="../tables/salesforceaudittrailv2-cl.html"><code>SalesforceAuditTrailV2_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceloginhistory.html"><code>SalesforceLoginHistory</code></a> <em>(read)</em><br><a href="../tables/salesforceloginhistoryv2-cl.html"><code>SalesforceLoginHistoryV2_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../parsers/salesforceservicecloud.html">SalesforceServiceCloud</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> <em>(read)</em></td>
@@ -256,6 +272,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.7.0</td>
+  <td>01-09-2026</td>
+  <td>Added the Salesforce Marketing Cloud CCF connector with audit and security event ingestion, custom tables, DCR transformations, and parser aliases.</td>
+</tr>
+<tr>
+  <td>3.6.1</td>
+  <td>26-08-2026</td>
+  <td>Corrected the Salesforce Service Cloud parser metadata version</td>
+</tr>
+<tr>
+  <td>3.6.0</td>
+  <td>18-08-2026</td>
+  <td>Added Salesforce Audit Logs parser and table definitions, and updated Salesforce connector configurations.</td>
+</tr>
 <tr>
   <td>3.5.1</td>
   <td>13-08-2026</td>

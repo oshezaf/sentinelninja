@@ -22,9 +22,9 @@ This playbook uses **5** Logic App connectors / built-in actions:
 |:-------------------|:-----|:-----------:|:-------:|
 | [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 2 |
 | [`azureadip`](../logic-apps/managed-azureadip.md) | Managed | 1 | 1 |
-| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
-| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
-| [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) | Custom | 1 | 5 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 0 |
+| [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) | Custom | 1 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
@@ -41,28 +41,20 @@ This playbook uses **5** Logic App connectors / built-in actions:
 |:-------|:-------|:---------|:------|
 | Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
 
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log | post | `/api/logs` | — |
-| Create_table_if_missing | post | `/api/logs` | — |
-
-#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Check_if_table_exists | post | `/queryDataV2` | — |
-
 #### [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) (Custom)
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Playbook_Alerts_-_Detailed_Identity_Novel_Exposures_alert_data | get | `/playbook-alerts/@{encodeURIComponent(item()?['alert_id'])}` | — |
 | Playbook_Alerts_-_Update_Playbook_Alert_-_Saved_to_LAW | put | `/playbook-alerts/update` | — |
-| Playbook_Alerts_-_Update_Playbook_Alert-_If_user_found | put | `/playbook-alerts/update` | — |
 | Playbook_Alerts_-_Update_Playbook_Alert_-_If_user_not_found | put | `/playbook-alerts/update` | — |
 | Playbook_Alerts_-_Search_for_novel_identity_exposures | post | `/playbook-alerts/search` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log | POST | `@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrImmutableId')}/streams/@{parameters('StreamName')}?api-version=2023-01-01` | — |
 
 </details>
 

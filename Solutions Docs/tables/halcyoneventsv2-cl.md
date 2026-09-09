@@ -8,7 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -86,7 +88,13 @@ This table is ingested by the following connectors:
 
 ---
 
-## Parsers Using This Table (7)
+## Parsers Using This Table (8)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsHalcyon](../asim/asimdnshalcyon.md) | Dns | Halcyon |  |
 
 ### Other Parsers (7)
 

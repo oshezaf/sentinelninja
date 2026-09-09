@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airlock Digital Push &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="airlock-digital">Airlock Digital (Push)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AirlockDigital.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>AirlockDigitalPush</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Airlock Digital</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/airlockdigital.html">AirlockDigital</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalPush_CCF/AirlockDigitalPush_ConnectorDefinition.json">AirlockDigitalPush_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalPush_CCF/AirlockDigitalPush_DCR.json">AirlockDigitalPush_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalPush_CCF/AirlockDigitalPush_PollerConfig.json">AirlockDigitalPush_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.airlockdigital.com/">Airlock Digital</a> <strong>Push</strong> connector streams execution history, server activity, and policy change logs into Microsoft Sentinel in near real time. It supports both self-hosted servers and Airlock Digital SaaS running v7.0 or higher. Events are pushed by Airlock's external logging feature as they occur, so there is no polling delay, and authentication uses a Microsoft Entra application. This is the recommended connector for Airlock Digital v7.0 and higher. For self-hosted servers older than v7.0, use the <strong>Airlock Digital (Poll)</strong> connector.</p>
+<blockquote>
+<p><strong>NOTE:</strong> Use one connector per Airlock Digital server. If the same server is collected by more than one Airlock Digital connector, duplicate data is populated in the tables.</p>
+</blockquote>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/airlockdigitalexecutionhistories-cl.html"><code>AirlockDigitalExecutionHistories_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/airlockdigitalpolicychanges-cl.html"><code>AirlockDigitalPolicyChanges_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/airlockdigitalserveractivities-cl.html"><code>AirlockDigitalServerActivities_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires the Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign the Monitoring Metrics Publisher role on the data collection rule. Typically requires Owner or User Access Administrator.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy the push resources</strong></p>
+<p>This step provisions the data collection rule, custom table, and Microsoft Entra application that Airlock uses to send logs into Microsoft Sentinel.</p>
+<p>ℹ️ The Client Secret is never stored. It is shown only once, right after you select Deploy, and the connector page may clear it within a few seconds, so use the copy icon beside the field to copy it immediately. If you miss it, open Microsoft Entra ID &gt; App registrations, select the app named Airlock Digital Log Push OAuth, go to Certificates &amp; secrets, create a new client secret, and copy its value. There it stays visible until you leave that page.
+Deploy</p>
+<p><strong>2. Configure Airlock external logging</strong></p>
+<p>On your Airlock Digital server, go to <strong>Settings</strong> &gt; <strong>Logging</strong> &gt; <strong>External Logging</strong> and add a <strong>Microsoft Sentinel CEF - HTTP(S)</strong> log receiver using the values below.</p>
+<ul>
+<li><strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Application (Client) ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Client Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint URI</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>DCR Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Stream Name</strong>: <code>Custom-AirlockDigital_CL</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

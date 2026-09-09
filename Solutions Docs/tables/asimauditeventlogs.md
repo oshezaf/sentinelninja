@@ -47,7 +47,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | ActorScope | string | The scope, such as Azure AD tenant, in which ActorUserId and ActorUsername are defined. |
 | ActorScopeId | string | The scope ID, such as Azure AD tenant ID, in which ActorUserId and ActorUsername are defined. |
 | ActorSessionId | string | The unique ID of the sign-in session of the Actor. |
-| ActorUserAadId | string | The Azure Active Directory ID of the actor. |
+| ActorUserAadId | string | The Microsoft Entra object ID of the actor. |
 | ActorUserAdditionalIds | dynamic | Additional identifiers associated with the actor user. |
 | ActorUserEntityKey | string | The entity key associated with the actor user. |
 | ActorUserId | string | A machine-readable, alphanumeric, unique representation of the actor. |
@@ -194,10 +194,10 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [Workday User Activity](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
+| [Workday User Activity (via Codeless Connector Framework)](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
 
 ---
 
@@ -237,16 +237,15 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/auditeventnormalized`
 
-## Selection Criteria Summary (3 criteria, 4 total references)
+## Selection Criteria Summary (2 criteria, 3 total references)
 
-References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventVendor == "Workday"` | - | 2 | - | - | **2** |
 | `EventProduct == "Workday"` | 1 | - | - | - | **1** |
-| `EventProduct == "Meraki"`<br>`EventType == "Notable"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
-| **Total** | **2** | **2** | **0** | **0** | **4** |
+| **Total** | **1** | **2** | **0** | **0** | **3** |
 
 ### EventProduct / EventVendor
 
@@ -254,13 +253,6 @@ References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parse
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 |  | `Workday` | - | 2 | - | - | **2** |
 | `Workday` |  | 1 | - | - | - | **1** |
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
-
-### EventType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Notable` | 1 | - | - | - | **1** |
 
 ---
 

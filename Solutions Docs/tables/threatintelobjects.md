@@ -55,7 +55,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelObjects Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelobjects)
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -67,10 +67,11 @@ This table is used by the following solutions:
 - [JoeSandbox](../solutions/joesandbox.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MISP2Sentinel](../solutions/misp2sentinel.md)
+- [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [VMRay](../solutions/vmray.md)
 
-## Connectors (14)
+## Connectors (15)
 
 This table is ingested by the following connectors:
 
@@ -86,6 +87,7 @@ This table is ingested by the following connectors:
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) |  |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) |  |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
+| [PRODAFT USTA - IoC Threat Intelligence](../connectors/prodaftustaiocuploadindicators.md) |  |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |

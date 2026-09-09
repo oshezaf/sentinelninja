@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DatadogSecurityLogsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="datadogsecuritylogs_cl">DatadogSecurityLogs_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (67 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datadog%5CData%20Connectors%5CDatadogConnector/table_DatadogSecurityLogs.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Attributes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Full attributes object of the Datadog security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud entities associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Datasets</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Datasets used to generate the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">DetectionMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Detection method used by the rule</td>
+</tr>
+<tr>
+  <td style="text-align:left">DiscoveryTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when Datadog discovered the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Entities associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the Datadog security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Event names represented in the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventsMatched</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of events matched by the detection rule</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSource</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Event sources represented in the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp reported by Datadog for the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTrackerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Datadog event tracker identifier</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource type of the event (always 'signal')</td>
+</tr>
+<tr>
+  <td style="text-align:left">GroupByValuesHash</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hash of the values used to group the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Host</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">HttpDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">HTTP details associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">IngestSizeInBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size of the ingested security signal in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security signal message</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network details associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Ocsf</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Open Cybersecurity Schema Framework data</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfActorUserId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Actor user identifiers identified by OCSF</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfCategory</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OCSF event categories represented in the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfClass</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OCSF event classes represented in the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfCloudProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud provider identified by OCSF</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfCloudRegion</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Cloud regions identified by OCSF</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OCSF-normalized entities associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfSeverity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OCSF severity values represented in the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfSourceIp</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Source IP addresses identified by OCSF</td>
+</tr>
+<tr>
+  <td style="text-align:left">OcsfStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">OCSF status values represented in the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Queries</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Queries evaluated for the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReducerSignalId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the reduced security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">RelatedQuery</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Query associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the detection rule</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the detection rule</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the detection rule</td>
+</tr>
+<tr>
+  <td style="text-align:left">Samples</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Sample events associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Service</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Services associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Numeric severity of the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalCasesHistory</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">History of rule cases associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detection and workflow details associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Datadog identifier stored in the signal attributes</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalTitle</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Title of the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalVersion</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Version of the Datadog security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Source</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source that produced the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceFragmentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the source fragment</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity status of the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TagDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Structured tag values associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tags associated with the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggerCaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the rule case that triggered the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggerCaseStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the rule case that triggered the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggerCondition</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Condition that triggered the rule case</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggeringLogId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the log that triggered the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggeringLogTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp of the log that triggered the security signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggeringRuleCase</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Triggering rule case details</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Normalized user details associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">User identifiers associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIdentity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Source identity details associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIdentityAccessKeyId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">AWS access key identifiers associated with the source identity</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIdentityAccountId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">AWS account identifiers associated with the source identity</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIdentityArn</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">AWS ARNs associated with the source identity</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserIdentityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of source identity associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">User names associated with the signal</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workflow</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detection workflow and triage details</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkflowFirstSeen</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the matching activity was first seen</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkflowLastSeen</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the matching activity was last seen</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkflowState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current triage state of the security signal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/datadog.html">Datadog</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/datadogconnector.html">Datadog Logs (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

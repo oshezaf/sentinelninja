@@ -1,4 +1,8 @@
-# Cisco Duo Security
+# ⚠️ 🔍 Cisco Duo Security
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75">
 
@@ -98,24 +102,6 @@ Use the following step-by-step instructions to deploy the data connector manuall
 		logAnalyticsUri (Optional)
  - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: `https://WORKSPACE_ID.ods.opinsights.azure.us`. 
 4. Once all application settings have been entered, click **Save**.
-
-## Additional Documentation
-
-> 📄 *Source: [CiscoDuoSecurity\Data Connectors\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity\Data Connectors\README.md)*
-
-To package the function app for deployment, follow these steps:
-
-1. install the Azure Function Core Tools if you haven't already.
-2. Rename local.settings.example.json to local.settings.json and configure any necessary settings.
-3. Once you have confirmed your changes,
-4. Navigate to the root directory of your function app in the terminal.
-5. Run the following command to create a deployment package:
-
-   ```bash
-   func pack <FunctionAppName> --output <FunctionAppName>.zip
-   ```
-
-   Replace `<FunctionAppName>` with the name of the Azure Function App.
 
 ---
 

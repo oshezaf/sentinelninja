@@ -9,30 +9,30 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | Managed connectors | 96 | `Microsoft.Web/connections` resources backed by Microsoft-published APIs (`/providers/Microsoft.Web/locations/.../managedApis/...`). |
 | Custom connectors | 56 | Solution-specific APIs (`/customApis/...`). |
 | Built-in action types | 3 | Workflow actions of type `Http`, `Function`, `Workflow`, or `ApiManagement` that don't use a connection resource. |
-| Playbooks using Logic App connectors / built-ins | 901 | |
+| Playbooks using Logic App connectors / built-ins | 933 | |
 
 | Connector / Action | Type | Playbooks | Solutions | Microsoft Learn |
 |:-------------------|:-----|----------:|----------:|:----------------|
-| [`azuresentinel`](managed-azuresentinel.md) | Managed | 700 | 126 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
-| [`http`](builtin-http.md) | Built-in | 400 | 68 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
-| [`keyvault`](managed-keyvault.md) | Managed | 161 | 26 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
-| [`azuremonitorlogs`](managed-azuremonitorlogs.md) | Managed | 107 | 27 | [Learn](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
-| [`teams`](managed-teams.md) | Managed | 104 | 33 | [Learn](https://learn.microsoft.com/en-us/connectors/teams/) |
-| [`azureloganalyticsdatacollector`](managed-azureloganalyticsdatacollector.md) | Managed | 101 | 20 | [Learn](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
+| [`azuresentinel`](managed-azuresentinel.md) | Managed | 726 | 130 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
+| [`http`](builtin-http.md) | Built-in | 434 | 78 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
+| [`keyvault`](managed-keyvault.md) | Managed | 165 | 27 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
+| [`azuremonitorlogs`](managed-azuremonitorlogs.md) | Managed | 113 | 28 | [Learn](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
+| [`azureloganalyticsdatacollector`](managed-azureloganalyticsdatacollector.md) | Managed | 104 | 21 | [Learn](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
+| [`teams`](managed-teams.md) | Managed | 102 | 33 | [Learn](https://learn.microsoft.com/en-us/connectors/teams/) |
 | [`office365`](managed-office365.md) | Managed | 73 | 20 | [Learn](https://learn.microsoft.com/en-us/connectors/office365/) |
-| [`workflow`](builtin-workflow.md) | Built-in | 63 | 12 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
-| [`function`](builtin-function.md) | Built-in | 55 | 15 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
-| [`microsoftsentinel`](managed-microsoftsentinel.md) | Managed | 34 | 12 | — |
+| [`workflow`](builtin-workflow.md) | Built-in | 63 | 13 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
+| [`function`](builtin-function.md) | Built-in | 57 | 16 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
+| [`microsoftsentinel`](managed-microsoftsentinel.md) | Managed | 35 | 12 | — |
 | [`wdatp`](managed-wdatp.md) | Managed | 30 | 3 | [Learn](https://learn.microsoft.com/en-us/connectors/wdatp/) |
 | [`azuread`](managed-azuread.md) | Managed | 29 | 5 | [Learn](https://learn.microsoft.com/en-us/connectors/azuread/) |
 | [`riskiqpassivetotal`](managed-riskiqpassivetotal.md) | Managed | 27 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/riskiqpassivetotal/) |
 | [`hyasinsight`](managed-hyasinsight.md) | Managed | 25 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/hyasinsight/) |
-| [`virustotal`](managed-virustotal.md) | Managed | 16 | 4 | [Learn](https://learn.microsoft.com/en-us/connectors/virustotal/) |
-| [`azureblob`](managed-azureblob.md) | Managed | 15 | 8 | [Learn](https://learn.microsoft.com/en-us/connectors/azureblob/) |
+| [`virustotal`](managed-virustotal.md) | Managed | 24 | 4 | [Learn](https://learn.microsoft.com/en-us/connectors/virustotal/) |
+| [`azureblob`](managed-azureblob.md) | Managed | 16 | 9 | [Learn](https://learn.microsoft.com/en-us/connectors/azureblob/) |
 | [`azuresentinel_1`](managed-azuresentinel-1.md) | Managed | 14 | 7 | — |
 | [`recordedfuturev2`](managed-recordedfuturev2.md) | Managed | 14 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/recordedfuturev2/) |
-| [`microsoftgraphsecurity`](managed-microsoftgraphsecurity.md) | Managed | 12 | 8 | [Learn](https://learn.microsoft.com/en-us/connectors/microsoftgraphsecurity/) |
 | [`azureadip`](managed-azureadip.md) | Managed | 11 | 3 | [Learn](https://learn.microsoft.com/en-us/connectors/azureadip/) |
+| [`microsoftgraphsecurity`](managed-microsoftgraphsecurity.md) | Managed | 11 | 7 | [Learn](https://learn.microsoft.com/en-us/connectors/microsoftgraphsecurity/) |
 | [`paloaltoconnector`](managed-paloaltoconnector.md) | Managed | 10 | 2 | — |
 | [`recordedfuture`](managed-recordedfuture.md) | Managed | 10 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/recordedfuture/) |
 | [`farsightdnsdb`](managed-farsightdnsdb.md) | Managed | 9 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/farsightdnsdb/) |
@@ -44,7 +44,6 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | [`ForcepointSMC-Connector`](custom-forcepointsmc-connector.md) | Custom | 7 | 1 | — |
 | [`forcepointsmcapiconnector`](managed-forcepointsmcapiconnector.md) | Managed | 7 | 1 | — |
 | [`keyvault_1`](managed-keyvault-1.md) | Managed | 7 | 2 | — |
-| [`keyvault_3`](managed-keyvault-3.md) | Managed | 7 | 1 | — |
 | [`outlook`](managed-outlook.md) | Managed | 7 | 5 | [Learn](https://learn.microsoft.com/en-us/connectors/outlook/) |
 | [`PAN-OSRestApiCustomConnector`](custom-pan-osrestapicustomconnector.md) | Custom | 7 | 2 | — |
 | [`ServiceNowTISCCustomConnector`](custom-servicenowtisccustomconnector.md) | Custom | 7 | 1 | — |
@@ -55,12 +54,13 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | [`CiscoASAConnector`](custom-ciscoasaconnector.md) | Custom | 6 | 2 | — |
 | [`azureautomation`](managed-azureautomation.md) | Managed | 5 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/azureautomation/) |
 | [`AzureFirewallConnector`](custom-azurefirewallconnector.md) | Custom | 5 | 1 | — |
-| [`azureloganalyticsdatacollector_1`](managed-azureloganalyticsdatacollector-1.md) | Managed | 5 | 4 | — |
 | [`HaveIBeenPwnedConnector`](custom-haveibeenpwnedconnector.md) | Custom | 5 | 1 | — |
 | [`ipqsfraudandriskscor`](managed-ipqsfraudandriskscor.md) | Managed | 5 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/) |
 | [`MerakiConnector`](custom-merakiconnector.md) | Custom | 5 | 1 | — |
+| [`azureloganalyticsdatacollector_1`](managed-azureloganalyticsdatacollector-1.md) | Managed | 4 | 3 | — |
 | [`azuretables`](managed-azuretables.md) | Managed | 4 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/azuretables/) |
 | [`eventhubs`](managed-eventhubs.md) | Managed | 4 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/eventhubs/) |
+| [`keyvault_3`](managed-keyvault-3.md) | Managed | 4 | 1 | — |
 | [`office365_1`](managed-office365-1.md) | Managed | 4 | 4 | — |
 | [`PaloAltoWildFire`](custom-paloaltowildfire.md) | Custom | 4 | 1 | — |
 | [`PAN-OSXmlApiCustomConnector`](custom-pan-osxmlapicustomconnector.md) | Custom | 4 | 2 | — |

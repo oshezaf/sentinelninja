@@ -7,14 +7,17 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 107 |
-| **Solutions** | 27 |
+| **Playbooks using** | 113 |
+| **Solutions** | 28 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [[Deprecated] Summarize Data for DNS Essentials Solution](../content/dns-essentials-[deprecated]-summarize-data-for-dns-essentials-solution-6ff0b741.md) | [DNS Essentials](../solutions/dns-essentials.md) | 1 | 2 |
+| [[Deprecated] Summarize Data for Network Session Essentials](../content/network-session-essentials-[deprecated]-summarize-data-for-network-session-essentials-7add1212.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 1 | 9 |
+| [[Deprecated] Summarize Web Session Data](../content/web-session-essentials-[deprecated]-summarize-web-session-data-eff20266.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 1 | 4 |
 | [AD4IoT-AutoAlertStatusSync](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 1 |
 | [AD4IoT-AutoCloseIncidents](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autocloseincidents-6bbdd5ed.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 1 |
 | [AD4IoT-AutoCloseIncidents](../content/github-only-ad4iot-autocloseincidents-58d73052.md) | 🔗 GitHub Only | 0 | 1 |
@@ -95,17 +98,20 @@
 | [Notify-ASCAlertAzureResource](../content/standalone-content-notify-ascalertazureresource-d81909cc.md) | 📄 Standalone | 1 | 1 |
 | [OktaEvents-to-Sentinel](../content/standalone-content-oktaevents-to-sentinel-f59de14f.md) | 📄 Standalone | 1 | 1 |
 | [PaloAltoXDR](../content/palo-alto-xdr-cortex-paloaltoxdr-ca954375.md) | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) | 1 | 2 |
+| [PRODAFT USTA - Import Malicious URLs](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malicious-urls-b406db8c.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 1 | 1 |
+| [PRODAFT USTA - Import Malware Hashes](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-malware-hashes-3fd88ec8.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 1 | 1 |
+| [PRODAFT USTA - Import Phishing Sites](../content/prodaft-usta-ioc-threat-intelligence-prodaft-usta-import-phishing-sites-9a061ecc.md) | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) | 1 | 1 |
 | [Put Defender for Endpoint Alert as Hunting ARM Template in GitHub Rep](../content/standalone-content-put-defender-for-endpoint-alert-as-hunting-arm-template-in-github-rep-d68c5446.md) | 📄 Standalone | 1 | 1 |
 | [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [Relate alerts to incident by IP](../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) | 1 | 1 |
-| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 1 |
+| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law-baa813bb.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 0 |
 | [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 1 |
 | [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 2 |
 | [Send Ingestion Cost Anomaly Alert](../content/standalone-content-send-ingestion-cost-anomaly-alert-26613ad8.md) | 📄 Standalone | 1 | 1 |
 | [Send Unhealthy Azure Arc Resource Alert](../content/standalone-content-send-unhealthy-azure-arc-resource-alert-d6360893.md) | 📄 Standalone | 1 | 1 |
-| [Summarize Data for DNS Essentials Solution](../content/dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.md) | [DNS Essentials](../solutions/dns-essentials.md) | 1 | 2 |
-| [Summarize Data for Network Session Essentials](../content/network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 1 | 9 |
-| [Summarize Web Session Data](../content/web-session-essentials-summarize-web-session-data-ea664ad8.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 1 | 4 |
+| [Summarize Data for DNS Essentials Solution using Log Ingestion API](../content/dns-essentials-summarize-data-for-dns-essentials-solution-using-log-ingestion-api-1b0fa700.md) | [DNS Essentials](../solutions/dns-essentials.md) | 1 | 2 |
+| [Summarize Data for Network Session Essentials using log ingestion API](../content/network-session-essentials-summarize-data-for-network-session-essentials-using-log-ingestion-api-a5a818a0.md) | [Network Session Essentials](../solutions/network-session-essentials.md) | 1 | 9 |
+| [Summarize Web Session Data using Log Ingestion API](../content/web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.md) | [Web Session Essentials](../solutions/web-session-essentials.md) | 1 | 4 |
 | [Sync-Comments-to-M365Defender](../content/github-only-sync-comments-to-m365defender-c7768f3d.md) | 🔗 GitHub Only | 0 | 1 |
 | [Team Cymru Scout Create Incident And Notify](../content/team-cymru-scout-team-cymru-scout-create-incident-and-notify-42341b2c.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 7 |
 | [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 6 |

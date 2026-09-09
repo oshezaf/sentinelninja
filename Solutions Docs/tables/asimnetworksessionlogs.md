@@ -14,7 +14,7 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimnetworksessionlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -218,7 +218,7 @@ This table is ingested by the following connectors:
 |:----------|:-------------------|
 | [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
-| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
@@ -269,18 +269,17 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (5 criteria, 5 total references)
+## Selection Criteria Summary (4 criteria, 4 total references)
 
-References by type: 3 connectors, 1 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 1 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 1 | - | - | - | **1** |
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
-| `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | 1 | - | - | - | **1** |
 | `DstIpAddr !in "8.8.8.8,1.1.1.1"` | - | 1 | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **3** | **1** | **1** | **0** | **5** |
+| **Total** | **2** | **1** | **1** | **0** | **4** |
 
 ### EventProduct / EventVendor
 
@@ -288,9 +287,6 @@ References by type: 3 connectors, 1 content items, 1 ASIM parsers, 0 other parse
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Carbon Black Cloud` | `VMWare` | 1 | - | - | - | **1** |
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
-| `AzureVNet` |  | 1 | - | - | - | **1** |
-| `BIND` |  | 1 | - | - | - | **1** |
-| `SAP Web Dispatcher` |  | 1 | - | - | - | **1** |
 
 ### DstIpAddr
 

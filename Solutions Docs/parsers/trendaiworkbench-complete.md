@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | Location | Solution |
-| Solution | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) ⚠️ |
+| Solution | [TrendAI Vision One(CCF)](../solutions/trendai-vision-one-ccf.md) |
 | Version | 1.0.0 |
 | Last Updated | 2025-01-01 |
 | Category | TrendAI |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`TrendAI_XDR_WORKBENCH_V2_CL`](../tables/trendai-xdr-workbench-v2-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
+| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ---
 

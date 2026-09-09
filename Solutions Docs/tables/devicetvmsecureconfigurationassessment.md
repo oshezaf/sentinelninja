@@ -65,7 +65,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
 ### Hunting Queries (3)
 
@@ -81,6 +81,14 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Endpoint Agent Health Status Report](../content/github-only-endpoint-agent-health-status-report-64c0f54f-9a8d-4630-95c8-aa2751e5da0c-7b7ccf5d.md) | `OSPlatform has "Linux"`<br>`OSPlatform has "macOS"`<br>`OSPlatform startswith "Windows"` |
 | [MD AV Signature and Platform Version](../content/github-only-md-av-signature-and-platform-version-30035880-b7af-4d5e-8617-be7f070a5c1c-78f9bd77.md) | `ConfigurationId == "scid-2011"` |
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 
 ## Selection Criteria Summary (2 criteria, 3 total references)
 

@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**596 parsers** (35 legacy, 540 solution, 21 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**719 parsers** (36 legacy, 656 solution, 27 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -99,7 +99,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ArmisAlerts](armisalerts.md) | 📦 [Armis](../solutions/armis.md) | Armis_Alerts_CL |
 | [ArmisDevice](armisdevice.md) | 📦 [Armis](../solutions/armis.md) | Armis_Devices_CL |
 | [ArubaClearPass](arubaclearpass.md) | 📦 [Aruba ClearPass](../solutions/aruba-clearpass.md) | CommonSecurityLog |
+| [ASimAuditEventAirlockDigital](asimauditeventairlockdigital.md) | 📦 [AirlockDigital](../solutions/airlockdigital.md) | AirlockDigitalServerActivities_CL |
+| [ASimAuditEventAirlockDigitalPolicyChange](asimauditeventairlockdigitalpolicychange.md) | 📦 [AirlockDigital](../solutions/airlockdigital.md) | AirlockDigitalPolicyChanges_CL |
 | [ASimNetworkSessionTailscale](asimnetworksessiontailscale.md) | 📦 [Tailscale (CCF)](../solutions/tailscale-ccf.md) | Tailscale_Network_CL |
+| [ASimProcessEventAirlockDigital](asimprocesseventairlockdigital.md) | 📦 [AirlockDigital](../solutions/airlockdigital.md) | AirlockDigitalExecutionHistories_CL |
 | [AssignedIPAddress](assignedipaddress.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [Auth0](auth0.md) | 📦 [Auth0](../solutions/auth0.md) | Auth0AM_CL, Auth0_CL |
 | [Auth0AM](auth0am.md) | 📦 [Auth0](../solutions/auth0.md) | Auth0AM_CL, Auth0Logs_CL |
@@ -168,139 +171,249 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ContrastADR](contrastadr.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRAttackEvents_CL |
 | [ContrastADR_Incident](contrastadr-incident.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRIncidents_CL |
 | [Corelight](corelight.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
-| [corelight_anomaly](corelight-anomaly.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_anomaly_CL |
-| [corelight_asset_classification](corelight-asset-classification.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_asset_classification_CL |
-| [corelight_bacnet](corelight-bacnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_bacnet_CL |
-| [corelight_capture_loss](corelight-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_capture_loss_CL |
-| [corelight_cip](corelight-cip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_cip_CL |
-| [corelight_conn](corelight-conn.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_conn_CL, Corelight_v2_conn_long_CL, ... |
-| [corelight_conn_agg](corelight-conn-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_conn_agg_CL |
-| [corelight_conn_long](corelight-conn-long.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_conn_long_CL |
-| [corelight_conn_red](corelight-conn-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_conn_red_CL |
-| [corelight_corelight_burst](corelight-corelight-burst.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_burst_CL |
-| [corelight_corelight_metrics_disk](corelight-corelight-metrics-disk.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_metrics_disk_CL |
-| [corelight_corelight_metrics_iface](corelight-corelight-metrics-iface.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_metrics_iface_CL |
-| [corelight_corelight_metrics_memory](corelight-corelight-metrics-memory.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_metrics_memory_CL |
-| [corelight_corelight_metrics_system](corelight-corelight-metrics-system.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_metrics_system_CL |
-| [corelight_corelight_metrics_zeek_doctor](corelight-corelight-metrics-zeek-doctor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_metrics_zeek_doctor_CL |
-| [corelight_corelight_overall_capture_loss](corelight-corelight-overall-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_overall_capture_loss_CL |
-| [corelight_corelight_profiling](corelight-corelight-profiling.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_corelight_profiling_CL |
-| [corelight_datared](corelight-datared.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_datared_CL |
-| [corelight_dce_rpc](corelight-dce-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dce_rpc_CL |
-| [corelight_dga](corelight-dga.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dga_CL |
-| [corelight_dhcp](corelight-dhcp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dhcp_CL |
-| [corelight_dnp3](corelight-dnp3.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dnp3_CL |
-| [corelight_dns](corelight-dns.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dns_CL, Corelight_v2_dns_red_CL |
-| [corelight_dns_agg](corelight-dns-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dns_agg_CL |
-| [corelight_dns_red](corelight-dns-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dns_red_CL |
-| [corelight_dpd](corelight-dpd.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_dpd_CL |
-| [corelight_encrypted_dns](corelight-encrypted-dns.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_encrypted_dns_CL |
-| [corelight_enip](corelight-enip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_enip_CL |
-| [corelight_enip_debug](corelight-enip-debug.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_enip_debug_CL |
-| [corelight_enip_list_identity](corelight-enip-list-identity.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_enip_list_identity_CL |
-| [corelight_etc_viz](corelight-etc-viz.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_etc_viz_CL |
-| [corelight_files](corelight-files.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_files_CL, Corelight_v2_files_red_CL |
-| [corelight_files_agg](corelight-files-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_files_agg_CL |
-| [corelight_files_red](corelight-files-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_files_red_CL |
-| [corelight_first_seen](corelight-first-seen.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_first_seen_CL |
-| [corelight_ftp](corelight-ftp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ftp_CL |
-| [corelight_generic_dns_tunnels](corelight-generic-dns-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_generic_dns_tunnels_CL |
-| [corelight_generic_icmp_tunnels](corelight-generic-icmp-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_generic_icmp_tunnels_CL |
-| [corelight_http](corelight-http.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_http2_CL, Corelight_v2_http_CL, ... |
-| [corelight_http2](corelight-http2.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_http2_CL |
-| [corelight_http_agg](corelight-http-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_http_agg_CL |
-| [corelight_http_red](corelight-http-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_http_red_CL |
-| [corelight_icmp_specific_tunnels](corelight-icmp-specific-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_icmp_specific_tunnels_CL |
-| [corelight_intel](corelight-intel.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_intel_CL |
-| [corelight_ipsec](corelight-ipsec.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ipsec_CL |
-| [corelight_irc](corelight-irc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_irc_CL |
-| [corelight_iso_cotp](corelight-iso-cotp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_iso_cotp_CL |
-| [corelight_kerberos](corelight-kerberos.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_kerberos_CL |
-| [corelight_known_certs](corelight-known-certs.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_certs_CL |
-| [corelight_known_devices](corelight-known-devices.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_devices_CL |
-| [corelight_known_domains](corelight-known-domains.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_domains_CL |
-| [corelight_known_hosts](corelight-known-hosts.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_hosts_CL |
-| [corelight_known_names](corelight-known-names.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_names_CL |
-| [corelight_known_remotes](corelight-known-remotes.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_remotes_CL |
-| [corelight_known_services](corelight-known-services.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_services_CL |
-| [corelight_known_users](corelight-known-users.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_known_users_CL |
-| [corelight_local_subnets](corelight-local-subnets.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_local_subnets_CL |
-| [corelight_local_subnets_dj](corelight-local-subnets-dj.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_local_subnets_dj_CL |
-| [corelight_local_subnets_graphs](corelight-local-subnets-graphs.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_local_subnets_graphs_CL |
-| [corelight_log4shell](corelight-log4shell.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_log4shell_CL |
-| [corelight_modbus](corelight-modbus.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_modbus_CL |
-| [corelight_mqtt_connect](corelight-mqtt-connect.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_mqtt_connect_CL |
-| [corelight_mqtt_publish](corelight-mqtt-publish.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_mqtt_publish_CL |
-| [corelight_mqtt_subscribe](corelight-mqtt-subscribe.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_mqtt_subscribe_CL |
-| [corelight_mysql](corelight-mysql.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_mysql_CL |
-| [corelight_notice](corelight-notice.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_notice_CL |
-| [corelight_ntlm](corelight-ntlm.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ntlm_CL |
-| [corelight_ntp](corelight-ntp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ntp_CL |
-| [corelight_ocsp](corelight-ocsp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ocsp_CL |
-| [corelight_openflow](corelight-openflow.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_openflow_CL |
-| [corelight_packet_filter](corelight-packet-filter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_packet_filter_CL |
-| [corelight_pe](corelight-pe.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_pe_CL |
-| [corelight_profinet](corelight-profinet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_profinet_CL |
-| [corelight_profinet_dce_rpc](corelight-profinet-dce-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_profinet_dce_rpc_CL |
-| [corelight_profinet_debug](corelight-profinet-debug.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_profinet_debug_CL |
-| [corelight_radius](corelight-radius.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_radius_CL |
-| [corelight_rdp](corelight-rdp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_rdp_CL |
-| [corelight_reporter](corelight-reporter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_reporter_CL |
-| [corelight_rfb](corelight-rfb.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_rfb_CL |
-| [corelight_s7comm](corelight-s7comm.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_s7comm_CL |
-| [corelight_signatures](corelight-signatures.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_signatures_CL |
-| [corelight_sip](corelight-sip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_sip_CL |
-| [corelight_smartpcap](corelight-smartpcap.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smartpcap_CL |
-| [corelight_smartpcap_stats](corelight-smartpcap-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smartpcap_stats_CL |
-| [corelight_smb_files](corelight-smb-files.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smb_files_CL |
-| [corelight_smb_mapping](corelight-smb-mapping.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smb_mapping_CL |
-| [corelight_smtp](corelight-smtp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smtp_CL |
-| [corelight_smtp_links](corelight-smtp-links.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_smtp_links_CL |
-| [corelight_snmp](corelight-snmp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_snmp_CL |
-| [corelight_socks](corelight-socks.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_socks_CL |
-| [corelight_software](corelight-software.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_software_CL |
-| [corelight_specific_dns_tunnels](corelight-specific-dns-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_specific_dns_tunnels_CL |
-| [corelight_ssh](corelight-ssh.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ssh_CL |
-| [corelight_ssl](corelight-ssl.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_CL, Corelight_v2_ssl_red_CL |
-| [corelight_ssl_agg](corelight-ssl-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_agg_CL |
-| [corelight_ssl_red](corelight-ssl-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_red_CL |
-| [corelight_stats](corelight-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stats_CL |
-| [corelight_stepping](corelight-stepping.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stepping_CL |
-| [corelight_stun](corelight-stun.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stun_CL |
-| [corelight_stun_nat](corelight-stun-nat.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_stun_nat_CL |
+| [corelight_amqp](corelight-amqp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_amqp_CL |
+| [corelight_analyzer](corelight-analyzer.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_analyzer_CL |
+| [corelight_anomaly](corelight-anomaly.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_anomaly_CL |
+| [corelight_asset_classification](corelight-asset-classification.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_asset_classification_CL |
+| [corelight_bacnet](corelight-bacnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bacnet_CL |
+| [corelight_bacnet_device_control](corelight-bacnet-device-control.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bacnet_device_control_CL |
+| [corelight_bacnet_discovery](corelight-bacnet-discovery.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bacnet_discovery_CL |
+| [corelight_bacnet_property](corelight-bacnet-property.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bacnet_property_CL |
+| [corelight_broker](corelight-broker.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_broker_CL |
+| [corelight_bsap_ip_header](corelight-bsap-ip-header.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_ip_header_CL |
+| [corelight_bsap_ip_rdb](corelight-bsap-ip-rdb.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_ip_rdb_CL |
+| [corelight_bsap_ip_unknown](corelight-bsap-ip-unknown.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_ip_unknown_CL |
+| [corelight_bsap_serial_header](corelight-bsap-serial-header.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_serial_header_CL |
+| [corelight_bsap_serial_rdb](corelight-bsap-serial-rdb.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_serial_rdb_CL |
+| [corelight_bsap_serial_rdb_ext](corelight-bsap-serial-rdb-ext.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_serial_rdb_ext_CL |
+| [corelight_bsap_serial_unknown](corelight-bsap-serial-unknown.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_bsap_serial_unknown_CL |
+| [corelight_capture_loss](corelight-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_capture_loss_CL |
+| [corelight_cip](corelight-cip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_cip_CL |
+| [corelight_cip_identity](corelight-cip-identity.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_cip_identity_CL |
+| [corelight_cip_io](corelight-cip-io.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_cip_io_CL |
+| [corelight_cluster](corelight-cluster.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_cluster_CL |
+| [corelight_config](corelight-config.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_config_CL |
+| [corelight_conn](corelight-conn.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_conn_CL, Corelight_v3_conn_long_CL, ... |
+| [corelight_conn_agg](corelight-conn-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_conn_agg_CL |
+| [corelight_conn_long](corelight-conn-long.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_conn_long_CL |
+| [corelight_conn_red](corelight-conn-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_conn_red_CL |
+| [corelight_corelight_ad_admin_shares](corelight-corelight-ad-admin-shares.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_admin_shares_CL |
+| [corelight_corelight_ad_ew_servers_services](corelight-corelight-ad-ew-servers-services.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ew_servers_services_CL |
+| [corelight_corelight_ad_exe_files](corelight-corelight-ad-exe-files.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_exe_files_CL |
+| [corelight_corelight_ad_ftp_connections](corelight-corelight-ad-ftp-connections.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ftp_connections_CL |
+| [corelight_corelight_ad_http_user_agents](corelight-corelight-ad-http-user-agents.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_http_user_agents_CL |
+| [corelight_corelight_ad_ns_servers_services](corelight-corelight-ad-ns-servers-services.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ns_servers_services_CL |
+| [corelight_corelight_ad_ntlm_auth](corelight-corelight-ad-ntlm-auth.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ntlm_auth_CL |
+| [corelight_corelight_ad_rdp](corelight-corelight-ad-rdp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_rdp_CL |
+| [corelight_corelight_ad_ssh_clients](corelight-corelight-ad-ssh-clients.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ssh_clients_CL |
+| [corelight_corelight_ad_ssh_connections](corelight-corelight-ad-ssh-connections.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_ad_ssh_connections_CL |
+| [corelight_corelight_burst](corelight-corelight-burst.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_burst_CL |
+| [corelight_corelight_license_capacity](corelight-corelight-license-capacity.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_license_capacity_CL |
+| [corelight_corelight_metrics_disk](corelight-corelight-metrics-disk.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_metrics_disk_CL |
+| [corelight_corelight_metrics_iface](corelight-corelight-metrics-iface.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_metrics_iface_CL |
+| [corelight_corelight_metrics_memory](corelight-corelight-metrics-memory.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_metrics_memory_CL |
+| [corelight_corelight_metrics_system](corelight-corelight-metrics-system.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_metrics_system_CL |
+| [corelight_corelight_metrics_zeek_doctor](corelight-corelight-metrics-zeek-doctor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_metrics_zeek_doctor_CL |
+| [corelight_corelight_overall_capture_loss](corelight-corelight-overall-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_overall_capture_loss_CL |
+| [corelight_corelight_pipeline_test](corelight-corelight-pipeline-test.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_pipeline_test_CL |
+| [corelight_corelight_profiling](corelight-corelight-profiling.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_corelight_profiling_CL |
+| [corelight_datared](corelight-datared.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_datared_CL |
+| [corelight_dce_rpc](corelight-dce-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dce_rpc_CL |
+| [corelight_dga](corelight-dga.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dga_CL |
+| [corelight_dhcp](corelight-dhcp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dhcp_CL |
+| [corelight_dnp3](corelight-dnp3.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dnp3_CL |
+| [corelight_dnp3_control](corelight-dnp3-control.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dnp3_control_CL |
+| [corelight_dnp3_objects](corelight-dnp3-objects.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dnp3_objects_CL |
+| [corelight_dns](corelight-dns.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dns_CL, Corelight_v3_dns_red_CL |
+| [corelight_dns_agg](corelight-dns-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dns_agg_CL |
+| [corelight_dns_red](corelight-dns-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dns_red_CL |
+| [corelight_dpd](corelight-dpd.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_dpd_CL |
+| [corelight_ecat_aoe_info](corelight-ecat-aoe-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_aoe_info_CL |
+| [corelight_ecat_arp_info](corelight-ecat-arp-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_arp_info_CL |
+| [corelight_ecat_coe_info](corelight-ecat-coe-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_coe_info_CL |
+| [corelight_ecat_dev_info](corelight-ecat-dev-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_dev_info_CL |
+| [corelight_ecat_foe_info](corelight-ecat-foe-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_foe_info_CL |
+| [corelight_ecat_log_address](corelight-ecat-log-address.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_log_address_CL |
+| [corelight_ecat_registers](corelight-ecat-registers.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_registers_CL |
+| [corelight_ecat_soe_info](corelight-ecat-soe-info.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ecat_soe_info_CL |
+| [corelight_encrypted_dns](corelight-encrypted-dns.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_encrypted_dns_CL |
+| [corelight_enip](corelight-enip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_enip_CL |
+| [corelight_enip_debug](corelight-enip-debug.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_enip_debug_CL |
+| [corelight_enip_list_identity](corelight-enip-list-identity.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_enip_list_identity_CL |
+| [corelight_etc_viz](corelight-etc-viz.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_etc_viz_CL |
+| [corelight_files](corelight-files.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_files_CL, Corelight_v3_files_red_CL |
+| [corelight_files_agg](corelight-files-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_files_agg_CL |
+| [corelight_files_red](corelight-files-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_files_red_CL |
+| [corelight_first_seen](corelight-first-seen.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_first_seen_CL |
+| [corelight_ftp](corelight-ftp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ftp_CL |
+| [corelight_gena](corelight-gena.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_gena_CL |
+| [corelight_generic_dns_tunnels](corelight-generic-dns-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_generic_dns_tunnels_CL |
+| [corelight_generic_icmp_tunnels](corelight-generic-icmp-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_generic_icmp_tunnels_CL |
+| [corelight_genisys](corelight-genisys.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_genisys_CL |
+| [corelight_http](corelight-http.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_http2_CL, Corelight_v3_http_CL, ... |
+| [corelight_http2](corelight-http2.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_http2_CL |
+| [corelight_http_agg](corelight-http-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_http_agg_CL |
+| [corelight_http_red](corelight-http-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_http_red_CL |
+| [corelight_icmp_specific_tunnels](corelight-icmp-specific-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_icmp_specific_tunnels_CL |
+| [corelight_intel](corelight-intel.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_intel_CL |
+| [corelight_ipsec](corelight-ipsec.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ipsec_CL |
+| [corelight_irc](corelight-irc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_irc_CL |
+| [corelight_iso_cotp](corelight-iso-cotp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_iso_cotp_CL |
+| [corelight_kerberos](corelight-kerberos.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_kerberos_CL |
+| [corelight_known_certs](corelight-known-certs.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_certs_CL |
+| [corelight_known_devices](corelight-known-devices.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_devices_CL |
+| [corelight_known_domains](corelight-known-domains.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_domains_CL |
+| [corelight_known_hosts](corelight-known-hosts.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_hosts_CL |
+| [corelight_known_names](corelight-known-names.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_names_CL |
+| [corelight_known_remotes](corelight-known-remotes.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_remotes_CL |
+| [corelight_known_services](corelight-known-services.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_services_CL |
+| [corelight_known_users](corelight-known-users.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_known_users_CL |
+| [corelight_ldap](corelight-ldap.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ldap_CL |
+| [corelight_ldap_search](corelight-ldap-search.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ldap_search_CL |
+| [corelight_loaded_scripts](corelight-loaded-scripts.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_loaded_scripts_CL |
+| [corelight_local_subnets](corelight-local-subnets.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_local_subnets_CL |
+| [corelight_local_subnets_dj](corelight-local-subnets-dj.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_local_subnets_dj_CL |
+| [corelight_local_subnets_graphs](corelight-local-subnets-graphs.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_local_subnets_graphs_CL |
+| [corelight_local_subnets_neighbor](corelight-local-subnets-neighbor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_local_subnets_neighbor_CL |
+| [corelight_log4shell](corelight-log4shell.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_log4shell_CL |
+| [corelight_logschema](corelight-logschema.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_logschema_CL |
+| [corelight_modbus](corelight-modbus.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_modbus_CL |
+| [corelight_modbus_detailed](corelight-modbus-detailed.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_modbus_detailed_CL |
+| [corelight_modbus_mask_write_register](corelight-modbus-mask-write-register.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_modbus_mask_write_register_CL |
+| [corelight_modbus_read_device_identification](corelight-modbus-read-device-identification.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_modbus_read_device_identificatio_CL |
+| [corelight_modbus_read_write_multiple_registers](corelight-modbus-read-write-multiple-registers.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_modbus_read_write_multiple_regis_CL |
+| [corelight_mqtt_connect](corelight-mqtt-connect.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_mqtt_connect_CL |
+| [corelight_mqtt_publish](corelight-mqtt-publish.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_mqtt_publish_CL |
+| [corelight_mqtt_subscribe](corelight-mqtt-subscribe.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_mqtt_subscribe_CL |
+| [corelight_mysql](corelight-mysql.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_mysql_CL |
+| [corelight_netcontrol](corelight-netcontrol.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_netcontrol_CL |
+| [corelight_netcontrol_drop](corelight-netcontrol-drop.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_netcontrol_drop_CL |
+| [corelight_netcontrol_shunt](corelight-netcontrol-shunt.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_netcontrol_shunt_CL |
+| [corelight_notice](corelight-notice.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_notice_CL |
+| [corelight_notice_alarm](corelight-notice-alarm.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_notice_alarm_CL |
+| [corelight_ntlm](corelight-ntlm.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ntlm_CL |
+| [corelight_ntp](corelight-ntp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ntp_CL |
+| [corelight_ocsp](corelight-ocsp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ocsp_CL |
+| [corelight_opcua_binary](corelight-opcua-binary.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_CL |
+| [corelight_opcua_binary_activate_session](corelight-opcua-binary-activate-session.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_activate_session_CL |
+| [corelight_opcua_binary_activate_session_client_software_cert](corelight-opcua-binary-activate-session-client-software-cert.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_activate_session_cl_CL |
+| [corelight_opcua_binary_activate_session_locale_id](corelight-opcua-binary-activate-session-locale-id.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_activate_session_lo_CL |
+| [corelight_opcua_binary_aggregate_filter](corelight-opcua-binary-aggregate-filter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_aggregate_filter_CL |
+| [corelight_opcua_binary_browse](corelight-opcua-binary-browse.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_browse_CL |
+| [corelight_opcua_binary_browse_description](corelight-opcua-binary-browse-description.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_browse_description_CL |
+| [corelight_opcua_binary_browse_request_continuation_point](corelight-opcua-binary-browse-request-continuation-point.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_browse_request_cont_CL |
+| [corelight_opcua_binary_browse_response_references](corelight-opcua-binary-browse-response-references.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_browse_response_ref_CL |
+| [corelight_opcua_binary_browse_result](corelight-opcua-binary-browse-result.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_browse_result_CL |
+| [corelight_opcua_binary_close_session](corelight-opcua-binary-close-session.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_close_session_CL |
+| [corelight_opcua_binary_create_monitored_items](corelight-opcua-binary-create-monitored-items.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_cm_items_CL |
+| [corelight_opcua_binary_create_monitored_items_create_item](corelight-opcua-binary-create-monitored-items-create-item.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_cm_create_item_CL |
+| [corelight_opcua_binary_create_session](corelight-opcua-binary-create-session.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_create_session_CL |
+| [corelight_opcua_binary_create_session_discovery](corelight-opcua-binary-create-session-discovery.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_create_session_disc_CL |
+| [corelight_opcua_binary_create_session_endpoints](corelight-opcua-binary-create-session-endpoints.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_create_session_endp_CL |
+| [corelight_opcua_binary_create_session_user_token](corelight-opcua-binary-create-session-user-token.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_create_session_user_CL |
+| [corelight_opcua_binary_create_subscription](corelight-opcua-binary-create-subscription.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_create_subscription_CL |
+| [corelight_opcua_binary_data_change_filter](corelight-opcua-binary-data-change-filter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_data_change_filter_CL |
+| [corelight_opcua_binary_diag_info_detail](corelight-opcua-binary-diag-info-detail.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_diag_info_detail_CL |
+| [corelight_opcua_binary_event_filter](corelight-opcua-binary-event-filter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_CL |
+| [corelight_opcua_binary_event_filter_attribute_operand](corelight-opcua-binary-event-filter-attribute-operand.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_attrib_CL |
+| [corelight_opcua_binary_event_filter_attribute_operand_browse_paths](corelight-opcua-binary-event-filter-attribute-operand-browse-paths.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_bef_attr_operand_bpaths_CL |
+| [corelight_opcua_binary_event_filter_element_operand](corelight-opcua-binary-event-filter-element-operand.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_elemen_CL |
+| [corelight_opcua_binary_event_filter_literal_operand](corelight-opcua-binary-event-filter-literal-operand.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_litera_CL |
+| [corelight_opcua_binary_event_filter_select_clause](corelight-opcua-binary-event-filter-select-clause.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_select_CL |
+| [corelight_opcua_binary_event_filter_simple_attribute_operand](corelight-opcua-binary-event-filter-simple-attribute-operand.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_event_filter_simple_CL |
+| [corelight_opcua_binary_event_filter_simple_attribute_operand_browse_paths](corelight-opcua-binary-event-filter-simple-attribute-operand-browse-paths.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_bef_smpl_attr_bpaths_CL |
+| [corelight_opcua_binary_event_filter_where_clause](corelight-opcua-binary-event-filter-where-clause.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_bef_where_clause_CL |
+| [corelight_opcua_binary_event_filter_where_clause_elements](corelight-opcua-binary-event-filter-where-clause-elements.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_bef_where_clause_elements_CL |
+| [corelight_opcua_binary_get_endpoints](corelight-opcua-binary-get-endpoints.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_CL |
+| [corelight_opcua_binary_get_endpoints_description](corelight-opcua-binary-get-endpoints-description.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_descr_CL |
+| [corelight_opcua_binary_get_endpoints_discovery](corelight-opcua-binary-get-endpoints-discovery.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_disco_CL |
+| [corelight_opcua_binary_get_endpoints_locale_id](corelight-opcua-binary-get-endpoints-locale-id.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_local_CL |
+| [corelight_opcua_binary_get_endpoints_profile_uri](corelight-opcua-binary-get-endpoints-profile-uri.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_profi_CL |
+| [corelight_opcua_binary_get_endpoints_user_token](corelight-opcua-binary-get-endpoints-user-token.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_get_endpoints_user_CL |
+| [corelight_opcua_binary_opensecure_channel](corelight-opcua-binary-opensecure-channel.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_opensecure_channel_CL |
+| [corelight_opcua_binary_read](corelight-opcua-binary-read.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_read_CL |
+| [corelight_opcua_binary_read_nodes_to_read](corelight-opcua-binary-read-nodes-to-read.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_read_nodes_to_read_CL |
+| [corelight_opcua_binary_read_results](corelight-opcua-binary-read-results.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_read_results_CL |
+| [corelight_opcua_binary_status_code_detail](corelight-opcua-binary-status-code-detail.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_status_code_detail_CL |
+| [corelight_opcua_binary_variant_array_dims](corelight-opcua-binary-variant-array-dims.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_variant_array_dims_CL |
+| [corelight_opcua_binary_variant_data](corelight-opcua-binary-variant-data.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_variant_data_CL |
+| [corelight_opcua_binary_variant_data_value](corelight-opcua-binary-variant-data-value.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_variant_data_value_CL |
+| [corelight_opcua_binary_variant_extension_object](corelight-opcua-binary-variant-extension-object.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_variant_extension_o_CL |
+| [corelight_opcua_binary_variant_metadata](corelight-opcua-binary-variant-metadata.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_opcua_binary_variant_metadata_CL |
+| [corelight_openflow](corelight-openflow.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_openflow_CL |
+| [corelight_packet_filter](corelight-packet-filter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_packet_filter_CL |
+| [corelight_pe](corelight-pe.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_pe_CL |
+| [corelight_print](corelight-print.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_print_CL |
+| [corelight_profinet](corelight-profinet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_profinet_CL |
+| [corelight_profinet_dce_rpc](corelight-profinet-dce-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_profinet_dce_rpc_CL |
+| [corelight_profinet_debug](corelight-profinet-debug.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_profinet_debug_CL |
+| [corelight_quic](corelight-quic.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_quic_CL |
+| [corelight_radius](corelight-radius.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_radius_CL |
+| [corelight_rdp](corelight-rdp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_rdp_CL |
+| [corelight_reporter](corelight-reporter.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_reporter_CL |
+| [corelight_rfb](corelight-rfb.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_rfb_CL |
+| [corelight_s7comm](corelight-s7comm.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_s7comm_CL |
+| [corelight_s7comm_plus](corelight-s7comm-plus.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_s7comm_plus_CL |
+| [corelight_s7comm_read_szl](corelight-s7comm-read-szl.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_s7comm_read_szl_CL |
+| [corelight_s7comm_upload_download](corelight-s7comm-upload-download.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_s7comm_upload_download_CL |
+| [corelight_signatures](corelight-signatures.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_signatures_CL |
+| [corelight_sip](corelight-sip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_sip_CL |
+| [corelight_smartpcap](corelight-smartpcap.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smartpcap_CL |
+| [corelight_smartpcap_stats](corelight-smartpcap-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smartpcap_stats_CL |
+| [corelight_smb_files](corelight-smb-files.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smb_files_CL |
+| [corelight_smb_mapping](corelight-smb-mapping.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smb_mapping_CL |
+| [corelight_smtp](corelight-smtp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smtp_CL |
+| [corelight_smtp_links](corelight-smtp-links.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_smtp_links_CL |
+| [corelight_snmp](corelight-snmp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_snmp_CL |
+| [corelight_socks](corelight-socks.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_socks_CL |
+| [corelight_software](corelight-software.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_software_CL |
+| [corelight_specific_dns_tunnels](corelight-specific-dns-tunnels.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_specific_dns_tunnels_CL |
+| [corelight_ssdp](corelight-ssdp.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ssdp_CL |
+| [corelight_ssh](corelight-ssh.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ssh_CL |
+| [corelight_ssl](corelight-ssl.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ssl_CL, Corelight_v3_ssl_red_CL |
+| [corelight_ssl_agg](corelight-ssl-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ssl_agg_CL |
+| [corelight_ssl_red](corelight-ssl-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_ssl_red_CL |
+| [corelight_stats](corelight-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_stats_CL |
+| [corelight_stepping](corelight-stepping.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_stepping_CL |
+| [corelight_stun](corelight-stun.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_stun_CL |
+| [corelight_stun_nat](corelight-stun-nat.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_stun_nat_CL |
 | [corelight_suri_aggregations](corelight-suri-aggregations.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
-| [corelight_suricata_corelight](corelight-suricata-corelight.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_corelight_CL |
-| [corelight_suricata_eve](corelight-suricata-eve.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_eve_CL |
-| [corelight_suricata_stats](corelight-suricata-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_stats_CL |
-| [corelight_suricata_zeek_stats](corelight-suricata-zeek-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_zeek_stats_CL |
-| [corelight_syslog](corelight-syslog.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_syslog_CL |
-| [corelight_tds](corelight-tds.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_tds_CL |
-| [corelight_tds_rpc](corelight-tds-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_tds_rpc_CL |
-| [corelight_tds_sql_batch](corelight-tds-sql-batch.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_tds_sql_batch_CL |
-| [corelight_traceroute](corelight-traceroute.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_traceroute_CL |
-| [corelight_tunnel](corelight-tunnel.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_tunnel_CL |
-| [corelight_unknown_smartpcap](corelight-unknown-smartpcap.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_unknown_smartpcap_CL |
-| [corelight_util_stats](corelight-util-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_util_stats_CL |
-| [corelight_vpn](corelight-vpn.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_vpn_CL |
-| [corelight_weird](corelight-weird.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_weird_CL |
-| [corelight_weird_agg](corelight-weird-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_weird_agg_CL |
-| [corelight_weird_red](corelight-weird-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_weird_red_CL |
-| [corelight_weird_stats](corelight-weird-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_weird_stats_CL |
-| [corelight_wireguard](corelight-wireguard.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_wireguard_CL |
-| [corelight_x509](corelight-x509.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_x509_CL, Corelight_v2_x509_red_CL |
-| [corelight_x509_red](corelight-x509-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_x509_red_CL |
-| [corelight_zeek_doctor](corelight-zeek-doctor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_zeek_doctor_CL |
+| [corelight_suricata_corelight](corelight-suricata-corelight.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_suricata_corelight_CL |
+| [corelight_suricata_eve](corelight-suricata-eve.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_suricata_eve_CL |
+| [corelight_suricata_stats](corelight-suricata-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_suricata_stats_CL |
+| [corelight_suricata_zeek_stats](corelight-suricata-zeek-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_suricata_zeek_stats_CL |
+| [corelight_syslog](corelight-syslog.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_syslog_CL |
+| [corelight_tds](corelight-tds.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_tds_CL |
+| [corelight_tds_rpc](corelight-tds-rpc.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_tds_rpc_CL |
+| [corelight_tds_sql_batch](corelight-tds-sql-batch.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_tds_sql_batch_CL |
+| [corelight_telnet](corelight-telnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_telnet_CL |
+| [corelight_traceroute](corelight-traceroute.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_traceroute_CL |
+| [corelight_tunnel](corelight-tunnel.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_tunnel_CL |
+| [corelight_unknown_smartpcap](corelight-unknown-smartpcap.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_unknown_smartpcap_CL |
+| [corelight_util_stats](corelight-util-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_util_stats_CL |
+| [corelight_vpn](corelight-vpn.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_vpn_CL |
+| [corelight_websocket](corelight-websocket.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_websocket_CL |
+| [corelight_weird](corelight-weird.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_weird_CL |
+| [corelight_weird_agg](corelight-weird-agg.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_weird_agg_CL |
+| [corelight_weird_red](corelight-weird-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_weird_red_CL |
+| [corelight_weird_stats](corelight-weird-stats.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_weird_stats_CL |
+| [corelight_wireguard](corelight-wireguard.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_wireguard_CL |
+| [corelight_x509](corelight-x509.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_x509_CL, Corelight_v3_x509_red_CL |
+| [corelight_x509_red](corelight-x509-red.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_x509_red_CL |
+| [corelight_zeek_doctor](corelight-zeek-doctor.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v3_zeek_doctor_CL |
 | [CortexXDR_Incidents_CL](cortexxdr-incidents-cl.md) | 📦 [Cortex XDR](../solutions/cortex-xdr.md) | CortexXDR_Incidents_CL, PaloAltoCortexXDR_Incidents_CL |
 | [CPEMAlerts](cpemalerts.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | argsentdc_CL |
 | [CriblAccess](criblaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblAccess_CL |
 | [CriblAudit](criblaudit.md) | 📦 [Cribl](../solutions/cribl.md) | CriblAudit_CL |
 | [CriblInternal](criblinternal.md) | 📦 [Cribl](../solutions/cribl.md) | CriblInternal_CL |
 | [CriblUIAccess](cribluiaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblUIAccess_CL |
+| [CrowdStrike](crowdstrike.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeAlerts, CrowdStrikeAlertsV2_CL, ... |
 | [CrowdStrikeFalconEventStream](crowdstrikefalconeventstream.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CommonSecurityLog |
 | [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
 | [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
 | [CrowdStrikeReplicatorV2](crowdstrikereplicatorv2.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | ASimAuditEventLogs, ASimAuthenticationEventLogs, ... |
 | [CyberArkEPM](cyberarkepm.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) | CyberArkEPM_Events_CL |
+| [Cyble Threat Intelligence Parser](cyble-threat-intelligence-parser.md) | 📂 *Legacy* | ThreatIntelIndicators |
 | [CyjaxCorrelate](cyjaxcorrelate.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
 | [CyjaxThreatIndicator](cyjaxthreatindicator.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
 | [CylancePROTECT](cylanceprotect.md) | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog, syslog |
@@ -339,8 +452,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [DataverseSharePointSites](dataversesharepointsites.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [DefendAuditData](defendauditdata.md) ⚠️ | 📦 [Egress Defend](../solutions/egress-defend.md) | EgressDefend_CL |
 | [DefendAuditData](defendauditdata.md) | 📦 [KnowBe4 Defend](../solutions/knowbe4-defend.md) | KnowBe4Defend_CL |
+| [DefendAuditData_v4](defendauditdata-v4.md) | 📦 [Egress Defend](../solutions/egress-defend.md) | EgressDefend_CL, EgressDefend_v4_CL |
 | [Devicefromip](devicefromip.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [DigitalGuardianDLPEvent](digitalguardiandlpevent.md) | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) | Syslog |
+| [DNSEssentialsCustomParser](dnsessentialscustomparser.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) | DNS_Summarized_Logs_ipV1_CL, DNS_Summarized_Logs_ip_CL, ... |
 | [DomainToolsDNSActivity](domaintoolsdnsactivity.md) | 📦 [DomainTools](../solutions/domaintools.md) | DomainToolsDomainEnrichment_CL |
 | [DomainToolsThreatIntelDomains](domaintoolsthreatinteldomains.md) | 📦 [DomainTools CCF](../solutions/domaintools-ccf.md) | DomainToolsThreatIntelDomains_CL |
 | [DragosNotificationsToSentinel](dragosnotificationstosentinel.md) | 📦 [Dragos](../solutions/dragos.md) | SecurityAlert |
@@ -354,10 +469,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [DuoSecurityOfflineEnrollment](duosecurityofflineenrollment.md) | 📂 *Legacy* | DuoSecurityOfflineEnrollment_CL |
 | [DuoSecurityTelephony](duosecuritytelephony.md) | 📂 *Legacy* | DuoSecurityTelephony_CL |
 | [DuoSecurityTrustMonitor](duosecuritytrustmonitor.md) | 📂 *Legacy* | DuoSecurityTrustMonitor_CL |
-| [DynatraceAttacks](dynatraceattacks.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAttacksV2_CL, DynatraceAttacks_CL |
-| [DynatraceAuditLogs](dynatraceauditlogs.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAuditLogsV2_CL, DynatraceAuditLogs_CL |
-| [DynatraceProblems](dynatraceproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceProblemsV2_CL, DynatraceProblems_CL |
-| [DynatraceSecurityProblems](dynatracesecurityproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceSecurityProblemsV2_CL, DynatraceSecurityProblems_CL |
+| [DynatraceAttacks](dynatraceattacks.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAttacksV2_CL, DynatraceAttacksV3_CL, ... |
+| [DynatraceAuditLogs](dynatraceauditlogs.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceAuditLogsV2_CL, DynatraceAuditLogsV3_CL, ... |
+| [DynatraceProblems](dynatraceproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceProblemsV2_CL, DynatraceProblemsV3_CL, ... |
+| [DynatraceSecurityProblems](dynatracesecurityproblems.md) | 📦 [Dynatrace](../solutions/dynatrace.md) | DynatraceSecurityProblemsV2_CL, DynatraceSecurityProblemsV3_CL, ... |
 
 ## E
 
@@ -418,6 +533,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GitLabAudit](gitlabaudit.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GoogleSecOpsDetectionAlerts](googlesecopsdetectionalerts.md) | 📦 [GoogleSecOps](../solutions/googlesecops.md) | DetectionAlerts_CL |
 | [GTIRelevanceSystemAlerts](gtirelevancesystemalerts.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | RelevanceSystemAlerts_CL |
+| [GTIVulnerabilities](gtivulnerabilities.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | GTI_Vulnerabilities_CL |
 | [Guardian](guardian.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) | Guardian_CL |
 | [GWorkspaceActivityReports](gworkspaceactivityreports.md) | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) | GWorkspace_ReportsAPI_access_transparency_CL, GWorkspace_ReportsAPI_admin_CL, ... |
 
@@ -514,7 +630,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |
@@ -624,7 +740,11 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
+| [SalesforceAuditLogs](salesforceauditlogs.md) | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) | SalesforceAuditTrail, SalesforceAuditTrailV2_CL, ... |
 | [SalesforceServiceCloud](salesforceservicecloud.md) | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) | SalesforceServiceCloudV2_CL, SalesforceServiceCloudV3_CL, ... |
+| [SecurityScorecardFactor](securityscorecardfactor.md) | 📦 [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) | SecurityScorecardFactorHistory_CL, SecurityScorecardFactor_CL |
+| [SecurityScorecardIssue](securityscorecardissue.md) | 📦 [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) | SecurityScorecardIssuesHistory_CL, SecurityScorecardIssues_CL |
+| [SecurityScorecardRatings](securityscorecardratings.md) | 📦 [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) | SecurityScorecardRatingsHistory_CL, SecurityScorecardRatings_CL |
 | [SentinelOne](sentinelone.md) | 📦 [SentinelOne](../solutions/sentinelone.md) | SentinelOneActivities_CL, SentinelOneAgents_CL, ... |
 | [SlackAudit](slackaudit.md) | 📦 [SlackAudit](../solutions/slackaudit.md) | SlackAuditNativePoller_CL, SlackAuditV2_CL, ... |
 | [Snowflake](snowflake.md) | 📦 [Snowflake](../solutions/snowflake.md) | SnowflakeLoadV2_CL, SnowflakeLoad_CL, ... |
@@ -699,11 +819,14 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [vectra_ssl](vectra-ssl.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_ssl_CL |
 | [vectra_stream](vectra-stream.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | ? |
 | [vectra_x509](vectra-x509.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_x509_CL |
-| [VectraAudits](vectraaudits.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Audits_Data_CL |
-| [VectraDetections](vectradetections.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Detections_Data_CL |
-| [VectraEntityScoring](vectraentityscoring.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Entity_Scoring_Data_CL |
-| [VectraHealth](vectrahealth.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Health_Data_CL |
-| [VectraLockdown](vectralockdown.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Lockdown_Data_CL |
+| [VectraAudits](vectraaudits.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Audits_Data_CL |
+| [VectraDetections](vectradetections.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Detections_Data_CL |
+| [VectraDetectionsCombined](vectradetectionscombined.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Detections_Data_CCF_CL, Detections_Data_CL |
+| [VectraEntities](vectraentities.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Entities_Data_CCF_CL, Entities_Data_CL |
+| [VectraEntityScoring](vectraentityscoring.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Entity_Scoring_Data_CL |
+| [VectraHealth](vectrahealth.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Health_Data_CL |
+| [VectraLockdown](vectralockdown.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Lockdown_Data_CCF_CL, Lockdown_Data_CL |
+| [VectraRUXDetections](vectraruxdetections.md) ⚠️ | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Detections_Data_CL |
 | [VectraStream_function](vectrastream-function.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | VectraStream_CL |
 | [Veeam_GetFinishedConfigurationBackupSessions](veeam-getfinishedconfigurationbackupsessions.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |
 | [Veeam_GetJobFinished](veeam-getjobfinished.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |

@@ -16,7 +16,7 @@ Insights about potentially suspicious user behaviors that violate user-defined o
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-datasecuritybehaviors-table) |
 
-## Schema (26 columns)
+## Schema (28 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/datasecuritybehaviors)
 
@@ -37,6 +37,8 @@ Insights about potentially suspicious user behaviors that violate user-defined o
 | EndTime | datetime | Date and time of the last activity related to the behavior |
 | IsAnomalous | bool | Indicates if this behavior is anomalous (1) or not (0) |
 | IsContentHidden | bool | Indicates if the behavior involves hidden content on a device |
+| Policies | string | List of insider risk management policies associated with the behavior |
+| PolicyInfo | dynamic | Policy information associated with the behavior |
 | PrinterName | dynamic | List of printers involved in the behavior; in array format |
 | PriorityContentMatchInfo | dynamic | List of priority content matches identified within this behavior and their associated details. Priority content definitions are done by the admins for each Insider risk management policy. Displayed in JSON array format. |
 | RecipientEmailInfo | dynamic | List of information about the recipient involved in the behavior, including the email address of the recipient and the number of events in the behavior involving the recipient; in JSON array format |

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Insider Threat |
-| **Version** | 3.1.0 |
+| **Version** | 3.0.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-06-29 |
+| **Last Updated** | 2026-08-22 |
 | **Solution Folder** | [Oracle Cloud Infrastructure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ocilogs) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (82%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ocilogs) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (71%) |
 
 The Oracle Cloud Infrastructure (OCI) solution provides the capability to ingest OCI Logs from [OCI Stream](https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm) into Microsoft Sentinel using the [OCI Streaming REST API](https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418).
 
@@ -116,7 +116,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                          |
 |-------------|--------------------------------|-----------------------------------------------------------------------------|
-| 3.1.0       | 16-07-2026                     | **Ingestion-volume optimization (CCF Data Connector)**: DCR transform no longer stores the raw `data`/`oracle` dynamic payloads alongside flattened columns; removed HTTP request/response header noise, CloudEvents boilerplate, duplicated fields, credential-bearing headers and the `stateChange.current.keyValue` key blob. Table schema reduced 201 → 86 columns; all columns used by the Parser, Analytic Rules, Hunting Queries, and Workbook are preserved. Fixed `SrcIpAddr` mapping typo (`ipAddres`), `data_request_id_s`/`data_request_path_s` payload-level mapping, and hyphenated request-header access (`X-Forwarded-For`, `X-Real-IP`, `oci-original-url`). **Parser** updated to v1.1.0: continues to read both `OCI_Logs_CL` and `OCI_LogsV2_CL`, and now derives `EventStartTime`/`EventEndTime` for V2 flow-log rows at read time. **Analytic Rules & Hunting Queries**: added the CCF connector (`OracleCloudInfraConnector`) to `requiredDataConnectors` alongside the existing connector. |
+| 3.0.11       | 21-08-2026                     | Prevent identity credential ingestion. |
 | 3.0.10      | 26-05-2026                     | Updated OCI connector UI to include IAM permissions guidance and removed the "Important -" label. |
 | 3.0.9       | 10-02-2026                     | Add support for group Cursor                                                |
 | 3.0.8       | 05-02-2026                     | fix name in package 3.0.7                                                   |

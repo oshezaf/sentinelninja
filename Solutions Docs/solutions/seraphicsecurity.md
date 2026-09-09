@@ -21,7 +21,7 @@
 | **First Published** | 2023-07-31 |
 | **Last Updated** | 2026-04-30 |
 | **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) · Popularity: 🟡 Low (21%) |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 

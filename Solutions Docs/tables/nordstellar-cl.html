@@ -50,7 +50,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
-<h2 id="schema">Schema (9 columns)</h2>
+<h2 id="schema">Schema (10 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar%5CData%20Connectors%5CNordStellar_ccf/table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -64,12 +64,12 @@
 <tr>
   <td style="text-align:left">AssetType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Asset type for leaked-data events (asset.type, e.g. EMAIL/DOMAIN/IP/PHONE), domain-permutation events (hardcoded to DOMAIN), or asset source kind for attack-surface events (source_type, e.g. WEB_APPLICATION/NETWORK_SERVICE/DNS). Empty for dark-web events whose target lives in type-specific fields inside Details.</td>
+  <td style="text-align:left">Asset type for leaked-data events (asset.type, e.g. EMAIL/DOMAIN/IP/PHONE), domain-permutation and consumer-credential events (hardcoded to DOMAIN), or asset source kind for attack-surface events (source_type, e.g. WEB_APPLICATION/NETWORK_SERVICE/DNS). Empty for dark-web events whose target lives in type-specific fields inside Details.</td>
 </tr>
 <tr>
   <td style="text-align:left">AssetValue</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Asset value: nested asset.value (leaked-data), original_domain (domain-permutation), or root-level asset_value (attack-surface). Empty for dark-web events.</td>
+  <td style="text-align:left">Asset value: nested asset.value (leaked-data), original_domain (domain-permutation), or root-level asset_value (attack-surface, consumer-credential). Empty for dark-web events.</td>
 </tr>
 <tr>
   <td style="text-align:left">Details</td>
@@ -80,6 +80,11 @@
   <td style="text-align:left">EventId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Unique NordStellar event identifier (GUID).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Original NordStellar event timestamp. Derived from event.detected_at when present, otherwise event.date_added, otherwise the envelope time field. May be significantly older than TimeGenerated when historical events are delivered.</td>
 </tr>
 <tr>
   <td style="text-align:left">EventType</td>
@@ -104,7 +109,7 @@
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp when the event was ingested into Microsoft Sentinel. Derived from event.date_added (leaked-data, dark-web, domain-permutation), event.detected_at (attack-surface), or the envelope time field as fallback.</td>
+  <td style="text-align:left">Timestamp when the event was ingested into Microsoft Sentinel (set to ingestion time by the DCR transform). The original event timestamp is preserved in EventTime.</td>
 </tr>
 </tbody>
 </table>

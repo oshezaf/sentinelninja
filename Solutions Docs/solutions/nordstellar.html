@@ -40,7 +40,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://nordstellar.com">https://nordstellar.com</a></td>
+  <td style="text-align:left"><a href="https://nordlayer.com/intelligence/">https://nordlayer.com/intelligence/</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-06-05</td>
+  <td style="text-align:left">2026-08-26</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar">Azure Marketplace</a> · Popularity: ⚪ Very Low (5%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar">Azure Marketplace</a> · Popularity: 🟡 Low (35%)</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://nordstellar.com">NordStellar</a> solution for Microsoft Sentinel pushes real-time threat intelligence and exposure events from NordStellar's Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules into a unified <code>NordStellar_CL</code> table using the Codeless Connector Framework (CCF) Push pattern.</p>
+<p>The <a href="https://nordlayer.com/intelligence/">NordStellar</a> solution for Microsoft Sentinel pushes real-time threat intelligence and exposure events from NordStellar's Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules into a unified <code>NordStellar_CL</code> table using the Codeless Connector Framework (CCF) Push pattern.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API</a></p>
@@ -111,6 +111,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>19-08-2026</td>
+  <td>Set <code>TimeGenerated</code> to ingestion time so historical events are not dropped; original event timestamp preserved in new <code>EventTime</code> column. Fixed <code>AssetType</code>/<code>AssetValue</code> mapping for <code>CONSUMER_CREDENTIAL</code> events.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>27-05-2026</td>

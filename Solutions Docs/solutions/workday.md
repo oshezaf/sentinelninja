@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application |
-| **Version** | 3.0.3 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-02-15 |
-| **Last Updated** | 2026-02-17 |
+| **Last Updated** | 2026-08-20 |
 | **Solution Folder** | [Workday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workday) · Rating: ★★★★☆ 4.3/5 (1,690 ratings) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-workday) · Rating: ★★★★☆ 4.3/5 (1,683 ratings) · Popularity: 🟢 High (87%) |
 
 The [Workday](https://www.workday.com/) solution for Microsoft Sentinel enables you to ingest User Activity Logs from Workday into Microsoft Sentinel using [Workday's API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging). 
 
@@ -33,7 +33,7 @@ a. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/s
 
 This solution provides **1 data connector(s)**:
 
-- [Workday User Activity](../connectors/workdayccpdefinition.md)
+- [Workday User Activity (via Codeless Connector Framework)](../connectors/workdayccpdefinition.md)
 
 ## Tables Used
 
@@ -41,12 +41,13 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Workday User Activity](../connectors/workdayccpdefinition.md) | - |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Workday User Activity (via Codeless Connector Framework)](../connectors/workdayccpdefinition.md) | - |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.1.0       | 18-08-2026                     | Added support for a configurable page size for the Workday data connector and aliases and grid management. |
 | 3.0.3       | 23-12-2025                     | Updated page size for the Workday **Data connector** and configure the query window + updated **Data Connector** to support dynamic Redirect URI|
 | 3.0.2       | 02-04-2025                     | Updated **Data Connector** guidelines.     |
 | 3.0.1       | 10-01-2025                     | Transitioned the **CCP Connector** to General Availability (GA).     |

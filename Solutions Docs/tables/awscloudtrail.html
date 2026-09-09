@@ -362,7 +362,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail">AWSCloudTrail Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (14)</h2>
+<h2 id="solutions">Solutions (15)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></li>
@@ -370,6 +370,7 @@
 <li><a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a></li>
 <li><a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
+<li><a href="../solutions/intel471.html">Intel471</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.html">Multi Cloud Attack Coverage Essentials - Resource Abuse</a></li>
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
@@ -402,7 +403,7 @@
 </table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (131)</h2>
-<h3 id="analytic-rules">Analytic Rules (76)</h3>
+<h3 id="analytic-rules">Analytic Rules (75)</h3>
 <p><strong>In solution <a href="../solutions/amazon-web-services.html">Amazon Web Services</a>:</strong></p>
 <table>
 <thead>
@@ -419,10 +420,6 @@
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-amazon-ecr-image-scanning-disabled-19602494-94af-43c8-90ba-eb0e14999612-fa0ab87d.html">AWSCloudTrail - Amazon ECR image scanning disabled</a></td>
   <td style="text-align:left"><code>EventName == &quot;PutImageScanningConfiguration&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-changes-made-to-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-3031541f.html">AWSCloudTrail - Changes made to AWS CloudTrail logs</a></td>
-  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-changes-to-aws-elastic-load-balancer-security-groups-c7bfadd4-34a6-4fa5-82f8-3691a32261e8-aab1fbbd.html">AWSCloudTrail - Changes to AWS Elastic Load Balancer security groups</a></td>
@@ -443,10 +440,6 @@
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-cloudformation-policy-created-then-used-for-privilege-escalation-efdc3cff-f006-426f-97fd-4657862f7b9a-85f1c49c.html">AWSCloudTrail - CloudFormation policy created then used for privilege escalation</a></td>
   <td style="text-align:left"><code>EventName in &quot;AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-bafeee07.html">AWSCloudTrail - Config Service Resource Deletion Attempts</a></td>
-  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-created-crud-s3-policy-and-then-privilege-escalation-467cbe7e-e6d4-4f4e-8e44-84dd01932c32-4a7cb6c9.html">AWSCloudTrail - Created CRUD S3 policy and then privilege escalation</a></td>
@@ -503,6 +496,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-e7a0ac8a.html">AWSCloudTrail - ECR image scan findings high or critical</a></td>
   <td style="text-align:left"><code>EventName == &quot;DescribeImageScanFindings&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-failed-attempts-to-change-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-f556ccb1.html">AWSCloudTrail - Failed Attempts to Change AWS CloudTrail Logs</a></td>
+  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-3b82a1fc.html">AWSCloudTrail - Full Admin policy created and then attached to Roles, Users or Groups</a></td>
@@ -625,6 +622,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-successful-tampering-with-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-61f830c8.html">AWSCloudTrail - Successful Tampering with AWS CloudTrail Logs</a></td>
+  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-successful-brute-force-attack-on-s3-bucket-31b9e94b-0df6-4a3d-a297-3457b53c5d86-5bb93808.html">AWSCloudTrail - Successful brute force attack on S3 Bucket</a></td>
   <td style="text-align:left"><code>EventName == &quot;GetObject&quot;</code></td>
 </tr>
@@ -643,10 +644,6 @@
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-4de725d8.html">AWSCloudTrail - Suspicious overly permissive KMS key policy created</a></td>
   <td style="text-align:left"><code>EventName in &quot;CreateKey,PutKeyPolicy&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4959dd40.html">AWSCloudTrail - Tampering to AWS CloudTrail logs</a></td>
-  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-89175481.html">AWSCloudTrail - Unauthorized EC2 Instance Setup Attempt</a></td>
@@ -806,7 +803,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (38)</h3>
+<h3 id="hunting-queries">Hunting Queries (39)</h3>
 <p><strong>In solution <a href="../solutions/amazon-web-services.html">Amazon Web Services</a>:</strong></p>
 <table>
 <thead>
@@ -959,6 +956,19 @@
 <tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-vpc-attribute-modifications-a3a19731-9e82-49b6-9142-2dd570feefd5-972eed78.html">AWSCloudTrail - VPC attribute modifications</a></td>
   <td style="text-align:left"><code>EventName == &quot;ModifyVpcAttribute&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/intel471.html">Intel471</a>:</strong> <code>EventName has_any &quot;GetCallerIdentity,GetUser,ListAccountAliases,ListIdentities,ListRoles&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/intel471-aws-identity-and-access-management-iam-discovery-fcdafb78-7ac3-4b83-bbb4-cd182408e6eb-fb8741fa.html">AWS Identity and Access Management (IAM) Discovery</a></td>
 </tr>
 </tbody>
 </table>
@@ -1244,7 +1254,7 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
+  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -1333,14 +1343,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>EventName in &quot;ApplySecurityGroupsToLoadBalancer,SetSecurityGroups&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>EventName in &quot;DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1700,6 +1702,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>EventName has_any &quot;GetCallerIdentity,GetUser,ListAccountAliases,ListIdentities,ListRoles&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>EventName in &quot;AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress&quot;</code><br><code>EventName !contains &quot;Image&quot;</code><br><code>EventName !contains &quot;KeyPair&quot;</code><br><code>EventName !contains &quot;LaunchTemplate&quot;</code><br><code>EventName !contains &quot;Tags&quot;</code><br><code>EventName !contains &quot;Volume&quot;</code><br><code>EventName startswith &quot;authorize&quot;</code><br><code>EventName startswith &quot;create&quot;</code><br><code>EventName startswith &quot;delete&quot;</code><br><code>EventName startswith &quot;replace&quot;</code><br><code>EventName startswith &quot;revoke&quot;</code><br><code>EventSource == &quot;ec2.amazonaws.com&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1905,46 +1915,6 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeleteEventBus</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeleteFlowLogs</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeleteTrail</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>StopLogging</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>UpdateTrail</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>DescribeImageScanFindings</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
@@ -1994,6 +1964,54 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>CreateRoute</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeleteEventBus</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeleteFlowLogs</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeleteLogGroup</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeleteTrail</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>StopLogging</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>UpdateTrail</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -2266,14 +2284,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SetSecurityGroups</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeleteLogGroup</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2714,6 +2724,46 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>PutBucketEncryption</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any GetCallerIdentity</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any GetUser</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ListAccountAliases</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ListIdentities</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ListRoles</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

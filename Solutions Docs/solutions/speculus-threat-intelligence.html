@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Speculus Threat Intelligence &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="speculus-threat-intelligence">⚠️ Speculus Threat Intelligence</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/speculus_logo.svg" alt="Speculus Threat Intelligence Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Speculus</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://speculus.co">https://speculus.co</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Speculus - dev@speculus.co</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Speculus%20Threat%20Intelligence">Speculus Threat Intelligence</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://speculus.co">Speculus Threat Intelligence</a> solution ingests STIX 2.1 IP indicators from the Speculus TAXII 2.1 server into Microsoft Sentinel using the Codeless Connector Framework (CCF). Indicators carry risk scoring, named attribution, scanner/Tor/proxy classification, and geo/network enrichment. The solution deploys a REST API poller connector, a custom log table, a data collection rule, analytics rules for matching indicators against network and sign-in telemetry, and an incident-enrichment playbook that looks up IP entities against the Speculus REST API on demand.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/speculusthreatintel.html">Speculus Threat Intelligence</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/speculus-indicators-cl.html"><code>Speculus_Indicators_CL</code></a></td>
+  <td><a href="../connectors/speculusthreatintel.html">Speculus Threat Intelligence</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/speculus-threat-intelligence-speculus-network-traffic-to-or-from-high-risk-ip-indicator-a7c3f9e2-4d18-4b6a-9f0c-2e5d8b1a6c43-75ea8385.html">Speculus - Network traffic to or from high-risk IP indicator</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CommandAndControl, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/speculus-indicators-cl.html"><code>Speculus_Indicators_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/speculus-threat-intelligence-speculus-sign-in-attempt-from-high-risk-ip-indicator-e1b8d4a6-9c27-45f3-8a1e-7f2c0d9b5e64-a9174920.html">Speculus - Sign-in attempt from high-risk IP indicator</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/speculus-indicators-cl.html"><code>Speculus_Indicators_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/speculus-threat-intelligence-speculus-threat-intelligence-feed-outage-c4f2a8d1-6e39-4c07-b5a2-1d8e3f7c9a25-431c164c.html">Speculus - Threat intelligence feed outage</a></td>
+  <td style="text-align:left">Informational</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/speculus-indicators-cl.html"><code>Speculus_Indicators_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/speculus-threat-intelligence-speculus-incident-enrichment-playbook-9d6bf654.html">Speculus Incident Enrichment - Playbook</a></td>
+  <td style="text-align:left">Runs on a Microsoft Sentinel incident, looks up every IP entity against the Speculus REST API (singl...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Speculus%20Threat%20Intelligence/README.md">Speculus Threat Intelligence/README.md</a></em></p>
+</blockquote>
+<p>Ingests STIX 2.1 IP indicators from the Speculus TAXII 2.1 server into Microsoft Sentinel using the Codeless Connector Framework (CCF) — no Azure Functions or agents required.</p>
+<h2 id="what-this-solution-deploys">What this solution deploys</h2>
+<table>
+<thead>
+<tr>
+  <th>Component</th>
+  <th>Name</th>
+  <th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data connector</td>
+  <td>Speculus Threat Intelligence</td>
+  <td>RestApiPoller against the Speculus TAXII 2.1 objects endpoint</td>
+</tr>
+<tr>
+  <td>Custom table</td>
+  <td><code>Speculus_Indicators_CL</code></td>
+  <td>Flattened STIX indicators with Speculus enrichment</td>
+</tr>
+<tr>
+  <td>Data collection rule</td>
+  <td><code>dcr-speculus-indicators</code></td>
+  <td>Filters the TAXII envelope to Indicator SDOs and flattens STIX + <code>x_speculus_*</code> fields</td>
+</tr>
+<tr>
+  <td>Analytics rules</td>
+  <td>3</td>
+  <td>High-risk IP match vs. <code>CommonSecurityLog</code>, high-risk IP match vs. <code>SigninLogs</code>, feed outage detection</td>
+</tr>
+<tr>
+  <td>Playbook</td>
+  <td><code>pb-speculus-incident-enrichment</code></td>
+  <td>On-demand: looks up every IP entity on a triggered incident against the Speculus REST API and posts full enrichment as an incident comment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-it-works">How it works</h2>
+<p>The connector polls <code>{taxiiBaseUrl}/collections/{collectionId}/objects/</code> (TAXII 2.1) with <code>Authorization: Bearer &lt;API key&gt;</code>, using <code>added_after</code> for incremental collection and the TAXII envelope's <code>next</code> cursor / <code>more</code> flag for pagination. Each page's <code>objects</code> array contains STIX 2.1 SDOs (an Identity, then Indicators, plus Malware/Relationship objects when an indicator has named attribution). The data collection rule keeps only <code>type == &quot;indicator&quot;</code> objects — attribution is preserved on the indicator itself via <code>x_speculus_attribution</code> — and flattens the STIX fields and Speculus custom properties into <code>Speculus_Indicators_CL</code>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A Speculus API key with access to the IOC feed.</li>
+<li>Microsoft Sentinel workspace with permissions to deploy data connectors (Contributor on the workspace resource group).</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<ol>
+<li>Install the solution from Content Hub.</li>
+<li>Open the <strong>Speculus Threat Intelligence</strong> data connector page.</li>
+<li>Enter:<ul>
+<li><strong>TAXII Base URL (including API root)</strong> — default <code>https://feed.speculus.co/api1</code></li>
+<li><strong>Collection ID</strong> — default <code>f3a1c2d4-5b6e-4a7f-8c9d-0e1f2a3b4c5d</code> (the <code>speculus-ioc-feed</code> collection)</li>
+<li><strong>API Key</strong> — your Speculus API key</li>
+</ul>
+</li>
+<li>Click <strong>Connect</strong>. Indicators appear in <code>Speculus_Indicators_CL</code> within the first polling window (60 minutes).</li>
+</ol>
+<h2 id="incident-enrichment-playbook">Incident enrichment playbook</h2>
+<p><code>pb-speculus-incident-enrichment</code> runs per-incident rather than on a schedule: it reads the IP entities attached to a Sentinel incident, calls <code>GET {baseUrl}/v1/objects/{ip}</code> on the Speculus REST API for each one, and posts the full enrichment (risk score, activity, attribution, labels, scanner/Tor/blacklist flags, ISP/ASN, geo, and the verdict description) as an incident comment.</p>
+<ol>
+<li>Deploy the playbook from the solution (it deploys <strong>disabled</strong>).</li>
+<li>Open the playbook's API connections and authorize the <code>azuresentinel</code> connection (one-time, interactive).</li>
+<li>Enable the Logic App.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>28-07-2026</td>
+  <td>Initial release: CCF TAXII 2.1 poller data connector, <code>Speculus_Indicators_CL</code> custom table + DCR, 3 analytics rules, and <code>pb-speculus-incident-enrichment</code> playbook (on-demand IP entity lookup against the Speculus REST API, posted as an incident comment)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

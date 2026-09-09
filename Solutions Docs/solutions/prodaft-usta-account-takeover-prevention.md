@@ -21,7 +21,7 @@
 | **First Published** | 2026-07-06 |
 | **Last Updated** | 2026-08-06 |
 | **Solution Folder** | [PRODAFT USTA - Account Takeover Prevention](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Account%20Takeover%20Prevention) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-atp) · Popularity: 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-atp) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (17%) |
 
 The **PRODAFT USTA - Account Takeover Prevention** solution ingests compromised corporate credentials from the PRODAFT USTA platform into Microsoft Sentinel via a codeless (Codeless Connector Framework) data connector. Plaintext passwords are dropped at ingestion — only password strength signals (score and length) are retained for triage. Includes analytic rules to alert on newly exposed corporate credentials and on successful Entra ID sign-ins with known-compromised accounts, a hunting query, an overview workbook, and an on-demand backfill playbook for loading historical data.
 

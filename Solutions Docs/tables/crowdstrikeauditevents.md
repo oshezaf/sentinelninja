@@ -18,7 +18,7 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
-## Schema (199 columns)
+## Schema (200 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikeauditevents)
 
@@ -49,6 +49,7 @@ Reference for CrowdStrikeAuditEvents table in Azure Monitor Logs.
 | ConnectionDirection | string | Direction of the network connection. |
 | Consumes | string | Content type consumed by the API. |
 | ContextTimeStamp | datetime | Context timestamp of the IDP detection event (Unix epoch). |
+| CrowdStrikeDomain | string | CrowdStrike host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | CurrentPrivileges | string | Current privilege level of the account. |
 | CustomerId | string | Customer identifier in the CrowdStrike platform. |
 | CustomerIdString | string | The customer ID string. |

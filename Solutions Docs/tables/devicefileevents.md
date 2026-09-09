@@ -145,7 +145,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md) | `ActionType == "FileRenamed"`<br>`InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` |
-| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) | `ActionType in "FileCreated,FileModified"` |
+| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) |  |
 | [Ingress Tool Transfer - Certutil](../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.md) |  |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
@@ -266,7 +266,7 @@ This table is ingested by the following connectors:
 | [Dropbox downloads linked from other site](../content/github-only-dropbox-downloads-linked-from-other-site-de93670b-a1db-4c8c-80aa-5b3146428631-d523e10d.md) | `FileOriginReferrerUrl !startswith "https://www.dropbox.com/"`<br>`FileOriginUrl startswith "https://dl.dropboxusercontent.com/"` |
 | [Dropping payload via certutil](../content/github-only-dropping-payload-via-certutil-f5ff5b00-a90e-40b8-b241-9427a8ec5189-47bd6693.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` |
 | [Email link + download + SmartScreen warning](../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.md) | `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` |
-| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"` |
+| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
 | [Files copied to USB drives](../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [General attempts to access local email store](../content/github-only-general-attempts-to-access-local-email-store-c3e585d2-f1d0-4789-85a2-cdf7642fdf8b-8b60ca1e.md) | `FolderPath has "Outlook"` |
 | [HTA Startup Persistence](../content/github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.md) |  |
@@ -296,7 +296,7 @@ This table is ingested by the following connectors:
 | [detect-bluekeep-related-mining](../content/github-only-detect-bluekeep-related-mining-2bf77176-1b8a-4466-9b64-6b9fd4023fa5-d96a0d55.md) | `FolderPath endswith "spool\\svchost.exe"` |
 | [detect-cve-2019-1053-sandboxescape-exploit](../content/github-only-detect-cve-2019-1053-sandboxescape-exploit-c176e100-03cc-4b02-873b-d9686f354330-7a841f28.md) |  |
 | [detect-cve-2019-1069-bearlpe-exploit](../content/github-only-detect-cve-2019-1069-bearlpe-exploit-d82cdd92-4818-4f55-9e14-68021c154cdb-40fccba2.md) | `InitiatingProcessCommandLine !contains "/S"`<br>`InitiatingProcessCommandLine !contains "/SD"`<br>`InitiatingProcessCommandLine !contains "/ST"`<br>`InitiatingProcessCommandLine contains "/RP"`<br>`InitiatingProcessCommandLine contains "/RU"`<br>`InitiatingProcessCommandLine contains "/TN"`<br>`InitiatingProcessCommandLine contains "/change"`<br>`InitiatingProcessIntegrityLevel !in "High,System"` |
-| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) | `ActionType == "FileCreated"` |
+| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
 | [detect-jscript-file-creation](../content/github-only-detect-jscript-file-creation-7913cb78-0e5a-4c4c-ab5b-31ef823ba25b-0fb9d2ff.md) |  |
 | [detect-nbtscan-activity](../content/github-only-detect-nbtscan-activity-28ebbb87-535b-4ba0-80f4-6fbf80b7c55a-2d50bb55.md) |  |
 | [detect-prifou-pua](../content/github-only-detect-prifou-pua-62bc4944-46dd-4c2f-ba04-72837bbfec3f-6e8f169c.md) |  |
@@ -320,7 +320,7 @@ This table is ingested by the following connectors:
 | [qakbot-campaign-outlook](../content/github-only-qakbot-campaign-outlook-221ba640-3727-4b48-b30c-f5bb7398be7b-b74f08a4.md) | `FolderPath has "Outlook"` |
 | [ransom-note-creation-macos](../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.md) |  |
 | [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
-| [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) | `ActionType in "FileCreated,FileRenamed"` |
+| [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) |  |
 | [remote-file-creation-with-psexec](../content/github-only-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-c59300e9.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` |
 | [reverse-shell-ransomware-macos](../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.md) |  |
 | [robbinhood-driver](../content/github-only-robbinhood-driver-cd718abb-96e4-436e-9a6c-63c09d40cc5c-337420a5.md) |  |
@@ -389,21 +389,20 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) | FileEvent | Microsoft 365 Defender for EndPoint |
 
-## Selection Criteria Summary (42 criteria, 57 total references)
+## Selection Criteria Summary (41 criteria, 53 total references)
 
-References by type: 0 connectors, 56 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 52 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType in "FileCreated,UsbDriveMounted"` | - | 3 | - | - | **3** |
 | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | - | 3 | - | - | **3** |
-| `ActionType in "FileCreated,FileRenamed"` | - | 3 | - | - | **3** |
-| `ActionType == "FileCreated"` | - | 3 | - | - | **3** |
-| `ActionType in "FileCreated,FileModified"` | - | 2 | - | - | **2** |
 | `ActionType == "FileCreated"`<br>`FolderPath has "C:\\Windows\\System32\\spool\\drivers\\color\\"` | - | 2 | - | - | **2** |
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` | - | 2 | - | - | **2** |
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\"` | - | 2 | - | - | **2** |
+| `ActionType in "FileCreated,FileRenamed"` | - | 2 | - | - | **2** |
 | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` | - | 2 | - | - | **2** |
+| `ActionType == "FileCreated"` | - | 2 | - | - | **2** |
 | `FolderPath has "Outlook"` | - | 2 | - | - | **2** |
 | `ActionType == "AntivirusDetection"` | - | 2 | - | - | **2** |
 | `ActionType == "FileRenamed"`<br>`InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
@@ -437,19 +436,19 @@ References by type: 0 connectors, 56 content items, 1 ASIM parsers, 0 other pars
 | `InitiatingProcessFileName == "ping.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessMD5 == "5"`<br>`InitiatingProcessSHA1 == "1"`<br>`InitiatingProcessSHA256 == "256"`<br>`MD5 == "5"` | - | 1 | - | - | **1** |
 | `FolderPath startswith "/"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **56** | **1** | **0** | **57** |
+| **Total** | **0** | **52** | **1** | **0** | **53** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 20 | - | - | **20** |
-| `FileRenamed` | - | 5 | - | - | **5** |
-| `FileModified` | - | 3 | - | - | **3** |
+| `FileCreated` | - | 16 | - | - | **16** |
+| `FileRenamed` | - | 4 | - | - | **4** |
 | `UsbDriveMounted` | - | 3 | - | - | **3** |
 | `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `SmartScreenUserOverride` | - | 2 | - | - | **2** |
 | `AntivirusDetection` | - | 2 | - | - | **2** |
+| `FileModified` | - | 1 | - | - | **1** |
 | `OpenProcessApiCall` | - | 1 | - | - | **1** |
 | `SmartScreenAppWarning` | - | 1 | - | - | **1** |
 | `PnpDeviceConnected` | - | 1 | - | - | **1** |

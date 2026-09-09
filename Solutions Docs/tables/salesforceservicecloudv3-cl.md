@@ -8,9 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -21,7 +21,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (457 columns)
+## Schema (458 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud%5CData%20Connectors%5CSalesforceSentinelConnector_CCP/SalesforceServiceCloud_Tables.json)
 
@@ -387,6 +387,7 @@
 | RowsFetched | string | The rows fetched. |
 | RowsProcessed | string | The rows processed. |
 | RunTime | string | The run time. |
+| SalesforceDomain | string | Salesforce host/domain configured for this connection; hard-coded on every record so hosts can be differentiated. |
 | SampleFactor | string | The sample factor. |
 | SandboxId | string | The sandbox ID. |
 | SavedViewId | string | The saved view ID. |
@@ -503,8 +504,8 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceeventlogconnector.md) |  |
 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) |  |
-| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) |  |
 
 ---
 

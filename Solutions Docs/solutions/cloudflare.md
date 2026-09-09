@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
 | **Categories** | Networking,Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [Cloudflare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare) |
@@ -123,6 +123,7 @@ This solution includes **22 content item(s)**:
 
 **Version** | **Date Modified (DD-MM-YYYY)**| **ChangeHistory**                                                                         |
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.3      | 13-08-2026                    | Added source storage subscription and resource group details to the data connector request for authorization validation. |
 | 3.0.2      | 05-09-2024                    | Updated the python runtime version to 3.11                                                |
 | 3.0.1      | 01-08-2023                    | Updated logic in **Data Connector** to handle broken events.                              |
 | 3.0.0      | 24-07-2023                    | Updated logic in **Hunting Query** (Cloudflare - Client errors,Cloudflare - Server errors)|

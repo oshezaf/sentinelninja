@@ -181,7 +181,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (39)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (46)</h2>
 <h3 id="analytic-rules">Analytic Rules (6)</h3>
 <p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
 <table>
@@ -251,7 +251,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (27)</h3>
+<h3 id="hunting-queries">Hunting Queries (33)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -262,11 +262,23 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-email-campaigns-by-recipient-url-clicks-af3477a3-22f8-45a3-aa01-069d40ba4bd3-e78d2112.html">Malicious Email Campaigns by Recipient URL Clicks</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-message-with-url-listed-on-openphish-delivered-into-inbox-a8c66aec-2000-45d8-8481-36aaa17f1033-65f2779d.html">Message with URL listed on OpenPhish delivered into Inbox</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potential-oauth-phishing-email-delivered-into-inbox-08113d6f-3c95-45ba-94df-4fdd7f35d944-29c878e2.html">Potential OAuth phishing email delivered into Inbox</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-qr-code-url-detections-trend-88035c0e-0e2d-4805-a249-34d54a88c3fe-2b93ffea.html">QR Code URL Detections Trend</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-threat-protection-summary-a0d5391b-a44c-433c-8e08-7137f6e4a23c-5ead00e4.html">URL Threat Protection Summary</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -340,6 +352,10 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-malicious-email-campaigns-by-recipient-url-clicks-28ce9655-f35f-4733-af43-8266b39a87f1-21f63c9c.html">Malicious Email Campaigns by Recipient URL Clicks</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malicious-emails-with-qr-code-urls-13260191-fb10-4a36-9ca1-2bbc0aaf77d0-bb5decee.html">Malicious Emails with QR code Urls</a></td>
   <td style="text-align:left"><code>UrlLocation == &quot;QRCode&quot;</code></td>
 </tr>
@@ -376,12 +392,20 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-qr-code-url-detections-trend-aa121105-95a2-4424-84d7-1c5c47e5d44b-9e50e3ad.html">QR Code URL Detections Trend</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-strrat-email-delivery-3661b3e6-be67-41af-a0c1-fa7c012f1233-960d2bad.html">StrRAT-Email-Delivery</a></td>
   <td style="text-align:left"><code>UrlDomain has_any &quot;metroscaffingltg.co.uk&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-suspicious-google-doc-links-5b94411c-9311-48cd-8f7f-e35b42174e2d-c2534098.html">Suspicious Google Doc Links</a></td>
   <td style="text-align:left"><code>Url startswith &quot;https://docs.google.com/document/&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-url-threat-protection-summary-074959c6-2e9d-4f11-b9c8-971b7387aa99-861ded8c.html">URL Threat Protection Summary</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-urls-by-location-ab006655-d723-4844-9d5d-91cb3b020555-d023be7f.html">URLs by location</a></td>
@@ -393,7 +417,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (6)</h3>
+<h3 id="workbooks">Workbooks (7)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
@@ -409,16 +433,18 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -466,13 +492,17 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.html">MicrosoftSecurityLicenseUtilization</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (5 criteria, 6 total references)</h2>
-<p>References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 5 total references)</h2>
+<p>References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -518,187 +548,12 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="actiontype">ActionType</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>AdminSubmissionSubmitted</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>AttackSimUserSubmission</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ClickBlocked</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Malware ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Phish ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Spam ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>UserSubmission</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Automated Remediation</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains Submission</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains UserSubmission</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Malware ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Phish ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Spam ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has ZAP</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any ClickAllowed</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any ClickBlocked</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any UrlErrorPage</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has_any UrlScanInProgress</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 </tbody>
 </table>

@@ -18,18 +18,18 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_rdp_CL`](../tables/corelight-v2-rdp-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_ssh_CL`](../tables/corelight-v2-ssh-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Corelight_v3_conn_CL`](../tables/corelight-v3-conn-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_conn_long_CL`](../tables/corelight-v3-conn-long-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_conn_red_CL`](../tables/corelight-v3-conn-red-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_dns_CL`](../tables/corelight-v3-dns-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_dns_red_CL`](../tables/corelight-v3-dns-red-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_rdp_CL`](../tables/corelight-v3-rdp-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_ssh_CL`](../tables/corelight-v3-ssh-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_ssl_CL`](../tables/corelight-v3-ssl-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_ssl_red_CL`](../tables/corelight-v3-ssl-red-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_vpn_CL`](../tables/corelight-v3-vpn-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_x509_CL`](../tables/corelight-v3-x509-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_x509_red_CL`](../tables/corelight-v3-x509-red-cl.md) |  | ? | ✓ | ? |
 
 ---
 

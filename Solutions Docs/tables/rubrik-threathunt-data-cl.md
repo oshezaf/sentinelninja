@@ -63,13 +63,14 @@ This table is used by the following solutions:
 
 - [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) |  |
+| [Rubrik Security Cloud Security Events (Push)](../connectors/rubriksecurityeventspush.md) |  |
 
 ---
 

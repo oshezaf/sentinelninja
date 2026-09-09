@@ -30,10 +30,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1</strong></td>
-  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Supports Transformations</strong></td>
   <td style="text-align:left">✗ No</td>
 </tr>
@@ -54,7 +50,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (17 columns)</h2>
+<h2 id="schema">Schema (12 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_rpz_feeds_records_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -69,51 +65,31 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">class_s</td>
+  <td style="text-align:left">class</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">detected_t</td>
+  <td style="text-align:left">detected</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">expiration_t</td>
+  <td style="text-align:left">expiration</td>
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-  <td style="text-align:left">feed_name_s</td>
+  <td style="text-align:left">feed_name</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">indicator_s</td>
+  <td style="text-align:left">indicator</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">property</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">MG</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">property_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">RawData</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">task_id_g</td>
+  <td style="text-align:left">task_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -121,7 +97,7 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">threat_level_d</td>
+  <td style="text-align:left">threat_level</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>

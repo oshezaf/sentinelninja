@@ -6,7 +6,7 @@
 
 ---
 
-Checks for an anomalous increase in DNS activity per client in the last 24 hours as compared to the last 14 days. Please note: To enhance performance, this query uses summarized data if available.
+Checks for an anomalous increase in DNS activity per client in the last 24 hours as compared to the last 14 days. Please note: To enhance performance, this query uses summarized data if available. The Hunting query also depends on the "**DNSEssentialsCustomParser**" Parser, so please make sure it is installed and configured before you use this Hunting query.
 
 | Attribute | Value |
 |:----------|:------|
@@ -24,7 +24,10 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ✓ |
+| [`DNS_Summarized_Logs_ipV1_CL`](../tables/dns-summarized-logs-ipv1-cl.md) 🔶 | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfoV1_CL`](../tables/dns-summarized-logs-sourceinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

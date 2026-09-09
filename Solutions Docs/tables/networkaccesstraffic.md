@@ -25,7 +25,7 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (95 columns)
+## Schema (99 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic)
 
@@ -41,6 +41,9 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | AIDetectionConfidence | int | Confidence level of the AI detection result. |
 | AIDetectionEvidence | string | Evidence details for the AI detection result. |
 | AppId | string | Destination Application ID accessed in Azure AD during the transaction. |
+| ApplicationObjectId | string | Microsoft Entra directory object ID of the Enterprise Application. Distinct from AppId (the application appId/clientId). Applies to Private Access traffic only; null for other transaction types. |
+| AppLoginDeviceId | string | Identifier of the device associated with the transaction. Applies to Private Access traffic only; null for other transaction types. |
+| AppLoginUserId | string | Identifier of the login user associated with the transaction. Applies to Private Access traffic only; null for other transaction types. |
 | AppSegmentId | string | Destination Application segment ID from Azure AD accessed during the transaction. |
 | CloudAppCatalogId | string | The id of the application in the saas application catalog. |
 | CloudAppCategories | string | The category list of the cloud application (i.e social media, search, generative AI). |
@@ -53,6 +56,7 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | CloudAppRiskScore | int | The risk score of the application. |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
 | ConnectionStatus | string | Status of a connection. Status options: Open, Active, Closed. |
+| ConnectorGroupId | string | Identifier of the connector group that served the Private Access transaction. Applies to Private Access traffic only; null for other transaction types. |
 | ConnectorId | string | Private access connector ID. |
 | ConnectorIp | string | Private access connector IP. |
 | ConnectorName | string | Private access connector name. |

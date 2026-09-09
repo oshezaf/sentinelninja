@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
@@ -20,70 +19,76 @@
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (58 columns)
+## Schema (64 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_atp_threat_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | _ResourceId | string |
-| batch_id_g | string |
-| class_s | string |
-| Computer | string |
-| confidence_d | real |
-| confidence_score_d | real |
-| confidence_score_rating_s | string |
-| confidence_score_vector_s | string |
-| detected_t | datetime |
-| dga_s | string |
-| domain_s | string |
-| email_s | string |
-| expiration_t | datetime |
-| extended_attack_chain_s | string |
-| extended_cyberint_guid_g | string |
-| extended_email_id_s | string |
-| extended_extended_s | string |
-| extended_from_email_s | string |
-| extended_no_whitelist_s | string |
-| extended_notes_s | string |
-| extended_processor_s | string |
-| extended_protocol_s | string |
-| extended_provider_s | string |
-| extended_reason_s | string |
-| extended_references_s | string |
-| extended_registration_date_s | string |
-| extended_subject_line_s | string |
-| extended_submitter_s | string |
-| extended_url_hash_g | string |
-| full_origin_s | string |
-| full_profile_s | string |
-| host_s | string |
-| id_g | string |
-| imported_t | datetime |
-| ip_s | string |
-| ManagementGroupName | string |
-| MG | string |
-| profile_s | string |
-| property_s | string |
-| RawData | string |
-| received_t | datetime |
-| risk_score_d | real |
-| risk_score_rating_s | string |
-| risk_score_vector_s | string |
-| SourceSystem | string |
-| target_s | string |
-| task_id_g | string |
+| batch_id | string |
+| class | string |
+| confidence | real |
+| confidence_score | real |
+| confidence_score_rating | string |
+| confidence_score_vector | string |
+| detected | datetime |
+| dga | string |
+| domain | string |
+| email | string |
+| expiration | datetime |
+| extended | dynamic |
+| extended_ais_consent | string |
+| extended_attack_chain | string |
+| extended_comments | string |
+| extended_confidence_score | string |
+| extended_cyberint_guid | string |
+| extended_email_id | string |
+| extended_extended | string |
+| extended_from_email | string |
+| extended_no_whitelist | string |
+| extended_notes | string |
+| extended_processor | string |
+| extended_protocol | string |
+| extended_provider | string |
+| extended_reason | string |
+| extended_references | string |
+| extended_risk_score | string |
+| extended_sample_sha256 | string |
+| extended_subject_line | string |
+| extended_submitter | string |
+| extended_surbl_list | string |
+| extended_threat_score | string |
+| full_profile | string |
+| hash | string |
+| hash_type | string |
+| host | string |
+| id_value | string |
+| imported | datetime |
+| ip | string |
+| origin | string |
+| profile | string |
+| property | string |
+| received | datetime |
+| risk_score | real |
+| risk_score_rating | string |
+| risk_score_vector | string |
+| RowData | dynamic |
+| target | string |
+| task_id | string |
 | TenantId | string |
-| threat_level_d | real |
-| threat_score_d | real |
-| threat_score_rating_s | string |
-| threat_score_vector_s | string |
+| threat_label | string |
+| threat_level | real |
+| threat_score | real |
+| threat_score_rating | string |
+| threat_score_vector | string |
 | TimeGenerated | datetime |
-| tld_s | string |
+| tld | string |
+| tlp | string |
 | Type | string |
-| type_s | string |
-| up_s | string |
-| url_s | string |
+| type_value | string |
+| up | string |
+| url | string |
 
 ## Schema References
 

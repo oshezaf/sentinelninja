@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-03-13</td>
+  <td style="text-align:left">2026-08-31</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,18 +68,24 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/synqlyinc1759267074521.azure-sentinel-solution-synqly-integration">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/synqlyinc1759267074521.azure-sentinel-solution-synqly-integration">Azure Marketplace</a> · Popularity: 🟡 Low (22%)</td>
 </tr>
 </tbody>
 </table>
-<p>The Synqly Integration Connector for Microsoft Sentinel enables push-based ingestion of security events using ASIM normalization across 10 event types.</p>
+<p>The Synqly Integration Connector for Microsoft Sentinel enables push-based ingestion of security events and asset entities using ASIM normalization across 13 supported schema types.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>10 table(s)</strong>:</p>
+<p>This solution uses <strong>13 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -89,6 +95,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/asimagenteventlogs.html"><code>ASimAgentEventLogs</code></a></td>
+  <td><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/asimalerteventlogs.html"><code>ASimAlertEventLogs</code></a></td>
+  <td><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/asimassetentitylogs.html"><code>ASimAssetEntityLogs</code></a></td>
+  <td><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
+  <td>-</td>
+</tr>
 <tr>
   <td><a href="../tables/asimauditeventlogs.html"><code>ASimAuditEventLogs</code></a></td>
   <td><a href="../connectors/synqlyintegrationconnector.html">Synqly Integration Connector</a></td>
@@ -141,6 +162,41 @@
 </tr>
 </tbody>
 </table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/synqlyintegrationconnector-synqly-alert-event-3192085a-e97e-440f-acb7-9227622949a4-4f23c61f.html">Synqly Alert Event</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/asimalerteventlogs.html"><code>ASimAlertEventLogs</code></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -151,9 +207,18 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>26-08-2026</td>
+  <td>Added support for AgentEvent, AlertEvent, and Asset schemas, expanding the connector to 13 ASIM schema types, and added an optional Synqly Alert Event analytics rule template.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>20-02-2026</td>
+  <td>Initial Solution release supporting ingestion of 10 ASIM event types directly to built-in ASIM tables.</td>
+</tr>
 </tbody>
 </table>
-<p>| 3.0.0       | 20-02-2026                     | Initial Solution release supporting ingestion of 10 ASIM event types directly to built-in ASIM tables.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

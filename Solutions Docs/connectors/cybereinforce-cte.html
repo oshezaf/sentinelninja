@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Cybereinforce Threat Enforcement CTE &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="cybereinforce-threat-enforcement">⚠️ Cybereinforce Threat Enforcement (CTE)</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Cybereinforce/Logo/cybereinforce-logo.png" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>cybereinforce_cte</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Cybeurope</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/cybereinforce.html">Cybereinforce</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybereinforce/Data%20Connectors/cybereinforce_cte.json">cybereinforce_cte.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://cybereinforce.com">Cybereinforce Threat Enforcement</a> data connector ingests browser-level URL blocking, threat-intelligence match, and audit/administration events into Microsoft Sentinel using a scheduled Logic App and the Azure Monitor Logs Ingestion API. Cybereinforce enforces Microsoft Defender threat intelligence directly at the browser (Chrome, Firefox, Safari) on enrolled endpoints, and this connector surfaces that enforcement activity for SOC investigation, hunting, and alerting.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/cybereinforcecte-cl.html"><code>CybereinforceCTE_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Azure Subscription</strong>: Contributor or Owner permissions on the resource group are required to deploy the data ingestion infrastructure (Data Collection Endpoint, Data Collection Rule, custom table, and Logic App).</li>
+<li><strong>Cybereinforce Account</strong>: An active Cybereinforce Threat Enforcement tenant with admin access to generate a MicrosoftToken from the Cybereinforce Admin portal.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Step 1 - Generate a Cybereinforce MicrosoftToken</strong></p>
+<ol>
+<li>Sign in to the <a href="https://cybereinforce.com/admin/">Cybereinforce Admin portal</a>.</li>
+<li>Under <strong>Integrations</strong>, find the <strong>MicrosoftToken</strong> section.</li>
+<li>Click <strong>Generate MicrosoftToken (/api/microsoftToken)</strong>.</li>
+<li>Copy the generated token and your Cybereinforce <strong>Tenant ID</strong> - both are required for the deployment in Step 2.</li>
+</ol>
+<p><strong>2. Step 2 - Deploy the data ingestion infrastructure</strong></p>
+<p>This step deploys the required Azure resources: a custom Log Analytics table (<code>CybereinforceCTE_CL</code>), a Data Collection Endpoint, a Data Collection Rule, a user-assigned managed identity, and a Logic App that polls Cybereinforce on a schedule and forwards new events into the table.</p>
+<ol>
+<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybereinforce%2FData%20Connectors%2Fdeployment%2Fazuredeploy_cybereinforce.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+</li>
+<li><p>Select the <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Location</strong> where your Microsoft Sentinel workspace resides.</p>
+</li>
+<li><p>Enter the <strong>Log Analytics Workspace Resource ID</strong>, the <strong>Cybereinforce Tenant ID</strong>, and the <strong>MicrosoftToken</strong> copied in Step 1.</p>
+</li>
+<li><p>Click <strong>Review + create</strong> and then <strong>Create</strong>.</p>
+</li>
+</ol>
+<p><strong>3. Step 3 - Confirm ingestion</strong></p>
+<p>After a few polling cycles (default every 15 minutes), new events should appear in the <code>CybereinforceCTE_CL</code> table. Run one of the sample queries above in Log Analytics to confirm data is flowing.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

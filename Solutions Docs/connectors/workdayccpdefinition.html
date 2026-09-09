@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Workday User Activity &mdash; Solutions Analyzer</title>
+<title>Workday User Activity via Codeless Connector Framework &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="workday-user-activity">Workday User Activity</h1>
+<h1 id="workday-user-activity">Workday User Activity (via Codeless Connector Framework)</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/workday-logo.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -100,25 +100,29 @@
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
-<li><strong>Workday User Activity API access</strong>: Access to the Workday user activity API through Oauth are required. The API Client needs to have the scope: System and it needs to be authorized by an account with System Auditing permissions.</li>
+<li><strong>Workday User Activity API access</strong>: Access to the Workday user activity API through OAuth is required. The API Client needs to have the scope: System and it needs to be authorized by an account with System Auditing permissions.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>1. Connect to Workday to start collecting user activity logs in Microsoft Sentinel</strong></p>
+<p><strong>1. Connect Workday to Microsoft Sentinel</strong></p>
 <ol>
 <li>In Workday, access the &quot;Edit Tenant Setup - Security&quot; task, verify &quot;OAuth 2.0 Settings&quot; section, make sure that the &quot;OAuth 2.0 Clients Enabled&quot; check box is ticked.</li>
 <li>In Workday, access the &quot;Edit Tenant Setup - System&quot; task, verify &quot;User Activity Logging&quot; section, make sure that the &quot;Enable User Activity Logging&quot; check box is ticked.</li>
 <li>In Workday, access the &quot;Register API Client&quot; task.</li>
 <li>Define the Client Name, select the &quot;Client Grant Type&quot;: &quot;Authorization Code Grant&quot; and then select &quot;Access Token Type&quot;: &quot;Bearer&quot;</li>
 <li>Enter the &quot;Redirection URI&quot; found in the form below</li>
-<li>In section &quot;Scope (Functional Areas)&quot;, select &quot;System&quot; and click OK at the bottom</li>
+<li>In section &quot;Scope (Functional Areas)&quot;, select &quot;System&quot; and click OK at the bottom.</li>
 <li>Copy the Client ID and Client Secret before navigating away from the page, and store it securely.</li>
-<li>In Sentinel, in the connector page - provide required Token, Authorization and User Activity Logs Endpoints, along with Client ID and Client Secret from previous step. Then click &quot;Connect&quot;.</li>
+<li>In Sentinel, in the connector page - provide required Token, Authorization and User Activity Endpoints, along with Client ID and Client Secret from previous step. Then click &quot;Connect&quot;. You can find the exact endpoint values in the &quot;View API Clients&quot; report in your Workday tenant; the host differs per environment (for example, wd3-impl-services1.workday.com for implementation tenants and services1.myworkday.com for production tenants).</li>
 <li>A Workday pop up will appear to complete the OAuth2 authentication and authorization of the API client. Here you need to provide credentials for Workday account with &quot;System Auditing&quot; permissions in Workday (can be either Workday account or Integration System User).</li>
 <li>Once that's complete, the message will be displayed to authorize your API client</li>
 </ol>
+<ul>
+<li><strong>Connection Alias</strong>: Production or Impl</li>
+</ul>
+<p>ℹ️ Enter a unique alias to identify this Workday connection. <strong>Important</strong>: Use different aliases for each tenant/domain. To update an existing connection, use the same alias or delete and recreate it.</p>
 <ul>
 <li><strong>Query interval (in minutes)</strong> (select)<ul>
 <li>5</li>
@@ -126,18 +130,40 @@
 <li>15</li>
 <li>20</li>
 <li>30</li>
+<li>... and 1 more options</li>
 </ul>
 </li>
-<li><strong>Token Endpoint</strong>: https://wd2-impl-services1.workday.com/ccx/oauth2/{tenantName}/token</li>
-<li><strong>Authorization Endpoint</strong>: https://impl.workday.com/{tenantName}/authorize</li>
-<li>**User Activity Logs Endpoint, it ends with /activityLogging **: https://wd2-impl-services1.workday.com/ccx/api/privacy/v1/{tenantName}/activityLogging</li>
+<li><strong>Page size (records per request)</strong> (select)<ul>
+<li>100</li>
+<li>250</li>
+<li>500</li>
+<li>750</li>
+<li>1000</li>
+</ul>
+</li>
+<li><strong>Token Endpoint</strong>: Example, https://{workdayServicesHost}/ccx/oauth2/{tenantName}/token</li>
+<li><strong>Authorization Endpoint</strong>: Example, https://{workdayHost}/{tenantName}/authorize</li>
+<li><strong>User Activity Logs Endpoint (ends with /activityLogging)</strong>: Example, https://{workdayServicesHost}/ccx/api/privacy/v1/{tenantName}/activityLogging</li>
 <li><strong>OAuth Configuration</strong>:<ul>
 <li>Client ID</li>
 <li>Client Secret</li>
-<li>Click 'Connect' to authenticate</li>
+<li>Click 'Connect' to authenticate
+<strong>Connector Management Interface</strong></li>
 </ul>
 </li>
 </ul>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Connector Alias</strong></li>
+<li><strong>Workday Tenant Host</strong></li>
+<li><strong>Data Type</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
