@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) |  | ? | ✓ | ? |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) |  | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) |  | ✓ | ✓ | ✓ |
 
 ## Parameters
 

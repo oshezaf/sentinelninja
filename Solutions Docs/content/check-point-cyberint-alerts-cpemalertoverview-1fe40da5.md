@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ? | ✓ | ? |
+| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

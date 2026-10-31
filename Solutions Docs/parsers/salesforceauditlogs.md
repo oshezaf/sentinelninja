@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | ✓ | ✗ | ✓ |
-| [`SalesforceAuditTrailV2_CL`](../tables/salesforceaudittrailv2-cl.md) | ? | ✓ | ? |
+| [`SalesforceAuditTrailV2_CL`](../tables/salesforceaudittrailv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | ✓ | ✗ | ✓ |
 | [`SalesforceLoginHistoryV2_CL`](../tables/salesforceloginhistoryv2-cl.md) | ? | ✓ | ? |
 

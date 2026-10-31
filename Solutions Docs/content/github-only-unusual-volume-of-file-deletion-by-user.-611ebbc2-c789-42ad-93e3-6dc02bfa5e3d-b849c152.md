@@ -24,6 +24,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ | ✓ |
+| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) | ? | ✗ | ? |
 
 ---
 

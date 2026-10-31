@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`GTI_FileScan_CL`](../tables/gti-filescan-cl.md) | ? | ✓ | ? |
 | [`GTI_URLScan_CL`](../tables/gti-urlscan-cl.md) | ? | ✓ | ? |
-| [`GTI_Vulnerabilities_CL`](../tables/gti-vulnerabilities-cl.md) | ? | ✓ | ? |
+| [`GTI_Vulnerabilities_CL`](../tables/gti-vulnerabilities-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

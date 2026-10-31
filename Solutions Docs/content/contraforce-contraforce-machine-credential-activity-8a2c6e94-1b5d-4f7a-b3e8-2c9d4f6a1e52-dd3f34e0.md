@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContraForceEvents_CL`](../tables/contraforceevents-cl.md) | ? | ✓ | ? |
+| [`ContraForceEvents_CL`](../tables/contraforceevents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

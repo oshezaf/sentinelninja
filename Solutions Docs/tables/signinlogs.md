@@ -14,7 +14,7 @@ Reference for SigninLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs) |
 
 ## Contents
@@ -259,7 +259,7 @@ This table is ingested by the following connectors:
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) | `ResultType == "500121"` |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) | `AuthenticationRequirement == "multiFactorAuthentication"` |
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) |  |
-| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) |  |
+| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | `OperationName == "Add unverified domain"` |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `RiskState == "atRisk"`
 
@@ -325,7 +325,7 @@ This table is ingested by the following connectors:
 | [Privileged User Logon from new ASN](../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.md) | `ResultType == "0"` |
 | [Repeated failed MFA challenges for one user from one IP (AADSTS50074 / AADSTS500121)](../content/standalone-content-repeated-failed-mfa-challenges-for-one-user-from-one-ip-aadsts50074-aadsts500121-284c73e0-3e14-4698-9202-36fcd458034e-0c0fb369.md) | `ResultType in "500121,50074"` |
 | [Risky user signin observed in non-Microsoft network device](../content/standalone-content-risky-user-signin-observed-in-non-microsoft-network-device-042f2801-a375-4cfd-bd29-041fc7ed88a0-a75f8abe.md) | `ResultType == "0"`<br>`RiskState == "atRisk"` |
-| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) |  |
+| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) | `OperationName == "Delete user"` |
 | [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) | `OperationName == "Update Application"` |
 
 ### Hunting Queries (85)
@@ -355,7 +355,7 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) |  |
+| [Federated Identity Provider Added to Tenant](../content/hybrid-attack-cloud-&-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.md) | `OperationName in "Set domain authentication,Set federation settings on domain"` |
 | [MFA Method Added on Risky Account](../content/hybrid-attack-cloud-&-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.md) |  |
 | [Novel identity then Key Vault secret burst](../content/hybrid-attack-cloud-&-identity-novel-identity-then-key-vault-secret-burst-7d8e22b3-2f90-4f2d-ae4d-bf2e8059cb11-ea7a919e.md) |  |
 | [Novel sign-in context followed by IAM reconnaissance burst](../content/hybrid-attack-cloud-&-identity-novel-sign-in-context-followed-by-iam-reconnaissance-burst-a7e1e6bf-7a91-4ec7-91b2-13322089e3d8-737590ad.md) |  |
@@ -446,13 +446,13 @@ This table is ingested by the following connectors:
 | [MFA Spamming](../content/standalone-content-mfa-spamming-7f87c43a-6aff-44fe-907f-651986cbf956-1ec9d2a3.md) | `AuthenticationRequirement == "multiFactorAuthentication"` |
 | [MFA method registered from an IP address not seen in user sign-in history](../content/standalone-content-mfa-method-registered-from-an-ip-address-not-seen-in-user-sign-in-history-3d36b19f-cd62-4522-8869-23cdd9cc0c9f-5f452383.md) | `OperationName == "User registered security info"` |
 | [Microsoft Entra ID sign-in burst from multiple locations](../content/standalone-content-microsoft-entra-id-sign-in-burst-from-multiple-locations-745a22ec-fed8-49b9-9f62-4570b7709da4-246c7446.md) |  |
-| [Privileged Entra ID account sign-in via legacy authentication protocol](../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) |  |
+| [Privileged Entra ID account sign-in via legacy authentication protocol](../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) | `OperationName in "Add member to role,Add member to role."` |
 | [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
 | [Same User - Successful logon for a given App and failure on another App within 1m and low distribution](../content/standalone-content-same-user-successful-logon-for-a-given-app-and-failure-on-another-app-within-1m-and-l-bc17381e-07ee-48a2-931f-06a3d9e149c9-2d59aad0.md) |  |
 | [Short-window IP failure burst followed by successful sign-in](../content/standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.md) |  |
 | [Short-window sign-in mismatch between interactive and non-interactive activity](../content/standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.md) |  |
 | [Sign-in from new country followed by sensitive operation within one hour](../content/standalone-content-sign-in-from-new-country-followed-by-sensitive-operation-within-one-hour-271f4bf9-e387-48ef-a537-654bd53ca8e8-d3920a50.md) |  |
-| [Sign-in from unseen IP within 60 minutes of MFA disabled for account](../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.md) |  |
+| [Sign-in from unseen IP within 60 minutes of MFA disabled for account](../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.md) | `OperationName in "Disable Strong Authentication,User deleted security info"` |
 | [Signin Logs with expanded Conditional Access Policies](../content/standalone-content-signin-logs-with-expanded-conditional-access-policies-4eb6d052-9873-4092-b989-66eae780e203-95b234ca.md) |  |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
@@ -470,13 +470,13 @@ This table is ingested by the following connectors:
 | [Low & slow password attempts with volatile IP addresses](../content/github-only-low-&-slow-password-attempts-with-volatile-ip-addresses-3d217bb4-9cc2-4aba-838a-48e606e910e6-6761ead7.md) | `ResultType == "0"` |
 | [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |  |
 | [Privileged Accounts Locked Out](../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) | `ResultType == "50053"` |
-| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) |  |
+| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) | `OperationName == "Add registered owner to device"` |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.md) | `ResultType in "0,50057"` |
 | [Smart Lockouts](../content/github-only-smart-lockouts-02e86bf2-172c-4444-ae8e-e94c5ce2bea3-cf06fb78.md) | `ResultType == "50053"` |
 | [Spike in failed sign-in events](../content/github-only-spike-in-failed-sign-in-events-51f4faf9-c3b1-4e9f-9c90-5d6afd191552-ac3569e5.md) |  |
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) | `AppDisplayName !in "Office 365 Exchange Online,Skype for Business Online,Office 365 SharePoint Online"` |
 | [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) | `ConditionalAccessStatus == "success"`<br>`OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` |
-| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `AppDisplayName == "Azure Portal"` |
+| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `AppDisplayName == "Azure Portal"`<br>`OperationName has_any "Add member to role"` |
 | [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) | `OperationName in "PutBlob,PutRange"` |
 | [Users Authenticating to Other Microsoft Entra ID Tenants](../content/github-only-users-authenticating-to-other-microsoft-entra-id-tenants-9b4a1f38-2fae-44dd-9e85-685a2e4b9bb5-c7672be4.md) | `ResultType == "0"`<br>`RiskLevelAggregated != "none"` |
 
@@ -624,7 +624,7 @@ This table is ingested by the following connectors:
 | [AzureActiveDirectorySignins](../content/github-only-azureactivedirectorysignins-f7e08e18.md) |  |
 | [AzureAuditActivityAndSignin](../content/github-only-azureauditactivityandsignin-17768883.md) |  |
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) | `OperationName in "Add conditional access policy,Add member to group,Delete conditional access policy,Update conditional access policy"`<br>`OperationName contains "group"` |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `AuthenticationRequirement in "multiFactorAuthentication,singleFactorAuthentication"`<br>`ConditionalAccessStatus == "notApplied"`<br>`NetworkLocationDetails == "[]"` |
@@ -657,9 +657,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (42 criteria, 60 total references)
+## Selection Criteria Summary (48 criteria, 66 total references)
 
-References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -674,16 +674,19 @@ References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other pars
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | - | 1 | - | - | **1** |
 | `NetworkLocationDetails !has "trustedNamedLocation"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `ResultType == "500121"` | - | 1 | - | - | **1** |
+| `OperationName == "Add unverified domain"` | - | 1 | - | - | **1** |
 | `RiskState == "atRisk"` | - | 1 | - | - | **1** |
 | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
 | `OperationName == "Update Application"` | - | 1 | - | - | **1** |
 | `ResultType in "0,50125,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`RiskState == "atRisk"` | - | 1 | - | - | **1** |
+| `OperationName == "Delete user"` | - | 1 | - | - | **1** |
 | `AuthenticationRequirement == "singleFactorAuthentication"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `ResultType in "500121,50074"` | - | 1 | - | - | **1** |
 | `ResultType != "0"` | - | 1 | - | - | **1** |
 | `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `AppDisplayName == "Office 365 Exchange Online"`<br>`ConditionalAccessStatus == "success"` | - | 1 | - | - | **1** |
+| `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 1 | - | - | **1** |
 | `ResultType in "50125,50140,70043,70044"` | - | 1 | - | - | **1** |
 | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `AuthenticationRequirement == "singleFactorAuthentication"`<br>`ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
@@ -692,12 +695,15 @@ References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other pars
 | `OperationName == "Add member to role."` | - | 1 | - | - | **1** |
 | `AuthenticationDetails has "deviceCode"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
 | `NetworkLocationDetails == "[]"`<br>`OperationName in "Register device,User registered security info"`<br>`RiskLevelDuringSignIn == "high"` | - | 1 | - | - | **1** |
+| `OperationName in "Disable Strong Authentication,User deleted security info"` | - | 1 | - | - | **1** |
 | `ConditionalAccessStatus == "success"`<br>`OperationName has_any "Download group members,Download groups,Download user registeration details,Download users"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add member to role."` | - | 1 | - | - | **1** |
 | `AppDisplayName !in "Office 365 Exchange Online,Skype for Business Online,Office 365 SharePoint Online"` | - | 1 | - | - | **1** |
-| `AppDisplayName == "Azure Portal"` | - | 1 | - | - | **1** |
+| `AppDisplayName == "Azure Portal"`<br>`OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
 | `OperationName == "Sign-in activity"` | - | 1 | - | - | **1** |
 | `OperationName == "Add user"` | - | 1 | - | - | **1** |
 | `ResultType in "0,50057,50074,50126,51004"` | - | 1 | - | - | **1** |
+| `OperationName == "Add registered owner to device"` | - | 1 | - | - | **1** |
 | `AppDisplayName contains "Azure Portal"`<br>`ResultType in "50020,50126"` | - | 1 | - | - | **1** |
 | `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"` | - | 1 | - | - | **1** |
 | `AppDisplayName contains "Portal"` | - | 1 | - | - | **1** |
@@ -705,7 +711,7 @@ References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other pars
 | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` | - | 1 | - | - | **1** |
 | `ResultType == "0"`<br>`ResultType != "0"` | - | 1 | - | - | **1** |
 | `AppDisplayName has_any "teams"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **60** | **0** | **0** | **60** |
+| **Total** | **0** | **66** | **0** | **0** | **66** |
 
 ### AppDisplayName
 
@@ -762,20 +768,28 @@ References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `User registered security info` | - | 3 | - | - | **3** |
+| `Add member to role.` | - | 2 | - | - | **2** |
+| `has_any Add member to role` | - | 2 | - | - | **2** |
+| `Add unverified domain` | - | 1 | - | - | **1** |
 | `Update Application` | - | 1 | - | - | **1** |
+| `Delete user` | - | 1 | - | - | **1** |
 | `Update user` | - | 1 | - | - | **1** |
+| `Set domain authentication` | - | 1 | - | - | **1** |
+| `Set federation settings on domain` | - | 1 | - | - | **1** |
 | `PutBlob` | - | 1 | - | - | **1** |
 | `PutRange` | - | 1 | - | - | **1** |
-| `Add member to role.` | - | 1 | - | - | **1** |
 | `Register device` | - | 1 | - | - | **1** |
+| `Disable Strong Authentication` | - | 1 | - | - | **1** |
+| `User deleted security info` | - | 1 | - | - | **1** |
 | `has_any Download group members` | - | 1 | - | - | **1** |
 | `has_any Download groups` | - | 1 | - | - | **1** |
 | `has_any Download user registeration details` | - | 1 | - | - | **1** |
 | `has_any Download users` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
 | `Sign-in activity` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
+| `Add registered owner to device` | - | 1 | - | - | **1** |
 | `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
 | `has_any Add user` | - | 1 | - | - | **1** |
 | `has_any Create user` | - | 1 | - | - | **1** |
 | `has_any Role assignment` | - | 1 | - | - | **1** |

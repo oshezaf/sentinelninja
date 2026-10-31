@@ -20,8 +20,8 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ---
 

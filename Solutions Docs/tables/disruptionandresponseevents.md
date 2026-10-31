@@ -6,16 +6,17 @@
 
 ---
 
-Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
+[Automatic attack disruption](automatic-attack-disruption) events in Microsoft Defender XDR
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
+| **Category** | Security, XDR |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-disruptionandresponseevents-table) |
 
 ## Schema (44 columns)
 
@@ -73,6 +74,7 @@ Reference for DisruptionAndResponseEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DisruptionAndResponseEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents)
+- [DisruptionAndResponseEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-disruptionandresponseevents-table)
 
 ---
 

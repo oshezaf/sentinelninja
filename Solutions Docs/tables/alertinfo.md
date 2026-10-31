@@ -6,7 +6,7 @@
 
 ---
 
-Reference for AlertInfo table in Azure Monitor Logs.
+Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity, including severity information and threat categorization
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for AlertInfo table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertinfo-table) |
 
 ## Contents
 
@@ -49,6 +50,7 @@ Reference for AlertInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [AlertInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo)
+- [AlertInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertinfo-table)
 
 ## Solutions (1)
 
@@ -91,14 +93,14 @@ This table is used by the following solutions:
 | [Distribution from remote location](../content/github-only-distribution-from-remote-location-4e070afe-7a9b-4313-a964-c3168fffc1e2-3a8453c3.md) | `Title == "File dropped`<br>`launched from remote location"` |
 | [Events surrounding alert (1)](../content/github-only-events-surrounding-alert-1-55a29d46-2cd5-44af-80aa-20d0ac4c86f8-fa59386c.md) |  |
 | [Events surrounding alert (3)](../content/github-only-events-surrounding-alert-3-c4955324-02ff-46fa-a642-64952334482d-11006aac.md) |  |
-| [ExploitGuardBlockOfficeChildProcess (1)](../content/github-only-exploitguardblockofficechildprocess-1-fed32a95-bba6-47a6-8519-8d2a2cee97f9-0998c1f7.md) | `ActionType == "AsrOfficeChildProcessAudited"` |
-| [ExploitGuardBlockOfficeChildProcess (3)](../content/github-only-exploitguardblockofficechildprocess-3-521f58f9-92b8-407b-9434-798a9f527b3c-86c63dc2.md) | `ActionType == "AsrOfficeChildProcessAudited"` |
+| [ExploitGuardBlockOfficeChildProcess (1)](../content/github-only-exploitguardblockofficechildprocess-1-fed32a95-bba6-47a6-8519-8d2a2cee97f9-0998c1f7.md) |  |
+| [ExploitGuardBlockOfficeChildProcess (3)](../content/github-only-exploitguardblockofficechildprocess-3-521f58f9-92b8-407b-9434-798a9f527b3c-86c63dc2.md) |  |
 | [File Backup Deletion Alerts](../content/github-only-file-backup-deletion-alerts-21444f27-9184-45bf-a335-7b7169a56790-6fbb279e.md) | `Title == "File backups were deleted"` |
 | [Gootkit File Delivery](../content/github-only-gootkit-file-delivery-11d725f5-93d8-4b34-a64f-bf8450cdb184-deb3f803.md) | `Title == "Suspected delivery of Gootkit malware"` |
 | [Gootkit-malware](../content/github-only-gootkit-malware-c8796d76-9a84-4cc8-91b5-d01f882869d4-8f087754.md) | `Title == "Suspected delivery of Gootkit malware"` |
 | [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) |  |
 | [Microsoft Teams chat initiated by a suspicious external user](../content/github-only-microsoft-teams-chat-initiated-by-a-suspicious-external-user-8b88ecaf-88b3-4d70-814f-a55b96748ff5-5307d1cf.md) | `Title == "Microsoft Teams chat initiated by a suspicious external user"` |
-| [Open email link](../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
+| [Open email link](../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.md) |  |
 | [Potential ransomware activity related to Cobalt Strike](../content/github-only-potential-ransomware-activity-related-to-cobalt-strike-95db9b9c-7a12-4c0b-85c8-1c54f67c5ac7-3e03f975.md) | `Title in "An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected"` |
 | [Ransomware hits healthcare - Backup deletion](../content/github-only-ransomware-hits-healthcare-backup-deletion-b0188e2d-734d-4d54-8e70-c4157a195bb1-839b41cd.md) | `Title == "File backups were deleted"` |
 | [Ransomware hits healthcare - Possible compromised accounts](../content/github-only-ransomware-hits-healthcare-possible-compromised-accounts-f4506828-36f5-4668-8203-de062963be63-3aa55254.md) | `Title in "Event log was cleared,File backups were deleted,Suspicious decoded content,malware was detected"` |
@@ -121,9 +123,9 @@ This table is used by the following solutions:
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
-## Selection Criteria Summary (15 criteria, 26 total references)
+## Selection Criteria Summary (13 criteria, 23 total references)
 
-References by type: 0 connectors, 26 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 23 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -135,21 +137,12 @@ References by type: 0 connectors, 26 content items, 0 ASIM parsers, 0 other pars
 | `Title == "Suspicious script launched"` | - | 2 | - | - | **2** |
 | `Title in "Event log was cleared,File backups were deleted,Suspicious decoded content,\,malware was detected"` | - | 2 | - | - | **2** |
 | `Title == "Suspected delivery of Gootkit malware"` | - | 2 | - | - | **2** |
-| `ActionType == "AsrOfficeChildProcessAudited"` | - | 2 | - | - | **2** |
 | `Title in "Event log was cleared,File backups were deleted,Suspicious decoded content,malware was detected"` | - | 1 | - | - | **1** |
-| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
 | `Title contains "Defender AV detected"` | - | 1 | - | - | **1** |
 | `Title == "File dropped`<br>`launched from remote location"` | - | 1 | - | - | **1** |
 | `Title == "Sticky Keys binary hijack detected"` | - | 1 | - | - | **1** |
 | `Title in "File dropped`<br>`launched from remote location,Suspicious transfer of an executable file"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **26** | **0** | **0** | **26** |
-
-### ActionType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AsrOfficeChildProcessAudited` | - | 2 | - | - | **2** |
-| `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
+| **Total** | **0** | **23** | **0** | **0** | **23** |
 
 ### Title
 

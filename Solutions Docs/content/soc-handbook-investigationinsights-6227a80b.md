@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `AdditionalDetails contains "fraud"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `AdditionalDetails contains "fraud"` | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | [`DnsEvents`](../tables/dnsevents.md) | `ResultCode == "0"` | ✓ | ✗ | ✓ |
 | [`HuntingBookmark`](../tables/huntingbookmark.md) |  | ✓ | ✗ | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | `Operation in "New-InboxRule,Set-Mailbox"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation in "New-InboxRule,Set-Mailbox"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ✗ |
 | [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |

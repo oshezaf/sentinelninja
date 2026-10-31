@@ -14,7 +14,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauditeventlogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -194,7 +194,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) |  |
+| [Cisco Meraki Events (using REST API) (via Codeless Connector Framework)](../connectors/ciscomerakiconnector.md) | `EventProduct == "Meraki"`<br>`EventType == "IDS Alert"`<br>`EventVendor == "Cisco"` |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Workday User Activity (via Codeless Connector Framework)](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
@@ -237,22 +237,30 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/auditeventnormalized`
 
-## Selection Criteria Summary (2 criteria, 3 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 1 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventVendor == "Workday"` | - | 2 | - | - | **2** |
+| `EventProduct == "Meraki"`<br>`EventType == "IDS Alert"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Workday"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **2** | **0** | **0** | **3** |
+| **Total** | **2** | **2** | **0** | **0** | **4** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 |  | `Workday` | - | 2 | - | - | **2** |
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Workday` |  | 1 | - | - | - | **1** |
+
+### EventType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `IDS Alert` | 1 | - | - | - | **1** |
 
 ---
 

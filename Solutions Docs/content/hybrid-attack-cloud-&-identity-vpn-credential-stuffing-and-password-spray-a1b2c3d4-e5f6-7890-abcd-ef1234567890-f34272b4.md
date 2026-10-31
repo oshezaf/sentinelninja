@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ | ✓ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ✗ |
 | [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ? | ✓ | ? |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

@@ -29,10 +29,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ? | ✓ | ? |
-| [`ZNIdentityActivity_CL`](../tables/znidentityactivity-cl.md) | ? | ✓ | ? |
-| [`ZNNetworkActivity_CL`](../tables/znnetworkactivity-cl.md) | ? | ✓ | ? |
-| [`ZNRPCActivity_CL`](../tables/znrpcactivity-cl.md) | ? | ✓ | ? |
+| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`ZNIdentityActivity_CL`](../tables/znidentityactivity-cl.md) | ✓ | ✓ | ✓ |
+| [`ZNNetworkActivity_CL`](../tables/znnetworkactivity-cl.md) | ✓ | ✓ | ✓ |
+| [`ZNRPCActivity_CL`](../tables/znrpcactivity-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

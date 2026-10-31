@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AirlockDigitalPolicyChanges_CL`](../tables/airlockdigitalpolicychanges-cl.md) | ? | ✓ | ? |
+| [`AirlockDigitalPolicyChanges_CL`](../tables/airlockdigitalpolicychanges-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

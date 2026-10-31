@@ -41,7 +41,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ? | ✓ | ? |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

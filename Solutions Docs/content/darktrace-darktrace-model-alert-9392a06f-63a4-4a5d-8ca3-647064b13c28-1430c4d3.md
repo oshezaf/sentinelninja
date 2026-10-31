@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) | ? | ✓ | ? |
+| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -14,7 +14,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -443,7 +443,7 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [Cyble Threat Intelligence Parser](../parsers/cyble-threat-intelligence-parser.md) | *(Legacy)* |  |
+| [CybleThreatIntel](../parsers/cyblethreatintel.md) | *(Legacy)* |  |
 | [CyjaxCorrelate](../parsers/cyjaxcorrelate.md) | [Cyjax](../solutions/cyjax.md) |  |
 | [CyjaxThreatIndicator](../parsers/cyjaxthreatindicator.md) | [Cyjax](../solutions/cyjax.md) |  |
 | [ThreatIntelIndicatorsv2](../parsers/threatintelindicatorsv2.md) | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |  |
@@ -463,18 +463,18 @@ References by type: 9 connectors, 24 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "ipv4-addr:value"` | - | 5 | - | - | **5** |
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
-| `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
 | `SourceSystem startswith "PRODAFT USTA"` | 1 | 1 | - | - | **2** |
+| `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
-| `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` | 1 | - | - | - | **1** |
-| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
-| `SourceSystem == "GreyNoise"` | 1 | - | - | - | **1** |
-| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
+| `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` | 1 | - | - | - | **1** |
+| `SourceSystem == "GreyNoise"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
+| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
 | `ObservableKey startswith "domain-name"`<br>`ObservableKey startswith "email"`<br>`ObservableKey startswith "file"`<br>`ObservableKey startswith "url"`<br>`SourceSystem == "GreyNoise"` | - | 1 | - | - | **1** |
@@ -501,15 +501,15 @@ References by type: 9 connectors, 24 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
+| `startswith PRODAFT USTA` | 1 | 1 | - | - | **2** |
 | `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
-| `startswith PRODAFT USTA` | 1 | 1 | - | - | **2** |
+| `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `Feedly` | 1 | - | - | - | **1** |
 | `!contains VMRay` | 1 | - | - | - | **1** |
 | `contains VMRay` | 1 | - | - | - | **1** |
-| `Feedly` | 1 | - | - | - | **1** |
-| `MISP` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
-| `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `MISP` | 1 | - | - | - | **1** |
 | `startswith HoneyLabs` | - | 1 | - | - | **1** |
 
 ---

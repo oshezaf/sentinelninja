@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SailPointISC_Events_CL`](../tables/sailpointisc-events-cl.md) | ? | ✓ | ? |
+| [`SailPointISC_Events_CL`](../tables/sailpointisc-events-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

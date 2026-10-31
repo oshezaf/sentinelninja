@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`meraki_CL`](../tables/meraki-cl.md) |  | ? | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ✓ | ✓ | ✓ |
 
 ## Parameters
 

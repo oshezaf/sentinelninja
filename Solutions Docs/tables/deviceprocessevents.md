@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceProcessEvents table in Azure Monitor Logs.
+Process creation and related events
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) |
 
 ## Contents
 
@@ -112,6 +113,7 @@ Reference for DeviceProcessEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents)
+- [DeviceProcessEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table)
 
 ## Solutions (15)
 
@@ -205,7 +207,7 @@ This table is ingested by the following connectors:
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.md) | `ProcessCommandLine contains "-ma"`<br>`ProcessCommandLine has "-accepteula"`<br>`ProcessCommandLine has "lsass"`<br>`ProcessCommandLine has "lsass.exe"` |
 | [LaZagne Credential Theft](../content/microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.md) |  |
 | [Office Apps Launching Wscipt](../content/microsoft-defender-xdr-office-apps-launching-wscipt-174de33b-107b-4cd8-a85d-b4025a35453f-49a22465.md) | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"`<br>`ProcessCommandLine has ".jse"` |
-| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
+| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | `ActionType in "FileCreated,FileModified"` |
 | [Qakbot Campaign Self Deletion](../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) | `InitiatingProcessCommandLine has "-n 6"`<br>`InitiatingProcessCommandLine has "127.0.0.1"`<br>`InitiatingProcessCommandLine has "calc.exe"`<br>`InitiatingProcessFileName == "cmd.exe"` |
 | [Qakbot Discovery Activies](../content/microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.md) | `InitiatingProcessCommandLine endswith "127.0.0.1"`<br>`InitiatingProcessCommandLine has "-a"`<br>`InitiatingProcessCommandLine has "-nao"`<br>`InitiatingProcessCommandLine has "-t"`<br>`InitiatingProcessCommandLine has "/all"`<br>`InitiatingProcessFileName in "explorer.exe,mobsync.exe"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
@@ -277,7 +279,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Account Creation](../content/microsoft-defender-xdr-account-creation-d0585c34-1b03-473c-938d-11fe73f7e053-4486ca7f.md) | `InitiatingProcessFileName == "net.exe"`<br>`ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "/domain"` |
-| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) |  |
+| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [Bitsadmin Activity](../content/microsoft-defender-xdr-bitsadmin-activity-bba7bbbe-5aa3-4c08-bd23-dd6cd8ccaf20-7a642ef6.md) | `ProcessCommandLine has "/Upload"`<br>`ProcessCommandLine has_any "/Transfer"` |
 | [Check for multiple signs of Ransomware Activity](../content/microsoft-defender-xdr-check-for-multiple-signs-of-ransomware-activity-4f669adc-2c00-4bc8-896b-e59f068dcb18-164f406c.md) | `ProcessCommandLine has "cl"`<br>`ProcessCommandLine has "config"`<br>`ProcessCommandLine has "delete"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"`<br>`ProcessCommandLine has "wbadmin"`<br>`ProcessCommandLine has "wevtutil"`<br>`ProcessCommandLine has "wmic"` |
 | [Clear System Logs](../content/microsoft-defender-xdr-clear-system-logs-6284b962-ab0d-46d8-a47f-1eb1ac1be463-c8af8f2d.md) | `ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "usn"` |
@@ -496,7 +498,7 @@ This table is ingested by the following connectors:
 | [Webserver Executing Suspicious Applications](../content/github-only-webserver-executing-suspicious-applications-1a9dfc1d-6dd2-42e5-81ef-fb90f3d96239-bcc646c8.md) | `InitiatingProcessFileName in "httpd.exe,w3wp.exe"` |
 | [Zip-Doc - Word Launching MSHTA](../content/github-only-zip-doc-word-launching-mshta-e9924adb-3f5b-4ef2-8672-89ae381226f9-304a3d04.md) | `InitiatingProcessFileName == "WINWORD.EXE"` |
 | [alt-data-streams](../content/github-only-alt-data-streams-7d8692e0-e643-43cb-ac77-6efc5a6b7f4d-95ce681f.md) | `ProcessCommandLine startswith "-q -s"` |
-| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) |  |
+| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [app-armor-stopped](../content/github-only-app-armor-stopped-a188fa21-dd3a-4cf9-910b-1384711f7dce-d7b5a08f.md) | `InitiatingProcessCommandLine has "/bin/bash /tmp/"`<br>`ProcessCommandLine has "service apparmor stop"` |
 | [apt sofacy](../content/github-only-apt-sofacy-36a6028d-f977-455f-be11-669e993a25d6-cc5ef74d.md) |  |
 | [apt sofacy zebrocy](../content/github-only-apt-sofacy-zebrocy-92f02b0b-cd8e-4d49-957c-5ad0ee86da65-f6430eae.md) | `ProcessCommandLine endswith "cmd.exe /c SYSTEMINFO & TASKLIST"` |
@@ -519,8 +521,8 @@ This table is ingested by the following connectors:
 | [detect-cyzfc-activity (3)](../content/github-only-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-659ab825.md) | `ProcessCommandLine contains "https://www.jmj.com/personal/nauerthn_state_gov"` |
 | [detect-doublepulsar-execution](../content/github-only-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-94331698.md) | `ProcessCommandLine contains "payload"`<br>`ProcessCommandLine contains "targetip"`<br>`ProcessCommandLine contains "targetport"`<br>`ProcessCommandLine contains "verifybackdoor"` |
 | [detect-exploitation-of-cve-2018-8653](../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.md) | `InitiatingProcessCommandLine contains "WinHttpAutoProxySvc"`<br>`InitiatingProcessFileName == "svchost.exe"` |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
+| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
 | [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
@@ -626,7 +628,7 @@ This table is ingested by the following connectors:
 | [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ## Parsers Using This Table (1)
@@ -637,9 +639,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (195 criteria, 250 total references)
+## Selection Criteria Summary (199 criteria, 255 total references)
 
-References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 255 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -662,6 +664,7 @@ References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine has_all "advfirewall"`<br>`InitiatingProcessFileName == "netsh.exe"` | - | 2 | - | - | **2** |
 | `ProcessCommandLine has "hklm"`<br>`ProcessCommandLine has "sam"`<br>`ProcessCommandLine has "save"` | - | 2 | - | - | **2** |
 | `ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "\\"`<br>`ProcessCommandLine contains "/do"`<br>`ProcessCommandLine contains "/domain"`<br>`ProcessCommandLine contains "group"`<br>`ProcessCommandLine contains "user"` | - | 2 | - | - | **2** |
+| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 2 | - | - | **2** |
 | `ProcessCommandLine has "http"`<br>`ProcessCommandLine has "return"` | - | 2 | - | - | **2** |
 | `InitiatingProcessFileName == "msiexec.exe"`<br>`ProcessCommandLine contains "privilege::"`<br>`ProcessCommandLine contains "token::"`<br>`ProcessCommandLine has "sekurlsa"` | - | 2 | - | - | **2** |
 | `ProcessCommandLine has "DownloadFile"`<br>`ProcessCommandLine has "IEX"`<br>`ProcessCommandLine has "Invoke-Shellcode"`<br>`ProcessCommandLine has "Invoke-WebRequest"`<br>`ProcessCommandLine has "Net.WebClient"`<br>`ProcessCommandLine has "Start-BitsTransfer"`<br>`ProcessCommandLine has "http"`<br>`ProcessCommandLine has "mpcmdrun.exe"` | - | 2 | - | - | **2** |
@@ -690,6 +693,7 @@ References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine has_any "E9495B87-D950-4AB5-87A5-FF6D70BF3E90"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessIntegrityLevel == "High"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "wsreset.exe"`<br>`ProcessIntegrityLevel == "High"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "changepk.exe"`<br>`InitiatingProcessParentFileName == "slui.exe"`<br>`ProcessIntegrityLevel == "High"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has_any "/bin/sh"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "auditpol.exe"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "powershell.exe"` | - | 1 | - | - | **1** |
@@ -733,6 +737,8 @@ References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other par
 | `ProcessCommandLine contains "TVqQAAMAAAAEAAA"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine contains "payload"`<br>`ProcessCommandLine contains "targetip"`<br>`ProcessCommandLine contains "targetport"`<br>`ProcessCommandLine contains "verifybackdoor"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine contains "WinHttpAutoProxySvc"`<br>`InitiatingProcessFileName == "svchost.exe"` | - | 1 | - | - | **1** |
+| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
+| `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine contains "%temp%"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"` | - | 1 | - | - | **1** |
@@ -838,7 +844,7 @@ References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine has "php-cgi.exe"`<br>`ProcessCommandLine has_all "curl -fsSL"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "cmd.exe,powershell.exe"`<br>`InitiatingProcessParentFileName startswith "tomcat"`<br>`ProcessCommandLine has_any "cmd.exe"` | - | 1 | - | - | **1** |
 | `ProcessCommandLine has "Set-MpPreference"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **250** | **0** | **0** | **250** |
+| **Total** | **0** | **255** | **0** | **0** | **255** |
 
 ### AccountName
 
@@ -850,9 +856,14 @@ References by type: 0 connectors, 250 content items, 0 ASIM parsers, 0 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `InboundConnectionAccepted` | - | 2 | - | - | **2** |
+| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `!= ListeningConnectionCreated` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
-| `InboundConnectionAccepted` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
+| `FileModified` | - | 1 | - | - | **1** |
+| `NamedPipeEvent` | - | 1 | - | - | **1** |
+| `RegistryKeyCreated` | - | 1 | - | - | **1** |
 
 ### FolderPath
 

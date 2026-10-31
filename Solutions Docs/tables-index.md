@@ -6,7 +6,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ---
 
-**2493 tables** documented (1287 ingested by connectors, 284 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**2533 tables** documented (1287 ingested by connectors, 288 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 The **Discovered Via** column shows how each table was identified. When a table appears in multiple sources, the highest-priority source is shown:
 
@@ -54,6 +54,8 @@ Browse tables alphabetically:
 | [AADRiskyUsers](tables/aadriskyusers.md) 📖 | Connector | [1](tables/aadriskyusers.md) | [1](tables/aadriskyusers.md) | Workbooks |
 | [AADServicePrincipalRiskEvents](tables/aadserviceprincipalriskevents.md) 📖 | Connector | [1](tables/aadserviceprincipalriskevents.md) | [1](tables/aadserviceprincipalriskevents.md) | Workbooks |
 | [AADServicePrincipalSignInLogs](tables/aadserviceprincipalsigninlogs.md) 📖 | Connector | [8](tables/aadserviceprincipalsigninlogs.md) | [1](tables/aadserviceprincipalsigninlogs.md) | Analytics, Hunting, Workbooks |
+| [AADSignInEventsBeta](tables/aadsignineventsbeta.md) 📖 | Content | [1](tables/aadsignineventsbeta.md) | - | Hunting |
+| [AADSpnSignInEventsBeta](tables/aadspnsignineventsbeta.md) 📖 | Docs | - | - | - |
 | [AADUserInfo_CL](tables/aaduserinfo-cl.md) 📖 | Schema | - | - | - |
 | [AADUserRiskEvents](tables/aaduserriskevents.md) 📖 | Connector | [8](tables/aaduserriskevents.md) | [1](tables/aaduserriskevents.md) | Hunting, Workbooks |
 | [ABAPAuditLog](tables/abapauditlog.md) 📖 | Connector | [6](tables/abapauditlog.md) | [6](tables/abapauditlog.md) | - |
@@ -190,9 +192,12 @@ Browse tables alphabetically:
 | [AHDSDicomDiagnosticLogs](tables/ahdsdicomdiagnosticlogs.md) 📖 | Docs | - | - | - |
 | [AHDSMedTechDiagnosticLogs](tables/ahdsmedtechdiagnosticlogs.md) 📖 | Docs | - | - | - |
 | [AirflowDagProcessingLogs](tables/airflowdagprocessinglogs.md) 📖 | Docs | - | - | - |
+| [AirlockDigitalExecutionHistories](tables/airlockdigitalexecutionhistories.md) | Docs | - | - | - |
 | [AirlockDigitalExecutionHistories_CL](tables/airlockdigitalexecutionhistories-cl.md) 📖 | Connector | [1](tables/airlockdigitalexecutionhistories-cl.md) | [4](tables/airlockdigitalexecutionhistories-cl.md) | - |
+| [AirlockDigitalFileActivitySummary](tables/airlockdigitalfileactivitysummary.md) | Docs | - | - | - |
 | [AirlockDigitalFileActivitySummary_CL](tables/airlockdigitalfileactivitysummary-cl.md) 📖 | Connector | [1](tables/airlockdigitalfileactivitysummary-cl.md) | [1](tables/airlockdigitalfileactivitysummary-cl.md) | - |
 | [AirlockDigitalPolicyChanges_CL](tables/airlockdigitalpolicychanges-cl.md) 📖 | Connector | [1](tables/airlockdigitalpolicychanges-cl.md) | [1](tables/airlockdigitalpolicychanges-cl.md) | - |
+| [AirlockDigitalServerActivities](tables/airlockdigitalserveractivities.md) | Docs | - | - | - |
 | [AirlockDigitalServerActivities_CL](tables/airlockdigitalserveractivities-cl.md) 📖 | Connector | [1](tables/airlockdigitalserveractivities-cl.md) | [4](tables/airlockdigitalserveractivities-cl.md) | - |
 | [AIShield_CL](tables/aishield-cl.md) 📖 | Connector | [1](tables/aishield-cl.md) | [1](tables/aishield-cl.md) | Analytics, Workbooks |
 | [AkamaiSIEMEvent_CL](tables/akamaisiemevent-cl.md) 📖 | Connector | [1](tables/akamaisiemevent-cl.md) | [1](tables/akamaisiemevent-cl.md) | - |
@@ -220,7 +225,7 @@ Browse tables alphabetically:
 | [AlibabaCloudWAFLogs](tables/alibabacloudwaflogs.md) | Connector | [1](tables/alibabacloudwaflogs.md) | [1](tables/alibabacloudwaflogs.md) | - |
 | [AliCloud_CL](tables/alicloud-cl.md) 📖 | Connector | [1](tables/alicloud-cl.md) | [1](tables/alicloud-cl.md) | Workbooks |
 | [AliCloudActionTrailLogs_CL](tables/alicloudactiontraillogs-cl.md) 📖 | Connector | [1](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | - |
-| [AlsidForADLog_CL](tables/alsidforadlog-cl.md) 📖 | Connector | [3](tables/alsidforadlog-cl.md) | [3](tables/alsidforadlog-cl.md) | Analytics, Workbooks |
+| [AlsidForADLog_CL](tables/alsidforadlog-cl.md) 📖 | Connector | [1](tables/alsidforadlog-cl.md) | [1](tables/alsidforadlog-cl.md) | - |
 | [AMAHealth](tables/amahealth.md) 📖 | Docs | - | - | - |
 | [AmlComputeClusterEvent](tables/amlcomputeclusterevent.md) 📖 | Docs | - | - | - |
 | [AmlComputeClusterNodeEvent](tables/amlcomputeclusternodeevent.md) 📖 | Docs | - | - | - |
@@ -342,6 +347,7 @@ Browse tables alphabetically:
 | [ATCMicrosoftPeeringMetadata](tables/atcmicrosoftpeeringmetadata.md) 📖 | Docs | - | - | - |
 | [ATCPrivatePeeringMetadata](tables/atcprivatepeeringmetadata.md) 📖 | Docs | - | - | - |
 | [atlassian_beacon_alerts_CL](tables/atlassian-beacon-alerts-cl.md) 📖 🔶 | Connector | [1](tables/atlassian-beacon-alerts-cl.md) | [1](tables/atlassian-beacon-alerts-cl.md) | Analytics, Playbooks |
+| [AtlassianAuditEvents](tables/atlassianauditevents.md) | Docs | - | - | - |
 | [AtlassianAuditEvents_CL](tables/atlassianauditevents-cl.md) 📖 | Connector | [1](tables/atlassianauditevents-cl.md) | [1](tables/atlassianauditevents-cl.md) | - |
 | [AtlassianConfluenceNativePoller_CL](tables/atlassianconfluencenativepoller-cl.md) | Connector | [1](tables/atlassianconfluencenativepoller-cl.md) | [1](tables/atlassianconfluencenativepoller-cl.md) | - |
 | [Audit_CL](tables/audit-cl.md) 📖 | Connector | [1](tables/audit-cl.md) | [1](tables/audit-cl.md) | Analytics, Workbooks |
@@ -631,6 +637,8 @@ Browse tables alphabetically:
 | [CloudGuard_SecurityEvents_CL](tables/cloudguard-securityevents-cl.md) 📖 | Connector | [1](tables/cloudguard-securityevents-cl.md) | [1](tables/cloudguard-securityevents-cl.md) | - |
 | [CloudHsmHardwareOperationAuditLogs](tables/cloudhsmhardwareoperationauditlogs.md) 📖 | Docs | - | - | - |
 | [CloudHsmServiceOperationAuditLogs](tables/cloudhsmserviceoperationauditlogs.md) 📖 | Docs | - | - | - |
+| [CloudKeyVaultEvents](tables/cloudkeyvaultevents.md) 📖 | Docs | - | - | - |
+| [CloudPolicyEnforcementEvents](tables/cloudpolicyenforcementevents.md) 📖 | Docs | - | - | - |
 | [CloudProcessEvents](tables/cloudprocessevents.md) 📖 | Content | [1](tables/cloudprocessevents.md) | - | Hunting, Workbooks |
 | [CloudStorageAggregatedEvents](tables/cloudstorageaggregatedevents.md) 📖 | Content | [1](tables/cloudstorageaggregatedevents.md) | - | Hunting, Workbooks |
 | [Cofense_Triage_failed_indicators_CL](tables/cofense-triage-failed-indicators-cl.md) 📖 🔶 | Connector | [1](tables/cofense-triage-failed-indicators-cl.md) | [1](tables/cofense-triage-failed-indicators-cl.md) | - |
@@ -647,6 +655,7 @@ Browse tables alphabetically:
 | [ConfigurationData](tables/configurationdata.md) 📖 | Content | [2](tables/configurationdata.md) | - | Workbooks |
 | [Confluence_Audit_CL](tables/confluence-audit-cl.md) 📖 | Connector | [1](tables/confluence-audit-cl.md) | [1](tables/confluence-audit-cl.md) | - |
 | [Confluence_Audit_v2_CL](tables/confluence-audit-v2-cl.md) 📖 | Schema | - | - | - |
+| [ConfluenceAuditLogs](tables/confluenceauditlogs.md) | Docs | - | - | - |
 | [ConfluenceAuditLogs_CL](tables/confluenceauditlogs-cl.md) 📖 | Connector | [1](tables/confluenceauditlogs-cl.md) | [1](tables/confluenceauditlogs-cl.md) | - |
 | [ContainerAppConsoleLogs](tables/containerappconsolelogs.md) 📖 | Docs | - | - | - |
 | [ContainerAppHTTPLogs](tables/containerapphttplogs.md) 📖 | Docs | - | - | - |
@@ -1041,7 +1050,7 @@ Browse tables alphabetically:
 | [Corelight_v3_yara_corelight_CL](tables/corelight-v3-yara-corelight-cl.md) 📖 | Connector | [1](tables/corelight-v3-yara-corelight-cl.md) | [1](tables/corelight-v3-yara-corelight-cl.md) | Workbooks |
 | [Corelight_v3_yara_error_corelight_CL](tables/corelight-v3-yara-error-corelight-cl.md) 📖 | Connector | [1](tables/corelight-v3-yara-error-corelight-cl.md) | [1](tables/corelight-v3-yara-error-corelight-cl.md) | - |
 | [Corelight_v3_zeek_doctor_CL](tables/corelight-v3-zeek-doctor-cl.md) 📖 | Connector | [1](tables/corelight-v3-zeek-doctor-cl.md) | [1](tables/corelight-v3-zeek-doctor-cl.md) | Workbooks |
-| [CortexXDR_Incidents_CL](tables/cortexxdr-incidents-cl.md) 📖 | Schema | - | - | - |
+| [CortexXDR_Incidents_CL](tables/cortexxdr-incidents-cl.md) 📖 🔶 | Docs | - | - | - |
 | [CortexXpanseAlerts_CL](tables/cortexxpansealerts-cl.md) 📖 | Connector | [1](tables/cortexxpansealerts-cl.md) | [1](tables/cortexxpansealerts-cl.md) | - |
 | [CriblAccess_CL](tables/criblaccess-cl.md) 📖 🔶 | Connector | [1](tables/criblaccess-cl.md) | [1](tables/criblaccess-cl.md) | Workbooks |
 | [CriblAudit_CL](tables/criblaudit-cl.md) 📖 🔶 | Connector | [1](tables/criblaudit-cl.md) | [1](tables/criblaudit-cl.md) | Workbooks |
@@ -1205,6 +1214,8 @@ Browse tables alphabetically:
 | [DataminrPulse_Alerts_vuln_prod_CL](tables/dataminrpulse-alerts-vuln-prod-cl.md) 📖 | Schema | - | - | - |
 | [DataminrPulse_Alerts_vuln_prod_relAlert_CL](tables/dataminrpulse-alerts-vuln-prod-relalert-cl.md) 📖 | Schema | - | - | - |
 | [DataminrPulse_relAlerts_CL](tables/dataminrpulse-relalerts-cl.md) 📖 | Schema | - | - | - |
+| [DataSecurityBehaviors](tables/datasecuritybehaviors.md) 📖 | Docs | - | - | - |
+| [DataSecurityEvents](tables/datasecurityevents.md) 📖 | Docs | - | - | - |
 | [DataSetOutput](tables/datasetoutput.md) 📖 | Docs | - | - | - |
 | [DataSetRuns](tables/datasetruns.md) 📖 | Docs | - | - | - |
 | [DataTransferOperations](tables/datatransferoperations.md) 📖 | Docs | - | - | - |
@@ -1235,6 +1246,9 @@ Browse tables alphabetically:
 | [DevCenterResourceOperationLogs](tables/devcenterresourceoperationlogs.md) 📖 | Docs | - | - | - |
 | [DeviceAppCrash](tables/deviceappcrash.md) 📖 | Docs | - | - | - |
 | [DeviceAppLaunch](tables/deviceapplaunch.md) 📖 | Docs | - | - | - |
+| [DeviceBaselineComplianceAssessment](tables/devicebaselinecomplianceassessment.md) 📖 | Content | [1](tables/devicebaselinecomplianceassessment.md) | - | Hunting |
+| [DeviceBaselineComplianceAssessmentKB](tables/devicebaselinecomplianceassessmentkb.md) 📖 | Docs | - | - | - |
+| [DeviceBaselineComplianceProfiles](tables/devicebaselinecomplianceprofiles.md) 📖 | Docs | - | - | - |
 | [DeviceBehaviorEntities](tables/devicebehaviorentities.md) 📖 | Docs | - | - | - |
 | [DeviceBehaviorInfo](tables/devicebehaviorinfo.md) 📖 | Docs | - | - | - |
 | [DeviceCalendar](tables/devicecalendar.md) 📖 | Docs | - | - | - |
@@ -1262,8 +1276,15 @@ Browse tables alphabetically:
 | [DeviceRegistryEvents](tables/deviceregistryevents.md) 📖 | Connector | [4](tables/deviceregistryevents.md) | [1](tables/deviceregistryevents.md) | Analytics, Hunting, Workbooks |
 | [DeviceSkypeHeartbeat](tables/deviceskypeheartbeat.md) 📖 | Docs | - | - | - |
 | [DeviceSkypeSignIn](tables/deviceskypesignin.md) 📖 | Docs | - | - | - |
+| [DeviceTvmBrowserExtensions](tables/devicetvmbrowserextensions.md) 📖 | Docs | - | - | - |
+| [DeviceTvmBrowserExtensionsKB](tables/devicetvmbrowserextensionskb.md) 📖 | Docs | - | - | - |
+| [DeviceTvmCertificateInfo](tables/devicetvmcertificateinfo.md) 📖 | Docs | - | - | - |
+| [DeviceTvmHardwareFirmware](tables/devicetvmhardwarefirmware.md) 📖 | Docs | - | - | - |
+| [DeviceTvmInfoGathering](tables/devicetvminfogathering.md) 📖 | Content | - | - | Hunting |
+| [DeviceTvmInfoGatheringKB](tables/devicetvminfogatheringkb.md) 📖 | Docs | - | - | - |
 | [DeviceTvmSecureConfigurationAssessment](tables/devicetvmsecureconfigurationassessment.md) 📖 | Content | [1](tables/devicetvmsecureconfigurationassessment.md) | - | Hunting, Workbooks |
 | [DeviceTvmSecureConfigurationAssessmentKB](tables/devicetvmsecureconfigurationassessmentkb.md) 📖 | Docs | - | - | - |
+| [DeviceTvmSoftwareEvidenceBeta](tables/devicetvmsoftwareevidencebeta.md) 📖 | Docs | - | - | - |
 | [DeviceTvmSoftwareInventory](tables/devicetvmsoftwareinventory.md) 📖 | Content | [1](tables/devicetvmsoftwareinventory.md) | - | Hunting |
 | [DeviceTvmSoftwareVulnerabilities](tables/devicetvmsoftwarevulnerabilities.md) 📖 | Content | [1](tables/devicetvmsoftwarevulnerabilities.md) | - | Analytics, Hunting |
 | [DeviceTvmSoftwareVulnerabilitiesKB](tables/devicetvmsoftwarevulnerabilitieskb.md) 📖 | Content | [1](tables/devicetvmsoftwarevulnerabilitieskb.md) | - | Hunting |
@@ -1371,6 +1392,8 @@ Browse tables alphabetically:
 | [Entities_Data_CCF_CL](tables/entities-data-ccf-cl.md) 📖 | Connector | [1](tables/entities-data-ccf-cl.md) | [1](tables/entities-data-ccf-cl.md) | Workbooks |
 | [Entities_Data_CL](tables/entities-data-cl.md) 📖 | Connector | [1](tables/entities-data-cl.md) | [1](tables/entities-data-cl.md) | Analytics, Workbooks |
 | [Entity_Scoring_Data_CL](tables/entity-scoring-data-cl.md) 📖 | Connector | [1](tables/entity-scoring-data-cl.md) | [1](tables/entity-scoring-data-cl.md) | Workbooks |
+| [EntraIdSignInEvents](tables/entraidsigninevents.md) 📖 | Content | - | - | Hunting |
+| [EntraIdSpnSignInEvents](tables/entraidspnsigninevents.md) 📖 | Content | - | - | Hunting |
 | [ErmesBrowserSecurityEvents_CL](tables/ermesbrowsersecurityevents-cl.md) | Connector | [1](tables/ermesbrowsersecurityevents-cl.md) | [1](tables/ermesbrowsersecurityevents-cl.md) | - |
 | [eset_CL](tables/eset-cl.md) 📖 🔶 | Connector | [1](tables/eset-cl.md) | [1](tables/eset-cl.md) | Analytics, Workbooks |
 | [ESETInspect_CL](tables/esetinspect-cl.md) 📖 🔶 | Connector | [1](tables/esetinspect-cl.md) | [1](tables/esetinspect-cl.md) | - |
@@ -1391,6 +1414,8 @@ Browse tables alphabetically:
 | [ExchangeHttpProxy_CL](tables/exchangehttpproxy-cl.md) 📖 🔶 | Connector | [1](tables/exchangehttpproxy-cl.md) | [2](tables/exchangehttpproxy-cl.md) | - |
 | [ExchangeOnlineAssessmentRecommendation](tables/exchangeonlineassessmentrecommendation.md) 📖 | Docs | - | - | - |
 | [ExchangeOnlineMessageTracking_CL](tables/exchangeonlinemessagetracking-cl.md) 📖 🔶 | Connector | [1](tables/exchangeonlinemessagetracking-cl.md) | [1](tables/exchangeonlinemessagetracking-cl.md) | - |
+| [ExposureGraphEdges](tables/exposuregraphedges.md) 📖 | Docs | - | - | - |
+| [ExposureGraphNodes](tables/exposuregraphnodes.md) 📖 | Docs | - | - | - |
 | [ExtraHop_Detections_CL](tables/extrahop-detections-cl.md) 📖 | Connector | [1](tables/extrahop-detections-cl.md) | [1](tables/extrahop-detections-cl.md) | Analytics, Workbooks |
 
 ## F
@@ -1425,6 +1450,7 @@ Browse tables alphabetically:
 | [ForescoutOtAsset_CL](tables/forescoutotasset-cl.md) 📖 | Connector | [1](tables/forescoutotasset-cl.md) | [1](tables/forescoutotasset-cl.md) | Workbooks |
 | [ForescoutPolicyStatus_CL](tables/forescoutpolicystatus-cl.md) 📖 | Connector | [1](tables/forescoutpolicystatus-cl.md) | [2](tables/forescoutpolicystatus-cl.md) | Workbooks |
 | [FortinetFortiNdrCloudRaw_CL](tables/fortinetfortindrcloudraw-cl.md) 📖 | Connector | [1](tables/fortinetfortindrcloudraw-cl.md) | [1](tables/fortinetfortindrcloudraw-cl.md) | Analytics, Workbooks |
+| [FortyTwoCrunchAPIProtectionV2](tables/fortytwocrunchapiprotectionv2.md) | Docs | - | - | - |
 | [FortyTwoCrunchAPIProtectionV2_CL](tables/fortytwocrunchapiprotectionv2-cl.md) 📖 | Connector | [1](tables/fortytwocrunchapiprotectionv2-cl.md) | [1](tables/fortytwocrunchapiprotectionv2-cl.md) | Analytics, Workbooks |
 | [FrendsAuditLogs_CL](tables/frendsauditlogs-cl.md) 📖 | Schema | - | - | - |
 | [FunctionAppLogs](tables/functionapplogs.md) 📖 | Docs | - | - | - |
@@ -1478,6 +1504,7 @@ Browse tables alphabetically:
 | [GoogleCloudSCC](tables/googlecloudscc.md) 📖 | Connector | [1](tables/googlecloudscc.md) | [1](tables/googlecloudscc.md) | Analytics, Hunting |
 | [GoogleWorkspaceReports](tables/googleworkspacereports.md) 📖 | Connector | [1](tables/googleworkspacereports.md) | [2](tables/googleworkspacereports.md) | Analytics, Hunting, Workbooks |
 | [GoogleWorkspaceReports_CL](tables/googleworkspacereports-cl.md) 🔶 | Connector | [1](tables/googleworkspacereports-cl.md) | [1](tables/googleworkspacereports-cl.md) | Analytics, Hunting, Workbooks |
+| [GraphAPIAuditEvents](tables/graphapiauditevents.md) 📖 | Docs | - | - | - |
 | [GraphNotificationsActivityLogs](tables/graphnotificationsactivitylogs.md) 📖 | Docs | - | - | - |
 | [GreyNoiseIPCommunity_CL](tables/greynoiseipcommunity-cl.md) | Content | [1](tables/greynoiseipcommunity-cl.md) | - | Playbooks |
 | [GreyNoiseIPContext_CL](tables/greynoiseipcontext-cl.md) | Content | [1](tables/greynoiseipcontext-cl.md) | - | Playbooks |
@@ -1588,11 +1615,13 @@ Browse tables alphabetically:
 | [Illumio_Flow_Events_CL](tables/illumio-flow-events-cl.md) 📖 | Connector | [1](tables/illumio-flow-events-cl.md) | [1](tables/illumio-flow-events-cl.md) | Workbooks |
 | [Illumio_Workloads_Summarized_API_CL](tables/illumio-workloads-summarized-api-cl.md) 📖 | Content | [1](tables/illumio-workloads-summarized-api-cl.md) | - | Workbooks |
 | [IllumioFlowEventsV2_CL](tables/illumiofloweventsv2-cl.md) 📖 | Connector | [1](tables/illumiofloweventsv2-cl.md) | [1](tables/illumiofloweventsv2-cl.md) | - |
+| [IllumioInsights_CL](tables/illumioinsights-cl.md) | Docs | - | - | - |
+| [IllumioInsightsGraph](tables/illumioinsightsgraph.md) | Docs | - | - | - |
 | [IllumioInsightsGraph_CL](tables/illumioinsightsgraph-cl.md) 📖 | Connector | [1](tables/illumioinsightsgraph-cl.md) | [1](tables/illumioinsightsgraph-cl.md) | - |
 | [IllumioInsightsSummary_CL](tables/illumioinsightssummary-cl.md) 📖 | Connector | [1](tables/illumioinsightssummary-cl.md) | [1](tables/illumioinsightssummary-cl.md) | - |
 | [IlumioInsights](tables/ilumioinsights.md) 📖 | Connector | [1](tables/ilumioinsights.md) | [1](tables/ilumioinsights.md) | - |
-| [ImpervaWAFCloud_CL](tables/impervawafcloud-cl.md) 📖 🔶 | Connector | [1](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | - |
-| [ImpervaWAFCloudV2_CL](tables/impervawafcloudv2-cl.md) 📖 | Connector | [1](tables/impervawafcloudv2-cl.md) | [2](tables/impervawafcloudv2-cl.md) | - |
+| [ImpervaWAFCloud_CL](tables/impervawafcloud-cl.md) 📖 🔶 | Connector | [1](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | Analytics, Hunting, Workbooks |
+| [ImpervaWAFCloudV2_CL](tables/impervawafcloudv2-cl.md) 📖 | Connector | [1](tables/impervawafcloudv2-cl.md) | [2](tables/impervawafcloudv2-cl.md) | Analytics, Hunting, Workbooks |
 | [ImpervaWAFCloudV2Logs](tables/impervawafcloudv2logs.md) | Connector | [1](tables/impervawafcloudv2logs.md) | [1](tables/impervawafcloudv2logs.md) | - |
 | [Incident_Enrich_Data_CL](tables/incident-enrich-data-cl.md) 📖 🔶 | Content | [1](tables/incident-enrich-data-cl.md) | - | Workbooks |
 | [IncidentFileActions_CL](tables/incidentfileactions-cl.md) | Content | - | - | Playbooks |
@@ -1776,6 +1805,7 @@ Browse tables alphabetically:
 | [MeshControlPlane](tables/meshcontrolplane.md) 📖 | Docs | - | - | - |
 | [meshStackEventLogs_CL](tables/meshstackeventlogs-cl.md) | Connector | [1](tables/meshstackeventlogs-cl.md) | [1](tables/meshstackeventlogs-cl.md) | - |
 | [message_CL](tables/message-cl.md) 🔶 | Connector | [1](tables/message-cl.md) | [1](tables/message-cl.md) | Analytics, Hunting, Workbooks |
+| [MessageContents](tables/messagecontents.md) 📖 | Docs | - | - | - |
 | [MessageEvents](tables/messageevents.md) 📖 | Content | [1](tables/messageevents.md) | - | Hunting, Workbooks |
 | [MessagePostDeliveryEvents](tables/messagepostdeliveryevents.md) 📖 | Content | [1](tables/messagepostdeliveryevents.md) | - | Hunting, Workbooks |
 | [MessageTrackingLog_CL](tables/messagetrackinglog-cl.md) 📖 🔶 | Connector | [1](tables/messagetrackinglog-cl.md) | [2](tables/messagetrackinglog-cl.md) | - |
@@ -1809,6 +1839,7 @@ Browse tables alphabetically:
 | [MuleSoft_Cloudhub_CL](tables/mulesoft-cloudhub-cl.md) 📖 🔶 | Connector | [1](tables/mulesoft-cloudhub-cl.md) | [1](tables/mulesoft-cloudhub-cl.md) | - |
 | [MuleSoftAuditLogs_CL](tables/mulesoftauditlogs-cl.md) | Content | [1](tables/mulesoftauditlogs-cl.md) | - | Playbooks |
 | [MulesoftCloudhubAlerts_CL](tables/mulesoftcloudhubalerts-cl.md) 📖 | Connector | [1](tables/mulesoftcloudhubalerts-cl.md) | [1](tables/mulesoftcloudhubalerts-cl.md) | - |
+| [MuleSoftCloudhubLogs](tables/mulesoftcloudhublogs.md) | Docs | - | - | - |
 | [MuleSoftCloudhubLogs_CL](tables/mulesoftcloudhublogs-cl.md) 📖 | Connector | [1](tables/mulesoftcloudhublogs-cl.md) | [1](tables/mulesoftcloudhublogs-cl.md) | - |
 | [MySqlAuditLogs](tables/mysqlauditlogs.md) 📖 | Docs | - | - | - |
 | [MySqlSlowLogs](tables/mysqlslowlogs.md) 📖 | Docs | - | - | - |
@@ -1962,6 +1993,7 @@ Browse tables alphabetically:
 | [OneThreats_CL](tables/onethreats-cl.md) | Connector | [1](tables/onethreats-cl.md) | [2](tables/onethreats-cl.md) | - |
 | [OneTrustMetadataV3_CL](tables/onetrustmetadatav3-cl.md) 📖 | Connector | [1](tables/onetrustmetadatav3-cl.md) | [1](tables/onetrustmetadatav3-cl.md) | - |
 | [Open_Ports_Data_CL](tables/open-ports-data-cl.md) 📖 🔶 | Content | [1](tables/open-ports-data-cl.md) | - | Workbooks |
+| [OpenAIAuditLogs](tables/openaiauditlogs.md) | Docs | - | - | - |
 | [OpenAIAuditLogs_CL](tables/openaiauditlogs-cl.md) 📖 | Connector | [1](tables/openaiauditlogs-cl.md) | [1](tables/openaiauditlogs-cl.md) | - |
 | [Operation](tables/operation.md) 📖 | Content | [13](tables/operation.md) | - | Analytics, Hunting, Workbooks |
 | [OracleCloudDatabase](tables/oracleclouddatabase.md) 📖 | Docs | - | - | - |
@@ -2117,6 +2149,7 @@ Browse tables alphabetically:
 | [SalesforceAuditTrailV2_CL](tables/salesforceaudittrailv2-cl.md) 📖 | Connector | [1](tables/salesforceaudittrailv2-cl.md) | [1](tables/salesforceaudittrailv2-cl.md) | - |
 | [SalesforceLoginHistory](tables/salesforceloginhistory.md) 📖 | Docs | - | - | - |
 | [SalesforceLoginHistoryV2_CL](tables/salesforceloginhistoryv2-cl.md) 📖 | Connector | [1](tables/salesforceloginhistoryv2-cl.md) | [1](tables/salesforceloginhistoryv2-cl.md) | - |
+| [SalesforceMarketingCloudAuditEvents](tables/salesforcemarketingcloudauditevents.md) | Docs | - | - | - |
 | [SalesforceMarketingCloudAuditEvents_CL](tables/salesforcemarketingcloudauditevents-cl.md) 📖 | Connector | [1](tables/salesforcemarketingcloudauditevents-cl.md) | [1](tables/salesforcemarketingcloudauditevents-cl.md) | - |
 | [SalesforceMarketingCloudSecurityEvents_CL](tables/salesforcemarketingcloudsecurityevents-cl.md) 📖 | Connector | [1](tables/salesforcemarketingcloudsecurityevents-cl.md) | [1](tables/salesforcemarketingcloudsecurityevents-cl.md) | - |
 | [SalesForceRealTimeEventMonitoring_CL](tables/salesforcerealtimeeventmonitoring-cl.md) 📖 | Connector | [1](tables/salesforcerealtimeeventmonitoring-cl.md) | [1](tables/salesforcerealtimeeventmonitoring-cl.md) | - |
@@ -2171,7 +2204,7 @@ Browse tables alphabetically:
 | [SentinelBehaviorEntities](tables/sentinelbehaviorentities.md) 📖 | Content | [1](tables/sentinelbehaviorentities.md) | - | Workbooks |
 | [SentinelBehaviorInfo](tables/sentinelbehaviorinfo.md) 📖 | Content | [2](tables/sentinelbehaviorinfo.md) | - | Workbooks |
 | [SentinelHealth](tables/sentinelhealth.md) 📖 | Content | [1](tables/sentinelhealth.md) | - | Workbooks |
-| [SentinelImpervaWAFCloudV2Logs](tables/sentinelimpervawafcloudv2logs.md) 📖 | Connector | [1](tables/sentinelimpervawafcloudv2logs.md) | [1](tables/sentinelimpervawafcloudv2logs.md) | - |
+| [SentinelImpervaWAFCloudV2Logs](tables/sentinelimpervawafcloudv2logs.md) 📖 | Connector | [1](tables/sentinelimpervawafcloudv2logs.md) | [1](tables/sentinelimpervawafcloudv2logs.md) | Analytics, Hunting, Workbooks |
 | [SentinelOne_CL](tables/sentinelone-cl.md) 📖 🔶 | Connector | [1](tables/sentinelone-cl.md) | [1](tables/sentinelone-cl.md) | Analytics, Hunting, Workbooks |
 | [SentinelOneActivities_CL](tables/sentineloneactivities-cl.md) 📖 | Connector | [1](tables/sentineloneactivities-cl.md) | [1](tables/sentineloneactivities-cl.md) | Analytics, Hunting, Workbooks |
 | [SentinelOneAgents_CL](tables/sentineloneagents-cl.md) 📖 | Connector | [1](tables/sentineloneagents-cl.md) | [1](tables/sentineloneagents-cl.md) | Analytics, Hunting, Workbooks |
@@ -2184,10 +2217,15 @@ Browse tables alphabetically:
 | [ServiceFabricOperationalEvent](tables/servicefabricoperationalevent.md) 📖 | Docs | - | - | - |
 | [ServiceFabricReliableActorEvent](tables/servicefabricreliableactorevent.md) 📖 | Docs | - | - | - |
 | [ServiceFabricReliableServiceEvent](tables/servicefabricreliableserviceevent.md) 📖 | Docs | - | - | - |
+| [ServiceNowAlmAsset](tables/servicenowalmasset.md) | Docs | - | - | - |
 | [ServiceNowAlmAsset_CL](tables/servicenowalmasset-cl.md) 📖 | Connector | [1](tables/servicenowalmasset-cl.md) | [1](tables/servicenowalmasset-cl.md) | - |
+| [ServiceNowCmdbCi](tables/servicenowcmdbci.md) | Docs | - | - | - |
 | [ServiceNowCmdbCi_CL](tables/servicenowcmdbci-cl.md) 📖 | Connector | [1](tables/servicenowcmdbci-cl.md) | [1](tables/servicenowcmdbci-cl.md) | - |
+| [ServiceNowCmdbCiComputer](tables/servicenowcmdbcicomputer.md) | Docs | - | - | - |
 | [ServiceNowCmdbCiComputer_CL](tables/servicenowcmdbcicomputer-cl.md) 📖 | Connector | [1](tables/servicenowcmdbcicomputer-cl.md) | [1](tables/servicenowcmdbcicomputer-cl.md) | - |
+| [ServiceNowCmdbCiServer](tables/servicenowcmdbciserver.md) | Docs | - | - | - |
 | [ServiceNowCmdbCiServer_CL](tables/servicenowcmdbciserver-cl.md) 📖 | Connector | [1](tables/servicenowcmdbciserver-cl.md) | [1](tables/servicenowcmdbciserver-cl.md) | - |
+| [ServiceNowCmdbRelCi](tables/servicenowcmdbrelci.md) | Docs | - | - | - |
 | [ServiceNowCmdbRelCi_CL](tables/servicenowcmdbrelci-cl.md) 📖 | Connector | [1](tables/servicenowcmdbrelci-cl.md) | [1](tables/servicenowcmdbrelci-cl.md) | - |
 | [Sevco_Devices_CL](tables/sevco-devices-cl.md) 📖 🔶 | Connector | [1](tables/sevco-devices-cl.md) | [1](tables/sevco-devices-cl.md) | - |
 | [SfBAssessmentRecommendation](tables/sfbassessmentrecommendation.md) 📖 | Docs | - | - | - |
@@ -2330,7 +2368,6 @@ Browse tables alphabetically:
 | [Tailscale_Users_CL](tables/tailscale-users-cl.md) 📖 | Connector | [1](tables/tailscale-users-cl.md) | [2](tables/tailscale-users-cl.md) | Analytics, Hunting, Workbooks |
 | [Tailscale_Webhooks_CL](tables/tailscale-webhooks-cl.md) 📖 | Connector | [1](tables/tailscale-webhooks-cl.md) | [2](tables/tailscale-webhooks-cl.md) | - |
 | [Talon_CL](tables/talon-cl.md) 📖 🔶 | Connector | [1](tables/talon-cl.md) | [1](tables/talon-cl.md) | Workbooks |
-| [talon_CL](tables/talon-cl.md) 🔶 | Content | - | - | Workbooks |
 | [TaniumComplyCompliance_CL](tables/taniumcomplycompliance-cl.md) 📖 🔶 | Connector | [1](tables/taniumcomplycompliance-cl.md) | [1](tables/taniumcomplycompliance-cl.md) | Workbooks |
 | [TaniumComplyVulnerabilities_CL](tables/taniumcomplyvulnerabilities-cl.md) 📖 🔶 | Connector | [1](tables/taniumcomplyvulnerabilities-cl.md) | [1](tables/taniumcomplyvulnerabilities-cl.md) | Workbooks |
 | [TaniumDefenderHealth_CL](tables/taniumdefenderhealth-cl.md) 📖 🔶 | Connector | [1](tables/taniumdefenderhealth-cl.md) | [1](tables/taniumdefenderhealth-cl.md) | Workbooks |
@@ -2342,8 +2379,8 @@ Browse tables alphabetically:
 | [TaniumPatchListCompliance_CL](tables/taniumpatchlistcompliance-cl.md) 📖 🔶 | Connector | [1](tables/taniumpatchlistcompliance-cl.md) | [1](tables/taniumpatchlistcompliance-cl.md) | Workbooks |
 | [TaniumSCCMClientHealth_CL](tables/taniumsccmclienthealth-cl.md) 📖 🔶 | Connector | [1](tables/taniumsccmclienthealth-cl.md) | [1](tables/taniumsccmclienthealth-cl.md) | Workbooks |
 | [TaniumThreatResponse_CL](tables/taniumthreatresponse-cl.md) 📖 🔶 | Connector | [1](tables/taniumthreatresponse-cl.md) | [1](tables/taniumthreatresponse-cl.md) | Analytics, Workbooks |
-| [Tenable_ad_CL](tables/tenable-ad-cl.md) 📖 | Connector | [1](tables/tenable-ad-cl.md) | [1](tables/tenable-ad-cl.md) | - |
-| [Tenable_IE_CL](tables/tenable-ie-cl.md) 📖 | Connector | [1](tables/tenable-ie-cl.md) | [1](tables/tenable-ie-cl.md) | - |
+| [Tenable_ad_CL](tables/tenable-ad-cl.md) 📖 | Connector | [3](tables/tenable-ad-cl.md) | [3](tables/tenable-ad-cl.md) | Analytics, Workbooks |
+| [Tenable_IE_CL](tables/tenable-ie-cl.md) 📖 | Connector | [3](tables/tenable-ie-cl.md) | [3](tables/tenable-ie-cl.md) | Analytics, Workbooks |
 | [Tenable_IO_Assets_CL](tables/tenable-io-assets-cl.md) 📖 🔶 | Connector | [1](tables/tenable-io-assets-cl.md) | [1](tables/tenable-io-assets-cl.md) | Playbooks |
 | [Tenable_IO_Vuln_CL](tables/tenable-io-vuln-cl.md) 📖 🔶 | Connector | [1](tables/tenable-io-vuln-cl.md) | [1](tables/tenable-io-vuln-cl.md) | Playbooks |
 | [Tenable_VM_Asset_CL](tables/tenable-vm-asset-cl.md) 📖 | Connector | [1](tables/tenable-vm-asset-cl.md) | [1](tables/tenable-vm-asset-cl.md) | Playbooks |
@@ -2352,6 +2389,7 @@ Browse tables alphabetically:
 | [Tenable_WAS_Asset_CL](tables/tenable-was-asset-cl.md) 📖 | Connector | [1](tables/tenable-was-asset-cl.md) | [1](tables/tenable-was-asset-cl.md) | - |
 | [Tenable_WAS_Vuln_CL](tables/tenable-was-vuln-cl.md) 📖 | Connector | [1](tables/tenable-was-vuln-cl.md) | [1](tables/tenable-was-vuln-cl.md) | - |
 | [TheHive_CL](tables/thehive-cl.md) 📖 🔶 | Connector | [1](tables/thehive-cl.md) | [1](tables/thehive-cl.md) | - |
+| [TheHiveData](tables/thehivedata.md) | Docs | - | - | - |
 | [TheHiveData_CL](tables/thehivedata-cl.md) 📖 | Connector | [1](tables/thehivedata-cl.md) | [1](tables/thehivedata-cl.md) | - |
 | [TheomAlerts_CL](tables/theomalerts-cl.md) 📖 🔶 | Connector | [1](tables/theomalerts-cl.md) | [1](tables/theomalerts-cl.md) | Analytics |
 | [TheomAlertsV2_CL](tables/theomalertsv2-cl.md) 📖 | Connector | [1](tables/theomalertsv2-cl.md) | [1](tables/theomalertsv2-cl.md) | - |
@@ -2440,7 +2478,7 @@ Browse tables alphabetically:
 | [Vaikora_AgentSignals_CL](tables/vaikora-agentsignals-cl.md) 📖 🔶 | Connector | [2](tables/vaikora-agentsignals-cl.md) | [1](tables/vaikora-agentsignals-cl.md) | Analytics, Playbooks, Workbooks |
 | [Vaikora_SecurityAlerts_CL](tables/vaikora-securityalerts-cl.md) 📖 | Schema | - | - | - |
 | [VaikoraO365_Quarantine_CL](tables/vaikorao365-quarantine-cl.md) 📖 🔶 | Content | [1](tables/vaikorao365-quarantine-cl.md) | - | Analytics, Workbooks |
-| [ValenceAlert_CL](tables/valencealert-cl.md) 📖 | Schema | - | - | - |
+| [ValenceAlert_CL](tables/valencealert-cl.md) 📖 🔶 | Docs | - | - | - |
 | [ValenceAlerts_CL](tables/valencealerts-cl.md) 📖 | Connector | [1](tables/valencealerts-cl.md) | [1](tables/valencealerts-cl.md) | Analytics, Workbooks |
 | [ValenceAuditLogs_CL](tables/valenceauditlogs-cl.md) 📖 | Connector | [1](tables/valenceauditlogs-cl.md) | [1](tables/valenceauditlogs-cl.md) | - |
 | [ValimailEnforceEvents_CL](tables/valimailenforceevents-cl.md) 📖 | Connector | [1](tables/valimailenforceevents-cl.md) | [1](tables/valimailenforceevents-cl.md) | Analytics, Hunting |
@@ -2492,7 +2530,9 @@ Browse tables alphabetically:
 | [VMware_SDWAN_FirewallLogs_CL](tables/vmware-sdwan-firewalllogs-cl.md) 📖 | Content | [1](tables/vmware-sdwan-firewalllogs-cl.md) | - | Analytics |
 | [VMware_VECO_EventLogs_CL](tables/vmware-veco-eventlogs-cl.md) 📖 | Connector | [1](tables/vmware-veco-eventlogs-cl.md) | [1](tables/vmware-veco-eventlogs-cl.md) | Analytics, Workbooks |
 | [VMware_VECO_SearchAPI_Health_CL](tables/vmware-veco-searchapi-health-cl.md) 📖 | Schema | - | - | - |
+| [VMwareWorkspaceOneDeviceApps](tables/vmwareworkspaceonedeviceapps.md) | Docs | - | - | - |
 | [VMwareWorkspaceOneDeviceApps_CL](tables/vmwareworkspaceonedeviceapps-cl.md) 📖 | Connector | [1](tables/vmwareworkspaceonedeviceapps-cl.md) | [1](tables/vmwareworkspaceonedeviceapps-cl.md) | - |
+| [VMwareWorkspaceOneDevices](tables/vmwareworkspaceonedevices.md) | Docs | - | - | - |
 | [VMwareWorkspaceOneDevices_CL](tables/vmwareworkspaceonedevices-cl.md) 📖 | Connector | [1](tables/vmwareworkspaceonedevices-cl.md) | [1](tables/vmwareworkspaceonedevices-cl.md) | - |
 | [VTDomainReport_CL](tables/vtdomainreport-cl.md) | Content | [1](tables/vtdomainreport-cl.md) | - | Playbooks |
 | [VTFileReport_CL](tables/vtfilereport-cl.md) | Content | [1](tables/vtfilereport-cl.md) | - | Playbooks |

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CommvaultAlertsCCF_CL`](../tables/commvaultalertsccf-cl.md) | ? | ✓ | ? |
+| [`CommvaultAlertsCCF_CL`](../tables/commvaultalertsccf-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

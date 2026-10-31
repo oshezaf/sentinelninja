@@ -38,7 +38,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | ? | ✓ | ? |
+| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | ✓ | ✓ | ✓ |
 | [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) | ? | ✓ | ? |
 | [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) | ? | ✓ | ? |
 

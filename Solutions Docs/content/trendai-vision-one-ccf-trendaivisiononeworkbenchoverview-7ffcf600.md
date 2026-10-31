@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TrendAI_XDR_WORKBENCH_V2_CL`](../tables/trendai-xdr-workbench-v2-cl.md) 🔶 | ? | ✓ | ? |
+| [`TrendAI_XDR_WORKBENCH_V2_CL`](../tables/trendai-xdr-workbench-v2-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

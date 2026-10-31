@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DelineaAuditEvents_CL`](../tables/delineaauditevents-cl.md) |  | ? | ✓ | ? |
+| [`DelineaAuditEvents_CL`](../tables/delineaauditevents-cl.md) |  | ✗ | ✓ | ✗ |
 
 ---
 

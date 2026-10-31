@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZimperiumThreatLogV2_CL`](../tables/zimperiumthreatlogv2-cl.md) | ? | ✓ | ? |
+| [`ZimperiumThreatLogV2_CL`](../tables/zimperiumthreatlogv2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

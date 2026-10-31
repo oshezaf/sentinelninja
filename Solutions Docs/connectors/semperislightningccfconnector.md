@@ -28,13 +28,13 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LightningAttackPathLinksV2_CL`](../tables/lightningattackpathlinksv2-cl.md) | ? | ✓ | ? |
-| [`LightningAttackPathsV2_CL`](../tables/lightningattackpathsv2-cl.md) | ? | ✓ | ? |
+| [`LightningAttackPathLinksV2_CL`](../tables/lightningattackpathlinksv2-cl.md) | ✗ | ✓ | ✗ |
+| [`LightningAttackPathsV2_CL`](../tables/lightningattackpathsv2-cl.md) | ✗ | ✓ | ✗ |
 | [`LightningIOEResultsV2_CL`](../tables/lightningioeresultsv2-cl.md) | ? | ✓ | ? |
-| [`LightningIOEsMetadataV2_CL`](../tables/lightningioesmetadatav2-cl.md) | ? | ✓ | ? |
-| [`LightningIndicatorExecutionsV2_CL`](../tables/lightningindicatorexecutionsv2-cl.md) | ? | ✓ | ? |
-| [`LightningTier0AttackersV2_CL`](../tables/lightningtier0attackersv2-cl.md) | ? | ✓ | ? |
-| [`LightningTier0NodesV2_CL`](../tables/lightningtier0nodesv2-cl.md) | ? | ✓ | ? |
+| [`LightningIOEsMetadataV2_CL`](../tables/lightningioesmetadatav2-cl.md) | ✗ | ✓ | ✗ |
+| [`LightningIndicatorExecutionsV2_CL`](../tables/lightningindicatorexecutionsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`LightningTier0AttackersV2_CL`](../tables/lightningtier0attackersv2-cl.md) | ✗ | ✓ | ✗ |
+| [`LightningTier0NodesV2_CL`](../tables/lightningtier0nodesv2-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

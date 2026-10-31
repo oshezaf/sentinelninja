@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Logs.
+Knowledge base of various security configurations used by Microsoft Defender Vulnerability Management to assess devices; includes mappings to various standards and benchmarks
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Lo
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessmentkb) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Schema (19 columns)
@@ -49,6 +50,7 @@ Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azure Monitor Lo
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSecureConfigurationAssessmentKB Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessmentkb)
+- [DeviceTvmSecureConfigurationAssessmentKB Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table)
 
 ---
 

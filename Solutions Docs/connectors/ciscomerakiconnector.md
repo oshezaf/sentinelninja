@@ -42,14 +42,14 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventProduct == "Meraki"`<br>`EventType == "IDS Alert"`<br>`EventVendor == "Cisco"` | ✓ | ✓ | ✓ |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventProduct == "Meraki"`<br>`EventType == "IDS Alert"`<br>`EventVendor == "Cisco"` | ✓ | ✓ | ✓ |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ✓ |
-| [`CiscoMerakiAirMarshalEvents_CL`](../tables/ciscomerakiairmarshalevents-cl.md) |  | ? | ✓ | ? |
-| [`CiscoMerakiFileScannedEvents_CL`](../tables/ciscomerakifilescannedevents-cl.md) |  | ? | ✓ | ? |
-| [`CiscoMerakiNetworkClients_CL`](../tables/ciscomerakinetworkclients-cl.md) |  | ? | ✓ | ? |
-| [`CiscoMerakiOrganizationNetworks_CL`](../tables/ciscomerakiorganizationnetworks-cl.md) |  | ? | ✓ | ? |
-| [`CiscoMerakiOrganizations_CL`](../tables/ciscomerakiorganizations-cl.md) |  | ? | ✓ | ? |
+| [`CiscoMerakiAirMarshalEvents_CL`](../tables/ciscomerakiairmarshalevents-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CiscoMerakiFileScannedEvents_CL`](../tables/ciscomerakifilescannedevents-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CiscoMerakiNetworkClients_CL`](../tables/ciscomerakinetworkclients-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CiscoMerakiOrganizationNetworks_CL`](../tables/ciscomerakiorganizationnetworks-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CiscoMerakiOrganizations_CL`](../tables/ciscomerakiorganizations-cl.md) |  | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

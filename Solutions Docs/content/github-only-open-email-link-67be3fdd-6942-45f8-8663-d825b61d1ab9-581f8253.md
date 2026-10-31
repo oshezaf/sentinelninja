@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertInfo`](../tables/alertinfo.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GuardicoreAgents_CL`](../tables/guardicoreagents-cl.md) | ? | ✓ | ? |
-| [`GuardicoreApplications_CL`](../tables/guardicoreapplications-cl.md) | ? | ✓ | ? |
-| [`GuardicorePolicyRules_CL`](../tables/guardicorepolicyrules-cl.md) | ? | ✓ | ? |
+| [`GuardicoreAgents_CL`](../tables/guardicoreagents-cl.md) | ✗ | ✓ | ✗ |
+| [`GuardicoreApplications_CL`](../tables/guardicoreapplications-cl.md) | ✗ | ✓ | ✗ |
+| [`GuardicorePolicyRules_CL`](../tables/guardicorepolicyrules-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

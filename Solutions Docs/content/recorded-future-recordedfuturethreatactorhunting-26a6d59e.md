@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) | ? | ✓ | ? |
+| [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ? | ✓ | ? |
+| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

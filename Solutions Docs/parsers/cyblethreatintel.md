@@ -1,4 +1,4 @@
-# McAfee Common Security Log Parser
+# CybleThreatIntel
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -10,20 +10,21 @@
 
 | Attribute | Value |
 |:----------|:------|
+| Title | Cyble Threat Intelligence Parser |
 | Location | Legacy (/Parsers) |
 | Version | 1.0.0 |
-| Last Updated | 2023-10-13 |
+| Last Updated | 2026-09-02 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
-| Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/AS-McAfeeSolidcore/AS-McAfeeSolidcore.yaml) |
+| Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Cyble/ThreatIntelParser.yaml) |
 
 ## Source Tables
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "McAfee"` | ✓ | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ✗ |
 
 ---
 

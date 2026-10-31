@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ? | ✓ | ? |
+| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

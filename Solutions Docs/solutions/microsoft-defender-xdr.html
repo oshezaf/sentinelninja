@@ -91,7 +91,7 @@
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>28 table(s)</strong>:</p>
+<p>This solution uses <strong>29 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -101,6 +101,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a></td>
+  <td>-</td>
+  <td>Hunting</td>
+</tr>
 <tr>
   <td><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
   <td><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
@@ -710,7 +715,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.html">Automated email notifications and suspicious sign-in activity</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-automatic-external-email-forwarding-overview-by-type-mailbox-rule-and-smtp-cb7629af-4872-427a-9042-ce848c2f49e7-1444eb9c.html">Automatic External Email Forwarding Overview by Type (Mailbox Rule and SMTP)</a></td>
@@ -950,7 +955,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.html">Email containing malware accessed on a unmanaged device</a></td>
   <td style="text-align:left">Execution</td>
-  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a><br><a href="../tables/entraidsigninevents.html"><code>EntraIdSignInEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-containing-malware-sent-by-an-internal-sender-07c85687-6dee-4266-9345-1e34de85d989-56ad4103.html">Email containing malware sent by an internal sender</a></td>
@@ -1065,7 +1070,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.html">Files share contents and suspicious sign-in activity</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-first-contact-external-email-senders-6ad2dbb3-40de-4e39-a3b0-5c8be4e37b7b-90de2f63.html">First-Contact External Email Senders</a></td>
@@ -1560,7 +1565,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.html">Possible device code phishing attempts</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/entraidsigninevents.html"><code>EntraIdSignInEvents</code></a><br><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-possible-partner-impersonation-in-external-team-messages-f094e9f1-2d55-450d-af1a-0fdcd290f8c4-38f8b481.html">Possible partner impersonation in external Team messages</a></td>
@@ -1730,7 +1735,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-e5e2a978.html">Risky sign-in attempt from a non-managed device</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/entraidsigninevents.html"><code>EntraIdSignInEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-robbinhood-driver-4713d763-122d-419c-bf6f-bdef111cd8e2-6f03bc00.html">Robbinhood Driver</a></td>
@@ -1930,7 +1935,7 @@
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.html">Suspicious sign-in attempts from QR code phishing campaigns</a></td>
   <td style="text-align:left">InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+  <td style="text-align:left"><a href="../tables/aadsignineventsbeta.html"><code>AADSignInEventsBeta</code></a><br><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/entraidsigninevents.html"><code>EntraIdSignInEvents</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.html">Teams Admin submission of Malware and Phish daily trend</a></td>

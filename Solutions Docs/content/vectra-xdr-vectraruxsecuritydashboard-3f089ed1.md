@@ -18,12 +18,12 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) |  | ? | ✓ | ? |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) |  | ? | ✓ | ? |
+| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) |  | ✓ | ✓ | ✓ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) |  | ? | ✓ | ? |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) |  | ? | ✓ | ? |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) |  | ? | ✓ | ? |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |  | ? | ✓ | ? |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

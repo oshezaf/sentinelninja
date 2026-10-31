@@ -21,9 +21,10 @@ Looks for users who had a risky sign in (based on Entra ID Identity Protection r
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
+| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) | `ErrorCode == "0"`<br>`RiskLevelDuringSignIn in "100,50"` | ? | ✗ | ? |
 
 ---
 

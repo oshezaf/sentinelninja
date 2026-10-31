@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | ? | ✓ | ? |
+| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

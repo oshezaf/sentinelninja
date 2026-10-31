@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DuoActivity_CL`](../tables/duoactivity-cl.md) | ? | ✓ | ? |
+| [`DuoActivity_CL`](../tables/duoactivity-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

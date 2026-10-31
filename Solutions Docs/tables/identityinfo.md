@@ -6,7 +6,7 @@
 
 ---
 
-Reference for IdentityInfo table in Azure Monitor Logs.
+Account information from various sources, including Microsoft Entra ID
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
 
 ## Contents
 
@@ -93,6 +94,7 @@ Reference for IdentityInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
+- [IdentityInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table)
 
 ## Solutions (20)
 

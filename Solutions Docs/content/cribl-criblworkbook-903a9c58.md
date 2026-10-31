@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | ? | ✓ | ? |
 | [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | ? | ✓ | ? |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | ? | ✓ | ? |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | ✗ | ✓ | ✗ |
 | [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

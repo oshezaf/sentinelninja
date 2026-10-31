@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✓ | ✓ |
-| [`CrowdStrikeAlertsV2_CL`](../tables/crowdstrikealertsv2-cl.md) | ? | ✓ | ? |
+| [`CrowdStrikeAlertsV2_CL`](../tables/crowdstrikealertsv2-cl.md) | ✓ | ✓ | ✓ |
 | [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | ✓ | ✓ | ✓ |
 | [`CrowdStrikeCasesV2_CL`](../tables/crowdstrikecasesv2-cl.md) | ? | ✓ | ? |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✓ | ✓ |

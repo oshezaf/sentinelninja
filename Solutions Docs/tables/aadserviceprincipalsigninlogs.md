@@ -14,7 +14,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
 ## Contents
@@ -118,11 +118,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |
 
 **In solution [StratoSecure](../solutions/stratosecure.md):**
 
@@ -156,37 +156,37 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Workload identity sign-in from a country not in 14-day baseline](../content/standalone-content-workload-identity-sign-in-from-a-country-not-in-14-day-baseline-e366bd25-400c-433f-b984-c5b8aece15f2-42cfd1d8.md) |
 
-**GitHub Only:**
+**GitHub Only:** `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
+| Hunting Query |
+|:-------------|
+| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |
 
 ### Workbooks (11)
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Workbook |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Workbook |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):**
+**In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `OperationName in "Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info"`<br>`OperationName has_any "clusterrolebindings,rolebindings"`<br>`OperationName has_any "cronjobs,daemonsets"`<br>`OperationName has_any "cronjobs/create,daemonsets/create"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
+| Workbook |
+|:-------------|
+| [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"`
 
@@ -213,17 +213,23 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
-## Selection Criteria Summary (4 criteria, 4 total references)
+## Selection Criteria Summary (10 criteria, 10 total references)
 
-References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
 | `ResultType != "50126"` | - | 1 | - | - | **1** |
 | `ConditionalAccessStatus in "failure,notApplied"`<br>`ResultType in "0,Success"` | - | 1 | - | - | **1** |
+| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
 | `ResultType == "0"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | - | 1 | - | - | **1** |
+| `OperationName in "Add app role assignment to service principal,Add delegated permission grant,Add service principal credentials,Admin deleted security info,Admin registered security info,Admin updated security info,Consent to application,GetBlob,ListBlobs,ListBlobsHierarchySegment,ListContainersSegment,Set domain authentication,Set federation settings on domain,User changed default security info,User deleted security info,User registered security info,User updated security info"`<br>`OperationName has_any "clusterrolebindings,rolebindings"`<br>`OperationName has_any "cronjobs,daemonsets"`<br>`OperationName has_any "cronjobs/create,daemonsets/create"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | - | 1 | - | - | **1** |
 | `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **4** | **0** | **0** | **4** |
+| **Total** | **0** | **10** | **0** | **0** | **10** |
 
 ### ConditionalAccessStatus
 
@@ -236,6 +242,64 @@ References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Add member to role` | - | 3 | - | - | **3** |
+| `Add user` | - | 3 | - | - | **3** |
+| `Reset user password` | - | 3 | - | - | **3** |
+| `Update user` | - | 3 | - | - | **3** |
+| `Add service principal credentials` | - | 2 | - | - | **2** |
+| `AzureFirewallIDSLog` | - | 2 | - | - | **2** |
+| `NetworkSecurityGroupEvents` | - | 2 | - | - | **2** |
+| `contains PIM` | - | 2 | - | - | **2** |
+| `Remove service principal` | - | 1 | - | - | **1** |
+| `has_all Update application` | - | 1 | - | - | **1** |
+| `Update application - Certificates` | - | 1 | - | - | **1** |
+| `contains create` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `contains lockbox` | - | 1 | - | - | **1** |
+| `contains remove` | - | 1 | - | - | **1** |
+| `contains update` | - | 1 | - | - | **1** |
+| `contains Add` | - | 1 | - | - | **1** |
+| `contains Audit` | - | 1 | - | - | **1** |
+| `contains Change` | - | 1 | - | - | **1** |
+| `contains Create` | - | 1 | - | - | **1** |
+| `contains Delete` | - | 1 | - | - | **1** |
+| `contains Log` | - | 1 | - | - | **1** |
+| `contains Monitor` | - | 1 | - | - | **1** |
+| `contains Remove` | - | 1 | - | - | **1** |
+| `contains Update` | - | 1 | - | - | **1** |
+| `contains Write` | - | 1 | - | - | **1** |
+| `contains reset` | - | 1 | - | - | **1** |
+| `Add app role assignment to service principal` | - | 1 | - | - | **1** |
+| `Add delegated permission grant` | - | 1 | - | - | **1** |
+| `Admin deleted security info` | - | 1 | - | - | **1** |
+| `Admin registered security info` | - | 1 | - | - | **1** |
+| `Admin updated security info` | - | 1 | - | - | **1** |
+| `Consent to application` | - | 1 | - | - | **1** |
+| `GetBlob` | - | 1 | - | - | **1** |
+| `ListBlobs` | - | 1 | - | - | **1** |
+| `ListBlobsHierarchySegment` | - | 1 | - | - | **1** |
+| `ListContainersSegment` | - | 1 | - | - | **1** |
+| `Set domain authentication` | - | 1 | - | - | **1** |
+| `Set federation settings on domain` | - | 1 | - | - | **1** |
+| `User changed default security info` | - | 1 | - | - | **1** |
+| `User deleted security info` | - | 1 | - | - | **1** |
+| `User registered security info` | - | 1 | - | - | **1** |
+| `User updated security info` | - | 1 | - | - | **1** |
+| `has_any clusterrolebindings` | - | 1 | - | - | **1** |
+| `has_any rolebindings` | - | 1 | - | - | **1** |
+| `has_any cronjobs` | - | 1 | - | - | **1** |
+| `has_any daemonsets` | - | 1 | - | - | **1** |
+| `has_any cronjobs/create` | - | 1 | - | - | **1** |
+| `has_any daemonsets/create` | - | 1 | - | - | **1** |
+| `ApplicationGatewayFirewall` | - | 1 | - | - | **1** |
+| `!contains external` | - | 1 | - | - | **1** |
+| `!contains invite` | - | 1 | - | - | **1** |
+| `!contains licnense` | - | 1 | - | - | **1** |
+| `contains group` | - | 1 | - | - | **1** |
+| `contains member` | - | 1 | - | - | **1** |
+| `contains principal` | - | 1 | - | - | **1** |
+| `contains role` | - | 1 | - | - | **1** |
+| `contains user` | - | 1 | - | - | **1** |
 | `Add conditional access policy` | - | 1 | - | - | **1** |
 | `Add member to group` | - | 1 | - | - | **1** |
 | `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |

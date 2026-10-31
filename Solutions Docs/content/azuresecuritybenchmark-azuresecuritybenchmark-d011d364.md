@@ -20,15 +20,15 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | ✓ | ✗ | ✓ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "recovery"`<br>`OperationNameValue startswith "Microsoft.KeyVault"`<br>`OperationNameValue startswith "Microsoft.Logic"` | ✗ | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ | ✓ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "Type="`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ✗ |
 | [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ? | ✓ | ? |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ✓ | ✓ | ✓ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ✓ |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ | ✗ |

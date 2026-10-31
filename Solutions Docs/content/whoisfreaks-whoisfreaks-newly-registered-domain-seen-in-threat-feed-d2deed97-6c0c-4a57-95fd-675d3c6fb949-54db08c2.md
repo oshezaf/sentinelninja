@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`WhoisFreaksNRDNoWhois_CL`](../tables/whoisfreaksnrdnowhois-cl.md) | ? | ✓ | ? |
 | [`WhoisFreaksNRD_CL`](../tables/whoisfreaksnrd-cl.md) | ? | ✓ | ? |
-| [`WhoisFreaksThreat_CL`](../tables/whoisfreaksthreat-cl.md) | ? | ✓ | ? |
+| [`WhoisFreaksThreat_CL`](../tables/whoisfreaksthreat-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ? | ✓ | ? |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RFI_PlaybookAlertResults_V2_CL`](../tables/rfi-playbookalertresults-v2-cl.md) | ? | ✓ | ? |
+| [`RFI_PlaybookAlertResults_V2_CL`](../tables/rfi-playbookalertresults-v2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ---
 
-Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
+Security events that occur post-delivery, after Microsoft 365 delivers the emails to the recipient mailbox
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailpostdeliveryevents-table) |
 
 ## Contents
 
@@ -56,6 +57,7 @@ Reference for EmailPostDeliveryEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailPostDeliveryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailpostdeliveryevents)
+- [EmailPostDeliveryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailpostdeliveryevents-table)
 
 ## Solutions (1)
 

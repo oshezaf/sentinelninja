@@ -6,7 +6,7 @@
 
 ---
 
-Reference for AlertEvidence table in Azure Monitor Logs.
+Files, IP addresses, URLs, users, or devices associated with alerts
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,8 +14,9 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
 ## Contents
 
@@ -84,6 +85,7 @@ Reference for AlertEvidence table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [AlertEvidence Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence)
+- [AlertEvidence Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table)
 
 ## Solutions (7)
 
@@ -135,11 +137,11 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Automated Investigation Outcomes by Day](../content/github-only-automated-investigation-outcomes-by-day-e13d7b0c-1cfa-41dd-a5cf-45d598055cef-3d082410.md) | `ActionType == "Automated Remediation"` |
 | [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
-| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) | `ActionType == "ChatCreated"` |
-| [Hunt for alerts correlated with Teams messages](../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.md) | `ActionType == "ChatCreated"` |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) |  |
+| [Hunt for alerts correlated with Teams messages](../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.md) |  |
 | [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.md) |  |
-| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
-| [Identify acting user for reported phish](../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
+| [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) |  |
+| [Identify acting user for reported phish](../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.md) |  |
 | [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) | `ActionType == "LogonSuccess"`<br>`EntityType == "User"` |
 | [KNOTWEED-AV Detections](../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
@@ -176,11 +178,11 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Workbook |
-|:-------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
 **GitHub Only:**
 
@@ -197,21 +199,18 @@ This table is used by the following solutions:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (8 criteria, 12 total references)
+## Selection Criteria Summary (5 criteria, 7 total references)
 
-References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "Automated Remediation"` | - | 3 | - | - | **3** |
-| `ActionType == "ChatCreated"` | - | 2 | - | - | **2** |
-| `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | - | 2 | - | - | **2** |
 | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`EntityType in "MailMessage,Url"`<br>`ServiceSource == "Microsoft Defender for Office 365"` | - | 1 | - | - | **1** |
 | `EntityType in "Device,User"` | - | 1 | - | - | **1** |
 | `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
 | `ActionType == "LogonSuccess"`<br>`EntityType == "User"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **12** | **0** | **0** | **12** |
+| **Total** | **0** | **7** | **0** | **0** | **7** |
 
 ### ActionType
 
@@ -219,18 +218,7 @@ References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Automated Remediation` | - | 3 | - | - | **3** |
 | `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
-| `ChatCreated` | - | 2 | - | - | **2** |
-| `MoveToDeletedItems` | - | 2 | - | - | **2** |
-| `MovedToDeletedItems` | - | 2 | - | - | **2** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
 
 ### EntityType
 

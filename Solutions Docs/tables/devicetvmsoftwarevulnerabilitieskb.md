@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceTvmSoftwareVulnerabilitiesKB table in Azure Monitor Logs.
+Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceTvmSoftwareVulnerabilitiesKB table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilitieskb) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ## Contents
@@ -52,6 +53,7 @@ Reference for DeviceTvmSoftwareVulnerabilitiesKB table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSoftwareVulnerabilitiesKB Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilitieskb)
+- [DeviceTvmSoftwareVulnerabilitiesKB Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table)
 
 ## Solutions (1)
 

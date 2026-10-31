@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityScorecardRatingsHistory_CL`](../tables/securityscorecardratingshistory-cl.md) | ? | ✓ | ? |
-| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) 🔶 | ? | ✓ | ? |
+| [`SecurityScorecardRatingsHistory_CL`](../tables/securityscorecardratingshistory-cl.md) | ✗ | ✓ | ✗ |
+| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

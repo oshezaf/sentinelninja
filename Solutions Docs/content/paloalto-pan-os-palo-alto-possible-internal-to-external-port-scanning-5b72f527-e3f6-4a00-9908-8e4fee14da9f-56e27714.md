@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `AdditionalExtensions has "reason=tcp-rst-from-client"`<br>`AdditionalExtensions has "reason=tcp-rst-from-server"`<br>`ApplicationProtocol == "incomplete"`<br>`DestinationPort !in "443,53,389,80,0,880,8888,8080"`<br>`DeviceAction !in "reset-both,deny"` | ✓ | ✓ | ✓ |
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ---
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GambitPoliciesIssues_CL`](../tables/gambitpoliciesissues-cl.md) | ? | ✓ | ? |
+| [`GambitPoliciesIssues_CL`](../tables/gambitpoliciesissues-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

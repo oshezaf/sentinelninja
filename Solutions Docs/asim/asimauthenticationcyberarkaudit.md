@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |  | ? | ✓ | ? |
+| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |  | ✓ | ✓ | ✓ |
 
 ## Parameters
 

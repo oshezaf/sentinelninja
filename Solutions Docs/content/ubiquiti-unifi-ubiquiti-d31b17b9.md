@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) |  | ? | ✓ | ? |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

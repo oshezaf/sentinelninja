@@ -36,12 +36,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | ? | ✓ | ? |
-| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | ? | ✓ | ? |
-| [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | ? | ✓ | ? |
-| [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | ? | ✓ | ? |
-| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | ? | ✓ | ? |
-| [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | ? | ✓ | ? |
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | ✗ | ✓ | ✗ |
+| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | ✗ | ✓ | ✗ |
+| [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | ✗ | ✓ | ✗ |
+| [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | ✗ | ✓ | ✗ |
+| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | ✗ | ✓ | ✗ |
+| [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -28,16 +28,16 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SnowflakeLoadV3_CL`](../tables/snowflakeloadv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeLoginV3_CL`](../tables/snowflakeloginv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeMaterializedViewV3_CL`](../tables/snowflakematerializedviewv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeQueryV3_CL`](../tables/snowflakequeryv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeRoleGrantV3_CL`](../tables/snowflakerolegrantv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeRolesV3_CL`](../tables/snowflakerolesv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeTableStorageMetricsV3_CL`](../tables/snowflaketablestoragemetricsv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeTablesV3_CL`](../tables/snowflaketablesv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeUserGrantV3_CL`](../tables/snowflakeusergrantv3-cl.md) | ? | ✓ | ? |
-| [`SnowflakeUsersV3_CL`](../tables/snowflakeusersv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeLoadV3_CL`](../tables/snowflakeloadv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeLoginV3_CL`](../tables/snowflakeloginv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeMaterializedViewV3_CL`](../tables/snowflakematerializedviewv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeQueryV3_CL`](../tables/snowflakequeryv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeRoleGrantV3_CL`](../tables/snowflakerolegrantv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeRolesV3_CL`](../tables/snowflakerolesv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeTableStorageMetricsV3_CL`](../tables/snowflaketablestoragemetricsv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeTablesV3_CL`](../tables/snowflaketablesv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeUserGrantV3_CL`](../tables/snowflakeusergrantv3-cl.md) | ✗ | ✓ | ✗ |
+| [`SnowflakeUsersV3_CL`](../tables/snowflakeusersv3-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -24,8 +24,8 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`TrendAI_XDR_WORKBENCH_V2_CL`](../tables/trendai-xdr-workbench-v2-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`TrendAI_XDR_WORKBENCH_V2_CL`](../tables/trendai-xdr-workbench-v2-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ---
 

@@ -14,7 +14,7 @@ Reference for Event table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -348,9 +348,9 @@ References by type: 4 connectors, 44 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "7045"`<br>`Source == "Service Control Manager"` | - | 3 | - | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`RenderedDescription has_any "Downloaded"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
+| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
-| `EventLevel in "1,2,3"`<br>`Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |

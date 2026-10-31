@@ -14,7 +14,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -382,10 +382,10 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
-| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
-| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
+| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
+| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **4** | **1** | **0** | **0** | **5** |
 
@@ -393,12 +393,12 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
+| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `!startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
-| `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ---

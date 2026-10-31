@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceRegistryEvents table in Azure Monitor Logs.
+Creation and modification of registry entries
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceRegistryEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceregistryevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table) |
 
 ## Contents
 
@@ -87,6 +88,7 @@ Reference for DeviceRegistryEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceRegistryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceregistryevents)
+- [DeviceRegistryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table)
 
 ## Solutions (4)
 
@@ -158,7 +160,7 @@ This table is ingested by the following connectors:
 | [RunMRU with non-ASCII characters](../content/github-only-runmru-with-non-ascii-characters-6e8ee46f-80ee-46f6-be49-49a66f01edce-e16ca0cd.md) | `ActionType == "RegistryValueSet"`<br>`InitiatingProcessFileName == "explorer.exe"`<br>`RegistryKey endswith "RunMRU"`<br>`RegistryValueData contains "#"`<br>`RegistryValueData matchesregex "[^[:ascii]]"` |
 | [Services](../content/github-only-services-dd76f1c0-edc9-45cb-aeae-f5142caf583c-adae9da2.md) |  |
 | [Suspicious Registry Keys](../content/github-only-suspicious-registry-keys-fab0fc37-d74a-43b6-9f13-d517b9cbcb14-4ef94be0.md) | `RegistryValueData in "Datalyst ou,Flyintellect Inc."` |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
 | [qakbot-campaign-registry-edit](../content/github-only-qakbot-campaign-registry-edit-3f305589-cde2-4509-8204-63cb2a00117c-2575a13b.md) | `ActionType == "RegistryValueSet"`<br>`InitiatingProcessFileName == "explorer.exe"`<br>`RegistryValueData has "$windowsupdate"` |
 | [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
 | [suspicious-base64-encoded-registry-keys](../content/github-only-suspicious-base64-encoded-registry-keys-4751319e-6d20-4c26-893d-baaad90f0747-3b8dcc39.md) | `ActionType has_any "RegistryKeyCreated,RegistryValueSet"` |
@@ -197,9 +199,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimRegistryEventMicrosoft365D](../asim/asimregistryeventmicrosoft365d.md) | RegistryEvent | Microsoft 365 Defender for Endpoint |
 
-## Selection Criteria Summary (13 criteria, 20 total references)
+## Selection Criteria Summary (12 criteria, 19 total references)
 
-References by type: 1 connectors, 18 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 17 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -210,13 +212,12 @@ References by type: 1 connectors, 18 content items, 1 ASIM parsers, 0 other pars
 | `RegistryKey contains "wdigest"`<br>`RegistryValueData == "1"`<br>`RegistryValueName == "UseLogonCredential"` | - | 1 | - | - | **1** |
 | `RegistryKey contains "MountedDevices"` | - | 1 | - | - | **1** |
 | `RegistryValueName contains "AutoConfigURL"`<br>`RegistryValueName contains "Proxy"` | - | 1 | - | - | **1** |
-| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "RegistryValueSet"`<br>`InitiatingProcessFileName == "explorer.exe"`<br>`RegistryKey endswith "RunMRU"`<br>`RegistryValueData contains "#"`<br>`RegistryValueData matchesregex "[^[:ascii]]"` | - | 1 | - | - | **1** |
 | `ActionType == "RegistryValueSet"`<br>`InitiatingProcessFileName == "explorer.exe"`<br>`RegistryValueData has "$windowsupdate"` | - | 1 | - | - | **1** |
 | `ActionType == "RegistryValueSet"`<br>`RegistryKey startswith "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID"`<br>`RegistryValueData has "System32\\spool\\drivers\\color"` | - | 1 | - | - | **1** |
 | `RegistryValueData in "Datalyst ou,Flyintellect Inc."` | - | 1 | - | - | **1** |
 | `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **18** | **1** | **0** | **20** |
+| **Total** | **1** | **17** | **1** | **0** | **19** |
 
 ### ActionType
 
@@ -225,8 +226,6 @@ References by type: 1 connectors, 18 content items, 1 ASIM parsers, 0 other pars
 | `RegistryValueSet` | 1 | 9 | 1 | - | **11** |
 | `has_any RegistryKeyCreated` | - | 3 | - | - | **3** |
 | `has_any RegistryValueSet` | - | 3 | - | - | **3** |
-| `NamedPipeEvent` | - | 1 | - | - | **1** |
-| `RegistryKeyCreated` | - | 1 | - | - | **1** |
 | `RegistryKeyDeleted` | - | - | 1 | - | **1** |
 | `RegistryKeyRenamed` | - | - | 1 | - | **1** |
 | `RegistryValueDeleted` | - | - | 1 | - | **1** |

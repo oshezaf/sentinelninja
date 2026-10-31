@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ✓ |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ✓ |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ✓ |

@@ -6,16 +6,17 @@
 
 ---
 
-Reference for CampaignInfo table in Azure Monitor Logs.
+Email campaigns identified by Microsoft Defender for Office 365
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
+| **Category** | Security, XDR |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/campaigninfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-campaigninfo-table) |
 
 ## Schema (13 columns)
 
@@ -42,6 +43,7 @@ Reference for CampaignInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [CampaignInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/campaigninfo)
+- [CampaignInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-campaigninfo-table)
 
 ---
 

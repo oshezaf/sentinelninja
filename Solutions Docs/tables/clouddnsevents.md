@@ -6,16 +6,17 @@
 
 ---
 
-Reference for CloudDnsEvents table in Azure Monitor Logs.
+DNS activity events from cloud infrastructure environments
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
+| **Category** | Security, XDR |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table) |
 
 ## Schema (30 columns)
 
@@ -59,6 +60,7 @@ Reference for CloudDnsEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudDnsEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents)
+- [CloudDnsEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table)
 
 ---
 

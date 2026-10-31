@@ -45,7 +45,7 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | [[Recommended] Infoblox IQ for Threat Defense Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) | Vectra AI | 17 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
 | [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) 🔶 | Vectra AI | 1 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 1 | [Alsid For AD](../solutions/alsid-for-ad.md) |
+| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 3 | [Alsid For AD](../solutions/alsid-for-ad.md) |
 | [Automated Logic WebCTRL ](../connectors/automatedlogicwebctrl.md) | AutomatedLogic | 1 | [ALC-WebCTRL](../solutions/alc-webctrl.md) |
 | [Cayosoft Guardian Threat Alerts](../connectors/cayosoftguardianconnector.md) | Cayosoft | 1 | [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ⚠️ ➕ | Cisco | 1 | [CiscoASA](../solutions/ciscoasa.md) |

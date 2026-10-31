@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -808,7 +808,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.html">Possible SignIn from Azure Backdoor</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName == &quot;Add unverified domain&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -998,7 +998,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.html">Suspicious Login from deleted guest account</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName == &quot;Delete user&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.html">URL Added to Application from Unknown Domain</a></td>
@@ -1084,7 +1084,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-federated-identity-provider-added-to-tenant-f15d8548-1af1-43d3-a726-1ffefb87b303-577b7ffc.html">Federated Identity Provider Added to Tenant</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName in &quot;Set domain authentication,Set federation settings on domain&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/hybrid-attack-cloud-&amp;-identity-mfa-method-added-on-risky-account-d99ec2df-bcaf-4195-be29-9dd92e8d5e93-90d79d47.html">MFA Method Added on Risky Account</a></td>
@@ -1364,7 +1364,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.html">Privileged Entra ID account sign-in via legacy authentication protocol</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add member to role.&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.html">Rare domains seen in Cloud Logs</a></td>
@@ -1388,7 +1388,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.html">Sign-in from unseen IP within 60 minutes of MFA disabled for account</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName in &quot;Disable Strong Authentication,User deleted security info&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-signin-logs-with-expanded-conditional-access-policies-4eb6d052-9873-4092-b989-66eae780e203-95b234ca.html">Signin Logs with expanded Conditional Access Policies</a></td>
@@ -1451,7 +1451,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.html">Risky Sign-in with Device Registration</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OperationName == &quot;Add registered owner to device&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.html">Sign-ins from IPs that attempt sign-ins to disabled accounts</a></td>
@@ -1475,7 +1475,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.html">Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs</a></td>
-  <td style="text-align:left"><code>AppDisplayName == &quot;Azure Portal&quot;</code></td>
+  <td style="text-align:left"><code>AppDisplayName == &quot;Azure Portal&quot;</code><br><code>OperationName has_any &quot;Add member to role&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.html">User Account Linked to Storage Account File Upload</a></td>
@@ -1835,7 +1835,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-conditionalaccesstrendsandchanges-114c89ab.html">ConditionalAccessTrendsandChanges</a></td>
-  <td style="text-align:left"><code>OperationName in &quot;Add conditional access policy,Add member to group,Delete conditional access policy,Update conditional access policy&quot;</code><br><code>OperationName contains &quot;group&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
@@ -1932,8 +1932,8 @@
 <ul>
 <li><code>microsoft.graph/tenants</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (42 criteria, 60 total references)</h2>
-<p>References by type: 0 connectors, 60 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (48 criteria, 66 total references)</h2>
+<p>References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2035,6 +2035,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>OperationName == &quot;Add unverified domain&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>RiskState == &quot;atRisk&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2075,6 +2083,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>OperationName == &quot;Delete user&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>AuthenticationRequirement == &quot;singleFactorAuthentication&quot;</code><br><code>ResultType == &quot;0&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2108,6 +2124,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>AppDisplayName == &quot;Office 365 Exchange Online&quot;</code><br><code>ConditionalAccessStatus == &quot;success&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName in &quot;Set domain authentication,Set federation settings on domain&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2179,7 +2203,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>OperationName in &quot;Disable Strong Authentication,User deleted security info&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ConditionalAccessStatus == &quot;success&quot;</code><br><code>OperationName has_any &quot;Download group members,Download groups,Download user registeration details,Download users&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add member to role.&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2195,7 +2235,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AppDisplayName == &quot;Azure Portal&quot;</code></td>
+  <td style="text-align:left"><code>AppDisplayName == &quot;Azure Portal&quot;</code><br><code>OperationName has_any &quot;Add member to role&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2220,6 +2260,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ResultType in &quot;0,50057,50074,50126,51004&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OperationName == &quot;Add registered owner to device&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2285,10 +2333,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>60</strong></td>
+  <td style="text-align:center"><strong>66</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>60</strong></td>
+  <td style="text-align:center"><strong>66</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2589,6 +2637,30 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Add member to role.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add unverified domain</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Update Application</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2597,7 +2669,31 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Delete user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Update user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set domain authentication</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set federation settings on domain</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2621,7 +2717,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add member to role.</code></td>
+  <td style="text-align:left"><code>Register device</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2629,7 +2725,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Register device</code></td>
+  <td style="text-align:left"><code>Disable Strong Authentication</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User deleted security info</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2669,6 +2773,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Sign-in activity</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -2685,7 +2797,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Add directory role member</code></td>
+  <td style="text-align:left"><code>Add registered owner to device</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -2693,7 +2805,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Add member to role</code></td>
+  <td style="text-align:left"><code>has_any Add directory role member</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

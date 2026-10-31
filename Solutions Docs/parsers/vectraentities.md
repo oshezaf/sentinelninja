@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) | ? | ✓ | ? |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ? | ✓ | ? |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

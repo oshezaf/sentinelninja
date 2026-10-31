@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | ? | ✓ | ? |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ? | ✓ | ? |
+| [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | ✓ | ✓ | ✓ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

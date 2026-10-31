@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceEvents table in Azure Monitor Logs.
+Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,8 +14,9 @@ Reference for DeviceEvents table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table) |
 
 ## Contents
 
@@ -108,6 +109,7 @@ Reference for DeviceEvents table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents)
+- [DeviceEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table)
 
 ## Solutions (11)
 
@@ -172,7 +174,7 @@ This table is ingested by the following connectors:
 | [C2-NamedPipe](../content/microsoft-defender-xdr-c2-namedpipe-7ce00cba-f76f-4026-ab7f-7e4f1b67bd18-5ae9733b.md) | `ActionType == "NamedPipeEvent"` |
 | [Deimos Component Execution](../content/microsoft-defender-xdr-deimos-component-execution-c25a8cd4-5b4a-45a8-9ba0-3b753a652f6b-a4a127b5.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` |
 | [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.md) |  |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) |  |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` |
 | [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.md) |  |
 | [SUNSPOT malware hashes](../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md) |  |
@@ -219,10 +221,10 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
+| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
 | [C2-NamedPipe](../content/microsoft-defender-xdr-c2-namedpipe-f78255b6-8f91-4cf3-a25c-e1144b7b5425-80263449.md) | `ActionType == "NamedPipeEvent"` |
 | [Deimos Component Execution](../content/microsoft-defender-xdr-deimos-component-execution-fe9edc77-1b6c-4f1e-a223-64b580b50187-8ca8263a.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) |  |
 | [LemonDuck Registration Function](../content/microsoft-defender-xdr-lemonduck-registration-function-147c4c0a-7241-4ce9-9b71-0aecb8a2b59f-ddd37db7.md) | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` |
 | [Scheduled Task Creation](../content/microsoft-defender-xdr-scheduled-task-creation-1ddee78f-7508-4f4a-9b6b-d2927724217d-545713ce.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` |
@@ -244,16 +246,16 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ARS Ransomware Event triggered](../content/github-only-ars-ransomware-event-triggered-ff9a1b12-e446-44ff-a576-7f53caa32044-dee8c375.md) | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` |
 | [ASR rules categorized detection graph](../content/github-only-asr-rules-categorized-detection-graph-4a7bf574-fe5f-4168-97e7-5a8aa19a5eed-072334aa.md) | `ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"`<br>`ActionType startswith "asr"` |
-| [AV Detections with Source](../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.md) | `ActionType == "AntivirusDetection"` |
+| [AV Detections with Source](../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.md) |  |
 | [AV Detections with USB Disk Drive](../content/github-only-av-detections-with-usb-disk-drive-12198f2f-c53b-4617-8df8-120c66cbb373-fe2a71b5.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"` |
 | [Antivirus detections](../content/github-only-antivirus-detections-aa9ad4ae-a19a-4262-b151-8a723227bc4e-450dbcb7.md) | `ActionType == "AntivirusDetection"` |
 | [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [C2-NamedPipe](../content/github-only-c2-namedpipe-ec3f7141-383e-4f32-b698-ba2ee1852c9c-d8d0259c.md) | `ActionType == "NamedPipeEvent"` |
 | [Create account (1)](../content/github-only-create-account-1-eba83f84-b844-4fc9-96f4-cb51b0b20c1d-dd413b60.md) | `AccountName != "administrator"`<br>`AccountName endswith "or"`<br>`AccountName startswith "ad"`<br>`ActionType == "UserAccountCreated"` |
 | [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) |  |
-| [Doc attachment with link to download](../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
-| [Email link + download + SmartScreen warning](../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.md) | `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` |
+| [Doc attachment with link to download](../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.md) |  |
+| [Email link + download + SmartScreen warning](../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.md) |  |
 | [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
 | [ExploitGuardASRStats](../content/github-only-exploitguardasrstats-4302c0fa-dda5-4a6a-b29a-a96736bce088-5eed5631.md) | `ActionType endswith "Audited"`<br>`ActionType startswith "Asr"` |
 | [ExploitGuardASRStats (1)](../content/github-only-exploitguardasrstats-1-f809e596-87ff-4849-8eeb-cc636f0c92a0-c13848fe.md) | `ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` |
@@ -267,18 +269,18 @@ This table is ingested by the following connectors:
 | [ExploitGuardNetworkProtectionEvents](../content/github-only-exploitguardnetworkprotectionevents-47bf14f0-c6b7-4dd3-a13f-b9a3e7972e2f-6863dd06.md) | `ActionType == "ExploitGuardNetworkProtectionBlocked"` |
 | [ExploitGuardStats](../content/github-only-exploitguardstats-e76703a0-21f4-4c20-8d4b-92e1768cf240-763cd670.md) | `ActionType endswith "Blocked"`<br>`ActionType startswith "ExploitGuard"` |
 | [ExploitGuardStats (1)](../content/github-only-exploitguardstats-1-263f7a27-7c44-4e28-adc3-df5cb3fdc2bb-179ea306.md) | `ActionType endswith "Audited"`<br>`ActionType startswith "ExploitGuard"` |
-| [Files copied to USB drives](../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files copied to USB drives](../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.md) |  |
 | [LemonDuck-registration-function](../content/github-only-lemonduck-registration-function-9e963c83-c569-4c9e-a729-d8f7ca05464d-b1642697.md) | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` |
 | [LocalAdminGroupChanges](../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` |
 | [Map external devices](../content/github-only-map-external-devices-10838671-0c35-4d5b-95f8-06d5b4d5bf61-c41b8511.md) | `ActionType == "PnpDeviceConnected"` |
 | [Map external devices (1)](../content/github-only-map-external-devices-1-a091241a-5df7-497f-b4fa-b36641e7373d-9afa448b.md) | `ActionType == "PnpDeviceConnected"` |
-| [Open email link](../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.md) |  |
+| [Open email link](../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [PUA ThreatName per Computer](../content/github-only-pua-threatname-per-computer-1a954599-aa03-421d-a35f-dbe18859bdd5-f8b0f109.md) | `ActionType == "AntivirusDetection"` |
-| [Pivot from detections to related downloads](../content/github-only-pivot-from-detections-to-related-downloads-351f7035-836c-4f4b-80bb-188220ba9215-f029976d.md) | `ActionType == "AntivirusDetection"` |
-| [Possible File Copy to USB Drive](../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.md) | `ActionType == "PnpDeviceConnected"` |
+| [Pivot from detections to related downloads](../content/github-only-pivot-from-detections-to-related-downloads-351f7035-836c-4f4b-80bb-188220ba9215-f029976d.md) |  |
+| [Possible File Copy to USB Drive](../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.md) |  |
 | [PowershellCommand - uncommon commands on machine](../content/github-only-powershellcommand-uncommon-commands-on-machine-7d3acc08-312c-4139-85c9-f08299b79932-977320bd.md) | `ActionType == "PowerShellCommand"` |
 | [PowershellCommand footprint](../content/github-only-powershellcommand-footprint-261d966b-5c1a-4d28-b444-3a8caac6246e-d15f6c91.md) | `ActionType == "PowerShellCommand"` |
-| [SmartScreen URL block ignored by user](../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.md) | `ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"` |
+| [SmartScreen URL block ignored by user](../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.md) |  |
 | [SmartScreen app block ignored by user](../content/github-only-smartscreen-app-block-ignored-by-user-333ad16e-620b-4f36-af3b-da33f8d16cc2-14dcf47d.md) | `ActionType in "SmartScreenAppWarning,SmartScreenUserOverride"` |
 | [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
 | [System Guard Security Level Baseline](../content/github-only-system-guard-security-level-baseline-9365b174-d46f-41e9-998a-73e2fe5ae2d9-53d816b4.md) | `ActionType == "DeviceBootAttestationInfo"` |
@@ -286,7 +288,7 @@ This table is ingested by the following connectors:
 | [User navigation to redirected URL](../content/github-only-user-navigation-to-redirected-url-daf19704-a996-4df7-9a0b-3efac47fea5a-b78fb1a5.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [Web Content Filtering Events](../content/github-only-web-content-filtering-events-7f7a796d-1511-4930-b9da-5971db4352ec-21b59992.md) | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` |
 | [Windows filtering events (Firewall)](../content/github-only-windows-filtering-events-firewall-fb02b8f1-1eb9-43f9-b6e6-cca78a323f2b-a1e4e18e.md) | `ActionType in "FirewallInboundConnectionBlocked,FirewallInboundConnectionToAppBlocked,FirewallOutboundConnectionBlocked"` |
-| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
+| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) | `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` |
 | [c2-lookup-from-nonbrowser[Nobelium]](../content/github-only-c2-lookup-from-nonbrowser[nobelium]-f7dd2c5f-7bb3-4a0a-80a1-45c4d79e4c03-b27a688b.md) | `ActionType == "DnsQueryResponse"`<br>`AdditionalFields has ".avsvmcloud"` |
 | [c2-lookup-response[Nobelium]](../content/github-only-c2-lookup-response[nobelium]-4417c444-6ff7-47db-bde0-b6b9ef1b9080-700dd29f.md) | `ActionType == "DnsQueryResponse"`<br>`AdditionalFields has ".avsvmcloud"` |
 | [deimos-component-execution](../content/github-only-deimos-component-execution-0e86928c-cc9f-494c-a79e-04f647eb5ef8-b6e4ffdf.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` |
@@ -299,7 +301,7 @@ This table is ingested by the following connectors:
 | [insider-threat-detection-queries (12)](../content/github-only-insider-threat-detection-queries-12-e86221a2-7961-440a-a759-8c7a1fbe40b2-bebb320c.md) | `ActionType == "UserAccountCreated"` |
 | [insider-threat-detection-queries (19)](../content/github-only-insider-threat-detection-queries-19-a358a812-0e1b-4cbb-a91c-0bb1dbd3ea13-e876eef3.md) | `ActionType == "UserAccountCreated"` |
 | [insider-threat-detection-queries (4)](../content/github-only-insider-threat-detection-queries-4-1b6d19d5-c1f9-43b0-8db6-1c44c3c965b3-76c5d77a.md) | `ActionType startswith "ScreenshotTaken"` |
-| [lsass-credential-dumping](../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.md) | `ActionType in "FileCreated,OpenProcessApiCall"` |
+| [lsass-credential-dumping](../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.md) |  |
 | [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
 | [scheduled task creation](../content/github-only-scheduled-task-creation-34208765-264e-4abe-805b-f645925fbadb-b5b47dbc.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` |
 | [snip3-detectsanboxie-function-call](../content/github-only-snip3-detectsanboxie-function-call-32664c67-34d7-4c7a-88cd-c48b55b7ef91-c112772e.md) | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` |
@@ -312,7 +314,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "FileCreated,UsbDriveMounted"`
 
 | Workbook |
 |:-------------|
@@ -335,35 +337,34 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AttackSurfaceReduction](../content/github-only-attacksurfacereduction-31c2d611.md) | `ActionType startswith "Asr"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType startswith "Asr"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "AntivirusScanCompleted"`<br>`ActionType startswith "Asr"` |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` |
 | [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType contains "ExploitGuardNonMicrosoftSignedBlocked"` |
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `ActionType == "KerberosServiceTicketRequested"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType startswith "Asr"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "AntivirusScanCompleted"`<br>`ActionType startswith "Asr"` |
 
-## Selection Criteria Summary (48 criteria, 77 total references)
+## Selection Criteria Summary (44 criteria, 67 total references)
 
-References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 67 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "PowerShellCommand"` | - | 5 | - | - | **5** |
+| `ActionType == "PowerShellCommand"` | - | 4 | - | - | **4** |
 | `ActionType == "NamedPipeEvent"` | - | 4 | - | - | **4** |
-| `ActionType == "AntivirusDetection"` | - | 4 | - | - | **4** |
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 3 | - | - | **3** |
 | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | - | 3 | - | - | **3** |
 | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 3 | - | - | **3** |
 | `ActionType == "PowerShellCommand"`<br>`AdditionalFields == "{\"` | - | 3 | - | - | **3** |
-| `ActionType == "PnpDeviceConnected"` | - | 3 | - | - | **3** |
-| `ActionType == "BrowserLaunchedToOpenUrl"`<br>`RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | - | 2 | - | - | **2** |
+| `RemoteUrl !startswith "C:"`<br>`RemoteUrl endswith ".lnk"` | - | 2 | - | - | **2** |
 | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` | - | 2 | - | - | **2** |
 | `ActionType == "DnsQueryResponse"`<br>`AdditionalFields has ".avsvmcloud"` | - | 2 | - | - | **2** |
 | `ActionType == "BrowserLaunchedToOpenUrl"` | - | 2 | - | - | **2** |
+| `ActionType == "PnpDeviceConnected"` | - | 2 | - | - | **2** |
 | `ActionType == "UserAccountCreated"` | - | 2 | - | - | **2** |
 | `ActionType == "DeviceBootAttestationInfo"` | - | 2 | - | - | **2** |
+| `ActionType == "AntivirusDetection"` | - | 2 | - | - | **2** |
 | `ActionType startswith "Asr"` | - | 2 | - | - | **2** |
 | `ActionType == "AsrOfficeChildProcessBlocked"` | - | 2 | - | - | **2** |
 | `ActionType startswith "ControlledFolderAccess"` | - | 2 | - | - | **2** |
@@ -372,8 +373,6 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 | `ActionType has "ExploitGuardNonMicrosoftSignedBlocked"`<br>`InitiatingProcessFileName has "svchost.exe"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileDownloaded,FileRenamed,UsbDriveMounted"` | - | 1 | - | - | **1** |
 | `ActionType in "AsrAdobeReaderChildProcessBlocked,AsrExecutableEmailContentBlocked,AsrExecutableOfficeContentBlocked,AsrLsassCredentialTheftBlocked,AsrObfuscatedScriptBlocked,AsrOfficeChildProcessBlocked,AsrOfficeCommAppChildProcessBlocked,AsrOfficeMacroWin32ApiCallsBlocked,AsrOfficeProcessInjectionBlocked,AsrPersistenceThroughWmiBlocked,AsrPsexecWmiChildProcessBlocked,AsrRansomwareBlocked,AsrScriptExecutableDownloadBlocked,AsrUntrustedExecutableBlocked,AsrUntrustedUsbProcessBlocked,AsrVulnerableSignedDriverBlocked"`<br>`ActionType startswith "asr"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,OpenProcessApiCall"` | - | 1 | - | - | **1** |
-| `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusScanCancelled,AntivirusScanCompleted"` | - | 1 | - | - | **1** |
 | `ActionType startswith "ASR"` | - | 1 | - | - | **1** |
 | `ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"` | - | 1 | - | - | **1** |
@@ -392,13 +391,12 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 | `ActionType endswith "Audited"`<br>`ActionType startswith "ExploitGuard"` | - | 1 | - | - | **1** |
 | `ActionType endswith "Blocked"`<br>`ActionType startswith "ExploitGuard"` | - | 1 | - | - | **1** |
 | `ActionType in "SmartScreenAppWarning,SmartScreenUserOverride"` | - | 1 | - | - | **1** |
-| `ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"` | - | 1 | - | - | **1** |
 | `ActionType in "FirewallInboundConnectionBlocked,FirewallInboundConnectionToAppBlocked,FirewallOutboundConnectionBlocked"` | - | 1 | - | - | **1** |
 | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | - | 1 | - | - | **1** |
 | `ActionType in "ExploitGuardNetworkProtectionAudited,ExploitGuardNetworkProtectionBlocked"`<br>`ActionType startswith "SmartScreenUrl"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
 | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **77** | **0** | **0** | **77** |
+| **Total** | **0** | **67** | **0** | **0** | **67** |
 
 ### AccountName
 
@@ -412,26 +410,24 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `PowerShellCommand` | - | 8 | - | - | **8** |
-| `FileCreated` | - | 8 | - | - | **8** |
-| `AntivirusDetection` | - | 6 | - | - | **6** |
-| `UsbDriveMounted` | - | 5 | - | - | **5** |
-| `BrowserLaunchedToOpenUrl` | - | 5 | - | - | **5** |
-| `PnpDeviceConnected` | - | 5 | - | - | **5** |
+| `PowerShellCommand` | - | 7 | - | - | **7** |
 | `startswith Asr` | - | 5 | - | - | **5** |
 | `NamedPipeEvent` | - | 4 | - | - | **4** |
+| `FileCreated` | - | 4 | - | - | **4** |
+| `PnpDeviceConnected` | - | 4 | - | - | **4** |
+| `AntivirusDetection` | - | 4 | - | - | **4** |
 | `endswith Audited` | - | 4 | - | - | **4** |
 | `UserAccountAddedToLocalGroup` | - | 3 | - | - | **3** |
 | `contains UserAccountCreated` | - | 3 | - | - | **3** |
 | `contains UserAccountModified` | - | 3 | - | - | **3** |
 | `AmsiScriptContent` | - | 3 | - | - | **3** |
 | `AsrOfficeChildProcessBlocked` | - | 3 | - | - | **3** |
-| `SmartScreenUserOverride` | - | 3 | - | - | **3** |
 | `UserAccountCreated` | - | 3 | - | - | **3** |
 | `endswith Blocked` | - | 3 | - | - | **3** |
+| `UsbDriveMounted` | - | 2 | - | - | **2** |
 | `ScheduledTaskCreated` | - | 2 | - | - | **2** |
 | `DnsQueryResponse` | - | 2 | - | - | **2** |
-| `SmartScreenAppWarning` | - | 2 | - | - | **2** |
+| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `startswith ASR` | - | 2 | - | - | **2** |
 | `contains USB` | - | 2 | - | - | **2** |
 | `DeviceBootAttestationInfo` | - | 2 | - | - | **2** |
@@ -461,7 +457,6 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 | `AsrUntrustedUsbProcessBlocked` | - | 1 | - | - | **1** |
 | `AsrVulnerableSignedDriverBlocked` | - | 1 | - | - | **1** |
 | `startswith asr` | - | 1 | - | - | **1** |
-| `OpenProcessApiCall` | - | 1 | - | - | **1** |
 | `AntivirusScanCancelled` | - | 1 | - | - | **1** |
 | `AntivirusScanCompleted` | - | 1 | - | - | **1** |
 | `PnpDeviceAllowed` | - | 1 | - | - | **1** |
@@ -469,7 +464,8 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 | `startswith ScreenshotTaken` | - | 1 | - | - | **1** |
 | `WmiBindEventFilterToConsumer` | - | 1 | - | - | **1** |
 | `contains ControlledFolderAccess` | - | 1 | - | - | **1** |
-| `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
+| `SmartScreenAppWarning` | - | 1 | - | - | **1** |
+| `SmartScreenUserOverride` | - | 1 | - | - | **1** |
 | `FirewallInboundConnectionBlocked` | - | 1 | - | - | **1** |
 | `FirewallInboundConnectionToAppBlocked` | - | 1 | - | - | **1** |
 | `FirewallOutboundConnectionBlocked` | - | 1 | - | - | **1** |
@@ -477,14 +473,6 @@ References by type: 0 connectors, 77 content items, 0 ASIM parsers, 0 other pars
 | `has_any AsrRansomwareBlocked` | - | 1 | - | - | **1** |
 | `ExploitGuardNetworkProtectionAudited` | - | 1 | - | - | **1** |
 | `startswith SmartScreenUrl` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
 
 ### AdditionalFields
 

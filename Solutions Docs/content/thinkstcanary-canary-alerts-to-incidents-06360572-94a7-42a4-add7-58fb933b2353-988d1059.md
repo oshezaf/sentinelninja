@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ThinkstCanaryIncidents_CL`](../tables/thinkstcanaryincidents-cl.md) | ? | ✓ | ? |
+| [`ThinkstCanaryIncidents_CL`](../tables/thinkstcanaryincidents-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

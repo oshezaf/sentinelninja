@@ -21,7 +21,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
-<p>Reference for AlertEvidence table in Azure Monitor Logs.</p>
+<p>Files, IP addresses, URLs, users, or devices associated with alerts</p>
 <table>
 <thead>
 <tr>
@@ -48,11 +48,15 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -316,6 +320,7 @@
 <p>Official Microsoft Learn documentation for field/column information:</p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence">AlertEvidence Schema Reference (Azure Monitor)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table">AlertEvidence Schema Reference (Defender XDR)</a></li>
 </ul>
 <h2 id="solutions">Solutions (7)</h2>
 <p>This table is used by the following solutions:</p>
@@ -405,11 +410,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.html">Hunt for alerts correlated with Teams messages</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.html">Identify Microsoft Defender Antivirus detection related to EUROPIUM</a></td>
@@ -417,11 +422,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.html">Identify acting user for reported phish</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;MoveToDeletedItems,MovedToDeletedItems&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.html">Identify acting user for reported phish</a></td>
-  <td style="text-align:left"><code>ActionType in &quot;MoveToDeletedItems,MovedToDeletedItems&quot;</code></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.html">ImpersonatedUserFootprint</a></td>
@@ -520,16 +525,18 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -572,8 +579,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 12 total references)</h2>
-<p>References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (5 criteria, 7 total references)</h2>
+<p>References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -593,22 +600,6 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ActionType in &quot;MoveToDeletedItems,MovedToDeletedItems&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code><br><code>EntityType in &quot;MailMessage,Url&quot;</code><br><code>ServiceSource == &quot;Microsoft Defender for Office 365&quot;</code></td>
@@ -643,20 +634,12 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>12</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>12</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 </tbody>
 </table>
@@ -690,95 +673,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ChatCreated</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>MoveToDeletedItems</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>MovedToDeletedItems</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>LogonSuccess</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add member to role</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Add user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>InteractiveLogon</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>RemoteInteractiveLogon</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Reset user password</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ResourceAccess</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Sign-in</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Update user</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

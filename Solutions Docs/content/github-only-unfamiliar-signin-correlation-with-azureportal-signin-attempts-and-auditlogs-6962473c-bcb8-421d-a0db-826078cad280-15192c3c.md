@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has_any "Add member to role"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) | `AlertName == "Unfamiliar sign-in properties"` | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName == "Azure Portal"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName == "Azure Portal"`<br>`OperationName has_any "Add member to role"` | ✓ | ✗ | ✓ |
 
 ## Associated Connectors
 

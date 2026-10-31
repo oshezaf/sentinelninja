@@ -30,16 +30,16 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) 🔶 | ? | ✓ | ? |
-| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) 🔶 | ? | ✓ | ? |
+| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

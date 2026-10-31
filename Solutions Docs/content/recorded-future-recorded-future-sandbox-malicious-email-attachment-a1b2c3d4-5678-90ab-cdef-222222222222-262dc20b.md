@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | ? | ✓ | ? |
+| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

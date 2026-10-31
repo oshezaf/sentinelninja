@@ -14,7 +14,7 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimdnsactivitylogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -210,8 +210,8 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
-| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -234,11 +234,11 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimDnsNative](../asim/asimdnsnative.md) | Dns | Native |  |
 
-### Other Parsers (1)
+### Other Parsers (1) — Selection Criteria: `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"`
 
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+| Parser | Solution |
+|:-------|:---------|
+| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 
 ## Resource Types
 
@@ -246,19 +246,25 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/dnsnormalized`
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 3 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | 1 | - | - | 1 | **2** |
+| `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | 1 | - | - | - | **1** |
 | `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
+| **Total** | **3** | **0** | **0** | **1** | **4** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Falcon Data Replicator` | `CrowdStrike` | 1 | - | - | 1 | **2** |
+| `AzureVNet` |  | 1 | - | - | - | **1** |
+| `BIND` |  | 1 | - | - | - | **1** |
+| `SAP Web Dispatcher` |  | 1 | - | - | - | **1** |
 | `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
 
 ### EventResult

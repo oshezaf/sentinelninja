@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 | [`Event`](../tables/event.md) | `EventID in "1,6"`<br>`EventLog == "MSExchange Management"` | ✓ | ✓ | ✗ |
 
 ---

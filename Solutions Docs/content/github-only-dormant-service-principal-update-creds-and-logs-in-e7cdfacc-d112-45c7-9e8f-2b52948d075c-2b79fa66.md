@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | ✓ | ✗ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ## Associated Connectors

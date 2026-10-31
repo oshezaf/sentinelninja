@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceTvmSoftwareVulnerabilities table in Azure Monitor Logs.
+Software vulnerabilities found on devices and the list of available security updates that address each vulnerability
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceTvmSoftwareVulnerabilities table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilities) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilities-table) |
 
 ## Contents
 
@@ -55,6 +56,7 @@ Reference for DeviceTvmSoftwareVulnerabilities table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSoftwareVulnerabilities Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilities)
+- [DeviceTvmSoftwareVulnerabilities Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilities-table)
 
 ## Solutions (1)
 

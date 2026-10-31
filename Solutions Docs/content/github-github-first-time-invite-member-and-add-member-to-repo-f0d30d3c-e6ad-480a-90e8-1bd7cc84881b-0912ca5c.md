@@ -23,9 +23,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ? | ✓ | ? |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ? | ✓ | ? |
-| [`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) | ? | ✓ | ? |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV3_CL`](../tables/githubauditlogsv3-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AliCloudActionTrailLogs_CL`](../tables/alicloudactiontraillogs-cl.md) | ? | ✓ | ? |
+| [`AliCloudActionTrailLogs_CL`](../tables/alicloudactiontraillogs-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

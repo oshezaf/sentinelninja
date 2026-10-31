@@ -92,11 +92,12 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Azure Function](methods/azure-function.md) | **130** | 77 | 33 | 20 |
 | [CCF Push](methods/ccf-push.md) | **58** | 55 | 0 | 3 |
 | [REST Pull API](methods/rest-pull-api.md) | **51** | 35 | 1 | 15 |
-| [Native](methods/native.md) | **18** | 16 | 1 | 1 |
+| [Native](methods/native.md) | **17** | 15 | 1 | 1 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 12 | 1 | 2 |
 | [Unknown](methods/unknown.md) | **12** | 12 | 0 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **2** | 2 | 0 | 0 |
+| [Defender](methods/defender.md) | **1** | 1 | 0 | 0 |
 | [Azure Function (TI Upload API)\|Unknown](methods/azure-function-ti-upload-api-unknown.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
 | **Total** | **724** | **483** | **163** | **78** |
@@ -112,11 +113,12 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Azure Function](methods/azure-function.md) | 13 / 22 / 2 / **37** | 63 / 11 / 17 / **91** | 1 / 0 / 1 / **2** | - |
 | [CCF Push](methods/ccf-push.md) | 3 / 0 / 0 / **3** | 49 / 0 / 3 / **52** | 3 / 0 / 0 / **3** | - |
 | [REST Pull API](methods/rest-pull-api.md) | 3 / 0 / 2 / **5** | 26 / 1 / 13 / **40** | 4 / 0 / 0 / **4** | 2 / 0 / 0 / **2** |
-| [Native](methods/native.md) | 16 / 1 / 1 / **18** | - | - | - |
+| [Native](methods/native.md) | 15 / 1 / 1 / **17** | - | - | - |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 / 0 / 0 / **1** | 10 / 1 / 2 / **13** | 1 / 0 / 0 / **1** | - |
 | [Unknown](methods/unknown.md) | 12 / 0 / 0 / **12** | - | - | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 2 / 0 / 0 / **2** | - | - |
+| [Defender](methods/defender.md) | 1 / 0 / 0 / **1** | - | - | - |
 | [Azure Function (TI Upload API)\|Unknown](methods/azure-function-ti-upload-api-unknown.md) | - | 1 / 0 / 0 / **1** | - | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
 | **Total** | 165 / 97 / 13 / **275** | 303 / 58 / 57 / **418** | 13 / 8 / 6 / **27** | 2 / 0 / 2 / **4** |
@@ -230,7 +232,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 
 ### Overview
 
-**2493 tables** documented across all discovery sources. **2327 tables** have schema information.
+**2533 tables** documented across all discovery sources. **2349 tables** have schema information.
 
 ### Discovery Sources
 
@@ -239,14 +241,16 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 1287 | 1287 |
-| Content | 284 | 979 |
+| Content | 288 | 987 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 729 | 941 |
-| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 0 | 0 |
-| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 0 | 0 |
+| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 17 | 66 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 21 | 669 |
 | [Azure Monitor Logs Table Feature Support](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 941 |
 | [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features) | 0 | 109 |
-| Schema | 193 | 2327 |
-| **Total** | **2493** | |
+| Schema | 191 | 2349 |
+| **Total** | **2533** | |
+
+*22 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
 ### Schema Sources
 
@@ -254,25 +258,25 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Schema Source | Tables |
 |:-------------|-------:|
-| Azure Monitor docs | 941 |
+| Azure Monitor docs | 963 |
 | DCR | 31 |
 | KQL validation | 1098 |
 | Connector definition | 257 |
-| **Total unique tables with schema** | **2327** |
+| **Total unique tables with schema** | **2349** |
 
 ### Custom Log V1 (CLv1) 🔶
 
-**354** of 2493 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+**355** of 2533 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
 
 **By Table Category:**
 
 | Category | CLv1 Tables |
 |:---------|------------:|
-| Uncategorized | 326 |
+| Uncategorized | 327 |
 | Internal | 22 |
 | GCP | 5 |
 | Various | 1 |
-| **Total** | **354** |
+| **Total** | **355** |
 
 ## Content
 

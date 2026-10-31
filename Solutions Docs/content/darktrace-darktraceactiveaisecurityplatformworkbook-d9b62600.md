@@ -18,12 +18,12 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DarktraceASM_CL`](../tables/darktraceasm-cl.md) |  | ? | ✓ | ? |
-| [`DarktraceEMAIL_CL`](../tables/darktraceemail-cl.md) |  | ? | ✓ | ? |
-| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) |  | ? | ✓ | ? |
-| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) |  | ? | ✓ | ? |
-| [`DarktraceResponseActions_CL`](../tables/darktraceresponseactions-cl.md) |  | ? | ✓ | ? |
-| [`DarktraceSystemStatusAlerts_CL`](../tables/darktracesystemstatusalerts-cl.md) |  | ? | ✓ | ? |
+| [`DarktraceASM_CL`](../tables/darktraceasm-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceEMAIL_CL`](../tables/darktraceemail-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceResponseActions_CL`](../tables/darktraceresponseactions-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceSystemStatusAlerts_CL`](../tables/darktracesystemstatusalerts-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

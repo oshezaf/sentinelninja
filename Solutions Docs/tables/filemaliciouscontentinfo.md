@@ -6,16 +6,17 @@
 
 ---
 
-Reference for FileMaliciousContentInfo table in Azure Monitor Logs.
+Files that were processed by Microsoft Defender for Office 365 in SharePoint Online, OneDrive, and Microsoft Teams.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security |
+| **Category** | Security, XDR |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/filemaliciouscontentinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-filemaliciouscontentinfo-table) |
 
 ## Contents
 
@@ -57,6 +58,7 @@ Reference for FileMaliciousContentInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [FileMaliciousContentInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/filemaliciouscontentinfo)
+- [FileMaliciousContentInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-filemaliciouscontentinfo-table)
 
 ## Solutions (1)
 

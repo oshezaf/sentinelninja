@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`D3SOARIncidents_CL`](../tables/d3soarincidents-cl.md) | ? | ✓ | ? |
+| [`D3SOARIncidents_CL`](../tables/d3soarincidents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

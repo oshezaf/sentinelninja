@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DomainToolsThreatIntelDomains_CL`](../tables/domaintoolsthreatinteldomains-cl.md) | ? | ✓ | ? |
+| [`DomainToolsThreatIntelDomains_CL`](../tables/domaintoolsthreatinteldomains-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

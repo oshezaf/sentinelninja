@@ -33,7 +33,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ? | ✓ | ? |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -14,7 +14,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
 ## Contents
@@ -245,7 +245,7 @@ This table is ingested by the following connectors:
 | [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
 | [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) | `ActivityStatusValue == "Success"`<br>`OperationNameValue == "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`OperationNameValue != "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`ResourceGroup has "cloud-shell-storage"` |
 | [Azure rare subscription level operations](../content/standalone-content-azure-rare-subscription-level-operations-ef05eb0d-38ce-454e-a39d-4e42801be8b9-4a419014.md) |  |
-| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) | `OperationName has "Create"` |
+| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) |  |
 
 **GitHub Only:**
 
@@ -509,9 +509,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (40 criteria, 47 total references)
+## Selection Criteria Summary (39 criteria, 46 total references)
 
-References by type: 0 connectors, 46 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 45 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -544,7 +544,6 @@ References by type: 0 connectors, 46 content items, 1 ASIM parsers, 0 other pars
 | `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue == "Success"`<br>`OperationNameValue == "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`OperationNameValue != "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`ResourceGroup has "cloud-shell-storage"` | - | 1 | - | - | **1** |
 | `ActivityStatus == "Succeeded"` | - | 1 | - | - | **1** |
-| `OperationName has "Create"` | - | 1 | - | - | **1** |
 | `Level in "Error,Informational,Warning"` | - | 1 | - | - | **1** |
 | `CategoryValue == "ServiceHealth"`<br>`Level in "Error,Information,Warning"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue == "Succeeded"`<br>`Caller has "@"` | - | 1 | - | - | **1** |
@@ -555,7 +554,7 @@ References by type: 0 connectors, 46 content items, 1 ASIM parsers, 0 other pars
 | `ActivityStatus in "Accepted,Succeeded"`<br>`ActivitySubstatusValue in "Created,OK"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "cluster"`<br>`OperationNameValue contains "insights"`<br>`OperationNameValue contains "storage"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
 | `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **46** | **1** | **0** | **47** |
+| **Total** | **0** | **45** | **1** | **0** | **46** |
 
 ### ActivityStatus
 
@@ -621,7 +620,6 @@ References by type: 0 connectors, 46 content items, 1 ASIM parsers, 0 other pars
 | `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
 | `contains delete` | - | 1 | - | - | **1** |
 | `contains remove` | - | 1 | - | - | **1** |
-| `has Create` | - | 1 | - | - | **1** |
 
 ### OperationNameValue
 

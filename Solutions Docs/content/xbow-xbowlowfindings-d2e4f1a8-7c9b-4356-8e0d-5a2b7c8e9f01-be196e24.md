@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`XbowAssets_CL`](../tables/xbowassets-cl.md) | ? | ✓ | ? |
-| [`XbowFindings_CL`](../tables/xbowfindings-cl.md) | ? | ✓ | ? |
+| [`XbowAssets_CL`](../tables/xbowassets-cl.md) | ✗ | ✓ | ✗ |
+| [`XbowFindings_CL`](../tables/xbowfindings-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

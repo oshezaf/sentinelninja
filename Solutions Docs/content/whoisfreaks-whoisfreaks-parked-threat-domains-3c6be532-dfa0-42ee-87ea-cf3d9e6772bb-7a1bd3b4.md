@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WhoisFreaksThreat_CL`](../tables/whoisfreaksthreat-cl.md) | ? | ✓ | ? |
+| [`WhoisFreaksThreat_CL`](../tables/whoisfreaksthreat-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

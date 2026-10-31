@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) | ? | ✓ | ? |
+| [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

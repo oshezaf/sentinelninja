@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
 
 ---
 

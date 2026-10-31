@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) |  | ? | ✓ | ? |
+| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) |  | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ? | ✓ | ? |
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

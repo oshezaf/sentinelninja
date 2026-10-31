@@ -6,7 +6,7 @@
 
 ---
 
-Reference for DeviceInfo table in Azure Monitor Logs.
+Machine information, including OS information
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table) |
 
 ## Contents
 
@@ -91,6 +92,7 @@ Reference for DeviceInfo table in Azure Monitor Logs.
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo)
+- [DeviceInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table)
 
 ## Solutions (7)
 
@@ -217,27 +219,27 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "FileCreated,UsbDriveMounted"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
 **GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `OnboardingStatus == "Can be onboarded"` |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `OnboardingStatus == "Can be onboarded"` |
 
-## Selection Criteria Summary (5 criteria, 6 total references)
+## Selection Criteria Summary (4 criteria, 5 total references)
 
-References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -245,15 +247,7 @@ References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parse
 | `LoggedOnUsers has "MSOL_"` | - | 1 | - | - | **1** |
 | `OSPlatform contains "Windows"`<br>`OnboardingStatus == "Onboarded"` | - | 1 | - | - | **1** |
 | `ExposureLevel == "High"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **6** | **0** | **0** | **6** |
-
-### ActionType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 1 | - | - | **1** |
-| `UsbDriveMounted` | - | 1 | - | - | **1** |
+| **Total** | **0** | **5** | **0** | **0** | **5** |
 
 ### ExposureLevel
 

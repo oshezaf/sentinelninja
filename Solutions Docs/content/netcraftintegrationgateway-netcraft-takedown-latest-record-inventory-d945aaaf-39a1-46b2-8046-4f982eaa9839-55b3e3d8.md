@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetcraftTakedown_CL`](../tables/netcrafttakedown-cl.md) | ? | ✓ | ? |
+| [`NetcraftTakedown_CL`](../tables/netcrafttakedown-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

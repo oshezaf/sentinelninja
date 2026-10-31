@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GTI_Vulnerabilities_CL`](../tables/gti-vulnerabilities-cl.md) | ? | ✓ | ? |
+| [`GTI_Vulnerabilities_CL`](../tables/gti-vulnerabilities-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

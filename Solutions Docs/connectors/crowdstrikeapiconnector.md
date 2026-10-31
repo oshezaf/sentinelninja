@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrikeAlertsV2_CL`](../tables/crowdstrikealertsv2-cl.md) | ? | ✓ | ? |
+| [`CrowdStrikeAlertsV2_CL`](../tables/crowdstrikealertsv2-cl.md) | ✓ | ✓ | ✓ |
 | [`CrowdStrikeCasesV2_CL`](../tables/crowdstrikecasesv2-cl.md) | ? | ✓ | ? |
 | [`CrowdStrikeDetectionsV2_CL`](../tables/crowdstrikedetectionsv2-cl.md) | ? | ✓ | ? |
 | [`CrowdStrikeHostsV2_CL`](../tables/crowdstrikehostsv2-cl.md) | ? | ✓ | ? |

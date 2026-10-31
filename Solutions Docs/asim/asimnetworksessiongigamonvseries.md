@@ -32,7 +32,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GigamonV2_CL`](../tables/gigamonv2-cl.md) | ? | ✓ | ? |
+| [`GigamonV2_CL`](../tables/gigamonv2-cl.md) | ✗ | ✓ | ✗ |
 
 ## Parameters
 

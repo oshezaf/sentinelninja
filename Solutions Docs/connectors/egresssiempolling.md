@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | ? | ✓ | ? |
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | ✓ | ✓ | ✓ |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | ? | ✓ | ? |
 | [`KnowBe4Defend_CL`](../tables/knowbe4defend-cl.md) 🔶 | ? | ✓ | ? |
 

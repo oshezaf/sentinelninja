@@ -32,9 +32,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ? | ✓ | ? |
-| [`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) | ? | ✓ | ? |
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ? | ✓ | ? |
+| [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAuditLogsV3_CL`](../tables/dynatraceauditlogsv3-cl.md) | ✗ | ✓ | ✗ |
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

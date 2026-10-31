@@ -22,9 +22,10 @@ This query helps hunting for Automated email notifications and suspicious sign-i
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
+| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) | `RiskLevelDuringSignIn == "100"` | ? | ✗ | ? |
 
 ---
 

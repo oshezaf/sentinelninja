@@ -29,8 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAlertUpdatesV2_CL`](../tables/halcyonalertupdatesv2-cl.md) | ? | ✓ | ? |
-| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) | ? | ✓ | ? |
+| [`HalcyonAlertUpdatesV2_CL`](../tables/halcyonalertupdatesv2-cl.md) | ✓ | ✓ | ✓ |
+| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) |  | ? | ✓ | ? |
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

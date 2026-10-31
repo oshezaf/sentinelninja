@@ -25,11 +25,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ? | ✓ | ? |
-| [`RecordedFuturePlaybookAlerts_V2_CL`](../tables/recordedfutureplaybookalerts-v2-cl.md) | ? | ✓ | ? |
-| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | ? | ✓ | ? |
-| [`RecordedFutureThreatMapMalware_V2_CL`](../tables/recordedfuturethreatmapmalware-v2-cl.md) | ? | ✓ | ? |
-| [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) | ? | ✓ | ? |
+| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ✓ | ✓ | ✓ |
+| [`RecordedFuturePlaybookAlerts_V2_CL`](../tables/recordedfutureplaybookalerts-v2-cl.md) | ✓ | ✓ | ✓ |
+| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | ✓ | ✓ | ✓ |
+| [`RecordedFutureThreatMapMalware_V2_CL`](../tables/recordedfuturethreatmapmalware-v2-cl.md) | ✓ | ✓ | ✓ |
+| [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

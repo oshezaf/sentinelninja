@@ -26,9 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WizAuditLogsV3_CL`](../tables/wizauditlogsv3-cl.md) | ? | ✓ | ? |
-| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ? | ✓ | ? |
-| [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) | ? | ✓ | ? |
+| [`WizAuditLogsV3_CL`](../tables/wizauditlogsv3-cl.md) | ✗ | ✓ | ✗ |
+| [`WizDetectionsV3_CL`](../tables/wizdetectionsv3-cl.md) | ✓ | ✓ | ✓ |
+| [`WizIssuesV3_CL`](../tables/wizissuesv3-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

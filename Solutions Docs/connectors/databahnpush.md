@@ -29,9 +29,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`databahn_alerts_CL`](../tables/databahn-alerts-cl.md) | ? | ✓ | ? |
-| [`databahn_audit_logs_CL`](../tables/databahn-audit-logs-cl.md) | ? | ✓ | ? |
-| [`databahn_device_inventory_CL`](../tables/databahn-device-inventory-cl.md) | ? | ✓ | ? |
+| [`databahn_alerts_CL`](../tables/databahn-alerts-cl.md) | ✗ | ✓ | ✗ |
+| [`databahn_audit_logs_CL`](../tables/databahn-audit-logs-cl.md) | ✗ | ✓ | ✗ |
+| [`databahn_device_inventory_CL`](../tables/databahn-device-inventory-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

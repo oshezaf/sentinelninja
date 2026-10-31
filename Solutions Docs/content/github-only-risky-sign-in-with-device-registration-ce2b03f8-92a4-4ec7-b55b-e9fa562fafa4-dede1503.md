@@ -24,6 +24,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Add registered owner to device."` | ✓ | ✗ | ✓ |
+| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) |  | ? | ✗ | ? |
 
 ## Associated Connectors
 
