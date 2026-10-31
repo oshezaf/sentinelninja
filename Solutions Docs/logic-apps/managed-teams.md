@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 102 |
-| **Solutions** | 33 |
+| **Playbooks using** | 103 |
+| **Solutions** | 34 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/teams/) |
 
 ## Playbooks Using This Connector
@@ -79,6 +79,7 @@
 | [Prompt Okta user](../content/okta-single-sign-on-prompt-okta-user-beec822e.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) | 1 | 0 |
 | [Prompt User - Alert](../content/microsoft-entra-id-prompt-user-alert-4762e6ab.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 1 | 1 |
 | [Prompt User - Incident](../content/microsoft-entra-id-prompt-user-incident-2db81db3.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 1 | 1 |
+| [QCrypton PQC — notify on new vulnerable finding](../content/qcryptonpqcscanner-qcrypton-pqc-—-notify-on-new-vulnerable-finding-91da7c15.md) | [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) | 1 | 1 |
 | [Rapid7 Insight VM - Run scan](../content/rapid7insightvm-rapid7-insight-vm-run-scan-939c1740.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) | 1 | 0 |
 | [Remediate assets on prisma cloud](../content/paloaltoprismacloud-remediate-assets-on-prisma-cloud-25186c76.md) | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) | 1 | 3 |
 | [Response on Okta user from Teams](../content/okta-single-sign-on-response-on-okta-user-from-teams-0dfd8bc2.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) | 1 | 0 |

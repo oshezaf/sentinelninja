@@ -14,7 +14,7 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -80,7 +80,7 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) |  |
-| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) | `Patchable in "0,1"` |
+| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) |  |
 
 ---
 
@@ -91,22 +91,6 @@ This table is ingested by the following connectors:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [QualysKB](../parsers/qualyskb.md) | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |  |
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Patchable in "0,1"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
-
-### Patchable
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `0` | 1 | - | - | - | **1** |
-| `1` | 1 | - | - | - | **1** |
 
 ---
 

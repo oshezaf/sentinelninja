@@ -21,7 +21,7 @@
 | **First Published** | 2026-08-25 |
 | **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Uniqkey](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Uniqkey) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/uniqkey.azure-sentinel-solution-uniqkey) · Popularity: 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/uniqkey.azure-sentinel-solution-uniqkey) · Popularity: 🟡 Low (24%) |
 
 The [Uniqkey](https://uniqkey.eu/) solution for Microsoft Sentinel enables ingestion of security and audit events from the Uniqkey business password management platform. Events cover authentication, credential access, credential management, sharing, policy management, threat detection and other administrative activity, giving security teams visibility into password and access hygiene across the organization.
 

@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimUserManagement` (parameter-less) · `imUserManagement` (filtering) |
 | **Built-in Parser** | `_ASim_UserManagement` (parameter-less) · `_Im_UserManagement` (filtering) |
 | **Schema** | UserManagement |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagement.md)) |
-| **Last Updated** | 06 Mar, 2024 |
+| **Parser Version** | 0.1.5 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagement.md)) |
+| **Last Updated** | Oct 26, 2026 |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagement.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagement.yaml) |
 
 ## Description
@@ -30,7 +30,9 @@ This union parser includes parsers for the following products:
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
 | AWS Cloud Trail | [_ASim_UserManagement_AWSCloudTrail](asimusermanagementawscloudtrail.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
+| Alibaba Cloud ActionTrail | [_ASim_UserManagement_AlibabaCloudActionTrail](asimusermanagementalibabacloudactiontrail.md) | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | Cisco ISE | [_ASim_UserManagement_CiscoISE](asimusermanagementciscoise.md) | [Syslog](../solutions/syslog.md) |
+| CrowdStrike Falcon Data Replicator | [_ASim_UserManagement_CrowdStrikeFalconDataReplicator](asimusermanagementcrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | Microsoft | [_ASim_UserManagement_LinuxAuthpriv](asimusermanagementlinuxauthpriv.md) | [Syslog](../solutions/syslog.md) |
 | Microsoft Security Event | [_ASim_UserManagement_MicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Windows Event | [_ASim_UserManagement_MicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.13 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Last Updated** | 2026-08-07 |
+| **Last Updated** | 2026-10-16 |
 | **Solution Folder** | [Windows Security Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securityevents) · Rating: ★★★☆☆ 3.0/5 (4 ratings) · Popularity: 🟢 High (95%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-securityevents) · Rating: ★★★☆☆ 3.0/5 (4 ratings) · Popularity: 🟢 High (96%) |
 
 The Windows Security Events solution for Microsoft Sentinel allows you to ingest Security events from your Windows machines using the Windows Agent into Microsoft Sentinel. This solution includes two (2) data connectors to help ingest the logs.
 
@@ -157,6 +157,8 @@ This solution includes **73 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                         |
 |-------------|--------------------------------|--------------------------------------------------------------------------------------------|
+| 3.2.1       | 14-10-2026                     | Added 2 **Defender XDR Workbooks** (`EventAnalyzer.json` and `IdentityAndAccess.json`) alongside the 21 disabled **Defender XDR Custom Detections** and existing Microsoft Sentinel content in hybrid V3.1 packaging. |
+| 3.1.2       | 12-10-2026                     | Added 21 disabled **Defender XDR Custom Detections** with reviewed entity mappings and hybrid V3.1 packaging alongside existing Microsoft Sentinel content. Validation was offline; runtime execution and alert parity were not run. |
 | 3.0.13      | 20-07-2026                     | Added **Analytic Rule** WMI Spawning Suspicious Child Process |
 | 3.0.12      | 18-02-2026                     | Removed external blog reference text from "Remote Scheduled Task Creation or Update using ATSVC Named Pipe" and " Scheduled Task Creation or Update from User Writable Directory" **hunting query** description | 
 | 3.0.11      | 28-01-2026                     | Updated **Analytic Rule** to fix the link from the description &  Update **Analytic Rule** NonDCActiveDirectoryReplication - to reduce false positive results |

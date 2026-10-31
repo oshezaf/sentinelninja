@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -20,7 +18,7 @@
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (19 columns)
+## Schema (53 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OneLoginEventsV2_CL.json)
 
@@ -30,21 +28,55 @@
 | ActorSystem | string |
 | ActorUserId | real |
 | ActorUserName | string |
+| AdcId | real |
 | AppId | real |
 | AppName | string |
+| AssumedBySuperadminOrReseller | real |
+| AssumingActingUserId | real |
+| BrowserFingerprint | string |
+| CertificateId | real |
+| ClientId | string |
 | CustomMessage | string |
+| DirectoryId | real |
+| DirectorySyncRunId | real |
+| ErrorDescription | string |
 | EventId | real |
 | EventTypeId | real |
+| GroupId | real |
+| GroupName | string |
 | Ipaddr | string |
+| LoginId | real |
+| LoginName | string |
+| MappingId | real |
 | Notes | string |
+| ObjectId | real |
+| OperationName | string |
+| OtpDeviceId | real |
+| OtpDeviceName | string |
+| Param | string |
 | PolicyId | real |
 | PolicyName | string |
 | PolicyType | string |
+| PrivilegeId | real |
+| PrivilegeName | string |
+| ProxyIp | string |
+| RadiusConfigId | real |
+| Resolution | real |
+| ResolvedAt | string |
+| ResourceTypeId | real |
+| RiskCookieId | string |
+| RiskReasons | string |
+| RiskScore | real |
 | RoleId | real |
 | RoleName | string |
+| ServiceDirectoryId | real |
+| Solved | bool |
 | TimeGenerated | datetime |
+| TrustedIdpId | real |
+| UserFieldId | real |
 | UserId | real |
 | UserName | string |
+| Uuid | string |
 
 ## Schema References
 

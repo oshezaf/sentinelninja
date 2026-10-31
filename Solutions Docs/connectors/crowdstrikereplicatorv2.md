@@ -33,13 +33,13 @@ This connector ingests data into the following tables:
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ✓ |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ✓ | ✓ | ✓ |
+| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) |  | ? | ✓ | ? |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ? | ✓ | ? |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

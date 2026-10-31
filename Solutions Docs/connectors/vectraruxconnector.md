@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [VectraRUX_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraCCFConnector/VectraRUX_DCR.json) |
 | **CCF Configuration** | [VectraRUX_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraCCFConnector/VectraRUX_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#vectra-rux-security-data-connector-via-codeless-connector-framework) |
 
 The [Vectra RUX](https://www.vectra.ai/) data connector enables you to ingest security data from the Vectra AI platform into Microsoft Sentinel through the REST API using the Codeless Connector Framework (CCF). This connector supports 3 data streams using OAuth2 client credentials:
 

@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimProcessEventMicrosoft365D` |
 | **Built-in Parser** | `_ASim_ProcessEvent_Microsoft365D` |
 | **Schema** | ProcessEvent |
-| **Schema Version** | 0.1.4 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft 365 Defender for endpoint |
-| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md)) |
-| **Last Updated** | May 01, 2026 |
+| **Parser Version** | 0.3.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md)) |
+| **Last Updated** | Oct 27, 2026 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventCreate](asimprocesseventcreate.md), [ASimProcessEventTerminate](asimprocesseventterminate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessEventMicrosoft365D.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessEventMicrosoft365D.yaml) |
 

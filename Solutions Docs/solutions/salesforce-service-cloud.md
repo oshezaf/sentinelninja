@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider |
-| **Version** | 3.7.0 |
+| **Version** | 3.7.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-09-03 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (91%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (90%) |
 
 The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events and Salesforce Marketing Cloud audit and security events into Microsoft Sentinel.
   
@@ -111,6 +111,8 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.7.2       | 21-10-2026                     | Added Microsoft Defender XDR custom detections and an XDR workbook migrated from the solution's Microsoft Sentinel analytic rules and workbook; updated the **Brute force attack against user credentials** analytic rule custom details to reference projected output columns |
+| 3.7.1       | 01-10-2026                     | Promoted the Salesforce Marketing Cloud connector to GA |
 | 3.7.0       | 01-09-2026                     | Added the Salesforce Marketing Cloud CCF connector with audit and security event ingestion, custom tables, DCR transformations, and parser aliases. |
 | 3.6.1       | 26-08-2026                     | Corrected the Salesforce Service Cloud parser metadata version |
 | 3.6.0       | 18-08-2026                     | Added Salesforce Audit Logs parser and table definitions, and updated Salesforce connector configurations. |

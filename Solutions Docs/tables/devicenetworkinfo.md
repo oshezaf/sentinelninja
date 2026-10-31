@@ -6,7 +6,7 @@
 
 ---
 
-Network properties of devices, including physical adapters, IP and MAC addresses, as well as connected networks and domains
+Reference for DeviceNetworkInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Network properties of devices, including physical adapters, IP and MAC addresses
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkinfo-table) |
 
 ## Contents
 
@@ -61,7 +60,6 @@ Network properties of devices, including physical adapters, IP and MAC addresses
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceNetworkInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkinfo)
-- [DeviceNetworkInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkinfo-table)
 
 ## Solutions (4)
 

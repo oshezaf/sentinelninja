@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.akamai.com/global-services/support/guardicore-support](https://www.akamai.com/global-services/support/guardicore-support) |
 | **Categories** | Security - Cloud Security,Security - Network |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Akamai Guardicore - specialist@akamai.com |
 | **First Published** | 2025-04-23 |
 | **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Akamai Guardicore](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akamai-technologies.akamai_guardicore_sentinel) · Popularity: ⚪ Very Low (7%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akamai-technologies.akamai_guardicore_sentinel) · Popularity: 🔵 Medium (59%) |
 
 The [Akamai Guardicore](https://www.akamai.com/products/akamai-guardicore-segmentation) solution for Microsoft Sentinel imports Agents, Assets, Applications, Policy Rules, and incident-related connection enrichment data from a Guardicore Centra instance. The data is ingested via the Codeless Connector Framework (CCF) and Data Collection Rules, with no Azure Function App dependency.
 
@@ -88,9 +88,10 @@ This solution includes **5 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
-|------------|--------------------------------|----------------------------------------|
-| 3.0.0      | 27-04-2026                     | Initial release of the Akamai Guardicore solution as a Codeless Connector Framework (CCF/CCP) solution. Polls Agents, Assets, Applications, and Policy Rules from Guardicore Centra via DCR-based ingestion (no Azure Function App). Includes the `Guardicore-ProcessIncidentEnrichment` Microsoft Sentinel incident-creation playbook and the `Guardicore-EnrichmentRunner` recurrence-triggered companion playbook, both implemented natively in Logic Apps. They write to `GuardicoreProcessedIncidents_CL` and `GuardicoreEnrichingConnections_CL` via the Logs Ingestion API to a Data Collection Rule using system-assigned managed identity (no workspace shared key required). Two workbooks: Workload Protection Dashboard and Incident Analysis Dashboard. |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
+|-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.1       | 12-10-2026                     | Fixed the CCF data connector deployment: the four custom log tables (`GuardicoreAgents_CL`, `GuardicoreAssets_CL`, `GuardicoreApplications_CL`, `GuardicorePolicyRules_CL`) now use bare resource names so they are created correctly on Connect (previously an unresolved `{{workspaceName}}` placeholder caused a 404 and the tables were never created).  |
+| 3.0.0       | 27-04-2026                     | Initial release of the Akamai Guardicore solution as a Codeless Connector Framework (CCF/CCP) solution. Polls Agents, Assets, Applications, and Policy Rules from Guardicore Centra via DCR-based ingestion (no Azure Function App). Includes the `Guardicore-ProcessIncidentEnrichment` Microsoft Sentinel incident-creation playbook and the `Guardicore-EnrichmentRunner` recurrence-triggered companion playbook, both implemented natively in Logic Apps. They write to `GuardicoreProcessedIncidents_CL` and `GuardicoreEnrichingConnections_CL` via the Logs Ingestion API to a Data Collection Rule using system-assigned managed identity (no workspace shared key required). Two workbooks: Workload Protection Dashboard and Incident Analysis Dashboard. |
 
 ---
 

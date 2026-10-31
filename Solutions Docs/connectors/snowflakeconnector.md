@@ -17,7 +17,7 @@
 | **Connector Definition Files** | [SnowflakeLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_ConnectorDefinition.json) |
 | **DCR Definition Files** | [SnowflakeLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_DCR.json) |
 | **CCF Configuration** | [SnowflakeLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_PollingConfig.json) |
-| **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **CCF Capabilities** | `APIKey`, `Paging`, `POST`, `MvExpand` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#snowflake-via-codeless-connector-framework) |
 
 The Snowflake data connector provides the capability to ingest Snowflake [Login History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/login_history), [Query History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/query_history), [User-Grant Logs](https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_users), [Role-Grant Logs](https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_roles), [Load History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/load_history), [Materialized View Refresh History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/materialized_view_refresh_history), [Roles Logs](https://docs.snowflake.com/en/sql-reference/account-usage/roles), [Tables Logs](https://docs.snowflake.com/en/sql-reference/account-usage/tables), [Table Storage Metrics Logs](https://docs.snowflake.com/en/sql-reference/account-usage/table_storage_metrics), [Users Logs](https://docs.snowflake.com/en/sql-reference/account-usage/users) into Microsoft Sentinel using the Snowflake SQL API. Refer to [Snowflake SQL API documentation](https://docs.snowflake.com/en/developer-guide/sql-api/reference) for more information.
@@ -28,16 +28,16 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SnowflakeLoadV2_CL`](../tables/snowflakeloadv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeLoginV2_CL`](../tables/snowflakeloginv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeMaterializedViewV2_CL`](../tables/snowflakematerializedviewv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeQueryV2_CL`](../tables/snowflakequeryv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeRoleGrantV2_CL`](../tables/snowflakerolegrantv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeRolesV2_CL`](../tables/snowflakerolesv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeTableStorageMetricsV2_CL`](../tables/snowflaketablestoragemetricsv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeTablesV2_CL`](../tables/snowflaketablesv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeUserGrantV2_CL`](../tables/snowflakeusergrantv2-cl.md) | ? | ✓ | ? |
-| [`SnowflakeUsersV2_CL`](../tables/snowflakeusersv2-cl.md) | ? | ✓ | ? |
+| [`SnowflakeLoadV3_CL`](../tables/snowflakeloadv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeLoginV3_CL`](../tables/snowflakeloginv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeMaterializedViewV3_CL`](../tables/snowflakematerializedviewv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeQueryV3_CL`](../tables/snowflakequeryv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeRoleGrantV3_CL`](../tables/snowflakerolegrantv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeRolesV3_CL`](../tables/snowflakerolesv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeTableStorageMetricsV3_CL`](../tables/snowflaketablestoragemetricsv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeTablesV3_CL`](../tables/snowflaketablesv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeUserGrantV3_CL`](../tables/snowflakeusergrantv3-cl.md) | ? | ✓ | ? |
+| [`SnowflakeUsersV3_CL`](../tables/snowflakeusersv3-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -52,7 +52,7 @@ This connector ingests data into the following tables:
 
 **1. Connect Snowflake to Microsoft Sentinel**
 
-ℹ️ **Notice:** Solution version 3.1.0 and later uses the SnowflakeV2 tables (e.g., SnowflakeQueryV2_CL, SnowflakeLoginV2_CL). The parsers have been updated accordingly.
+ℹ️ **Notice:** Solution version 3.2.0 and later uses the SnowflakeV3 tables (e.g., SnowflakeQueryV3_CL, SnowflakeLoginV3_CL). The parsers have been updated accordingly.
 >**NOTE:** To ensure data is presented in separate columns for each field, execute the parser using the **Snowflake()** function
 To gather data from Snowflake, you need to provide the following resources
 #### 1. Account Identifier 

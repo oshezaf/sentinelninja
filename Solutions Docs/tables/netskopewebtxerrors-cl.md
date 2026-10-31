@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -56,7 +54,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) |  |
+| [[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)](../connectors/netskopewebtransactionsdataconnector.md) |  |
 
 ---
 

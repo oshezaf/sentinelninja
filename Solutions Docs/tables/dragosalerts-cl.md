@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -18,6 +16,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (26 columns)
@@ -74,6 +73,16 @@ This table is ingested by the following connectors:
 | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Dragos](../solutions/dragos.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DragosNotificationsDashboard](../content/dragos-dragosnotificationsdashboard-128d4d6b.md) |  |
 
 ## Parsers Using This Table (1)
 

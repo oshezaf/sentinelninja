@@ -16,6 +16,7 @@
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Connector_Dynatrace_Problems_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceProblemsV3/Connector_Dynatrace_Problems_Definition.json) |
 | **DCR Definition Files** | [Connector_Dynatrace_Problems_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceProblemsV3/Connector_Dynatrace_Problems_DCR.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#dynatrace-problems-v3) |
 
 This connector uses the [Dynatrace DQL Storage Query API](https://docs.dynatrace.com/docs/platform/grail/dynatrace-query-language) to ingest Davis AI problem events into Microsoft Sentinel Log Analytics.
 

@@ -71,6 +71,7 @@ This content item queries data from the following tables:
 | [`Corelight_v3_mqtt_publish_CL`](../tables/corelight-v3-mqtt-publish-cl.md) |  | ? | ✓ | ? |
 | [`Corelight_v3_mqtt_subscribe_CL`](../tables/corelight-v3-mqtt-subscribe-cl.md) |  | ? | ✓ | ? |
 | [`Corelight_v3_mysql_CL`](../tables/corelight-v3-mysql-cl.md) |  | ? | ✓ | ? |
+| [`Corelight_v3_net_perf_CL`](../tables/corelight-v3-net-perf-cl.md) |  | ? | ✓ | ? |
 | [`Corelight_v3_notice_CL`](../tables/corelight-v3-notice-cl.md) |  | ? | ✓ | ? |
 | [`Corelight_v3_ntlm_CL`](../tables/corelight-v3-ntlm-cl.md) |  | ? | ✓ | ? |
 | [`Corelight_v3_ntp_CL`](../tables/corelight-v3-ntp-cl.md) |  | ? | ✓ | ? |

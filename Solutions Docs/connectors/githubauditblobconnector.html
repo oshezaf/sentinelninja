@@ -68,6 +68,7 @@
 </tbody>
 </table>
 <p>The GitHub audit log connector ingests GitHub Enterprise audit logs into Microsoft Sentinel from Azure Blob Storage with near real-time latency. GitHub streams audit logs to Blob Storage in near real time, and the connector polls the Azure Storage Queue for new blob-created notifications every 5 minutes (default polling interval). By connecting GitHub audit logs to Microsoft Sentinel, you can view this data in workbooks, create custom alerts, and improve your investigation process.</p>
+<p><strong>Azure Government Cloud:</strong> This connector is <strong>not supported</strong> in Azure Government Cloud. <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage">GitHub documentation</a> states: &quot;Audit log streaming to blob storage in Azure Government is not supported&quot;.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -106,8 +107,8 @@
 <ul>
 <li><strong>Subscription permissions</strong>: You need the following permissions to deploy the connector's data flow resources:</li>
 <li><strong>Contributor</strong> role on the subscription or resource group - to deploy Event Grid, storage queues, DCR, and related connector resources.</li>
-<li><strong>Owner</strong> or <strong>User Access Administrator</strong> role on the Storage Account - to assign RBAC roles to the Microsoft Sentinel service principal.</li>
-<li><strong>Owner</strong> or <strong>Event Grid Contributor</strong> role on the Storage Account - to create Event Grid system topics and event subscriptions.</li>
+<li><strong>Owner</strong> or <strong>User Access Administrator</strong> role on the Storage Account - to assign RBAC roles to the Microsoft Sentinel service principal and, when Create is selected, the Event Grid system topic's managed identity.</li>
+<li><strong>Owner</strong> or <strong>Event Grid Contributor</strong> role on the Storage Account - to create or update Event Grid system topics, enable system-assigned identity, and create or update event subscriptions.</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong> The <code>Microsoft.EventGrid</code> resource provider must be <a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types">registered</a> in the subscription containing the storage account.</p>
@@ -119,17 +120,14 @@
 <li><strong>Storage Account Requirements</strong>: The Azure Blob Storage account must meet the following requirements:</li>
 <li><strong>Azure Data Lake Storage Gen2 (hierarchical namespace enabled)</strong> - standard storage accounts are not supported.</li>
 <li>A blob container already configured to receive GitHub Enterprise audit log streaming.</li>
-<li><strong>Storage Account Network Configuration</strong>: IP-based network rules (selected networks / IPv4 CIDR) are <strong>not supported</strong> for this connector due to <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-limitations">Azure Storage firewall restrictions and limitations</a>:</li>
-<li>IP network rules have <strong>no effect</strong> on requests originating from the same Azure region as the storage account.</li>
-<li>IP network rules <strong>cannot restrict</strong> access to Azure services deployed in the same region, as these services use private Azure IP addresses for communication.</li>
-<li>Virtual network service endpoint rules do not apply to clients in a paired region.</li>
+<li><strong>Storage Account Network Configuration</strong>: <strong>First-time setup (recommended):</strong> On the storage account's <strong>Networking</strong> page, set <strong>Public network access</strong> to <strong>Enabled from all networks</strong>. A Network Security Perimeter (NSP) is optional.</li>
 </ul>
-<p><strong>Options:</strong></p>
+<p><strong>If using NSP:</strong> Only <strong>Transition</strong> access mode is supported. In the NSP's <strong>Associated resources</strong>, set the storage account's access mode to <strong>Transition</strong>, and keep <strong>Enabled from all networks</strong> on the storage account. <a href="https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-transition">Transition mode</a> falls back to the storage account's network rules.</p>
+<p>For general guidance, see <a href="https://learn.microsoft.com/en-us/azure/sentinel/enable-storage-network-security">Enable Network Security for Azure Storage Blob Connectors</a>.</p>
 <ul>
-<li><strong>No network restrictions needed?</strong> Set the storage account's <strong>Networking</strong> blade to <strong>Enabled from all networks</strong>.</li>
-<li><strong>Need to restrict access?</strong> Use <a href="https://learn.microsoft.com/en-us/azure/sentinel/enable-storage-network-security">Network Security Perimeter (NSP)</a> to whitelist Scuba IPv4 addresses. Note: only IPv4 addresses are currently supported for NSP inbound rules; IPv6 is not supported. There is an ongoing effort with the NSP team to support service tags, which will eliminate the need for manual IP management in the future.</li>
+<li><strong>Event Grid delivery identity</strong>: The connector enables a <strong>system-assigned managed identity</strong> on a new or supplied existing Event Grid system topic. When a topic name is supplied, the connector reads the topic before updating it, preserving its tags, attached user-assigned identities, and any already enabled system-assigned principal. The connector always creates or updates its generated event subscription using the topic's system-assigned identity; the subscription's delivery configuration and filters remain connector-managed.</li>
 </ul>
-<p><strong>Important:</strong> Do <strong>not</strong> configure network rules based on GitHub IP ranges. GitHub does not provide stable IP ranges as the source of audit log streaming, and those IPs may change without notice.</p>
+<p>Choose <strong>Create</strong> to grant that identity <strong>Storage Queue Data Message Sender</strong> on the destination <strong>storage account</strong>, or <strong>Use existing</strong> to skip creating the sender grant when the identity already has that permission, as required by <a href="https://learn.microsoft.com/azure/event-grid/managed-service-identity#use-the-azure-cli---azure-storage-queue">Event Grid Storage Queue delivery</a>. Use Create for a new topic or a newly enabled system-assigned identity. Account-scoped sender access allows adding messages to queues in that account, not reading or deleting messages or accessing blobs. This identity is separate from the existing <strong>ScubaSentinelToStorageProd</strong> collector application, which remains unchanged and continues to read blobs and consume queue messages.</p>
 <ul>
 <li><strong>Storage Account Role Assignments</strong>: The following Azure RBAC roles must be assigned to the Microsoft Sentinel enterprise application service principal (displayed below) on the <strong>Storage Account</strong> that contains your blob container:</li>
 <li><strong>Storage Blob Data Reader</strong> - required for reading blob data from the container.</li>
@@ -172,8 +170,10 @@
 <li><strong>The blob container's storage account location</strong> (optional): eastus</li>
 <li><strong>The blob container's storage account resource group name</strong> (optional): Storage account resource group name</li>
 <li><strong>The blob container's storage account subscription id</strong> (optional): Subscription ID that owns the storage account</li>
-<li><strong>The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.</strong> (optional): Existing Event Grid system topic name (optional)</li>
+<li><strong>The Event Grid system topic name for the storage account, if one exists; otherwise, leave empty.</strong> (optional): Existing Event Grid system topic name (optional)
+Choose <strong>Create</strong> for a new topic, a newly enabled system-assigned identity on an existing topic, or when that identity does not yet have <strong>Storage Queue Data Message Sender</strong> at storage-account scope. Choose <strong>Use existing</strong> only when that same identity already has the required permission; no new Event Grid sender role assignment will be deployed.</li>
 </ul>
+<p><strong>RBAC propagation:</strong> If Connect fails with <strong>Managed Identity Authorization Error</strong>, wait about five minutes and retry with the same values. Propagation can take up to ten minutes.</p>
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -199,9 +199,22 @@
 <p><strong>4. Troubleshooting</strong></p>
 <p>If you encounter issues with data ingestion:</p>
 <ul>
+<li><strong>Managed Identity Authorization Error</strong> - Confirm the Event Grid system topic's current system-assigned principal has Storage Queue Data Message Sender at the destination storage-account scope, not only on the notification queue. Use existing skips creating that grant; it does not discover or repair permissions. This is not the Microsoft Sentinel service principal displayed in the connection form.</li>
+</ul>
+<p><strong>RBAC propagation:</strong> If Connect fails with <strong>Managed Identity Authorization Error</strong>, wait about five minutes and retry with the same values. Propagation can take up to ten minutes.</p>
+<ul>
+<li>Keep the same topic and identity when retrying. Recreating the topic or toggling its identity creates a different principal and requires a new grant. If the error persists with the correct account-scoped grant, retain the failed operation's request ID and UTC timestamp for support.</li>
+<li><strong>GitHub audit log streaming stops with NSP</strong> - Check <strong>Transition</strong> access mode and <strong>Enabled from all networks</strong> as described under <strong>Storage Account Network Configuration</strong>. See <strong>Limitations</strong> for unsupported settings.</li>
+<li><strong>Event Grid subscription creation fails with an internal error or disappears after appearing</strong> - Check the failed deployment operation. Event Grid must use system-assigned managed-identity delivery with Storage Queue Data Message Sender access on the storage account. A subscription can appear while provisioning and be rolled back if provisioning fails; this does not necessarily mean a duplicate resource exists. Review diagnostic logs and retain the Event Grid request ID and UTC timestamp for support if the failure persists.</li>
 <li><strong>Enable the health feature</strong> - If the connector health feature isn't enabled, enable it to monitor connector status and detect issues early.</li>
 <li><strong>Enable diagnostic logs</strong> - Consider enabling diagnostic logs for both the <strong>Storage Account</strong> and <strong>Event Grid</strong> resources to help identify and troubleshoot health issues.</li>
 <li>For more details, see <a href="https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot">Troubleshoot Azure Storage Blob connector issues</a>.</li>
+</ul>
+<p><strong>5. Limitations</strong></p>
+<ul>
+<li><strong>Network isolation:</strong> NSP <strong>Enforced</strong> mode and <strong>Set Secured by Perimeter (Most restricted)</strong> on the storage account are not supported for this connector. Transition mode does not fully enforce perimeter isolation.</li>
+<li><strong>IP allowlists:</strong> IP-based storage firewall rules (selected networks / IPv4 CIDR) are not supported; see <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security-limitations">Azure Storage firewall limitations</a>. Do not rely on a fixed GitHub source IP allowlist.</li>
+<li><strong>Azure Government:</strong> GitHub does not support audit log streaming to Blob Storage in <strong>Azure Government</strong>. See <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage">GitHub documentation</a>.</li>
 </ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>

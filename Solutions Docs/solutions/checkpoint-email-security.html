@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.1</td>
+  <td style="text-align:left">3.0.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-07-27</td>
+  <td style="text-align:left">2026-10-21</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security">Azure Marketplace</a> · Popularity: 🟢 High (85%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security">Azure Marketplace</a> · Popularity: 🔵 Medium (79%)</td>
 </tr>
 </tbody>
 </table>
@@ -79,6 +79,7 @@
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
@@ -116,6 +117,44 @@
   <td><a href="../tables/checkpointemailsecurityspamexceptions-cl.html"><code>CheckPointEmailSecuritySpamExceptions_CL</code></a></td>
   <td><a href="../connectors/checkpointemailsecconnector.html">Check Point Email Security (via Codeless Connector Framework)</a></td>
   <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/checkpointemailsecantiphishingexceptions.html">CheckPointEmailSecAntiPhishingExceptions</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/checkpointemailsecantiphishingexceptions-cl.html"><code>CheckPointEmailSecAntiPhishingExceptions_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/checkpointemailsecurityspamexceptions.html">CheckPointEmailSecuritySpamExceptions</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/checkpointemailsecurityspamexceptions-cl.html"><code>CheckPointEmailSecuritySpamExceptions_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -234,6 +273,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>08-10-2026</td>
+  <td>Fixed CheckPointEmailSecurityEvents pagination by sending the scroll ID under requestData, reduced duplicate exception data with daily polling and deduplicating parsers, set API request timeouts to 30 seconds for connectivity-check compatibility, and added DCR dependencies on all custom tables to prevent first-deployment races.</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>21-07-2026</td>

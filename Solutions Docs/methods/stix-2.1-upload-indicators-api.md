@@ -11,9 +11,9 @@
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **9** |
-| Active | 8 |
+| Active | 9 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 1 |
+| Unpublished ⚠️ | 0 |
 
 ### By Collection Method
 
@@ -36,12 +36,10 @@
 | [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Lumen Technologies, Inc. | 2 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Lumen Technologies, Inc. | 2 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | MISP project & cudeso.be | 2 | [MISP2Sentinel](../solutions/misp2sentinel.md) |
-| [PRODAFT USTA - IoC Threat Intelligence](../connectors/prodaftustaiocuploadindicators.md) ⚠️ | [Azure Function (TI Upload API)\|Unknown](../methods/azure-function-ti-upload-api-unknown.md) | PRODAFT | 2 | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
+| [PRODAFT USTA - IoC Threat Intelligence](../connectors/prodaftustaiocuploadindicators.md) | [Azure Function (TI Upload API)\|Unknown](../methods/azure-function-ti-upload-api-unknown.md) | PRODAFT | 2 | [PRODAFT USTA - IoC Threat Intelligence](../solutions/prodaft-usta-ioc-threat-intelligence.md) |
 | [VMRayThreatIntelligence](../connectors/vmray.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | VMRay | 2 | [VMRay](../solutions/vmray.md) |
 
 ---
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

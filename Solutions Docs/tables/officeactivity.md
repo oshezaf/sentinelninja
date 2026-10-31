@@ -14,7 +14,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) |
 
 ## Contents
@@ -225,7 +225,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (105)
+## Content Items Using This Table (107)
 
 ### Analytic Rules (42)
 
@@ -336,7 +336,7 @@ This table is ingested by the following connectors:
 | [NRT Malicious Inbox Rule](../content/standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.md) | `OfficeWorkload == "Exchange"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` |
 | [NRT Multiple users email forwarded to same destination](../content/standalone-content-nrt-multiple-users-email-forwarded-to-same-destination-3b05727d-a8d1-477d-bbdd-d957da96ac7b-d149a49e.md) | `OfficeWorkload == "Exchange"`<br>`Parameters has_any "ForwardTo"` |
 
-### Hunting Queries (30)
+### Hunting Queries (31)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -394,6 +394,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
+| [SharePoint file operation via previously unseen IPs](../content/standalone-content-sharepoint-file-operation-via-previously-unseen-ips-8c4c718b-bc09-4524-ad41-6c76c0d1433b-364e73f3.md) |  |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
 
@@ -403,7 +404,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |
 
-### Workbooks (33)
+### Workbooks (34)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -468,7 +469,7 @@ This table is ingested by the following connectors:
 | [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.md) |
 | [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ClientIP has "-"`<br>`ClientIP has "."`<br>`ClientIP has ":"`<br>`ClientIP has "["`<br>`ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`Operation in "MailboxLogin,MemberAdded"`<br>`Operation in "BotAddedToTeam,FileAccessed,FileDownloaded,FileUploaded,MemberRoleChanged,New-InboxRule,Set-AdminAuditLogConfig,TeamDeleted"`<br>`Operation contains "file"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
 
 | Workbook |
 |:-------------|
@@ -486,7 +487,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"`<br>`OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"`
 
 | Workbook |
 |:-------------|
@@ -508,6 +509,8 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) | `OfficeWorkload == ",
+                    OfficeWorkload,"` |
 | [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
@@ -520,7 +523,7 @@ This table is ingested by the following connectors:
 | [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) | `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` |
 | [Office365](../content/github-only-office365-fa05d9ea.md) | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` |
 | [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) | `OfficeWorkload in "OneDrive,SharePoint"` |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "MailItemsAccessed"`<br>`OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"`<br>`ResultStatus == "Succeeded"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (2)
@@ -589,9 +592,9 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` | - | 1 | - | - | **1** |
 | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "OneDrive,SharePoint"` | - | 1 | - | - | **1** |
-| `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
+| `ClientIP has "-"`<br>`ClientIP has "."`<br>`ClientIP has ":"`<br>`ClientIP has "["`<br>`ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`Operation in "MailboxLogin,MemberAdded"`<br>`Operation in "BotAddedToTeam,FileAccessed,FileDownloaded,FileUploaded,MemberRoleChanged,New-InboxRule,Set-AdminAuditLogConfig,TeamDeleted"`<br>`Operation contains "file"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
 | `Operation in "New-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
-| `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"`<br>`OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
+| `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"` | - | 1 | - | - | **1** |
 | `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
 | **Total** | **1** | **62** | **1** | **1** | **65** |
 
@@ -599,8 +602,10 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has .` | - | 2 | - | - | **2** |
-| `has [` | - | 2 | - | - | **2** |
+| `has .` | - | 3 | - | - | **3** |
+| `has [` | - | 3 | - | - | **3** |
+| `has -` | - | 1 | - | - | **1** |
+| `has :` | - | 1 | - | - | **1** |
 
 ### ClientInfoString
 
@@ -659,19 +664,20 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileUploaded` | - | 8 | - | - | **8** |
-| `New-InboxRule` | - | 7 | - | - | **7** |
-| `MemberAdded` | - | 7 | - | - | **7** |
+| `FileUploaded` | - | 9 | - | - | **9** |
+| `New-InboxRule` | - | 8 | - | - | **8** |
+| `MemberAdded` | - | 8 | - | - | **8** |
+| `FileDownloaded` | - | 7 | - | - | **7** |
 | `Set-Mailbox` | - | 6 | - | - | **6** |
-| `FileDownloaded` | - | 6 | - | - | **6** |
 | `MemberRemoved` | - | 5 | - | - | **5** |
+| `MemberRoleChanged` | - | 5 | - | - | **5** |
+| `MailboxLogin` | - | 5 | - | - | **5** |
+| `FileAccessed` | - | 4 | - | - | **4** |
+| `TeamDeleted` | - | 4 | - | - | **4** |
 | `Set-InboxRule` | - | 4 | - | - | **4** |
 | `Add-MailboxPermission` | - | 4 | - | - | **4** |
-| `MemberRoleChanged` | - | 4 | - | - | **4** |
-| `MailboxLogin` | - | 4 | - | - | **4** |
-| `FileAccessed` | - | 3 | - | - | **3** |
-| `TeamDeleted` | - | 3 | - | - | **3** |
-| `BotAddedToTeam` | - | 3 | - | - | **3** |
+| `BotAddedToTeam` | - | 4 | - | - | **4** |
+| `Set-AdminAuditLogConfig` | - | 2 | - | - | **2** |
 | `MailItemsAccessed` | - | 2 | - | - | **2** |
 | `Add-MailboxFolderPermission` | - | 2 | - | - | **2** |
 | `New-ManagementRoleAssignment` | - | 2 | - | - | **2** |
@@ -679,7 +685,6 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `has_any FileDownloaded` | - | 2 | - | - | **2** |
 | `AppInstalled` | - | 2 | - | - | **2** |
 | `TeamsAdminAction` | - | 2 | - | - | **2** |
-| `Set-AdminAuditLogConfig` | - | 1 | - | - | **1** |
 | `contains download` | - | 1 | - | - | **1** |
 | `contains upload` | - | 1 | - | - | **1** |
 | `Remove-MailboxPermission` | - | 1 | - | - | **1** |
@@ -693,6 +698,7 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `contains group` | - | 1 | - | - | **1** |
 | `contains update` | - | 1 | - | - | **1** |
 | `contains user` | - | 1 | - | - | **1** |
+| `contains file` | - | 1 | - | - | **1** |
 | `AddFolderPermissions` | - | 1 | - | - | **1** |
 | `AddedToGroup` | - | 1 | - | - | **1** |
 | `GroupAdded` | - | 1 | - | - | **1** |
@@ -705,21 +711,6 @@ References by type: 1 connectors, 62 content items, 1 ASIM parsers, 1 other pars
 | `contains Created` | - | 1 | - | - | **1** |
 | `contains Deleted` | - | 1 | - | - | **1** |
 | `contains Removed` | - | 1 | - | - | **1** |
-
-### OperationName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
-| `has_any Add user` | - | 1 | - | - | **1** |
-| `has_any Create user` | - | 1 | - | - | **1** |
-| `has_any Role assignment` | - | 1 | - | - | **1** |
-| `has_any Update user` | - | 1 | - | - | **1** |
-| `has_any directory write` | - | 1 | - | - | **1** |
-| `has_any policy update` | - | 1 | - | - | **1** |
-| `has_any role assignment` | - | 1 | - | - | **1** |
-| `has_any role update` | - | 1 | - | - | **1** |
 
 ### Parameters
 

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | User Behavior (UEBA),Security - Insider Threat |
-| **Version** | 3.0.6 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
-| **Last Updated** | 2026-02-11 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [UEBA Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/UEBA%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-uebaessentials) · Popularity: 🟢 High (86%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-uebaessentials) · Popularity: 🔵 Medium (79%) |
 
 The Microsoft Sentinel UEBA content package will provide you with various queries based on UEBA tables, that allows you to hunt for tailored threat scenarios. You'll be able to investigate and search for anomalous activities over UEBA's enriched data, and get inspired to customize queries according to your own use-cases.
 
@@ -112,6 +112,7 @@ This solution includes **31 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                        |
 |-------------|--------------------------------|-------------------------------------------------------------------------------------------|
+| 3.2.2       | 20-04-2026                     | Added Defender XDR **Workbook** for UEBA Behaviors Analysis.                              |
 | 3.0.6       | 10-02-2026                     | Removed hardcoded PII-like sample values in the UEBA workbook by replacing specific "value" fields with empty strings      |
 | 3.0.5       | 05-02-2026                     | Resolved the UEBA Behaviors Analysis **Workbook** loading issue      |
 | 3.0.4       | 29-01-2026                     | Added new UEBA Behaviors Analysis **Workbook** to solution      |      

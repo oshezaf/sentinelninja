@@ -6,7 +6,7 @@
 
 ---
 
-Creates Sentinel incidents for critical/high Theom risks, associated with ruleId's TRIS0007 to TRIS0010 and TRIS0014
+Creates Microsoft Sentinel incidents for critical/high Theom risks, associated with ruleId's TRIS0007 to TRIS0010 and TRIS0014
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

@@ -13,8 +13,8 @@
 | Title | Parser for QualysHostDetection |
 | Location | Solution |
 | Solution | [QualysVM](../solutions/qualysvm.md) |
-| Version | 1.0.1 |
-| Last Updated | 2025-03-28 |
+| Version | 1.1.0 |
+| Last Updated | 2026-09-14 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Parsers/QualysHostDetection.yaml) |
@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) 🔶 | ? | ✓ | ? |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | ✓ | ✓ | ✓ |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | ? | ✓ | ? |
 | [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

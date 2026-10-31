@@ -17,7 +17,7 @@ Reference for NTATopologyDetails table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntatopologydetails) |
 
-## Schema (118 columns)
+## Schema (121 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntatopologydetails)
 
@@ -72,6 +72,7 @@ Reference for NTATopologyDetails table in Azure Monitor Logs.
 | LocalPreference | string | Local preference value as set with the set local-preference route-map configuration command of the express route circuit route. |
 | MacAddress | string | MAC address of the discovered NIC. |
 | Network | string | IP address of a network entity associated with the express route circuit route. |
+| NetworkGroups | string | List of network groups that a virtual network belongs to. Format: <Network manager subscriptionId>/<Network manager resource group>/<Network manager name>:<Comma separated list of network groups> |
 | NextHopIp | string | The IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is virtual appliance. |
 | NextHopType | string | The type of azure hop the packet should be sent to. |
 | Nsg | string | The reference to the network security group resource. |
@@ -85,9 +86,11 @@ Reference for NTATopologyDetails table in Azure Monitor Logs.
 | PrimaryNextHop | string | Primary next hop address of the express route circuit route. |
 | PrimaryPeerAddressPrefix | string | The primary peer address prefix of express route circuit peering. |
 | Priority | int | Specifies the priority for the virtual machine. Minimum api-version: 2019-03-01. |
+| PrivateEndpointConnectionIds | string | Comma-separated list of private endpoint connection IDs. |
 | PrivateEndpointResourceId | string | Resource ID of the private endpoint resource. |
 | PrivateFrontendIps | string | Front end private IP addresses associated with the application gateway resource. |
 | PrivateIpAddresses | string | Private IP address of the IP configuration. |
+| PrivateLinkId | string | Unique identifier of the Private Link associated with the topology entity, used to correlate resources that participate in a Private Link connection. |
 | PrivateLinkResourceId | string | Resource ID of the private link service. |
 | Protocol | string | Protocol associated with network security group rule. |
 | PublicFrontendIps | string | Front end public IP addresses associated with the application gateway resource. |

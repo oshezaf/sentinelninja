@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.extrahop.com/customer-support](https://www.extrahop.com/customer-support) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Shwetha Somashekar - shwethas@extrahop.com |
 | **First Published** | 2025-02-11 |
-| **Last Updated** | 2026-05-14 |
+| **Last Updated** | 2026-10-19 |
 | **Solution Folder** | [ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop-revealx-sentinel) · Popularity: 🔵 Medium (72%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/extrahop.extrahop-revealx-sentinel) · Popularity: 🟡 Low (44%) |
 
 Configure the ExtraHop Detection Data Connector to send ExtraHop detection data to the Microsoft Sentinel. An ExtraHop workbook and analytic rules available from the Microsoft Sentinel Workspace enable you to gain insight into detections and generate detection alerts.
 
@@ -85,6 +85,7 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.3       | 28-09-2026                     | Add support of flex consumption and private storage account in function app.  |
 | 3.0.2       | 21-04-2026                     | Add Log Ingestion API Support.  |
 | 3.0.1       | 04-06-2025                     | Updated **Parser** and **Workbook** to fix issue.    |
 | 3.0.0       | 19-03-2025                     | Initial Solution Release.                    |

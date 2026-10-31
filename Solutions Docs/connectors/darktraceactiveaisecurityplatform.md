@@ -29,12 +29,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DarktraceASM_CL`](../tables/darktraceasm-cl.md) | ✓ | ✓ | ✓ |
-| [`DarktraceEMAIL_CL`](../tables/darktraceemail-cl.md) | ✓ | ✓ | ✓ |
-| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) | ✓ | ✓ | ✓ |
-| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) | ✓ | ✓ | ✓ |
-| [`DarktraceResponseActions_CL`](../tables/darktraceresponseactions-cl.md) | ✓ | ✓ | ✓ |
-| [`DarktraceSystemStatusAlerts_CL`](../tables/darktracesystemstatusalerts-cl.md) | ✓ | ✓ | ✓ |
+| [`DarktraceASM_CL`](../tables/darktraceasm-cl.md) | ? | ✓ | ? |
+| [`DarktraceEMAIL_CL`](../tables/darktraceemail-cl.md) | ? | ✓ | ? |
+| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) | ? | ✓ | ? |
+| [`DarktraceModelAlerts_CL`](../tables/darktracemodelalerts-cl.md) | ? | ✓ | ? |
+| [`DarktraceResponseActions_CL`](../tables/darktraceresponseactions-cl.md) | ? | ✓ | ? |
+| [`DarktraceSystemStatusAlerts_CL`](../tables/darktracesystemstatusalerts-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

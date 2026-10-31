@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.3</td>
+  <td style="text-align:left">3.0.4</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-20</td>
+  <td style="text-align:left">2026-10-21</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader">Azure Marketplace</a> · Popularity: 🔵 Medium (77%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader">Azure Marketplace</a> · Popularity: 🔵 Medium (67%)</td>
 </tr>
 </tbody>
 </table>
@@ -132,75 +132,82 @@
 <tr>
   <td>Inventory / catalog assets (all categories)</td>
   <td><code>POST /v2/organizations/{orgId}/inventory/catalog/assets/search</code></td>
-  <td>Full current-state snapshot</td>
+  <td>Time-windowed by last update</td>
   <td><code>UpwindCatalogAssets_CL</code></td>
 </tr>
 <tr>
   <td>Vulnerability findings</td>
   <td><code>GET /v1/organizations/{orgId}/vulnerability-findings</code></td>
-  <td>Full current-state snapshot</td>
+  <td>Time-windowed by first seen</td>
   <td><code>UpwindVulnerabilityFindings_CL</code></td>
 </tr>
 <tr>
   <td>Threat detections</td>
   <td><code>GET /v1/organizations/{orgId}/threat-detections</code></td>
-  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td>Time-windowed</td>
   <td><code>UpwindThreatDetections_CL</code></td>
 </tr>
 <tr>
   <td>Threat events</td>
   <td><code>GET /v1/organizations/{orgId}/threat-events</code></td>
-  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td>Time-windowed</td>
   <td><code>UpwindThreatEvents_CL</code></td>
 </tr>
 <tr>
   <td>Threat stories</td>
   <td><code>POST /v2/organizations/{orgId}/threats/stories/search</code></td>
-  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td>Time-windowed</td>
   <td><code>UpwindThreatStories_CL</code></td>
 </tr>
 <tr>
   <td>Configuration (posture) findings</td>
   <td><code>POST /v2/organizations/{orgId}/configurations/findings/search</code></td>
-  <td>Time-windowed (<code>UpwindThreatLookbackMinutes</code>)</td>
+  <td>Time-windowed</td>
   <td><code>UpwindConfigurationFindings_CL</code></td>
 </tr>
 </tbody>
 </table>
-<p>The two full-snapshot datasets (inventory assets, vulnerability findings) represent Upwind's <em>current</em> state and are re-pulled in full on every run. The four time-windowed datasets pull everything seen/updated in the last <code>UpwindThreatLookbackMinutes</code> (default 90) — set that comfortably larger than <code>UpwindCatalogSchedule</code>'s interval so nothing is missed between runs; overlap just produces harmless duplicate rows.</p>
-<blockquote>
-<p><strong>Note:</strong> <code>title</code> and <code>type</code> are reserved/invalid column names for Log Analytics custom tables, so the four affected datasets (threat detections, threat events, threat stories, configuration findings) rename them to <code>title_text</code> and <code>event_type</code> before upload.</p>
-</blockquote>
-<h2 id="folder-structure">Folder structure</h2>
-<pre><code>UpwindCatalogLoader/
-├── SolutionMetadata.json
-├── ReleaseNotes.md
-├── Data/
-│   └── Solution_UpwindCatalogLoader.json
-├── Package/
-│   ├── 1.0.0.zip                    &lt;- Sentinel content hub package
-│   ├── createUiDefinition.json
-│   ├── mainTemplate.json
-│   └── testParameters.json
-
-*[Content truncated...]*
-
-## Release Notes
-
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                 |
-|-------------|--------------------------------|------------------------------------------------------------------------------------|
-| 3.0.3       | 28-07-2026                     | Expanded ingestion from 1 to 6 Upwind API endpoints, fixed asset ingestion and deployment issues, enabled cross-resource-group Log Analytics support, and resolved custom-table schema conflicts by renaming reserved columns. |
-| 3.0.2       | 28-04-2026                     | Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment. |
-| 3.0.1       | 12-04-2026                     | Updated **SolutionMetadata** publisherId to align the solution package metadata with publisher validation requirements. |
-| 3.0.0       | 10-03-2026                     | Initial solution release.                                                          |
-
----
-
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
-
-↑ [Back to Solutions Index](../solutions-index.md)
-
-</code></pre>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.4</td>
+  <td>21-10-2026</td>
+  <td>Added instructions for updating an existing deployment to the data connector page, and replaced the retired <code>UpwindThreatLookbackMinutes</code> parameter with <code>UpwindCatalogSchedule</code>. Connector code since 3.0.3: each run fetches only what changed in its time window and stays inside the Function App timeout, with a periodic full catalog sync, and vulnerability findings fill the <code>exploitable</code>, <code>internet_exposure</code>, <code>fix</code>, <code>fix_available</code>, <code>image_name</code> and <code>status</code> columns. To get it, redeploy the Function App with <strong>Deploy to Azure</strong>.</td>
+</tr>
+<tr>
+  <td>3.0.3</td>
+  <td>28-07-2026</td>
+  <td>Expanded ingestion from 1 to 6 Upwind API endpoints, fixed asset ingestion and deployment issues, enabled cross-resource-group Log Analytics support, and resolved custom-table schema conflicts by renaming reserved columns.</td>
+</tr>
+<tr>
+  <td>3.0.2</td>
+  <td>28-04-2026</td>
+  <td>Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment.</td>
+</tr>
+<tr>
+  <td>3.0.1</td>
+  <td>12-04-2026</td>
+  <td>Updated <strong>SolutionMetadata</strong> publisherId to align the solution package metadata with publisher validation requirements.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>10-03-2026</td>
+  <td>Initial solution release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 
 </div>
 

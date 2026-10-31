@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`CiscoUmbrellaAdminAudit_CL`](../tables/ciscoumbrellaadminaudit-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaCloudFirewall_CL`](../tables/ciscoumbrellacloudfirewall-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDLP_CL`](../tables/ciscoumbrelladlp-cl.md) | ? | ✓ | ? |
 | [`CiscoUmbrellaDNS_CL`](../tables/ciscoumbrelladns-cl.md) | ? | ✓ | ? |
@@ -60,12 +60,14 @@ This connector ingests data into the following tables:
 > You must enable optional headers in the Cisco dashboard for this connector to work.
 > **NOTE:**
 > This connector supports both Cisco-managed and customer-managed Amazon S3 buckets.
+> **NOTE:**
+> For customer-managed paths, you can leave the S3 Bucket Prefix empty if you want to use the root of the bucket. If you specify a prefix, do not include a leading slash, and make sure to include the trailing slash.
 [See documentation](https://securitydocs.cisco.com/docs/csa/olh/121193.dita) and follow the instructions to set up logging and obtain the necessary credentials and information.
 Once you have set up the Cisco-managed S3 Bucket, you will be given three pieces of information: Data Path, Access Key, and Secret Key.
 > **WARNING:**
 > For Cisco-managed S3 buckets, the Secret Key expires every 90 days. You are responsible for rotating the Secret Key in the Cisco dashboard and reconnecting this connector with the new key before expiration.
 For Access Key and Secret Key, you can paste them into the following inputs. For the other required fields, you will retrieve them from Data Path.
-For example, the Data Path provided by Cisco is `cisco-managed-us-west-1/2003477-12345`. For the AWS S3 Bucket Name, the input S3 Bucket Name will be `cisco-managed-us-west-1`. The S3 Bucket Region will be `us-west-1`. The S3 Bucket Prefix will be `2003477-12345`.
+For example, the Data Path provided by Cisco is `cisco-managed-us-west-1/2003477-12345`. For the AWS S3 Bucket Name, the input S3 Bucket Name will be `cisco-managed-us-west-1`. The S3 Bucket Region will be `us-west-1`. The S3 Bucket Prefix will be `2003477-12345/`.
 To enable stream-based collection, click **Add new collector**, choose a **Data type**, and provide the AWS details.
 **Connector Management Interface**
 
@@ -101,7 +103,7 @@ When you click the "Add new collector" button in the portal, a configuration for
 - **Secret Key** (required): Secret Key for AWS
 - **AWS S3 Bucket Name** (required): S3 Bucket Name
 - **AWS S3 Bucket Region** (required): S3 Bucket Region
-- **AWS S3 Bucket Prefix** (required): S3 Bucket Prefix
+- **AWS S3 Bucket Prefix** (optional): S3 Bucket Prefix
 
 > 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 

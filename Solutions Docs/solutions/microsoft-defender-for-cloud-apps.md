@@ -16,9 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 2.0.2 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Microsoft Defender for Cloud Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefendercloudapps) · Popularity: 🟢 High (93%) |
 
@@ -79,6 +80,7 @@ This solution includes **2 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
 |-------------|--------------------------------|----------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Microsoft Defender for Cloud Apps migration, and repackaged the V3.1 solution. |
 | 3.0.0       | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |
 
 ---

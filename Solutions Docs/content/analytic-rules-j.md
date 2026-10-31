@@ -20,10 +20,10 @@
 | [Java Executing cmd to run Powershell](microsoft-defender-xdr-java-executing-cmd-to-run-powershell-2c81c0a0-9823-4a14-b21a-2b4acd3335d2-106ea66a.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Jira - Global permission added](atlassianjiraaudit-jira-global-permission-added-5b0cec45-4a91-4f08-bb1b-392427e8f440-fcb3ce16.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - New site admin user](atlassianjiraaudit-jira-new-site-admin-user-b894593a-2b4c-4573-bc47-78715224a6f5-75417588.md) | High | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
-| [Jira - New site admin user](atlassianjiraaudit-jira-new-site-admin-user-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-cf4c124a.md) | High | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - New user created](atlassianjiraaudit-jira-new-user-created-8c90f30f-c612-407c-91a0-c6a6b41ac199-ac7b54fe.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - Permission scheme updated](atlassianjiraaudit-jira-permission-scheme-updated-72592618-fa57-45e1-9f01-ca8706a5e3f5-0d756ffb.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - Project roles changed](atlassianjiraaudit-jira-project-roles-changed-fb6a8001-fe87-4177-a8f3-df2302215c4f-0808c8fa.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
+| [Jira - Site admin user password changed](atlassianjiraaudit-jira-site-admin-user-password-changed-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-c47a23e5.md) | High | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - User removed from group](atlassianjiraaudit-jira-user-removed-from-group-c13ecb19-4317-4d87-9a1c-52660dd44a7d-84ebd820.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - User removed from project](atlassianjiraaudit-jira-user-removed-from-project-5d3af0aa-833e-48ed-a29a-8cfd2705c953-c166d30e.md) | Medium | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Jira - User's password changed multiple times](atlassianjiraaudit-jira-user's-password-changed-multiple-times-943176e8-b979-45c0-8ad3-58ba6cfd41f0-4f11f866.md) | High | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |

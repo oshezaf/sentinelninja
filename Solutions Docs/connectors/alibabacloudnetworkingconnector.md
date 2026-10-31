@@ -29,7 +29,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AlibabaCloudAPIGatewayLogs`](../tables/alibabacloudapigatewaylogs.md) | ? | ? | ? |
-| [`AlibabaCloudVPCFlowLogs`](../tables/alibabacloudvpcflowlogs.md) | ✗ | ✗ | ✗ |
+| [`AlibabaCloudVPCFlowLogs`](../tables/alibabacloudvpcflowlogs.md) | ? | ? | ? |
 | [`AlibabaCloudWAFLogs`](../tables/alibabacloudwaflogs.md) | ? | ? | ? |
 
 ## Permissions

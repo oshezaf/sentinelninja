@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.1</td>
+  <td style="text-align:left">3.1.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-05-04</td>
+  <td style="text-align:left">2026-09-30</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise">Azure Marketplace</a> · Popularity: 🟡 Low (24%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise">Azure Marketplace</a> · Popularity: 🔵 Medium (51%)</td>
 </tr>
 </tbody>
 </table>
@@ -86,7 +86,7 @@
 <li><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>5 table(s)</strong>:</p>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -116,11 +116,6 @@
   <td><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
   <td>-</td>
 </tr>
-<tr>
-  <td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
-  <td>-</td>
-  <td>Analytics</td>
-</tr>
 </tbody>
 </table>
 <h3 id="internal-tables">Internal Tables</h3>
@@ -147,7 +142,7 @@
 <tr>
   <td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
   <td><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
-  <td>Workbooks</td>
+  <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
@@ -186,31 +181,31 @@
   <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.html">GreyNoise TI Map IP Entity to CommonSecurityLog</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.html">GreyNoise TI Map IP Entity to DnsEvents</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.html">GreyNoise TI Map IP Entity to SigninLogs</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-network-session-events-asim-network-session-sc-536e8e5c-ce0e-575e-bcc9-aba8e7bf9316-294d0914.html">GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-officeactivity-c51628fe-999c-5150-9fd7-660fc4f58ed2-a0b3d699.html">GreyNoise TI map IP entity to OfficeActivity</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl</td>
-  <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -239,6 +234,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.2</td>
+  <td>24-09-2026</td>
+  <td>Moved the <strong>Analytic Rules</strong> and <strong>Workbook</strong> from the retired <code>ThreatIntelligenceIndicator</code> table to <code>ThreatIntelIndicators</code>. The <strong>Data Connector</strong> now runs on Python 3.12 with GreyNoise SDK 3.1.0, and waits out GreyNoise and Sentinel API rate limits instead of failing. Indicator tags now show GreyNoise tag names.</td>
+</tr>
 <tr>
   <td>3.1.1</td>
   <td>9-04-2026</td>

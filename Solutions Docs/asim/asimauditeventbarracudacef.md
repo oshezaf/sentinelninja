@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventBarracudaCEF` |
 | **Built-in Parser** | `_ASim_AuditEvent_BarracudaCEF` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Barracuda WAF |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventBarracudaCEF.md)) |
-| **Last Updated** | Jun 12, 2024 |
+| **Parser Version** | 0.2.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventBarracudaCEF.md)) |
+| **Last Updated** | Oct 13, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventBarracudaCEF.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventBarracudaCEF.yaml) |
 

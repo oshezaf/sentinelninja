@@ -14,6 +14,7 @@ A Conditional Access policy was updated in Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `ccca6b88-a7b6-41c9-9be2-fc3daeb65b26` |
 | **Severity** | Informational |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562 |

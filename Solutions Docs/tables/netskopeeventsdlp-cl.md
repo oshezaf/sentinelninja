@@ -18,7 +18,7 @@
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (49 columns)
+## Schema (61 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsDLP_CL.json)
 
@@ -35,14 +35,20 @@
 | channel | string |
 | classification | string |
 | connectionid | string |
+| created | int |
 | destination_app | string |
 | destination_instance_id | string |
+| destination_site | string |
+| device | string |
 | dlp_file | string |
 | dlp_incidentid | string |
 | dlp_match_info | dynamic |
 | dlp_parentid | string |
 | dst_location | string |
+| endpoint_policy_match | dynamic |
+| endpoint_policy_match_desired_action | string |
 | exposure | string |
+| ext_labels | dynamic |
 | file_lang | string |
 | file_path | string |
 | file_size | int |
@@ -51,15 +57,20 @@
 | inline_dlp_match_info | dynamic |
 | instance | string |
 | instance_id | string |
+| justification | string |
 | latest_incidentid | string |
 | md5 | string |
+| modified | int |
 | object | string |
+| object_id | string |
 | object_type | string |
 | original_file_snapshot_id | string |
 | owner | string |
 | owner_pdl | string |
+| record_type | string |
 | referer | string |
 | severity | string |
+| shared_with | string |
 | site | string |
 | src_location | string |
 | status | string |
@@ -70,6 +81,7 @@
 | true_obj_category | string |
 | true_obj_type | string |
 | url | string |
+| usb_device | string |
 | user | string |
 | user_id | string |
 | zip_file_id | string |
@@ -92,7 +104,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) |  |
+| [Netskope Alerts and Events](../connectors/netskopealertsevents.md) |  |
 
 ---
 

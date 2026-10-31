@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [RubrikSecurityCloud_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_DCR.json) |
 | **CCF Configuration** | [RubrikSecurityCloud_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#rubrik-security-cloud-protection-status-using-codeless-connector-framework) |
 
 The Rubrik Security Cloud Protection Status data connector allows you to ingest protection and compliance status information from RSC into Microsoft Sentinel.
 

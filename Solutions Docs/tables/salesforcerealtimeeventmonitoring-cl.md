@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -18,6 +16,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (192 columns)
 
@@ -239,6 +238,15 @@ This table is ingested by the following connectors:
 | [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md) |  |
 
 ---
+
+## Parsers Using This Table (2)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationSalesforceRealTimeEventMonitoring](../asim/asimauthenticationsalesforcerealtimeeventmonitoring.md) | Authentication | Salesforce Real-Time Event Monitoring |  |
+| [ASimWebSessionSalesforceRealTimeEventMonitoring](../asim/asimwebsessionsalesforcerealtimeeventmonitoring.md) | WebSession | Salesforce Real-Time Event Monitoring |  |
 
 ---
 

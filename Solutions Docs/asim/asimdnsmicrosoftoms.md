@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | MS DNS Events |
-| **Parser Version** | 0.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftOMS.md)) |
-| **Last Updated** | Dec 11 2022 |
+| **Parser Version** | 0.4.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftOMS.md)) |
+| **Last Updated** | Oct 2, 2026 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsMicrosoftOMS.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsMicrosoftOMS.yaml) |
 

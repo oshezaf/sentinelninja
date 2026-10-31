@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`spycloud_compassV2_CL`](../tables/spycloud-compassv2-cl.md) | ? | ✓ | ? |
+| [`SpyCloudCompassV2_CL`](../tables/spycloudcompassv2-cl.md) | ? | ✓ | ? |
 
 ---
 

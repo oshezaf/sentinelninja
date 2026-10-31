@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationSalesforceSC` |
 | **Built-in Parser** | `_ASim_Authentication_SalesforceSC` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.4 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Salesforce Service Cloud |
-| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md)) |
-| **Last Updated** | Jun 25, 2026 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md)) |
+| **Last Updated** | Sep 15, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSalesforceSC.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSalesforceSC.yaml) |
 
@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ✓ | ✓ | ✓ |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ? | ✓ | ? |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters

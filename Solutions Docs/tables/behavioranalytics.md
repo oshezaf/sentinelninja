@@ -70,13 +70,14 @@ Official Microsoft Learn documentation for field/column information:
 
 - [BehaviorAnalytics Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics)
 
-## Solutions (15)
+## Solutions (16)
 
 This table is used by the following solutions:
 
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md)
 - [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md)
+- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
@@ -201,6 +202,12 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
 | Workbook | Selection Criteria |
@@ -231,12 +238,6 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ActivityInsights has "True"`<br>`ActivityType == "LogOn"`
-
-| Workbook |
-|:-------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
-
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
@@ -260,15 +261,15 @@ This table is used by the following solutions:
 | [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
-## Selection Criteria Summary (13 criteria, 36 total references)
+## Selection Criteria Summary (13 criteria, 35 total references)
 
-References by type: 0 connectors, 36 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 35 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActivityType in "FailedLogOn,LogOn"` | - | 11 | - | - | **11** |
 | `ActivityInsights has "True"` | - | 9 | - | - | **9** |
-| `ActivityInsights has "True"`<br>`ActivityType == "LogOn"` | - | 4 | - | - | **4** |
+| `ActivityInsights has "True"`<br>`ActivityType == "LogOn"` | - | 3 | - | - | **3** |
 | `EventSource == "Azure AD"` | - | 2 | - | - | **2** |
 | `ActivityType == "LogOn"` | - | 2 | - | - | **2** |
 | `ActivityType in "FailedLogOn,LogOn"`<br>`EventSource == "Azure AD"` | - | 1 | - | - | **1** |
@@ -279,13 +280,13 @@ References by type: 0 connectors, 36 content items, 0 ASIM parsers, 0 other pars
 | `EventSource == "Okta_CL"` | - | 1 | - | - | **1** |
 | `ActivityInsights contains "True"`<br>`ActivityType in "FailedLogOn,LogOn"` | - | 1 | - | - | **1** |
 | `ActivityType == "Administrative"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **36** | **0** | **0** | **36** |
+| **Total** | **0** | **35** | **0** | **0** | **35** |
 
 ### ActivityInsights
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has True` | - | 13 | - | - | **13** |
+| `has True` | - | 12 | - | - | **12** |
 | `contains ISP` | - | 1 | - | - | **1** |
 | `contains True` | - | 1 | - | - | **1** |
 
@@ -293,7 +294,7 @@ References by type: 0 connectors, 36 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `LogOn` | - | 19 | - | - | **19** |
+| `LogOn` | - | 18 | - | - | **18** |
 | `FailedLogOn` | - | 13 | - | - | **13** |
 | `signin.amazonaws.com` | - | 1 | - | - | **1** |
 | `contains IAM` | - | 1 | - | - | **1** |

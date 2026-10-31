@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.10</td>
+  <td style="text-align:left">3.2.3</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -58,12 +58,16 @@
   <td style="text-align:left">2023-08-04</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-27</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud">Business Email Compromise - Financial Fraud</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-bec_financialfraud">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-bec_financialfraud">Azure Marketplace</a> · Popularity: 🔵 Medium (51%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -75,9 +79,9 @@
 <p>This content covers all stages of the attack chain from an initial phishing attack vector, establishing persistence to an environment, locating and collecting sensitive financial information from data stores, and then perpetrating and hiding their fraud. This range of content complements the coverage <a href="https://learn.microsoft.com/microsoft-365/security/defender/automatic-attack-disruption">Microsoft Defender XDR provides across Microsoft Defender products</a>.</p>
 <p>In order to gain the most comprehensive coverage possible customers should deploy the content included in this solution as well as content from the following solutions:</p>
 <ol>
-<li><p>Microsoft Entra ID solution for Sentinel</p>
+<li><p>Microsoft Entra ID solution for Microsoft Sentinel</p>
 </li>
-<li><p>Microsoft 365 solution for Sentinel</p>
+<li><p>Microsoft 365 solution for Microsoft Sentinel</p>
 </li>
 <li><p>Amazon Web Services</p>
 </li>
@@ -350,6 +354,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.3</td>
+  <td>22-10-2026</td>
+  <td>Removed unsupported AWS S3 <strong>Custom Detection</strong> (<code>SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml</code>).</td>
+</tr>
 <tr>
   <td>3.0.10</td>
   <td>10-11-2025</td>

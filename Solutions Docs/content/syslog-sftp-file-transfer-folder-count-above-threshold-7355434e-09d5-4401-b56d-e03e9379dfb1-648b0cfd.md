@@ -14,6 +14,7 @@
 | **Solution** | [Syslog](../solutions/syslog.md) |
 | **ID** | `7355434e-09d5-4401-b56d-e03e9379dfb1` |
 | **Severity** | Medium |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Exfiltration |
 | **Techniques** | T1020 |

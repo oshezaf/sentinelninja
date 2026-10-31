@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recorded Future - Log Ingestion &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="recorded-future---log-ingestion">Recorded Future - Log Ingestion</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>RecordedFuture</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Recorded Future</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Data%20Connectors/RecordedFuture_ConnectorDefinition.json">RecordedFuture_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#recorded-future---log-ingestion">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>Imports Recorded Future data into Microsoft Sentinel via the Log Ingestion API. Writes playbook alerts to <code>RecordedFuturePlaybookAlerts_V2_CL</code>, classic alerts to <code>RecordedFutureClassicAlerts_V2_CL</code>, threat map data to <code>RecordedFutureThreatMap_V2_CL</code> and <code>RecordedFutureThreatMapMalware_V2_CL</code>, and sandbox results to <code>RecordedFutureSandboxResults_V2_CL</code>.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfutureclassicalerts-v2-cl.html"><code>RecordedFutureClassicAlerts_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfutureplaybookalerts-v2-cl.html"><code>RecordedFuturePlaybookAlerts_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfuturesandboxresults-v2-cl.html"><code>RecordedFutureSandboxResults_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfuturethreatmapmalware-v2-cl.html"><code>RecordedFutureThreatMapMalware_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/recordedfuturethreatmap-v2-cl.html"><code>RecordedFutureThreatMap_V2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Azure Subscription</strong>: Monitoring Contributor and Log Analytics Contributor permissions required to deploy the Data Connectors infrastructure. Owner or Role Based Access Control Administrator required to deploy playbooks with automatic role assignment.</li>
+<li><strong>Recorded Future API Token</strong>: A Recorded Future API token is required to authorize the Recorded Future Custom Connector used by the playbooks.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Step 1 — Deploy Data Connectors infrastructure</strong></p>
+<p>Deploys the shared Data Collection Endpoint (DCE), Data Collection Rules (DCRs), Log Analytics tables, and this connector definition tile. Deploy this into the same resource group as your Log Analytics Workspace.</p>
+<p><a href="https://aka.ms/sentinel-RecordedFutureDataConnector-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><strong>2. Step 2 — Deploy the Recorded Future Custom Connector</strong></p>
+<p>The custom connector handles authentication towards the Recorded Future API. Deploy it once — it is shared by the playbooks.</p>
+<p><a href="https://aka.ms/sentinel-RecordedFuture2FPlaybooksConnector-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><strong>3. Step 3 — Deploy playbooks</strong></p>
+<p>Deploy one or more playbooks depending on your use case. No manual configuration is needed — each playbook connects to the Data Connectors infrastructure deployed in Step 1 automatically.</p>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: [Recorded Future\Data Connectors\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded Future\Data Connectors\README.md)</em></p>
+</blockquote>
+<h1 id="data-connectors">Data Connectors</h1>
+<h2 id="files">Files</h2>
+<h3 id="recordedfuture_connectordefinitionjson"><code>RecordedFuture_ConnectorDefinition.json</code></h3>
+<p><code>Customizable</code> connector definition for the <strong>Recorded Future - Log Ingestion</strong> tile.
+Listed in <code>../Data/Solution_RecordedFuture.json</code> and baked into <code>../Package/mainTemplate.json</code>
+by the packaging tool. This is what makes the connector appear in the Sentinel Data Connectors
+gallery after a Content Hub / solution install.</p>
+<h3 id="azuredeployjson"><code>azuredeploy.json</code></h3>
+<p>Standalone ARM template that deploys the full infrastructure stack shared by the Log Ingestion
+API playbooks:</p>
+<ul>
+<li>Data Collection Endpoint (DCE)</li>
+<li>5 Data Collection Rules (DCRs)</li>
+<li>5 Log Analytics custom tables (<code>RecordedFuturePlaybookAlerts_V2_CL</code>, <code>RecordedFutureClassicAlerts_V2_CL</code>,
+<code>RecordedFutureThreatMap_V2_CL</code>, <code>RecordedFutureThreatMapMalware_V2_CL</code>, <code>RecordedFutureSandboxResults_V2_CL</code>)</li>
+<li>Connector definition tile (see duplication note below)</li>
+</ul>
+<p>Used by the &quot;Deploy to Azure&quot; button in the <a href="../Playbooks/readme.html">Playbooks README</a> and in the
+connector's own instruction steps. Deploy this before deploying any of the 6 playbooks that use
+the Log Ingestion API (<code>RecordedFuture-Alert-Importer</code>, <code>RecordedFuture-Playbook-Alert-Importer</code>,
+<code>RecordedFuture-ThreatMap-Importer</code>, <code>RecordedFuture-ThreatMapMalware-Importer</code>,
+<code>RecordedFuture-Sandbox_StorageAccount</code>, <code>RecordedFuture-Sandbox_Outlook_Attachment</code>).</p>
+<h2 id="known-duplication">Known duplication</h2>
+<h3 id="connector-tile">Connector tile</h3>
+<p>The connector UI tile content exists in two forms due to limitations of the packaging/deployment model:</p>
+<table>
+<thead>
+<tr>
+  <th>Content</th>
+  <th>Packager source</th>
+  <th>Standalone ARM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Connector UI tile</td>
+  <td><code>RecordedFuture_ConnectorDefinition.json</code></td>
+  <td><code>azuredeploy.json</code> (<code>Microsoft.OperationalInsights/workspaces/providers/dataConnectorDefinitions</code> resource, <code>kind: Customizable</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>If you update one (queries, description, instruction steps, connectivity criteria, etc.), update
+its counterpart.</p>
+<h2 id="upgrading">Upgrading</h2>
+<p><code>azuredeploy.json</code> has <strong>no automatic Content Hub &quot;update available&quot; notification</strong> — it's a
+standalone template, not a tracked content item. When it changes (e.g. new DCR/table columns),
+<strong>existing customers must manually redeploy it</strong> (same resource group) to pick up the change.
+Check <code>metadata.releaseNotes</code> here and the top-level <code>ReleaseNotes.md</code> for what changed.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

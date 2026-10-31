@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -621,7 +621,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/gitlab-gitlab-external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833-0ecac57f.html">GitLab - External User Added to GitLab</a></td>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Audit-Logs&quot;</code></td>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Application-Logs&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/gitlab-gitlab-local-auth-no-mfa-e0b45487-5c79-482d-8ac0-695de8c031af-0b436ca9.html">GitLab - Local Auth - No MFA</a></td>
@@ -1937,18 +1937,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a>:</strong> <code>SyslogMessage has &quot;%FW-6-LOG_SUMMARY:&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cisco-sd-wan-ciscosdwan-1291f60c.html">CiscoSDWAN</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -2089,18 +2087,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage startswith &quot;DHCPACK&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/infoblox-nios-infoblox-workbook-v2-a1f70727.html">Infoblox-Workbook-V2</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -3028,8 +3024,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (101 criteria, 449 total references)</h2>
-<p>References by type: 30 connectors, 338 content items, 22 ASIM parsers, 59 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (101 criteria, 451 total references)</h2>
+<p>References by type: 30 connectors, 340 content items, 22 ASIM parsers, 59 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -3051,14 +3047,6 @@
   <td style="text-align:center"><strong>115</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName has_any &quot;hostd-probe,vmkwarning,vpxd-main&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">25</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>27</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ProcessName has_any &quot;CISE,CSCO&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">21</td>
@@ -3068,6 +3056,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ProcessName contains &quot;EPOEvents&quot;</code><br><code>SyslogMessage contains &quot;&lt;EPOevent&gt;&quot;</code><br><code>SyslogMessage contains &quot;&lt;UpdateEvents&gt;&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">25</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>27</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ProcessName has_any &quot;hostd-probe,vmkwarning,vpxd-main&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">25</td>
   <td style="text-align:center">-</td>
@@ -3115,14 +3111,6 @@
   <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Audit-Logs&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>7</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ProcessName contains &quot;squid&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">7</td>
@@ -3155,6 +3143,14 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Audit-Logs&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>6</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>SyslogMessage !has &quot;response:&quot;</code><br><code>SyslogMessage has_all &quot;client&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">1</td>
@@ -3163,7 +3159,7 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code></td>
+  <td style="text-align:left"><code>ProcessName == &quot;SymantecServer&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -3171,7 +3167,7 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName == &quot;SymantecServer&quot;</code></td>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -3227,14 +3223,6 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility != &quot;cron&quot;</code></td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>SyslogMessage contains &quot;AuditLog&quot;</code><br><code>SyslogMessage contains &quot;Device,&quot;</code><br><code>SyslogMessage contains &quot;DeviceControl&quot;</code><br><code>SyslogMessage contains &quot;ScriptControl&quot;</code><br><code>SyslogMessage contains &quot;Threat&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -3248,6 +3236,22 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Facility != &quot;cron&quot;</code></td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Application-Logs&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
@@ -3267,15 +3271,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage contains &quot;SYSTEM_MSG&quot;</code><br><code>SyslogMessage contains &quot;%LOG_LOCAL&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ProcessName == &quot;RT_FLOW&quot;</code><br><code>ProcessName in &quot;RT_IDS,sshd&quot;</code><br><code>ProcessName !in &quot;sshd,RT_IDS,RT_FLOW&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage has &quot;Stealthwatch&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3291,7 +3287,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage has &quot;Stealthwatch&quot;</code></td>
+  <td style="text-align:left"><code>ProcessName == &quot;RT_FLOW&quot;</code><br><code>ProcessName in &quot;RT_IDS,sshd&quot;</code><br><code>ProcessName !in &quot;sshd,RT_IDS,RT_FLOW&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3299,9 +3295,9 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Application-Logs&quot;</code></td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:left"><code>SyslogMessage contains &quot;SYSTEM_MSG&quot;</code><br><code>SyslogMessage contains &quot;%LOG_LOCAL&quot;</code></td>
   <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>2</strong></td>
@@ -3315,15 +3311,23 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName in &quot;GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs&quot;</code><br><code>SyslogMessage contains &quot;HTTP&quot;</code><br><code>SyslogMessage has_any &quot;DELETE,GET,PATCH,POST,PUT&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage has &quot;%FW-6-LOG_SUMMARY:&quot;</code></td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ProcessName == &quot;sysmon&quot;</code></td>
+  <td style="text-align:left"><code>SyslogMessage startswith &quot;DHCPACK&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName in &quot;GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs&quot;</code><br><code>SyslogMessage contains &quot;HTTP&quot;</code><br><code>SyslogMessage has_any &quot;DELETE,GET,PATCH,POST,PUT&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3340,6 +3344,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>CollectorHostName == &quot;SAPLogServ&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ProcessName == &quot;sysmon&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3683,14 +3695,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SyslogMessage has &quot;%FW-6-LOG_SUMMARY:&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>Facility == &quot;local7&quot;</code><br><code>ProcessName == &quot;GitLab-Access-Logs&quot;</code><br><code>SyslogMessage contains &quot;HTTP&quot;</code><br><code>SyslogMessage has_any &quot;DELETE,GET,PATCH,POST,PUT&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3716,14 +3720,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SyslogMessage has_any &quot;client,gss_accept_sec_context&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>SyslogMessage startswith &quot;DHCPACK&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3853,10 +3849,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>30</strong></td>
-  <td style="text-align:center"><strong>338</strong></td>
+  <td style="text-align:center"><strong>340</strong></td>
   <td style="text-align:center"><strong>22</strong></td>
   <td style="text-align:center"><strong>59</strong></td>
-  <td style="text-align:center"><strong>449</strong></td>
+  <td style="text-align:center"><strong>451</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3947,15 +3943,6 @@
   <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>local7</code></td>
-  <td style="text-align:left"><code>GitLab-Audit-Logs</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>8</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>gw-audit</code></td>
   <td style="text-align:center">1</td>
@@ -3972,6 +3959,15 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>8</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>local7</code></td>
+  <td style="text-align:left"><code>GitLab-Audit-Logs</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"></td>
@@ -3992,8 +3988,8 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>local7</code></td>
   <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SymantecServer</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -4001,8 +3997,8 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>local7</code></td>
   <td style="text-align:left"></td>
-  <td style="text-align:left"><code>SymantecServer</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
@@ -4017,6 +4013,15 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>local7</code></td>
+  <td style="text-align:left"><code>GitLab-Application-Logs</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"></td>
@@ -4037,30 +4042,21 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!= cron</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>local7</code></td>
-  <td style="text-align:left"><code>GitLab-Application-Logs</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>contains Exabeam</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= cron</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
@@ -4073,8 +4069,8 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>local7</code></td>
-  <td style="text-align:left"><code>GitLab-Access-Logs</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SyslogAlertForwarderNSP</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4082,8 +4078,8 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>SyslogAlertForwarderNSP</code></td>
+  <td style="text-align:left"><code>local7</code></td>
+  <td style="text-align:left"><code>GitLab-Access-Logs</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4694,15 +4690,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains SYSTEM_MSG</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains %LOG_LOCAL</code></td>
+  <td style="text-align:left"><code>has Stealthwatch</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4718,7 +4706,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has Stealthwatch</code></td>
+  <td style="text-align:left"><code>contains SYSTEM_MSG</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains %LOG_LOCAL</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4827,6 +4823,22 @@
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has %FW-6-LOG_SUMMARY:</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith DHCPACK</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
@@ -5670,14 +5682,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has %FW-6-LOG_SUMMARY:</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>has illumio_pce/collector</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -5783,14 +5787,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any gss_accept_sec_context</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>startswith DHCPACK</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

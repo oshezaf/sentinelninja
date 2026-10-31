@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [http://team-cymru.com](http://team-cymru.com) |
 | **Categories** | Security - Others,Security - Threat Intelligence,Security - Automation (SOAR) |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.2 |
 | **Author** | Team Cymru - support@cymru.com |
 | **First Published** | 2024-07-16 |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-09-16 |
 | **Solution Folder** | [Team Cymru Scout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/team-cymru.teamcymruscout_sentinel) · Popularity: ⚪ Very Low (0%) |
 
@@ -143,6 +143,7 @@ This solution includes **28 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.2       | 16-09-2026                     | Migrated TeamCymruScoutLiveInvestigation and TeamCymruScoutEnrichIncident playbooks from the retired HTTP Data Collector API to the Logs Ingestion API. |
 | 3.1.1       | 25-09-2025                     | Fixed bug in TeamCymruScoutEnrichIncident playbook. |
 | 3.1.0       | 16-05-2025                     | Updated Workbook, Parser, Data Connector and created new playbook. |
 | 3.0.0       | 07-08-2024                     | Added Solution for Team Cymru Scout. |

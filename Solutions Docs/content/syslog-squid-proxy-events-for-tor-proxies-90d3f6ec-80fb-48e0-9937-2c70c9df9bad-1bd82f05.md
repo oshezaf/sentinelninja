@@ -14,6 +14,7 @@ Check for Squid proxy events associated with common ToR proxies. This query pres
 | **Solution** | [Syslog](../solutions/syslog.md) |
 | **ID** | `90d3f6ec-80fb-48e0-9937-2c70c9df9bad` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1090, T1008 |

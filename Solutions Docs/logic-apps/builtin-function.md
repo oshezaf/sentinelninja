@@ -7,14 +7,18 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 57 |
-| **Solutions** | 16 |
+| **Playbooks using** | 61 |
+| **Solutions** | 17 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 3 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
 | [AS-Block-GitHub-User](../content/standalone-content-as-block-github-user-8d97b5dd.md) | 📄 Standalone | 0 | 1 |
 | [AS-Make-GitHub-Repository-Private](../content/standalone-content-as-make-github-repository-private-4eda6c07.md) | 📄 Standalone | 0 | 1 |
 | [AS-Sign-Out-Google-User](../content/standalone-content-as-sign-out-google-user-f7f2bd81.md) | 📄 Standalone | 0 | 1 |
@@ -70,7 +74,7 @@
 | [Veeam-ResolveTriggeredAlarm](../content/veeam-veeam-resolvetriggeredalarm-077a309e.md) | [Veeam](../solutions/veeam.md) | 0 | 1 |
 | [Veeam-StartQuickBackup](../content/veeam-veeam-startquickbackup-3a35729c.md) | [Veeam](../solutions/veeam.md) | 0 | 3 |
 | [Veeam-StartSecurityComplianceAnalyzer](../content/veeam-veeam-startsecuritycomplianceanalyzer-80610f72.md) | [Veeam](../solutions/veeam.md) | 0 | 3 |
-| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis-2ae966ed.md) | [VMRay](../solutions/vmray.md) | 0 | 4 |
+| [VMRay Email Attachment Analysis (Defender-visible)](../content/vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.md) | [VMRay](../solutions/vmray.md) | 0 | 4 |
 | [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | [VMRay](../solutions/vmray.md) | 0 | 5 |
 
 ---

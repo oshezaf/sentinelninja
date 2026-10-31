@@ -121,13 +121,13 @@
 <tr>
   <td style="text-align:left">Get_Alert_Details</td>
   <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
   <td style="text-align:left">Submit_Takedown_Request</td>
   <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/submit</code></td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/takedown/api/v1/submit</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>
@@ -144,8 +144,8 @@
 <ol>
 <li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
 <li>Extracts the alert reference ID from the incident.</li>
-<li>Fetches full alert details via <code>GET /api/v1/alerts/{ref_id}</code> and enriches the incident comment with phishing site metadata (URL, A record, registrar, detection reasons, SSL, password field).</li>
-<li>If alert confidence meets the configured threshold, submits a takedown request via <code>POST /api/v1/submit</code> and tags the incident <code>takedown-requested</code>.</li>
+<li>Fetches full alert details via <code>GET /alert/api/v1/alerts/{ref_id}</code> and enriches the incident comment with phishing site metadata (URL, A record, registrar, detection reasons, SSL, password field).</li>
+<li>If alert confidence meets the configured threshold, submits a takedown request via <code>POST /takedown/api/v1/submit</code> and tags the incident <code>takedown-requested</code>.</li>
 <li>If below threshold, adds a comment recommending manual review.</li>
 </ol>
 <h2 id="prerequisites">Prerequisites</h2>
@@ -155,7 +155,7 @@
 <li>Sentinel analytic rules that create incidents from Argos phishing website alerts with <code>ref_id</code> in custom details.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_PhishingTakedown%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FResponse%2FCPEM_PhishingTakedown%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -205,15 +205,15 @@
 <tbody>
 <tr>
   <td>Get alert details</td>
-  <td><code>GET /api/v1/alerts/{alert_ref_id}</code></td>
+  <td><code>GET /alert/api/v1/alerts/{alert_ref_id}</code></td>
 </tr>
 <tr>
   <td>Submit takedown</td>
-  <td><code>POST /api/v1/submit</code></td>
+  <td><code>POST /takedown/api/v1/submit</code></td>
 </tr>
 <tr>
   <td>Check takedown status</td>
-  <td><code>POST /api/v1/submit</code> (filter by <code>alert_id</code>)</td>
+  <td><code>POST /takedown/api/v1/submit</code> (filter by <code>alert_id</code>)</td>
 </tr>
 </tbody>
 </table>

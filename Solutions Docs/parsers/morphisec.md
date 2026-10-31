@@ -13,8 +13,8 @@
 | Title | Parser for Morphisec |
 | Location | Solution |
 | Solution | [Morphisec](../solutions/morphisec.md) |
-| Version | 3.1.0 |
-| Last Updated | 2025-09-15 |
+| Version | 3.2.0 |
+| Last Updated | 2026-10-04 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec/Parsers/Morphisec.yaml) |

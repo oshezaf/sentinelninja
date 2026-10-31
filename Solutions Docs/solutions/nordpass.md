@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.nordpass.com/](https://support.nordpass.com/) |
 | **Categories** | Security - Others,Identity |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Nord Security Inc. |
 | **First Published** | 2025-04-22 |
-| **Last Updated** | 2026-02-23 |
+| **Last Updated** | 2026-09-21 |
 | **Solution Folder** | [NordPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordpass) · Popularity: 🔵 Medium (60%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordpass) · Popularity: 🟡 Low (47%) |
 
 NordPass for Microsoft Sentinel enables you to automatically transfer Activity Log data from NordPass to Microsoft Sentinel and get real-time insights such as item activity, all login attempts, and security notifications. This allows you to stay informed by setting any needed alerts by your organization to monitor these security events.
 
@@ -150,6 +150,7 @@ You can easily install the NordPass Solution for Microsoft Sentinel in a few min
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**        |
 |-------------|--------------------------------|---------------------------|
+| 3.0.2       | 15-09-2026                     | Added the missing DCR stream declaration, required by Azure Monitor validation for custom streams used with transformKql. |
 | 3.0.1       | 25-08-2025                     | Added new Activity Logs   |
 | 3.0.0       | 22-04-2025                     | Initial Solution Release. |
 

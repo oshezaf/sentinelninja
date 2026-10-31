@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Insider Threat,Security - Automation (SOAR) |
-| **Version** | 3.0.5 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [MicrosoftPurviewInsiderRiskManagement](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-insiderriskmanagement) · Popularity: 🟢 High (88%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-insiderriskmanagement) · Popularity: 🔵 Medium (66%) |
 
 This solution enables insider risk management teams to investigate risk-based behavior across 25+ Microsoft products. This solution is a better-together story between Microsoft Sentinel and Microsoft Purview Insider Risk Management. The solution includes the Insider Risk Management Workbook, (5) Hunting Queries, (1) Data Connector, (5) Analytics Rules, (1) Playbook automation and the Microsoft Purview Insider Risk Management connector. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings, including, but not limited to:
 
@@ -56,7 +57,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **14 table(s)**:
+This solution uses **15 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -64,29 +65,29 @@ This solution uses **14 table(s)**:
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | - | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Hunting, Workbooks |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | - | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 | - | Analytics, Hunting |
-| [`LAQueryLogs`](../tables/laquerylogs.md) | - | Workbooks |
-| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
 | [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | - | Workbooks |
+| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) | - | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting, Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Workbooks |
 | [`Update`](../tables/update.md) | - | Workbooks |
 
 ### Internal Tables
 
-The following **6 table(s)** are used internally by this solution's content items:
+The following **5 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Anomalies`](../tables/anomalies.md) | - | Workbooks |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Hunting, Workbooks |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Hunting |
 | [`IdentityInfo`](../tables/identityinfo.md) | - | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Analytics, Hunting, Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Analytics, Workbooks |
-| [`Watchlist`](../tables/watchlist.md) | - | Workbooks |
+| [`SentinelAudit`](../tables/sentinelaudit.md) | - | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -126,7 +127,7 @@ This solution includes **12 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`SentinelAudit`](../tables/sentinelaudit.md) |
 
 ### Playbooks
 
@@ -154,6 +155,7 @@ You can deploy the solution by clicking on the buttons below:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR Custom Detection rules (`XDR Detections/`) and migrated **Workbook** (`XDR Workbooks/`) for Unified Security Operations Platform compatibility. |
 | 3.0.6       | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |
 | 3.0.5       | 10-04-2024                     | Updated Entity Mappings InsiderRiskyAccessByApplication.yaml             |
 | 3.0.4       | 07-11-2023                     | Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID. |
@@ -161,7 +163,6 @@ You can deploy the solution by clicking on the buttons below:
 | 3.0.2       | 04-10-2023                     | Updated **Workbook** template to fix Signinlogs datatype                 |
 | 3.0.1       | 20-09-2023                     | Updated **Workbook** template to fix the invaild json issue              |
 | 3.0.0       | 17-07-2023                     | Updating **Analytic Rules** with grouping configuration(Single Alert)    |
-|             |                                |                                                                          |
 
 ---
 

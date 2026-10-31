@@ -16,11 +16,11 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.valencesecurity.com/](https://www.valencesecurity.com/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 1.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Valence Security - info@valencesecurity.com |
 | **First Published** | 2023-11-20 |
 | **Solution Folder** | [Valence Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/valencesecurityinc1673598943514.valence_sentinel_solution) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/valencesecurityinc1673598943514.valence_sentinel_solution) · Popularity: 🟡 Low (28%) |
 
 [Valence Security](https://valencesecurity.com/) SaaS security platform: Valence is the first SaaS security company to combine SSPM and advanced remediation with business user collaboration to find and fix SaaS security risks. SaaS applications are becoming decentrally managed and more complex, which is introducing misconfiguration, identity, data, and SaaS-to-SaaS integration risks. The Valence SaaS Security Platform provides visibility and remediation capabilities for business-critical SaaS applications such as Microsoft 365, Google Workspace, Salesforce, GitHub and Slack. With Valence, security teams can empower their business to securely adopt SaaS.
 
@@ -34,21 +34,16 @@
 
 This solution provides **1 data connector(s)**:
 
-- [SaaS Security](../connectors/valencesecurity.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Valence Security](../connectors/valencesecurityccfpush.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) 🔶 | [SaaS Security](../connectors/valencesecurity.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| [`ValenceAlerts_CL`](../tables/valencealerts-cl.md) | [Valence Security](../connectors/valencesecurityccfpush.md) | Analytics, Workbooks |
+| [`ValenceAuditLogs_CL`](../tables/valenceauditlogs-cl.md) | [Valence Security](../connectors/valencesecurityccfpush.md) | - |
 
 ## Content Items
 
@@ -63,18 +58,19 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | - | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | - | [`ValenceAlerts_CL`](../tables/valencealerts-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook-fae392cb.md) | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook-fae392cb.md) | [`ValenceAlerts_CL`](../tables/valencealerts-cl.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                |
 |-------------|--------------------------------|-----------------------------------|
+| 3.0.1       | 16-09-2026                     | Migrated the **Data Connector** to CCF Push (Codeless Connector Framework). Alerts now ingest into **ValenceAlerts_CL** (previously ValenceAlert_CL) and a new **ValenceAuditLogs_CL** table was added. The stream schema and DCR transformations match the payload sent by the Valence platform, and a **sentinelSeverity** column maps Valence's Critical severity into Microsoft Sentinel's supported range. |
 |  3.0.0      |  27-11-2023                    |  Initial Solution Release         |
 
 ---

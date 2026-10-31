@@ -1,6 +1,4 @@
-# ⚠️ PRODAFT USTA - IoC Threat Intelligence
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# PRODAFT USTA - IoC Threat Intelligence
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaIoC.svg" alt="" width="75" height="75">
 
@@ -18,6 +16,7 @@
 | **Collection Method** | [Azure Function (TI Upload API)\|Unknown](../methods/azure-function-ti-upload-api-unknown.md) |
 | **Connector Definition Files** | [PRODAFTUstaIoC_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence/Data%20Connectors/PRODAFTUstaIoC_UploadIndicatorsAPI.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector definition filename suffix '_UploadIndicatorsAPI' indicates STIX 2.1 Upload Indicators API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#prodaft-usta---ioc-threat-intelligence) |
 
 The PRODAFT USTA IoC Threat Intelligence connector ingests indicators of compromise (malicious URLs, malware hashes, and phishing sites) from the PRODAFT USTA platform into Microsoft Sentinel's Threat Intelligence as STIX indicators via the Upload STIX Objects API. Ingestion is performed by the import playbooks shipped with this solution (one per IoC feed); where a record carries resolved `ip_addresses`, those addresses are added to the same indicator's pattern as `ipv4-addr`/`ipv6-addr` observables; indicators appear in the Threat Intelligence blade and in the `ThreatIntelIndicators` table under a per-feed `SourceSystem` — `PRODAFT USTA - Malicious URLs`, `PRODAFT USTA - Malware Hashes` and `PRODAFT USTA - Phishing Sites` — so `SourceSystem startswith 'PRODAFT USTA'` selects every USTA indicator. After installing the solution, deploy and authorize the import playbooks by following the guidance in the Manage solution view.
 

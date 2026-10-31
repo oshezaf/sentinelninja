@@ -1,4 +1,4 @@
-# Seraphic Security connector integration package for Microsoft Sentinel
+# Falcon Secure Enterprise Browser connector for Microsoft Sentinel
 
 *Solution: SeraphicSecurity*
 
@@ -19,9 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Seraphic Security - support@seraphicsecurity.com |
 | **First Published** | 2023-07-31 |
-| **Last Updated** | 2026-04-30 |
+| **Last Updated** | 2026-10-22 |
 | **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) · Popularity: 🟡 Low (21%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) · Popularity: 🟡 Low (45%) |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 

@@ -20,10 +20,10 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) | ? | ✓ | ? |
-| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) | ? | ✓ | ? |
-| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) | ? | ✓ | ? |
-| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) | ? | ✓ | ? |
+| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Logic App Connectors
 

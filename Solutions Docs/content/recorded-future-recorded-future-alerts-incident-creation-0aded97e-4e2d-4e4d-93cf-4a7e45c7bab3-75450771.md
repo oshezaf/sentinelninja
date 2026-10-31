@@ -6,7 +6,7 @@
 
 ---
 
-Create Recorded Future Alerts in Microsoft Defender
+Create Recorded Future Classic Alerts in Microsoft Defender
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,7 @@ Create Recorded Future Alerts in Microsoft Defender
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | NRT |
+| **Required Connectors** | [RecordedFuture](../connectors/recordedfuture.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Analytic%20Rules/IncidentCreation/RecordedFutureAlerts.yaml) |
 
 ## Tables Used
@@ -24,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
-  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code>, <code>POST</code></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code>, <code>POST</code>, <code>MvExpand</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
@@ -81,61 +81,61 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakeloadv2-cl.html"><code>SnowflakeLoadV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakeloadv3-cl.html"><code>SnowflakeLoadV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakeloginv2-cl.html"><code>SnowflakeLoginV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakeloginv3-cl.html"><code>SnowflakeLoginV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakematerializedviewv2-cl.html"><code>SnowflakeMaterializedViewV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakematerializedviewv3-cl.html"><code>SnowflakeMaterializedViewV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakequeryv2-cl.html"><code>SnowflakeQueryV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakequeryv3-cl.html"><code>SnowflakeQueryV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakerolegrantv2-cl.html"><code>SnowflakeRoleGrantV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakerolegrantv3-cl.html"><code>SnowflakeRoleGrantV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakerolesv2-cl.html"><code>SnowflakeRolesV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakerolesv3-cl.html"><code>SnowflakeRolesV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflaketablestoragemetricsv2-cl.html"><code>SnowflakeTableStorageMetricsV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflaketablestoragemetricsv3-cl.html"><code>SnowflakeTableStorageMetricsV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflaketablesv2-cl.html"><code>SnowflakeTablesV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflaketablesv3-cl.html"><code>SnowflakeTablesV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakeusergrantv2-cl.html"><code>SnowflakeUserGrantV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakeusergrantv3-cl.html"><code>SnowflakeUserGrantV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/snowflakeusersv2-cl.html"><code>SnowflakeUsersV2_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/snowflakeusersv3-cl.html"><code>SnowflakeUsersV3_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
@@ -155,7 +155,7 @@
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect Snowflake to Microsoft Sentinel</strong></p>
-<p>ℹ️ <strong>Notice:</strong> Solution version 3.1.0 and later uses the SnowflakeV2 tables (e.g., SnowflakeQueryV2_CL, SnowflakeLoginV2_CL). The parsers have been updated accordingly.</p>
+<p>ℹ️ <strong>Notice:</strong> Solution version 3.2.0 and later uses the SnowflakeV3 tables (e.g., SnowflakeQueryV3_CL, SnowflakeLoginV3_CL). The parsers have been updated accordingly.</p>
 <blockquote>
 <p><strong>NOTE:</strong> To ensure data is presented in separate columns for each field, execute the parser using the <strong>Snowflake()</strong> function
 To gather data from Snowflake, you need to provide the following resources</p>

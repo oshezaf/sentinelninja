@@ -16,11 +16,11 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vmray.com/contact/customer-support/](https://www.vmray.com/contact/customer-support/) |
 | **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | VMRay |
 | **First Published** | 2025-07-23 |
 | **Solution Folder** | [VMRay](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray) · Popularity: ⚪ Very Low (9%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray) · Popularity: ⚪ Very Low (0%) |
 
  The VMRay Connector for Microsoft Sentinel enhances security operations by providing enriched threat intelligence, enabling faster and more informed responses to security incidents. The integration has two main parts: first, URL detonation and enrichment, which provides detailed insights into suspicious URLs. Second, it automatically generates and feeds threat intelligence for all submissions to VMRay, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.
 
@@ -65,7 +65,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis-2ae966ed.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
+| [VMRay Email Attachment Analysis (Defender-visible)](../content/vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.md) | Submits each attachment of an Office 365 email to VMRay and writes the analysis result to a Log Anal... | - |
 | [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
 
 ## Additional Documentation
@@ -74,7 +74,7 @@ This solution includes **2 content item(s)**:
 
 # VMRay Threat Intelligence Feed and Enrichment Integration - Microsoft Sentinel
 
-**Latest Version:** **3.0.1** - **Release Date:** **2025-11-07**
+**Latest Version:** **3.0.2** - **Release Date:** **2026-08-13**
 
 ## Overview
 
@@ -140,6 +140,7 @@ This solution includes **2 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.2       | 13-08-2026                     | Added whitelist domain feature to Submit-URL-VMRay-Analyzer playbook. Reworked VMRay-Sandbox_Outlook_Attachment playbook to write results to a Log Analytics custom table and create incidents via a scheduled analytics rule, so they surface in both Microsoft Sentinel and Microsoft Defender. Fixed data connector workbook/graph queries to use the ThreatIntelIndicators table instead of the deprecated ThreatIntelligenceIndicator table |
 | 3.0.1       | 07-11-2025                     | Fixed Premium ARM template                  |
 | 3.0.0       | 23-07-2025                     | Initial Solution Release                    |
 

@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Version** | 3.0.7 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Last Updated** | 2026-07-28 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Azure Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4azurefirewall.sentinel4azurefirewall) · Popularity: 🟢 High (94%) |
 
@@ -124,6 +124,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Sentinel to Defender XDR migration. |
 | 3.0.7       | 07-10-2026                     | Fixed false positives in Abnormal Port to Protocol and SeveralDenyActionsRegistered rules when using AZFWNetworkRule table             |
 | 3.0.6       | 06-05-2026                     | Updated **Analytical Rules** and **Hunting Queries** to Quality improvements.            |
 | 3.0.5       | 13-02-2026                     | Updated **Analytic Rule** to cover missing TTPs. Extended detection for FQDN and Destination IP across multiple sources and added new **Analytic Rule** for improved TI destination coverage.                                           |

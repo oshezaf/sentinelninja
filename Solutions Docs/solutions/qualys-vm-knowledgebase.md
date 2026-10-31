@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Vulnerability Management |
-| **Version** | 3.1.3 |
+| **Version** | 3.1.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
 | **Last Updated** | 2026-07-23 |
 | **Solution Folder** | [Qualys VM Knowledgebase](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-qualysvmknowledgebase) · Popularity: 🟡 Low (10%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-qualysvmknowledgebase) · Popularity: ⚪ Very Low (0%) |
 
 The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management/) KB solution for Microsoft Sentinel enables you to ingest Qualys VM KB logs into Microsoft Sentinel.
 
@@ -69,6 +69,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3.1.4       | 11-09-2026                     | Updated the CCF Data Connector to use the QualysKnowledgeBase schema, explicit table queries, configurable discovery and patchability filters, current Qualys API documentation links, and simplified migration guidance; restored a meaningful All discovery-method key while omitting that optional API filter. Enhanced the QualysKB Parser to normalize all 22 fields and deduplicate record versions by QID and last modification time. |
 | 3.1.3       | 17-07-2026                     | **CCF connector** - fix incomplete data ingestion. |
 | 3.1.2       | 29-04-2026                     | Moving Connector to GA. |
 | 3.1.1       | 23-04-2026                     | Moved endpoint to target Qualys KB API v4.0 |

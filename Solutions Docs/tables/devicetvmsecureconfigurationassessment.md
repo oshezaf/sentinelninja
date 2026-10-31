@@ -6,7 +6,7 @@
 
 ---
 
-Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices
+Reference for DeviceTvmSecureConfigurationAssessment table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Microsoft Defender Vulnerability Management assessment events, indicating the st
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessment) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessment-table) |
 
 ## Contents
 
@@ -55,7 +54,6 @@ Microsoft Defender Vulnerability Management assessment events, indicating the st
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSecureConfigurationAssessment Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsecureconfigurationassessment)
-- [DeviceTvmSecureConfigurationAssessment Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsecureconfigurationassessment-table)
 
 ## Solutions (1)
 

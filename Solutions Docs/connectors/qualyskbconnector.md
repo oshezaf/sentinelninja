@@ -11,7 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `QualysKbConnector` |
-| **Publisher** | Microsoft |
+| **Publisher** | Qualys |
 | **Used in Solutions** | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [QualysKB_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_ccf/QualysKB_ConnectorDefinition.json) |
@@ -20,15 +20,15 @@
 | **CCF Capabilities** | `Basic` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#qualys-knowledge-base-via-codeless-connector-framework) |
 
-Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API.
+Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API. Configure API endpoint and credentials below.
 
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`QualysKnowledgeBase`](../tables/qualysknowledgebase.md) | `Patchable in "0,1"` | ✓ | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`QualysKnowledgeBase`](../tables/qualysknowledgebase.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -47,13 +47,13 @@ This connector ingests data into the following tables:
 ## Step 1: Set Credentials
 Provide your Qualys API credentials to enable data ingestion from the Qualys Knowledge Base.
 To gather data from Qualys VM, you need to provide the following resources:
-- **API Credentials**: username and password for an account with read access to the Knowledge Base API. You can find the exact permissions needed in the [Qualys API documentation](https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm).
+- **API Credentials**: username and password for an account with read access to the Knowledge Base API. You can find the exact permissions needed in the [Qualys API documentation](https://docs.qualys.com/en/vm/qweb-all-api/get_started/get_started.htm).
 - **API Server URL**: the Qualys API server URL specific to your region. You can find the exact API server URL for your region [here](https://www.qualys.com/platform-identification/#api-urls)
 - **API Server URL**: Enter API Server URL
 - **Username**: Enter Qualys username
 - **Password**: (password field)
 ## Step 2: Set Any Optional Filters
-Configure optional filters to customize which vulnerabilities are ingested. Learn more about available filters in the [Qualys API documentation](https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm).
+Configure optional filters to customize which vulnerabilities are ingested. Learn more about available filters in the [Qualys API documentation](https://docs.qualys.com/en/vm/qweb-all-api/get_started/get_started.htm).
 ### 2a. Filter by Patch Status 
 Choose to only show vulnerabilities that are patchable or not patchable.
 - **Include vulnerabilities that are:** (select)
@@ -73,6 +73,8 @@ Choose to only receive vulnerabilities assigned a certain discovery method or ha
 ## Step 3: Review and Enable
 Review your configuration settings and enable the connector to start ingesting Qualys Knowledge Base data into Microsoft Sentinel.
 - Click 'Connect Qualys KB' to establish connection
+## Step 4: Complete Migration
+After validating that CCF & Azure Function (if applicable) records are available in 'QualysKB', disable the legacy Azure Function to prevent duplicate ingestion.
 
 ---
 

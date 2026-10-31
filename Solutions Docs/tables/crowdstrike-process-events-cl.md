@@ -17,6 +17,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (145 columns)
 
@@ -191,6 +192,14 @@ This table is ingested by the following connectors:
 | [CrowdStrike Falcon Data Replicator (User Managed AWS-S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimProcessEventCrowdStrikeFalconEndpointProtection](../asim/asimprocesseventcrowdstrikefalconendpointprotection.md) | ProcessEvent | CrowdStrike Falcon Endpoint Protection |  |
 
 ---
 

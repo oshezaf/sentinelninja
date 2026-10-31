@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [SemperisLightning_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/Data%20Connectors/SemperisLightningCCF/SemperisLightning_DCR.json) |
 | **CCF Configuration** | [SemperisLightning_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/Data%20Connectors/SemperisLightningCCF/SemperisLightning_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#semperis-lightning-via-codeless-connector-framework) |
 
 The [Semperis Lightning](https://www.semperis.com/platform/) connector uses the Codeless Connector Framework to ingest Semperis Lightning identity security data into Microsoft Sentinel. One configured instance represents one Semperis zone/API-key pair and deploys one RestApiPoller per supported stream into dedicated `*V2_CL` tables, so it can run alongside the Azure Functions connector.
 

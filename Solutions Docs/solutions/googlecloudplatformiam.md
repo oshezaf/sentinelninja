@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider,Identity |
-| **Version** | 3.0.5 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-30 |
-| **Last Updated** | 2025-12-18 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [GoogleCloudPlatformIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpiam) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpiam) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (86%) |
 
 The Google Cloud Platform Identity and Access Management (IAM) solution provides the capability to ingest [GCP IAM logs](https://cloud.google.com/iam/docs/audit-logging) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/api) for more information.
   
@@ -133,6 +133,7 @@ This solution includes **25 content item(s)**:
 
 **Version** | **Date Modified (DD-MM-YYYY)**| **ChangeHistory**                                                                         |
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
+| 3.2.2      | 21-10-2026                    | Migrated **Analytic Rules** to Defender XDR **Custom Detections** and the **Workbook** to an XDR Workbook; fixed `isnotempty` usage in the **Workbook** query.|
 | 3.0.7      | 28-08-2025                    | Improved type handling in the parser query by explicitly converting certain fields to bool and datetime.|
 | 3.0.6      | 31-07-2025                    | Removed deprecated **Data Connector** |
 | 3.0.5      | 27-06-2025                    | GoogleCloudPlatformIAM **CCF Data Connector** moving to GA |

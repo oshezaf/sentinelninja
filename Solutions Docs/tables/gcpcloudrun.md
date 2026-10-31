@@ -14,7 +14,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudrun) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -25,7 +25,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (91 columns)
+## Schema (93 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcloudrun)
 
@@ -34,6 +34,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 | _BilledSize | real | The record size in bytes |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | GCPResourceType | string | The type of GCP resource (e.g., 'CloudRunService', 'CloudRunJob'). |
+| HttpRequest | dynamic | HTTP request information associated with the log entry. |
 | InsertId | string | Unique identifier for the log entry. |
 | JsonPayloadMessage | string | The message field extracted from the jsonPayload. |
 | JsonPayloadRequest | string | The request field extracted from the jsonPayload. |
@@ -120,6 +121,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 | Severity | string | The severity level of the log entry (e.g., INFO, WARNING, ERROR). |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
+| TextPayload | string | The text payload contained within the log entry. |
 | TimeGenerated | datetime | The timestamp when the log entry was originally generated in GCP. |
 | Type | string | The name of the table |
 

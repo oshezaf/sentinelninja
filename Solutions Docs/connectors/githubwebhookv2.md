@@ -39,8 +39,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -60,6 +60,14 @@ This connector ingests data into the following tables:
 
 >**NOTE:** This connector is built on an HTTP trigger based Azure Function using the **Logs Ingestion API (CLv2)** with **Managed Identity** authentication. There is no need to configure a Workspace Key — authentication is handled automatically by the Function App's system-assigned managed identity. This might result in additional data ingestion costs. Check the [Azure Functions pricing page](https://azure.microsoft.com/pricing/details/functions/) for details.
 
+**1. Azure public cloud and Azure Government**
+
+This webhook connector can ingest events into Azure public cloud or Azure Government. Choose the matching deployment link below. The ARM template configures the DCE endpoint automatically, and the Function App selects the matching Azure Monitor token scope and Microsoft Entra authority from that endpoint. No additional cloud, scope, or authority parameters are required.
+
+For manual deployment, copy the **Logs ingestion** endpoint from a DCE in the same cloud as your Function App, DCR, and workspace into **DCE_ENDPOINT**: `https://<dce-host>.ingest.monitor.azure.com` for Azure public cloud or `https://<dce-host>.ingest.monitor.azure.us` for Azure Government. Use the actual resource endpoint; do not change an existing endpoint's suffix. The cloud-specific scopes and authorities are described in the [Azure Monitor SDK documentation](https://learn.microsoft.com/python/api/overview/azure/monitor-ingestion-readme#configure-clients-for-non-public-azure-clouds).
+
+GitHub must be able to reach the Function App's HTTPS webhook URL. This connector uses webhooks, not GitHub audit-log streaming to Blob Storage; the Azure Government restriction on the Azure Storage audit-log connector does not apply to this ingestion path.
+
 >**(Optional Step)** Securely store the GitHub Webhook Secret in Azure Key Vault. [Follow these instructions](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references) to use Azure Key Vault with an Azure Function App.
 
 **Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**
@@ -72,9 +80,11 @@ This connector ingests data into the following tables:
 
   Use this method for automated deployment of the GitHub V2 data connector using an ARM Template.
 
-1. Click the **Deploy to Azure** button below.
+1. Choose the deployment button for your workspace's cloud. No extra Government-specific parameters are required.
 
 	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGitHub%2FData%2520Connectors%2FGithubWebhookV2%2Fazuredeploy_GithubWebhookV2_API_FunctionApp.json)
+
+	[![Deploy to Azure Government](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGitHub%2FData%2520Connectors%2FGithubWebhookV2%2Fazuredeploy_GithubWebhookV2_API_FunctionApp.json)
 2. Select the **Subscription** and **Resource Group** — deploy to the **same resource group** as your Log Analytics workspace.
 > **NOTE:** You can't mix Windows and Linux apps in the same region and resource group.
 3. Enter the **WorkspaceName** — the name of your Log Analytics workspace (not the full resource ID).
@@ -93,12 +103,12 @@ This connector ingests data into the following tables:
 
     **Step 2 - Configure the Function App**
 
-    1. Go to Azure Portal for the Function App configuration.
+    1. Open your Function App in the [Azure public portal](https://portal.azure.com) or [Azure Government portal](https://portal.azure.us).
 2. In the Function App, select the Function App Name and select **Configuration**.
 3. In the **Application settings** tab, select **New application setting**.
 4. Add each of the following application settings individually, with their respective string values (case-sensitive):
-		DCE_ENDPOINT - The logs ingestion endpoint of your Data Collection Endpoint
-		DCR_RULE_ID - The immutableId of your Data Collection Rule
+		DCE_ENDPOINT - Copy your DCE's Logs ingestion endpoint: `https://<dce-host>.ingest.monitor.azure.com` for Azure public cloud or `https://<dce-host>.ingest.monitor.azure.us` for Azure Government. The Function App automatically selects the matching authentication scope and authority.
+		DCR_RULE_ID - The immutableId of your Data Collection Rule in the same cloud
 		DCR_STREAM_NAME - Custom-GitHubAdvancedSecurityAlerts_CL
 		GithubWebhookSecret (optional) - Your GitHub webhook secret for payload validation
 5. Once all application settings have been entered, click **Save**.
@@ -123,7 +133,7 @@ This connector ingests data into the following tables:
 
 *Now we are done with the GitHub Webhook V2 configuration. Once GitHub events are triggered, after the delay of 5 to 10 mins, you should be able to see all the transactional events from GitHub in the LogAnalytics workspace table called `GitHubAdvancedSecurityAlerts_CL`. Use the `githubscanaudit` parser function for a unified view that includes data from both the legacy `githubscanaudit_CL` and new `GitHubAdvancedSecurityAlerts_CL` tables.*
 
-**4. ⚠️ IMPORTANT: Migrating from GitHub Webhook V1 to V2**
+**5. ⚠️ IMPORTANT: Migrating from GitHub Webhook V1 to V2**
 
 If you are currently using the original **GitHub (using Webhooks)** connector (`githubscanaudit_CL` table), follow these steps to migrate to V2 without disrupting existing data or breaking workbooks and analytic rules.
 
@@ -208,11 +218,35 @@ DCR → Log Analytics Workspace → GitHubAdvancedSecurityAlerts_CL table
 
 > **Best practice:** Create a new Resource Group for this connector — all provisioned resources (Function App, Storage Account, DCE, DCR, App Insights) will reside there.
 
+## Azure public cloud and Azure Government
+
+Choose the deployment link for your workspace's cloud. No additional cloud,
+token-scope, or authority parameters are required: ARM supplies the deployed
+DCE's ingestion endpoint, and the Function App selects the matching authentication
+settings automatically.
+
+| Cloud | DCE endpoint suffix | Microsoft Entra authority | Azure Monitor token scope |
+|---|---|---|---|
+| Azure public cloud | `.ingest.monitor.azure.com` | `login.microsoftonline.com` | `https://monitor.azure.com//.default` |
+| Azure Government | `.ingest.monitor.azure.us` | `login.microsoftonline.us` | `https://monitor.azure.us/.default` |
+
+For manual deployments, copy the actual **Logs ingestion** endpoint from your
+DCE into `DCE_ENDPOINT`. Do not change an endpoint's suffix to move it between
+clouds. Keep the Function App, DCE, DCR, and workspace in the same cloud. Invalid
+or unsupported endpoint hosts fail at startup instead of falling back to the
+public-cloud authentication scope. See the
+[Azure Monitor SDK's non-public cloud configuration](https://learn.microsoft.com/python/api/overview/azure/monitor-ingestion-readme#configure-clients-for-non-public-azure-clouds).
+
+GitHub must be able to reach the Function App's HTTPS webhook URL. This connector
+uses webhooks, not GitHub audit-log streaming to Blob Storage; the Azure Government
+restriction on the Azure Storage audit-log connector does not apply to this path.
+
 ## Deployment
 
 ### Option 1 — ARM Template (Recommended)
 
 [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGitHub%2FData%2520Connectors%2FGithubWebhookV2%2Fazuredeploy_GithubWebhookV2_API_FunctionApp.json)
+[![Deploy to Azure Government](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGitHub%2FData%2520Connectors%2FGithubWebhookV2%2Fazuredeploy_GithubWebhookV2_API_FunctionApp.json)
 
 **Required parameters:**
 
@@ -241,7 +275,7 @@ The template automatically provisions:
 
 | Setting | Value |
 |---|---|
-| `DCE_ENDPOINT` | Logs ingestion endpoint URL from your DCE |
+| `DCE_ENDPOINT` | Actual Logs ingestion endpoint from a DCE in your cloud: `https://<dce-host>.ingest.monitor.azure.com` for Azure public cloud or `https://<dce-host>.ingest.monitor.azure.us` for Azure Government. Authentication settings are selected automatically. |
 | `DCR_RULE_ID` | `immutableId` of your DCR |
 | `DCR_STREAM_NAME` | `Custom-GitHubAdvancedSecurityAlerts_CL` |
 | `GithubWebhookSecret` | *(Optional)* Your GitHub webhook secret |
@@ -259,7 +293,11 @@ The template automatically provisions:
    ![Function App Complete URL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhookV2/../GithubWebhook/Images/functionappcompleteurl.jpg)
 
 3. *(Optional)* Generate a new function key and substitute it into the URL as the `code` query parameter.  
-   Example: `https://fngithubwebhookv2.azurewebsites.net/api/GithubWebhookConnectorV2?code={apikey}`
+   Public-cloud example: `https://<function-app>.azurewebsites.net/github/GithubWebhookConnectorV2?code={apikey}`.
+
+   Azure Government example: `https://<function-app>.azurewebsites.us/github/GithubWebhookConnectorV2?code={apikey}`.
+
+   Always copy the actual **Get Function URL** value rather than constructing it.
 
    ![Function App Key](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhookV2/../GithubWebhook/Images/FunctionAppfunctionKey.jpg)
 
@@ -348,6 +386,26 @@ GithubWebhookV2/
 ├── requirements.txt         # Python dependencies
 └── README.md                # This file
 ```
+
+## Local verification
+
+Install `requirements.txt` in a Python 3.11 virtual environment, then run:
+
+```powershell
+python -m unittest discover -s "Solutions\GitHub\Data Connectors\GithubWebhookV2\tests" -v
+```
+
+The tests exercise both clouds using the real ingestion SDK with a local,
+no-network transport, including token scopes, webhook signatures, error handling,
+and the deployment ZIP's source contents. They do not replace an end-to-end
+deployment in Azure Government.
+
+After changing the Function App code, rebuild `GithubWebhookV2.zip` with
+Linux-compatible Python 3.11 dependencies from `requirements.txt`. The archive root
+must contain `host.json`, `requirements.txt`, `GithubWebhookConnectorV2/`, and
+`.python_packages/lib/site-packages/`. Do not include tests or a parent directory.
+The ARM template's `WEBSITE_RUN_FROM_PACKAGE` and the manual-download link must
+resolve to this updated package when the change is published.
 
 ## Related Resources
 

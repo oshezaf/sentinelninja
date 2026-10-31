@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VectraXDR_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraDataConnector/VectraXDR_API_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#vectra-xdr-using-azure-functions) |
 
 The [Vectra XDR](https://www.vectra.ai/) connector gives the capability to ingest Vectra Detections, Audits, Entity Scoring, Lockdown, Health and Entities data into Microsoft Sentinel through the Vectra REST API. Refer to the API documentation: `https://support.vectra.ai/s/article/KB-VS-1666` for more information.
@@ -26,12 +27,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | ✓ | ✓ | ✓ |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ? | ✓ | ? |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ? | ✓ | ? |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ? | ✓ | ? |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | ? | ✓ | ? |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

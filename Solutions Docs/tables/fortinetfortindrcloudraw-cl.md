@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -53,7 +51,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
+
+### Analytic Rules (1)
+
+**In solution [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [FortiNDR Cloud - Security Event Detected](../content/fortinet-fortindr-cloud-fortindr-cloud-security-event-detected-1e6a8802-9129-44d4-a4f9-c6010b5725e8-224b2e79.md) |  |
 
 ### Workbooks (1)
 

@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -85,7 +83,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimEmailEventProofpointTAPClicksPermitted](../asim/asimemaileventproofpointtapclickspermitted.md) | EmailEvent | Proofpoint Targeted Attack Protection |  |
 
 ### Other Parsers (1)
 

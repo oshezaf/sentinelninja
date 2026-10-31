@@ -6,7 +6,7 @@
 
 ---
 
-Creates Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0015 (Theom has observed healthcare data in a data store that is publicly exposed. As per this requirement, use this information to apply data access control lists or access permissions to secure your data)
+Creates Microsoft Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0015 (Theom has observed healthcare data in a data store that is publicly exposed. As per this requirement, use this information to apply data access control lists or access permissions to secure your data)
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

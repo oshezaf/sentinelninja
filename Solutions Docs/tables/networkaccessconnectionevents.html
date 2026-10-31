@@ -56,7 +56,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (53 columns)</h2>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (65 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -83,9 +89,34 @@
   <td style="text-align:left">The version of the agent connecting.</td>
 </tr>
 <tr>
+  <td style="text-align:left">AIAgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the AI agent associated with the connection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AIAgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the AI agent associated with the connection.</td>
+</tr>
+<tr>
   <td style="text-align:left">AppId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Destination Application ID accessed in Azure AD during the transaction.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Microsoft Entra directory object ID of the Enterprise Application for the Private Access connection. Distinct from AppId (the application appId/clientId).</td>
+</tr>
+<tr>
+  <td style="text-align:left">AppLoginDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the device associated with the Private Access connection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AppLoginUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the login user associated with the Private Access connection.</td>
 </tr>
 <tr>
   <td style="text-align:left">ClientDeviceName</td>
@@ -96,6 +127,11 @@
   <td style="text-align:left">ConnectionId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Unique identifier representing the connection this traffic log was initiated from.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectorGroupId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the connector group that served the Private Access connection.</td>
 </tr>
 <tr>
   <td style="text-align:left">CrossTenantAccessType</td>
@@ -120,7 +156,7 @@
 <tr>
   <td style="text-align:left">DeviceCategory</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Device type the transaction originated from. Client, Branch.</td>
+  <td style="text-align:left">Device type the transaction originated from. Client, Branch, Secure Enterprise Browser.</td>
 </tr>
 <tr>
   <td style="text-align:left">DeviceId</td>
@@ -148,6 +184,16 @@
   <td style="text-align:left">The type of the connection event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">ForwardingProfileId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the forwarding profile that matched the connection.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ForwardingProfileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the forwarding profile that matched the connection.</td>
+</tr>
+<tr>
   <td style="text-align:left">HomeTenantId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The home tenant ID for B2B scenarios.</td>
@@ -158,9 +204,19 @@
   <td style="text-align:left">The process initiating the traffic transaction.</td>
 </tr>
 <tr>
+  <td style="text-align:left">IsAgentic</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the connection was detected as agentic.</td>
+</tr>
+<tr>
   <td style="text-align:left">IsLocal</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Represents if the connection was triggered by Intelligent Local Access.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsTokenAgentic</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the token used in the connection was issued to an AI agent.</td>
 </tr>
 <tr>
   <td style="text-align:left">NetworkProtocol</td>
@@ -171,6 +227,11 @@
   <td style="text-align:left">PopProcessingRegion</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Region where the request was processed by the backend service.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PrivateSourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The private source IP address of the inner flow from which the connection originated.</td>
 </tr>
 <tr>
   <td style="text-align:left">RemoteNetworkId</td>
@@ -196,6 +257,11 @@
   <td style="text-align:left">SecurityPolicyVersion</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The version of the security policy within the security profile.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SecurityPrincipalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the security principal that initiated the connection. User, Device.</td>
 </tr>
 <tr>
   <td style="text-align:left">SecurityProfileId</td>
@@ -340,6 +406,23 @@
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents">NetworkAccessConnectionEvents Schema Reference (Azure Monitor)</a></li>
 </ul>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-aigovernance-b2429b32.html">AIGovernance</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>

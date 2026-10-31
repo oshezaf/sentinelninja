@@ -17,6 +17,13 @@ Reference for SentinelAudit table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelaudit) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (16 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelaudit)
@@ -46,7 +53,23 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SentinelAudit Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelaudit)
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 ---
 

@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -59,7 +57,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -68,6 +66,14 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Datawiza - massive errors detected](../content/datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) |  |
+
+### Workbooks (1)
+
+**In solution [Datawiza](../solutions/datawiza.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DatawizaAccessProxyDashboard](../content/datawiza-datawizaaccessproxydashboard-5edee7b6.md) |  |
 
 ---
 

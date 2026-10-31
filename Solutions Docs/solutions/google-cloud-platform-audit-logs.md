@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-29 |
-| **Last Updated** | 2026-08-03 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Google Cloud Platform Audit Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpauditlogs-api) · Popularity: ⚪ Very Low (2%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpauditlogs-api) · Popularity: ⚪ Very Low (0%) |
 
 The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's connector, enables you to capture and track all activity that occurs in your GCP environment. These audit logs provide valuable insights for monitoring user activity, troubleshooting issues, and ensuring compliance with security regulations. They serve as a record of events that practitioners can utilize to monitor access and identify potential threats across GCP resources.
 
@@ -49,7 +49,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md), [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) | Analytics, Hunting, Workbooks |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md), [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -147,6 +147,8 @@ if you don't want to perform above steps please use the below link for manual se
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.3 | 22-10-2026 | Fixed **Custom Detection** deployment by retaining the DNS zone name in custom details instead of an incomplete DNS entity mapping. |
+| 3.2.2 | 20-10-2026 | Migrated 7 Analytic Rules to Defender XDR Custom Detections (V3.1 hybrid package). |
 | 3.0.3       | 28-07-2026                     | Added a new **workbook** for Google Cloud Platform Audit Logs.     | 
 | 3.0.2       | 19-01-2026                     | Added new GCP security **Analytic Rules** and **Hunting Queries**  |
 | 3.0.1       | 28-04-2025                     | Updated **Data Connector** definition file and fixed overlapping collector issue.|

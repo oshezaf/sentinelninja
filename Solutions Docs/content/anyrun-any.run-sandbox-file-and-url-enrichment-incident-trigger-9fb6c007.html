@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="anyrun-sandbox---file-and-url-enrichment---incident-trigger">ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>On a Microsoft Sentinel incident, enriches File, and URL entities using Microsoft Defender for Endpoint Live Response and ANY.RUN Sandbox. Files are located via DeviceFileEvents, collected from the endpoint, uploaded to Azure Blob Storage, and detonated in Windows or Linux sandbox. URLs are submitted directly to ANY.RUN. Results are added as incident comments and IOCs are uploaded to Threat Intelligence.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/anyrun.html">ANYRUN</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-File-Defender/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>7</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">20</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">9</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azureblob"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_blob_content_(V2)</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(variables('Storage Account Name')))}/files/@{encodeURIComponent(encodeURIComponent('/',variables('Container Name'),'/',variables('Suspicious File - FileName')))}/content</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">KQL_-_Get_FilePath</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_File_Does_not_upload_to_Blob</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_Analysis_Started</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Unsupported_OS_for_analysis</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_-_Add_Tags</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Malicious_IOCs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Suspicious_IOCs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_ANY.RUN_Output</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_CleanScan_ANY.RUN_Output</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_Pending_Live_Response_Response</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_KQL_Result_is_empty</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Pending_Anti_Virus_Scan</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_Analysis_Started_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_-_Add_Tags_URL</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Malicious_IOCs_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Suspicious_IOCs_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-<em>ANY.RUN_Output</em>-_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Clean_Scan_URL_ANY.RUN_Output</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_OS_versions_unsupported</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret_-_ANYRUN</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('ANYRUN-APIKey')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wdatp"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Actions_-_Get_single_machine_action</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machineactions/@{encodeURIComponent(body('Actions_-_Run_live_response')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Run_live_response</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(body('Parse_JSON_-_Each_Host')?['additionalData']?['MdatpDeviceId'])}/runliveresponse</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Get_live_response_command_result_download_URI</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machineactions/@{encodeURIComponent(body('Actions_-_Get_single_machine_action')?['id'])}/GetLiveResponseResultDownloadLink(index=@{encodeURIComponent('0')})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Machines_-_Get_single_machine</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(body('Parse_JSON_-_Each_Host')?['additionalData']?['MdatpDeviceId'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Run_antivirus_scan</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(body('Parse_JSON_-_Each_Host')?['additionalData']?['MdatpDeviceId'])}/runAntiVirusScan</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ANYRUN-Sentinel-FA_Windows_File_Analysis</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('connectFunctionAppName'), '/functions/ANYRUN-Sentinel-FA')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">ANYRUN-Sentinel-FA_Ubuntu_File_Analysis</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('connectFunctionAppName'), '/functions/ANYRUN-Sentinel-FA')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">ANYRUN-Sentinel-FA_Debian_File_Analysis</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('connectFunctionAppName'), '/functions/ANYRUN-Sentinel-FA')]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Download_Response_Body</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@body('Actions_-_Get_live_response_command_result_download_URI')?['value']</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-CheckFile-Result</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/monitor/@{variables('UUID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-Full-JSON-Report</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/@{variables('UUID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-GetIOC</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/report/@{variables('UUID')}/ioc/json</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Generate_SAS_Token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[uri(environment().resourceManager, variables('listServiceSasRelativePath'))]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-RunNewURLAnalysis</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-CheckURL-Result</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/monitor/@{variables('UUID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-Full-JSON-Report_URL</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/@{variables('UUID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-GetIOC_URL</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/report/@{variables('UUID')}/ioc/json</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-File-Defender/readme.md">Sandbox-File-Defender/readme.md</a></em></p>
+</blockquote>
+<h1 id="anyrun-sandbox-file-defender">ANY.RUN — Sandbox File Defender</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ANYRUN.svg" alt="ANY.RUN" /></p>
+<h2 id="summary">Summary</h2>
+<p>When a Microsoft Sentinel incident is created, this playbook:</p>
+<ul>
+<li>Extracts File, URL, and Host entities from the incident.</li>
+<li>Uses Microsoft Defender for Endpoint (MDE) Live Response to collect files from endpoints and upload them to Azure Blob Storage.</li>
+<li>Submits files and URLs to ANY.RUN Sandbox via the Function App <code>ANYRUN-Sentinel-FA</code>.</li>
+<li>Adds a comment to the incident with the analysis verdict, threat score, malware tags, IOC table, and a link to the analysis session.</li>
+<li>Uploads detected IOCs to the Microsoft Sentinel Threat Intelligence portal.</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Shared prerequisites (Key Vault secret <code>ANYRUN-APIKey</code>, App Registration, API permissions, role assignments, and Storage Account) are described in the <a href="../../index.html">solution README</a>.</p>
+<p>Additional requirements for this playbook:</p>
+<ul>
+<li>Microsoft Defender for Endpoint must be enabled and devices must be onboarded.</li>
+<li>The Function App <code>ANYRUN-Sentinel-FA</code> must be deployed in the same subscription and resource group.</li>
+<li>Microsoft Sentinel incidents must contain File, URL, or Host entities.</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<p>Click below to deploy Azure Logic App with <strong>Flex Consumption plan</strong></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FANYRUN%2FPlaybooks%2FSandbox-File-Defender%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-File-Defender/Images/7_001.png" alt="logic_app_deployment" /></p>
+<p>Enter the parameters required for deploying the Logic App and click <strong>Review + create</strong>.</p>
+<p>Description of the required parameters:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>Logic App name (default <code>ANYRUN-Sandbox-Defender</code>).</td>
+</tr>
+<tr>
+  <td>Azure Tenant ID</td>
+  <td>Tenant ID for authentication in connections.</td>
+</tr>
+<tr>
+  <td>Azure Client ID</td>
+  <td>Client ID of the App Registration created for the solution.</td>
+</tr>
+<tr>
+  <td>Azure Blob Storage Account Name</td>
+  <td>Storage account used to store files before they are submitted to ANY.RUN.</td>
+</tr>
+<tr>
+  <td>Azure Blob Storage Container Name</td>
+  <td>Container name in the storage account.</td>
+</tr>
+<tr>
+  <td>Azure Blob Storage Connection String</td>
+  <td>Connection string of the storage account.</td>
+</tr>
+<tr>
+  <td>Log Analytics Workspace</td>
+  <td>Log Analytics workspace name.</td>
+</tr>
+<tr>
+  <td>functionAppName</td>
+  <td>Name of the deployed Function App.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-deployment">Post-deployment</h2>
+<h3 id="authorize-api-connections">Authorize API connections</h3>
+<p>After deployment, open the Logic App and authorize the API connections created by the template:</p>
+<ul>
+<li><strong>Microsoft Sentinel</strong></li>
+<li><strong>Key Vault</strong></li>
+<li><strong>Azure Blob Storage</strong></li>
+<li><strong>Azure Monitor Logs</strong></li>
+<li><strong>Microsoft Defender for Endpoint (WDATP)</strong></li>
+</ul>
+<p>Edit each connection, sign in, and save.</p>
+<h2 id="playbook-steps">Playbook steps</h2>
+<ol>
+<li>The playbook is triggered when a Microsoft Sentinel incident is created.</li>
+<li>It retrieves File, URL, and Host entities from the incident.</li>
+<li>For files it uses MDE Live Response to collect the file from the endpoint and upload it to Azure Blob Storage.</li>
+<li>It obtains the ANY.RUN API key from Key Vault.</li>
+<li>It calls the Function App to submit files and URLs for analysis in ANY.RUN Sandbox.</li>
+<li>After analysis completes, it adds a comment to the incident containing the verdict, threat score, tags, IOC table, and a link to the analysis session.</li>
+<li>Detected IOCs are uploaded to the Microsoft Sentinel Threat Intelligence portal.</li>
+</ol>
+<h2 id="storage-account-configuration">Storage Account Configuration</h2>
+<p>To generate an SAS token for Azure Blob Storage, you need to assign the appropriate role directly to the Logic App.</p>
+<p>Open your Storage Account.<br />
+Navigate to <strong>Access Control (IAM)</strong> and click <strong>Add</strong>.</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-File-Defender/Images/4_002.png" alt="storage_logic_app" /></p>
+<p>Specify the Logic App <code>ANYRUN-Sandbox-Defender</code>.<br />
+Select the following role:</p>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Storage Account Contributor</td>
+  <td>Lets you manage storage accounts, including accessing storage account keys which provide full access to storage account data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="microsoft-defender-for-endpoint-configuration-and-additional-script">Microsoft Defender for Endpoint configuration and additional script</h2>
+<blockquote>
+<p><strong>Note:</strong><br />
+To allow the connector to extract all files of interest from endpoints (including potentially dangerous ones), we recommend setting <strong>Quarantine</strong> as the default action for your MDE.</p>
+</blockquote>
+<h3 id="enable-live-response-sessions">Enable Live Response Sessions</h3>
+<p>Open your <a href="https://security.microsoft.com">MDE portal</a>.<br />
+Navigate to <strong>System</strong> &gt; <strong>Settings</strong> &gt; <strong>Endpoints</strong> &gt; <strong>General</strong> &gt; <strong>Advanced features</strong>.<br />
+Enable the following settings: <strong>Live Response</strong>, <strong>Live Response for Servers</strong>, and <strong>Live Response unsigned script execution</strong>.</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-File-Defender/Images/Defender_002.png" alt="enable_live_response" /></p>
+<h3 id="upload-helper-scripts-to-the-local-library-of-your-endpoints">Upload Helper Scripts to the Local Library of Your Endpoints</h3>
+<p>Open your MDE portal.<br />
+Navigate to <strong>Assets</strong> &gt; <strong>Devices</strong>.</p>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/anyrun.html">Back to ANYRUN</a></p>
+
+</div>
+
+</body>
+</html>

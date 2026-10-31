@@ -96,7 +96,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (22)
 
 ### Analytic Rules (3)
 
@@ -113,7 +113,7 @@ This table is ingested by the following connectors:
 | [Missing Domain Controller Heartbeat](../content/standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md) |  |
 | [OMI Vulnerability Exploitation](../content/standalone-content-omi-vulnerability-exploitation-3cc5ccd8-b416-4141-bb2d-4eba370e37a5-f90e5eee.md) |  |
 
-### Workbooks (18)
+### Workbooks (19)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -179,6 +179,7 @@ This table is ingested by the following connectors:
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 | [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
+| [IISServersMonitoringSecurity](../content/github-only-iisserversmonitoringsecurity-7e647cbc.md) |  |
 | [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `Solutions contains "windowsFirewall"` |

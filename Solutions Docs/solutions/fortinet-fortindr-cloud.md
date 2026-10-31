@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.fortinet.com/support](https://www.fortinet.com/support) |
 | **Categories** | Security - Automation (SOAR) |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.1 |
 | **Author** | Fortinet - cs@fortinet.com |
 | **First Published** | 2024-01-15 |
-| **Last Updated** | 2026-07-01 |
+| **Last Updated** | 2026-09-17 |
 | **Solution Folder** | [Fortinet FortiNDR Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortindrcloud-sentinel) · Popularity: 🟡 Low (44%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortindrcloud-sentinel) · Popularity: ⚪ Very Low (3%) |
 
 The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) solution for Microsoft Sentinel provides the capability to ingest Fortinet FortiNDR Cloud events into Microsoft Sentinel. For questions about Fortinet FortiNDR Cloud, please contact Fortinet at [fnc-sentinel@fortinet.com](mailto:fnc-sentinel@fortinet.com).
 
@@ -43,16 +43,23 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`FortinetFortiNdrCloudRaw_CL`](../tables/fortinetfortindrcloudraw-cl.md) | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FortinetFortiNdrCloudRaw_CL`](../tables/fortinetfortindrcloudraw-cl.md) | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Analytics, Workbooks |
 
 ## Content Items
 
-This solution includes **2 content item(s)**:
+This solution includes **3 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
+| Analytic Rules | 1 |
 | Workbooks | 1 |
 | Parsers | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [FortiNDR Cloud - Security Event Detected](../content/fortinet-fortindr-cloud-fortindr-cloud-security-event-detected-1e6a8802-9129-44d4-a4f9-c6010b5725e8-224b2e79.md) | High | InitialAccess, Execution, LateralMovement, CommandAndControl, Exfiltration, Discovery, Impact | [`FortinetFortiNdrCloudRaw_CL`](../tables/fortinetfortindrcloudraw-cl.md) |
 
 ### Workbooks
 
@@ -70,6 +77,7 @@ This solution includes **2 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                            |
 |-------------|--------------------------------|-------------------------------------------------------------------------------|
+| 3.1.1       | 24-08-2026                     | Adding Analytic Rule to comply with MISA requirements                         |
 | 3.1.0       | 26-05-2026                     | Updated to use LogIngestion instead of the deprecated HTTP Data Collector API |
 | 3.0.3       | 05-05-2025                     | Use Flex Consumption plan to hold Data Connector                              |
 | 3.0.2       | 30-09-2024                     | Show mitre attack ids and link to detection rule page                         |

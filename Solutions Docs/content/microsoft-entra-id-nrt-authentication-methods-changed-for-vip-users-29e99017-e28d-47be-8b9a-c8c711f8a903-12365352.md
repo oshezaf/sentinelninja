@@ -14,6 +14,7 @@ Identifies authentication methods being changed for a list of VIP users watchlis
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `29e99017-e28d-47be-8b9a-c8c711f8a903` |
 | **Severity** | Medium |
+| **Status** | Available |
 | **Kind** | NRT |
 | **Tactics** | Persistence |
 | **Techniques** | T1098 |

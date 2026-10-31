@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CayosoftGuardian_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cayosoft%20Guardian/Data%20Connectors/CayosoftGuardian_connectorDefinition.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cayosoft-guardian-threat-alerts) |
 
 The Cayosoft Guardian data connector automatically ingests threat alerts from Cayosoft Guardian into Microsoft Sentinel. Cayosoft Guardian writes threat alerts to the Windows Event Log as Event ID 2. The Azure Monitor Agent (AMA) collects these events by using Data Collection Rules (DCRs) and sends the parsed data to the custom Log Analytics table named `CayosoftThreatAlerts_CL`. After the data is ingested, Microsoft Sentinel can use it for monitoring, analytics, incident creation, investigation, and automated response across your hybrid identity environment.
 

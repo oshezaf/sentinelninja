@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exchange Security Insights On-Premises Collector &mdash; Solutions Analyzer</title>
+<title>Deprecated Exchange Security Insights On-Premises Collector &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="exchange-security-insights-on-premises-collector">Exchange Security Insights On-Premises Collector</h1>
+<h1 id="deprecated-exchange-security-insights-on-premises-collector">(Deprecated) Exchange Security Insights On-Premises Collector</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -57,13 +57,9 @@
   <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
   <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-on-premises-collector">View on Learn</a></td>
-</tr>
 </tbody>
 </table>
-<p>Connector used to push Exchange On-Premises Security configuration for Microsoft Sentinel Analysis</p>
+<p>Connector used to push Exchange On-Premises Security configuration for Microsoft Sentinel Analysis - Deprecated, use Azure Monitor Version</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -78,9 +74,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/esiexchangeconfig-cl.html"><code>ESIExchangeConfig_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -95,6 +91,7 @@
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
+<li><strong>Azure Log Analytics HTTP Data Collector API will be deprecated</strong>: Azure Log Analytics HTTP Data Collector API will be deprecated, Update to Log Monitor API is REQUIRED. <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment">Learn more</a></li>
 <li><strong>Service Account with Organization Management role</strong>: The service Account that launch the script as scheduled task needs to be Organization Management to be able to retrieve all the needed security Information.</li>
 <li><strong>Detailled documentation</strong>: &gt;<strong>NOTE:</strong> Detailled documentation on Installation procedure and usage can be found <a href="https://aka.ms/MicrosoftExchangeSecurityGithub">here</a></li>
 </ul>
@@ -102,6 +99,10 @@
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
+<blockquote>
+<p><strong>NOTE - UPDATE</strong></p>
+</blockquote>
+<p>ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>We recommend to Update the Collector to Version <b>8.0.0.0</b> or higher <b>AND</b> switching to new Log Monitor API. <br/>The Collector Script Update procedure could be found here : <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI On-Premises Collector Update</a>, Update to Log Monitor API procedure could be found here : <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment'>Upgrade an existing deployment</a>.<br/>The new version of the Collector is using DCR (Data Collection Rules) for data collection. You need to configure DCR before running the script.</p>
 <p><strong>1. Install the ESI Collector Script on a server with Exchange Admin PowerShell console</strong></p>
 <p>This is the script that will collect Exchange Information to push content in Microsoft Sentinel.
 <strong>Script Deployment</strong></p>

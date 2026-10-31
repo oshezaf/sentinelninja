@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NWPacketCaptureHttpTransaction &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="nwpacketcapturehttptransaction">NWPacketCaptureHttpTransaction</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NWPacketCaptureHttpTransaction table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nwpacketcapturehttptransaction">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (35 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nwpacketcapturehttptransaction">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTs</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">UTC time of the first observed HTTP evidence for this transaction.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FlowId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Flow identifier used to correlate records across protocol tables within the same capture.</td>
+</tr>
+<tr>
+  <td style="text-align:left">HttpVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP protocol version reported in the response. Null when only a request was observed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InformationalStatusCode</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Status code of the last observed informational HTTP response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InformationalStatusReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reason phrase of the last observed informational HTTP response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IpVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address version used by the endpoints.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Method</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP request method.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PacketCaptureResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource ID of the packet capture that produced this record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PacketCaptureStorageUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Storage URL of the packet capture file that produced this record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Referrer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP Referer header value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestBodyBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Count of uncompressed request-body bytes analyzed, excluding headers.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDestinationIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Destination IP address in the HTTP request direction. May identify a proxy.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestDestinationPort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Port number on the receiving side of the HTTP request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestHost</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP Host header value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestMimeTypes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of MIME types identified in request content.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestOrigin</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP Origin header value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestSeen</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether HTTP request evidence was observed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestSourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address on the sending side of the HTTP request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestSourcePort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Port number on the sending side of the HTTP request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestTarget</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Decoded HTTP request target.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResponseBodyBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Count of uncompressed response-body bytes analyzed, excluding headers.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResponseMimeTypes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of MIME types identified in response content.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResponseSeen</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether HTTP response evidence was observed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">StatusCode</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Status code of the observed final HTTP response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StatusReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reason phrase of the observed final HTTP response.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">UTC time when the service ingested the record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TransactionSequence</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Transaction order within the flow identified by FlowId.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP User-Agent header value.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/nwpacketcapturehttptransaction">NWPacketCaptureHttpTransaction Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

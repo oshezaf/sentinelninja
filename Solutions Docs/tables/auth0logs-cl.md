@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -21,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (23 columns)
+## Schema (26 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0%5CData%20Connectors%5CAuth0_CCP/table.json)
 
@@ -43,7 +41,10 @@
 | IsMobile | bool | Indicates whether the event originated from a mobile device. |
 | LocationInfo | dynamic | Geographical location information of the event source. |
 | LogId | string | Unique identifier of the log event. |
+| OrganizationId | string | Identifier of the Auth0 organization related to the event. |
+| OrganizationName | string | Name of the Auth0 organization related to the event. |
 | Scope | string | Scopes the event applies to. |
+| SecurityContext | dynamic | Security-related signals associated with the event, in JSON format. |
 | SrcHostname | string | Hostname the event applies to. |
 | SrcIpAddr | string | IP address of the log event source. |
 | Strategy | string | Name of the strategy involved in the event. |
@@ -83,7 +84,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Auth0Workbook](../content/github-only-auth0workbook-07316f43.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationOktaAuth0](../asim/asimauthenticationoktaauth0.md) | Authentication | Auth0 |  |
 
 ### Other Parsers (1)
 

@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security,Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-23 |
-| **Last Updated** | 2026-09-08 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Microsoft Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurepurview) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurepurview) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (87%) |
 
 The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution enables data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans are ingested and visualized through workbooks, analytical rules, and more.
 
@@ -75,6 +75,7 @@ This solution includes **3 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                            |
 |-------------|--------------------------------|-----------------------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Microsoft Purview migration, and repackaged the V3.1 solution. |
 | 3.0.0       | 27-03-2025                     |	**Data Connector** [Microsoft Purview] Globally Available |
 
 ---

@@ -14,7 +14,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
 ## Contents
@@ -113,7 +113,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (95)
+## Content Items Using This Table (96)
 
 ### Analytic Rules (26)
 
@@ -183,7 +183,7 @@ This table is ingested by the following connectors:
 | [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md) |  |
 | [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) | `ActivityStatusValue has_any "Succeeded"`<br>`OperationNameValue has_any "/workspaces/computes/delete"` |
 
-### Hunting Queries (38)
+### Hunting Queries (39)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -244,6 +244,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
 | [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) | `ActivityStatusValue == "Success"`<br>`OperationNameValue == "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`OperationNameValue != "Microsoft.Storage/storageAccounts/listKeys/action"`<br>`ResourceGroup has "cloud-shell-storage"` |
+| [Azure rare subscription level operations](../content/standalone-content-azure-rare-subscription-level-operations-ef05eb0d-38ce-454e-a39d-4e42801be8b9-4a419014.md) |  |
 | [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) | `OperationName has "Create"` |
 
 **GitHub Only:**

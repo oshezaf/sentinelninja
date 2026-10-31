@@ -1,4 +1,4 @@
-# Exchange Security Insights On-Premises Collector
+# (Deprecated) Exchange Security Insights On-Premises Collector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
@@ -17,9 +17,8 @@
 | **Connector Definition Files** | [ESI-ExchangeOnPremisesCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-ExchangeOnPremisesCollector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-on-premises-collector) |
 
-Connector used to push Exchange On-Premises Security configuration for Microsoft Sentinel Analysis
+Connector used to push Exchange On-Premises Security configuration for Microsoft Sentinel Analysis - Deprecated, use Azure Monitor Version
 
 ## Tables Ingested
 
@@ -27,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -38,12 +37,17 @@ This connector ingests data into the following tables:
 - **Keys** (Workspace): read permissions to shared keys for the workspace are required. [See the documentation to learn more about workspace keys](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key).
 
 **Custom Permissions:**
+- **Azure Log Analytics HTTP Data Collector API will be deprecated**: Azure Log Analytics HTTP Data Collector API will be deprecated, Update to Log Monitor API is REQUIRED. [Learn more](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment)
 - **Service Account with Organization Management role**: The service Account that launch the script as scheduled task needs to be Organization Management to be able to retrieve all the needed security Information.
 - **Detailled documentation**: >**NOTE:** Detailled documentation on Installation procedure and usage can be found [here](https://aka.ms/MicrosoftExchangeSecurityGithub)
 
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
+
+>**NOTE - UPDATE**
+
+ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>We recommend to Update the Collector to Version <b>8.0.0.0</b> or higher <b>AND</b> switching to new Log Monitor API. <br/>The Collector Script Update procedure could be found here : <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI On-Premises Collector Update</a>, Update to Log Monitor API procedure could be found here : <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment'>Upgrade an existing deployment</a>.<br/>The new version of the Collector is using DCR (Data Collection Rules) for data collection. You need to configure DCR before running the script.
 
 **1. Install the ESI Collector Script on a server with Exchange Admin PowerShell console**
 

@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.7 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Last Updated** | 2026-08-25 |
+| **Last Updated** | 2026-10-19 |
 | **Solution Folder** | [MicrosoftDefenderForEndpoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftDefenderForEndpoint) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderendpoint) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (98%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderendpoint) · Rating: ★★☆☆☆ 2.5/5 (6 ratings) · Popularity: 🟢 High (97%) |
 
 The [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Endpoint platform, integrating them into your Microsoft Sentinel Incidents queue. 
  
@@ -125,6 +125,7 @@ This solution includes **27 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.1 | 15-10-2026 | Added 1 disabled **Defender XDR Custom Detection** (`AquaBlizzardAVHits.yaml`) alongside the existing Sentinel **Analytic Rule** and updated the solution package to 3.2.1. |
 | 3.0.7       | 29-07-2026                     | Updated the AquaBlizzardAVHits **analytic rule** by correcting the HostName entity mapping from 'Name' to 'Host' and splitting the long KQL line for readability, removed redundant legacy extend statements from the MDE_Process-IOCs and MDE_Usage hunting queries. Fixed the Deploy to Azure Gov button URLs across playbook READMEs by changing the badge from deploytoazuregovbutton to deploytoazuregovernbutton. |
 | 3.0.6       | 24-09-2025                     | Updated MDE **Playbooks** Instructions to use Microsoft Graph SDK  |
 | 3.0.5       | 06-08-2025                     | Updated MDE **Playbooks** with newer logic  |

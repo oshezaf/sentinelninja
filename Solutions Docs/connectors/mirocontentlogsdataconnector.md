@@ -126,6 +126,8 @@ There are two ways to set up the Miro Content Logs connector.
 8. The token will work until you disable the toggle.
 9. Proceed to Step 3.
 
+**Alternative: one token for all Miro connectors.** Instead of the eDiscovery toggle, you can use the **SIEM** toggle. It creates one access token with every log scope your organization is entitled to: `auditlogs:read` (Enterprise Plan), `contentlogs:export` (Enterprise Guard add-on) and `aiinteractionlogs:read` (Enterprise Guard add-on with AI interaction logs). If the SIEM toggle was enabled before it offered these scopes, turn it off and on again to get a token that includes them, then update the token in every connector that uses it. Turning the toggle off invalidates its current token, so every connector that uses it fails to poll until it has the new token.
+
 **Option 2: Custom OAuth application (alternative)**
 
 1. Go to [Miro App Settings](https://miro.com/app/settings/user-profile/apps).

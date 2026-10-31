@@ -18,9 +18,9 @@
 | **Version** | 3.0.1 |
 | **Author** | Cisco |
 | **First Published** | 2024-03-04 |
-| **Last Updated** | 2026-06-17 |
+| **Last Updated** | 2026-10-06 |
 | **Solution Folder** | [Cisco ETD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-etd-sentinel) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-etd-sentinel) · Popularity: 🟡 Low (23%) |
 
 Cisco ETD Solution for Microsoft Microsoft Sentinel makes it easy to connect cisco email threat data to the Microsoft Sentinel, improving visibility into email threats.
 

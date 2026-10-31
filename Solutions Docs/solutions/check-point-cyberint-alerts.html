@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.3</td>
+  <td style="text-align:left">3.2.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-25</td>
+  <td style="text-align:left">2026-09-24</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-cyberint-solutions-alerts">Azure Marketplace</a> · Popularity: 🔵 Medium (70%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-cyberint-solutions-alerts">Azure Marketplace</a> · Popularity: 🔵 Medium (63%)</td>
 </tr>
 </tbody>
 </table>
@@ -99,12 +99,12 @@
 <tr>
   <td><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
   <td><a href="../connectors/checkpointcyberintalerts.html">Check Point Cyberint Alerts Connector (via Codeless Connector Platform)</a></td>
-  <td>Analytics, Playbooks, Workbooks</td>
+  <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>11 content item(s)</strong>:</p>
+<p>This solution includes <strong>12 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -119,7 +119,7 @@
 </tr>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:left">1</td>
+  <td style="text-align:left">2</td>
 </tr>
 <tr>
   <td style="text-align:left">Workbooks</td>
@@ -146,6 +146,12 @@
   <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.html">Check Point Exposure Management - Alert Ingestion Anomaly</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-argos-alerts-to-incidents-2f7c4e91-6b8d-4a3f-9e15-c0d84b7a2f36-770efb05.html">Check Point Exposure Management - Argos alerts to incidents</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess, DefenseEvasion</td>
   <td style="text-align:left"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
 </tr>
 </tbody>
@@ -176,18 +182,13 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-em-importer-alerts-%E2%86%92-securityalert-%E2%86%92-microsoft-sentinel-incidents-01097cbb.html">Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)</a></td>
-  <td style="text-align:left">Queries the argsentdc_CL custom table (populated by the CCP data connector) for recent alerts and wr...</td>
-  <td style="text-align:left"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a> <em>(read)</em></td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.html">Check Point Exposure Management - Credential Leak Validation and Response</a></td>
   <td style="text-align:left">When a new Microsoft Sentinel incident is created for leaked credentials, this playbook queries the ...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-%E2%86%92-argos-1931ff3d.html">Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)</a></td>
-  <td style="text-align:left">When a Microsoft Sentinel incident status changes, this playbook pushes the update to the correspond...</td>
+  <td style="text-align:left">When a Microsoft Sentinel incident status changes, this playbook pushes the new status to the corres...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -198,6 +199,11 @@
 <tr>
   <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.html">Check Point Exposure Management - IOC Enrichment and Triage</a></td>
   <td style="text-align:left">When a new Microsoft Sentinel incident is created, this playbook enriches IOC entities (IPs, domains...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/check-point-cyberint-alerts-check-point-exposure-management-inbound-status-sync-argos-%E2%86%92-microsoft-sentinel-c1921fff.html">Check Point Exposure Management - Inbound Status Sync (Argos → Microsoft Sentinel)</a></td>
+  <td style="text-align:left">Runs on a schedule and mirrors Argos alert status changes onto the Microsoft Sentinel incidents crea...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -241,7 +247,7 @@
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/checkpoint.svg" width="75px" height="75px">
 
 <h2 id="overview">Overview</h2>
-<p>This solution integrates <strong>Check Point Exposure Management</strong> with <strong>Microsoft Sentinel</strong>, providing bi-directional synchronization of alerts and incidents. It enables SOC teams to manage Argos external risk alerts directly from Sentinel while keeping both platforms in sync.</p>
+<p>This solution integrates <strong>Check Point Exposure Management</strong> with <strong>Microsoft Sentinel</strong> and keeps alert status in sync in both directions. Argos alerts become Microsoft Sentinel incidents, status changes made in either system are mirrored to the other, and SOC teams can enrich and respond to alerts from Microsoft Sentinel.</p>
 <h3 id="whats-included">What's Included</h3>
 <table>
 <thead>
@@ -253,66 +259,57 @@
 <tbody>
 <tr>
   <td><strong>Data Connector</strong> (CCP)</td>
-  <td>Ingests new alerts every 5 minutes via the Codeless Connector Platform</td>
+  <td>Polls the Argos Alerts API every 5 minutes for alerts created or changed in that window</td>
 </tr>
 <tr>
-  <td><strong>10 Playbooks</strong></td>
-  <td>Bi-directional sync, enrichment, and response automation</td>
+  <td><strong>2 Analytic Rules</strong></td>
+  <td>Creates an incident per Argos alert; detects ingestion gaps</td>
 </tr>
 <tr>
-  <td><strong>1 Analytic Rule</strong></td>
-  <td>Detects ingestion gaps (connector or sync failures)</td>
+  <td><strong>9 Playbook templates</strong></td>
+  <td>Status sync in both directions, enrichment, response, and the automation rule that wires outbound sync</td>
+</tr>
+<tr>
+  <td><strong>1 Parser</strong></td>
+  <td><code>CPEMAlerts</code>: latest state of each alert with category metadata</td>
 </tr>
 <tr>
   <td><strong>1 Workbook</strong></td>
   <td>Alert overview, status distribution, and sync health monitoring</td>
 </tr>
-<tr>
-  <td><strong>1 Automation Rule</strong></td>
-  <td>Triggers outbound sync on incident updates</td>
-</tr>
 </tbody>
 </table>
 <h2 id="architecture">Architecture</h2>
-<pre><code>                    ┌──────────────────────┐
-                    │   Check Point Exposure Management      │
-                    │   (External Risk Mgmt)│
-                    └──────┬───────▲───────┘
-                           │       │
-              ┌────────────┘       └────────────┐
-              │ (new alerts)        (status PUT) │
-              ▼                                  │
-    ┌─────────────────┐              ┌───────────┴───────┐
-    │ CCP Data        │              │ Exporter     │
-    │ Connector       │              │ Playbook          │
-    │ (created_date)  │              │ (Sentinel → Argos)│
-    └────────┬────────┘              └───────────▲───────┘
-             │                                   │
-             ▼                                   │
-    ┌─────────────────┐              ┌───────────┴───────┐
-    │ argsentdc_CL    │◄─────────────│ Importer      │
-    │ (Custom Table)  │              │ Playbook           │
-    └────────┬────────┘              │ (modification_date)│
-             │                       └───────────────────┘
-             ▼
-    ┌─────────────────┐
-    │ Microsoft        │
-    │ Sentinel         │
-    │ (Incidents)      │
-    └──────────────────┘
+<pre><code>            ┌──────────────────────────────────────┐
+            │  Check Point Exposure Management     │
+            │  (Argos Alerts API)                  │
+            └───────┬──────────────────────▲───────┘
+                    │ POST /alerts          │ GET /alerts/{ref_id}
+                    │ (update_date window)  │ PUT /alerts/status
+                    ▼                       │
+          ┌───────────────────┐   ┌─────────┴──────────┐
+          │ CCP data connector│   │ Exporter           │
+          └─────────┬─────────┘   │ (Sentinel → Argos) │
+                    ▼             └─────────▲──────────┘
+          ┌───────────────────┐             │ Automation rule:
+          │ argsentdc_CL      │             │ status changed
+          │ one row per change│             │
+          └──┬─────────────┬──┘   ┌─────────┴──────────┐
+             │             │      │ Microsoft Sentinel │
+   first seen│             │later │ incidents          │
+             ▼             ▼      └──▲──────────────▲──┘
+  ┌────────────────┐ ┌──────────────┴────┐          │
+  │ Analytic rule  │ │ InboundStatusSync │          │
+  │ Argos alerts   │ │ (Argos → Sentinel)│          │
+  │ to incidents   ├─┼───────────────────┼──────────┘
+  └────────────────┘ └───────────────────┘  creates incident + alert
+                                            with ref_id Custom Detail
 </code></pre>
-<p><strong>Two ingestion paths:</strong></p>
+<p><strong>How the sync works:</strong></p>
 <ul>
-<li><strong>CCP Connector</strong> — polls for <strong>new</strong> alerts using <code>created_date</code> filter (every 5 min)</li>
-<li><strong>Importer</strong> — polls for <strong>modified</strong> alerts using <code>modification_date</code> filter (every 10 min)</li>
+<li><strong>Ingestion.</strong> The CCP connector filters on <code>update_date</code>, so every change to an Argos alert (new, acknowledged, closed, reopened) adds a row to <code>argsentdc_CL</code>. The latest row per <code>ref_id</code> is the current Argos state.</li>
+<li><strong>Incident creation.</strong> The <strong>Argos alerts to incidents</strong> rule creates one incident the first time an alert appears as <code>open</code> or <code>acknowledged</code>, with <code>ref_id</code> as a Custom Detail. Later rows for the same alert never create another incident.</li>
 </ul>
-<p><strong>Loop prevention:</strong> Importer tags incidents with <code>argos-importer-synced</code>. Exporter checks for this tag and skips if present, preventing circular updates.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ol>
-<li><strong>Microsoft Sentinel</strong> enabled on a Log Analytics workspace.</li>
-<li>A <strong>Check Point Exposure Management API token</strong> and your environment's <strong>Check Point Exposure Management API base URL</strong> (e.g., <code>https://app.cyberint.io</code>).</li>
-<li><strong>Contributor</strong> role on the target resource group (for deploying Logic Apps, Key Vault, and role assignments).</li>
-</ol>
 <p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
@@ -324,6 +321,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.0</td>
+  <td>18-09-2026</td>
+  <td>• <strong>Two-way status sync</strong> between Argos and Microsoft Sentinel; the newest change wins. New <strong>Check_Point_EM_InboundStatusSync</strong> playbook, and <strong>Check_Point_EM_AutomationRules</strong> is now part of the package.<br>• <strong>New analytic rule, Argos alerts to incidents</strong>, replaces the <strong>Check_Point_EM_Importer</strong> playbook, which could not ingest because the Logs Ingestion API does not support the <code>SecurityAlert</code> table.<br>• <strong>Data connector</strong> polls on <code>update_date</code> and requests 100 alerts per page.<br>• <strong>Fixed</strong> Argos calls failing with HTTP 401, the status update endpoint, <code>ref_id</code> extraction, and the status and closure reason mapping.<br>• <strong>Upgrading from 3.1.x</strong> requires reconnecting the data connector and recreating the sync playbooks; see the solution README.</td>
+</tr>
+<tr>
+  <td>3.1.4</td>
+  <td>08-09-2026</td>
+  <td>Fixed <strong>Check_Point_EM_Importer</strong> playbook creation failing with <code>InvalidTemplate: Unable to parse language expression '': expected token 'Identifier' and actual 'EndOfData'</code>. The empty <code>Entities</code> JSON array literal in the SecurityAlert ingestion body was interpreted by ARM as an empty template expression; it is now emitted via <code>string(createArray())</code> in both the solution package and the standalone playbook template.</td>
+</tr>
 <tr>
   <td>3.1.3</td>
   <td>21-08-2026</td>

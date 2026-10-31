@@ -15,8 +15,8 @@
 | **Schema** | FileEvent |
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md)) |
-| **Last Updated** | Jun 6, 2024 |
+| **Parser Version** | 0.1.6 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md)) |
+| **Last Updated** | Oct 26, 2026 |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEvent.yaml) |
 
 ## Description
@@ -34,6 +34,7 @@ This union parser includes parsers for the following products:
 | Microsoft Azure File Storage | [_ASim_FileEvent_AzureFileStorage](asimfileeventazurefilestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
 | Microsoft Azure Queue Storage | [_ASim_FileEvent_AzureQueueStorage](asimfileeventazurequeuestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
 | Microsoft Azure Table Storage | [_ASim_FileEvent_AzureTableStorage](asimfileeventazuretablestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
+| CrowdStrike Falcon Data Replicator | [_ASim_FileEvent_CrowdStrikeFalconDataReplicator](asimfileeventcrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | Google Workspace | [_ASim_FileEvent_GoogleWorkspace](asimfileeventgoogleworkspace.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
 | Microsoft Sysmon for Linux | [_ASim_FileEvent_LinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md) | [Syslog](../solutions/syslog.md) |
 | Microsoft Sysmon for Linux | [_ASim_FileEvent_LinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md) | [Syslog](../solutions/syslog.md) |

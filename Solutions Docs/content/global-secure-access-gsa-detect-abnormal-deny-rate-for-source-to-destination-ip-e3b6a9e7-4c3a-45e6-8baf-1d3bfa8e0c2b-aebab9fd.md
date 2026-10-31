@@ -6,7 +6,7 @@
 
 ---
 
-Identifies abnormal deny rate for specific source IP to destination IP based on the normal average and standard deviation learned during a configured period. This can indicate potential exfiltration, initial access, or C2, where an attacker tries to exploit the same vulnerability on machines in the organization but is being blocked by firewall rules.  Configurable Parameters:     - minimumOfStdsThreshold: The number of stds to use in the threshold calculation. Default is set to 3.     - learning
+Identifies abnormal deny rate for specific source IP to destination IP based on the normal average and standard deviation learned during a configured period. This can indicate potential exfiltration, initial access, or C2, where an attacker tries to exploit the same vulnerability on machines in the organization but is being blocked by firewall rules.
 
 | Attribute | Value |
 |:----------|:------|

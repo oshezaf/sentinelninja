@@ -16,11 +16,11 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [OneLoginIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-oneloginiam) · Popularity: 🟢 High (86%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-oneloginiam) · Popularity: 🟢 High (80%) |
 
 The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provides the capability to ingest common OneLogin IAM Platform events into Microsoft Sentinel.
   
@@ -79,6 +79,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.4       | 16-10-2026                     | Added missing OneLogin event fields |
 | 3.0.3       | 29-07-2025                     |  Removed Deprecated **Data Connector**. | 
 | 3.0.2       | 30-06-2025                     |  OneLoginIAM **CCF Data Connector** moving to GA.  		                |
 | 3.0.1       | 10-04-2025                     |  Migrated the **Function app** connector to **CCF Data Connector** and Updated **Parser**.<br/>Added Preview tag to **CCF Data Connector**.   		                |

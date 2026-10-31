@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,Security - Automation (SOAR) |
-| **Version** | 3.0.6 |
+| **Version** | 3.2.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-10 |
-| **Last Updated** | 2026-03-26 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [AtlassianJiraAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianjiraaudit) · Popularity: 🔵 Medium (75%) |
 
@@ -81,10 +81,10 @@ This solution includes **29 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Jira - Global permission added](../content/atlassianjiraaudit-jira-global-permission-added-5b0cec45-4a91-4f08-bb1b-392427e8f440-fcb3ce16.md) | Medium | PrivilegeEscalation | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - New site admin user](../content/atlassianjiraaudit-jira-new-site-admin-user-b894593a-2b4c-4573-bc47-78715224a6f5-75417588.md) | High | Persistence, PrivilegeEscalation | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
-| [Jira - New site admin user](../content/atlassianjiraaudit-jira-new-site-admin-user-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-cf4c124a.md) | High | InitialAccess | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - New user created](../content/atlassianjiraaudit-jira-new-user-created-8c90f30f-c612-407c-91a0-c6a6b41ac199-ac7b54fe.md) | Medium | Persistence | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - Permission scheme updated](../content/atlassianjiraaudit-jira-permission-scheme-updated-72592618-fa57-45e1-9f01-ca8706a5e3f5-0d756ffb.md) | Medium | Impact | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - Project roles changed](../content/atlassianjiraaudit-jira-project-roles-changed-fb6a8001-fe87-4177-a8f3-df2302215c4f-0808c8fa.md) | Medium | Impact | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
+| [Jira - Site admin user password changed](../content/atlassianjiraaudit-jira-site-admin-user-password-changed-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-c47a23e5.md) | High | InitialAccess | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - User removed from group](../content/atlassianjiraaudit-jira-user-removed-from-group-c13ecb19-4317-4d87-9a1c-52660dd44a7d-84ebd820.md) | Medium | Impact | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - User removed from project](../content/atlassianjiraaudit-jira-user-removed-from-project-5d3af0aa-833e-48ed-a29a-8cfd2705c953-c166d30e.md) | Medium | Impact | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
 | [Jira - User's password changed multiple times](../content/atlassianjiraaudit-jira-user's-password-changed-multiple-times-943176e8-b979-45c0-8ad3-58ba6cfd41f0-4f11f866.md) | High | Persistence | [`Jira_Audit_CL`](../tables/jira-audit-cl.md)<br>[`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) |
@@ -133,6 +133,8 @@ This solution includes **29 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 |-------------|--------------------------------|---------------------------------------------------------------------------|
+| 3.2.3 | 22-10-2026 | Fixed duplicate **Custom Detection** names and alert titles by correcting the site admin password-change rule name and description in both the **Analytic Rule** and **Custom Detection**. |
+| 3.2.2       | 20-10-2026                     | Added 10 **Defender XDR Custom Detections** migrated from **Analytic Rules**. |
 | 3.0.6       | 13-04-2026                     | Deprecate Atlassian Jira Audit (using Azure Function)  |
 | 3.0.5       | 18-03-2026                     | Rename to Atlassian Jira Audit (via Codeless Connector Framework) 	       |
 | 3.0.4       | 30-08-2024                     | Updated parameters for CCP **Data Connector**							   |

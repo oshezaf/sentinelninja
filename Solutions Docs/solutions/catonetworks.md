@@ -1,6 +1,6 @@
-# ⚠️ CatoNetworks
+# Cato Networks for Microsoft Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: CatoNetworks*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/catonetworks.svg" alt="CatoNetworks Logo" width="75" height="75">
 
@@ -19,8 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Cato Networks - support@catonetworks.com |
 | **First Published** | 2026-08-18 |
-| **Last Updated** | 2026-08-18 |
+| **Last Updated** | 2026-09-17 |
 | **Solution Folder** | [CatoNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/catonetworks.cato-networks-sentinel-ccf-push) · Popularity: 🟡 Low (15%) |
 
 The Cato Networks solution pushes security and networking events from the Cato Management Application directly into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. Events are delivered in near real time from the Cato Cloud into a custom Log Analytics table for hunting, analytics, and visualization.
 

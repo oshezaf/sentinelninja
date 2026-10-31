@@ -14,7 +14,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -67,7 +67,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelIndicators Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators)
 
-## Solutions (26)
+## Solutions (27)
 
 This table is used by the following solutions:
 
@@ -94,6 +94,7 @@ This table is used by the following solutions:
 - [Recorded Future](../solutions/recorded-future.md)
 - [ReversingLabs](../solutions/reversinglabs.md)
 - [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [VMRay](../solutions/vmray.md)
@@ -119,13 +120,13 @@ This table is ingested by the following connectors:
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |
-| [VMRayThreatIntelligence](../connectors/vmray.md) |  |
+| [VMRayThreatIntelligence](../connectors/vmray.md) | `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` |
 
 ---
 
-## Content Items Using This Table (127)
+## Content Items Using This Table (133)
 
-### Analytic Rules (79)
+### Analytic Rules (84)
 
 **In solution [Datazag](../solutions/datazag.md):**
 
@@ -149,6 +150,16 @@ This table is ingested by the following connectors:
 | [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md) | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
 | [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md) | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` |
+
+**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [GreyNoise TI Map IP Entity to CommonSecurityLog](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.md) |  |
+| [GreyNoise TI Map IP Entity to DnsEvents](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.md) |  |
+| [GreyNoise TI Map IP Entity to SigninLogs](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.md) |  |
+| [GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-network-session-events-asim-network-session-sc-536e8e5c-ce0e-575e-bcc9-aba8e7bf9316-294d0914.md) |  |
+| [GreyNoise TI map IP entity to OfficeActivity](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-officeactivity-c51628fe-999c-5150-9fd7-660fc4f58ed2-a0b3d699.md) |  |
 
 **In solution [HoneyLabs](../solutions/honeylabs.md):**
 
@@ -246,7 +257,7 @@ This table is ingested by the following connectors:
 | [TI Map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-d0a8ae7b.md) |  |
 | [TI Map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-aba81a50.md) |  |
 
-### Hunting Queries (22)
+### Hunting Queries (23)
 
 **In solution [Datazag](../solutions/datazag.md):**
 
@@ -304,6 +315,12 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Network log IOC matching](../content/standalone-content-network-log-ioc-matching-9bb88c27-ef05-4091-ac14-45ff8604360d-a05f5fd8.md) |  |
+
 **GitHub Only:**
 
 | Hunting Query | Selection Criteria |
@@ -342,7 +359,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |
 
-**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):** `SourceSystem == "GreyNoise"`
+**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):** `ObservableKey startswith "domain-name"`<br>`ObservableKey startswith "email"`<br>`ObservableKey startswith "file"`<br>`ObservableKey startswith "url"`<br>`SourceSystem == "GreyNoise"`
 
 | Workbook |
 |:-------------|
@@ -437,9 +454,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/threatintelligence`
 
-## Selection Criteria Summary (17 criteria, 32 total references)
+## Selection Criteria Summary (19 criteria, 33 total references)
 
-References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 9 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -447,20 +464,22 @@ References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
-| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `SourceSystem startswith "PRODAFT USTA"` | 1 | 1 | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
+| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value,url:value"`<br>`SourceSystem == "Feedly"` | 1 | - | - | - | **1** |
-| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
+| `SourceSystem == "GreyNoise"` | 1 | - | - | - | **1** |
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
+| `ObservableKey startswith "domain-name"`<br>`ObservableKey startswith "email"`<br>`ObservableKey startswith "file"`<br>`ObservableKey startswith "url"`<br>`SourceSystem == "GreyNoise"` | - | 1 | - | - | **1** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem startswith "HoneyLabs"` | - | 1 | - | - | **1** |
-| **Total** | **8** | **24** | **0** | **0** | **32** |
+| **Total** | **9** | **24** | **0** | **0** | **33** |
 
 ### ObservableKey
 
@@ -472,6 +491,10 @@ References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other pars
 | `contains file:hashes` | - | 3 | - | - | **3** |
 | `contains file:hashes.` | - | 1 | - | - | **1** |
 | `contains network-traffic` | - | 1 | - | - | **1** |
+| `startswith domain-name` | - | 1 | - | - | **1** |
+| `startswith email` | - | 1 | - | - | **1** |
+| `startswith file` | - | 1 | - | - | **1** |
+| `startswith url` | - | 1 | - | - | **1** |
 
 ### SourceSystem
 
@@ -481,10 +504,12 @@ References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other pars
 | `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
 | `startswith PRODAFT USTA` | 1 | 1 | - | - | **2** |
+| `!contains VMRay` | 1 | - | - | - | **1** |
+| `contains VMRay` | 1 | - | - | - | **1** |
 | `Feedly` | 1 | - | - | - | **1** |
-| `Cyjax-IOCs` | 1 | - | - | - | **1** |
 | `MISP` | 1 | - | - | - | **1** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
+| `Cyjax-IOCs` | 1 | - | - | - | **1** |
 | `startswith HoneyLabs` | - | 1 | - | - | **1** |
 
 ---

@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AWS Cloud Trail |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementAWSCloudTrail.md)) |
-| **Last Updated** | Jan 26, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementAWSCloudTrail.md)) |
+| **Last Updated** | Oct 23, 2026 |
 | **Unifying Parser** | [ASimUserManagement](asimusermanagement.md) |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagementAWSCloudTrail.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagementAWSCloudTrail.yaml) |
 

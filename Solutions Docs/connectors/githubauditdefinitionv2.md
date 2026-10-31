@@ -26,13 +26,21 @@ The GitHub audit log connector provides the capability to ingest GitHub logs int
 
  **Note:** If you intended to ingest GitHub subscribed events into Microsoft Sentinel, please refer to GitHub (using Webhooks) Connector from "**Data Connectors**" gallery.
 
+
+
+**Volume limitation:** GitHub [limits this audit-log API](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/using-the-audit-log-api-for-your-enterprise#rate-limit) to **1,750 requests/hour** per user, source IP, and enterprise. With the current default of **30 events/page**, the theoretical ceiling is about **13,100 events/15 minutes**, before retries or competing requests. In Azure public cloud, we recommend **[GitHub Enterprise Audit Log (via Azure Storage)](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-enterprise-audit-log-via-azure-storage)** when your enterprise regularly generates **10,000+ audit and Git events/15 minutes**, or connector health reports recurring GitHub rate-limit errors (HTTP 403/429) or ingestion delays keep increasing.
+
+
+
+**Azure Government Cloud:** The Azure Storage connector is **not supported** in Azure Government Cloud. [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage) states: "Audit log streaming to blob storage in Azure Government is not supported". The Azure Storage migration recommendation above does not apply in this cloud; the REST API connector remains subject to GitHub's API rate limits.
+
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

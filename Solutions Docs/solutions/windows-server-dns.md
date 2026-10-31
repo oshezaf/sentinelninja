@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Networking |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-11 |
-| **Last Updated** | 2026-06-22 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Windows Server DNS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns) · Rating: ★★★☆☆ 3.0/5 (1 ratings) · Popularity: 🔵 Medium (72%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns) · Rating: ★★★☆☆ 3.0/5 (1 ratings) · Popularity: 🟡 Low (35%) |
 
 The [DNS](https://docs.microsoft.com/windows-server/networking/dns/dns-top) solution for Microsoft Sentinel allows you to ingest DNS analytic and audit logs into Microsoft Sentinel. The DNS logs are collected only from Windows agents.
 
@@ -29,7 +29,7 @@ Installing this solution will deploy two data connectors,
 
 2. DNS via Legacy Agent - This data connector helps in ingesting Windows DNS logs into your Log Analytics Workspace using the legacy Log Analytics agent.
 
-<P style="color:red">**NOTE**: Microsoft recommends Installation of DNS via AMA. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.
+<P style="color:red">**NOTE**: After this solution is deployed Microsoft recommends configuring and leveraging the DNS via AMA connector for ingesting DNS events. Legacy connector uses the Log Analytics agent which has been deprecated on **Aug 31, 2024,** and thus should only be installed where AMA is not supported.
 
 ## Contents
 
@@ -99,6 +99,7 @@ This solution includes **15 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.2       | 21-10-2026                     | Added Defender XDR **Custom Detections** for all five **Analytic Rules** and a Defender XDR **Workbook**; replaced DnsInventory panel in DNS **Workbook** with DnsEvents (Sentinel to XDR migration) |
 | 3.0.1       | 19-03-2024                     | Updated Entity Mappings of **Analytic Rules**    										|	
 | 3.0.0       | 18-09-2023                     | Windows DNS Events via AMA **Data Connector** now General Availability   |
 

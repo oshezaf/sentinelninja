@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimNetworkSessionCiscoMerakiSyslog` |
 | **Built-in Parser** | `_ASim_NetworkSession_CiscoMerakiSyslog` |
 | **Schema** | NetworkSession |
-| **Schema Version** | 0.2.6 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco Meraki |
-| **Parser Version** | 1.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMerakiSyslog.md)) |
-| **Last Updated** | Nov 23, 2025 |
+| **Parser Version** | 1.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMerakiSyslog.md)) |
+| **Last Updated** | Sep 11, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionCiscoMerakiSyslog.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionCiscoMerakiSyslog.yaml) |
 

@@ -48,7 +48,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [SpyCloud Enterprise Protection Connector](../connectors/spycloudenterpriseprotectionccf.md) |  |
+| [SpyCloud Enterprise Threat Protection Connector](../connectors/spycloudenterpriseprotectionccf.md) |  |
 
 ---
 

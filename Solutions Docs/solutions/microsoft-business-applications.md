@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application,Cloud Provider |
-| **Version** | 3.2.3 |
+| **Version** | 3.2.4 |
 | **Author** | Microsoft |
 | **First Published** | 2023-04-19 |
-| **Last Updated** | 2026-02-25 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Microsoft Business Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4dynamics365.powerplatform) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4dynamics365.powerplatform) · Popularity: 🟢 High (81%) |
 
 Microsoft Power Platform provides a wide range of tools for citizen developers to build, run and manage low-code and no-code applications quickly, simply and at scale. With that, it also introduces a concern around the risk of security vulnerabilities introduced by citizen developers, some of whom may lack the security awareness of traditional pro-dev community. To counter this, early threat detection is crucial and can complement preventative guardrails to enable frictionless productivity while minimizing cyber risk.
 
@@ -49,12 +49,9 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 
 ## Data Connectors
 
-This solution provides **4 data connector(s)**:
+This solution provides **1 data connector(s)**:
 
 - [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md)
-- [Microsoft Dataverse](../connectors/microsoftdataverse.md)
-- [Microsoft Power Automate](../connectors/microsoftpowerautomate.md)
-- [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md)
 
 ## Tables Used
 
@@ -63,15 +60,15 @@ This solution uses **13 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AuditLogs`](../tables/auditlogs.md) | - | Analytics, Hunting |
-| [`DataverseActivity`](../tables/dataverseactivity.md) | [Microsoft Dataverse](../connectors/microsoftdataverse.md) | Analytics, Hunting, Workbooks |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
 | [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics, Hunting |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
 | [`DeviceInfo`](../tables/deviceinfo.md) | - | Analytics, Hunting |
 | [`EmailEvents`](../tables/emailevents.md) | - | Analytics |
 | [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
-| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) | Analytics |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) | Analytics, Hunting |
+| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | - | Analytics |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
@@ -204,6 +201,7 @@ This solution includes **72 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                  |
 |-------------|--------------------------------|---------------------------------------------------------------------|
+| 3.2.4       | 25-10-2026                     | Migrated **Analytic Rules** to Defender XDR Custom Detection format and added **XDR Workbooks**. |
 | 3.2.3       | 23-02-2026                     | Updated **Dataverse - Activity after failed logons** hunting query to use valid Enterprise technique |
 | 3.2.2       | 22-04-2025                     |<ul><li>Updated solution description.</li></ul> |
 | 3.2.1       | 11-04-2025                     |<ul><li>Move solution and content to GA.</li><li>Minor analytic rule update.</li></ul> |

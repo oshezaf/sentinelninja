@@ -15,7 +15,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
 
 ## Contents
@@ -638,19 +638,19 @@ References by type: 14 connectors, 70 content items, 0 ASIM parsers, 1 other par
 | `Category == "AzureFirewallNetworkRule"` | - | 1 | - | 1 | **2** |
 | `ResourceType == "APPLICATIONGATEWAYS"` | - | 2 | - | - | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
+| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
+| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
+| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
+| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
+| `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
 | `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
-| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
-| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.SEARCH"` | 1 | - | - | - | **1** |
-| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
-| `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
 | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"`<br>`ResourceProvider == "MICROSOFT.NETWORK"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
 | `Category == "kube-audit"`<br>`Resource == "ClusterRoleBinding"` | - | 1 | - | - | **1** |
@@ -751,11 +751,11 @@ References by type: 14 connectors, 70 content items, 0 ASIM parsers, 1 other par
 | `MICROSOFT.KEYVAULT` | 1 | 5 | - | - | **6** |
 | `MICROSOFT.LOGIC` | 1 | 2 | - | - | **3** |
 | `MICROSOFT.SQL` | 1 | 2 | - | - | **3** |
-| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
-| `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
-| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.BATCH` | 1 | - | - | - | **1** |
+| `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
 | `MICROSOFT.STREAMANALYTICS` | 1 | - | - | - | **1** |
+| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
+| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
 | `MICROSOFT.NETWORK` | - | 1 | - | - | **1** |
 | `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |

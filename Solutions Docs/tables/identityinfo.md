@@ -6,7 +6,7 @@
 
 ---
 
-Account information from various sources, including Microsoft Entra ID
+Reference for IdentityInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Account information from various sources, including Microsoft Entra ID
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
 
 ## Contents
 
@@ -94,7 +93,6 @@ Account information from various sources, including Microsoft Entra ID
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
-- [IdentityInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table)
 
 ## Solutions (20)
 

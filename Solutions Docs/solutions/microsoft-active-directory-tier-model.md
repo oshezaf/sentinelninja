@@ -19,7 +19,7 @@
 | **First Published** | 2026-07-14 |
 | **Last Updated** | 2026-07-31 |
 | **Solution Folder** | [Microsoft Active Directory Tier Model](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Active%20Directory%20Tier%20Model) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftadtiermodel) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftadtiermodel) · Popularity: 🟡 Low (48%) |
 
 The Microsoft Active Directory Tier Model solution for Microsoft Sentinel provides detection, triage automation, and reporting for the Active Directory (AD) administrative tier model - Tier 0 (T0), Tier 1 (T1), and Tier 2 (T2) - across Active Directory Domain Services (AD DS / ADDS). It monitors tier-sensitive changes on Domain Controllers, including group membership, object creation and deletion, ACL modifications, Group Policy (GPO) links and enforcement, organizational unit (OU) changes, block inheritance, domain trusts, child-domain promotion, BitLocker recovery keys, and LAPS activity, using Windows Security Event logs.
 

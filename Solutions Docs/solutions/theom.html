@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Theom for Microsoft Sentinel Solution - Data Cloud and Data Lakehouse Attack Detection &mdash; Solutions Analyzer</title>
+<title>Theom &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="theom-for-microsoft-sentinel-solution---data-cloud-and-data-lakehouse-attack-detection">Theom for Microsoft Sentinel Solution - Data Cloud and Data Lakehouse Attack Detection</h1>
-<p><em>Solution: Theom</em></p>
+<h1 id="theom">Theom</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="Theom Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -32,15 +31,15 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Theom</td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left">Partner</td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://www.theom.ai">https://www.theom.ai</a></td>
+  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
@@ -48,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.2.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,19 +58,24 @@
   <td style="text-align:left">2022-11-04</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-12</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom">Theom</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/theominc1667512729960.theom_sentinel">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-theom">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://www.theom.ai/">Theom</a> for Microsoft Sentinel helps you prevent data breaches in the cloud by enabling your Microsoft Sentinel instance to receive critical alerts on data security and access from your Theom environment.</p>
+<p><a href="https://www.theom.ai/">Theom</a> for Microsoft Sentinel receives data security and access alerts from your Theom environment. It includes a Codeless Connector Framework push connector and a shared Theom_Alerts parser and workbook for legacy and CCF alerts.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
-<p>This solution has a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>This solution depends on the following technologies, which may result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API (Data Collection Endpoint/Data Collection Rule)</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API (legacy connector)</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -79,15 +83,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/theom.html">Theom</a> 🔶</li>
+<li><a href="../connectors/theomconnector.html">Theom (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -98,9 +103,14 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/theomalertsv2-cl.html"><code>TheomAlertsV2_CL</code></a></td>
+  <td><a href="../connectors/theomconnector.html">Theom (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a> 🔶</td>
   <td><a href="../connectors/theom.html">Theom</a></td>
-  <td>Analytics, Workbooks</td>
+  <td>Analytics</td>
 </tr>
 </tbody>
 </table>
@@ -271,7 +281,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/theom-theom-71349edc.html">Theom</a></td>
-  <td style="text-align:left"><a href="../tables/theomalerts-cl.html"><code>TheomAlerts_CL</code></a></td>
+  <td style="text-align:left">-</td>
 </tr>
 </tbody>
 </table>
@@ -286,9 +296,19 @@
 </thead>
 <tbody>
 <tr>
+  <td>3.2.0</td>
+  <td>27-10-2026</td>
+  <td>Applied GA CCF <strong>Data Connector</strong> updates. Added the Theom_Alerts <strong>Parser</strong> to normalize legacy and CCF alerts while preserving the existing TheomAlertsV2 <strong>Parser</strong> unchanged, and updated the <strong>Workbook</strong> to use Theom_Alerts; regenerated package templates with secure nested parameter types</td>
+</tr>
+<tr>
+  <td>3.1.0</td>
+  <td>30-09-2026</td>
+  <td>Added a new Theom <strong>Data Connector</strong> using the Codeless Connector Framework with DCR-based ingestion and an alias parser; corrected its public documentation and technology references, <strong>Analytical Rule</strong> branding, and package ARM parameter types</td>
+</tr>
+<tr>
   <td>3.0.0</td>
   <td>04-12-2023</td>
-  <td>Updated all <strong>Analytical Rule</strong>  with entity mappings</td>
+  <td>Updated all <strong>Analytical Rules</strong> with entity mappings</td>
 </tr>
 </tbody>
 </table>

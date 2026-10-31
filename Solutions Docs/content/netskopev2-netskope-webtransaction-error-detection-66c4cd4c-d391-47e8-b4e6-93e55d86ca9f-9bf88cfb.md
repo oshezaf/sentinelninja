@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

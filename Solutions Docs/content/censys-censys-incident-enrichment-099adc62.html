@@ -19,7 +19,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>This playbook will be triggered when any automation rule is attached or manually invoked. This will fetch associated IPs, Host(Domains) and SHAs from incident and make associated API calls to retrieve Censys data and enrich incident with additional information as Incident comment.</p>
+<p>This playbook will be triggered when any automation rule is attached or manually invoked. This will fetch associated IPs, Host(Domains) and SHAs from incident and make associated API calls to retrieve Censys data and enrich incident with additional information as Incident comment. By default the playbook queries the Censys Host Enrichment API (v3/global/asset/enrichment/host) for the IP entities, which adds GreyNoise, IPinfo and Mallory data to the standard host record. A single probe call deter</p>
 <table>
 <thead>
 <tr>
@@ -114,7 +114,7 @@
   <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
   <td style="text-align:left">Built-in</td>
   <td style="text-align:center">0</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">5</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
@@ -205,6 +205,18 @@
   <td style="text-align:left"><code>@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty</code></td>
   <td style="text-align:left">—</td>
 </tr>
+<tr>
+  <td style="text-align:left">Probe_Enrichment_API_Connectivity</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/@{variables('api_version')}/global/asset/enrichment/host/@{encodeURIComponent(variables('probe_ip'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Call_to_Fetch_Host_Enrichment_Data</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/@{variables('api_version')}/global/asset/enrichment/host/@{encodeURIComponent(items('For_Each_IP_For_Enrichment'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
 </tbody>
 </table>
 <h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
@@ -234,6 +246,7 @@
 </blockquote>
 <h2 id="summary">Summary</h2>
 <p>This playbook will be triggered when any automation rule is attached or manually invoked. This will fetch associated IPs, Host(Domains) and SHAs from incident and make associated API calls to retrieve Censys data and enrich incident with additional information as Incident comment.</p>
+<p>By default this playbook first queries the Censys Host Enrichment API (<code>v3/global/asset/enrichment/host</code>) for the incident IPs, which returns the standard host record plus GreyNoise, IPinfo (network and privacy) and Mallory third-party data. The enrichment API is a separately entitled feature, so a single probe call decides whether it is available: on 403 (not entitled) or 409 every IP falls back to the standard bulk host API, and any individual IP the enrichment API cannot return falls back on its own. Transient statuses (429, 5xx) and 404 keep the enrichment path enabled without losing any IP. A 401 response terminates the run with an authentication error pointing at the Key Vault secret and Organization ID. Set the <code>UseHostEnrichment</code> parameter to <code>false</code> to always use the standard host API.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Deploy the CensysAddIncidentComment playbook before deploying this playbook.</li>
@@ -247,9 +260,10 @@
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
 <li>PlaybookName: Enter the playbook name here (default: CensysIncidentEnrichment).</li>
+<li>Ports: Comma-separated list of ports used to build web property identifiers (default: 80,443).</li>
+<li>UseHostEnrichment: Enter True (default) to use the Censys Host Enrichment API for additional GreyNoise, IPinfo and Mallory data. Any other value, such as False, uses the standard host API only.</li>
 <li>OrganizationID: Your Censys Organization ID from the Censys platform account settings.</li>
 <li>IncidentEnrichmentPlaybookName: Name of the deployed CensysAddIncidentComment playbook.</li>
-<li>WorkspaceName: Name of the Log Analytics Workspace where Microsoft Sentinel is deployed.</li>
 <li>KeyVaultName: Name of the Azure Key Vault where the Censys API token is stored.</li>
 <li>TenantId: Azure AD Tenant ID where the Key Vault is located.</li>
 </ul>

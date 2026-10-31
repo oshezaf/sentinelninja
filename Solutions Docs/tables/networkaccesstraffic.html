@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -64,7 +64,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (99 columns)</h2>
+<h2 id="schema">Schema (120 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -93,12 +93,37 @@
 <tr>
   <td style="text-align:left">Action</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The action taken on the network session. Allowed, Denied.</td>
+  <td style="text-align:left">The action taken on the network session. Allowed, Denied, Redirect.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgenticSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the agentic session associated with the traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentPlatform</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The platform hosting the AI agent that initiated the transaction. Local, BedrockAws, MicrosoftFoundry, MicrosoftCopilotStudio. Populated for agentic traffic only; null otherwise.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentTypeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the agent type associated with the traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the agent type associated with the traffic.</td>
 </tr>
 <tr>
   <td style="text-align:left">AgentVersion</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The version of the agent connecting.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentVirtualId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The virtual identifier of the agent associated with the traffic.</td>
 </tr>
 <tr>
   <td style="text-align:left">AIAgentId</td>
@@ -146,6 +171,11 @@
   <td style="text-align:left">Destination Application segment ID from Azure AD accessed during the transaction.</td>
 </tr>
 <tr>
+  <td style="text-align:left">CloudAppActivity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The activity performed in the cloud application.</td>
+</tr>
+<tr>
   <td style="text-align:left">CloudAppCatalogId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The id of the application in the saas application catalog.</td>
@@ -191,6 +221,21 @@
   <td style="text-align:left">The risk score of the application.</td>
 </tr>
 <tr>
+  <td style="text-align:left">CloudAppSecurityScore</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The security score of the cloud application.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudAppSubActivity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The sub-activity performed in the cloud application.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ConnectionCreatedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time (UTC) when the connection associated with the traffic was created.</td>
+</tr>
+<tr>
   <td style="text-align:left">ConnectionId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Unique identifier representing the connection this traffic log was initiated from.</td>
@@ -219,6 +264,11 @@
   <td style="text-align:left">ConnectorName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Private access connector name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomHeaders</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The custom HTTP headers applied to the transaction, as a JSON array where each element contains HeaderName, PreviousValue and NewValue.</td>
 </tr>
 <tr>
   <td style="text-align:left">Description</td>
@@ -253,7 +303,7 @@
 <tr>
   <td style="text-align:left">DeviceCategory</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Device type the transaction originated from. Client, Branch.</td>
+  <td style="text-align:left">Device type the transaction originated from. Client, Branch, Secure Enterprise Browser.</td>
 </tr>
 <tr>
   <td style="text-align:left">DeviceId</td>
@@ -271,9 +321,34 @@
   <td style="text-align:left">The client connecting operating system version.</td>
 </tr>
 <tr>
+  <td style="text-align:left">DnsQueryName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain name requested in the DNS query.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DnsRecordType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of DNS record requested.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DnsResponseCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The response code returned for the DNS query.</td>
+</tr>
+<tr>
   <td style="text-align:left">DnsResponseOrigin</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The origin of the DNS response for the traffic. Possible values: Cache, Onprem.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DnsResponseTime</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The DNS response time reported by the DNS proxy.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DnsTtl</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The time to live reported for the DNS response.</td>
 </tr>
 <tr>
   <td style="text-align:left">FilteringProfileId</td>
@@ -351,6 +426,16 @@
   <td style="text-align:left">Random number for request/reply matching.</td>
 </tr>
 <tr>
+  <td style="text-align:left">McpPrimitiveName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the MCP tool, resource, or prompt invoked (for example, delete_file).</td>
+</tr>
+<tr>
+  <td style="text-align:left">McpProtocolVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The negotiated MCP protocol version (for example, 2025-06-18).</td>
+</tr>
+<tr>
   <td style="text-align:left">NetworkProtocol</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The network protocol, IPv6 or IPv4.</td>
@@ -381,6 +466,11 @@
   <td style="text-align:left">The ID of the rule for which the request was denied by.</td>
 </tr>
 <tr>
+  <td style="text-align:left">PolicyType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of policy that evaluated the traffic. Possible values: mcpFirewall, promptProtection, threatIntelligence, webContentFiltering.</td>
+</tr>
+<tr>
   <td style="text-align:left">ProcessArgs</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The process arguments associated with the network request.</td>
@@ -406,6 +496,11 @@
   <td style="text-align:left">The number of bytes received.</td>
 </tr>
 <tr>
+  <td style="text-align:left">RedirectDestination</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The destination the transaction was redirected to. Populated when the action taken on the network session is Redirect; null otherwise.</td>
+</tr>
+<tr>
   <td style="text-align:left">ReferrerHeader</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The Referer header value.</td>
@@ -414,6 +509,11 @@
   <td style="text-align:left">RemoteNetworkId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The ID from which traffic was sent or received, providing visibility into the origin of the traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResolvedIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address or addresses returned for the DNS query, preserved as a string.</td>
 </tr>
 <tr>
   <td style="text-align:left">ResourceTenantId</td>
@@ -429,6 +529,11 @@
   <td style="text-align:left">RuleName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the rule associated with the action performed on traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SecurityPrincipalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the security principal that initiated the transaction. User, Device.</td>
 </tr>
 <tr>
   <td style="text-align:left">SentBytes</td>

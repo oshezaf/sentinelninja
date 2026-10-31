@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Identity,Security - Automation (SOAR) |
-| **Version** | 3.3.16 |
+| **Version** | 3.3.20 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-08-11 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Microsoft Entra ID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureactivedirectory) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (94%) |
 
@@ -73,11 +73,11 @@ The following **3 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **88 content item(s)**:
+This solution includes **89 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 73 |
+| Analytic Rules | 74 |
 | Playbooks | 11 |
 | Workbooks | 3 |
 | Watchlists | 1 |
@@ -116,6 +116,7 @@ This solution includes **88 content item(s)**:
 | [Cross-tenant Access Settings Organization Outbound Collaboration Settings Changed](../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-collaboration-settings-changed-229f71ba-d83b-42a5-b83b-11a641049ed1-42360945.md) | Medium | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
 | [Cross-tenant Access Settings Organization Outbound Direct Settings Changed](../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-direct-settings-changed-0101e08d-99cd-4a97-a9e0-27649c4369ad-74ca33b7.md) | Medium | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
 | [Distributed Password cracking attempts in Microsoft Entra ID](../content/microsoft-entra-id-distributed-password-cracking-attempts-in-microsoft-entra-id-bfb1c90f-8006-4325-98be-c7fffbc254d6-6613a279.md) | Medium | CredentialAccess | - |
+| [End-user consent to app with mailbox and offline access delegated scopes](../content/microsoft-entra-id-end-user-consent-to-app-with-mailbox-and-offline-access-delegated-scopes-43df1e4c-61f8-4ab8-bc86-65eca7ecab9a-6d815a34.md) | High | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [External guest invitation followed by Microsoft Entra ID PowerShell signin](../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.md) | Medium | InitialAccess, Persistence, Discovery | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Failed login attempts to Azure Portal](../content/microsoft-entra-id-failed-login-attempts-to-azure-portal-223db5c1-1bf8-47d8-8806-bed401b356a4-7bb79ab2.md) | Low | CredentialAccess | - |
 | [First access credential added to Application or Service Principal where no credential was present](../content/microsoft-entra-id-first-access-credential-added-to-application-or-service-principal-where-no-credential-2cfc3c6e-f424-4b88-9cc9-c89f482d016a-ec11980a.md) | High | DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
@@ -194,6 +195,10 @@ This solution includes **88 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                         |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 3.3.20      | 25-10-2026                     | Added 74 Defender XDR Custom Detections and 2 Defender XDR Workbooks (`AzureActiveDirectoryAuditLogs` and `AzureActiveDirectorySignins`). Updated **Analytic Rules** metadata and **Workbook** (`ConditionalAccessSISM`, `AzureActiveDirectoryAuditLogs`, and `AzureActiveDirectorySignins`) parameters. |
+| 3.3.19      | 05-10-2026                     | Fixed OAuth scope parsing for **Suspicious application consent for offline access** **Analytic Rule**. |
+| 3.3.18      | 28-09-2026                     | Updated the **analytical rule** configuration. |
+| 3.3.17      | 06-09-2026                     | Added **EndUserConsentMailboxOfflineAccess** Analytic Rule to detect end-user OAuth consent to an app requesting delegated mailbox scopes (Mail.Read/Mail.ReadWrite/Mail.Send/MailboxSettings.ReadWrite) together with offline_access (T1528 - illicit consent grant). |
 | 3.3.16      | 06-08-2026                     | Removed locale-dependent **ResultDescription** filtering from the **Attempts to sign in to disabled accounts Analytic Rule** while retaining ResultType 50057 matching. |
 | 3.3.15       | 10-07-2026                    | Updated **SigninAttemptsByIPviaDisabledAccounts** **Analytic Rule** to include the additional "ResultDescription" value: "The user account is disabled." |
 | 3.3.14       | 30-06-2026                    | Updated **BruteForceAgainstanEntraAuthenticatedWindowsDevice** Analytic rule to add an explicit "sort by TimeGenerated asc" before building "make_list" arrays. |

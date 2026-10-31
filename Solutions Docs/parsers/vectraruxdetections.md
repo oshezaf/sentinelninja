@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ? | ✓ | ? |
 
 ---
 

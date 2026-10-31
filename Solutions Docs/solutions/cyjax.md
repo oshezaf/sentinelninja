@@ -21,7 +21,7 @@
 | **First Published** | 2026-03-24 |
 | **Last Updated** | 2026-08-17 |
 | **Solution Folder** | [Cyjax](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyjaxlimited1777043459610.cyjax-sentinel-integration) · Popularity: 🟡 Low (23%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyjaxlimited1777043459610.cyjax-sentinel-integration) · Popularity: ⚪ Very Low (0%) |
 
 The [Cyjax](https://www.cyjax.com) solution provides the capability to ingest threat intelligence data into Microsoft Sentinel through the REST API. Refer to [Cyjax documentation](https://www.cyjax.com/demo) for more information.
 

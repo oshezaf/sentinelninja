@@ -6,7 +6,7 @@
 
 ---
 
-Information about files attached to emails
+Reference for EmailAttachmentInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Information about files attached to emails
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailattachmentinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailattachmentinfo-table) |
 
 ## Contents
 
@@ -59,7 +58,6 @@ Information about files attached to emails
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailAttachmentInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailattachmentinfo)
-- [EmailAttachmentInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailattachmentinfo-table)
 
 ## Solutions (4)
 

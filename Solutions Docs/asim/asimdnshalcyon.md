@@ -35,7 +35,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) |  | ✓ | ✓ | ✓ |
+| [`HalcyonEventsV2_CL`](../tables/halcyoneventsv2-cl.md) |  | ? | ✓ | ? |
 
 ## Parameters
 

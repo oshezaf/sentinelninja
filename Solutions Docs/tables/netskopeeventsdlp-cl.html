@@ -43,7 +43,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (49 columns)</h2>
+<h2 id="schema">Schema (61 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetskopeEventsDLP_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -98,11 +98,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">created</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
   <td style="text-align:left">destination_app</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">destination_instance_id</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">destination_site</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">device</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -126,8 +138,20 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">endpoint_policy_match</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint_policy_match_desired_action</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">exposure</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ext_labels</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">file_lang</td>
@@ -162,6 +186,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">justification</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">latest_incidentid</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -170,7 +198,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">modified</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
   <td style="text-align:left">object</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">object_id</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -190,11 +226,19 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">record_type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">referer</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">severity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">shared_with</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -238,6 +282,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">usb_device</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">user</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -272,7 +320,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/netskopealertsevents.html">Netskope Alerts and Events (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"><a href="../connectors/netskopealertsevents.html">Netskope Alerts and Events</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

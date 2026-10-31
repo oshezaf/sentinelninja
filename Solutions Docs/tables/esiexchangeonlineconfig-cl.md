@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -58,10 +56,11 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Data Source Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference)
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md)
 
 ## Connectors (1)
@@ -70,13 +69,19 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) |  |
+| [(Deprecated) Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) |  |
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) |  |
 
 **In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md):**
 
@@ -85,13 +90,14 @@ This table is ingested by the following connectors:
 | [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) |  |
 | [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
 
-### Other Parsers (1)
+### Other Parsers (2)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [MESCompareDataMRA](../parsers/mescomparedatamra.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |  |
+| [MESCompareDataOnPMRA](../parsers/mescomparedataonpmra.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |  |
 
 ---
 

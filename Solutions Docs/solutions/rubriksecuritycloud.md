@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.rubrik.com](https://support.rubrik.com) |
 | **Categories** | Security - Others |
-| **Version** | 3.5.3 |
+| **Version** | 3.5.4 |
 | **Author** | Ben Meadowcroft - ben.meadowcroft@rubrik.com |
 | **First Published** | 2022-07-19 |
-| **Last Updated** | 2026-09-03 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [RubrikSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (71%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rubrik_inc.rubrik_sentinel) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (21%) |
 
 The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
 
@@ -107,6 +107,7 @@ This solution includes **19 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.5.4       | 12-10-2026                     | Updated Events Data table schema for CCF Connector.
 | 3.5.3       | 03-09-2026                     | Added RubrikCCFConnector to ingest Anomaly, Ransomware, ThreatHunt and other events data along with audit logs via webhook. |
 | 3.5.2       | 16-07-2026                     | Added RubrikSecurityCloud CCF (Codeless Connector Framework) Data Connector for ingesting Rubrik Protection Status data into Microsoft Sentinel. Enables backup compliance monitoring, ransomware recovery assessment, and incident correlation with protection status for Azure VMs. Update python package version to resolve vulnerability |
 | 3.5.1       | 05-11-2025                     | Updated API Host Name default value in playbooks and custom connector |

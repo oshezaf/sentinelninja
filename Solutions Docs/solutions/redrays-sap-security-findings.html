@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedRays SAP Security Platform for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="redrays-sap-security-platform-for-microsoft-sentinel">RedRays SAP Security Platform for Microsoft Sentinel</h1>
+<p><em>Solution: RedRays SAP Security Findings</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RedRays.svg" alt="RedRays SAP Security Findings Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">RedRays, Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://redrays.io/">https://redrays.io/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">RedRays, Inc. - support@redrays.io</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-10-06</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-28</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RedRays%20SAP%20Security%20Findings">RedRays SAP Security Findings</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/redrays1688649150557.azure-sentinel-solution-redrays">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://redrays.io/">RedRays</a> preview solution brings SAP vulnerability, ABAP code, BTP, segregation of duties, profile parameter and password security findings into Microsoft Sentinel with analytics rules and a workbook. RedRays exports on a configurable schedule from your existing environment. It does not collect SAP Security Audit Log events or populate ABAPAuditLog. A RedRays license with Microsoft Sentinel integration is required.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p><a href="https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-overview">Log Analytics</a>, <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Logs Ingestion API and DCRs</a>, and <a href="https://learn.microsoft.com/entra/identity-platform/app-objects-and-service-principals">Microsoft Entra applications and service principals</a>. Azure ingestion and retention charges apply.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/redraysabapfindings-cl.html"><code>RedRaysAbapFindings_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redrayscloudfindings-cl.html"><code>RedRaysCloudFindings_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redraysexporthealth-cl.html"><code>RedRaysExportHealth_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redrayspasswordfindings-cl.html"><code>RedRaysPasswordFindings_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redraysprofilechecks-cl.html"><code>RedRaysProfileChecks_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redraysscanruns-cl.html"><code>RedRaysScanRuns_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redrayssodfindings-cl.html"><code>RedRaysSoDFindings_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/redraysvulnerabilities-cl.html"><code>RedRaysVulnerabilities_CL</code></a></td>
+  <td><a href="../connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>7 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-abap-code-security-c9ed9a25-ad18-5cbb-8b43-b6399a802913-f1b8ee76.html">RedRays - ABAP Code Security</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/redraysabapfindings-cl.html"><code>RedRaysAbapFindings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-cloud-security-31669aab-4fe7-51e2-9f66-9813c16a1a27-30780bad.html">RedRays - Cloud Security</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/redrayscloudfindings-cl.html"><code>RedRaysCloudFindings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-password-security-ebd95a4d-cc56-5f01-a1de-36aa67e66794-783e1a51.html">RedRays - Password Security</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/redrayspasswordfindings-cl.html"><code>RedRaysPasswordFindings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-profile-parameters-708b461c-40b0-571a-8ec5-a3791dce23a4-6c41e34e.html">RedRays - Profile Parameters</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/redraysprofilechecks-cl.html"><code>RedRaysProfileChecks_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-sod-699d4ec8-6c5c-5440-8664-df92012636ad-1cc68306.html">RedRays - SoD</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/redrayssodfindings-cl.html"><code>RedRaysSoDFindings_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrays-vulnerability-assessment-2b92972c-29d5-58f8-9452-b0a723672183-5b026c91.html">RedRays - Vulnerability Assessment</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/redraysvulnerabilities-cl.html"><code>RedRaysVulnerabilities_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/redrays-sap-security-findings-redrayssapsecurityfindings-23093b9e.html">RedRaysSAPSecurityFindings</a></td>
+  <td style="text-align:left"><a href="../tables/redraysabapfindings-cl.html"><code>RedRaysAbapFindings_CL</code></a><br><a href="../tables/redrayscloudfindings-cl.html"><code>RedRaysCloudFindings_CL</code></a><br><a href="../tables/redraysexporthealth-cl.html"><code>RedRaysExportHealth_CL</code></a><br><a href="../tables/redrayspasswordfindings-cl.html"><code>RedRaysPasswordFindings_CL</code></a><br><a href="../tables/redraysprofilechecks-cl.html"><code>RedRaysProfileChecks_CL</code></a><br><a href="../tables/redraysscanruns-cl.html"><code>RedRaysScanRuns_CL</code></a><br><a href="../tables/redrayssodfindings-cl.html"><code>RedRaysSoDFindings_CL</code></a><br><a href="../tables/redraysvulnerabilities-cl.html"><code>RedRaysVulnerabilities_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RedRays%20SAP%20Security%20Findings/README.md">RedRays SAP Security Findings/README.md</a></em></p>
+</blockquote>
+<p>Bring RedRays SAP security findings into Microsoft Sentinel to review them alongside your
+other security data. This preview includes findings from Vulnerability Assessment, ABAP Code
+Security, BTP Security, Segregation of Duties, SAP Profile Parameters and Password Security.
+Threat Modelling is not included.</p>
+<p>RedRays stays in your existing Docker, on-premises or cloud environment and sends findings
+through the Azure Monitor Logs Ingestion API on a schedule you choose. The solution supports
+Azure public cloud. You need a RedRays license with Microsoft Sentinel integration; Azure
+ingestion and retention charges are separate.</p>
+<p>This solution covers security assessments. It does not collect SAP Security Audit Log events,
+populate <code>ABAPAuditLog</code> or activate Microsoft's built-in SAP audit detections.</p>
+<h2 id="set-up-the-integration">Set up the integration</h2>
+<p>The Content Hub package installs a Codeless Connector Framework (CCF) push connector, six
+analytics rule templates and a workbook template. You deploy the ingestion resources from the
+connector page and enable the rules after installation. RedRays sends the data. The package does
+not deploy a RedRays server, Azure Function, VM or polling agent.</p>
+<ol>
+<li><strong>Deploy the push connector resources.</strong> In Microsoft Sentinel, open <strong>Data connectors &gt;
+RedRays SAP Security Findings</strong> and select <strong>Deploy</strong>. Sentinel creates a data collection
+endpoint (DCE), a data collection rule (DCR) and the eight RedRays tables, then registers a
+Microsoft Entra application with a client secret and grants it the Monitoring Metrics
+Publisher role on the DCR. You need permission to create app registrations and to assign
+roles on the DCR. Copy the client secret immediately; it is shown only once.</li>
+<li><strong>Configure RedRays.</strong> In RedRays &gt; Platform Settings &gt; Microsoft Sentinel, enter the tenant
+ID, application (client) ID, client secret, DCE URI and DCR immutable ID shown on the
+connector page. Choose the modules and export interval, then save and enable the integration.
+Keep <code>alertOnBaseline</code> disabled for the first import so you can review the initial findings
+before creating alerts.</li>
+<li><strong>Check delivery.</strong> Send a test event, then wait for a scheduled export. Query
+<code>RedRaysExportHealth_CL</code> for <code>RecordKind == 'HEARTBEAT'</code>. A successful test means Azure
+accepted the request; the data may take time to appear in queries.</li>
+<li><strong>Enable the content you need.</strong> In Manage solution, create the workbook and your chosen
+analytics rules. Review the initial findings first. Set the workbook export health threshold above
+your export interval, allowing time for ingestion.</li>
+</ol>
+<p>Allow outbound HTTPS from RedRays to Microsoft Entra and the data collection endpoint.
+No inbound connection to RedRays is required. Rotate the application credential in Entra and
+update it in RedRays before it expires. Keep credentials out of the solution package.</p>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>RedRaysVulnerabilities_CL</td>
+  <td>SAP vulnerability assessment findings</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>27-10-2026</td>
+  <td>Initial preview: Codeless Connector Framework (CCF) push connector for the Logs Ingestion API, eight table schemas, six assessment analytics templates with entity mappings, and a time-filtered workbook with export health. Includes descriptive rule filenames, SVG branding and light/dark previews; every rule carries MITRE ATT&amp;CK tactics and techniques (password recovery maps to CredentialAccess / T1110), and operational heartbeat monitoring remains in the workbook.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

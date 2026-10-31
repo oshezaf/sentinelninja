@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventVMwareCarbonBlackCloud` |
 | **Built-in Parser** | `_ASim_AuditEvent_VMwareCarbonBlackCloud` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | VMware Carbon Black Cloud |
-| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventVMwareCarbonBlackCloud.md)) |
-| **Last Updated** | Jan 31 2024 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventVMwareCarbonBlackCloud.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventVMwareCarbonBlackCloud.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventVMwareCarbonBlackCloud.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

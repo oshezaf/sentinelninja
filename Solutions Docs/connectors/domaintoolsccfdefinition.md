@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [DomainToolsFeedsLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools%20CCF/Data%20Connectors/DomainToolsFeedsLogs_ccf/DomainToolsFeedsLogs_DCR.json) |
 | **CCF Configuration** | [DomainToolsFeedsLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools%20CCF/Data%20Connectors/DomainToolsFeedsLogs_ccf/DomainToolsFeedsLogs_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#domaintools-threat-intelligence-domain-feed) |
 
 The DomainTools CCF Domain Data Connector retrieves threat-intelligence domain data from multiple DomainTools APIs—including Newly Observed Domains (NOD), Newly Active Domains (NAD), Newly Observed Hostnames (NOH), and Domain Discovery—and ingests it into Microsoft Sentinel for analysis and detection
 
@@ -45,8 +46,16 @@ This connector ingests data into the following tables:
 
 **1. Configure DomainTools API**
 
-Enter your DomainTools API key.
+Enter your DomainTools API key, select the feeds, and provide a session ID and polling window. Top is optional.
 - **API Key**: (password field)
+- **Feed Types** (multi-select)
+  - Newly Observed Domains (NOD)
+  - Newly Active Domains (NAD)
+  - Newly Observed Hostnames (NOH)
+  - Domain Discovery
+- **Session ID**: mySOC
+- **Query Window in Minutes**: 10
+- **Top (optional)**: 100
 - Click 'connect' to establish connection
 
 ---

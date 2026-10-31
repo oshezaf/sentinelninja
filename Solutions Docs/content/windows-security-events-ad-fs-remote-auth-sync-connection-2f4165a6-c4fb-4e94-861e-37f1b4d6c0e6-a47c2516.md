@@ -6,7 +6,7 @@
 
 ---
 
-'This detection uses Security events from the "AD FS Auditing" provider to detect suspicious authentication events on an AD FS server. The results then get correlated with events from the Windows Filtering Platform (WFP) to detect suspicious incoming network traffic on port 80 on the AD FS server. This could be a sign of a threat actor trying to use replication services on the AD FS server to get its configuration settings and extract sensitive information such as AD FS certificates. In order to
+'Identifies suspicious AD FS authentication by correlating Security events from "AD FS Auditing" with Windows Filtering Platform (WFP) events for incoming port 80 traffic. This may indicate a threat actor abusing AD FS replication services to obtain configuration settings and sensitive information such as AD FS certificates. Enable AD FS auditing on the AD FS server before using this query. References: https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-l
 
 | Attribute | Value |
 |:----------|:------|

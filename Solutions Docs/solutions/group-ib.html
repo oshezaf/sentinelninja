@@ -19,6 +19,8 @@
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GIB_Logo.svg" alt="Group-IB Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -32,11 +34,31 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left">Group-IB</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://tap.group-ib.com/hc/api">https://tap.group-ib.com/hc/api</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence,Security - Automation (SOAR)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Group-IB - integration@group-ib.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-10-01</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -44,113 +66,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="contents">Contents</h2>
-<ul>
-<li><a href="#data-connectors">Data Connectors</a></li>
-<li><a href="#tables-used">Tables Used</a></li>
-<li><a href="#content-items">Content Items</a></li>
-</ul>
+<p>The <a href="https://www.group-ib.com/products/threat-intelligence/">Group-IB Threat Intelligence</a> solution for Microsoft Sentinel connects the Group-IB Threat Intelligence platform to Microsoft Sentinel with Azure Logic Apps playbooks. Scheduled collector playbooks poll the Group-IB TI collections and deliver two kinds of content: threat indicators (IP addresses, domains, URLs and file hashes) uploaded to Microsoft Sentinel Threat Intelligence as STIX 2.1 objects, and context records (threat actor profiles, APT and hacktivist reports, malware intelligence, vulnerabilities, leaked credentials, compromised cards and public leaks) written to Log Analytics custom tables through the Logs Ingestion API. Enrichment playbooks, triggered from an incident or an entity, add Group-IB IOC search, WHOIS and IP scoring results as incident comments.</p>
+<p><strong>Playbooks:</strong> 26 scheduled collectors, 1 indicator-processor playbook that all indicator collectors batch into (deploy it first), 3 incident-triggered and 7 entity-triggered enrichment playbooks.</p>
+<p><strong>Prerequisites:</strong> a Group-IB Threat Intelligence subscription with API access (username and API key).</p>
 <h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
-<h2 id="tables-used">Tables Used</h2>
-<p>This solution queries <strong>21 table(s)</strong> from its content items:</p>
-<table>
-<thead>
-<tr>
-  <th>Table</th>
-  <th>Used By Content</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><a href="../tables/gibtiaaptthreatactor-cl.html"><code>GIBTIAAPTThreatActor_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaaptthreatreports-cl.html"><code>GIBTIAAPTThreatReports_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaattacksddos-cl.html"><code>GIBTIAAttacksDDoS_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaattacksdeface-cl.html"><code>GIBTIAAttacksDeface_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaattacksphishingkit-cl.html"><code>GIBTIAAttacksPhishingKit_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiabpphishingkit-cl.html"><code>GIBTIABPPhishingKit_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiabpphishing-cl.html"><code>GIBTIABPPhishing_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiacompromisedcard-cl.html"><code>GIBTIACompromisedCard_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiacompromisedimei-cl.html"><code>GIBTIACompromisedIMEI_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiacompromisedmule-cl.html"><code>GIBTIACompromisedMule_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiahithreatactor-cl.html"><code>GIBTIAHIThreatActor_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiahithreatreports-cl.html"><code>GIBTIAHIThreatReports_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiamalwarecnc-cl.html"><code>GIBTIAMalwareCNC_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaosigitleak-cl.html"><code>GIBTIAOSIGitLeak_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaosipublicleak-cl.html"><code>GIBTIAOSIPublicLeak_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiaosivulnerability-cl.html"><code>GIBTIAOSIVulnerability_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiasuspiciousipopenproxy-cl.html"><code>GIBTIASuspiciousIPOpenProxy_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiasuspiciousipsocksproxy-cl.html"><code>GIBTIASuspiciousIPSocksProxy_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiasuspiciousiptornode-cl.html"><code>GIBTIASuspiciousIPTorNode_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtiatargetedmalware-cl.html"><code>GIBTIATargetedMalware_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-<tr>
-  <td><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a></td>
-  <td>Playbooks (writes)</td>
-</tr>
-</tbody>
-</table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>23 content item(s)</strong> (0 in solution, 23 discovered 🔍):</p>
+<p>This solution includes <strong>74 content item(s)</strong> (37 in solution, 37 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -163,9 +86,9 @@
 <tbody>
 <tr>
   <td style="text-align:left">Playbooks</td>
-  <td style="text-align:right">23</td>
-  <td style="text-align:right">0</td>
-  <td style="text-align:right">23</td>
+  <td style="text-align:right">74</td>
+  <td style="text-align:right">37</td>
+  <td style="text-align:right">37</td>
 </tr>
 </tbody>
 </table>
@@ -180,125 +103,397 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibindicatorprocessor-0fa780b9.html">GIBIndicatorProcessor</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-apt-threat-actor-collector-412ec4d2.html">Group-IB TI - APT threat actor collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence apt/threat_actor collection hourly using incremental seqUpdat...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-apt-threatactor-190ca81b.html">GIBTIA_APT_ThreatActor</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaaptthreatactor-cl.html"><code>GIBTIAAPTThreatActor_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-apt-threat-report-collector-41971843.html">Group-IB TI - APT threat report collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence apt/threat collection hourly using incremental seqUpdate pagi...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-apt-threats-0bf2e06a.html">GIBTIA_APT_Threats</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaaptthreatreports-cl.html"><code>GIBTIAAPTThreatReports_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-breached-database-collector-0bd302b2.html">Group-IB TI - Breached database collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence compromised/breacheddb collection hourly using incremental se...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-attacks-ddos-676a7f45.html">GIBTIA_Attacks_ddos</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaattacksddos-cl.html"><code>GIBTIAAttacksDDoS_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-compromised-account-collector-ef89becc.html">Group-IB TI - Compromised account collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence compromised/account_group collection hourly using incremental...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-attacks-deface-0571809a.html">GIBTIA_Attacks_deface</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaattacksdeface-cl.html"><code>GIBTIAAttacksDeface_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-compromised-bank-card-collector-0b46c8f4.html">Group-IB TI - Compromised bank card collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence compromised/bank_card_group collection hourly using increment...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-attacks-phishing-05e0bef0.html">GIBTIA_Attacks_phishing</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaattacksphishingkit-cl.html"><code>GIBTIAAttacksPhishingKit_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-compromised-personal-data-collector-4502a858.html">Group-IB TI - Compromised personal data collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence compromised/spd collection hourly using incremental seqUpdate...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-attacks-phishing-kit-176cf63b.html">GIBTIA_Attacks_phishing_kit</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaattacksphishingkit-cl.html"><code>GIBTIAAttacksPhishingKit_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-ddos-indicator-collector-1ba50221.html">Group-IB TI - DDoS indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence attacks/ddos collection hourly using incremental seqUpdate pa...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-bp-phishing-1f9bfeff.html">GIBTIA_BP_phishing</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiabpphishing-cl.html"><code>GIBTIABPPhishing_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-defacement-indicator-collector-68fe642a.html">Group-IB TI - Defacement indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence attacks/deface collection hourly using incremental seqUpdate ...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-bp-phishing-kit-0f993020.html">GIBTIA_BP_phishing_kit</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiabpphishingkit-cl.html"><code>GIBTIABPPhishingKit_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-incident-with-ioc-context-6eba8145.html">Group-IB TI - Enrich incident with IOC context</a></td>
+  <td style="text-align:left">Triggered by a Microsoft Sentinel incident. Searches Group-IB Threat Intelligence for every IP, doma...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-compromised-account-12e40e7c.html">GIBTIA_Compromised_account</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiabpphishingkit-cl.html"><code>GIBTIABPPhishingKit_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-incident-with-whois-data-c983f2c6.html">Group-IB TI - Enrich incident with WHOIS data</a></td>
+  <td style="text-align:left">Triggered by a Microsoft Sentinel incident. Runs a Group-IB WHOIS lookup for every IP and domain ent...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-compromised-card-4873e37b.html">GIBTIA_Compromised_card</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiacompromisedcard-cl.html"><code>GIBTIACompromisedCard_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-single-ip-entity-with-ioc-context-1806f7b7.html">Group-IB TI - Enrich single IP entity with IOC context</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single IP address entity from the incident investigation...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-compromised-imei-1e238983.html">GIBTIA_Compromised_imei</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiacompromisedimei-cl.html"><code>GIBTIACompromisedIMEI_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-single-url-entity-with-ioc-context-3ccc57e4.html">Group-IB TI - Enrich single URL entity with IOC context</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single URL entity from the incident investigation graph ...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-compromised-mule-500b5f08.html">GIBTIA_Compromised_mule</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiacompromisedmule-cl.html"><code>GIBTIACompromisedMule_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-single-domain-entity-with-ioc-context-a3032bca.html">Group-IB TI - Enrich single domain entity with IOC context</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single domain entity from the incident investigation gra...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-hi-threat-bfac31e2.html">GIBTIA_HI_Threat</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiahithreatreports-cl.html"><code>GIBTIAHIThreatReports_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-enrich-single-file-hash-entity-with-ioc-context-7b257dd4.html">Group-IB TI - Enrich single file hash entity with IOC context</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single file hash entity from the incident investigation ...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-hi-threat-actor-2c1acd08.html">GIBTIA_HI_Threat_Actor</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiahithreatactor-cl.html"><code>GIBTIAHIThreatActor_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-git-repository-leak-collector-de7684d8.html">Group-IB TI - Git repository leak collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence osi/git_repository collection hourly using incremental seqUpd...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-malware-targeted-malware-ece0af42.html">GIBTIA_Malware_Targeted_Malware</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiatargetedmalware-cl.html"><code>GIBTIATargetedMalware_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-hacker-intelligence-threat-actor-collector-cf0c8722.html">Group-IB TI - Hacker intelligence threat actor collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence hi/threat_actor collection hourly using incremental seqUpdate...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-malware-cnc-4702dbee.html">GIBTIA_Malware_cnc</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiamalwarecnc-cl.html"><code>GIBTIAMalwareCNC_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-hacker-intelligence-threat-collector-d9f670a3.html">Group-IB TI - Hacker intelligence threat collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence hi/threat collection hourly using incremental seqUpdate pagin...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-osi-gitleak-631460d0.html">GIBTIA_OSI_GitLeak</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaosigitleak-cl.html"><code>GIBTIAOSIGitLeak_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-indicator-processor-required-adapter-4692ecb4.html">Group-IB TI - Indicator processor (required adapter)</a></td>
+  <td style="text-align:left">Required adapter for the Group-IB collector playbooks. Receives batched STIX 2.1 indicators from the...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-osi-publicleak-70bc2712.html">GIBTIA_OSI_PublicLeak</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaosipublicleak-cl.html"><code>GIBTIAOSIPublicLeak_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-malware-c2-indicator-collector-ebf2ee2e.html">Group-IB TI - Malware C2 indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence malware/cnc collection hourly using incremental seqUpdate pag...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-osi-vulnerability-abc46184.html">GIBTIA_OSI_Vulnerability</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiaosivulnerability-cl.html"><code>GIBTIAOSIVulnerability_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-malware-configuration-indicator-collector-9e7b6546.html">Group-IB TI - Malware configuration indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence malware/config collection hourly using incremental seqUpdate ...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.html">GIBTIA_Suspicious_ip_open_proxy</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiasuspiciousipopenproxy-cl.html"><code>GIBTIASuspiciousIPOpenProxy_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-masked-card-collector-c497904e.html">Group-IB TI - Masked card collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence compromised/masked_card collection hourly using incremental s...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.html">GIBTIA_Suspicious_ip_socks_proxy</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiasuspiciousipsocksproxy-cl.html"><code>GIBTIASuspiciousIPSocksProxy_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-open-proxy-indicator-collector-0337e2d1.html">Group-IB TI - Open proxy indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence suspicious_ip/open_proxy collection hourly using incremental ...</td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.html">GIBTIA_Suspicious_ip_tor_node</a> ⚠️</td>
-  <td style="text-align:left">Author: Hesham Saad</td>
-  <td style="text-align:left"><a href="../tables/gibtiasuspiciousiptornode-cl.html"><code>GIBTIASuspiciousIPTorNode_CL</code></a> <em>(write)</em><br><a href="../tables/gibtechtable-cl.html"><code>GIBTechTable_CL</code></a> <em>(read/write)</em></td>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-open-threats-collector-ee483c55.html">Group-IB TI - Open threats collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence hi/open_threats collection hourly using incremental seqUpdate...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-phishing-indicator-collector-a628e258.html">Group-IB TI - Phishing indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence attacks/phishing_group collection hourly using incremental se...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-phishing-kit-indicator-collector-30c509a7.html">Group-IB TI - Phishing kit indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence attacks/phishing_kit collection hourly using incremental seqU...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-primary-ioc-collector-a1d55ae5.html">Group-IB TI - Primary IOC collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence ioc/primary collection hourly using incremental seqUpdate pag...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-public-leak-collector-ffa38a05.html">Group-IB TI - Public leak collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence osi/public_leak collection hourly using incremental seqUpdate...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-socks-proxy-indicator-collector-9207a1ca.html">Group-IB TI - SOCKS proxy indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence suspicious_ip/socks_proxy collection hourly using incremental...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-scanner-indicator-collector-226cbf96.html">Group-IB TI - Scanner indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence suspicious_ip/scanner collection hourly using incremental seq...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-score-a-single-ip-entity-ed3c7eb3.html">Group-IB TI - Score a single IP entity</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single IP address entity from the incident investigation...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-score-incident-ip-addresses-16ea5229.html">Group-IB TI - Score incident IP addresses</a></td>
+  <td style="text-align:left">Triggered by a Microsoft Sentinel incident. Retrieves the Group-IB risk score and associated categor...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-targeted-malware-collector-61a1f026.html">Group-IB TI - Targeted malware collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence malware/malware collection hourly using incremental seqUpdate...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-tor-node-indicator-collector-9ec32614.html">Group-IB TI - Tor node indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence suspicious_ip/tor_node collection hourly using incremental se...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-vpn-indicator-collector-1471577d.html">Group-IB TI - VPN indicator collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence suspicious_ip/vpn collection hourly using incremental seqUpda...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-vulnerability-collector-250664cb.html">Group-IB TI - Vulnerability collector</a></td>
+  <td style="text-align:left">Polls the Group-IB Threat Intelligence osi/vulnerability collection hourly using incremental seqUpda...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-whois-lookup-for-a-single-ip-entity-c670f284.html">Group-IB TI - WHOIS lookup for a single IP entity</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single IP address entity from the incident investigation...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-group-ib-ti-whois-lookup-for-a-single-domain-entity-5ca6b2b6.html">Group-IB TI - WHOIS lookup for a single domain entity</a></td>
+  <td style="text-align:left">Entity-triggered playbook. Run it against a single domain entity from the incident investigation gra...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-3aa5960e.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-6c121767.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-0d34dd4b.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-9f2b770f.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-3cd7a8a7.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-54537823.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-ba1e2db8.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-44643bf5.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-ec73ab37.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-fe8656b4.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-0bd85cab.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-4054d138.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-43b129a4.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-64a91589.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-68403aed.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-75f04dbb.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-ab5b6ff1.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-d060ef46.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-1b6e9c0c.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-26b92ce7.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-ba077bd7.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-8ee96f2d.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-38cb684e.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-b37ab530.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-cd905e7e.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-de672ca8.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-b6047034.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-950e0818.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-4499a861.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-364d5544.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-751fce10.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-fc7a60be.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-2bd9db91.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-a5b55ad6.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-4e7911e4.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-d24db843.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/group-ib-workflow-71c2e698.html">workflow</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left">-</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
 <p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
 </blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>01-10-2026</td>
+  <td>Initial solution package: 37 playbooks (26 scheduled Group-IB TI collectors, the indicator-processor playbook, 10 enrichment playbooks) using the Logs Ingestion API and the Microsoft Sentinel threat intelligence upload API.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

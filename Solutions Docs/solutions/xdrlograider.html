@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ XdrLogRaider &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="xdrlograider">⚠️ XdrLogRaider</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/XdrLogRaider.svg" alt="XdrLogRaider Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Alex Kefallonitis</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Community</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://github.com/akefallonitis/xdrlograider/issues">https://github.com/akefallonitis/xdrlograider/issues</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection,Security - Information Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Alex Kefallonitis - al.kefallonitis@gmail.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-07-13</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XdrLogRaider">XdrLogRaider</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>XdrLogRaider</strong> solution is an open-source, community data connector for Microsoft Defender XDR portal-internal <code>/apiproxy/*</code> audit and reporting endpoints. It ingests Defender XDR events into per-Category custom Log Analytics tables (<code>Defender_&lt;Category&gt;_CL</code>) with one typed row per event and the raw JSON preserved, using dynamic per-tenant capability discovery.</p>
+<p><strong>Underlying Microsoft technologies used:</strong></p>
+<p>a. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a> (self-hosted PowerShell Function App in your subscription)</p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data Collection Rules and Endpoints</a></p>
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: This connector authenticates to and reads from Microsoft Defender XDR <b>portal-internal <code>/apiproxy/*</code> endpoints, which are undocumented and unsupported and may change or break without notice</b>. XdrLogRaider is a community, non-Microsoft project; it is read-only by design and intended for authorized use within your own tenant. Authentication uses a dedicated Entra service account with TOTP or Passkey MFA and transparent SSO refresh. See the <a href='https://github.com/akefallonitis/xdrlograider'>project repository</a> for the full data-source, authentication, and security model.</p>
+
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<ul>
+<li><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a></li>
+<li><a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a> ⚠️</li>
+</ul>
+<blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
+</blockquote>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>11 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/defender-analyticsdata-cl.html"><code>Defender_AnalyticsData_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-attacksimulation-cl.html"><code>Defender_AttackSimulation_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-cloudapps-cl.html"><code>Defender_CloudApps_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-configuration-cl.html"><code>Defender_Configuration_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-endpointmanagement-cl.html"><code>Defender_EndpointManagement_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-exposuremanagement-cl.html"><code>Defender_ExposureManagement_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-identity-cl.html"><code>Defender_Identity_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-operations-cl.html"><code>Defender_Operations_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-portalservices-cl.html"><code>Defender_PortalServices_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-securescore-cl.html"><code>Defender_SecureScore_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/defender-vulnerabilitymanagement-cl.html"><code>Defender_VulnerabilityManagement_CL</code></a></td>
+  <td><a href="../connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a>, <a href="../connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>13-07-2026</td>
+  <td>Initial Solution release. Adds the XdrLogRaider Azure Function data connector for Microsoft Defender XDR portal-internal <code>/apiproxy/*</code> telemetry (per-Category <code>Defender_&lt;Category&gt;_CL</code> tables).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

@@ -20,10 +20,10 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`Event`](../tables/event.md) |  | ✓ | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` | ✓ | ✓ | ✓ |
-| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) |  | ✓ | ✓ | ✓ |
-| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) |  | ✓ | ✓ | ✓ |
-| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) |  | ✓ | ✓ | ✓ |
-| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) |  | ✓ | ✓ | ✓ |
+| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) |  | ? | ✓ | ? |
+| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) |  | ? | ✓ | ? |
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) |  | ? | ✓ | ? |
+| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) |  | ? | ✓ | ? |
 
 ---
 

@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | DevOps |
-| **Version** | 3.0.9 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-20 |
-| **Last Updated** | 2026-05-05 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [AzureDevOpsAuditing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuredevopsauditing) · Popularity: 🟢 High (91%) |
 
@@ -35,7 +35,7 @@ The [Azure DevOps](https://azure.microsoft.com/products/devops/) Auditing soluti
 
 This solution provides **1 data connector(s)**:
 
-- [Azure DevOps Audit Logs (via Codeless Connector Platform)](../connectors/azuredevopsauditlogs.md)
+- [Azure DevOps Audit Logs (via Codeless Connector Framework)](../connectors/azuredevopsauditlogs.md)
 
 ## Tables Used
 
@@ -43,7 +43,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | [Azure DevOps Audit Logs (via Codeless Connector Platform)](../connectors/azuredevopsauditlogs.md) | Analytics, Hunting |
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | [Azure DevOps Audit Logs (via Codeless Connector Framework)](../connectors/azuredevopsauditlogs.md) | Analytics, Hunting |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | - | Analytics, Hunting |
 
 ### Internal Tables
@@ -120,6 +120,8 @@ This solution includes **37 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                      |
 | ----------- | ------------------------------ | --------------------------------------------------------------------------------------- |
+| 3.2.2       | 20-10-2026                     | Added 18 **XDR Detections** and updated **Analytical Rules** for Defender XDR migration |
+| 3.0.10      | 07-10-2026                     | Updated **Data Connector** to support connecting multiple Azure DevOps organizations, each as its own connection in a single workspace. |
 | 3.0.9       | 17-04-2026                     | Updated **Polling Config** to fix parameter mismatch                                    |
 | 3.0.8       | 26-01-2026                     | Updated **Data Connector** to support dynamic Redirect URI                              |
 | 3.0.7       | 22-01-2026                     | Updated solution description by eliminating legacy streaming text                       |

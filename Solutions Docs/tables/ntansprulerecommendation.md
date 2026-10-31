@@ -17,7 +17,7 @@ Reference for NTANspRuleRecommendation table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation) |
 
-## Schema (24 columns)
+## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation)
 
@@ -40,6 +40,7 @@ Reference for NTANspRuleRecommendation table in Azure Monitor Logs.
 | RuleValue | string | Value for the rule. |
 | ServiceEndpoints | string | Comma-separated service endpoints. Service Endpoint traffic found. |
 | SourceIPs | string | Comma-separated public source IPs in CIDR format for inbound flows. |
+| SourceSubscriptionIds | string | Comma-separated source subscription IDs for inbound flows. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StartTime | datetime | The rule evaluation windowstart time. |
 | TenantId | string | The Log Analytics workspace ID |

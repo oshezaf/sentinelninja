@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [SecurityScorecardIssue_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardIssue_ccp/SecurityScorecardIssue_DCR.json) |
 | **CCF Configuration** | [SecurityScorecardIssue_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardIssue_ccp/SecurityScorecardIssue_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#securityscorecard-issues-via-codeless-connector-framework) |
 
 The SecurityScorecard Issues (via Codeless Connector Framework) connector ingests issue history events from the companies in a SecurityScorecard portfolio into Microsoft Sentinel. Add one connection per portfolio you want to monitor — each connection is managed independently in the grid below. Replaces the Function App connector.
 

@@ -15,19 +15,17 @@
 - [Schema](#schema)
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (3 columns)
+## Schema (2 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake%5CData%20Connectors%5CSnowflakeLogs_ccp/SnowflakeRolesV2_Table.json)
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SnowflakeRolesV2_CL.json)
 
-| Column Name | Type | Description |
-|:------------|:-----|:------------|
-| Data | string | Dynamic data column |
-| SnowflakeAccountIdentifier | string | Snowflake account identifier configured for this connection; hard-coded on every record so it can be differentiated. |
-| TimeGenerated | datetime |  |
+| Column Name | Type |
+|:------------|:-----|
+| Data | string |
+| TimeGenerated | datetime |
 
 ## Schema References
 
@@ -40,14 +38,6 @@ Official Microsoft Learn documentation for field/column information:
 This table is used by the following solutions:
 
 - [Snowflake](../solutions/snowflake.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Snowflake (via Codeless Connector Framework)](../connectors/snowflakeconnector.md) |  |
 
 ---
 

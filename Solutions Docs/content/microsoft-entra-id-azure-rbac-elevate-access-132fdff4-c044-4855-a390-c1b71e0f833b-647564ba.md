@@ -14,6 +14,7 @@ Detects when a Global Administrator elevates access to all subscriptions and man
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `132fdff4-c044-4855-a390-c1b71e0f833b` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | PrivilegeEscalation |
 | **Techniques** | T1078 |

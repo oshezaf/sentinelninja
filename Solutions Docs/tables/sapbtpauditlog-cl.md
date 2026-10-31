@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -60,9 +58,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (17)
+## Content Items Using This Table (18)
 
-### Analytic Rules (16)
+### Analytic Rules (17)
 
 **In solution [SAP BTP](../solutions/sap-btp.md):**
 
@@ -82,6 +80,7 @@ This table is ingested by the following connectors:
 | [SAP BTP - Mass user deletion in a sub account](../content/sap-btp-sap-btp-mass-user-deletion-in-a-sub-account-6f1e58bd-cd95-4dfb-8883-94207f30929a-f868505a.md) |  |
 | [SAP BTP - Trust and authorization Identity Provider monitor](../content/sap-btp-sap-btp-trust-and-authorization-identity-provider-monitor-62357c23-ecdc-4edc-9349-8338063af1ef-9cbceca7.md) |  |
 | [SAP BTP - Unaudited custom app with login-only activity](../content/sap-btp-sap-btp-unaudited-custom-app-with-login-only-activity-5e8f2a1b-7c3d-4b9e-a6f0-1d2e3c4b5a6f-c689ff8c.md) |  |
+| [SAP BTP - Use of custom app with high or critical vulnerability](../content/sap-btp-sap-btp-use-of-custom-app-with-high-or-critical-vulnerability-8a4c9e2f-6b1d-4e7a-9c3f-2d5b8f1a6e4c-1f4a73ac.md) |  |
 | [SAP BTP - User added to Cloud Identity Service privileged Administrators list](../content/sap-btp-sap-btp-user-added-to-cloud-identity-service-privileged-administrators-list-7d4e9f2a-8b1c-4a5d-9e3f-6c2b1a0d8e7f-c3f4a14a.md) |  |
 | [SAP BTP - User added to sensitive privileged role collection](../content/sap-btp-sap-btp-user-added-to-sensitive-privileged-role-collection-5acbe4cb-a379-4acc-9ad3-28dc48ad33d3-137fda25.md) |  |
 

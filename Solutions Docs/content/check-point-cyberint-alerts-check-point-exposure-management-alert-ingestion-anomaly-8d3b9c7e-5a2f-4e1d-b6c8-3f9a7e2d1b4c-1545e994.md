@@ -6,7 +6,7 @@
 
 ---
 
-Detects when no Check Point Exposure Management alerts have been ingested into the argsentdc_CL table for an extended period. This may indicate a failure in the CCP data connector or the Importer playbook, a misconfigured API token, or network connectivity issues.
+Detects when no Check Point Exposure Management alerts have been ingested into the argsentdc_CL table for an extended period. This may indicate a failure in the CCP data connector, a misconfigured API token, or network connectivity issues.
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ✓ | ✓ | ✓ |
+| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ? | ✓ | ? |
 
 ---
 

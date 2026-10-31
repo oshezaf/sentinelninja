@@ -14,6 +14,7 @@ A Conditional Access policy was disabled in Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `40702da1-ae8a-4e46-ac1f-9327ca6ef588` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562.007 |

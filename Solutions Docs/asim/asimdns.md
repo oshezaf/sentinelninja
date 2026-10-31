@@ -15,8 +15,8 @@
 | **Schema** | Dns |
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.5.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md)) |
-| **Last Updated** | Jun 09, 2026 |
+| **Parser Version** | 0.5.6 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md)) |
+| **Last Updated** | Oct 23, 2026 |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDns.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDns.yaml) |
 
 ## Description
@@ -32,8 +32,10 @@ This union parser includes parsers for the following products:
 | Azure Firewall | [_ASim_Dns_AzureFirewall](asimdnsazurefirewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
 | Cisco Umbrella | [_ASim_Dns_CiscoUmbrella](asimdnsciscoumbrella.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | Corelight Zeek | [_ASim_Dns_CorelightZeek](asimdnscorelightzeek.md) |  |
+| CrowdStrike Falcon Data Replicator | [_ASim_Dns_CrowdStrikeFalconDataReplicator](asimdnscrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | Fortinet FortiGate | [_ASim_Dns_FortinetFortiGate](asimdnsfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | GCP Cloud DNS | [_ASim_Dns_Gcp](asimdnsgcp.md) | [GoogleCloudPlatformDNS (legacy connector)](../solutions/googlecloudplatformdns.md) |
+| Gigamon V-Series Application Metadata Intelligence | [_ASim_Dns_GigamonVSeries](asimdnsgigamonvseries.md) | [Gigamon Connector](../solutions/gigamon-connector.md) |
 | Halcyon | [_ASim_Dns_Halcyon](asimdnshalcyon.md) | [Halcyon](../solutions/halcyon.md) |
 | Infoblox BloxOne | [_ASim_Dns_InfobloxBloxOne](asimdnsinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Infoblox NIOS | [_ASim_Dns_InfobloxNIOS](asimdnsinfobloxnios.md) | [Syslog](../solutions/syslog.md) |

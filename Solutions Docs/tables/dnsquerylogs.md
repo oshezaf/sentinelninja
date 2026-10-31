@@ -37,7 +37,7 @@ Reference for DNSQueryLogs table in Azure Monitor Logs.
 | Answer | dynamic | Array of answers for DNS query. |
 | Authority | dynamic | Array of authority DNS servers for DNS query. |
 | DestinationIpAddress | string | The IP address of the instance that the query was sent to (outbound endpoints). |
-| DestinationPort | int | The port on the instance that the query was sent to. |
+| DestinationPort | int | The destination port when all reported targets use the same port. Null when no port is available or the targets use different ports. |
 | DnsForwardingRulesetDomain | string | The domain which was hit in the DNS Forwarding ruleset. |
 | DnsForwardingRulesetId | string | The ID of the DNS forwarding ruleset which was hit. |
 | OperationName | string | Name of the operation. |

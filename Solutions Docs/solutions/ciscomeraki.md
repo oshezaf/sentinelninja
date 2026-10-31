@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
-| **Version** | 3.0.6 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-08 |
-| **Last Updated** | 2026-06-26 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [CiscoMeraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomeraki) · Rating: ★☆☆☆☆ 1.0/5 (3 ratings) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomeraki) · Rating: ★☆☆☆☆ 1.0/5 (3 ratings) · Popularity: 🔵 Medium (78%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/MS) logs with Microsoft Sentinel. This gives you more insight into your organization's network and improves your security operation capabilities.
@@ -171,7 +171,7 @@ This package includes:
 You can choose to deploy the whole package : Connector + all five playbook templates, or each one seperately from it's specific folder.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FConsolidatedTemplate.json)
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FConsolidatedTemplate.json)
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovernbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FConsolidatedTemplate.json)
 
 
 
@@ -208,10 +208,11 @@ API Key Authentication
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                          |
 |-------------|--------------------------------|-------------------------------------------------------------|
+| 3.2.2       | 20-04-2026                     | Added Defender XDR **Workbook** *CiscoMerakiWorkbook.json*. |
 | 3.0.6       | 09-06-2026                     | Fixed **Parser** regression where self-reference to the `CiscoMeraki` restored the correct `meraki_CL` table reference.  |
 | 3.0.5       | 22-01-2026                     | Correct name shown on **Data Types** to match query used & Updated the Cisco Meraki Custom Connector Default Service End-point.  |
 | 3.0.4       | 23-07-2025                     | **Workbook** updated with new ThreatIntelIndicators table.  |
-| 3.0.3       | 02012-2024                     | Removed Deprecated **Data Connectors**                      |
+| 3.0.3       | 02-12-2024                     | Removed Deprecated **Data Connectors**                      |
 | 3.0.2       | 12-08-2024                     | Deprecating data connector                                  |
 | 3.0.1       | 26-07-2023                     | Updated **Workbook** template to remove unused variables.   |
 

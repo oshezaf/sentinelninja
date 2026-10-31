@@ -1,6 +1,6 @@
 # Analytic Rules - D
 
-**135 analytic rules** starting with 'D'.
+**141 analytic rules** starting with 'D'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -66,6 +66,12 @@
 | [Deleted a Custom Field Mapping profile](soc-prime-ccf-deleted-a-custom-field-mapping-profile-a1b2c3d4-e5f6-4078-9012-3456789abcde-7649773b.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Deleted a Tenant](soc-prime-ccf-deleted-a-tenant-7d4a2b91-8e5c-4f2a-9d6b-3c1f0e4a5d8b-a3de424c.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Deletion of data on multiple drives using cipher exe](microsoft-defender-xdr-deletion-of-data-on-multiple-drives-using-cipher-exe-03caa992-477f-4b19-8e2a-8cd58f8f9652-a1302600.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Delinea - Bulk secret export / access](delinea-platform-delinea-bulk-secret-export-access-7ab54aed-f97e-4202-a624-3cbd496c3b68-aa09d1ea.md) | Medium | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [Delinea - Failed authentication spike (single account)](delinea-platform-delinea-failed-authentication-spike-single-account-e6d743f2-a538-455f-899c-251926b9071e-f52d6e65.md) | Medium | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [Delinea - Platform configuration change](delinea-platform-delinea-platform-configuration-change-7c07194a-8eda-4cb7-9bc4-cd4700eb4c4d-8dc1270a.md) | Medium | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [Delinea - Privilege escalation detected (role / permission changes)](delinea-platform-delinea-privilege-escalation-detected-role-permission-changes-c24252d1-d98c-48db-b2f9-4cb37dd2208a-d2d0529a.md) | High | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [Delinea - Privileged account access anomaly (secret-access volume vs baseline)](delinea-platform-delinea-privileged-account-access-anomaly-secret-access-volume-vs-baseline-e1bfca9b-7980-469f-a57c-16e81451861b-4bba52d6.md) | Medium | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [Delinea - Sensitive secret accessed by new user (first access in 14 days)](delinea-platform-delinea-sensitive-secret-accessed-by-new-user-first-access-in-14-days-a7b167e2-9582-440b-8d47-53df2f73c4f4-d976407f.md) | High | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
 | [Denial of Service (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.md) | High | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Detaching Backups Started](veeam-detaching-backups-started-e0d937ca-4582-4c3b-b95b-82fff33ed610-4f43902a.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Detect .NET runtime being loaded in JScript for code execution](falconfriday-detect-.net-runtime-being-loaded-in-jscript-for-code-execution-9f921513-65f3-48a2-ae7d-326c5901c55e-fd9342fe.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |

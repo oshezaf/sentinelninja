@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps |
-| **Version** | 2.0.2 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
+| **Last Updated** | 2026-10-21 |
 | **Solution Folder** | [Azure kubernetes Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20kubernetes%20Service) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekubernetes) · Popularity: 🔵 Medium (78%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekubernetes) · Popularity: 🟡 Low (16%) |
 
 The [Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/?WT.mc_id=Portal-fx) solution allows you to ingest AKS activity logs using Diagnostic Setting into Microsoft Sentinel.
 
@@ -87,6 +88,13 @@ This solution includes **3 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [AksSecurity](../content/azure-kubernetes-service-akssecurity-51e44b54.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.2.2 | 19-10-2026 | Added Defender XDR **Workbook** (`AksSecurity.json`) migrated to Advanced Hunting and preserved Azure Resource Graph queries. |
+| 2.0.2 | 15-05-2024 | Initial **Solution** release with **Workbook**, **Hunting Queries**, and **Data Connector** for Azure Kubernetes Service. |
 
 ---
 

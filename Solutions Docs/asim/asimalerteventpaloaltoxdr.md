@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAlertEventPaloAltoXDR` |
 | **Built-in Parser** | `_ASim_AlertEvent_PaloAltoXDR` |
 | **Schema** | AlertEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Palo Alto XDR |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventPaloAltoXDR.md)) |
-| **Last Updated** | Jun 04, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventPaloAltoXDR.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAlertEvent](asimalertevent.md) |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEventPaloAltoXDR.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEventPaloAltoXDR.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PaloAltoCortexXDR_Alerts_CL`](../tables/paloaltocortexxdr-alerts-cl.md) | ✓ | ✓ | ✓ |
+| [`PaloAltoCortexXDR_Alerts_CL`](../tables/paloaltocortexxdr-alerts-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

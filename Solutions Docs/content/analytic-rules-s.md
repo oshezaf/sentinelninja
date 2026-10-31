@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**199 analytic rules** starting with 'S'.
+**217 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -41,6 +41,7 @@
 | [SAP BTP - Mass user deletion in Cloud Identity Service](sap-btp-sap-btp-mass-user-deletion-in-cloud-identity-service-a3b8e7c4-5f2d-4a1e-9c6b-8d7f3e2a1b0c-0fccee33.md) | Medium | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [SAP BTP - Trust and authorization Identity Provider monitor](sap-btp-sap-btp-trust-and-authorization-identity-provider-monitor-62357c23-ecdc-4edc-9349-8338063af1ef-9cbceca7.md) | Medium | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [SAP BTP - Unaudited custom app with login-only activity](sap-btp-sap-btp-unaudited-custom-app-with-login-only-activity-5e8f2a1b-7c3d-4b9e-a6f0-1d2e3c4b5a6f-c689ff8c.md) | Medium | 📦 [SAP BTP](../solutions/sap-btp.md) |
+| [SAP BTP - Use of custom app with high or critical vulnerability](sap-btp-sap-btp-use-of-custom-app-with-high-or-critical-vulnerability-8a4c9e2f-6b1d-4e7a-9c3f-2d5b8f1a6e4c-1f4a73ac.md) | Medium | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [SAP BTP - User added to Cloud Identity Service privileged Administrators list](sap-btp-sap-btp-user-added-to-cloud-identity-service-privileged-administrators-list-7d4e9f2a-8b1c-4a5d-9e3f-6c2b1a0d8e7f-c3f4a14a.md) | High | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [SAP BTP - User added to sensitive privileged role collection](sap-btp-sap-btp-user-added-to-sensitive-privileged-role-collection-5acbe4cb-a379-4acc-9ad3-28dc48ad33d3-137fda25.md) | Low | 📦 [SAP BTP](../solutions/sap-btp.md) |
 | [SAP ETD - Execution of Sensitive Function Module](sap-etd-cloud-sap-etd-execution-of-sensitive-function-module-c6111e06-11e2-45eb-86ef-28313a06db35-96b35578.md) | Medium | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
@@ -108,9 +109,25 @@
 | [Silk Typhoon Suspicious Exchange Request](standalone-content-silk-typhoon-suspicious-exchange-request-23005e87-2d3a-482b-b03d-edbebd1ae151-e396d92c.md) | Medium | 📄 Standalone Content |
 | [Silk Typhoon Suspicious File Downloads.](standalone-content-silk-typhoon-suspicious-file-downloads.-03e04c97-8cae-48b3-9d2f-4ab262e4ffff-62287297.md) | Medium | 📄 Standalone Content |
 | [Silk Typhoon Suspicious UM Service Error](standalone-content-silk-typhoon-suspicious-um-service-error-0625fcce-6d52-491e-8c68-1d9b801d25b9-6787e2f2.md) | Low | 📄 Standalone Content |
+| [Silverfort - AS-REP roasting](silverfort-silverfort-as-rep-roasting-cd246cea-4b7b-5c08-ad07-c1353cdf27c7-6bdab4d4.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Authentication input injection](silverfort-silverfort-authentication-input-injection-87e9f0c9-cd3d-5b8b-8c5b-c31f175ff367-fa39c81b.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - Certifried Incident](silverfort-silverfort-certifried-incident-9ae540c9-c926-4100-8f07-1eac22596292-74a2bc0f.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Credential scanning](silverfort-silverfort-credential-scanning-2ae44c2c-f139-539c-8695-fbaba1c11401-04bc347c.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Denied MFA with risk indicators](silverfort-silverfort-denied-mfa-with-risk-indicators-1b35fc5f-db8c-5fd5-942f-011d208783d0-4daddcc8.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Domain controller log cleared](silverfort-silverfort-domain-controller-log-cleared-6cfe8a42-7727-53e4-b88d-3b20cba83851-7547f2fd.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Impossible travel](silverfort-silverfort-impossible-travel-26f002c2-c020-5528-acf1-c98592e18aa7-36b04ece.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Kerberoasting](silverfort-silverfort-kerberoasting-e8e921df-1954-5d9e-bfc9-56df5628208c-c638fbf5.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Kerberos checksum mismatch](silverfort-silverfort-kerberos-checksum-mismatch-0bdbce35-83e8-5528-b57e-0d6f4a66a716-4c426cde.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Lateral movement](silverfort-silverfort-lateral-movement-59ba5290-028b-5c01-814c-798aed507440-b652fcb6.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Lateral movement target discovery](silverfort-silverfort-lateral-movement-target-discovery-b323b0a6-d96b-565d-a18a-b5adc932394a-1e672777.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - Log4Shell Incident](silverfort-silverfort-log4shell-incident-d6abed70-4043-46da-9304-a98f3446fa5f-69483854.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Malicious IPAddress authentication](silverfort-silverfort-malicious-ipaddress-authentication-0c64f30b-389e-538d-87f7-3ce3f9d27739-545b10e1.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - NoPacBreach Incident](silverfort-silverfort-nopacbreach-incident-bdfd2c45-10a0-44e7-a90a-ba7b6bdd9ff2-486f0310.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - NTDS.dit extraction](silverfort-silverfort-ntds.dit-extraction-cc110738-a263-5cfa-ac76-a991f3e3a2df-cd360ecc.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Privileged group membership addition](silverfort-silverfort-privileged-group-membership-addition-99820a41-1d19-5fcc-81df-0f71c64069b6-97809b3a.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Remote service installation](silverfort-silverfort-remote-service-installation-30df57e3-043a-5a71-9d78-dc328ecbd42b-6a5ddbbe.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - Repeated denied MFA prompts](silverfort-silverfort-repeated-denied-mfa-prompts-79583816-3c48-5508-9557-9229676acb14-5e0d11b0.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
+| [Silverfort - SMB share enumeration](silverfort-silverfort-smb-share-enumeration-f778b28c-c29c-58e9-9f8a-1b3a8f4a9f49-2a4ff47c.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - UserBruteForce Incident](silverfort-silverfort-userbruteforce-incident-46ff357b-9e98-465b-9e45-cd52fa4a7522-aec505ad.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Sites Alerts for Prancer](prancer-pensuiteai-integration-sites-alerts-for-prancer-bbeb2f26-cb99-4e4b-900f-24ce9809142d-5b489163.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [SlackAudit - Empty User Agent](slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.md) | Low | 📦 [SlackAudit](../solutions/slackaudit.md) |
@@ -153,6 +170,7 @@
 | [Speculus - Threat intelligence feed outage](speculus-threat-intelligence-speculus-threat-intelligence-feed-outage-c4f2a8d1-6e39-4c07-b5a2-1d8e3f7c9a25-431c164c.md) | Informational | 📦 [Speculus Threat Intelligence](../solutions/speculus-threat-intelligence.md) |
 | [SpyCloud Enterprise Breach Detection](spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Enterprise Malware Detection](spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.md) | High | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
+| [SpyCloud identity access record exposure](spycloud-enterprise-protection-ccf-spycloud-identity-access-record-exposure-cd8ec49c-b654-49be-b040-e552b8eba7c8-2d4be166.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [SpyCloud infostealer malware credential exposure](spycloud-enterprise-protection-ccf-spycloud-infostealer-malware-credential-exposure-ead4deed-9d48-4646-aee0-6b46c2dd1ae6-d71d624c.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [SpyCloud plaintext credential exposure detected](spycloud-enterprise-protection-ccf-spycloud-plaintext-credential-exposure-detected-a25eba0e-ff42-4c97-a379-d76bdb2aa1e3-4042bb68.md) | High | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [Squid proxy events for ToR proxies](syslog-squid-proxy-events-for-tor-proxies-90d3f6ec-80fb-48e0-9937-2c70c9df9bad-1bd82f05.md) | Low | 📦 [Syslog](../solutions/syslog.md) |

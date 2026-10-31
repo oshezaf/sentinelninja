@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | ✓ | ✓ | ✓ |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -45,7 +45,7 @@ This connector ingests data into the following tables:
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
 **1. Connect Qualys Vulnerability Management to Microsoft Sentinel**
->**NOTE:** To gather data for Detections based on Host, expand the **DetectionList** column in the table.
+>**NOTE:** **QualysHostDetectionV3_CL** stores raw host snapshots and can contain repeated unchanged detections. Use the **QualysHostDetection** parser for detection-level records. The parser expands **DetectionList**, removes repeated unchanged versions, and preserves status, timestamp, and relevant content changes.
 To gather data from Qualys VM, you need to provide the following resources
 #### 1. API Credentials 
  To gather data from Qualys VM, you'll need Qualys API credentials, including your Username and Password.

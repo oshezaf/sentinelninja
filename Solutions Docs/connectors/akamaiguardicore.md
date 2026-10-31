@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [AkamaiGuardicore_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_DCR.json) |
 | **CCF Configuration** | [AkamaiGuardicore_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_PollingConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#akamai-guardicore) |
 
 The Akamai Guardicore connector uses the Codeless Connector Framework (CCF) to import Agents, Assets, Applications, and Policy Rules from a Guardicore Centra instance into Microsoft Sentinel via Data Collection Rule (DCR) ingestion. The connector polls every 10 minutes via Microsoft Sentinel's CCF runtime; no Azure Function App is deployed.
 
@@ -62,11 +63,11 @@ Provide your Guardicore Centra service-account details and click **Connect** to 
 
 > 📄 *Source: [Akamai Guardicore\Data Connectors\AkamaiGuardicoreLogs_ccp\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai Guardicore\Data Connectors\AkamaiGuardicoreLogs_ccp\README.md)*
 
-# Akamai Guardicore Connector - v3.0.0 Migration Guide
+# Akamai Guardicore Connector - v3.0.1 Migration Guide
 
 ## Overview
 
-Version 3.0.0 of the Akamai Guardicore solution migrates the data connector from an
+Version 3.0.1 of the Akamai Guardicore solution migrates the data connector from an
 Azure Functions-based implementation to the Microsoft Sentinel
 [Codeless Connector Framework (CCF/CCP)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector).
 
@@ -146,7 +147,7 @@ Azure Functions-based implementation to the Microsoft Sentinel
 
    Expected output: `DataCollectionRuleBased`.
 
-5. **Deploy the v3.0.0 solution** from the Microsoft Sentinel Content Hub
+5. **Deploy the v3.0.1 solution** from the Microsoft Sentinel Content Hub
    ("Akamai Guardicore"). Accept the deployment into the same workspace.
 
 6. **Configure CCF credentials on the connector tile.** Open the
@@ -155,8 +156,9 @@ Azure Functions-based implementation to the Microsoft Sentinel
    - **Username**
    - **Password**
 
-   Click *Connect*. The CCF runtime will begin polling the five endpoints listed
-   in [Prerequisites](#prerequisites).
+   Click *Connect*. The CCF runtime will begin polling the four data endpoints
+   listed in [Prerequisites](#prerequisites) (`/agents`, `/assets`,
+   `/workflow/projects`, `/visibility/policy/rules`).
 
 7. **Verify ingestion** approximately 15 minutes after connecting. For each table:
 

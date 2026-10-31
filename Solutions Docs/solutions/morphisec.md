@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.morphisec.com/support/home](https://support.morphisec.com/support/home) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.1.0 |
+| **Version** | 3.2.0 |
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |
-| **Last Updated** | 2026-06-16 |
+| **Last Updated** | 2026-10-22 |
 | **Solution Folder** | [Morphisec](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/morphisec.morphisec_utpp_mss) · Rating: ★★★★★ 4.8/5 (12 ratings) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/morphisec.morphisec_utpp_mss) · Rating: ★★★★★ 4.8/5 (12 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enables you to integrate vital insights from your security products with the Morphisec Data Connector for Microsoft Sentinel and expand your analytical capabilities with search and correlation, threat intelligence, and customized alerts. With a single, cross-product view, you can make real-time, data-backed decisions to protect your most important assets.
 
@@ -70,11 +70,12 @@ This solution includes **4 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                |
-|-------------|--------------------------------|---------------------------------------------------|
-| 3.1.0       | 10-09-2025                     | 	Adding CCF connector                             |
-| 3.0.1       | 26-06-2024                     | 	Deprecating data connectors                      |
-| 3.0.0       | 07-09-2023                     | 	Addition of new Morphisec AMA **Data Connector** |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                        |
+|-------------|--------------------------------|-------------------------------------------------------------------------------------------|
+| 3.2.0       | 04-10-2026                     | Added process, parent process, signature and user privilege columns to MorphisecAlerts_CL |
+| 3.1.0       | 10-09-2025                     | Adding CCF connector                                                                      |
+| 3.0.1       | 26-06-2024                     | Deprecating data connectors                                                               |
+| 3.0.0       | 07-09-2023                     | Addition of new Morphisec AMA **Data Connector**                                          |
 
 ---
 

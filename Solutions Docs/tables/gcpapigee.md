@@ -14,7 +14,7 @@ Reference for GCPApigee table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpapigee) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -25,7 +25,7 @@ Reference for GCPApigee table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (14 columns)
+## Schema (15 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpapigee)
 
@@ -35,6 +35,7 @@ Reference for GCPApigee table in Azure Monitor Logs.
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | GCPResource | dynamic | Describes the resource associated with the log entry, including labels and resource type. |
 | InsertId | string | A unique identifier for the log entry. |
+| JsonPayload | dynamic | Holds structured log data supplied in the JSON payload. |
 | LogName | string | The full log name including resource path. |
 | Operation | dynamic | Contains details about the operation being performed, including the operation ID, producer, and status information. |
 | ProtoPayload | dynamic | Holds the structured audit log data, including authentication, method name, resource name, and service-specific information. |

@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,OpenProcessApiCall"` | ✓ | ✗ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,OpenProcessApiCall"` | ✓ | ✗ | ✓ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

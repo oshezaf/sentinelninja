@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.1.9</td>
+  <td style="text-align:left">3.2.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-07-31</td>
+  <td style="text-align:left">2026-10-26</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (83%)</td>
 </tr>
 </tbody>
 </table>
@@ -85,9 +85,9 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 2 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a> 🔶</li>
+<li><a href="../connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a> ⚠️ 🔶</li>
 <li><a href="../connectors/oktasso-polling.html">Okta Single Sign-On (Polling CCP)</a> ⚠️</li>
 <li><a href="../connectors/oktassov2.html">Okta Single Sign-On (via Codeless Connector Framework)</a></li>
 </ul>
@@ -358,6 +358,26 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.2</td>
+  <td>25-10-2026</td>
+  <td>Restored <code>DeployParser</code> parameter and <code>Parser</code> resource deployment condition for the <code>OktaSSO</code> <strong>Parser</strong> alongside the nine disabled <strong>Defender XDR Custom Detections</strong> and one <strong>Defender XDR Workbook</strong> so Content Hub installation and multi-workspace deployment succeed.</td>
+</tr>
+<tr>
+  <td>3.2.1</td>
+  <td>15-10-2026</td>
+  <td>Added 9 disabled <strong>Defender XDR Custom Detections</strong> and 1 <strong>Defender XDR Workbook</strong> (<code>OktaSingleSignOn.json</code>) alongside the existing Sentinel content, updated the reference link in <code>azuredeploy_Okta_native_poller_connector_v2.json</code>, and updated the solution package to 3.2.1.</td>
+</tr>
+<tr>
+  <td>3.1.11</td>
+  <td>28-09-2026</td>
+  <td>Removed the deprecated Okta Single Sign-On Azure Function data connector from the solution package</td>
+</tr>
+<tr>
+  <td>3.1.10</td>
+  <td>09-09-2026</td>
+  <td>Updated the Okta <strong>Data Connector</strong> to retrieve up to 1000 events per page, throttle initial and paginated requests, and handle HTTP 429 responses using rate-limit-aware retries.</td>
+</tr>
 <tr>
   <td>3.1.9</td>
   <td>30-07-2026</td>

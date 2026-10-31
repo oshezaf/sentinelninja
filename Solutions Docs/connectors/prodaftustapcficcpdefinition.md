@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [PRODAFTUstaPCFI_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Payment%20Card%20Fraud%20Intelligence/Data%20Connectors/PRODAFTUstaPCFI_ccp/PRODAFTUstaPCFI_DCR.json) |
 | **CCF Configuration** | [PRODAFTUstaPCFI_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20Payment%20Card%20Fraud%20Intelligence/Data%20Connectors/PRODAFTUstaPCFI_ccp/PRODAFTUstaPCFI_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#prodaft-usta---payment-card-fraud-intelligence-via-codeless-connector-framework) |
 
 The PRODAFT USTA Payment Card Fraud Intelligence data connector ingests compromised payment-card tickets from the PRODAFT USTA platform into Microsoft Sentinel. Sensitive values are redacted at ingestion: the full card number (PAN) is never stored — only the BIN (first 6), the last 4 digits, the card brand, and the length are retained for triage.
 

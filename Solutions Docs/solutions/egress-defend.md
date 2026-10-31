@@ -1,6 +1,6 @@
-# ⚠️ Egress Defend
+# KnowBe4 Defend Connector for Microsoft Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: Egress Defend*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="Egress Defend Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.1.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2023-07-27 |
+| **Last Updated** | 2026-09-21 |
 | **Solution Folder** | [Egress Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/egress1589289169584.egress-sentinel-defend) · Popularity: 🔵 Medium (54%) |
 
 Egress Defend for Microsoft Sentinel provides details of processed emails, including the type of phishing attack, payload type and information to show if the user interacted with the email in a positive (clicking on banners or submitting the phish sample) or negative (clicking on an unsafe URL) manner.
 

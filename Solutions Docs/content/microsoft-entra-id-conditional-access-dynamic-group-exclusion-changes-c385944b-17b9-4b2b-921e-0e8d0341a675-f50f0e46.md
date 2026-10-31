@@ -14,6 +14,7 @@
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `c385944b-17b9-4b2b-921e-0e8d0341a675` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | PrivilegeEscalation |
 | **Techniques** | T1484 |

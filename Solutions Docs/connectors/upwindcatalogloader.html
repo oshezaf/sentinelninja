@@ -53,6 +53,10 @@
   <td style="text-align:left"><strong>Ingestion API</strong></td>
   <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#upwind-catalog-loader-ingestion-api">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The <strong>Upwind Catalog Loader</strong> data connector ingests compute platform assets from the <a href="https://upwind.io">Upwind</a> cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>
@@ -146,8 +150,8 @@
   <td>Full Resource ID of the Log Analytics workspace (from <strong>Log Analytics workspace → Properties</strong>)</td>
 </tr>
 <tr>
-  <td><code>UpwindThreatLookbackMinutes</code></td>
-  <td><em>(optional, default 90)</em> Lookback window in minutes for threat detections, threat events, threat stories, and configuration findings</td>
+  <td><code>UpwindCatalogSchedule</code></td>
+  <td><em>(optional, default hourly)</em> When the function runs. Each run fetches what changed since the previous scheduled run</td>
 </tr>
 </tbody>
 </table>
@@ -157,6 +161,10 @@
 </blockquote>
 </li>
 </ul>
+<p><strong>3. Updating an existing deployment</strong></p>
+<p>Updating or reinstalling this solution from Content Hub doesn't change the code your Function App runs. To get the latest connector code, click <strong>Deploy to Azure</strong> in Step 2 again and deploy into the same resource group with the same <code>FunctionName</code>. The deployment updates the existing Function App, tables and Data Collection Rule in place.</p>
+<p>The deployment resets the Function App's app settings to the template's values. Note any settings you added or changed yourself (for example <code>KEY_VAULT_URI</code>, <code>UPWIND_SECRET_NAME</code> or <code>UPWIND_FULL_SYNC_INTERVAL_HOURS</code>) and set them again afterwards.</p>
+<p>To confirm the update, check the Function App's logs after the next run: the latest version logs <code>Fetching catalog assets updated since</code> instead of fetching the whole catalog on every run.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

@@ -23,7 +23,7 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (35 columns)
+## Schema (36 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs)
 
@@ -39,6 +39,7 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 | ATContentP | string | Reserved for future use. |
 | ClientAuthMethod | int | Indicates how the client was authenticated. For a public client, the value is 0. If client ID and client secret are used, the value is 1. If a client certificate was used for authentication, the value is 2. |
 | ClientRequestId | string | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
+| ConditionalAccessStatus | string | The Conditional Access status recorded by Microsoft Graph for the request. Empty when no status was recorded. |
 | DeviceId | string | The identifier of the device from which the authentication request originated. |
 | DurationMs | int | The duration of the request in milliseconds. |
 | IdentityProvider | string | The identity provider that authenticated the subject of the token. |

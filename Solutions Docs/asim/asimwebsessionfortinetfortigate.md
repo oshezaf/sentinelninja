@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Fortinet FortiGate |
-| **Parser Version** | 0.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionFortinetFortiGate.md)) |
-| **Last Updated** | Sep 12, 2025 |
+| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionFortinetFortiGate.md)) |
+| **Last Updated** | Oct 28, 2026 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionFortinetFortiGate.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionFortinetFortiGate.yaml) |
 

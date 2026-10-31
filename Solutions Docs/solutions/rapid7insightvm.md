@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
-| **Version** | 3.3.0 |
+| **Version** | 3.3.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
-| **Last Updated** | 2026-07-22 |
+| **Last Updated** | 2026-09-21 |
 | **Solution Folder** | [Rapid7InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-rapid7insightvm) · Popularity: 🔵 Medium (57%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-rapid7insightvm) · Popularity: 🔵 Medium (62%) |
 
 The [Rapid7 Insight platform](https://www.rapid7.com/products/insightvm/) brings together Rapid7’s library of vulnerability research, exploit knowledge, global attacker behavior, Internet-wide scanning data, exposure analytics, and real-time reporting to provide a fully available, scalable, and efficient way to collect your vulnerability data and turn it into answers. InsightVM leverages this platform for live vulnerability and endpoint analytics.
  
@@ -89,6 +89,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.3.1       | 18-09-2026                     | Updated Rapid7InsightVM **CCP data connector** definition to use adjustable QueryWindow. |
 | 3.3.0       | 01-07-2026                     | Updated Rapid7InsightVM **CCP data connector** definition generally available. |
 | 3.2.0       | 05-03-2026                     | Added new Rapid7InsightVM **CCP data connector**                              |
 | 3.1.1       | 05-02-2026                     | Update Az Func packages related to **InsightVMCloudData Connector**            |

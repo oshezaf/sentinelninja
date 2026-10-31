@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-08-11 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Windows Forwarded Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsforwardedevents) · Popularity: 🔵 Medium (67%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsforwardedevents) · Popularity: 🔵 Medium (76%) |
 
 The Windows Forwarded Events solution allows you to ingest all [Windows Event Forwarding](https://docs.microsoft.com/advanced-threat-analytics/configure-event-collection) (WEF) logs from the Windows Servers connected to your Microsoft Sentinel workspace using Azure Monitor Agent (AMA).
 
@@ -71,7 +71,8 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.1       | 10-08-2026                     | Added the missing **Analytical Rule** and cleaned up empty properties.| 
+| 3.2.2       | 20-04-2026                     | Added Defender XDR Custom Detections for all **Analytical Rules**. |
+| 3.0.1       | 10-08-2026                     | Added the missing **Analytical Rule** and cleaned up empty properties.|
 | 3.0.0       | 10-04-2024                     | Updated entity mappings of **Analytical Rule**  |
 
 ---

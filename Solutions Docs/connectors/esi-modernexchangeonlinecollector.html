@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exchange Security Insights Online Collector Azure Monitor &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="exchange-security-insights-online-collector">Exchange Security Insights Online Collector (Azure Monitor)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>ESI-ModernExchangeOnlineCollector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ModernExchangeOnlineCollector_ccf/ESI-ModernExchangeOnlineCollector_connectorDefinition.json">ESI-ModernExchangeOnlineCollector_connectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ModernExchangeOnlineCollector_ccf/ESI-ModernExchangeOnlineCollector_DCR.json">ESI-ModernExchangeOnlineCollector_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ModernExchangeOnlineCollector_ccf/ESI-ModernExchangeOnlineCollector_dataConnector.json">ESI-ModernExchangeOnlineCollector_dataConnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
+  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-online-collector-using-azure-functions">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis using Azure Monitor Ingestion API.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/esiapiexchangeonlineconfig-cl.html"><code>ESIAPIExchangeOnlineConfig_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User   Access Administrator role.</li>
+<li><strong>microsoft.automation/automationaccounts permissions</strong>: Read and write permissions to create an Azure Automation with a Runbook is required. <a href="https://learn.microsoft.com/en-us/azure/automation/overview">See the documentation to learn more about Automation Account</a>.</li>
+<li><strong>Microsoft.Graph permissions</strong>: Group.Read.All, User.Read.All, and AuditLog.Read.All permissions are required to retrieve user and group information linked to Exchange Online assignments. <a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
+<li><strong>Exchange Online permissions</strong>: Exchange.ManageAsApp permission and <strong>Global Reader</strong> or <strong>Security Reader</strong> Role are needed to retrieve the Exchange Online Security Configuration.<a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
+<li><strong>(Optional) Log Storage permissions</strong>: Storage Blob Data Contributor to a storage account linked to the Automation Account Managed identity or an Application ID is mandatory to store logs.<a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
+<p><strong>NOTE - UPDATE</strong></p>
+</blockquote>
+<p>ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>For an existing deployment, update the collector script to version <b>8.0.0.0</b> or later, before switching to the Azure Monitor Log Ingestion API. <br/>See <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI On-Premises Collector Update</a> and <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment'>Upgrade an existing deployment</a>.</br>For detailed documentation for the following steps, refer to the <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md'>Official Documentation</a></p>
+<p><strong>1. STEP 1. Deploy the Azure Monitor connector resources</strong></p>
+<p>This connector enables the Exchange Online collector to send configuration data to Microsoft Sentinel through the Azure Monitor Log Ingestion API.</p>
+<h4 id="automated-azure-monitor-resource-deployment">Automated Azure Monitor resource deployment</h4>
+<p>Selecting <strong>Deploy</strong> creates the Log Analytics table, Data Collection Endpoint (DCE), and Data Collection Rule (DCR). The Azure Automation deployment in the next step creates a system-assigned managed identity and grants it access to the DCR.
+Deploy Exchange Collector Push connector resources</p>
+<p><strong>STEP 2 - Deploy / Updating the Azure Automation collector</strong></p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Before deploying Azure Automation, record the values below. For new deployment, choose your environment display name (this name will be used in the workbooks - remember the table can contain information from several environments), for example <code>Contoso</code>. The deployment adds the <code>-Cloud</code> suffix when needed.</p>
+</blockquote>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint Uri</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Stream Name</strong>: <code>Custom-ESIExchangeOnlineConfig</code></li>
+<li><strong>DataCollectionRuleName</strong>: <code>Retrieve the DCR resource name in the Azure portal by matching the immutable ID shown above.</code></li>
+</ul>
+<p><strong>Option 1 : Deploy the Azure Automation template for a new deployment</strong></p>
+<ol>
+<li><p>Select the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://aka.ms/sentinel-ESI-ExchangeCollector-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
+</li>
+<li><p>Check the subscription, Select the resource group, Check the location.</p>
+</li>
+<li><p>Enter the Automation account name, environment name, tenant ID, DCE URI, DCR immutable ID, and DCR name. To retrieve the DCR name, follow <a href="https://github.com/nlepagnez/Azure-Sentinel/blob/Update-for-Azure-Monitor-API---Beta/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#retrieve-the-dcr-name">Retrieve the DCR name</a>.</p>
+</li>
+<li><p>Select <strong>Review + create</strong>, and then select <strong>Create</strong>.</p>
+</li>
+</ol>
+<p>The template creates the Automation account with a system-assigned managed identity, imports the required modules, deploys the runbook and daily schedule, creates the configuration variables, and assigns the managed identity to the DCR.</p>
+<p><strong>Option 2 : Update an existing Deployment of Azure Automation</strong></p>
+<p>Use the following documentation to update an existing Azure Automation deployment. <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment">Click Here</a></p>
+<p><strong>STEP 3 - Assign Microsoft Graph and Exchange Online permissions to the managed identity (only for new deployment)</strong></p>
+<p>The Automation account managed identity requires application permissions to collect Exchange Online and Microsoft Graph information.
+<strong>Assign Permissions by Script</strong></p>
+<p><strong>A. Download Permission Script</strong></p>
+<p>From a secure machine with the Microsoft Graph modules installed, download the Permission Update script.</p>
+<p>(The script is also located in the CollectExchSecIns.zip file, so if the On-Premises solution is already deployed this modification can be done on this server.)</p>
+<p><a href="https://aka.ms/ESI-ExchangeCollector-Permissions">Permission Update script</a></p>
+<p><strong>B. Retrieve the Azure Automation managed identity object ID</strong></p>
+<p>Open the Automation account, select <strong>Identity</strong>, and copy the managed identity object ID.</p>
+<p><strong>C. Unblock the script and run the script with a Global Administrator account</strong></p>
+<p>Run <code>ExchangeOnlinePermSetup.ps1 -MIIDParam &lt;managed-identity-object-id&gt; -TenantId &lt;tenant-id&gt; -InteractiveAuth</code>. The script requires Microsoft Graph modules and admin consent. It assigns Exchange.ManageAsApp, User.Read.All, Group.Read.All, and AuditLog.Read.All.</p>
+<p><strong>D. Exchange Online Role Assignment. Do not forget this step !</strong></p>
+<ol>
+<li>As a <strong>Global Administrator</strong>, go to <strong>Roles and Administrators</strong>.</li>
+<li>Select <strong>Global Reader</strong> role or <strong>Security Reader</strong> and click to 'Add assignments'.</li>
+<li>Click on 'No member selected' and search your Managed Identity account Name beginning by <strong>the name of your automation account</strong> like 'ESI-Collector'. Select it and click on 'Select'.</li>
+<li>Click <strong>Next</strong> and validate the assignment by clicking <strong>Assign</strong>.</li>
+</ol>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

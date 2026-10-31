@@ -16,23 +16,36 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
-## Schema (11 columns)
+## Schema (22 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v3_net_perf_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| crossings | long |
+| domain | string |
+| host | string |
 | id_orig_h | string |
 | id_orig_p | int |
 | id_resp_h | string |
 | id_resp_p | int |
+| local_entity | bool |
+| max_val | real |
 | path | string |
+| recv_bytes | long |
+| reply_rate | string |
+| sent_bytes | long |
 | system_name | string |
 | TimeGenerated | datetime |
+| total | long |
+| trigger | string |
 | ts | datetime |
 | Type | string |
 | uid | string |
+| window | real |
 | write_ts | datetime |
 
 ## Schema References
@@ -56,6 +69,24 @@ This table is ingested by the following connectors:
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Corelight](../solutions/corelight.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_net_perf](../parsers/corelight-net-perf.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

@@ -1,6 +1,6 @@
 # Analytic Rules - W
 
-**20 analytic rules** starting with 'W'.
+**24 analytic rules** starting with 'W'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -29,6 +29,10 @@
 | [Whisper Security - Newly Registered Domain on Threat ASN](whisper-whisper-security-newly-registered-domain-on-threat-asn-4f80ee8e-901f-538a-8603-cc4b49e80164-36554bf5.md) | High | 📦 [Whisper](../solutions/whisper.md) |
 | [Whisper Security - SPF Record Unauthorized Include Detection](whisper-whisper-security-spf-record-unauthorized-include-detection-9c275139-b554-58f1-b390-8520b10e54ad-e940ac27.md) | High | 📦 [Whisper](../solutions/whisper.md) |
 | [Whisper Security - Tor Exit Node Communication](whisper-whisper-security-tor-exit-node-communication-f5567c93-91de-577a-b35e-c2807715493d-300137d9.md) | Medium | 📦 [Whisper](../solutions/whisper.md) |
+| [WhoisFreaks - burst of newly registered domains](whoisfreaks-whoisfreaks-burst-of-newly-registered-domains-9d79f28f-5d1d-4ca8-b3d3-4ab5f5513e8d-f1b5d916.md) | Low | 📦 [WhoisFreaks](../solutions/whoisfreaks.md) |
+| [WhoisFreaks - high confidence threat domains](whoisfreaks-whoisfreaks-high-confidence-threat-domains-0eb4df70-418e-4f7d-9b5a-cfe35034ec11-010c476d.md) | High | 📦 [WhoisFreaks](../solutions/whoisfreaks.md) |
+| [WhoisFreaks - newly registered domain seen in threat feed](whoisfreaks-whoisfreaks-newly-registered-domain-seen-in-threat-feed-d2deed97-6c0c-4a57-95fd-675d3c6fb949-54db08c2.md) | High | 📦 [WhoisFreaks](../solutions/whoisfreaks.md) |
+| [WhoisFreaks - parked threat domains](whoisfreaks-whoisfreaks-parked-threat-domains-3c6be532-dfa0-42ee-87ea-cf3d9e6772bb-7a1bd3b4.md) | Medium | 📦 [WhoisFreaks](../solutions/whoisfreaks.md) |
 | [Windows Binaries Executed from Non-Default Directory](endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45-75e820c5.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Windows Binaries Lolbins Renamed](endpoint-threat-protection-essentials-windows-binaries-lolbins-renamed-cbf6ad48-fa5c-4bf7-b205-28dbadb91255-7714bcc6.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Windows host username encoded in base64 web request](standalone-content-windows-host-username-encoded-in-base64-web-request-6e715730-82c0-496c-983b-7a20c4590bd9-92229d72.md) | Medium | 📄 Standalone Content |

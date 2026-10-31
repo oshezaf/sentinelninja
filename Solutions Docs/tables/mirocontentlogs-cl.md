@@ -17,7 +17,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (12 columns)
+## Schema (15 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro%5CData%20Connectors%5CMiroContentLogs_CCF/MiroContentLogs_Table.json)
 
@@ -25,9 +25,12 @@
 |:------------|:-----|:------------|
 | actionTime | datetime | Timestamp when the action was performed |
 | actionType | string | Type of action performed (create, update, delete, etc.) |
+| actor | dynamic | User who performed the action, as returned by the API, in JSON format |
 | actor_email | string | Email address of the user who performed the action |
 | actor_id | string | Unique identifier of the user who performed the action |
 | actor_name | string | Name of the user who performed the action |
+| ai | dynamic | AI-related information about the action, as returned by the API, in JSON format |
+| ai_assisted | bool | Whether the action was performed with AI assistance (ai.assisted) |
 | contentId | string | Unique identifier of the content affected |
 | id | string | Unique identifier of the content log event |
 | itemId | string | Unique identifier of the item affected |

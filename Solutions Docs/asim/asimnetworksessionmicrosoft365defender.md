@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | M365 Defender for Endpoint |
-| **Parser Version** | 0.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoft365Defender.md)) |
-| **Last Updated** | May 1st 2023 |
+| **Parser Version** | 0.4.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoft365Defender.md)) |
+| **Last Updated** | Sep 24, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionMicrosoft365Defender.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionMicrosoft365Defender.yaml) |
 
@@ -43,6 +43,7 @@ This parser reads from the following tables:
 
 - [ASIM Network Session Schema](https://aka.ms/ASimNetworkSessionDoc)
 - [ASIM](https:/aka.ms/AboutASIM)
+- [Defender for Endpoint device discovery network events](https://learn.microsoft.com/en-us/defender-endpoint/assess-devices#query-network-related-information)
 
 ---
 

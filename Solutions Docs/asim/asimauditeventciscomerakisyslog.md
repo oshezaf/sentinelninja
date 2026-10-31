@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventCiscoMerakiSyslog` |
 | **Built-in Parser** | `_ASim_AuditEvent_CiscoMerakiSyslog` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco Meraki |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoMerakiSyslog.md)) |
-| **Last Updated** | Jun 11, 2024 |
+| **Parser Version** | 0.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoMerakiSyslog.md)) |
+| **Last Updated** | Oct 6, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventCiscoMerakiSyslog.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventCiscoMerakiSyslog.yaml) |
 

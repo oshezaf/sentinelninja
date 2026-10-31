@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AWS VPC |
-| **Parser Version** | 0.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAWSVPC.md)) |
-| **Last Updated** | Dec 11, 2022 |
+| **Parser Version** | 0.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAWSVPC.md)) |
+| **Last Updated** | Oct 2, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionAWSVPC.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionAWSVPC.yaml) |
 

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-01-12 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Ubiquiti UniFi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (87%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Ubiquiti UniFi](https://www.ui.com/) solution provides the capability to ingest [Ubiquiti UniFi firewall, dns, ssh, AP events](https://help.ui.com/hc/articles/204959834-UniFi-How-to-View-Log-Files) into Microsoft Sentinel.
@@ -142,6 +142,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 |-------------|--------------------------------|---------------------------------------------------------------------------|
+| 3.2.2       | 21-10-2026                     | Added **Defender XDR Custom Detections** (10, migrated from the Analytic Rules) and **Defender XDR Workbook** (migrated from Ubiquiti workbook); V3.1 packaging. |
 | 3.0.4       | 17-12-2025                     | Updated UbiquitiAuditEvent **parser** for new log format.                 |
 | 3.0.3       | 04-12-2024                     | Removed Deprecated **Data Connector**                                     |
 | 3.0.2       | 09-08-2024                     | Deprecating data connectors                                               |

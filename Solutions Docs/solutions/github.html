@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.5.1</td>
+  <td style="text-align:left">3.5.4</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-27</td>
+  <td style="text-align:left">2026-10-29</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,23 +68,17 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github">Azure Marketplace</a> · Rating: ★★☆☆☆ 2.3/5 (3 ratings) · Popularity: 🟢 High (83%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1622712991604.sentinel4github">Azure Marketplace</a> · Rating: ★★☆☆☆ 2.3/5 (3 ratings) · Popularity: 🔵 Medium (77%)</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://github.com/">GitHub</a> Solution for Microsoft Sentinel enables you to easily ingest events and logs from GitHub to Microsoft Sentinel using GitHub audit log API and  webhooks. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.</p>
+<p>The <a href="https://github.com/">GitHub</a> Enterprise Audit Log solution for Microsoft Sentinel enables you to ingest GitHub Audit Logs into Microsoft Sentinel using the GitHub Enterprise Audit Log API, to view the data in Workbooks, query it to create custom alerts, and improve your investigation process. The solution also includes 13 XDR Detection rules for Microsoft Defender XDR.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
-<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<ol>
-<li><p><a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Framework (CCF) (used in GitHub Enterprise Audit Log data connector)</a></p>
-</li>
-<li><p><a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions </a></p>
-</li>
-</ol>
-<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of "GitHubAuditDefinitionV2" (via Codeless Connector Framework). This connector is build on the Codeless Connector Framework (CCF), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://aka.ms/Sentinel-Logs_migration' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCF-based data connectors also support <a href='https://aka.ms/Sentinel-DCR_Overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
-
-<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
-
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs</p>
+<ul>
+<li><a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></li>
+<li><a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></li>
+</ul>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -392,6 +386,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.5.4</td>
+  <td>28-10-2026</td>
+  <td>Migrated 13 <strong>Analytic Rules</strong> to Microsoft Defender XDR <strong>Custom Detections</strong> and packaged V3.1 solution.</td>
+</tr>
+<tr>
+  <td>3.5.3</td>
+  <td>15-10-2026</td>
+  <td>Added CCF rate-limit and Azure Storage migration guidance, clarified the Azure Government Blob streaming limitation in both audit connectors, and updated Azure Storage setup guidance. Documented Webhooks V1's Azure Government limitation and migration to V2; added automatic Azure Government authentication selection, deployment guidance, and an updated Function package for GitHub Webhooks V2, with connector metadata version 1.0.2.</td>
+</tr>
+<tr>
+  <td>3.5.2</td>
+  <td>15-09-2026</td>
+  <td>Added new audit fields in the CCF and Azure Storage connectors while preserving existing output column names and types, providing shared documentation for the schema of V2 and V3 tables. Enabled system-assigned identity on new and existing Event Grid topics while preserving existing principals, tags, and attached user-assigned identities; Added Create/Use existing sender-permission choices.</td>
+</tr>
 <tr>
   <td>3.5.1</td>
   <td>13-08-2026</td>

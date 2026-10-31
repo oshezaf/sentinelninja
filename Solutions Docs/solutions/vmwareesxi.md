@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.6 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-12 |
-| **Last Updated** | 2026-01-07 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [VMWareESXi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwareesxi) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vmwareesxi) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (86%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The VMware ESXi solution for Microsoft Sentinel enables you to ingest VMWare ESXi logs into Microsoft Sentinel.
@@ -127,7 +127,8 @@ This solution includes **26 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                     |
 |-------------|--------------------------------|------------------------------------------------------------------------|
-| 3.0.6       | 04-01-2026                     | Remove broken VMware ESXi link                                         |
+| 3.2.2       | 22-10-2026                     | Added Microsoft Defender XDR **Custom Detections** and **Workbook** migration support. |
+| 3.0.6       | 25-09-2026                     | Remove broken VMware ESXi link. <br>  Update outdated API versions.    |
 | 3.0.5       | 03-11-2025                     | Added new **Analytic Rule** (VMware ESXi - Root change password) and (VMware ESXi - Multiple Failed SSH Login)      |
 | 3.0.4       | 09-10-2025                     | Added new **Analytic Rule** (VMware ESXi - SSH Enable on ESXi Host)    |
 | 3.0.3       | 02-12-2024                     | Removed Deprecated **Data connectors**                                 |

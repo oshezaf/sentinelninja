@@ -20,15 +20,15 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetworkCustomAnalyticsV1_CL`](../tables/networkcustomanalyticsv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_countryV1_CL`](../tables/networkcustomanalytics-countryv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_ipV1_CL`](../tables/networkcustomanalytics-ipv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_protocolV1_CL`](../tables/networkcustomanalytics-protocolv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_ruleV1_CL`](../tables/networkcustomanalytics-rulev1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_sourceInfoV1_CL`](../tables/networkcustomanalytics-sourceinfov1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_source_portV1_CL`](../tables/networkcustomanalytics-source-portv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_threatV1_CL`](../tables/networkcustomanalytics-threatv1-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_threat_iocV1_CL`](../tables/networkcustomanalytics-threat-iocv1-cl.md) | ? | ✓ | ? |
+| [`NetworkCustomAnalyticsV1_CL`](../tables/networkcustomanalyticsv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_countryV1_CL`](../tables/networkcustomanalytics-countryv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_ipV1_CL`](../tables/networkcustomanalytics-ipv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_protocolV1_CL`](../tables/networkcustomanalytics-protocolv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_ruleV1_CL`](../tables/networkcustomanalytics-rulev1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_sourceInfoV1_CL`](../tables/networkcustomanalytics-sourceinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_source_portV1_CL`](../tables/networkcustomanalytics-source-portv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_threatV1_CL`](../tables/networkcustomanalytics-threatv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_threat_iocV1_CL`](../tables/networkcustomanalytics-threat-iocv1-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Logic App Connectors
 

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 113 |
-| **Solutions** | 28 |
+| **Playbooks using** | 92 |
+| **Solutions** | 27 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
 
 ## Playbooks Using This Connector
@@ -27,6 +27,8 @@
 | [AD4IoT-MailByProductionLine](../content/github-only-ad4iot-mailbyproductionline-fdc303b5.md) | 🔗 GitHub Only | 0 | 1 |
 | [AD4IoT-SendEmailtoIoTOwner](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 1 |
 | [ADX-health-playbook](../content/github-only-adx-health-playbook-8c510171.md) | 🔗 GitHub Only | 1 | 2 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Submit File to Blob](../content/anyrun-any.run-submit-file-to-blob-dfc44a99.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
 | [AS-CrowdstrikeAlerts-Integration](../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.md) | 📄 Standalone | 1 | 1 |
 | [AS-Datadog-Events-Integration](../content/standalone-content-as-datadog-events-integration-d8009708.md) | 📄 Standalone | 1 | 1 |
 | [AS-Incident-IP-Matched-on-Watchlist](../content/standalone-content-as-incident-ip-matched-on-watchlist-699c484a.md) | 📄 Standalone | 1 | 1 |
@@ -34,7 +36,6 @@
 | [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone | 1 | 1 |
 | [Censys Alert Rescan](../content/censys-censys-alert-rescan-19e1ad3a.md) | [Censys](../solutions/censys.md) | 1 | 2 |
 | [Censys Rescan](../content/censys-censys-rescan-51275b90.md) | [Censys](../solutions/censys.md) | 1 | 1 |
-| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 1 |
 | [CiscoISE-False Positives Clear Policies](../content/cisco-ise-ciscoise-false-positives-clear-policies-6ccdd088.md) | [Cisco ISE](../solutions/cisco-ise.md) | 1 | 1 |
 | [CiscoSDWANReport](../content/cisco-sd-wan-ciscosdwanreport-0a3a1816.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | 1 | 6 |
 | [Close-Incident-MCAS](../content/standalone-content-close-incident-mcas-e13fac57.md) | 📄 Standalone | 1 | 1 |
@@ -59,28 +60,6 @@
 | [Get-SOC-Actions](../content/soc-process-framework-get-soc-actions-287c5e40.md) | [SOC-Process-Framework](../solutions/soc-process-framework.md) | 1 | 1 |
 | [Get-SOCActions](../content/standalone-content-get-socactions-1f82e832.md) | 📄 Standalone | 1 | 1 |
 | [Get-SOCTasks](../content/standalone-content-get-soctasks-656adbd9.md) | 📄 Standalone | 1 | 3 |
-| [GIBTIA_APT_ThreatActor](../content/group-ib-gibtia-apt-threatactor-190ca81b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_APT_Threats](../content/group-ib-gibtia-apt-threats-0bf2e06a.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Attacks_ddos](../content/group-ib-gibtia-attacks-ddos-676a7f45.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Attacks_deface](../content/group-ib-gibtia-attacks-deface-0571809a.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Attacks_phishing](../content/group-ib-gibtia-attacks-phishing-05e0bef0.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Attacks_phishing_kit](../content/group-ib-gibtia-attacks-phishing-kit-176cf63b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_BP_phishing](../content/group-ib-gibtia-bp-phishing-1f9bfeff.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_BP_phishing_kit](../content/group-ib-gibtia-bp-phishing-kit-0f993020.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Compromised_account](../content/group-ib-gibtia-compromised-account-12e40e7c.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Compromised_card](../content/group-ib-gibtia-compromised-card-4873e37b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Compromised_imei](../content/group-ib-gibtia-compromised-imei-1e238983.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Compromised_mule](../content/group-ib-gibtia-compromised-mule-500b5f08.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_HI_Threat](../content/group-ib-gibtia-hi-threat-bfac31e2.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_HI_Threat_Actor](../content/group-ib-gibtia-hi-threat-actor-2c1acd08.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Malware_cnc](../content/group-ib-gibtia-malware-cnc-4702dbee.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Malware_Targeted_Malware](../content/group-ib-gibtia-malware-targeted-malware-ece0af42.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_OSI_GitLeak](../content/group-ib-gibtia-osi-gitleak-631460d0.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_OSI_PublicLeak](../content/group-ib-gibtia-osi-publicleak-70bc2712.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_OSI_Vulnerability](../content/group-ib-gibtia-osi-vulnerability-abc46184.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Suspicious_ip_open_proxy](../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Suspicious_ip_socks_proxy](../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
-| [GIBTIA_Suspicious_ip_tor_node](../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 1 | 2 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 1 | 5 |
 | [Incident Assignment Shifts](../content/sentinelsoaressentials-incident-assignment-shifts-da9095cc.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) | 1 | 1 |

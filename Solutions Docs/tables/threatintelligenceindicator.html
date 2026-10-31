@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -407,7 +407,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator">ThreatIntelligenceIndicator Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (24)</h2>
+<h2 id="solutions">Solutions (23)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a></li>
@@ -416,7 +416,6 @@
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a></li>
 <li><a href="../solutions/gitlab.html">GitLab</a></li>
-<li><a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></li>
 <li><a href="../solutions/infoblox.html">Infoblox</a></li>
 <li><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></li>
 <li><a href="../solutions/lastpass-enterprise-activity-monitoring.html">Lastpass Enterprise Activity Monitoring</a></li>
@@ -468,8 +467,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (99)</h2>
-<h3 id="analytic-rules">Analytic Rules (72)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (94)</h2>
+<h3 id="analytic-rules">Analytic Rules (67)</h3>
 <p><strong>In solution <a href="../solutions/gitlab.html">GitLab</a>:</strong></p>
 <table>
 <thead>
@@ -481,37 +480,6 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/gitlab-gitlab-ti-connection-from-malicious-ip-7241740a-5280-4b74-820a-862312d721a8-aca76b78.html">GitLab - TI - Connection from Malicious IP</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.html">GreyNoise TI Map IP Entity to CommonSecurityLog</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.html">GreyNoise TI Map IP Entity to DnsEvents</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.html">GreyNoise TI Map IP Entity to SigninLogs</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-network-session-events-asim-network-session-sc-536e8e5c-ce0e-575e-bcc9-aba8e7bf9316-294d0914.html">GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-officeactivity-c51628fe-999c-5150-9fd7-660fc4f58ed2-a0b3d699.html">GreyNoise TI map IP entity to OfficeActivity</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -1174,7 +1142,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem !contains &quot;Luminar&quot;</code><br><code>SourceSystem contains &quot;Luminar&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1190,7 +1158,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem !contains &quot;Luminar&quot;</code><br><code>SourceSystem contains &quot;Luminar&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1237,7 +1205,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
+  <td style="text-align:left"><code>!contains Luminar</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Luminar</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1261,15 +1237,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains Luminar</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>contains Luminar</code></td>
+  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

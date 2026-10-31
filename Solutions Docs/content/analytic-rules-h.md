@@ -1,6 +1,6 @@
 # Analytic Rules - H
 
-**21 analytic rules** starting with 'H'.
+**22 analytic rules** starting with 'H'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -27,6 +27,7 @@
 | [High-Risk Cross-Cloud User Impersonation](multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
 | [Highly Sensitive Password Accessed](lastpass-enterprise-activity-monitoring-highly-sensitive-password-accessed-b39e6482-ab7e-4817-813d-ec910b64b26e-7f4d83e0.md) | Medium | 📦 [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
 | [Hijack Execution Flow - DLL Side-Loading](falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
+| [HoneyForge - Deception Sensor Interaction](honeyforge-honeyforge-deception-sensor-interaction-bb3b1339-c1fa-473a-8663-3fea78c2e7e2-edbcbf31.md) | High | 📦 [HoneyForge](../solutions/honeyforge.md) |
 | [HoneyLabs TI Map IP Entity to CommonSecurityLog](honeylabs-honeylabs-ti-map-ip-entity-to-commonsecuritylog-c7061f05-d0ed-40e1-862e-bc52e454e3a1-fbc903ca.md) | Medium | 📦 [HoneyLabs](../solutions/honeylabs.md) |
 | [HoneyLabs TI Map IP Entity to Network Session (ASIM)](honeylabs-honeylabs-ti-map-ip-entity-to-network-session-asim-5d3a1c77-2b40-4e6c-9f2d-71c0a8e4b912-19be299e.md) | Medium | 📦 [HoneyLabs](../solutions/honeylabs.md) |
 | [HoneyLabs TI Map IP Entity to SigninLogs](honeylabs-honeylabs-ti-map-ip-entity-to-signinlogs-a573396f-06ed-4139-bccc-e0f88a2cf625-0baeb445.md) | Medium | 📦 [HoneyLabs](../solutions/honeylabs.md) |

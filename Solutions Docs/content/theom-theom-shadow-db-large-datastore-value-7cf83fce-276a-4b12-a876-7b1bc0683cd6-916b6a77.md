@@ -6,7 +6,7 @@
 
 ---
 
-Creates Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0035 (Theom has observed shadow (or clone) databases/tables with large financial value. As per this requirement, use this information to apply data access control lists or access permissions and enforce data retention policies)
+Creates Microsoft Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0035 (Theom has observed shadow (or clone) databases/tables with large financial value. As per this requirement, use this information to apply data access control lists or access permissions and enforce data retention policies)
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

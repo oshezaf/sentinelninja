@@ -10,17 +10,17 @@
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **4** |
-| Active | 3 |
+| Total Connectors | **6** |
+| Active | 4 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 1 |
+| Unpublished ⚠️ | 2 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 4 |
-| **Total** | **4** |
+| [Azure Function](../methods/azure-function.md) | 6 |
+| **Total** | **6** |
 
 ## Connectors Using This API
 
@@ -30,6 +30,8 @@
 |:----------|:------------------|:----------|:------:|:---------|
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | [Azure Function](../methods/azure-function.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | [Azure Function](../methods/azure-function.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [Menlo Security](../connectors/menlosecurityconnector.md) | [Azure Function](../methods/azure-function.md) | Menlo Security | 3 | [MenloSecurity](../solutions/menlosecurity.md) |
+| [Microsoft Defender XDR (XdrLogRaider)](../connectors/xdrlograiderdefenderxdr.md) ⚠️ | [Azure Function](../methods/azure-function.md) | Alex Kefallonitis | 11 | [XdrLogRaider](../solutions/xdrlograider.md) |
 | [Wiz](../connectors/wiz.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Wiz | 6 | [Wiz](../solutions/wiz.md) |
 | [Wiz for Microsoft Sentinel](../connectors/wizsentinel.md) | [Azure Function](../methods/azure-function.md) | Wiz | 3 | [Wiz](../solutions/wiz.md) |
 

@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [VMware vCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vcenter) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vcenter) · Popularity: 🟢 High (87%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html) solution allows you ingest logs from your vCenter platform using Syslog into Microsoft Sentinel.
@@ -116,6 +117,7 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.2       | 22-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbook** for VMware vCenter.  |
 | 3.0.5       | 13-06-2025                     | Updating **Parser** to improve data parsing logic and adjusts entity mappings.  |
 | 3.0.4       | 03-12-2024                     | Removed Deprecated **Data Connector**.       |
 | 3.0.3       | 18-11-2024                     | Modified **Parser** vCenter.yaml for better parsing.                 |

@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://upwind.io](https://upwind.io) |
 | **Categories** | Security - Cloud Security,IT Operations |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Upwind - support@upwind.io |
 | **First Published** | 2026-03-10 |
-| **Last Updated** | 2026-08-20 |
+| **Last Updated** | 2026-10-21 |
 | **Solution Folder** | [Upwind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader) · Popularity: 🔵 Medium (77%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader) · Popularity: 🔵 Medium (67%) |
 
 The **Upwind Catalog Loader** solution ingests inventory/catalog assets, vulnerability findings, threat detections, threat events, threat stories, and configuration findings from the [Upwind](https://upwind.io) cloud security platform into Microsoft Sentinel custom tables using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 
@@ -72,30 +72,13 @@ Microsoft Sentinel data connector that ingests data from **six Upwind API endpoi
 
 | Dataset | Upwind endpoint | Sync style | Destination table |
 |---|---|---|---|
-| Inventory / catalog assets (all categories) | `POST /v2/organizations/{orgId}/inventory/catalog/assets/search` | Full current-state snapshot | `UpwindCatalogAssets_CL` |
-| Vulnerability findings | `GET /v1/organizations/{orgId}/vulnerability-findings` | Full current-state snapshot | `UpwindVulnerabilityFindings_CL` |
-| Threat detections | `GET /v1/organizations/{orgId}/threat-detections` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatDetections_CL` |
-| Threat events | `GET /v1/organizations/{orgId}/threat-events` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatEvents_CL` |
-| Threat stories | `POST /v2/organizations/{orgId}/threats/stories/search` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindThreatStories_CL` |
-| Configuration (posture) findings | `POST /v2/organizations/{orgId}/configurations/findings/search` | Time-windowed (`UpwindThreatLookbackMinutes`) | `UpwindConfigurationFindings_CL` |
+| Inventory / catalog assets (all categories) | `POST /v2/organizations/{orgId}/inventory/catalog/assets/search` | Time-windowed by last update | `UpwindCatalogAssets_CL` |
+| Vulnerability findings | `GET /v1/organizations/{orgId}/vulnerability-findings` | Time-windowed by first seen | `UpwindVulnerabilityFindings_CL` |
+| Threat detections | `GET /v1/organizations/{orgId}/threat-detections` | Time-windowed | `UpwindThreatDetections_CL` |
+| Threat events | `GET /v1/organizations/{orgId}/threat-events` | Time-windowed | `UpwindThreatEvents_CL` |
+| Threat stories | `POST /v2/organizations/{orgId}/threats/stories/search` | Time-windowed | `UpwindThreatStories_CL` |
+| Configuration (posture) findings | `POST /v2/organizations/{orgId}/configurations/findings/search` | Time-windowed | `UpwindConfigurationFindings_CL` |
 
-The two full-snapshot datasets (inventory assets, vulnerability findings) represent Upwind's *current* state and are re-pulled in full on every run. The four time-windowed datasets pull everything seen/updated in the last `UpwindThreatLookbackMinutes` (default 90) — set that comfortably larger than `UpwindCatalogSchedule`'s interval so nothing is missed between runs; overlap just produces harmless duplicate rows.
-
-> **Note:** `title` and `type` are reserved/invalid column names for Log Analytics custom tables, so the four affected datasets (threat detections, threat events, threat stories, configuration findings) rename them to `title_text` and `event_type` before upload.
-
-## Folder structure
-
-```
-UpwindCatalogLoader/
-├── SolutionMetadata.json
-├── ReleaseNotes.md
-├── Data/
-│   └── Solution_UpwindCatalogLoader.json
-├── Package/
-│   ├── 1.0.0.zip                    <- Sentinel content hub package
-│   ├── createUiDefinition.json
-│   ├── mainTemplate.json
-│   └── testParameters.json
 
 *[Content truncated...]*
 
@@ -103,6 +86,7 @@ UpwindCatalogLoader/
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                 |
 |-------------|--------------------------------|------------------------------------------------------------------------------------|
+| 3.0.4       | 21-10-2026                     | Added instructions for updating an existing deployment to the data connector page, and replaced the retired `UpwindThreatLookbackMinutes` parameter with `UpwindCatalogSchedule`. Connector code since 3.0.3: each run fetches only what changed in its time window and stays inside the Function App timeout, with a periodic full catalog sync, and vulnerability findings fill the `exploitable`, `internet_exposure`, `fix`, `fix_available`, `image_name` and `status` columns. To get it, redeploy the Function App with **Deploy to Azure**. |
 | 3.0.3       | 28-07-2026                     | Expanded ingestion from 1 to 6 Upwind API endpoints, fixed asset ingestion and deployment issues, enabled cross-resource-group Log Analytics support, and resolved custom-table schema conflicts by renaming reserved columns. |
 | 3.0.2       | 28-04-2026                     | Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment. |
 | 3.0.1       | 12-04-2026                     | Updated **SolutionMetadata** publisherId to align the solution package metadata with publisher validation requirements. |

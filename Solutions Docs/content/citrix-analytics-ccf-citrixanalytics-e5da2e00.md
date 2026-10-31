@@ -18,12 +18,12 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CitrixAnalytics_CVAD_Events_V1_CL`](../tables/citrixanalytics-cvad-events-v1-cl.md) |  | ✓ | ✓ | ✓ |
-| [`CitrixAnalytics_SPA_Events_V1_CL`](../tables/citrixanalytics-spa-events-v1-cl.md) |  | ✓ | ✓ | ✓ |
-| [`CitrixAnalytics_indicatorEventDetails_V1_CL`](../tables/citrixanalytics-indicatoreventdetails-v1-cl.md) |  | ✓ | ✓ | ✓ |
-| [`CitrixAnalytics_indicatorSummary_V1_CL`](../tables/citrixanalytics-indicatorsummary-v1-cl.md) |  | ✓ | ✓ | ✓ |
-| [`CitrixAnalytics_riskScoreChange_V1_CL`](../tables/citrixanalytics-riskscorechange-v1-cl.md) |  | ✓ | ✓ | ✓ |
-| [`CitrixAnalytics_userProfile_V1_CL`](../tables/citrixanalytics-userprofile-v1-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CitrixAnalytics_CVAD_Events_V1_CL`](../tables/citrixanalytics-cvad-events-v1-cl.md) |  | ? | ✓ | ? |
+| [`CitrixAnalytics_SPA_Events_V1_CL`](../tables/citrixanalytics-spa-events-v1-cl.md) |  | ? | ✓ | ? |
+| [`CitrixAnalytics_indicatorEventDetails_V1_CL`](../tables/citrixanalytics-indicatoreventdetails-v1-cl.md) |  | ? | ✓ | ? |
+| [`CitrixAnalytics_indicatorSummary_V1_CL`](../tables/citrixanalytics-indicatorsummary-v1-cl.md) |  | ? | ✓ | ? |
+| [`CitrixAnalytics_riskScoreChange_V1_CL`](../tables/citrixanalytics-riskscorechange-v1-cl.md) |  | ? | ✓ | ? |
+| [`CitrixAnalytics_userProfile_V1_CL`](../tables/citrixanalytics-userprofile-v1-cl.md) |  | ? | ✓ | ? |
 
 ---
 

@@ -14,6 +14,7 @@ A Conditional Access Device platforms condition has changed (the Device platform
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `e3368079-a2c0-4f1c-9fb7-287e907393ef` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562.007 |

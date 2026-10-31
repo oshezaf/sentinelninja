@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -50,8 +42,9 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (17 columns)</h2>
+<h2 id="schema">Schema (34 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyberArk_AuditEvents_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -61,6 +54,22 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left">_ItemId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">accessMethod</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">accountName</td>
+  <td style="text-align:left">string</td>
+</tr>
 <tr>
   <td style="text-align:left">action</td>
   <td style="text-align:left">string</td>
@@ -82,6 +91,22 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">cloudAssets</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudIdentities</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProvider</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudWorkspacesAndRoles</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">command</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -90,11 +115,27 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">correlationId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">customData</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">CyberArkTenantId</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">identityType</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">message</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">safe</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -114,6 +155,18 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">targetAccount</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">targetPlatform</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
 </tr>
@@ -122,11 +175,19 @@
   <td style="text-align:left">int</td>
 </tr>
 <tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">userId</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">username</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">uuid</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>
@@ -183,6 +244,26 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/cyberarkaudit-idira-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-a246971b.html">Idira - Sensitive Safe/Permission/Entitlement Changes (with customData)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="asim-parsers">ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../asim/asimauthenticationcyberarkaudit.html">ASimAuthenticationCyberArkAudit</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">CyberArk Audit</td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

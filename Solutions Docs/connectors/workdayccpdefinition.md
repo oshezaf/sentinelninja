@@ -18,7 +18,7 @@
 | **DCR Definition Files** | [Workday_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday/Data%20Connectors/Workday_ccp/Workday_DCR.json) |
 | **CCF Configuration** | [Workday_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday/Data%20Connectors/Workday_ccp/Workday_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#workday-user-activity) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#workday-user-activity-via-codeless-connector-framework) |
 
 The [Workday](https://www.workday.com/) User Activity data connector provides the capability to ingest User Activity Logs from [Workday API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging) into Microsoft Sentinel.
 
@@ -44,41 +44,49 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-**1. Connect Workday to Microsoft Sentinel**
+**1. Environment identification**
+
+Understand how Workday environments are identified in collected records
+Only records collected after this connector update include the Workday environment in `AdditionalFields.WorkdayDomain`. Existing records are not updated.
+### Updating an existing connector
+
+Before deploying this updated template in a workspace that already has the Workday connector installed:
+
+1. Disconnect all existing Workday connector connections.
+2. Remove the existing Workday connector connections from **Data connectors**.
+3. Remove the installed Workday solution from **Content hub**.
+4. Delete the existing `workdayDCR` data collection rule from the workspace resource group.
+5. Deploy the updated connector template.
+6. Recreate and reconnect each Workday connection.
+
+Existing data in `ASimAuditEventLogs` remains unchanged. Only records collected after the updated connector is deployed and reconnected include `AdditionalFields.WorkdayDomain`.
+Use the following query to summarize Workday logs by environment. Historical records without an environment value are grouped as `Unknown - record collected before environment tracking`.
+
+```kusto
+ASimAuditEventLogs
+| where EventProduct == "Workday"
+| extend WorkdayDomain = tostring(AdditionalFields.WorkdayDomain)
+| extend WorkdayEnvironment = iff(isempty(WorkdayDomain), "Unknown - record collected before environment tracking", WorkdayDomain)
+| summarize EventCount = count() by WorkdayEnvironment
+```
+
+**2. Connect Workday to Microsoft Sentinel**
 
 1) In Workday, access the "Edit Tenant Setup - Security" task, verify "OAuth 2.0 Settings" section, make sure that the "OAuth 2.0 Clients Enabled" check box is ticked. 
 2) In Workday, access the "Edit Tenant Setup - System" task, verify "User Activity Logging" section, make sure that the "Enable User Activity Logging" check box is ticked. 
 3) In Workday, access the "Register API Client" task.
 4) Define the Client Name, select the "Client Grant Type": "Authorization Code Grant" and then select "Access Token Type": "Bearer"
 5) Enter the "Redirection URI" found in the form below 
-6) In section "Scope (Functional Areas)", select "System" and click OK at the bottom. 
+6) In section "Scope (Functional Areas)", select the appropriate scope for the user activity and click OK at the bottom select "System" and click OK at the bottom 
 7) Copy the Client ID and Client Secret before navigating away from the page, and store it securely. 
-8) In Sentinel, in the connector page - provide required Token, Authorization and User Activity Endpoints, along with Client ID and Client Secret from previous step. Then click "Connect". You can find the exact endpoint values in the "View API Clients" report in your Workday tenant; the host differs per environment (for example, wd3-impl-services1.workday.com for implementation tenants and services1.myworkday.com for production tenants). 
+8) In Sentinel, in the connector page - provide required Token, Authorization and User Activity Endpoints, along with Client ID and Client Secret from previous step. Then click "Connect". 
 9) A Workday pop up will appear to complete the OAuth2 authentication and authorization of the API client. Here you need to provide credentials for Workday account with "System Auditing" permissions in Workday (can be either Workday account or Integration System User). 
 10) Once that's complete, the message will be displayed to authorize your API client
-- **Connection Alias**: Production or Impl
+**Make sure to use the accurate redirect URI in the workday configuration page, as found in the form below.**
 
-ℹ️ Enter a unique alias to identify this Workday connection. **Important**: Use different aliases for each tenant/domain. To update an existing connection, use the same alias or delete and recreate it.
-- **Query interval (in minutes)** (select)
-  - 5
-  - 10
-  - 15
-  - 20
-  - 30
-  - ... and 1 more options
-- **Page size (records per request)** (select)
-  - 100
-  - 250
-  - 500
-  - 750
-  - 1000
-- **Token Endpoint**: Example, https://{workdayServicesHost}/ccx/oauth2/{tenantName}/token
-- **Authorization Endpoint**: Example, https://{workdayHost}/{tenantName}/authorize
-- **User Activity Logs Endpoint (ends with /activityLogging)**: Example, https://{workdayServicesHost}/ccx/api/privacy/v1/{tenantName}/activityLogging
-- **OAuth Configuration**:
-  - Client ID
-  - Client Secret
-  - Click 'Connect' to authenticate
+**3. Manage Workday Connections**
+
+Add, view, and delete Workday connections
 **Connector Management Interface**
 
 This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
@@ -93,6 +101,34 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
 
 > 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Configure API Connection**
+
+*Connect to Workday to ingest data*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+*Base Configuration*
+
+- **Connection Alias** (required): Production or Impl
+- **Query interval (in minutes)** (required): Select from available options
+  - 5
+  - 10
+  - 15
+  - 20
+  - 30
+  - ... and 1 more options
+- **Page size (records per request)** (required): Select from available options
+  - 100
+  - 250
+  - 500
+  - 750
+  - 1000
+- **Token Endpoint** (required): Example, https://wd3-impl-services1.workday.com/ccx/oauth2/{tenantName}/token
+- **Authorization Endpoint** (required): Example, https://wd3-impl.workday.com/{tenantName}/authorize
+- **User Activity Logs Endpoint (ends with /activityLogging)** (required): https://wd2-impl-services1.workday.com/ccx/api/privacy/v1/{tenantName}/activityLogging
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

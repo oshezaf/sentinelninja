@@ -6,7 +6,7 @@
 
 ---
 
-Network connection and related events
+Reference for DeviceNetworkEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Network connection and related events
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table) |
 
 ## Contents
 
@@ -90,7 +89,6 @@ Network connection and related events
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceNetworkEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkevents)
-- [DeviceNetworkEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table)
 
 ## Solutions (13)
 
@@ -120,7 +118,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (164)
+## Content Items Using This Table (165)
 
 ### Analytic Rules (20)
 
@@ -230,7 +228,7 @@ This table is ingested by the following connectors:
 | [Connection to Rare DNS Hosts](../content/github-only-connection-to-rare-dns-hosts-402b16b9-b41d-477a-9e24-78fc1acdd051-df8eea59.md) | `RemoteUrl contains "."` |
 | [Connectivity Failures by Device](../content/github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) | `ActionType == "ConnectionFailed"` |
 | [Connectivity Failures by Domain](../content/github-only-connectivity-failures-by-domain-a4f7b0f0-93ad-47c9-bcce-dc08d8d04818-85ff7bc9.md) | `ActionType == "ConnectionFailed"` |
-| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) |  |
+| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Defender for Endpoint Telemetry](../content/github-only-defender-for-endpoint-telemetry-676912f9-0e47-4599-889a-7b90a3542382-0dc352d3.md) |  |
 | [Detect Azure RemoteIP](../content/github-only-detect-azure-remoteip-a883cf6b-52dd-480a-8581-4e5774fc9002-22a2d883.md) |  |
 | [DetectTorrentUse](../content/github-only-detecttorrentuse-4011047d-6a0b-4ef0-bf62-d3eda0784e15-6cbb16d4.md) | `InitiatingProcessFileName contains "azureus"`<br>`InitiatingProcessFileName has "torrent"`<br>`InitiatingProcessFileName has "vuze"`<br>`RemoteUrl endswith ".tor"`<br>`RemoteUrl has "azureus"`<br>`RemoteUrl has "torrent"`<br>`RemoteUrl has "vuze"` |
@@ -239,7 +237,7 @@ This table is ingested by the following connectors:
 | [Discovering potentially tampered devices [Nobelium]](../content/github-only-discovering-potentially-tampered-devices-[nobelium]-ba850be4-2f02-40fb-834d-d0a9ac0672d3-378fbd79.md) |  |
 | [DofoilNameCoinServerTraffic](../content/github-only-dofoilnamecoinservertraffic-4c62c572-8c8b-4a67-bde3-b94e5f09ce99-a544a38a.md) | `RemoteIP in "103.253.12.18,107.150.40.234,130.255.73.90,139.59.208.246,142.0.68.13,144.76.133.38,162.211.64.20,169.239.202.202,185.121.177.177,185.121.177.53,185.97.7.7,193.183.98.154,217.12.210.54,31.3.135.232,5.135.183.146,51.255.167.0,52.174.55.168,62.112.8.85,62.113.203.55,69.164.196.21,87.98.175.85,89.18.27.34,91.121.155.13"` |
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) | `InitiatingProcessFileName has "curl"` |
-| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
+| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
 | [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"`<br>`LocalPort == "445"` |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
@@ -325,7 +323,7 @@ This table is ingested by the following connectors:
 | [cve-2019-0808-c2](../content/github-only-cve-2019-0808-c2-0be1295f-b417-477b-95d1-82ce7c43fa03-094fa25a.md) | `RemoteIP == "63.141.233.82"`<br>`RemoteUrl in "fffun-video.biz,luckluck.blog"` |
 | [detect-bluekeep-exploitation-attempts](../content/github-only-detect-bluekeep-exploitation-attempts-e380a30d-03ff-4d20-b2d5-d0683033d813-a1070ea7.md) | `InitiatingProcessFileName == "spoolsv.exe"`<br>`RemotePort == "3389"` |
 | [detect-cyzfc-activity (1)](../content/github-only-detect-cyzfc-activity-1-c28b23e0-0d6d-45a1-ab81-8268fdff0272-0d76d71e.md) | `RemoteUrl == "pandorasong.com"` |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
+| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
@@ -346,7 +344,7 @@ This table is ingested by the following connectors:
 | [snip3-revengerat-c2-exfiltration](../content/github-only-snip3-revengerat-c2-exfiltration-8e169e62-be43-4f30-9f25-e003b2cd9c6e-a1b35eda.md) | `RemoteUrl in "asin8988.ddns.net,asin8989.ddns.net,asin8990.ddns.net,h0pe1759.ddns.net,kexa600200.ddns.net,kimjoy.ddns.net,kimjoy007.dyndns.org,mail.alamdarhardware.com,n0ahark2021.ddns.net"` |
 | [successive-tk-domain-calls](../content/github-only-successive-tk-domain-calls-82e47917-b960-49a1-8089-c805eea06ed4-23a9c29d.md) | `RemoteUrl endswith ".tk"` |
 
-### Workbooks (9)
+### Workbooks (10)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -382,10 +380,11 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `InitiatingProcessFileName has_any "umworkerprocess.exe"`<br>`InitiatingProcessSHA256 == "256"` |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 
 ## Parsers Using This Table (1)
 
@@ -395,9 +394,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
 
-## Selection Criteria Summary (98 criteria, 114 total references)
+## Selection Criteria Summary (99 criteria, 117 total references)
 
-References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 116 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -405,9 +404,10 @@ References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other par
 | `ActionType !has "ConnectionFailed"` | - | 6 | - | - | **6** |
 | `InitiatingProcessFileName has "curl"` | - | 3 | - | - | **3** |
 | `ActionType == "ConnectionFailed"` | - | 2 | 1 | - | **3** |
+| `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
 | `ActionType == "ConnectionSuccess"` | - | 2 | - | - | **2** |
 | `InitiatingProcessCommandLine has "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"` | - | 2 | - | - | **2** |
-| `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
+| `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
 | `InitiatingProcessCommandLine == "\"`<br>`InitiatingProcessFileName in "InstallUtil.exe,RegAsm.exe,RegSvcs.exe"`<br>`InitiatingProcessParentFileName endswith "powershell.exe"`<br>`InitiatingProcessParentFileName endswith "powershell_ise.exe"`<br>`InitiatingProcessParentFileName endswith "pwsh.exe"` | - | 1 | - | - | **1** |
 | `RemoteUrl == "pandorasong.com"` | - | 1 | - | - | **1** |
 | `RemoteIP in "103.253.12.18,107.150.40.234,130.255.73.90,139.59.208.246,142.0.68.13,144.76.133.38,162.211.64.20,169.239.202.202,185.121.177.177,185.121.177.53,185.97.7.7,193.183.98.154,217.12.210.54,31.3.135.232,5.135.183.146,51.255.167.0,52.174.55.168,62.112.8.85,62.113.203.55,69.164.196.21,87.98.175.85,89.18.27.34,91.121.155.13"` | - | 1 | - | - | **1** |
@@ -499,7 +499,7 @@ References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other par
 | `InitiatingProcessCommandLine endswith "(@($env:COMPUTERNAME,$env:USERNAME,(get-wmiobject Win32_ComputerSystemProduct).UUID,(random))-join"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
 | `RemoteUrl has_any "trycloudflare"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine endswith "-OutFile tim.EXE"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **113** | **1** | **0** | **114** |
+| **Total** | **0** | **116** | **1** | **0** | **117** |
 
 ### ActionType
 
@@ -507,8 +507,10 @@ References by type: 0 connectors, 113 content items, 1 ASIM parsers, 0 other par
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!has ConnectionFailed` | - | 6 | - | - | **6** |
 | `ConnectionSuccess` | - | 5 | - | - | **5** |
+| `InboundConnectionAccepted` | - | 3 | - | - | **3** |
 | `ConnectionFailed` | - | 2 | 1 | - | **3** |
-| `InboundConnectionAccepted` | - | 2 | - | - | **2** |
+| `DNS query` | - | 2 | - | - | **2** |
+| `DnsQueryResponse` | - | 2 | - | - | **2** |
 | `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
 | `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
 | `LDAP query` | - | 1 | - | - | **1** |

@@ -42,8 +42,7 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **Crowdstrike OAuth2 API Client and Scopes**: #### Required API Scopes
-In your CrowdStrike Falcon console, go to **Support and resources > API clients and keys**, select your API client, and enable the following scopes with **Read** access: **Alerts**, **Cases**, **Detections**, **Hosts**, **Spotlight Vulnerabilities**. [See the documentation to learn more about API](https://falcon.us-2.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis).
+- **Crowdstrike OAuth2 API Client and Scopes**: **API Integrations**, **App Logs**, **Alerts**, **Cases**, **Detections**, **Hosts**, **Spotlight Vulnerabilities** are required for REST API.
 
 ## Setup Instructions
 
@@ -54,7 +53,7 @@ Retrieve API URL and Client Credentials
 Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.
 Obtain your Client ID and Client Secret from the API credentials section in your CrowdStrike account.
 For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the [Connector Tutorial](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md).
-**Solution version 3.4.0 and later uses the CrowdStrike V2 tables. Please use updated parser for any existing queries. Refer to the release notes of the solution [here](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/ReleaseNotes.md)**
+**Solution version 3.4.0 and later uses the CrowdStrike V2 tables. Please use updated parser for any existing queries. For more information, refer to the upgrade notes [here](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/README.md#upgrade-notes)**
 
 **2. Manage CrowdStrike Connections**
 
@@ -79,6 +78,9 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 *Connect to CrowdStrike to ingest security data*
 
 When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+#### Required API Scopes
+In your CrowdStrike Falcon console, go to **Support and resources > API clients and keys**, select your API client, and enable the following scopes with **Read** access: **Alerts**, **Cases**, **Detections**, **Hosts**, **Spotlight Vulnerabilities**. [See the documentation to learn more about API](https://falcon.us-2.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis).
 
 - **Connection Alias** (required): Production or Sandbox
 - **Query interval (in minutes)** (required): Select from available options

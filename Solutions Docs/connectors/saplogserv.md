@@ -41,9 +41,9 @@ This connector ingests data into the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) |  | ✓ | ✓ | ✓ |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | ✓ | ✓ | ✓ |
-| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) |  | ✓ | ✓ | ✓ |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventProduct in "AzureVNet,BIND,SAP Web Dispatcher"` | ✓ | ✓ | ✓ |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ✓ |
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) |  | ? | ✓ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`Syslog`](../tables/syslog.md) | `CollectorHostName == "SAPLogServ"` | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) | `Provider startswith "Microsoft"` | ✓ | ✓ | ✓ |

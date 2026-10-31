@@ -17,6 +17,12 @@ Reference for NetworkAccessAlerts table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessalerts) |
 
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (24 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessalerts)
@@ -55,6 +61,16 @@ Official Microsoft Learn documentation for field/column information:
 - [NetworkAccessAlerts Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessalerts)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 
 ---
 

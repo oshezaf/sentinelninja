@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) |  | ✓ | ✓ | ✓ |
+| [`DarktraceIncidents_CL`](../tables/darktraceincidents-cl.md) |  | ? | ✓ | ? |
 
 ---
 

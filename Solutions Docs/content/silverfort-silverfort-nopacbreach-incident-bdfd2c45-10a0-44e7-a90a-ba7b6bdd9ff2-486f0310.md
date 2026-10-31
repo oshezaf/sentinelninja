@@ -6,7 +6,7 @@
 
 ---
 
-The NoPac vulnerability involves privilege escalation, allowing attackers to gain unauthorized access and potentially take control of an entire Active Directory domain
+Identifies Silverfort incidents associated with exploitation of the NoPac vulnerabilities in Active Directory. This behavior may allow an attacker to escalate privileges and compromise the domain.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,6 +14,7 @@ The NoPac vulnerability involves privilege escalation, allowing attackers to gai
 | **Solution** | [Silverfort](../solutions/silverfort.md) |
 | **ID** | `bdfd2c45-10a0-44e7-a90a-ba7b6bdd9ff2` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | PrivilegeEscalation |
 | **Techniques** | T1068, T1548 |

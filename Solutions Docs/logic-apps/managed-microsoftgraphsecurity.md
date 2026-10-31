@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 11 |
-| **Solutions** | 7 |
+| **Playbooks using** | 10 |
+| **Solutions** | 6 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/microsoftgraphsecurity/) |
 
 ## Playbooks Using This Connector
@@ -19,7 +19,6 @@
 | [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence-f3279435.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 1 |
 | [Block_IPs_on_MDATP_Using_GraphSecurity](../content/standalone-content-block-ips-on-mdatp-using-graphsecurity-819877d5.md) | 📄 Standalone | 1 | 1 |
 | [C19ImportToSentinel](../content/github-only-c19importtosentinel-cc38013f.md) | 🔗 GitHub Only | 1 | 1 |
-| [GIBIndicatorProcessor](../content/group-ib-gibindicatorprocessor-0fa780b9.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
 | [Guardicore-ThreatIntel](../content/standalone-content-guardicore-threatintel-3c2ad2d1.md) | 📄 Standalone | 1 | 5 |
 | [Joshua Import To Sentinel](../content/joshua-cyberiskvision-joshua-import-to-sentinel-2c45c449.md) | [Joshua-Cyberiskvision](../solutions/joshua-cyberiskvision.md) | 1 | 1 |
 | [RecordedFuture-ImportToDefenderEndpoint (DEPRECATED)](../content/standalone-content-recordedfuture-importtodefenderendpoint-deprecated-fe0eed07.md) | 📄 Standalone | 1 | 1 |

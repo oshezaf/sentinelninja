@@ -7,14 +7,18 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 16 |
-| **Solutions** | 9 |
+| **Playbooks using** | 21 |
+| **Solutions** | 10 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureblob/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
 | [AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-blob-storage-add-domains-to-zscaler-url-category-dffe258e.md) | 📄 Standalone | 1 | 0 |
 | [Delete Cohesity incident blobs](../content/cohesitysecurity-delete-cohesity-incident-blobs-99d9e0eb.md) | [CohesitySecurity](../solutions/cohesitysecurity.md) | 1 | 2 |
 | [Get Threat PCAP - Palo Alto PAN-OS XML API](../content/paloalto-pan-os-get-threat-pcap-palo-alto-pan-os-xml-api-eb78018c.md) | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) | 1 | 1 |
@@ -24,6 +28,7 @@
 | [Get-AD4IoTDeviceCVEs - Incident](../content/standalone-content-get-ad4iotdevicecves-incident-10996598.md) | 📄 Standalone | 1 | 2 |
 | [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 2 |
 | [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 2 |
+| [Google Threat Intelligence - Session Assistant](../content/google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 2 | 1 |
 | [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.md) | [Intel471](../solutions/intel471.md) | 1 | 5 |
 | [Move-LogAnalytics-to-Storage](../content/github-only-move-loganalytics-to-storage-0edd3195.md) | 🔗 GitHub Only | 1 | 1 |
 | [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid-c760c473.md) | [QualysVM](../solutions/qualysvm.md) | 1 | 2 |

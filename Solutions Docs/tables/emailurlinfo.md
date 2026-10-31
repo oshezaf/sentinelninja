@@ -6,7 +6,7 @@
 
 ---
 
-Information about URLs on emails
+Reference for EmailUrlInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Information about URLs on emails
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailurlinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailurlinfo-table) |
 
 ## Contents
 
@@ -51,7 +50,6 @@ Information about URLs on emails
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailUrlInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailurlinfo)
-- [EmailUrlInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailurlinfo-table)
 
 ## Solutions (8)
 

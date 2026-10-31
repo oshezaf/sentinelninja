@@ -13,8 +13,8 @@
 | Title | Parser for CyberArkEPM |
 | Location | Solution |
 | Solution | [CyberArkEPM](../solutions/cyberarkepm.md) |
-| Version | 1.1.0 |
-| Last Updated | 2025-05-01 |
+| Version | 1.1.1 |
+| Last Updated | 2026-10-06 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Parsers/CyberArkEPM.yaml) |
@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ✗ | ✓ | ✗ |
+| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationMicrosoftWindowsEvent` |
 | **Built-in Parser** | `_ASim_Authentication_MicrosoftWindowsEvent` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.3 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Windows Security Events |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMicrosoftWindowsEvent.md)) |
-| **Last Updated** | Oct 15, 2024 |
+| **Parser Version** | 0.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMicrosoftWindowsEvent.md)) |
+| **Last Updated** | Sep 22, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationMicrosoftWindowsEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationMicrosoftWindowsEvent.yaml) |
 

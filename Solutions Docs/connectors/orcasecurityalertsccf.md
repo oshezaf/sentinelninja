@@ -19,7 +19,7 @@
 | **CCF Configuration** | [OrcaSecurityAlerts_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlertsCCF/OrcaSecurityAlerts_PollerConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#orca-security-alerts) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#orca-security-alerts-via-microsoft-entra-id) |
 
 The [Orca Security](https://orca.security/) Alerts connector lets you stream Orca cloud security alerts into Microsoft Sentinel. Orca pushes alerts to the Logs Ingestion API of a Data Collection Endpoint using a Microsoft Entra ID application, replacing the legacy Log Analytics Shared Key authentication.
 
@@ -29,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | ✓ | ✓ | ✓ |
+| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

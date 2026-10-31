@@ -21,7 +21,7 @@
 | **First Published** | 2023-07-04 |
 | **Last Updated** | 2026-08-19 |
 | **Solution Folder** | [Vectra XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.vectra-xdr-for-microsoft-sentinel) · Popularity: 🔵 Medium (70%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vectraaiinc.vectra-xdr-for-microsoft-sentinel) · Popularity: 🔵 Medium (72%) |
 
 Vectra AI is the leader in AI-driven threat detection and response for hybrid and multi-cloud enterprises. Vectra AI's cloud-native platform - powered by our patented Attack Signal Intelligence- provide security teams with unified threat visibility, context and control across public cloud, SaaS, identity and data center networks in a prioritized feed. Vectra AI-driven Attack Signal IntelligenceTM, empowers SOC analysts to rapidly prioritize, investigate and respond to the most urgent cyber-attacks in their hybrid cloud environment. Organizations worldwide rely on Vectra AI's cloud-native platform and MDR services to see and stop attacks from becoming breaches. The Vectra AI App enables the security operations team to consume the industry's richest threat signals spanning public cloud, SaaS, identity and data center networks inside of Microsoft Sentinel. For more information, visit www.vectra.ai.
 
@@ -40,7 +40,10 @@ Vectra AI is the leader in AI-driven threat detection and response for hybrid an
 This solution provides **2 data connector(s)**:
 
 - [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md)
-- [Vectra XDR](../connectors/vectraxdr.md)
+- [Vectra XDR](../connectors/vectraxdr.md) 🔶
+
+> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+
 
 ## Tables Used
 
@@ -48,7 +51,7 @@ This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) 🔶 | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 | [`Detections_Data_CCF_CL`](../tables/detections-data-ccf-cl.md) | [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Analytics, Workbooks |
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
 | [`Entities_Data_CCF_CL`](../tables/entities-data-ccf-cl.md) | [Vectra RUX Security Data Connector (via Codeless Connector Framework)](../connectors/vectraruxconnector.md) | Workbooks |
@@ -67,6 +70,9 @@ The following **3 table(s)** are used internally by this solution's content item
 | [`AlertEvidence`](../tables/alertevidence.md) | - | Analytics |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Playbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Playbooks, Workbooks |
+
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

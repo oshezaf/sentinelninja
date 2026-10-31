@@ -109,7 +109,7 @@
 <tr>
   <td style="text-align:left">Update_Argos_Alert_Status</td>
   <td style="text-align:left">PUT</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/status</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>
@@ -125,19 +125,18 @@
 <p>On-demand playbook that reads the current Sentinel incident status and pushes it to the corresponding alert(s). Analysts trigger this manually from the incident Actions menu when they want to explicitly sync status to Argos.</p>
 <p><strong>Flow:</strong></p>
 <ol>
-<li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
 <li>Reads the current incident status and close classification.</li>
 <li>Maps Sentinel status → Argos status and closure reason.</li>
-<li>For each linked alert, sends HTTP PUT to update the alert status.</li>
+<li>For each linked alert, sends <code>PUT /alert/api/v1/alerts/status</code> to update the alert status.</li>
 <li>Adds a sync result comment and tags the incident <code>argos-manual-synced</code>.</li>
 </ol>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
-<li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
-<li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
+<li>A valid Check Point Exposure Management API token.</li>
+<li>Incidents created by the <strong>Check Point Exposure Management - Argos alerts to incidents</strong> analytic rule, which provides the <code>ref_id</code> Custom Detail.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_ManualStatusUpdate%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FSync%2FCPEM_ManualStatusUpdate%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -154,9 +153,14 @@
   <td>Name of the Logic App (default: <code>Check_Point_EM_ManualStatusUpdate</code>)</td>
 </tr>
 <tr>
-  <td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+  <td><strong>API_Base_URL</strong></td>
+  <td>Yes</td>
+  <td>Tenant URL, the same value as the data connector's Argos URL (e.g. <code>https://your_tenant.cyberint.io</code>). Any path is ignored; <code>/alert</code> is added automatically.</td>
+</tr>
+<tr>
+  <td><strong>API_Access_Token</strong></td>
+  <td>Yes</td>
+  <td>Check Point Exposure Management API token</td>
 </tr>
 </tbody>
 </table>
@@ -169,17 +173,23 @@
 <table>
 <thead>
 <tr>
-  <th>Sentinel Status</th>
-  <th>Sentinel Classification</th>
-  <th>Argos Status</th>
-  <th>Argos Closure Reason</th>
+  <th>Microsoft Sentinel status</th>
+  <th>Classification / reason</th>
+  <th>Argos status</th>
+  <th>Argos closure reason</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Active</td>
+  <td>New</td>
   <td>—</td>
   <td><code>open</code></td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>Active</td>
+  <td>—</td>
+  <td><code>acknowledged</code></td>
   <td>—</td>
 </tr>
 <tr>
@@ -190,21 +200,27 @@
 </tr>
 <tr>
   <td>Closed</td>
-  <td>False Positive</td>
-  <td><code>closed</code></td>
-  <td><code>false_positive</code></td>
-</tr>
-<tr>
-  <td>Closed</td>
   <td>Benign Positive</td>
   <td><code>closed</code></td>
   <td><code>no_longer_a_threat</code></td>
 </tr>
 <tr>
   <td>Closed</td>
+  <td>False Positive / Incorrect alert logic</td>
+  <td><code>closed</code></td>
+  <td><code>false_positive</code></td>
+</tr>
+<tr>
+  <td>Closed</td>
+  <td>False Positive / Inaccurate data</td>
+  <td><code>closed</code></td>
+  <td><code>irrelevant_alert_subtype</code></td>
+</tr>
+<tr>
+  <td>Closed</td>
   <td>Undetermined</td>
   <td><code>closed</code></td>
-  <td><code>other</code></td>
+  <td><code>other</code>, with the classification comment as the description (<code>undetermined</code> when empty)</td>
 </tr>
 </tbody>
 </table>
@@ -219,7 +235,7 @@
 <tbody>
 <tr>
   <td>Update alert status</td>
-  <td><code>PUT /api/v1/alerts/{alert_ref_id}</code></td>
+  <td><code>PUT /alert/api/v1/alerts/status</code></td>
 </tr>
 </tbody>
 </table>

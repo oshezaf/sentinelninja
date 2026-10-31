@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [http://support.recordedfuture.com/](http://support.recordedfuture.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.2.21 |
+| **Version** | 3.2.23 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2021-11-01 |
-| **Last Updated** | 2026-04-21 |
+| **Last Updated** | 2026-10-14 |
 | **Solution Folder** | [Recorded Future](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_sentinel_solution) · Popularity: 🔵 Medium (56%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_sentinel_solution) · Popularity: 🟡 Low (37%) |
 
 [Recorded Future](https://www.recordedfuture.com/) is the worlds largest provider of intelligence for enterprise security. By combining persistent and pervasive automated data collection and analytics with human analysis, Recorded Future delivers intelligence that is timely, accurate, and actionable.
 
@@ -35,28 +35,35 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Internal Tables](#internal-tables)
+- [Tables Used](#tables-used)
 - [Content Items](#content-items)
 - [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Recorded Future - Log Ingestion](../connectors/recordedfuture.md)
 
-## Internal Tables
+## Tables Used
 
-The following **6 table(s)** are used internally by this solution's content items:
+This solution uses **5 table(s)**:
 
-| Table | Used By Content |
-|-------|----------------|
-| [`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) | Analytics, Playbooks (writes) |
-| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) | Analytics, Playbooks (writes) |
-| [`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) | Analytics, Playbooks (writes) |
-| [`RecordedFutureThreatMapMalware_CL`](../tables/recordedfuturethreatmapmalware-cl.md) | Playbooks (writes), Workbooks |
-| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | Playbooks (writes), Workbooks |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Analytics, Hunting, Workbooks |
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | [Recorded Future - Log Ingestion](../connectors/recordedfuture.md) | Analytics, Playbooks |
+| [`RecordedFuturePlaybookAlerts_V2_CL`](../tables/recordedfutureplaybookalerts-v2-cl.md) | [Recorded Future - Log Ingestion](../connectors/recordedfuture.md) | Analytics |
+| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | [Recorded Future - Log Ingestion](../connectors/recordedfuture.md) | Analytics |
+| [`RecordedFutureThreatMapMalware_V2_CL`](../tables/recordedfuturethreatmapmalware-v2-cl.md) | [Recorded Future - Log Ingestion](../connectors/recordedfuture.md) | Workbooks |
+| [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) | [Recorded Future - Log Ingestion](../connectors/recordedfuture.md) | Workbooks |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | - | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -73,10 +80,10 @@ This solution includes **41 content item(s)** (37 in solution, 4 discovered 🔍
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Recorded Future Alerts Incident Creation](../content/recorded-future-recorded-future-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab3-75450771.md) | Medium | - | *Internal use:*<br>[`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) |
-| [Recorded Future Playbook Alerts Incident Creation](../content/recorded-future-recorded-future-playbook-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab2-33b657fc.md) | Medium | - | *Internal use:*<br>[`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) |
-| [Recorded Future Sandbox - Malicious Email Attachment](../content/recorded-future-recorded-future-sandbox-malicious-email-attachment-a1b2c3d4-5678-90ab-cdef-222222222222-262dc20b.md) | High | - | *Internal use:*<br>[`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) |
-| [Recorded Future Sandbox - Malicious File in Storage Account](../content/recorded-future-recorded-future-sandbox-malicious-file-in-storage-account-a1b2c3d4-5678-90ab-cdef-333333333333-28a242ec.md) | Medium | - | *Internal use:*<br>[`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) |
+| [Recorded Future Alerts Incident Creation](../content/recorded-future-recorded-future-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab3-75450771.md) | Medium | - | [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) |
+| [Recorded Future Playbook Alerts Incident Creation](../content/recorded-future-recorded-future-playbook-alerts-incident-creation-0aded97e-4e2d-4e4d-93cf-4a7e45c7bab2-33b657fc.md) | Medium | - | [`RecordedFuturePlaybookAlerts_V2_CL`](../tables/recordedfutureplaybookalerts-v2-cl.md) |
+| [Recorded Future Sandbox - Malicious Email Attachment](../content/recorded-future-recorded-future-sandbox-malicious-email-attachment-a1b2c3d4-5678-90ab-cdef-222222222222-262dc20b.md) | High | - | [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) |
+| [Recorded Future Sandbox - Malicious File in Storage Account](../content/recorded-future-recorded-future-sandbox-malicious-file-in-storage-account-a1b2c3d4-5678-90ab-cdef-333333333333-28a242ec.md) | Medium | - | [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) |
 | [RecordedFuture Threat Hunting Domain All Actors](../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-acbf7ef6-f964-44c3-9031-7834ec68175f-9002c0d5.md) | Medium | InitialAccess, CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [RecordedFuture Threat Hunting Hash All Actors](../content/recorded-future-recordedfuture-threat-hunting-hash-all-actors-6db6a8e6-2959-440b-ba57-a505875fcb37-f0b99a01.md) | Medium | InitialAccess, Execution, Persistence | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-e31bc14e-2b4c-42a4-af34-5bfd7d768aea-57f811e9.md) | Medium | Exfiltration, CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
@@ -99,9 +106,9 @@ This solution includes **41 content item(s)** (37 in solution, 4 discovered 🔍
 | [RecordedFutureDomainCorrelation](../content/recorded-future-recordedfuturedomaincorrelation-be3669be.md) | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [RecordedFutureHashCorrelation](../content/recorded-future-recordedfuturehashcorrelation-1e41d39d.md) | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [RecordedFutureIPCorrelation](../content/recorded-future-recordedfutureipcorrelation-65ad70f0.md) | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [RecordedFutureMalwareThreatHunting](../content/recorded-future-recordedfuturemalwarethreathunting-8c8ddaa1.md) | *Internal use:*<br>[`RecordedFutureThreatMapMalware_CL`](../tables/recordedfuturethreatmapmalware-cl.md) |
+| [RecordedFutureMalwareThreatHunting](../content/recorded-future-recordedfuturemalwarethreathunting-8c8ddaa1.md) | [`RecordedFutureThreatMapMalware_V2_CL`](../tables/recordedfuturethreatmapmalware-v2-cl.md) |
 | [RecordedFuturePlaybookAlertOverview](../content/recorded-future-recordedfutureplaybookalertoverview-60ee4c91.md) | - |
-| [RecordedFutureThreatActorHunting](../content/recorded-future-recordedfuturethreatactorhunting-26a6d59e.md) | *Internal use:*<br>[`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) |
+| [RecordedFutureThreatActorHunting](../content/recorded-future-recordedfuturethreatactorhunting-26a6d59e.md) | [`RecordedFutureThreatMap_V2_CL`](../tables/recordedfuturethreatmap-v2-cl.md) |
 | [RecordedFutureURLCorrelation](../content/recorded-future-recordedfutureurlcorrelation-7c307c28.md) | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Playbooks
@@ -109,7 +116,7 @@ This solution includes **41 content item(s)** (37 in solution, 4 discovered 🔍
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [RecordedFuture-ActorThreatHunt-IndicatorImport](../content/recorded-future-recordedfuture-actorthreathunt-indicatorimport-9d175248.md) | This playbook will write Recorded Future threat hunting indicators to ThreatIntelligenceIndicator lo... | - |
-| [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePor... | *Internal use:*<br>[`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) *(read/write)* |
+| [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFutureCla... | [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) *(read)* |
 | [RecordedFuture-DOMAIN-C2_DNS_Name-TIProcessor](../content/recorded-future-recordedfuture-domain-c2-dns-name-tiprocessor-fa1b7c55.md) | **[Deprecated]** Deprecated due to changes in the Threat Intelligence Platform. Use the new Indicato... | - |
 | [RecordedFuture-Domain-IndicatorImport](../content/recorded-future-recordedfuture-domain-indicatorimport-6bac2a40.md) | This playbook imports Domain risk lists from Recorded Future and stores them as Threat Intelligence ... | - |
 | [RecordedFuture-HASH-Obs_in_Underground-TIProcessor](../content/recorded-future-recordedfuture-hash-obs-in-underground-tiprocessor-bc84e786.md) | **[Deprecated]** Deprecated due to changes in the Threat Intelligence Platform. Use the new Indicato... | - |
@@ -119,13 +126,13 @@ This solution includes **41 content item(s)** (37 in solution, 4 discovered 🔍
 | [RecordedFuture-IP-IndicatorImport](../content/recorded-future-recordedfuture-ip-indicatorimport-12100b20.md) | This playbook imports IP risk lists from Recorded Future and stores them as Threat Intelligence Indi... | - |
 | [RecordedFuture-ImportToSentinel](../content/recorded-future-recordedfuture-importtosentinel-375c16d8.md) | **[Deprecated]** Deprecated due to changes in the Threat Intelligence Platform. Use the new Indicato... | - |
 | [RecordedFuture-MalwareThreatHunt-IndicatorImport](../content/recorded-future-recordedfuture-malwarethreathunt-indicatorimport-557fcc9b.md) | This playbook will write Recorded Future threat hunting indicators to ThreatIntelligenceIndicator lo... | - |
-| [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePla... | *Internal use:*<br>[`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) *(write)* |
+| [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePla... | - |
 | [RecordedFuture-Sandbox_Enrichment-Url](../content/recorded-future-recordedfuture-sandbox-enrichment-url-500e284d.md) | This playbook will enrich url entities in an incident and send them to Recorded Future Sandbox. The ... | - |
-| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | This playbook will trigger on emails with attachments and send them to Recorded Future Sandbox. The ... | *Internal use:*<br>[`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) *(write)* |
-| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | This playbook will trigger on files in a Storage Account and send them to Recorded Future Sandbox. T... | *Internal use:*<br>[`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) *(write)* |
+| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | This playbook will trigger on emails with attachments and send them to Recorded Future Sandbox. The ... | - |
+| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | This playbook will trigger on files in a Storage Account and send them to Recorded Future Sandbox. T... | - |
 | [RecordedFuture-ThreatIntelligenceImport](../content/recorded-future-recordedfuture-threatintelligenceimport-ef10c4ab.md) | This playbook will write indicators in batch to ThreatIntelligenceIndicator log analytics table. | - |
-| [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | This playbook will import Threat Map data from Recorded Future and store it in a custom log. | *Internal use:*<br>[`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) *(write)* |
-| [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | This playbook will import Threat Map data from Recorded Future and store it in a custom log. | *Internal use:*<br>[`RecordedFutureThreatMapMalware_CL`](../tables/recordedfuturethreatmapmalware-cl.md) *(write)* |
+| [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | This playbook imports Threat Map data from Recorded Future and stores it in a custom log (RecordedFu... | - |
+| [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | This playbook imports Malware Threat Map data from Recorded Future and stores it in a custom log (Re... | - |
 | [RecordedFuture-URL-IndicatorImport](../content/recorded-future-recordedfuture-url-indicatorimport-6e39cf42.md) | This playbook imports URL risk lists from Recorded Future and stores them as Threat Intelligence Ind... | - |
 | [RecordedFuture-URL-Recent_Rep_by_Insikt-TIProcessor](../content/recorded-future-recordedfuture-url-recent-rep-by-insikt-tiprocessor-0e7085c0.md) | **[Deprecated]** Deprecated due to changes in the Threat Intelligence Platform. Use the new Indicato... | - |
 | [RecordedFuture-Ukraine-IndicatorProcessor](../content/recorded-future-recordedfuture-ukraine-indicatorprocessor-803dc885.md) | **[Deprecated]** Deprecated due to changes in the Threat Intelligence Platform. Use the new Indicato... | - |
@@ -187,6 +194,8 @@ Automation rules triggers on each incident and enriches incidents with Recorded 
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|--------------------|
+| 3.2.23 | 14-09-2026 | Added `OwnerOrganisationDetails`/`owner_organisation_details` columns with ownership info for Classic and Playbook alerts. **Action required:** redeploy the Data Connectors template to add the new columns (see README). |
+| 3.2.22 | 11-09-2026 | Implemented a modernized data connector architecture by introducing shared infrastructure templates for DCE, DCR, table, and connector deployment, enabling MSI-authenticated data ingestion through the Logs Ingestion API, and updating workbooks, analytics, and documentation to align with the new _V2_CL schema. |
 | 3.2.21 | 16-08-2026 | Hardened Enterprise Sandbox API key handling and protected sensitive Logic Apps action data. |
 | 3.2.20 | 04-05-2026 | Removed **incident creation** from affected playbooks, in preparation for Microsoft Defender migration. Added Analytic Rules that will handle incident creation.|
 | 3.2.19      | 13-04-2026                     | Added functionality to choose Sandbox region, changed to optional Enterprise Sandbox API token.	Updated Indicator Import, moving evidence details from "labels" to "external_references".  |

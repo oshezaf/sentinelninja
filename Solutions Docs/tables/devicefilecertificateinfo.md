@@ -6,7 +6,7 @@
 
 ---
 
-Certificate information of signed files obtained from certificate verification events on endpoints
+Reference for DeviceFileCertificateInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Certificate information of signed files obtained from certificate verification e
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefilecertificateinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-DeviceFileCertificateInfo-table) |
 
 ## Contents
 
@@ -62,7 +61,6 @@ Certificate information of signed files obtained from certificate verification e
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceFileCertificateInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefilecertificateinfo)
-- [DeviceFileCertificateInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-DeviceFileCertificateInfo-table)
 
 ## Solutions (2)
 

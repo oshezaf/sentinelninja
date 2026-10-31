@@ -6,7 +6,7 @@
 
 ---
 
-Inventory of software installed on devices, including their version information and end-of-support status
+Reference for DeviceTvmSoftwareInventory table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Inventory of software installed on devices, including their version information 
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareinventory-table) |
 
 ## Contents
 
@@ -54,7 +53,6 @@ Inventory of software installed on devices, including their version information 
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceTvmSoftwareInventory Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory)
-- [DeviceTvmSoftwareInventory Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareinventory-table)
 
 ## Solutions (1)
 

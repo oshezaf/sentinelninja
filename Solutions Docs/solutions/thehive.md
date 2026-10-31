@@ -19,7 +19,7 @@
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
-| **Last Updated** | 2026-03-13 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [TheHive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-thehive) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: ⚪ Very Low (0%) |
 

@@ -1,6 +1,6 @@
 # Analytic Rules - I
 
-**52 analytic rules** starting with 'I'.
+**62 analytic rules** starting with 'I'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -25,6 +25,16 @@
 | [Idira - High-Risk Actions Outside Business Hours](cyberarkaudit-idira-high-risk-actions-outside-business-hours-3733e1ac-991b-4504-99e8-24ff4fbaf6e4-69d24d43.md) | High | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [Idira - Multiple Failed Actions Followed by Success (15m)](cyberarkaudit-idira-multiple-failed-actions-followed-by-success-15m-bdf3cf98-d64f-4c55-97e4-43483d6d3237-6009c78d.md) | Medium | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [Idira - Sensitive Safe/Permission/Entitlement Changes (with customData)](cyberarkaudit-idira-sensitive-safe-permission-entitlement-changes-with-customdata-30938118-8812-4b5f-afa4-a8d4ba2b5d86-a246971b.md) | Low | 📦 [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [IdiraEPM - Attack attempt not blocked](cyberarkepm-idiraepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2b3f6f38.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - MSBuild usage as LOLBin](cyberarkepm-idiraepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-b1a4e17d.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Multiple attack types](cyberarkepm-idiraepm-multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b-6930142e.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Possible execution of Powershell Empire](cyberarkepm-idiraepm-possible-execution-of-powershell-empire-eddfd1fd-71df-4cc3-b050-287643bee398-184c0da1.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Process started from different locations](cyberarkepm-idiraepm-process-started-from-different-locations-0d4e62da-0a64-4532-b93e-28cd2940c300-08a0e0de.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Renamed Windows binary](cyberarkepm-idiraepm-renamed-windows-binary-9281b7cc-8f05-45a9-bf10-17fb29492a84-966d4400.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Uncommon process Internet access](cyberarkepm-idiraepm-uncommon-process-internet-access-9d0d44ab-54dc-472a-9931-53521e888932-1a01e0d1.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Uncommon Windows process started from System folder](cyberarkepm-idiraepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-b9d4870b.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Unexpected executable extension](cyberarkepm-idiraepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-640cbc52.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [IdiraEPM - Unexpected executable location](cyberarkepm-idiraepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-b1df3cc0.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Illegal Function Codes for ICS traffic (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-illegal-function-codes-for-ics-traffic-microsoft-defender-for-io-70be4a31-9d2b-433b-bdc7-da8928988069-a9b23f60.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Illumio Enforcement Change Analytic Rule](illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a-d2fd3adb.md) | Medium | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illumio Firewall Tampering Analytic Rule](illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6-c6814f6c.md) | Medium | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |

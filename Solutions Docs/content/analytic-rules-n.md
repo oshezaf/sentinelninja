@@ -1,6 +1,6 @@
 # Analytic Rules - N
 
-**81 analytic rules** starting with 'N'.
+**101 analytic rules** starting with 'N'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,12 +16,29 @@
 |:-----|:---------|:-------|
 | [NDMP Server Deleted](veeam-ndmp-server-deleted-e92ba6bb-53ea-4347-b1a6-2e015298bbdc-8a804f44.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [NetClean ProActive Incidents](netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb-1b0b1d6f.md) | High | 📦 [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [Netcraft Advert - High risk result](netcraftintegrationgateway-netcraft-advert-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e03-23301556.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Advert - Pending client input](netcraftintegrationgateway-netcraft-advert-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e103-c5137515.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft App - High risk result](netcraftintegrationgateway-netcraft-app-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e02-87c4a1a4.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft App - Pending client input](netcraftintegrationgateway-netcraft-app-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e102-d0a0a39a.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft DDW Intelligence - High priority match](netcraftintegrationgateway-netcraft-ddw-intelligence-high-priority-match-114e0c34-5e32-42a8-a0fc-3e3c8291bee9-20946a0b.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft DDW Intelligence - Takedown eligible match](netcraftintegrationgateway-netcraft-ddw-intelligence-takedown-eligible-match-8da040d4-bd02-47ae-86b5-db527a8b4f18-b38d7cec.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft DDW Intelligence - Unacknowledged high priority](netcraftintegrationgateway-netcraft-ddw-intelligence-unacknowledged-high-priority-f788b740-86af-46b2-b986-c059c5e5b908-1f3b7b73.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Domain Detection - High risk result](netcraftintegrationgateway-netcraft-domain-detection-high-risk-result-3eb13794-d9a5-44c0-a633-09ee5a5dd6b5-3e773d3d.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Domain Detection - Newly registered high risk](netcraftintegrationgateway-netcraft-domain-detection-newly-registered-high-risk-56ea5c80-8dd5-4c7c-a656-5f7af0c64429-2d48ec73.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Domain Detection - Preemptive disruption](netcraftintegrationgateway-netcraft-domain-detection-preemptive-disruption-9284825d-3f0f-4ca2-a2f3-44a2a229909e-701d9226.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Social - High risk result](netcraftintegrationgateway-netcraft-social-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e01-7dbcb893.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Social - Pending client input](netcraftintegrationgateway-netcraft-social-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e101-c025787f.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Takedown - Important note changed](netcraftintegrationgateway-netcraft-takedown-important-note-changed-0a0416c5-277a-4a2b-9815-7b457fdffd81-38972724.md) | Medium | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Takedown - New takedown](netcraftintegrationgateway-netcraft-takedown-new-takedown-68ff493b-de53-472b-9a34-15b1453060a1-d1d7dc1a.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Takedown - Resolved](netcraftintegrationgateway-netcraft-takedown-resolved-6de7eb0b-693c-4d4a-a263-d047f88f167f-0f536dfa.md) | Informational | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [Netcraft Takedown - Waiting for customer](netcraftintegrationgateway-netcraft-takedown-waiting-for-customer-f2cd0583-da5f-4edc-a4ad-1a237643c228-83999f7c.md) | High | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
 | [Netskope - Anomalous User Behavior (High Volume from Unmanaged Device)](netskopewebtx-netskope-anomalous-user-behavior-high-volume-from-unmanaged-device-fa4c4f1c-3c5f-4c3a-a13f-924c30db56e9-a11677b7.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - Data Movement Tracking (Upload/Download Monitoring)](netskopewebtx-netskope-data-movement-tracking-upload-download-monitoring-cf103180-cb81-4796-921d-3cc7eef4e817-0505a110.md) | Informational | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - DLP Incident Spike](netskopealertevents-netskope-dlp-incident-spike-c3f8e4d6-0d57-4a3b-9e2c-4f6a8b0d3e52-1e2b0092.md) | High | 📦 [NetskopeAlertEvents](../solutions/netskopealertevents.md) |
 | [Netskope - Excessive Downloads Detection (Spike vs Baseline)](netskopewebtx-netskope-excessive-downloads-detection-spike-vs-baseline-dd0ebd84-ffbe-45df-848b-0615ac446b04-e6a1be75.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - Heavy Personal Cloud Storage Usage (Shadow IT)](netskopewebtx-netskope-heavy-personal-cloud-storage-usage-shadow-it-272f9bca-5fd0-4413-b494-03b2d9f0bb9b-b4a5c41b.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - High Severity Alert](netskopealertevents-netskope-high-severity-alert-a1f6c2d4-8b35-4e19-9c7a-2d4e6f8a1b30-dd52ea1e.md) | High | 📦 [NetskopeAlertEvents](../solutions/netskopealertevents.md) |
+| [Netskope - High Severity DLP Alert](netskopev2-netskope-high-severity-dlp-alert-04e36dfa-05b3-45bd-b39f-28b6fac71337-a587b885.md) | High | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [Netskope - Impossible Travel Detection (Two Countries in Less Than 1 Hour)](netskopewebtx-netskope-impossible-travel-detection-two-countries-in-less-than-1-hour-d1b88716-3cd4-4585-a9a2-2dd2c9b04ecb-2929a498.md) | High | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - Large Outbound Data Transfer / Sensitive Upload (DLP)](netskopewebtx-netskope-large-outbound-data-transfer-sensitive-upload-dlp-71e6586e-0d3f-4e33-b390-faa50b5e08fa-c78990bd.md) | High | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - New Risky App Access vs 7-Day Baseline](netskopewebtx-netskope-new-risky-app-access-vs-7-day-baseline-ba66b81c-2cf7-4c53-9db0-e8b6f537704a-4dbceb22.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
@@ -30,6 +47,8 @@
 | [Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)](netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)](netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - WebTransaction Error Detection](netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
+| [Netskope Client - Internet Security disabled by user](netskopev2-netskope-client-internet-security-disabled-by-user-3e9b7d54-2a6c-4f18-b0e5-c7a94d21f6b8-7c9a19fc.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
+| [Netskope Client - Private Access disabled by user](netskopev2-netskope-client-private-access-disabled-by-user-8c1f6a2e-4b7d-4e3a-9f21-5d0c7b9e6a41-3f0d1037.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [Network endpoint to host executable correlation](network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43-f4ed06da.md) | Medium | 📦 [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md) |
 | [Network Port Sweep from External Network (ASIM Network Session schema)](network-session-essentials-network-port-sweep-from-external-network-asim-network-session-schema-cd8faa84-4464-4b4e-96dc-b22f50c27541-330ca527.md) | High | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [NetworkSecurityGroups Alert From Prancer](prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-eb7ac46a.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
@@ -46,6 +65,7 @@
 | [New High Severity Vulnerability Detected Across Multiple Hosts](qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) | Medium | 📦 [QualysVM](../solutions/qualysvm.md) |
 | [New onmicrosoft domain added to tenant](microsoft-entra-id-new-onmicrosoft-domain-added-to-tenant-4f42b94f-b210-42d1-a023-7fa1c51d969f-9b50862e.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [New PA, PCA, or PCAS added to Azure DevOps](azuredevopsauditing-new-pa,-pca,-or-pcas-added-to-azure-devops-35ce9aff-1708-45b8-a295-5e9a307f5f17-639b0632.md) | Medium | 📦 [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
+| [New quantum-vulnerable resource appeared](qcryptonpqcscanner-new-quantum-vulnerable-resource-appeared-9b8c7d6e-5f4a-3b2c-1d0e-9f8a7b6c5d4e-6a180ae7.md) | Informational | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [New service account gained access to IaaS resource](authomize-new-service-account-gained-access-to-iaas-resource-6c17f270-cd56-48cc-9196-1728ffea6538-08838a9a.md) | Informational | 📦 [Authomize](../solutions/authomize.md) |
 | [New Sonrai Ticket](sonraisecurity-new-sonrai-ticket-bcc3362d-b6f9-4de0-b41c-707fafd5a416-2812a685.md) | Medium | 📦 [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [New User Assigned to Privileged Role](microsoft-entra-id-new-user-assigned-to-privileged-role-050b9b3d-53d0-4364-a3da-1b678b8211ec-fad23221.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |

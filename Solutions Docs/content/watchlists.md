@@ -8,7 +8,7 @@
 
 Watchlists are reference data tables that you can import into Microsoft Sentinel and use in queries and analytic rules. They are useful for storing lists of high-value assets, VIP users, known malicious indicators, or approved IP addresses for allowlisting. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists)
 
-**57 watchlists** across all Microsoft Sentinel solutions.
+**59 watchlists** across all Microsoft Sentinel solutions.
 
 **Jump to:** [A](#a) | [C](#c) | [D](#d) | [E](#e) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v)
 
@@ -30,6 +30,8 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | [ConditionalAccessBenignStatusCodes](microsoft-entra-id-conditionalaccessbenignstatuscodes-15507b1f.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [CorelightAggregationsEnrichment1](corelight-corelightaggregationsenrichment1-fbfba063.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CorelightAggregationsEnrichment2](corelight-corelightaggregationsenrichment2-e7960978.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [CorelightAIAppIds](corelight-corelightaiappids-36fb9151.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [CorelightAnomalyUseCases](corelight-corelightanomalyusecases-9b4c9567.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CorelightDNSPortDesc](corelight-corelightdnsportdesc-d7ff9af5.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CorelightGeoCountries](corelight-corelightgeocountries-d522c9b2.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CorelightInferencesDesc](corelight-corelightinferencesdesc-51fd4d81.md) | 📦 [Corelight](../solutions/corelight.md) |

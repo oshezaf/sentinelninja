@@ -21,7 +21,7 @@
 | **First Published** | 2026-07-09 |
 | **Last Updated** | 2026-08-14 |
 | **Solution Folder** | [Cayosoft Guardian](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cayosoft%20Guardian) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cayosoftinc.cayosoft_guardian_solution) · Popularity: 🔵 Medium (53%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cayosoftinc.cayosoft_guardian_solution) · Popularity: ⚪ Very Low (6%) |
 
 The Cayosoft Guardian solution for Microsoft Sentinel provides seamless integration for your identity security alerts. It automatically ingests threat alerts from Cayosoft Guardian into Microsoft Sentinel via the Azure Monitor Agent (AMA) and Data Collection Rules (DCR). After the data is ingested into the custom CayosoftThreatAlerts_CL table, Microsoft Sentinel can use it for monitoring, analytics, incident creation, investigation, and automated response across your hybrid identity environment. The solution includes a Data Connector, a comprehensive Threats Dashboard, and pre-configured Analytic Rules.
 

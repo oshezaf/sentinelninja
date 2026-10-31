@@ -16,6 +16,7 @@ Create Recorded Future Playbook Alerts in Microsoft Defender
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | NRT |
+| **Required Connectors** | [RecordedFuture](../connectors/recordedfuture.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Analytic%20Rules/IncidentCreation/RecordedFuturePlaybookAlerts.yaml) |
 
 ## Tables Used
@@ -24,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFuturePlaybookAlerts_CL`](../tables/recordedfutureplaybookalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`RecordedFuturePlaybookAlerts_V2_CL`](../tables/recordedfutureplaybookalerts-v2-cl.md) | ? | ✓ | ? |
 
 ---
 

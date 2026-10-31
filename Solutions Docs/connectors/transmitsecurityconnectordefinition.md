@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [TransmitSecurityActivity_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity/Data%20Connectors/TransmitSecurityActivity_CCF/TransmitSecurityActivity_DCR.json) |
 | **CCF Configuration** | [TransmitSecurityActivity_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity/Data%20Connectors/TransmitSecurityActivity_CCF/TransmitSecurityActivity_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#transmit-security-data-connector-via-codeless-connector-framework) |
 
 The [Transmit Security](https://transmitsecurity.com/) data connector provides the capability to ingest Transmit Security activity events into Microsoft Sentinel through the REST API. Refer to API documentation for more information. The connector provides the ability to get events from Transmit Security platform.
 

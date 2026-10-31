@@ -43,7 +43,7 @@
 </tbody>
 </table>
 <h2 id="logic-app-connectors">Logic App Connectors</h2>
-<p>This playbook uses <strong>4</strong> Logic App connectors / built-in actions:</p>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
 <table>
 <thead>
 <tr>
@@ -55,12 +55,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">21</td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
   <td style="text-align:left">Managed</td>
   <td style="text-align:center">1</td>
@@ -70,7 +64,7 @@
   <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
   <td style="text-align:left">Built-in</td>
   <td style="text-align:center">0</td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">28</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
@@ -82,145 +76,6 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Certs_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Fingerprints_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Open_Ports_Section_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Pdns_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_IP_Indicator_Data_To_IP_Details_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Identity_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Whois_Data_To_Log_Analytics_Workspace</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_IP_Indicator_To_Live_Investigation_Indicators_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Insights_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Communication_Peers_Data_To_Log_Analytic_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Main_PDNS_Data_To_Log_Analytic_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Main_Open_Ports_Data_To_Log_Analytic_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Main_Fingerprints_Data_To_Log_Analytic_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Main_X509_Data_To_Log_Analytic_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Domain_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Domain_Indicator_To_Live_Investigation_Indicators_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
 <h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
 <table>
 <thead>
@@ -252,6 +107,60 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('proto_by_ip_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_asns_by_ip_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Certs_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('certs_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_country_codes_by_ip_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Fingerprints_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('fingerprints_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Open_Ports_Section_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('open_ports_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Pdns_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('pdns_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_services_by_ip_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_tags_by_ip_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
   <td style="text-align:left">HTTP_Request_To_Fetch_Proto_By_IP_Sections_Data</td>
   <td style="text-align:left">GET</td>
   <td style="text-align:left"><code>@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details</code></td>
@@ -282,6 +191,66 @@
   <td style="text-align:left">—</td>
 </tr>
 <tr>
+  <td style="text-align:left">Send_IP_Indicator_Data_To_IP_Details_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('summary_details_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Identity_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('identity_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Whois_Data_To_Log_Analytics_Workspace</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('whois_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_IP_Indicator_To_Live_Investigation_Indicators_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('ip_indicators_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Insights_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('insights_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Communication_Peers_Data_To_Log_Analytic_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('communication_peers_data_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Main_PDNS_Data_To_Log_Analytic_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_pdns_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Main_Open_Ports_Data_To_Log_Analytic_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_opn_ports_data_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Main_Fingerprints_Data_To_Log_Analytic_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_fingerprints_data_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Main_X509_Data_To_Log_Analytic_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_x509_data_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
   <td style="text-align:left">HTTP_Request_To_Fetch_Details_Of_IP_Indicator</td>
   <td style="text-align:left">GET</td>
   <td style="text-align:left"><code>@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details</code></td>
@@ -291,6 +260,18 @@
   <td style="text-align:left">HTTP_Request_To_Fetch_Details_Of_Domain_Indicator</td>
   <td style="text-align:left">GET</td>
   <td style="text-align:left"><code>@{variables('base_url')}/api/scout/search</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Domain_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('domain_details_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Domain_Indicator_To_Live_Investigation_Indicators_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('domain_indicators_table_name'), '_CL?api-version=2023-01-01')}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>
@@ -347,12 +328,57 @@
 </ul>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutLiveInvestigation%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutLiveInvestigation%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h4 id="a-log-ingestion">a. Log ingestion</h4>
+<p>This playbook writes to Log Analytics through the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Logs Ingestion API</a> using its own system-assigned managed identity. The data collection endpoint, the data collection rule, the destination tables and the <strong>Monitoring Metrics Publisher</strong> role assignment are all created by the deployment template, so ingestion needs no manual authorization.</p>
+<p><strong>Existing workspaces only.</strong> If you deployed an earlier version of this playbook, its tables were created by the retired HTTP Data Collector API and are <em>classic</em> tables. Convert them once per workspace before the first run of the migrated playbook, otherwise ingestion fails:</p>
+<pre><code class="language-bash">resourceGroup=&quot;&lt;resource-group&gt;&quot;
+workspace=&quot;&lt;workspace-name&gt;&quot;
+
+# List the classic tables still present in the workspace
+az monitor log-analytics workspace table list \
+  --resource-group &quot;$resourceGroup&quot; --workspace-name &quot;$workspace&quot; \
+  --query &quot;[?schema.tableSubType=='Classic'].{Name:name}&quot; -o table
+
+# Convert each one, using the table name exactly as returned by the list
+# command above (it already includes the _CL suffix, e.g. Communication_Data_CL —
+# do not append _CL again)
+az monitor log-analytics workspace table migrate \
+  --resource-group &quot;$resourceGroup&quot; --workspace-name &quot;$workspace&quot; \
+  --table-name &quot;&lt;TableName&gt;&quot;
+</code></pre>
+<blockquote>
+<p><strong>The conversion cannot be undone.</strong> It is a one-way operation per table.</p>
+</blockquote>
+<p>This playbook writes the following tables:</p>
+<ul>
+<li><code>Communication_Data_CL</code></li>
+<li><code>Domain_Data_CL</code></li>
+<li><code>Fingerprints_Data_CL</code></li>
+<li><code>Identity_Data_CL</code></li>
+<li><code>Insights_Data_CL</code></li>
+<li><code>Live_Investigation_Domain_Indicators_CL</code></li>
+<li><code>Live_Investigation_IP_Indicators_CL</code></li>
+<li><code>Open_Ports_Data_CL</code></li>
+<li><code>PDNS_Data_CL</code></li>
+<li><code>Proto_By_IP_Data_CL</code></li>
+<li><code>Summary_Details_CL</code></li>
+<li><code>Summary_Details_Top_Certs_Data_CL</code></li>
+<li><code>Summary_Details_Top_Fingerprints_Data_CL</code></li>
+<li><code>Summary_Details_Top_Open_Ports_Data_CL</code></li>
+<li><code>Summary_Details_Top_Pdns_Data_CL</code></li>
+<li><code>Top_Asns_By_IP_Data_CL</code></li>
+<li><code>Top_Country_Codes_By_IP_Data_CL</code></li>
+<li><code>Top_Services_By_IP_Data_CL</code></li>
+<li><code>Top_Tags_By_IP_Data_CL</code></li>
+<li><code>Whois_Data_CL</code></li>
+<li><code>X509_Data_CL</code></li>
+</ul>
+<p>Column names and types are unchanged, so existing parsers, workbooks and saved queries keep working.</p>
+<h4 id="b-authorize-connections">b. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
-<li>Go to your logic app → API connections → Select azureloganalyticsdatacollector connection resource</li>
+<li>Go to your logic app → API connections → Select a connection resource</li>
 <li>Go to General → Edit API connection.</li>
-<li>Enter Workspace ID and Workspace Key of your log analytics workspace.</li>
 <li>Click Authorize</li>
 <li>Sign in.</li>
 <li>Click Save.</li>

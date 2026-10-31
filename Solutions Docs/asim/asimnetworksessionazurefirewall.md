@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimNetworkSessionAzureFirewall` |
 | **Built-in Parser** | `_ASim_NetworkSession_AzureFirewall` |
 | **Schema** | NetworkSession |
-| **Schema Version** | 0.2.6 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Azure Firewall |
-| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureFirewall.md)) |
-| **Last Updated** | Dec 3, 2025 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureFirewall.md)) |
+| **Last Updated** | Sep 18, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionAzureFirewall.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionAzureFirewall.yaml) |
 

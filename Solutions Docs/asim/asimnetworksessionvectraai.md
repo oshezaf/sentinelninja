@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Vectra AI Streams |
-| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionVectraAI.md)) |
-| **Last Updated** | Dec 28 2021 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionVectraAI.md)) |
+| **Last Updated** | Oct 2, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionVectraAI.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionVectraAI.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

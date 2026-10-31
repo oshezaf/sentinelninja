@@ -36,9 +36,9 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Get_Alert_Details | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
-| Get_Attachment | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}` | — |
-| Get_Analysis_Report | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report` | — |
+| Get_Alert_Details | GET | `@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
+| Get_Attachment | GET | `@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}` | — |
+| Get_Analysis_Report | GET | `@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report` | — |
 
 </details>
 
@@ -66,7 +66,7 @@ On-demand playbook that fetches alert attachments and analysis report for a Sent
 
 ## Deployment
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_FetchAttachments%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FEnrichment%2FCPEM_FetchAttachments%2Fazuredeploy.json)
 
 ### Parameters
 
@@ -90,9 +90,9 @@ On-demand playbook that fetches alert attachments and analysis report for a Sent
 
 | Action | Endpoint |
 |--------|----------|
-| Get alert details | `GET /api/v1/alerts/{alert_ref_id}` |
-| Get attachment | `GET /api/v1/alerts/{alert_ref_id}/attachments/{attachment_id}` |
-| Get analysis report | `GET /api/v1/alerts/{alert_ref_id}/analysis_report` |
+| Get alert details | `GET /alert/api/v1/alerts/{alert_ref_id}` |
+| Get attachment | `GET /alert/api/v1/alerts/{alert_ref_id}/attachments/{attachment_id}` |
+| Get analysis report | `GET /alert/api/v1/alerts/{alert_ref_id}/analysis_report` |
 
 ---
 

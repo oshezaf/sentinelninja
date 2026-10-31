@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -304,10 +304,11 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog">W3CIISLog Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (8)</h2>
+<h2 id="solutions">Solutions (9)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
+<li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
 <li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
@@ -337,7 +338,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (38)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (40)</h2>
 <h3 id="analytic-rules">Analytic Rules (15)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
@@ -570,7 +571,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (7)</h3>
+<h3 id="workbooks">Workbooks (9)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -582,6 +583,21 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>
@@ -628,6 +644,10 @@
 <tr>
   <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
   <td style="text-align:left"><code>cIP !startswith &quot;10.&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;172.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriQuery startswith &quot;t=&quot;</code><br><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-iisserversmonitoringsecurity-7e647cbc.html">IISServersMonitoringSecurity</a></td>
+  <td style="text-align:left"><code>csMethod !in &quot;GET,POST,HEAD,OPTIONS&quot;</code></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>

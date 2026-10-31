@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-02-18 |
-| **Last Updated** | 2026-06-23 |
+| **Last Updated** | 2026-10-23 |
 | **Solution Folder** | [ZeroFox Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-threat-intel-sentinel-connector) · Popularity: ⚪ Very Low (0%) |
 
@@ -81,6 +81,7 @@ This solution uses **17 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.0.1       | 29-09-2026                     | Fixed the Physical Threats **Data Connector**, which left the location details and the dataset name empty, and the Indicators **Data Connector**, which left the event date and event threat type empty. No table changes; the fix applies to newly collected data — existing rows are not backfilled. |
 | 3.0.0       | 01-04-2026                     | Added **Data Connectors** for ZeroFox's Threat Intelligence. |
 
 ---

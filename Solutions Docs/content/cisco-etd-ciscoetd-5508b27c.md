@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CiscoETDv2_CL`](../tables/ciscoetdv2-cl.md) |  | ✓ | ✓ | ✓ |
+| [`CiscoETDv2_CL`](../tables/ciscoetdv2-cl.md) |  | ? | ✓ | ? |
 
 ---
 

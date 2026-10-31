@@ -13,8 +13,8 @@
 | Title | Corelight Connection Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 2.0.0 |
-| Last Updated | 2026-08-17 |
+| Version | 2.1.0 |
+| Last Updated | 2026-09-24 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Parsers/corelight_anomaly.yaml) |

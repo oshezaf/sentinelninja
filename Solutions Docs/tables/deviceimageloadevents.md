@@ -6,7 +6,7 @@
 
 ---
 
-DLL loading events
+Reference for DeviceImageLoadEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ DLL loading events
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceimageloadevents-table) |
 
 ## Contents
 
@@ -86,7 +85,6 @@ DLL loading events
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceImageLoadEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceimageloadevents)
-- [DeviceImageLoadEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceimageloadevents-table)
 
 ## Solutions (4)
 
@@ -164,7 +162,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Abuse.ch Recent Threat Feed](../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) |  |
 | [Abuse.ch Recent Threat Feed (1)](../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [Detect PowerShell v2 Downgrade](../content/github-only-detect-powershell-v2-downgrade-70c41ff4-b95a-43a3-8fb5-794ed69be100-f267821b.md) | `InitiatingProcessFileName == "powershell.exe"` |
 | [Rare-process-as-a-service](../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.md) |  |
 | [Suspicious Image Load related to IcedId](../content/github-only-suspicious-image-load-related-to-icedid-b64c8a59-94ad-4659-b95e-36238312da5c-ab8f04b9.md) | `InitiatingProcessFileName in "regsvr32.exe,rundll32.exe"` |
@@ -192,9 +190,9 @@ This table is ingested by the following connectors:
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
-## Selection Criteria Summary (8 criteria, 10 total references)
+## Selection Criteria Summary (7 criteria, 9 total references)
 
-References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -204,9 +202,8 @@ References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other pars
 | `InitiatingProcessSHA1 !in "<Legit_SHA1_1>,<Legit_SHA1_2>"`<br>`InitiatingProcessVersionInfoCompanyName !in "Microsoft Corporation,Google LLC,Google Inc,Cisco Systems, Inc.,Intel Corporation"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileRenamed"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
-| `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine has ".jpg"`<br>`InitiatingProcessFileName == "regsvr32.exe"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **10** | **0** | **0** | **10** |
+| **Total** | **0** | **9** | **0** | **0** | **9** |
 
 ### ActionType
 
@@ -215,7 +212,6 @@ References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other pars
 | `FileCreated` | - | 2 | - | - | **2** |
 | `FileModified` | - | 1 | - | - | **1** |
 | `FileRenamed` | - | 1 | - | - | **1** |
-| `PowerShellCommand` | - | 1 | - | - | **1** |
 
 ### InitiatingProcessCommandLine
 

@@ -60,7 +60,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BV_ClaudeCompliance_ComplianceActivities_CL`](../tables/bv-claudecompliance-complianceactivities-cl.md) | ✓ | ✓ | ✓ |
+| [`BV_ClaudeCompliance_ComplianceActivities_CL`](../tables/bv-claudecompliance-complianceactivities-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

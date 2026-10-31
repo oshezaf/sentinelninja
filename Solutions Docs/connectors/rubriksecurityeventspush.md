@@ -20,6 +20,7 @@
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#rubrik-security-cloud-security-events-push) |
 
 The Rubrik Security Cloud Security Events (Push) connector ingests security events from Rubrik Security Cloud into Microsoft Sentinel in real time using the Codeless Connector Framework (CCF) Push pattern. Rubrik Security Cloud webhooks authenticate with OAuth 2.0 and post events directly to the Azure Monitor Logs Ingestion API, with no intermediate compute to deploy or operate. Events are routed to per-category tables for anomalies, ransomware analysis, threat hunts, and all other events.
 
@@ -29,10 +30,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

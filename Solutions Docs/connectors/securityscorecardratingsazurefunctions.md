@@ -19,6 +19,7 @@
 | **Connector Definition Files** | [SecurityScorecardRatings_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardRatings/SecurityScorecardRatings_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#deprecated-securityscorecard-cybersecurity-ratings-using-azure-functions) |
 
 <p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated. Consider moving to the <strong>SecurityScorecard Ratings (via Codeless Connector Framework)</strong> CCF data connector available in the solution, which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
 

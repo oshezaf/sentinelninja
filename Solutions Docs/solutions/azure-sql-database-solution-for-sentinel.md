@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider,IT Operations |
-| **Version** | 3.0.0 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-19 |
-| **Last Updated** | 2026-06-15 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Azure SQL Database solution for sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sql.sentinel4sql) · Popularity: 🔵 Medium (70%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sql.sentinel4sql) · Popularity: 🔵 Medium (61%) |
 
 The [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/) solution for Microsoft Sentinel enables you to stream Azure SQL database audit and diagnostic logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances. 
   
@@ -115,7 +115,8 @@ This solution includes **19 content item(s)**:
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
-|-------------|--------------------------------|--------------------------------------------------------------------------|   
+|-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.2       | 20-10-2026                     | Added Defender XDR **Custom Detections** migrated from **Analytic Rules**. |
 | 3.0.0       | 11-06-2026                     | Updated description of CreateUi <br/> updates Azure SQL **Hunting Queries** and **Analytic Rule**					  |
 
 ---

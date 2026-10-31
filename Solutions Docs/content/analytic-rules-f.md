@@ -1,6 +1,6 @@
 # Analytic Rules - F
 
-**52 analytic rules** starting with 'F'.
+**53 analytic rules** starting with 'F'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -57,6 +57,7 @@
 | [Flare source code results](flare-flare-source-code-results-9cb7c337-f178-4af6-b0e8-b6b7552d762d-c8c5f322.md) | Medium | 📦 [Flare](../solutions/flare.md) |
 | [Flow Logs Alerts for Prancer](prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-72e2fad9.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Forescout-DNS_Sniff_Event_Monitor](forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md) | Medium | 📦 [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
+| [FortiNDR Cloud - Security Event Detected](fortinet-fortindr-cloud-fortindr-cloud-security-event-detected-1e6a8802-9129-44d4-a4f9-c6010b5725e8-224b2e79.md) | High | 📦 [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [Fortinet - Beacon pattern detected](standalone-content-fortinet-beacon-pattern-detected-3255ec41-6bd6-4f35-84b1-c032b18bbfcb-3dd31f10.md) | Low | 📄 Standalone Content |
 | [Fortiweb - WAF Allowed threat](fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-waf-allowed-threat-86e9409f-b9ea-4e9a-8b72-5132ba43bcae-93ed74f7.md) | High | 📦 [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
 | [Four-Eyes Authorization Disabled](veeam-four-eyes-authorization-disabled-57a8ff3a-d4aa-456f-9c13-186026bae52e-b3488fbd.md) | High | 📦 [Veeam](../solutions/veeam.md) |

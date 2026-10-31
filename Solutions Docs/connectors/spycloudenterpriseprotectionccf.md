@@ -1,4 +1,4 @@
-# ⚠️ SpyCloud Enterprise Protection Connector
+# ⚠️ SpyCloud Enterprise Threat Protection Connector
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
@@ -21,7 +21,7 @@
 | **CCF Configuration** | [SpyCloudEnterpriseProtectionLogsV2_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Data%20Connectors/SpyCloudEnterpriseProtectionLogsV2_ccp/SpyCloudEnterpriseProtectionLogsV2_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 
-Ingests SpyCloud Watchlist exposure data into Microsoft Sentinel, including compromised credentials and infected machine records associated with monitored assets. Also includes SpyCloud breach catalog metadata for contextual enrichment and correlation.
+Ingests SpyCloud Watchlist exposure data into Microsoft Sentinel, including compromised credentials, Identity Access Records and infected machine records associated with monitored assets. Also includes SpyCloud breach catalog metadata for contextual enrichment and correlation.
 
 ## Tables Ingested
 
@@ -31,9 +31,9 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SpyCloudBreachCatalogV2_CL`](../tables/spycloudbreachcatalogv2-cl.md) | ? | ✓ | ? |
 | [`SpyCloudBreachWatchlistV2_CL`](../tables/spycloudbreachwatchlistv2-cl.md) | ? | ✓ | ? |
+| [`SpyCloudCompassV2_CL`](../tables/spycloudcompassv2-cl.md) | ? | ✓ | ? |
 | [`SpyCloud_ConditionalAccessLogsV2_CL`](../tables/spycloud-conditionalaccesslogsv2-cl.md) | ? | ✓ | ? |
 | [`Spycloud_MDE_LogsV2_CL`](../tables/spycloud-mde-logsv2-cl.md) | ? | ✓ | ? |
-| [`spycloud_compassV2_CL`](../tables/spycloud-compassv2-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

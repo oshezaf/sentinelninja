@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for DefendAuditData_v4 |
 | Location | Solution |
-| Solution | [Egress Defend](../solutions/egress-defend.md) ⚠️ |
+| Solution | [Egress Defend](../solutions/egress-defend.md) |
 | Version | 1.0.0 |
 | Last Updated | 2026-08-19 |
 | Category | Microsoft Sentinel Parser |

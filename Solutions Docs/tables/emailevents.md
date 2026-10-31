@@ -6,7 +6,7 @@
 
 ---
 
-Microsoft 365 email events, including email delivery and blocking events
+Reference for EmailEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,9 +14,8 @@ Microsoft 365 email events, including email delivery and blocking events
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table) |
 
 ## Contents
 
@@ -25,6 +24,7 @@ Microsoft 365 email events, including email delivery and blocking events
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (55 columns)
 
@@ -93,7 +93,6 @@ Microsoft 365 email events, including email delivery and blocking events
 Official Microsoft Learn documentation for field/column information:
 
 - [EmailEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents)
-- [EmailEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table)
 
 ## Solutions (11)
 
@@ -544,11 +543,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365](../content/microsoft-defender-for-office-365-microsoftdefenderforoffice365-cc793056.md) |  |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
-| Workbook |
-|:-------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
@@ -571,9 +570,17 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
 
-## Selection Criteria Summary (69 criteria, 260 total references)
+## Parsers Using This Table (1)
 
-References by type: 0 connectors, 260 content items, 0 ASIM parsers, 0 other parsers.
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimEmailEventMicrosoftDefenderOffice365](../asim/asimemaileventmicrosoftdefenderoffice365.md) | EmailEvent | Microsoft Defender for Office 365 |  |
+
+## Selection Criteria Summary (68 criteria, 259 total references)
+
+References by type: 0 connectors, 259 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -645,8 +652,7 @@ References by type: 0 connectors, 260 content items, 0 ASIM parsers, 0 other par
 | `Subject in "COVID-19 nCov Special info WHO,HALTH ADVISORY:CORONA VIRUS,The Truth of COVID-19,This is your order?,WTF,What the fcuk,broken file,farewell letter,good bye"` | - | 1 | - | - | **1** |
 | `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | - | 1 | - | - | **1** |
 | `OrgLevelAction in "Allow,Block"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`OrgLevelPolicy !in "Phishing simulation,SecOps Mailbox"`<br>`UserLevelAction in "Allow,Block"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **260** | **0** | **0** | **260** |
+| **Total** | **0** | **259** | **0** | **0** | **259** |
 
 ### ActionType
 
@@ -655,14 +661,6 @@ References by type: 0 connectors, 260 content items, 0 ASIM parsers, 0 other par
 | `UserSubmission` | - | 10 | - | - | **10** |
 | `Automated Remediation` | - | 2 | - | - | **2** |
 | `ClickAllowed` | - | 2 | - | - | **2** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
 
 ### AttachmentCount
 

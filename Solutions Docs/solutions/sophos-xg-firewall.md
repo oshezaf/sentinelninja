@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | SophosXGFirewall |
 | **First Published** | 2021-10-20 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Sophos XG Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall) · Popularity: 🟢 High (93%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Sophos XG Firewall](https://www.sophos.com/products/next-gen-firewall) solution for Microsoft Sentinel enables you to ingest Sophos XG Firewall logs into Microsoft Sentinel.
@@ -98,7 +99,9 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                  |
 |-------------|--------------------------------|-------------------------------------------------------------------------------------|
-| 3.0.1       | 09-12-2024                     | Rmoved Deprecated **Data Connector**                                                |
+| 3.2.2       | 21-10-2026                     | Added Defender XDR **Custom Detections** for both **Analytic Rules** and a Defender XDR **Workbook** (Sentinel to XDR migration) |
+| 3.0.2       | 05-10-2026                     | Fixed an issue related to the API version                                           |
+| 3.0.1       | 09-12-2024                     | Removed Deprecated **Data Connector**                                               |
 |             |                                | Updated SophosXGFirewall.json **Workbook** to fix missing fields                    |
 | 3.0.0       | 01-08-2024                     | Update **Parser** as part of Syslog migration </br> Deprecating **Data Connectors** |
 

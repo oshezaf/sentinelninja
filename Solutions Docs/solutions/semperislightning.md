@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.semperis.com/support/](https://www.semperis.com/support/) |
 | **Categories** | Security - Cloud Security,Security - Threat Intelligence |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.1 |
 | **Author** | Semperis |
 | **First Published** | 2026-03-01 |
-| **Last Updated** | 2026-08-20 |
+| **Last Updated** | 2026-09-11 |
 | **Solution Folder** | [SemperisLightning](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.azure-sentinel-solution-semperislightning) · Popularity: ⚪ Very Low (0%) |
 
@@ -163,6 +163,7 @@ By default, the connector ingests data every 1 hour. You can modify the schedule
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                          |
 |-------------|--------------------------------|-------------------------------------------------------------|
+| 3.1.1       | 15-10-2026                     | Moved the Codeless Connector Framework (CCF) data connector from Preview to General Availability. |
 | 3.1.0       | 01-09-2026                     | Added a Codeless Connector Framework (CCF) data connector alongside the existing Function App connector, letting customers use either or both to ingest Semperis Lightning data. |
 | 3.0.0       | 23-03-2026                     | Initial Solution Release. Added Semperis Lightning Connector            |
 

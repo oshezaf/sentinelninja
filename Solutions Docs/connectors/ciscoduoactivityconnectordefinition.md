@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CiscoDuoActivity_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoActivity_CCF/CiscoDuoActivity_DCR.json) |
 | **CCF Configuration** | [CiscoDuoActivity_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoActivity_CCF/CiscoDuoActivity_PollingConfig.json) |
 | **CCF Capabilities** | `CiscoDuo`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-duo-activity-logs) |
 
 The Cisco Duo Activity Logs connector ingests admin and user activity log data from the Cisco Duo Admin API into Microsoft Sentinel.
 

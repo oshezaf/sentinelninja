@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.datawiza.com/contact-us/](https://www.datawiza.com/contact-us/) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |
 | **Last Updated** | 2026-05-12 |
@@ -46,18 +46,19 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) 🔶 | [Datawiza DAP](../connectors/datawizadapsolution.md) | Analytics |
+| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) 🔶 | [Datawiza DAP](../connectors/datawizadapsolution.md) | Analytics, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 
-This solution includes **1 content item(s)**:
+This solution includes **2 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 1 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
@@ -65,12 +66,19 @@ This solution includes **1 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Datawiza - massive errors detected](../content/datawiza-datawiza-massive-errors-detected-ddee1398-cf0b-46af-b583-78c3c29156dc-f782246e.md) | Medium | Discovery | [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) |
 
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [DatawizaAccessProxyDashboard](../content/datawiza-datawizaaccessproxydashboard-5edee7b6.md) | [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) |
+
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |
-|-------------|--------------------------------|----------------------------------------|
-| 3.0.1       | 03-05-2026                     | Added new analytics rules.             |
-| 3.0.0       | 10-11-2025                     | Initial Solution Release.              |
+|**Version**|**Date Modified (DD-MM-YYYY)**|**Change History**|
+|-|-|-|
+|3.0.2|12-10-2026|Added Workbook for Datawiza Access Proxy monitoring.|
+|3.0.1|03-05-2026|Added new analytics rules.|
+|3.0.0|10-11-2025|Initial Solution Release.|
 
 ---
 

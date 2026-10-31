@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.domaintools.com/support/](https://www.domaintools.com/support/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | DomainTools - memberservices@domaintools.com |
 | **First Published** | 2025-11-30 |
-| **Last Updated** | 2026-09-04 |
+| **Last Updated** | 2026-09-29 |
 | **Solution Folder** | [DomainTools CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools%20CCF) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/domaintoolsllc1729780431855.azure-sentinel-solution-domaintools-threatintel) · Popularity: ⚪ Very Low (0%) |
 
@@ -80,6 +80,7 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                              |
 |-------------|----------------|---------------------------------------------------------------------------------|
+| 3.0.1       | 16-09-2026     | Added API Key, Feed Types, Session ID, Query Window, and optional Top. <br> Switched to sessionID-based NDJSON (`jsonl`) polling and a 2 req/min rate limit. <br> Hides internal `after`, `before`, and `fromBeginning`. |
 | 3.0.0       | 02-09-2026     | Includes all CCF connector definitions and configurations. <br> Updated publisherId to address an issue identified during Microsoft Marketplace submission.|
 
 ---

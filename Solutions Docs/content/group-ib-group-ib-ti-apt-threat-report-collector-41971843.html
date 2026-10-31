@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group-IB TI - APT threat report collector &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="group-ib-ti---apt-threat-report-collector">Group-IB TI - APT threat report collector</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Polls the Group-IB Threat Intelligence apt/threat collection hourly using incremental seqUpdate paging and writes APT threat reports to the GIBAPTThreat_CL custom table in Log Analytics for use in analytics rules and hunting queries.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/group-ib.html">Group-IB</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/GIBTIA_APT_Threats/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>1</strong> Logic App connector / built-in action:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">5</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Query_Last_SeqUpdate</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[variables('WorkspaceQueryEndpoint')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Get_SequenceList</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://tap.group-ib.com/api/v2/sequence_list</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_next_portion</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat('https://tap.group-ib.com/api/v2/apt/threat/updated?seqUpdate=', variables('seqUpdate'), '&amp;limit=', min(parameters('LimitPerPortion'), 10))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Write_chunk_to_table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('DcrEndpoint'), '/dataCollectionRules/', parameters('DcrImmutableId'), '/streams/Custom-GIBAPTThreat?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Save_tracking_record</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('DcrEndpoint'), '/dataCollectionRules/', parameters('DcrImmutableId'), '/streams/Custom-GIBCollectionTracking?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/GIBTIA_APT_Threats/readme.md">GIBTIA_APT_Threats/readme.md</a></em></p>
+</blockquote>
+<p>Polls the Group-IB Threat Intelligence apt/threat collection hourly using incremental seqUpdate paging and writes APT threat reports to the GIBAPTThreat_CL custom table in Log Analytics for use in analytics rules and hunting queries.</p>
+<h2 id="quick-deployment">Quick Deployment</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2FGIBTIA_APT_Threats%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A Group-IB Threat Intelligence subscription with API access to the apt/threat collection.</li>
+<li>A Log Analytics workspace connected to Microsoft Sentinel.</li>
+<li>The deploying account holds Owner or User Access Administrator on the resource group (the template creates role assignments), or the AssignRoles parameter is set to false.</li>
+</ul>
+<h2 id="post-deployment">Post-deployment</h2>
+<ol>
+<li>Nothing to authorize: the playbook writes to Log Analytics through the Data Collection Rule this template created, using its managed identity. With AssignRoles left at true the template has also assigned the playbook's two roles (Monitoring Metrics Publisher on that rule, Log Analytics Reader on the workspace); with AssignRoles=false, assign them by hand.</li>
+<li>Set the GIBUsername, GIBApiKey, StartDate and LimitPerPortion parameters.</li>
+<li>Wait 5-15 minutes for the role assignments to propagate, then enable the Logic App. It deploys in a Disabled state by design.</li>
+<li>Upgrading from 2.0: convert the workspace's GIB* tables once with migrate-tables.sh before redeploying (see the Playbooks readme).</li>
+</ol>
+<hr />
+<p>Part of the Group-IB Threat Intelligence integration. See <a href="../readme.html">the Playbooks readme</a> for the full catalog, architecture and deployment order.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/group-ib.html">Back to Group-IB</a></p>
+
+</div>
+
+</body>
+</html>

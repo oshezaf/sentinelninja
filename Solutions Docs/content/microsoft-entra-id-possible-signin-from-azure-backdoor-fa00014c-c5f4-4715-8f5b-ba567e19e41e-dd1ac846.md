@@ -14,6 +14,7 @@ Identifies when a user adds an unverified domain as an authentication method, fo
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `fa00014c-c5f4-4715-8f5b-ba567e19e41e` |
 | **Severity** | Medium |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Persistence |
 | **Techniques** | T1098 |

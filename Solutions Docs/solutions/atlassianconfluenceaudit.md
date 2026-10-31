@@ -2,7 +2,7 @@
 
 *Solution: AtlassianConfluenceAudit*
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AtlassianConfluenceAudit Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/Azure_Sentinel.svg" alt="AtlassianConfluenceAudit Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations,Application |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
-| **Last Updated** | 2026-05-13 |
+| **Last Updated** | 2026-10-05 |
 | **Solution Folder** | [AtlassianConfluenceAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianconfluenceaudit) · Popularity: 🔵 Medium (74%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianconfluenceaudit) · Popularity: 🔵 Medium (78%) |
 
 The [Atlassian Confluence Audit](https://www.atlassian.com/software/confluence) solution provides the capability to ingest [Confluence Audit Records](https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/) into Microsoft Sentinel.
 
@@ -75,6 +75,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                    |
 |-------------|--------------------------------|-------------------------------------------------------|
+| 3.0.8       | 21-09-2026                     | Updated the Atlassian Confluence Audit data connector with multi-site connection support and scoped API token guidance. Added the **ConfluenceAuditLogs** alias parser. |
 | 3.0.7       | 07-04-2026                     | Updated **Data Connector** - *Atlassian Confluence Audit* to change DCR data flows.  |
 | 3.0.6       | 28-07-2025                     | Removed Deprecated **Data Connector**.  |
 | 3.0.5       | 06-05-2025                     | Launching CCP **Data Connector** - *Atlassian Confluence Audit* from Public Preview to Global Availability.           |

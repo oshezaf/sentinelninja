@@ -6,17 +6,16 @@
 
 ---
 
-Cloud process events for various cloud platforms protected by the organization's Microsoft Defender for Containers
+Reference for CloudProcessEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudprocessevents-table) |
 
 ## Contents
 
@@ -67,7 +66,6 @@ Cloud process events for various cloud platforms protected by the organization's
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudProcessEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
-- [CloudProcessEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudprocessevents-table)
 
 ## Solutions (1)
 

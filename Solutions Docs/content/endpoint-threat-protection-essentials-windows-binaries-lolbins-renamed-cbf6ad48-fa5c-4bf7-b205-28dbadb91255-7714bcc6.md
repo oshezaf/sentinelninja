@@ -6,7 +6,7 @@
 
 ---
 
-This query detects the execution of renamed Windows binaries (Lolbins). This is a common technique used by adversaries to evade detection.  Ref: https://docs.paloaltonetworks.com/cortex/cortex-xdr/cortex-xdr-analytics-alert-reference/cortex-xdr-analytics-alert-reference/execution-of-renamed-lolbin.html
+This query detects the execution of renamed Windows binaries (Lolbins). This is a common technique used by adversaries to evade detection.  Ref: https://cortex-docs.paloaltonetworks.com/analytics-alerts/alerts-by-name/execution-of-renamed-lolbin
 
 | Attribute | Value |
 |:----------|:------|

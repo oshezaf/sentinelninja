@@ -38,45 +38,49 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **Google Workspace API access**: Access to the Google Workspace activities API through Oauth are required.
+- **Google Workspace API access**: Access to the Google Workspace activities API through OAuth is required.
 
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-**1. Connect to Google Workspace to start collecting user activity logs into Microsoft Sentinel**
+**1. Connect to Google Workspace**
+
+Add and manage independent Google Workspace tenant connections.
 #### Configuration steps for the Google Reports API
 
-1. Login to Google cloud console with your Workspace Admin credentials https://console.cloud.google.com.
-2. Using the search option (available at the top middle), Search for ***APIs & Services***
-3. From ***APIs & Services*** -> ***Enabled APIs & Services***, enable **Admin SDK API** for this project.
- 4. Go to ***APIs & Services*** -> ***OAuth Consent Screen***. If not already configured, create a OAuth Consent Screen with the following steps:
-	 1. Provide App Name and other mandatory information.
-	 2. Pick External as User Type for the Audience.
- 5. Go to ***APIs & Services*** -> ***Credentials*** and create OAuth 2.0 Client ID
-	 1. Click on Create Credentials on the top and select Oauth client Id.
-	 2. Select Web Application from the Application Type drop down.
-	 3. Provide a suitable name to the Web App and add the Redirect URI in the form below as the Authorized redirect URIs.
-	 4. Once you click Create, you will be provided with the Client ID and Client Secret. 
-	Copy these values and use them in the configuration steps below.
- 6. Go to ***Google Auth Platform*** -> ***Data Access***: Add ***Admin SDK API*** scope
-Configure steps for the Google Reports API oauth access. Then, provide the required information below and click on Connect.
->
-- **OAuth Configuration**:
-  - Client ID
-  - Client Secret
-  - Click 'Connect' to authenticate
+1. In Google Cloud Console, enable the **Admin SDK API**.
+2. Configure the OAuth consent screen.
+3. Create an OAuth 2.0 Client ID for a web application.
+4. Add the redirect URI shown by the connection form.
+5. Add the Admin SDK audit read-only scope.
+
+ℹ️ Create a separate connection alias for each Google Workspace tenant.
 **Connector Management Interface**
 
 This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
 
 📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
-- **Name**
-- **ID**
+- **Connection Alias**
+- **Activity Type**
 
 ➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
 
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
 > 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Connect a Google Workspace tenant**
+
+*Google Workspace Activities*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+*Authorize Google Workspace*
+
+- **Connection Alias** (required): Production or Contoso
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

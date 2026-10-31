@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 3.0.12 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-26 |
-| **Last Updated** | 2026-09-04 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices) · Popularity: 🟢 High (87%) |
 
 The Amazon Web Services solution for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS CloudTrail platform, VPC Flow Logs, AWS GuardDuty and AWS CloudWatch. 
 
@@ -52,18 +52,18 @@ This solution uses **5 table(s)**:
 |-------|-------------------|----------------|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | [Amazon Web Services](../connectors/aws.md), [Amazon Web Services S3](../connectors/awss3.md) | Analytics, Hunting, Workbooks |
 | [`AWSCloudWatch`](../tables/awscloudwatch.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
-| [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics |
+| [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics, Hunting |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
 | [`AWSWAF`](../tables/awswaf.md) | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) | - |
 
 ## Content Items
 
-This solution includes **99 content item(s)**:
+This solution includes **102 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 61 |
-| Hunting Queries | 36 |
+| Hunting Queries | 39 |
 | Workbooks | 2 |
 
 ### Analytic Rules
@@ -136,6 +136,9 @@ This solution includes **99 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
+| [AWS GuardDuty - EKS privilege escalation and credential access](../content/amazon-web-services-aws-guardduty-eks-privilege-escalation-and-credential-access-869d2742-80d8-4b72-89ad-af31ea6b7437-18f92ef6.md) | PrivilegeEscalation, CredentialAccess, Persistence | [`AWSGuardDuty`](../tables/awsguardduty.md) |
+| [AWS GuardDuty - High severity findings clustered by account and actor](../content/amazon-web-services-aws-guardduty-high-severity-findings-clustered-by-account-and-actor-d9329491-ab19-4903-aa0f-7affb388b011-dd98ec41.md) | Discovery, InitialAccess | [`AWSGuardDuty`](../tables/awsguardduty.md) |
+| [AWS GuardDuty - Publicly exposed or weakly protected S3 buckets](../content/amazon-web-services-aws-guardduty-publicly-exposed-or-weakly-protected-s3-buckets-81ff8c3c-b7c1-40ff-9389-800fcf2d484e-9c60c133.md) | Exfiltration, Discovery, DefenseEvasion | [`AWSGuardDuty`](../tables/awsguardduty.md) |
 | [AWSCloudTrail - AWS STS token suspicious activity from EC2](../content/amazon-web-services-awscloudtrail-aws-sts-token-suspicious-activity-from-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-83ac2ebc.md) | CredentialAccess, LateralMovement | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - Activity in unused or unsupported cloud regions](../content/amazon-web-services-awscloudtrail-activity-in-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-88f44c79.md) | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AWSCloudTrail - EC2 Instance Launched Without Key Pair](../content/amazon-web-services-awscloudtrail-ec2-instance-launched-without-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-cd4aae7c.md) | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
@@ -184,6 +187,8 @@ This solution includes **99 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Amazon Web Services migration, and repackaged the V3.1 solution. |
+| 3.0.13      | 03-09-2026                     | Added new AWS GuardDuty **Hunting Queries** for high-severity findings, EKS privilege escalation and credential access, and S3 public exposure; repackaged the solution after incorporating the latest upstream changes. |
 | 3.0.12      | 26-08-2026                     | Updated **Analytic Rules** AWS_LogTampering.yaml (successful log-tampering, High) and AWS_ClearStopChangeTrailLogs.yaml (failed log-tampering attempts, Low) with expanded event coverage and tiered severity; removed duplicate **Analytic Rule** AWS_ConfigServiceResourceDeletion.yaml; refreshed the Data Connectors section in the solution UI (createUiDefinition) |
 | 3.0.11      | 11-08-2026                     | Fixed the AWS WAF Data Connector last-data-received query by removing an invalid test filter. |
 | 3.0.10      | 19-05-2026                     | Added non-analytics tier queries to Amazon Web Services S3 **Data Connector** to support Basic/Auxiliary plan tables. |

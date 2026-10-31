@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -21,17 +19,18 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (7 columns)
+## Schema (8 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZPA_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| _ItemId | string |
 | _ResourceId | string |
-| _SubscriptionId | string |
 | Computer | string |
 | Message | string |
-| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
 | TimeGenerated | datetime |
 | Type | string |
 
@@ -103,7 +102,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZscalerZPA](../content/zscaler-private-access-zpa-zscalerzpa-0c8a39a9.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (3)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationZscalerZPA](../asim/asimauthenticationzscalerzpa.md) | Authentication | Zscaler Private Access |  |
+| [ASimNetworkSessionZscalerZPA](../asim/asimnetworksessionzscalerzpa.md) | NetworkSession | Zscaler Private Access (ZPA) |  |
 
 ### Other Parsers (1)
 

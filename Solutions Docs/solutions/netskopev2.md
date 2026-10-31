@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | Security - Network |
-| **Version** | 3.1.4 |
+| **Version** | 3.1.6 |
 | **Author** | Netskope |
 | **First Published** | 2024-03-18 |
-| **Last Updated** | 2024-03-18 |
+| **Last Updated** | 2026-10-16 |
 | **Solution Folder** | [Netskopev2](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netskope.netskope_mss) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netskope.netskope_mss) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (79%) |
 
 Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts and events into Microsoft Sentinel. The connector provides visibility into Netskope Platform Events and Alerts in Microsoft Sentinel to improve monitoring and investigation capabilities.
 
@@ -34,33 +34,37 @@ Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts a
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **5 data connector(s)**:
 
-- [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md)
+- [Netskope AI SecOps](../connectors/netskopeaisecops.md)
+- [Netskope Alerts and Events](../connectors/netskopealertsevents.md)
+- [Netskope Client Status](../connectors/netskopeclientstatus.md)
 - [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶
-- [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶
+- [[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)](../connectors/netskopewebtransactionsdataconnector.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **32 table(s)**:
+This solution uses **34 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | Workbooks |
-| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | Workbooks |
-| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
-| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeAISecOps_CL`](../tables/netskopeaisecops-cl.md) | [Netskope AI SecOps](../connectors/netskopeaisecops.md) | - |
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | Analytics, Workbooks |
+| [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) | [Netskope Client Status](../connectors/netskopeclientstatus.md) | Analytics, Workbooks |
+| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | Workbooks |
+| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
+| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
 | [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) | - | Workbooks |
-| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Workbooks |
-| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Analytics |
+| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) 🔶 | [[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)](../connectors/netskopewebtransactionsdataconnector.md) | Workbooks |
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | [[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)](../connectors/netskopewebtransactionsdataconnector.md) | Analytics |
 | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) 🔶 | - | Workbooks |
 | [`Netskope_Events_CL`](../tables/netskope-events-cl.md) 🔶 | - | Workbooks |
 | [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) 🔶 | - | Workbooks |
@@ -87,20 +91,23 @@ This solution uses **32 table(s)**:
 
 ## Content Items
 
-This solution includes **37 content item(s)**:
+This solution includes **43 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Parsers | 30 |
-| Workbooks | 4 |
+| Parsers | 32 |
+| Workbooks | 5 |
+| Analytic Rules | 4 |
 | Playbooks | 2 |
-| Analytic Rules | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
+| [Netskope - High Severity DLP Alert](../content/netskopev2-netskope-high-severity-dlp-alert-04e36dfa-05b3-45bd-b39f-28b6fac71337-a587b885.md) | High | Exfiltration, Collection | [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) |
 | [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) | Medium | Execution | [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) |
+| [Netskope Client - Internet Security disabled by user](../content/netskopev2-netskope-client-internet-security-disabled-by-user-3e9b7d54-2a6c-4f18-b0e5-c7a94d21f6b8-7c9a19fc.md) | Medium | DefenseEvasion | [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) |
+| [Netskope Client - Private Access disabled by user](../content/netskopev2-netskope-client-private-access-disabled-by-user-8c1f6a2e-4b7d-4e3a-9f21-5d0c7b9e6a41-3f0d1037.md) | Medium | DefenseEvasion | [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) |
 
 ### Workbooks
 
@@ -109,6 +116,7 @@ This solution includes **37 content item(s)**:
 | [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) | [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) |
 | [NetskopeCCPDashboard](../content/netskopev2-netskopeccpdashboard-b47aef2b.md) | [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md)<br>[`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) |
 | [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md) | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)<br>[`Netskope_Events_CL`](../tables/netskope-events-cl.md)<br>[`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) |
+| [NetskopeClientStatusDashboard](../content/netskopev2-netskopeclientstatusdashboard-cb2ff8e3.md) | [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) |
 | [NetskopeDashboard](../content/netskopev2-netskopedashboard-7f2bb16f.md) | [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md)<br>[`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md)<br>[`alertsctepdata_CL`](../tables/alertsctepdata-cl.md)<br>[`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md)<br>[`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md)<br>[`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md)<br>[`alertspolicydata_CL`](../tables/alertspolicydata-cl.md)<br>[`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md)<br>[`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md)<br>[`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md)<br>[`alertsubadata_CL`](../tables/alertsubadata-cl.md)<br>[`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) |
 
 ### Playbooks
@@ -138,11 +146,13 @@ This solution includes **37 content item(s)**:
 | [EventsConnection](../parsers/eventsconnection.md) | - | [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) *(read)* |
 | [EventsNetwork](../parsers/eventsnetwork.md) | - | [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) *(read)* |
 | [EventsPage](../parsers/eventspage.md) | - | [`eventspagedata_CL`](../tables/eventspagedata-cl.md) *(read)* |
+| [NetskopeAISecOps](../parsers/netskopeaisecops.md) | - | - |
 | [NetskopeAlerts](../parsers/netskopealerts.md) | - | [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) *(read)* |
 | [NetskopeCCFWebTransactions](../parsers/netskopeccfwebtransactions.md) | - | [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) *(read)* |
 | [NetskopeCEAlerts](../parsers/netskopecealerts.md) | - | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) *(read)* |
 | [NetskopeCEEventsApplication](../parsers/netskopeceeventsapplication.md) | - | [`Netskope_Events_CL`](../tables/netskope-events-cl.md) *(read)* |
 | [NetskopeCEWebTransactions](../parsers/netskopecewebtransactions.md) | - | [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) *(read)* |
+| [NetskopeClientStatus](../parsers/netskopeclientstatus.md) | - | [`NetskopeClientStatus_CL`](../tables/netskopeclientstatus-cl.md) *(read)* |
 | [NetskopeEventsApplication](../parsers/netskopeeventsapplication.md) | - | [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) *(read)* |
 | [NetskopeEventsAudit](../parsers/netskopeeventsaudit.md) | - | [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) *(read)* |
 | [NetskopeEventsConnection](../parsers/netskopeeventsconnection.md) | - | [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) *(read)* |
@@ -200,6 +210,8 @@ The **Netskope Microsoft Sentinel Solution** integrates Netskope logs (events, a
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.6       | 15-10-2026                     | Restored the default **Index** value of the **Netskope Alerts and Events** connector (lost in 3.1.3) so a blank Index field keeps polling the original Netskope iterators (e.g. `remediationIndex`) instead of creating new ones and re-ingesting older data. |
+| 3.1.5       | 22-09-2026                     | Fixed **Netskope Alerts and Events** connector Connect failure ('Expected a value of type Array, but received a value of type String') and renamed it to **Netskope Alerts and Events**. Added **Netskope Client Status** and **Netskope AI SecOps** CCF data connectors with parsers, the **Netskope Client Status Dashboard** workbook and analytic rules **Netskope Client - Private Access disabled by user**, **Netskope Client - Internet Security disabled by user** and **Netskope - High Severity DLP Alert**. Added 12 DLP Incident fields to **NetskopeEventsDLP_CL**. Deprecated **Netskope Web Transactions Data Connector** (using Azure Function). |
 | 3.1.4       | 30-03-2026                     | Fix space in name. Rename to Netskope Alerts and Events (via Codeless Connector Framework)|
 | 3.1.3       | 20-03-2026                     | Rename to Netskope Alerts and Events(via Codeless Connector Framework)|
 | 3.1.2       | 31-10-2025                     | Added Dropdown in CCF UI page for data ingestion |

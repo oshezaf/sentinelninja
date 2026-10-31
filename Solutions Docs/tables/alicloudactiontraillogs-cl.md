@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -18,6 +16,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (27 columns)
 
@@ -74,6 +73,16 @@ This table is ingested by the following connectors:
 | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](../connectors/alicloudactiontrailccpdefinition.md) |  |
 
 ---
+
+## Parsers Using This Table (3)
+
+### ASIM Parsers (3)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventAlibabaCloudActionTrail](../asim/asimauditeventalibabacloudactiontrail.md) | AuditEvent | Alibaba Cloud ActionTrail |  |
+| [ASimAuthenticationAlibabaCloudActionTrail](../asim/asimauthenticationalibabacloudactiontrail.md) | Authentication | Alibaba Cloud ActionTrail |  |
+| [ASimUserManagementAlibabaCloudActionTrail](../asim/asimusermanagementalibabacloudactiontrail.md) | UserManagement | Alibaba Cloud ActionTrail |  |
 
 ---
 

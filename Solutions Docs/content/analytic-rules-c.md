@@ -1,6 +1,6 @@
 # Analytic Rules - C
 
-**395 analytic rules** starting with 'C'.
+**387 analytic rules** starting with 'C'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -20,6 +20,7 @@
 | [Cayosoft Guardian - Cloud Application Security Threats](cayosoft-guardian-cayosoft-guardian-cloud-application-security-threats-e6f6c71c-f1fd-473b-9129-249db5d7462c-429092f9.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [Cayosoft Guardian - Core Identity and Infrastructure Threats](cayosoft-guardian-cayosoft-guardian-core-identity-and-infrastructure-threats-4720d7a5-6845-4ce4-aa45-79334e1a1176-0f15a2e7.md) | Medium | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [CDM_ContinuousDiagnostics&Mitigation_PostureChanged](continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posturechanged-fd950af9-d9db-4879-a60a-7267cc041beb-ff19a723.md) | Medium | 📦 [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md) |
+| [Certificate expiring after 2030 still uses classical signature](qcryptonpqcscanner-certificate-expiring-after-2030-still-uses-classical-signature-5e4d3c2b-1a9f-4e8d-7c6b-5a4d3f2e1c0b-cea40d5c.md) | High | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [Certified Pre-Owned - backup of CA private key - rule 1](falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Certified Pre-Owned - backup of CA private key - rule 2](falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Certified Pre-Owned - TGTs requested with certificate authentication](falconfriday-certified-pre-owned-tgts-requested-with-certificate-authentication-b838a13c-052e-45b8-a5ac-7d3eb62efa11-8b984753.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
@@ -28,6 +29,7 @@
 | [Changes to Application Ownership](standalone-content-changes-to-application-ownership-cc5780ce-3245-4bba-8bc1-e9048c2257ce-9e47b574.md) | Medium | 📄 Standalone Content |
 | [Changes to PIM Settings](standalone-content-changes-to-pim-settings-0ed0fe7c-af29-4990-af7f-bb5ccb231198-dc0157b2.md) | High | 📄 Standalone Content |
 | [Check Point Exposure Management - Alert Ingestion Anomaly](check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.md) | Medium | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Argos alerts to incidents](check-point-cyberint-alerts-check-point-exposure-management-argos-alerts-to-incidents-2f7c4e91-6b8d-4a3f-9e15-c0d84b7a2f36-770efb05.md) | Medium | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Checkpoint - Pending Phishing emails](checkpoint-harmony-email-and-collaboration-checkpoint-pending-phishing-emails-a97e2333-b7de-4c14-9700-e652a1dbef26-bbcae6ab.md) | High | 📦 [CheckPoint Harmony Email and Collaboration](../solutions/checkpoint-harmony-email-and-collaboration.md) |
 | [Chia_Crypto_Mining IOC - June 2021](windows-forwarded-events-chia-crypto-mining-ioc-june-2021-4d173248-439b-4741-8b37-f63ad0c896ae-e48dccbd.md) | Low | 📦 [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | [Cisco - firewall block but success logon to Microsoft Entra ID](standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md) | Medium | 📄 Standalone Content |
@@ -267,16 +269,6 @@
 | [CTERA Mass Access Denied Detection Analytic](ctera-ctera-mass-access-denied-detection-analytic-88341fc3-38e1-46db-8bb1-6c052e749991-0ac24cd2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Deletions Detection Analytic](ctera-ctera-mass-deletions-detection-analytic-5365f294-0c67-432a-bacf-b1282a3b6c46-6fc626fe.md) | High | 📦 [CTERA](../solutions/ctera.md) |
 | [CTERA Mass Permissions Changes Detection Analytic](ctera-ctera-mass-permissions-changes-detection-analytic-90502ac9-19a2-41f0-ba81-e352de90b61b-15e26af2.md) | High | 📦 [CTERA](../solutions/ctera.md) |
-| [CyberArkEPM - Attack attempt not blocked](cyberarkepm-cyberarkepm-attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16-2c52bf85.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - MSBuild usage as LOLBin](cyberarkepm-cyberarkepm-msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15-c30da3a6.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Multiple attack types](cyberarkepm-cyberarkepm-multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b-c13c5274.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Possible execution of Powershell Empire](cyberarkepm-cyberarkepm-possible-execution-of-powershell-empire-eddfd1fd-71df-4cc3-b050-287643bee398-2d5da046.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Process started from different locations](cyberarkepm-cyberarkepm-process-started-from-different-locations-0d4e62da-0a64-4532-b93e-28cd2940c300-6e1ef9fe.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Renamed Windows binary](cyberarkepm-cyberarkepm-renamed-windows-binary-9281b7cc-8f05-45a9-bf10-17fb29492a84-2d034aad.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Uncommon process Internet access](cyberarkepm-cyberarkepm-uncommon-process-internet-access-9d0d44ab-54dc-472a-9931-53521e888932-7cd557dd.md) | High | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Uncommon Windows process started from System folder](cyberarkepm-cyberarkepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-515a91a8.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Unexpected executable extension](cyberarkepm-cyberarkepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-814c115f.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberArkEPM - Unexpected executable location](cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberBlindSpot - Any Issue Detected](ctm360-cyberblindspot-any-issue-detected-abe1a662-d00d-482e-aa68-9394622ae02e-cd8c88d0.md) | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [Cyble Advisory Alerts Advisory](cyble-vision-cyble-advisory-alerts-advisory-1932dcfd-a32e-49f9-a212-5bcd084fbd78-26eb1bc8.md) ⚠️ | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyble Vision Alerts Assets](cyble-vision-cyble-vision-alerts-assets-0012714c-c595-4dcd-8949-4a5c1d49aaa8-26bf60ce.md) | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |

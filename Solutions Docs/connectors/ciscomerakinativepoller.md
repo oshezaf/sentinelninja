@@ -37,7 +37,7 @@ This connector ingests data into the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) |  | ? | ✓ | ? |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) |  | ✓ | ✓ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -58,7 +58,7 @@ This connector ingests data into the following tables:
 **1. Connect Cisco Meraki Security Events to Microsoft Sentinel**
 
 To enable Cisco Meraki Security Events for Microsoft Sentinel, provide the required information below and click on Connect.
->This data connector depends on a parser based on a Kusto Function to render the content. [**CiscoMeraki**](https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Parsers/CiscoMeraki.txt) Parser currently support only "**IDS Alert**" and "**File Scanned**" Events.
+>This data connector depends on a parser based on a Kusto Function to render the content. [**CiscoMeraki**](https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Parsers/CiscoMeraki.yaml) Parser currently support only "**IDS Alert**" and "**File Scanned**" Events.
 > 📋 **Additional Configuration Step**: This connector includes a configuration step of type `APIKey`. Please refer to the Microsoft Sentinel portal for detailed configuration options for this step.
 
 ---

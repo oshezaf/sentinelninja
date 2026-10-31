@@ -6,7 +6,7 @@
 
 ---
 
-Files, IP addresses, URLs, users, or devices associated with alerts
+Reference for AlertEvidence table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,9 +14,8 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
 ## Contents
 
@@ -85,7 +84,6 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 Official Microsoft Learn documentation for field/column information:
 
 - [AlertEvidence Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence)
-- [AlertEvidence Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table)
 
 ## Solutions (7)
 
@@ -142,11 +140,11 @@ This table is used by the following solutions:
 | [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.md) |  |
 | [Identify acting user for reported phish](../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
 | [Identify acting user for reported phish](../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` |
-| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) | `EntityType == "User"` |
+| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) | `ActionType == "LogonSuccess"`<br>`EntityType == "User"` |
 | [KNOTWEED-AV Detections](../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
 | [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
-| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
+| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
 | [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
 | [URL click on ZAP email](../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.md) |  |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
@@ -166,7 +164,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,TeamsImpersonationDetected,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "ClickAllowed"`<br>`ActionType has "ClickBlocked"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "Automated Remediation"`
 
 | Workbook |
 |:-------------|
@@ -199,57 +197,32 @@ This table is used by the following solutions:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (8 criteria, 11 total references)
+## Selection Criteria Summary (8 criteria, 12 total references)
 
-References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "Automated Remediation"` | - | 3 | - | - | **3** |
 | `ActionType == "ChatCreated"` | - | 2 | - | - | **2** |
-| `ActionType == "Automated Remediation"` | - | 2 | - | - | **2** |
 | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | - | 2 | - | - | **2** |
 | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`EntityType in "MailMessage,Url"`<br>`ServiceSource == "Microsoft Defender for Office 365"` | - | 1 | - | - | **1** |
 | `EntityType in "Device,User"` | - | 1 | - | - | **1** |
-| `EntityType == "User"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,TeamsImpersonationDetected,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "ClickAllowed"`<br>`ActionType has "ClickBlocked"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
+| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
+| `ActionType == "LogonSuccess"`<br>`EntityType == "User"` | - | 1 | - | - | **1** |
 | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **11** | **0** | **0** | **11** |
+| **Total** | **0** | **12** | **0** | **0** | **12** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Automated Remediation` | - | 3 | - | - | **3** |
+| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `ChatCreated` | - | 2 | - | - | **2** |
 | `MoveToDeletedItems` | - | 2 | - | - | **2** |
 | `MovedToDeletedItems` | - | 2 | - | - | **2** |
-| `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
-| `AdminSubmission` | - | 1 | - | - | **1** |
-| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
-| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
-| `CallParticipantDetail` | - | 1 | - | - | **1** |
-| `CallReported` | - | 1 | - | - | **1** |
-| `ClickAllowed` | - | 1 | - | - | **1** |
-| `ClickBlocked` | - | 1 | - | - | **1** |
-| `ClickBlockedByTenantPolicy` | - | 1 | - | - | **1** |
-| `Malware ZAP` | - | 1 | - | - | **1** |
-| `Phish ZAP` | - | 1 | - | - | **1** |
-| `Spam ZAP` | - | 1 | - | - | **1** |
-| `TeamsImpersonationDetected` | - | 1 | - | - | **1** |
-| `UserSubmission` | - | 1 | - | - | **1** |
-| `contains Submission` | - | 1 | - | - | **1** |
-| `contains UserSubmission` | - | 1 | - | - | **1** |
-| `contains ZAP` | - | 1 | - | - | **1** |
-| `has ClickAllowed` | - | 1 | - | - | **1** |
-| `has ClickBlocked` | - | 1 | - | - | **1** |
-| `has Malware ZAP` | - | 1 | - | - | **1** |
-| `has Phish ZAP` | - | 1 | - | - | **1** |
-| `has Spam ZAP` | - | 1 | - | - | **1** |
-| `has ZAP` | - | 1 | - | - | **1** |
-| `has_any ClickAllowed` | - | 1 | - | - | **1** |
-| `has_any ClickBlocked` | - | 1 | - | - | **1** |
-| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
-| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
+| `LogonSuccess` | - | 1 | - | - | **1** |
 | `Add member to role` | - | 1 | - | - | **1** |
 | `Add user` | - | 1 | - | - | **1** |
 | `InteractiveLogon` | - | 1 | - | - | **1** |

@@ -14,6 +14,7 @@
 | **Solution** | [Syslog](../solutions/syslog.md) |
 | **ID** | `e1ce0eab-10d1-4aae-863f-9a383345ba88` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1110 |

@@ -1,6 +1,6 @@
-# CyberArkEPM
+# Idira EPM
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/idira_RGB_logo.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -11,14 +11,14 @@
 | Attribute | Value |
 |:----------|:------|
 | **Connector ID** | `CyberArkEPM` |
-| **Publisher** | CyberArk |
+| **Publisher** | Idira |
 | **Used in Solutions** | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CyberArkEPM_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Data%20Connectors/CyberArkEPM_API_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyberarkepm-using-azure-functions) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#idira-epm) |
 
-The [CyberArk Endpoint Privilege Manager](https://www.cyberark.com/products/endpoint-privilege-manager/) data connector provides the capability to retrieve security event logs of the CyberArk EPM services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
+The [Idira Endpoint Privilege Manager](https://www.cyberark.com/products/endpoint-privilege-manager/) data connector provides the capability to retrieve security event logs of the Idira EPM services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 
 ## Tables Ingested
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ✗ | ✓ | ✗ |
+| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -38,7 +38,7 @@ This connector ingests data into the following tables:
 
 **Custom Permissions:**
 - **Microsoft.Web/sites permissions**: Read and write permissions to Azure Functions to create a Function App is required. [See the documentation to learn more about Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
-- **REST API Credentials/permissions**: **CyberArkEPMUsername**, **CyberArkEPMPassword** and **CyberArkEPMServerURL** are required for making API calls.
+- **REST API Credentials/permissions**: **OauthUsername**, **OauthPassword**, **IdentityEndpoint**, **EPMRegionHost** and **WebAppID** are required for making API calls.
 
 ## Setup Instructions
 
@@ -50,36 +50,30 @@ This connector ingests data into the following tables:
 
 >**NOTE:** This data connector depends on a parser based on a Kusto Function to work as expected [**CyberArkEPM**](https://aka.ms/sentinel-CyberArkEPM-parser) which is deployed with the Microsoft Sentinel Solution.
 
-**STEP 1 - Configuration steps for the CyberArk EPM API**
+**STEP 1 - Configuration steps for the Idira EPM API**
 
- Follow the instructions to obtain the credentials.
+ Follow the [instructions](https://docs.cyberark.com/epm/latest/en/content/webservices/authenticate-with-identity-administration.htm) to obtain the OAuth2 credentials.
 
-1. Use Username and Password for your CyberArk EPM account.
+1. Obtain the **OauthUsername**, **OauthPassword**, **WebAppID**, **IdentityEndpoint** and **EPMRegionHost** for your Idira EPM account.
 
 **STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**
 
->**IMPORTANT:** Before deploying the CyberArk EPM data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following).
-- **Workspace ID**: `WorkspaceId`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Primary Key**: `PrimaryKey`
-  > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-
 **3. Option 1 - Azure Resource Manager (ARM) Template**
 
-Use this method for automated deployment of the CyberArk EPM data connector using an ARM Template.
+Use this method for automated deployment of the Idira EPM data connector using an ARM Template.
 
 1. Click the **Deploy to Azure** button below. 
 
 	[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-CyberArkEPMAPI-azuredeploy)
 2. Select the preferred **Subscription**, **Resource Group** and **Location**. 
 > **NOTE:** Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group.
-3. Enter the **CyberArkEPMUsername**, **CyberArkEPMPassword**, **CyberArkEPMServerURL**  and deploy. 
+3. Enter the **OauthUsername**, **OauthPassword**, **IdentityEndpoint**, **EPMRegionHost** and **WebAppID** and deploy.
 4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 
 5. Click **Purchase** to deploy.
 
 **4. Option 2 - Manual Deployment of Azure Functions**
 
-Use the following step-by-step instructions to deploy the CyberArk EPM data connector manually with Azure Functions (Deployment via Visual Studio Code).
+Use the following step-by-step instructions to deploy the Idira EPM data connector manually with Azure Functions (Deployment via Visual Studio Code).
 
 **1. Deploy a Function App**
 
@@ -111,16 +105,17 @@ If you're already signed in, go to the next step.
 **2. Configure the Function App**
 
 1. In the Function App, select the Function App Name and select **Configuration**.
-2. In the **Application settings** tab, select ** New application setting**.
+2. In the **Application settings** tab, select **New application setting**.
 3. Add each of the following application settings individually, with their respective string values (case-sensitive): 
-		CyberArkEPMUsername
-		CyberArkEPMPassword
-		CyberArkEPMServerURL
+		OAuthUsername
+		OAuthPassword
+		IdentityEndpoint
+		EPMRegionHost
+		WebAppID
 		WorkspaceID
 		WorkspaceKey
-		logAnalyticsUri (optional)
-> - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: `https://<CustomerId>.ods.opinsights.azure.us`.
-4. Once all application settings have been entered, click **Save**.
+4. Use the **WorkspaceID** and **WorkspaceKey** values from the Log Analytics workspace connected to Microsoft Sentinel.
+5. Once all application settings have been entered, click **Save**.
 
 ---
 

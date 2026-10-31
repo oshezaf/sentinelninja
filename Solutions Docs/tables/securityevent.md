@@ -14,7 +14,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -324,7 +324,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (264)
+## Content Items Using This Table (267)
 
 ### Analytic Rules (107)
 
@@ -510,7 +510,7 @@ This table is ingested by the following connectors:
 | [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) |  |
 | [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) |  |
 
-### Hunting Queries (114)
+### Hunting Queries (117)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -657,10 +657,13 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [Daily process execution trend](../content/standalone-content-daily-process-execution-trend-66a15973-7088-4c04-8901-df7324422886-3b1bcdb3.md) | `EventID == "4688"` |
 | [External IP address in Command Line](../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.md) | `EventID == "4688"` |
 | [Failed Login Attempt by Expired account](../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md) | `AccountType == "User"`<br>`EventID in "4625,4769,4776"` |
+| [New processes observed in last 24 hours](../content/standalone-content-new-processes-observed-in-last-24-hours-582d0a02-f931-4198-8b48-82b0537ec976-8d836ea9.md) | `EventID == "4688"` |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` |
+| [Windows suspicious login outside normal hours](../content/standalone-content-windows-suspicious-login-outside-normal-hours-2f10997c-81d8-4ee7-99a7-fce9ce49a90b-550cbabe.md) | `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` |
 
 **GitHub Only:**
 
@@ -847,13 +850,13 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (132 criteria, 181 total references)
+## Selection Criteria Summary (132 criteria, 184 total references)
 
-References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 177 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 19 | 1 | - | **20** |
+| `EventID == "4688"` | - | 21 | 1 | - | **22** |
 | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | 1 | 7 | - | 1 | **9** |
 | `EventID in "4624,4625"` | - | 5 | - | - | **5** |
 | `Activity has "modified"`<br>`EventData has ";0]"`<br>`EventData has ";1]"`<br>`EventData has ";2]"`<br>`EventData has "<Data Name="`<br>`EventID == "5136"` | - | 4 | - | - | **4** |
@@ -867,6 +870,7 @@ References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other par
 | `EventID in "4648,4673,4688,8002"` | - | 2 | - | - | **2** |
 | `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | - | 2 | - | - | **2** |
 | `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` | - | 2 | - | - | **2** |
+| `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` | - | 2 | - | - | **2** |
 | `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4625"`<br>`LogonType == "10"` | - | 1 | - | - | **1** |
 | `EventSourceName == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
@@ -954,7 +958,6 @@ References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other par
 | `EventID in "4624,4688"` | - | 1 | - | - | **1** |
 | `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
 | `CommandLine matchesregex "(.*)>(.*)"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID in "4624,4625"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID in "4728,4732,4756"`<br>`TargetSid !in "S-1-5-32-555"` | - | 1 | - | - | **1** |
 | `AccountType == "User"`<br>`EventID in "4720,4726"` | - | 1 | - | - | **1** |
@@ -985,7 +988,7 @@ References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other par
 | `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **174** | **5** | **1** | **181** |
+| **Total** | **1** | **177** | **5** | **1** | **184** |
 
 ### AccessMask
 
@@ -1122,9 +1125,9 @@ References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 49 | 1 | - | **50** |
-| `4624` | - | 22 | - | - | **22** |
-| `4625` | - | 19 | - | - | **19** |
+| `4688` | - | 51 | 1 | - | **52** |
+| `4624` | - | 23 | - | - | **23** |
+| `4625` | - | 20 | - | - | **20** |
 | `5136` | - | 17 | - | - | **17** |
 | `9208` | 1 | 8 | - | 1 | **10** |
 | `9211` | 1 | 8 | - | 1 | **10** |
@@ -1452,8 +1455,8 @@ References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= Window Manager` | - | 1 | - | - | **1** |
-| `!= Font Driver Host` | - | 1 | - | - | **1** |
+| `!= Window Manager` | - | 2 | - | - | **2** |
+| `!= Font Driver Host` | - | 2 | - | - | **2** |
 
 ### TargetInfo
 

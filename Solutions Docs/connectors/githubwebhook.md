@@ -24,13 +24,17 @@ The [GitHub](https://www.github.com) webhook data connector provides the capabil
 
  **Note:** If you are intended to ingest Github Audit logs, Please refer to GitHub Enterprise Audit Log Connector from "**Data Connectors**" gallery.
 
+
+
+**Azure Government Cloud:** This V1 connector is **not supported** in Azure Government Cloud. Use **GitHub (using Webhooks) V2**, which uses the Azure Monitor Logs Ingestion API with managed identity, instead. V2 is also the recommended replacement for existing V1 deployments. Follow the [V1-to-V2 migration instructions](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/README.md#migrating-from-v1).
+
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -82,14 +86,15 @@ This connector ingests data into the following tables:
 
     **Step 2 - Configure the Function App**
 
-    1. Go to Azure Portal for the Function App configuration. 
+    These V1 configuration instructions apply to Azure public cloud only. For Azure Government Cloud, use **GitHub (using Webhooks) V2** instead.
+
+1. Go to Azure Portal for the Function App configuration. 
 2. In the Function App, select the Function App Name and select **Configuration**.
 3. In the **Application settings** tab, select ** New application setting**.
 4. Add each of the following application settings individually, with their respective string values (case-sensitive): 
 		WorkspaceID
 		WorkspaceKey
-		logAnalyticsUri (optional) - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: `https://<CustomerId>.ods.opinsights.azure.us`.
-4. Once all application settings have been entered, click **Save**.
+5. Once all application settings have been entered, click **Save**.
 
 **Post Deployment steps**
 
@@ -118,6 +123,8 @@ This connector ingests data into the following tables:
 # Ingest GitHub events into sentinel through Webhook dataconnector
 Author: Prathibha Tadikamalla
 
+> **Azure Government Cloud:** This V1 connector is **not supported** in Azure Government Cloud. Use [GitHub (using Webhooks) V2](../GithubWebhookV2/README.md#azure-public-cloud-and-azure-government) instead. V2 is also the recommended replacement for existing V1 deployments; follow the [V1-to-V2 migration instructions](../GithubWebhookV2/README.md#migrating-from-v1).
+
  The Azure function based github dataconnector using webhook pushes all the github subscribed events into Sentinel. All these events will be placed into the table called "githubscanaudit_CL". As of now the solution has 3 parsers based on the below events:
   *	[Code Scanning Alert](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#code_scanning_alert)
   *	[Repository Vulnerability Alert (Dependabot)](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert)
@@ -129,9 +136,8 @@ Following are the configuration steps to deploy Function App.
 ## **Pre-requisites**
 
 ## Configuration Steps to Deploy Function App
-1. Click on Deploy to Azure (For both Commercial & Azure GOV)  
+1. Click on Deploy to Azure (Azure public cloud only).
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy)
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy-gov)
   
 
 2. Select the preferred **Subscription**, **Resource Group** and **Location**  

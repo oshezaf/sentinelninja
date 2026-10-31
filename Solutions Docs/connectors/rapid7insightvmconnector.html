@@ -121,7 +121,15 @@
 </ol>
 <ul>
 <li><strong>Region</strong>: us, eu, etc.</li>
-<li><strong>API Key</strong>: (password field)</li>
+<li><strong>API Key</strong>: (password field)
+<strong>Important:</strong> The Rapid7 v4 API endpoint may not consistently return all expected logs. To improve results, set the query window with an appropriate buffer beyond your scan interval. For example, if scans run every 60 minutes, set the query window to 75 minutes. The optimal buffer depends on your environment and should be adjusted as needed. We are actively working with the Rapid7 support team to address this API reliability issue.</li>
+<li><strong>Query window (minutes)</strong> (select)<ul>
+<li>15 mins</li>
+<li>40 mins</li>
+<li>1 hour + 15 mins</li>
+<li>24 hours + 15 mins</li>
+</ul>
+</li>
 </ul>
 <p><strong>2. Connect</strong></p>
 <p>Enable the Rapid7 Insight VM connector.</p>

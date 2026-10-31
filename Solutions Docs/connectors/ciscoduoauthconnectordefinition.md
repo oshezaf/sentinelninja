@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CiscoDuoAuth_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoAuth_CCF/CiscoDuoAuth_DCR.json) |
 | **CCF Configuration** | [CiscoDuoAuth_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoAuth_CCF/CiscoDuoAuth_PollingConfig.json) |
 | **CCF Capabilities** | `CiscoDuo`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-duo-authentication) |
 
 The Cisco Duo connector ingests authentication log data from the Cisco Duo Admin API into Microsoft Sentinel.
 

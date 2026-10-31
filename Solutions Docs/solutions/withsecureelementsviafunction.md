@@ -21,7 +21,7 @@
 | **First Published** | 2024-02-22 |
 | **Last Updated** | 2026-07-21 |
 | **Solution Folder** | [WithSecureElementsViaFunction](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-via-function) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/withsecurecorporation.sentinel-solution-withsecure-via-function) · Popularity: 🟡 Low (11%) |
 
 [DEPRECATED] This Azure Function based solution is deprecated and is no longer actively maintained. Please use the WithSecure Elements via Codeless Connector Framework (CCF) solution instead, which provides the same data ingestion without the need to deploy and maintain an Azure Function. New deployments should use the CCF solution.
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.

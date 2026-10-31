@@ -7,14 +7,16 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 30 |
-| **Solutions** | 3 |
+| **Playbooks using** | 32 |
+| **Solutions** | 4 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/wdatp/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 5 |
+| [ANY.RUN Submit File to Blob](../content/anyrun-any.run-submit-file-to-blob-dfc44a99.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 4 |
 | [AS-Compromised-Machine-Tagging](../content/standalone-content-as-compromised-machine-tagging-2c59f121.md) | 📄 Standalone | 1 | 2 |
 | [AS-Get-HostExposureLevel-From-MDE](../content/standalone-content-as-get-hostexposurelevel-from-mde-369cf8bd.md) | 📄 Standalone | 1 | 1 |
 | [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone | 1 | 1 |
@@ -38,7 +40,7 @@
 | [Restrict MDE App Execution - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-app-execution-incident-triggered-09245ecb.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 1 |
 | [Run MDE Antivirus - Alert Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus-alert-triggered-635881f3.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 2 |
 | [Run MDE Antivirus - Incident Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus-incident-triggered-51837a88.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | 1 | 2 |
-| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 3 |
+| [SpyCloud MDE Automation Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-playbook-3e87e024.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 2 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 2 |
 | [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 1 | 1 |

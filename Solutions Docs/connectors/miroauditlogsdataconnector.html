@@ -157,6 +157,7 @@
 <li>The token will work until you disable the toggle.</li>
 <li>Proceed to Step 3.</li>
 </ol>
+<p><strong>One token for all Miro connectors:</strong> the SIEM toggle creates one access token with every log scope your organization is entitled to: <code>auditlogs:read</code> (Enterprise Plan), <code>contentlogs:export</code> (Enterprise Guard add-on) and <code>aiinteractionlogs:read</code> (Enterprise Guard add-on with AI interaction logs). If the SIEM toggle was enabled before it offered these scopes, turn it off and on again to get a token that includes them, then update the token in every connector that uses it. Turning the toggle off invalidates its current token, so every connector that uses it fails to poll until it has the new token.</p>
 <p><strong>Option 2: Custom OAuth application (alternative)</strong></p>
 <ol>
 <li>Go to <a href="https://miro.com/app/settings/user-profile/apps">Miro App Settings</a>.</li>

@@ -66,17 +66,16 @@ Official Microsoft Learn documentation for field/column information:
 
 - [AzureDevOpsAuditing Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuredevopsauditing)
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
-- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 
 ---
 
-## Content Items Using This Table (38)
+## Content Items Using This Table (37)
 
 ### Analytic Rules (19)
 
@@ -128,19 +127,13 @@ This table is used by the following solutions:
 | [Azure DevOps- Public project created](../content/azuredevopsauditing-azure-devops-public-project-created-3cdc5404-15ed-4656-8eb9-60bc8b495934-0f563d21.md) |  |
 | [Azure DevOps- Public project enabled by admin](../content/azuredevopsauditing-azure-devops-public-project-enabled-by-admin-800ae9c9-0280-4296-821f-c6e0a473fb41-5f2a32eb.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
-
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 ## Parsers Using This Table (1)
 

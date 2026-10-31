@@ -6,7 +6,7 @@
 
 ---
 
-File creation, modification, and other file system events
+Reference for DeviceFileEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ File creation, modification, and other file system events
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) |
 
 ## Contents
 
@@ -103,12 +102,12 @@ File creation, modification, and other file system events
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceFileEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents)
-- [DeviceFileEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table)
 
-## Solutions (16)
+## Solutions (17)
 
 This table is used by the following solutions:
 
+- [ANYRUN](../solutions/anyrun.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
@@ -136,7 +135,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (127)
+## Content Items Using This Table (129)
 
 ### Analytic Rules (22)
 
@@ -158,8 +157,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
-| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) |  |
+| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | `ActionType in "FileCreated,FileModified"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` |
 | [SUNBURST and SUPERNOVA backdoor hashes](../content/microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.md) | `MD5 == "5"` |
@@ -220,7 +219,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Dropping Payload via certutil](../content/microsoft-defender-xdr-dropping-payload-via-certutil-4d11f63f-5b64-416e-8d77-266e4c6d382e-5c641ea8.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) |  |
 | [PrintNightmare CVE-2021-1675 usage Detection](../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.md) | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` |
@@ -252,7 +251,7 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [AV Detections with Source](../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.md) | `ActionType == "AntivirusDetection"` |
+| [AV Detections with Source](../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.md) |  |
 | [Abuse.ch Recent Threat Feed](../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) |  |
 | [Abuse.ch Recent Threat Feed (1)](../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.md) |  |
 | [Abusing settingcontent-ms](../content/github-only-abusing-settingcontent-ms-07a17371-bea3-41e5-91d1-99728cd44955-bb277017.md) | `InitiatingProcessFileName in "browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe"` |
@@ -262,12 +261,12 @@ This table is ingested by the following connectors:
 | [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [Browser Extension Enumeration via DeviceFileEvents](../content/github-only-browser-extension-enumeration-via-devicefileevents-ede058ab-97a8-4494-aa76-b7f5f6d78cba-a2f66fb1.md) |  |
 | [Data copied to other location than C drive](../content/github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.md) | `ActionType == "FileCreated"` |
-| [Doc attachment with link to download](../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
+| [Doc attachment with link to download](../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.md) |  |
 | [Dropbox downloads linked from other site](../content/github-only-dropbox-downloads-linked-from-other-site-de93670b-a1db-4c8c-80aa-5b3146428631-d523e10d.md) | `FileOriginReferrerUrl !startswith "https://www.dropbox.com/"`<br>`FileOriginUrl startswith "https://dl.dropboxusercontent.com/"` |
 | [Dropping payload via certutil](../content/github-only-dropping-payload-via-certutil-f5ff5b00-a90e-40b8-b241-9427a8ec5189-47bd6693.md) | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` |
-| [Email link + download + SmartScreen warning](../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.md) | `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` |
+| [Email link + download + SmartScreen warning](../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.md) |  |
 | [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
-| [Files copied to USB drives](../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
+| [Files copied to USB drives](../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.md) |  |
 | [General attempts to access local email store](../content/github-only-general-attempts-to-access-local-email-store-c3e585d2-f1d0-4789-85a2-cdf7642fdf8b-8b60ca1e.md) | `FolderPath has "Outlook"` |
 | [HTA Startup Persistence](../content/github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.md) |  |
 | [IcedId Delivery](../content/github-only-icedid-delivery-b2f3ee1c-f379-465c-a339-412ecf3b1bcb-39a15c94.md) | `FileOriginReferrerUrl has ".php"`<br>`FileOriginReferrerUrl has ".top"`<br>`InitiatingProcessFileName in "7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe"` |
@@ -276,13 +275,13 @@ This table is ingested by the following connectors:
 | [Malicious Excel Delivery](../content/github-only-malicious-excel-delivery-6fa3cf44-517f-4ce5-8727-948b0783b507-d9d7c2fd.md) | `FileOriginReferrerUrl has "/account"`<br>`FileOriginReferrerUrl has "/case"`<br>`FileOriginUrl has "/cancel.php"`<br>`FileOriginUrl has "/download.php"` |
 | [Malicious bat file](../content/github-only-malicious-bat-file-c903138d-b948-4975-a660-57495b3f8754-637f496c.md) |  |
 | [Network footprint (3)](../content/github-only-network-footprint-3-44b02f8c-d206-4e1a-9859-6aa06b80c346-72e9d427.md) | `FileOriginReferrerUrl contains "URL GOES HERE"`<br>`FileOriginUrl == "IP ADDRESS GOES HERE"`<br>`FileOriginUrl contains "URL GOES HERE"` |
-| [Possible File Copy to USB Drive](../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.md) | `ActionType == "PnpDeviceConnected"` |
+| [Possible File Copy to USB Drive](../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.md) |  |
 | [Private Key Files](../content/github-only-private-key-files-2ca01fd3-afb5-4050-8a1d-6b821bdab080-d378a671.md) |  |
 | [Qakbot email theft](../content/github-only-qakbot-email-theft-20b3ece3-7d4a-4952-914b-88623ccf6c09-8ae6138d.md) | `InitiatingProcessFileName == "ping.exe"` |
 | [Qakbot email theft (1)](../content/github-only-qakbot-email-theft-1-a5c3ebdf-e427-4b1b-985e-c1f1e20067b7-81d315af.md) | `FolderPath endswith ".eml"`<br>`InitiatingProcessCommandLine == "ping.exe -t 127.0.0.1"`<br>`InitiatingProcessFileName == "ping.exe"`<br>`InitiatingProcessParentFileName in "mobsync.exe,msra.exe"` |
 | [Ransomware hits healthcare - Vulnerable Gigabyte drivers](../content/github-only-ransomware-hits-healthcare-vulnerable-gigabyte-drivers-6eade795-7040-48eb-aae7-3f75bf7fad2e-0c90f3d2.md) |  |
 | [Rare-process-as-a-service](../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.md) |  |
-| [SmartScreen URL block ignored by user](../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.md) | `ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"` |
+| [SmartScreen URL block ignored by user](../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.md) |  |
 | [Storage File Seen on Endpoint](../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.md) | `ActionType == "FileCreated"` |
 | [Suspicious DLLs in spool folder](../content/github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.md) | `ActionType in "FileCreated,FileRenamed"` |
 | [Suspicious files in spool folder](../content/github-only-suspicious-files-in-spool-folder-664afd0d-c979-4970-affe-fc17f01276fb-73c9a13f.md) |  |
@@ -312,7 +311,7 @@ This table is ingested by the following connectors:
 | [launch-questd-w-osascript](../content/github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.md) |  |
 | [locate-ALPC-local-privilege-elevation-exploit](../content/github-only-locate-alpc-local-privilege-elevation-exploit-8f26a2c6-4c60-469c-ac7a-f4d1ccccab9f-9b89eb2d.md) | `InitiatingProcessIntegrityLevel != "High"`<br>`InitiatingProcessIntegrityLevel != "System"` |
 | [locate-dll-created-locally[Nobelium]](../content/github-only-locate-dll-created-locally[nobelium]-644a6cea-7662-45db-89d0-a9136a9a5da6-766ed37d.md) |  |
-| [lsass-credential-dumping](../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.md) | `ActionType in "FileCreated,OpenProcessApiCall"` |
+| [lsass-credential-dumping](../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.md) |  |
 | [oceanlotus-apt32-files](../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.md) |  |
 | [oracle-webLogic-executing-powershell](../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.md) |  |
 | [printnightmare-cve-2021-1675 usage detection](../content/github-only-printnightmare-cve-2021-1675-usage-detection-ec1934d5-c591-4ff4-9968-079dba04d28e-3fae6a29.md) | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` |
@@ -360,11 +359,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "AntivirusDetection"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
@@ -377,7 +376,7 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType == "AntivirusDetection"` |
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
@@ -389,13 +388,12 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) | FileEvent | Microsoft 365 Defender for EndPoint |
 
-## Selection Criteria Summary (41 criteria, 53 total references)
+## Selection Criteria Summary (35 criteria, 44 total references)
 
-References by type: 0 connectors, 52 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 43 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType in "FileCreated,UsbDriveMounted"` | - | 3 | - | - | **3** |
 | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | - | 3 | - | - | **3** |
 | `ActionType == "FileCreated"`<br>`FolderPath has "C:\\Windows\\System32\\spool\\drivers\\color\\"` | - | 2 | - | - | **2** |
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"` | - | 2 | - | - | **2** |
@@ -404,8 +402,8 @@ References by type: 0 connectors, 52 content items, 1 ASIM parsers, 0 other pars
 | `InitiatingProcessFileName != "certutil.exe"`<br>`InitiatingProcessFileName != "cmd.exe"` | - | 2 | - | - | **2** |
 | `ActionType == "FileCreated"` | - | 2 | - | - | **2** |
 | `FolderPath has "Outlook"` | - | 2 | - | - | **2** |
-| `ActionType == "AntivirusDetection"` | - | 2 | - | - | **2** |
 | `ActionType == "FileRenamed"`<br>`InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
 | `MD5 == "5"` | - | 1 | - | - | **1** |
 | `FolderPath !endswith ".ini"`<br>`FolderPath !endswith ".js"`<br>`FolderPath !endswith ".json"`<br>`FolderPath !endswith ".log"`<br>`FolderPath !endswith ".tmp"`<br>`FolderPath !endswith ".vb"`<br>`FolderPath !endswith ".xml"`<br>`FolderPath has_any "\\wwwroot\\"`<br>`InitiatingProcessCommandLine contains "MSExchange"`<br>`InitiatingProcessFileName == "w3wp.exe"` | - | 1 | - | - | **1** |
 | `ActionType in "FileCreated,FileModified,FileRenamed"` | - | 1 | - | - | **1** |
@@ -413,14 +411,10 @@ References by type: 0 connectors, 52 content items, 1 ASIM parsers, 0 other pars
 | `InitiatingProcessFileName in "browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe"` | - | 1 | - | - | **1** |
 | `FolderPath has "ds7002.lnk"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine has_all "IEX"`<br>`InitiatingProcessCommandLine has_any "Unrestricted"`<br>`InitiatingProcessFileName == "powershell.exe"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,OpenProcessApiCall"` | - | 1 | - | - | **1** |
-| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
 | `FileOriginReferrerUrl !startswith "https://www.dropbox.com/"`<br>`FileOriginUrl startswith "https://dl.dropboxusercontent.com/"` | - | 1 | - | - | **1** |
-| `ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"` | - | 1 | - | - | **1** |
 | `DeviceName == "EndpointNameHere"` | - | 1 | - | - | **1** |
 | `FolderPath endswith "spool\\svchost.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"` | - | 1 | - | - | **1** |
-| `ActionType == "PnpDeviceConnected"` | - | 1 | - | - | **1** |
 | `FolderPath contains "\\Start Menu\\Programs\\Startup"`<br>`InitiatingProcessFileName == "acrord32.exe"` | - | 1 | - | - | **1** |
 | `FolderPath contains "Programs\\Startup"`<br>`InitiatingProcessCommandLine contains ".rar"`<br>`InitiatingProcessFileName == "winrar.exe"` | - | 1 | - | - | **1** |
 | `FolderPath matchesregex ".*Confidential|Restricted.*"`<br>`InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"` | - | 1 | - | - | **1** |
@@ -429,30 +423,21 @@ References by type: 0 connectors, 52 content items, 1 ASIM parsers, 0 other pars
 | `ActionType == "FileCreated"`<br>`FolderPath startswith "C:\\temp\\Windows\\System32\\drivers\\"` | - | 1 | - | - | **1** |
 | `InitiatingProcessCommandLine !contains "/S"`<br>`InitiatingProcessCommandLine !contains "/SD"`<br>`InitiatingProcessCommandLine !contains "/ST"`<br>`InitiatingProcessCommandLine contains "/RP"`<br>`InitiatingProcessCommandLine contains "/RU"`<br>`InitiatingProcessCommandLine contains "/TN"`<br>`InitiatingProcessCommandLine contains "/change"`<br>`InitiatingProcessIntegrityLevel !in "High,System"` | - | 1 | - | - | **1** |
 | `InitiatingProcessIntegrityLevel != "High"`<br>`InitiatingProcessIntegrityLevel != "System"` | - | 1 | - | - | **1** |
-| `ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"` | - | 1 | - | - | **1** |
 | `FileOriginReferrerUrl has ".php"`<br>`FileOriginReferrerUrl has ".top"`<br>`InitiatingProcessFileName in "7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe"` | - | 1 | - | - | **1** |
 | `FileOriginReferrerUrl has "/account"`<br>`FileOriginReferrerUrl has "/case"`<br>`FileOriginUrl has "/cancel.php"`<br>`FileOriginUrl has "/download.php"` | - | 1 | - | - | **1** |
 | `FolderPath endswith ".eml"`<br>`InitiatingProcessCommandLine == "ping.exe -t 127.0.0.1"`<br>`InitiatingProcessFileName == "ping.exe"`<br>`InitiatingProcessParentFileName in "mobsync.exe,msra.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessFileName == "ping.exe"` | - | 1 | - | - | **1** |
 | `InitiatingProcessMD5 == "5"`<br>`InitiatingProcessSHA1 == "1"`<br>`InitiatingProcessSHA256 == "256"`<br>`MD5 == "5"` | - | 1 | - | - | **1** |
 | `FolderPath startswith "/"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **52** | **1** | **0** | **53** |
+| **Total** | **0** | **43** | **1** | **0** | **44** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 16 | - | - | **16** |
+| `FileCreated` | - | 13 | - | - | **13** |
 | `FileRenamed` | - | 4 | - | - | **4** |
-| `UsbDriveMounted` | - | 3 | - | - | **3** |
-| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
-| `SmartScreenUserOverride` | - | 2 | - | - | **2** |
-| `AntivirusDetection` | - | 2 | - | - | **2** |
-| `FileModified` | - | 1 | - | - | **1** |
-| `OpenProcessApiCall` | - | 1 | - | - | **1** |
-| `SmartScreenAppWarning` | - | 1 | - | - | **1** |
-| `PnpDeviceConnected` | - | 1 | - | - | **1** |
-| `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
+| `FileModified` | - | 2 | - | - | **2** |
 
 ### DeviceName
 

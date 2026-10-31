@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [UpwindCatalogLoader_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind/Data%20Connectors/UpwindCatalogLoader_API_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#upwind-catalog-loader-ingestion-api) |
 
 The **Upwind Catalog Loader** data connector ingests compute platform assets from the [Upwind](https://upwind.io) cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 
@@ -75,9 +76,17 @@ Click **Deploy to Azure** and fill in the parameters. The template automatically
 | `UpwindClientId` | Upwind API Client ID from Step 1 |
 | `UpwindClientSecret` | Upwind API Client Secret from Step 1 |
 | `AppInsightsWorkspaceResourceID` | Full Resource ID of the Log Analytics workspace (from **Log Analytics workspace → Properties**) |
-| `UpwindThreatLookbackMinutes` | *(optional, default 90)* Lookback window in minutes for threat detections, threat events, threat stories, and configuration findings |
+| `UpwindCatalogSchedule` | *(optional, default hourly)* When the function runs. Each run fetches what changed since the previous scheduled run |
 - **Workspace ID**: `WorkspaceId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
+
+**3. Updating an existing deployment**
+
+Updating or reinstalling this solution from Content Hub doesn't change the code your Function App runs. To get the latest connector code, click **Deploy to Azure** in Step 2 again and deploy into the same resource group with the same `FunctionName`. The deployment updates the existing Function App, tables and Data Collection Rule in place.
+
+The deployment resets the Function App's app settings to the template's values. Note any settings you added or changed yourself (for example `KEY_VAULT_URI`, `UPWIND_SECRET_NAME` or `UPWIND_FULL_SYNC_INTERVAL_HOURS`) and set them again afterwards.
+
+To confirm the update, check the Function App's logs after the next run: the latest version logs `Fetching catalog assets updated since` instead of fetching the whole catalog on every run.
 
 ---
 

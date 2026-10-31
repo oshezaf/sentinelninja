@@ -14,7 +14,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog) |
 
 ## Contents
@@ -84,11 +84,12 @@ Official Microsoft Learn documentation for field/column information:
 
 - [W3CIISLog Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog)
 
-## Solutions (8)
+## Solutions (9)
 
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
+- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
@@ -108,7 +109,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (38)
+## Content Items Using This Table (40)
 
 ### Analytic Rules (15)
 
@@ -195,13 +196,19 @@ This table is ingested by the following connectors:
 | [Exchange Servers and Associated Security Alerts](../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.md) |  |
 | [Suspected ProxyToken Exploitation](../content/github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csCookie has "SecurityToken"`<br>`csMethod == "POST"`<br>`csUriQuery has "msExchEcpCanary"`<br>`csUriStem has "/ecp"` |
 
-### Workbooks (7)
+### Workbooks (9)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |  |
+
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
 
@@ -220,6 +227,7 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `cIP !startswith "10."`<br>`cIP !startswith "127."`<br>`cIP !startswith "172."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUriQuery startswith "t="`<br>`csUriStem == "/ews/exchange.asmx"` |
+| [IISServersMonitoringSecurity](../content/github-only-iisserversmonitoringsecurity-7e647cbc.md) | `csMethod !in "GET,POST,HEAD,OPTIONS"` |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
 | [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |

@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network,Security - Automation (SOAR) |
-| **Version** | 3.0.2 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-03 |
+| **Last Updated** | 2026-10-23 |
 | **Solution Folder** | [Cisco ISE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoise) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoise) · Popularity: 🟢 High (91%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Cisco ISE](https://www.cisco.com/c/en_in/products/security/identity-services-engine/index.html) solution for Microsoft Sentinel enables you to ingest Cisco ISE’s NAC logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.
@@ -127,8 +128,9 @@ This solution includes **25 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                              |
-|-------------|-------------------------------|-------------------------------------------------|
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                     |
+|-------------|--------------------------------|------------------------------------------------------------------------|
+| 3.2.2       | 22-10-2026                     | Added Microsoft Defender XDR **Custom Detections** and **Workbook** migration support. |
 | 3.0.3       | 20-05-2025                    | Updated **Parser** to parse new fields          |
 | 3.0.2       | 04-12-2024                    | Removed Deprecated **Data connectors**          |
 | 3.0.1       | 23-07-2024                    | Deprecated data connectors                      |

@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventInfobloxBloxOne` |
 | **Built-in Parser** | `_ASim_AuditEvent_InfobloxBloxOne` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Infoblox BloxOne |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventInfobloxBloxOne.md)) |
-| **Last Updated** | Sep 11, 2024 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventInfobloxBloxOne.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventInfobloxBloxOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventInfobloxBloxOne.yaml) |
 

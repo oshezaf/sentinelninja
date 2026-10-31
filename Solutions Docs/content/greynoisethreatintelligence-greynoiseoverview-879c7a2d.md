@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "GreyNoise"` | ✓ | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey startswith "domain-name"`<br>`ObservableKey startswith "email"`<br>`ObservableKey startswith "file"`<br>`ObservableKey startswith "url"`<br>`SourceSystem == "GreyNoise"` | ✓ | ✓ | ✗ |
 
 ---
 

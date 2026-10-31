@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulumi Cloud Audit Logs for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="pulumi-cloud-audit-logs-for-microsoft-sentinel">Pulumi Cloud Audit Logs for Microsoft Sentinel</h1>
+<p><em>Solution: PulumiCloudAuditLogs</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Pulumi.svg" alt="PulumiCloudAuditLogs Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Pulumi</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.pulumi.com/support/">https://www.pulumi.com/support/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Others,DevOps</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Pulumi - support@pulumi.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-10-06</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-21</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PulumiCloudAuditLogs">PulumiCloudAuditLogs</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pulumicorporation1618431130005.azure-sentinel-solution-pulumicloudauditlogs">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The Pulumi Cloud Audit Logs solution for Microsoft Sentinel enables ingestion of audit log events from Pulumi Cloud into Microsoft Sentinel through the Codeless Connector Framework (CCF). It provides security monitoring and compliance auditing for infrastructure-as-code operations, covering authentication activity, organization membership changes, stack lifecycle operations, and access token usage. The solution includes analytic rules for failed login attempts, stack deletion, and organization membership changes. Pulumi documentation: https://www.pulumi.com/docs/pulumi-cloud/audit-logs/</p>
+<p>Underlying Microsoft Technologies used:</p>
+<ul>
+<li>Microsoft Sentinel</li>
+<li>Azure Monitor Logs</li>
+<li>Data Collection Rules (DCR)</li>
+<li>Codeless Connector Framework (CCF)</li>
+</ul>
+<p>Dependencies:</p>
+<ul>
+<li>A Pulumi Cloud organization on an edition that includes audit log export (Pro or above)</li>
+<li>A Pulumi Cloud access token with permissions to read audit logs</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/pulumiauditlogsdefinition.html">Pulumi Cloud Audit Logs</a> 🔶</li>
+</ul>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/pulumiauditlogs-cl.html"><code>PulumiAuditLogs_CL</code></a> 🔶</td>
+  <td><a href="../connectors/pulumiauditlogsdefinition.html">Pulumi Cloud Audit Logs</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
+</blockquote>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>3 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-excessive-authentication-failures-0199390c-e96d-4119-b25c-83257f3c4738-ebb80d97.html">Pulumi Cloud - Excessive authentication failures</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/pulumiauditlogs-cl.html"><code>PulumiAuditLogs_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-organization-membership-change-b5e805a7-a6b5-4af5-9a23-a5ea92b744f5-924bdf41.html">Pulumi Cloud - Organization membership change</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/pulumiauditlogs-cl.html"><code>PulumiAuditLogs_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-stack-deleted-bc489413-747f-41c7-bfe7-0ab66ded788e-9778b4fe.html">Pulumi Cloud - Stack deleted</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/pulumiauditlogs-cl.html"><code>PulumiAuditLogs_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>06-10-2026</td>
+  <td>Initial release. <br/> <strong>Data Connector</strong> (CCF, Pulumi Cloud audit logs V2 API into <code>PulumiAuditLogs_CL</code>) | v 3.0.0 <br/> <strong>Analytic Rules</strong> (3) | v 1.0.0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

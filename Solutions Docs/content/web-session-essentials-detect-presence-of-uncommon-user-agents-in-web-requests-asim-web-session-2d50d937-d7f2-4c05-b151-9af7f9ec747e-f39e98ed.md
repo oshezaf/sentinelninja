@@ -26,7 +26,14 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) 🔶 | ? | ✓ | ? |
 | [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) 🔶 | ? | ✓ | ? |
+| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

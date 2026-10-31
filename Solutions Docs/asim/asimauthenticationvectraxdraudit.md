@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Vectra |
-| **Parser Version** | 0.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVectraXDRAudit.md)) |
-| **Last Updated** | Apr 18 2023 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVectraXDRAudit.md)) |
+| **Last Updated** | Oct 2, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationVectraXDRAudit.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationVectraXDRAudit.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

@@ -16,11 +16,11 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Cloud Provider |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Palo Alto Prisma Cloud CWPP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Prisma%20Cloud%20CWPP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-prismacloudcompute) · Popularity: 🟡 Low (43%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-prismacloudcompute) · Popularity: 🟡 Low (18%) |
 
 The [Prisma Alto Prisma Cloud CWPP](https://prisma.pan.dev/api/cloud/cwpp/audits/#operation/get-audits-incidents) solution for Microsoft Sentinel allows you to connect to your Palo Alto Prisma Cloud CWPP instance and ingest alerts into your Microsoft Sentinel workspace using the Prisma Cloud API.
 
@@ -48,7 +48,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) 🔶 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md), [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/paloaltoprismacloudcwpp.md) | - |
+| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) 🔶 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/paloaltoprismacloudcwpp.md), [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -57,6 +57,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.4       | 12-10-2026                     |    Repackaged the solution to address the API version issue for DCR and changed the data connector parameters to have securestring. |
 | 3.0.3       | 03-01-2024                     |	Repackaged for _solutionVersion issue in resource            |
 | 3.0.2       | 03-01-2024                     |	Updated package version and password as a securestring            |
 | 3.0.1       | 30-11-2023                     |	Updated the data connector and its associated package             |

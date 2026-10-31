@@ -18,18 +18,18 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **121** |
-| Active | 61 |
-| Deprecated 🚫 | 33 |
-| Unpublished ⚠️ | 44 |
+| Total Connectors | **120** |
+| Active | 58 |
+| Deprecated 🚫 | 34 |
+| Unpublished ⚠️ | 48 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
 | [Azure Function](../methods/azure-function.md) | 70 |
-| [REST Pull API](../methods/rest-pull-api.md) | 51 |
-| **Total** | **121** |
+| [REST Pull API](../methods/rest-pull-api.md) | 50 |
+| **Total** | **120** |
 
 ## Connectors Using This API
 
@@ -37,6 +37,8 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
+| [(Deprecated) Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [(Deprecated) Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶 | [Azure Function](../methods/azure-function.md) | AbnormalSecurity | 2 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Agari Phishing Defense and Brand Protection](../connectors/agari.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Agari | 3 | [Agari](../solutions/agari.md) |
 | [AIShield](../connectors/boschaishield.md) | [REST Pull API](../methods/rest-pull-api.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
@@ -70,8 +72,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Derdack | 1 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | [REST Pull API](../methods/rest-pull-api.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [ESET Inspect](../connectors/esetinspect.md) ⚠️ 🔶 | [Azure Function](../methods/azure-function.md) | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
-| [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
@@ -92,7 +92,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Netskope](../connectors/netskope.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 1 | [Netskope](../solutions/netskope.md) |
 | [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 17 | [Netskopev2](../solutions/netskopev2.md) |
-| [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
@@ -102,8 +101,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶 | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rubrik, Inc | 4 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
-| [SaaS Security](../connectors/valencesecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
-| [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶 | [Azure Function](../methods/azure-function.md) | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
+| [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | [REST Pull API](../methods/rest-pull-api.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [SenservaPro (Preview)](../connectors/senservapro.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
 | [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |
@@ -144,6 +142,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[DEPRECATED] Holm Security Asset Data (using Azure Function)](../connectors/holmsecurityassets.md) | [Azure Function](../methods/azure-function.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | 🚫 [[DEPRECATED] IONIX Security Logs (Push)](../connectors/cyberpionsecuritylogs.md) | [REST Pull API](../methods/rest-pull-api.md) | IONIX | 1 | [IONIX](../solutions/ionix.md) |
 | 🚫 [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | [Azure Function](../methods/azure-function.md) | Lookout | 1 | [Lookout](../solutions/lookout.md) |
+| 🚫 [[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)](../connectors/netskopewebtransactionsdataconnector.md) | [Azure Function](../methods/azure-function.md) | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | 🚫 [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | [Azure Function](../methods/azure-function.md) | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | 🚫 [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | [Azure Function](../methods/azure-function.md) | OneLogin | 3 | [OneLoginIAM](../solutions/oneloginiam.md) |
 | 🚫 [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) | [Azure Function](../methods/azure-function.md) | Oracle | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |

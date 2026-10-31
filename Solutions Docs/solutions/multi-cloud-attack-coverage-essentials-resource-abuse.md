@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-11-22 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Multi Cloud Attack Coverage Essentials - Resource Abuse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-multicloudattackcoverage) · Popularity: ⚪ Very Low (7%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-multicloudattackcoverage) · Popularity: ⚪ Very Low (5%) |
 | **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [GoogleCloudPlatformIAM](googlecloudplatformiam.md), [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) |
 
 The rise of Multi Cloud Resource Abuse attacks poses a significant threat to the security and integrity of cloud infrastructures. These attacks target the vulnerabilities within AWS, GCP, and Azure cloud environments, aiming to exploit misconfigurations, weak access controls, or compromised credentials to gain unauthorized access, manipulate resources, and extract valuable data across diverse cloud platforms. The Multi Cloud Resource Abuse Attack Solution is designed to fortify the detection and prevention measures against such malicious activities. By integrating detection capabilities across AWS, GCP, and Azure cloud infrastructures, this solution offers a set of detection strategies across various cloud platforms, including AWS, GCP, and Azure, aiming to identify abnormal activities, unauthorized access attempts, resource misuse, and data exfiltration. The solution encompasses log monitoring, anomaly detection, and behaviour analysis to detect and respond to potential breaches or abuses. This solution extends its coverage to include a wide array of cloud-based services such as AWS IAM, Azure AD, GCP IAM, storage services, and more, ensuring a comprehensive approach to identifying, mitigating, and responding to potential threats.
@@ -106,6 +107,7 @@ This solution includes **9 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.3       | 28-10-2026                     | Added Defender XDR Custom Detections for V3.1 dual-surface package |
 | 3.0.3       | 07-06-2024                     | Analytical Rule description updated                                |
 | 3.0.2       | 08-04-2024                     | Added Account and FullName in entity mapping                       |
 | 3.0.1       | 23-02-2024                     | Tagged for dependent solutions for deployment                      |

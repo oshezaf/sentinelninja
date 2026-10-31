@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access](https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access) |
 | **Categories** | Identity |
-| **Version** | 3.0.4 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-04-08 |
-| **Last Updated** | 2026-06-22 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Global Secure Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-globalsecureaccess) · Popularity: 🟢 High (92%) |
 
@@ -102,6 +102,7 @@ This solution includes **10 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR Custom Detection **Analytic Rules** and migrated **Workbooks** to Defender XDR. |
 | 3.0.4       | 15-04-2026                     | Updated workbooks to support the new Entra traffic type; Fixed regex in **GSA - TI URL Entity** analytic rule for correct URL indicator matching |
 | 3.0.3       | 25-02-2026                     | Modified the query period for the Analytic Rule: [GSA - Detect Abnormal Deny Rate for Source to Destination IP] |
 | 3.0.2       | 04-02-2026                     | Added new **Analytic Rules** |

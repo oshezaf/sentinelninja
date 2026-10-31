@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Last Updated** | 2026-04-28 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Zscaler Private Access (ZPA)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zscalerprivateaccess) · Rating: ★★☆☆☆ 2.0/5 (3 ratings) · Popularity: 🔵 Medium (69%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-zscalerprivateaccess) · Rating: ★★☆☆☆ 2.0/5 (3 ratings) · Popularity: 🟢 High (90%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Zscaler Private Access (ZPA)](https://www.zscaler.com/) solution provides the capability to ingest [Zscaler Private Access events](https://help.zscaler.com/zpa/what-zscaler-private-access) into Microsoft Sentinel.
@@ -143,6 +143,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.2       | 21-10-2026                     | Added **Defender XDR Custom Detections** (10, migrated from the Analytic Rules) and **Defender XDR Workbook** (migrated from ZscalerZPA workbook); V3.1 packaging. |
 | 3.0.4       | 12-01-2026                     | Updated the **ZscalerZPAUnexpectedSessionDuration** Analytic Rule  |
 | 3.0.3       | 28-08-2025                     | The parser query now includes additional fields such as SessionID, IPProtocol, ClientCountryCode, and others, improving event parsing and enrichment.                                              |
 | 3.0.2       | 08-07-2025                     | Enhanced **Parser** logic to improve result filtering. |

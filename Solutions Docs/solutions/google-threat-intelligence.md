@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.virustotal.com/gui/contact-us](https://www.virustotal.com/gui/contact-us) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.3.0 |
+| **Version** | 3.3.1 |
 | **Author** | Google |
 | **First Published** | 2024-10-26 |
 | **Last Updated** | 2026-09-01 |
 | **Solution Folder** | [Google Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🔵 Medium (61%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🟡 Low (44%) |
 
 This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.<br><br><b>Important — Custom Connector prerequisite:</b> The Playbooks in this solution depend on the <b>Google Threat Intelligence custom Logic Apps connector</b>, which is <b>not deployed automatically</b> when you install the solution from Content Hub. Before running any of the Playbooks, you must manually deploy the custom connector into the same resource group and region as the Playbooks, using the Deploy to Azure button in the connector's <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Google%20Threat%20Intelligence/Playbooks/CustomConnector/GTICustomConnector">readme</a>. Without it, the Playbooks will fail to authenticate to the Google Threat Intelligence API.
 
@@ -60,11 +60,11 @@ The following **1 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **36 content item(s)**:
+This solution includes **37 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 15 |
+| Playbooks | 16 |
 | Analytic Rules | 14 |
 | Hunting Queries | 4 |
 | Parsers | 2 |
@@ -117,6 +117,7 @@ This solution includes **36 content item(s)**:
 | [Google Threat Intelligence - IOC Enrichment](../content/google-threat-intelligence-google-threat-intelligence-ioc-enrichment-37b5ea42.md) | This playbook will enrich IP, Hash, URL & Domain entities found in incidents. | - |
 | [Google Threat Intelligence - IP Enrichment](../content/google-threat-intelligence-google-threat-intelligence-ip-enrichment-e58dcaa4.md) | This playbook will enrich IP entities. | - |
 | [Google Threat Intelligence - IoC Stream](../content/google-threat-intelligence-google-threat-intelligence-ioc-stream-01fc772a.md) | This playbook will ingest Google Threat Intelligence from your IoC Streams into Threat Intelligence ... | - |
+| [Google Threat Intelligence - Session Assistant](../content/google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | This playbook lets analysts ask Google Threat Intelligence (GTI) questions directly from a Microsoft... | - |
 | [Google Threat Intelligence - Threat List](../content/google-threat-intelligence-google-threat-intelligence-threat-list-c6635a88.md) | This playbook will ingest Google Threat Intelligence into Threat Intelligence Sentinel. | - |
 | [Google Threat Intelligence - URL Enrichment](../content/google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | This playbook will enrich URL entities. | - |
 | [Google Threat Intelligence - URLScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | Accepts a URL via HTTP POST, optionally with a custom user_agent and storage_region, submits it to t... | - |
@@ -141,6 +142,7 @@ This solution includes **36 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
 |-------------|--------------------------------|------------------------------------------------|
+| 3.3.1       | 07-10-2026                     | - Added **Playbook** *GTI Session Assistant*. <br/>- Added `x-tool: ms-sentinel-gti` header to all GTI API calls. |
 | 3.3.0       | 23-07-2026                     | - Added **Data Connector** *GTI Vulnerabilities* (Codeless Connector Framework, Log Ingestion API). <br/>- Added **Parser** *GTIVulnerabilities*, **Analytics Rules**, **Playbooks** and **Workbook** *Google Threat Intelligence*.|
 | 3.2.3       | 04-06-2026                     | - Added **Data Connector** *GTI Relevance System Alerts* (Azure Function App, Log Ingestion API). <br/>- Added **Parser** *GTIRelevanceSystemAlerts*. <br/>- Added **Analytics Rules**: GTI High Relevance Alerts, GTI High & Critical Priority Alerts, GTI Data Leak Alerts, GTI Initial Access Broker Alerts, GTI Insider Threat Alerts, GTI Relevance System Alerts Incident by Alert ID. <br/>- Added Custom **Connector** manual prerequisite for Playbooks. |
 | 3.2.2       | 02-12-2025                     | - Included new Analytics Rules and Hunting Queries to improve detection capabilities and support proactive investigation. <br/>- Filtering threat lists<br/>- Migrating to Upload STIX Objects |

@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [Uniqkey_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Uniqkey/Data%20Connectors/UniqkeyAuditLogs_ccf/Uniqkey_DCR.json) |
 | **CCF Configuration** | [Uniqkey_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Uniqkey/Data%20Connectors/UniqkeyAuditLogs_ccf/Uniqkey_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#uniqkey-security-events) |
 
 The Uniqkey connector ingests security and audit events from the [Uniqkey](https://uniqkey.eu/) business password management platform into Microsoft Sentinel. Events cover authentication, credential access, credential management, sharing, policy management, threat detection and other administrative activity across your organization.
 

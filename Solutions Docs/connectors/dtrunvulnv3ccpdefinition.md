@@ -16,6 +16,7 @@
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Connector_Dynatrace_RuntimeVulnerabilities_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceRuntimeVulnerabilitiesV3/Connector_Dynatrace_RuntimeVulnerabilities_Definition.json) |
 | **DCR Definition Files** | [Connector_Dynatrace_RuntimeVulnerabilities_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceRuntimeVulnerabilitiesV3/Connector_Dynatrace_RuntimeVulnerabilities_DCR.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#dynatrace-runtime-vulnerabilities-v3) |
 
 This connector uses the [Dynatrace DQL Storage Query API](https://docs.dynatrace.com/docs/platform/grail/dynatrace-query-language) to ingest detected runtime vulnerabilities into Microsoft Sentinel Log Analytics.
 

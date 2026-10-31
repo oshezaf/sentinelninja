@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netcraft &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netcraft">Netcraft</h1>
+<p><em>Solution: NetcraftIntegrationGateway</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netcraft.svg" alt="NetcraftIntegrationGateway Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Netcraft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.netcraft.com/contact">https://www.netcraft.com/contact</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Netcraft - info@netcraft.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-10-02</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-26</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetcraftIntegrationGateway">NetcraftIntegrationGateway</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netcraft.azure-sentinel-solution-netcraft-igw">Azure Marketplace</a> · Popularity: 🟡 Low (18%)</td>
+</tr>
+</tbody>
+</table>
+<p>Netcraft is a global leader in cybercrime detection and takedown, protecting the world's biggest brands and their customers from phishing, scams and online fraud.</p>
+<p>This solution brings that intelligence directly into Microsoft Sentinel. Takedown activity, domain detection results, Social (Fraud Detection) findings across social media, advertising platforms and mobile app stores, and deep and dark web matches all flow into dedicated tables, where pre-built analytics rules turn them into incidents in your existing queue. Workbooks give operational dashboards per product area, and hunting queries support proactive investigation. Your SOC can triage external threats in the same place as everything else, without leaving the Defender portal.</p>
+<p>Connection takes a single API key. No Azure Functions, no additional infrastructure.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>7 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcraftsearchtask-cl.html"><code>NetcraftSearchTask_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+  <td><a href="../connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>43 content item(s)</strong> (42 in solution, 1 discovered 🔍):</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:right">Total</th>
+  <th style="text-align:right">In Solution</th>
+  <th style="text-align:right">Discovered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">-</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">-</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-advert-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e03-23301556.html">Netcraft Advert - High risk result</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-advert-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e103-c5137515.html">Netcraft Advert - Pending client input</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-app-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e02-87c4a1a4.html">Netcraft App - High risk result</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-app-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e102-d0a0a39a.html">Netcraft App - Pending client input</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-ddw-intelligence-high-priority-match-114e0c34-5e32-42a8-a0fc-3e3c8291bee9-20946a0b.html">Netcraft DDW Intelligence - High priority match</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Reconnaissance, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-ddw-intelligence-takedown-eligible-match-8da040d4-bd02-47ae-86b5-db527a8b4f18-b38d7cec.html">Netcraft DDW Intelligence - Takedown eligible match</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Reconnaissance, ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-ddw-intelligence-unacknowledged-high-priority-f788b740-86af-46b2-b986-c059c5e5b908-1f3b7b73.html">Netcraft DDW Intelligence - Unacknowledged high priority</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Reconnaissance, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-domain-detection-high-risk-result-3eb13794-d9a5-44c0-a633-09ee5a5dd6b5-3e773d3d.html">Netcraft Domain Detection - High risk result</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-domain-detection-newly-registered-high-risk-56ea5c80-8dd5-4c7c-a656-5f7af0c64429-2d48ec73.html">Netcraft Domain Detection - Newly registered high risk</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-domain-detection-preemptive-disruption-9284825d-3f0f-4ca2-a2f3-44a2a229909e-701d9226.html">Netcraft Domain Detection - Preemptive disruption</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-social-high-risk-result-a4b5c6d7-e8f9-4012-abcd-ef1234567e01-7dbcb893.html">Netcraft Social - High risk result</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-social-pending-client-input-b5c6d7e8-f901-4123-bcde-f1234567e101-c025787f.html">Netcraft Social - Pending client input</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-takedown-important-note-changed-0a0416c5-277a-4a2b-9815-7b457fdffd81-38972724.html">Netcraft Takedown - Important note changed</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-takedown-new-takedown-68ff493b-de53-472b-9a34-15b1453060a1-d1d7dc1a.html">Netcraft Takedown - New takedown</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-takedown-resolved-6de7eb0b-693c-4d4a-a263-d047f88f167f-0f536dfa.html">Netcraft Takedown - Resolved</a></td>
+  <td style="text-align:left">Informational</td>
+  <td style="text-align:left">ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-takedown-waiting-for-customer-f2cd0583-da5f-4edc-a4ad-1a237643c228-83999f7c.html">Netcraft Takedown - Waiting for customer</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">ResourceDevelopment, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-advert-result-inventory-b5c6d7e8-f9a0-4123-bcde-f12345678903-3bbd8876.html">Netcraft Advert - Result inventory</a></td>
+  <td style="text-align:left">ResourceDevelopment, Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-app-result-inventory-b5c6d7e8-f9a0-4123-bcde-f12345678902-c6454b9f.html">Netcraft App - Result inventory</a></td>
+  <td style="text-align:left">ResourceDevelopment, Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-ddw-intelligence-match-inventory-51b52e04-30b4-4ff1-b5ea-e875a5c5808b-6fd7b5ee.html">Netcraft DDW Intelligence - Match inventory</a></td>
+  <td style="text-align:left">Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-domain-detection-result-inventory-21a97101-ac38-43fc-874c-36d8e6b96169-e89df150.html">Netcraft Domain Detection - Result inventory</a></td>
+  <td style="text-align:left">ResourceDevelopment, Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-social-result-inventory-b5c6d7e8-f9a0-4123-bcde-f12345678901-acda5d00.html">Netcraft Social - Result inventory</a></td>
+  <td style="text-align:left">ResourceDevelopment, Reconnaissance</td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraft-takedown-latest-record-inventory-d945aaaf-39a1-46b2-8046-4f982eaa9839-55b3e3d8.html">Netcraft Takedown - Latest record inventory</a></td>
+  <td style="text-align:left">ResourceDevelopment, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraftadvertresultoperations-3d43ca25.html">NetcraftAdvertResultOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraftappresultoperations-9d14d9c5.html">NetcraftAppResultOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraftddwintelligenceoperations-a47033fe.html">NetcraftDdwIntelligenceOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraftdomaindetectionoperations-e4a0b68e.html">NetcraftDomainDetectionOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcraftsocialresultoperations-f55f478f.html">NetcraftSocialResultOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-netcrafttakedownoperations-0b55219f.html">NetcraftTakedownOperations</a></td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/netcraftintegrationgateway-workbooksmetadata-5750a626.html">WorkbooksMetadata</a> ⚠️</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftadvertresult-latest.html">NetcraftAdvertResult_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftadvertresult-unique.html">NetcraftAdvertResult_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftappresult-latest.html">NetcraftAppResult_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftappresult-unique.html">NetcraftAppResult_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftddwintelligence-latest.html">NetcraftDdwIntelligence_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftddwintelligence-unique.html">NetcraftDdwIntelligence_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftdomaindetection-latest.html">NetcraftDomainDetection_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftdomaindetection-unique.html">NetcraftDomainDetection_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftsearchtask-latest.html">NetcraftSearchTask_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftsearchtask-cl.html"><code>NetcraftSearchTask_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftsearchtask-unique.html">NetcraftSearchTask_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftsearchtask-cl.html"><code>NetcraftSearchTask_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftsocialresult-latest.html">NetcraftSocialResult_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcraftsocialresult-unique.html">NetcraftSocialResult_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcrafttakedown-latest.html">NetcraftTakedown_Latest</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/netcrafttakedown-unique.html">NetcraftTakedown_Unique</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>02-10-2026</td>
+  <td>Initial release. CCF RestApiPoller connector for the Netcraft Integration Gateway, with parsers, workbooks, analytic rules, and hunting queries for Takedown, Domain Detection, Deep &amp; Dark Web, Social, App, and Advert.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

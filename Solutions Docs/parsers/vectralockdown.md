@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Lockdown_Data_CCF_CL`](../tables/lockdown-data-ccf-cl.md) | ? | ✓ | ? |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ? | ✓ | ? |
 
 ---
 

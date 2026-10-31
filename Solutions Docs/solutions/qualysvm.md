@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Vulnerability Management,Security - Automation (SOAR) |
-| **Version** | 3.0.10 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |
-| **Last Updated** | 2026-06-25 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) · Popularity: 🔵 Medium (76%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-qualysvm) · Popularity: 🔵 Medium (62%) |
 
 The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
 
@@ -105,6 +105,10 @@ This solution includes **8 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            	|
 |-------------|--------------------------------|----------------------------------------------------------------|
+| 3.2.2       | 21-10-2026                     | Added Microsoft Defender XDR Custom Detections migrated from the **Analytic Rules** and a Defender XDR version of the **Workbook**; updated **Analytic Rule** New High Severity Vulnerability Detected Across Multiple Hosts. |
+| 3.1.1       | 22-09-2026                     | Updated the Playbooks to fix the Azure deploy button issue for GOV and corrected the parameter value for Service Endpoint. |
+| 3.1.0       | 14-09-2026                     | Updated the **QualysHostDetection Parser** to reliably parse both single-object and array detection responses from the CCF connector. |
+| 3.0.11       | 10-09-2026                     | Updated the Qualys Host Detection Parser to deduplicate repeated V3 snapshots using stable vulnerability content and lifecycle fields, preserve ingestion TimeGenerated, and expose the source timestamp as DetectionTime. Updated the CCP Data Connector to use explicit table references for Defender portal query compatibility. |
 | 3.0.10      | 22-06-2026                     | Increased **CCP Connector** request timeout to 300s (platform max), reduced query window to 10 min, added a connectivity check using the `/msp/about.php` endpoint, and clarified Truncation Limit options to reduce timeouts on large environments. |
 | 3.0.9       | 29-05-2026                     | Adding new query string parameter                              |
 | 3.0.8       | 14-05-2026                     | Bumping API version                                            |

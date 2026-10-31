@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netcraft Integration Gateway &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netcraft-integration-gateway">Netcraft Integration Gateway</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netcraft.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>NetcraftIntegrationGatewayDefinition</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Netcraft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/netcraftintegrationgateway.html">NetcraftIntegrationGateway</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetcraftIntegrationGateway/Data%20Connectors/NetcraftIntegrationGateway_ccf/NetcraftIntegrationGateway_ConnectorDefinition.json">NetcraftIntegrationGateway_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetcraftIntegrationGateway/Data%20Connectors/NetcraftIntegrationGateway_ccf/NetcraftIntegrationGateway_DCR.json">NetcraftIntegrationGateway_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetcraftIntegrationGateway/Data%20Connectors/NetcraftIntegrationGateway_ccf/NetcraftIntegrationGateway_PollerConfig.json">NetcraftIntegrationGateway_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#netcraft-integration-gateway">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.netcraft.com/">Netcraft</a> brings takedown activity, domain detection results, Social (Fraud Detection) findings, and deep and dark web intelligence into Microsoft Sentinel, so external threats against your brand appear alongside your internal telemetry.</p>
+<p>The connector ingests four data streams into dedicated tables:</p>
+<ul>
+<li><p>Takedown, into <code>NetcraftTakedown_CL</code>. New takedowns, important notes, blocked or waiting events, and status changes.</p>
+</li>
+<li><p>Domain detection, into <code>NetcraftDomainDetection_CL</code>. New and updated domain results, with risk level, tags, and hosting detail.</p>
+</li>
+<li><p>Social (Fraud Detection), into <code>NetcraftSocialResult_CL</code>, <code>NetcraftAppResult_CL</code>, <code>NetcraftAdvertResult_CL</code>, and <code>NetcraftSearchTask_CL</code>. Brand abuse and impersonation found across social media, advertising platforms, and mobile app stores.</p>
+</li>
+<li><p>Deep and dark web, into <code>NetcraftDdwIntelligence_CL</code>. New intelligence matches covering credentials, cards, documents, domains, and mentions.</p>
+</li>
+</ul>
+<p>Events are polled on the schedule you choose. The solution also ships analytics rule templates, workbooks, and hunting queries, so detections and dashboards are available as soon as data arrives.</p>
+<p>Field-level reference and event schemas: <a href="https://api.netcraft.com/integration-gateway/v1">https://api.netcraft.com/integration-gateway/v1</a></p>
+<p><strong>Prerequisites</strong></p>
+<p>To connect Netcraft to Microsoft Sentinel you need:</p>
+<ul>
+<li><p>Workspace: read and write permissions on the Sentinel workspace.</p>
+</li>
+<li><p>Netcraft organisation API key: available from your Netcraft account.</p>
+</li>
+<li><p>No additional Azure resources. The connector runs on the Codeless Connector Framework, so there is no Azure Function to deploy and no extra Azure consumption cost.</p>
+</li>
+</ul>
+<p><strong>Configuration</strong></p>
+<p>Enter your Netcraft organisation API key, choose how often Sentinel should poll, then select Connect. Data typically appears in your workspace within one polling interval.</p>
+<ul>
+<li><p>Gateway base URL: <code>https://api.netcraft.com/integration-gateway/v1</code> (prefilled)</p>
+</li>
+<li><p>Organisation API key</p>
+</li>
+<li><p>Polling frequency</p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftadvertresult-cl.html"><code>NetcraftAdvertResult_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftappresult-cl.html"><code>NetcraftAppResult_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftddwintelligence-cl.html"><code>NetcraftDdwIntelligence_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftdomaindetection-cl.html"><code>NetcraftDomainDetection_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftsearchtask-cl.html"><code>NetcraftSearchTask_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcraftsocialresult-cl.html"><code>NetcraftSocialResult_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/netcrafttakedown-cl.html"><code>NetcraftTakedown_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Netcraft organisation API key</strong>: A Netcraft organisation API key presented as a Bearer token against the Integration Gateway (see https://api.netcraft.com/integration-gateway/v1).</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect Netcraft Integration Gateway to Microsoft Sentinel</strong></p>
+<p>Provide the gateway base URL (including <code>/v1</code> for production), organisation API key, and polling frequency, then click Connect. Pollers send <code>connector=sentinel</code> automatically. Takedown (4 streams), Domain Detection (<code>/events/domain-detection/results</code>), Deep &amp; Dark Web (<code>/events/deep-and-dark-web/matches</code>), Social, App, and Advert results, and the three task streams are polled with cursor pagination. Results use their own tables. Tasks share <code>NetcraftSearchTask_CL</code>.</p>
+<ul>
+<li><strong>Gateway base URL (no trailing slash)</strong>: https://api.netcraft.com/integration-gateway/v1</li>
+<li><strong>Organisation API key</strong>: (password field)</li>
+<li><strong>Polling Frequency</strong> (select)<ul>
+<li>Every 15 minutes</li>
+<li>Every 30 minutes</li>
+<li>Every hour</li>
+<li>Every 2 hours</li>
+</ul>
+</li>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

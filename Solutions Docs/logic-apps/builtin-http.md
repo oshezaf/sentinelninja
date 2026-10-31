@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 434 |
-| **Solutions** | 78 |
+| **Playbooks using** | 504 |
+| **Solutions** | 82 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -27,6 +27,12 @@
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
 | [Affected Key Credentials Scanner](../content/standalone-content-affected-key-credentials-scanner-c9647a7d.md) | 📄 Standalone | 0 | 1 |
 | [Akamai Guardicore Incident-Enrichment — one-click bootstrap](../content/akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 9 |
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 3 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 9 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 3 |
+| [ANY.RUN Sandbox - URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-url-enrichment-incident-trigger-52d34934.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 4 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 3 |
+| [ANY.RUN Submit File to Blob](../content/anyrun-any.run-submit-file-to-blob-dfc44a99.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 2 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 0 | 2 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 0 | 5 |
 | [AS-Add-Machine-Logon-Users-to-Incident](../content/standalone-content-as-add-machine-logon-users-to-incident-cd021551.md) | 📄 Standalone | 0 | 2 |
@@ -84,20 +90,20 @@
 | [C19IndicatorProcessor](../content/github-only-c19indicatorprocessor-3c4b6d12.md) | 🔗 GitHub Only | 0 | 1 |
 | [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone | 0 | 5 |
 | [Censys Ad-Hoc IOC Lookup](../content/censys-censys-ad-hoc-ioc-lookup-640123fb.md) | [Censys](../solutions/censys.md) | 0 | 3 |
-| [Censys Alert Enrichment](../content/censys-censys-alert-enrichment-65242474.md) | [Censys](../solutions/censys.md) | 0 | 3 |
+| [Censys Alert Enrichment](../content/censys-censys-alert-enrichment-65242474.md) | [Censys](../solutions/censys.md) | 0 | 5 |
 | [Censys Alert Rescan](../content/censys-censys-alert-rescan-19e1ad3a.md) | [Censys](../solutions/censys.md) | 0 | 3 |
 | [Censys Entity Enrichment - Certificate](../content/censys-censys-entity-enrichment-certificate-ea0d81ab.md) | [Censys](../solutions/censys.md) | 0 | 1 |
-| [Censys Entity Enrichment - Host](../content/censys-censys-entity-enrichment-host-c2bc1894.md) | [Censys](../solutions/censys.md) | 0 | 1 |
+| [Censys Entity Enrichment - Host](../content/censys-censys-entity-enrichment-host-c2bc1894.md) | [Censys](../solutions/censys.md) | 0 | 2 |
 | [Censys Entity Enrichment - Web Property](../content/censys-censys-entity-enrichment-web-property-e7db98e8.md) | [Censys](../solutions/censys.md) | 0 | 1 |
 | [Censys Host History](../content/censys-censys-host-history-62dd7b98.md) | [Censys](../solutions/censys.md) | 0 | 1 |
-| [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 0 | 3 |
+| [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 0 | 5 |
 | [Censys Related Infrastructure](../content/censys-censys-related-infrastructure-23870661.md) | [Censys](../solutions/censys.md) | 0 | 3 |
 | [Censys Rescan](../content/censys-censys-rescan-51275b90.md) | [Censys](../solutions/censys.md) | 0 | 3 |
-| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
 | [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](../content/check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) | 0 | 4 |
 | [Check Point Exposure Management - Credential Leak Validation and Response](../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
-| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
+| [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 3 |
 | [Check Point Exposure Management - Fetch Attachments On-Demand](../content/check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 3 |
+| [Check Point Exposure Management - Inbound Status Sync (Argos → Microsoft Sentinel)](../content/check-point-cyberint-alerts-check-point-exposure-management-inbound-status-sync-argos-→-microsoft-sentinel-c1921fff.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 4 |
 | [Check Point Exposure Management - IOC Enrichment and Triage](../content/check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 4 |
 | [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 1 |
 | [Check Point Exposure Management - Phishing Takedown](../content/check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 0 | 2 |
@@ -170,36 +176,51 @@
 | [Get-SecureScore-Information](../content/github-only-get-securescore-information-c908bf74.md) | 🔗 GitHub Only | 0 | 5 |
 | [Get-TenableVlun](../content/standalone-content-get-tenablevlun-13bc5a0b.md) | 📄 Standalone | 0 | 2 |
 | [Get-VTURLPositivesComment](../content/github-only-playbookname-4f698749.md) | 🔗 GitHub Only | 0 | 1 |
-| [GIBTIA_APT_ThreatActor](../content/group-ib-gibtia-apt-threatactor-190ca81b.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_APT_Threats](../content/group-ib-gibtia-apt-threats-0bf2e06a.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Attacks_ddos](../content/group-ib-gibtia-attacks-ddos-676a7f45.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Attacks_deface](../content/group-ib-gibtia-attacks-deface-0571809a.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Attacks_phishing](../content/group-ib-gibtia-attacks-phishing-05e0bef0.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Attacks_phishing_kit](../content/group-ib-gibtia-attacks-phishing-kit-176cf63b.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_BP_phishing](../content/group-ib-gibtia-bp-phishing-1f9bfeff.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_BP_phishing_kit](../content/group-ib-gibtia-bp-phishing-kit-0f993020.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Compromised_account](../content/group-ib-gibtia-compromised-account-12e40e7c.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Compromised_card](../content/group-ib-gibtia-compromised-card-4873e37b.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Compromised_imei](../content/group-ib-gibtia-compromised-imei-1e238983.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Compromised_mule](../content/group-ib-gibtia-compromised-mule-500b5f08.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_HI_Threat](../content/group-ib-gibtia-hi-threat-bfac31e2.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_HI_Threat_Actor](../content/group-ib-gibtia-hi-threat-actor-2c1acd08.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Malware_cnc](../content/group-ib-gibtia-malware-cnc-4702dbee.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Malware_Targeted_Malware](../content/group-ib-gibtia-malware-targeted-malware-ece0af42.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_OSI_GitLeak](../content/group-ib-gibtia-osi-gitleak-631460d0.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_OSI_PublicLeak](../content/group-ib-gibtia-osi-publicleak-70bc2712.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_OSI_Vulnerability](../content/group-ib-gibtia-osi-vulnerability-abc46184.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Suspicious_ip_open_proxy](../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Suspicious_ip_socks_proxy](../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
-| [GIBTIA_Suspicious_ip_tor_node](../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
 | [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
 | [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
+| [Google Threat Intelligence - Session Assistant](../content/google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
 | [Google Threat Intelligence - URLScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
 | [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
 | [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 4 |
 | [Google Threat Intelligence - Vulnerability Enrichment](../content/google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 0 | 2 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 0 | 1 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 0 | 2 |
+| [Group-IB TI - APT threat actor collector](../content/group-ib-group-ib-ti-apt-threat-actor-collector-412ec4d2.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - APT threat report collector](../content/group-ib-group-ib-ti-apt-threat-report-collector-41971843.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Breached database collector](../content/group-ib-group-ib-ti-breached-database-collector-0bd302b2.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Compromised account collector](../content/group-ib-group-ib-ti-compromised-account-collector-ef89becc.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Compromised bank card collector](../content/group-ib-group-ib-ti-compromised-bank-card-collector-0b46c8f4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Compromised personal data collector](../content/group-ib-group-ib-ti-compromised-personal-data-collector-4502a858.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - DDoS indicator collector](../content/group-ib-group-ib-ti-ddos-indicator-collector-1ba50221.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Defacement indicator collector](../content/group-ib-group-ib-ti-defacement-indicator-collector-68fe642a.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Enrich incident with IOC context](../content/group-ib-group-ib-ti-enrich-incident-with-ioc-context-6eba8145.md) | [Group-IB](../solutions/group-ib.md) | 0 | 9 |
+| [Group-IB TI - Enrich incident with WHOIS data](../content/group-ib-group-ib-ti-enrich-incident-with-whois-data-c983f2c6.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Enrich single domain entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-domain-entity-with-ioc-context-a3032bca.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [Group-IB TI - Enrich single file hash entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-file-hash-entity-with-ioc-context-7b257dd4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [Group-IB TI - Enrich single IP entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-ip-entity-with-ioc-context-1806f7b7.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [Group-IB TI - Enrich single URL entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-url-entity-with-ioc-context-3ccc57e4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [Group-IB TI - Git repository leak collector](../content/group-ib-group-ib-ti-git-repository-leak-collector-de7684d8.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Hacker intelligence threat actor collector](../content/group-ib-group-ib-ti-hacker-intelligence-threat-actor-collector-cf0c8722.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Hacker intelligence threat collector](../content/group-ib-group-ib-ti-hacker-intelligence-threat-collector-d9f670a3.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Malware C2 indicator collector](../content/group-ib-group-ib-ti-malware-c2-indicator-collector-ebf2ee2e.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Malware configuration indicator collector](../content/group-ib-group-ib-ti-malware-configuration-indicator-collector-9e7b6546.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Masked card collector](../content/group-ib-group-ib-ti-masked-card-collector-c497904e.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Open proxy indicator collector](../content/group-ib-group-ib-ti-open-proxy-indicator-collector-0337e2d1.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Open threats collector](../content/group-ib-group-ib-ti-open-threats-collector-ee483c55.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Phishing indicator collector](../content/group-ib-group-ib-ti-phishing-indicator-collector-a628e258.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Phishing kit indicator collector](../content/group-ib-group-ib-ti-phishing-kit-indicator-collector-30c509a7.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Primary IOC collector](../content/group-ib-group-ib-ti-primary-ioc-collector-a1d55ae5.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Public leak collector](../content/group-ib-group-ib-ti-public-leak-collector-ffa38a05.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Scanner indicator collector](../content/group-ib-group-ib-ti-scanner-indicator-collector-226cbf96.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Score a single IP entity](../content/group-ib-group-ib-ti-score-a-single-ip-entity-ed3c7eb3.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [Group-IB TI - Score incident IP addresses](../content/group-ib-group-ib-ti-score-incident-ip-addresses-16ea5229.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [Group-IB TI - SOCKS proxy indicator collector](../content/group-ib-group-ib-ti-socks-proxy-indicator-collector-9207a1ca.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Targeted malware collector](../content/group-ib-group-ib-ti-targeted-malware-collector-61a1f026.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - Tor node indicator collector](../content/group-ib-group-ib-ti-tor-node-indicator-collector-9ec32614.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - VPN indicator collector](../content/group-ib-group-ib-ti-vpn-indicator-collector-1471577d.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [Group-IB TI - Vulnerability collector](../content/group-ib-group-ib-ti-vulnerability-collector-250664cb.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [Group-IB TI - WHOIS lookup for a single domain entity](../content/group-ib-group-ib-ti-whois-lookup-for-a-single-domain-entity-5ca6b2b6.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
+| [Group-IB TI - WHOIS lookup for a single IP entity](../content/group-ib-group-ib-ti-whois-lookup-for-a-single-ip-entity-c670f284.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
 | [Guardicore-EnrichmentRunner](../content/akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 8 |
 | [Guardicore-Import-Assets](../content/standalone-content-guardicore-import-assets-1db1ba64.md) | 📄 Standalone | 0 | 2 |
 | [Guardicore-Import-Incidents](../content/standalone-content-guardicore-import-incidents-46460c2e.md) | 📄 Standalone | 0 | 3 |
@@ -304,6 +325,12 @@
 | [Put Defender for Endpoint Alert as Hunting ARM Template in GitHub Rep](../content/standalone-content-put-defender-for-endpoint-alert-as-hunting-arm-template-in-github-rep-d68c5446.md) | 📄 Standalone | 0 | 3 |
 | [Query Azure Monitor with managed identity](../content/standalone-content-query-azure-monitor-with-managed-identity-eb6d2770.md) | 📄 Standalone | 0 | 1 |
 | [Query Azure Resource Graph with HTTP input and output](../content/standalone-content-query-azure-resource-graph-with-http-input-and-output-bd0dfcaa.md) | 📄 Standalone | 0 | 2 |
+| [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
+| [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
+| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
+| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
+| [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
+| [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | [Recorded Future](../solutions/recorded-future.md) | 0 | 1 |
 | [Reopen-Incident-With-Incomplete-Tasks](../content/standalone-content-reopen-incident-with-incomplete-tasks-e462dac7.md) | 📄 Standalone | 0 | 1 |
 | [Reset Microsoft Entra ID User Password - Alert Trigger](../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-alert-trigger-84321225.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 0 | 2 |
 | [Reset Microsoft Entra ID User Password - Entity trigger](../content/microsoft-entra-id-reset-microsoft-entra-id-user-password-entity-trigger-211fef4d.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | 0 | 2 |
@@ -355,6 +382,10 @@
 | [Send Microsoft Sentinel Incident To Cyware Orchestrate](../content/cyware-send-microsoft-sentinel-incident-to-cyware-orchestrate-f7091a2c.md) | [Cyware](../solutions/cyware.md) | 0 | 1 |
 | [Send-AnalyticalRulesHealthNotifications](../content/standalone-content-send-analyticalruleshealthnotifications-837a2ed2.md) | 📄 Standalone | 0 | 1 |
 | [Send-UrlReport](../content/standalone-content-send-urlreport-38d22282.md) | 📄 Standalone | 0 | 1 |
+| [SilentPush-DomainExportEnrichment-Full](../content/silentpush-silentpush-domainexportenrichment-full-12dc3b20.md) | [SilentPush](../solutions/silentpush.md) | 0 | 1 |
+| [SilentPush-DomainExportEnrichment-Sample](../content/silentpush-silentpush-domainexportenrichment-sample-a0489986.md) | [SilentPush](../solutions/silentpush.md) | 0 | 1 |
+| [SilentPush-IPExportEnrichment-Full](../content/silentpush-silentpush-ipexportenrichment-full-dc1b4017.md) | [SilentPush](../solutions/silentpush.md) | 0 | 1 |
+| [SilentPush-IPExportEnrichment-Sample](../content/silentpush-silentpush-ipexportenrichment-sample-c4239c43.md) | [SilentPush](../solutions/silentpush.md) | 0 | 1 |
 | [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment-6996dff4.md) | [SlashNext](../solutions/slashnext.md) | 0 | 4 |
 | [SOCRadar-Alarm-Import](../content/socradar-socradar-alarm-import-08438e78.md) | [SOCRadar](../solutions/socradar.md) | 0 | 6 |
 | [SOCRadar-Alarm-Sync](../content/socradar-socradar-alarm-sync-1ffe3246.md) | [SOCRadar](../solutions/socradar.md) | 0 | 4 |
@@ -364,7 +395,8 @@
 | [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 0 | 1 |
 | [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone | 0 | 1 |
 | [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 7 |
-| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 4 |
+| [SpyCloud MDE Automation Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-playbook-3e87e024.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 4 |
+| [SpyCloud Session Revocation Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-session-revocation-playbook-9a81870a.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 0 | 3 |
 | [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 0 | 1 |
 | [StratoSecure - Assign Owner](../content/stratosecure-stratosecure-assign-owner-9b875cc8.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
 | [StratoSecure - Create Azure DevOps Work Item](../content/stratosecure-stratosecure-create-azure-devops-work-item-eeb39a49.md) | [StratoSecure](../solutions/stratosecure.md) | 0 | 1 |
@@ -389,8 +421,8 @@
 | [Tanium-ResolveThreatResponseAlert](../content/tanium-tanium-resolvethreatresponsealert-7221fbd1.md) | [Tanium](../solutions/tanium.md) | 0 | 1 |
 | [Tanium-SCCMClientHealth](../content/tanium-tanium-sccmclienthealth-010e4c0b.md) | [Tanium](../solutions/tanium.md) | 0 | 3 |
 | [Tanium-UnquarantineHosts](../content/tanium-tanium-unquarantinehosts-45d6fcd0.md) | [Tanium](../solutions/tanium.md) | 0 | 11 |
-| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 2 |
-| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 7 |
+| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 8 |
+| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 28 |
 | [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 0 | 2 |
 | [Update Watchlist - CVE IPs by GreyNoise](../content/standalone-content-update-watchlist-cve-ips-by-greynoise-e22088d6.md) | 📄 Standalone | 0 | 5 |
 | [Update-NamedLocations-TOR](../content/github-only-playbookname-f38224c8.md) | 🔗 GitHub Only | 0 | 4 |
@@ -425,6 +457,8 @@
 | [Vectra Update Incident Based on Tag And Notify](../content/vectra-xdr-vectra-update-incident-based-on-tag-and-notify-69c1699a.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Veeam-ChangeCollectionTime](../content/veeam-veeam-changecollectiontime-6e10e57b.md) | [Veeam](../solutions/veeam.md) | 0 | 2 |
 | [Veeam-SetupConnections](../content/veeam-veeam-setupconnections-e3e98b5f.md) | [Veeam](../solutions/veeam.md) | 0 | 22 |
+| [VMRay Email Attachment Analysis (Defender-visible)](../content/vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.md) | [VMRay](../solutions/vmray.md) | 0 | 1 |
+| [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | [VMRay](../solutions/vmray.md) | 0 | 2 |
 | [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | 📄 Standalone | 0 | 3 |
 | [Whisper Security - Batch Indicator Enrichment](../content/whisper-whisper-security-batch-indicator-enrichment-ca9d69ce.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
 | [Whisper Security - Check ASN Reputation](../content/whisper-whisper-security-check-asn-reputation-f2a79814.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
@@ -436,6 +470,42 @@
 | [Whisper Security - Get BGP History](../content/whisper-whisper-security-get-bgp-history-150c0325.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
 | [Whisper Security - Get Infrastructure Chain](../content/whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | [Whisper](../solutions/whisper.md) | 0 | 2 |
 | [Whisper Security - Get WHOIS History](../content/whisper-whisper-security-get-whois-history-ccdf0e6e.md) | [Whisper](../solutions/whisper.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-3aa5960e.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-6c121767.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-0d34dd4b.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-9f2b770f.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-3cd7a8a7.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-54537823.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-ba1e2db8.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-44643bf5.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-ec73ab37.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-fe8656b4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-0bd85cab.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-4054d138.md) | [Group-IB](../solutions/group-ib.md) | 0 | 9 |
+| [workflow](../content/group-ib-workflow-43b129a4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [workflow](../content/group-ib-workflow-64a91589.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [workflow](../content/group-ib-workflow-68403aed.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [workflow](../content/group-ib-workflow-75f04dbb.md) | [Group-IB](../solutions/group-ib.md) | 0 | 3 |
+| [workflow](../content/group-ib-workflow-ab5b6ff1.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-d060ef46.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
+| [workflow](../content/group-ib-workflow-1b6e9c0c.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
+| [workflow](../content/group-ib-workflow-26b92ce7.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-ba077bd7.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-8ee96f2d.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-b37ab530.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-cd905e7e.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-de672ca8.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-b6047034.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-950e0818.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-4499a861.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-364d5544.md) | [Group-IB](../solutions/group-ib.md) | 0 | 5 |
+| [workflow](../content/group-ib-workflow-751fce10.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-fc7a60be.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-2bd9db91.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-a5b55ad6.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-4e7911e4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-d24db843.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
+| [workflow](../content/group-ib-workflow-71c2e698.md) | [Group-IB](../solutions/group-ib.md) | 0 | 4 |
 | [workflow](../content/sap-workflow-3298b428.md) | [SAP](../solutions/sap.md) | 0 | 1 |
 | [workflow](../content/sap-workflow-20a8ae88.md) | [SAP](../solutions/sap.md) | 0 | 1 |
 | [Zscaler OAuth2 Authentication](../content/zscaler-internet-access-zscaler-oauth2-authentication-c37368ef.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |

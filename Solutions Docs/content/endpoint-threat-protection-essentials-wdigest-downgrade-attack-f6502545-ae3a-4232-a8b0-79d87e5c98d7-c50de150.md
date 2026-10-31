@@ -6,7 +6,7 @@
 
 ---
 
-When the WDigest Authentication protocol is enabled, plain text passwords are stored in the Local Security Authority Subsystem Service (LSASS) exposing them to theft. This setting will prevent WDigest from storing credentials in memory. Ref: https://www.stigviewer.com/stig/windows_7/2016-12-19/finding/V-72753
+When the WDigest Authentication protocol is enabled, plain text passwords are stored in the Local Security Authority Subsystem Service (LSASS) exposing them to theft. This setting will prevent WDigest from storing credentials in memory. Ref: https://www.microsoft.com/en-us/security/blog/2022/07/27/untangling-knotweed-european-private-sector-offensive-actor-using-0-day-exploits/
 
 | Attribute | Value |
 |:----------|:------|

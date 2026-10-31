@@ -19,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (74 columns)
+## Schema (80 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v3_conn_agg_CL.json)
 
@@ -27,17 +27,23 @@
 |:------------|:-----|
 | app | dynamic |
 | community_ids | dynamic |
-| conn_state | string |
+| conn_states | dynamic |
 | corelight_shunted | dynamic |
 | count | long |
 | duration | real |
-| history | string |
+| histories | dynamic |
 | id_orig_h | string |
 | id_orig_h_n | string |
 | id_orig_p | int |
+| id_orig_site | string |
+| id_orig_site_detail | string |
+| id_orig_subnet | string |
 | id_resp_h | string |
 | id_resp_h_n | string |
 | id_resp_p | int |
+| id_resp_site | string |
+| id_resp_site_detail | string |
+| id_resp_subnet | string |
 | id_vlan | string |
 | inner_vlan | int |
 | local_orig | bool |

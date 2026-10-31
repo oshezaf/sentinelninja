@@ -1,6 +1,6 @@
 # Analytic Rules - Q
 
-**3 analytic rules** starting with 'Q'.
+**5 analytic rules** starting with 'Q'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,6 +16,8 @@
 |:-----|:---------|:-------|
 | [Qakbot Campaign Self Deletion](microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Qakbot Discovery Activies](microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Quantum-vulnerable certificate on Entra app registration](qcryptonpqcscanner-quantum-vulnerable-certificate-on-entra-app-registration-2a4b6c8d-1e3f-5a7b-9c0d-4e6f8a2b1c3d-cf451690.md) | High | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
+| [Quantum-vulnerable key detected in Key Vault](qcryptonpqcscanner-quantum-vulnerable-key-detected-in-key-vault-8a1c4f2d-2b3a-4e5f-9c1d-1a2b3c4d5e6f-c419c81e.md) | Medium | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [Quokka - Malicious Results Detected](quokka-quokka-malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f-1210d06b.md) | Medium | 📦 [Quokka](../solutions/quokka.md) |
 
 ---

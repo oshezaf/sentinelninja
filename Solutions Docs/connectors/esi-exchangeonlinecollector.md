@@ -1,4 +1,4 @@
-# Exchange Security Insights Online Collector
+# (Deprecated) Exchange Security Insights Online Collector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
@@ -17,9 +17,8 @@
 | **Connector Definition Files** | [ESI-ExchangeOnlineCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ExchangeOnlineCollector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-online-collector-using-azure-functions) |
 
-Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis
+Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis - Deprecated, use Azure Monitor Version
 
 ## Tables Ingested
 
@@ -27,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -38,9 +37,10 @@ This connector ingests data into the following tables:
 - **Keys** (Workspace): read permissions to shared keys for the workspace are required. [See the documentation to learn more about workspace keys](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key).
 
 **Custom Permissions:**
+- **Azure Log Analytics HTTP Data Collector API will be deprecated**: Azure Log Analytics HTTP Data Collector API will be deprecated. Update to the Azure Monitor Log Ingestion API is required. [Learn more](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment)
 - **Microsoft.Web/sites permissions**: Read and write permissions to Azure Functions to create a Function App is required. [See the documentation to learn more about Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
 - **microsoft.automation/automationaccounts permissions**: Read and write permissions to create an Azure Automation with a Runbook is required. [See the documentation to learn more about Automation Account](https://learn.microsoft.com/en-us/azure/automation/overview).
-- **Microsoft.Graph permissions**: Groups.Read, Users.Read and Auditing.Read permissions are required to retrieve user/group information linked to Exchange Online assignments. [See the documentation to learn more](https://aka.ms/sentinel-ESI-OnlineCollectorPermissions).
+- **Microsoft.Graph permissions**: Group.Read.All, User.Read.All, and AuditLog.Read.All permissions are required to retrieve user and group information linked to Exchange Online assignments. [See the documentation to learn more](https://aka.ms/sentinel-ESI-OnlineCollectorPermissions).
 - **Exchange Online permissions**: Exchange.ManageAsApp permission and **Global Reader** or **Security Reader** Role are needed to retrieve the Exchange Online Security Configuration.[See the documentation to learn more](https://aka.ms/sentinel-ESI-OnlineCollectorPermissions).
 - **(Optional) Log Storage permissions**: Storage Blob Data Contributor to a storage account linked to the Automation Account Managed identity or an Application ID is mandatory to store logs.[See the documentation to learn more](https://aka.ms/sentinel-ESI-OnlineCollectorPermissions).
 
@@ -50,11 +50,11 @@ This connector ingests data into the following tables:
 
 >**NOTE - UPDATE**
 
-ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>We recommend to Update the Collector to Version <b>7.6.0.0</b> or highier. <br/>The Collector Script Update procedure could be found here : <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI Online Collector Update</a>
+ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>Update the collector to version <b>8.0.0.0</b> or later and switch to the Azure Monitor Log Ingestion API. <br/>See <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI Online Collector Update</a> and <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment'>Upgrade an existing deployment</a>.
 
 >**NOTE:** This data connector depends on a parser based on a Kusto Function to work as expected. Follow the steps for each Parser to create the Kusto Functions alias : [**ExchangeConfiguration**](https://aka.ms/sentinel-ESI-ExchangeConfiguration-Online-parser) and [**ExchangeEnvironmentList**](https://aka.ms/sentinel-ESI-ExchangeEnvironmentList-Online-parser) 
 
-**STEP 1 - Parsers deployment**
+**STEP 2 - Parsers deployment**
 **Parser deployment (When using Microsoft Exchange Security Solution, Parsers are automatically deployed)**
 
 **1. Download the Parser files**
@@ -79,7 +79,7 @@ Click save again.
 
 **STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Automation**
 
->**IMPORTANT:** Before deploying the 'ESI Exchange Online Security Configuration' connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Exchange Online tenant name (contoso.onmicrosoft.com), readily available.
+>**IMPORTANT:** Before deploying the 'ESI Exchange Online Security Configuration' connector, have the Workspace ID and Workspace Primary Key available and choose a generic environment display name for the workbooks. The template adds the `-cloud` suffix when needed.
 - **Workspace ID**: `WorkspaceId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Primary Key**: `PrimaryKey`

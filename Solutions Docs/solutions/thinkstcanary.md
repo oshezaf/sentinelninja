@@ -1,6 +1,6 @@
-# ⚠️ ThinkstCanary
+# Thinkst Canary Solution for Azure Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: ThinkstCanary*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThinkstCanary.svg" alt="ThinkstCanary Logo" width="75" height="75">
 
@@ -19,8 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Thinkst Applied Research - support@canary.tools |
 | **First Published** | 2026-08-18 |
-| **Last Updated** | 2026-08-18 |
+| **Last Updated** | 2026-09-14 |
 | **Solution Folder** | [ThinkstCanary](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThinkstCanary) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thinkst.azure-sentinel-solution-thinkst-canary) · Popularity: 🟡 Low (15%) |
 
 The Thinkst Canary solution for Microsoft Sentinel ingests Canary and Canarytoken incidents through the Codeless Connector Framework and provides normalized parsers, detections and response automation.
 

@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Internet of Things (IoT),Security - Threat Protection |
-| **Version** | 2.0.2 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-26 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [IoTOTThreatMonitoringwithDefenderforIoT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-unifiedmicrosoftsocforot) · Popularity: 🔵 Medium (76%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-unifiedmicrosoftsocforot) · Popularity: 🔵 Medium (79%) |
 
 The [Microsoft Defender for IoT](https://azure.microsoft.com/services/iot-defender/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for IoT on assessing your Internet of Things (IoT)/Operational Technology (OT) infrastructure. 
 
@@ -74,7 +75,7 @@ This solution includes **24 content item(s)** (23 in solution, 1 discovered 🔍
 | [Internet Access (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-internet-access-microsoft-defender-for-iot-9ff3b13b-287a-4ed0-8f6b-7e7b66cbbcbd-e6f35abc.md) | High | LateralMovement | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Multiple scans in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-multiple-scans-in-the-network-microsoft-defender-for-iot-493916d5-a094-4bfa-bdd1-d983a063ea3d-caac186a.md) | High | Discovery | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [No traffic on Sensor Detected (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-no-traffic-on-sensor-detected-microsoft-defender-for-iot-208c3f5b-3ba2-49b5-9bca-c44e58cd5fd3-d7b2b3ed.md) | High | InhibitResponseFunction | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [PLC Stop Command (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.md) | Medium | DefenseEvasion | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [PLC Stop Command (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.md) | Medium | Evasion | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [PLC unsecure key state (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-unsecure-key-state-microsoft-defender-for-iot-f9df500a-e2a4-4104-a517-dc1d85bb654f-78ea192f.md) | Low | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Suspicious malware found in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-suspicious-malware-found-in-the-network-microsoft-defender-for-i-6fb1acd5-356d-40f7-9b97-78d993c6a183-8e31acda.md) | High | Impact | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.md) | Medium | Discovery | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
@@ -114,7 +115,7 @@ There has been a long-standing split between ICS/SCADA (OT) and Corporate (IT) c
 You can deploy the solution by clicking on the buttons below:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIoTOTThreatMonitoringwithDefenderforIoT%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIoTOTThreatMonitoringwithDefenderforIoT%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovbutton"/></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIoTOTThreatMonitoringwithDefenderforIoT%2FPackage%2FmainTemplate.json" target="_blank"><img src="https://aka.ms/deploytoazuregovernbutton"/></a>
 
 ![Workbook Overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Workbooks/Images/IoTOTThreatMonitoringwithDefenderforIoTBlack.png?raw=true)
 
@@ -141,6 +142,7 @@ This alert leverages Defender for IoT to detect excessive login attempts that ma
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Sentinel to Defender XDR migration. |
 | 3.0.2       | 29-01-2025                     | Corrected Entity Mappings structure of **Analytic Rules**			|
 | 3.0.1       | 10-01-2025                     | Reverted Entity Mappings of **Analytic Rules** to earlier version  |
 | 3.0.0       | 30-11-2023                     | Added new Entity Mapping to **Analytic Rules**                     |

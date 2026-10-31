@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
-| **Author** | Microsoft |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-07-12 |
 | **Last Updated** | 2026-07-20 |
 | **Solution Folder** | [Cortex XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/defendlimited1682894612656.cortex_xdr_connector) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/defendlimited1682894612656.cortex_xdr_connector) · Popularity: 🔵 Medium (62%) |
 
 The [Palo Alto Networks](https://www.paloaltonetworks.com/) Cortex XDR Microsoft Sentinel Solution pulls log directly from the Cortex XDR platform via API. The solution is configured to pull the Incidents from the Cortex XDR platform every 5 minutes and ingest them into Microsoft Sentinel. The solution is dependent on the Cortex XDR API Key and API Key ID. The API Key ID is used as the polling key path and the API Key is used as the header for the API request. The solution also includes 3 analytics rules to detect the creation of incidents based on the severities (High, Medium, Low).
 
@@ -77,6 +77,7 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.0.1       | 29-11-2024                     | Added new data connector.                                                 |
 | 3.0.0       | 28-07-2023                     | Initial Solution Release                                                 |
 
 ---

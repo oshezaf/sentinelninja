@@ -15,8 +15,8 @@ The Section to compare. Default value is "".
 | Title | Parser for MRA Configuration Data Comparison |
 | Location | Solution |
 | Solution | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
-| Version | 1.1.0 |
-| Last Updated | 2024-08-30 |
+| Version | 1.1.1 |
+| Last Updated | 2026-10-07 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Parsers/MESCompareDataMRA.yaml) |
@@ -27,7 +27,10 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) 🔶 | ? | ✓ | ? |
+| [`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) 🔶 | ? | ✓ | ? |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | ? | ✓ | ? |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

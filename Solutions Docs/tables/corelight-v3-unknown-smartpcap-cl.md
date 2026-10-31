@@ -26,7 +26,7 @@
 | Column Name | Type |
 |:------------|:-----|
 | path | string |
-| pkts | real |
+| pkts | long |
 | system_name | string |
 | tid | string |
 | TimeGenerated | datetime |

@@ -19,6 +19,7 @@
 | **CCF Configuration** | [TrendAIVisionOneOAT_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29/Data%20Connectors/TrendAIVisionOneOAT_ccp/TrendAIVisionOneOAT_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#trendai-vision-one---oat-detections-via-codeless-connector-framework) |
 
 The [TrendAI Vision One™](https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html) OAT data connector ingests Observed Attack Techniques (OAT) detections from TrendAI Vision One™ into Microsoft Sentinel. Detections include full process trees, file hashes, network indicators, and MITRE ATT&CK mappings.
 
@@ -43,29 +44,49 @@ This connector ingests data into the following tables:
 
 **⚠️ IMPORTANT: Token Rotation & Data Loss**
 >
-> When your API token expires or needs rotation, you must disconnect and reconnect this connector with the new token. **Events generated during the disconnected period will NOT be automatically collected.**
->
-> **To minimize data loss:**
-> 1. Generate a new API token **before** the current one expires
-> 2. Minimize the disconnect/reconnect window (seconds, not hours)
-> 3. After reconnection, if needed, manually query the TrendAI Vision One API for events during the gap period using the [OAT Detections API](https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-oat-detections-list_001)
-#### 1. Retrieve your TrendAI Vision One™ API Token
-1. Log in to the TrendAI Vision One™ Console
-2. Navigate to **Administration → API Keys**
-3. Click **Add API Key**, select the **SIEM** role, and copy the token
-- **API Domain (Select your region)** (select)
+> Each Vision One tenant is configured as an independent connection. Existing connections cannot be edited from this page. To rotate a token or change a connection setting, delete that connection and select **Add Connection** to create it again. Events generated during a disconnected period will not be collected automatically. Existing data in the shared Sentinel table is not deleted.
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Connection Alias**
+- **Vision One Business ID**
+- **API Domain**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Add TrendAI Vision One OAT Connection**
+
+*Connect a Vision One tenant to Microsoft Sentinel*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+#### Retrieve your TrendAI Vision One™ API Token
+1. Log in to the TrendAI Vision One™ Console.
+2. Navigate to **Administration → API Keys**.
+3. Click **Add API Key**, select the **SIEM** role, and copy the token.
+
+- **Connection Alias** (required): Production UK or Customer A
+- **API Domain (Select your Vision One region)** (required): Select from available options
   - United States (api.xdr.trendmicro.com)
   - Europe (api.eu.xdr.trendmicro.com)
   - Singapore (api.sg.xdr.trendmicro.com)
   - Japan (api.xdr.trendmicro.co.jp)
   - Australia (api.au.xdr.trendmicro.com)
   - ... and 5 more options
-- **API Token**: (password field)
-- **TMV1-Filter (Optional)**: (riskLevel eq 'high') and (endpointName eq 'my-computer')
-- **Exclude third-party OAT detections (productCode = 'tlc')** (select)
+- **Vision One Business ID** (required): The cid value from the Vision One API token
+- **API Token** (required): Paste your TrendAI Vision One™ API token here
+- **TMV1-Filter (Optional)** (optional): (riskLevel eq 'high') and (endpointName eq 'my-computer')
+- **Exclude third-party OAT detections (productCode = 'tlc')** (required): Select from available options
   - Yes - Exclude third-party detections (Recommended)
   - No - Include all detections
-- Click 'Connect' to establish connection
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

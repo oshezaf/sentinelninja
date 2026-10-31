@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Threat Intelligence - Session Assistant &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="google-threat-intelligence---session-assistant">Google Threat Intelligence - Session Assistant</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This playbook lets analysts ask Google Threat Intelligence (GTI) questions directly from a Microsoft Sentinel incident. When an analyst adds an incident comment that starts with '#ask-gti:', the playbook sends the question and the incident context to the GTI Agentspace Session API and posts the answer back to the incident. Follow-up questions on the same incident continue the same multi-turn GTI session, which is tracked with the GTI-Session and GTI-LastProcessed incident tags. The full answer i</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTISessionAssistant/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>5</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblobkey.html"><code>azureblobkey</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azureblob"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Upload_Answer_Report_To_Blob</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('StorageAccountName')))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azureblobkey"><a href="../logic-apps/managed-azureblobkey.html"><code>azureblobkey</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_Answer_Report_Sas_Link</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('StorageAccountName')))}/CreateSharedLinkByPath</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_Incident_Comment_With_Error</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Incident_Comment_With_Report_Link</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Incident_Comment_With_Inline_Answer</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Session_Tags</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Incident_Comment_With_Usage_Help</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_GTI_API_Key_From_Key_Vault</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Start_New_GTI_Session</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('GTIBaseUri'), '/api/v3/agentspace/sessions')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Followup_To_Existing_Session</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('GTIBaseUri'), '/api/v3/agentspace/sessions/', encodeURIComponent(variables('GTISessionId')))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Restart_Session_After_Expiry</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('GTIBaseUri'), '/api/v3/agentspace/sessions')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Blob_Container_If_Missing</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>https://@{parameters('StorageAccountName')}.blob.@{parameters('StorageEndpointSuffix')}/@{parameters('ContainerName')}?restype=container</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Playbooks/GTISessionAssistant/readme.md">GTISessionAssistant/readme.md</a></em></p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<p>This playbook lets analysts ask Google Threat Intelligence (GTI) questions directly from a Microsoft Sentinel incident. When an analyst adds an incident comment that starts with <code>#ask-gti:</code>, the playbook sends the question and the incident context to the GTI Agentspace Session API and posts the answer back to the incident. Follow-up questions on the same incident continue the same multi-turn GTI session, tracked with the <code>GTI-Session</code> and <code>GTI-LastProcessed</code> incident tags.</p>
+<p>The full answer is saved as an HTML page in a private Azure Blob Storage container and shared as a time-limited, read-only SAS link in the incident comment. If saving or linking fails, the answer is posted inline instead.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Obtain the Key Vault name and secret name where the GTI (VirusTotal) API key is stored. The Key Vault permission model must be <strong>Azure role-based access control</strong>.</li>
+<li>Obtain the Storage Account name where answer pages are saved. The blob container is created automatically on first use.</li>
+<li>Obtain the Storage Account access key (key1 or key2). It is required only to generate the time-limited SAS link, which does not support managed identity. Provide it as a Key Vault reference in your parameters file where possible.</li>
+<li>A Log Analytics workspace with Microsoft Sentinel enabled.</li>
+</ol>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
+<ol>
+<li>Click the Deploy to Azure button to launch the ARM template deployment wizard.</li>
+<li>Fill in the parameters:<ul>
+<li>PlaybookName: Name of the Logic App (default: GTISessionAssistant).</li>
+<li>KeyVaultName / KeyVaultSecretName: Key Vault and secret that hold the GTI API key.</li>
+<li>StorageAccountName / StorageAccountKey: Storage Account that holds the answer pages and its access key.</li>
+<li>ContainerName: Blob container for answer pages (optional, a default is used when empty).</li>
+<li>SASExpiryDays: Number of days the answer link stays valid.</li>
+<li>BlobRetentionDays: Optional. Days after which answer pages are deleted by a lifecycle rule (see post-deployment step d).</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTISessionAssistant%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Threat%2520Intelligence%2FPlaybooks%2FGTISessionAssistant%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovernbutton" alt="Deploy to Azure Gov" /></a></p>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-assign-roles-to-the-playbooks-managed-identity">a. Assign roles to the playbook's managed identity</h4>
+<table>
+<thead>
+<tr>
+  <th>Role</th>
+  <th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Key Vault Secrets User</td>
+  <td>The Key Vault</td>
+</tr>
+<tr>
+  <td>Storage Blob Data Contributor</td>
+  <td>The Storage Account</td>
+</tr>
+<tr>
+  <td>Microsoft Sentinel Responder</td>
+  <td>The Sentinel workspace</td>
+</tr>
+</tbody>
+</table>
+<p>For each: open the resource, go to Access control (IAM), Add role assignment, select the role, choose User, group, or service principal, select the playbook by name, then Review + assign.</p>
+<h4 id="b-create-an-automation-rule">b. Create an automation rule</h4>
+<ol>
+<li>In Microsoft Sentinel, go to Automation, Create, Automation rule.</li>
+<li>Trigger: <strong>When incident is updated</strong>.</li>
+<li>Condition: Updated field - Comments - Added.</li>
+<li>Action: Run playbook, and select <strong>Google Threat Intelligence - Session Assistant</strong>.</li>
+<li>Enable the rule and click Apply.</li>
+</ol>
+<h4 id="c-verify-api-connections">c. Verify API connections</h4>
+<p>The <code>azuresentinel</code>, <code>keyvault</code> and <code>azureblob</code> connections use the playbook's managed identity; <code>azureblobkey</code> uses the supplied storage key. If a connection shows as unauthorized, open it, click Edit API connection, Save, and re-check the role assignments.</p>
+<h4 id="d-optional-automatic-cleanup-of-answer-pages">d. Optional: automatic cleanup of answer pages</h4>
+<p>Set the <code>BlobRetentionDays</code> parameter (greater than or equal to <code>SASExpiryDays</code>) to create a lifecycle rule that deletes answer pages after that many days. A Storage Account has a single lifecycle policy, so this replaces any existing policy; leave it empty to keep answer pages indefinitely and add a rule manually if the account already has lifecycle rules.</p>
+<h3 id="usage-amp-triggering">Usage &amp; Triggering</h3>
+<p>The playbook triggers automatically through the automation rule whenever a comment is added to an incident.</p>
+<ol>
+<li>Open an incident and add a comment in the form <code>#ask-gti: &lt;your question&gt;</code>.</li>
+<li>The answer is posted back as an incident comment, with a link to the full answer page.</li>
+<li>Add another <code>#ask-gti:</code> comment on the same incident to ask a follow-up in the same GTI session.</li>
+</ol>
+<p>Comments that do not start with <code>#ask-gti:</code> are ignored.</p>
+<p>Security notes: the answer link is a bearer token, so anyone with the URL can view the page until it expires.</p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+  <th>Symptom</th>
+  <th>Cause and fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Run fails at the Key Vault step</td>
+  <td>The managed identity lacks Key Vault Secrets User, or the Key Vault does not use the Azure RBAC permission model.</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/google-threat-intelligence.html">Back to Google Threat Intelligence</a></p>
+
+</div>
+
+</body>
+</html>

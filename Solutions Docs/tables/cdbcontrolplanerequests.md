@@ -23,7 +23,7 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Resource Types](#resource-types)
 
-## Schema (63 columns)
+## Schema (66 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cdbcontrolplanerequests)
 
@@ -56,6 +56,7 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 | EnableVirtualNetworkFilter | bool | Boolean flag indicating if VNet filters were enabled for the account. |
 | HttpMethod | string | The HTTP method issued for this control plane operation. |
 | HttpStatusCode | int | The HTTP status code of the control plane operation. |
+| IdentityType | string | The authentication identity type of the caller, populated for RequestReceived records. |
 | IpRangeFilter | string | The IP range filter specified as part of the VNet rules for the Cosmos DB account. |
 | IsServiceManagedFailover | bool | Boolean flag to indicate if the failover event was initiated by the service or by the customer. |
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
@@ -79,6 +80,7 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 | RoleDefinitionName | string | The name of the IAM role created for the account. |
 | RoleDefinitionPermissions | string | The permissions associated with the IAM role created for the account. |
 | RoleDefinitionType | string | The type of IAM role created for the account. |
+| SourceIpAddress | string | The source IP address of the caller, populated for RequestReceived records. |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | SqlQueryTextTraceType | bool | Boolean flag indicating if full query text logging is enabled. |
 | TargetBackupMode | string | The backup mode after update. This can be either Continuous or Periodic. |
@@ -86,6 +88,7 @@ Reference for CDBControlPlaneRequests table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) when this Control Plane operation was executed against the Cosmos DB account. |
 | Type | string | The name of the table |
+| UserIdentity | string | The identity of the caller, populated for RequestReceived records. |
 | VirtualNetworkName | string | The name of the Vnet for the account. |
 | VirtualNetworkResourceEntries | string | The list of IP addresses being included as part of the VNet rule for the account. |
 | VnetArmUrl | string | The ARM URL for the VNet for the account. |

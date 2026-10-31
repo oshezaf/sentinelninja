@@ -14,6 +14,7 @@ Checks for Squid proxy events in Syslog associated with common mining pools. Thi
 | **Solution** | [Syslog](../solutions/syslog.md) |
 | **ID** | `80733eb7-35b2-45b6-b2b8-3c51df258206` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1102 |

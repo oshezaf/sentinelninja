@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://zeronetworks.com](https://zeronetworks.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Nicholas DiCola - nicholas@zeronetworks.com |
 | **First Published** | 2022-06-06 |
-| **Last Updated** | 2026-03-18 |
+| **Last Updated** | 2026-09-16 |
 | **Solution Folder** | [ZeroNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zeronetworksltd1629013803351.azure-sentinel-solution-znsegmentaudit) · Popularity: ⚪ Very Low (0%) |
 
@@ -59,7 +59,7 @@ This solution uses **5 table(s)**:
 | [`ZNIdentityActivity_CL`](../tables/znidentityactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
 | [`ZNNetworkActivity_CL`](../tables/znnetworkactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
 | [`ZNRPCActivity_CL`](../tables/znrpcactivity-cl.md) | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | - |
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md), [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Analytics, Hunting, Workbooks |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md), [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -114,6 +114,7 @@ This solution includes **12 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.0.4       | 06-09-2026                     | Updated audit **Parser** with the latest audit types and enforcement sources and exposed numeric AuditTypeId and EnforcementSourceId columns; corrected audit type and enforcement source labels to match the product; aligned **Analytical Rules**, **Hunting Queries** and **Workbook** with the current parser output; corrected RPC activity TrafficType type in the push **Data Connector** and fixed the parser reference link in the **Workbook** |
 |  3.0.3      |  29-01-2026                    | Updated audit **parser**, created CCP Push & Pull **connectors**   |
 |  3.0.2      |  17-09-2025                    | Removed Deprecated **Data Connector**.  |
 |  3.0.1      |  06-02-2025                    | Added missing parameter **URI** to Solution.  |

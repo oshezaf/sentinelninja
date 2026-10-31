@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimDhcpEventInfobloxBloxOne` |
 | **Built-in Parser** | `_ASim_DhcpEvent_InfobloxBloxOne` |
 | **Schema** | DhcpEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Infoblox BloxOne |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventInfobloxBloxOne.md)) |
-| **Last Updated** | Sep 11, 2024 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventInfobloxBloxOne.md)) |
+| **Last Updated** | Oct 6, 2026 |
 | **Unifying Parser** | [ASimDhcpEvent](asimdhcpevent.md) |
 | **Source File** | [Parsers\ASimDhcpEvent\Parsers\ASimDhcpEventInfobloxBloxOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDhcpEvent/Parsers/ASimDhcpEventInfobloxBloxOne.yaml) |
 

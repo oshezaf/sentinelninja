@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventSentinelOne` |
 | **Built-in Parser** | `_ASim_AuditEvent_SentinelOne` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | SentinelOne |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventSentinelOne.md)) |
-| **Last Updated** | Oct 05 2023 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventSentinelOne.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventSentinelOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventSentinelOne.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ## Parameters
 

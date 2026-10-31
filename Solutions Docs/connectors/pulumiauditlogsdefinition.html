@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulumi Cloud Audit Logs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="pulumi-cloud-audit-logs">Pulumi Cloud Audit Logs</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Pulumi.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>PulumiAuditLogsDefinition</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Pulumi</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/pulumicloudauditlogs.html">PulumiCloudAuditLogs</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PulumiCloudAuditLogs/Data%20Connectors/PulumiAuditLogs_CCF/PulumiAuditLogs_ConnectorDefinition.json">PulumiAuditLogs_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PulumiCloudAuditLogs/Data%20Connectors/PulumiAuditLogs_CCF/PulumiAuditLogs_DCR.json">PulumiAuditLogs_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PulumiCloudAuditLogs/Data%20Connectors/PulumiAuditLogs_CCF/PulumiAuditLogs_PollerConfig.json">PulumiAuditLogs_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
+  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#pulumi-cloud-audit-logs">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Pulumi Cloud Audit Logs connector provides the capability to ingest <a href="https://www.pulumi.com/docs/pulumi-cloud/audit-logs/">Pulumi Cloud audit log events</a> into Microsoft Sentinel. By connecting Pulumi Cloud audit logs to Microsoft Sentinel, you can monitor infrastructure-as-code operations, detect unauthorized access attempts, track organization membership changes, and investigate security incidents.</p>
+<p>This connector polls the Pulumi Cloud REST API to retrieve audit log events for your organization.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/pulumiauditlogs-cl.html"><code>PulumiAuditLogs_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Pulumi Cloud access token</strong>: A Pulumi Cloud <a href="https://www.pulumi.com/docs/pulumi-cloud/access-management/access-tokens/">personal access token</a> with permissions to read audit logs is required. The organization must be on a Pulumi Cloud edition that includes audit log export (Pro or above).</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect Pulumi Cloud Audit Logs to Microsoft Sentinel</strong></p>
+<p>Provide your Pulumi Cloud organization name and access token to start ingesting audit log events.</p>
+<ol>
+<li>Create a <a href="https://app.pulumi.com/account/tokens">Pulumi access token</a> with audit log read permissions.</li>
+<li>Enter your Pulumi organization name and access token below.</li>
+<li>Enter the Pulumi API URL: <code>https://api.pulumi.com</code> for managed Pulumi Cloud, or the API endpoint of your self-hosted Pulumi Cloud instance.
+<strong>Connector Management Interface</strong></li>
+</ol>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Pulumi Organization</strong></li>
+<li><strong>API URL</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Connect Pulumi Cloud Organization</strong></p>
+<p><em>Add a Pulumi Cloud organization to ingest its audit log events</em></p>
+<p>When you click the &quot;Add Organization&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<ul>
+<li><strong>Pulumi Organization Name</strong> (required): my-org</li>
+<li><strong>Pulumi Access Token</strong> (required): pul-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+<li><strong>Pulumi API URL</strong> (required): https://api.pulumi.com</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

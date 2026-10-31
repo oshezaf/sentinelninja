@@ -16,42 +16,15 @@ This playbook will fetch and ingest IP or Domain Indicator data based on input p
 
 ## Logic App Connectors
 
-This playbook uses **4** Logic App connectors / built-in actions:
+This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 21 |
 | [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
-| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 7 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 28 |
 | [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
-
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Certs_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name | post | `/api/logs` | — |
-| Send_Top_Fingerprints_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Open_Ports_Section_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Pdns_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_IP_Indicator_Data_To_IP_Details_Table | post | `/api/logs` | — |
-| Send_Identity_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Whois_Data_To_Log_Analytics_Workspace | post | `/api/logs` | — |
-| Send_IP_Indicator_To_Live_Investigation_Indicators_Table | post | `/api/logs` | — |
-| Send_Insights_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Communication_Peers_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
-| Send_Main_PDNS_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
-| Send_Main_Open_Ports_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
-| Send_Main_Fingerprints_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
-| Send_Main_X509_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
-| Send_Domain_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
-| Send_Domain_Indicator_To_Live_Investigation_Indicators_Table | post | `/api/logs` | — |
 
 #### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
@@ -63,13 +36,34 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
+| Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('proto_by_ip_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_asns_by_ip_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Certs_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('certs_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_country_codes_by_ip_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Fingerprints_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('fingerprints_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Open_Ports_Section_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('open_ports_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Pdns_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('pdns_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_services_by_ip_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('top_tags_by_ip_table_name'), '_CL?api-version=2023-01-01')}` | — |
 | HTTP_Request_To_Fetch_Proto_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
 | HTTP_Request_To_Fetch_Top_Asns_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
 | HTTP_Request_To_Fetch_Top_Country_Codes_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
 | HTTP_Request_To_Fetch_Top_Services_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
 | HTTP_Request_To_Fetch_Top_Tags_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| Send_IP_Indicator_Data_To_IP_Details_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('summary_details_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Identity_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('identity_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Whois_Data_To_Log_Analytics_Workspace | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('whois_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_IP_Indicator_To_Live_Investigation_Indicators_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('ip_indicators_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Insights_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('insights_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Communication_Peers_Data_To_Log_Analytic_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('communication_peers_data_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Main_PDNS_Data_To_Log_Analytic_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_pdns_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Main_Open_Ports_Data_To_Log_Analytic_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_opn_ports_data_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Main_Fingerprints_Data_To_Log_Analytic_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_fingerprints_data_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Main_X509_Data_To_Log_Analytic_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('main_x509_data_table_name'), '_CL?api-version=2023-01-01')}` | — |
 | HTTP_Request_To_Fetch_Details_Of_IP_Indicator | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
 | HTTP_Request_To_Fetch_Details_Of_Domain_Indicator | GET | `@{variables('base_url')}/api/scout/search` | — |
+| Send_Domain_Data_To_Log_Analytics_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('domain_details_table_name'), '_CL?api-version=2023-01-01')}` | — |
+| Send_Domain_Indicator_To_Live_Investigation_Indicators_Table | POST | `@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('domain_indicators_table_name'), '_CL?api-version=2023-01-01')}` | — |
 
 #### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
 
@@ -107,16 +101,66 @@ This playbook will fetch and ingest IP or Domain Indicator data based on input p
 
 ### Post-Deployment instructions
 
-#### a. Authorize connections
+#### a. Log ingestion
+
+This playbook writes to Log Analytics through the [Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) using its own system-assigned managed identity. The data collection endpoint, the data collection rule, the destination tables and the **Monitoring Metrics Publisher** role assignment are all created by the deployment template, so ingestion needs no manual authorization.
+
+**Existing workspaces only.** If you deployed an earlier version of this playbook, its tables were created by the retired HTTP Data Collector API and are *classic* tables. Convert them once per workspace before the first run of the migrated playbook, otherwise ingestion fails:
+
+```bash
+resourceGroup="<resource-group>"
+workspace="<workspace-name>"
+
+# List the classic tables still present in the workspace
+az monitor log-analytics workspace table list \
+  --resource-group "$resourceGroup" --workspace-name "$workspace" \
+  --query "[?schema.tableSubType=='Classic'].{Name:name}" -o table
+
+# Convert each one, using the table name exactly as returned by the list
+# command above (it already includes the _CL suffix, e.g. Communication_Data_CL —
+# do not append _CL again)
+az monitor log-analytics workspace table migrate \
+  --resource-group "$resourceGroup" --workspace-name "$workspace" \
+  --table-name "<TableName>"
+```
+
+> **The conversion cannot be undone.** It is a one-way operation per table.
+
+This playbook writes the following tables:
+
+- `Communication_Data_CL`
+- `Domain_Data_CL`
+- `Fingerprints_Data_CL`
+- `Identity_Data_CL`
+- `Insights_Data_CL`
+- `Live_Investigation_Domain_Indicators_CL`
+- `Live_Investigation_IP_Indicators_CL`
+- `Open_Ports_Data_CL`
+- `PDNS_Data_CL`
+- `Proto_By_IP_Data_CL`
+- `Summary_Details_CL`
+- `Summary_Details_Top_Certs_Data_CL`
+- `Summary_Details_Top_Fingerprints_Data_CL`
+- `Summary_Details_Top_Open_Ports_Data_CL`
+- `Summary_Details_Top_Pdns_Data_CL`
+- `Top_Asns_By_IP_Data_CL`
+- `Top_Country_Codes_By_IP_Data_CL`
+- `Top_Services_By_IP_Data_CL`
+- `Top_Tags_By_IP_Data_CL`
+- `Whois_Data_CL`
+- `X509_Data_CL`
+
+Column names and types are unchanged, so existing parsers, workbooks and saved queries keep working.
+
+#### b. Authorize connections
 
 Once deployment is complete, authorize each connection.
-1. Go to your logic app → API connections → Select azureloganalyticsdatacollector connection resource
+1. Go to your logic app → API connections → Select a connection resource
 2. Go to General → Edit API connection.
-3. Enter Workspace ID and Workspace Key of your log analytics workspace.
-4. Click Authorize
-5. Sign in.
-6. Click Save.
-7. Repeat steps for other connections.
+3. Click Authorize
+4. Sign in.
+5. Click Save.
+6. Repeat steps for other connections.
 
 ---
 

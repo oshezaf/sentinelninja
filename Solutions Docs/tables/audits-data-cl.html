@@ -30,16 +30,12 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +48,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (24 columns)</h2>
+<h2 id="schema">Schema (37 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Audits_Data_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -71,6 +67,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">api_client_id_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">Computer</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -83,11 +83,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">event_action_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">event_data</td>
   <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
+  <td style="text-align:left">event_data_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">event_object</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_object_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -95,7 +107,15 @@
   <td style="text-align:left">datetime</td>
 </tr>
 <tr>
+  <td style="text-align:left">event_timestamp_t</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
   <td style="text-align:left">id</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">id_d</td>
   <td style="text-align:left">real</td>
 </tr>
 <tr>
@@ -119,7 +139,15 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">result_status_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">source_ip</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">source_ip_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -143,7 +171,15 @@
   <td style="text-align:left">real</td>
 </tr>
 <tr>
+  <td style="text-align:left">user_id_d</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
   <td style="text-align:left">user_role</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_role_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -151,11 +187,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">user_type_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">username</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">username_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">version</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">version_s</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>

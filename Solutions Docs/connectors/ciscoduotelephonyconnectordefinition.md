@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CiscoDuoTelephony_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoTelephony_CCF/CiscoDuoTelephony_DCR.json) |
 | **CCF Configuration** | [CiscoDuoTelephony_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Data%20Connectors/CiscoDuoTelephony_CCF/CiscoDuoTelephony_PollingConfig.json) |
 | **CCF Capabilities** | `CiscoDuo`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-duo-telephony-logs) |
 
 The Cisco Duo Telephony Logs connector ingests SMS and phone-call authentication event data from the Cisco Duo Admin API into Microsoft Sentinel.
 

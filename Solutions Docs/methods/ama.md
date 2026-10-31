@@ -29,10 +29,10 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **167** |
+| Total Connectors | **168** |
 | Active | 37 |
 | Deprecated 🚫 | 122 |
-| Unpublished ⚠️ | 8 |
+| Unpublished ⚠️ | 9 |
 
 ## Connectors Using This Method
 
@@ -62,6 +62,7 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | [Eset Security Management Center](../connectors/esetsmc.md) ⚠️ 🔶 | Eset | 1 | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
 | [Forescout](../connectors/forescout.md) | Forescout | 1 | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
 | [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md) | Microsoft | 1 | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
+| [HoneyForge Threat Detection](../connectors/honeyforge.md) ⚠️ | BUI | 1 | [HoneyForge](../solutions/honeyforge.md) |
 | [iboss via AMA](../connectors/ibossama.md) ➕ | iboss | 1 | [iboss](../solutions/iboss.md) |
 | [IIS Logs of Microsoft Exchange Servers](../connectors/esi-opt5exchangeiislogs.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Imperva WAF Gateway](../connectors/impervawafgateway.md) ⚠️ | Imperva | 1 | [Imperva WAF Gateway](../solutions/imperva-waf-gateway.md) |

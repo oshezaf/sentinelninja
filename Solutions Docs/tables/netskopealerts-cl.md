@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -251,11 +249,19 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) |  |
+| [Netskope Alerts and Events](../connectors/netskopealertsevents.md) |  |
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
+
+### Analytic Rules (1)
+
+**In solution [Netskopev2](../solutions/netskopev2.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Netskope - High Severity DLP Alert](../content/netskopev2-netskope-high-severity-dlp-alert-04e36dfa-05b3-45bd-b39f-28b6fac71337-a587b885.md) |  |
 
 ### Workbooks (1)
 

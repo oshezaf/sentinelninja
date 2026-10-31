@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,18 +17,34 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
-## Schema (5 columns)
+## Schema (20 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WizIssuesV3_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| _ResourceId | string |
+| createdAt | datetime |
+| dueAt | datetime |
 | entitySnapshot | dynamic |
+| evidence | dynamic |
 | issueId | string |
+| issueType | string |
+| notes | dynamic |
+| projects | dynamic |
+| resolvedAt | datetime |
+| serviceTickets | dynamic |
 | severity | string |
+| sourceRule | dynamic |
+| sourceURL | string |
 | status | string |
+| statusChangedAt | datetime |
+| TenantId | string |
 | TimeGenerated | datetime |
+| Type | string |
+| updatedAt | datetime |
 
 ## Schema References
 
@@ -63,6 +77,14 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [WizFindings](../content/wiz-wizfindings-78285767.md) |  |
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAlertEventWizCloud](../asim/asimalerteventwizcloud.md) | AlertEvent | Wiz Cloud |  |
 
 ---
 

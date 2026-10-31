@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedly.com/i/support/contactUs](https://feedly.com/i/support/contactUs) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.5 |
+| **Version** | 3.0.7 |
 | **Author** | Feedly ml@feedly.com |
 | **First Published** | 2023-08-01 |
-| **Last Updated** | 2026-09-09 |
+| **Last Updated** | 2026-09-18 |
 | **Solution Folder** | [Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/feedlyinc1693853810319.azure-sentinel-solution-feedly) · Popularity: ⚪ Very Low (0%) |
 
@@ -43,6 +43,8 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                              |
 |-------------|--------------------------------|-----------------------------------------------------------------|
+| 3.0.7       | 15-09-2026                     | Fix DCR STIX Id: hash_sha256 is a string, do not wrap it in abs() |
+| 3.0.6       | 10-09-2026                     | Fix DCR transformKql (use replace/pack so Connect can create the data collection rule) |
 | 3.0.5       | 28-08-2026                     | Ingest Feedly IoCs into native **ThreatIntelIndicators** (SourceSystem=Feedly) |
 | 3.0.4       | 16-02-2026                     | Migrate to CCF connector |
 | 3.0.3       | 28-11-2023                     | Added missing python packages to the  **Data Connector**        |

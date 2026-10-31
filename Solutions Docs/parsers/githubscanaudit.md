@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ? | ✓ | ? |
 
 ---
 

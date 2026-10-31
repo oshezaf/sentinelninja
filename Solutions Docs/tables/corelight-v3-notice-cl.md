@@ -81,9 +81,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
-### Workbooks (3)
+### Workbooks (4)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -91,6 +91,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Corelight](../content/corelight-corelight-90dad195.md) |  |
 | [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
+| [Corelight_Data_Insights](../content/corelight-corelight-data-insights-e22362fc.md) |  |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 
 ## Parsers Using This Table (1)

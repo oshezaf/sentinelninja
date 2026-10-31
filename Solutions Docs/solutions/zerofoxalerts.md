@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-04-01 |
-| **Last Updated** | 2026-06-10 |
+| **Last Updated** | 2026-09-29 |
 | **Solution Folder** | [ZeroFoxAlerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFoxAlerts) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: 🔵 Medium (75%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zerofoxinc1695922129370.zerofox-alerts-sentinel-connector) · Popularity: 🟡 Low (42%) |
 
 The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) into Microsoft Sentinel using the ZeroFox API. 
 
@@ -55,6 +55,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.0.1       | 08-09-2026                     | Fixed the **Data Connector** transform that left nine alert fields empty, including severity, timestamp, and entity and asset group details. No table changes; the fix applies to newly collected alerts — existing rows are not backfilled. |
 | 3.0.0       | 01-04-2026                     | Added **Data Connectors** for ZeroFox's Alerts.              |
 
 ---

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menlo Security &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="menlo-security">Menlo Security</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/MenloSecurity.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>MenloSecurityConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Menlo Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/menlosecurity.html">MenloSecurity</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MenloSecurity/Data%20Connectors/MenloSecurity.json">MenloSecurity.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> | <a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources; Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.menlosecurity.com">Menlo Security</a> connector uses the Menlo Security Logs API to ingest Audit, Bandwidth, and Web proxy logs into Microsoft Sentinel. It runs as three timer-triggered Azure Functions, each polling the API every 3 minutes and writing events to custom Log Analytics tables (<code>MenloAudit_CL</code>, <code>MenloBandwidth_CL</code>, <code>MenloWeb_CL</code>).</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/menloaudit-cl.html"><code>MenloAudit_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/menlobandwidth-cl.html"><code>MenloBandwidth_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/menloweb-cl.html"><code>MenloWeb_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>Menlo Security API Token</strong>: A valid Menlo Security API token with permission to access the <code>/api/rep/v2/fetch/client_select</code> endpoint. Obtain this from the Menlo Security admin console.</li>
+<li><strong>Azure permissions for connector deployment</strong>: Deploying the connector's Azure resources (via the <strong>Deploy to Azure</strong> button in the steps below) requires <strong>Owner</strong>, or <strong>Contributor + User Access Administrator</strong>, on the target resource group — the template creates role assignments that grant the Function App's managed identity access to Key Vault, Storage, and the Data Collection Rule (Contributor alone is not sufficient). Creating the custom tables also requires write access to the Log Analytics workspace's resource group.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Step 1 — Deploy the connector infrastructure</strong></p>
+<p>Click <strong>Deploy to Azure</strong> below. On the deployment page:</p>
+<ul>
+<li>For <strong>Resource group</strong>, choose <strong>Create new</strong> and name it <code>MenloSecurityLogs</code> so all connector resources stay together and can be removed in one step later.</li>
+<li>Enter your <strong>Log Analytics Workspace Resource Group</strong>, then select your <strong>workspace</strong> from the dropdown. Connector resources are deployed automatically in the <strong>same region as the selected workspace</strong> — no manual region matching is required.</li>
+<li>Enter your <strong>Menlo Security API token</strong>.</li>
+</ul>
+<p>The template deploys the Function App, Key Vault, Storage Account, Data Collection Endpoint, and Data Collection Rule, and creates the <code>MenloAudit_CL</code>, <code>MenloBandwidth_CL</code>, and <code>MenloWeb_CL</code> custom tables in your Log Analytics workspace.</p>
+<p><a href="https://aka.ms/sentinel-MenloSecurityDataConnector-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
+<p><em>To remove the connector later, delete the <code>MenloSecurityLogs</code> resource group and the three <code>Menlo*_CL</code> custom tables from the workspace.</em></p>
+<p><strong>2. Step 2 — Enable log collection</strong></p>
+<p>All log-collection functions are <strong>disabled by default</strong>. After deployment, navigate to the Function App in the Azure Portal and enable the log types you want to collect:</p>
+<ol>
+<li>Open the <strong>Function App</strong> created by this solution (named <code>menlo-logs-func-&lt;suffix&gt;</code>).</li>
+<li>Go to <strong>Configuration</strong> → <strong>Application settings</strong>.</li>
+<li>For each log type you want to enable, set the corresponding app setting value to <code>0</code>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th>Log type</th>
+  <th>App setting name</th>
+  <th>Enable value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Audit logs</td>
+  <td><code>AzureWebJobs.TimerTriggerAuditLogs.Disabled</code></td>
+  <td><code>0</code></td>
+</tr>
+<tr>
+  <td>Bandwidth logs</td>
+  <td><code>AzureWebJobs.TimerTriggerBandwidthLogs.Disabled</code></td>
+  <td><code>0</code></td>
+</tr>
+<tr>
+  <td>Web logs</td>
+  <td><code>AzureWebJobs.TimerTriggerWebLogs.Disabled</code></td>
+  <td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Click <strong>Save</strong>. Each enabled function will begin polling the Menlo Security API on a 3-minute interval.</li>
+</ol>
+<p><strong>3. Step 3 — Verify data ingestion</strong></p>
+<p>After enabling at least one log type, wait approximately 5–10 minutes for the first data to appear. Verify by running the following queries in Microsoft Sentinel <strong>Logs</strong>:</p>
+<pre><code class="language-kusto">MenloAudit_CL | take 10
+MenloBandwidth_CL | take 10
+MenloWeb_CL | take 10
+</code></pre>
+<p>If no data appears after 15 minutes, check the Function App's <strong>Monitor</strong> tab for invocation errors.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

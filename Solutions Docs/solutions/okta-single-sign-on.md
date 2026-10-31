@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity,Security - Automation (SOAR) |
-| **Version** | 3.1.9 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-24 |
-| **Last Updated** | 2026-07-31 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [Okta Single Sign-On](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (83%) |
 
 The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) solution for Microsoft Sentinel provides the capability to ingest [audit and event logs](https://www.okta.com/integrate/documentation/isv-syslog-references/) into Microsoft Sentinel using the Okta API.
   
@@ -47,9 +47,9 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
-- [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) 🔶
+- [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) ⚠️ 🔶
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
 - [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md)
 
@@ -136,6 +136,10 @@ This solution includes **24 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            |
 |-------------|--------------------------------|---------------------------------------------------------------|
+| 3.2.2 | 25-10-2026 | Restored `DeployParser` parameter and `Parser` resource deployment condition for the `OktaSSO` **Parser** alongside the nine disabled **Defender XDR Custom Detections** and one **Defender XDR Workbook** so Content Hub installation and multi-workspace deployment succeed. |
+| 3.2.1 | 15-10-2026 | Added 9 disabled **Defender XDR Custom Detections** and 1 **Defender XDR Workbook** (`OktaSingleSignOn.json`) alongside the existing Sentinel content, updated the reference link in `azuredeploy_Okta_native_poller_connector_v2.json`, and updated the solution package to 3.2.1. |
+| 3.1.11       | 28-09-2026                     | Removed the deprecated Okta Single Sign-On Azure Function data connector from the solution package |
+| 3.1.10      | 09-09-2026                     | Updated the Okta **Data Connector** to retrieve up to 1000 events per page, throttle initial and paginated requests, and handle HTTP 429 responses using rate-limit-aware retries. |
 | 3.1.9       | 30-07-2026                     | Update KQL queries of Okta **Analytics rules** <br> Updated Azure Gov button image link. |
 | 3.1.8       | 10-07-2026                     | Update **Analytic rule** and **Hunting Queries** for Okta SSO.|
 | 3.1.7       | 28-04-2026                     | Update query with OktaSSO **parser** so that the OktaV2_CL table is considered. |

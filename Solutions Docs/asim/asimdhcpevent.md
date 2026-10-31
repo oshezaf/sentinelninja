@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimDhcpEvent` (parameter-less) · `imDhcpEvent` (filtering) |
 | **Built-in Parser** | `_ASim_DhcpEvent` (parameter-less) · `_Im_DhcpEvent` (filtering) |
 | **Schema** | DhcpEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEvent.md)) |
-| **Last Updated** | Mar 11, 2024 |
+| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEvent.md)) |
+| **Last Updated** | Oct 08, 2026 |
 | **Source File** | [Parsers\ASimDhcpEvent\Parsers\ASimDhcpEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDhcpEvent/Parsers/ASimDhcpEvent.yaml) |
 
 ## Description

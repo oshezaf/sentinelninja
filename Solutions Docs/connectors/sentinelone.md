@@ -1,6 +1,10 @@
-# 🚫 [DEPRECATED] SentinelOne (using Azure Function)
+# 🚫 ⚠️ 🔍 [DEPRECATED] SentinelOne (using Azure Function)
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
@@ -29,13 +33,13 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ? | ✓ | ? |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ? | ✓ | ? |
+| [`SentinelOneAlertsV2_CL`](../tables/sentinelonealertsv2-cl.md) | ? | ✓ | ? |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ? | ✓ | ? |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ? | ✓ | ? |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ? | ✓ | ? |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

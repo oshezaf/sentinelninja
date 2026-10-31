@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAlertEventGoogleThreatIntelligence` |
 | **Built-in Parser** | `_ASim_AlertEvent_GoogleThreatIntelligence` |
 | **Schema** | AlertEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Google Threat Intelligence |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventGoogleThreatIntelligence.md)) |
-| **Last Updated** | Jul 01, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventGoogleThreatIntelligence.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAlertEvent](asimalertevent.md) |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEventGoogleThreatIntelligence.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEventGoogleThreatIntelligence.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) | ✗ | ✓ | ✗ |
+| [`RelevanceSystemAlerts_CL`](../tables/relevancesystemalerts-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

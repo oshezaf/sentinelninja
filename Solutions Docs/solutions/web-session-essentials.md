@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Networking |
-| **Version** | 3.0.4 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-06-29 |
-| **Last Updated** | 2026-09-07 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Web Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-websession-domain) · Popularity: 🟡 Low (33%) |
 | **Pre-requisites** | [PaloAlto-PAN-OS](paloalto-pan-os.md), [SquidProxy](squidproxy.md), [Vectra AI Stream](vectra-ai-stream.md), zscaler1579058425289.zscaler_internet_access_mss |
 
 Web Session Essentials is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
@@ -65,10 +65,10 @@ This solution queries **5 table(s)** from its content items:
 | Table | Used By Content |
 |-------|----------------|
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
-| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) | Playbooks |
-| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) | Playbooks |
-| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) | Playbooks |
-| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) | Playbooks |
+| [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) | Analytics, Playbooks, Workbooks |
+| [`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) | Analytics, Playbooks, Workbooks |
+| [`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) | Analytics, Playbooks, Workbooks |
+| [`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) | Analytics, Playbooks, Workbooks |
 
 ### Internal Tables
 
@@ -79,14 +79,14 @@ The following **7 table(s)** are used internally by this solution's content item
 | [`Anomalies`](../tables/anomalies.md) | Analytics |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`Watchlist`](../tables/watchlist.md) | Analytics |
-| [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) | Playbooks (writes), Workbooks |
+| [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) | Analytics, Playbooks (writes), Workbooks |
 | [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | Analytics, Playbooks (writes), Workbooks |
 | [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) | Analytics, Playbooks (writes), Workbooks |
-| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | Playbooks (writes), Workbooks |
+| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | Analytics, Playbooks (writes), Workbooks |
 
 ## Content Items
 
-This solution includes **27 content item(s)**:
+This solution includes **28 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
@@ -94,6 +94,7 @@ This solution includes **27 content item(s)**:
 | Hunting Queries | 9 |
 | Playbooks | 2 |
 | Workbooks | 1 |
+| Parsers | 1 |
 
 ### Analytic Rules
 
@@ -107,10 +108,10 @@ This solution includes **27 content item(s)**:
 | [Detect potential file enumeration activity (ASIM Web Session)](../content/web-session-essentials-detect-potential-file-enumeration-activity-asim-web-session-b3731ce1-1f04-47c4-95c2-9827408c4375-a932da88.md) | Medium | Discovery, CommandAndControl, CredentialAccess | - |
 | [Detect potential presence of a malicious file with a double extension (ASIM Web Session)](../content/web-session-essentials-detect-potential-presence-of-a-malicious-file-with-a-double-extension-asim-web-se-6a71687f-00cf-44d3-93fc-8cbacc7b5615-3eb819c9.md) | Medium | DefenseEvasion, Persistence, CommandAndControl | - |
 | [Detect presence of private IP addresses in URLs (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-private-ip-addresses-in-urls-asim-web-session-e3a7722a-e099-45a9-9afb-6618e8f05405-224cd172.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md) | Medium | InitialAccess | *Internal use:*<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) |
+| [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md) | Medium | InitialAccess | [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md)<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md)<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md)<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md)<br>*Internal use:*<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md)<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md)<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) |
 | [Detect requests for an uncommon resources on the web (ASIM Web Session)](../content/web-session-essentials-detect-requests-for-an-uncommon-resources-on-the-web-asim-web-session-c99cf650-c53b-4c4c-9671-7d7500191a10-6c125d61.md) | Low | CommandAndControl | - |
 | [Detect threat information in web requests (ASIM Web Session)](../content/web-session-essentials-detect-threat-information-in-web-requests-asim-web-session-7d2ed1c7-da26-45fd-b4ea-b6f2bbeccea7-0bd0a85e.md) | High | InitialAccess | - |
-| [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) | Medium | Exfiltration | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) |
+| [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) | Medium | Exfiltration | [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md)<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md)<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md)<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md)<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md)<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) |
 | [Detect web requests to potentially harmful files (ASIM Web Session)](../content/web-session-essentials-detect-web-requests-to-potentially-harmful-files-asim-web-session-c6608467-3678-45fe-b038-b590ce6d00fb-170f0dec.md) | Medium | InitialAccess, Persistence, Execution | *Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
 | [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](../content/web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-a-813ccf3b-0321-4622-b0bc-63518fd14454-4eaea7cb.md) | Medium | InitialAccess, CredentialAccess | - |
 | [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-b7fe8f27-7010-404b-aec5-6e5245cea580-7bb8623e.md) | Medium | CommandAndControl | *Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
@@ -133,7 +134,7 @@ This solution includes **27 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md)<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md)<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) |
+| [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md)<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md)<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md)<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md)<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md)<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) |
 
 ### Playbooks
 
@@ -142,10 +143,18 @@ This solution includes **27 content item(s)**:
 | [Summarize Web Session Data using Log Ingestion API](../content/web-session-essentials-summarize-web-session-data-using-log-ingestion-api-21e4f7be.md) | The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the... | [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) *(read)*<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) *(read)* |
 | [[Deprecated] Summarize Web Session Data](../content/web-session-essentials-[deprecated]-summarize-web-session-data-eff20266.md) | The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session logs and ingesting the... | *Internal use:*<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) *(read/write)*<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) *(read/write)*<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) *(read/write)* |
 
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [WebSessionEssentialsCustomParser](../parsers/websessionessentialscustomparser.md) | - | [`WebSession_Summarized_DstIPV1_CL`](../tables/websession-summarized-dstipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcIPV1_CL`](../tables/websession-summarized-srcipv1-cl.md) *(read)*<br>[`WebSession_Summarized_SrcInfoV1_CL`](../tables/websession-summarized-srcinfov1-cl.md) *(read)*<br>[`WebSession_Summarized_ThreatInfoV1_CL`](../tables/websession-summarized-threatinfov1-cl.md) *(read)*<br>*Internal use:*<br>[`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) *(read)*<br>[`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) *(read)*<br>[`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) *(read)*<br>[`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) *(read)* |
+
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                            |
 |-------------|--------------------------------|-----------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Sentinel to Defender XDR migration. |
+| 3.0.5       | 11-09-2026                     | Added  WebSessionEssentialsCustomParser to parse and normalize the tables used in dependent Security Content. |
 | 3.0.4       | 02-09-2026                     | Added Summarize Web Session Data using Log Ingestion API **Playbook** |
 | 3.0.3       | 06-06-2024                     | Updated Entity Mapping **Analytic Rule** CommandInURL.yaml 	                       |
 | 3.0.2       | 31-01-2024                     | Updated the solution to fix **Analytic Rules** deployment issue     |

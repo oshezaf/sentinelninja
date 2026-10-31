@@ -6,17 +6,16 @@
 
 ---
 
-Queries for Active Directory objects, such as users, groups, devices, and domains
+Reference for IdentityQueryEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityqueryevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityqueryevents-table) |
 
 ## Contents
 
@@ -68,7 +67,6 @@ Queries for Active Directory objects, such as users, groups, devices, and domain
 Official Microsoft Learn documentation for field/column information:
 
 - [IdentityQueryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityqueryevents)
-- [IdentityQueryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityqueryevents-table)
 
 ## Solutions (1)
 
@@ -107,11 +105,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (4)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Workbook |
-|:-------------|
-| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
 
 **GitHub Only:**
 
@@ -119,18 +117,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |
+| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 
-## Selection Criteria Summary (3 criteria, 8 total references)
+## Selection Criteria Summary (2 criteria, 7 total references)
 
-References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "LDAP query"` | - | 5 | - | - | **5** |
 | `ActionType == "DNS query"`<br>`QueryTarget has "appsync-api"`<br>`QueryTarget has "avsvmcloud.com"` | - | 2 | - | - | **2** |
-| `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **8** | **0** | **0** | **8** |
+| **Total** | **0** | **7** | **0** | **0** | **7** |
 
 ### ActionType
 
@@ -138,8 +135,6 @@ References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `LDAP query` | - | 5 | - | - | **5** |
 | `DNS query` | - | 2 | - | - | **2** |
-| `LogonFailed` | - | 1 | - | - | **1** |
-| `LogonSuccess` | - | 1 | - | - | **1** |
 
 ### QueryTarget
 

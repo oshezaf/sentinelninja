@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimProcessEvent` (parameter-less) · `imProcessEvent` (filtering) |
 | **Built-in Parser** | `_ASim_ProcessEvent` (parameter-less) · `_Im_ProcessEvent` (filtering) |
 | **Schema** | ProcessEvent |
-| **Schema Version** | 0.1.0 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md)) |
-| **Last Updated** | Aug 28, 2026 |
+| **Parser Version** | 0.1.5 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEvent.md)) |
+| **Last Updated** | Oct 21, 2026 |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessEvent.yaml) |
 
 ## Description
@@ -37,6 +37,7 @@ This union parser includes parsers for the following products:
 | Security Events | [_ASim_ProcessEvent_CreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Trend Micro Vision One | [_ASim_ProcessEvent_CreateTrendMicroVisionOne](asimprocesscreatetrendmicrovisionone.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
 | VMware Carbon Black Cloud | [_ASim_ProcessEvent_CreateVMwareCarbonBlackCloud](asimprocesscreatevmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud (legacy connector)](../solutions/vmware-carbon-black-cloud.md) |
+| CrowdStrike Falcon Endpoint Protection | [_ASim_ProcessEvent_CrowdStrikeFalconEndpointProtection](asimprocesseventcrowdstrikefalconendpointprotection.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | Microsoft Defender for IoT | [_ASim_ProcessEvent_MD4IoT](asimprocesseventmd4iot.md) |  |
 | Microsoft 365 Defender for endpoint | [_ASim_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |  |
 | Native | [_ASim_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |

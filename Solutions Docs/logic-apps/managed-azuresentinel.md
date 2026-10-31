@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 726 |
-| **Solutions** | 130 |
+| **Playbooks using** | 757 |
+| **Solutions** | 134 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
 
 ## Playbooks Using This Connector
@@ -59,6 +59,11 @@
 | [AI-Commandline-Analysis](../content/github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only | 1 | 1 |
 | [Akamai Guardicore Incident-Enrichment — one-click bootstrap](../content/akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 1 | 0 |
 | [Alert trigger empty playbook](../content/standalone-content-alert-trigger-empty-playbook-3217f7cb.md) | 📄 Standalone | 1 | 0 |
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 9 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 20 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 9 |
+| [ANY.RUN Sandbox - URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-url-enrichment-incident-trigger-52d34934.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 7 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 9 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 1 | 0 |
 | [AS-Add-Azure-AD-User-Job-Title-to-Incident](../content/standalone-content-as-add-azure-ad-user-job-title-to-incident-17fd9655.md) | 📄 Standalone | 1 | 2 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 1 | 1 |
@@ -157,7 +162,6 @@
 | [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 1 | 0 |
 | [Change Incident Severity](../content/standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone | 1 | 2 |
 | [Change-Incident-Severity](../content/standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone | 1 | 3 |
-| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](../content/check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 0 |
 | [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](../content/check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) | 1 | 5 |
 | [Check Point Exposure Management - Credential Leak Validation and Response](../content/check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 3 |
 | [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](../content/check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) | 1 | 2 |
@@ -358,12 +362,24 @@
 | [Google Threat Intelligence - IOC Enrichment](../content/google-threat-intelligence-google-threat-intelligence-ioc-enrichment-37b5ea42.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 5 |
 | [Google Threat Intelligence - IoC Stream](../content/google-threat-intelligence-google-threat-intelligence-ioc-stream-01fc772a.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - IP Enrichment](../content/google-threat-intelligence-google-threat-intelligence-ip-enrichment-e58dcaa4.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - Session Assistant](../content/google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 5 |
 | [Google Threat Intelligence - Threat List](../content/google-threat-intelligence-google-threat-intelligence-threat-list-c6635a88.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - URL Enrichment](../content/google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 0 |
 | [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 1 | 5 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 1 | 5 |
+| [Group-IB TI - Enrich incident with IOC context](../content/group-ib-group-ib-ti-enrich-incident-with-ioc-context-6eba8145.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Enrich incident with WHOIS data](../content/group-ib-group-ib-ti-enrich-incident-with-whois-data-c983f2c6.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Enrich single domain entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-domain-entity-with-ioc-context-a3032bca.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Enrich single file hash entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-file-hash-entity-with-ioc-context-7b257dd4.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Enrich single IP entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-ip-entity-with-ioc-context-1806f7b7.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Enrich single URL entity with IOC context](../content/group-ib-group-ib-ti-enrich-single-url-entity-with-ioc-context-3ccc57e4.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Indicator processor (required adapter)](../content/group-ib-group-ib-ti-indicator-processor-required-adapter-4692ecb4.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Score a single IP entity](../content/group-ib-group-ib-ti-score-a-single-ip-entity-ed3c7eb3.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - Score incident IP addresses](../content/group-ib-group-ib-ti-score-incident-ip-addresses-16ea5229.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - WHOIS lookup for a single domain entity](../content/group-ib-group-ib-ti-whois-lookup-for-a-single-domain-entity-5ca6b2b6.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
+| [Group-IB TI - WHOIS lookup for a single IP entity](../content/group-ib-group-ib-ti-whois-lookup-for-a-single-ip-entity-c670f284.md) | [Group-IB](../solutions/group-ib.md) | 1 | 1 |
 | [Guardicore-ProcessIncidentEnrichment](../content/akamai-guardicore-guardicore-processincidentenrichment-185057ea.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 1 | 0 |
 | [HaveIBeenPwnedEmail](../content/standalone-content-haveibeenpwnedemail-c80f9114.md) | 📄 Standalone | 1 | 4 |
 | [HoneyLabs-EnrichIncident-IP](../content/honeylabs-honeylabs-enrichincident-ip-e06c1d7f.md) | [HoneyLabs](../solutions/honeylabs.md) | 1 | 4 |
@@ -511,6 +527,7 @@
 | [Pure Storage Protection Group Snapshot](../content/pure-storage-pure-storage-protection-group-snapshot-9fcd6aff.md) | [Pure Storage](../solutions/pure-storage.md) | 1 | 1 |
 | [Pure Storage User Deletion](../content/pure-storage-pure-storage-user-deletion-9d7757a4.md) | [Pure Storage](../solutions/pure-storage.md) | 1 | 2 |
 | [Pure Storage Volume Snapshot](../content/pure-storage-pure-storage-volume-snapshot-5248fe1a.md) | [Pure Storage](../solutions/pure-storage.md) | 1 | 1 |
+| [QCrypton PQC — notify on new vulnerable finding](../content/qcryptonpqcscanner-qcrypton-pqc-—-notify-on-new-vulnerable-finding-91da7c15.md) | [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) | 1 | 0 |
 | [QualysVM-GetAssetDetails](../content/qualysvm-qualysvm-getassetdetails-0f1ab8e4.md) | [QualysVM](../solutions/qualysvm.md) | 1 | 2 |
 | [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid-c760c473.md) | [QualysVM](../solutions/qualysvm.md) | 1 | 1 |
 | [QualysVM-GetAssets-ByOpenPort](../content/qualysvm-qualysvm-getassets-byopenport-f3f9bb94.md) | [QualysVM](../solutions/qualysvm.md) | 1 | 1 |
@@ -613,6 +630,8 @@
 | [Shodan - Enrich Incident IPs and Domain Names](../content/shodan-shodan-enrich-incident-ips-and-domain-names-b4236aa5.md) | [Shodan](../solutions/shodan.md) | 1 | 4 |
 | [Shodan - Enrich IP Address](../content/shodan-shodan-enrich-ip-address-506b2861.md) | [Shodan](../solutions/shodan.md) | 1 | 2 |
 | [SIGNL4 Alerting and Response](../content/signl4-signl4-alerting-and-response-4fa73700.md) | [SIGNL4](../solutions/signl4.md) | 1 | 0 |
+| [SilentPush-DomainExportEnrichment-Full](../content/silentpush-silentpush-domainexportenrichment-full-12dc3b20.md) | [SilentPush](../solutions/silentpush.md) | 1 | 1 |
+| [SilentPush-IPExportEnrichment-Full](../content/silentpush-silentpush-ipexportenrichment-full-dc1b4017.md) | [SilentPush](../solutions/silentpush.md) | 1 | 1 |
 | [SlashNext Phishing Incident Investigation Playbook](../content/slashnext-slashnext-phishing-incident-investigation-playbook-ad170d4d.md) | [SlashNext](../solutions/slashnext.md) | 1 | 2 |
 | [SOCRadar-Alarm-Import](../content/socradar-socradar-alarm-import-08438e78.md) | [SOCRadar](../solutions/socradar.md) | 0 | 1 |
 | [SpectraAnalyze-EnrichFileHash](../content/reversinglabs-spectraanalyze-enrichfilehash-21eafc26.md) | [ReversingLabs](../solutions/reversinglabs.md) | 1 | 2 |
@@ -627,7 +646,8 @@
 | [SpyCloud Breach Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 2 |
 | [SpyCloud Conditional Access Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 4 |
 | [SpyCloud Malware Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 3 |
-| [SpyCloud_MDE_Automation](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 5 |
+| [SpyCloud MDE Automation Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-mde-automation-playbook-3e87e024.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 5 |
+| [SpyCloud Session Revocation Playbook](../content/spycloud-enterprise-protection-ccf-spycloud-session-revocation-playbook-9a81870a.md) | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) | 1 | 2 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 2 |
 | [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 1 | 0 |
@@ -713,8 +733,8 @@
 | [Veeam-ResolveTriggeredAlarm](../content/veeam-veeam-resolvetriggeredalarm-077a309e.md) | [Veeam](../solutions/veeam.md) | 1 | 2 |
 | [Veeam-SetupConnections](../content/veeam-veeam-setupconnections-e3e98b5f.md) | [Veeam](../solutions/veeam.md) | 1 | 6 |
 | [Veeam-StartQuickBackup](../content/veeam-veeam-startquickbackup-3a35729c.md) | [Veeam](../solutions/veeam.md) | 1 | 3 |
-| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis-2ae966ed.md) | [VMRay](../solutions/vmray.md) | 1 | 3 |
-| [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | [VMRay](../solutions/vmray.md) | 1 | 4 |
+| [VMRay Email Attachment Analysis (Defender-visible)](../content/vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.md) | [VMRay](../solutions/vmray.md) | 1 | 1 |
+| [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | [VMRay](../solutions/vmray.md) | 1 | 8 |
 | [Watchlist - Change Incident Severity and Title if User VIP - Alert Trigger](../content/watchlists-utilities-watchlist-change-incident-severity-and-title-if-user-vip-alert-trigger-f690dd04.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
 | [Watchlist - Change Incident Severity and Title if User VIP - Incident Trigger](../content/watchlists-utilities-watchlist-change-incident-severity-and-title-if-user-vip-incident-trigger-f80acbed.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
 | [Watchlist - close incidents with safe IPs](../content/watchlists-utilities-watchlist-close-incidents-with-safe-ips-c258f9d0.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 3 |
@@ -729,6 +749,17 @@
 | [Whisper Security - Get BGP History](../content/whisper-whisper-security-get-bgp-history-150c0325.md) | [Whisper](../solutions/whisper.md) | 0 | 4 |
 | [Whisper Security - Get Infrastructure Chain](../content/whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
 | [Whisper Security - Get WHOIS History](../content/whisper-whisper-security-get-whois-history-ccdf0e6e.md) | [Whisper](../solutions/whisper.md) | 0 | 3 |
+| [workflow](../content/group-ib-workflow-4054d138.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-43b129a4.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-64a91589.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-68403aed.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-75f04dbb.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-ab5b6ff1.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-d060ef46.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-1b6e9c0c.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-38cb684e.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-751fce10.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
+| [workflow](../content/group-ib-workflow-fc7a60be.md) | [Group-IB](../solutions/group-ib.md) | 0 | 1 |
 | [workflow](../content/sap-workflow-3298b428.md) | [SAP](../solutions/sap.md) | 0 | 4 |
 | [workflow](../content/sap-workflow-20a8ae88.md) | [SAP](../solutions/sap.md) | 0 | 2 |
 | [Zscaler OAuth2 Blacklist URL](../content/zscaler-internet-access-zscaler-oauth2-blacklist-url-27279293.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 1 | 0 |

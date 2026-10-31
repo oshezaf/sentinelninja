@@ -14,6 +14,7 @@ Identifies failed logon attempts from unknown users in Syslog authpriv logs. The
 | **Solution** | [Syslog](../solutions/syslog.md) |
 | **ID** | `e7ec9fa6-e7f7-41ed-a34b-b956837a3ee6` |
 | **Severity** | Medium |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1110 |

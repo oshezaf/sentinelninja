@@ -63,17 +63,23 @@ This connector ingests data into the following tables:
 | [`Corelight_v3_corelight_ad_ssh_connections_CL`](../tables/corelight-v3-corelight-ad-ssh-connections-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_burst_CL`](../tables/corelight-v3-corelight-burst-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_license_capacity_CL`](../tables/corelight-v3-corelight-license-capacity-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_corelight_metrics_bro_CL`](../tables/corelight-v3-corelight-metrics-bro-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_corelight_metrics_cpu_CL`](../tables/corelight-v3-corelight-metrics-cpu-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_metrics_disk_CL`](../tables/corelight-v3-corelight-metrics-disk-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_metrics_iface_CL`](../tables/corelight-v3-corelight-metrics-iface-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_metrics_memory_CL`](../tables/corelight-v3-corelight-metrics-memory-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_corelight_metrics_smartpcap_CL`](../tables/corelight-v3-corelight-metrics-smartpcap-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_metrics_system_CL`](../tables/corelight-v3-corelight-metrics-system-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_corelight_metrics_utilization_CL`](../tables/corelight-v3-corelight-metrics-utilization-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_metrics_zeek_doctor_CL`](../tables/corelight-v3-corelight-metrics-zeek-doctor-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_corelight_ml_metrics_CL`](../tables/corelight-v3-corelight-ml-metrics-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_overall_capture_loss_CL`](../tables/corelight-v3-corelight-overall-capture-loss-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_pipeline_test_CL`](../tables/corelight-v3-corelight-pipeline-test-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_corelight_profiling_CL`](../tables/corelight-v3-corelight-profiling-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_cotp_CL`](../tables/corelight-v3-cotp-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_datared_CL`](../tables/corelight-v3-datared-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_dce_rpc_CL`](../tables/corelight-v3-dce-rpc-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_dce_rpc_activity_CL`](../tables/corelight-v3-dce-rpc-activity-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_dga_CL`](../tables/corelight-v3-dga-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_dhcp_CL`](../tables/corelight-v3-dhcp-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_dnp3_CL`](../tables/corelight-v3-dnp3-cl.md) | ? | ✓ | ? |
@@ -105,6 +111,7 @@ This connector ingests data into the following tables:
 | [`Corelight_v3_generic_dns_tunnels_CL`](../tables/corelight-v3-generic-dns-tunnels-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_generic_icmp_tunnels_CL`](../tables/corelight-v3-generic-icmp-tunnels-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_genisys_CL`](../tables/corelight-v3-genisys-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_gssapi_CL`](../tables/corelight-v3-gssapi-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_http2_CL`](../tables/corelight-v3-http2-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_http_CL`](../tables/corelight-v3-http-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_http_agg_CL`](../tables/corelight-v3-http-agg-cl.md) | ? | ✓ | ? |
@@ -132,6 +139,7 @@ This connector ingests data into the following tables:
 | [`Corelight_v3_local_subnets_neighbor_CL`](../tables/corelight-v3-local-subnets-neighbor-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_log4shell_CL`](../tables/corelight-v3-log4shell-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_logschema_CL`](../tables/corelight-v3-logschema-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_ml_results_CL`](../tables/corelight-v3-ml-results-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_modbus_CL`](../tables/corelight-v3-modbus-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_modbus_detailed_CL`](../tables/corelight-v3-modbus-detailed-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_modbus_mask_write_register_CL`](../tables/corelight-v3-modbus-mask-write-register-cl.md) | ? | ✓ | ? |
@@ -220,8 +228,11 @@ This connector ingests data into the following tables:
 | [`Corelight_v3_sip_CL`](../tables/corelight-v3-sip-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smartpcap_CL`](../tables/corelight-v3-smartpcap-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smartpcap_stats_CL`](../tables/corelight-v3-smartpcap-stats-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_smb_activity_CL`](../tables/corelight-v3-smb-activity-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_smb_details_CL`](../tables/corelight-v3-smb-details-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smb_files_CL`](../tables/corelight-v3-smb-files-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smb_mapping_CL`](../tables/corelight-v3-smb-mapping-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_smb_sessions_CL`](../tables/corelight-v3-smb-sessions-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smtp_CL`](../tables/corelight-v3-smtp-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_smtp_links_CL`](../tables/corelight-v3-smtp-links-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_snmp_CL`](../tables/corelight-v3-snmp-cl.md) | ? | ✓ | ? |
@@ -249,6 +260,7 @@ This connector ingests data into the following tables:
 | [`Corelight_v3_telnet_CL`](../tables/corelight-v3-telnet-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_traceroute_CL`](../tables/corelight-v3-traceroute-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_tunnel_CL`](../tables/corelight-v3-tunnel-cl.md) | ? | ✓ | ? |
+| [`Corelight_v3_unknown_protocols_CL`](../tables/corelight-v3-unknown-protocols-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_unknown_smartpcap_CL`](../tables/corelight-v3-unknown-smartpcap-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_util_stats_CL`](../tables/corelight-v3-util-stats-cl.md) | ? | ✓ | ? |
 | [`Corelight_v3_vpn_CL`](../tables/corelight-v3-vpn-cl.md) | ? | ✓ | ? |
@@ -295,17 +307,17 @@ When prompted, supply:
 
 | Parameter | Value |
 | --- | --- |
-| `workspace` | The **name** of your Log Analytics workspace (not the ID). Maximum **18 characters** -- see the note below |
+| `workspace` | The **name** of your Log Analytics workspace (not the ID) |
 | `workspace-location` | The Azure region of the workspace |
 | `resourceId` | The full resource ID of the workspace |
 
 The deployment creates:
 
-- One Data Collection Endpoint named `dce-corelight-<workspace>`
+- One Data Collection Endpoint named `dce-corelight-<workspace>` (workspace name truncated to 17 characters)
 - One custom table per Corelight log type, named `Corelight_v3_<log_type>_CL`
 - One Data Collection Rule per log type, named `dcr-corelight-<workspace>-<log_type>`, each tagged with `corelight-log-type`
 
-> **IMPORTANT:** The workspace name must be **18 characters or fewer**. Each Data Collection Rule is named `dcr-corelight-<workspace>-<log_type>` and Azure limits resource names to 64 characters. The longest Corelight log type is 32 characters, so a longer workspace name makes some rule names exceed the limit and the deployment fails preflight validation with `'Name' must be between 1 and 64 characters`. If your workspace name is longer, deploy Microsoft Sentinel on a workspace with a shorter name.
+> **NOTE:** Azure limits resource names to 64 characters and the longest Corelight log type is 32 characters, so the template uses only the **first 17 characters** of the workspace name when it builds the endpoint and rule names. If your workspace name is longer than 17 characters, the deployed resources are named after that truncated prefix, for example `dcr-corelight-<first-17-chars>-<log_type>`.
 
 > **NOTE:** The deployment can take several minutes to complete because a large number of tables and rules are created. Wait for it to finish before continuing.
 
@@ -331,19 +343,31 @@ You now have the **Tenant ID**, **Client ID**, and **Client Secret** required by
 
 For more information, see [Register an application with Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app).
 
-**3. Grant the application permission to send data**
+**3. Grant the application access to the DCRs**
 
-Assign the **Monitoring Metrics Publisher** role so the application can publish to the Data Collection Rules created in step 1.
+The app needs two Azure roles on the DCRs:
 
-Assign the role once at the **resource group** scope so it covers every Corelight Data Collection Rule in a single assignment.
+- **Monitoring Metrics Publisher** — to write log data to the DCRs.
+- **Reader** — so the exporter can query the DCRs and match each log type to its DCR by the `corelight-log-type` tag at startup.
+
+Assign both at the **resource group** scope so they apply to all Corelight Data Collection Rules created in step 1.
 
 1. Go to the resource group that contains the deployed DCE and DCRs.
 2. Select **Access control (IAM)** > **Add** > **Add role assignment**.
 3. On the **Role** tab, search for and select **Monitoring Metrics Publisher**.
 4. On the **Members** tab, choose **User, group, or service principal**, then select the application you registered in step 2.
 5. Select **Review + assign**.
+6. Repeat the role assignment for the **Reader** role.
 
 > **NOTE:** Role assignments can take a few minutes to take effect. If the sensor reports authorization errors immediately after assignment, wait and retry.
+
+#### Grant the Microsoft Graph permission
+
+The exporter also needs the Microsoft Graph permission it uses to look up the DCR IDs from their tags.
+
+1. In the app registration, go to **API permissions**.
+2. Confirm that **Microsoft Graph User.Read (Delegated)** is listed. New app registrations include this permission by default, so no action is usually required.
+3. If it is missing, select **Add a permission** > **Microsoft Graph** > **Delegated permissions**, search for `User.Read`, select it, and select **Add permissions**.
 
 **4. Collect the values needed by the Corelight exporter**
 

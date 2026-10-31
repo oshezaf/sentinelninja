@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-01 |
 | **Last Updated** | 2026-08-12 |
 | **Solution Folder** | [Panorays](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Panorays) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panorays.panorays-solution-for-azure-sentinel) · Popularity: 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panorays.panorays-solution-for-azure-sentinel) · Popularity: ⚪ Very Low (0%) |
 
 The [Panorays](https://panorays.com/) solution provides the capability to ingest company findings from the Panorays API into Microsoft Sentinel using the Codeless Connector Framework (CCF).
 

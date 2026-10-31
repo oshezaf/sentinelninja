@@ -35,7 +35,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left">Qualys</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -67,14 +67,13 @@
 </tr>
 </tbody>
 </table>
-<p>Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API.</p>
+<p>Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API. Configure API endpoint and credentials below.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
   <th style="text-align:center">Transformations</th>
   <th style="text-align:center">Ingestion API</th>
   <th style="text-align:center">Lake-Only</th>
@@ -83,7 +82,6 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/qualysknowledgebase.html"><code>QualysKnowledgeBase</code></a></td>
-  <td style="text-align:left"><code>Patchable in &quot;0,1&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
@@ -110,14 +108,14 @@
 <p>Provide your Qualys API credentials to enable data ingestion from the Qualys Knowledge Base.
 To gather data from Qualys VM, you need to provide the following resources:</p>
 <ul>
-<li><strong>API Credentials</strong>: username and password for an account with read access to the Knowledge Base API. You can find the exact permissions needed in the <a href="https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm">Qualys API documentation</a>.</li>
+<li><strong>API Credentials</strong>: username and password for an account with read access to the Knowledge Base API. You can find the exact permissions needed in the <a href="https://docs.qualys.com/en/vm/qweb-all-api/get_started/get_started.htm">Qualys API documentation</a>.</li>
 <li><strong>API Server URL</strong>: the Qualys API server URL specific to your region. You can find the exact API server URL for your region <a href="https://www.qualys.com/platform-identification/#api-urls">here</a></li>
 <li><strong>API Server URL</strong>: Enter API Server URL</li>
 <li><strong>Username</strong>: Enter Qualys username</li>
 <li><strong>Password</strong>: (password field)</li>
 </ul>
 <h2 id="step-2-set-any-optional-filters">Step 2: Set Any Optional Filters</h2>
-<p>Configure optional filters to customize which vulnerabilities are ingested. Learn more about available filters in the <a href="https://docs.qualys.com/en/vm/api/scans/kbase/knowledgebase.htm">Qualys API documentation</a>.</p>
+<p>Configure optional filters to customize which vulnerabilities are ingested. Learn more about available filters in the <a href="https://docs.qualys.com/en/vm/qweb-all-api/get_started/get_started.htm">Qualys API documentation</a>.</p>
 <h3 id="2a-filter-by-patch-status">2a. Filter by Patch Status</h3>
 <p>Choose to only show vulnerabilities that are patchable or not patchable.</p>
 <ul>
@@ -147,6 +145,8 @@ To gather data from Qualys VM, you need to provide the following resources:</p>
 <ul>
 <li>Click 'Connect Qualys KB' to establish connection</li>
 </ul>
+<h2 id="step-4-complete-migration">Step 4: Complete Migration</h2>
+<p>After validating that CCF &amp; Azure Function (if applicable) records are available in 'QualysKB', disable the legacy Azure Function to prevent duplicate ingestion.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

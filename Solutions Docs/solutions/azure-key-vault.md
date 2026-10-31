@@ -16,10 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Cloud Provider,IT Operations |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-06-18 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Azure Key Vault](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Key%20Vault) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekeyvault) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
 
@@ -89,7 +89,8 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|   
-| 3.0.3       | 25-10-2024                     | Updated description of CreateUi and **Analytic Rule**					  |         
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for Azure Key Vault migration, and repackaged the V3.1 solution. |
+| 3.0.3       | 25-10-2024                     | Updated description of CreateUi and **Analytic Rule**					  |
 | 3.0.2       | 14-02-2024                     | Updated Entity Mapping for KeyVaultSensitiveOperations and NRT_KeyVaultSensitiveOperations **Analytic Rules** to render the GUID information correctly| 
 | 3.0.1       | 01-02-2024                     | Updated ObjectGuid Identifier with Name (KeyvaultMassSecretRetrieval) **Analytic Rule** to render the GUID information correctly| 
 | 3.0.0       | 03-01-2024                     | Added field ResourceId in (KeyvaultMassSecretRetrieval) **Analytic Rule** for proper Entity Mapping|

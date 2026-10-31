@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimAuditEvent` (parameter-less) · `imAuditEvent` (filtering) |
 | **Built-in Parser** | `_ASim_AuditEvent` (parameter-less) · `_Im_AuditEvent` (filtering) |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.7 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md)) |
-| **Last Updated** | March 10, 2026 |
+| **Parser Version** | 0.1.13 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md)) |
+| **Last Updated** | Oct 23, 2026 |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEvent.yaml) |
 
 ## Description
@@ -30,6 +30,7 @@ This union parser includes parsers for the following products:
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
 | AWS CloudTrail | [_ASim_AuditEvent_AWSCloudTrail](asimauditeventawscloudtrail.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
+| Alibaba Cloud ActionTrail | [_ASim_AuditEvent_AlibabaCloudActionTrail](asimauditeventalibabacloudactiontrail.md) | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | Microsoft Azure | [_ASim_AuditEvent_AzureActivity](asimauditeventazureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
 | Azure Key Vault | [_ASim_AuditEvent_AzureKeyVault](asimauditeventazurekeyvault.md) |  |
 | Barracuda WAF | [_ASim_AuditEvent_BarracudaCEF](asimauditeventbarracudacef.md) | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
@@ -37,6 +38,7 @@ This union parser includes parsers for the following products:
 | Cisco ISE | [_ASim_AuditEvent_CiscoISE](asimauditeventciscoise.md) | [Syslog](../solutions/syslog.md) |
 | Cisco Meraki | [_ASim_AuditEvent_CiscoMeraki](asimauditeventciscomeraki.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Cisco Meraki | [_ASim_AuditEvent_CiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
+| CrowdStrike Falcon Data Replicator | [_ASim_AuditEvent_CrowdStrikeFalconDataReplicator](asimauditeventcrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | CrowdStrike Falcon Endpoint Protection | [_ASim_AuditEvent_CrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[CrowdStrike Falcon Endpoint Protection (legacy connector)](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Illumio Core | [_ASim_AuditEvent_IllumioSaaSCore](asimauditeventillumiosaascore.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | Infoblox BloxOne | [_ASim_AuditEvent_InfobloxBloxOne](asimauditeventinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
@@ -45,7 +47,9 @@ This union parser includes parsers for the following products:
 | Microsoft Windows | [_ASim_AuditEvent_MicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Windows | [_ASim_AuditEvent_MicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Native | [_ASim_AuditEvent_Native](asimauditeventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
+| Oracle Cloud Infrastructure | [_ASim_AuditEvent_OracleOCI](asimauditeventoracleoci.md) | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | SQLSecurityAudit Logs | [_ASim_AuditEvent_SQLSecurityAudit](asimauditeventsqlsecurityaudit.md) |  |
+| Salesforce Audit Trail | [_ASim_AuditEvent_SalesforceAuditTrail](asimauditeventsalesforceaudittrail.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | SentinelOne | [_ASim_AuditEvent_SentinelOne](asimauditeventsentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 | VMware Carbon Black Cloud | [_ASim_AuditEvent_VMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud (legacy connector)](../solutions/vmware-carbon-black-cloud.md) |
 | Vectra | [_ASim_AuditEvent_VectraXDRAudit](asimauditeventvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |

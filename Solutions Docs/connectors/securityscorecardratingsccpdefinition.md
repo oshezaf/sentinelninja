@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [SecurityScorecardRatings_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardRatings_ccp/SecurityScorecardRatings_DCR.json) |
 | **CCF Configuration** | [SecurityScorecardRatings_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings/Data%20Connectors/SecurityScorecardRatings_ccp/SecurityScorecardRatings_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#securityscorecard-ratings-via-codeless-connector-framework) |
 
 The SecurityScorecard Ratings (via Codeless Connector Framework) connector ingests overall company score history into Microsoft Sentinel. Add one connection per SecurityScorecard portfolio you want to monitor — each connection is managed independently in the grid below. Raw daily score rows land in `SecurityScorecardRatingsHistory_CL`; query via the `SecurityScorecardRatings` parser for day-over-day deltas matching the legacy Function App schema.
 

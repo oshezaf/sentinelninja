@@ -73,18 +73,17 @@ Official Microsoft Learn documentation for field/column information:
 
 - [LAQueryLogs Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs)
 
-## Solutions (4)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
-- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [Standalone Content](../solutions/standalone-content.md)
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (19)
 
 ### Analytic Rules (1)
 
@@ -117,7 +116,7 @@ This table is used by the following solutions:
 | [Cross-service Azure Data Explorer queries](../content/github-only-cross-service-azure-data-explorer-queries-58b17f82-f594-4d36-9b78-4e4b03992708-26494ee3.md) |  |
 | [New users calling sensitive Watchlist](../content/github-only-new-users-calling-sensitive-watchlist-f3dc87f3-64f9-405d-aa1b-fed98f859357-5436e4d3.md) | `QueryText has_any "_GetWatchlist("` |
 
-### Workbooks (8)
+### Workbooks (7)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `RequestClientApp != "Sentinel-General"`
 
@@ -130,12 +129,6 @@ This table is used by the following solutions:
 | Workbook |
 |:-------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
-
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `RequestClientApp != "Sentinel-General"`<br>`ResponseCode != "200"`<br>`ResponseRowCount == "5000"`
-
-| Workbook |
-|:-------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
 **GitHub Only:**
 
@@ -153,9 +146,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.operationalinsights/workspaces`
 
-## Selection Criteria Summary (7 criteria, 10 total references)
+## Selection Criteria Summary (6 criteria, 9 total references)
 
-References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -165,8 +158,7 @@ References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other pars
 | `ResponseCode == "200"` | - | 1 | - | - | **1** |
 | `AADEmail !contains "@"`<br>`RequestClientApp != "AppAnalytics"`<br>`ResponseCode == "200"` | - | 1 | - | - | **1** |
 | `ResponseCode != "200"` | - | 1 | - | - | **1** |
-| `RequestClientApp != "Sentinel-General"`<br>`ResponseCode != "200"`<br>`ResponseRowCount == "5000"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **10** | **0** | **0** | **10** |
+| **Total** | **0** | **9** | **0** | **0** | **9** |
 
 ### AADEmail
 
@@ -184,7 +176,7 @@ References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= Sentinel-General` | - | 4 | - | - | **4** |
+| `!= Sentinel-General` | - | 3 | - | - | **3** |
 | `!= AppAnalytics` | - | 1 | - | - | **1** |
 
 ### ResponseCode
@@ -192,14 +184,13 @@ References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `200` | - | 2 | - | - | **2** |
-| `!= 200` | - | 2 | - | - | **2** |
+| `!= 200` | - | 1 | - | - | **1** |
 
 ### ResponseRowCount
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `10001` | - | 1 | - | - | **1** |
-| `5000` | - | 1 | - | - | **1** |
 
 ---
 

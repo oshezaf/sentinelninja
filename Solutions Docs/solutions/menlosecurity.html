@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menlo Security &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="menlo-security">Menlo Security</h1>
+<p><em>Solution: MenloSecurity</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/MenloSecurity.svg" alt="MenloSecurity Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Menlo Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.menlosecurity.com/customers/support">https://www.menlosecurity.com/customers/support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Menlo Security - support@menlosecurity.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-02-26</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-28</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MenloSecurity">MenloSecurity</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/menlosecurityinc1616111685428.menlosecurity-sentinel-solution">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.menlosecurity.com">Menlo Security</a> solution for Microsoft Sentinel ingests Audit, Bandwidth, and Web proxy logs from the Menlo Security cloud platform into custom Log Analytics tables (<code>MenloAudit_CL</code>, <code>MenloBandwidth_CL</code>, <code>MenloWeb_CL</code>) for threat detection, investigation, and response. Logs are collected by three timer-triggered Azure Functions that poll the Menlo Security Log Fetch API and ship events via the Azure Monitor Logs Ingestion API using a Data Collection Endpoint (DCE) and Data Collection Rule (DCR).</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion API (DCE/DCR)</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/menlosecurityconnector.html">Menlo Security</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/menloaudit-cl.html"><code>MenloAudit_CL</code></a></td>
+  <td><a href="../connectors/menlosecurityconnector.html">Menlo Security</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/menlobandwidth-cl.html"><code>MenloBandwidth_CL</code></a></td>
+  <td><a href="../connectors/menlosecurityconnector.html">Menlo Security</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/menloweb-cl.html"><code>MenloWeb_CL</code></a></td>
+  <td><a href="../connectors/menlosecurityconnector.html">Menlo Security</a></td>
+  <td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MenloSecurity/README.md">MenloSecurity/README.md</a></em></p>
+</blockquote>
+<p>The <strong>Menlo Security</strong> solution ingests security logs from the <a href="https://www.menlosecurity.com">Menlo Security</a> cloud platform into Microsoft Sentinel. <a href="https://www.menlosecurity.com">Menlo Security</a> protects organizations from browser-based threats using an isolation-first approach; this solution brings that telemetry into Microsoft Sentinel for threat detection, investigation, and response.</p>
+<blockquote>
+<p><strong>Note:</strong> This solution is currently in public preview.</p>
+</blockquote>
+<h2 id="what-it-does">What it does</h2>
+<p>The solution installs a single <strong>data connector</strong> that runs as three independent, timer-triggered Azure Functions — one per log type. Each function polls the Menlo Security Log Fetch API every 3 minutes and ships events to a custom Log Analytics table via the Azure Monitor Logs Ingestion API. No inbound network access to your environment is required.</p>
+<table>
+<thead>
+<tr>
+  <th>Log type</th>
+  <th>Log Analytics table</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Audit</td>
+  <td><code>MenloAudit_CL</code></td>
+  <td>Admin and policy change events</td>
+</tr>
+<tr>
+  <td>Bandwidth</td>
+  <td><code>MenloBandwidth_CL</code></td>
+  <td>Proxy bandwidth usage per user and domain</td>
+</tr>
+<tr>
+  <td>Web</td>
+  <td><code>MenloWeb_CL</code></td>
+  <td>Web request events including URLs, categories, and threat verdicts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="architecture">Architecture</h2>
+<p>All connector resources are deployed into a dedicated resource group named <strong><code>MenloSecurityLogs</code></strong>, created in the same Azure region as your Log Analytics workspace. The custom tables are created in your existing workspace's resource group.</p>
+<table>
+<thead>
+<tr>
+  <th>Resource</th>
+  <th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Azure Function App</strong> (Flex Consumption, Linux, Python)</td>
+  <td>Hosts the three timer-triggered ingestion functions</td>
+</tr>
+<tr>
+  <td><strong>Azure Storage Account</strong></td>
+  <td>Function host state, deployment package, and per-log-type last-sync timestamps</td>
+</tr>
+<tr>
+  <td><strong>Azure Key Vault</strong></td>
+  <td>Stores the Menlo API token as a secret (resolved via Key Vault reference)</td>
+</tr>
+<tr>
+  <td><strong>Application Insights</strong></td>
+  <td>Function execution, error, and performance monitoring (workspace-based)</td>
+</tr>
+<tr>
+  <td><strong>Data Collection Endpoint (DCE)</strong></td>
+  <td>HTTPS ingestion endpoint that receives logs from the Function App</td>
+</tr>
+<tr>
+  <td><strong>Data Collection Rule (DCR)</strong></td>
+  <td>Applies KQL type transforms and routes logs to the correct tables</td>
+</tr>
+<tr>
+  <td><strong>Log Analytics tables</strong> (3)</td>
+  <td><code>MenloAudit_CL</code>, <code>MenloBandwidth_CL</code>, <code>MenloWeb_CL</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Function App authenticates to Azure using a <strong>System-Assigned Managed Identity</strong> — no passwords, connection strings, or client secrets are used for any Azure resource access. Inbound HTTP traffic to the Function App is denied; timer triggers require no inbound access.</p>
+<h2 id="deployment">Deployment</h2>
+<ol>
+<li>Install this solution from the Microsoft Sentinel <strong>Content Hub</strong>.</li>
+<li>During deployment you are prompted for:<ul>
+<li>The name and resource group of your existing Log Analytics workspace.</li>
+<li>Your Menlo Security API token (a valid token with permission to access the <code>/api/rep/v2/fetch/client_select</code> endpoint, obtained from the Menlo Security admin console).</li>
+</ul>
+</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>13-10-2026</td>
+  <td>Initial solution release. Adds the <strong>Menlo Security</strong> data connector, which ingests Audit, Bandwidth, and Web proxy logs into the <code>MenloAudit_CL</code>, <code>MenloBandwidth_CL</code>, and <code>MenloWeb_CL</code> custom Log Analytics tables via three timer-triggered Azure Functions and the Azure Monitor Logs Ingestion API (DCE/DCR).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

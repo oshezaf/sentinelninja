@@ -6,7 +6,7 @@
 
 ---
 
-Creates Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0003 (Financial data has been observed in unencrypted data stores. Encrypt data at rest to comply with this CIS requirement)
+Creates Microsoft Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0003 (Financial data has been observed in unencrypted data stores. Encrypt data at rest to comply with this CIS requirement)
 
 | Attribute | Value |
 |:----------|:------|
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

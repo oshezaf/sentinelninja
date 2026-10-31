@@ -16,6 +16,8 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (11 columns)
 
@@ -56,6 +58,24 @@ This table is ingested by the following connectors:
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Corelight](../solutions/corelight.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight_Data_Insights](../content/corelight-corelight-data-insights-e22362fc.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_yara_corelight](../parsers/corelight-yara-corelight.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

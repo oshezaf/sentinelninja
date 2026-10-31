@@ -14,7 +14,7 @@ Reference for AWSGuardDuty table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsguardduty) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -25,6 +25,7 @@ Reference for AWSGuardDuty table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (19 columns)
 
@@ -76,7 +77,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (9)
 
 ### Analytic Rules (4)
 
@@ -94,6 +95,16 @@ This table is ingested by the following connectors:
 | [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-unauthorized-credential-access-detecti-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1-bb7f7aa6.md) |  |
 | [Unauthorized user access across AWS and Azure](../content/multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.md) |  |
 
+### Hunting Queries (3)
+
+**In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [AWS GuardDuty - EKS privilege escalation and credential access](../content/amazon-web-services-aws-guardduty-eks-privilege-escalation-and-credential-access-869d2742-80d8-4b72-89ad-af31ea6b7437-18f92ef6.md) | `ActivityType has "Kubernetes"`<br>`ActivityType has_any "PrivilegeEscalation:IAMUser/InstanceCredentialExfiltration"` |
+| [AWS GuardDuty - High severity findings clustered by account and actor](../content/amazon-web-services-aws-guardduty-high-severity-findings-clustered-by-account-and-actor-d9329491-ab19-4903-aa0f-7affb388b011-dd98ec41.md) |  |
+| [AWS GuardDuty - Publicly exposed or weakly protected S3 buckets](../content/amazon-web-services-aws-guardduty-publicly-exposed-or-weakly-protected-s3-buckets-81ff8c3c-b7c1-40ff-9389-800fcf2d484e-9c60c133.md) | `ActivityType has_any "Policy:S3"` |
+
 ### Workbooks (2)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
@@ -107,6 +118,33 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
+
+## Parsers Using This Table (2)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAlertEventAWSGuardDuty](../asim/asimalerteventawsguardduty.md) | AlertEvent | AWS GuardDuty |  |
+| [ASimNetworkSessionAWSGuardDuty](../asim/asimnetworksessionawsguardduty.md) | NetworkSession | AWS GuardDuty |  |
+
+## Selection Criteria Summary (2 criteria, 2 total references)
+
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActivityType has "Kubernetes"`<br>`ActivityType has_any "PrivilegeEscalation:IAMUser/InstanceCredentialExfiltration"` | - | 1 | - | - | **1** |
+| `ActivityType has_any "Policy:S3"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### ActivityType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Kubernetes` | - | 1 | - | - | **1** |
+| `has_any PrivilegeEscalation:IAMUser/InstanceCredentialExfiltration` | - | 1 | - | - | **1** |
+| `has_any Policy:S3` | - | 1 | - | - | **1** |
 
 ---
 

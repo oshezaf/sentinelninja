@@ -15,8 +15,8 @@
 | **Schema** | WebSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.5.7 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md)) |
-| **Last Updated** | Jun 16, 2026 |
+| **Parser Version** | 0.5.9 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md)) |
+| **Last Updated** | Oct 26, 2026 |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSession.yaml) |
 
 ## Description
@@ -38,13 +38,15 @@ This union parser includes parsers for the following products:
 | Cisco Meraki | [_ASim_WebSession_CiscoMeraki](asimwebsessionciscomeraki.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md)<br>[Cisco UCS (legacy connector)](../solutions/cisco-ucs.md)<br>[Citrix ADC (legacy connector)](../solutions/citrix-adc.md)<br>[CustomLogsAma](../solutions/customlogsama.md)<br>[Forescout (Legacy)](../solutions/forescout-legacy.md)<br>[RSA SecurID (legacy connector)](../solutions/rsa-securid.md)<br>[Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md) |
 | Cisco Umbrella | [_ASim_WebSession_CiscoUmbrella](asimwebsessionciscoumbrella.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | Citrix NetScaler | [_ASim_WebSession_CitrixNetScaler](asimwebsessioncitrixnetscaler.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Cloudflare One | [_ASim_WebSession_CloudflareOne](asimwebsessioncloudflareone.md) | [Cloudflare](../solutions/cloudflare.md) |
 | F5 BIG-IP Application Security Manager (ASM) | [_ASim_WebSession_F5ASM](asimwebsessionf5asm.md) | [Common Event Format](../solutions/common-event-format.md)<br>[F5 Networks (legacy connector)](../solutions/f5-networks.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Fortinet FortiGate | [_ASim_WebSession_FortinetFortiGate](asimwebsessionfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Internet Information Services (IIS) | [_ASim_WebSession_IIS](asimwebsessioniis.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | Native | [_ASim_WebSession_Native](asimwebsessionnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | Palo Alto Networks | [_ASim_WebSession_PaloAltoCEF](asimwebsessionpaloaltocef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto Cortex Data Lake | [_ASim_WebSession_PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
-| Salesforce Service Cloud | [_ASim_WebSession_SalesforceServiceCloudV2](asimwebsessionsalesforceservicecloudv2.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
+| Salesforce Real-Time Event Monitoring | [_ASim_WebSession_SalesforceRealTimeEventMonitoring](asimwebsessionsalesforcerealtimeeventmonitoring.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| Salesforce Service Cloud | [_ASim_WebSession_SalesforceServiceCloud](asimwebsessionsalesforceservicecloud.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
 | SonicWall | [_ASim_WebSession_SonicWallFirewall](asimwebsessionsonicwallfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Squid Proxy | [_ASim_WebSession_SquidProxy](asimwebsessionsquidproxy.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Vectra AI Streams | [_ASim_WebSession_VectraAI](asimwebsessionvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |

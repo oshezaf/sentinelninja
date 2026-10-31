@@ -19,9 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2024-03-11 |
-| **Last Updated** | 2026-01-21 |
+| **Last Updated** | 2026-09-21 |
 | **Solution Folder** | [Egress Iris](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/egress1589289169584.egress-sentinel-defend) · Popularity: 🔵 Medium (60%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/egress1589289169584.egress-sentinel-defend) · Popularity: 🔵 Medium (54%) |
 
 Egress SIEM Connector for Microsoft Sentinel
 

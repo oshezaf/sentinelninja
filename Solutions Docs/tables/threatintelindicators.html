@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -218,7 +218,7 @@
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators">ThreatIntelIndicators Schema Reference (Azure Monitor)</a></li>
 </ul>
-<h2 id="solutions">Solutions (26)</h2>
+<h2 id="solutions">Solutions (27)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></li>
@@ -244,6 +244,7 @@
 <li><a href="../solutions/recorded-future.html">Recorded Future</a></li>
 <li><a href="../solutions/reversinglabs.html">ReversingLabs</a></li>
 <li><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/threatconnect.html">ThreatConnect</a></li>
 <li><a href="../solutions/vmray.html">VMRay</a></li>
@@ -320,13 +321,13 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../connectors/vmray.html">VMRayThreatIntelligence</a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SourceSystem !contains &quot;VMRay&quot;</code><br><code>SourceSystem contains &quot;VMRay&quot;</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (127)</h2>
-<h3 id="analytic-rules">Analytic Rules (79)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (133)</h2>
+<h3 id="analytic-rules">Analytic Rules (84)</h3>
 <p><strong>In solution <a href="../solutions/datazag.html">Datazag</a>:</strong></p>
 <table>
 <thead>
@@ -389,6 +390,37 @@
 <tr>
   <td style="text-align:left"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.html">Google Threat Intelligence - Threat Hunting Url</a></td>
   <td style="text-align:left"><code>ObservableKey == &quot;url:value&quot;</code><br><code>SourceSystem == &quot;Google Threat Intelligence&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.html">GreyNoise TI Map IP Entity to CommonSecurityLog</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.html">GreyNoise TI Map IP Entity to DnsEvents</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.html">GreyNoise TI Map IP Entity to SigninLogs</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-network-session-events-asim-network-session-sc-536e8e5c-ce0e-575e-bcc9-aba8e7bf9316-294d0914.html">GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-officeactivity-c51628fe-999c-5150-9fd7-660fc4f58ed2-a0b3d699.html">GreyNoise TI map IP entity to OfficeActivity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +763,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (22)</h3>
+<h3 id="hunting-queries">Hunting Queries (23)</h3>
 <p><strong>In solution <a href="../solutions/datazag.html">Datazag</a>:</strong></p>
 <table>
 <thead>
@@ -893,6 +925,21 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-network-log-ioc-matching-9bb88c27-ef05-4091-ac14-45ff8604360d-a05f5fd8.html">Network log IOC matching</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
@@ -982,7 +1029,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong> <code>SourceSystem == &quot;GreyNoise&quot;</code></p>
+<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong> <code>ObservableKey startswith &quot;domain-name&quot;</code><br><code>ObservableKey startswith &quot;email&quot;</code><br><code>ObservableKey startswith &quot;file&quot;</code><br><code>ObservableKey startswith &quot;url&quot;</code><br><code>SourceSystem == &quot;GreyNoise&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -1216,8 +1263,8 @@
 <ul>
 <li><code>microsoft.securityinsights/threatintelligence</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (17 criteria, 32 total references)</h2>
-<p>References by type: 8 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (19 criteria, 33 total references)</h2>
+<p>References by type: 9 connectors, 24 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1263,14 +1310,6 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;GreyNoise&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>SourceSystem startswith &quot;PRODAFT USTA&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
@@ -1311,7 +1350,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value,url:value&quot;</code><br><code>SourceSystem == &quot;Feedly&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem !contains &quot;VMRay&quot;</code><br><code>SourceSystem contains &quot;VMRay&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1319,7 +1358,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem == &quot;Cyjax-IOCs&quot;</code></td>
+  <td style="text-align:left"><code>ObservableKey in &quot;domain-name:value,ipv4-addr:value,url:value&quot;</code><br><code>SourceSystem == &quot;Feedly&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1335,7 +1374,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>SourceSystem == &quot;GreyNoise&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>SourceSystem == &quot;CrowdStrike Falcon Adversary Intelligence&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SourceSystem == &quot;Cyjax-IOCs&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1359,6 +1414,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ObservableKey startswith &quot;domain-name&quot;</code><br><code>ObservableKey startswith &quot;email&quot;</code><br><code>ObservableKey startswith &quot;file&quot;</code><br><code>ObservableKey startswith &quot;url&quot;</code><br><code>SourceSystem == &quot;GreyNoise&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ObservableKey == &quot;ipv4-addr:value&quot;</code><br><code>SourceSystem startswith &quot;HoneyLabs&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1368,11 +1431,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center"><strong>9</strong></td>
   <td style="text-align:center"><strong>24</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>32</strong></td>
+  <td style="text-align:center"><strong>33</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1437,6 +1500,38 @@
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
+<tr>
+  <td style="text-align:left"><code>startswith domain-name</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith email</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith file</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith url</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
 </tbody>
 </table>
 <h3 id="sourcesystem">SourceSystem</h3>
@@ -1485,7 +1580,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Feedly</code></td>
+  <td style="text-align:left"><code>!contains VMRay</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1493,7 +1588,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Cyjax-IOCs</code></td>
+  <td style="text-align:left"><code>contains VMRay</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Feedly</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1510,6 +1613,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>CrowdStrike Falcon Adversary Intelligence</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Cyjax-IOCs</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

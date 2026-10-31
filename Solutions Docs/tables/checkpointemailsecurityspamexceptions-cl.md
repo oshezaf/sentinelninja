@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -18,6 +16,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (25 columns)
 
@@ -72,6 +71,14 @@ This table is ingested by the following connectors:
 | [Check Point Email Security (via Codeless Connector Framework)](../connectors/checkpointemailsecconnector.md) |  |
 
 ---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CheckPointEmailSecuritySpamExceptions](../parsers/checkpointemailsecurityspamexceptions.md) | [Checkpoint Email Security](../solutions/checkpoint-email-security.md) |  |
 
 ---
 

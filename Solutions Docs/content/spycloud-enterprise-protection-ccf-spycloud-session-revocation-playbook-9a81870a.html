@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpyCloud Session Revocation Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spycloud-session-revocation-playbook">SpyCloud Session Revocation Playbook</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Revoke all active sign-in sessions for users named in an identity access record exposure.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/spycloud-enterprise-protection-ccf.html">SpyCloud Enterprise Protection CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_Session_Revocation/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>2</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">3</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Revoke_User_Sessions</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'],'@',items('For_each')?['UPNSuffix'])}/revokeSignInSessions</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">GetAccessToken</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(variables('loginUrl'), parameters('TenantID'), '/oauth2/v2.0/token')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Log_ingestion</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@variables('log_ingestion_api')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_Session_Revocation/readme.md">SpyCloud_Session_Revocation/readme.md</a></em></p>
+</blockquote>
+<p>This playbook revokes active Microsoft Entra sign-in sessions for users named in a SpyCloud identity access record exposure.</p>
+<p>Identity access records cover session cookies, OAuth tokens and SSO credentials. That material grants account access <strong>without a password</strong>, so it survives a password reset and defeats single-factor controls. Revoking active sessions is the primary containment action, which is why this playbook does that and nothing else.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li>Revokes all active sign-in sessions for affected users</li>
+<li>Adds an explanatory comment to the incident</li>
+<li>Execution log ingestion to <code>SpyCloud_ConditionalAccessLogsV2_CL</code></li>
+</ul>
+<p>The deployment also creates the Microsoft Sentinel automation rule that invokes this playbook, so no separate wiring step is needed.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>App Registration with Microsoft Graph permission to revoke sessions (<code>User.RevokeSessions.All</code>, or <code>User.ReadWrite.All</code>), granted admin consent</li>
+<li>DCR Immutable ID and DCE Logs Ingestion Endpoint URL — the same pair used by the other SpyCloud playbooks</li>
+<li>Monitoring Metrics Publisher role assigned to the App Registration on that DCR</li>
+<li><strong>Microsoft Sentinel Automation Contributor</strong> granted to the <strong>Azure Security Insights</strong> service principal on the resource group you are deploying into</li>
+</ul>
+<h3 id="grant-automation-contributor-first">Grant Automation Contributor first</h3>
+<p>This deployment creates an automation rule alongside the Logic App, and Sentinel refuses to create one unless it already has permission to run playbooks in the target resource group. Without it the deployment fails with <code>Missing required permissions for Microsoft Sentinel on the playbook resource</code>.</p>
+<pre><code class="language-bash">az role assignment create \
+  --role &quot;Microsoft Sentinel Automation Contributor&quot; \
+  --assignee 98785600-1bb7-4fb9-b9fa-19afe2c8a360 \
+  --scope /subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group&gt;
+</code></pre>
+<p><code>98785600-1bb7-4fb9-b9fa-19afe2c8a360</code> is the fixed application ID for Azure Security Insights.</p>
+<h3 id="finding-the-dcr-immutable-id-and-dce-endpoint">Finding the DCR immutable ID and DCE endpoint</h3>
+<p>Sentinel creates the data collection rule as <code>Microsoft-Sentinel-SpyCloudwatchlist-DCR-&lt;guid&gt;</code>, not under the name in the solution template, and pairs it with an auto-generated <code>asi-&lt;guid&gt;</code> endpoint. Read both from the live connector:</p>
+<pre><code class="language-bash">SUB=&lt;subscription-id&gt;; RG=&lt;resource-group&gt;; WS=&lt;workspace-name&gt;
+az rest --method get --url &quot;https://management.azure.com/subscriptions/$SUB/resourceGroups/$RG/providers/Microsoft.OperationalInsights/workspaces/$WS/providers/Microsoft.SecurityInsights/dataConnectors?api-version=2023-02-01-preview&quot; --query &quot;value[?properties.dcrConfig] | [0].properties.dcrConfig.{immutableId: dataCollectionRuleImmutableId, endpoint: dataCollectionEndpoint}&quot;
+</code></pre>
+<p>Note that <code>DCE_Immutable_ID</code> takes the <strong>DCR's</strong> immutable ID despite its name.</p>
+<h2 id="deployment">Deployment</h2>
+<p>All settings are supplied at deployment time.</p>
+<ol>
+<li>In the Azure Portal, navigate to <strong>Deploy a custom template</strong></li>
+<li>Select this template (<code>azuredeploy.json</code>)</li>
+<li>Confirm Subscription, Resource Group, and Region</li>
+<li>Complete the parameters below</li>
+<li>Click <strong>Review + Create</strong>, then <strong>Create</strong></li>
+</ol>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>String</td>
+  <td>SpyCloud_Session_Revocation</td>
+  <td>Name of the Logic App resource</td>
+</tr>
+<tr>
+  <td>Revoke_User_Sessions</td>
+  <td>String</td>
+  <td>false</td>
+  <td>Set to <code>true</code> to revoke sessions. With <code>false</code> the playbook runs, comments on the incident and logs, but takes no action</td>
+</tr>
+<tr>
+  <td>ClientID</td>
+  <td>String</td>
+  <td>—</td>
+  <td>App Registration Client ID</td>
+</tr>
+<tr>
+  <td>TenantID</td>
+  <td>String</td>
+  <td>—</td>
+  <td>Azure Tenant ID</td>
+</tr>
+<tr>
+  <td>ClientSecret</td>
+  <td>SecureString</td>
+  <td>—</td>
+  <td>App Registration Client Secret</td>
+</tr>
+<tr>
+  <td>DCE_Endpoint</td>
+  <td>String</td>
+  <td>—</td>
+  <td>DCE Logs Ingestion Endpoint URL</td>
+</tr>
+<tr>
+  <td>DCE_Immutable_ID</td>
+  <td>String</td>
+  <td>—</td>
+  <td>DCR Immutable ID</td>
+</tr>
+<tr>
+  <td>Custom_Table_Name</td>
+  <td>String</td>
+  <td>SpyCloud_ConditionalAccessLogsV2_CL</td>
+  <td>Log table, shared with the Conditional Access playbook</td>
+</tr>
+<tr>
+  <td>Sentinel_Workspace_Resource_Id</td>
+  <td>String</td>
+  <td>Solution workspace</td>
+  <td>Workspace the automation rule is created in. Pre-filled when deploying from Content Hub</td>
+</tr>
+<tr>
+  <td>AccessRecordIncidentTitle</td>
+  <td>String</td>
+  <td>SpyCloud identity access record exposure</td>
+  <td>Incident title the automation rule matches on</td>
+</tr>
+<tr>
+  <td>Automation_Rule_Order</td>
+  <td>Int</td>
+  <td>3</td>
+  <td>Execution order of the automation rule</td>
+</tr>
+</tbody>
+</table>
+<p><code>Revoke_User_Sessions</code> is a <strong>string</strong> with allowed values <code>true</code> / <code>false</code>, not a boolean. Microsoft Sentinel's Content Hub playbook editor renders no input control at all for ARM <code>bool</code> parameters, which would leave the toggle stuck at its default. The editor also ignores the declared allowed values and shows a plain textbox — <strong>type exactly <code>true</code> or <code>false</code></strong>. Anything else fails the deployment when the value is converted back to a boolean, which is deliberate.</p>
+<h3 id="api-connections">API connections</h3>
+<p>The deployment creates one connection, <code>azuresentinel</code>, which uses the playbook's system-assigned managed identity. There is <strong>no Authorize button</strong> and none is needed. Grant that managed identity the <strong>Microsoft Sentinel Responder</strong> role on the workspace, or the playbook cannot read incident entities or comment on incidents.</p>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection-ccf.html">Back to SpyCloud Enterprise Protection CCF</a></p>
+
+</div>
+
+</body>
+</html>

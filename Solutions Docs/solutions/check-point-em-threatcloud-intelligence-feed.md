@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-26 |
 | **Last Updated** | 2026-08-26 |
 | **Solution Folder** | [Check Point EM ThreatCloud Intelligence Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-em-threatcloud-feed) · Popularity: ⚪ Very Low (4%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.azure-sentinel-checkpoint-em-threatcloud-feed) · Popularity: 🟡 Low (30%) |
 
 Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline premium IOC ingestion and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. The ThreatCloud Intelligence Feed connector incrementally pulls high-fidelity indicators — IPs, domains, URLs, and file hashes — enriched with confidence, severity, malicious classification, kill-chain stage, blocking and uniqueness flags, malware types, and CVE/campaign associations.
 

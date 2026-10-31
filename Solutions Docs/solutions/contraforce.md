@@ -19,9 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | ContraForce - support@contraforce.com |
 | **First Published** | 2026-08-07 |
-| **Last Updated** | 2026-09-04 |
+| **Last Updated** | 2026-10-13 |
 | **Solution Folder** | [ContraForce](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContraForce) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/contraforce1580881495588.azure-sentinel-solution-contraforce) · Popularity: 🟡 Low (13%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/contraforce1580881495588.azure-sentinel-solution-contraforce) · Popularity: ⚪ Very Low (0%) |
 
 The [ContraForce](https://www.contraforce.com) solution for Microsoft Sentinel ingests security service delivery events from your ContraForce workspace: incident detections from every connected security platform, administrative access changes (role and member changes), machine credential activity, and destructive workspace actions. The packaged analytic rules create Microsoft Sentinel incidents for privileged access changes, machine credential activity, and destructive workspace actions, so you can monitor the security operations ContraForce performs on your workspace from inside your own Microsoft Sentinel.
 

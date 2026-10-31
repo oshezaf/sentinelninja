@@ -38,8 +38,8 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
-| Get_Alert_Details | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
-| Submit_Takedown_Request | POST | `@{parameters('API_Base_URL')}/api/v1/submit` | — |
+| Get_Alert_Details | GET | `@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
+| Submit_Takedown_Request | POST | `@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/takedown/api/v1/submit` | — |
 
 </details>
 
@@ -54,8 +54,8 @@ When a new Microsoft Sentinel incident is created for a phishing website alert, 
 **Flow:**
 1. Calls **Check_Point_EM_Base** to retrieve API credentials.
 2. Extracts the alert reference ID from the incident.
-3. Fetches full alert details via `GET /api/v1/alerts/{ref_id}` and enriches the incident comment with phishing site metadata (URL, A record, registrar, detection reasons, SSL, password field).
-4. If alert confidence meets the configured threshold, submits a takedown request via `POST /api/v1/submit` and tags the incident `takedown-requested`.
+3. Fetches full alert details via `GET /alert/api/v1/alerts/{ref_id}` and enriches the incident comment with phishing site metadata (URL, A record, registrar, detection reasons, SSL, password field).
+4. If alert confidence meets the configured threshold, submits a takedown request via `POST /takedown/api/v1/submit` and tags the incident `takedown-requested`.
 5. If below threshold, adds a comment recommending manual review.
 
 ## Prerequisites
@@ -66,7 +66,7 @@ When a new Microsoft Sentinel incident is created for a phishing website alert, 
 
 ## Deployment
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_PhishingTakedown%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FResponse%2FCPEM_PhishingTakedown%2Fazuredeploy.json)
 
 ### Parameters
 
@@ -87,9 +87,9 @@ When a new Microsoft Sentinel incident is created for a phishing website alert, 
 
 | Action | Endpoint |
 |--------|----------|
-| Get alert details | `GET /api/v1/alerts/{alert_ref_id}` |
-| Submit takedown | `POST /api/v1/submit` |
-| Check takedown status | `POST /api/v1/submit` (filter by `alert_id`) |
+| Get alert details | `GET /alert/api/v1/alerts/{alert_ref_id}` |
+| Submit takedown | `POST /takedown/api/v1/submit` |
+| Check takedown status | `POST /takedown/api/v1/submit` (filter by `alert_id`) |
 
 ---
 

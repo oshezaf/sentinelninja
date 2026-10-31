@@ -43,7 +43,7 @@
 </tbody>
 </table>
 <h2 id="logic-app-connectors">Logic App Connectors</h2>
-<p>This playbook uses <strong>5</strong> Logic App connectors / built-in actions:</p>
+<p>This playbook uses <strong>4</strong> Logic App connectors / built-in actions:</p>
 <table>
 <thead>
 <tr>
@@ -54,12 +54,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">6</td>
-</tr>
 <tr>
   <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
   <td style="text-align:left">Managed</td>
@@ -82,61 +76,12 @@
   <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
   <td style="text-align:left">Built-in</td>
   <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">8</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Send_Top_Fingerprints_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Open_Ports_Section_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Top_Pdns_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Whois_Data_To_Log_Analytics_Workspace</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_Insights_Data_To_Log_Analytics_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Send_IP_Indicator_To_Live_Investigation_Indicators_Table</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
 <h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
 <table>
 <thead>
@@ -266,6 +211,42 @@
   <td style="text-align:left">—</td>
 </tr>
 <tr>
+  <td style="text-align:left">Send_Top_Fingerprints_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('fingerprints_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Open_Ports_Section_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('open_ports_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Top_Pdns_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('pdns_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Whois_Data_To_Log_Analytics_Workspace</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('whois_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Insights_Data_To_Log_Analytics_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('insights_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_IP_Indicator_To_Live_Investigation_Indicators_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('dataCollectionEndpoint'), '/dataCollectionRules/', parameters('dcrImmutableId'), '/streams/Custom-', variables('indicators_table_name'), '_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
   <td style="text-align:left">HTTP_Request_To_Fetch_Details_Of_Domain_Indicator</td>
   <td style="text-align:left">GET</td>
   <td style="text-align:left"><code>@{variables('base_url')}/api/scout/search</code></td>
@@ -298,20 +279,50 @@
 <li>EmailId: Enter valid comma separated email ID(s) of receiver without space. (e.g. person1@gmail.com,person2@gmail.com)</li>
 <li>WorkspaceName: Enter the log analytics workspace name in which data will be stored for incident enrichment.</li>
 </ul>
-<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutEnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutEnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutEnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutEnrichIncident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
-<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<h4 id="a-log-ingestion">a. Log ingestion</h4>
+<p>This playbook writes to Log Analytics through the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Logs Ingestion API</a> using its own system-assigned managed identity. The data collection endpoint, the data collection rule, the destination tables and the <strong>Monitoring Metrics Publisher</strong> role assignment are all created by the deployment template, so ingestion needs no manual authorization.</p>
+<p><strong>Existing workspaces only.</strong> If you deployed an earlier version of this playbook, its tables were created by the retired HTTP Data Collector API and are <em>classic</em> tables. Convert them once per workspace before the first run of the migrated playbook, otherwise ingestion fails:</p>
+<pre><code class="language-bash">resourceGroup=&quot;&lt;resource-group&gt;&quot;
+workspace=&quot;&lt;workspace-name&gt;&quot;
+
+# List the classic tables still present in the workspace
+az monitor log-analytics workspace table list \
+  --resource-group &quot;$resourceGroup&quot; --workspace-name &quot;$workspace&quot; \
+  --query &quot;[?schema.tableSubType=='Classic'].{Name:name}&quot; -o table
+
+# Convert each one, using the table name exactly as returned by the list
+# command above (it already includes the _CL suffix, e.g. Communication_Data_CL —
+# do not append _CL again)
+az monitor log-analytics workspace table migrate \
+  --resource-group &quot;$resourceGroup&quot; --workspace-name &quot;$workspace&quot; \
+  --table-name &quot;&lt;TableName&gt;&quot;
+</code></pre>
+<blockquote>
+<p><strong>The conversion cannot be undone.</strong> It is a one-way operation per table.</p>
+</blockquote>
+<p>This playbook writes the following tables:</p>
+<ul>
+<li><code>Insights_Data_Incident_Based_CL</code></li>
+<li><code>Investigated_IPs_Incident_Based_CL</code></li>
+<li><code>Summary_Details_Top_Fingerprints_Data_Incident_Based_CL</code></li>
+<li><code>Summary_Details_Top_Open_Ports_Data_Incident_Based_CL</code></li>
+<li><code>Summary_Details_Top_Pdns_Data_Incident_Based_CL</code></li>
+<li><code>Whois_Data_Incident_Based_CL</code></li>
+</ul>
+<p>Column names and types are unchanged, so existing parsers, workbooks and saved queries keep working.</p>
+<h4 id="b-authorize-connections">b. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
-<li>Go to your logic app → API connections → Select azureloganalyticsdatacollector connection resource</li>
+<li>Go to your logic app → API connections → Select a connection resource</li>
 <li>Go to General → Edit API connection.</li>
-<li>Enter Workspace ID and Workspace Key of your log analytics workspace.</li>
 <li>Click Authorize</li>
 <li>Sign in.</li>
 <li>Click Save.</li>
 <li>Repeat steps for other connections.</li>
 </ol>
-<h4 id="b-assign-role-to-add-a-comment-in-the-incident">b. Assign Role to add a comment in the incident</h4>
+<h4 id="c-assign-role-to-add-a-comment-in-the-incident">c. Assign Role to add a comment in the incident</h4>
 <p>After authorizing each connection, assign a role to this playbook.</p>
 <ol>
 <li>Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add</li>

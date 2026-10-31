@@ -16,6 +16,7 @@ Creates incidents when Recorded Future Sandbox detects malicious files from Outl
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | NRT |
+| **Required Connectors** | [RecordedFuture](../connectors/recordedfuture.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Analytic%20Rules/IncidentCreation/RecordedFutureSandboxEmailAttachment.yaml) |
 
 ## Tables Used
@@ -24,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureSandboxResults_CL`](../tables/recordedfuturesandboxresults-cl.md) 🔶 | ? | ✓ | ? |
+| [`RecordedFutureSandboxResults_V2_CL`](../tables/recordedfuturesandboxresults-v2-cl.md) | ? | ✓ | ? |
 
 ---
 

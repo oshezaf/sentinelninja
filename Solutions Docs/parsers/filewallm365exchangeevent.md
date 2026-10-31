@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`FilewallExchange_CL`](../tables/filewallexchange-cl.md) |  | ✓ | ✓ | ✓ |
+| [`FilewallExchange_CL`](../tables/filewallexchange-cl.md) |  | ? | ✓ | ? |
 
 ---
 

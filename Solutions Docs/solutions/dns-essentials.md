@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Networking |
-| **Version** | 3.0.6 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-14 |
-| **Last Updated** | 2026-09-07 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [DNS Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns-domain) · Popularity: 🔵 Medium (65%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-dns-domain) · Popularity: 🔵 Medium (69%) |
 
 This is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
 
@@ -151,6 +151,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 								|
 |-------------|--------------------------------|----------------------------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbooks** for DNS Essentials migration, and repackaged the V3.1 solution. |
 | 3.0.6       | 09-09-2026                     | Added  DNSEssentialsCustomParser to parse and normalize the tables used in dependent Security Content. |
 | 3.0.5       | 02-09-2026                     | Added a DNS summarization playbook that uses the Azure Monitor Logs Ingestion API and creates two new V1 summary tables: DNS_Summarized_Logs_ipV1_CL and DNS_Summarized_Logs_sourceInfoV1_CL, avoiding conflicts with existing tables |
 | 3.0.4		  | 02-07-2025					   | Updated new ThreatIntelIndicators table references using **parser**.								|

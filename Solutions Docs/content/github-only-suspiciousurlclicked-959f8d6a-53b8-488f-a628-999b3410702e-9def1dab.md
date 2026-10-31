@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`AlertInfo`](../tables/alertinfo.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
 
 ---

@@ -25,7 +25,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (93 columns)
+## Schema (98 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics)
 
@@ -71,6 +71,9 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | DestVm | string | Virtual machine associated with the destination IP in the flow. |
 | ExpressRouteCircuitPeeringType | string | The peering type of the associated express route circuit for the flow. |
 | FaSchemaVersion | string | Schema version for ingestion. |
+| FlowCapturedAtResourceId | string | Resource ID of the flow capturing device. |
+| FlowCapturedAtResourceIps | string | Resource IPs of the flow capturing device. This will have 2 values for IPv4 and IPv6 in dual stack case. |
+| FlowCapturedAtResourceType | string | Resource type of the flow capturing device. |
 | FlowDirection | string | Direction of the flow which can be inbound or outbound. |
 | FlowEncryption | string | The type of flow encryption. |
 | FlowEndTime | datetime | Last occurrence of the flow (which will get aggregated) in the flow log processing interval between "FlowIntervalStartTime_t" and "FlowIntervalEndTime_t". In terms of flow log v2, this field contains the time when the last flow with the same four-tuple started (marked as "B" in the raw flow record). |
@@ -91,6 +94,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | PacketsDestToSrc | long | Represents packets sent from the destination to the source of the flow. |
 | PacketsSrcToDest | long | Represents packets sent from the source to the destination of the flow. |
 | PrivateEndpointResourceId | string | Resource ID of the private endpoint resource. |
+| PrivateLinkId | string | Unique identifier of the Private Link associated with the flow, used to correlate traffic that traverses a Private Link connection. |
 | PrivateLinkResourceId | string | Resource ID of the private link service. |
 | PrivateLinkResourceName | string | Resource name of the private link service. |
 | RecordCount | long | Count of individual records that were aggregated into this record. |
@@ -102,6 +106,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | SrcIp | string | Source IP address. |
 | SrcLoadBalancer | string | Load balancer associated with the source IP in the flow. |
 | SrcLocalNetworkGateway | string | Local network gateway associated with the source IP in the flow. |
+| SrcNatIp | string | NAT assigned source IP address. |
 | SrcNetworkGroups | string | In case source is tagged with a vnet, this is networkgroups that vnet belongs to. |
 | SrcNic | string | NIC associated with the source IP in the flow. |
 | SrcPorts | string | Pipe Separated Source Ports. |

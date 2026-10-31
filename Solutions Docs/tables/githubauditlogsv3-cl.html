@@ -44,7 +44,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (242 columns)</h2>
+<h2 id="schema">Schema (489 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGitHubAuditLogs_AzStorage/table_GitHubAuditLogsV3.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -56,9 +56,34 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">access_level</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event access_level property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Action</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the action that was performed, for example user.login or repo.create.</td>
+</tr>
+<tr>
+  <td style="text-align:left">actions_cache_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event actions_cache_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">actions_cache_key</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event actions_cache_key property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">actions_cache_scope</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event actions_cache_scope property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">actions_cache_version</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event actions_cache_version property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Active</td>
@@ -91,9 +116,24 @@
   <td style="text-align:left">The IP address of the actor who performed the action.</td>
 </tr>
 <tr>
+  <td style="text-align:left">ActorIsAgent</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">The GitHub audit event actor_is_agent property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ActorIsBot</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Whether the actor is a bot account.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorLocation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The complete actor_location object, including country_code and country_name when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional declared GitHub audit fields for billing, stream configuration, managed-user security events, and restricted column names. Not an undeclared-field catch-all.</td>
 </tr>
 <tr>
   <td style="text-align:left">AdminEnforced</td>
@@ -106,6 +146,31 @@
   <td style="text-align:left">The state after the change.</td>
 </tr>
 <tr>
+  <td style="text-align:left">AgentSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event agent_session_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_enabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event alert_enabled property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event alert_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_number</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event alert_number property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">alert_recipient_user_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event alert_recipient_user_ids property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">AlertNumbers</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The alert numbers associated with the event.</td>
@@ -114,6 +179,11 @@
   <td style="text-align:left">AllowDeletionsEnforcementLevel</td>
   <td style="text-align:left">real</td>
   <td style="text-align:left">The enforcement level for allowing branch deletions.</td>
+</tr>
+<tr>
+  <td style="text-align:left">allowed</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event allowed property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">AllowedValues</td>
@@ -126,9 +196,64 @@
   <td style="text-align:left">The enforcement level for allowing force pushes.</td>
 </tr>
 <tr>
+  <td style="text-align:left">allowlist_description</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event allowlist_description property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">allowlist_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event allowlist_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">allowlist_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event allowlist_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">api_request_body</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event api_request_body property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event application_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event application_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">application_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event application_type property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ApplicationClientId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The client ID of the application.</td>
+</tr>
+<tr>
+  <td style="text-align:left">approvers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event approvers property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">approvers_was</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event approvers_was property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">assignment_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event assignment_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">audit_log_stream_enabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event audit_log_stream_enabled property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">AuditLogStreamId</td>
@@ -151,6 +276,16 @@
   <td style="text-align:left">The details of the audit log stream sink.</td>
 </tr>
 <tr>
+  <td style="text-align:left">authorized_actors</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event authorized_actors property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">authorized_actors_only</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event authorized_actors_only property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">AuthorizedActorNames</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The names of actors authorized to bypass branch protection.</td>
@@ -166,9 +301,19 @@
   <td style="text-align:left">The state before the change.</td>
 </tr>
 <tr>
+  <td style="text-align:left">block_local_servers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event block_local_servers property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">BlockedUser</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The username of the account being blocked.</td>
+</tr>
+<tr>
+  <td style="text-align:left">body</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event body property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Branch</td>
@@ -186,9 +331,74 @@
   <td style="text-align:left">The numeric identifier of the GitHub Enterprise business.</td>
 </tr>
 <tr>
+  <td style="text-align:left">calling_workflow_refs</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event calling_workflow_refs property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">calling_workflow_shas</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event calling_workflow_shas property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">can_admins_bypass</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event can_admins_bypass property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">cancelled_at</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event cancelled_at property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">CanCreateRepositories</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Whether the user has permission to create repositories.</td>
+</tr>
+<tr>
+  <td style="text-align:left">category</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event category property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">check_response_timeout_minutes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event check_response_timeout_minutes property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">check_run_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event check_run_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">cname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event cname property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborator</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event collaborator property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">collaborator_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event collaborator_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">color</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event color property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">comment</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event comment property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">comment_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event comment_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">CommitId</td>
@@ -204,6 +414,11 @@
   <td style="text-align:left">CompletedAt</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left">The time the workflow or job completed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">compliant_pull_request_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event compliant_pull_request_ids property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Conclusion</td>
@@ -226,6 +441,16 @@
   <td style="text-align:left">The content type of the resource.</td>
 </tr>
 <tr>
+  <td style="text-align:left">context</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event context property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">count</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event count property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">CountryCode</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The country code from the actor's location.</td>
@@ -241,6 +466,36 @@
   <td style="text-align:left">Whether branch creation is protected.</td>
 </tr>
 <tr>
+  <td style="text-align:left">current_plan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event current_plan property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">current_validity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event current_validity property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">current_value</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event current_value property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_instructions</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event custom_instructions property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_pattern_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event custom_pattern_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">custom_pattern_scope</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event custom_pattern_scope property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">CustomPattern</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The custom secret scanning pattern.</td>
@@ -249,6 +504,11 @@
   <td style="text-align:left">Data</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Additional data associated with the event, serialized as a JSON string.</td>
+</tr>
+<tr>
+  <td style="text-align:left">default_branch</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event default_branch property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">DefaultForNewPrivateRepos</td>
@@ -271,6 +531,26 @@
   <td style="text-align:left">The numeric identifier of the custom property definition.</td>
 </tr>
 <tr>
+  <td style="text-align:left">deleted_at</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event deleted_at property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">deleted_by</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event deleted_by property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">deleted_by_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event deleted_by_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">deleted_content</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event deleted_content property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">DeployKeyFingerprint</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The fingerprint of the deploy key.</td>
@@ -279,6 +559,26 @@
   <td style="text-align:left">Description</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The description of the resource or event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">devcontainer_path</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event devcontainer_path property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">dismiss_comment</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event dismiss_comment property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">dismiss_reason</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event dismiss_reason property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">dismissal_request_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event dismissal_request_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">DismissalApproverId</td>
@@ -296,9 +596,29 @@
   <td style="text-align:left">A unique identifier for the audit event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">domain</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event domain property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">DomainName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The domain name associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ecosystem</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ecosystem property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">editor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event editor property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">editor_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event editor_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Email</td>
@@ -311,14 +631,74 @@
   <td style="text-align:left">The emoji associated with the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">enabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enabled property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Enablement</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The enablement state of a feature or configuration.</td>
 </tr>
 <tr>
+  <td style="text-align:left">end</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event end property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">end_date</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event end_date property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">endpoint</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event endpoint property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enforcement</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enforcement property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">EnforcementLevel</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The enforcement level of the protection rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enterprise_id</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The GitHub audit event enterprise_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enterprise_role_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enterprise_role_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enterprise_role_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enterprise_role_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enterprise_team</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enterprise_team property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">enterprise_team_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event enterprise_team_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">entries</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event entries property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">environment_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event environment_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">EnvironmentName</td>
@@ -331,6 +711,16 @@
   <td style="text-align:left">The event that triggered the workflow.</td>
 </tr>
 <tr>
+  <td style="text-align:left">event_id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event event_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">event_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event event_name property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Events</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The current events configuration, serialized as a JSON string.</td>
@@ -339,6 +729,11 @@
   <td style="text-align:left">EventsWere</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The previous events configuration before the change, serialized as a JSON string.</td>
+</tr>
+<tr>
+  <td style="text-align:left">excluded_paths</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event excluded_paths property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">ExemptAdministrators</td>
@@ -351,6 +746,21 @@
   <td style="text-align:left">An explanation or additional context for the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">external_group</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event external_group property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">external_group_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event external_group_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">external_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event external_id property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ExternalIdentityNameid</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The NameID of the external identity.</td>
@@ -361,14 +771,39 @@
   <td style="text-align:left">The username of the external identity.</td>
 </tr>
 <tr>
+  <td style="text-align:left">failover_network_enabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event failover_network_enabled property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">failover_network_settings_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event failover_network_settings_ids property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">filename</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event filename property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Fingerprint</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The fingerprint of the key or certificate.</td>
 </tr>
 <tr>
+  <td style="text-align:left">from_business</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event from_business property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">GhsaId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The GitHub Security Advisory identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">github_request_id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event github_request_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">HashedToken</td>
@@ -396,9 +831,24 @@
   <td style="text-align:left">Whether approvals from contributors are ignored.</td>
 </tr>
 <tr>
+  <td style="text-align:left">imposer_repo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event imposer_repo property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">initiated_from</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event initiated_from property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Integration</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The integration associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">integration_installation_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event integration_installation_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">InvitationId</td>
@@ -406,14 +856,29 @@
   <td style="text-align:left">The numeric identifier of the invitation.</td>
 </tr>
 <tr>
+  <td style="text-align:left">invitee</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event invitee property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">InviteeEmail</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The email address of the person invited.</td>
 </tr>
 <tr>
+  <td style="text-align:left">inviter</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event inviter property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">IpAllowListEntry</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The IP allow list entry.</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_republished</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event is_republished property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">IsHostedRunner</td>
@@ -446,6 +911,11 @@
   <td style="text-align:left">The key associated with the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">languages</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event languages property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Limit</td>
   <td style="text-align:left">real</td>
   <td style="text-align:left">The limit value associated with the event.</td>
@@ -471,9 +941,69 @@
   <td style="text-align:left">The enforcement level for branch locking.</td>
 </tr>
 <tr>
+  <td style="text-align:left">machine_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event machine_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">managed_hashed_token</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event managed_hashed_token property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">managed_oauth_access_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event managed_oauth_access_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">managed_oauth_scopes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event managed_oauth_scopes property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">managed_token_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event managed_token_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">managed_token_scopes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event managed_token_scopes property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">manager</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event manager property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">marketplace_listing</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event marketplace_listing property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_entries_to_build</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event max_entries_to_build property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_entries_to_merge</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event max_entries_to_merge property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">mcp_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event mcp_policy property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">MembershipType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The type of membership, for example admin or member.</td>
+</tr>
+<tr>
+  <td style="text-align:left">merge_method</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event merge_method property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">MergeQueueEnforcementLevel</td>
@@ -481,14 +1011,79 @@
   <td style="text-align:left">The enforcement level for merge queue.</td>
 </tr>
 <tr>
+  <td style="text-align:left">merging_strategy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event merging_strategy property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Message</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">A message associated with the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">min_entries_to_merge</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event min_entries_to_merge property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">min_entries_to_merge_wait_minutes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event min_entries_to_merge_wait_minutes property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">multi_repo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event multi_repo property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Name</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the resource associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">name_was</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event name_was property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">network_configuration_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event network_configuration_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">network_settings_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event network_settings_ids property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_branch</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_branch property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_config</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_config property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_emu_repo_runners_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_emu_repo_runners_policy property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_nwo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_nwo property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_repo_base_role</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_repo_base_role property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">new_value</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event new_value property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">NewAccess</td>
@@ -516,6 +1111,16 @@
   <td style="text-align:left">The new repository runners policy after the change.</td>
 </tr>
 <tr>
+  <td style="text-align:left">number</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event number property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">oauth_credential_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event oauth_credential_type property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">OauthApplication</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the OAuth application involved in the event.</td>
@@ -526,6 +1131,11 @@
   <td style="text-align:left">The numeric identifier of the OAuth application.</td>
 </tr>
 <tr>
+  <td style="text-align:left">OauthApplicationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GitHub audit event oauth_application_name property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">OauthApplicationState</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The state of the OAuth application.</td>
@@ -534,6 +1144,106 @@
   <td style="text-align:left">OauthApplicationUrl</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The URL of the OAuth application.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_alert_enabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_alert_enabled property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_allowed_values</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_allowed_values property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_allowlist_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_allowlist_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_base_role</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_base_role property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_block_local_servers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_block_local_servers property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_branch</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_branch property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_cname</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_cname property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_color</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_color property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_emu_repo_runners_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_emu_repo_runners_policy property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_login</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_login property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_mcp_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_mcp_policy property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_message</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_message property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_plan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_plan property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_policy property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_project_role</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_project_role property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_repo_base_role</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_repo_base_role property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_settings</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_settings property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_value</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_value property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">old_value_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event old_value_type property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">OldAccess</td>
@@ -621,6 +1331,16 @@
   <td style="text-align:left">The GitHub organization associated with the audit log event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">organization_names</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event organization_names property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">organization_upgrade</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event organization_upgrade property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">OrganizationRoleId</td>
   <td style="text-align:left">real</td>
   <td style="text-align:left">The numeric identifier of the organization role.</td>
@@ -636,6 +1356,11 @@
   <td style="text-align:left">The numeric identifier of the GitHub organization.</td>
 </tr>
 <tr>
+  <td style="text-align:left">origin_repository</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event origin_repository property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">OverriddenCodes</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The codes that were overridden.</td>
@@ -646,9 +1371,29 @@
   <td style="text-align:left">The owner of the resource.</td>
 </tr>
 <tr>
+  <td style="text-align:left">owner_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event owner_id property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">OwnerType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The type of the owner, for example user or organization.</td>
+</tr>
+<tr>
+  <td style="text-align:left">package</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event package property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">patreon_email</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event patreon_email property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">patreon_username</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event patreon_username property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Permission</td>
@@ -656,9 +1401,34 @@
   <td style="text-align:left">The permission level granted or associated with the action.</td>
 </tr>
 <tr>
+  <td style="text-align:left">plan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event plan property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Policy</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The policy associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">prevent_self_review</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event prevent_self_review property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">previous_settings_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event previous_settings_ids property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">previous_validity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event previous_validity property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">previous_value</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event previous_value property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">PreviousVisibility</td>
@@ -666,9 +1436,29 @@
   <td style="text-align:left">The previous repository visibility before the change.</td>
 </tr>
 <tr>
+  <td style="text-align:left">primary_category</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event primary_category property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ProgrammaticAccessType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The type of programmatic access used.</td>
+</tr>
+<tr>
+  <td style="text-align:left">project_kind</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event project_kind property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">project_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event project_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">project_role</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event project_role property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">ProjectId</td>
@@ -684,6 +1474,16 @@
   <td style="text-align:left">PropertyName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the custom property.</td>
+</tr>
+<tr>
+  <td style="text-align:left">public_repo</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">The original GitHub public_repo value, before the PublicRepo fallback.</td>
+</tr>
+<tr>
+  <td style="text-align:left">publicly_leaked</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event publicly_leaked property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">PublicProject</td>
@@ -714,6 +1514,26 @@
   <td style="text-align:left">PullRequestUrl</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The URL of the pull request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">push_protection_bypass_reason</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event push_protection_bypass_reason property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">push_protection_setting</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event push_protection_setting property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event query property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_phrase</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event query_phrase property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">QueryString</td>
@@ -761,14 +1581,44 @@
   <td style="text-align:left">The referrer URL or source.</td>
 </tr>
 <tr>
+  <td style="text-align:left">remove_existing_unaffiliated_users</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event remove_existing_unaffiliated_users property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Repo</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the repository associated with the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">repo_was</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event repo_was property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">RepoId</td>
   <td style="text-align:left">real</td>
   <td style="text-align:left">The numeric identifier of the repository.</td>
+</tr>
+<tr>
+  <td style="text-align:left">report_result</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event report_result property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">repositories</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event repositories property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">repositories_added</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event repositories_added property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">repositories_added_names</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event repositories_added_names property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">RepositoriesRemoved</td>
@@ -791,6 +1641,11 @@
   <td style="text-align:left">The numeric identifier of the repository.</td>
 </tr>
 <tr>
+  <td style="text-align:left">RepositoryPublic</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">The original GitHub repository_public value, before the PublicRepo fallback.</td>
+</tr>
+<tr>
   <td style="text-align:left">RepositorySecurityConfigurationFailureReason</td>
   <td style="text-align:left">dynamic</td>
   <td style="text-align:left">The reason a repository security configuration failed to apply.</td>
@@ -806,6 +1661,21 @@
   <td style="text-align:left">The repository selection mode, for example all or selected.</td>
 </tr>
 <tr>
+  <td style="text-align:left">request_reviewer</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event request_reviewer property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_reviewer_comment</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event request_reviewer_comment property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">request_reviewer_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event request_reviewer_id property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">RequestAccessSecurityHeader</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The security header of the access request.</td>
@@ -819,6 +1689,21 @@
   <td style="text-align:left">RequestCategory</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The category of the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">requested_at</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event requested_at property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">requester</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event requester property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">requester_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event requester_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">RequestId</td>
@@ -866,6 +1751,46 @@
   <td style="text-align:left">Whether approval from someone other than the last pusher is required.</td>
 </tr>
 <tr>
+  <td style="text-align:left">rerun_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event rerun_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">resolution</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event resolution property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event resource_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">resource_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event resource_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">review_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event review_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">reviewer</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event reviewer property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">reviewer_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event reviewer_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">reviewer_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event reviewer_type property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">RolePermissions</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The current role permissions.</td>
@@ -874,6 +1799,56 @@
   <td style="text-align:left">Route</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The API route associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_bypass_actors_added</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_bypass_actors_added property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_bypass_actors_deleted</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_bypass_actors_deleted property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_bypass_actors_updated</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_bypass_actors_updated property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_conditions_added</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_conditions_added property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_conditions_deleted</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_conditions_deleted property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_ids</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_ids property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_old_enforcement</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_old_enforcement property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_old_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_old_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_rules_added</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_rules_added property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ruleset_rules_updated</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ruleset_rules_updated property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">RulesetBypassActors</td>
@@ -981,6 +1956,66 @@
   <td style="text-align:left">The run number of the workflow.</td>
 </tr>
 <tr>
+  <td style="text-align:left">scheduled_plan</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event scheduled_plan property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">scim_group_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event scim_group_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">scim_user_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event scim_user_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">seat_assignment</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event seat_assignment property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">seats_plan_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event seats_plan_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">seats_plan_type_was</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event seats_plan_type_was property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secondary_category</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secondary_category property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secret_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secret_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secret_type_display_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secret_type_display_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secret_type_provider</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secret_type_provider property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secret_types</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secret_types property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">secrets_updated</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event secrets_updated property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">SecretsPassed</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The secrets passed to the workflow or job.</td>
@@ -1086,6 +2121,21 @@
   <td style="text-align:left">The last update date of the security configuration.</td>
 </tr>
 <tr>
+  <td style="text-align:left">selected_service</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event selected_service property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event server_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">server_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event server_name property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">SignatureRequirementEnforcementLevel</td>
   <td style="text-align:left">real</td>
   <td style="text-align:left">The enforcement level for commit signature requirements.</td>
@@ -1096,14 +2146,54 @@
   <td style="text-align:left">The source of the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">source_slug</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event source_slug property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">source_version</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event source_version property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">sponsors_listing_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event sponsors_listing_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ssl_verify</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event ssl_verify property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">SsoUrl</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The single sign-on URL.</td>
 </tr>
 <tr>
+  <td style="text-align:left">start</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event start property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">start_date</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event start_date property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">StartedAt</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left">The time the workflow or job started.</td>
+</tr>
+<tr>
+  <td style="text-align:left">state</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event state property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">status</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event status property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">StatusCode</td>
@@ -1116,6 +2206,11 @@
   <td style="text-align:left">Whether strict required status checks policy is enabled.</td>
 </tr>
 <tr>
+  <td style="text-align:left">target_version</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event target_version property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">TargetLogin</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The login of the target user.</td>
@@ -1126,6 +2221,11 @@
   <td style="text-align:left">The team associated with the audit log event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">team_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event team_type property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ThreatModel</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The threat model associated with the event.</td>
@@ -1134,6 +2234,16 @@
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">to_business</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event to_business property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">token_expires_at</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event token_expires_at property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">TokenExpiration</td>
@@ -1151,9 +2261,44 @@
   <td style="text-align:left">The scopes associated with the token used for authentication.</td>
 </tr>
 <tr>
+  <td style="text-align:left">tool</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event tool property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">Topic</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The topic associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_from</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_from property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_from_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_from_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_from_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_from_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_to</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_to property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_to_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_to_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">transfer_to_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event transfer_to_type property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">TransportProtocol</td>
@@ -1171,14 +2316,49 @@
   <td style="text-align:left">The numeric identifier of the trigger.</td>
 </tr>
 <tr>
+  <td style="text-align:left">truncated</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">The GitHub audit event truncated property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">TwoFactorMethod</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The two-factor authentication method used.</td>
 </tr>
 <tr>
+  <td style="text-align:left">type_slug</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event type_slug property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updated_access_policy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event updated_access_policy property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updated_github_owned_allowed</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event updated_github_owned_allowed property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updated_patterns</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event updated_patterns property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">updated_verified_allowed</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event updated_verified_allowed property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">UpdatedAllowedTypes</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Whether the allowed types were updated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">url</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event url property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">UrlPath</td>
@@ -1189,6 +2369,31 @@
   <td style="text-align:left">User</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The user that was affected by the action performed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_content_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event user_content_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_content_type</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event user_content_type property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_programmatic_access_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event user_programmatic_access_id property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_programmatic_access_name</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event user_programmatic_access_name property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">user_programmatic_access_request_id</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event user_programmatic_access_request_id property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">UserAgent</td>
@@ -1206,6 +2411,21 @@
   <td style="text-align:left">The numeric identifier of the affected user.</td>
 </tr>
 <tr>
+  <td style="text-align:left">users_removed_count</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event users_removed_count property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">uuid</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event uuid property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">value</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event value property, when supplied.</td>
+</tr>
+<tr>
   <td style="text-align:left">ValuesEditableBy</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Who can edit the custom property values.</td>
@@ -1214,6 +2434,21 @@
   <td style="text-align:left">ValueType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The data type of the custom property value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">version</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event version property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">version_count</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event version_count property, when supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">violations</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The GitHub audit event violations property, when supplied.</td>
 </tr>
 <tr>
   <td style="text-align:left">Visibility</td>

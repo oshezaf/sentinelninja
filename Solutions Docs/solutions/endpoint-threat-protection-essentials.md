@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.7 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
-| **Last Updated** | 2026-08-21 |
+| **Last Updated** | 2026-10-15 |
 | **Solution Folder** | [Endpoint Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) · Popularity: 🔵 Medium (54%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-endpointthreat) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
 The **Endpoint Threat Protection Essentials** solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  
@@ -120,6 +120,8 @@ This solution includes **30 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                           |
 |-------------|--------------------------------|------------------------------------------------------------------------------|
+| 3.2.1       |     14-10-2026                 | Updated solution and 15 disabled Defender XDR Custom Detections to V3.1 release version 3.2.1 with source-rule provenance, 26 reviewed decisions, and dependency mappings preserved. |
+| 3.1.2       |     12-10-2026                 | Added 15 disabled Defender XDR Custom Detections with source-rule provenance and reviewed mappings. Offline authoring validation completed; runtime validation and alert parity not run. |
 | 3.0.7       |     18-08-2026                 | Updated version and mapping of `connectorId` to `dataTypes` for multiple **Analytic Rules** and **Hunting Queries**.                     |
 | 3.0.6       |     20-07-2026                 | Added **Analytic Rule** CertUtil Used for File Download.                     |
 | 3.0.5       |     18-11-2024                 | Removed the broken URL in **Analytic Rule** and **Hunting Query**            |

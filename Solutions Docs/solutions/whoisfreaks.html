@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhoisFreaks Threat Intelligence for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="whoisfreaks-threat-intelligence-for-microsoft-sentinel">WhoisFreaks Threat Intelligence for Microsoft Sentinel</h1>
+<p><em>Solution: WhoisFreaks</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/whoisfreaks.svg" alt="WhoisFreaks Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">WhoisFreaks</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://whoisfreaks.com">https://whoisfreaks.com</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Intelligence,Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.2</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">WhoisFreaks - support@whoisfreaks.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-09-30</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-21</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WhoisFreaks">WhoisFreaks</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jfreakssoftwaresolutions1791285163467.azure-sentinel-solution-whoisfreaks">Azure Marketplace</a> · Popularity: 🔵 Medium (74%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://whoisfreaks.com/">WhoisFreaks</a> solution for Microsoft Sentinel ingests commercial threat intelligence and newly registered domain (NRD) feeds through the Codeless Connector Framework into custom Log Analytics tables for hunting, detection, and investigation.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution depends on technologies that may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> or incur additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/azure-monitor/data-collection/data-collection-rule-overview">Azure Monitor data collection rules</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/sentinel/">Microsoft Sentinel</a></p>
+<p>A WhoisFreaks API subscription and key entitled to the selected feeds are required.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/whoisfreaks.html">WhoisFreaks Threat &amp; NRD Feeds (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/whoisfreaksnrdnowhois-cl.html"><code>WhoisFreaksNRDNoWhois_CL</code></a></td>
+  <td><a href="../connectors/whoisfreaks.html">WhoisFreaks Threat &amp; NRD Feeds (via Codeless Connector Framework)</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/whoisfreaksnrd-cl.html"><code>WhoisFreaksNRD_CL</code></a></td>
+  <td><a href="../connectors/whoisfreaks.html">WhoisFreaks Threat &amp; NRD Feeds (via Codeless Connector Framework)</a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/whoisfreaksthreat-cl.html"><code>WhoisFreaksThreat_CL</code></a></td>
+  <td><a href="../connectors/whoisfreaks.html">WhoisFreaks Threat &amp; NRD Feeds (via Codeless Connector Framework)</a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/whoisfreaks-whoisfreaks-burst-of-newly-registered-domains-9d79f28f-5d1d-4ca8-b3d3-4ab5f5513e8d-f1b5d916.html">WhoisFreaks - burst of newly registered domains</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/whoisfreaksnrdnowhois-cl.html"><code>WhoisFreaksNRDNoWhois_CL</code></a><br><a href="../tables/whoisfreaksnrd-cl.html"><code>WhoisFreaksNRD_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/whoisfreaks-whoisfreaks-high-confidence-threat-domains-0eb4df70-418e-4f7d-9b5a-cfe35034ec11-010c476d.html">WhoisFreaks - high confidence threat domains</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/whoisfreaksthreat-cl.html"><code>WhoisFreaksThreat_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/whoisfreaks-whoisfreaks-newly-registered-domain-seen-in-threat-feed-d2deed97-6c0c-4a57-95fd-675d3c6fb949-54db08c2.html">WhoisFreaks - newly registered domain seen in threat feed</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/whoisfreaksnrdnowhois-cl.html"><code>WhoisFreaksNRDNoWhois_CL</code></a><br><a href="../tables/whoisfreaksnrd-cl.html"><code>WhoisFreaksNRD_CL</code></a><br><a href="../tables/whoisfreaksthreat-cl.html"><code>WhoisFreaksThreat_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/whoisfreaks-whoisfreaks-parked-threat-domains-3c6be532-dfa0-42ee-87ea-cf3d9e6772bb-7a1bd3b4.html">WhoisFreaks - parked threat domains</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">ResourceDevelopment</td>
+  <td style="text-align:left"><a href="../tables/whoisfreaksthreat-cl.html"><code>WhoisFreaksThreat_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WhoisFreaks/README.md">WhoisFreaks/README.md</a></em></p>
+</blockquote>
+<p>This solution ingests WhoisFreaks threat intelligence and newly registered domain (NRD) feeds using the Microsoft Sentinel Codeless Connector Framework (CCF). Threat API fields are retained in <code>WhoisFreaksThreat_CL</code> (including <code>threat_type</code>); WHOIS NRD API fields are retained in <code>WhoisFreaksNRD_CL</code>; headerless no-WHOIS rows are written to <code>WhoisFreaksNRDNoWhois_CL</code> with the payload column <code>domain_name</code>. Both NRD tables include an <code>nrd_type</code> column (<code>gtld</code> or <code>cctld</code>) set by the DCR transform so gTLD and ccTLD rows can be distinguished without parsing the domain. <code>TimeGenerated</code> is the Log Analytics system ingestion timestamp. The connector UI lets users select feeds enabled by their subscription. The selection is a form and is not read back after the page reloads; the connector page's Data received chart shows one line per feed, so a feed with no line is not enabled. To change the enabled feeds, disconnect, reselect, and connect again. The two NRD tables are created with 30-day retention because the NRD analytic rules look back 7 and 8 days; the threat table is created with 4-day retention because its rules read at most the last six hours and the full threat feed is re-ingested daily. Workspaces that installed an earlier version keep their original table retention; raise the NRD tables with <code>az monitor log-analytics workspace table update --retention-time 30 --total-retention-time 30</code> for <code>WhoisFreaksNRD_CL</code> and <code>WhoisFreaksNRDNoWhois_CL</code>. The solution also includes four scheduled analytic rules.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Azure CLI logged in to the target subscription (<code>az login</code>).</li>
+<li>A staging Microsoft Sentinel workspace for integration tests. Validate production changes in staging before deploying them to production.</li>
+<li>A WhoisFreaks API key entitled to each feed you enable.</li>
+<li>Workspace resource group and workspace name for checking deployed connector resources.</li>
+</ul>
+<p>Do not commit API keys, generated parameter files containing secrets, or deployment outputs with secrets. Supply the key through a protected shell variable or a secret manager.</p>
+<h2 id="validation-and-packaging">Validation and Packaging</h2>
+<p>The source connector configuration is in <code>Data Connectors/WhoisFreaks_CCF/</code>. Validate and package the solution with the repository's V3 build-and-validation flow. The solution manifest lists the four analytic-rule YAML files so the generated package includes their templates.</p>
+<p>The connector UI offers a multi-select feed list. Select only feeds included in the API subscription. Test in staging first; successful deployment and data ingestion depend on the target workspace and feed entitlements.</p>
+<h2 id="analytic-rule-testing">Analytic Rule Testing</h2>
+<p>The four rule source files are in <code>Analytic Rules/</code>. Before packaging or deploying a rule:</p>
+<ol>
+<li>Open Microsoft Sentinel <strong>Logs</strong> in the staging workspace.</li>
+<li>Copy the <code>query</code> value from the rule YAML and run it as KQL. The query must compile; zero matches is valid when the data does not meet the detection condition.</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>21-10-2026</td>
+  <td>Fixed <strong>Data Connector</strong> feed selection, API key handling, duplicate fetches and table retention. Fixed <strong>Analytic Rules</strong> confidence threshold, NRD burst baseline, parked-domain flag and hourly re-alerting.</td>
+</tr>
+<tr>
+  <td>3.0.1</td>
+  <td>16-10-2026</td>
+  <td>Deployment UI now filters workspaces by the exact resource group and lets the workspace region be reviewed before deployment.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>09-10-2026</td>
+  <td>Initial publication with the CCF threat and NRD feeds and four analytic-rule templates.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

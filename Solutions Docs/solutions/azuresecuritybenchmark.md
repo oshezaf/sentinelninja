@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Compliance,Security - Cloud Security,Security - Automation (SOAR) |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-17 |
-| **Last Updated** | 2026-06-22 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [AzureSecurityBenchmark](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuresecuritybenchmark) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azuresecuritybenchmark) · Popularity: 🟢 High (83%) |
 
 The Azure Security Benchmark v3 Solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to gain situational awareness for cloud security posture and hardening. Benchmark recommendations provide a starting point for selecting specific security configuration settings and facilitate risk reduction. The Azure Security Benchmark includes a collection of high-impact security recommendations for improving posture. This workbook provides visibility and situational awareness for security capabilities delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user and some panels may require additional configurations for operation.
 
@@ -131,6 +131,7 @@ You can deploy the workbook by clicking on the buttons below:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                         |
 |-------------|--------------------------------|----------------------------------------------------------------------------|
+| 3.2.2       | 20-10-2026                     | Added Defender XDR **Custom Detection** for Azure Security Benchmark Posture Changed and packaged with V3.1. |
 | 3.0.5       | 29-05-2026                     | Updated Azure Security Benchmark workbook and Analytic Rules.             |
 | 3.0.4       | 13-04-2026                     | Updated Azure Security Benchmark label and queries.             |
 | 3.0.3       | 10-09-2025                     | Removed the network map from the workbook.                      |

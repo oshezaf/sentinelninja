@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.12</td>
+  <td style="text-align:left">3.2.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-09-04</td>
+  <td style="text-align:left">2026-10-27</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices">Azure Marketplace</a> · Popularity: 🟢 High (92%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-amazonwebservices">Azure Marketplace</a> · Popularity: 🟢 High (87%)</td>
 </tr>
 </tbody>
 </table>
@@ -116,7 +116,7 @@
 <tr>
   <td><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
   <td><a href="../connectors/awss3.html">Amazon Web Services S3</a></td>
-  <td>Analytics</td>
+  <td>Analytics, Hunting</td>
 </tr>
 <tr>
   <td><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
@@ -131,7 +131,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>99 content item(s)</strong>:</p>
+<p>This solution includes <strong>102 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -146,7 +146,7 @@
 </tr>
 <tr>
   <td style="text-align:left">Hunting Queries</td>
-  <td style="text-align:left">36</td>
+  <td style="text-align:left">39</td>
 </tr>
 <tr>
   <td style="text-align:left">Workbooks</td>
@@ -544,6 +544,21 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/amazon-web-services-aws-guardduty-eks-privilege-escalation-and-credential-access-869d2742-80d8-4b72-89ad-af31ea6b7437-18f92ef6.html">AWS GuardDuty - EKS privilege escalation and credential access</a></td>
+  <td style="text-align:left">PrivilegeEscalation, CredentialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/amazon-web-services-aws-guardduty-high-severity-findings-clustered-by-account-and-actor-d9329491-ab19-4903-aa0f-7affb388b011-dd98ec41.html">AWS GuardDuty - High severity findings clustered by account and actor</a></td>
+  <td style="text-align:left">Discovery, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/amazon-web-services-aws-guardduty-publicly-exposed-or-weakly-protected-s3-buckets-81ff8c3c-b7c1-40ff-9389-800fcf2d484e-9c60c133.html">AWS GuardDuty - Publicly exposed or weakly protected S3 buckets</a></td>
+  <td style="text-align:left">Exfiltration, Discovery, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/amazon-web-services-awscloudtrail-aws-sts-token-suspicious-activity-from-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-83ac2ebc.html">AWSCloudTrail - AWS STS token suspicious activity from EC2</a></td>
   <td style="text-align:left">CredentialAccess, LateralMovement</td>
   <td style="text-align:left"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
@@ -754,6 +769,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.2</td>
+  <td>25-10-2026</td>
+  <td>Added Defender XDR <strong>Custom Detections</strong> and <strong>XDR Workbooks</strong> for Amazon Web Services migration, and repackaged the V3.1 solution.</td>
+</tr>
+<tr>
+  <td>3.0.13</td>
+  <td>03-09-2026</td>
+  <td>Added new AWS GuardDuty <strong>Hunting Queries</strong> for high-severity findings, EKS privilege escalation and credential access, and S3 public exposure; repackaged the solution after incorporating the latest upstream changes.</td>
+</tr>
 <tr>
   <td>3.0.12</td>
   <td>26-08-2026</td>

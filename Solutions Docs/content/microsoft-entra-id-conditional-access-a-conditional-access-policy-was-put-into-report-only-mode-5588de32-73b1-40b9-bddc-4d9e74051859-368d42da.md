@@ -14,6 +14,7 @@ A Conditional Access policy was put into report-only mode in Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `5588de32-73b1-40b9-bddc-4d9e74051859` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562.007 |

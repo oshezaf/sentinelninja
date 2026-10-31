@@ -18,7 +18,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
+| [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

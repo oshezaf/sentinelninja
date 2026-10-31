@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

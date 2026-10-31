@@ -14,6 +14,7 @@ A Conditional Access policy was deleted from Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `2e96fa64-ac4d-4c92-b79e-e9c54b5d8230` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562.007 |

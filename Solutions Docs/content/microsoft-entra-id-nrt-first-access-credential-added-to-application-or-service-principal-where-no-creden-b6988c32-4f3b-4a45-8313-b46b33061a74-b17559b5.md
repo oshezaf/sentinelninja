@@ -14,6 +14,7 @@
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `b6988c32-4f3b-4a45-8313-b46b33061a74` |
 | **Severity** | Medium |
+| **Status** | Available |
 | **Kind** | NRT |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1550.001 |

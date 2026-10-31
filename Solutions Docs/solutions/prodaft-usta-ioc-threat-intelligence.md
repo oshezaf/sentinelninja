@@ -1,6 +1,6 @@
-# ⚠️ PRODAFT USTA - IoC Threat Intelligence
+# USTA IoC Threat Stream for Sentinel
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: PRODAFT USTA - IoC Threat Intelligence*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaIoC.svg" alt="PRODAFT USTA - IoC Threat Intelligence Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | PRODAFT - integration@prodaft.com |
 | **First Published** | 2026-07-08 |
+| **Last Updated** | 2026-09-11 |
 | **Solution Folder** | [PRODAFT USTA - IoC Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PRODAFT%20USTA%20-%20IoC%20Threat%20Intelligence) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prodaft.azure-sentinel-solution-prodaft-usta-ioc) · Popularity: ⚪ Very Low (0%) |
 
 The **PRODAFT USTA - IoC Threat Intelligence** solution ingests indicators of compromise (malicious URLs, malware hashes, and phishing sites) from the PRODAFT USTA platform into Microsoft Sentinel **Threat Intelligence** as STIX 2.1 indicators via the Upload STIX Objects API. Ingestion is performed by import playbooks (one per IoC feed) using a system-assigned managed identity; resolved `ip_addresses` on a record are added to the same indicator as `ipv4-addr`/`ipv6-addr` observables; indicators appear in the Threat Intelligence blade and the `ThreatIntelIndicators` table under a per-feed `SourceSystem` (`PRODAFT USTA - Malicious URLs`, `PRODAFT USTA - Malware Hashes`, `PRODAFT USTA - Phishing Sites`), so `SourceSystem startswith 'PRODAFT USTA'` selects them all. Includes three TI-map analytic rules that match ingested indicators against your logs, an overview workbook, and an on-demand backfill playbook for loading historical indicators.
 

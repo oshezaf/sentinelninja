@@ -19,7 +19,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (41 columns)
+## Schema (63 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec%5CData%20Connectors%5CMorphisec_CCF/Morphisec_Table.json)
 
@@ -49,11 +49,32 @@
 | numberOfAttacks | dynamic |
 | operatingSystem | string |
 | parentProcessCommandLine | string |
+| parentProcessFileCreationTime | datetime |
+| parentProcessFileModificationTime | datetime |
+| parentProcessHash | string |
+| parentProcessId | string |
+| parentProcessImphash | string |
+| parentProcessName | string |
+| parentProcessOriginalFileName | string |
 | parentProcessSignature | string |
+| parentProcessSignatureIssuer | string |
+| parentProcessSignatureSubject | string |
+| parentProcessSignatureValidFrom | datetime |
+| parentProcessSignatureValidTo | datetime |
 | path | dynamic |
 | processCommandLine | string |
 | processCommandLineArgs | dynamic |
+| processFileCreationTime | datetime |
+| processFileModificationTime | datetime |
+| processHash | string |
+| processId | string |
+| processImphash | string |
+| processOriginalFileName | string |
 | processSignature | string |
+| processSignatureIssuer | string |
+| processSignatureSubject | string |
+| processSignatureValidFrom | datetime |
+| processSignatureValidTo | datetime |
 | protectorId | string |
 | reviewStatus | string |
 | signature | string |
@@ -66,6 +87,7 @@
 | TimeGenerated | datetime |
 | url | dynamic |
 | user | string |
+| userPrivilege | string |
 
 ## Schema References
 

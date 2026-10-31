@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netskope Client Status &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="netskope-client-status">Netskope Client Status</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>NetskopeClientStatus</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Netskope</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/netskopev2.html">Netskopev2</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeClientStatus_RestAPI_CCP/NetskopeClientStatus_ConnectorDefinition.json">NetskopeClientStatus_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeClientStatus_RestAPI_CCP/NetskopeClientStatus_DCR.json">NetskopeClientStatus_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeClientStatus_RestAPI_CCP/NetskopeClientStatus_Poller.json">NetskopeClientStatus_Poller.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>APIKey</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#netskope-client-status">View on Learn</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Netskope Client Status connector ingests Netskope client device status records (installation, connectivity, health, and last-seen posture events) into Microsoft Sentinel via the Codeless Connector Framework (CCF) REST API poller. Data is delivered by the Netskope API as CSV and stored in the <code>NetskopeClientStatus_CL</code> table. Enumeration codes are retained in their original columns and translated during ingestion into adjacent human-readable <code>*_name</code> columns.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/netskopeclientstatus-cl.html"><code>NetskopeClientStatus_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Netskope organisation url</strong>: The Netskope data connector requires you to provide your organisation url. You can find your organisation url by signing into the Netskope portal.</li>
+<li><strong>Netskope API key</strong>: The Netskope data connector requires you to provide a valid API key. You can create one by following the <a href="https://docs.netskope.com/en/rest-api-v2-overview-312207/">Netskope documentation</a>.</li>
+<li><strong>Netskope Client Status iterator</strong>: Unlike the other Netskope Alerts and Events data types, Client Status is only exposed through Netskope's REST API v2 Management-API iterator endpoints. There is no default or auto-created index for this data type — you must create the iterator yourself before connecting; see the <a href="https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints/">Netskope iterator endpoints documentation</a>.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Create a Netskope API key.</strong></p>
+<p>Follow the <a href="https://docs.netskope.com/en/rest-api-v2-overview-312207/">Netskope documentation</a> for guidance on this step.</p>
+<p><strong>2. STEP 2 - Create a Client Status iterator</strong></p>
+<p>Client Status does not support the shared <code>index=</code> convention used by the other Netskope event types — you must create a dedicated iterator for this data type before Microsoft Sentinel can poll it. Using the <a href="https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints/">Netskope REST API v2 iterator endpoints</a>, call the Create Iterator API once (for example <code>POST https://&lt;your-org&gt;/api/v2/dataexport/iterator/&lt;a-name-you-choose&gt;?eventtype=clientstatus</code> with your API token) and record the iterator name/ID you used — you will enter it below. Confirm the exact request shape against the linked Netskope documentation, as iterator management is a separate API surface from the events you are polling.</p>
+<p><strong>3. STEP 3 - Enter your Netskope product Details</strong></p>
+<p>Enter your Netskope organisation url, API Token, and the Client Status iterator ID you created in Step 2:</p>
+<ul>
+<li><strong>Organisation Url</strong>: Enter your organisation url</li>
+<li><strong>API Key</strong>: (password field)</li>
+<li><strong>Client Status Iterator ID</strong>: Enter the iterator name/ID you created in Step 2</li>
+</ul>
+<p><strong>4. STEP 4 - Click Connect</strong></p>
+<p>Verify all fields above were filled in correctly. Press the Connect to connect Netskope to Microsoft Sentinel.</p>
+<ul>
+<li>Click 'connect' to establish connection</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

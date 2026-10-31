@@ -16,8 +16,8 @@ The collection method for these connectors could not be automatically determined
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **52** |
-| Active | 36 |
+| Total Connectors | **51** |
+| Active | 35 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 15 |
 
@@ -27,6 +27,7 @@ The collection method for these connectors could not be automatically determined
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
+| [(Deprecated) Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [AIShield](../connectors/boschaishield.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
@@ -45,7 +46,6 @@ The collection method for these connectors could not be automatically determined
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 1 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
-| [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶 | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
@@ -65,7 +65,6 @@ The collection method for these connectors could not be automatically determined
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [SenservaPro (Preview)](../connectors/senservapro.md) ⚠️ 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
 | [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ 🔶 | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |

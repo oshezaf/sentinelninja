@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedRays SAP Security Findings &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="redrays-sap-security-findings">RedRays SAP Security Findings</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RedRays.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>RedRaysSAPSecurityFindings</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">RedRays, Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/redrays-sap-security-findings.html">RedRays SAP Security Findings</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RedRays%20SAP%20Security%20Findings/Data%20Connectors/RedRaysSAPSecurityFindings_PUSH_CCP/RedRaysSAPSecurityFindings_connectorDefinition.json">RedRaysSAPSecurityFindings_connectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RedRays%20SAP%20Security%20Findings/Data%20Connectors/RedRaysSAPSecurityFindings_PUSH_CCP/RedRaysSAPSecurityFindings_DCR.json">RedRaysSAPSecurityFindings_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RedRays%20SAP%20Security%20Findings/Data%20Connectors/RedRaysSAPSecurityFindings_PUSH_CCP/RedRaysSAPSecurityFindings_PollerConfig.json">RedRaysSAPSecurityFindings_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>Bring RedRays SAP security findings into Microsoft Sentinel. Review vulnerability assessments, ABAP code findings, BTP security, segregation of duties, profile parameter checks and password security in one workbook, with analytics rules for findings that need attention. RedRays pushes data on a schedule you choose through the Azure Monitor Logs Ingestion API and stays in your existing on-premises or cloud environment. This connector does not collect SAP Security Audit Log events or populate ABAPAuditLog. You need a RedRays license with Microsoft Sentinel integration. Azure ingestion and retention charges apply.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/redraysabapfindings-cl.html"><code>RedRaysAbapFindings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redrayscloudfindings-cl.html"><code>RedRaysCloudFindings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redraysexporthealth-cl.html"><code>RedRaysExportHealth_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redrayspasswordfindings-cl.html"><code>RedRaysPasswordFindings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redraysprofilechecks-cl.html"><code>RedRaysProfileChecks_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redraysscanruns-cl.html"><code>RedRaysScanRuns_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redrayssodfindings-cl.html"><code>RedRaysSoDFindings_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/redraysvulnerabilities-cl.html"><code>RedRaysVulnerabilities_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires the Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign the Monitoring Metrics Publisher role on data collection rules. Typically requires the Owner or User Access Administrator role.</li>
+<li><strong>RedRays settings access</strong>: Permission to configure the Microsoft Sentinel integration in RedRays.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy the push connector resources</strong></p>
+<p>Select <strong>Deploy</strong> to create a data collection endpoint (DCE), a data collection rule (DCR) and the eight RedRays tables in this workspace. Microsoft Sentinel also creates a Microsoft Entra app registration with a client secret and grants it the Monitoring Metrics Publisher role on the DCR, so RedRays can send data with OAuth 2.0 client credentials. Workspace shared keys are not used.</p>
+<p>ℹ️ The client secret is shown only once, right after deployment. Copy it immediately. If you miss it, open Microsoft Entra ID &gt; App registrations, select <strong>RedRays SAP Security Findings</strong>, and create a new client secret under Certificates &amp; secrets.
+Deploy</p>
+<p><strong>2. Configure RedRays</strong></p>
+<p>In RedRays, open <strong>Platform Settings &gt; Microsoft Sentinel</strong> and enter the values below. Choose the modules to export and how often to send data. Keep baseline alerting disabled for the first import, then save and enable the integration. RedRays needs outbound HTTPS access to Microsoft Entra and the data collection endpoint. No inbound connection is required.</p>
+<ul>
+<li><strong>Tenant ID</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Application (client) ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Client secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Ingestion endpoint (DCE URI)</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>DCR immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>3. Verify delivery</strong></p>
+<p>Send a test event from RedRays, then wait for a scheduled export. Query RedRaysExportHealth_CL for RecordKind == 'HEARTBEAT'. A successful test means Azure accepted the request; the record may take a few minutes to appear in queries. RedRays sends each module to its own stream (Custom-RedRaysExportHealth_CL, Custom-RedRaysScanRuns_CL, Custom-RedRaysVulnerabilities_CL, Custom-RedRaysAbapFindings_CL, Custom-RedRaysCloudFindings_CL, Custom-RedRaysSoDFindings_CL, Custom-RedRaysProfileChecks_CL and Custom-RedRaysPasswordFindings_CL) on the same DCR.</p>
+<p><strong>4. Enable security content</strong></p>
+<p>Open Manage solution to create the workbook and selected analytics rules from templates. Review the initial findings before enabling rules. Most finding rules alert on actionable High or Critical candidates. The profile rule raises Medium severity alerts for VULNERABLE checks. The workbook flags heartbeats older than 60 minutes; adjust the threshold above your export interval and expected ingestion delay. Disable equivalent rules from earlier RedRays deployments to avoid duplicate alerts. For help, contact support@redrays.io.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

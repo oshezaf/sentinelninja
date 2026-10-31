@@ -56,7 +56,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (118 columns)</h2>
+<h2 id="schema">Schema (121 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntatopologydetails">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -313,6 +313,11 @@
   <td style="text-align:left">IP address of a network entity associated with the express route circuit route.</td>
 </tr>
 <tr>
+  <td style="text-align:left">NetworkGroups</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">List of network groups that a virtual network belongs to. Format: <Network manager subscriptionId>/<Network manager resource group>/<Network manager name>:<Comma separated list of network groups></td>
+</tr>
+<tr>
   <td style="text-align:left">NextHopIp</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is virtual appliance.</td>
@@ -378,6 +383,11 @@
   <td style="text-align:left">Specifies the priority for the virtual machine. Minimum api-version: 2019-03-01.</td>
 </tr>
 <tr>
+  <td style="text-align:left">PrivateEndpointConnectionIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated list of private endpoint connection IDs.</td>
+</tr>
+<tr>
   <td style="text-align:left">PrivateEndpointResourceId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Resource ID of the private endpoint resource.</td>
@@ -391,6 +401,11 @@
   <td style="text-align:left">PrivateIpAddresses</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Private IP address of the IP configuration.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PrivateLinkId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the Private Link associated with the topology entity, used to correlate resources that participate in a Private Link connection.</td>
 </tr>
 <tr>
   <td style="text-align:left">PrivateLinkResourceId</td>

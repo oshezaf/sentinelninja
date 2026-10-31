@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akamai-technologies.akamai_guardicore_sentinel">Azure Marketplace</a> · Popularity: ⚪ Very Low (7%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akamai-technologies.akamai_guardicore_sentinel">Azure Marketplace</a> · Popularity: 🔵 Medium (59%)</td>
 </tr>
 </tbody>
 </table>
@@ -209,6 +209,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>12-10-2026</td>
+  <td>Fixed the CCF data connector deployment: the four custom log tables (<code>GuardicoreAgents_CL</code>, <code>GuardicoreAssets_CL</code>, <code>GuardicoreApplications_CL</code>, <code>GuardicorePolicyRules_CL</code>) now use bare resource names so they are created correctly on Connect (previously an unresolved <code>{{workspaceName}}</code> placeholder caused a 404 and the tables were never created).</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>27-04-2026</td>

@@ -6,7 +6,7 @@
 
 ---
 
-Machine information, including OS information
+Reference for DeviceInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Machine information, including OS information
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table) |
 
 ## Contents
 
@@ -92,7 +91,6 @@ Machine information, including OS information
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo)
-- [DeviceInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table)
 
 ## Solutions (7)
 
@@ -219,11 +217,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "FileCreated,UsbDriveMounted"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
 
 **GitHub Only:**
 
@@ -231,15 +229,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [MicrosoftSecurityLicenseUtilization](../content/github-only-microsoftsecuritylicenseutilization-8b43f00a.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "AntivirusScanCompleted"`<br>`OnboardingStatus == "Can be onboarded"` |
 
-## Selection Criteria Summary (4 criteria, 5 total references)
+## Selection Criteria Summary (5 criteria, 6 total references)
 
-References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -247,7 +245,15 @@ References by type: 0 connectors, 5 content items, 0 ASIM parsers, 0 other parse
 | `LoggedOnUsers has "MSOL_"` | - | 1 | - | - | **1** |
 | `OSPlatform contains "Windows"`<br>`OnboardingStatus == "Onboarded"` | - | 1 | - | - | **1** |
 | `ExposureLevel == "High"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **5** | **0** | **0** | **5** |
+| `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **6** | **0** | **0** | **6** |
+
+### ActionType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `FileCreated` | - | 1 | - | - | **1** |
+| `UsbDriveMounted` | - | 1 | - | - | **1** |
 
 ### ExposureLevel
 

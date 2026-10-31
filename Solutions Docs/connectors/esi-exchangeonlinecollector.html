@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exchange Security Insights Online Collector &mdash; Solutions Analyzer</title>
+<title>Deprecated Exchange Security Insights Online Collector &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="exchange-security-insights-online-collector">Exchange Security Insights Online Collector</h1>
+<h1 id="deprecated-exchange-security-insights-online-collector">(Deprecated) Exchange Security Insights Online Collector</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -57,13 +57,9 @@
   <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
   <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-online-collector-using-azure-functions">View on Learn</a></td>
-</tr>
 </tbody>
 </table>
-<p>Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis</p>
+<p>Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis - Deprecated, use Azure Monitor Version</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -78,9 +74,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/esiexchangeonlineconfig-cl.html"><code>ESIExchangeOnlineConfig_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -95,9 +91,10 @@
 </ul>
 <p><strong>Custom Permissions:</strong></p>
 <ul>
+<li><strong>Azure Log Analytics HTTP Data Collector API will be deprecated</strong>: Azure Log Analytics HTTP Data Collector API will be deprecated. Update to the Azure Monitor Log Ingestion API is required. <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment">Learn more</a></li>
 <li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
 <li><strong>microsoft.automation/automationaccounts permissions</strong>: Read and write permissions to create an Azure Automation with a Runbook is required. <a href="https://learn.microsoft.com/en-us/azure/automation/overview">See the documentation to learn more about Automation Account</a>.</li>
-<li><strong>Microsoft.Graph permissions</strong>: Groups.Read, Users.Read and Auditing.Read permissions are required to retrieve user/group information linked to Exchange Online assignments. <a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
+<li><strong>Microsoft.Graph permissions</strong>: Group.Read.All, User.Read.All, and AuditLog.Read.All permissions are required to retrieve user and group information linked to Exchange Online assignments. <a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
 <li><strong>Exchange Online permissions</strong>: Exchange.ManageAsApp permission and <strong>Global Reader</strong> or <strong>Security Reader</strong> Role are needed to retrieve the Exchange Online Security Configuration.<a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
 <li><strong>(Optional) Log Storage permissions</strong>: Storage Blob Data Contributor to a storage account linked to the Automation Account Managed identity or an Application ID is mandatory to store logs.<a href="https://aka.ms/sentinel-ESI-OnlineCollectorPermissions">See the documentation to learn more</a>.</li>
 </ul>
@@ -108,11 +105,11 @@
 <blockquote>
 <p><strong>NOTE - UPDATE</strong></p>
 </blockquote>
-<p>ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>We recommend to Update the Collector to Version <b>7.6.0.0</b> or highier. <br/>The Collector Script Update procedure could be found here : <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI Online Collector Update</a></p>
+<p>ℹ️ <H1><b><u>NOTE - UPDATE:</u></b></H1>Update the collector to version <b>8.0.0.0</b> or later and switch to the Azure Monitor Log Ingestion API. <br/>See <a href='https://aka.ms/sentinel-ESI-OnlineCollectorUpdate'>ESI Online Collector Update</a> and <a href='https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/Documentations/README_LogIngestionAPI.md#upgrade-an-existing-deployment'>Upgrade an existing deployment</a>.</p>
 <blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected. Follow the steps for each Parser to create the Kusto Functions alias : <a href="https://aka.ms/sentinel-ESI-ExchangeConfiguration-Online-parser"><strong>ExchangeConfiguration</strong></a> and <a href="https://aka.ms/sentinel-ESI-ExchangeEnvironmentList-Online-parser"><strong>ExchangeEnvironmentList</strong></a></p>
 </blockquote>
-<p><strong>STEP 1 - Parsers deployment</strong>
+<p><strong>STEP 2 - Parsers deployment</strong>
 <strong>Parser deployment (When using Microsoft Exchange Security Solution, Parsers are automatically deployed)</strong></p>
 <p><strong>1. Download the Parser files</strong></p>
 <p>The latest version of the 2 files <a href="https://aka.ms/sentinel-ESI-ExchangeConfiguration-Online-parser"><strong>ExchangeConfiguration.yaml</strong></a> and <a href="https://aka.ms/sentinel-ESI-ExchangeEnvironmentList-Online-parser"><strong>ExchangeEnvironmentList.yaml</strong></a></p>
@@ -129,7 +126,7 @@ Click save again.</p>
 </blockquote>
 <p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Automation</strong></p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the 'ESI Exchange Online Security Configuration' connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Exchange Online tenant name (contoso.onmicrosoft.com), readily available.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the 'ESI Exchange Online Security Configuration' connector, have the Workspace ID and Workspace Primary Key available and choose a generic environment display name for the workbooks. The template adds the <code>-cloud</code> suffix when needed.</p>
 </blockquote>
 <ul>
 <li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>

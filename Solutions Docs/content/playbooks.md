@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**933 playbooks** across all Microsoft Sentinel solutions.
+**997 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -81,6 +81,12 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [AI-Commandline-Analysis](github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only |
 | [Akamai Guardicore Incident-Enrichment — one-click bootstrap](akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Alert trigger empty playbook](standalone-content-alert-trigger-empty-playbook-3217f7cb.md) | 📄 Standalone Content |
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
+| [ANY.RUN Sandbox - URL Enrichment - Incident Trigger](anyrun-any.run-sandbox-url-enrichment-incident-trigger-52d34934.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
+| [ANY.RUN Submit File to Blob](anyrun-any.run-submit-file-to-blob-dfc44a99.md) | 📦 [ANYRUN](../solutions/anyrun.md) |
 | [Armis Update Alert Status](armis-armis-update-alert-status-f60ff46e.md) | 📦 [Armis](../solutions/armis.md) |
 | [AS-Add-Azure-AD-User-Job-Title-to-Incident](standalone-content-as-add-azure-ad-user-job-title-to-incident-17fd9655.md) | 📄 Standalone Content |
 | [AS-Add-Domains-to-Zscaler-URL-Category](standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone Content |
@@ -212,11 +218,11 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Censys Rescan](censys-censys-rescan-51275b90.md) | 📦 [Censys](../solutions/censys.md) |
 | [Change Incident Severity](standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone Content |
 | [Change-Incident-Severity](standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone Content |
-| [Check Point EM - Importer (Alerts → SecurityAlert → Microsoft Sentinel Incidents)](check-point-cyberint-alerts-check-point-em-importer-alerts-→-securityalert-→-microsoft-sentinel-incidents-01097cbb.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point EM - ThreatCloud Intelligence Feed Enrichment and Triage](check-point-em-threatcloud-intelligence-feed-check-point-em-threatcloud-intelligence-feed-enrichment-and-triage-72637d20.md) | 📦 [Check Point EM ThreatCloud Intelligence Feed](../solutions/check-point-em-threatcloud-intelligence-feed.md) |
 | [Check Point Exposure Management - Credential Leak Validation and Response](check-point-cyberint-alerts-check-point-exposure-management-credential-leak-validation-and-response-9bd4cdc5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Exporter (Microsoft Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-exporter-microsoft-sentinel-→-argos-1931ff3d.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Fetch Attachments On-Demand](check-point-cyberint-alerts-check-point-exposure-management-fetch-attachments-on-demand-08c67669.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [Check Point Exposure Management - Inbound Status Sync (Argos → Microsoft Sentinel)](check-point-cyberint-alerts-check-point-exposure-management-inbound-status-sync-argos-→-microsoft-sentinel-c1921fff.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - IOC Enrichment and Triage](check-point-cyberint-alerts-check-point-exposure-management-ioc-enrichment-and-triage-64607c13.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Manual Status Update (Microsoft Sentinel → Argos)](check-point-cyberint-alerts-check-point-exposure-management-manual-status-update-microsoft-sentinel-→-argos-e0c710a5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Exposure Management - Phishing Takedown](check-point-cyberint-alerts-check-point-exposure-management-phishing-takedown-92d79290.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
@@ -434,29 +440,6 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Get-SOCActions](standalone-content-get-socactions-1f82e832.md) | 📄 Standalone Content |
 | [Get-SOCTasks](standalone-content-get-soctasks-656adbd9.md) | 📄 Standalone Content |
 | [Get-TenableVlun](standalone-content-get-tenablevlun-13bc5a0b.md) | 📄 Standalone Content |
-| [GIBIndicatorProcessor](group-ib-gibindicatorprocessor-0fa780b9.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_APT_ThreatActor](group-ib-gibtia-apt-threatactor-190ca81b.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_APT_Threats](group-ib-gibtia-apt-threats-0bf2e06a.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Attacks_ddos](group-ib-gibtia-attacks-ddos-676a7f45.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Attacks_deface](group-ib-gibtia-attacks-deface-0571809a.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Attacks_phishing](group-ib-gibtia-attacks-phishing-05e0bef0.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Attacks_phishing_kit](group-ib-gibtia-attacks-phishing-kit-176cf63b.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_BP_phishing](group-ib-gibtia-bp-phishing-1f9bfeff.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_BP_phishing_kit](group-ib-gibtia-bp-phishing-kit-0f993020.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Compromised_account](group-ib-gibtia-compromised-account-12e40e7c.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Compromised_card](group-ib-gibtia-compromised-card-4873e37b.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Compromised_imei](group-ib-gibtia-compromised-imei-1e238983.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Compromised_mule](group-ib-gibtia-compromised-mule-500b5f08.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_HI_Threat](group-ib-gibtia-hi-threat-bfac31e2.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_HI_Threat_Actor](group-ib-gibtia-hi-threat-actor-2c1acd08.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Malware_cnc](group-ib-gibtia-malware-cnc-4702dbee.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Malware_Targeted_Malware](group-ib-gibtia-malware-targeted-malware-ece0af42.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_OSI_GitLeak](group-ib-gibtia-osi-gitleak-631460d0.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_OSI_PublicLeak](group-ib-gibtia-osi-publicleak-70bc2712.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_OSI_Vulnerability](group-ib-gibtia-osi-vulnerability-abc46184.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Suspicious_ip_open_proxy](group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Suspicious_ip_socks_proxy](group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
-| [GIBTIA_Suspicious_ip_tor_node](group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
 | [Google Cloud Platform BigQuery - Create Wtchlist with BigQuery Table Data](google-cloud-platform-bigquery-google-cloud-platform-bigquery-create-wtchlist-with-bigquery-table-data-7936a6b4.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | [Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data](google-cloud-platform-bigquery-google-cloud-platform-bigquery-enrich-incident-with-bigquery-table-data-8f3d12e9.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | [Google Cloud Platform BigQuery - Query BigQuery Table](google-cloud-platform-bigquery-google-cloud-platform-bigquery-query-bigquery-table-1eef7d07.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
@@ -472,6 +455,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Google Threat Intelligence - IOC Enrichment](google-threat-intelligence-google-threat-intelligence-ioc-enrichment-37b5ea42.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IoC Stream](google-threat-intelligence-google-threat-intelligence-ioc-stream-01fc772a.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IP Enrichment](google-threat-intelligence-google-threat-intelligence-ip-enrichment-e58dcaa4.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - Session Assistant](google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - Threat List](google-threat-intelligence-google-threat-intelligence-threat-list-c6635a88.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - URL Enrichment](google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - URLScan Enrichment](google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
@@ -480,6 +464,43 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Google Threat Intelligence - Vulnerability Enrichment](google-threat-intelligence-google-threat-intelligence-vulnerability-enrichment-94284269.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GreyNoise-IP-CommunityEnrichment](standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone Content |
 | [GreyNoise-IP-Enrichment](standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone Content |
+| [Group-IB TI - APT threat actor collector](group-ib-group-ib-ti-apt-threat-actor-collector-412ec4d2.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - APT threat report collector](group-ib-group-ib-ti-apt-threat-report-collector-41971843.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Breached database collector](group-ib-group-ib-ti-breached-database-collector-0bd302b2.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Compromised account collector](group-ib-group-ib-ti-compromised-account-collector-ef89becc.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Compromised bank card collector](group-ib-group-ib-ti-compromised-bank-card-collector-0b46c8f4.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Compromised personal data collector](group-ib-group-ib-ti-compromised-personal-data-collector-4502a858.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - DDoS indicator collector](group-ib-group-ib-ti-ddos-indicator-collector-1ba50221.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Defacement indicator collector](group-ib-group-ib-ti-defacement-indicator-collector-68fe642a.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich incident with IOC context](group-ib-group-ib-ti-enrich-incident-with-ioc-context-6eba8145.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich incident with WHOIS data](group-ib-group-ib-ti-enrich-incident-with-whois-data-c983f2c6.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich single domain entity with IOC context](group-ib-group-ib-ti-enrich-single-domain-entity-with-ioc-context-a3032bca.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich single file hash entity with IOC context](group-ib-group-ib-ti-enrich-single-file-hash-entity-with-ioc-context-7b257dd4.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich single IP entity with IOC context](group-ib-group-ib-ti-enrich-single-ip-entity-with-ioc-context-1806f7b7.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Enrich single URL entity with IOC context](group-ib-group-ib-ti-enrich-single-url-entity-with-ioc-context-3ccc57e4.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Git repository leak collector](group-ib-group-ib-ti-git-repository-leak-collector-de7684d8.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Hacker intelligence threat actor collector](group-ib-group-ib-ti-hacker-intelligence-threat-actor-collector-cf0c8722.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Hacker intelligence threat collector](group-ib-group-ib-ti-hacker-intelligence-threat-collector-d9f670a3.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Indicator processor (required adapter)](group-ib-group-ib-ti-indicator-processor-required-adapter-4692ecb4.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Malware C2 indicator collector](group-ib-group-ib-ti-malware-c2-indicator-collector-ebf2ee2e.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Malware configuration indicator collector](group-ib-group-ib-ti-malware-configuration-indicator-collector-9e7b6546.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Masked card collector](group-ib-group-ib-ti-masked-card-collector-c497904e.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Open proxy indicator collector](group-ib-group-ib-ti-open-proxy-indicator-collector-0337e2d1.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Open threats collector](group-ib-group-ib-ti-open-threats-collector-ee483c55.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Phishing indicator collector](group-ib-group-ib-ti-phishing-indicator-collector-a628e258.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Phishing kit indicator collector](group-ib-group-ib-ti-phishing-kit-indicator-collector-30c509a7.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Primary IOC collector](group-ib-group-ib-ti-primary-ioc-collector-a1d55ae5.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Public leak collector](group-ib-group-ib-ti-public-leak-collector-ffa38a05.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Scanner indicator collector](group-ib-group-ib-ti-scanner-indicator-collector-226cbf96.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Score a single IP entity](group-ib-group-ib-ti-score-a-single-ip-entity-ed3c7eb3.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Score incident IP addresses](group-ib-group-ib-ti-score-incident-ip-addresses-16ea5229.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - SOCKS proxy indicator collector](group-ib-group-ib-ti-socks-proxy-indicator-collector-9207a1ca.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Targeted malware collector](group-ib-group-ib-ti-targeted-malware-collector-61a1f026.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Tor node indicator collector](group-ib-group-ib-ti-tor-node-indicator-collector-9ec32614.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - VPN indicator collector](group-ib-group-ib-ti-vpn-indicator-collector-1471577d.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - Vulnerability collector](group-ib-group-ib-ti-vulnerability-collector-250664cb.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - WHOIS lookup for a single domain entity](group-ib-group-ib-ti-whois-lookup-for-a-single-domain-entity-5ca6b2b6.md) | 📦 [Group-IB](../solutions/group-ib.md) |
+| [Group-IB TI - WHOIS lookup for a single IP entity](group-ib-group-ib-ti-whois-lookup-for-a-single-ip-entity-c670f284.md) | 📦 [Group-IB](../solutions/group-ib.md) |
 | [Guardicore-EnrichmentRunner](akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Guardicore-Import-Assets](standalone-content-guardicore-import-assets-1db1ba64.md) | 📄 Standalone Content |
 | [Guardicore-Import-Incidents](standalone-content-guardicore-import-incidents-46460c2e.md) | 📄 Standalone Content |
@@ -730,6 +751,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
+| [QCrypton PQC — notify on new vulnerable finding](qcryptonpqcscanner-qcrypton-pqc-—-notify-on-new-vulnerable-finding-91da7c15.md) | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [QualysVM-GetAssetDetails](qualysvm-qualysvm-getassetdetails-0f1ab8e4.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
 | [QualysVM-GetAssets-ByCVEID](qualysvm-qualysvm-getassets-bycveid-c760c473.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
 | [QualysVM-GetAssets-ByOpenPort](qualysvm-qualysvm-getassets-byopenport-f3f9bb94.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
@@ -891,6 +913,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Shodan - Enrich Incident IPs and Domain Names](shodan-shodan-enrich-incident-ips-and-domain-names-b4236aa5.md) | 📦 [Shodan](../solutions/shodan.md) |
 | [Shodan - Enrich IP Address](shodan-shodan-enrich-ip-address-506b2861.md) | 📦 [Shodan](../solutions/shodan.md) |
 | [SIGNL4 Alerting and Response](signl4-signl4-alerting-and-response-4fa73700.md) | 📦 [SIGNL4](../solutions/signl4.md) |
+| [SilentPush-DomainExportEnrichment-Full](silentpush-silentpush-domainexportenrichment-full-12dc3b20.md) | 📦 [SilentPush](../solutions/silentpush.md) |
+| [SilentPush-DomainExportEnrichment-Sample](silentpush-silentpush-domainexportenrichment-sample-a0489986.md) | 📦 [SilentPush](../solutions/silentpush.md) |
+| [SilentPush-IPExportEnrichment-Full](silentpush-silentpush-ipexportenrichment-full-dc1b4017.md) | 📦 [SilentPush](../solutions/silentpush.md) |
+| [SilentPush-IPExportEnrichment-Sample](silentpush-silentpush-ipexportenrichment-sample-c4239c43.md) | 📦 [SilentPush](../solutions/silentpush.md) |
 | [SlashNext Phishing Incident Investigation Playbook](slashnext-slashnext-phishing-incident-investigation-playbook-ad170d4d.md) | 📦 [SlashNext](../solutions/slashnext.md) |
 | [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](slashnext-siem-slashnext-security-events-for-microsoft-sentinel-get-customer-incidents-and-log-a81ddf6c.md) | 📦 [SlashNext SIEM](../solutions/slashnext-siem.md) |
 | [SlashNext Web Access Log Assessment](slashnext-slashnext-web-access-log-assessment-6996dff4.md) | 📦 [SlashNext](../solutions/slashnext.md) |
@@ -908,8 +934,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [SpyCloud Breach Information - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [SpyCloud Conditional Access Playbook](spycloud-enterprise-protection-ccf-spycloud-conditional-access-playbook-ba645b13.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [SpyCloud Malware Information - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
+| [SpyCloud MDE Automation Playbook](spycloud-enterprise-protection-ccf-spycloud-mde-automation-playbook-3e87e024.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
+| [SpyCloud Session Revocation Playbook](spycloud-enterprise-protection-ccf-spycloud-session-revocation-playbook-9a81870a.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [SpyCloud Watachlist data - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
-| [SpyCloud_MDE_Automation](spycloud-enterprise-protection-ccf-spycloud-mde-automation-50659b15.md) | 📦 [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone Content |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone Content |
 | [StealthTalk - Alert to Microsoft Teams](stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |
@@ -1026,7 +1053,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Veeam-SetupConnections](veeam-veeam-setupconnections-e3e98b5f.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam-StartQuickBackup](veeam-veeam-startquickbackup-3a35729c.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [Veeam-StartSecurityComplianceAnalyzer](veeam-veeam-startsecuritycomplianceanalyzer-80610f72.md) | 📦 [Veeam](../solutions/veeam.md) |
-| [VMRay Email Attachment Analyis](vmray-vmray-email-attachment-analyis-2ae966ed.md) | 📦 [VMRay](../solutions/vmray.md) |
+| [VMRay Email Attachment Analysis (Defender-visible)](vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.md) | 📦 [VMRay](../solutions/vmray.md) |
 | [VMRay URL Analyis](vmray-vmray-url-analyis-9fed46b1.md) | 📦 [VMRay](../solutions/vmray.md) |
 
 ## W
@@ -1048,6 +1075,43 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Whisper Security - Get BGP History](whisper-whisper-security-get-bgp-history-150c0325.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [Whisper Security - Get Infrastructure Chain](whisper-whisper-security-get-infrastructure-chain-77ad6550.md) | 📦 [Whisper](../solutions/whisper.md) |
 | [Whisper Security - Get WHOIS History](whisper-whisper-security-get-whois-history-ccdf0e6e.md) | 📦 [Whisper](../solutions/whisper.md) |
+| [workflow](group-ib-workflow-3aa5960e.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-6c121767.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-0d34dd4b.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-9f2b770f.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-3cd7a8a7.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-54537823.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-ba1e2db8.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-44643bf5.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-ec73ab37.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-fe8656b4.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-0bd85cab.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-4054d138.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-43b129a4.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-64a91589.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-68403aed.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-75f04dbb.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-ab5b6ff1.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-d060ef46.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-1b6e9c0c.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-26b92ce7.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-ba077bd7.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-8ee96f2d.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-38cb684e.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-b37ab530.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-cd905e7e.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-de672ca8.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-b6047034.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-950e0818.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-4499a861.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-364d5544.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-751fce10.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-fc7a60be.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-2bd9db91.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-a5b55ad6.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-4e7911e4.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-d24db843.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
+| [workflow](group-ib-workflow-71c2e698.md) ⚠️ | 📦 [Group-IB](../solutions/group-ib.md) |
 | [workflow](sap-workflow-3298b428.md) ⚠️ | 📦 [SAP](../solutions/sap.md) |
 | [workflow](sap-workflow-20a8ae88.md) ⚠️ | 📦 [SAP](../solutions/sap.md) |
 

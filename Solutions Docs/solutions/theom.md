@@ -1,6 +1,4 @@
-# Theom for Microsoft Sentinel Solution - Data Cloud and Data Lakehouse Attack Detection
-
-*Solution: Theom*
+# Theom
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="Theom Logo" width="75" height="75">
 
@@ -12,23 +10,26 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** | Theom |
-| **Support Tier** | Partner |
-| **Support Link** | [https://www.theom.ai](https://www.theom.ai) |
+| **Publisher** | Microsoft |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 3.0.0 |
+| **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-04 |
+| **Last Updated** | 2026-10-12 |
 | **Solution Folder** | [Theom](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/theominc1667512729960.theom_sentinel) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-theom) · Popularity: ⚪ Very Low (0%) |
 
-[Theom](https://www.theom.ai/) for Microsoft Sentinel helps you prevent data breaches in the cloud by enabling your Microsoft Sentinel instance to receive critical alerts on data security and access from your Theom environment.
+[Theom](https://www.theom.ai/) for Microsoft Sentinel receives data security and access alerts from your Theom environment. It includes a Codeless Connector Framework push connector and a shared Theom_Alerts parser and workbook for legacy and CCF alerts.
 
 **Underlying Microsoft Technologies used:**
 
-This solution has a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+This solution depends on the following technologies, which may result in additional ingestion or operational costs:
 
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+a. [Azure Monitor Logs Ingestion API (Data Collection Endpoint/Data Collection Rule)](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
+
+b. [Azure Monitor HTTP Data Collector API (legacy connector)](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
 
 ## Contents
 
@@ -38,20 +39,22 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Theom](../connectors/theom.md) 🔶
+- [Theom (via Codeless Connector Framework)](../connectors/theomconnector.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | [Theom](../connectors/theom.md) | Analytics, Workbooks |
+| [`TheomAlertsV2_CL`](../tables/theomalertsv2-cl.md) | [Theom (via Codeless Connector Framework)](../connectors/theomconnector.md) | - |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | [Theom](../connectors/theom.md) | Analytics |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -94,13 +97,15 @@ This solution includes **21 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Theom](../content/theom-theom-71349edc.md) | [`TheomAlerts_CL`](../tables/theomalerts-cl.md) |
+| [Theom](../content/theom-theom-71349edc.md) | - |
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
-|-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       |     04-12-2023                 | Updated all **Analytical Rule**  with entity mappings     |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.2.0 | 27-10-2026 | Applied GA CCF **Data Connector** updates. Added the Theom_Alerts **Parser** to normalize legacy and CCF alerts while preserving the existing TheomAlertsV2 **Parser** unchanged, and updated the **Workbook** to use Theom_Alerts; regenerated package templates with secure nested parameter types |
+| 3.1.0 | 30-09-2026 | Added a new Theom **Data Connector** using the Codeless Connector Framework with DCR-based ingestion and an alias parser; corrected its public documentation and technology references, **Analytical Rule** branding, and package ARM parameter types |
+| 3.0.0 | 04-12-2023 | Updated all **Analytical Rules** with entity mappings |
 
 ---
 

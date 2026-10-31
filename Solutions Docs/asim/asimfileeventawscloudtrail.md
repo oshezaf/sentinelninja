@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AWS Cloud Trail |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAWSCloudTrail.md)) |
-| **Last Updated** | Feb 04, 2026 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventAWSCloudTrail.md)) |
+| **Last Updated** | Oct 28, 2026 |
 | **Unifying Parser** | [ASimFileEvent](asimfileevent.md) |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEventAWSCloudTrail.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEventAWSCloudTrail.yaml) |
 

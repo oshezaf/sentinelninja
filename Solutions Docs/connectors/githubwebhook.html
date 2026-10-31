@@ -61,6 +61,7 @@
 </table>
 <p>The <a href="https://www.github.com">GitHub</a> webhook data connector provides the capability to ingest GitHub subscribed events into Microsoft Sentinel using <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads">GitHub webhook events</a>. The connector provides ability to get events into Microsoft Sentinel which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
 <p><strong>Note:</strong> If you are intended to ingest Github Audit logs, Please refer to GitHub Enterprise Audit Log Connector from &quot;<strong>Data Connectors</strong>&quot; gallery.</p>
+<p><strong>Azure Government Cloud:</strong> This V1 connector is <strong>not supported</strong> in Azure Government Cloud. Use <strong>GitHub (using Webhooks) V2</strong>, which uses the Azure Monitor Logs Ingestion API with managed identity, instead. V2 is also the recommended replacement for existing V1 deployments. Follow the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/README.md#migrating-from-v1">V1-to-V2 migration instructions</a>.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -75,9 +76,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/githubscanaudit-cl.html"><code>githubscanaudit_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -143,9 +144,9 @@
 </li>
 <li><p>After successful deployment of the function app, follow next steps for configuring it.</p>
 <p><strong>Step 2 - Configure the Function App</strong></p>
-<ol>
-<li>Go to Azure Portal for the Function App configuration.</li>
-</ol>
+<p>These V1 configuration instructions apply to Azure public cloud only. For Azure Government Cloud, use <strong>GitHub (using Webhooks) V2</strong> instead.</p>
+</li>
+<li><p>Go to Azure Portal for the Function App configuration.</p>
 </li>
 <li><p>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</p>
 </li>
@@ -153,8 +154,7 @@
 </li>
 <li><p>Add each of the following application settings individually, with their respective string values (case-sensitive):
 WorkspaceID
-WorkspaceKey
-logAnalyticsUri (optional) - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</p>
+WorkspaceKey</p>
 </li>
 <li><p>Once all application settings have been entered, click <strong>Save</strong>.</p>
 </li>
@@ -182,6 +182,9 @@ logAnalyticsUri (optional) - Use logAnalyticsUri to override the log analytics A
 </blockquote>
 <h1 id="ingest-github-events-into-sentinel-through-webhook-dataconnector">Ingest GitHub events into sentinel through Webhook dataconnector</h1>
 <p>Author: Prathibha Tadikamalla</p>
+<blockquote>
+<p><strong>Azure Government Cloud:</strong> This V1 connector is <strong>not supported</strong> in Azure Government Cloud. Use <a href="../GithubWebhookV2/README.md#azure-public-cloud-and-azure-government">GitHub (using Webhooks) V2</a> instead. V2 is also the recommended replacement for existing V1 deployments; follow the <a href="../GithubWebhookV2/README.md#migrating-from-v1">V1-to-V2 migration instructions</a>.</p>
+</blockquote>
 <p>The Azure function based github dataconnector using webhook pushes all the github subscribed events into Sentinel. All these events will be placed into the table called &quot;githubscanaudit_CL&quot;. As of now the solution has 3 parsers based on the below events:</p>
 <ul>
 <li><a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#code_scanning_alert">Code Scanning Alert</a></li>
@@ -192,9 +195,8 @@ logAnalyticsUri (optional) - Use logAnalyticsUri to override the log analytics A
 <h2 id="pre-requisites"><strong>Pre-requisites</strong></h2>
 <h2 id="configuration-steps-to-deploy-function-app">Configuration Steps to Deploy Function App</h2>
 <ol>
-<li><p>Click on Deploy to Azure (For both Commercial &amp; Azure GOV)<br />
-<a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy-gov"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<li><p>Click on Deploy to Azure (Azure public cloud only).
+<a href="https://aka.ms/sentinel-GitHubwebhookAPI-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 </li>
 <li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong><br />
 <strong>Note</strong><br />

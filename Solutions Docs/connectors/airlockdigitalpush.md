@@ -19,6 +19,7 @@
 | **CCF Configuration** | [AirlockDigitalPush_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalPush_CCF/AirlockDigitalPush_PollerConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#airlock-digital-push) |
 
 The [Airlock Digital](https://www.airlockdigital.com/) **Push** connector streams execution history, server activity, and policy change logs into Microsoft Sentinel in near real time. It supports both self-hosted servers and Airlock Digital SaaS running v7.0 or higher. Events are pushed by Airlock's external logging feature as they occur, so there is no polling delay, and authentication uses a Microsoft Entra application. This is the recommended connector for Airlock Digital v7.0 and higher. For self-hosted servers older than v7.0, use the **Airlock Digital (Poll)** connector.
 

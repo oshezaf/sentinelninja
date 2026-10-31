@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-18 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Azure Web Application Firewall (WAF)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal) · Popularity: 🟡 Low (38%) |
 
 The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows you to ingest Diagnostic Metrics from Application Gateway, Front Door and CDN into Microsoft Sentinel.
 
@@ -90,6 +91,7 @@ This solution includes **14 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 |-------------|--------------------------------|---------------------------------------------------------------------------|
+| 3.2.2       | 17-04-2026                     | Added Defender XDR detections and workbooks for V3.1 packaging.           |
 | 3.0.2       | 06-02-2025                     | Extracting transactionId_g and hostname_s from the AdditionalFields column using parse_json and Removing the now unavailable details_message_s and details_data_s fields from **Analytic Rules** App Gateway WAF - SQLi Detection and App Gateway WAF - XSS Detection.|
 | 3.0.1       | 10-06-2024                     | Added new **Analytic Rules** [App Gateway WAF - SQLi Detection and App Gateway WAF - XSS Detection]    |  
 | 3.0.0       | 21-12-2023                     | Added ResourceProvide condition as it is standard for Application Gateway WAF logs  |

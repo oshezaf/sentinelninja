@@ -1,4 +1,4 @@
-# Netskope Alerts and Events (via Codeless Connector Framework)
+# Netskope Alerts and Events
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75">
 
@@ -14,7 +14,7 @@
 | **Publisher** | Netskope |
 | **Used in Solutions** | [Netskopev2](../solutions/netskopev2.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
-| **Connector Definition Files** | [NetskopeAlertsEvents_ConnectorDefination.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefination.json) |
+| **Connector Definition Files** | [NetskopeAlertsEvents_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefinition.json) |
 | **DCR Definition Files** | [NetskopeAlertsEvents_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json) |
 | **CCF Configuration** | [NetskopeAlertsEvents_Poller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_Poller.json) |
 | **CCF Capabilities** | `APIKey` |
@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ✓ | ✓ | ✓ |
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | ? | ✓ | ? |
 | [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | ? | ✓ | ? |
@@ -125,13 +125,14 @@ Enter your Netskope organisation url & API Token below:
 - **Netskope Events Page** (select)
   - Yes
   - No
-**OPTIONAL: Specify the Index the API uses.**
 
-  **Configuring the index is optional and only required in advanced scenario's.** 
+**3. OPTIONAL: Specify the Index the API uses.**
+
+**Configuring the index is optional and only required in advanced scenario's.** 
  Netskope uses an [index](https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints/#how-do-iterator-endpoints-function) to retrieve events. In some advanced cases (consuming the event in multiple Microsoft Sentinel workspaces, or pre-fatiguing the index to only retrieve recent data), a customer might want to have direct control over the index.
-  - **Index**: NetskopeCCP
+- **Index**: NetskopeCCP
 
-**3. STEP 3 - Click Connect**
+**4. STEP 3 - Click Connect**
 
 Verify all fields above were filled in correctly. Press the Connect to connect Netskope to Microsoft Sentinel.
 - Click 'connect' to establish connection

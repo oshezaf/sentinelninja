@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection,Security - Cloud Security |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Cloud Identity Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cloudthreatdetection) · Popularity: 🔵 Medium (55%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-cloudthreatdetection) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
 As more and more companies move to the cloud - attacks to the cloud identity system are becoming more commonplace. The **Cloud Identity Threat Protection Essentials** solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc. Rapid detection of these attacks can enable organizations to respond faster and stop them from progressing further.
@@ -105,12 +106,13 @@ This solution includes **10 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                         |
-|-------------|--------------------------------|----------------------------------------------------------------------------|
-| 3.0.3       | 28-02-2024                     | Removed usage of BlastRadius from **Hunting Queries**                      |
-| 3.0.2       | 09-02-2024                     | Tagged for dependent solutions for deployment                              |
-| 3.0.1       | 16-01-2024                     | Sub-techniques added for **Analytical Rules**   							|
-| 3.0.0       | 07-11-2023                     | Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.   |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                        |
+|-------------|--------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR custom detections and migrated solution package to V3.1 format.                        |
+| 3.0.3       | 28-02-2024                     | Removed usage of BlastRadius from **Hunting Queries**                                                     |
+| 3.0.2       | 09-02-2024                     | Tagged for dependent solutions for deployment                                                             |
+| 3.0.1       | 16-01-2024                     | Sub-techniques added for **Analytical Rules**                                                             |
+| 3.0.0       | 07-11-2023                     | Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID.                   |
 
 ---
 

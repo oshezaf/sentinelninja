@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [RFI_AlertImporter_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Data%20Connectors/RFI_AlertImporter_ConnectorDefinition.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#recorded-future-identity---playbook-alert-importer) |
 
 Imports Recorded Future Identity Playbook Alerts into Microsoft Sentinel. Enables incident creation via Analytic Rules on the `RFI_PlaybookAlertResults_V2_CL` table. For full installation details, see the [readme](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/readme.md).
 

@@ -61,6 +61,10 @@
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
   <td style="text-align:left"><code>APIKey</code>, <code>Nested</code></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#securityscorecard-factors-via-codeless-connector-framework">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The SecurityScorecard Factors (via Codeless Connector Framework) connector ingests company factor-score history into Microsoft Sentinel. Add one connection per SecurityScorecard portfolio you want to monitor — each connection is managed independently in the grid below. Raw rows land in <code>SecurityScorecardFactorHistory_CL</code>; query via the <code>SecurityScorecardFactor</code> parser to get day-over-day deltas with factor metadata, matching the legacy Function App schema.</p>

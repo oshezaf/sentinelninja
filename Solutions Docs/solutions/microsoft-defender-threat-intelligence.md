@@ -14,13 +14,14 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Intelligence,Security - Automation (SOAR) |
-| **Version** | 3.0.2 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-23 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Microsoft Defender Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderthreatint) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (94%) |
 
-Microsoft centralizes numerous data sets into a single platform, Microsoft Defender Threat Intelligence [(MDTI)](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti), making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases and enabling automation for Incident management in Microsoft Sentinel.
+Microsoft centralizes numerous data sets into a single platform, Microsoft Defender Threat Intelligence [(MDTI)](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti), making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases and enabling automation for Incident management in Microsoft Sentinel. This solution also includes a Defender XDR workbook for visualizing and analyzing threat intelligence indicators in Microsoft Defender XDR.
 
 ## Contents
 
@@ -82,6 +83,7 @@ This solution includes **8 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR **Workbook** for Microsoft Defender Threat Intelligence migration and repackaged the V3.1 solution. |
 | 3.0.2       | 20-09-2025                     | Updated **Playbooks** to use managde identity for authentication. |
 | 3.0.1       | 01-12-2024                     | Added **Playbooks** for enhanced solution workflows. |
 | 3.0.0       | 11-11-2023                     | Modified text as there is rebranding from Azure Active Directory to Microsoft Entra ID. |

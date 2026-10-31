@@ -19,7 +19,7 @@
 <p>Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.</p>
 <p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <strong>Connectors</strong> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="statistics.html">📊</a></p>
 <hr />
-<p><strong>706 unique connectors</strong> (544 active, 162 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>724 unique connectors</strong> (561 active, 163 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <hr />
 <p>Browse connectors alphabetically:</p>
 <p><strong>Jump to:</strong> <a href="##">#</a> | <a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> | <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> | <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> | <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> | <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> | <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> | <a href="#v">V</a> | <a href="#w">W</a> | <a href="#x">X</a> | <a href="#z">Z</a> | <a href="#deprecated-connectors">Deprecated</a></p>
@@ -52,7 +52,23 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/azurekid/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/esi-exchangeonpremisescollector.html">(Deprecated) Exchange Security Insights On-Premises Collector</a> 🔶</td>
+  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/esi-exchangeonlinecollector.html">(Deprecated) Exchange Security Insights Online Collector</a> 🔶</td>
+  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/1password.html">1Password</a></td>
   <td style="text-align:left">1Password</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
@@ -60,7 +76,7 @@
   <td style="text-align:left"><a href="solutions/1password.html">1Password</a></td>
 </tr>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/azurekid/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/1passwordccpdefinition.html">1Password (Serverless)</a></td>
   <td style="text-align:left">1Password</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
@@ -323,6 +339,14 @@
   <td style="text-align:left"><a href="solutions/42crunch-api-protection.html">42Crunch API Protection</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SAPBTP.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/sapbtpavl.html">Application Vulnerability Report for SAP BTP</a></td>
+  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/sap-btp.html">SAP BTP</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ARGOSCloudSecurity/Workbooks/images/logos/argos-logo.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/argoscloudsecurity.html">ARGOS Cloud Security</a> 🔶</td>
   <td style="text-align:left">ARGOS Cloud Security</td>
@@ -379,7 +403,7 @@
   <td style="text-align:left"><a href="solutions/integration-for-atlassian-beacon.html">Integration for Atlassian Beacon</a></td>
 </tr>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/atlassianconfluence.html">Atlassian Confluence</a> ⚠️ 🔍</td>
   <td style="text-align:left">Atlassian</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
@@ -387,7 +411,7 @@
   <td style="text-align:left"><a href="solutions/atlassianconfluenceaudit.html">AtlassianConfluenceAudit</a></td>
 </tr>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/atlassianconfluenceconnector.html">Atlassian Confluence Audit (via Codeless Connector Framework)</a></td>
   <td style="text-align:left">Microsoft</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
@@ -508,7 +532,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureDevOps.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/azuredevopsauditlogs.html">Azure DevOps Audit Logs (via Codeless Connector Platform)</a></td>
+  <td style="text-align:left"><a href="connectors/azuredevopsauditlogs.html">Azure DevOps Audit Logs (via Codeless Connector Framework)</a></td>
   <td style="text-align:left">Microsoft</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
@@ -738,7 +762,7 @@
 <tbody>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/catonetworks.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/catonetworkseventspush.html">Cato Networks Events (Push)</a> ⚠️</td>
+  <td style="text-align:left"><a href="connectors/catonetworkseventspush.html">Cato Networks Events (Push)</a></td>
   <td style="text-align:left">Cato Networks</td>
   <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
   <td style="text-align:center">1</td>
@@ -893,7 +917,7 @@
   <td style="text-align:left"><a href="connectors/ciscomerakiconnector.html">Cisco Meraki Events (using REST API) (via Codeless Connector Framework)</a></td>
   <td style="text-align:left">Microsoft</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
-  <td style="text-align:center">7</td>
+  <td style="text-align:center">8</td>
   <td style="text-align:left"><a href="solutions/cisco-meraki-events-via-rest-api.html">Cisco Meraki Events via REST API</a></td>
 </tr>
 <tr>
@@ -1053,7 +1077,7 @@
   <td style="text-align:left"><a href="connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a></td>
   <td style="text-align:left">Corelight</td>
   <td style="text-align:left"><a href="methods/unknown-custom-log.html">Unknown (Custom Log)</a></td>
-  <td style="text-align:center">238</td>
+  <td style="text-align:center">250</td>
   <td style="text-align:left"><a href="solutions/corelight.html">Corelight</a></td>
 </tr>
 <tr>
@@ -1146,27 +1170,11 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/cyberarkepmccpdefinition.html">CyberArk EPM</a></td>
-  <td style="text-align:left">CyberArk</td>
-  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/cyberarkepm.html">CyberArkEPM</a></td>
-</tr>
-<tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/cyberarkaudit.html">CyberArkAudit</a> ⚠️ 🔍</td>
   <td style="text-align:left">CyberArk</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/cyberarkaudit.html">CyberArkAudit</a></td>
-</tr>
-<tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/cyberarkepm.html">CyberArkEPM</a></td>
-  <td style="text-align:left">CyberArk</td>
-  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/cyberarkepm.html">CyberArkEPM</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Cybereinforce/Logo/cybereinforce-logo.png" alt="" width="40" height="40"></td>
@@ -1368,6 +1376,14 @@
   <td style="text-align:left"><a href="solutions/datawiza.html">Datawiza</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DelineaLogo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/delineaplatformconnector.html">Delinea Platform Audit Events</a></td>
+  <td style="text-align:left">Delinea</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/delinea-platform.html">Delinea Platform</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/signl4.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/derdacksignl4.html">Derdack SIGNL4</a> 🔶</td>
   <td style="text-align:left">Derdack</td>
@@ -1528,7 +1544,7 @@
 <tbody>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/egressdefendpolling.html">Egress Defend</a> ⚠️ 🔶</td>
+  <td style="text-align:left"><a href="connectors/egressdefendpolling.html">Egress Defend</a> 🔶</td>
   <td style="text-align:left">Egress Software Technologies</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">2</td>
@@ -1536,7 +1552,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/egressdefendaudit.html">Egress Defend v2</a> ⚠️ 🔶</td>
+  <td style="text-align:left"><a href="connectors/egressdefendaudit.html">Egress Defend v2</a> 🔶</td>
   <td style="text-align:left">Egress Software Technologies</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
@@ -1608,17 +1624,17 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> 🔶</td>
+  <td style="text-align:left"><a href="connectors/esi-modernexchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector (Azure Monitor)</a> 🔶</td>
   <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/esi-exchangeonlinecollector.html">Exchange Security Insights Online Collector</a> 🔶</td>
+  <td style="text-align:left"><a href="connectors/esi-modernexchangeonlinecollector.html">Exchange Security Insights Online Collector (Azure Monitor)</a> 🔶</td>
   <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
 </tr>
@@ -1676,6 +1692,14 @@
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">2</td>
   <td style="text-align:left"><a href="solutions/filewall-for-microsoft-365.html">Filewall for Microsoft 365</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/firecompass.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/firecompassrisksconnector.html">FireCompass Risks</a></td>
+  <td style="text-align:left">FireCompass</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/firecompassrisks.html">FireCompassRisks</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Flare.svg" alt="" width="40" height="40"></td>
@@ -2052,6 +2076,14 @@
   <td style="text-align:left"><a href="solutions/holmsecurity.html">HolmSecurity</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/HoneyForgeLogo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/honeyforge.html">HoneyForge Threat Detection</a> ⚠️</td>
+  <td style="text-align:left">BUI</td>
+  <td style="text-align:left"><a href="methods/ama.html">AMA</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/honeyforge.html">HoneyForge</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Hubspot.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/hubspotdefinition.html">Hubspot (via Codeless Connector Framework)</a> ⚠️</td>
   <td style="text-align:left">Community</td>
@@ -2097,6 +2129,22 @@
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/cyberarkaudit.html">CyberArkAudit</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/idira_RGB_logo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/cyberarkepm.html">Idira EPM</a></td>
+  <td style="text-align:left">Idira</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/cyberarkepm.html">CyberArkEPM</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/idira_RGB_logo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/cyberarkepmccpdefinition.html">Idira EPM</a></td>
+  <td style="text-align:left">Idira</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/cyberarkepm.html">CyberArkEPM</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
@@ -2559,6 +2607,14 @@
   <td style="text-align:left"><a href="solutions/mailrisk.html">MailRisk</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/MenloSecurity.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/menlosecurityconnector.html">Menlo Security</a></td>
+  <td style="text-align:left">Menlo Security</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:left"><a href="solutions/menlosecurity.html">MenloSecurity</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/meshcloud.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/meshstackeventlogsdefinition.html">meshStack Event Logs</a></td>
   <td style="text-align:left">meshcloud</td>
@@ -2631,14 +2687,6 @@
   <td style="text-align:left"><a href="solutions/microsoft-copilot.html">Microsoft Copilot</a></td>
 </tr>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/microsoftdataverse.html">Microsoft Dataverse</a> ➕</td>
-  <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/unknown.html">Unknown</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
-</tr>
-<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/microsoftcloudappsecurity.html">Microsoft Defender for Cloud Apps</a></td>
   <td style="text-align:left">Microsoft</td>
@@ -2690,9 +2738,25 @@
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a> ➕</td>
   <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/defender.html">Defender</a></td>
+  <td style="text-align:left"><a href="methods/native.html">Native</a></td>
   <td style="text-align:center">19</td>
   <td style="text-align:left"><a href="solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/XdrLogRaider.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/xdrlograiderdefenderxdr.html">Microsoft Defender XDR (XdrLogRaider)</a> ⚠️</td>
+  <td style="text-align:left">Alex Kefallonitis</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">11</td>
+  <td style="text-align:left"><a href="solutions/xdrlograider.html">XdrLogRaider</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/XdrLogRaider.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/%5Bparameters-%27connectordefinitionname%27-%5D.html">Microsoft Defender XDR (XdrLogRaider)</a> ⚠️ 🔍</td>
+  <td style="text-align:left">Alex Kefallonitis</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">11</td>
+  <td style="text-align:left"><a href="solutions/xdrlograider.html">XdrLogRaider</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/MicrosoftEntraID_logo.svg" alt="" width="40" height="40"></td>
@@ -2749,22 +2813,6 @@
   <td style="text-align:left"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
-</tr>
-<tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/microsoftpowerautomate.html">Microsoft Power Automate</a> ➕</td>
-  <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/unknown.html">Unknown</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
-</tr>
-<tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/microsoftpowerplatformadminactivity.html">Microsoft Power Platform Admin Activity</a> ➕</td>
-  <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/unknown.html">Unknown</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/microsoft-business-applications.html">Microsoft Business Applications</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerBILogo.svg" alt="" width="40" height="40"></td>
@@ -2864,6 +2912,14 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/miroaiinteractionlogsdataconnector.html">Miro AI Interaction Logs (Beta) (Enterprise Plan + Enterprise Guard)</a></td>
+  <td style="text-align:left">Miro</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/miro.html">Miro</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/miroauditlogsdataconnector.html">Miro Audit Logs (Enterprise Plan)</a></td>
   <td style="text-align:left">Miro</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
@@ -2958,12 +3014,28 @@
   <td style="text-align:left"><a href="solutions/netclean-proactive.html">NetClean ProActive</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/netcraft.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/netcraftintegrationgatewaydefinition.html">Netcraft Integration Gateway</a></td>
+  <td style="text-align:left">Netcraft</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:left"><a href="solutions/netcraftintegrationgateway.html">NetcraftIntegrationGateway</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/netskope.html">Netskope</a> 🔶</td>
   <td style="text-align:left">Netskope</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/netskope.html">Netskope</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/netskopeaisecops.html">Netskope AI SecOps</a></td>
+  <td style="text-align:left">Netskope</td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/netskopev2.html">Netskopev2</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
@@ -2975,10 +3047,18 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/netskopealertsevents.html">Netskope Alerts and Events (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"><a href="connectors/netskopealertsevents.html">Netskope Alerts and Events</a></td>
   <td style="text-align:left">Netskope</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">9</td>
+  <td style="text-align:left"><a href="solutions/netskopev2.html">Netskopev2</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/netskopeclientstatus.html">Netskope Client Status</a></td>
+  <td style="text-align:left">Netskope</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/netskopev2.html">Netskopev2</a></td>
 </tr>
 <tr>
@@ -2996,14 +3076,6 @@
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/netskopewebtx.html">NetskopeWebTx</a></td>
-</tr>
-<tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/netskopewebtransactionsdataconnector.html">Netskope Web Transactions Data Connector</a> 🔶</td>
-  <td style="text-align:left">Netskope</td>
-  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:left"><a href="solutions/netskopev2.html">Netskopev2</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureNetworkSecurityGroups.svg" alt="" width="40" height="40"></td>
@@ -3260,6 +3332,14 @@
   <td style="text-align:left"><a href="solutions/pingone.html">PingOne</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/esi-collectormessagetrackingplugin.html">Plugin 'Message Tracking' for Exchange Security Insights Online Collector (Azure Monitor)</a> 🔶</td>
+  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Prancer.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/prancerlogdata.html">Prancer Data Connector</a> 🔶</td>
   <td style="text-align:left">Prancer</td>
@@ -3277,7 +3357,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PRODAFTUstaIoC.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a> ⚠️</td>
+  <td style="text-align:left"><a href="connectors/prodaftustaiocuploadindicators.html">PRODAFT USTA - IoC Threat Intelligence</a></td>
   <td style="text-align:left">PRODAFT</td>
   <td style="text-align:left"><a href="methods/azure-function-ti-upload-api-unknown.html">Azure Function (TI Upload API)|Unknown</a></td>
   <td style="text-align:center">2</td>
@@ -3307,6 +3387,14 @@
   <td style="text-align:center">4</td>
   <td style="text-align:left"><a href="solutions/proofpointtap.html">ProofPointTap</a></td>
 </tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Pulumi.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/pulumiauditlogsdefinition.html">Pulumi Cloud Audit Logs</a> 🔶</td>
+  <td style="text-align:left">Pulumi</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/pulumicloudauditlogs.html">PulumiCloudAuditLogs</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="q">Q</h2>
@@ -3323,6 +3411,14 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qcrypton.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/qcryptonpqcscannerccpdefinition.html">QCrypton PQC Scanner (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left">QCrypton, Inc.</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/qcryptonpqcscanner.html">QCryptonPQCScanner</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/quokka_logo.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/qscoutappeventsccfdefinition.html">QscoutAppEventsConnector (via Codeless Connector Framework)</a></td>
   <td style="text-align:left">Quokka</td>
@@ -3333,7 +3429,7 @@
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left">Qualys</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
@@ -3395,6 +3491,14 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/recordedfuture.html">Recorded Future - Log Ingestion</a></td>
+  <td style="text-align:left">Recorded Future</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:left"><a href="solutions/recorded-future.html">Recorded Future</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/recordedfutureidentityv3.html">Recorded Future Identity - Credential Exposure Importer</a> ⚠️ 🔍</td>
   <td style="text-align:left">Recorded Future</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
@@ -3424,6 +3528,14 @@
   <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
   <td style="text-align:center">2</td>
   <td style="text-align:left"><a href="solutions/red-sift.html">Red Sift</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RedRays.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/redrayssapsecurityfindings.html">RedRays SAP Security Findings</a></td>
+  <td style="text-align:left">RedRays, Inc.</td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:left"><a href="solutions/redrays-sap-security-findings.html">RedRays SAP Security Findings</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RSA_IDPlus.svg" alt="" width="40" height="40"></td>
@@ -3473,27 +3585,19 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/valencesecurity.html">SaaS Security</a> 🔶</td>
-  <td style="text-align:left">Valence Security</td>
-  <td style="text-align:left"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:left"><a href="solutions/valence-security.html">Valence Security</a></td>
-</tr>
-<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/sailpointidentitynow.html">SailPoint IdentityNow</a> 🔶</td>
-  <td style="text-align:left">SailPoint</td>
-  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:left"><a href="connectors/sailpointidentitynowconnector.html">SailPoint Identity Security Cloud (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left">Microsoft</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
   <td style="text-align:left"><a href="solutions/sailpointidentitynow.html">SailPointIdentityNow</a></td>
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/sailpointidentitynowconnector.html">SailPoint IdentityNow (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left">Microsoft</td>
-  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="connectors/sailpointidentitynow.html">SailPoint IdentityNow</a> ⚠️ 🔍 🔶</td>
+  <td style="text-align:left">SailPoint</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">2</td>
   <td style="text-align:left"><a href="solutions/sailpointidentitynow.html">SailPointIdentityNow</a></td>
 </tr>
 <tr>
@@ -3689,6 +3793,14 @@
   <td style="text-align:left"><a href="solutions/sevcosecurity.html">SevcoSecurity</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SilentPush.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/silentpushfeedsconnectordefinition.html">SilentPush Feeds</a></td>
+  <td style="text-align:left">Silent Push</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/silentpush.html">SilentPush</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/silverfort-logo.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/silverfortama.html">Silverfort Admin Console</a></td>
   <td style="text-align:left">Silverfort</td>
@@ -3786,7 +3898,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Protection Connector</a> ⚠️</td>
+  <td style="text-align:left"><a href="connectors/spycloudenterpriseprotectionccf.html">SpyCloud Enterprise Threat Protection Connector</a> ⚠️</td>
   <td style="text-align:left">SpyCloud</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">5</td>
@@ -4000,8 +4112,16 @@
   <td style="text-align:left"><a href="solutions/theom.html">Theom</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/theomconnector.html">Theom (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left">Theom</td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:left"><a href="solutions/theom.html">Theom</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThinkstCanary.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/thinkstcanary.html">Thinkst Canary</a> ⚠️</td>
+  <td style="text-align:left"><a href="connectors/thinkstcanary.html">Thinkst Canary</a></td>
   <td style="text-align:left">Thinkst Engineering</td>
   <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
   <td style="text-align:center">1</td>
@@ -4198,6 +4318,14 @@
   <td style="text-align:left"><a href="solutions/vaikora-sentinel.html">Vaikora-Sentinel</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/valencesecurityccfpush.html">Valence Security</a></td>
+  <td style="text-align:left">Valence Security</td>
+  <td style="text-align:left"><a href="methods/ccf-push.html">CCF Push</a></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:left"><a href="solutions/valence-security.html">Valence Security</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/valimail.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/valimailenforceeventsconnector.html">Valimail Enforce Configuration Events</a></td>
   <td style="text-align:left">Valimail</td>
@@ -4231,7 +4359,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Vectra_RUX.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left"><a href="connectors/vectraxdr.html">Vectra XDR</a></td>
+  <td style="text-align:left"><a href="connectors/vectraxdr.html">Vectra XDR</a> 🔶</td>
   <td style="text-align:left">Vectra</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">6</td>
@@ -4332,6 +4460,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/whoisfreaks.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left"><a href="connectors/whoisfreaks.html">WhoisFreaks Threat &amp; NRD Feeds (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left">Whoisfreaks</td>
+  <td style="text-align:left"><a href="methods/ccf.html">CCF</a></td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:left"><a href="solutions/whoisfreaks.html">WhoisFreaks</a></td>
+</tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DNS.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left"><a href="connectors/asimdnsactivitylogs.html">Windows DNS Events via AMA</a></td>
@@ -4781,7 +4917,7 @@
 </tbody>
 </table>
 <h2 id="deprecated-connectors">🚫 Deprecated Connectors</h2>
-<p>The following <strong>162 connector(s)</strong> are deprecated:</p>
+<p>The following <strong>163 connector(s)</strong> are deprecated:</p>
 <table>
 <thead>
 <tr>
@@ -4859,7 +4995,7 @@
   <td style="text-align:left"><a href="solutions/aruba-clearpass.html">Aruba ClearPass</a></td>
 </tr>
 <tr>
-  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left">🚫 <a href="connectors/confluenceauditapi.html">[Deprecated] Atlassian Confluence Audit</a> ⚠️ 🔍</td>
   <td style="text-align:left">Atlassian</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
@@ -5563,6 +5699,14 @@
   <td style="text-align:left"><a href="solutions/nasuni.html">Nasuni</a></td>
 </tr>
 <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="40" height="40"></td>
+  <td style="text-align:left">🚫 <a href="connectors/netskopewebtransactionsdataconnector.html">[DEPRECATED] Netskope Web Transactions Data Connector (using Azure Function)</a></td>
+  <td style="text-align:left">Netskope</td>
+  <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:left"><a href="solutions/netskopev2.html">Netskopev2</a></td>
+</tr>
+<tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
   <td style="text-align:left">🚫 <a href="connectors/netwrixama.html">[Deprecated] Netwrix Auditor via AMA</a> ⚠️ 🔍</td>
   <td style="text-align:left">Netwrix</td>
@@ -5604,7 +5748,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/okta_logo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left">🚫 <a href="connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a></td>
+  <td style="text-align:left">🚫 <a href="connectors/oktasso.html">[DEPRECATED] Okta Single Sign-On (using Azure Function)</a> ⚠️ 🔍</td>
   <td style="text-align:left">Okta</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">1</td>
@@ -5820,7 +5964,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left">🚫 <a href="connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a></td>
+  <td style="text-align:left">🚫 <a href="connectors/sentinelone.html">[DEPRECATED] SentinelOne (using Azure Function)</a> ⚠️ 🔍</td>
   <td style="text-align:left">SentinelOne</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">7</td>
@@ -5964,7 +6108,7 @@
 </tr>
 <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="" width="40" height="40"></td>
-  <td style="text-align:left">🚫 <a href="connectors/varonissaas.html">[Deprecated] Varonis SaaS</a></td>
+  <td style="text-align:left">🚫 <a href="connectors/varonissaas.html">[Deprecated] Varonis SaaS</a> ⚠️ 🔍</td>
   <td style="text-align:left">Varonis</td>
   <td style="text-align:left"><a href="methods/azure-function.html">Azure Function</a></td>
   <td style="text-align:center">1</td>

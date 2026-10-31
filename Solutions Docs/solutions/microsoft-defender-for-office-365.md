@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
+| **Last Updated** | 2026-10-16 |
 | **Solution Folder** | [Microsoft Defender for Office 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderforo365) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (97%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderforo365) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (94%) |
 
 The [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Office 365 platform, providing visibility into threats within email messages, links (URLs) and collaboration tools.
 
@@ -79,6 +80,9 @@ This solution includes **6 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.2       | 16-10-2026                     | Fixed the investigation **XDR Workbook** display name. |
+| 3.2.1       | 15-10-2026                     | Fixed selection filters, queries and labels in **XDR Workbooks**. |
+| 3.2.0       | 15-10-2026                     | Added the investigation **XDR Workbook** and native Defender **Detections and Insights XDR Workbook**, preserving the existing Sentinel workbook, connector and playbooks. |
 | 3.0.3       | 07-04-2025                     | Updated ConnectivityCriteria Type in **Data Connector**.				   |
 | 3.0.2       | 24-04-2024                     | Updated link for **Custom Connector** redirection in playbooks           |
 | 3.0.1       | 29-09-2023                     | 1 new **Playbook** added to the solution                                 |

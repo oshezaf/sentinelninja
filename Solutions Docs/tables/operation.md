@@ -145,7 +145,6 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
@@ -175,6 +174,7 @@ This table is used by the following solutions:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) | `OperationStatus in "Error,Failed,Failure,Warning"` |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [ExchangeOnline](../content/github-only-exchangeonline-663577e1.md) |  |

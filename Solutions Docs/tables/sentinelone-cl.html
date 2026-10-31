@@ -34,16 +34,8 @@
   <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -56,7 +48,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (322 columns)</h2>
+<h2 id="schema">Schema (230 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOne_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -99,6 +91,14 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">activeDirectory_userPrincipalName_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">activeProtection_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">activeThreats_d</td>
   <td style="text-align:left">real</td>
 </tr>
@@ -135,6 +135,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">agentDetectionInfo_agentLastLoggedInUpn_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">agentDetectionInfo_agentLastLoggedInUserName_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -163,6 +167,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">agentDetectionInfo_assetVersion_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">agentDetectionInfo_externalIp_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -175,39 +183,11 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">agentDetectionInfo_machineType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_name_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_osFamily_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_osName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_osRevision_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">agentDetectionInfo_siteId_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">agentDetectionInfo_siteName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_uuid_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentDetectionInfo_version_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -231,6 +211,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">agentRealtimeInfo_agentDecommissionedAt_b</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
   <td style="text-align:left">agentRealtimeInfo_agentDomain_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -240,15 +224,15 @@
 </tr>
 <tr>
   <td style="text-align:left">agentRealtimeInfo_agentInfected_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">agentRealtimeInfo_agentIsActive_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">agentRealtimeInfo_agentIsDecommissioned_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">agentRealtimeInfo_agentMachineType_s</td>
@@ -291,30 +275,6 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">agentRealtimeInfo_id_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentRealtimeInfo_infected_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentRealtimeInfo_isActive_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentRealtimeInfo_isDecommissioned_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentRealtimeInfo_machineType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">agentRealtimeInfo_name_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">agentRealtimeInfo_networkInterfaces_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -323,12 +283,12 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">agentRealtimeInfo_os_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">agentRealtimeInfo_rebootRequired_b</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
-  <td style="text-align:left">agentRealtimeInfo_rebootRequired_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">agentRealtimeInfo_scanAbortedAt_t</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
   <td style="text-align:left">agentRealtimeInfo_scanFinishedAt_t</td>
@@ -355,10 +315,6 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">agentRealtimeInfo_uuid_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">agentUpdatedVersion_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -367,151 +323,35 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">alertInfo_alertId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_analystVerdict_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_createdAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_dnsRequest_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_dnsResponse_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_dstIp_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_dstPort_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_dvEventId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_eventType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_hitType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_incidentStatus_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_indicatorCategory_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_indicatorDescription_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_indicatorName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_isEdr_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginAccountDomain_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginAccountSid_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginIsAdministratorEquivalent_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginIsSuccessful_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginsUserName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_loginType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_netEventDirection_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryKeyPath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryOldValue_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryOldValue_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryOldValueType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryPath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryValue_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_registryValue_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_reportedAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_source_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_srcIp_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_srcMachineIp_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_srcPort_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">alertInfo_updatedAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
   <td style="text-align:left">allowRemoteShell_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">appsVulnerabilityStatus_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_azureResourceGroup_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_cloudAccount_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_cloudImage_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_cloudInstanceId_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_cloudLocation_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">cloudProviders_Azure_cloudTags_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -531,8 +371,16 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">containerInfo_id_s</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">containerizedWorkloadCounts_containersCount_d</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">containerizedWorkloadCounts_podsCount_d</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">containerizedWorkloadCounts_tasksCount_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
   <td style="text-align:left">coreCount_d</td>
@@ -559,42 +407,6 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">data_accountName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_fullScopeDetails_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_role_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_scopeLevel_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_scopeName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_siteName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_source_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_username_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">data_userScope_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">DataFields_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -612,7 +424,7 @@
 </tr>
 <tr>
   <td style="text-align:left">encryptedApplications_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">event_name_s</td>
@@ -627,8 +439,16 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">filterId_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">filterName_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">firewallEnabled_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">firstFullModeTime_t</td>
@@ -651,6 +471,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">hasContainerizedWorkload_b</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
   <td style="text-align:left">hash_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -664,15 +488,15 @@
 </tr>
 <tr>
   <td style="text-align:left">infected_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">inherits_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">inRemoteShellSession_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">installerType_s</td>
@@ -680,27 +504,31 @@
 </tr>
 <tr>
   <td style="text-align:left">isActive_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">isAdConnector_b</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">isDecommissioned_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">isDefault_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">isPendingUninstall_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">isUninstalled_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">isUpToDate_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">lastActiveDate_t</td>
@@ -715,12 +543,16 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">lastSuccessfulScanDate_t</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
   <td style="text-align:left">licenseKey_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">locationEnabled_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">locations_s</td>
@@ -728,6 +560,10 @@
 </tr>
 <tr>
   <td style="text-align:left">locationType_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">machineSid_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -740,6 +576,10 @@
 </tr>
 <tr>
   <td style="text-align:left">MG</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">missingPermissions_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -768,7 +608,7 @@
 </tr>
 <tr>
   <td style="text-align:left">networkQuarantineEnabled_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">networkStatus_s</td>
@@ -777,6 +617,10 @@
 <tr>
   <td style="text-align:left">operationalState_s</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">operationalStateExpiration_t</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
   <td style="text-align:left">osArch_s</td>
@@ -811,12 +655,28 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">proxyStates_console_b</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">proxyStates_deepVisibility_b</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">proxyStates_pacFileUsage_b</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
   <td style="text-align:left">rangerStatus_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">rangerVersion_s</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">rank_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
   <td style="text-align:left">RawData</td>
@@ -832,42 +692,6 @@
 </tr>
 <tr>
   <td style="text-align:left">remoteProfilingState_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_description_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_id_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_name_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_queryLang_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_queryType_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_s1ql_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_scopeLevel_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_severity_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">ruleInfo_treatAsThreat_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -891,12 +715,16 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">serialNumber_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">serialNumber_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">showAlertIcon_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">siteId_s</td>
@@ -907,219 +735,11 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">sourceParentProcessInfo_commandline_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_fileHashMd5_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_fileHashSha1_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_fileHashSha256_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_filePath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_fileSignerIdentity_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_integrityLevel_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_name_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_pid_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_pidStarttime_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_storyline_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_storyline_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_subsystem_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_uniqueId_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_uniqueId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceParentProcessInfo_user_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_commandline_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_fileHashMd5_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_fileHashSha1_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_fileHashSha256_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_filePath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_fileSignerIdentity_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_integrityLevel_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_name_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_pid_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_pidStarttime_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_storyline_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_storyline_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_subsystem_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_uniqueId_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_uniqueId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">sourceProcessInfo_user_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">SourceSystem</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">tags_sentinelone_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileCreatedAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileHashSha1_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileHashSha256_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileId_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileIsSigned_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileModifiedAt_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFileOldPath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtFilePath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcCmdLine_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcessStartTime_t</td>
-  <td style="text-align:left">datetime</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcImagePath_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcIntegrityLevel_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcName_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcPid_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcSignedStatus_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcStorylineId_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcStorylineId_s</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcUid_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
-  <td style="text-align:left">targetProcessInfo_tgtProcUid_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -1140,7 +760,7 @@
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_automaticallyResolved_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_certificateId_s</td>
@@ -1184,15 +804,11 @@
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_externalTicketExists_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_failedActions_b</td>
-  <td style="text-align:left">bool</td>
-</tr>
-<tr>
-  <td style="text-align:left">threatInfo_fileExtension_g</td>
-  <td style="text-align:left">string</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_fileExtension_s</td>
@@ -1236,19 +852,23 @@
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_isFileless_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_isValidCertificate_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_maliciousProcessArguments_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">threatInfo_md5_g</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">threatInfo_mitigatedPreemptively_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_mitigationStatus_s</td>
@@ -1264,7 +884,7 @@
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_pendingActions_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_processUser_s</td>
@@ -1276,14 +896,22 @@
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_reachedEventsLimit_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_rebootRequired_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
+</tr>
+<tr>
+  <td style="text-align:left">threatInfo_rootProcessUpn_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
   <td style="text-align:left">threatInfo_sha1_s</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">threatInfo_sha256_s</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -1299,10 +927,6 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
-  <td style="text-align:left">threatInfo_threatName_g</td>
-  <td style="text-align:left">string</td>
-</tr>
-<tr>
   <td style="text-align:left">threatInfo_threatName_s</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -1312,7 +936,7 @@
 </tr>
 <tr>
   <td style="text-align:left">threatRebootRequired_b</td>
-  <td style="text-align:left">bool</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>

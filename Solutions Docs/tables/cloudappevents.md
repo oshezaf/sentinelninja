@@ -6,17 +6,16 @@
 
 ---
 
-Events involving accounts and objects in Office 365 and other cloud apps and services
+Reference for CloudAppEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table) |
 
 ## Contents
 
@@ -79,15 +78,15 @@ Events involving accounts and objects in Office 365 and other cloud apps and ser
 Official Microsoft Learn documentation for field/column information:
 
 - [CloudAppEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents)
-- [CloudAppEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table)
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
 - [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -102,7 +101,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (216)
+## Content Items Using This Table (217)
 
 ### Analytic Rules (10)
 
@@ -352,7 +351,7 @@ This table is ingested by the following connectors:
 | [User reported submissions](../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.md) | `ActionType == "UserSubmission"` |
 | [User reported submissions](../content/github-only-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-b5232da7.md) | `ActionType == "UserSubmission"` |
 
-### Workbooks (7)
+### Workbooks (8)
 
 **In solution [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md):** `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"`
 
@@ -360,30 +359,36 @@ This table is ingested by the following connectors:
 |:-------------|
 | [HybridAttack-Cloud&Identity](../content/hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,TeamsImpersonationDetected,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType contains "ZAP"`<br>`ActionType has "ClickAllowed"`<br>`ActionType has "ClickBlocked"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"`
 
 | Workbook |
 |:-------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |
+
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`ActivityType == "LogOn"`
+
+| Workbook |
+|:-------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
 **GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) | `ActionType in "Register Microsoft.SecurityCopilot,Write Capacities"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "Add service principal."` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType in "Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "Add service principal."` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType in "Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
 
-## Selection Criteria Summary (45 criteria, 176 total references)
+## Selection Criteria Summary (47 criteria, 178 total references)
 
-References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 178 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -431,8 +436,10 @@ References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other par
 | `ActionType in "Add service principal credentials.,Update application - Certificates`<br>`secrets management"`<br>`Application == "Office 365"` | - | 1 | - | - | **1** |
 | `ActionType == "Add member to role."`<br>`Application == "Office 365"` | - | 1 | - | - | **1** |
 | `ActionType in "MailItemsAccessed,New-InboxRule,Set-InboxRule,Set-Mailbox"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **176** | **0** | **0** | **176** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| `ActionType in "AdminSubmission,AdminSubmissionSubmitted,AttackSimUserSubmission,CallParticipantDetail,CallReported,ClickAllowed,ClickBlocked,ClickBlockedByTenantPolicy,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,TeamsImpersonationDetected,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "AdminSubmission"`<br>`ActionType contains "AdminSubmissionTriage"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "UserSubmissionTriage"`<br>`ActionType contains "ZAP"`<br>`ActionType has "ClickAllowed"`<br>`ActionType has "ClickBlocked"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`<br>`ActionType startswith "AdminSubmission"`<br>`ActionType startswith "UserSubmission"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`<br>`ActivityType == "LogOn"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **178** | **0** | **0** | **178** |
 
 ### ActionType
 
@@ -452,8 +459,9 @@ References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other par
 | `SubmissionNotification` | - | 5 | - | - | **5** |
 | `AttackSimUserSubmission` | - | 5 | - | - | **5** |
 | `contains UserSubmission` | - | 5 | - | - | **5** |
+| `TeamsImpersonationDetected` | - | 4 | - | - | **4** |
 | `Add service principal credentials.` | - | 4 | - | - | **4** |
-| `TeamsImpersonationDetected` | - | 3 | - | - | **3** |
+| `contains ZAP` | - | 3 | - | - | **3** |
 | `contains AdminSubmissionTriage` | - | 3 | - | - | **3** |
 | `contains UserSubmissionTriage` | - | 3 | - | - | **3** |
 | `Update application - Certificates` | - | 3 | - | - | **3** |
@@ -461,7 +469,6 @@ References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other par
 | `Redelivery` | - | 2 | - | - | **2** |
 | `AdminMailAccess` | - | 2 | - | - | **2** |
 | `contains TenantAllowBlockListItems` | - | 2 | - | - | **2** |
-| `contains ZAP` | - | 2 | - | - | **2** |
 | `New-TenantAllowBlockListItems` | - | 2 | - | - | **2** |
 | `Added users and/or groups to shared file/folder` | - | 2 | - | - | **2** |
 | `Invited user to Dropbox` | - | 2 | - | - | **2** |
@@ -474,6 +481,14 @@ References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other par
 | `ChatCreated` | - | 2 | - | - | **2** |
 | `Consent to application.` | - | 2 | - | - | **2** |
 | `TeamsAdminAction` | - | 2 | - | - | **2** |
+| `Add member to role` | - | 2 | - | - | **2** |
+| `Add user` | - | 2 | - | - | **2** |
+| `InteractiveLogon` | - | 2 | - | - | **2** |
+| `RemoteInteractiveLogon` | - | 2 | - | - | **2** |
+| `Reset user password` | - | 2 | - | - | **2** |
+| `ResourceAccess` | - | 2 | - | - | **2** |
+| `Sign-in` | - | 2 | - | - | **2** |
+| `Update user` | - | 2 | - | - | **2** |
 | `Add owner to policy.` | - | 1 | - | - | **1** |
 | `Add policy to service principal.` | - | 1 | - | - | **1** |
 | `Add policy.` | - | 1 | - | - | **1** |
@@ -498,9 +513,30 @@ References by type: 0 connectors, 176 content items, 0 ASIM parsers, 0 other par
 | `New-InboxRule` | - | 1 | - | - | **1** |
 | `Set-InboxRule` | - | 1 | - | - | **1** |
 | `Set-Mailbox` | - | 1 | - | - | **1** |
+| `CallReported` | - | 1 | - | - | **1** |
+| `ClickAllowed` | - | 1 | - | - | **1** |
+| `ClickBlocked` | - | 1 | - | - | **1** |
+| `ClickBlockedByTenantPolicy` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
+| `Automated Remediation` | - | 1 | - | - | **1** |
+| `has ClickAllowed` | - | 1 | - | - | **1** |
+| `has ClickBlocked` | - | 1 | - | - | **1** |
+| `has Malware ZAP` | - | 1 | - | - | **1** |
+| `has Phish ZAP` | - | 1 | - | - | **1** |
+| `has Spam ZAP` | - | 1 | - | - | **1** |
+| `has ZAP` | - | 1 | - | - | **1** |
+| `has_any ClickAllowed` | - | 1 | - | - | **1** |
+| `has_any ClickBlocked` | - | 1 | - | - | **1** |
+| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
+| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
 | `startswith AdminSubmission` | - | 1 | - | - | **1** |
 | `startswith UserSubmission` | - | 1 | - | - | **1** |
+
+### ActivityType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `LogOn` | - | 1 | - | - | **1** |
 
 ### Application
 

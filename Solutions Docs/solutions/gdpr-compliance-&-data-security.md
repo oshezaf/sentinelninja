@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Compliance |
-| **Version** | 3.0.0 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
-| **Last Updated** | 2025-12-18 |
+| **Last Updated** | 2026-10-23 |
 | **Solution Folder** | [GDPR Compliance & Data Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gdpr-compliance) · Popularity: 🟡 Low (32%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gdpr-compliance) · Popularity: 🟡 Low (40%) |
 | **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Purview](microsoft-purview.md), [Microsoft Purview Information Protection](microsoft-purview-information-protection.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Microsoft 365](microsoft-365.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
 This workbook helps you track, visualize and monitor GDPR related requirements across your enterprise. It consolidates data from Defender XDR, Microsoft Purview, Azure SQL Databases, Microsoft 365, UEBA and Entra ID solution.
@@ -103,6 +103,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 								 |
 |-------------|--------------------------------|-----------------------------------------------------------------------------------------------------| 
+| 3.2.2       | 22-10-2026                     | Added Defender XDR **XDR Workbook** for GDPR Compliance & Data Security.                            |
 | 3.0.2       | 15-12-2025                     | Update the **Workbook** to include support for additional assets in the Watchlist.  	     |
 | 3.0.1       | 18-11-2025                     | Fixing Issue with Defender Portal				     |
 | 3.0.0       | 08-10-2025                     | Initial Solution Release						     |

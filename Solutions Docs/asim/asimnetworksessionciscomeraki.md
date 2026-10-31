@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimNetworkSessionCiscoMeraki` |
 | **Built-in Parser** | `_ASim_NetworkSession_CiscoMeraki` |
 | **Schema** | NetworkSession |
-| **Schema Version** | 0.2.6 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco Meraki |
-| **Parser Version** | 1.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMeraki.md)) |
-| **Last Updated** | Jun 26, 2025 |
+| **Parser Version** | 1.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoMeraki.md)) |
+| **Last Updated** | Sep 11, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md), [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionCiscoMeraki.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionCiscoMeraki.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`meraki_CL`](../tables/meraki-cl.md) |  | ✓ | ✓ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ? | ✓ | ? |
 
 ## Parameters
 

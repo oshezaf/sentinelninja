@@ -40,35 +40,26 @@
 <li><a href="#schema">Schema</a></li>
 <li><a href="#schema-references">Schema References</a></li>
 <li><a href="#solutions">Solutions</a></li>
-<li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (3 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake%5CData%20Connectors%5CSnowflakeLogs_ccp/SnowflakeLoadV2_Table.json">Connector definition</a></p>
+<h2 id="schema">Schema (2 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SnowflakeLoadV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">Data</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Dynamic data column</td>
-</tr>
-<tr>
-  <td style="text-align:left">SnowflakeAccountIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Snowflake account identifier configured for this connection; hard-coded on every record so it can be differentiated.</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -82,22 +73,6 @@
 <ul>
 <li><a href="../solutions/snowflake.html">Snowflake</a></li>
 </ul>
-<h2 id="connectors">Connectors (1)</h2>
-<p>This table is ingested by the following connectors:</p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../connectors/snowflakeconnector.html">Snowflake (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (21)</h2>
 <h3 id="analytic-rules">Analytic Rules (10)</h3>

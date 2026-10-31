@@ -6,7 +6,7 @@
 
 ---
 
-A security weakness that allows attackers to gain unauthorized access to user accounts by systematically guessing the username and password combinations.
+Identifies Silverfort incidents involving repeated attempts to authenticate to a user account. This behavior may indicate a brute-force attempt to gain unauthorized access.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,6 +14,7 @@ A security weakness that allows attackers to gain unauthorized access to user ac
 | **Solution** | [Silverfort](../solutions/silverfort.md) |
 | **ID** | `46ff357b-9e98-465b-9e45-cd52fa4a7522` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1110 |

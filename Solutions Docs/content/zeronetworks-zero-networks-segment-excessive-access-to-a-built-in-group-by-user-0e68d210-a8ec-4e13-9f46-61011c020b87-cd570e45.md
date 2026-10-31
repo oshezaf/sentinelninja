@@ -23,10 +23,10 @@ A rule was created which granted a user access to a large, built-in, group of as
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ✓ | ✓ | ✓ |
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | ✓ | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ZNAudit_CL`](../tables/znaudit-cl.md) |  | ? | ✓ | ? |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) |  | ? | ✓ | ? |
 
 ---
 

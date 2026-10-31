@@ -25,7 +25,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`TrendAI_XDR_OAT_V2_CL`](../tables/trendai-xdr-oat-v2-cl.md) 🔶 | ? | ✓ | ? |
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,7 +17,6 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (33 columns)
 
@@ -82,16 +79,6 @@ This table is ingested by the following connectors:
 | [[Deprecated] Varonis SaaS](../connectors/varonissaas.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [VaronisSaaS](../solutions/varonissaas.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md) |  |
 
 ---
 

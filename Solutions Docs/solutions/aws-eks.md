@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,Security - Network |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft |
 | **First Published** | 2024-03-04 |
 | **Last Updated** | 2026-03-18 |
 | **Solution Folder** | [AWS EKS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awseks) · Popularity: 🔵 Medium (55%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awseks) · Popularity: 🔵 Medium (52%) |
 
 The AWS EKS solution for Microsoft Sentinel allows you to ingest Amazon Elastic Kubernetes Service (EKS) audit logs into Microsoft Sentinel. This connector provides the capability to monitor and analyze Kubernetes cluster activities, API server calls, and security events from your EKS environments for comprehensive security monitoring and threat detection.
 
@@ -41,6 +41,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.0       | 15-09-2026                     | Moved the AWS EKS Data Connector from preview to general availability. |
 | 3.0.0       | 12-03-2026                     | Initial Solution Release.<br/>New CCF **Data Connector** 'AWS EKS'.<br/>Enables ingestion of Amazon Elastic Kubernetes Service audit logs into Microsoft Sentinel for comprehensive security monitoring and threat detection. |
 
 ---

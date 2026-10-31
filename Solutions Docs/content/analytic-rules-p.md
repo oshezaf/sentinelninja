@@ -1,6 +1,6 @@
 # Analytic Rules - P
 
-**229 analytic rules** starting with 'P'.
+**234 analytic rules** starting with 'P'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -126,6 +126,7 @@
 | [PCI App with Open Findings Before Audit Window](stratosecure-pci-app-with-open-findings-before-audit-window-0457b577-3864-42c9-9779-1c9441d86429-d2e42cfd.md) | High | 📦 [StratoSecure](../solutions/stratosecure.md) |
 | [PE file dropped in Color Profile Folder](standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md) | Medium | 📄 Standalone Content |
 | [Phishing link click observed in Network Traffic](standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md) | Medium | 📄 Standalone Content |
+| [PHP Worker Process Spawning Shell/Recon Tool](standalone-content-php-worker-process-spawning-shell-recon-tool-56cda6d3-8402-4d6c-a2e7-f72b1efed280-4c33674c.md) | High | 📄 Standalone Content |
 | [PIM Elevation Request Rejected](microsoft-entra-id-pim-elevation-request-rejected-7d7e20f8-3384-4b71-811c-f5e950e8306c-aad39230.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Ping Federate - Abnormal password reset attempts](pingfederate-ping-federate-abnormal-password-reset-attempts-e45a7334-2cb4-4690-8156-f02cac73d584-66f0ba30.md) | High | 📦 [PingFederate](../solutions/pingfederate.md) |
 | [Ping Federate - Abnormal password resets for user](pingfederate-ping-federate-abnormal-password-resets-for-user-6145efdc-4724-42a6-9756-5bd1ba33982e-032d12ff.md) | High | 📦 [PingFederate](../solutions/pingfederate.md) |
@@ -238,9 +239,13 @@
 | [ProofpointPOD - Weak ciphers](proofpoint-on-demand-pod-email-security-proofpointpod-weak-ciphers-56b0a0cd-894e-4b38-a0a1-c41d9f96649a-f36413c2.md) | Low | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [Protection Group Deleted](veeam-protection-group-deleted-5fda37e0-d67c-4e8d-b277-90e5eac2172c-601902cf.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Protection Group Settings Updated](veeam-protection-group-settings-updated-e9b9efa5-4e19-4716-840b-51ef2feeaad1-719cfef0.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
+| [Public TLS certificate with classical signature on Application Gateway](qcryptonpqcscanner-public-tls-certificate-with-classical-signature-on-application-gateway-3c9b1e2a-7d4f-4a6b-8e3d-2f4a1c5d6b7e-8a624671.md) | High | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [PulseConnectSecure - CVE-2021-22893 Possible Pulse Connect Secure RCE Vulnerability Attack](standalone-content-pulseconnectsecure-cve-2021-22893-possible-pulse-connect-secure-rce-vulnerability-att-d0c82b7f-40b2-4180-a4d6-7aa0541b7599-46e4de61.md) | High | 📄 Standalone Content |
 | [PulseConnectSecure - Large Number of Distinct Failed User Logins](pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | 📦 [Pulse Connect Secure](../solutions/pulse-connect-secure.md) |
 | [PulseConnectSecure - Potential Brute Force Attempts](pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | 📦 [Pulse Connect Secure](../solutions/pulse-connect-secure.md) |
+| [Pulumi Cloud - Excessive authentication failures](pulumicloudauditlogs-pulumi-cloud-excessive-authentication-failures-0199390c-e96d-4119-b25c-83257f3c4738-ebb80d97.md) | Medium | 📦 [PulumiCloudAuditLogs](../solutions/pulumicloudauditlogs.md) |
+| [Pulumi Cloud - Organization membership change](pulumicloudauditlogs-pulumi-cloud-organization-membership-change-b5e805a7-a6b5-4af5-9a23-a5ea92b744f5-924bdf41.md) | Low | 📦 [PulumiCloudAuditLogs](../solutions/pulumicloudauditlogs.md) |
+| [Pulumi Cloud - Stack deleted](pulumicloudauditlogs-pulumi-cloud-stack-deleted-bc489413-747f-41c7-bfe7-0ab66ded788e-9778b4fe.md) | Medium | 📦 [PulumiCloudAuditLogs](../solutions/pulumicloudauditlogs.md) |
 | [Pure Controller Failed](pure-storage-pure-controller-failed-c317b007-84e7-4449-93f4-4444f6638fd0-857a505b.md) | High | 📦 [Pure Storage](../solutions/pure-storage.md) |
 | [Pure Failed Login](pure-storage-pure-failed-login-ed32b115-5001-43a7-a2bb-f53026db4d97-7948e1d0.md) | High | 📦 [Pure Storage](../solutions/pure-storage.md) |
 

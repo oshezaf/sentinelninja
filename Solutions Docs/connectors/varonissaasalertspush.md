@@ -20,7 +20,7 @@
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#varonis-saas) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#varonis-saas-push) |
 
 The [Varonis SaaS](https://www.varonis.com/) connector provides the capability to push real-time DatAlert security alerts from your Varonis application directly into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. Varonis prioritizes deep data visibility, classification capabilities, and automated remediation for data access. This connector ingests alert severity, event types, user information, and related details into a custom Log Analytics table for analysis, alerting, and visualization.
 
@@ -53,6 +53,7 @@ This connector enables your Varonis SaaS application to push DatAlert security a
 #### Automated Configuration and Secure Data Ingestion with Entra Application
 Clicking on "Deploy" will trigger the creation of a Log Analytics table and a Data Collection Rule (DCR).
 It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.
+> **Important:** CCF Push connector deployment currently requires the Microsoft Sentinel experience in the Azure portal. Managed deployment from the Microsoft Defender portal might fail while creating the identity resources required by the connector. If this occurs, install and connect the connector from Microsoft Sentinel in the Azure portal, and then use the Microsoft Defender portal for ongoing Microsoft Sentinel operations. For more information, see [Microsoft Sentinel CCF push connectors](https://learn.microsoft.com/azure/sentinel/create-push-codeless-connector#prerequisites).
 Deploy Varonis SaaS Push connector resources
 
 **2. Configure Your Varonis Application**

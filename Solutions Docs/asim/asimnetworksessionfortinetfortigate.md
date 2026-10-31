@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Fortinet FortiGate |
-| **Parser Version** | 0.6.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionFortinetFortiGate.md)) |
-| **Last Updated** | Nov 11, 2025 |
+| **Parser Version** | 0.6.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionFortinetFortiGate.md)) |
+| **Last Updated** | Oct 28, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionFortinetFortiGate.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionFortinetFortiGate.yaml) |
 

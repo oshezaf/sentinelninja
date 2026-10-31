@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [AirlockDigitalSaas_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalSaas_CCF/AirlockDigitalSaas_DCR.json) |
 | **CCF Configuration** | [AirlockDigitalSaas_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AirlockDigital/Data%20Connectors/AirlockDigitalSaas_CCF/AirlockDigitalSaas_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#airlock-digital-poll---saas) |
 
 The [Airlock Digital](https://www.airlockdigital.com/) **SaaS** connector periodically pulls execution history and server activity logs from the Airlock Digital SaaS API, authenticating with a user API key together with your directory and tenant identifiers. It is the polling connector for Airlock Digital's hosted SaaS offering, and it does not collect policy change logs. For self-hosted servers or Airlock Digital SaaS running v7.0 or higher, the **Airlock Digital (Push)** connector delivers events in near real time and also collects policy changes. For self-hosted servers older than v7.0, use the **Airlock Digital (Poll)** connector.
 

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 63 |
-| **Solutions** | 13 |
+| **Playbooks using** | 66 |
+| **Solutions** | 14 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
 
 ## Playbooks Using This Connector
@@ -16,6 +16,9 @@
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 0 | 1 |
 | [AS-IAM-Entra-ID-Master-Playbook](../content/standalone-content-as-iam-entra-id-master-playbook-fdf9518a.md) | 📄 Standalone | 0 | 2 |
 | [AS-IAM-Master-Playbook](../content/standalone-content-as-iam-master-playbook-e5d5f8fe.md) | 📄 Standalone | 0 | 4 |
 | [Block IP - F5 BIG-IP](../content/standalone-content-block-ip-f5-big-ip-a18f653d.md) | 📄 Standalone | 0 | 2 |

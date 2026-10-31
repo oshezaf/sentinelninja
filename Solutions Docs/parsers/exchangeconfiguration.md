@@ -15,8 +15,8 @@ The list of section to query. Default is all.
 | Title | Parser for ExchangeConfiguration |
 | Location | Solution |
 | Solution | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| Version | 1.6.1 |
-| Last Updated | 2023-12-19 |
+| Version | 1.6.2 |
+| Last Updated | 2024-04-12 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Parsers/ExchangeConfiguration.yaml) |

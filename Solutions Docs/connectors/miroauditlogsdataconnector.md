@@ -109,6 +109,8 @@ There are two ways to set up the Miro Audit Logs connector.
 7. The token will work until you disable the toggle.
 8. Proceed to Step 3.
 
+**One token for all Miro connectors:** the SIEM toggle creates one access token with every log scope your organization is entitled to: `auditlogs:read` (Enterprise Plan), `contentlogs:export` (Enterprise Guard add-on) and `aiinteractionlogs:read` (Enterprise Guard add-on with AI interaction logs). If the SIEM toggle was enabled before it offered these scopes, turn it off and on again to get a token that includes them, then update the token in every connector that uses it. Turning the toggle off invalidates its current token, so every connector that uses it fails to poll until it has the new token.
+
 **Option 2: Custom OAuth application (alternative)**
 
 1. Go to [Miro App Settings](https://miro.com/app/settings/user-profile/apps).

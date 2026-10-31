@@ -67,8 +67,8 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://aka.ms/ciscomeraki">Cisco Meraki</a> connector allows you to easily connect your Cisco Meraki organization events (Security events, Configuration Changes and API Requests) to Microsoft Sentinel. The data connector uses the <a href="https://developer.cisco.com/meraki/api-v1/#!get-organization-appliance-security-events">Cisco Meraki REST API</a> to fetch logs and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> that parses the received data and ingests into ASIM and custom tables in your Log Analytics workspace. This data connector benefits from capabilities such as DCR based ingestion-time filtering, data normalization.</p>
-<p>In addition to the ASIM-normalized events, this connector also ingests Cisco Meraki Dashboard inventory and wireless security data into custom tables - Organizations, Network Clients, Organization Networks, and wireless Air Marshal (rogue access point) events.</p>
+<p>The <a href="https://aka.ms/ciscomeraki">Cisco Meraki</a> connector allows you to easily connect your Cisco Meraki organization events (Security events, Configuration Changes, API Requests, and File Scanned detections) to Microsoft Sentinel. The data connector uses the <a href="https://developer.cisco.com/meraki/api-v1/#!get-organization-appliance-security-events">Cisco Meraki REST API</a> to fetch logs and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> that parses the received data and ingests into ASIM and custom tables in your Log Analytics workspace. This data connector benefits from capabilities such as DCR based ingestion-time filtering, data normalization.</p>
+<p>In addition to the ASIM-normalized events, this connector also ingests Cisco Meraki Dashboard inventory and wireless security data into custom tables - Organizations, Network Clients, Organization Networks, wireless Air Marshal (rogue access point) events, and File Scanned events.</p>
 <p><strong>Supported ASIM schema:</strong></p>
 <ol>
 <li><p>Network Session</p>
@@ -100,20 +100,27 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimnetworksessionlogs.html"><code>ASimNetworkSessionLogs</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventType == &quot;IDS Alert&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimwebsessionlogs.html"><code>ASimWebSessionLogs</code></a></td>
-  <td style="text-align:left"><code>EventProduct == &quot;Meraki&quot;</code><br><code>EventType == &quot;Notable&quot;</code><br><code>EventVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/ciscomerakiairmarshalevents-cl.html"><code>CiscoMerakiAirMarshalEvents_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/ciscomerakifilescannedevents-cl.html"><code>CiscoMerakiFileScannedEvents_CL</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
@@ -136,9 +143,9 @@
 <tr>
   <td style="text-align:left"><a href="../tables/ciscomerakiorganizations-cl.html"><code>CiscoMerakiOrganizations_CL</code></a></td>
   <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -209,7 +216,7 @@
 <li>Network Clients</li>
 <li>Air Marshal Events</li>
 <li>API Requests (ASIM Web Session)</li>
-<li>... and 2 more options</li>
+<li>... and 3 more options</li>
 </ul>
 </li>
 </ul>

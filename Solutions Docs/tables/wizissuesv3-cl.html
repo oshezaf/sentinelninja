@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -50,8 +42,9 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (5 columns)</h2>
+<h2 id="schema">Schema (20 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WizIssuesV3_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -62,7 +55,23 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">createdAt</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">dueAt</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
   <td style="text-align:left">entitySnapshot</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">evidence</td>
   <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
@@ -70,7 +79,35 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">issueType</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">notes</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">projects</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">resolvedAt</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">serviceTickets</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
   <td style="text-align:left">severity</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">sourceRule</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
+  <td style="text-align:left">sourceURL</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -78,7 +115,23 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">statusChangedAt</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">updatedAt</td>
   <td style="text-align:left">datetime</td>
 </tr>
 </tbody>
@@ -123,6 +176,26 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/wiz-wizfindings-78285767.html">WizFindings</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
+<h3 id="asim-parsers">ASIM Parsers (1)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../asim/asimalerteventwizcloud.html">ASimAlertEventWizCloud</a></td>
+  <td style="text-align:left">AlertEvent</td>
+  <td style="text-align:left">Wiz Cloud</td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

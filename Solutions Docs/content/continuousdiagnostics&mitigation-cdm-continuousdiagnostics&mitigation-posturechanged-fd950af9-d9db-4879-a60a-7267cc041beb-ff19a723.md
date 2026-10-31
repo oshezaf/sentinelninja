@@ -18,6 +18,7 @@ This alert is designed to monitor Azure policies aligned with the Continuous Dia
 | **Kind** | Scheduled |
 | **Tactics** | Discovery |
 | **Techniques** | T1082 |
+| **Required Connectors** | [AzureSecurityCenter](../connectors/azuresecuritycenter.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics%26Mitigation/Analytic%20Rules/ContinuousDiagnostics%26MitigationPostureChanged.yaml) |
 
 ## Tables Used

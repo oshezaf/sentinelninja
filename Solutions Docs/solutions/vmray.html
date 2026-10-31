@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -64,7 +64,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray">Azure Marketplace</a> · Popularity: ⚪ Very Low (9%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -144,8 +144,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/vmray-vmray-email-attachment-analyis-2ae966ed.html">VMRay Email Attachment Analyis</a></td>
-  <td style="text-align:left">Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis.</td>
+  <td style="text-align:left"><a href="../content/vmray-vmray-email-attachment-analysis-defender-visible-cf97f153.html">VMRay Email Attachment Analysis (Defender-visible)</a></td>
+  <td style="text-align:left">Submits each attachment of an Office 365 email to VMRay and writes the analysis result to a Log Anal...</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/README.md">VMRay/README.md</a></em></p>
 </blockquote>
 <h1 id="vmray-threat-intelligence-feed-and-enrichment-integration---microsoft-sentinel">VMRay Threat Intelligence Feed and Enrichment Integration - Microsoft Sentinel</h1>
-<p><strong>Latest Version:</strong> <strong>3.0.1</strong> - <strong>Release Date:</strong> <strong>2025-11-07</strong></p>
+<p><strong>Latest Version:</strong> <strong>3.0.2</strong> - <strong>Release Date:</strong> <strong>2026-08-13</strong></p>
 <h2 id="overview">Overview</h2>
 <h2 id="requirements">Requirements</h2>
 <ul>
@@ -234,6 +234,11 @@ Reference: https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.2</td>
+  <td>13-08-2026</td>
+  <td>Added whitelist domain feature to Submit-URL-VMRay-Analyzer playbook. Reworked VMRay-Sandbox_Outlook_Attachment playbook to write results to a Log Analytics custom table and create incidents via a scheduled analytics rule, so they surface in both Microsoft Sentinel and Microsoft Defender. Fixed data connector workbook/graph queries to use the ThreatIntelIndicators table instead of the deprecated ThreatIntelligenceIndicator table</td>
+</tr>
 <tr>
   <td>3.0.1</td>
   <td>07-11-2025</td>

@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
 | **Categories** | Security - Threat Protection,Identity |
-| **Version** | 3.2.0 |
+| **Version** | 3.2.1 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2022-09-06 |
-| **Last Updated** | 2026-08-14 |
+| **Last Updated** | 2026-10-20 |
 | **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/recordedfuture1605638642586.recorded_future_identity_solution) · Rating: ★★★★★ 4.7/5 (229 ratings) · Popularity: ⚪ Very Low (0%) |
 
@@ -161,6 +161,7 @@ These playbooks and actions are designed to meet the following use cases:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.1       | 05-10-2026                     | Changed boolean playbook parameters to `"true"`/`"false"` strings so they can be set when deploying from Content Hub. |
 | 3.2.0       | 21-07-2026                     | Breaking change: updated data imports to use DCE/DCR instead of deprecated Data Collector API. See readme.md for migration instructions. |
 | 3.1.3       | 06-03-2026                     | Deprecated `RFI-Playbook-Alert-Importer-LAW-Sentinel` in preparation for Microsoft Defender Portal. Added Analytic Rule that will handle incident creation.|
 | 3.1.2       | 29-04-2025                     | Removed `Get Risky User` action from **Playbooks** due to Recorded Future can act as a authority on compromise.|

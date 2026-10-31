@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
-| **Version** | 3.4.1 |
+| **Version** | 3.4.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-08-26 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [CrowdStrike Falcon Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (82%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/products/) solution allows you to easily onboard CrowdStrike Falcon Endpoint Protection to Microsoft Sentinel. The data collected can be used to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities. 
@@ -107,11 +107,11 @@ The following **1 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **11 content item(s)** (9 in solution, 2 discovered 🔍):
+This solution includes **11 content item(s)** (10 in solution, 1 discovered 🔍):
 
 | Content Type | Total | In Solution | Discovered |
 |:-------------|------:|------------:|-----------:|
-| Parsers | 5 | 3 | 2 |
+| Parsers | 5 | 4 | 1 |
 | Playbooks | 3 | 3 | - |
 | Analytic Rules | 2 | 2 | - |
 | Workbooks | 1 | 1 | - |
@@ -141,9 +141,9 @@ This solution includes **11 content item(s)** (9 in solution, 2 discovered 🔍)
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CrowdStrikeApi](../parsers/crowdstrikeapi.md) ⚠️ | - | - |
+| [CrowdStrikeApi](../parsers/crowdstrikeapi.md) | - | - |
 | [CrowdStrikeFalconEventStream](../parsers/crowdstrikefalconeventstream.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | - | [`CrowdStrikeReplicatorV2`](../tables/crowdstrikereplicatorv2.md) *(read)*<br>[`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) *(read)* |
+| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | - | [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) *(read)* |
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | - | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) *(read)*<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) *(read)*<br>[`ASimFileEventLogs`](../tables/asimfileeventlogs.md) *(read)*<br>[`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) *(read)*<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) *(read)*<br>[`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) *(read)*<br>[`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) *(read)*<br>[`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) *(read)*<br>[`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) *(read)*<br>[`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) *(read)*<br>[`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) *(read)*<br>[`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) *(read)*<br>[`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) *(read)* |
 | [CrowdStrikeReplicator_future](../parsers/crowdstrikereplicator-future.md) ⚠️ | - | - |
 
@@ -164,6 +164,8 @@ This solution includes **11 content item(s)** (9 in solution, 2 discovered 🔍)
   * [CrowdStrike API Data Connector (via Codeless Connector Framework)](#1-crowdstrike-api-data-connector-via-codeless-connector-framework)
   * [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](#2-crowdstrike-falcon-data-replicator-aws-s3-via-codeless-connector-framework)
   * [CrowdStrike Falcon Adversary Intelligence](#3-crowdstrike-falcon-adversary-intelligence)
+
+* [Upgrade Notes](#upgrade-notes)
 
 * [Best Practices](#best-practices)
 
@@ -237,8 +239,6 @@ These telemetry datasets are generally not available through CrowdStrike native 
 
 ### Prerequisites
 
-Before configuring the Microsoft Sentinel connector:
-
 
 *[Content truncated...]*
 
@@ -246,6 +246,9 @@ Before configuring the Microsoft Sentinel connector:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.4.4       | 21-10-2026                     | Added Microsoft Defender XDR custom detections and an XDR workbook migrated from the solution's Microsoft Sentinel analytic rules and workbook |
+| 3.4.3       | 06-10-2026                     | Updated the CrowdStrike API connector DCR naming and configuration, and added upgrade guidance for V2 tables. |
+| 3.4.2       | 25-09-2026                     | Added the CrowdStrike API parser to the solution package |
 | 3.4.1       | 25-08-2026                     | Fixed the broken **Deploy to Azure Gov** badge image across **Data Connector** and **Playbook** docs |
 | 3.4.0       | 13-08-2026                     | Updated **Crowdstrike API connector** by adding V2 tables and a new parser |
 | 3.3.9       | 24-07-2026                     | Updated titles for both **CrowdStrike Falcon Data Replicator** connectors |

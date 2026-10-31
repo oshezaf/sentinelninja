@@ -14,6 +14,7 @@
 | **Solution** | [Azure Activity](../solutions/azure-activity.md) |
 | **ID** | `48c026d8-7f36-4a95-9568-6f1420d66e37` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1496 |

@@ -14,11 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 3.0.7 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-09-11 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [Google Cloud Platform Security Command Center](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Security%20Command%20Center) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpscclogs-api) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpscclogs-api) · Popularity: 🟡 Low (42%) |
 
 The Google Cloud Platform (GCP) Security Command Center is a comprehensive security and risk management platform for Google Cloud, ingested from Sentinel's connector. It offers features such as asset inventory and discovery, vulnerability and threat detection, and risk mitigation and remediation to help you gain insight into your organization's security and data attack surface. This integration enables you to perform tasks related to findings and assets more effectively.
 
@@ -79,6 +80,7 @@ This solution includes **10 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
 |-------------|--------------------------------|------------------------------------------------|
+| 3.2.2       | 22-10-2026                     | Added Defender XDR custom detections and V3.1 hybrid solution package. |
 | 3.0.7       | 11-11-2025                     | Add New **Analytic Rules** and **Hunting Queries** |
 | 3.0.6       | 12-11-2024                     | Modified datatype query for **Data Connector** |
 | 3.0.5       | 16-05-2024                     | Modification in ** Data Connector **           |

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulumiAuditLogsCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="pulumiauditlogs_cl">PulumiAuditLogs_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+</ul>
+<h2 id="schema">Schema (15 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PulumiCloudAuditLogs%5CData%20Connectors%5CPulumiAuditLogs_CCF/PulumiAuditLogs_Table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">ActorName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of a non-human actor (e.g., deploy token).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUrn_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Pulumi URN of a non-human actor.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthFailure_b</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the event represents a failed authentication attempt.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Description_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Human-readable description of the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Event_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Audit log event type identifier (e.g., stack-created, member-added).</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequireOrgAdmin_b</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the action required organization admin privileges.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequireStackAdmin_b</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the action required stack admin privileges.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceIP_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the client that triggered the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) when the audit log event occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Timestamp_d</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Original Unix epoch seconds of the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TokenID_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the access token used, if applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TokenName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the access token used, if applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAvatarUrl_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Avatar URL of the user who performed the action.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserLogin_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">GitHub login of the user who performed the action.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserName_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of the user who performed the action.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/data-source-schema-reference">Data Source Schema Reference</a></li>
+</ul>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/pulumicloudauditlogs.html">PulumiCloudAuditLogs</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/pulumiauditlogsdefinition.html">Pulumi Cloud Audit Logs</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
+<h3 id="analytic-rules">Analytic Rules (3)</h3>
+<p><strong>In solution <a href="../solutions/pulumicloudauditlogs.html">PulumiCloudAuditLogs</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-excessive-authentication-failures-0199390c-e96d-4119-b25c-83257f3c4738-ebb80d97.html">Pulumi Cloud - Excessive authentication failures</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-organization-membership-change-b5e805a7-a6b5-4af5-9a23-a5ea92b744f5-924bdf41.html">Pulumi Cloud - Organization membership change</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/pulumicloudauditlogs-pulumi-cloud-stack-deleted-bc489413-747f-41c7-bfe7-0ab66ded788e-9778b4fe.html">Pulumi Cloud - Stack deleted</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

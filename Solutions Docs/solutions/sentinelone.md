@@ -14,10 +14,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.1.3 |
+| **Version** | 3.1.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-26 |
-| **Last Updated** | 2026-09-02 |
+| **Last Updated** | 2026-10-05 |
 | **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (86%) |
 
@@ -47,11 +47,13 @@ The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bri
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **2 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) 🔶
+- [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) ⚠️ 🔶
 - [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md)
 - [SentinelOne V2 (via Codeless Connector Framework)](../connectors/sentinelonev2connector.md)
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -137,6 +139,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.4       | 28-09-2026                     | Removed the deprecated SentinelOne Azure Function **Data Connector** from the solution package |
 | 3.1.3       | 25-08-2026                     | Fixed the SentinelOne parser to restore ActivityType and CCF records while preserving SentinelOne V2 alerts |
 | 3.1.2       | 17-08-2026                     | Fix V2 parser type mismatch and fallback.   |
 | 3.1.1       | 10-08-2026                     | Advanced **SentinelOne V2 (via Codeless Connector Framework)** **Data Connector** from Public Preview to Global Availability and added the **AlertDescription** field to the alerts stream |

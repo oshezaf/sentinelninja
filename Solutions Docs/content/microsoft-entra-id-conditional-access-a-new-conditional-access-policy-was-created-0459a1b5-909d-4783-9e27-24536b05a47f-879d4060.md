@@ -14,6 +14,7 @@ A new Conditional Access policy was created in Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `0459a1b5-909d-4783-9e27-24536b05a47f` |
 | **Severity** | Informational |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion |
 | **Techniques** | T1562.007 |

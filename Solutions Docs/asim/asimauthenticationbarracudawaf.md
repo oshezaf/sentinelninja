@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationBarracudaWAF` |
 | **Built-in Parser** | `_ASim_Authentication_BarracudaWAF` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.3 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Barracuda WAF |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md)) |
-| **Last Updated** | Jun 13 2023 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md)) |
+| **Last Updated** | Oct 10, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationBarracudaWAF.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationBarracudaWAF.yaml) |
 
@@ -57,7 +57,7 @@ The following connectors provide data for this parser:
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 - [Logs type Description in Barracuda WAF](https://campus.barracuda.com/product/webapplicationfirewall/doc/78810008/types-of-logs/)
 
 ---

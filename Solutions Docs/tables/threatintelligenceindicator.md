@@ -14,7 +14,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -104,7 +104,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [ThreatIntelligenceIndicator Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator)
 
-## Solutions (24)
+## Solutions (23)
 
 This table is used by the following solutions:
 
@@ -114,7 +114,6 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [GitLab](../solutions/gitlab.md)
-- [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
@@ -147,25 +146,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (99)
+## Content Items Using This Table (94)
 
-### Analytic Rules (72)
+### Analytic Rules (67)
 
 **In solution [GitLab](../solutions/gitlab.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [GitLab - TI - Connection from Malicious IP](../content/gitlab-gitlab-ti-connection-from-malicious-ip-7241740a-5280-4b74-820a-862312d721a8-aca76b78.md) |  |
-
-**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [GreyNoise TI Map IP Entity to CommonSecurityLog](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.md) |  |
-| [GreyNoise TI Map IP Entity to DnsEvents](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.md) |  |
-| [GreyNoise TI Map IP Entity to SigninLogs](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.md) |  |
-| [GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-network-session-events-asim-network-session-sc-536e8e5c-ce0e-575e-bcc9-aba8e7bf9316-294d0914.md) |  |
-| [GreyNoise TI map IP entity to OfficeActivity](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-officeactivity-c51628fe-999c-5150-9fd7-660fc4f58ed2-a0b3d699.md) |  |
 
 **In solution [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md):**
 
@@ -393,9 +382,9 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
-| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
+| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
+| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **4** | **1** | **0** | **0** | **5** |
@@ -404,11 +393,11 @@ References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
-| `!startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense :` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
+| `!startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 

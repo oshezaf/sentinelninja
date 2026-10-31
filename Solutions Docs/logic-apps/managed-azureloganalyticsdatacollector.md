@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 104 |
-| **Solutions** | 21 |
+| **Playbooks using** | 74 |
+| **Solutions** | 18 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azureloganalyticsdatacollector/) |
 
 ## Playbooks Using This Connector
@@ -57,28 +57,6 @@
 | [Get-O365Data](../content/standalone-content-get-o365data-4178da9b.md) | 📄 Standalone | 1 | 1 |
 | [Get-SecureScore-Information](../content/github-only-get-securescore-information-c908bf74.md) | 🔗 GitHub Only | 1 | 6 |
 | [Get-TenableVlun](../content/standalone-content-get-tenablevlun-13bc5a0b.md) | 📄 Standalone | 1 | 0 |
-| [GIBTIA_APT_ThreatActor](../content/group-ib-gibtia-apt-threatactor-190ca81b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_APT_Threats](../content/group-ib-gibtia-apt-threats-0bf2e06a.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Attacks_ddos](../content/group-ib-gibtia-attacks-ddos-676a7f45.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_Attacks_deface](../content/group-ib-gibtia-attacks-deface-0571809a.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_Attacks_phishing](../content/group-ib-gibtia-attacks-phishing-05e0bef0.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_Attacks_phishing_kit](../content/group-ib-gibtia-attacks-phishing-kit-176cf63b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_BP_phishing](../content/group-ib-gibtia-bp-phishing-1f9bfeff.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_BP_phishing_kit](../content/group-ib-gibtia-bp-phishing-kit-0f993020.md) | [Group-IB](../solutions/group-ib.md) | 1 | 3 |
-| [GIBTIA_Compromised_account](../content/group-ib-gibtia-compromised-account-12e40e7c.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Compromised_card](../content/group-ib-gibtia-compromised-card-4873e37b.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Compromised_imei](../content/group-ib-gibtia-compromised-imei-1e238983.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Compromised_mule](../content/group-ib-gibtia-compromised-mule-500b5f08.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_HI_Threat](../content/group-ib-gibtia-hi-threat-bfac31e2.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_HI_Threat_Actor](../content/group-ib-gibtia-hi-threat-actor-2c1acd08.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Malware_cnc](../content/group-ib-gibtia-malware-cnc-4702dbee.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Malware_Targeted_Malware](../content/group-ib-gibtia-malware-targeted-malware-ece0af42.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_OSI_GitLeak](../content/group-ib-gibtia-osi-gitleak-631460d0.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_OSI_PublicLeak](../content/group-ib-gibtia-osi-publicleak-70bc2712.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_OSI_Vulnerability](../content/group-ib-gibtia-osi-vulnerability-abc46184.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Suspicious_ip_open_proxy](../content/group-ib-gibtia-suspicious-ip-open-proxy-74ec79d9.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Suspicious_ip_socks_proxy](../content/group-ib-gibtia-suspicious-ip-socks-proxy-872abe00.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
-| [GIBTIA_Suspicious_ip_tor_node](../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) | [Group-IB](../solutions/group-ib.md) | 1 | 4 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 1 | 2 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 1 | 2 |
 | [Guardicore-Import-Assets](../content/standalone-content-guardicore-import-assets-1db1ba64.md) | 📄 Standalone | 1 | 1 |
@@ -94,12 +72,6 @@
 | [Ingest-Prisma](../content/standalone-content-ingest-prisma-05aee65e.md) | 📄 Standalone | 1 | 1 |
 | [OktaEvents-to-Sentinel](../content/standalone-content-oktaevents-to-sentinel-f59de14f.md) | 📄 Standalone | 1 | 1 |
 | [Put CanaryTokens webhook alerts to Custom Logs table](../content/standalone-content-put-canarytokens-webhook-alerts-to-custom-logs-table-17b0c929.md) | 📄 Standalone | 1 | 1 |
-| [RecordedFuture-Alert-Importer](../content/recorded-future-recordedfuture-alert-importer-744ed2e2.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
-| [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
-| [RecordedFuture-Sandbox_Outlook_Attachment](../content/recorded-future-recordedfuture-sandbox-outlook-attachment-124e2932.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
-| [RecordedFuture-Sandbox_StorageAccount](../content/recorded-future-recordedfuture-sandbox-storageaccount-9566f274.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
-| [RecordedFuture-ThreatMap-Importer](../content/recorded-future-recordedfuture-threatmap-importer-58b1d1a3.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
-| [RecordedFuture-ThreatMapMalware-Importer](../content/recorded-future-recordedfuture-threatmapmalware-importer-001905e9.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 1 |
 | [ReversingLabs-CheckQuota](../content/reversinglabs-reversinglabs-checkquota-9c8101f9.md) | [ReversingLabs](../solutions/reversinglabs.md) | 1 | 7 |
 | [RFI-Playbook-Alert-Importer-LAW-Sentinel (DEPRECATED)](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel-deprecated-64ea3f24.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 1 | 1 |
 | [Rubrik File Object Context Analysis](../content/rubriksecuritycloud-rubrik-file-object-context-analysis-30d5a377.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 1 | 2 |
@@ -115,8 +87,6 @@
 | [StratoSecure - Create Jira Ticket](../content/stratosecure-stratosecure-create-jira-ticket-cccd8afb.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
 | [StratoSecure - Escalate to Owner via Email](../content/stratosecure-stratosecure-escalate-to-owner-via-email-36e9ee8f.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
 | [StratoSecure - Notify Microsoft Teams](../content/stratosecure-stratosecure-notify-microsoft-teams-bf1e8e3f.md) | [StratoSecure](../solutions/stratosecure.md) | 1 | 1 |
-| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 6 |
-| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 1 | 21 |
 | [Thinkst Canary Microsoft Sentinel Alert Integration](../content/standalone-content-thinkst-canary-microsoft-sentinel-alert-integration-37f6f36b.md) | 📄 Standalone | 1 | 0 |
 | [Vaikora to Microsoft Defender for Cloud](../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) | 1 | 1 |
 

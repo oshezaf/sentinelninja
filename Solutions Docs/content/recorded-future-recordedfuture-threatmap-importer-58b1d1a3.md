@@ -6,7 +6,7 @@
 
 ---
 
-This playbook will import Threat Map data from Recorded Future and store it in a custom log.
+This playbook imports Threat Map data from Recorded Future and stores it in a custom log (RecordedFutureThreatMap_V2_CL) in the Log Analytics Workspace.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,37 +14,29 @@ This playbook will import Threat Map data from Recorded Future and store it in a
 | **Solution** | [Recorded Future](../solutions/recorded-future.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/ThreatHunting/RecordedFuture-ThreatMap-Importer/azuredeploy.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | ? | ✓ | ? |
-
 ## Logic App Connectors
 
 This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
 | [`recordedfuturecustomconnector`](../logic-apps/managed-recordedfuturecustomconnector.md) | Managed | 0 | 1 |
 | [`RecordedFuture-CustomConnector`](../logic-apps/custom-recordedfuture-customconnector.md) | Custom | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
-
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Data_-_Save_full_ThreatMap_response | post | `/api/logs` | — |
 
 #### [`recordedfuturecustomconnector`](../logic-apps/managed-recordedfuturecustomconnector.md) (Managed)
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Fetch_Threat_Map_actors | post | `/threat/map/actors` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | POST | `@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrImmutableId')}/streams/@{parameters('StreamName')}?api-version=2023-01-01` | — |
 
 </details>
 

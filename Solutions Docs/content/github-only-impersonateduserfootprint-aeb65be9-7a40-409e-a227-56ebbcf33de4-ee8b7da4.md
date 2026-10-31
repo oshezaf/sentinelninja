@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | `EntityType == "User"` | ✓ | ✗ | ✓ |
-| [`AlertInfo`](../tables/alertinfo.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "LogonSuccess"`<br>`EntityType == "User"` | ✓ | ✗ | ✓ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | ✓ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) | `LogonType == "Network"` | ✓ | ✗ | ✓ |
 
 ---

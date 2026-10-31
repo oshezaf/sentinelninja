@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpyCloud MDE Automation Playbook &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spycloud-mde-automation-playbook">SpyCloud MDE Automation Playbook</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Automates Microsoft Defender for Endpoint response actions - machine isolation, machine tagging and IOC submission - when SpyCloud breach data identifies a compromised machine.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/spycloud-enterprise-protection-ccf.html">SpyCloud Enterprise Protection CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_MDE_Automation/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>4</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', parameters('Workspace_Name'))]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_DNS</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/dnsresolution</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="office365"><a href="../logic-apps/managed-office365.html"><code>office365</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_an_email_(V2)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/Mail</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wdatp"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Machines_-_Get_single_machine</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machines/@{items('For_each')?['HostName']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Isolate_machine</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(body('Machines_-_Get_single_machine')?['id'])}/isolate</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Machines_-_Tag_machine</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(body('Machines_-_Get_single_machine')?['id'])}/tags</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">GetAccessToken</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(variables('loginUrl'), parameters('TenantID'), '/oauth2/v2.0/token')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Log_ingestion</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@variables('log_ingestion_api')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Auth_MDE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(variables('loginUrl'), parameters('TenantID'), '/oauth2/v2.0/token')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Create_Indicator</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.security.microsoft.com/api/indicators/import</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection%20CCF/Playbooks/SpyCloud_MDE_Automation/readme.md">SpyCloud_MDE_Automation/readme.md</a></em></p>
+</blockquote>
+<p>This playbook automates endpoint response actions in Microsoft Defender for Endpoint (MDE) when SpyCloud breach data identifies compromised machines.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li>Machine isolation in Defender for Endpoint</li>
+<li>Machine tagging for tracking, grouping, and policy targeting</li>
+<li>IOC submission to Defender Threat Intelligence</li>
+<li>Optional Microsoft Sentinel incident creation</li>
+<li>Email notifications</li>
+<li>Execution log ingestion to <code>Spycloud_MDE_LogsV2_CL</code></li>
+</ul>
+<p>The deployment also creates the Microsoft Sentinel automation rule that invokes this playbook, so no separate wiring step is needed. See <a href="#automation-rule">Automation rule</a> below.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>App Registration with the Microsoft Graph and WindowsDefenderATP permissions listed in the SpyCloud Sentinel Integration Guide, Section 2.1</li>
+<li>DCR Immutable ID and DCE Logs Ingestion Endpoint URL for <code>Spycloud_MDE_LogsV2_CL</code> (Section 2.2)</li>
+<li>Monitoring Metrics Publisher role assigned to the App Registration on that DCR</li>
+<li><strong>Microsoft Sentinel Automation Contributor</strong> granted to the <strong>Azure Security Insights</strong> service principal on the resource group you are deploying into — see below</li>
+</ul>
+<h3 id="finding-the-dcr-immutable-id-and-dce-endpoint">Finding the DCR immutable ID and DCE endpoint</h3>
+<p>The solution template names its data collection rule <code>SpyCloudwatchlist-DCR</code>, but Microsoft Sentinel does not create it under that name. When you connect the data connector, Sentinel provisions the rule itself as <code>Microsoft-Sentinel-SpyCloudwatchlist-DCR-&lt;guid&gt;</code> and pairs it with an auto-generated <code>asi-&lt;guid&gt;</code> data collection endpoint. Searching for <code>SpyCloudwatchlist-DCR</code> in the portal will not find it, and if the connector has been connected more than once there will be several, only the most recent of which is in use.</p>
+<p>Read both values from the live connector rather than hunting through the resource list:</p>
+<pre><code class="language-bash">SUB=&lt;subscription-id&gt;; RG=&lt;resource-group&gt;; WS=&lt;workspace-name&gt;
+az rest --method get --url &quot;https://management.azure.com/subscriptions/$SUB/resourceGroups/$RG/providers/Microsoft.OperationalInsights/workspaces/$WS/providers/Microsoft.SecurityInsights/dataConnectors?api-version=2023-02-01-preview&quot; --query &quot;value[?properties.dcrConfig] | [0].properties.dcrConfig.{immutableId: dataCollectionRuleImmutableId, endpoint: dataCollectionEndpoint}&quot;
+</code></pre>
+<p>All four pollers share the same rule and endpoint, so any one of them gives the right answer. Note that the endpoint you need is the <strong>Logs Ingestion</strong> URL — <code>...ingest.monitor.azure.com</code>, not the <code>...handler.control.monitor.azure.com</code> configuration-access URL shown alongside it on the DCE resource. Grant the App Registration <strong>Monitoring Metrics Publisher</strong> on that same rule.</p>
+<h3 id="grant-automation-contributor-first">Grant Automation Contributor first</h3>
+<p>This deployment creates a Microsoft Sentinel automation rule alongside the Logic App, and Sentinel refuses to create an automation rule unless it already has permission to run playbooks in the target resource group. Without it the deployment fails with:</p>
+<pre><code>Missing required permissions for Microsoft Sentinel on the playbook resource '.../SpyCloud_MDE_Automation'
+</code></pre>
+<p>Grant it once per resource group, before deploying either playbook:</p>
+<pre><code class="language-bash">az role assignment create \
+  --role &quot;Microsoft Sentinel Automation Contributor&quot; \
+  --assignee 98785600-1bb7-4fb9-b9fa-19afe2c8a360 \
+  --scope /subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group&gt;
+</code></pre>
+<p><code>98785600-1bb7-4fb9-b9fa-19afe2c8a360</code> is the fixed application ID for Azure Security Insights. In the portal, use <strong>Access control (IAM)</strong> on the resource group → <strong>Add role assignment</strong> → <em>Microsoft Sentinel Automation Contributor</em> → search for <strong>Azure Security Insights</strong>.</p>
+<p>This permission has always been required for the automation to work. It is now enforced at deployment time rather than allowing a rule to be created that silently never fires.</p>
+<h2 id="deployment">Deployment</h2>
+<p>All settings are supplied at deployment time. There is no post-deployment parameter editing.</p>
+<ol>
+<li>In the Azure Portal, navigate to <strong>Deploy a custom template</strong></li>
+<li>Select this template (<code>azuredeploy.json</code>)</li>
+<li>Confirm Subscription, Resource Group, and Region</li>
+<li>Complete the parameters below</li>
+<li>Click <strong>Review + Create</strong>, then <strong>Create</strong></li>
+<li>Authorize the <code>office365</code> and <code>WindowsDefenderATP</code> API connections created by the deployment</li>
+</ol>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>String</td>
+  <td>SpyCloud_MDE_Automation</td>
+  <td>Name of the Logic App resource</td>
+</tr>
+<tr>
+  <td>Workspace_Name</td>
+  <td>String</td>
+  <td>—</td>
+  <td>Name of the Log Analytics workspace where Microsoft Sentinel is enabled. Used to build the incident path for the optional 'Create incident in Sentinel' action</td>
+</tr>
+<tr>
+  <td>Isolate_Machine</td>
+  <td>String</td>
+  <td>false</td>
+  <td>Enable automatic machine isolation in Defender for Endpoint</td>
+</tr>
+<tr>
+  <td>Machine_Tag_Value</td>
+  <td>String</td>
+  <td>—</td>
+  <td>Tag applied to affected machines in Defender for Endpoint. Leave blank to skip tagging</td>
+</tr>
+<tr>
+  <td>Save_IOCs_Defender</td>
+  <td>String</td>
+  <td>false</td>
+  <td>Submit breach-derived indicators to Defender Threat Intelligence</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection-ccf.html">Back to SpyCloud Enterprise Protection CCF</a></p>
+
+</div>
+
+</body>
+</html>

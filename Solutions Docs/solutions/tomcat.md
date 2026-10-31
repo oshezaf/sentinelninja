@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,Application |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Last Updated** | 2025-12-14 |
+| **Last Updated** | 2026-10-13 |
 | **Solution Folder** | [Tomcat](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachetomcat) · Popularity: ⚪ Very Low (1%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachetomcat) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](http://tomcat.apache.org/) events into Microsoft Sentinel. Refer to [Apache Tomcat documentation](http://tomcat.apache.org/tomcat-10.0-doc/logging.html) for more information.
@@ -144,6 +144,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                  |
 |-------------|--------------------------------|-------------------------------------------------------------------------------------|
+| 3.0.2       | 10-09-2026                     | Fixed the API version issue |
 | 3.0.1       | 09-12-2024                     | Removed Deprecated **Data connector**                                               |
 | 3.0.0       | 13-08-2024                     | Deprecating data connectors |
 

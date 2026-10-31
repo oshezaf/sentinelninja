@@ -19,7 +19,7 @@
 - [Connectors](#connectors)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (155 columns)
+## Schema (156 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TrendAI%20Vision%20One%28CCF%29%5CData%20Connectors%5CTrendAIVisionOneOAT_ccp/TrendAIVisionOneOAT_table.json)
 
@@ -147,6 +147,7 @@
 | detail_processUserDomain_s | string |  |
 | detail_proto_s | string | Network protocol. |
 | detail_remarks_s | string |  |
+| detail_rt_s | string |  |
 | detail_rt_t | datetime |  |
 | detail_rtHour_d | real |  |
 | detail_ruleId_d | real |  |

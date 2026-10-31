@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | ✗ | ✓ | ✗ |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -40,6 +40,7 @@ This connector ingests data into the following tables:
 - **Azure Subscription**: Azure Subscription with owner role is required to register an application in Microsoft Entra ID, create a Data Collection Endpoint, Data Collection Rule, and assign the required roles.
 - **Microsoft Entra App Registration**: A Microsoft Entra ID App Registration (Service Principal) with a Client Secret is required. The app's Object ID must be provided so the deployment can assign it the necessary role to publish logs via the Log Ingestion API.
 - **Microsoft.Web/sites permissions**: Read and write permissions to Azure Functions to create a Function App is required. [See the documentation to learn more about Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+- **Microsoft.Network permissions (optional)**: Only required if you choose to lock the storage account down behind private endpoints (StorageAccountAccessType = Private). Read and write permissions on the VNet/subnets (or permission to create a new VNet), and on the private DNS zones used to resolve the storage private endpoints, are required.
 - **ExtraHop RevealX permissions**: The following is required on your ExtraHop RevealX system:
  1. Your RevealX system must be running firmware version 9.9.2 or later.
  2. Your RevealX system must be connected to ExtraHop Cloud Services.
@@ -123,6 +124,34 @@ Use this method for automated deployment of the ExtraHop Detections Data connect
 	 i. **LogLevel** - Select log level or log severity value from Debug, Info, Error, Warning. By default it is set to Info
 
 	 j. **AppInsightsWorkspaceResourceID** - Migrate Classic Application Insights to Log Analytic Workspace which is retiring by 29 Febraury 2024. Use 'Log Analytic Workspace-->Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'
+
+	 k. **HostingPlanType** - Select the Function App hosting plan: `FlexConsumption` (recommended, required if you choose Private storage below) or `LinuxConsumption` (legacy, only supports Public storage, and retires 30 September 2028). Default is `FlexConsumption`
+
+	 l. **StorageAccountAccessType** - Select `Public` (default, matches historical connector behavior) or `Private` to lock the storage account down behind private endpoints (blob/file/queue/table). `Private` requires HostingPlanType = `FlexConsumption`
+
+	 m. **NetworkDeploymentMode** - Only used when StorageAccountAccessType is `Private`. `Existing` (default) uses subnet/private DNS zone resource IDs you already have; `New` has this template create its own VNet, subnets, and private DNS zones automatically
+
+	 n. **VNetAddressPrefix** - Only used when NetworkDeploymentMode is `New`. Address space for the VNet this template creates. Default `10.42.0.0/24`
+
+	 o. **FunctionAppOutboundSubnetPrefix** - Only used when NetworkDeploymentMode is `New`. Subnet prefix for the Function App's outbound VNet integration. Default `10.42.0.0/27`
+
+	 p. **StoragePrivateEndpointSubnetPrefix** - Only used when NetworkDeploymentMode is `New`. Subnet prefix for the storage account's private endpoints. Default `10.42.0.32/27`
+
+	 q. **FunctionAppOutboundSubnetId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of an empty subnet delegated to `Microsoft.App/environments`, used for the Function App's regional VNet integration
+
+	 r. **StoragePrivateEndpointSubnetId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of the subnet where the storage account's blob/file/queue/table private endpoints will be created
+
+	 s. **CreatePrivateDnsZoneLinks** - Only used when NetworkDeploymentMode is `Existing`. If `true`, links StorageVNetId (below) to the private DNS zones below. If `false` (default), your VNet must already be linked to these zones
+
+	 t. **StorageVNetId** - Required only when CreatePrivateDnsZoneLinks is `true`. Resource ID of the VNet that contains the subnets above, to link to the private DNS zones below
+
+	 u. **BlobPrivateDnsZoneId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of an existing private DNS zone for Blob storage (`privatelink.blob`)
+
+	 v. **FilePrivateDnsZoneId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of an existing private DNS zone for File storage (`privatelink.file`)
+
+	 w. **QueuePrivateDnsZoneId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of an existing private DNS zone for Queue storage (`privatelink.queue`)
+
+	 x. **TablePrivateDnsZoneId** - Required when StorageAccountAccessType is `Private` and NetworkDeploymentMode is `Existing`. Resource ID of an existing private DNS zone for Table storage (`privatelink.table`)
 
 4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. 
 5. Click **Purchase** to deploy.

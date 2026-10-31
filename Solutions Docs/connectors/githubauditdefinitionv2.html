@@ -69,6 +69,8 @@
 </table>
 <p>The GitHub audit log connector provides the capability to ingest GitHub logs into Microsoft Sentinel. By connecting GitHub audit logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process.</p>
 <p><strong>Note:</strong> If you intended to ingest GitHub subscribed events into Microsoft Sentinel, please refer to GitHub (using Webhooks) Connector from &quot;<strong>Data Connectors</strong>&quot; gallery.</p>
+<p><strong>Volume limitation:</strong> GitHub <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/using-the-audit-log-api-for-your-enterprise#rate-limit">limits this audit-log API</a> to <strong>1,750 requests/hour</strong> per user, source IP, and enterprise. With the current default of <strong>30 events/page</strong>, the theoretical ceiling is about <strong>13,100 events/15 minutes</strong>, before retries or competing requests. In Azure public cloud, we recommend <strong><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-enterprise-audit-log-via-azure-storage">GitHub Enterprise Audit Log (via Azure Storage)</a></strong> when your enterprise regularly generates <strong>10,000+ audit and Git events/15 minutes</strong>, or connector health reports recurring GitHub rate-limit errors (HTTP 403/429) or ingestion delays keep increasing.</p>
+<p><strong>Azure Government Cloud:</strong> The Azure Storage connector is <strong>not supported</strong> in Azure Government Cloud. <a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#setting-up-streaming-to-azure-blob-storage">GitHub documentation</a> states: &quot;Audit log streaming to blob storage in Azure Government is not supported&quot;. The Azure Storage migration recommendation above does not apply in this cloud; the REST API connector remains subject to GitHub's API rate limits.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -83,9 +85,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/githubauditlogsv2-cl.html"><code>GitHubAuditLogsV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>

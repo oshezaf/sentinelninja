@@ -16,12 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Cloud Security,Security - Automation (SOAR) |
-| **Version** | 3.3.1 |
+| **Version** | 3.3.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-01 |
-| **Last Updated** | 2026-08-27 |
+| **Last Updated** | 2026-10-26 |
 | **Solution Folder** | [CiscoUmbrella](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoumbrella) · Popularity: 🟡 Low (40%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoumbrella) · Popularity: 🔵 Medium (61%) |
 
 The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest [Cisco Secure Access](https://docs.sse.cisco.com/sse-user-guide/docs/welcome-cisco-secure-access) and [Cisco Umbrella](https://docs.umbrella.com/umbrella-user-guide/docs/getting-started) [logs](https://docs.sse.cisco.com/sse-user-guide/docs/manage-your-logs) stored in Amazon S3 into Microsoft Sentinel using the Amazon S3 REST API
 
@@ -145,6 +145,9 @@ This solution includes **26 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                          |
 |-------------|--------------------------------|-------------------------------------------------------------|
+| 3.3.4 | 25-10-2026 | Restored `DeployParser` parameter and `Parser` resource deployment condition for the `Cisco_Umbrella` **Parser** alongside the ten disabled **Defender XDR Custom Detections** and one **Defender XDR Workbook** so Content Hub installation and multi-workspace deployment succeed. |
+| 3.3.3 | 15-10-2026 | Added 10 disabled **Defender XDR Custom Detections** and 1 **Defender XDR Workbook** (`CiscoUmbrella.json`) alongside the existing Sentinel content and updated the solution package to 3.3.3. |
+| 3.3.2       | 04-09-2026                     | Updated the Cisco Umbrella template to allow an empty S3 bucket prefix or one with or without a trailing slash, allowing customer root directories to work. |
 | 3.3.1       | 26-08-2026                     | Fixed Cisco Umbrella CCF connection resource naming to include the S3 bucket, region, and prefix, preventing connections for different account prefixes from overwriting each other. |
 | 3.3.0       | 14-08-2026                     | Updated **CCF Data Connector** for Cisco Cloud Security log schema version 16: enabled Gzip decompression for all log streams, added **DestinationSgtOriginId** and **FwBlockReason** columns to CiscoUmbrellaCloudFirewall, added **IsolationProfileId** column to CiscoUmbrellaWebTraffic, and added connector instruction notes for optional headers and Cisco-managed/customer-managed Amazon S3 buckets. |
 | 3.2.2       | 04-08-2026                     | Fixed broken **Deploy to Azure Gov** button link in **Data Connectors** and **Playbooks**. |

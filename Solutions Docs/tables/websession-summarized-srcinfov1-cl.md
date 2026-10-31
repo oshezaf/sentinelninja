@@ -8,13 +8,38 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
 
+- [Schema](#schema)
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
+
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WebSession_Summarized_SrcInfoV1_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DstBytes_d | int |
+| EventCount_d | int |
+| EventProduct_s | string |
+| EventResult_s | string |
+| EventResultDetails_s | string |
+| EventTime_t | datetime |
+| EventType_s | string |
+| EventVendor_s | string |
+| HttpContentType_s | string |
+| HttpRequestMethod_s | string |
+| HttpUserAgent_s | string |
+| NetworkApplicationProtocol_s | string |
+| SrcBytes_d | int |
+| TimeGenerated | datetime |
+| UrlCategory_s | string |
 
 ## Schema References
 
@@ -30,7 +55,32 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (4)
+
+### Analytic Rules (2)
+
+**In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md) |  |
+| [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) |  |
+
+### Workbooks (1)
+
+**In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [WebSessionEssentialsCustomParser](../parsers/websessionessentialscustomparser.md) | [Web Session Essentials](../solutions/web-session-essentials.md) |  |
 
 ---
 

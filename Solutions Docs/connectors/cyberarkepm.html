@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberArkEPM &mdash; Solutions Analyzer</title>
+<title>Idira EPM &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,8 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="cyberarkepm">CyberArkEPM</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75">
+<h1 id="idira-epm">Idira EPM</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/idira_RGB_logo.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
@@ -35,7 +35,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">CyberArk</td>
+  <td style="text-align:left">Idira</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Used in Solutions</strong></td>
@@ -55,11 +55,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyberarkepm-using-azure-functions">View on Learn</a></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#idira-epm">View on Learn</a></td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://www.cyberark.com/products/endpoint-privilege-manager/">CyberArk Endpoint Privilege Manager</a> data connector provides the capability to retrieve security event logs of the CyberArk EPM services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
+<p>The <a href="https://www.cyberark.com/products/endpoint-privilege-manager/">Idira Endpoint Privilege Manager</a> data connector provides the capability to retrieve security event logs of the Idira EPM services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -74,9 +74,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/cyberarkepm-events-cl.html"><code>CyberArkEPM_Events_CL</code></a></td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +92,7 @@
 <p><strong>Custom Permissions:</strong></p>
 <ul>
 <li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
-<li><strong>REST API Credentials/permissions</strong>: <strong>CyberArkEPMUsername</strong>, <strong>CyberArkEPMPassword</strong> and <strong>CyberArkEPMServerURL</strong> are required for making API calls.</li>
+<li><strong>REST API Credentials/permissions</strong>: <strong>OauthUsername</strong>, <strong>OauthPassword</strong>, <strong>IdentityEndpoint</strong>, <strong>EPMRegionHost</strong> and <strong>WebAppID</strong> are required for making API calls.</li>
 </ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
@@ -107,27 +107,14 @@
 <blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-CyberArkEPM-parser"><strong>CyberArkEPM</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
 </blockquote>
-<p><strong>STEP 1 - Configuration steps for the CyberArk EPM API</strong></p>
-<p>Follow the instructions to obtain the credentials.</p>
+<p><strong>STEP 1 - Configuration steps for the Idira EPM API</strong></p>
+<p>Follow the <a href="https://docs.cyberark.com/epm/latest/en/content/webservices/authenticate-with-identity-administration.htm">instructions</a> to obtain the OAuth2 credentials.</p>
 <ol>
-<li>Use Username and Password for your CyberArk EPM account.</li>
+<li>Obtain the <strong>OauthUsername</strong>, <strong>OauthPassword</strong>, <strong>WebAppID</strong>, <strong>IdentityEndpoint</strong> and <strong>EPMRegionHost</strong> for your Idira EPM account.</li>
 </ol>
 <p><strong>STEP 2 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</strong></p>
-<blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the CyberArk EPM data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following).</p>
-</blockquote>
-<ul>
-<li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-<li><strong>Primary Key</strong>: <code>PrimaryKey</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-</ul>
 <p><strong>3. Option 1 - Azure Resource Manager (ARM) Template</strong></p>
-<p>Use this method for automated deployment of the CyberArk EPM data connector using an ARM Template.</p>
+<p>Use this method for automated deployment of the Idira EPM data connector using an ARM Template.</p>
 <ol>
 <li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
 <p><a href="https://aka.ms/sentinel-CyberArkEPMAPI-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
@@ -139,12 +126,12 @@
 <p><strong>NOTE:</strong> Within the same resource group, you can't mix Windows and Linux apps in the same region. Select existing resource group without Windows apps in it or create new resource group.</p>
 </blockquote>
 <ol start="3">
-<li>Enter the <strong>CyberArkEPMUsername</strong>, <strong>CyberArkEPMPassword</strong>, <strong>CyberArkEPMServerURL</strong>  and deploy.</li>
+<li>Enter the <strong>OauthUsername</strong>, <strong>OauthPassword</strong>, <strong>IdentityEndpoint</strong>, <strong>EPMRegionHost</strong> and <strong>WebAppID</strong> and deploy.</li>
 <li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</li>
 <li>Click <strong>Purchase</strong> to deploy.</li>
 </ol>
 <p><strong>4. Option 2 - Manual Deployment of Azure Functions</strong></p>
-<p>Use the following step-by-step instructions to deploy the CyberArk EPM data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
+<p>Use the following step-by-step instructions to deploy the Idira EPM data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
 <p><strong>1. Deploy a Function App</strong></p>
 <blockquote>
 <p><strong>NOTE:</strong> You will need to <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites">prepare VS code</a> for Azure function development.</p>
@@ -176,23 +163,18 @@ If you're already signed in, go to the next step.</p>
 <p><strong>2. Configure the Function App</strong></p>
 <ol>
 <li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
-<li>In the <strong>Application settings</strong> tab, select ** New application setting**.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>New application setting</strong>.</li>
 <li>Add each of the following application settings individually, with their respective string values (case-sensitive):
-CyberArkEPMUsername
-CyberArkEPMPassword
-CyberArkEPMServerURL
+OAuthUsername
+OAuthPassword
+IdentityEndpoint
+EPMRegionHost
+WebAppID
 WorkspaceID
-WorkspaceKey
-logAnalyticsUri (optional)</li>
-</ol>
-<ol start="4">
+WorkspaceKey</li>
+<li>Use the <strong>WorkspaceID</strong> and <strong>WorkspaceKey</strong> values from the Log Analytics workspace connected to Microsoft Sentinel.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
-<blockquote>
-<ul>
-<li>Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
-</ul>
-</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

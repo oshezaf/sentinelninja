@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Application,Cloud Provider |
-| **Version** | 2.0.1 |
+| **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-17 |
 | **Last Updated** | 2026-03-03 |
@@ -49,8 +49,7 @@ This solution uses **1 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                  |
 |-------------|--------------------------------|---------------------------------------------------------------------|
-| 3.0.1 (Dynamics 365 CE Apps Solution)        | 02-09-2024                     | Fixed duplicate analytics rule query |
-| 3.0.0       | 24-09-2024                     | Fixed **Data Connector** Title    |
+| 3.0.0 (Dynamics 365 CE Apps Solution)        | 02-09-2024                     | Fixed duplicate analytics rule query and Fixed **Data Connector** Title |
 
 ---
 

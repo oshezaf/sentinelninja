@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -90,13 +88,14 @@ This table is ingested by the following connectors:
 
 ## Content Items Using This Table (3)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Check Point Exposure Management - Alert Ingestion Anomaly](../content/check-point-cyberint-alerts-check-point-exposure-management-alert-ingestion-anomaly-8d3b9c7e-5a2f-4e1d-b6c8-3f9a7e2d1b4c-1545e994.md) |  |
+| [Check Point Exposure Management - Argos alerts to incidents](../content/check-point-cyberint-alerts-check-point-exposure-management-argos-alerts-to-incidents-2f7c4e91-6b8d-4a3f-9e15-c0d84b7a2f36-770efb05.md) |  |
 
 ### Workbooks (1)
 

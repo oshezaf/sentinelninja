@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.4.1</td>
+  <td style="text-align:left">3.4.4</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-08-26</td>
+  <td style="text-align:left">2026-10-29</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (90%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep">Azure Marketplace</a> · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (82%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -299,7 +299,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>11 content item(s)</strong> (9 in solution, 2 discovered 🔍):</p>
+<p>This solution includes <strong>11 content item(s)</strong> (10 in solution, 1 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -313,8 +313,8 @@
 <tr>
   <td style="text-align:left">Parsers</td>
   <td style="text-align:right">5</td>
-  <td style="text-align:right">3</td>
-  <td style="text-align:right">2</td>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">1</td>
 </tr>
 <tr>
   <td style="text-align:left">Playbooks</td>
@@ -414,7 +414,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../parsers/crowdstrikeapi.html">CrowdStrikeApi</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/crowdstrikeapi.html">CrowdStrikeApi</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
@@ -426,7 +426,7 @@
 <tr>
   <td style="text-align:left"><a href="../parsers/crowdstrikereplicator.html">CrowdStrikeReplicator</a></td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/crowdstrikereplicatorv2.html"><code>CrowdStrikeReplicatorV2</code></a> <em>(read)</em><br><a href="../tables/crowdstrikereplicatorlogs-cl.html"><code>CrowdstrikeReplicatorLogs_CL</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../tables/crowdstrikereplicatorlogs-cl.html"><code>CrowdstrikeReplicatorLogs_CL</code></a> <em>(read)</em></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../parsers/crowdstrikereplicatorv2.html">CrowdStrikeReplicatorV2</a></td>
@@ -458,6 +458,8 @@
 <li><a href="#2-crowdstrike-falcon-data-replicator-aws-s3-via-codeless-connector-framework">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a></li>
 <li><a href="#3-crowdstrike-falcon-adversary-intelligence">CrowdStrike Falcon Adversary Intelligence</a></li>
 </ul>
+</li>
+<li><p><a href="#upgrade-notes">Upgrade Notes</a></p>
 </li>
 <li><p><a href="#best-practices">Best Practices</a></p>
 </li>
@@ -520,7 +522,6 @@ https://developer.crowdstrike.com/api-reference/overview/</p>
 </ul>
 <p>These telemetry datasets are generally not available through CrowdStrike native APIs and are delivered through the Falcon Data Replicator (FDR) service.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Before configuring the Microsoft Sentinel connector:</p>
 <p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
@@ -532,6 +533,21 @@ https://developer.crowdstrike.com/api-reference/overview/</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.4.4</td>
+  <td>21-10-2026</td>
+  <td>Added Microsoft Defender XDR custom detections and an XDR workbook migrated from the solution's Microsoft Sentinel analytic rules and workbook</td>
+</tr>
+<tr>
+  <td>3.4.3</td>
+  <td>06-10-2026</td>
+  <td>Updated the CrowdStrike API connector DCR naming and configuration, and added upgrade guidance for V2 tables.</td>
+</tr>
+<tr>
+  <td>3.4.2</td>
+  <td>25-09-2026</td>
+  <td>Added the CrowdStrike API parser to the solution package</td>
+</tr>
 <tr>
   <td>3.4.1</td>
   <td>25-08-2026</td>

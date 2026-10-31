@@ -16,11 +16,12 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | Application |
-| **Version** | 3.3.2 |
+| **Version** | 3.4.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Microsoft Exchange Security - Exchange On-Premises](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-exchangesecurityinsights) · Popularity: 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-exchangesecurityinsights) · Popularity: 🔵 Medium (63%) |
 
 The Exchange Security Audit and Configuration Insight solution analyze Exchange On-Premises configuration and logs from a security lens to provide insights and alerts.
 
@@ -30,7 +31,7 @@ This solution takes a dependency on the following technologies, and some of thes
 
 a. [Windows Event logs collection, including MS Exchange Management Event logs](https://learn.microsoft.com/azure/azure-monitor/agents/data-sources-windows-events)
 
-b. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell)
+b. [Custom logs ingestion via Logs Ingestion API in Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
 
 ## Contents
 
@@ -41,10 +42,11 @@ b. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 
 ## Data Connectors
 
-This solution provides **8 data connector(s)**:
+This solution provides **9 data connector(s)**:
 
 - [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) 🔶
-- [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶
+- [(Deprecated) Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶
+- [Exchange Security Insights On-Premises Collector (Azure Monitor)](../connectors/esi-modernexchangeonpremisescollector.md) 🔶
 - [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md)
 - [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md)
 - [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md)
@@ -57,11 +59,14 @@ This solution provides **8 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
+| [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) 🔶 | [Exchange Security Insights On-Premises Collector (Azure Monitor)](../connectors/esi-modernexchangeonpremisescollector.md) | Workbooks |
+| [`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) 🔶 | - | Workbooks |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | [(Deprecated) Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | - | Workbooks |
 | [`Event`](../tables/event.md) | [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md), [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Analytics, Workbooks |
 | [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) 🔶 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
 | [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) 🔶 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
@@ -94,9 +99,9 @@ This solution includes **13 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md) | [`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`W3CIISLog`](../tables/w3ciislog.md) |
-| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md) | [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md)<br>[`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 | [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-search-adminauditlog-fcf38c03.md) | [`Event`](../tables/event.md) |
-| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md)<br>[`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md)<br>[`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)<br>[`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 
 ### Parsers
 
@@ -106,7 +111,7 @@ This solution includes **13 content item(s)**:
 | [ExchangeConfiguration](../parsers/exchangeconfiguration.md) | The list of section to query. Default is all. | - |
 | [ExchangeEnvironmentList](../parsers/exchangeenvironmentlist.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
 | [MESCheckVIP](../parsers/mescheckvip.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
-| [MESCompareDataOnPMRA](../parsers/mescomparedataonpmra.md) | The Section to compare. Default value is "". | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) *(read)* |
+| [MESCompareDataOnPMRA](../parsers/mescomparedataonpmra.md) | The Section to compare. Default value is "". | [`ESIAPIExchangeOnPremisesConfig_CL`](../tables/esiapiexchangeonpremisesconfig-cl.md) *(read)*<br>[`ESIAPIExchangeOnlineConfig_CL`](../tables/esiapiexchangeonlineconfig-cl.md) *(read)*<br>[`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) *(read)*<br>[`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) *(read)* |
 
 ### Watchlists
 
@@ -119,16 +124,25 @@ This solution includes **13 content item(s)**:
 
 > 📄 *Source: [Microsoft Exchange Security - Exchange On-Premises/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/README.md)*
 
-## Overview
+The Microsoft Exchange Security offering includes two Microsoft Sentinel solutions that help service owners and SOC teams assess Exchange security, monitor sensitive administrative operations, detect attacks, and investigate suspicious activity.
 
-We have published Public Contents for the Microsoft Exchange Security Sentinel Solution. The contents can be found here:
+## Microsoft Exchange Security for Exchange On-Premises
 
-* [General Documentation & Artifacts](./%23%20-%20General%20Content/README.md)
+This solution collects Exchange Server security configuration and can optionally collect administrative audit events. Its workbooks and parsers help identify insecure configurations, review RBAC permissions, monitor privileged activity, and could support threat detection and forensic investigations in on-premises environments.
+
+See the [Exchange On-Premises `# - General Content` folder](./%23%20-%20General%20Content/README.md) for detailed deployment, configuration, collection, workbook, parser, and operational information.
+
+## Microsoft Exchange Security for Exchange Online
+
+This solution collects Exchange Online security configuration and uses Microsoft 365 activity data to monitor administrative operations. Its workbooks help assess security posture, review RBAC permissions, track sensitive or VIP-related activity, and investigate suspicious changes in Exchange Online.
+
+See the [Exchange Online `# - General Content` folder](../Microsoft%20Exchange%20Security%20-%20Exchange%20Online/%23%20-%20General%20Content/README.md) for detailed deployment, configuration, collection, workbook, parser, and operational information.
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.4.0       | 29-07-2026                      | Migrate from Log Analytics API to Azure Monitor API     |
 | 3.3.2       | 26-03-2025                     | Update documentation link to new repository     |
 | 3.3.0       | 26-08-2024                     | Add Compare in Exchange Security Review. Create DataConnectors for Azure Monitor Agent. Correct bugs      |
 | 3.2.0       | 09-04-2024                     | Explode "ExchangeAdminAuditLogEvents" dataconnector to multiple simplier dataconnectors      |

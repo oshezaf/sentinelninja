@@ -16,8 +16,8 @@
 | **Schema Version** | 0.2.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Defender for IoT |
-| **Parser Version** | 0.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMD4IoTSensor.md)) |
-| **Last Updated** | Oct 30, 2022 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMD4IoTSensor.md)) |
+| **Last Updated** | Oct 2, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionMD4IoTSensor.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionMD4IoTSensor.yaml) |
 

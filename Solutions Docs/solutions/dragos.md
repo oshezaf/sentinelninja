@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dragos.com](https://www.dragos.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Dragos Inc. - support@dragos.com |
 | **First Published** | 2025-01-23 |
 | **Last Updated** | 2025-01-23 |
 | **Solution Folder** | [Dragos](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dragosinc1734451815609.microsoft-sentinel-solution-dragos) · Popularity: 🔵 Medium (52%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dragosinc1734451815609.microsoft-sentinel-solution-dragos) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber Security platform it offers a comprehensive Operational Technology (OT) cyber threat detection built by unrivaled industrial cybersecurity expertise. This solution enables Dragos Platform notification data to be viewed in Microsoft Sentinel so that security analysts are able to triage potential cyber security events occurring in their industrial environments.
@@ -59,7 +59,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency) | - |
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | - |
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | Workbooks |
 
 ### Internal Tables
 
@@ -71,18 +71,25 @@ The following **1 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Parsers | 4 |
 | Analytic Rules | 1 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Dragos Notifications](../content/dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md) | Medium | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [DragosNotificationsDashboard](../content/dragos-dragosnotificationsdashboard-128d4d6b.md) | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) |
 
 ### Parsers
 
@@ -95,9 +102,10 @@ This solution includes **5 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
-|-------------|--------------------------------|------------------------------------------------|
-| 3.0.0       | 10-01-2025                     | Initial solution release.                      |
+|**Version**|**Date Modified (DD-MM-YYYY)**|**Change History**|
+|-|-|-|
+|3.0.1|16-10-2026|Added Workbook for Dragos notifications monitoring.|
+|3.0.0|10-01-2025|Initial solution release.|
 
 ---
 

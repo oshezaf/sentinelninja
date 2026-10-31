@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`Island_AdminEvents_V2_CL`](../tables/island-adminevents-v2-cl.md) | ? | ✓ | ? |
 | [`Island_SystemEvents_V2_CL`](../tables/island-systemevents-v2-cl.md) | ? | ✓ | ? |
-| [`Island_UserEvents_V2_CL`](../tables/island-userevents-v2-cl.md) | ✓ | ✓ | ✓ |
+| [`Island_UserEvents_V2_CL`](../tables/island-userevents-v2-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

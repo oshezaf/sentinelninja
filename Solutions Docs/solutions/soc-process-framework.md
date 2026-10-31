@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Others |
-| **Version** | 3.0.0 |
+| **Version** | 3.2.2 |
 | **Author** | Rin Ure - rin.ure@microsoft.com |
 | **First Published** | 2022-04-08 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-socprocessframework) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (17%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-socprocessframework) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
 
@@ -167,6 +168,7 @@ This playbook uses a managed identity, which must have the Microsoft Sentinel Re
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.2.2       | 20-10-2026                     | Migrated 4 **Workbooks** to Microsoft Defender XDR and updated the solution package to V3.1. |
 | 3.0.2       | 10-07-2025                     | Updates to the **playbook** description, prerequisites, and post-deployment instructions, as well as adjustments to variable naming conventions for consistency . |
 | 3.0.1       | 24-07-2023                     | Update Table markdown from " : " to " - " in SOCProcessFramework **Workbook** . |
 | 3.0.0       | 12-07-2023                     | Correction of **Logo** in the solution. |

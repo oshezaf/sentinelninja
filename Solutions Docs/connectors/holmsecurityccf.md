@@ -19,6 +19,7 @@
 | **CCF Configuration** | [HolmSecurityAssetLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity/Data%20Connectors/HolmSecurityAssetLogs_ccf/HolmSecurityAssetLogs_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#holm-security-data-connector) |
 
 The Holm Security data connector provides the capability to ingest [Holm Security](https://www.holmsecurity.com/) asset data into Microsoft Sentinel through the REST API. The connector provides the ability to get web and network assets data from Holm Security.
 
@@ -28,8 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`net_assets_CL`](../tables/net-assets-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`web_assets_CL`](../tables/web-assets-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`net_assets_CL`](../tables/net-assets-cl.md) 🔶 | ? | ✓ | ? |
+| [`web_assets_CL`](../tables/web-assets-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

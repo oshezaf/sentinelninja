@@ -1,6 +1,6 @@
 # Analytic Rules - R
 
-**57 analytic rules** starting with 'R'.
+**64 analytic rules** starting with 'R'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -51,6 +51,12 @@
 | [Red Sift - MFA disabled on account](red-sift-red-sift-mfa-disabled-on-account-16f26d2c-6296-490b-af4f-b30bcf1c4461-c60400fe.md) | High | 📦 [Red Sift](../solutions/red-sift.md) |
 | [Red Sift - New email with URL from previously unseen sender](red-sift-red-sift-new-email-with-url-from-previously-unseen-sender-6e0b70d4-0ab8-480e-9707-8ad45fc21a65-b32b0a35.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
 | [Red Sift - New email with URL from previously unseen source](red-sift-red-sift-new-email-with-url-from-previously-unseen-source-6084dfd8-830b-4839-9a9c-5f08cc984729-91610c56.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
+| [RedRays - ABAP Code Security](redrays-sap-security-findings-redrays-abap-code-security-c9ed9a25-ad18-5cbb-8b43-b6399a802913-f1b8ee76.md) | High | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRays - Cloud Security](redrays-sap-security-findings-redrays-cloud-security-31669aab-4fe7-51e2-9f66-9813c16a1a27-30780bad.md) | High | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRays - Password Security](redrays-sap-security-findings-redrays-password-security-ebd95a4d-cc56-5f01-a1de-36aa67e66794-783e1a51.md) | High | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRays - Profile Parameters](redrays-sap-security-findings-redrays-profile-parameters-708b461c-40b0-571a-8ec5-a3791dce23a4-6c41e34e.md) | Medium | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRays - SoD](redrays-sap-security-findings-redrays-sod-699d4ec8-6c5c-5440-8664-df92012636ad-1cc68306.md) | High | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRays - Vulnerability Assessment](redrays-sap-security-findings-redrays-vulnerability-assessment-2b92972c-29d5-58f8-9452-b0a723672183-5b026c91.md) | High | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
 | [Refactor AWS policy based on activities in the last 60 days](authomize-refactor-aws-policy-based-on-activities-in-the-last-60-days-642de064-c67b-4eb7-98bd-3f8cd51f282c-6026e372.md) | High | 📦 [Authomize](../solutions/authomize.md) |
 | [Registries Alerts for Prancer](prancer-pensuiteai-integration-registries-alerts-for-prancer-08706063-c15e-4d96-beae-9e8d92ccefbb-24c9cc5e.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Registry Persistence via AppCert DLL Modification](endpoint-threat-protection-essentials-registry-persistence-via-appcert-dll-modification-c61ad0ac-ad68-4ebb-b41a-74296d3e0044-b5180a51.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
@@ -62,6 +68,7 @@
 | [Remote File Creation with PsExec](microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Removable storage ONLINE event from secRMM](squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897-c1870014.md) | High | 📦 [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
 | [Rename System Utilities](falconfriday-rename-system-utilities-335ddff8-b615-42cd-b593-86e419b45d78-753d3370.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
+| [Repeated failed MFA challenges for one user from one IP (AADSTS50074 / AADSTS500121)](standalone-content-repeated-failed-mfa-challenges-for-one-user-from-one-ip-aadsts50074-aadsts500121-284c73e0-3e14-4698-9202-36fcd458034e-0c0fb369.md) | Medium | 📄 Standalone Content |
 | [Request for single resource on domain](zscaler-internet-access-request-for-single-resource-on-domain-4d500e6d-c984-43a3-9f39-7edec8dcc04d-7778e224.md) ⚠️ | Low | 📦 [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Response rows stateful anomaly on database](azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-9851c360-5fd5-4bae-a117-b66d8476bf5e-50984d5e.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Restore Point Marked as Clean](veeam-restore-point-marked-as-clean-c4c6cb50-9fc3-4ca9-a2df-22d527240309-2e0f7baf.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |

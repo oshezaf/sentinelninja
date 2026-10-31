@@ -14,6 +14,7 @@ A Conditional Access user/group/role exclusion has changed in Azure AD.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `2ce7f00d-3b3c-41b9-ae9a-b79c19d2394e` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Persistence, DefenseEvasion, CredentialAccess |
 | **Techniques** | T1098, T1078 |

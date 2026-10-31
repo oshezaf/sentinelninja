@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**610 workbooks** across all Microsoft Sentinel solutions.
+**637 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -40,6 +40,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ADXvsLA](github-only-adxvsla-0ddedeb5.md) | 🔗 GitHub Only |
 | [AIA-Darktrace](ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | 📦 [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md) |
 | [AIA-Darktrace](github-only-aia-darktrace-8b7a67eb.md) | 🔗 GitHub Only |
+| [AIGovernance](github-only-aigovernance-b2429b32.md) | 🔗 GitHub Only |
 | [AirlockDigital](airlockdigital-airlockdigital-f4806f05.md) | 📦 [AirlockDigital](../solutions/airlockdigital.md) |
 | [AIShield](aishield-ai-security-monitoring-aishield-af815b41.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [AIVectraDetectWorkbook](vectra-ai-detect-aivectradetectworkbook-74fce2d7.md) | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
@@ -215,8 +216,13 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Data_Latency_Workbook](github-only-data-latency-workbook-6c04e6e6.md) | 🔗 GitHub Only |
 | [DataCollectionHealthMonitoring](github-only-datacollectionhealthmonitoring-360bf8be.md) | 🔗 GitHub Only |
 | [DataminrPulseAlerts](dataminr-pulse-dataminrpulsealerts-d5436210.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
+| [DatawizaAccessProxyDashboard](datawiza-datawizaaccessproxydashboard-5edee7b6.md) | 📦 [Datawiza](../solutions/datawiza.md) |
 | [DCR-Toolkit](github-only-dcr-toolkit-37d84106.md) | 🔗 GitHub Only |
 | [DefendMetrics](egress-defend-defendmetrics-35b2f8e1.md) | 📦 [Egress Defend](../solutions/egress-defend.md) |
+| [DelineaIdentityAuthOverview](delinea-platform-delineaidentityauthoverview-991f54fc.md) | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [DelineaPrivilegedAccessThreatHunting](delinea-platform-delineaprivilegedaccessthreathunting-e732df9b.md) | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [DelineaSecretServerVaultActivity](delinea-platform-delineasecretservervaultactivity-fecbbf4b.md) | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
+| [DelineaUserActivityInvestigation](delinea-platform-delineauseractivityinvestigation-3bc7d9ec.md) | 📦 [Delinea Platform](../solutions/delinea-platform.md) |
 | [DelineaWorkbook](delinea-secret-server-delineaworkbook-819c816c.md) | 📦 [Delinea Secret Server](../solutions/delinea-secret-server.md) |
 | [DelineaWorkbook](github-only-delineaworkbook-d30c0bcb.md) | 🔗 GitHub Only |
 | [DigitalGuardian](digital-guardian-data-loss-prevention-digitalguardian-b2733981.md) | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) |
@@ -230,6 +236,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Doppel](doppel-doppel-0def4b82.md) | 📦 [Doppel](../solutions/doppel.md) |
 | [DORACompliance](dora-compliance-doracompliance-21bcc12f.md) | 📦 [DORA Compliance](../solutions/dora-compliance.md) |
 | [DPDPCompliance](dpdp-compliance-dpdpcompliance-18571e87.md) | 📦 [DPDP Compliance](../solutions/dpdp-compliance.md) |
+| [DragosNotificationsDashboard](dragos-dragosnotificationsdashboard-128d4d6b.md) | 📦 [Dragos](../solutions/dragos.md) |
 | [DSTIMWorkbook](github-only-dstimworkbook-062fa645.md) | 🔗 GitHub Only |
 | [DuoSecurity](github-only-duosecurity-51a3ff3a.md) | 🔗 GitHub Only |
 | [Dynamics365Activity](microsoft-business-applications-dynamics365activity-1015284f.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
@@ -311,6 +318,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [HIPAACompliance](hipaa-compliance-hipaacompliance-3850f8c8.md) | 📦 [HIPAA Compliance](../solutions/hipaa-compliance.md) |
+| [HoneyForge](honeyforge-honeyforge-fd3830f1.md) | 📦 [HoneyForge](../solutions/honeyforge.md) |
 | [HoneyLabsThreatIntelligence](honeylabs-honeylabsthreatintelligence-d37080fe.md) | 📦 [HoneyLabs](../solutions/honeylabs.md) |
 | [HybridAttack-Cloud&Identity](hybrid-attack-cloud-&-identity-hybridattack-cloud&identity-847f4a4f.md) | 📦 [Hybrid Attack - Cloud & Identity](../solutions/hybrid-attack-cloud-&-identity.md) |
 
@@ -322,6 +330,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ibossWebUsage](iboss-ibosswebusage-5b4fbb25.md) | 📦 [iboss](../solutions/iboss.md) |
 | [IdentityAndAccess](windows-security-events-identityandaccess-d8681d3f.md) | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [IdentityAndAccess](github-only-identityandaccess-c7aa136c.md) | 🔗 GitHub Only |
+| [IISServersMonitoringSecurity](github-only-iisserversmonitoringsecurity-7e647cbc.md) | 🔗 GitHub Only |
 | [IllumioAuditableEvents](illumiosaas-illumioauditableevents-7d7e85b3.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |
 | [IllumioFlowData](illumiosaas-illumioflowdata-b836f8b9.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |
 | [IllumioOnPremHealth](illumiosaas-illumioonpremhealth-4cde69e6.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) |
@@ -453,11 +462,24 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [NetCleanProActiveWorkbook](netclean-proactive-netcleanproactiveworkbook-47938b1a.md) | 📦 [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [NetcraftAdvertResultOperations](netcraftintegrationgateway-netcraftadvertresultoperations-3d43ca25.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftAdvertResultOperations](github-only-netcraftadvertresultoperations-d1fe923c.md) | 🔗 GitHub Only |
+| [NetcraftAppResultOperations](netcraftintegrationgateway-netcraftappresultoperations-9d14d9c5.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftAppResultOperations](github-only-netcraftappresultoperations-324d195c.md) | 🔗 GitHub Only |
+| [NetcraftDdwIntelligenceOperations](netcraftintegrationgateway-netcraftddwintelligenceoperations-a47033fe.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftDdwIntelligenceOperations](github-only-netcraftddwintelligenceoperations-eb4b6dcb.md) | 🔗 GitHub Only |
+| [NetcraftDomainDetectionOperations](netcraftintegrationgateway-netcraftdomaindetectionoperations-e4a0b68e.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftDomainDetectionOperations](github-only-netcraftdomaindetectionoperations-eabe28c6.md) | 🔗 GitHub Only |
+| [NetcraftSocialResultOperations](netcraftintegrationgateway-netcraftsocialresultoperations-f55f478f.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftSocialResultOperations](github-only-netcraftsocialresultoperations-907b00ef.md) | 🔗 GitHub Only |
+| [NetcraftTakedownOperations](netcraftintegrationgateway-netcrafttakedownoperations-0b55219f.md) | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
+| [NetcraftTakedownOperations](github-only-netcrafttakedownoperations-b679fbad.md) | 🔗 GitHub Only |
 | [NetskopeAlertEvents_Workbook](netskopealertevents-netskopealertevents-workbook-9d0c49b9.md) | 📦 [NetskopeAlertEvents](../solutions/netskopealertevents.md) |
 | [NetskopeAlertEvents_Workbook](github-only-netskopealertevents-workbook-d55519c9.md) | 🔗 GitHub Only |
 | [NetskopeCCFWebtxDashboard](netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeCCPDashboard](netskopev2-netskopeccpdashboard-b47aef2b.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeCEDashboard](netskopev2-netskopecedashboard-35668be9.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
+| [NetskopeClientStatusDashboard](netskopev2-netskopeclientstatusdashboard-cb2ff8e3.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeDashboard](netskopev2-netskopedashboard-7f2bb16f.md) | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeEvents](netskope-netskopeevents-8c0bf08d.md) | 📦 [Netskope](../solutions/netskope.md) |
 | [NetskopeEvents](github-only-netskopeevents-9ea84d68.md) | 🔗 GitHub Only |
@@ -543,6 +565,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 
 | Name | Source |
 |:-----|:-------|
+| [QCryptonPQReadiness](qcryptonpqcscanner-qcryptonpqreadiness-803dfec5.md) | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
+| [QCryptonPQReadiness](github-only-qcryptonpqreadiness-16c9ff3b.md) | 🔗 GitHub Only |
 | [QscoutDashboards](quokka-qscoutdashboards-03cf0a2b.md) | 📦 [Quokka](../solutions/quokka.md) |
 | [QualysVM](github-only-qualysvm-4c30cec1.md) | 🔗 GitHub Only |
 | [QualysVMv2](qualysvm-qualysvmv2-0981091b.md) | 📦 [QualysVM](../solutions/qualysvm.md) |
@@ -560,6 +584,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [RecordedFuturePlaybookAlertOverview](recorded-future-recordedfutureplaybookalertoverview-60ee4c91.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFutureThreatActorHunting](recorded-future-recordedfuturethreatactorhunting-26a6d59e.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFutureURLCorrelation](recorded-future-recordedfutureurlcorrelation-7c307c28.md) | 📦 [Recorded Future](../solutions/recorded-future.md) |
+| [RedRaysSAPSecurityFindings](redrays-sap-security-findings-redrayssapsecurityfindings-23093b9e.md) | 📦 [RedRays SAP Security Findings](../solutions/redrays-sap-security-findings.md) |
+| [RedRaysSAPSecurityFindings](github-only-redrayssapsecurityfindings-04753d3b.md) | 🔗 GitHub Only |
 | [ReversingLabs-CapabilitiesOverview](reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 
 ## S
@@ -726,6 +752,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [WorkbookContent](cayosoft-guardian-workbookcontent-32aebefa.md) | 📦 [Cayosoft Guardian](../solutions/cayosoft-guardian.md) |
 | [WorkbooksMetadata](cybereinforce-workbooksmetadata-59dcf03e.md) ⚠️ | 📦 [Cybereinforce](../solutions/cybereinforce.md) |
 | [workbooksMetadata](microsoft-active-directory-tier-model-workbooksmetadata-743e7b34.md) ⚠️ | 📦 [Microsoft Active Directory Tier Model](../solutions/microsoft-active-directory-tier-model.md) |
+| [WorkbooksMetadata](netcraftintegrationgateway-workbooksmetadata-5750a626.md) ⚠️ | 📦 [NetcraftIntegrationGateway](../solutions/netcraftintegrationgateway.md) |
 | [workbooksMetadata](semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | 📦 [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [WorkbooksMetadata](whisper-workbooksmetadata-4425a2d3.md) ⚠️ | 📦 [Whisper](../solutions/whisper.md) |
 | [WorkspaceAuditing](github-only-workspaceauditing-b4e840dd.md) | 🔗 GitHub Only |

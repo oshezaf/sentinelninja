@@ -6,13 +6,14 @@
 
 ---
 
-## Schema (5 columns)
+## Schema (6 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/FrendsAuditLogs_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
 | ActionName | string |
+| Description | string |
 | EventTimestampUtc | datetime |
 | Parameters | dynamic |
 | TimeGenerated | datetime |

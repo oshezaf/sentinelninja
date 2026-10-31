@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Azure DevOps Audit Logs via Codeless Connector Platform &mdash; Solutions Analyzer</title>
+<title>Azure DevOps Audit Logs via Codeless Connector Framework &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="azure-devops-audit-logs">Azure DevOps Audit Logs (via Codeless Connector Platform)</h1>
+<h1 id="azure-devops-audit-logs">Azure DevOps Audit Logs (via Codeless Connector Framework)</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureDevOps.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -63,11 +63,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#azure-devops-audit-logs-via-codeless-connector-platform">View on Learn</a></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#azure-devops-audit-logs-via-codeless-connector-framework">View on Learn</a></td>
 </tr>
 </tbody>
 </table>
-<p>The Azure DevOps Audit Logs data connector allows you to ingest audit events from Azure DevOps into Microsoft Sentinel. This data connector is built using the Microsoft Sentinel Codeless Connector Platform, ensuring seamless integration. It leverages the Azure DevOps Audit Logs API to fetch detailed audit events and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a>. These transformations enable parsing of the received audit data into a custom table during ingestion, improving query performance by eliminating the need for additional parsing. By using this connector, you can gain enhanced visibility into your Azure DevOps environment and streamline your security operations.</p>
+<p>The Azure DevOps Audit Logs data connector allows you to ingest audit events from Azure DevOps into Microsoft Sentinel. This data connector is built using the Microsoft Sentinel Codeless Connector Framework, ensuring seamless integration. It leverages the Azure DevOps Audit Logs API to fetch detailed audit events and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a>. These transformations enable parsing of the received audit data into a custom table during ingestion, improving query performance by eliminating the need for additional parsing. By using this connector, you can gain enhanced visibility into your Azure DevOps environment and streamline your security operations. This version supports connecting <strong>multiple Azure DevOps organizations</strong>: each organization is added as its own connection from the grid below, and all audit events flow into the same ADOAuditLogs_CL table.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -82,9 +82,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/adoauditlogs-cl.html"><code>ADOAuditLogs_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -105,25 +105,41 @@
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<p><strong>1. Connect to Azure DevOps to start collecting Audit logs in Microsoft Sentinel.</strong></p>
+<p><strong>1. Connect Azure DevOps organizations to start collecting Audit logs in Microsoft Sentinel.</strong>
+Use <strong>Add organization</strong> to connect each Azure DevOps organization. Connected organizations are listed below and can be removed individually.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Organization</strong></li>
+<li><strong>API Endpoint</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Azure DevOps Organization</strong></p>
+<p><em>Connect an Azure DevOps organization</em></p>
+<p>When you click the &quot;Add organization&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
 <ol>
 <li>Enter the App you have registered.</li>
 <li>In the 'Overview' section, copy the Application (client) ID.</li>
 <li>Select the 'Endpoints' button, and copy the 'OAuth 2.0 authorization endpoint (v2)' value and the 'OAuth 2.0 token endpoint (v2)' value.</li>
 <li>In the 'Certificates &amp; secrets' section, copy the 'Client Secret value', and store it securely.</li>
-<li>Provide the required information below and click 'Connect'.</li>
+<li>Set the API Endpoint for the organization you want to collect (replace {organizationName}).</li>
+<li>Give this connection a unique name (the organization name works well), then click 'Connect'.</li>
 </ol>
+<p>Repeat 'Add organization' for each additional organization.</p>
 <ul>
-<li><strong>Token Endpoint</strong>: https://login.microsoftonline.com/{TenantId}/oauth2/v2.0/token</li>
-<li><strong>Authorization Endpoint</strong>: https://login.microsoftonline.com/{TenantId}/oauth2/v2.0/authorize</li>
-<li><strong>API Endpoint</strong>: https://auditservice.dev.azure.com/{organizationName}/_apis/audit/auditlog?api-version=7.2-preview</li>
-<li><strong>OAuth Configuration</strong>:<ul>
-<li>App Client ID</li>
-<li>App Client Secret</li>
-<li>Click 'Connect' to authenticate</li>
+<li><strong>Organization Name (connection alias)</strong> (required): A unique name for this organization, e.g. contoso</li>
+<li><strong>Token Endpoint</strong> (required): Your OAuth 2.0 token endpoint (v2) from the app's Endpoints blade</li>
+<li><strong>Authorization Endpoint</strong> (required): Your OAuth 2.0 authorization endpoint (v2) from the app's Endpoints blade</li>
+<li><strong>API Endpoint</strong> (required): https://auditservice.dev.azure.com/{organizationName}/_apis/audit/auditlog?api-version=7.2-preview</li>
 </ul>
-</li>
-</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

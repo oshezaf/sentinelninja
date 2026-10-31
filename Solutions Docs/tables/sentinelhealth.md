@@ -79,7 +79,7 @@ This table is used by the following solutions:
 | [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) | `SentinelResourceType in "Automation rule,Playbook"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `SentinelResourceType has "Data connector"`<br>`SentinelResourceType has "analytics rule"` |
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `SentinelResourceType in "Analytics Rule,Automation rule,Playbook"` |
-| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
+| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) | `Reason == "The analytics rule is disabled`<br>`was not executed."`<br>`SentinelResourceType in "Analytics rule,Data connector"` |
 
 ## Selection Criteria Summary (1 criteria, 1 total references)
 

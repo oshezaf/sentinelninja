@@ -6,7 +6,7 @@
 
 ---
 
-This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFuturePortalAlerts_CL) in the log analytics workspace. To create Microsoft Defender incidents from these alerts, use a Analytics Rule that queries the RecordedFuturePortalAlerts_CL table. Direct incident creation via Logic Apps is no longer supported in the unified Microsoft Defender portal.
+This playbook imports alerts from Recorded Future and stores them in a custom log (RecordedFutureClassicAlerts_V2_CL) in the log analytics workspace. To create Microsoft Defender incidents from these alerts, use an Analytics Rule that queries the RecordedFutureClassicAlerts_V2_CL table.
 
 | Attribute | Value |
 |:----------|:------|
@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`RecordedFutureClassicAlerts_V2_CL`](../tables/recordedfutureclassicalerts-v2-cl.md) | ? | ✓ | ? |
 
 ## Logic App Connectors
 
@@ -28,17 +28,11 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
 | [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
 | [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
-
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Data_2 | post | `/api/logs` | — |
 
 #### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
@@ -51,6 +45,12 @@ This playbook uses **3** Logic App connectors / built-in actions:
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
 | Search_Triggered_Alerts | get | `/v2/alerts` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | POST | `@{parameters('DceEndpoint')}/dataCollectionRules/@{parameters('DcrImmutableId')}/streams/@{parameters('StreamName')}?api-version=2023-01-01` | — |
 
 </details>
 

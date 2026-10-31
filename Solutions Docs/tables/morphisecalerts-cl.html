@@ -44,7 +44,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (41 columns)</h2>
+<h2 id="schema">Schema (63 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec%5CData%20Connectors%5CMorphisec_CCF/Morphisec_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -151,8 +151,52 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">parentProcessFileCreationTime</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessFileModificationTime</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessHash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessImphash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessOriginalFileName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">parentProcessSignature</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessSignatureIssuer</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessSignatureSubject</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessSignatureValidFrom</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">parentProcessSignatureValidTo</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
   <td style="text-align:left">path</td>
@@ -167,8 +211,48 @@
   <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
+  <td style="text-align:left">processFileCreationTime</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">processFileModificationTime</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">processHash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processImphash</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processOriginalFileName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">processSignature</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processSignatureIssuer</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processSignatureSubject</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">processSignatureValidFrom</td>
+  <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">processSignatureValidTo</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
   <td style="text-align:left">protectorId</td>
@@ -216,6 +300,10 @@
 </tr>
 <tr>
   <td style="text-align:left">user</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">userPrivilege</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>

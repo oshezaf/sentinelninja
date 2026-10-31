@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delinea Platform Sentinel Solution &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="delinea-platform-sentinel-solution">Delinea Platform Sentinel Solution</h1>
+<p><em>Solution: Delinea Platform</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DelineaLogo.svg" alt="Delinea Platform Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Delinea</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://delinea.com/support">https://delinea.com/support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Identity,Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Delinea</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-06-16</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-28</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Platform">Delinea Platform</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/delineainc1667920346745.delinea_platform_direct">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Delinea Platform</strong> solution ingests privileged-access audit events (secret access, session recording, user activity, configuration changes) into Microsoft Sentinel via the Codeless Connector Framework.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/delineaplatformconnector.html">Delinea Platform Audit Events</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+  <td><a href="../connectors/delineaplatformconnector.html">Delinea Platform Audit Events</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>22 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">10</td>
+</tr>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-bulk-secret-export-access-7ab54aed-f97e-4202-a624-3cbd496c3b68-aa09d1ea.html">Delinea - Bulk secret export / access</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess, Exfiltration</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-failed-authentication-spike-single-account-e6d743f2-a538-455f-899c-251926b9071e-f52d6e65.html">Delinea - Failed authentication spike (single account)</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-platform-configuration-change-7c07194a-8eda-4cb7-9bc4-cd4700eb4c4d-8dc1270a.html">Delinea - Platform configuration change</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-privilege-escalation-detected-role-permission-changes-c24252d1-d98c-48db-b2f9-4cb37dd2208a-d2d0529a.html">Delinea - Privilege escalation detected (role / permission changes)</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation, Persistence</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-privileged-account-access-anomaly-secret-access-volume-vs-baseline-e1bfca9b-7980-469f-a57c-16e81451861b-4bba52d6.html">Delinea - Privileged account access anomaly (secret-access volume vs baseline)</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-sensitive-secret-accessed-by-new-user-first-access-in-14-days-a7b167e2-9582-440b-8d47-53df2f73c4f4-d976407f.html">Delinea - Sensitive secret accessed by new user (first access in 14 days)</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, LateralMovement, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-activity-by-source-ip-3185bf9b-29dd-40fa-8477-e2fd4172e3ce-68a6c74d.html">Delinea - Activity by source IP</a></td>
+  <td style="text-align:left">Discovery, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-all-events-by-user-206c0df6-a756-48a8-9c69-8a0815682327-649628a3.html">Delinea - All events by user</a></td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-authentication-failures-ranked-by-account-9ecbc6e0-e40d-4fa3-8d6a-2652418f9c77-84fc0c54.html">Delinea - Authentication failures ranked by account</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-configuration-changes-7adfee87-8c63-4625-a2db-c6971a3233b6-edc3c83a.html">Delinea - Configuration changes</a></td>
+  <td style="text-align:left">DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-events-by-severity-e9850d1c-4821-4375-bfe7-3559684c141d-8e380652.html">Delinea - Events by severity</a></td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-failed-operations-29231a10-e272-4854-b191-a2d2db4279fa-fcc7670a.html">Delinea - Failed operations</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-off-hours-privileged-activity-4c68acd6-286e-4f8c-ac4e-606a41984957-f47b03e4.html">Delinea - Off-hours privileged activity</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-rare-first-seen-event-types-634f4212-76e3-485e-a6cc-5b1929476ef8-e9e58497.html">Delinea - Rare / first-seen event types</a></td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-secret-access-audit-trail-51a82b60-4225-49ab-8fc6-c6381fa0f52c-d813232e.html">Delinea - Secret access audit trail</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delinea-secret-access-fan-out-by-user-729822b0-daa5-4480-a92d-e1fd7294ea97-840bfec8.html">Delinea - Secret access fan-out by user</a></td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delineaidentityauthoverview-991f54fc.html">DelineaIdentityAuthOverview</a></td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delineaprivilegedaccessthreathunting-e732df9b.html">DelineaPrivilegedAccessThreatHunting</a></td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delineasecretservervaultactivity-fecbbf4b.html">DelineaSecretServerVaultActivity</a></td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/delinea-platform-delineauseractivityinvestigation-3bc7d9ec.html">DelineaUserActivityInvestigation</a></td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/asimauditeventdelineaplatform.html">ASimAuditEventDelineaPlatform</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../parsers/vimauditeventdelineaplatform.html">vimAuditEventDelineaPlatform</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/delineaauditevents-cl.html"><code>DelineaAuditEvents_CL</code></a> <em>(read)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>23-10-2026</td>
+  <td>Fixed missing parameter in audit query.</td>
+</tr>
+<tr>
+  <td>3.0.0</td>
+  <td>29-09-2026</td>
+  <td>Initial Solution Release with CCF data connector, ASIM parsers, analytic rules, hunting queries and workbooks.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

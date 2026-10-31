@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.censys.com](https://docs.censys.com) |
 | **Categories** | Security - Network,Security - Cloud Security |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Censys - support@censys.com |
 | **First Published** | 2026-03-05 |
-| **Last Updated** | 2026-03-05 |
+| **Last Updated** | 2026-10-05 |
 | **Solution Folder** | [Censys](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys) |
 
 Leverage playbooks to enrich alerts and incidents with Censys Internet data. Analyst can lookup known information about IPs, domains, certificate SHAs in Censys.
@@ -107,6 +107,7 @@ This solution includes **12 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                |
 |-------------|--------------------------------|-------------------------------------------------------------------|
+| 3.0.1       | 05-10-2026                     | Added Host Enrichment API support in Host Enrichment Playbooks and updated Add Incident Comment Playbook |
 | 3.0.0       | 06-04-2026                     | Added Support for Related Infrastructure Playbook and Workbook    |
 | 3.0.0       | 05-03-2026                     | Initial Solution for Censys with Playbooks and Workbook           |
 

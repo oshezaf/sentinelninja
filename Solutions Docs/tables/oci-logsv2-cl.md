@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -307,7 +305,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [OracleCloudInfrastructureOCI](../content/oracle-cloud-infrastructure-oraclecloudinfrastructureoci-601b3646.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (3)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventOracleOCI](../asim/asimauditeventoracleoci.md) | AuditEvent | Oracle Cloud Infrastructure |  |
+| [ASimAuthenticationOracleOCI](../asim/asimauthenticationoracleoci.md) | Authentication | Oracle Cloud Infrastructure |  |
 
 ### Other Parsers (1)
 

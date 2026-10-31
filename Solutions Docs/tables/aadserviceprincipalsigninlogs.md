@@ -14,7 +14,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
 ## Contents
@@ -108,7 +108,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (24)
 
 ### Analytic Rules (4)
 
@@ -162,7 +162,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
 
-### Workbooks (10)
+### Workbooks (11)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -188,21 +188,22 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
+| Workbook |
+|:-------------|
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |
 
 **GitHub Only:**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [AADServicePrincipalSignInLogs](../content/github-only-aadserviceprincipalsigninlogs-7f958a93.md) | `ResultType == "0"`<br>`ResultType != "0"` |
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
 
 ## Parsers Using This Table (1)
 
@@ -212,16 +213,17 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
-## Selection Criteria Summary (3 criteria, 3 total references)
+## Selection Criteria Summary (4 criteria, 4 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ResultType != "50126"` | - | 1 | - | - | **1** |
 | `ConditionalAccessStatus in "failure,notApplied"`<br>`ResultType in "0,Success"` | - | 1 | - | - | **1** |
 | `ResultType == "0"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
+| `OperationName in "Add conditional access policy,Add member to group,Add member to restricted management administrative unit,Delete conditional access policy,Remove member from group,Remove member from restricted management administrative unit,Update conditional access policy,Update group"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **4** | **0** | **0** | **4** |
 
 ### ConditionalAccessStatus
 
@@ -229,6 +231,19 @@ References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `failure` | - | 1 | - | - | **1** |
 | `notApplied` | - | 1 | - | - | **1** |
+
+### OperationName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Add conditional access policy` | - | 1 | - | - | **1** |
+| `Add member to group` | - | 1 | - | - | **1** |
+| `Add member to restricted management administrative unit` | - | 1 | - | - | **1** |
+| `Delete conditional access policy` | - | 1 | - | - | **1** |
+| `Remove member from group` | - | 1 | - | - | **1** |
+| `Remove member from restricted management administrative unit` | - | 1 | - | - | **1** |
+| `Update conditional access policy` | - | 1 | - | - | **1** |
+| `Update group` | - | 1 | - | - | **1** |
 
 ### ResultType
 

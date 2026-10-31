@@ -19,7 +19,7 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>When a Microsoft Sentinel incident status changes, this playbook pushes the update to the corresponding alert(s). Includes tag-based loop prevention to avoid circular sync with Importer.</p>
+<p>When a Microsoft Sentinel incident status changes, this playbook pushes the new status to the corresponding Argos alert(s). It reads each alert first and skips the update when Argos already has that state, so changes applied by the InboundStatusSync playbook are not echoed back.</p>
 <table>
 <thead>
 <tr>
@@ -64,7 +64,7 @@
   <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
   <td style="text-align:left">Built-in</td>
   <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 </tbody>
 </table>
@@ -107,9 +107,21 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">Get_Argos_Alert</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
   <td style="text-align:left">Update_Argos_Alert_Status</td>
   <td style="text-align:left">PUT</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/status</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Argos_Alert_Status_after_failed_read</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{concat(uriScheme(parameters('API_Base_URL')), '://', uriHost(parameters('API_Base_URL')))}/alert/api/v1/alerts/status</code></td>
   <td style="text-align:left">—</td>
 </tr>
 </tbody>
@@ -122,23 +134,23 @@
 </blockquote>
 <h1 id="check-point-exposure-management---exporter">Check Point Exposure Management - Exporter (Sentinel → Argos)</h1>
 <h2 id="summary">Summary</h2>
-<p>When a Microsoft Sentinel incident status changes, this playbook pushes the update to the corresponding alert(s). It maps Sentinel incident status and close classification to alert status and closure reason. Includes tag-based loop prevention to avoid circular sync with the Importer playbook.</p>
+<p>When a Microsoft Sentinel incident status changes, this playbook pushes the new status to the corresponding Argos alert(s). It maps the incident status, classification and classification reason to the Argos status and closure reason.</p>
 <p><strong>Flow:</strong></p>
 <ol>
-<li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
-<li>Checks for loop prevention tag (<code>argos-importer-synced</code>) — skips if present.</li>
-<li>Verifies this is an incident update (not creation) and that the Status field changed.</li>
-<li>Maps Sentinel status → Argos status (<code>Active</code> → <code>open</code>, <code>Closed</code> → <code>closed</code> + closure reason).</li>
-<li>For each linked alert, sends HTTP PUT to update the alert status.</li>
+<li>Triggered by the <strong>Check_Point_EM_AutomationRules</strong> rule when an incident's status changes.</li>
+<li>Skips incidents with no alerts attached.</li>
+<li>Maps the Microsoft Sentinel status to the Argos status, and on close, the classification to a closure reason.</li>
+<li>Collects the distinct <code>ref_id</code> Custom Details of the attached alerts, so each Argos alert is handled once even when several incident alerts share it.</li>
+<li>For each <code>ref_id</code>, fetches the Argos alert and skips it when Argos already matches: same status, and when closing, either the same closure reason or a closure reason that maps back to the incident's classification (see below). Otherwise sends <code>PUT /alert/api/v1/alerts/status</code>.</li>
 <li>Adds a sync result comment and tags the incident <code>argos-exporter-synced</code>.</li>
 </ol>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
-<li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
-<li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
+<li>A valid Check Point Exposure Management API token.</li>
+<li>Incidents created by the <strong>Check Point Exposure Management - Argos alerts to incidents</strong> analytic rule, which provides the <code>ref_id</code> Custom Detail.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_Exporter%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FSync%2FCPEM_OutboundSync%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -155,32 +167,43 @@
   <td>Name of the Logic App (default: <code>Check_Point_EM_Exporter</code>)</td>
 </tr>
 <tr>
-  <td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+  <td><strong>API_Base_URL</strong></td>
+  <td>Yes</td>
+  <td>Tenant URL, the same value as the data connector's Argos URL (e.g. <code>https://your_tenant.cyberint.io</code>). Any path is ignored; <code>/alert</code> is added automatically.</td>
+</tr>
+<tr>
+  <td><strong>API_Access_Token</strong></td>
+  <td>Yes</td>
+  <td>Check Point Exposure Management API token</td>
 </tr>
 </tbody>
 </table>
 <h2 id="post-deployment">Post-Deployment</h2>
 <ol>
 <li>Grant the Logic App Managed Identity the <strong>Microsoft Sentinel Responder</strong> role on the resource group.</li>
-<li>Configure an automation rule in Microsoft Sentinel to trigger this playbook on incident status changes.</li>
+<li>Deploy <strong>Check_Point_EM_AutomationRules</strong> so this playbook runs on every incident status change.</li>
 </ol>
 <h2 id="status-mapping">Status Mapping</h2>
 <table>
 <thead>
 <tr>
-  <th>Sentinel Status</th>
-  <th>Sentinel Classification</th>
-  <th>Argos Status</th>
-  <th>Argos Closure Reason</th>
+  <th>Microsoft Sentinel status</th>
+  <th>Classification / reason</th>
+  <th>Argos status</th>
+  <th>Argos closure reason</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Active</td>
+  <td>New</td>
   <td>—</td>
   <td><code>open</code></td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>Active</td>
+  <td>—</td>
+  <td><code>acknowledged</code></td>
   <td>—</td>
 </tr>
 <tr>
@@ -191,26 +214,35 @@
 </tr>
 <tr>
   <td>Closed</td>
-  <td>False Positive</td>
-  <td><code>closed</code></td>
-  <td><code>false_positive</code></td>
-</tr>
-<tr>
-  <td>Closed</td>
   <td>Benign Positive</td>
   <td><code>closed</code></td>
   <td><code>no_longer_a_threat</code></td>
 </tr>
 <tr>
   <td>Closed</td>
+  <td>False Positive / Incorrect alert logic</td>
+  <td><code>closed</code></td>
+  <td><code>false_positive</code></td>
+</tr>
+<tr>
+  <td>Closed</td>
+  <td>False Positive / Inaccurate data</td>
+  <td><code>closed</code></td>
+  <td><code>irrelevant_alert_subtype</code></td>
+</tr>
+<tr>
+  <td>Closed</td>
   <td>Undetermined</td>
   <td><code>closed</code></td>
-  <td><code>other</code></td>
+  <td><code>other</code>, with the classification comment as the description (<code>undetermined</code> when empty)</td>
 </tr>
 </tbody>
 </table>
+<p>Several Argos closure reasons map to Benign Positive in the inbound direction (<code>no_longer_a_threat</code>, <code>irrelevant</code>, <code>asset_should_not_be_monitored</code>, <code>asset_belongs_to_my_organization</code>, <code>asm_no_longer_detected</code>, <code>asm_manually_closed</code>). When an incident closed as Benign Positive belongs to an Argos alert already closed with any of these, the Exporter leaves the Argos reason unchanged rather than replacing it with <code>no_longer_a_threat</code>.</p>
 <h2 id="loop-prevention">Loop Prevention</h2>
-<p>This playbook checks for the <code>argos-importer-synced</code> tag before syncing. If the tag is present (set by Importer), the playbook skips the update to prevent circular sync loops.</p>
+<p>The <strong>Check_Point_EM_InboundStatusSync</strong> playbook applies Argos changes to incidents, which fires this playbook again. Because the Exporter reads the Argos alert first and skips alerts already in the target state, those changes are not sent back.</p>
+<h2 id="authentication">Authentication</h2>
+<p>The Argos token is sent in the HTTP action's <code>cookie</code> input, not as a <code>Cookie</code> request header: Azure Logic Apps removes <code>Cookie</code> from the headers of outgoing requests, which makes Argos reject the call with HTTP 401.</p>
 <h2 id="api-endpoints-used">API Endpoints Used</h2>
 <table>
 <thead>
@@ -221,8 +253,12 @@
 </thead>
 <tbody>
 <tr>
+  <td>Get alert</td>
+  <td><code>GET /alert/api/v1/alerts/{alert_ref_id}</code></td>
+</tr>
+<tr>
   <td>Update alert status</td>
-  <td><code>PUT /api/v1/alerts/{alert_ref_id}</code></td>
+  <td><code>PUT /alert/api/v1/alerts/status</code></td>
 </tr>
 </tbody>
 </table>

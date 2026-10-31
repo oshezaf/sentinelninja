@@ -15,7 +15,7 @@
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BitSight_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json) |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources; Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 
 The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data into Microsoft Sentinel using the [Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview).
 
@@ -380,7 +380,6 @@ Azure_Client_Secret | None
 Azure_Tenant_Id | None
 Companies  | ALL
 Workspace ID  | None
-Workspace Key  | None
 Portfolio_Companies_Table_Name | Portfolio_Companies
 Alerts_Table_Name  | Alerts_data
 Breaches_Table_Name | BitsightBreaches_data

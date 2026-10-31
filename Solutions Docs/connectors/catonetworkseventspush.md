@@ -1,6 +1,4 @@
-# ⚠️ Cato Networks Events (Push)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Cato Networks Events (Push)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/catonetworks.svg" alt="" width="75" height="75">
 
@@ -21,6 +19,7 @@
 | **CCF Configuration** | [CatoNetworks_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CatoNetworks/Data%20Connectors/CatoNetworks_PUSH_CCP/CatoNetworks_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cato-networks-events-push) |
 
 The [Cato Networks](https://www.catonetworks.com/) connector pushes security and networking telemetry from the Cato Management Application into Microsoft Sentinel in near real time, using the Codeless Connector Framework (CCF) Push pattern. Data lands in a custom Log Analytics table, ready for hunting, analytics, and visualization. See the [Cato Event Schema](https://knowledge.catonetworks.com/docs/cato-event-schema) for the fields carried on each record.
 

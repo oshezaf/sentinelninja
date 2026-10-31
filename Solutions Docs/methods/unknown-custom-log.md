@@ -28,7 +28,7 @@ These connectors use custom log tables to store ingested data. The specific coll
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Corelight | 238 | [Corelight](../solutions/corelight.md) |
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Corelight | 250 | [Corelight](../solutions/corelight.md) |
 | [GravityZone Data Connector](../connectors/gravityzonedataconnector.md) | Bitdefender | 1 | [GravityZone](../solutions/gravityzone.md) |
 
 ---

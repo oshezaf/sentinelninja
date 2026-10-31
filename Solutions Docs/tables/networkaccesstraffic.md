@@ -14,7 +14,7 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic) |
 
 ## Contents
@@ -25,7 +25,7 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (99 columns)
+## Schema (120 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic)
 
@@ -34,8 +34,13 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | _BilledSize | real | The record size in bytes |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccessType | string | Type of accessed application. Access type options: QuickAccess, PrivateAccess. |
-| Action | string | The action taken on the network session. Allowed, Denied. |
+| Action | string | The action taken on the network session. Allowed, Denied, Redirect. |
+| AgenticSessionId | string | The identifier of the agentic session associated with the traffic. |
+| AgentPlatform | string | The platform hosting the AI agent that initiated the transaction. Local, BedrockAws, MicrosoftFoundry, MicrosoftCopilotStudio. Populated for agentic traffic only; null otherwise. |
+| AgentTypeId | string | The identifier of the agent type associated with the traffic. |
+| AgentTypeName | string | The name of the agent type associated with the traffic. |
 | AgentVersion | string | The version of the agent connecting. |
+| AgentVirtualId | string | The virtual identifier of the agent associated with the traffic. |
 | AIAgentId | string | The unique identifier of the AI agent associated with the traffic. |
 | AIAgentName | string | The name of the AI agent associated with the traffic. |
 | AIDetectionConfidence | int | Confidence level of the AI detection result. |
@@ -45,6 +50,7 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | AppLoginDeviceId | string | Identifier of the device associated with the transaction. Applies to Private Access traffic only; null for other transaction types. |
 | AppLoginUserId | string | Identifier of the login user associated with the transaction. Applies to Private Access traffic only; null for other transaction types. |
 | AppSegmentId | string | Destination Application segment ID from Azure AD accessed during the transaction. |
+| CloudAppActivity | string | The activity performed in the cloud application. |
 | CloudAppCatalogId | string | The id of the application in the saas application catalog. |
 | CloudAppCategories | string | The category list of the cloud application (i.e social media, search, generative AI). |
 | CloudAppCategory | string | The category of the cloud application (i.e social media, search, generative AI). |
@@ -54,23 +60,32 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | CloudAppLoginUser | string | The username that was used to log into the application. |
 | CloudAppName | string | The name of the application (i.e chatGPT, SalesForce, Bing). |
 | CloudAppRiskScore | int | The risk score of the application. |
+| CloudAppSecurityScore | int | The security score of the cloud application. |
+| CloudAppSubActivity | string | The sub-activity performed in the cloud application. |
+| ConnectionCreatedTime | datetime | The date and time (UTC) when the connection associated with the traffic was created. |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
 | ConnectionStatus | string | Status of a connection. Status options: Open, Active, Closed. |
 | ConnectorGroupId | string | Identifier of the connector group that served the Private Access transaction. Applies to Private Access traffic only; null for other transaction types. |
 | ConnectorId | string | Private access connector ID. |
 | ConnectorIp | string | Private access connector IP. |
 | ConnectorName | string | Private access connector name. |
+| CustomHeaders | dynamic | The custom HTTP headers applied to the transaction, as a JSON array where each element contains HeaderName, PreviousValue and NewValue. |
 | Description | string | Additional details describing the traffic. |
 | DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
 | DestinationPort | int | The destination IP port. |
 | DestinationUrl | string | The Url link of the connection or session destination. |
 | DestinationWebCategories | string | The destination FQDN's Web Categories. |
-| DeviceCategory | string | Device type the transaction originated from. Client, Branch. |
+| DeviceCategory | string | Device type the transaction originated from. Client, Branch, Secure Enterprise Browser. |
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
+| DnsQueryName | string | The domain name requested in the DNS query. |
+| DnsRecordType | string | The type of DNS record requested. |
+| DnsResponseCode | string | The response code returned for the DNS query. |
 | DnsResponseOrigin | string | The origin of the DNS response for the traffic. Possible values: Cache, Onprem. |
+| DnsResponseTime | long | The DNS response time reported by the DNS proxy. |
+| DnsTtl | long | The time to live reported for the DNS response. |
 | FilteringProfileId | string | The ID of the Filtering Profile associated with the action performed on traffic. |
 | FilteringProfileName | string | The name of the Filtering Profile associated with the action performed on traffic. |
 | HttpMethod | string | The http method used in the request. |
@@ -86,22 +101,28 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | KerberosErrorText | string | Kerberos error text description. |
 | KerberosMsgType | string | Kerberos message type number (AS/TGS). Possible values: 10 (AS_REQ), 11 (AS_REP), 12 (TGS_REQ), 13 (TGS_REP). |
 | KerberosNonce | int | Random number for request/reply matching. |
+| McpPrimitiveName | string | The name of the MCP tool, resource, or prompt invoked (for example, delete_file). |
+| McpProtocolVersion | string | The negotiated MCP protocol version (for example, 2025-06-18). |
 | NetworkProtocol | string | The network protocol, IPv6 or IPv4. |
 | OnPremAccount | string | Client principal name requesting the ticket. |
 | OriginHeader | string | The origin header value. |
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |
 | PolicyName | string | The name of the filtering policy associated with the action performed on traffic. |
 | PolicyRuleId | string | The ID of the rule for which the request was denied by. |
+| PolicyType | string | The type of policy that evaluated the traffic. Possible values: mcpFirewall, promptProtection, threatIntelligence, webContentFiltering. |
 | ProcessArgs | string | The process arguments associated with the network request. |
 | ProcessingRegion | string | Region where the request was processed by the backend service. |
 | ProcessTree | string | The process tree associated with the network request. |
 | Realm | string | Kerberos realm of the target service. |
 | ReceivedBytes | long | The number of bytes received. |
+| RedirectDestination | string | The destination the transaction was redirected to. Populated when the action taken on the network session is Redirect; null otherwise. |
 | ReferrerHeader | string | The Referer header value. |
 | RemoteNetworkId | string | The ID from which traffic was sent or received, providing visibility into the origin of the traffic. |
+| ResolvedIp | string | The IP address or addresses returned for the DNS query, preserved as a string. |
 | ResourceTenantId | string | Tenant ID that owns the resource. |
 | ResponseCode | int | The response code returned from the server. |
 | RuleName | string | The name of the rule associated with the action performed on traffic. |
+| SecurityPrincipalType | string | The type of the security principal that initiated the transaction. User, Device. |
 | SentBytes | long | The number of bytes sent. |
 | ServicePrincipalName | string | Target service the client is trying to access. |
 | SessionId | string | Unique identifier representing the session. |

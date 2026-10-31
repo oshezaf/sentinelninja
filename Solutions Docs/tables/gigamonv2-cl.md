@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -19,6 +17,7 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (129 columns)
 
@@ -187,6 +186,15 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md) |  |
+
+## Parsers Using This Table (2)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsGigamonVSeries](../asim/asimdnsgigamonvseries.md) | Dns | Gigamon V-Series Application Metadata Intelligence |  |
+| [ASimNetworkSessionGigamonVSeries](../asim/asimnetworksessiongigamonvseries.md) | NetworkSession | Gigamon V-Series Application Metadata Intelligence |  |
 
 ---
 

@@ -8,9 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -620,7 +618,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [CloudflareCCF](../content/cloudflare-ccf-cloudflareccf-cd0e56db.md) |  |
 
-## Parsers Using This Table (2)
+## Parsers Using This Table (3)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionCloudflareOne](../asim/asimwebsessioncloudflareone.md) | WebSession | Cloudflare One |  |
 
 ### Other Parsers (2)
 

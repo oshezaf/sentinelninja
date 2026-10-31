@@ -18,9 +18,9 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |
 | **Solution Folder** | [Shodan](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-shodan) · Popularity: 🟡 Low (32%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-shodan) · Popularity: ⚪ Very Low (0%) |
 
-[Shodan](https://www.shodan.io/) is the search engine for Internet-connected devices. Discover how Internet intelligence can help you make better decisions. Its Beyond The Web platform helps to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Integrating this solution with Sentinel will help enriching the IOT incidents using Shodan's search engine.
+[Shodan](https://www.shodan.io/) is the search engine for Internet-connected devices. Discover how Internet intelligence can help you make better decisions. Its Beyond The Web platform helps to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Integrating this solution with Microsoft Sentinel will help enriching the IOT incidents using Shodan's search engine.
 
 ## Data Connectors
 
@@ -43,6 +43,12 @@ This solution includes **3 content item(s)**:
 | [Shodan - Enrich Domain Name](../content/shodan-shodan-enrich-domain-name-4fea384c.md) | This playbook can be triggered manually from a Domain Entity context to fetch geo location and runni... | - |
 | [Shodan - Enrich IP Address](../content/shodan-shodan-enrich-ip-address-506b2861.md) | This playbook can be triggered manually from an IP Address Entity context to fetch geo location and ... | - |
 | [Shodan - Enrich Incident IPs and Domain Names](../content/shodan-shodan-enrich-incident-ips-and-domain-names-b4236aa5.md) | When a new sentinel incident is created, this playbook gets triggered and fetches geo location and r... | - |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
+|-------------|--------------------------------|---------------------------------------------|
+| 3.0.0       | 11-07-2023                     | Initial Solution Package with Playbooks. |
 
 ---
 

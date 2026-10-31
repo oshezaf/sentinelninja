@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [GTIVulnerabilities_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIVulnerabilities_ccf/GTIVulnerabilities_DCR.json) |
 | **CCF Configuration** | [GTIVulnerabilities_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Data%20Connectors/GTIVulnerabilities_ccf/GTIVulnerabilities_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#google-threat-intelligence-vulnerabilities-ccf) |
 
 The **Google Threat Intelligence (GTI) Vulnerabilities** data connector ingests Vulnerability collection objects from the [Google Threat Intelligence (VirusTotal) Collections API](https://gtidocs.virustotal.com/reference/list-vulnerabilities) into Microsoft Sentinel using the **Codeless Connector Framework (CCF)** — no Azure Function or agent to deploy.
 

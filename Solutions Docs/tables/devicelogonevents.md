@@ -6,7 +6,7 @@
 
 ---
 
-Sign-ins and other authentication events on devices
+Reference for DeviceLogonEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,7 +16,6 @@ Sign-ins and other authentication events on devices
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicelogonevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicelogonevents-table) |
 
 ## Contents
 
@@ -94,7 +93,6 @@ Sign-ins and other authentication events on devices
 Official Microsoft Learn documentation for field/column information:
 
 - [DeviceLogonEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicelogonevents)
-- [DeviceLogonEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicelogonevents-table)
 
 ## Solutions (5)
 

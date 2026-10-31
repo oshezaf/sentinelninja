@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [CPEMIOCIntelligenceLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed/Data%20Connectors/CPEMIOCIntelligenceLogs_ccp/CPEMIOCIntelligenceLogs_DCR.json) |
 | **CCF Configuration** | [CPEMIOCIntelligenceLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20EM%20ThreatCloud%20Intelligence%20Feed/Data%20Connectors/CPEMIOCIntelligenceLogs_ccp/CPEMIOCIntelligenceLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#check-point-em-threatcloud-intelligence-feed-connector) |
 
 Check Point provides a Microsoft Sentinel integration to ingest high-fidelity Indicators of Compromise (IoCs) from the Infinity External Risk Management solution into Microsoft Sentinel. This connector incrementally pulls the premium IOC feed — including malicious IPs, domains, URLs, and file hashes — enriched with confidence, severity, malicious classification, kill chain stage, blocking and uniqueness flags, malware types, and CVE/campaign associations.
 

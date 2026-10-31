@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HorizonDBQueryStoreRuntimeStats &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="horizondbquerystoreruntimestats">HorizonDBQueryStoreRuntimeStats</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for HorizonDBQueryStoreRuntimeStats table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Azure Resources</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/horizondbquerystoreruntimestats">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#schema-references">Schema References</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
+<h2 id="schema">Schema (43 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/horizondbquerystoreruntimestats">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">BlkReadTime</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Total time the statement spent reading blocks in milliseconds for all calls in this time window. Only available if track_io_timing is enabled, otherwise zero.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BlkWriteTime</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Total time the statement spent writing blocks in milliseconds for all calls in this time window. Only available if track_io_timing is enabled, otherwise zero.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Calls</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of times the query executed within this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabaseId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Identifier (OID) of database in which the statement was executed. 0 indicates it is a background worker or a system call.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time corresponding to the time window for this entry. Statistics for queries are aggregated by time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsSystemQuery</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Boolean value indicating if the query is executed by Azure managed system user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalBlksDirtied</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of local blocks dirtied by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalBlksHit</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of local block cache hits by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalBlksRead</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of local blocks read by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalBlksWritten</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of local blocks written by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Location of Azure HorizonDB replica.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MaxExecDurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Maximum query execution duration in milliseconds in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MeanExecDurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Mean query execution duration in milliseconds in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MinExecDurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Minimum query execution duration in milliseconds in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Node</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Logical name of the node.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParametersCaptureStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the status of capturing parameters of a parameterized query.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlanId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Identifier of the plan corresponding to this query. Only available when query store is configured to store query plans, otherwise the field is empty.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Pool</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the pool containing the node.</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the query. An internal hash code, computed from the statement's parse tree.</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the query type of the statement. Possible values: unknown, select, update, insert, delete, merge, utility, nothing.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Role</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Role of the replica. Possible values are Unknown, ReadWrite, and ReadOnly.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Rows</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of rows retrieved or affected by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuntimeStatsEntryId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Identifier of the runtime entry.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SearchPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Value of search_path set at the time the query was captured.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SearchPathCaptureStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the status of capturing the search_path.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SharedBlksDirtied</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of shared blocks dirtied by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SharedBlksHit</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of shared block cache hits by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SharedBlksRead</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of shared blocks read by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SharedBlksWritten</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of shared blocks written by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time corresponding to the time window for this entry. Statistics for queries are aggregated by time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StdDevExecDurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Standard deviation of the query execution duration time in milliseconds in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TempBlksRead</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of temporary file blocks read by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TempBlksWritten</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of temporary file blocks written by the statement for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) of when the event is generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalExecDurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Total query execution duration in milliseconds for all calls in this time window.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Identifier (OID) of the user that executed the statement.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/horizondbquerystoreruntimestats">HorizonDBQueryStoreRuntimeStats Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<h2 id="resource-types">Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.horizondb/clusters</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

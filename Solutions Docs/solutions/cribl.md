@@ -21,7 +21,7 @@
 | **First Published** | 2024-08-01 |
 | **Last Updated** | 2026-08-10 |
 | **Solution Folder** | [Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/criblinc1673975616879.microsoft-sentinel-solution-cribl) · Popularity: 🟡 Low (49%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/criblinc1673975616879.microsoft-sentinel-solution-cribl) · Popularity: 🟡 Low (24%) |
 
 Cribl is a vendor neutral, purpose-built processing engine for data security and IT operations focused on centralized parsing and processing of event data.
 

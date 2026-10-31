@@ -16,9 +16,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
+| **Last Updated** | 2026-10-16 |
 | **Solution Folder** | [Microsoft Defender for Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-microsoftdefenderforcloud) · Rating: ★★☆☆☆ 1.9/5 (7 ratings) · Popularity: 🟢 High (93%) |
 
@@ -79,8 +80,9 @@ This solution includes **1 content item(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                              |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                              |
 |-------------|-------------------------------|-------------------------------------------------|
+| 3.2.1 | 15-10-2026 | Added 1 disabled **Defender XDR Custom Detection** (`CoreBackupDeletionwithSecurityAlert.yaml`) alongside the existing Sentinel **Analytic Rule** and updated the solution package to 3.2.1. |
 | 3.0.3       |	06-12-2025	                  |Moved MicrosoftDefenderForCloudTenantBased's **Data Connector** from public preview to Global Availability | 
 | 3.0.2       |	15-04-2024	                  |Updated **Data Connector** MicrosoftDefenderForCloudTenantBased's kind as GenericUI | 
 | 3.0.1       | 03-04-2024                    |Corrected the standard tier in **Data Connector** and Updated MicrosoftDefenderForCloudTenantBased.json to support FFX  |

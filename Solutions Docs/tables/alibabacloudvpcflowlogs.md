@@ -6,12 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Supports Transformations** | ✗ No |
-| **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
-
 ## Contents
 
 - [Schema References](#schema-references)

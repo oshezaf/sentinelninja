@@ -15,8 +15,8 @@
 | **Schema** | Authentication |
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.2.19 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
-| **Last Updated** | Jul 16, 2026 |
+| **Parser Version** | 0.2.30 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
+| **Last Updated** | Oct 27, 2026 |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthentication.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthentication.yaml) |
 
 ## Description
@@ -33,6 +33,8 @@ This union parser includes parsers for the following products:
 | Microsoft Entra ID | [_ASim_Authentication_AADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | Microsoft Entra ID | [_ASim_Authentication_AADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | AWS | [_ASim_Authentication_AWSCloudTrail](asimauthenticationawscloudtrail.md) | [Amazon Web Services](../solutions/amazon-web-services.md) |
+| Alibaba Cloud ActionTrail | [_ASim_Authentication_AlibabaCloudActionTrail](asimauthenticationalibabacloudactiontrail.md) | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
+| Aruba Networks ClearPass | [_ASim_Authentication_ArubaNetworksClearPass](asimauthenticationarubanetworksclearpass.md) | [Aruba ClearPass (legacy connector)](../solutions/aruba-clearpass.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Barracuda WAF | [_ASim_Authentication_BarracudaWAF](asimauthenticationbarracudawaf.md) | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco Adaptive Security Appliance (ASA) | [_ASim_Authentication_CiscoASA](asimauthenticationciscoasa.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Cisco DNAC | [_ASim_Authentication_CiscoDNAC](asimauthenticationciscodnac.md) | [Syslog](../solutions/syslog.md) |
@@ -42,7 +44,9 @@ This union parser includes parsers for the following products:
 | Cisco ISE Administrator | [_ASim_Authentication_CiscoISEAdministrator](asimauthenticationciscoiseadministrator.md) | [Syslog](../solutions/syslog.md) |
 | Cisco Meraki | [_ASim_Authentication_CiscoMeraki](asimauthenticationciscomeraki.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Cisco Meraki | [_ASim_Authentication_CiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
+| CrowdStrike Falcon Data Replicator | [_ASim_Authentication_CrowdStrikeFalconDataReplicator](asimauthenticationcrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | CrowdStrike Falcon Endpoint Protection | [_ASim_Authentication_CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[CrowdStrike Falcon Endpoint Protection (legacy connector)](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| CyberArk Audit | [_ASim_Authentication_CyberArkAudit](asimauthenticationcyberarkaudit.md) | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | Fortigate | [_ASim_Authentication_FortinetFortigate](asimauthenticationfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Google Workspace | [_ASim_Authentication_GoogleWorkspace](asimauthenticationgoogleworkspace.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
 | Google Workspace | [_ASim_Authentication_GoogleWorkspaceLogins](asimauthenticationgoogleworkspacelogins.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
@@ -52,14 +56,18 @@ This union parser includes parsers for the following products:
 |  | [_ASim_Authentication_MicrosoftSecurityEvents](asim-authentication-microsoftsecurityevents.md) |  |
 | Windows Security Events | [_ASim_Authentication_MicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Forwarded Events](../solutions/windows-forwarded-events.md)<br>[Windows Security Events](../solutions/windows-security-events.md) |
 | Native | [_ASim_Authentication_Native](asimauthenticationnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
+| Auth0 | [_ASim_Authentication_OktaAuth0](asimauthenticationoktaauth0.md) | [Auth0](../solutions/auth0.md) |
 | Okta | [_ASim_Authentication_OktaSSO](asimauthenticationoktasso.md) | [Okta Single Sign-On (legacy connector)](../solutions/okta-single-sign-on.md) |
 | Okta | [_ASim_Authentication_OktaSystemLogs](asimauthenticationoktasystemlogs.md) |  |
 | Okta | [_ASim_Authentication_OktaV2](asimauthenticationoktav2.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
+| Oracle Cloud Infrastructure | [_ASim_Authentication_OracleOCI](asimauthenticationoracleoci.md) | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | Palo Alto Cortex Data Lake | [_ASim_Authentication_PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto PAN-OS GlobalProtect | [_ASim_Authentication_PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto PAN-OS | [_ASim_Authentication_PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto Prisma Cloud Compute | [_ASim_Authentication_PaloAltoPrismaCloud](asimauthenticationpaloaltoprismacloud.md) | [Syslog](../solutions/syslog.md) |
 | PostgreSQL | [_ASim_Authentication_PostgreSQL](asimauthenticationpostgresql.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[PostgreSQL (legacy connector)](../solutions/postgresql.md) |
+| Salesforce Login History | [_ASim_Authentication_SalesforceLoginHistory](asimauthenticationsalesforceloginhistory.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| Salesforce Real-Time Event Monitoring | [_ASim_Authentication_SalesforceRealTimeEventMonitoring](asimauthenticationsalesforcerealtimeeventmonitoring.md) | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | Salesforce Service Cloud | [_ASim_Authentication_SalesforceSC](asimauthenticationsalesforcesc.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
 | SentinelOne | [_ASim_Authentication_SentinelOne](asimauthenticationsentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 | Microsoft Entra ID | [_ASim_Authentication_SigninLogs](asimauthenticationsigninlogs.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -70,6 +78,8 @@ This union parser includes parsers for the following products:
 | VMware ESXi | [_ASim_Authentication_VMwareESXi](asimauthenticationvmwareesxi.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md)<br>[Cisco UCS (legacy connector)](../solutions/cisco-ucs.md)<br>[Citrix ADC (legacy connector)](../solutions/citrix-adc.md)<br>[Forescout (Legacy)](../solutions/forescout-legacy.md)<br>[RSA SecurID (legacy connector)](../solutions/rsa-securid.md)<br>[Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md) |
 | VMware vCenter | [_ASim_Authentication_VMwareVCenter](asimauthenticationvmwarevcenter.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md) |
 | Vectra | [_ASim_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
+| Wiz Cloud | [_ASim_Authentication_WizCloud](asimauthenticationwizcloud.md) | [Wiz](../solutions/wiz.md) |
+| Zscaler Private Access | [_ASim_Authentication_ZscalerZPA](asimauthenticationzscalerzpa.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Zscaler Private Access (ZPA) (legacy connector)](../solutions/zscaler-private-access-zpa.md) |
 
 ## Parameters
 

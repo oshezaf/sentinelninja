@@ -6,17 +6,16 @@
 
 ---
 
-URLs sent through Microsoft Teams messages in your organization
+Reference for MessageUrlInfo table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageurlinfo) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messageurlinfo-table) |
 
 ## Contents
 
@@ -48,7 +47,6 @@ URLs sent through Microsoft Teams messages in your organization
 Official Microsoft Learn documentation for field/column information:
 
 - [MessageUrlInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messageurlinfo)
-- [MessageUrlInfo Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messageurlinfo-table)
 
 ## Solutions (1)
 

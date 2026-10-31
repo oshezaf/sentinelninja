@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ServiceNowCMDB_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNowCMDB/Data%20Connectors/ServiceNowCMDB_CCF/ServiceNowCMDB_DCR.json) |
 | **CCF Configuration** | [ServiceNowCMDB_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNowCMDB/Data%20Connectors/ServiceNowCMDB_CCF/ServiceNowCMDB_PollerConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#servicenow-cmdb-via-codeless-connector-framework) |
 
 The [ServiceNow CMDB Data Connector](https://www.servicenow.com/) allows ingesting Configuration Management Database (CMDB) and Asset Management records from ServiceNow into Microsoft Sentinel. This connector retrieves multiple records from the ServiceNow Table API for specified tables including Asset Management (alm_asset), Configuration Items (cmdb_ci), Computer CIs (cmdb_ci_computer), and Server CIs (cmdb_ci_server). This connector is built on the Microsoft Sentinel Codeless Connector Platform and supports DCR-based ingestion time transformations for efficient query execution. Refer to [ServiceNow Table API documentation](https://www.servicenow.com/docs/r/api-reference/rest-apis/c_TableAPI.html?section=c_TableAPI) for more information.
 

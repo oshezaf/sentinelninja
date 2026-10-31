@@ -6,7 +6,7 @@
 
 ---
 
-An Active Directory domain privilege escalation vulnerability that enables a privileged user to access the Domain Controller by abusing Active Directory Certificate Service
+Identifies Silverfort incidents involving abuse of Active Directory Certificate Services associated with Certifried. This behavior may allow an attacker to escalate privileges and impersonate an account in the domain.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,6 +14,7 @@ An Active Directory domain privilege escalation vulnerability that enables a pri
 | **Solution** | [Silverfort](../solutions/silverfort.md) |
 | **ID** | `9ae540c9-c926-4100-8f07-1eac22596292` |
 | **Severity** | High |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | PrivilegeEscalation |
 | **Techniques** | T1068 |

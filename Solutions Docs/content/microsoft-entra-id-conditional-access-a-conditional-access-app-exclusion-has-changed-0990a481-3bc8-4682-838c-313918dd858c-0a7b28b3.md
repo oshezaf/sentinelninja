@@ -14,6 +14,7 @@ A Conditional Access app exclusion has changed in Entra ID.
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **ID** | `0990a481-3bc8-4682-838c-313918dd858c` |
 | **Severity** | Low |
+| **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071 |

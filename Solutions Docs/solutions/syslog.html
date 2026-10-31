@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.7</td>
+  <td style="text-align:left">3.2.3</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -57,6 +57,10 @@
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
   <td style="text-align:left">2022-05-23</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-26</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -273,6 +277,26 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.3</td>
+  <td>25-10-2026</td>
+  <td>Inlined <code>let DomainList = dynamic([...])</code> into <code>where Domain has_any (...)</code> in <strong>Defender XDR Custom Detection</strong> <code>NRT_squid_events_for_mining_pools.yaml</code> so Continuous (<code>PT0S</code>) rule enablement succeeds in the Defender XDR NRT streaming engine.</td>
+</tr>
+<tr>
+  <td>3.2.2</td>
+  <td>19-10-2026</td>
+  <td>Restored <code>DeployParser</code> parameter and <code>Parser</code> resource deployment condition for the two workspace function <strong>Parsers</strong> alongside the seven disabled <strong>Defender XDR Custom Detections</strong> and two <strong>Defender Workbooks</strong> so Content Hub installation and multi-workspace deployment succeed.</td>
+</tr>
+<tr>
+  <td>3.2.1</td>
+  <td>14-10-2026</td>
+  <td>Added seven disabled <strong>Defender XDR Custom Detections</strong>, including an hourly (<code>PT1H</code>) scheduled approximation of the source NRT mining-pool rule with unspecified engine-managed lookback, and two converted <strong>Defender Workbooks</strong> with mandatory workspace-function dependencies for the Syslog overview. Offline content validation passed; runtime, NRT parity, workbook UI and provider acceptance remain unverified.</td>
+</tr>
+<tr>
+  <td>3.1.2</td>
+  <td>12-10-2026</td>
+  <td>Added seven disabled <strong>Defender XDR Custom Detections</strong> converted from Syslog <strong>Analytic Rules</strong>, with source provenance. Offline structural validation passed; runtime validation was not performed.</td>
+</tr>
 <tr>
   <td>3.0.7</td>
   <td>04-11-2024</td>

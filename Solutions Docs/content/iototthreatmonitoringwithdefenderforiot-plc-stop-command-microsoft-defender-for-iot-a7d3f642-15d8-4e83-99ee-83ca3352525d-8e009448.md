@@ -16,7 +16,7 @@ This alert leverages Defender for IoT to detect PLC stop commands which could in
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | DefenseEvasion |
+| **Tactics** | Evasion |
 | **Techniques** | T0858 |
 | **Required Connectors** | [IoT](../connectors/iot.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT/Analytic%20Rules/IoTPLCStopCommand.yaml) |

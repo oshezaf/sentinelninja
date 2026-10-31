@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network,Cloud Provider |
-| **Version** | 2.0.4 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-13 |
+| **Last Updated** | 2026-10-27 |
 | **Solution Folder** | [Azure DDoS Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureddosprotection) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azureddosprotection) · Popularity: 🔵 Medium (78%) |
 
 The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Solution for Microsoft Sentinel enables you to easily ingest Azure DDoS Protection Standard logs to Microsoft Sentinel. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
 
@@ -79,6 +80,17 @@ This solution includes **3 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [AzDDoSStandardWorkbook](../content/azure-ddos-protection-azddosstandardworkbook-5256dfab.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.2.2 | 19-10-2026 | Added Defender XDR **Custom Detections** (`AttackSourcesPPSThreshold.yaml`, `AttackSourcesPercentThreshold.yaml`) and Defender XDR **Workbook** (`AzDDoSStandardWorkbook.json`) migrated to Advanced Hunting with preserved Azure Resource Graph queries and cross-surface `AzureDiagnostics` field resolution. |
+| 2.0.4 | 15-05-2024 | Updated **Workbook** (`AzDDoSStandardWorkbook.json`) and **Solution** package metadata. |
+| 2.0.3 | 01-02-2024 | Updated **Analytic Rules** and **Workbook** queries for Azure DDoS Protection. |
+| 2.0.2 | 10-10-2023 | Updated **Data Connector** and **Workbook** definitions. |
+| 2.0.1 | 15-06-2023 | Minor updates to **Analytic Rules** and **Workbook** template. |
+| 2.0.0 | 13-05-2022 | Initial **Solution** release for Azure DDoS Protection with **Data Connector**, **Workbook**, and **Analytic Rules**. |
 
 ---
 

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-20 |
-| **Last Updated** | 2026-07-27 |
+| **Last Updated** | 2026-10-21 |
 | **Solution Folder** | [Checkpoint Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Checkpoint%20Email%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security) · Popularity: 🟢 High (85%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-checkpoint-email-security) · Popularity: 🔵 Medium (79%) |
 
 The [Check Point Email Security (Harmony Email & Collaboration)](https://www.checkpoint.com/harmony/email-security/) Solution for Microsoft Sentinel enables you to ingest security events, anti-phishing exceptions, spam exceptions, and audit logs from Check Point's Email Security platform into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution provides visibility into advanced email threats including zero-day threats, phishing, account takeover, data leakage, and shadow IT discovery.
 
@@ -33,6 +33,7 @@ a. [Codeless Connector Platform (CCP)](https://docs.microsoft.com/azure/sentinel
 
 - [Data Connectors](#data-connectors)
 - [Tables Used](#tables-used)
+- [Content Items](#content-items)
 - [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
@@ -51,6 +52,21 @@ This solution uses **4 table(s)**:
 | [`CheckPointEmailSecurityAuditLogs_CL`](../tables/checkpointemailsecurityauditlogs-cl.md) | [Check Point Email Security (via Codeless Connector Framework)](../connectors/checkpointemailsecconnector.md) | - |
 | [`CheckPointEmailSecurityEvents_CL`](../tables/checkpointemailsecurityevents-cl.md) | [Check Point Email Security (via Codeless Connector Framework)](../connectors/checkpointemailsecconnector.md) | - |
 | [`CheckPointEmailSecuritySpamExceptions_CL`](../tables/checkpointemailsecurityspamexceptions-cl.md) | [Check Point Email Security (via Codeless Connector Framework)](../connectors/checkpointemailsecconnector.md) | - |
+
+## Content Items
+
+This solution includes **2 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Parsers | 2 |
+
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [CheckPointEmailSecAntiPhishingExceptions](../parsers/checkpointemailsecantiphishingexceptions.md) | - | [`CheckPointEmailSecAntiPhishingExceptions_CL`](../tables/checkpointemailsecantiphishingexceptions-cl.md) *(read)* |
+| [CheckPointEmailSecuritySpamExceptions](../parsers/checkpointemailsecurityspamexceptions.md) | - | [`CheckPointEmailSecuritySpamExceptions_CL`](../tables/checkpointemailsecurityspamexceptions-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -131,8 +147,9 @@ The API Base URL is region-specific. Use the appropriate URL for your tenant:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
-|-------------|--------------------------------|--------------------------------------------------------------|
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|-------------|--------------------------------|--------------------|
+| 3.0.2       | 08-10-2026                     | Fixed CheckPointEmailSecurityEvents pagination by sending the scroll ID under requestData, reduced duplicate exception data with daily polling and deduplicating parsers, set API request timeouts to 30 seconds for connectivity-check compatibility, and added DCR dependencies on all custom tables to prevent first-deployment races. |
 | 3.0.1       | 21-07-2026                     | Promote CCF Data Connector to GA. |
 | 3.0.0       | 08-07-2026                     | Initial release. Added **Data Connector** for Check Point Email Security (via Codeless Connector Framework) ingesting Security Events, Anti-Phishing Exceptions, Spam Exceptions, and Audit Logs data streams. |
 

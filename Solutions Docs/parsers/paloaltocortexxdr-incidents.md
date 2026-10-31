@@ -27,8 +27,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CortexXDR_Incidents_CL`](../tables/cortexxdr-incidents-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) | ✓ | ✓ | ✓ |
+| [`CortexXDR_Incidents_CL`](../tables/cortexxdr-incidents-cl.md) | ? | ? | ? |
+| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) | ? | ✓ | ? |
 
 ---
 

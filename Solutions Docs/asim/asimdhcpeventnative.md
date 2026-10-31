@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimDhcpEventNative` |
 | **Built-in Parser** | `_ASim_DhcpEvent_Native` |
 | **Schema** | DhcpEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventNative.md)) |
-| **Last Updated** | Mar 12, 2024 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventNative.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimDhcpEvent](asimdhcpevent.md) |
 | **Source File** | [Parsers\ASimDhcpEvent\Parsers\ASimDhcpEventNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDhcpEvent/Parsers/ASimDhcpEventNative.yaml) |
 

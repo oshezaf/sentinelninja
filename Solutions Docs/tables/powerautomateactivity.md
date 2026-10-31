@@ -14,7 +14,7 @@ Reference for PowerAutomateActivity table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+| **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/powerautomateactivity) |
 
 ## Contents
@@ -23,7 +23,6 @@ Reference for PowerAutomateActivity table in Azure Monitor Logs.
 - [Schema References](#schema-references)
 - [Additional Information](#additional-information)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (24 columns)
@@ -72,14 +71,6 @@ Official Microsoft Learn documentation for field/column information:
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) |  |
 
 ---
 

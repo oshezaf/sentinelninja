@@ -82,9 +82,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -111,7 +111,7 @@
 <li><strong>Qualys API Server URL</strong>: e.g. https://qualysapi.qg1.apps.qualys.com</li>
 </ul>
 <blockquote>
-<p><strong>NOTE:</strong> To gather data for Detections based on Host, expand the <strong>DetectionList</strong> column in the table.
+<p><strong>NOTE:</strong> <strong>QualysHostDetectionV3_CL</strong> stores raw host snapshots and can contain repeated unchanged detections. Use the <strong>QualysHostDetection</strong> parser for detection-level records. The parser expands <strong>DetectionList</strong>, removes repeated unchanged versions, and preserves status, timestamp, and relevant content changes.
 To gather data from Qualys VM, you need to provide the following resources</p>
 <h4 id="1-api-credentials">1. API Credentials</h4>
 <p>To gather data from Qualys VM, you'll need Qualys API credentials, including your Username and Password.</p>

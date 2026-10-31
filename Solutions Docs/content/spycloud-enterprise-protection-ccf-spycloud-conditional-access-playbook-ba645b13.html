@@ -146,7 +146,7 @@
 <tr>
   <td style="text-align:left">Get_User_Details</td>
   <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}?$select=id,displayName,accountEnabled,lastPasswordChangeDateTime,userPrincipalName</code></td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'],'@',items('For_each')?['UPNSuffix'])}?$select=id,displayName,accountEnabled,lastPasswordChangeDateTime,userPrincipalName</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
@@ -158,19 +158,19 @@
 <tr>
   <td style="text-align:left">HTTP_-_Disable_User</td>
   <td style="text-align:left">PATCH</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}</code></td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'],'@',items('For_each')?['UPNSuffix'])}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
   <td style="text-align:left">HTTP_-_Revoke_User_Sessions</td>
   <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}/revokeSignInSessions</code></td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'],'@',items('For_each')?['UPNSuffix'])}/revokeSignInSessions</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
   <td style="text-align:left">Force_Password_Reset</td>
   <td style="text-align:left">PATCH</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{variables('user_email')}</code></td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'],'@',items('For_each')?['UPNSuffix'])}</code></td>
   <td style="text-align:left">—</td>
 </tr>
 <tr>
@@ -203,31 +203,45 @@
 <li>Email notifications</li>
 <li>Execution log ingestion to <code>SpyCloud_ConditionalAccessLogsV2_CL</code></li>
 </ul>
+<p>The deployment also creates the Microsoft Sentinel automation rule that invokes this playbook, so no separate wiring step is needed. See <a href="#automation-rule">Automation rule</a> below.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>App Registration with the Microsoft Graph permissions listed in the <a href="../../SpyCloud_Sentinel_Integration_Guide.html">Integration Guide</a>, Section 2.1</li>
+<li>App Registration with the Microsoft Graph permissions listed in the SpyCloud Sentinel Integration Guide, Section 2.1</li>
 <li>DCR Immutable ID and DCE Logs Ingestion Endpoint URL for <code>SpyCloud_ConditionalAccessLogsV2_CL</code> (Section 2.2)</li>
 <li>Monitoring Metrics Publisher role assigned to the App Registration on that DCR</li>
 <li>Object ID of the Azure AD Conditional Access enforcement group (if using group membership actions)</li>
+<li><strong>Microsoft Sentinel Automation Contributor</strong> granted to the <strong>Azure Security Insights</strong> service principal on the resource group you are deploying into — see below</li>
 </ul>
+<h3 id="finding-the-dcr-immutable-id-and-dce-endpoint">Finding the DCR immutable ID and DCE endpoint</h3>
+<p>The solution template names its data collection rule <code>SpyCloudwatchlist-DCR</code>, but Microsoft Sentinel does not create it under that name. When you connect the data connector, Sentinel provisions the rule itself as <code>Microsoft-Sentinel-SpyCloudwatchlist-DCR-&lt;guid&gt;</code> and pairs it with an auto-generated <code>asi-&lt;guid&gt;</code> data collection endpoint. Searching for <code>SpyCloudwatchlist-DCR</code> in the portal will not find it, and if the connector has been connected more than once there will be several, only the most recent of which is in use.</p>
+<p>Read both values from the live connector rather than hunting through the resource list:</p>
+<pre><code class="language-bash">SUB=&lt;subscription-id&gt;; RG=&lt;resource-group&gt;; WS=&lt;workspace-name&gt;
+az rest --method get --url &quot;https://management.azure.com/subscriptions/$SUB/resourceGroups/$RG/providers/Microsoft.OperationalInsights/workspaces/$WS/providers/Microsoft.SecurityInsights/dataConnectors?api-version=2023-02-01-preview&quot; --query &quot;value[?properties.dcrConfig] | [0].properties.dcrConfig.{immutableId: dataCollectionRuleImmutableId, endpoint: dataCollectionEndpoint}&quot;
+</code></pre>
+<p>All four pollers share the same rule and endpoint, so any one of them gives the right answer. Grant the App Registration <strong>Monitoring Metrics Publisher</strong> on that same rule.</p>
+<h3 id="grant-automation-contributor-first">Grant Automation Contributor first</h3>
+<p>This deployment creates a Microsoft Sentinel automation rule alongside the Logic App, and Sentinel refuses to create an automation rule unless it already has permission to run playbooks in the target resource group. Without it the deployment fails with:</p>
+<pre><code>Missing required permissions for Microsoft Sentinel on the playbook resource '.../SpyCloud_Conditional_Access_Playbook'
+</code></pre>
+<p>Grant it once per resource group, before deploying either playbook:</p>
+<pre><code class="language-bash">az role assignment create \
+  --role &quot;Microsoft Sentinel Automation Contributor&quot; \
+  --assignee 98785600-1bb7-4fb9-b9fa-19afe2c8a360 \
+  --scope /subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group&gt;
+</code></pre>
+<p><code>98785600-1bb7-4fb9-b9fa-19afe2c8a360</code> is the fixed application ID for Azure Security Insights. In the portal, use <strong>Access control (IAM)</strong> on the resource group → <strong>Add role assignment</strong> → <em>Microsoft Sentinel Automation Contributor</em> → search for <strong>Azure Security Insights</strong>.</p>
+<p>This permission has always been required for the automation to work. It is now enforced at deployment time rather than allowing a rule to be created that silently never fires.</p>
 <h2 id="deployment">Deployment</h2>
+<p>All settings are supplied at deployment time. There is no post-deployment parameter editing.</p>
 <ol>
 <li>In the Azure Portal, navigate to <strong>Deploy a custom template</strong></li>
 <li>Select this template (<code>azuredeploy.json</code>)</li>
 <li>Confirm Subscription, Resource Group, and Region</li>
-<li>Enter a value for <strong>PlaybookName</strong> (this is the only ARM deployment-time parameter)</li>
+<li>Complete the parameters below</li>
 <li>Click <strong>Review + Create</strong>, then <strong>Create</strong></li>
-<li>Authorize the <code>office365</code> and <code>azuresentinel</code> API connections created by the deployment</li>
+<li>Authorize the <code>office365</code> API connection created by the deployment</li>
 </ol>
-<h2 id="post-deployment-configuration">Post-deployment configuration</h2>
-<p>All other settings are <strong>workflow parameters</strong>, baked into the Logic App with default values. After the playbook is deployed, update them with your own values:</p>
-<ol>
-<li>Navigate to the Microsoft Sentinel workspace, open <strong>Automation</strong>, and select the <code>SpyCloud_Conditional_Access_Playbook</code> playbook — or go directly to the Logic App resource in the Azure Portal</li>
-<li>Open the Logic App and click <strong>Edit</strong> to open the workflow designer</li>
-<li>Open the <strong>Parameters</strong> section (in the designer toolbar, or under <strong>Development Tools → Workflow parameters</strong>)</li>
-<li>For each parameter listed below, enter the appropriate value for your environment</li>
-<li>Click <strong>Save</strong> to apply the changes to the playbook</li>
-</ol>
+<h3 id="parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
@@ -239,80 +253,62 @@
 </thead>
 <tbody>
 <tr>
+  <td>PlaybookName</td>
+  <td>String</td>
+  <td>SpyCloud_Conditional_Access_Playbook</td>
+  <td>Name of the Logic App resource</td>
+</tr>
+<tr>
   <td>Notify_Users_Emails</td>
   <td>String</td>
-  <td>(empty)</td>
+  <td>—</td>
   <td>Email address(es) for notifications, semicolon-separated</td>
 </tr>
 <tr>
   <td>Force_Password_Reset_On_Next_SignIn</td>
-  <td>Bool</td>
+  <td>String</td>
   <td>false</td>
   <td>Forces password reset at next sign-in for affected users</td>
 </tr>
 <tr>
   <td>Disable_User</td>
-  <td>Bool</td>
+  <td>String</td>
   <td>false</td>
-  <td>Disables affected Azure AD user accounts</td>
+  <td>Disables affected Entra ID user accounts</td>
 </tr>
 <tr>
   <td>Add_User_To_Azure_CA_Group</td>
-  <td>Bool</td>
+  <td>String</td>
   <td>false</td>
   <td>Adds affected users to the Conditional Access enforcement group</td>
 </tr>
 <tr>
   <td>Azure_CA_Group_Object_ID</td>
   <td>String</td>
-  <td>(empty)</td>
-  <td>Object ID of the Azure AD Conditional Access group</td>
+  <td>—</td>
+  <td>Object ID of the Entra ID Conditional Access group</td>
 </tr>
 <tr>
   <td>Revoke_User_Sessions</td>
-  <td>Bool</td>
+  <td>String</td>
   <td>false</td>
   <td>Revokes all active sign-in sessions for affected users</td>
 </tr>
 <tr>
   <td>ClientID</td>
   <td>String</td>
-  <td>(empty)</td>
+  <td>—</td>
   <td>App Registration Client ID</td>
 </tr>
 <tr>
   <td>TenantID</td>
   <td>String</td>
-  <td>(empty)</td>
+  <td>—</td>
   <td>Azure Tenant ID</td>
-</tr>
-<tr>
-  <td>ClientSecret</td>
-  <td>String</td>
-  <td>(empty)</td>
-  <td>App Registration Client Secret</td>
-</tr>
-<tr>
-  <td>DCE_Endpoint</td>
-  <td>String</td>
-  <td>(empty)</td>
-  <td>DCE Logs Ingestion Endpoint URL for CA logs</td>
-</tr>
-<tr>
-  <td>DCE_Immutable_ID</td>
-  <td>String</td>
-  <td>(empty)</td>
-  <td>DCR Immutable ID for <code>SpyCloud_ConditionalAccessLogsV2_CL</code></td>
-</tr>
-<tr>
-  <td>Custom_Table_Name</td>
-  <td>String</td>
-  <td>SpyCloud_ConditionalAccessLogsV2_CL</td>
-  <td>Custom Log Analytics table for playbook logs</td>
 </tr>
 </tbody>
 </table>
-<p>After saving workflow parameters, confirm <code>SpyCloud_Conditional_Access_Playbook</code> shows status <strong>Enabled</strong> and check Run History for immediate failures.</p>
+<p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection-ccf.html">Back to SpyCloud Enterprise Protection CCF</a></p>

@@ -1,6 +1,4 @@
-# ⚠️ Thinkst Canary
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Thinkst Canary
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThinkstCanary.svg" alt="" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **DCR Definition Files** | [ThinkstCanary_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThinkstCanary/Data%20Connectors/ThinkstCanaryLogs_ccp/ThinkstCanary_DCR.json) |
 | **CCF Configuration** | [ThinkstCanary_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThinkstCanary/Data%20Connectors/ThinkstCanaryLogs_ccp/ThinkstCanary_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#thinkst-canary) |
 
 The Thinkst Canary connector allows you to ingest security incidents from your Thinkst Canary honeypot network into Microsoft Sentinel. Canary devices detect unauthorized access attempts including SSH logins, RDP sessions, HTTP requests, database queries, file share access, and Canarytoken triggers. This connector automatically pulls all incident data for analysis and alerting.
 

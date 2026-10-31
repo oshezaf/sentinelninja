@@ -16,7 +16,7 @@ Valence Security Alerts
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Required Connectors** | [ValenceSecurity](../connectors/valencesecurity.md) |
+| **Required Connectors** | [ValenceSecurityCcfPush](../connectors/valencesecurityccfpush.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security/Analytic%20Rules/ValenceAlerts.yaml) |
 
 ## Tables Used
@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ValenceAlerts_CL`](../tables/valencealerts-cl.md) | ? | ✓ | ? |
 
 ---
 

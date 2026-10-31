@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -73,7 +71,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (20)
 
 ### Analytic Rules (20)
 
@@ -101,14 +99,6 @@ This table is ingested by the following connectors:
 | [Theom Insights](../content/theom-theom-insights-d200da84-0191-44ce-ad9e-b85e64c84c89-16ac91f8.md) |  |
 | [Theom Low Risks](../content/theom-theom-low-risks-cf7fb616-ac80-40ce-ad18-aa18912811f8-c7fb6a79.md) |  |
 | [Theom Medium Risks](../content/theom-theom-medium-risks-4cb34832-f73a-49f2-8d38-c2d135c5440b-2fc7b8c0.md) |  |
-
-### Workbooks (1)
-
-**In solution [Theom](../solutions/theom.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Theom](../content/theom-theom-71349edc.md) |  |
 
 ---
 

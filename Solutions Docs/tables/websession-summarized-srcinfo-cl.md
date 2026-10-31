@@ -20,6 +20,7 @@
 - [Schema References](#schema-references)
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
+- [Parsers](#parsers-using-this-table)
 
 ## Schema (15 columns)
 
@@ -57,15 +58,16 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md) |  |
+| [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) |  |
 
 ### Workbooks (1)
 
@@ -74,6 +76,14 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) |  |
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [WebSessionEssentialsCustomParser](../parsers/websessionessentialscustomparser.md) | [Web Session Essentials](../solutions/web-session-essentials.md) |  |
 
 ---
 

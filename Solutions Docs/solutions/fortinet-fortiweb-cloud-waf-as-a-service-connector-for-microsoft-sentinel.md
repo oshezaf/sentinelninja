@@ -16,11 +16,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Automation (SOAR) |
-| **Version** | 3.0.3 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
+| **Last Updated** | 2026-10-23 |
 | **Solution Folder** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortiwebcloud) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🔵 Medium (51%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortiwebcloud) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: ⚪ Very Low (0%) |
 
 The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.com/products/web-application-firewall/fortiweb) solution for Microsoft Sentinel provides an automated approach for SecOps analysts to remediate attacks at application level by blocking suspicious IP and URL and also empowers to gather threat intelligence data for malicious IP activity. By leveraging the FortiWeb API, the connector can automate these security operations, tasks using Microsoft Sentinel Playbooks which can dramatically reduce the window that attackers can take advantage of.
 
@@ -101,6 +102,7 @@ This solution includes **7 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                | 
 |-------------|--------------------------------|-------------------------------------------------------------------|
+| 3.2.2       | 22-10-2026                     | Added Defender XDR **Custom Detections** and **XDR Workbook** for Fortinet FortiWeb Cloud WAF-as-a-Service. |
 | 3.0.3       | 10-12-2024                     | Removed Deprecated **Data Connectors**                            |
 | 3.0.2       | 30-04-2024                     | Repackaged for parser issue fix on reinstall                      |
 | 3.0.1       | 26-02-2024                     |Addition of new Fortinet FortiWeb Cloud WAF AMA **Data Connector** |

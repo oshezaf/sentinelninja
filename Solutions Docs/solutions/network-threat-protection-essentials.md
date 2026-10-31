@@ -14,15 +14,15 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection,Security - Network |
-| **Version** | 3.0.1 |
+| **Version** | 3.2.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
-| **Last Updated** | 2026-01-30 |
+| **Last Updated** | 2026-10-28 |
 | **Solution Folder** | [Network Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networkthreatdetection) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), zscaler1579058425289.zscaler_internet_access_mss, [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
 
-The **Network Threat Protection Essentials** solution contain queries that identifies suspicious network behavior based on various data sources ingested in Sentinel. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.
+The **Network Threat Protection Essentials** solution contains queries and Defender XDR custom detections that identify suspicious network behavior based on various data sources ingested in Microsoft Sentinel and Microsoft Defender XDR. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.
  
 For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
 
@@ -108,6 +108,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.2.2       | 25-10-2026                     | Added Defender XDR custom detections and migrated solution package to V3.1 format. |
 | 3.0.2       | 13-01-2026                  | Updated non-functional links from Exploit and Pentest Framework User Agent **Hunting query** |
 | 3.0.1       | 23-02-2024                     | Tagged for dependent solutions for deployment                                  |
 | 3.0.0       | 19-12-2023                     | Corrected typo mistake *Microsoft Windows DNS* to *Windows Server DNS*         |

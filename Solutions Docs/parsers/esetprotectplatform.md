@@ -28,7 +28,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`IntegrationTableV2_CL`](../tables/integrationtablev2-cl.md) |  | ? | ✓ | ? |
-| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) |  | ✓ | ✓ | ✓ |
+| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) |  | ? | ✓ | ? |
 
 ---
 

@@ -62,17 +62,24 @@ Official Microsoft Learn documentation for field/column information:
 
 - [SentinelBehaviorInfo Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo)
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 **In solution [UEBA Essentials](../solutions/ueba-essentials.md):**
 

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANY.RUN Sandbox - URL Enrichment - Incident Trigger &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="anyrun-sandbox---url-enrichment---incident-trigger">ANY.RUN Sandbox - URL Enrichment - Incident Trigger</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>On a Microsoft Sentinel incident, collects URL entities and submits each URL to ANY.RUN Sandbox. Adds analysis comments to the incident and uploads extracted IOCs to Microsoft Sentinel Threat Intelligence.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/anyrun.html">ANYRUN</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-URL/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">7</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_Analysis_Started_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_-_Add_Tags_URL</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Suspicious_IOCs_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_-_Malicious_IOCs_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-<em>ANY.RUN_Output</em>-_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Clean_Scan_URL_ANY.RUN_Output</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret_-_ANYRUN</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('ANYRUN-APIKey')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP-RunNewURLAnalysis</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-Full-JSON-Report_URL</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/@{variables('Task ID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-GetIOC_URL</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/report/@{variables('Task ID')}/ioc/json</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-CheckURL-Result</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.any.run/v1/analysis/monitor/@{variables('Task ID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-URL/readme.md">Sandbox-URL/readme.md</a></em></p>
+</blockquote>
+<h1 id="anyrun-sandbox-url">ANY.RUN — Sandbox URL</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ANYRUN.svg" alt="ANY.RUN" /></p>
+<h2 id="summary">Summary</h2>
+<p>When a Microsoft Sentinel incident is created, this playbook:</p>
+<ul>
+<li>Extracts URL entities from the incident.</li>
+<li>Submits each URL for analysis in ANY.RUN Sandbox using the ANY.RUN API.</li>
+<li>Adds a comment to the incident with the analysis verdict, threat score, malware tags, IOC table, and a link to the analysis session.</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Shared prerequisites (Key Vault secret <code>ANYRUN-APIKey</code>, App Registration, API permissions, and role assignments) are described in the <a href="../../index.html">solution README</a>.</p>
+<p>Additional requirements for this playbook:</p>
+<ul>
+<li>Microsoft Sentinel incidents must contain URL entities.</li>
+<li>The playbook uses a Key Vault connection to retrieve the ANY.RUN API key. The secret must be named <code>ANYRUN-APIKey</code>.</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<p>Click below to deploy Azure Logic App with <strong>Flex Consumption plan</strong></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FANYRUN%2FPlaybooks%2FSandbox-URL%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p>Enter the parameters required for deploying the Logic App and click <strong>Review + create</strong>.</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-URL/Images/1_001.png" alt="logic_app_deployment" /></p>
+<p>Description of the required parameters:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>Logic App name (default <code>ANYRUN-Sandbox-URL</code>).</td>
+</tr>
+<tr>
+  <td>Azure Tenant ID</td>
+  <td>Tenant ID for authentication in connections.</td>
+</tr>
+<tr>
+  <td>Azure Client ID</td>
+  <td>Client ID of the App Registration created for the solution.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-deployment">Post-deployment</h2>
+<h3 id="authorize-api-connections">Authorize API connections</h3>
+<p>After deployment, open the Logic App and authorize the API connections created by the template:</p>
+<ul>
+<li><strong>Microsoft Sentinel</strong></li>
+<li><strong>Key Vault</strong></li>
+</ul>
+<p>Edit each connection, sign in with an account that has the required permissions, and save.</p>
+<h2 id="playbook-steps">Playbook steps</h2>
+<ol>
+<li>The playbook is triggered when a Microsoft Sentinel incident is created.</li>
+<li>It retrieves URL entities from the incident.</li>
+<li>It obtains the ANY.RUN API key from Key Vault.</li>
+<li>For each URL it sends an HTTP request to the ANY.RUN API to start analysis.</li>
+<li>It monitors the analysis until completion, then retrieves the report and IOCs.</li>
+<li>It adds a comment to the incident containing the verdict, threat score, tags, IOC table, and a link to the analysis session.</li>
+<li>Detected IOCs are uploaded to the Microsoft Sentinel Threat Intelligence portal.</li>
+</ol>
+<p>The URL analysis parameters are defined in the HTTP action that starts the analysis. You can adjust them (timeout, browser, OS, interactivity, etc.) in the Logic App designer or code view. See the <a href="https://any.run/api-documentation/">ANY.RUN API documentation</a> for the full list of parameters.</p>
+<h2 id="logic-app-configuration">Logic App configuration (Optional)</h2>
+<h3 id="anyrun-sandbox-analysis-parameters">ANY.RUN Sandbox analysis parameters</h3>
+<p>ANY.RUN is an interactive online malware analysis service for dynamic and static research of most types of threats using a customizable VM environment. We offer a connector for Microsoft Sentinel, which you can independently adapt to your infrastructure and needs in just a few clicks. You can easily change the parameters used for analyzing the required URL.</p>
+<blockquote>
+<p>Note:<br />
+You can learn more about the capabilities of ANY.RUN Sandbox by reviewing our <a href="https://any.run/api-documentation/">API documentation</a>.</p>
+</blockquote>
+<p>The main setup and customization of the Logic App is available through the graphical editor (<strong>Development tools</strong> &gt; <strong>Logic app designer</strong>) or the code editor (<strong>Development tools</strong> &gt; <strong>Logic app code view</strong>).</p>
+<p>The URL analysis parameters in ANY.RUN Sandbox are defined in the <strong>HTTP-RunNewURLAnalysis</strong> action.</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-URL/Images/URL_001.png" alt="analysis_action" /></p>
+<p>Analysis options are specified in the HTTP request body.</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Sandbox-URL/Images/URL_002.png" alt="analysis_parameters" /></p>
+<p>Description of the default parameters:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter Name</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>obj_type</td>
+  <td>Specifies the type of the new task (the value &quot;url&quot; is required for this workflow).</td>
+</tr>
+<tr>
+  <td>opt_timeout</td>
+  <td>Defines the timeout option for the analysis.</td>
+</tr>
+<tr>
+  <td>obj_ext_browser</td>
+  <td>Indicates the browser name to use.</td>
+</tr>
+<tr>
+  <td>env_os</td>
+  <td>Specifies the operating system.</td>
+</tr>
+<tr>
+  <td>env_bitness</td>
+  <td>Defines the bitness of the operating system.</td>
+</tr>
+<tr>
+  <td>env_version</td>
+  <td>Sets the version of the operating system.</td>
+</tr>
+<tr>
+  <td>opt_automated_interactivity</td>
+  <td>Controls the automated interactivity (ML) option (changing this is not recommended).</td>
+</tr>
+<tr>
+  <td>auto_confirm_uac</td>
+  <td>Enables automatic confirmation of Windows UAC requests (changing this is not recommended).</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note:<br />
+You can add more parameters for analysis. To see the full list of available parameters and their values, visit our <a href="https://any.run/api-documentation/">API documentation</a>.</p>
+</blockquote>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/anyrun.html">Back to ANYRUN</a></p>
+
+</div>
+
+</body>
+</html>

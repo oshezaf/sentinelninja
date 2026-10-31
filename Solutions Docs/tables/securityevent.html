@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -1307,7 +1307,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (264)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (267)</h2>
 <h3 id="analytic-rules">Analytic Rules (107)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
@@ -1898,7 +1898,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (114)</h3>
+<h3 id="hunting-queries">Hunting Queries (117)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -2386,6 +2386,10 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/standalone-content-daily-process-execution-trend-66a15973-7088-4c04-8901-df7324422886-3b1bcdb3.html">Daily process execution trend</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.html">External IP address in Command Line</a></td>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
 </tr>
@@ -2394,12 +2398,20 @@
   <td style="text-align:left"><code>AccountType == &quot;User&quot;</code><br><code>EventID in &quot;4625,4769,4776&quot;</code></td>
 </tr>
 <tr>
+  <td style="text-align:left"><a href="../content/standalone-content-new-processes-observed-in-last-24-hours-582d0a02-f931-4198-8b48-82b0537ec976-8d836ea9.html">New processes observed in last 24 hours</a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.html">Tracking Password Changes</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
   <td style="text-align:left"><code>EventID in &quot;4624,4625,4720,4726,4728,4732,4756,7045&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-windows-suspicious-login-outside-normal-hours-2f10997c-81d8-4ee7-99a7-fce9ce49a90b-550cbabe.html">Windows suspicious login outside normal hours</a></td>
+  <td style="text-align:left"><code>EventID in &quot;4624,4625&quot;</code><br><code>TargetDomainName !in &quot;Window Manager,Font Driver Host&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -2879,8 +2891,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (132 criteria, 181 total references)</h2>
-<p>References by type: 1 connectors, 174 content items, 5 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (132 criteria, 184 total references)</h2>
+<p>References by type: 1 connectors, 177 content items, 5 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2896,10 +2908,10 @@
 <tr>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">19</td>
+  <td style="text-align:center">21</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>20</strong></td>
+  <td style="text-align:center"><strong>22</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>EventID in &quot;9208,9211,9212&quot;</code><br><code>EventSourceName == &quot;Semperis-DSP-Security&quot;</code></td>
@@ -2999,6 +3011,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>EventID == &quot;4688&quot;</code><br><code>SubjectUserName != &quot;SYSTEM&quot;</code><br><code>SubjectUserName !endswith &quot;$&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>EventID in &quot;4624,4625&quot;</code><br><code>TargetDomainName !in &quot;Window Manager,Font Driver Host&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -3702,14 +3722,6 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EventID in &quot;4624,4625&quot;</code><br><code>TargetDomainName !in &quot;Window Manager,Font Driver Host&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>AccountType == &quot;User&quot;</code><br><code>EventID in &quot;4624,4625&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -3952,10 +3964,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>174</strong></td>
+  <td style="text-align:center"><strong>177</strong></td>
   <td style="text-align:center"><strong>5</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>181</strong></td>
+  <td style="text-align:center"><strong>184</strong></td>
 </tr>
 </tbody>
 </table>
@@ -4773,26 +4785,26 @@
 <tr>
   <td style="text-align:left"><code>4688</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">49</td>
+  <td style="text-align:center">51</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>50</strong></td>
+  <td style="text-align:center"><strong>52</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>4624</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">22</td>
+  <td style="text-align:center">23</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>22</strong></td>
+  <td style="text-align:center"><strong>23</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>4625</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">19</td>
+  <td style="text-align:center">20</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>19</strong></td>
+  <td style="text-align:center"><strong>20</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>5136</code></td>
@@ -6913,18 +6925,18 @@
 <tr>
   <td style="text-align:left"><code>!= Window Manager</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>!= Font Driver Host</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>

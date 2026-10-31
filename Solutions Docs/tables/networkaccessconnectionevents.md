@@ -17,7 +17,13 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents) |
 
-## Schema (53 columns)
+## Contents
+
+- [Schema](#schema)
+- [Schema References](#schema-references)
+- [Content Items](#content-items-using-this-table)
+
+## Schema (65 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents)
 
@@ -26,29 +32,41 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | _BilledSize | real | The record size in bytes |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AgentVersion | string | The version of the agent connecting. |
+| AIAgentId | string | The unique identifier of the AI agent associated with the connection. |
+| AIAgentName | string | The name of the AI agent associated with the connection. |
 | AppId | string | Destination Application ID accessed in Azure AD during the transaction. |
+| ApplicationObjectId | string | Microsoft Entra directory object ID of the Enterprise Application for the Private Access connection. Distinct from AppId (the application appId/clientId). |
+| AppLoginDeviceId | string | Identifier of the device associated with the Private Access connection. |
+| AppLoginUserId | string | Identifier of the login user associated with the Private Access connection. |
 | ClientDeviceName | string | The name of the client device making the connection. |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
+| ConnectorGroupId | string | Identifier of the connector group that served the Private Access connection. |
 | CrossTenantAccessType | string | Indication of B2B connection. |
 | DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
 | DestinationPort | int | The destination IP port. |
-| DeviceCategory | string | Device type the transaction originated from. Client, Branch. |
+| DeviceCategory | string | Device type the transaction originated from. Client, Branch, Secure Enterprise Browser. |
 | DeviceId | string | The ID of the source device as reported in the record. |
 | DeviceJoinType | string | Device registration type, for BYOD scenarios. |
 | DeviceOperatingSystem | string | The client connecting operating system type. |
 | DeviceOperatingSystemVersion | string | The client connecting operating system version. |
 | EventType | string | The type of the connection event. |
+| ForwardingProfileId | string | The ID of the forwarding profile that matched the connection. |
+| ForwardingProfileName | string | The name of the forwarding profile that matched the connection. |
 | HomeTenantId | string | The home tenant ID for B2B scenarios. |
 | InitiatingProcessName | string | The process initiating the traffic transaction. |
+| IsAgentic | bool | Indicates whether the connection was detected as agentic. |
 | IsLocal | bool | Represents if the connection was triggered by Intelligent Local Access. |
+| IsTokenAgentic | bool | Indicates whether the token used in the connection was issued to an AI agent. |
 | NetworkProtocol | string | The network protocol, IPv6 or IPv4. |
 | PopProcessingRegion | string | Region where the request was processed by the backend service. |
+| PrivateSourceIp | string | The private source IP address of the inner flow from which the connection originated. |
 | RemoteNetworkId | string | The ID from which traffic was sent or received, providing visibility into the origin of the traffic. |
 | RemoteNetworkSourceIp | string | The Remote Network IP address from which the connection or session originated. |
 | SecurityPolicyId | string | The ID of the security policy within the security profile. |
 | SecurityPolicyName | string | The name of the security policy within the security profile. |
 | SecurityPolicyVersion | string | The version of the security policy within the security profile. |
+| SecurityPrincipalType | string | The type of the security principal that initiated the connection. User, Device. |
 | SecurityProfileId | string | The ID of the security profile that blocked the connection. |
 | SecurityProfileName | string | The name of the security profile that blocked the connection. |
 | SecurityProfileVersion | string | The version of the security profile that blocked the connection. |
@@ -84,6 +102,16 @@ Official Microsoft Learn documentation for field/column information:
 - [NetworkAccessConnectionEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessconnectionevents)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AIGovernance](../content/github-only-aigovernance-b2429b32.md) |  |
 
 ---
 

@@ -1,6 +1,6 @@
 # Analytic Rules - A
 
-**245 analytic rules** starting with 'A'.
+**246 analytic rules** starting with 'A'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -121,6 +121,7 @@
 | [App Gateway WAF - XSS Detection](azure-web-application-firewall-waf-app-gateway-waf-xss-detection-1c7ff502-2ad4-4970-9d29-9210c6753138-cf69ab37.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [App GW WAF - Code Injection](azure-web-application-firewall-waf-app-gw-waf-code-injection-912a18fc-6165-446b-8740-81ae6c3f75ee-5ee99e9c.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [App GW WAF - Path Traversal Attack](azure-web-application-firewall-waf-app-gw-waf-path-traversal-attack-b6c3a8a6-d22c-4882-9c57-abc01690938b-ce8dc4ad.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
+| [App Service using TLS < 1.3](qcryptonpqcscanner-app-service-using-tls-1.3-7f8e9d1c-2b3a-4e5f-6c7d-8a9b0c1d2e3f-8d0d883b.md) | Medium | 📦 [QCryptonPQCScanner](../solutions/qcryptonpqcscanner.md) |
 | [Application Gateway WAF - SQLi Detection](standalone-content-application-gateway-waf-sqli-detection-68c0b6bb-6bd9-4ef4-9011-08998c8ef90f-165d539a.md) | High | 📄 Standalone Content |
 | [Application Gateway WAF - XSS Detection](standalone-content-application-gateway-waf-xss-detection-d2bc08fa-030a-4eea-931a-762d27c6a042-fddb41a1.md) | High | 📄 Standalone Content |
 | [Application Group Deleted](veeam-application-group-deleted-fa8d692d-5b00-4a6c-99b3-30b4710efa59-e00a6bd6.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |

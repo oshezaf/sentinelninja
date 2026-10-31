@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventIllumioSaaSCore` |
 | **Built-in Parser** | `_ASim_AuditEvent_IllumioSaaSCore` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Illumio Core |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventIllumioSaaSCore.md)) |
-| **Last Updated** | Aug 20, 2024 |
+| **Parser Version** | 0.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventIllumioSaaSCore.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventIllumioSaaSCore.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventIllumioSaaSCore.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | ✓ | ✓ | ✓ |
+| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

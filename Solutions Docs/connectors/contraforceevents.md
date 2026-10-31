@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ContraForceEvents_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContraForce/Data%20Connectors/ContraForceEvents_ccp/ContraForceEvents_DCR.json) |
 | **CCF Configuration** | [ContraForceEvents_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContraForce/Data%20Connectors/ContraForceEvents_ccp/ContraForceEvents_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#contraforce-events) |
 
 The ContraForce Events connector ingests security service delivery events from your [ContraForce](https://www.contraforce.com) workspace into Microsoft Sentinel: incident detections from every connected security platform, administrative access changes (role and member changes), machine credential activity, and destructive workspace actions. Use it to monitor the security operations ContraForce performs on this workspace from inside your own Sentinel.
 

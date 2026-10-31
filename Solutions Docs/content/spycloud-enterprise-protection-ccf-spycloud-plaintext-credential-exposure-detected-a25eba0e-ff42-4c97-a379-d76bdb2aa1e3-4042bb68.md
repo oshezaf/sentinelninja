@@ -6,7 +6,7 @@
 
 ---
 
-Identifies user accounts exposed with a plaintext password in a third-party data breach. Unremediated exposures of this kind can lead directly to account takeover.
+#DONT_CORR# 'Identifies user accounts exposed with a plaintext password in a third-party data breach. Unremediated exposures of this kind can lead directly to account takeover.'
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,7 +14,7 @@ Identifies user accounts exposed with a plaintext password in a third-party data
 | **Solution** | [SpyCloud Enterprise Protection CCF](../solutions/spycloud-enterprise-protection-ccf.md) |
 | **ID** | `a25eba0e-ff42-4c97-a379-d76bdb2aa1e3` |
 | **Severity** | High |
-| **Kind** | scheduled |
+| **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1555 |
 | **Required Connectors** | [SpyCloudEnterpriseProtectionCCF](../connectors/spycloudenterpriseprotectionccf.md) |

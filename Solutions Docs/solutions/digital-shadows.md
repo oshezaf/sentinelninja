@@ -20,7 +20,7 @@
 | **Author** | Digital Shadows - support@digitalshadows.com |
 | **Last Updated** | 2026-07-28 |
 | **Solution Folder** | [Digital Shadows](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/digitalshadows1662022995707.digitalshadows_searchlight_for_sentinel) · Popularity: 🔵 Medium (56%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/digitalshadows1662022995707.digitalshadows_searchlight_for_sentinel) · Popularity: 🟡 Low (49%) |
 
 The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingestion of the incidents and alerts from Digital Shadows Searchlight into the Microsoft Sentinel using the REST API. 
 

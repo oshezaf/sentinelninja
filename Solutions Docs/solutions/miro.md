@@ -16,13 +16,14 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://help.miro.com](https://help.miro.com) |
 | **Categories** | Security - Automation (SOAR),Security - Insider Threat,Security - Information Protection,Security - Threat Protection,Security - Cloud Security,Compliance,User Behavior (UEBA),Application |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.1 |
 | **Author** | Miro - enterprise_integrations@miro.com |
-| **Last Updated** | 2026-01-08 |
+| **First Published** | 2025-12-05 |
+| **Last Updated** | 2026-10-29 |
 | **Solution Folder** | [Miro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/realtimeboardincdbamiro1645117589045.azure-sentinel-solution-miro) · Popularity: 🟢 High (88%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/realtimeboardincdbamiro1645117589045.azure-sentinel-solution-miro) · Popularity: 🔵 Medium (73%) |
 
-The [Miro](https://miro.com/) solution for Microsoft Sentinel provides the capability to ingest audit logs and content activity logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the [documentation](https://help.miro.com/hc/en-us/articles/31325908249362).
+The [Miro](https://miro.com/) solution for Microsoft Sentinel provides the capability to ingest audit logs, content activity logs, and AI interaction logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the [documentation](https://help.miro.com/hc/en-us/articles/31325908249362).
 
 **Underlying Microsoft technology used:**
 
@@ -38,17 +39,19 @@ This solution is dependent on the following technology and this dependency may b
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **3 data connector(s)**:
 
+- [Miro AI Interaction Logs (Beta) (Enterprise Plan + Enterprise Guard)](../connectors/miroaiinteractionlogsdataconnector.md)
 - [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md)
 - [Miro Content Logs (Enterprise Plan + Enterprise Guard)](../connectors/mirocontentlogsdataconnector.md)
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`MiroAIInteractionLogs_CL`](../tables/miroaiinteractionlogs-cl.md) | [Miro AI Interaction Logs (Beta) (Enterprise Plan + Enterprise Guard)](../connectors/miroaiinteractionlogsdataconnector.md) | - |
 | [`MiroAuditLogs_CL`](../tables/miroauditlogs-cl.md) | [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md) | - |
 | [`MiroContentLogs_CL`](../tables/mirocontentlogs-cl.md) | [Miro Content Logs (Enterprise Plan + Enterprise Guard)](../connectors/mirocontentlogsdataconnector.md) | - |
 
@@ -56,18 +59,19 @@ This solution uses **2 table(s)**:
 
 > 📄 *Source: [Miro/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/README.md)*
 
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Logo/Miro.svg" alt="Miro" width="20%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/../../Logos/Miro.svg" alt="Miro" width="20%"/><br>
 
 ## Overview
 
-The [Miro](https://miro.com/) connector ingests audit logs and content activity logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This centralizes Miro workspace activity monitoring in Microsoft Sentinel for security threat detection, incident investigation, and compliance reporting.
+The [Miro](https://miro.com/) connector ingests audit logs, content activity logs and AI interaction logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This centralizes Miro workspace activity monitoring in Microsoft Sentinel for security threat detection, incident investigation, and compliance reporting.
 
 ## Data connectors
 
-This solution includes two data connectors:
+This solution includes three data connectors:
 
 1. **Miro Audit Logs (Enterprise Plan)**: Organization-wide audit events including user authentication, content access, team changes, and administrative actions. [API documentation](https://developers.miro.com/reference/enterprise-get-audit-logs) | [Audit logs overview](https://developers.miro.com/reference/audit-logs).
 2. **Miro Content Logs (Enterprise Plan + Enterprise Guard)**: Content activity tracking including item creation, updates, and deletions for compliance and eDiscovery. [API documentation](https://developers.miro.com/reference/enterprise-board-content-item-logs-fetch) | [Content logs overview](https://developers.miro.com/reference/board-content-logs).
+3. **Miro AI Interaction Logs (Beta) (Enterprise Plan + Enterprise Guard)**: User interactions with AI features in Miro: the prompt received from the user, the response returned to them, and the model and tool calls made in between. [API documentation](https://developers.miro.com/reference/enterprise-get-ai-interaction-logs) | [AI interaction logs overview](https://help.miro.com/hc/en-us/articles/34049604547858). This connector is in Beta: the AI interaction logs API may change before general availability.
 
 ## Prerequisites
 
@@ -92,6 +96,14 @@ This solution includes two data connectors:
 - Access token.
 - Miro organization ID.
 
+**For AI interaction logs connector:**
+
+- Miro Enterprise Plan + Enterprise Guard add-on.
+- A Miro admin turns on **Collect AI interaction logs** in Admin console > Security > Audit logs > Settings. Only interactions after that are recorded. If the setting is not visible, contact your Miro account manager.
+- OAuth scope: `aiinteractionlogs:read`.
+- Access token.
+- Miro organization ID.
+
 ## Installation
 
 There are two ways to set up the Miro connectors.
@@ -99,33 +111,16 @@ There are two ways to set up the Miro connectors.
 - **Option 1 (recommended):** Use enterprise integrations. Simplest setup with automatic token generation.
 - **Option 2 (alternative):** Create custom OAuth application. More control over OAuth app configuration.
 
-**Note:** When using Option 1, the integration is automatically tied to the team with the largest number of users in your organization. When using Option 2, you can choose which team to install the app to. However, **the team selection does not affect which logs are collected**—both options provide organization-wide log access. All integration-relevant events from all teams are included in your logs.
-
----
-
-### Option 1: Use enterprise integrations (recommended)
-
-This is the simplest option for most users. It automatically creates an OAuth application and generates an access token for you through Miro's enterprise integrations settings.
-
-#### For audit logs connector
-
-1. Open [Miro company settings](https://miro.com/app/settings/).
-2. Expand the **Apps and integrations** section.
-3. Click **Enterprise integrations**.
-4. Enable the **SIEM** toggle.
-5. Copy the **Access Token** value that appears.
-6. Store the token securely.
-
-#### For content logs connector
-
 
 *[Content truncated...]*
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                              |
-|-------------|--------------------------------|-------------------------------------------------------------------------------------------------|
-| 3.0.0       | 05-12-2025                     | Initial release of the Miro solution with two **CCF connectors** (Audit Logs and Content Logs). |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                                                                                                                                                     |
+|-------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 3.1.1       | 26-10-2026                     | Renamed the AI Interaction Logs table from `MiroAILogs_CL` to `MiroAIInteractionLogs_CL` and every AI Interaction Logs connector resource to `MiroAIInteractionLogs*`; queries that read the old table name must use the new one.                                                                                                                                                                         |
+| 3.1.0       | 20-10-2026                     | Added the AI Interaction Logs **CCF connector** (Beta) and the `ai`, `ai_assisted` and `actor` columns to Content Logs; the Content Logs and AI Interaction Logs pollers now throttle paged requests. Setup steps explain that the SIEM toggle creates one token with every log scope the organization is entitled to. |
+| 3.0.0       | 05-12-2025                     | Initial release of the Miro solution with two **CCF connectors** (Audit Logs and Content Logs).                                                                                                                                                                                                                        |
 
 ---
 

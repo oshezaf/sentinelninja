@@ -85,6 +85,16 @@ For the current release notes and version history of the overall Microsoft Senti
 
 For related automation and response content, see the [SAP playbooks](./Playbooks/README.md).
 
+## Recognition
+
+We gratefully recognize the community contributions that help improve the Microsoft Sentinel solution for SAP applications:
+
+- **[ukk1](https://github.com/ukk1)** — Donated KQL queries for analyzing SAP audit log usage in Microsoft Sentinel and optimizing truncation behavior.
+
+## Contribute
+
+Want to contribute SAP content? Contribute to the official [Microsoft Sentinel for SAP repository](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/SAP) or join the community by contributing [SAP integration artifacts](https://github.com/Azure-Samples/Sentinel-For-SAP-Community/tree/main/integration-artifacts).
+
 ## Release Notes
 
 # Solution Release Notes

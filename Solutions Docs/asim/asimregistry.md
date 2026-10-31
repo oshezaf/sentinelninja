@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimRegistry` (parameter-less) · `imRegistry` (filtering) |
 | **Built-in Parser** | `_ASim_RegistryEvent` (parameter-less) · `_Im_RegistryEvent` (filtering) |
 | **Schema** | RegistryEvent |
-| **Schema Version** | 0.1.2 |
+| **Schema Version** | 1.0.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistry.md)) |
-| **Last Updated** | Jun 3, 2024 |
+| **Parser Version** | 0.1.5 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistry.md)) |
+| **Last Updated** | Oct 08, 2026 |
 | **Source File** | [Parsers\ASimRegistryEvent\Parsers\ASimRegistryEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimRegistryEvent/Parsers/ASimRegistryEvent.yaml) |
 
 ## Description
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| CrowdStrike Falcon Data Replicator | [_ASim_RegistryEvent_CrowdStrikeFalconDataReplicator](asimregistryeventcrowdstrikefalcondatareplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | Microsoft 365 Defender for Endpoint | [_ASim_RegistryEvent_Microsoft365D](asimregistryeventmicrosoft365d.md) | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | Security Events | [_ASim_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |  |

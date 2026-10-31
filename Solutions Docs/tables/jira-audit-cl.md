@@ -9,9 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
-| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -79,10 +77,10 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Jira - Global permission added](../content/atlassianjiraaudit-jira-global-permission-added-5b0cec45-4a91-4f08-bb1b-392427e8f440-fcb3ce16.md) |  |
 | [Jira - New site admin user](../content/atlassianjiraaudit-jira-new-site-admin-user-b894593a-2b4c-4573-bc47-78715224a6f5-75417588.md) |  |
-| [Jira - New site admin user](../content/atlassianjiraaudit-jira-new-site-admin-user-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-cf4c124a.md) |  |
 | [Jira - New user created](../content/atlassianjiraaudit-jira-new-user-created-8c90f30f-c612-407c-91a0-c6a6b41ac199-ac7b54fe.md) |  |
 | [Jira - Permission scheme updated](../content/atlassianjiraaudit-jira-permission-scheme-updated-72592618-fa57-45e1-9f01-ca8706a5e3f5-0d756ffb.md) |  |
 | [Jira - Project roles changed](../content/atlassianjiraaudit-jira-project-roles-changed-fb6a8001-fe87-4177-a8f3-df2302215c4f-0808c8fa.md) |  |
+| [Jira - Site admin user password changed](../content/atlassianjiraaudit-jira-site-admin-user-password-changed-6bf42891-b54d-4b4e-8533-babc5b3ea4c5-c47a23e5.md) |  |
 | [Jira - User removed from group](../content/atlassianjiraaudit-jira-user-removed-from-group-c13ecb19-4317-4d87-9a1c-52660dd44a7d-84ebd820.md) |  |
 | [Jira - User removed from project](../content/atlassianjiraaudit-jira-user-removed-from-project-5d3af0aa-833e-48ed-a29a-8cfd2705c953-c166d30e.md) |  |
 | [Jira - User's password changed multiple times](../content/atlassianjiraaudit-jira-user's-password-changed-multiple-times-943176e8-b979-45c0-8ad3-58ba6cfd41f0-4f11f866.md) |  |

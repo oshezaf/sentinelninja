@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANY.RUN Submit File to Blob &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="anyrun-submit-file-to-blob">ANY.RUN Submit File to Blob</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Child Logic App called by ANY.RUN file playbooks. Returns per-file status to the parent playbook.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/anyrun.html">ANYRUN</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Submit-File-to-Blob/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables-used">Tables Used</h2>
+<p>This content item queries data from the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath !contains &quot;ANYRUN_Temp&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">KQL_-_Get_FilePath</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wdatp"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Actions_-_Run_live_response</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(variables('Machine ID'))}/runliveresponse</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Get_single_machine_action</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machineactions/@{encodeURIComponent(body('Actions_-_Run_live_response')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions_-_Get_live_response_command_result_download_URI</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machineactions/@{encodeURIComponent(body('Actions_-_Run_live_response')?['id'])}/GetLiveResponseResultDownloadLink(index=@{encodeURIComponent('0')})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Machines_-_Get_single_machine</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machines/@{encodeURIComponent(variables('Machine ID'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Download_Response_Body</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@body('Actions_-_Get_live_response_command_result_download_URI')?['value']</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Generate_SAS_Token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[uri(environment().resourceManager, variables('listServiceSasRelativePath'))]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Submit-File-to-Blob/readme.md">Submit-File-to-Blob/readme.md</a></em></p>
+</blockquote>
+<h1 id="anyrun-submit-file-to-blob">ANY.RUN — Submit File to Blob</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ANYRUN.svg" alt="ANY.RUN" /></p>
+<h2 id="summary">Summary</h2>
+<blockquote>
+<p><strong>Note:</strong> This is a <strong>child</strong> Logic App. It is required <strong>only</strong> if you need to analyze files <strong>and</strong> you do <strong>not</strong> have Microsoft Defender for Endpoint (MDE).<br />
+If you have MDE, use the <a href="../../index.html">Sandbox-File-Defender</a> playbook instead. It collects files directly via MDE Live Response and does not require this child playbook.</p>
+</blockquote>
+<p>This playbook is invoked by the parent file analysis playbooks (<code>Sandbox-File-Windows</code>, <code>Sandbox-File-Ubuntu</code>, <code>Sandbox-File-Debian</code>). It uploads a file from an endpoint to Azure Blob Storage so the parent can submit it to ANY.RUN Sandbox.</p>
+<p>It is not triggered by Microsoft Sentinel incidents directly.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Shared prerequisites (Key Vault secret <code>ANYRUN-APIKey</code>, App Registration, API permissions, role assignments, and Storage Account) are described in the <a href="../../index.html">solution README</a>.</p>
+<p>Additional requirements for this playbook:</p>
+<ul>
+<li>An existing Azure Storage Account and container for temporary file storage.</li>
+<li>An existing Log Analytics workspace.</li>
+<li>The Function App <code>ANYRUN-Sentinel-FA</code> must be deployed if you plan to analyze the uploaded files.</li>
+<li>This playbook must be deployed <strong>before</strong> the parent file playbooks (<code>Sandbox-File-Windows</code>, <code>Sandbox-File-Ubuntu</code>, <code>Sandbox-File-Debian</code>). Note its name — you will enter it as the Child Logic App Name parameter in the parent templates.</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<p>Click below to deploy Child Azure Logic App with <strong>Flex Consumption plan</strong></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FANYRUN%2FPlaybooks%2FSubmit-File-to-Blob%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ANYRUN/Playbooks/Submit-File-to-Blob/Images/3_001.png" alt="child_logic_app_deployment" /></p>
+<p>Enter the parameters required for deploying the Logic App and click <strong>Review + create</strong>.</p>
+<p>Description of the required parameters:</p>
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>PlaybookName</td>
+  <td>Logic App name (default <code>ANYRUN-Submit-File-to-Blob</code>).</td>
+</tr>
+<tr>
+  <td>Log Analytics Workspace</td>
+  <td>Log Analytics workspace name.</td>
+</tr>
+<tr>
+  <td>Azure Blob Storage Account Name</td>
+  <td>Storage account used to store files before they are submitted to ANY.RUN.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-deployment">Post-deployment</h2>
+<h3 id="authorize-api-connections">Authorize API connections</h3>
+<p>After deployment, open the Logic App and authorize the API connections created by the template:</p>
+<ul>
+<li><strong>Azure Monitor Logs</strong></li>
+<li><strong>Azure Blob Storage</strong></li>
+</ul>
+<p>Edit each connection, sign in, and save.</p>
+<h2 id="playbook-steps">Playbook steps</h2>
+<ol>
+<li>The playbook is triggered by an HTTP request from a parent file analysis playbook.</li>
+<li>It receives file information (path, machine, etc.).</li>
+<li>It uploads the file from the endpoint to the specified Azure Blob Storage container.</li>
+<li>It returns the blob location (or an error) to the parent playbook so the parent can submit the file to ANY.RUN Sandbox via the Function App.</li>
+</ol>
+<p>This playbook does not analyze files itself and does not write comments to incidents. Those actions are performed by the parent playbooks.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/anyrun.html">Back to ANYRUN</a></p>
+
+</div>
+
+</body>
+</html>

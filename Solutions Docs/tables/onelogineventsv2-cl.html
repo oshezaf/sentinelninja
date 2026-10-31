@@ -30,16 +30,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✓ Yes</td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -51,7 +43,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (19 columns)</h2>
+<h2 id="schema">Schema (53 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OneLoginEventsV2_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
@@ -78,6 +70,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">AdcId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
   <td style="text-align:left">AppId</td>
   <td style="text-align:left">real</td>
 </tr>
@@ -86,7 +82,39 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">AssumedBySuperadminOrReseller</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">AssumingActingUserId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">BrowserFingerprint</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">CertificateId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">CustomMessage</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">DirectoryId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">DirectorySyncRunId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">ErrorDescription</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -98,11 +126,51 @@
   <td style="text-align:left">real</td>
 </tr>
 <tr>
+  <td style="text-align:left">GroupId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">GroupName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
   <td style="text-align:left">Ipaddr</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">LoginId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">LoginName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">MappingId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
   <td style="text-align:left">Notes</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ObjectId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtpDeviceId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">OtpDeviceName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Param</td>
   <td style="text-align:left">string</td>
 </tr>
 <tr>
@@ -118,6 +186,46 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">PrivilegeId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">PrivilegeName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProxyIp</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RadiusConfigId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">Resolution</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResolvedAt</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceTypeId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskCookieId</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskReasons</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">RiskScore</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
   <td style="text-align:left">RoleId</td>
   <td style="text-align:left">real</td>
 </tr>
@@ -126,8 +234,24 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">ServiceDirectoryId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">Solved</td>
+  <td style="text-align:left">bool</td>
+</tr>
+<tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
+</tr>
+<tr>
+  <td style="text-align:left">TrustedIdpId</td>
+  <td style="text-align:left">real</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserFieldId</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
   <td style="text-align:left">UserId</td>
@@ -135,6 +259,10 @@
 </tr>
 <tr>
   <td style="text-align:left">UserName</td>
+  <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">Uuid</td>
   <td style="text-align:left">string</td>
 </tr>
 </tbody>

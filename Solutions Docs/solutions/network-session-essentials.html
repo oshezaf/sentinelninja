@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.12</td>
+  <td style="text-align:left">3.2.2</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-09-07</td>
+  <td style="text-align:left">2026-10-29</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession">Azure Marketplace</a> · Popularity: 🔵 Medium (74%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-networksession">Azure Marketplace</a> · Popularity: 🔵 Medium (69%)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Pre-requisites</strong></td>
@@ -80,6 +80,7 @@
 <p>For details on the required solutions, see the <a href="#pre-requisites">Pre-requisites</a> section below.</p>
 <p><strong>Recommendation :-</strong></p>
 <p>It is highly recommended to use the <strong>Summarize Data for Network Session Essentials using log ingestion API</strong> logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules &amp; Hunting queries. <strong>NOTE: This solution includes the playbook SummarizeData_NSE, which uses the legacy HTTP data collector API to ingest data. Since that API is about to be deprecated, we recommend using the SummarizeData_NSE_Logingestionapi playbook instead.</strong></p>
+<p>This solution also includes 6 Microsoft Defender XDR custom detections.</p>
 <p><strong>Additional Information</strong></p>
 <ul>
 <li>📖 <strong>Related Documentation:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions overview</a> - Uses ASIM Network Session schema for cross-product threat detection</li>
@@ -192,39 +193,39 @@
 <tbody>
 <tr>
   <td><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a></td>
-  <td>Playbooks</td>
+  <td>Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networksummary-country-cl.html"><code>NetworkSummary_Country_CL</code></a></td>
@@ -284,15 +285,15 @@
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
@@ -300,23 +301,23 @@
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
-  <td>Playbooks (writes), Workbooks</td>
+  <td>Analytics, Hunting, Playbooks (writes), Workbooks</td>
 </tr>
 <tr>
   <td><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
@@ -325,7 +326,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>39 content item(s)</strong>:</p>
+<p>This solution includes <strong>40 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -355,6 +356,10 @@
   <td style="text-align:left">2</td>
 </tr>
 <tr>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
   <td style="text-align:left">Watchlists</td>
   <td style="text-align:left">1</td>
 </tr>
@@ -375,7 +380,7 @@
   <td style="text-align:left"><a href="../content/network-session-essentials-anomaly-found-in-network-session-traffic-asim-network-session-schema-cd6def0d-3ef0-4d55-a7e3-faa96c46ba12-0317d139.html">Anomaly found in Network Session Traffic (ASIM Network Session schema)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl, Discovery, Exfiltration, LateralMovement</td>
-  <td style="text-align:left"><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-anomaly-in-smb-traffic-asim-network-session-schema-8717e498-7b5d-4e23-9e7c-fa4913dbfd79-5689a38d.html">Anomaly in SMB Traffic(ASIM Network Session schema)</a></td>
@@ -387,13 +392,13 @@
   <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-based-detection-asim-network-session-schema-cbf07406-fa2a-48b0-82b8-efad58db14ec-0bc6af2a.html">Detect port misuse by anomaly based detection (ASIM Network Session schema)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl, LateralMovement, Execution, InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-156997bd-da0f-4729-b47a-0a3e02dd50c8-8ef7d8bb.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
   <td style="text-align:left">Medium</td>
   <td style="text-align:left">CommandAndControl, Execution, InitialAccess</td>
-  <td style="text-align:left"><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-excessive-number-of-failed-connections-from-a-single-source-asim-network-sess-4902eddb-34f7-44a8-ac94-8486366e9494-210dc868.html">Excessive number of failed connections from a single source (ASIM Network Session schema)</a></td>
@@ -445,12 +450,12 @@
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-asim-network-session-schema-906c20c6-b62c-4af7-be91-d7300e3bded2-d8a6fcbc.html">Detect port misuse by anomaly (ASIM Network Session schema)</a></td>
   <td style="text-align:left">CommandAndControl, InitialAccess, Execution</td>
-  <td style="text-align:left"><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/anomalies.html"><code>Anomalies</code></a><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-70e2a349-87f0-4266-809c-e92fc71e0830-c23666f7.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
   <td style="text-align:left">CommandAndControl, InitialAccess, Execution</td>
-  <td style="text-align:left"><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-detects-several-users-with-the-same-mac-address-asim-network-session-schema-cbe10c58-e96b-4827-853e-5c1f22fdcc74-aa0b75c3.html">Detects several users with the same MAC address (ASIM Network Session schema)</a></td>
@@ -485,11 +490,11 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-networksessionessentials-5de17c97.html">NetworkSessionEssentials</a></td>
-  <td style="text-align:left"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/network-session-essentials-networksessionessentialsv2-9408ac84.html">NetworkSessionEssentialsV2</a></td>
-  <td style="text-align:left"><a href="../tables/networksummary-country-cl.html"><code>NetworkSummary_Country_CL</code></a><br><a href="../tables/networksummary-ip-cl.html"><code>NetworkSummary_IP_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><a href="../tables/networksummary-result-cl.html"><code>NetworkSummary_Result_CL</code></a><br><a href="../tables/networksummary-rule-cl.html"><code>NetworkSummary_Rule_CL</code></a><br><a href="../tables/networksummary-sourceinfo-cl.html"><code>NetworkSummary_SourceInfo_CL</code></a><br><a href="../tables/networksummary-source-port-cl.html"><code>NetworkSummary_Source_Port_CL</code></a><br><a href="../tables/networksummary-threat-cl.html"><code>NetworkSummary_Threat_CL</code></a><br><a href="../tables/networksummary-threat-ioc-cl.html"><code>NetworkSummary_Threat_IOC_CL</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a><br><a href="../tables/networksummary-country-cl.html"><code>NetworkSummary_Country_CL</code></a><br><a href="../tables/networksummary-ip-cl.html"><code>NetworkSummary_IP_CL</code></a><br><a href="../tables/networksummary-protocol-cl.html"><code>NetworkSummary_Protocol_CL</code></a><br><a href="../tables/networksummary-result-cl.html"><code>NetworkSummary_Result_CL</code></a><br><a href="../tables/networksummary-rule-cl.html"><code>NetworkSummary_Rule_CL</code></a><br><a href="../tables/networksummary-sourceinfo-cl.html"><code>NetworkSummary_SourceInfo_CL</code></a><br><a href="../tables/networksummary-source-port-cl.html"><code>NetworkSummary_Source_Port_CL</code></a><br><a href="../tables/networksummary-threat-cl.html"><code>NetworkSummary_Threat_CL</code></a><br><a href="../tables/networksummary-threat-ioc-cl.html"><code>NetworkSummary_Threat_IOC_CL</code></a><br><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -512,6 +517,23 @@
   <td style="text-align:left"><a href="../content/network-session-essentials-%5Bdeprecated%5D-summarize-data-for-network-session-essentials-7add1212.html">[Deprecated] Summarize Data for Network Session Essentials</a></td>
   <td style="text-align:left">This playbook summarizes data for Network Session Essentials and lands it into custom tables. **NOTE...</td>
   <td style="text-align:left"><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a> <em>(read/write)</em><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a> <em>(read/write)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../parsers/networksessionessentialscustomparser.html">NetworkSessionEssentialsCustomParser</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/networkcustomanalyticsv1-cl.html"><code>NetworkCustomAnalyticsV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-countryv1-cl.html"><code>NetworkCustomAnalytics_countryV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-ipv1-cl.html"><code>NetworkCustomAnalytics_ipV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-protocolv1-cl.html"><code>NetworkCustomAnalytics_protocolV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-rulev1-cl.html"><code>NetworkCustomAnalytics_ruleV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-sourceinfov1-cl.html"><code>NetworkCustomAnalytics_sourceInfoV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-source-portv1-cl.html"><code>NetworkCustomAnalytics_source_portV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threatv1-cl.html"><code>NetworkCustomAnalytics_threatV1_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threat-iocv1-cl.html"><code>NetworkCustomAnalytics_threat_iocV1_CL</code></a> <em>(read)</em><br><em>Internal use:</em><br><a href="../tables/networkcustomanalytics-cl.html"><code>NetworkCustomAnalytics_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-country-cl.html"><code>NetworkCustomAnalytics_country_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-ip-cl.html"><code>NetworkCustomAnalytics_ip_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-protocol-cl.html"><code>NetworkCustomAnalytics_protocol_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-rule-cl.html"><code>NetworkCustomAnalytics_rule_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-sourceinfo-cl.html"><code>NetworkCustomAnalytics_sourceInfo_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-source-port-cl.html"><code>NetworkCustomAnalytics_source_port_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threat-cl.html"><code>NetworkCustomAnalytics_threat_CL</code></a> <em>(read)</em><br><a href="../tables/networkcustomanalytics-threat-ioc-cl.html"><code>NetworkCustomAnalytics_threat_ioc_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -644,6 +666,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.2.2</td>
+  <td>25-10-2026</td>
+  <td>Added 6 Microsoft Defender XDR custom detections for ASIM Network Session analytics rules and packaged V3.1 solution.</td>
+</tr>
+<tr>
+  <td>3.0.13</td>
+  <td>16-09-2026</td>
+  <td>Added  NetworkSessionEssentialsCustomParser to parse and normalize the tables used in dependent Security Content. Updated Workbooks and Analytic rules to use parser.</td>
+</tr>
 <tr>
   <td>3.0.12</td>
   <td>02-09-2026</td>

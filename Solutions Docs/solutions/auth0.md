@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Identity |
-| **Version** | 3.2.0 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
-| **Last Updated** | 2026-07-21 |
+| **Last Updated** | 2026-09-24 |
 | **Solution Folder** | [Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-auth0) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-auth0) · Popularity: 🔵 Medium (79%) |
 
 The [Auth0 Access Management](https://auth0.com/access-management) solution for Microsoft Sentinel provides the capability to ingest [Auth0 log events](https://auth0.com/docs/api/management/v2/#!/Logs/get_logs) into your Microsoft Sentinel workspace.
   
@@ -129,6 +129,7 @@ The following are steps to be followed in Auth0 App.
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.2.1       | 23-09-2026                     | Added OrganizationId, OrganizationName, and SecurityContext fields to the Auth0 Logs (via Codeless Connector Framework) **Data Connector**. |
 | 3.2.0       | 20-07-2026                     | Auth0 Logs (via Codeless Connector Framework) **Data Connector** now supports collecting from multiple Auth0 hosts (multi-domain) and tags each record with the **Auth0Domain** column |
 | 3.1.5       | 13-04-2026                     | Deprecate Auth0 Logs (using Azure Function) |
 | 3.1.4       | 30-03-2026                     | Fix space in name, Rename to Auth0 Logs (via Codeless Connector Framework)|

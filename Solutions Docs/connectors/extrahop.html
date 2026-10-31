@@ -74,9 +74,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/extrahop-detections-cl.html"><code>ExtraHop_Detections_CL</code></a></td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -94,6 +94,7 @@
 <li><strong>Azure Subscription</strong>: Azure Subscription with owner role is required to register an application in Microsoft Entra ID, create a Data Collection Endpoint, Data Collection Rule, and assign the required roles.</li>
 <li><strong>Microsoft Entra App Registration</strong>: A Microsoft Entra ID App Registration (Service Principal) with a Client Secret is required. The app's Object ID must be provided so the deployment can assign it the necessary role to publish logs via the Log Ingestion API.</li>
 <li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>Microsoft.Network permissions (optional)</strong>: Only required if you choose to lock the storage account down behind private endpoints (StorageAccountAccessType = Private). Read and write permissions on the VNet/subnets (or permission to create a new VNet), and on the private DNS zones used to resolve the storage private endpoints, are required.</li>
 <li><strong>ExtraHop RevealX permissions</strong>: The following is required on your ExtraHop RevealX system:</li>
 </ul>
 <ol>
@@ -171,6 +172,20 @@
 <p>h. <strong>DetectionsTableName</strong> - Enter name of the table used to store ExtraHop Detections logs. Default is 'ExtraHop_Detections'</p>
 <p>i. <strong>LogLevel</strong> - Select log level or log severity value from Debug, Info, Error, Warning. By default it is set to Info</p>
 <p>j. <strong>AppInsightsWorkspaceResourceID</strong> - Migrate Classic Application Insights to Log Analytic Workspace which is retiring by 29 Febraury 2024. Use 'Log Analytic Workspace--&gt;Properties' blade having 'Resource ID' property value. This is a fully qualified resourceId which is in format '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}'</p>
+<p>k. <strong>HostingPlanType</strong> - Select the Function App hosting plan: <code>FlexConsumption</code> (recommended, required if you choose Private storage below) or <code>LinuxConsumption</code> (legacy, only supports Public storage, and retires 30 September 2028). Default is <code>FlexConsumption</code></p>
+<p>l. <strong>StorageAccountAccessType</strong> - Select <code>Public</code> (default, matches historical connector behavior) or <code>Private</code> to lock the storage account down behind private endpoints (blob/file/queue/table). <code>Private</code> requires HostingPlanType = <code>FlexConsumption</code></p>
+<p>m. <strong>NetworkDeploymentMode</strong> - Only used when StorageAccountAccessType is <code>Private</code>. <code>Existing</code> (default) uses subnet/private DNS zone resource IDs you already have; <code>New</code> has this template create its own VNet, subnets, and private DNS zones automatically</p>
+<p>n. <strong>VNetAddressPrefix</strong> - Only used when NetworkDeploymentMode is <code>New</code>. Address space for the VNet this template creates. Default <code>10.42.0.0/24</code></p>
+<p>o. <strong>FunctionAppOutboundSubnetPrefix</strong> - Only used when NetworkDeploymentMode is <code>New</code>. Subnet prefix for the Function App's outbound VNet integration. Default <code>10.42.0.0/27</code></p>
+<p>p. <strong>StoragePrivateEndpointSubnetPrefix</strong> - Only used when NetworkDeploymentMode is <code>New</code>. Subnet prefix for the storage account's private endpoints. Default <code>10.42.0.32/27</code></p>
+<p>q. <strong>FunctionAppOutboundSubnetId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of an empty subnet delegated to <code>Microsoft.App/environments</code>, used for the Function App's regional VNet integration</p>
+<p>r. <strong>StoragePrivateEndpointSubnetId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of the subnet where the storage account's blob/file/queue/table private endpoints will be created</p>
+<p>s. <strong>CreatePrivateDnsZoneLinks</strong> - Only used when NetworkDeploymentMode is <code>Existing</code>. If <code>true</code>, links StorageVNetId (below) to the private DNS zones below. If <code>false</code> (default), your VNet must already be linked to these zones</p>
+<p>t. <strong>StorageVNetId</strong> - Required only when CreatePrivateDnsZoneLinks is <code>true</code>. Resource ID of the VNet that contains the subnets above, to link to the private DNS zones below</p>
+<p>u. <strong>BlobPrivateDnsZoneId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of an existing private DNS zone for Blob storage (<code>privatelink.blob</code>)</p>
+<p>v. <strong>FilePrivateDnsZoneId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of an existing private DNS zone for File storage (<code>privatelink.file</code>)</p>
+<p>w. <strong>QueuePrivateDnsZoneId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of an existing private DNS zone for Queue storage (<code>privatelink.queue</code>)</p>
+<p>x. <strong>TablePrivateDnsZoneId</strong> - Required when StorageAccountAccessType is <code>Private</code> and NetworkDeploymentMode is <code>Existing</code>. Resource ID of an existing private DNS zone for Table storage (<code>privatelink.table</code>)</p>
 </li>
 <li><p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</p>
 </li>

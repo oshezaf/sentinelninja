@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCrypton PQC Scanner &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="qcrypton-pqc-scanner">QCrypton PQC Scanner</h1>
+<p><em>Solution: QCryptonPQCScanner</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qcrypton.svg" alt="QCryptonPQCScanner Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">QCrypton, Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.qcrypton.com/contact.html">https://www.qcrypton.com/contact.html</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Cloud Security,Security - Threat Protection,Compliance</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">QCrypton, Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-09-07</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-10-29</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QCryptonPQCScanner">QCryptonPQCScanner</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/qcryptoninc1788706847984.qcrypton-pqc-scanner-sentinel">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
+</tr>
+</tbody>
+</table>
+<p>Post-quantum cryptography readiness for Microsoft Sentinel. Ingests findings on quantum-vulnerable Key Vault keys, Entra ID app/service-principal certificates, classical-signed TLS certificates, App Service/Storage TLS posture, and CMK provenance. Ships with data connector (CCP RestApiPoller), 6 analytic rules, workbook, and Teams-notification playbook.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>• <a href="https://aka.ms/Sentinel-CCP_Platform">Microsoft Sentinel Codeless Connector Framework</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/qcryptonpqcscannerccpdefinition.html">QCrypton PQC Scanner (via Codeless Connector Framework)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+  <td><a href="../connectors/qcryptonpqcscannerccpdefinition.html">QCrypton PQC Scanner (via Codeless Connector Framework)</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>8 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-app-service-using-tls-1.3-7f8e9d1c-2b3a-4e5f-6c7d-8a9b0c1d2e3f-8d0d883b.html">App Service using TLS &lt; 1.3</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-certificate-expiring-after-2030-still-uses-classical-signature-5e4d3c2b-1a9f-4e8d-7c6b-5a4d3f2e1c0b-cea40d5c.html">Certificate expiring after 2030 still uses classical signature</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-new-quantum-vulnerable-resource-appeared-9b8c7d6e-5f4a-3b2c-1d0e-9f8a7b6c5d4e-6a180ae7.html">New quantum-vulnerable resource appeared</a></td>
+  <td style="text-align:left">Informational</td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-public-tls-certificate-with-classical-signature-on-application-gateway-3c9b1e2a-7d4f-4a6b-8e3d-2f4a1c5d6b7e-8a624671.html">Public TLS certificate with classical signature on Application Gateway</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-quantum-vulnerable-certificate-on-entra-app-registration-2a4b6c8d-1e3f-5a7b-9c0d-4e6f8a2b1c3d-cf451690.html">Quantum-vulnerable certificate on Entra app registration</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-quantum-vulnerable-key-detected-in-key-vault-8a1c4f2d-2b3a-4e5f-9c1d-1a2b3c4d5e6f-c419c81e.html">Quantum-vulnerable key detected in Key Vault</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-qcryptonpqreadiness-803dfec5.html">QCryptonPQReadiness</a></td>
+  <td style="text-align:left"><a href="../tables/pqreadiness-cl.html"><code>PQReadiness_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/qcryptonpqcscanner-qcrypton-pqc-%E2%80%94-notify-on-new-vulnerable-finding-91da7c15.html">QCrypton PQC — notify on new vulnerable finding</a></td>
+  <td style="text-align:left">Logic App playbook: on Microsoft Sentinel incident trigger, post a card to a Microsoft Teams channel...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>17-09-2026</td>
+  <td>Initial release of the QCrypton PQC Scanner solution. Includes: 1 data connector (Codeless Connector Framework — RestApiPoller, <code>PQReadiness_CL</code>); 6 scheduled analytic rules (Key Vault vulnerable keys, Entra ID quantum-vulnerable certificates, App Gateway/Front Door classical TLS certs, App Service legacy TLS, long-lived certs signed classically, new vulnerable resource detection); 1 workbook (PQ Readiness posture overview with black &amp; white preview images); 1 playbook (Teams notification on incident). Fixed logo and solution path references; added workbook preview images, playbook README, and WorkbooksMetadata entry.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

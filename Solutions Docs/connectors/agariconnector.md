@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`AgariAPDPolicyLog_CL`](../tables/agariapdpolicylog-cl.md) | ? | ✓ | ? |
 | [`AgariAPDTCLog_CL`](../tables/agariapdtclog-cl.md) | ? | ✓ | ? |
-| [`AgariBPAlertsLog_CL`](../tables/agaribpalertslog-cl.md) | ✗ | ✓ | ✗ |
+| [`AgariBPAlertsLog_CL`](../tables/agaribpalertslog-cl.md) | ? | ✓ | ? |
 | [`AgariBPThreatFeedSubs_CL`](../tables/agaribpthreatfeedsubs-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

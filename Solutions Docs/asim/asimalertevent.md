@@ -13,10 +13,10 @@
 | **Parser Name** | `ASimAlertEvent` (parameter-less) · `imAlertEvent` (filtering) |
 | **Built-in Parser** | `_ASim_AlertEvent` (parameter-less) · `_Im_AlertEvent` (filtering) |
 | **Schema** | AlertEvent |
-| **Schema Version** | 0.1 |
+| **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.7 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
-| **Last Updated** | Jul 01, 2026 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
+| **Last Updated** | Oct 5, 2026 |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEvent.yaml) |
 
 ## Description
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| AWS GuardDuty | [_ASim_AlertEvent_AWSGuardDuty](asimalerteventawsguardduty.md) |  |
 | Bitdefender | [_ASim_AlertEvent_BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | [GravityZone](../solutions/gravityzone.md) |
 | Cisco Secure Endpoint | [_ASim_AlertEvent_CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | CrowdStrike Falcon | [_ASim_AlertEvent_CrowdStrikeFalcon](asimalerteventcrowdstrikefalcon.md) |  |
@@ -38,6 +39,9 @@ This union parser includes parsers for the following products:
 | Netskope Security Cloud | [_ASim_AlertEvent_NetskopeSecurityCloud](asimalerteventnetskopesecuritycloud.md) | [Netskopev2](../solutions/netskopev2.md) |
 | Palo Alto XDR | [_ASim_AlertEvent_PaloAltoXDR](asimalerteventpaloaltoxdr.md) | [Cortex XDR](../solutions/cortex-xdr.md) |
 | SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
+| SentinelOne | [_ASim_AlertEvent_SentinelOneSingularityAlerts](asimalerteventsentinelonesingularityalerts.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
+| Wiz Cloud | [_ASim_AlertEvent_WizCloud](asimalerteventwizcloud.md) | [Wiz](../solutions/wiz.md) |
+| Wiz Defend | [_ASim_AlertEvent_WizDefend](asimalerteventwizdefend.md) | [Wiz](../solutions/wiz.md) |
 
 ## Parameters
 

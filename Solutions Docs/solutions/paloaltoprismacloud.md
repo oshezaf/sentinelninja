@@ -16,11 +16,11 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-04-16 |
 | **Solution Folder** | [PaloAltoPrismaCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-paloaltoprisma) · Rating: ★★★★☆ 4.3/5 (128 ratings) · Popularity: 🔵 Medium (66%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-paloaltoprisma) · Rating: ★★★★☆ 4.3/5 (128 ratings) · Popularity: ⚪ Very Low (6%) |
 
 The [Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) CSPM solution provides the capability to ingest Prisma Cloud CSPM alerts and audit logs into Microsoft Sentinel using the Prisma Cloud CSPM API. Refer to Prisma Cloud CSPM API documentation for more information. 
  
@@ -130,6 +130,7 @@ This solution includes **24 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.5       | 02-10-2026                     | Fixed API versions for saved searches resource in mainTemplate |
 | 3.0.4       | 27-10-2025                     | Add missing "detailed" flag to CCF **Data Connector** polling config |
 | 3.0.3       | 10-10-2025                     | CCF **Data Connector** Moving to GA.		|
 | 3.0.2       | 06-08-2025                     | Change **authentication type** from Basic to JWT Token.		|

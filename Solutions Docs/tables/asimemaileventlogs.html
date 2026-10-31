@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASimEmailEventLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="asimemaileventlogs">ASimEmailEventLogs</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for ASimEmailEventLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Normalized</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/reference/tables-features">source</a>)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimemaileventlogs">View Documentation</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (130 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimemaileventlogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional entities associated with the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information, represented using key/value pairs provided by the source which do not map to ASim.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackRemediationSteps</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The recommended actions to remediate the attack identified in the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackTactics</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MITRE ATT&amp;CK tactics associated with the attack identified in the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackTechniques</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MITRE ATT&amp;CK techniques associated with the attack identified in the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dst</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier of the destination of the email event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DstIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the destination mail server.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Dvc</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier of the device reporting the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">For reporting security systems, the action taken by the system.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A descriptive text associated with the device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain of the device reporting the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcDomainType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of DvcDomain.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcFQDN</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The hostname of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcHostname</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The hostname of the device reporting the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique ID of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of DvcId.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcInterface</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The network interface on which data was captured.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP Address of the device reporting the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcMacAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MAC address of the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcOriginalAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original DvcAction as provided by the reporting device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcOs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The operating system running on the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcOsVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the operating system on the device on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The cloud platform scope the device belongs to. DvcScope map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The cloud platform scope ID the device belongs to. DvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DvcZone</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The network on which the event occurred or which reported the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailBCCRecipients</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The email addresses of the blind carbon copy (BCC) recipients.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailCCRecipients</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The email addresses of the carbon copy (CC) recipients.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDeliveryLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The location to which the email was delivered, such as the inbox, junk folder, quarantine, or deleted items.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDirection</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The direction of the email, such as inbound, outbound, internal, or local.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDkimDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain used to verify the email using DomainKeys Identified Mail (DKIM).</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDkimOriginalResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original DKIM verification result as reported by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDkimResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The normalized DomainKeys Identified Mail (DKIM) verification result.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDkimSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The DomainKeys Identified Mail (DKIM) signature included in the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDmarcOriginalResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original DMARC verification result as reported by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDmarcOverride</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The reason the Domain-based Message Authentication, Reporting, and Conformance (DMARC) result was overridden.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDmarcPolicy</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Domain-based Message Authentication, Reporting, and Conformance (DMARC) policy applied to the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailDmarcResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The normalized Domain-based Message Authentication, Reporting, and Conformance (DMARC) verification result.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailFileCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of files attached to the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailFiles</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The files attached to the email, including available file metadata.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailFromAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address in the From header.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailFromDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain of the email address in the From header.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailLanguage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The detected language of the email content.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailMailFromAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The sender email address used in the SMTP envelope.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailMailFromDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain of the sender address used in the SMTP envelope.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailOriginalDeliveryLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original email delivery location as reported by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailProtocolName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The application-layer protocol used to transmit the email, such as SMTP, IMAP, or POP3.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailReplyToAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address in the Reply-To header.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailReplyToDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain of the email address in the Reply-To header.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailSizeBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the email in bytes, including its headers and attachments.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailSpfOriginalResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original Sender Policy Framework (SPF) verification result as reported by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailSpfResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The normalized Sender Policy Framework (SPF) verification result.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailSubject</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The subject of the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailToRecipients</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The email addresses of the primary recipients.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailUrlCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of URLs found in the email.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EmailUrls</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The URLs found in the email body or attachments.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of events described by the record.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) in which the event ended. If the source supports aggregation and the record represents multiple events, the time that the last event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A general message or description.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOriginalResultDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original result details provided by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOriginalSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original severity as provided by the reporting device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original event type or ID, if provided by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOriginalUid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique ID of the original record, if provided by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOwner</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The owner of the event, which is usually the department or subsidiary in which it was generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventProduct</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The product generating the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventProductVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the product generating the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventReportUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A URL provided in the event for a resource that provides more information about the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The outcome of the event, represented by one of the following values: Success, Partial, Failure, NA (Not Applicable). The value may not be provided directly by the sources, in which case it is derived from other event fields, for example, the EventResultDetails field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventResultDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reason or details for the result reported in the EventResult field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSchema</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The schema to which the event is normalized. The value is EmailEvent.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the schema.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity of the event. Valid values are: Informational, Low, Medium, or High.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) in which the event started. If the source supports aggregation and the record represents multiple events, the time that the first event was generated. If not provided by the source record, this field aliases the TimeGenerated field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventSubType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Describes a subdivision of the operation reported in the EventType field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Describes the operation reported by the record</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventUid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier assigned to the normalized email event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventVendor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The vendor of the product generating the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IndicatorAssociation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The relationship between the threat indicator and the email event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IndicatorType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of threat indicator associated with the email event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alias of the SrcIpAddr field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Rule</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alias of the RuleName field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The description of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name or ID of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of the rule associated with the inspection results.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">Src</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier of the source of the email event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A descriptive text associated with the source device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDeviceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the source device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain of the source device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDomainType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of SrcDomain.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDvcId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the source device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDvcIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of SrcDvcId.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDvcScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The cloud platform scope the source device belongs to. SrcDvcScope map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcDvcScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The cloud platform scope ID the source device belongs to. SrcDvcScopeId map to a subscription ID on Azure and to an account ID on AWS.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcFQDN</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source device hostname, including domain information when available.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcGeoCity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The city associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcGeoCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The country associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcGeoLatitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The latitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcGeoLongitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The longitude of the geographical coordinate associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcGeoRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The region within a country associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcHostname</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source device hostname, excluding domain information.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Source IP address from which the connection or session originated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcIsp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The internet service provider associated with the source IP address.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A machine-readable, alphanumeric, unique representation of the source user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the identifier stored in the SrcUserId field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source username, including domain information when available.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUsernameType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the username stored in the SrcUserName field.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The scope, such as an email domain or tenant, in which the source user is defined.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the scope in which the source user is defined.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SrcUserUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user principal name (UPN) of the source user.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The category of the threat or malware identified in audit activity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatConfidence</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The confidence level of the threat identified, normalized to a value between 0 and a 100.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatField</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The field for which a threat was identified.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatFirstReportedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The first time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the threat or malware identified in the audit activity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An IP address or Domain for which a threat was identified.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatIsActive</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">True if the threat identified is considered an active threat.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatLastReportedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The last time the IP address or domain were identified as a threat.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the threat or malware identified in the audit activity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatOriginalCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The threat category as originally reported by the source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatOriginalConfidence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original confidence level of the threat identified, as reported by the reporting device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatOriginalRiskLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The risk level as reported by the reporting device.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatRiskLevel</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The risk level associated with the identified threat. The level should be a number between 0 and 100.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) reflecting the time in which the event was generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alias of the SrcUserName field.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema-references">Schema References</h2>
+<p>Official Microsoft Learn documentation for field/column information:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimemaileventlogs">ASimEmailEventLogs Schema Reference (Azure Monitor)</a></li>
+</ul>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

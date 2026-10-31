@@ -76,7 +76,7 @@ Official Microsoft Learn documentation for field/column information:
 
 - [Anomalies Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies)
 
-## Solutions (12)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -84,7 +84,6 @@ This table is used by the following solutions:
 - [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
-- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
@@ -95,7 +94,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (36)
+## Content Items Using This Table (35)
 
 ### Analytic Rules (13)
 
@@ -178,7 +177,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [User Accounts - Successful Sign in Spikes](../content/github-only-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-277cd450.md) |  |
 
-### Workbooks (14)
+### Workbooks (13)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
@@ -191,12 +190,6 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
-
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
 

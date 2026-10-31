@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [SalesforceMarketingCloud_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceMarketingCloudConnector_CCF/SalesforceMarketingCloud_DCR.json) |
 | **CCF Configuration** | [SalesforceMarketingCloud_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceMarketingCloudConnector_CCF/SalesforceMarketingCloud_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#salesforce-marketing-cloud-via-codeless-connector-framework) |
 
 Collects audit events and security events from the Salesforce Marketing Cloud [Audit Trail API](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_audit?meta=Summary). Provides visibility into user activities, system changes, and login events.
 

@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | IT Operations |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-08-03 |
-| **Last Updated** | 2026-08-05 |
+| **Last Updated** | 2026-10-09 |
 | **Solution Folder** | [ServiceNowCMDB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNowCMDB) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicenowcmdb) · Popularity: ⚪ Very Low (7%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-servicenowcmdb) · Popularity: 🟡 Low (36%) |
 
 The [ServiceNow CMDB](https://www.servicenow.com/) Solution for Microsoft Sentinel enables you to ingest Configuration Management Database (CMDB) and Asset Management records from ServiceNow into Microsoft Sentinel using the Codeless Connector Platform (CCP). This connector retrieves records from the ServiceNow Table API for Asset Management (alm_asset), Configuration Items (cmdb_ci), Computer CIs (cmdb_ci_computer), Server CIs (cmdb_ci_server), and CI Relationships (cmdb_rel_ci), providing visibility into your IT asset inventory and configuration items.
 
@@ -51,6 +51,7 @@ This solution uses **5 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.0.1       | 08-10-2026                     | Promoted the **ServiceNow CMDB CCF Data Connector** to general availability. |
 | 3.0.0       | 03-08-2026                     | Created a Data Connector for ServiceNow CMDB CCF Container with Asset Management, Configuration Items, Computer CIs, Server CIs, and CI Relationships data streams. |
 
 ---

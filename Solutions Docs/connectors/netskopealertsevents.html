@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Netskope Alerts and Events via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<title>Netskope Alerts and Events &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="netskope-alerts-and-events">Netskope Alerts and Events (via Codeless Connector Framework)</h1>
+<h1 id="netskope-alerts-and-events">Netskope Alerts and Events</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefination.json">NetskopeAlertsEvents_ConnectorDefination.json</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_ConnectorDefinition.json">NetskopeAlertsEvents_ConnectorDefinition.json</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>DCR Definition Files</strong></td>
@@ -82,9 +82,9 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/netskopealerts-cl.html"><code>NetskopeAlerts_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/netskopeeventsapplication-cl.html"><code>NetskopeEventsApplication_CL</code></a></td>
@@ -158,144 +158,121 @@
 <p><strong>2. STEP 2 - Enter your Netskope product Details</strong></p>
 <p>Enter your Netskope organisation url &amp; API Token below:</p>
 <ul>
-<li><p><strong>Organisation Url</strong>: Enter your organisation url</p>
-</li>
-<li><p><strong>API Key</strong>: (password field)</p>
-</li>
-<li><p><strong>Netskope Alerts Remediation</strong> (select)</p>
-<ul>
+<li><strong>Organisation Url</strong>: Enter your organisation url</li>
+<li><strong>API Key</strong>: (password field)</li>
+<li><strong>Netskope Alerts Remediation</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Uba</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Uba</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Security Assessment</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Security Assessment</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Quarantine</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Quarantine</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Policy</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Policy</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Malware</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Malware</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Malsite</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Malsite</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts DLP</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts DLP</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts CTEP</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts CTEP</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Watchlist</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Watchlist</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Compromised Credentials</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Compromised Credentials</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Content</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Content</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Alerts Device</strong> (select)</p>
-<ul>
+<li><strong>Netskope Alerts Device</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Application</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Application</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Audit</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Audit</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Connection</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Connection</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events DLP</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events DLP</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Endpoint</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Endpoint</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Infrastructure</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Infrastructure</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Network</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Network</strong> (select)<ul>
 <li>Yes</li>
 <li>No</li>
 </ul>
 </li>
-<li><p><strong>Netskope Events Page</strong> (select)</p>
-<ul>
+<li><strong>Netskope Events Page</strong> (select)<ul>
 <li>Yes</li>
-<li>No
-<strong>OPTIONAL: Specify the Index the API uses.</strong></li>
+<li>No</li>
 </ul>
+</li>
+</ul>
+<p><strong>3. OPTIONAL: Specify the Index the API uses.</strong></p>
 <p><strong>Configuring the index is optional and only required in advanced scenario's.</strong>
 Netskope uses an <a href="https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints/#how-do-iterator-endpoints-function">index</a> to retrieve events. In some advanced cases (consuming the event in multiple Microsoft Sentinel workspaces, or pre-fatiguing the index to only retrieve recent data), a customer might want to have direct control over the index.</p>
 <ul>
 <li><strong>Index</strong>: NetskopeCCP</li>
 </ul>
-</li>
-</ul>
-<p><strong>3. STEP 3 - Click Connect</strong></p>
+<p><strong>4. STEP 3 - Click Connect</strong></p>
 <p>Verify all fields above were filled in correctly. Press the Connect to connect Netskope to Microsoft Sentinel.</p>
 <ul>
 <li>Click 'connect' to establish connection</li>

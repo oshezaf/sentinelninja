@@ -23,7 +23,7 @@ This playbook uses **5** Logic App connectors / built-in actions:
 | [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
 | [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 | [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
-| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 | [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
@@ -50,6 +50,7 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Action | Method | Endpoint | Other |
 |:-------|:-------|:---------|:------|
+| HTTP_Call_to_Fetch_Host_Enrichment_Data | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/enrichment/host/@{encodeURIComponent(variables('EntityData'))}` | — |
 | HTTP_Call_to_Fetch_Host_Data | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{variables('EntityData')}` | — |
 
 #### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
@@ -68,6 +69,8 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 This playbook is triggered automatically when an IP entity is detected in a Microsoft Sentinel incident, based on an automation rule. Upon triggering, it extracts the IP address from the entity and queries the Censys API (v3) to retrieve detailed host information including geolocation (continent, country, city, coordinates), autonomous system details (ASN, BGP prefix), WHOIS data (network, organization, contacts), services, and DNS information. The playbook retrieves the Censys API token securely from Azure Key Vault, performs the API call with retry logic (up to 3 attempts) and comprehensive error handling for HTTP status codes (200, 401, 403, 404, 422). Upon successful data retrieval, the host data is ingested into Azure Log Analytics (CensysHost_CL table) for historical analysis and reporting. The playbook then retrieves the associated incident and invokes the CensysIncidentEnrichment sub-playbook to add the enrichment data as a comment to the incident. If no incident is associated, the playbook terminates successfully after data ingestion.
 
+By default this playbook first queries the Censys Host Enrichment API (`v3/global/asset/enrichment/host`), which returns the standard host record plus GreyNoise, IPinfo (network and privacy) and Mallory third-party data. The enrichment API is a separately entitled feature: if it responds with 403 (not entitled) or 409, or with any other non-success status, the playbook falls back to the standard host API so that enrichment still completes. A 401 response terminates the run with an authentication error pointing at the Key Vault secret and Organization ID. Set the `UseHostEnrichment` parameter to `false` to always use the standard host API.
+
 ### Prerequisites
 
 1. Deploy the CensysIncidentEnrichment playbook before deploying this playbook.
@@ -80,6 +83,7 @@ This playbook is triggered automatically when an IP entity is detected in a Micr
 1. To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.
 2. Fill in the required parameters:
    * PlaybookName: Enter the playbook name here (default: CensysEntityEnrichmentHost).
+   * UseHostEnrichment: Enter True (default) to use the Censys Host Enrichment API for additional GreyNoise, IPinfo and Mallory data. Any other value, such as False, uses the standard host API only.
    * OrganizationID: Your Censys Organization ID from the Censys platform account settings.
    * IncidentEnrichmentPlaybookName: Name of the deployed CensysAddIncidentComment playbook.
    * KeyVaultName: Name of the Azure Key Vault where the Censys API token is stored.

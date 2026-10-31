@@ -6,17 +6,16 @@
 
 ---
 
-Security events that occurred after the delivery of a Microsoft Teams message in your organization
+Reference for MessagePostDeliveryEvents table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | Security, XDR |
+| **Category** | Security |
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/reference/tables-features)) |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messagepostdeliveryevents) |
-| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messagepostdeliveryevents-table) |
 
 ## Contents
 
@@ -57,7 +56,6 @@ Security events that occurred after the delivery of a Microsoft Teams message in
 Official Microsoft Learn documentation for field/column information:
 
 - [MessagePostDeliveryEvents Schema Reference (Azure Monitor)](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/messagepostdeliveryevents)
-- [MessagePostDeliveryEvents Schema Reference (Defender XDR)](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messagepostdeliveryevents-table)
 
 ## Solutions (1)
 

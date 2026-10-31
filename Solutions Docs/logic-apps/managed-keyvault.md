@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 165 |
-| **Solutions** | 27 |
+| **Playbooks using** | 171 |
+| **Solutions** | 28 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 
 ## Playbooks Using This Connector
@@ -18,6 +18,11 @@
 | [[Deprecated] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[deprecated]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-81e5a0d1.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence (STIX)](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-stix-38495aa1.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 1 | 1 |
+| [ANY.RUN Sandbox - Debian File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-debian-file-enrichment-incident-trigger-04b5650e.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - File and URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-file-and-url-enrichment-incident-trigger-9fb6c007.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - Ubuntu File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-ubuntu-file-enrichment-incident-trigger-7d368a54.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - URL Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-url-enrichment-incident-trigger-52d34934.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
+| [ANY.RUN Sandbox - Windows File Enrichment - Incident Trigger](../content/anyrun-any.run-sandbox-windows-file-enrichment-incident-trigger-14b3c37f.md) | [ANYRUN](../solutions/anyrun.md) | 1 | 1 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 1 | 1 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 1 | 2 |
 | [AS-Add-Machine-Logon-Users-to-Incident](../content/standalone-content-as-add-machine-logon-users-to-incident-cd021551.md) | 📄 Standalone | 1 | 1 |
@@ -106,6 +111,7 @@
 | [Get-MDATPVulnerabilities](../content/github-only-playbookname-5513287e.md) | 🔗 GitHub Only | 1 | 1 |
 | [Google Threat Intelligence - FileScan Blob Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-blob-enrichment-2a53cbaa.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - FileScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-filescan-enrichment-6160a876.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
+| [Google Threat Intelligence - Session Assistant](../content/google-threat-intelligence-google-threat-intelligence-session-assistant-c29e1597.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - URLScan Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-enrichment-73038ece.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - URLScan Entity Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-entity-enrichment-b9dab17e.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [Google Threat Intelligence - URLScan Incident Enrichment](../content/google-threat-intelligence-google-threat-intelligence-urlscan-incident-enrichment-a6d3049c.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
