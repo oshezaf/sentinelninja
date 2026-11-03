@@ -82,8 +82,8 @@
 </tbody>
 </table>
 <h2 id="csv-downloads">CSV Downloads</h2>
-<p>Download the existing generated outputs committed to <a href="https://github.com/Azure/Azure-Sentinel/tree/3262cec7d4e171b33c2ea2a2f10e909947bd30b7/Tools/Solutions%20Analyzer">Azure-Sentinel <code>master</code> at <code>3262cec7d4</code></a>. Only generated analysis outputs are published here, not configuration, overrides, or connector history.</p>
-<p><strong>Snapshot difference:</strong> These CSVs are not synchronized with the existing documentation. They contain 562 solutions, 678 unique connectors, and 210 ASIM parser rows (195 source and 15 unifying), compared with 584 solutions, 724 connectors, and 247 ASIM parsers documented above. A shared source commit does not imply that every CSV was generated in the same run. No analysis or full documentation regeneration was performed for this download update.</p>
+<p>Download the generated outputs from <a href="https://github.com/Azure/Azure-Sentinel/tree/2496f42ce076f58ccb2db24fccf97e2fab16ddd7/Tools/Solutions%20Analyzer">Azure-Sentinel <code>solution_analyzer_output</code> at <code>2496f42ce0</code></a>. Only generated analysis outputs are published here, not configuration, overrides, or connector history.</p>
+<p><strong>Documentation snapshot:</strong> These downloads match the documentation's analysis data: 584 solutions, 724 unique connectors, and 247 ASIM parser rows (231 source and 16 unifying). CSV row totals describe catalog entries, not necessarily individual pages, so they can differ from the page counts above. The existing output-branch CSVs were copied without rerunning the analyzer or regenerating the full documentation.</p>
 <table>
 <thead>
 <tr>
@@ -220,15 +220,60 @@
 <p>Markdown pages have sibling <code>.html</code> pages. The <a href="https://oshezaf.github.io/sentinelninja/index.html">interactive index</a> and its <code>css/</code> and <code>js/</code> assets are at the site root, outside this documentation directory.</p>
 <h2 id="source">Source</h2>
 <p>This documentation is generated from the <a href="https://github.com/Azure/Azure-Sentinel">Azure-Sentinel</a> repository using the <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer">Solutions Analyzer</a> tool.</p>
-<h3 id="generating-documentation">Generating Documentation</h3>
-<p>From an Azure-Sentinel checkout, refresh the data if needed, then publish to the separate sentinelninja checkout (replace the example site-root path):</p>
+<h3 id="generating-fresh-documentation">Generating Fresh Documentation</h3>
+<p>From an Azure-Sentinel checkout, generate fresh local analysis data, then publish to the separate sentinelninja checkout (replace the example site-root path):</p>
 <pre><code class="language-powershell">Set-Location &quot;Tools\Solutions Analyzer&quot;
 $siteRoot = &quot;C:\path\to\sentinelninja&quot;
 python collect_table_info.py               # Reuse cached table metadata
 python map_solutions_connectors_tables.py  # Generate CSVs
 python generate_connector_docs.py --skip-input-generation --output-dir &quot;$siteRoot\Solutions Docs&quot; --html-output-dir &quot;$siteRoot&quot; --html-docs-path &quot;Solutions Docs/&quot; --html-index-url &quot;https://oshezaf.github.io/sentinelninja/index.html&quot;
 </code></pre>
-<p>If the analysis CSVs are already current, run only the documentation command. With the updated generator, it also copies available analysis CSVs into <code>Solutions Docs\csv</code>. Always specify <code>--output-dir</code>; do not generate documentation inside Azure-Sentinel. The documentation generator does not run the mapper. The <code>--html-index-url</code> option keeps Markdown navigation linked to the published interactive index.</p>
+<p>With the updated generator, the documentation command also copies its actual analysis inputs into <code>Solutions Docs\csv</code>. Always specify <code>--output-dir</code>; do not generate documentation inside Azure-Sentinel. The documentation generator does not run the mapper. The <code>--html-index-url</code> option keeps Markdown navigation linked to the published interactive index.</p>
+<h3 id="reusing-published-csvs">Reusing Published CSVs</h3>
+<p>Existing published analysis data is authoritative on <code>solution_analyzer_output</code>, not <code>master</code> or a development checkout. <code>--skip-input-generation</code> does not select a branch or verify freshness, and <code>--input</code> alone can mix the selected mapping with other local default inputs. Use a complete, pinned output-branch snapshot instead of blindly reusing a stale or empty output worktree.</p>
+<p>Run this preparation from <code>Tools\Solutions Analyzer</code> in an Azure-Sentinel checkout, using the updated generator. It verifies the remote branch head, requires that commit to be available locally, extracts an immutable snapshot outside OneDrive without switching branches, and checks all 23 publication files:</p>
+<pre><code class="language-powershell">$repo = (git rev-parse --show-toplevel).Trim()
+if ($LASTEXITCODE -ne 0) { throw &quot;Cannot locate repository&quot; }
+$remoteHead = @(git ls-remote origin refs/heads/solution_analyzer_output)
+if ($LASTEXITCODE -ne 0 -or $remoteHead.Count -ne 1) { throw &quot;Cannot verify output-branch head&quot; }
+$publishedCommit = ($remoteHead[0] -split '\s+')[0]
+git cat-file -e &quot;$publishedCommit^{commit}&quot;
+if ($LASTEXITCODE -ne 0) { throw &quot;Commit is not local. Fetch origin solution_analyzer_output explicitly, then retry.&quot; }
+$snapshot = Join-Path $env:TEMP (&quot;solution-analyzer-output-&quot; + [guid]::NewGuid())
+New-Item -ItemType Directory -Path $snapshot -ErrorAction Stop | Out-Null
+$archive = Join-Path $snapshot &quot;output.tar&quot;
+git -C $repo archive --format=tar &quot;--output=$archive&quot; $publishedCommit -- &quot;Tools/Solutions Analyzer&quot;
+if ($LASTEXITCODE -ne 0) { throw &quot;Cannot archive verified output commit&quot; }
+tar -xf $archive -C $snapshot
+if ($LASTEXITCODE -ne 0) { throw &quot;Cannot extract output snapshot&quot; }
+$csvRoot = Join-Path $snapshot &quot;Tools\Solutions Analyzer&quot;
+python -c &quot;import pathlib,sys; from generate_connector_docs import PUBLISHED_ANALYSIS_CSVS; root=pathlib.Path(sys.argv[1]); missing=[n for n in PUBLISHED_ANALYSIS_CSVS if not (root/n).is_file()]; sys.exit('Incomplete published snapshot: '+', '.join(missing) if missing else 0)&quot; $csvRoot
+if ($LASTEXITCODE -ne 0) { throw &quot;Published snapshot is incomplete; refusing local fallback&quot; }
+$siteRoot = &quot;C:\path\to\sentinelninja&quot;
+</code></pre>
+<p>Choose <strong>one</strong> operation after preparation. For a <strong>copy-only update</strong>, preserving the published artifact links:</p>
+<pre><code class="language-powershell">python -c &quot;import pathlib,sys; from generate_connector_docs import PUBLISHED_ANALYSIS_CSVS,publish_analysis_csvs; root=pathlib.Path(sys.argv[1]); publish_analysis_csvs({n:root/n for n in PUBLISHED_ANALYSIS_CSVS}, pathlib.Path(sys.argv[2]))&quot; $csvRoot &quot;$siteRoot\Solutions Docs&quot;
+if ($LASTEXITCODE -ne 0) { throw &quot;Published CSV copy failed&quot; }
+</code></pre>
+<p>Alternatively, to <strong>regenerate documentation</strong> from that snapshot, supply every CSV input flag. Supplemental catalogs and reports are taken from the same snapshot:</p>
+<pre><code class="language-powershell">$csvInputs = @(
+    &quot;--input&quot;, (Join-Path $csvRoot &quot;solutions_connectors_tables_mapping.csv&quot;),
+    &quot;--connectors-csv&quot;, (Join-Path $csvRoot &quot;connectors.csv&quot;),
+    &quot;--solutions-csv&quot;, (Join-Path $csvRoot &quot;solutions.csv&quot;),
+    &quot;--tables-csv&quot;, (Join-Path $csvRoot &quot;tables_reference.csv&quot;),
+    &quot;--tables-overrides-csv&quot;, (Join-Path $csvRoot &quot;tables.csv&quot;),
+    &quot;--content-items-csv&quot;, (Join-Path $csvRoot &quot;content_items.csv&quot;),
+    &quot;--content-tables-csv&quot;, (Join-Path $csvRoot &quot;content_tables_mapping.csv&quot;),
+    &quot;--playbook-connectors-csv&quot;, (Join-Path $csvRoot &quot;playbook_connectors.csv&quot;),
+    &quot;--parsers-csv&quot;, (Join-Path $csvRoot &quot;parsers.csv&quot;),
+    &quot;--asim-parsers-csv&quot;, (Join-Path $csvRoot &quot;asim_parsers.csv&quot;),
+    &quot;--solution-dependencies-csv&quot;, (Join-Path $csvRoot &quot;solution_dependencies.csv&quot;),
+    &quot;--table-schemas-csv&quot;, (Join-Path $csvRoot &quot;table_schemas.csv&quot;)
+)
+python generate_connector_docs.py @csvInputs --skip-input-generation --output-dir &quot;$siteRoot\Solutions Docs&quot; --html-output-dir &quot;$siteRoot&quot; --html-docs-path &quot;Solutions Docs/&quot; --html-index-url &quot;https://oshezaf.github.io/sentinelninja/index.html&quot; --artifact-links-csv &quot;$snapshot\artifact_doc_links.csv&quot;
+if ($LASTEXITCODE -ne 0) { throw &quot;Documentation publication failed&quot; }
+</code></pre>
+<p>Use the copy-only command <strong>or</strong> the documentation command, not both. Documentation generation deliberately regenerates <code>artifact_doc_links.csv</code> for its pages; copy-only reuse preserves the pinned output branch's artifact CSV. These examples require the updated local generator; the automatic-copy changes are not yet published upstream.</p>
 <hr />
 <p><em>Documentation generated by <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer">Solutions Analyzer</a>. Overview and CSV download links updated November 2026; other documentation pages were not regenerated.</em></p>
 
